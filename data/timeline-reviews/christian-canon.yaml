@@ -8,94 +8,108 @@
 # agent: the first pass (2026-11-26). Two research agents (critical, tradition) saved every fetched page into their own scratch folders; the lead agent fetched ccog.org itself. Every quote script-matched (whitespace, quotes, dashes, entities normalised) against the saved texts: 7/7, 0 misses. Trigger Claims matched by script as substrings of their final Transcript lines at timestamp and speaker: 3/3.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Brakke is cited from the publisher page's open extract only; the full text is paywalled. Is a fully visible extract sentence “read in the source itself” (#80)? (2) Ehrman's summary lacks “extant”; it dates the same list flat. (3) The holder is one small church; its canon paper sits on cogwriter.com (Bob Thiel's site), tied to the church by the Statement of Beliefs link and the paper's “We in the Continuing Church of God”. Is that a Tradition source or an excluded personal site (#80, #86)? CARM, Ligonier, Answers in Genesis and Crossway were not reached. (4) Tradition display “Late 1st century CE, finalized by the Apostle John” dates the canon's finalizing, not a list; the issue allows “a Tradition source that holds an early canon”. (5) Note's “which was never completely settled for all Christians” follows Martin's “they never completely settled the question for all Christians everywhere”, said of the councils. (6) `related.books: [revelation]`: the Trigger Claims centre on Revelation's place in the list; drop if loose.
+# Independent second agent pass 2026-11-26 (#93 delegation, #110): a fresh agent that did not build the entry, working from its own scratch folder only. Re-fetched every source from its URL: oyc.yale.edu RLST 152 lecture 2; the Cambridge Core HTR article page; the OUP Learning Link ch. 1 summary; ccog.org/statement-of-beliefs (body from ccogorg.ccogdr.eu) and the church's About page (ccogorg.ccogdr.eu/about-the-continuing-church-of-god/); cogwriter.com/canon.htm and the cogwriter.com home page. Quotes re-matched by one script (tags stripped, inline tags such as Brakke's small-caps “c.e.” span removed without a space; entities, whitespace, curly quotes and dashes normalised): 7/7, 0 misses. Locators checked by position: Martin's three quotes sit between the right chapter headings (ch. 2 [00:16:17]; ch. 4 [00:32:50], two consecutive paragraphs); Ehrman's under “The Development of the Christian Canon”, before “Implications for Our Study”; Brakke's in the page's “Extract” block; CCOG's under “THE HOLY BIBLE”; Thiel's at a <P> that opens “We in the Continuing Church of God believe that view”. Trigger Claims re-matched by script as normalised substrings of the line at that timestamp and speaker: 3/3; read about two minutes either side (E4 00:25:51–00:30:16; E119 00:44:24–00:51:46).
+# Second pass changed: (a) note narrowed: “did not set the canon, which was never completely settled for all Christians” became “did not set the canon, and says bishops' and councils' decrees never completely settled the question for all Christians”; Martin's subject is the bishops' and councils' decrees, and he goes on to say the 27 books are “generally” accepted by all churches (flag 5). (b) Brakke locator: “p. 47, opening paragraph” became “opening paragraph, second sentence (publisher page extract; article pp. 47–66)”; the page shows no page number, p. 47 was inferred from the range, and the quote is the extract's second sentence, not its first. (c) tradition/1 note corrected: the canon link is in the next sentence, not a continuation of the quoted one. No citation cut; no Trigger Claim cut.
+# Second-pass rulings on the first pass's flags: (1) Brakke kept. The sentence is the article's own text (footnote anchor 1 follows the next sentence), shown in full on the publisher's page with no login: a publisher preview (#80), not a cut-off snippet (#86). (2) Ehrman kept: “not until 367 … listed” dates the same list; the title rests on Martin's and Brakke's “extant”. (3) cogwriter kept as Tradition. #80 excludes blogs, not a church leader's site as such; canon.htm is a standing paper (revision line 2004–2021 0414), not a dated item in the site's news feed. Adoption: the Statement of Beliefs' “THE HOLY BIBLE” paragraph links “The New Testament Canon” to cogwriter.com/canon.htm. Standing: the church's About page says “the Continuing Church of God is led by its overseer and pastor, the evangelistic prophet Bob Thiel”. The cited paragraph speaks as “We in the Continuing Church of God” and links that name to ccog.org. (4) Tradition display kept: CCOG gives “finalized by the Apostle John”, Thiel “finalized by the Apostle John in the late 1st century”; the display says no more. (5) Narrowed, change (a). (6) `related.books: [revelation]` kept: two of three Trigger Claims are about Revelation's place in the list.
+# Flags for publish: (1) the two lanes date different things: the Critical Date dates the earliest surviving list, the Tradition Date the canon's finalizing. The display says “finalized”, and the issue allows a Tradition source that holds an early canon. (2) `from: 90` is a placement year for “late 1st century”, not a source year; the Critical Date places the entry. david-and-solomon dropped a bound like this at publish; consider it here if the lane renders it as a year. (3) The holder is one small church whose canon paper is its leader's own site; kept on the evidence in ruling (3). If the publisher reads #80's blog exclusion as covering single-author sites, cut tradition/2, and with it the whole tradition block: no other source read gives a date. (4) First CE entry: check the axis end and minimap at publish and note on #175 (first-pass header).
 review:
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Martin l2, ch. 2 “The Forming of Canons” [00:16:17]. Dates the earliest surviving 27-book list to 367; names the Easter letter and Athanasius of Alexandria (note's first sentence).",
+      note: "Martin l2, ch. 2 “The Forming of Canons” [00:16:17]. Dates the earliest surviving 27-book list to 367; names the Easter letter and Athanasius of Alexandria (note's first sentence). Second pass: re-fetched; matched verbatim in ch. 2 “The Forming of Canons” [00:16:17] (between the ch. 2 and ch. 3 headings). Verified.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Brakke 2010, HTR 103.1, p. 47, first sentence of the article as shown in the Cambridge Core extract. “first extant list of precisely the twenty-seven books”, 367. Flag 1.",
+      note: "Brakke 2010, HTR 103.1, p. 47, first sentence of the article as shown in the Cambridge Core extract. “first extant list of precisely the twenty-seven books”, 367. Flag 1. Second pass: re-fetched the Cambridge Core page; matched verbatim as the second sentence of the “Extract” block (the extract opens “Athanasius of Alexandria's thirty-ninth Festal Letter remains …”); the small-caps “c.e.” span needed inline-tag stripping. No page number on the page, so the locator now says “second sentence … article pp. 47–66”. Kept: publisher preview of the article's own text (#80). Verified.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman OUP ch. 1 summary, section “The Development of the Christian Canon”. 367, without “extant”. Flag 2.",
+      note: "Ehrman OUP ch. 1 summary, section “The Development of the Christian Canon”. 367, without “extant”. Flag 2. Second pass: re-fetched; matched verbatim under “The Development of the Christian Canon”. Dates the list; lacks “extant”, so the title rests on critical/1 and critical/2. Verified.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Martin l2, ch. 4 “A Slowly Developing (and Incomplete) Consensus” [00:32:50]. Note's “binding only on the churches of his Alexandrian diocese and did not set the canon”; restates 367 as the earliest matching list.",
+      note: "Martin l2, ch. 4 “A Slowly Developing (and Incomplete) Consensus” [00:32:50]. Note's “binding only on the churches of his Alexandrian diocese and did not set the canon”; restates 367 as the earliest matching list. Second pass: re-fetched; matched verbatim in ch. 4 [00:32:50]. Supports the note's “binding only … did not set the canon”. Verified.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Martin l2, ch. 4, next paragraph. Note's “never completely settled for all Christians”. Flag 5.",
+      note: "Martin l2, ch. 4, next paragraph. Note's “never completely settled for all Christians”. Flag 5. Second pass: matched verbatim in ch. 4, the next paragraph; the subject is “Different bishops in different major cities and different councils … they'd put out decrees”. Note narrowed to “says bishops' and councils' decrees never completely settled the question for all Christians”. Verified.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "CCOG Statement of Beliefs, section “The Holy Bible”, first sentence; the sentence continues “… 27 from the Greek Scriptures ( The New Testament Canon )”, linking cogwriter.com/canon.htm. Gives no year. Supports the display's “finalized by the Apostle John” and ties the paper to the church.",
+      note: "CCOG Statement of Beliefs, section “The Holy Bible”, first sentence; the sentence continues “… 27 from the Greek Scriptures ( The New Testament Canon )”, linking cogwriter.com/canon.htm. Gives no year. Supports the display's “finalized by the Apostle John” and ties the paper to the church. Second pass: re-fetched ccog.org (body from ccogorg.ccogdr.eu); matched verbatim as the first sentence under “THE HOLY BIBLE”. Correction to the note above: the quoted sentence ends at “(see also Who Gave the World the Bible?)”; the “… 27 from the Greek Scriptures (The New Testament Canon)” link to cogwriter.com/canon.htm is in the next sentence. Verified.",
     }
   tradition/2:
     {
       agent: pass,
       owner: "",
-      note: "Thiel, cogwriter.com/canon.htm, paragraph beginning “We in the Continuing Church of God believe that view”. Gives “late 1st century”, flat. Flag 3.",
+      note: "Thiel, cogwriter.com/canon.htm, paragraph beginning “We in the Continuing Church of God believe that view”. Gives “late 1st century”, flat. Flag 3. Second pass: re-fetched; matched verbatim in the <P> that opens “We in the Continuing Church of God believe that view”. Kept as Tradition: linked from the church's Statement of Beliefs, and the church's About page names Bob Thiel as its overseer and pastor (ruling 3). Verified.",
     }
 triggers:
   4@00:27:39:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Bart Ehrman (guest). Substring of the turn; the turn continues “Athanasius didn't decide the canon”. No date in the quote; Dan McClellan's prior turn asks “In what, 367?”. A datable verdict on the entry's subject (#99).",
+      note: "states: critical. Bart Ehrman (guest). Substring of the turn; the turn continues “Athanasius didn't decide the canon”. No date in the quote; Dan McClellan's prior turn asks “In what, 367?”. A datable verdict on the entry's subject (#99). Second pass: matched by script in the [00:27:39.990] Bart Ehrman line; read 00:25:51–00:30:16. McClellan's prior turn ends “In what, 367?”; Ehrman's turn answers it. Verified.",
     }
   119@00:46:52:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring from “If the Muratorian Fragment…”; keeps the condition. Ends before “and Revelation isn't really formally a part of it until then either.”",
+      note: "states: critical. Substring from “If the Muratorian Fragment…”; keeps the condition. Ends before “and Revelation isn't really formally a part of it until then either.” Second pass: matched by script in the [00:46:52.200] Dan McClellan line; read 00:44:24–00:51:46. The 00:45:24 turn (“it hadn't firmed up until Athanasius' letter”) leads into it. Verified.",
     }
   119@00:49:34:
     {
       agent: pass,
       owner: "",
-      note: "states: both. States what apologists argue (end of first, beginning of second century) and rejects it. The turn's opening (“squishy edges to Athanasius's canon”) and closing (Revelation a Johnny-come-lately) are dropped.",
+      note: "states: both. States what apologists argue (end of first, beginning of second century) and rejects it. The turn's opening (“squishy edges to Athanasius's canon”) and closing (Revelation a Johnny-come-lately) are dropped. Second pass: matched by script in the [00:49:34.720] Dan McClellan line. Apologists named as holding the end-of-first/beginning-of-second-century view, then rejected: states both. Verified.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Dates the earliest surviving list of the 27 books, the scope Martin and Brakke share; not the canon's closing, which Martin says the letter did not do.",
+      note: "Dates the earliest surviving list of the 27 books, the scope Martin and Brakke share; not the canon's closing, which Martin says the letter did not do. Second pass: agreed; note narrowed further (critical/5).",
     }
-  split-shown: { agent: pass, owner: "", note: "No split; all three say 367." }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "No split; all three say 367. Second pass: agreed; the three sources give 367 with no split.",
+    }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "Tradition Date shown; 119@00:49:34 states the tradition's side (states: both).",
+      note: "Tradition Date shown; 119@00:49:34 states the tradition's side (states: both). Second pass: agreed.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "Holder “the Continuing Church of God”, the church's own name on both cited pages; no “traditional view” wording. Flag 3.",
+      note: "Holder “the Continuing Church of God”, the church's own name on both cited pages; no “traditional view” wording. Flag 3. Second pass: agreed; the About page also uses “the Continuing Church of God”.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date cited. E119 00:46:52's condition is the show's, not a source's.",
+      note: "No conditional date cited. E119 00:46:52's condition is the show's, not a source's. Second pass: agreed; Martin's, Brakke's and Ehrman's 367 are flat.",
     }
 sources:
   martin-rlst152-l2:
@@ -103,34 +117,34 @@ sources:
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 152 (registry year 2009; term not checked)",
-      note: "Reference (introductory course, university-hosted transcript, #86). Already in the registry.",
+      note: "Reference (introductory course, university-hosted transcript, #86). Already in the registry. Second pass: re-fetched oyc.yale.edu/religious-studies/rlst-152/lecture-2; transcript on the page with chapter headings and timestamps. Class agreed.",
     }
   brakke-htr-2010-festal-39:
     {
       agent: pass,
       owner: "",
       edition: "Harvard Theological Review 103 (1), January 2010, pp. 47–66, DOI 10.1017/S0017816009990307",
-      note: "Scholarly (peer-reviewed journal). New. Flag 1.",
+      note: "Scholarly (peer-reviewed journal). New. Flag 1. Second pass: re-fetched; extract open, full text behind “Access options”. Class agreed.",
     }
   ehrman-brief-5e-ch1-summary:
     {
       agent: pass,
       owner: "",
       edition: "5th ed., 2020 (registry)",
-      note: "Reference (publisher chapter summary, #86). Already in the registry.",
+      note: "Reference (publisher chapter summary, #86). Already in the registry. Second pass: re-fetched; class agreed.",
     }
   ccog-statement-of-beliefs:
     {
       agent: pass,
       owner: "",
-      note: "Tradition. New. The church's own statement of beliefs on ccog.org (body served from ccogorg.ccogdr.eu). Self-description on ccog.org: “The Continuing Church of God, which attempts to represent the most faithful remnant of the Philadelphia (Revelation 3:7) portion of the Church of God, bases its beliefs on the Holy Bible.”",
+      note: "Tradition. New. The church's own statement of beliefs on ccog.org (body served from ccogorg.ccogdr.eu). Self-description on ccog.org: “The Continuing Church of God, which attempts to represent the most faithful remnant of the Philadelphia (Revelation 3:7) portion of the Church of God, bases its beliefs on the Holy Bible.” Second pass: re-fetched; the About page (ccogorg.ccogdr.eu/about-the-continuing-church-of-god/) says the church “is led by its overseer and pastor, the evangelistic prophet Bob Thiel”. Class agreed.",
     }
   cogwriter-thiel-nt-canon:
     {
       agent: pass,
       owner: "",
       edition: "Revision line “(c) 2004/…/2019 / 2021 0414”",
-      note: "Tradition. New. Bob Thiel, “By COGwriter”; linked as the church's New Testament Canon page from its Statement of Beliefs. Flag 3.",
+      note: "Tradition. New. Bob Thiel, “By COGwriter”; linked as the church's New Testament Canon page from its Statement of Beliefs. Flag 3. Second pass: re-fetched; byline “By COGwriter”, footer “Thiel B., Ph.D. … (c) 2004/…/2019 / 2021 0414”; the site home page reads “by Dr. Bob Thiel … News, Exclusive Analysis, and Hundreds of Research Papers”. Kept as Tradition (ruling 3; publish flag 3).",
     }
 leads:
   - "Gallagher and Meade, The Biblical Canon Lists from Early Christianity (OUP 2017): Google Books returned a CAPTCHA, OUP an empty shell; no preview confirmed."
