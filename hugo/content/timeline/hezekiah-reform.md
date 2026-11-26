@@ -17,7 +17,7 @@ watch:
   ]
 undated:
   verdict: no-firm-date
-  statement: "The sources give it no firm date, and whether it happened is debated. Faust calls the historicity of Hezekiah's reforms “a hotly debated topic”: many scholars take the reform as an actual historical event, while others doubt it, largely on inner-biblical grounds. If it was historical, he suggests it took place in the years before 712/711 BCE, but only if Tel ‘Eton's destruction belongs to Sargon II's campaign of those years, which he says is not certain. Pakkala thinks it very unlikely that any reform took place in the sense 2 Kings 18:4 intends. Moulis finds Hezekiah the best candidate for most of the cultic eliminations he surveys, while calling many aspects of his centralization debatable."
+  statement: "The sources give it no firm date, and whether it happened is debated. Faust calls the historicity of Hezekiah's reforms “a hotly debated topic”: many scholars take the reform as an actual historical event, while others doubt it, largely on inner-biblical grounds. If it was historical, he suggests it took place in the years before 712/711 BCE, but only if the dismantling of a standing stone at Tel ‘Eton was part of the reform, as he tends to think, and Tel ‘Eton's destruction belongs to Sargon II's campaign of those years, which he says is not certain. Pakkala thinks it very unlikely that any reform took place in the sense 2 Kings 18:4 intends; writing in 2010, from his analysis of that verse, he found no reason to assume any cult reform in Hezekiah's time. Moulis finds Hezekiah the best candidate for most of the cultic eliminations he surveys, while calling many aspects of his centralization debatable."
   cites:
     - source: faust-2026-tel-eton
       locator: "p. 31 (abstract)"
@@ -58,5 +58,25 @@ undated:
     - source: moulis-2019-hezekiah-cultic-reforms
       locator: "p. 180, end of section 7.7 “Summary”"
       quote: "Hezekiah’s cultic centralization had many aspects. Many of them are debatable and some direct connections are missing."
+      read: 2026-11-26
+    - source: faust-2026-tel-eton
+      locator: "p. 45, heading of section 6.1"
+      quote: "When and by whom was the standing stone dismantled?"
+      read: 2026-11-26
+    - source: faust-2026-tel-eton
+      locator: "p. 51, paragraph beginning “Who was responsible for the cult’s cancellation?”"
+      quote: "Given observations in other sites and the circumstantial evidence outlined above, we tend to associate it with Hezekiah’s reform."
+      read: 2026-11-26
+    - source: faust-2026-tel-eton
+      locator: "p. 53, section 9, first paragraph"
+      quote: "While we cannot accurately date the dismantling of the massebah in Room 101B, we can use the date of the site’s destruction to narrow the possible temporal range."
+      read: 2026-11-26
+    - source: pakkala-2010-cult-reforms
+      locator: "p. 13, “Hezekiah’s Reform” (Helda manuscript pagination)"
+      quote: "Hezekiah’s reform is restricted to one verse only, 2 Kings 18:4."
+      read: 2026-11-26
+    - source: pakkala-2010-cult-reforms
+      locator: "p. 17, end of “Hezekiah’s Reform” (Helda manuscript pagination)"
+      quote: "There is no reason to assume any cult reform during the time of this king."
       read: 2026-11-26
 ---

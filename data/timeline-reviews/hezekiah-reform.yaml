@@ -13,6 +13,12 @@
 # Second-pass rulings on the first pass's flags: (1) Passes. p. 54's “This, of course, is not certain” follows “Thus, if we opt for 712 or 711 BCE for the destruction, then the reform must have taken place between Hezekiah's ascendance to the throne … and this date”, and goes on to the Azeka inscription's other attributions (Sennacherib 701; Sargon 720): what is not certain is the 712/711 date of Tel ‘Eton's destruction, the statement's “which he says is not certain”. “Should this dating be accepted” (first paragraph) is the same condition. (2) Kept. p. 53 poses the dating on “if the reform was an actual historical event”; Faust leaning to historicity (p. 48 “broadly accepted material evidence”, p. 50 “most scholars insist”, p. 51 “we tend to associate it with Hezekiah's reform”) does not make the condition his rhetoric only, and the statement attributes no view on historicity to him beyond the two camps. (3) Confirmed with a correction: pp. 167–180 = PDF pp. 177–190 (chapter title on 177, next chapter, Briffa, on 191). Publisher-hosted, opens without login, but through SBL's International Cooperation Initiative repository, not an open-access licence; registry access reworded to the sibling entries' line (change d). Class Scholarly, kind book, fine. (4) Corrected: publisher per the journal's About page (change c). DOI 10.52486/01.00009.3 printed on p. 31 (citation line), confirmed; the registry has no DOI field, not recorded. (5) Kept. Faust p. 31 calls the historicity itself “a hotly debated topic” and p. 46 names both camps; “whether it happened is debated” is no stronger. (6) Confirmed, with a correction to the flag's site list: p. 180's “these cultic eliminations” refers back to section 7.7's four types of cultic change at Arad, Moza, Beersheba and Lachish (Tel Halif the tolerated exception); Moulis's chapter never mentions Tel ‘Eton. “the cultic eliminations he surveys” fits.
 # Flags for publish: (1) Faust's 712/711 rests on a third condition the statement does not name: that the dismantling of Tel ‘Eton's standing stone belongs to Hezekiah's reform (p. 51 “we tend to associate it with Hezekiah's reform”; p. 45 “they are insufficient for us to suggest that the dismantling actually did take place at the time of Hezekiah”; n. 16 “Or to disassociate the two”). Uncited, so the second pass could not add it; the statement's “only if” names one necessary condition and does not claim it is the only one. The publisher may cite p. 51 and add “and if the dismantling there was part of it”. (2) #99 and the show's “around 700”: E13@00:15:30 (“decommissioned out of service somewhere around the year 700 BCE”) and the cut start of E88@00:39:38 (“somewhere around 700 BCE, somewhere around the reign of Hezekiah, suddenly it just stops”) date Arad's temple going out of use, which the same turns credit to Hezekiah's reforms; #209's inventory row glosses this as “Hezekiah's reforms c. 700 BCE if historical”. The show never states a date for the reform itself, so the first pass's “#99 does not apply” holds for stated dates; but the stored E88 text is trimmed before the show's implied date, and c. 700 sits in mild tension with Faust's conditional “before 712/711”. #99 shows Trigger Claims verbatim even when they disagree; the second pass cannot lengthen a Trigger Claim. The publisher may keep the trim (date is Arad's, not the reform's) or restore it. (3) Moulis's abstract (p. 167) bounds the dismantling, not the reform: “No later than the end of the eighth century BCE, shrines were dismantled … probably Hezekiah's … centralization”, “might have been finished before Assyria's campaign against Judah in 701 BCE”. Hedged (“probably”, “might”), a terminus for the sites, so “The sources give it no firm date” survives; recorded in uncited by the first pass. (4) Scratch hygiene: the second pass's first curl wrote into a pre-existing scratch folder from the sennacherib-campaign second pass (second-pass/src) and re-ran pdftotext over its ussishkin.pdf, overwriting its ussishkin.txt with the same PDF's layout text; the hezekiah files were removed from it. Not this entry's sources.
 # Publish resolutions, 2026-11-26 (lead agent, on the second pass's flags): (1) Statement kept. “only if” names a necessary condition, which stays true with Faust's further condition (the Tel ‘Eton dismantling belonging to the reform, p. 51, uncited) unnamed; the verdict is no firm date and “If it was historical … he suggests” already keeps the date conditional. No citation added after the second pass. (2) E88@00:39:38 trim kept: the show's “around 700 BCE” dates Arad's temple going out of use, not the reform; the show gives the reform no date, so #99 does not apply. Not in tension with the entry's statement, which gives Faust's date only on its condition. (3) Moulis p. 167 stays uncited. (4) Scratch only; no effect. draft dropped; sourcesRead, review and secondPass all 2026-11-26.
+# Delegated re-review for issue #220 (2026-11-26; owner delegated, #93/#110; no owner check). Issue asks: read the open leads (Pakkala 2010; Na'aman 2002; Edelman 2008; Herzog 2002, 2010; Ganor and Kreimerman 2019; Fried 2002; Handy 1988; Kleiman 2020; Grabbe 2003; Britannica “Hezekiah”), and consider citing Faust p. 51 to name the condition the statement leaves unstated.
+# Re-review first pass (lead agent), 2026-11-26. (a) Pakkala 2010 read in full from the registry's Helda bitstream (`pakkala-2010-cult-reforms`, reused from `josiah`; curl with a browser user agent; 36 PDF pp., manuscript page = PDF page − 1). Its Hezekiah section (pp. 13–17) reduces the reform to 18:4's note that he removed the high places, ascribes the rest of the verse to a late editor, and ends “There is no reason to assume any cult reform during the time of this king” (p. 17). That conclusion rests on his reading of Kings (the annals excerpts mention no reform; the only source is “a couple of words” written “more than a century after Hezekiah”, p. 16); his archaeology paragraph (p. 18) is about Josiah. Added as undated/14–15; statement: “writing in 2010, from his analysis of that verse, he found no reason to assume any cult reform in Hezekiah's time” (past tense, as `josiah`'s re-review second pass ruled for Pakkala 2010). `josiah` not edited; it cites other pages of the same source (pp. 1, 2, 29), and nothing here contradicts it. (b) Faust p. 51 (issue's ask): the statement named only the Sargon II condition, but Faust's date rests on the Tel ‘Eton dismantling belonging to the reform (p. 53 “we can use the date of the site's destruction to narrow the possible temporal range”; p. 51 “we tend to associate it with Hezekiah's reform”; n. 16 “Or to disassociate the two”). Without it a reader cannot see why a site's destruction dates the reform. Statement now: “but only if the dismantling of a standing stone at Tel ‘Eton was part of the reform, as he tends to think, and Tel ‘Eton's destruction belongs to Sargon II's campaign of those years, which he says is not certain”. Cited undated/11 (p. 45 section 6.1 heading, for “dismantling of a standing stone”), /12 (p. 51, “tend to”), /13 (p. 53, the date rests on the dismantling). “as he tends to think” keeps his strength; p. 45 (“insufficient for us to suggest that the dismantling actually did take place at the time of Hezekiah”) is weaker still and stays uncited. New cites appended so undated/1–10 keep their keys. (c) Britannica “Hezekiah” read in Chrome (page text saved as a retyped excerpt, not a raw capture): reign “about 715 to about 686 BC” with a wide range; “In his religious reforms, Hezekiah asserted Judah's inherited Hebrew traditions”. No date for the reform, assumes it; uncited. (d) Other leads tried once each, still not openly readable: Herzog 2010 (academia.edu 23190922 opened in Chrome: abstract only, full PDF behind sign-up); Ganor and Kreimerman 2019 (BASOR 381: catalogue records only; BAR 2017 popular version members-only); Kleiman 2020 (Tel Aviv 47, “The Iron IIB Gate Shrine at Lachish: An Alternative Interpretation”, DOI 10.1080/03344355.2020.1707447: abstract only); Fried 2002 (JAOS 122.3: JSTOR only); Handy 1988 (ZAW 100: no copy found); Herzog 2002 (Tel Aviv 29: no copy found); Na'aman 2002 and Edelman 2008: no copy found; Grabbe 2003: catalogue records and unlicensed uploads only. Kept in `leads`. Moulis's 2017 thesis not tried (not an issue lead). All 15 quotes script-matched against the saved text, split by page, at each locator's page (NFKC, whitespace, quotes, dashes, line-break hyphens, footnote markers normalised): 15/15, zero misses, each found once. Title, verdict, triggers, registry unchanged; card key (title, kind, verdict) unchanged, so the card is not stale.
+# Re-review second pass (independent agent), 2026-11-26: a fresh agent that did not build the entry or the first pass, working only from its own scratch folder (hez-p2; no other scratch folder read). Re-fetched all four sources from their registry URLs by curl with a browser user agent (Faust, JJAR PDF, 30 pp.; Pakkala 2017, Helda, 17 pp.; Pakkala 2010, Helda, 36 pp.; Moulis, SBL full volume, 324 pp.); pdftotext per page; printed page numbers checked against running heads (Faust p = PDF + 30; Pakkala 2017 p. 271 = PDF 8; Pakkala 2010 manuscript p = PDF − 1; Moulis p = PDF − 10). Quotes re-matched by script at each locator's page (NFKC, whitespace, quotes, dashes, entities, soft and line-break hyphens, footnote markers normalised): 15/15, zero misses; a whole-source count finds each exactly once, on its locator's page. Surrounding passages read for every quote, including Faust's full abstract, pp. 45–46, 51, 53–54 and nn. 16–17; Pakkala 2010 pp. 13–17 and the conclusions pp. 29–31; Pakkala 2017 p. 271 with n. 24 (which points to Pakkala 2010); Moulis section 7.7 (pp. 179–180). Trigger Claims re-matched by script as substrings of the line at their timestamp and speaker in the final Transcripts: 3/3; read about two minutes either side (E13 00:14:25–00:18:53; E88 00:25:03–00:30:23 and 00:37:03–00:42:34). Statement checked against each source's strength and scope: the new Tel ‘Eton condition (pp. 45, 51, 53) and the Pakkala 2010 sentence (pp. 13, 17) hold; Pakkala wording consistent with `josiah` (2017 present tense, same strength; 2010 past tense); `josiah` not edited.
+# Re-review second pass changed: nothing. No citation cut or moved to uncited, no citation added, no wording narrowed, no Trigger Claim or registry field changed; undated/<n> keys unchanged. Only the per-item notes and these header lines were added.
+# Re-review second pass flags: (1) Non-blocking. The Sargon II condition carries only Faust's “This, of course, is not certain” (p. 54), not his lean (“an attribution to Sargon II is most likely”, “the best option”, “most appropriate dates”, same page), while the dismantling condition carries his lean (“as he tends to think”). Accurate and conditional as worded; the asymmetry may read as Faust doubting the Sargon attribution. Adding his lean (already cited at undated/4) would broaden the statement, which this pass does not do; the lead may keep or add it. (2) Non-blocking. Pakkala 2010's conclusions (p. 29) hedge more than p. 17 (“suggest that the cult reforms, in any form intended by the biblical authors, did not take place”; “more probable that they are literary inventions”); the statement quotes p. 17's section verdict in past tense beside the 2017 “very unlikely”, so it is not stronger than the source, but the lead may prefer p. 29's wording. (3) undated/7's first-pass note still says “Supports “he places it …””; the statement's verb changed to “suggests” in the earlier second pass; recorded in its note, no edit to the old text.
+# Re-review publish resolutions, 2026-11-26 (lead agent, on the re-review second pass's flags): (1) Sargon II clause kept as is: “he suggests it took place in the years before 712/711 BCE” already gives his preference, and “which he says is not certain” is his own p. 54 caveat on that date; adding “most likely” would widen the statement for no gain. (2) Pakkala 2010 p. 17 kept over p. 29: p. 17 is the Hezekiah-specific conclusion, p. 29 covers both reforms; the statement is no stronger than either. (3) undated/7's first-pass wording “places it” is history inside the note; the second pass recorded the current verb; no change. Delegated re-review for #220: sourcesRead, review and delegation.secondPass all 2026-11-26.
 review: 2026-11-26
 delegation:
   by: owner
@@ -24,139 +30,175 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Faust 2026 p. 31, abstract, first sentence. Supports “Faust calls the historicity of Hezekiah's reforms “a hotly debated topic””. Repeated p. 52 (“The historicity of Hezekiah's reform, as well as its timing and aim, is hotly debated”), uncited. Second pass: matched once, p. 31 = PDF p. 1, abstract's first sentence; p. 52 repeat confirmed (section 8, opening).",
+      note: "Faust 2026 p. 31, abstract, first sentence. Supports “Faust calls the historicity of Hezekiah's reforms “a hotly debated topic””. Repeated p. 52 (“The historicity of Hezekiah's reform, as well as its timing and aim, is hotly debated”), uncited. Second pass: matched once, p. 31 = PDF p. 1, abstract's first sentence; p. 52 repeat confirmed (section 8, opening). Re-review second pass: matched once in the whole source, p. 31 = PDF p. 1, abstract's first sentence; full abstract read (Tel ‘Eton evidence and its “possible association with Hezekiah's reform”; no date there). Pass.",
     }
   undated/2:
     {
       agent: pass,
       owner: "",
-      note: "Faust 2026 p. 46. Supports “many scholars take the reform as an actual historical event, while others doubt it, largely on inner-biblical grounds”. Faust's own attribution of the two camps; the next sentence names Edelman 2008 and Pakkala 2010 for the doubters. Second pass: matched once, p. 46 = PDF p. 16; next sentence names Edelman 2008 and Pakkala 2010 for the doubters, confirmed.",
+      note: "Faust 2026 p. 46. Supports “many scholars take the reform as an actual historical event, while others doubt it, largely on inner-biblical grounds”. Faust's own attribution of the two camps; the next sentence names Edelman 2008 and Pakkala 2010 for the doubters. Second pass: matched once, p. 46 = PDF p. 16; next sentence names Edelman 2008 and Pakkala 2010 for the doubters, confirmed. Re-review second pass: matched once, p. 46 = PDF p. 16, section 6.2; read the paragraph: the doubters (Edelman 2008, Pakkala 2010) “argue that the reform did not take place”; “many scholars … others doubt it, largely on inner-biblical grounds” fits. Pass.",
     }
   undated/3:
     {
       agent: pass,
       owner: "",
-      note: "Faust 2026 p. 53, opening sentence of section 9 (“Endnote: The Date of the Destruction of Building 101 and the Possible Date of Hezekiah's Reform”). Supports “If it was historical”: his dating is posed on that condition. Second pass: matched once, p. 53 = PDF p. 23, first sentence under the section 9 heading.",
+      note: "Faust 2026 p. 53, opening sentence of section 9 (“Endnote: The Date of the Destruction of Building 101 and the Possible Date of Hezekiah's Reform”). Supports “If it was historical”: his dating is posed on that condition. Second pass: matched once, p. 53 = PDF p. 23, first sentence under the section 9 heading. Re-review second pass: matched once, p. 53 = PDF p. 23, first sentence under the section 9 heading. Pass.",
     }
   undated/4:
     {
       agent: pass,
       owner: "",
-      note: "Faust 2026 p. 54, first paragraph. Supports “Sargon II's campaign of those years”: his preferred attribution of Tel ‘Eton's destruction, “most likely”, not established. Second pass: matched once, p. 54 = PDF p. 24, first paragraph (“Given the similarity …”). The paragraph opens “the destruction is unlikely to have preceded 701 BCE by much”.",
+      note: "Faust 2026 p. 54, first paragraph. Supports “Sargon II's campaign of those years”: his preferred attribution of Tel ‘Eton's destruction, “most likely”, not established. Second pass: matched once, p. 54 = PDF p. 24, first paragraph (“Given the similarity …”). The paragraph opens “the destruction is unlikely to have preceded 701 BCE by much”. Re-review second pass: matched once, p. 54 = PDF p. 24, first paragraph. Faust's own lean (“most likely”, “best option”) is not in the statement, which gives only “not certain”: accurate, not overstated; flagged for the lead, no edit (adding the lean would broaden). Pass.",
     }
   undated/5:
     {
       agent: pass,
       owner: "",
-      note: "Faust 2026 p. 54, first paragraph. Supports “only if Tel ‘Eton's destruction belongs to” that campaign: the reform falls between Hezekiah's accession and the campaign only “Should this dating be accepted”. Second pass: matched once, p. 54, first paragraph, its last sentence. “this dating” = 712/711 for Tel ‘Eton's destruction.",
+      note: "Faust 2026 p. 54, first paragraph. Supports “only if Tel ‘Eton's destruction belongs to” that campaign: the reform falls between Hezekiah's accession and the campaign only “Should this dating be accepted”. Second pass: matched once, p. 54, first paragraph, its last sentence. “this dating” = 712/711 for Tel ‘Eton's destruction. Re-review second pass: matched once, p. 54, first paragraph, last sentence; “this dating” = 712/711 for Tel ‘Eton's destruction. Pass.",
     }
   undated/6:
     {
       agent: pass,
       owner: "",
-      note: "Faust 2026 p. 54, third paragraph, opening clause. Supports “which he says is not certain”. The sentence goes on to the Azeka inscription's other attributions (Sennacherib; Sargon's 720 campaign), i.e. the destruction date is what is uncertain. Second pass: matched once, p. 54, third paragraph, opening clause. Antecedent read: the second paragraph's “if we opt for 712 or 711 BCE for the destruction, then the reform must have taken place between …”. Flag 1 passes.",
+      note: "Faust 2026 p. 54, third paragraph, opening clause. Supports “which he says is not certain”. The sentence goes on to the Azeka inscription's other attributions (Sennacherib; Sargon's 720 campaign), i.e. the destruction date is what is uncertain. Second pass: matched once, p. 54, third paragraph, opening clause. Antecedent read: the second paragraph's “if we opt for 712 or 711 BCE for the destruction, then the reform must have taken place between …”. Flag 1 passes. Re-review second pass: matched once, p. 54, third paragraph, opening clause; antecedent is the second paragraph's “if we opt for 712 or 711 BCE for the destruction”. Pass.",
     }
   undated/7:
     {
       agent: pass,
       owner: "",
-      note: "Faust 2026 p. 54, last paragraph of the section, end of its last sentence. Supports “he places it in the years before 712/711 BCE”. The sentence opens “Still, as noted, we find 712 or 711 BCE to be the most appropriate dates for the destruction of Tel ‘Eton”, so the conditions above carry into it; n. 17 “A few years as king are sufficient to implement such a reform.” Second pass: matched once, p. 54, last paragraph, end of its last sentence; n. 17 confirmed. Backs the statement's new verb “suggests it took place” (was “places it”).",
+      note: "Faust 2026 p. 54, last paragraph of the section, end of its last sentence. Supports “he places it in the years before 712/711 BCE”. The sentence opens “Still, as noted, we find 712 or 711 BCE to be the most appropriate dates for the destruction of Tel ‘Eton”, so the conditions above carry into it; n. 17 “A few years as king are sufficient to implement such a reform.” Second pass: matched once, p. 54, last paragraph, end of its last sentence; n. 17 confirmed. Backs the statement's new verb “suggests it took place” (was “places it”). Re-review second pass: matched once, p. 54, last paragraph, end of its last sentence; n. 17 confirmed. Statement now reads “he suggests it took place in the years before 712/711 BCE” (this note's “he places it” is the first pass's wording). Pass.",
     }
   undated/8:
     {
       agent: pass,
       owner: "",
-      note: "Pakkala 2017 p. 271 (Helda reprint pagination). Reused from `josiah` (same quote, same locator). Supports “Pakkala thinks it very unlikely that any reform took place in the sense 2 Kings 18:4 intends”. The sentence covers 18:4 and 23:1–24 together; the statement names only 18:4. Source has “23:1– 24” with a stray space. Second pass: matched once, Helda PDF p. 8, running head 271. `josiah` words the same sentence “thinks it very unlikely that the reforms took place in the sense 2 Kings intends”; same strength.",
+      note: "Pakkala 2017 p. 271 (Helda reprint pagination). Reused from `josiah` (same quote, same locator). Supports “Pakkala thinks it very unlikely that any reform took place in the sense 2 Kings 18:4 intends”. The sentence covers 18:4 and 23:1–24 together; the statement names only 18:4. Source has “23:1– 24” with a stray space. Second pass: matched once, Helda PDF p. 8, running head 271. `josiah` words the same sentence “thinks it very unlikely that the reforms took place in the sense 2 Kings intends”; same strength. Re-review second pass: matched once, Helda PDF p. 8 (running head 271); read through the next paragraph. n. 24 points to Pakkala 2010 (BZAW 405: 201–235), so the 2017 and 2010 sentences are the same argument. Same strength as `josiah` (“very unlikely that the reforms took place in the sense 2 Kings intends”). Pass.",
     }
   undated/9:
     {
       agent: pass,
       owner: "",
-      note: "Moulis 2019 p. 180, conclusion. Supports “Moulis finds Hezekiah the best candidate for most of the cultic eliminations he surveys”. The next sentence is hedged (“He probably issued an order”), not quoted. Second pass: matched once, p. 180 = PDF p. 190; locator changed from “conclusion” to “end of section 7.7 “Summary””. Referent: 7.7's four types of cultic change (Arad, Moza, Beersheba, Lachish; Tel Halif tolerated); no Tel ‘Eton in the chapter (flag 6).",
+      note: "Moulis 2019 p. 180, conclusion. Supports “Moulis finds Hezekiah the best candidate for most of the cultic eliminations he surveys”. The next sentence is hedged (“He probably issued an order”), not quoted. Second pass: matched once, p. 180 = PDF p. 190; locator changed from “conclusion” to “end of section 7.7 “Summary””. Referent: 7.7's four types of cultic change (Arad, Moza, Beersheba, Lachish; Tel Halif tolerated); no Tel ‘Eton in the chapter (flag 6). Re-review second pass: matched once, p. 180 = PDF p. 190; read section 7.7 from p. 179 (PDF p. 189): “these cultic eliminations” = the four types of change at Arad, Moza, Beersheba, Lachish; “the cultic eliminations he surveys” fits. Pass.",
     }
   undated/10:
     {
       agent: pass,
       owner: "",
-      note: "Moulis 2019 p. 180, conclusion, same paragraph. Supports “while calling many aspects of his centralization debatable”. Second pass: matched once, p. 180, same paragraph as undated/9; locator changed with it.",
+      note: "Moulis 2019 p. 180, conclusion, same paragraph. Supports “while calling many aspects of his centralization debatable”. Second pass: matched once, p. 180, same paragraph as undated/9; locator changed with it. Re-review second pass: matched once, p. 180, same paragraph as undated/9. Pass.",
+    }
+  undated/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Re-review (#220). Faust 2026 p. 45 (PDF p. 15), heading of section 6.1. Supports “the dismantling of a standing stone at Tel ‘Eton”: the stone is the massebah of Room 101B in Building 101. Re-review second pass: matched once, p. 45 = PDF p. 15 (printed 45 confirmed), section 6.1 heading; the section is about the massebah's dismantling, so “dismantling of a standing stone at Tel ‘Eton” fits. Same page: “insufficient for us to suggest that the dismantling actually did take place at the time of Hezekiah” (uncited, weaker), read. Pass.",
+    }
+  undated/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "Re-review (#220). Faust 2026 p. 51 (PDF p. 21), last sentence of the paragraph beginning “Who was responsible for the cult's cancellation?”. Supports “was part of the reform, as he tends to think”. “it” = the changes in Building 101 (the cancellation of the domestic cult). Hedged “tend to”; p. 45 is weaker (“insufficient for us to suggest that the dismantling actually did take place at the time of Hezekiah”), uncited; n. 16 “Or to disassociate the two” names the alternative. Re-review second pass: matched once, p. 51 = PDF p. 21 (printed 51 confirmed); read the paragraph: the whimsical-decision alternative “seems unlikely”, then “we tend to associate it with Hezekiah's reform”, “it” = the changes in Building 101 (the massebah's dismantling, previous paragraph). “as he tends to think” keeps his hedge. Pass.",
+    }
+  undated/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "Re-review (#220). Faust 2026 p. 53 (PDF p. 23), section 9, first paragraph, second sentence. Supports the “only if … dismantling … was part of the reform” condition: his date for the reform is the destruction date applied to the dismantling. Re-review second pass: matched once, p. 53 = PDF p. 23, section 9, first paragraph, second sentence; the destruction date bounds the dismantling, so the reform date needs the dismantling to be part of it: the “only if … was part of the reform” condition holds. Pass.",
+    }
+  undated/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "Re-review (#220). Pakkala 2010 p. 13 (PDF p. 14), opening of the section “Hezekiah's Reform”. Supports “from his analysis of that verse” (2 Kings 18:4). Re-review second pass: matched once, p. 13 = PDF p. 14 (printed 13 confirmed), opening sentence of “Hezekiah's Reform”. Read pp. 13–17 in full: 18:4aα1 from the history writer, the rest from a late editor; annals excerpts mention no cult measure (p. 16). “from his analysis of that verse” fits; the annals' silence is part of the same argument. Pass.",
+    }
+  undated/15:
+    {
+      agent: pass,
+      owner: "",
+      note: "Re-review (#220). Pakkala 2010 p. 17 (PDF p. 18), last sentence of the section “Hezekiah's Reform”. Supports “writing in 2010 … he found no reason to assume any cult reform in Hezekiah's time”. Rests on his literary analysis of Kings (pp. 13–17), not archaeology; past tense per `josiah`'s ruling on this source. Re-review second pass: matched once, p. 17 = PDF p. 18 (printed 17 confirmed), last sentence of the section. Read the conclusions (pp. 29–31): “Many features … suggest that the cult reforms, in any form intended by the biblical authors, did not take place”; Hezekiah “was made a cult centralizer” (p. 30). The conclusions are slightly more hedged than p. 17, but “he found no reason to assume any cult reform” quotes p. 17 in past tense, attributed, and sits beside the 2017 “very unlikely”; not stronger than the source. Consistent with `josiah`'s past-tense wording of Pakkala 2010. Pass.",
     }
 triggers:
   13@00:16:37:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:16:37.030 turn, Dan McClellan (final Transcript 2023-07-03-episode-13-…-does-god-regret-this-podcast.txt). Read 00:14:25 to 00:18:53. Hedge “I think this was Yigael Yadin” kept (the Arad temple's excavator was Yohanan Aharoni; the misattribution is the show's, kept verbatim). Cut before the turn's “Oddly enough … none of these were broken” and the 00:17:50 competing theory (Sennacherib, de facto cult centralization). Second pass: matched at 00:16:37.030, Dan McClellan; read 00:14:25–00:18:53. Hedge kept, trim confirmed. “cut down all the altars to Baal and things like that” loosely paraphrases 2 Kgs 18:4 (no Baal altars there; “and things like that” hedges it); kept verbatim per #99. Previous turn 00:15:30 dates Arad's decommissioning “around the year 700 BCE” (flag for publish 2).",
+      note: "states: critical. Substring of the 00:16:37.030 turn, Dan McClellan (final Transcript 2023-07-03-episode-13-…-does-god-regret-this-podcast.txt). Read 00:14:25 to 00:18:53. Hedge “I think this was Yigael Yadin” kept (the Arad temple's excavator was Yohanan Aharoni; the misattribution is the show's, kept verbatim). Cut before the turn's “Oddly enough … none of these were broken” and the 00:17:50 competing theory (Sennacherib, de facto cult centralization). Second pass: matched at 00:16:37.030, Dan McClellan; read 00:14:25–00:18:53. Hedge kept, trim confirmed. “cut down all the altars to Baal and things like that” loosely paraphrases 2 Kgs 18:4 (no Baal altars there; “and things like that” hedges it); kept verbatim per #99. Previous turn 00:15:30 dates Arad's decommissioning “around the year 700 BCE” (flag for publish 2). Re-review second pass: script-matched as a substring of the 00:16:37.030 Dan McClellan line in the final Transcript; read 00:14:25–00:18:53. states: critical fits (the excavators' attribution); trim and hedge confirmed. Pass.",
     }
   88@00:27:48:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:27:48.290 turn, Dan McClellan (2024-12-09-episode-88-…-josiah-the-cult-killer.txt). Read 00:26:21 to 00:29:09. “said to have happened” is the speaker's hedge, kept. Cut before “but it says he didn't put an end to the worship of. Of Asherah and Baal”, which misreads 2 Kgs 18:4 and leads into the Josiah contrast. Second pass: matched at 00:27:48.290, Dan McClellan; read 00:25:03–00:29:55. Trim confirmed; the cut clause contradicts 18:4, which has him cut down the Asherah, so the cut is fair.",
+      note: "states: critical. Substring of the 00:27:48.290 turn, Dan McClellan (2024-12-09-episode-88-…-josiah-the-cult-killer.txt). Read 00:26:21 to 00:29:09. “said to have happened” is the speaker's hedge, kept. Cut before “but it says he didn't put an end to the worship of. Of Asherah and Baal”, which misreads 2 Kgs 18:4 and leads into the Josiah contrast. Second pass: matched at 00:27:48.290, Dan McClellan; read 00:25:03–00:29:55. Trim confirmed; the cut clause contradicts 18:4, which has him cut down the Asherah, so the cut is fair. Re-review second pass: script-matched at 00:27:48.290, Dan McClellan; read 00:25:03–00:30:23. Trim before the garbled Asherah clause confirmed. Pass.",
     }
   88@00:39:38:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:39:38.460 turn, Dan McClellan. Read 00:38:15 to 00:40:58. “if you take those reforms as historical” kept. Dropped earlier in the turn: “somewhere around 700 BCE, somewhere around the reign of Hezekiah, suddenly it just stops” (dates Arad's burial, not the reform). The next turn (00:40:43) gives the dissent (implements not destroyed). Second pass: matched at 00:39:38.460, Dan McClellan; read 00:37:03–00:41:08. Hedge kept; next turn's dissent (00:40:43) confirmed. The cut “somewhere around 700 BCE …” is the show's only date near the reform (flag for publish 2).",
+      note: "states: critical. Substring of the 00:39:38.460 turn, Dan McClellan. Read 00:38:15 to 00:40:58. “if you take those reforms as historical” kept. Dropped earlier in the turn: “somewhere around 700 BCE, somewhere around the reign of Hezekiah, suddenly it just stops” (dates Arad's burial, not the reform). The next turn (00:40:43) gives the dissent (implements not destroyed). Second pass: matched at 00:39:38.460, Dan McClellan; read 00:37:03–00:41:08. Hedge kept; next turn's dissent (00:40:43) confirmed. The cut “somewhere around 700 BCE …” is the show's only date near the reform (flag for publish 2). Re-review second pass: script-matched at 00:39:38.460, Dan McClellan; read 00:37:03–00:42:34. The cut “somewhere around 700 BCE” dates Arad's burial; the turn then credits the excavators, and 00:40:43 and 00:41:08 give the hiding and Sennacherib alternatives. Trim fair; #99 not engaged (no date stated for the reform). Pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "No Critical Date. The statement is worded for the reform described in 2 Kgs 18:4, the Trigger Claims' subject; Arad's decommissioning, Hezekiah's reign and Sennacherib's campaign are not dated here. Second pass: confirmed; nothing in the entry dates Arad, the reign or 701.",
+      note: "No Critical Date. The statement is worded for the reform described in 2 Kgs 18:4, the Trigger Claims' subject; Arad's decommissioning, Hezekiah's reign and Sennacherib's campaign are not dated here. Second pass: confirmed; nothing in the entry dates Arad, the reign or 701. Re-review second pass: confirmed; no Critical Date, nothing dates Arad, the reign or 701. Pass.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "No date, so no split. The historicity split is shown: Faust's two camps (p. 46), Pakkala against, Moulis for, each attributed. Second pass: confirmed; each side attributed by name.",
+      note: "No date, so no split. The historicity split is shown: Faust's two camps (p. 46), Pakkala against, Moulis for, each attributed. Second pass: confirmed; each side attributed by name. Re-review second pass: confirmed; Faust's camps, Pakkala against, Moulis for, each attributed. Pass.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; every Trigger Claim states critical. Second pass: confirmed.",
+      note: "No Tradition Date; every Trigger Claim states critical. Second pass: confirmed. Re-review second pass: confirmed; all three Trigger Claims state critical. Pass.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; no Tradition source cited. Second pass: confirmed.",
+      note: "No Tradition Date; no Tradition source cited. Second pass: confirmed. Re-review second pass: confirmed; no Tradition source. Pass.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "Faust's 712/711 is conditional (historicity; the Tel ‘Eton link; the Sargon attribution, “Should this dating be accepted”, “not certain”), so it is not a Critical Date and appears only inside the statement with its condition. Moulis p. 170's 715 is the Arad excavators' stratigraphic date for one temple, revised by Herzog; uncited. Second pass: confirmed; 712/711 appears only inside the condition, now with Faust's own verb “suggests”. Third unstated condition flagged for publish (1).",
+      note: "Faust's 712/711 is conditional (historicity; the Tel ‘Eton link; the Sargon attribution, “Should this dating be accepted”, “not certain”), so it is not a Critical Date and appears only inside the statement with its condition. Moulis p. 170's 715 is the Arad excavators' stratigraphic date for one temple, revised by Herzog; uncited. Second pass: confirmed; 712/711 appears only inside the condition, now with Faust's own verb “suggests”. Third unstated condition flagged for publish (1). Re-review second pass: confirmed; 712/711 appears only inside the statement with all three of Faust's conditions now named (historicity, the Tel ‘Eton dismantling, the Sargon attribution). Pass.",
     }
 sources:
   faust-2026-tel-eton:
     {
       agent: pass,
       owner: "",
-      note: "Scholarly (Jerusalem Journal of Archaeology 9: 31–60, open-access journal PDF). New id. Sole author Avraham Faust (Bar-Ilan University) per the PDF's byline. 2026, inside the 30-year window. Publisher flagged (4). Second pass: PDF re-fetched (browser user agent needed); byline “Avraham Faust, Bar-Ilan University”; citation line on p. 31 confirms JJAR 9: 31–60, 2026, DOI 10.52486/01.00009.3. Publisher corrected to “Institute of Archaeology, The Hebrew University of Jerusalem” per the JJAR About page (flag 4). Open access confirmed there (“an open-access journal, and unless stated otherwise, its contents may be reused freely for non-commercial purposes”).",
+      note: "Scholarly (Jerusalem Journal of Archaeology 9: 31–60, open-access journal PDF). New id. Sole author Avraham Faust (Bar-Ilan University) per the PDF's byline. 2026, inside the 30-year window. Publisher flagged (4). Second pass: PDF re-fetched (browser user agent needed); byline “Avraham Faust, Bar-Ilan University”; citation line on p. 31 confirms JJAR 9: 31–60, 2026, DOI 10.52486/01.00009.3. Publisher corrected to “Institute of Archaeology, The Hebrew University of Jerusalem” per the JJAR About page (flag 4). Open access confirmed there (“an open-access journal, and unless stated otherwise, its contents may be reused freely for non-commercial purposes”). Re-review second pass: PDF re-fetched from the registry URL with a browser user agent (30 pp.); byline, citation line, DOI on p. 31 confirmed; registry fields unchanged. Pass.",
     }
   pakkala-2017-origins-yahwism:
     {
       agent: pass,
       owner: "",
-      note: "Scholarly (De Gruyter, BZAW 484). Reused id from `josiah`. Helda author's reprint; pagination may differ from the original (registry edition line). 2017, inside the window. Second pass: Helda reprint re-fetched; registry fields unchanged.",
+      note: "Scholarly (De Gruyter, BZAW 484). Reused id from `josiah`. Helda author's reprint; pagination may differ from the original (registry edition line). 2017, inside the window. Second pass: Helda reprint re-fetched; registry fields unchanged. Re-review second pass: Helda reprint re-fetched (17 PDF pp.); p. 271 running head on PDF p. 8; registry unchanged. Pass.",
+    }
+  pakkala-2010-cult-reforms:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Accepted author manuscript, Helda handle 10138/328050; own pagination (pp. 1–31 + bibliography)",
+      note: "Scholarly (chapter in BZAW 405, De Gruyter). Reused id from `josiah` (registry unchanged). Re-review (#220): registry URL fetched with a browser user agent (36 PDF pp.); cover page gives the BZAW 405 citation and handle; manuscript page = PDF page − 1. 2010, inside the 30-year window. Re-review second pass: registry URL re-fetched with a browser user agent (36 PDF pp.); cover page gives the BZAW 405 citation and handle 10138/328050; PDF p. 2 heading “Biblical Perspectives on Cult Reforms in Judah: Why They Probably Did not Happen” matches the registry edition line; text ends on manuscript p. 31, bibliography starts p. 32, so the edition note “pp. 1–31 + bibliography” holds; manuscript page = PDF page − 1 confirmed. Pass.",
     }
   moulis-2019-hezekiah-cultic-reforms:
     {
       agent: pass,
       owner: "",
-      note: "Scholarly (SBL Press, Ancient Israel and Its Literature 37, pp. 167–180). New id. Read in the publisher's full-volume PDF; a page-proof copy at web.etf.cuni.cz (paginated 165–178, with a copyeditor's query) was not used. 2019, inside the window. Access flagged (3). Second pass: full volume re-fetched (324 pp.; ISBN 9780884143994 on the copyright page, “All rights reserved”); chapter pp. 167–180 = PDF pp. 177–190. Listed on SBL's ICI online book repository (AIL page, “AIL 37. SBL Press, 2019”); access reworded to the sibling SBL entries' line (flag 3).",
+      note: "Scholarly (SBL Press, Ancient Israel and Its Literature 37, pp. 167–180). New id. Read in the publisher's full-volume PDF; a page-proof copy at web.etf.cuni.cz (paginated 165–178, with a copyeditor's query) was not used. 2019, inside the window. Access flagged (3). Second pass: full volume re-fetched (324 pp.; ISBN 9780884143994 on the copyright page, “All rights reserved”); chapter pp. 167–180 = PDF pp. 177–190. Listed on SBL's ICI online book repository (AIL page, “AIL 37. SBL Press, 2019”); access reworded to the sibling SBL entries' line (flag 3). Re-review second pass: full volume re-fetched from the SBL URL (324 pp.); chapter p. 180 = PDF p. 190, section 7.7 starts p. 179; registry unchanged. Pass.",
     }
 leads:
-  - "Pakkala 2010, “Why the Cult Reforms in Judah Probably Did Not Happen” (BZAW 405: 201–235): copies at CORE and the Helsinki portal returned 403 to curl; not read."
-  - "Na'aman 2002 (Ugarit-Forschungen 34: 585–602): rejects the reform's historicity; known only through Faust's quotations (pp. 32, 48); no open copy."
-  - "Edelman 2008 (JSOT 32: 395–434); Fried 2002 (JAOS 122); Handy 1988 (ZAW 100); Herzog 2010 (BZAW 405); Ganor and Kreimerman 2019 (BASOR 381); Kleiman 2020 (Tel Aviv 47): cited by Faust or Moulis; paywalled, not tried or not found open."
-  - "Herzog 2002 (Tel Aviv 29: 3–109), Arad: only copy on academia.edu (login); not read."
-  - "Britannica “Hezekiah”: 403 to curl; not read in this pass."
+  - "Na'aman 2002 (Ugarit-Forschungen 34: 585–602): rejects the reform's historicity; known only through Faust's quotations (pp. 32, 48); searched again for #220, no open copy found."
+  - "Edelman 2008 (JSOT 32: 395–434); Fried 2002 (JAOS 122.3: 437–465); Handy 1988 (ZAW 100); Ganor and Kreimerman 2019 (BASOR 381); Kleiman 2020 (Tel Aviv 47, DOI 10.1080/03344355.2020.1707447): cited by Faust or Moulis; searched again for #220, catalogue records or abstracts only, no open full text found."
+  - "Herzog 2010 (BZAW 405: 169–199): academia.edu 23190922 opened in Chrome for #220: abstract only, full PDF behind sign-up; not read."
+  - "Herzog 2002 (Tel Aviv 29: 3–109), Arad: only copy on academia.edu (login); searched again for #220, none open; not read."
   - "Moulis's 2017 thesis on the Arad shrine (invenio.nusl.cz/record/355933): not fetched."
-  - "Grabbe (ed.) 2003, ‘Like a Bird in a Cage’ (issue lead): not searched; no open copy known."
+  - "Grabbe (ed.) 2003, ‘Like a Bird in a Cage’ (JSOTSup 363): searched for #220; catalogue records and unlicensed uploads only; not read."
 uncited:
   - "Faust 2026 p. 45: the reform “was supposed to have taken place in the late 8th century BCE”; “the mere historicity of Hezekiah's reform is questioned”. Relays a supposition; the statement already carries the debate from pp. 31, 46."
   - "Faust 2026 pp. 48, 50: Lachish, Arad and Beersheba as “broadly accepted material evidence of the historicity of Hezekiah's reform”; “despite the doubts, most scholars insist that the archaeological evidence supports the historicity of the reform”; p. 49 middle position (religious changes, not a planned reform: Edelman, Fried, Handy). One author's count of the field; not needed (flag 2)."
@@ -172,3 +214,6 @@ uncited:
   - "Hayes RLST 145 l15 ch. 1 (the Deuteronomist's judgement of Hezekiah: “instituted sweeping reforms”) and l11 ch. 3 (“the major religious reforms that were carried out in the eighth century by King Hezekiah”). l15 reports the biblical writer's view; l11 is a century-level aside; not needed (see header). l14: reform not mentioned."
   - "Kleiman 2022, TheTorah.com “Hezekiah's Reform: The Archeological Evidence”: “15 years after the suggested time of Hezekiah's reform”; Beersheba “nothing suggests that it be specifically connected to Hezekiah's reform”; reform as a reinterpretation of de facto centralization after 701. Popular-academic site; Reference status unsettled under #86; not cited."
   - "Bible Odyssey dictionary “Arad”: nothing on Hezekiah."
+  - "Pakkala 2010 pp. 1–2: the kings “are usually assumed to have taken at least some measures to renew the cult”; critics of historicity “still represent the minority”; skepticism “has grown in the last decades”; “the historicity of Hezekiah's reform has been challenged more often than that of Josiah”; p. 2 relays that many histories place the reforms “in the late 8th and late 7th centuries BCE”. 2010 field description (cited by `josiah`); the statement already carries the debate from Faust 2026; the late-8th-century line relays other works. p. 16: the only source is “a couple of words” in a composition “written at least more than a century after Hezekiah”. Not needed beyond pp. 13, 17."
+  - "Faust 2026 p. 45: the dates “are insufficient for us to suggest that the dismantling actually did take place at the time of Hezekiah”. Weaker than p. 51's “we tend to associate it”; the statement's “as he tends to think” stays within both."
+  - "Britannica “Hezekiah” (read in Chrome, #220; saved as a retyped excerpt): reign “often given as about 715 to about 686 BC”, with “a wide range of possible dates”; “In his religious reforms, Hezekiah asserted Judah's inherited Hebrew traditions and practices against imported cults of the Assyrian gods.” Reign only; reform assumed, undated."
