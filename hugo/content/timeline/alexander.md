@@ -19,7 +19,7 @@ critical:
   display: "332 BCE"
   from: -332
   precision: year
-  note: "Alexander defeated Darius III at Issus in 333; his troops then went down the coast of the Levant toward Egypt. He died in 323 BCE. Bible Odyssey's Second Temple timeline has Jews living under the Hellenistic kingdoms from 332 to 63 BCE, then under Roman rule; Austin says the Hellenistic period as conventionally understood is framed by Alexander's invasion of the Persian Empire (334–323 BC) and the Roman take-over, not complete till 30 BC."
+  note: "Alexander defeated Darius III's army at Issus in 333; his troops then went down the coast of the Levant toward Egypt. He died in 323 BCE. Bible Odyssey's Second Temple timeline has Jews living under the Hellenistic kingdoms from 332 to 63 BCE, then under Roman rule; Austin says the Hellenistic period as conventionally understood is framed by Alexander's invasion of the Persian Empire (334–323 BC) and the Roman take-over, not complete till 30 BC."
   cites:
     - source: honigman-2021-times-of-transition-intro
       locator: "Introduction, p. 1, opening paragraph, sentence beginning “The term “long 3rd century””"
@@ -44,5 +44,13 @@ critical:
     - source: austin-2006-hellenistic-world
       locator: "Introduction, opening sentence (publisher excerpt)"
       quote: "The Hellenistic period as conventionally understood is framed by two military conquests: the first, the Macedonian invasion of the Persian Empire under Alexander, rapid and deliberate (334–323 BC), the second, the Roman take-over of much of the Hellenistic world, hardly deliberate but a long-drawn process, which started in the late third century BC but was not complete till 30 BC with the overthrow of the Ptolemaic dynasty after the battle of Actium."
+      read: 2026-11-26
+    - source: kee-2007-cambridge-companion-greek-roman
+      locator: "chapter summary, section “Alexander and his successors”, opening sentences"
+      quote: "In 333 b.c.e. Alexander the Great defeated Darius the Persian and gained access to both Egypt and Mesopotamia. A year later he took Egypt as well as the Mediterranean coast, and Jerusalem, along with all the other cities of the region, submitted."
+      read: 2026-11-26
+    - source: magness-2012-archaeology-holy-land-intro
+      locator: "chapter 1, Introduction, p. 6, paragraph beginning “Historical periods (after ca. 500 B.C.E.)”"
+      quote: "in Palestine the early Hellenistic period begins with Alexander the Great’s conquest in 332 B.C.E."
       read: 2026-11-26
 ---

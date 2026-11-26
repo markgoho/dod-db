@@ -3430,6 +3430,34 @@ austin-2006-hellenistic-world:
   hostAuthored: false
   tradition: null
 
+kee-2007-cambridge-companion-greek-roman:
+  author: "Howard Clark Kee and others"
+  title: "The Cambridge Companion to the Bible, part “Jewish Responses to Greek and Roman Cultures, 322 B.C.E. to 200 C.E.”, chapter summary"
+  series: "Edited by Bruce Chilton; Cambridge Core"
+  publisher: "Cambridge University Press"
+  year: 2007
+  edition: "2nd ed."
+  class: Scholarly
+  kind: book
+  access: "Publisher chapter page, summary open"
+  url: "https://www.cambridge.org/core/books/abs/cambridge-companion-to-the-bible/jewish-responses-to-greek-and-roman-cultures-322-bce-to-200-ce/AD0889D5BDCFE1E03B4DD2779998D475"
+  hostAuthored: false
+  tradition: null
+
+magness-2012-archaeology-holy-land-intro:
+  author: "Jodi Magness"
+  title: "The Archaeology of the Holy Land: From the Destruction of Solomon’s Temple to the Muslim Conquest, chapter 1 “Introduction”"
+  series: null
+  publisher: "Cambridge University Press"
+  year: 2012
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher excerpt PDF, open"
+  url: "https://assets.cambridge.org/97805211/95355/excerpt/9780521195355_excerpt.pdf"
+  hostAuthored: false
+  tradition: null
+
 avi-yonah-ej-temple:
   author: "Michael Avi-Yonah"
   title: "Temple: Second Temple, From the Roman Conquest until the Destruction"

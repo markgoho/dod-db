@@ -13,6 +13,15 @@
 # Second-pass rulings on the first pass's flags: (1) Confirmed: 2021 (Crossref, Penn State University Press, published 2021-06-18; the sample PDF's file dates are 2020-12-22 and 2021-08-04 and it prints no year). (2) Confirmed: 2nd ed., 2006 (Crossref edition 2, 2006-07-06, ISBN 9780521828604); the cited sentence opens the editor's introduction. (3) Enough, kept: the table's rule rows name Judea (539, 301–198, 198–142) and row 332 sits in that sequence; it dates the outcome (Greek rule begins), not a campaign; the title also rests on Honigman. (4) Not a split: the Issus entry dates the battle (333) and gives control of Judea as its consequence with no year; the same source's intro dates the Hellenistic kingdoms from 332. The timeline's Daniel entry (“Persian (538-333 B.C.E.) or early Hellenistic (333-168 B.C.E.) periods”, matched in the embed) gives period bounds for a composition, not a date for the conquest; the source's own period bounds thus run 332 in the intro and 333 there. Flagged for publish. (5) Accepted: a life span's end year is the death year. (6) Accepted: “went down” keeps “plunged down”'s meaning without the image.
 # Flags for publish: (1) Display rests on two Scholarly sources in window (Honigman 2021, “the region” read as Judea from the volume's subject; Henze and Werline 2020, row 332 read as Judea from the table's neighbouring rows) plus Bible Odyssey's timeline intro (Hellenistic kingdoms from 332). (2) #99: Bible Odyssey's Issus entry (333) and the Persian Empire Map (re-fetched, bibleodyssey.org/maps/persian-empire-map/: “until Alexander the Great’s conquest of the ancient Near East in 333 B.C.E.”) are uncited, as is the timeline's Daniel entry (Persian 538-333, early Hellenistic 333-168); read as dating Issus or the empire's end, not Judea. If ruled a date for the conquest of Judea, the display would be “333 or 332 BCE”; the second pass adds no citations. (3) The period's bounds in the note (332–63; 334–323 to 30 BC) differ in scope (Jewish life under the kingdoms vs the Hellenistic world), each attributed; shown, not resolved. (4) E11 dates his death, not the conquest; kept as a Trigger Claim on the subject (CONTEXT.md: it gates the subject, not each statement).
 # Publish resolutions, 2026-11-26 (lead agent, on the second pass's flags): (1) Entry rule met on two in-window Scholarly sources (Honigman 2021; Henze and Werline 2020), each read as Judea from its context, plus the Bible Odyssey timeline intro; accepted. (2) 333 kept out of the display: the Bible Odyssey Issus entry dates the battle and gives control of Syria, Palestine and Egypt as its result with no year of its own; the unsigned Persian Empire Map dates the empire's end across the ancient Near East; the Daniel entry bounds periods for a text. None dates the conquest of Judea, so there is no split to show (#99); no source read gives 333 for Judea. (3) Period bounds: both shown and attributed in the note, as the second pass left them. (4) E11 kept (the Trigger Claim gates the subject). (5) Bible Odyssey timeline registry entry stays unsigned (author: null). draft dropped; sourcesRead, review and secondPass all 2026-11-26.
+# Delegated re-review for issue #212, 2026-11-26 (owner's delegation, #93/#110; no owner check). The issue: neither in-window Scholarly source behind the display names Judea in its cited sentence; read the leads that may name Judea or Jerusalem with a year; if one dates Judea's conquest differently, it goes to the owner as a #99 split, not an in-place edit.
+# Re-review first pass (lead agent, 2026-11-26): every lead fetched by curl into its own scratch folder (HTML stripped, entities decoded, pdftotext plain and -layout), Cambridge Core and De Gruyter Brill also opened in Claude in Chrome. Outcome per lead: (a) Kee et al., Cambridge Companion to the Bible 2nd ed. (2007): the chapter page's open Summary is the chapter's own opening text (section heads “PRESERVATION AND ADAPTATION: THE ENCOUNTER WITH HELLENISM”, “Alexander and his successors”), the same access as fleming-2021-yahweh-before-israel-ch7; it has Darius defeated in 333 and, “A year later”, Jerusalem submitting. Cited as critical/7: the only source read that names Jerusalem; its year is relative (333 + one), so it agrees with 332 rather than dating it outright; the quote carries both sentences. Cambridge Core and Crossref list the book's five authors, not a chapter author, so the registry names all five. (b) Magness (2012): the 332 sentence is in the open chapter 1 Introduction excerpt (p. 6), not chapter 4: “in Palestine the early Hellenistic period begins with Alexander the Great’s conquest in 332 B.C.E.”. Flat; “Palestine” is the book's term for Israel, Jordan and the Palestinian territories (same excerpt), so it names the region, not Judea. Cited as critical/8. Chapter 4's open summary (Issus not named; Darius fights “over the next four years”, Gaugamela 331) read, no 332 sentence; body not open. (c) Adler (2025): Summary only (“Early Hellenistic period (332–175 BCE)”, a period bound); the core-reader redirects to the abstract page in Chrome; body not open. (d) Grabbe vol. 2 (2008): no open copy found (retail e-book and library-only records). (e) Times of Transition's other chapters: De Gruyter Brill, read in Chrome, marks the book and every chapter “Requires Authentication”; no free or open-access chapter; the only open text remains the Eisenbrauns sample introduction (critical/1). The publisher's blurb (“the period from Alexander’s conquest in 332 BCE”) is publisher copy, not cited.
+# Re-review result: no lead gives Judea or Jerusalem a year other than 332, so no #99 split and no owner route. Title, display, from, precision and note unchanged; two citations added (critical/7 Kee, critical/8 Magness intro) with their registry entries. The note's Issus 333 stays consistent with cyrus-babylon (Darius III's defeat 334–330, Silverman): Kee's “defeated Darius” in 333 is Issus, not the final defeat, and is not added to the note. Quotes script-matched against the saved text (NFKC, whitespace, quotes, dashes, line-break hyphens normalised): 2/2 new, each found once. Trigger Claims unchanged.
+# Flags for the re-review second pass: (1) Kee: is a relative year (“A year later” after 333) enough to cite beside a 332 display? Cut if in doubt. (2) Kee: chapter summary is the chapter's own text? Edition and year (Crossref edition 2, 2007). (3) Magness: “Palestine” is wider than Judea; the cite backs 332 for the conquest of the region that includes Judea; cut if it reads as a period bound only. (4) Magness locator p. 6 and paragraph start (indented in -layout output).
+# Re-review second pass (#212, 2026-11-26): a fresh agent that did not build the entry or its first re-review pass, working from its own scratch folder only. Re-fetched all eight cited pages by curl (browser UA): the Honigman sample PDF, the SBL EJMI PDF, the Bible Odyssey gallery page and its Tiki-Toki embed, Newman's article, the Austin excerpt, the Kee Cambridge Core chapter page (Summary served in the curl HTML; Chrome not needed), the Magness excerpt PDF. pdftotext plain and -layout (-bbox for Honigman pages 1–2); HTML tags stripped, entities decoded. Editions and years re-checked in Crossref (Kee, Magness, Austin, Honigman). Quotes matched case-sensitively by one script (NFKC, whitespace, curly quotes, dashes, soft and line-break hyphens normalised; no looser rule): 8/8, each found once in the stripped text (Bible Odyssey's intro occurs three times in the raw embed HTML, one text). Trigger Claims matched by script as normalised substrings of the line at that timestamp and speaker in the final Transcripts: 3/3, states critical; read about two minutes either side.
+# Re-review second pass changed: the note's “Alexander defeated Darius III at Issus in 333” became “Alexander defeated Darius III's army at Issus in 333”, narrowed to Newman's “victorious over King Darius III’s army at Issus in 333”, so it names the battle and no longer reads as a second date for the defeat cyrus-babylon gives as 334–330. Title, display, from, precision unchanged; no citation, Trigger Claim or registry entry cut.
+# Re-review second-pass rulings on the first pass's flags: (1) Kee kept: CONTEXT.md's Critical Date admits a relative date; 333 plus “A year later” agrees with 332 and is recorded as agreeing, not as a flat date. (2) Kee's Summary accepted as the chapter's own opening text (it opens with the chapter's section heads and runs on as prose; same access as fleming-2021-yahweh-before-israel-ch7); Crossref edition 2, 2007, five authors, editor Bruce Chilton. (3) Magness kept: the sentence dates an event (the conquest in 332), not only a period bound; its scope is Palestine, so it agrees with the display while the title's Judea rests on critical/1–2 and Kee's Jerusalem. (4) Confirmed: printed folio 6, chapter “one / INTRODUCTION”, paragraph indented at “Historical periods (after ca. 500 B.C.E.)”.
+# Re-review second-pass flags: (1) Registry kee-2007-cambridge-companion-greek-roman lists the five authors but not the editor Bruce Chilton that Crossref and the page give; left as is (author line). (2) Bible Odyssey's uncited Issus entry carries embed startDate 0333 BC under the title “Alexander the Great conquers the Persian Empire”; still read as dating the battle and the empire's conquest, not Judea; no #99 split, no owner route.
+# Re-review publish resolutions, 2026-11-26 (lead agent, on the second pass's flags, conservatively): (1) Kee registry editor: added “Edited by Bruce Chilton” to the entry's series line (Cambridge Core page and Crossref name him); the author line keeps the five authors. (1b) Preview showed the short cite as “Levine and Saldarini 2007”: source-short-cites.html splits authors only on “ and ”, so a list of three or more surnames (or “et al.”) keeps the last two words; the registry author line is now “Howard Clark Kee and others” (short cite “Kee and others 2007”), first author as Cambridge Core and Crossref order them; all five (Kee, Meyers, Rogerson, Levine, Saldarini) are in the sources note. The template bug is filed as its own issue. (2) Bible Odyssey's uncited Issus entry (333): agreed, it dates the battle, not Judea; no #99 split, nothing for the owner. Second pass's note narrowing (“Darius III's army at Issus”) accepted: it keeps the note consistent with cyrus-babylon's 334–330 for Darius's defeat. Delegated re-review for issue #212 (owner's delegation, #93/#110): sourcesRead, review and delegation.secondPass all 2026-11-26.
 review: 2026-11-26
 delegation:
   { by: owner, date: 2026-11-23, issue: "#110", secondPass: 2026-11-26 }
@@ -21,129 +30,155 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Honigman, Times of Transition introduction, first page. Conquest “of the region in 332 BCE”, flat; the region is Judea (volume on Judea in the early Hellenistic period). Scholarly, in window. See flag 1. Second pass: matched once. Locator corrected: the sentence is mid-paragraph on p. 1 (line x-positions: the page's paragraphs indent 12 pt, “The term” does not), so “paragraph beginning” became “opening paragraph, sentence beginning”. “The region” is the conference's and volume's Judea (“Judea in the Long 3rd Century BCE”); footnote 1 belongs to Antiochus III's 198, not 332. Dates the conquest, 332 flat. Year 2021 confirmed (Crossref 10.1515/9781646021451-004, Penn State University Press, 2021-06-18). Pass.",
+      note: "Honigman, Times of Transition introduction, first page. Conquest “of the region in 332 BCE”, flat; the region is Judea (volume on Judea in the early Hellenistic period). Scholarly, in window. See flag 1. Second pass: matched once. Locator corrected: the sentence is mid-paragraph on p. 1 (line x-positions: the page's paragraphs indent 12 pt, “The term” does not), so “paragraph beginning” became “opening paragraph, sentence beginning”. “The region” is the conference's and volume's Judea (“Judea in the Long 3rd Century BCE”); footnote 1 belongs to Antiochus III's 198, not 332. Dates the conquest, 332 flat. Year 2021 confirmed (Crossref 10.1515/9781646021451-004, Penn State University Press, 2021-06-18). Pass. Second pass (#212): Re-fetched (Eisenbrauns sample PDF); matched once, case-sensitive, in plain pdftotext. Page 1 confirmed by -bbox (the “2 sylvie honigman” running head opens PDF page 2). Pass.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Henze and Werline (eds.), EJMI 2nd ed., Chronology p. xi, BCE column: “332 Greek rule under Alexander begins”. Flat. Scholarly, in window. See flag 3. Second pass: matched once by pdftotext -layout. Chronology begins on the page after printed “-ix-”, the table of contents gives “Chronology ... xi”; title page reads “second edition”, “Copyright © 2020 by SBL Press”. Row 332 sits among rows that name Judea (539 “Persian rule of Judea begins”, 301–198 “Ptolemies rule Judea”, 198–142 “Seleucids rule Judea”) and dates the outcome (rule begins), not a campaign. Kept for the display beside critical/1 (flag 3). Pass.",
+      note: "Henze and Werline (eds.), EJMI 2nd ed., Chronology p. xi, BCE column: “332 Greek rule under Alexander begins”. Flat. Scholarly, in window. See flag 3. Second pass: matched once by pdftotext -layout. Chronology begins on the page after printed “-ix-”, the table of contents gives “Chronology ... xi”; title page reads “second edition”, “Copyright © 2020 by SBL Press”. Row 332 sits among rows that name Judea (539 “Persian rule of Judea begins”, 301–198 “Ptolemies rule Judea”, 198–142 “Seleucids rule Judea”) and dates the outcome (rule begins), not a campaign. Kept for the display beside critical/1 (flag 3). Pass. Second pass (#212): Re-fetched (SBL PDF); matched once in pdftotext -layout (plain output splits year and event). Row 332 on the page after printed “-ix-”, among rows naming Judea (539, 301–198, 198–142). Pass.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Bible Odyssey timeline “Second Temple Judaism”, introduction. Persians 538–332, Hellenistic kingdoms after Alexander's conquest 332–63, Roman rule from 63. Backs the display and the note's 332–63 sentence. Reference. See flag 4. Second pass: matched three times in the Tiki-Toki embed, the same intro text each time (meta description, the visible tl-timeline-info block, the introText field); absent from the gallery page's HTML. It dates the Hellenistic kingdoms' rule over the Jews from 332, not a conquest of Judea by name: it agrees with the display rather than dating the title's event; the display rests on critical/1–2. Backs the note's 332–63 sentence. Pass.",
+      note: "Bible Odyssey timeline “Second Temple Judaism”, introduction. Persians 538–332, Hellenistic kingdoms after Alexander's conquest 332–63, Roman rule from 63. Backs the display and the note's 332–63 sentence. Reference. See flag 4. Second pass: matched three times in the Tiki-Toki embed, the same intro text each time (meta description, the visible tl-timeline-info block, the introText field); absent from the gallery page's HTML. It dates the Hellenistic kingdoms' rule over the Jews from 332, not a conquest of Judea by name: it agrees with the display rather than dating the title's event; the display rests on critical/1–2. Backs the note's 332–63 sentence. Pass. Second pass (#212): Re-fetched gallery page and Tiki-Toki embed; the intro string occurs three times in the raw embed HTML (head meta, the tl-timeline-info block, the timeline's JS object; one text) and the full quote matches once in the tag-stripped text; absent from the gallery HTML. Agrees with 332; scope is Jewish life under the kingdoms. Pass.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Newman, Bible Odyssey “Alexander the Great”. Issus 333, then down the Levant coast toward Egypt. Backs the note's first sentence. Reference, in window. See flag 6. Second pass: matched once, in the paragraph beginning “Alexander fulfilled his father’s military ambition” (its own block on the page): the tail of its fourth sentence and the whole fifth. Issus 333, then the Levant coast toward Egypt, no year of its own; the note's “went down the coast” for “plunged down the coast” keeps the meaning (flag 6). Byline Judith H. Newman, dated August 14, 2023 (JSON-LD modified 2026-10-14). Pass.",
+      note: "Newman, Bible Odyssey “Alexander the Great”. Issus 333, then down the Levant coast toward Egypt. Backs the note's first sentence. Reference, in window. See flag 6. Second pass: matched once, in the paragraph beginning “Alexander fulfilled his father’s military ambition” (its own block on the page): the tail of its fourth sentence and the whole fifth. Issus 333, then the Levant coast toward Egypt, no year of its own; the note's “went down the coast” for “plunged down the coast” keeps the meaning (flag 6). Byline Judith H. Newman, dated August 14, 2023 (JSON-LD modified 2026-10-14). Pass. Second pass (#212): Re-fetched; matched once, in the paragraph beginning “Alexander fulfilled his father’s military ambition” (its own <p> block). Newman says “victorious over King Darius III’s army at Issus”, so the note's “Alexander defeated Darius III at Issus in 333” narrowed to “Alexander defeated Darius III's army at Issus in 333”: it now names a battle, not the defeat that cyrus-babylon dates 334–330 (Silverman). Pass.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Newman, opening paragraph: “Alexander the Great (356–323 BCE)”. Backs “He died in 323 BCE.”. See flag 5. Second pass: matched once; the article's opening paragraph. A life span “(356–323 BCE)” backs “He died in 323 BCE.” (flag 5). Pass.",
+      note: "Newman, opening paragraph: “Alexander the Great (356–323 BCE)”. Backs “He died in 323 BCE.”. See flag 5. Second pass: matched once; the article's opening paragraph. A life span “(356–323 BCE)” backs “He died in 323 BCE.” (flag 5). Pass. Second pass (#212): Re-fetched; matched once in the article body's first paragraph (the line above it is the headline dek); byline Judith H. Newman, August 14, 2023. Pass.",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "Austin, Hellenistic World 2nd ed., introduction's opening sentence (Cambridge excerpt). Period framed by the invasion (334–323 BC) and the Roman take-over, complete in 30 BC. Backs the note's last clause (#99 split). Scholarly. See flag 2. Second pass: the quote had “BC )” with a space; the page has “BC</small>)”, so the quote now reads “(334–323 BC)”; then matched once, the introduction's opening sentence. 2nd ed. 2006 confirmed (Crossref 10.1017/cbo9780511818080, edition 2, 2006-07-06, ISBN 9780521828604). Austin reports the convention (“as conventionally understood is framed by”), so the note now says “Austin says the Hellenistic period as conventionally understood is framed by” in place of “Austin frames the Hellenistic period, as conventionally understood, by”. Pass.",
+      note: "Austin, Hellenistic World 2nd ed., introduction's opening sentence (Cambridge excerpt). Period framed by the invasion (334–323 BC) and the Roman take-over, complete in 30 BC. Backs the note's last clause (#99 split). Scholarly. See flag 2. Second pass: the quote had “BC )” with a space; the page has “BC</small>)”, so the quote now reads “(334–323 BC)”; then matched once, the introduction's opening sentence. 2nd ed. 2006 confirmed (Crossref 10.1017/cbo9780511818080, edition 2, 2006-07-06, ISBN 9780521828604). Austin reports the convention (“as conventionally understood is framed by”), so the note now says “Austin says the Hellenistic period as conventionally understood is framed by” in place of “Austin frames the Hellenistic period, as conventionally understood, by”. Pass. Second pass (#212): Re-fetched; matched once, the introduction's opening sentence (“BC</small>)” reads “BC)” once tags are stripped). Crossref: edition 2, 2006-07-06. Pass.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Kee et al., Cambridge Companion to the Bible 2nd ed. (2007), part “Jewish Responses to Greek and Roman Cultures”, Cambridge Core chapter Summary (the chapter's own opening text), section “Alexander and his successors”, its first two sentences. Darius defeated in 333; “A year later” Egypt, the Mediterranean coast and Jerusalem submitted: the only source read that names Jerusalem. Relative year (333 + one = 332), agreeing with the display; not a flat date. The next sentences (Alexander did not visit Jerusalem; Hellenistic period begins with the conquest of the eastern Mediterranean) not used. Scholarly, in window. Re-review first pass (#212); see flags 1–2. Second pass (#212): Re-fetched the Cambridge Core page by curl; matched once in the Summary, which opens with the heads “PRESERVATION AND ADAPTATION: THE ENCOUNTER WITH HELLENISM” and “Alexander and his successors” and runs on as continuous prose: read as the chapter's own opening text, same access as fleming-2021-yahweh-before-israel-ch7 (flag 2). Crossref 10.1017/CBO9781139167376: edition 2, 2007, the five authors, editor Bruce Chilton (page: “Edited by Bruce Chilton”). Relative year kept: CONTEXT.md's Critical Date admits a relative date, and 333 plus “A year later” agrees with 332; recorded as agreeing, not dating flat (flag 1). Pass.",
+    }
+  critical/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Magness, Archaeology of the Holy Land (2012), chapter 1 Introduction, p. 6 (Cambridge publisher excerpt PDF), paragraph beginning “Historical periods (after ca. 500 B.C.E.)”, from its second sentence (“For example, in Palestine …”). Conquest in 332 B.C.E. flat, as the start of the early Hellenistic period in Palestine (the book's term for Israel, Jordan and the Palestinian territories, same excerpt): the region including Judea, not Judea by name. Scholarly, in window. Re-review first pass (#212); see flags 3–4. Second pass (#212): Re-fetched the excerpt PDF; matched once (plain and -layout). Printed folio 6 at the page foot; chapter “one / INTRODUCTION” printed at the excerpt's head; the paragraph starts indented at “Historical periods (after ca. 500 B.C.E.)” (flag 4). The sentence dates an event (the conquest in 332), not only a bound; its scope is Palestine (Israel, Jordan, Palestinian territories, same excerpt), so like critical/3 it agrees with the display while the title's Judea rests on critical/1–2 and Kee's Jerusalem (flag 3). Pass.",
     }
 triggers:
   187@00:55:43:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. The 00:55:43 turn from its start through “in 63 BCE”; the rest (Roman period, Second Temple overlap) dropped. Hedge “or something like that” kept. 332 for Alexander, Hellenistic period 332 to 63 BCE. Read 00:53:37–00:57:12 (period names). Second pass: matched at 00:55:43.530, Dan McClellan, as a normalised substring. Read 00:53:28–00:57:12. 332 flat, Hellenistic period 332 to 63; the hedge “or something like that” is on the death, kept. Pass.",
+      note: "states: critical. The 00:55:43 turn from its start through “in 63 BCE”; the rest (Roman period, Second Temple overlap) dropped. Hedge “or something like that” kept. 332 for Alexander, Hellenistic period 332 to 63 BCE. Read 00:53:37–00:57:12 (period names). Second pass: matched at 00:55:43.530, Dan McClellan, as a normalised substring. Read 00:53:28–00:57:12. 332 flat, Hellenistic period 332 to 63; the hedge “or something like that” is on the death, kept. Pass. Second pass (#212): Re-matched by script at 00:55:43.530, Dan McClellan, normalised substring of that line. Read 00:53:28–00:57:45. Pass.",
     }
   71@00:52:25:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. First sentence of the 00:52:25 turn; “late 300s BCE”, no year. Read 00:50:45–00:54:00 (Dan Beecher asks for the history behind Daniel; the previous turn is the Cyrus 539 Trigger Claim of cyrus-babylon). Second pass: matched at 00:52:25.850, Dan McClellan; the turn's first sentence. Read 00:50:41–00:54:06. “in the late 300s BCE”, no year; the turn's later “drinks himself to death in some way shape or form” is outside the quote and dates nothing. Pass.",
+      note: "states: critical. First sentence of the 00:52:25 turn; “late 300s BCE”, no year. Read 00:50:45–00:54:00 (Dan Beecher asks for the history behind Daniel; the previous turn is the Cyrus 539 Trigger Claim of cyrus-babylon). Second pass: matched at 00:52:25.850, Dan McClellan; the turn's first sentence. Read 00:50:41–00:54:06. “in the late 300s BCE”, no year; the turn's later “drinks himself to death in some way shape or form” is outside the quote and dates nothing. Pass. Second pass (#212): Re-matched by script at 00:52:25.850, Dan McClellan. Read 00:50:22–00:54:06. Pass.",
     }
   11@00:07:34:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Third sentence of the 00:07:34 turn; Alexander's death “around 323 BCE” (hedge kept). Read 00:05:04–00:08:43 (Septuagint in Alexandria; “Alexander the Great had come through in the previous century”). Second pass: matched at 00:07:34.750, Dan McClellan. It is the turn's fifth sentence as printed (“This is.” / “It's divinely instituted.” / “So he.” / “Yeah, a lot of funny stories...” / “But so he dies around 323 BCE...”), not the third. Read 00:05:04–00:08:43. “around” kept. Dates his death, which the note carries (critical/5); the Trigger Claim gates the subject (CONTEXT.md). Pass.",
+      note: "states: critical. Third sentence of the 00:07:34 turn; Alexander's death “around 323 BCE” (hedge kept). Read 00:05:04–00:08:43 (Septuagint in Alexandria; “Alexander the Great had come through in the previous century”). Second pass: matched at 00:07:34.750, Dan McClellan. It is the turn's fifth sentence as printed (“This is.” / “It's divinely instituted.” / “So he.” / “Yeah, a lot of funny stories...” / “But so he dies around 323 BCE...”), not the third. Read 00:05:04–00:08:43. “around” kept. Dates his death, which the note carries (critical/5); the Trigger Claim gates the subject (CONTEXT.md). Pass. Second pass (#212): Re-matched by script at 00:07:34.750, Dan McClellan. Read 00:05:04–00:08:43. Dates the death, gates the subject. Pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Title and display date the conquest of Judea (critical/1–3, 332 flat). Issus, the Levant march, his death and the period's bounds are in the note, each cited (critical/3–6). Second pass: display rests on critical/1–2, which date the conquest and the start of Greek rule in Judea's chronology to 332 flat; critical/3 agrees on 332 as the start of the Hellenistic kingdoms. Note items each cited (critical/3–6). Pass.",
+      note: "Title and display date the conquest of Judea (critical/1–3, 332 flat). Issus, the Levant march, his death and the period's bounds are in the note, each cited (critical/3–6). Second pass: display rests on critical/1–2, which date the conquest and the start of Greek rule in Judea's chronology to 332 flat; critical/3 agrees on 332 as the start of the Hellenistic kingdoms. Note items each cited (critical/3–6). Pass. Second pass (#212): Title and 332 display: critical/1–2 flat, critical/7 (Jerusalem, relative) and critical/8 (Palestine) agreeing. Note's Issus clause narrowed to Darius III's army (critical/4). Pass.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Conquest year: no split among sources read for the conquest of Judea (332). Period's bounds: 332–63 (Bible Odyssey timeline) vs 334–323 to 30 BC (Austin), both shown, attributed (#99). See flag 4. Second pass: confirmed for the conquest year among cited sources. Bible Odyssey's own Issus entry (333, “allowing Alexander to take control of Syria, Palestine (including Judea), and Egypt”) dates the battle, not the control (no year of its own), so no #99 split to show; flagged for publish. Period's bounds: both shown, each attributed; Austin's are the Hellenistic world's, Bible Odyssey's Jewish life under the kingdoms, different scopes, not a contradiction. Pass.",
+      note: "Conquest year: no split among sources read for the conquest of Judea (332). Period's bounds: 332–63 (Bible Odyssey timeline) vs 334–323 to 30 BC (Austin), both shown, attributed (#99). See flag 4. Second pass: confirmed for the conquest year among cited sources. Bible Odyssey's own Issus entry (333, “allowing Alexander to take control of Syria, Palestine (including Judea), and Egypt”) dates the battle, not the control (no year of its own), so no #99 split to show; flagged for publish. Period's bounds: both shown, each attributed; Austin's are the Hellenistic world's, Bible Odyssey's Jewish life under the kingdoms, different scopes, not a contradiction. Pass. Second pass (#212): No source read dates Judea's conquest other than 332; Kee's Jerusalem a year after 333 agrees. Bible Odyssey's Issus entry (embed startDate 0333 BC, “allowing Alexander to take control of … Palestine (including Judea)”) dates the battle and the Persian Empire's conquest, not Judea; concurs, no #99 split. Pass.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; all three Trigger Claims states: critical. Second pass: confirmed. Pass.",
+      note: "No Tradition Date; all three Trigger Claims states: critical. Second pass: confirmed. Pass. Second pass (#212): Confirmed. Pass.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition sources cited. Second pass: confirmed. Pass.",
+      note: "No Tradition sources cited. Second pass: confirmed. Pass. Second pass (#212): Confirmed. Pass.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date cited. HarperCollins “Persia” (“ca. 330 BCE”) and Rhyder (“ca. 323–31 BCE”) are hedged and uncited. Second pass: confirmed; the cited sources give 332, 333, 323, 334–323, 332–63 and 30 BC flat. Pass.",
+      note: "No conditional date cited. HarperCollins “Persia” (“ca. 330 BCE”) and Rhyder (“ca. 323–31 BCE”) are hedged and uncited. Second pass: confirmed; the cited sources give 332, 333, 323, 334–323, 332–63 and 30 BC flat. Pass. Second pass (#212): Confirmed; Kee's “A year later” is relative, not conditional. Pass.",
     }
 sources:
+  kee-2007-cambridge-companion-greek-roman:
+    {
+      agent: pass,
+      owner: "",
+      edition: "2nd ed. (Cambridge University Press, 2007), Cambridge Core chapter page, summary open",
+      note: "Scholarly: academic press. New id (#212). Authors as Cambridge Core and Crossref (10.1017/CBO9781139167376, edition 2, 2007) list them: the book's five; no chapter author given. The part's title prints “322 B.C.E.” as on the page. Second pass (#212): Crossref: edition 2, 2007, Cambridge University Press, the five authors; editor Bruce Chilton not in the registry's author line (an author line, so not added). The part title renders “322 b.c.e.” in the page text (small caps), registry “322 B.C.E.”. Pass.",
+    }
+  magness-2012-archaeology-holy-land-intro:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Cambridge University Press, 2012, publisher excerpt (chapter 1)",
+      note: "Scholarly: academic press. New id (#212). Crossref 10.1017/CBO9781139013833, 2012; ISBN 978-0-521-19535-5 on the excerpt's running head. Second pass (#212): Crossref 10.1017/CBO9781139013833, 2012; ISBN 978-0-521-19535-5 and Jodi Magness on the excerpt. Pass.",
+    }
   honigman-2021-times-of-transition-intro:
     {
       agent: pass,
       owner: "",
       edition: "Times of Transition (Eisenbrauns, 2021), publisher sample chapter",
-      note: "Scholarly: academic press, edited volume. New id. See flag 1. Second pass: Scholarly, in window; 2021 per Crossref (Penn State University Press imprint record; the Eisenbrauns sample PDF prints no year). Pass.",
+      note: "Scholarly: academic press, edited volume. New id. See flag 1. Second pass: Scholarly, in window; 2021 per Crossref (Penn State University Press imprint record; the Eisenbrauns sample PDF prints no year). Pass. Second pass (#212): Crossref 10.1515/9781646021451-004: 2021-06-18, Penn State University Press. Pass.",
     }
   henze-werline-2020-ejmi:
     {
       agent: pass,
       owner: "",
       edition: "2nd ed. (SBL Press, 2020), open PDF",
-      note: "Scholarly: SBL Press, whole book open. New id. Second pass: second edition and © 2020 SBL Press on the PDF's title and copyright pages. Pass.",
+      note: "Scholarly: SBL Press, whole book open. New id. Second pass: second edition and © 2020 SBL Press on the PDF's title and copyright pages. Pass. Second pass (#212): “second edition” on the title page and “Copyright © 2020 by SBL Press” re-found in the PDF text. Pass.",
     }
   bo-timeline-second-temple-judaism:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey timeline gallery, published August 26, 2022, modified February 2, 2024",
-      note: "Reference (Bible Odyssey, SBL). Unsigned. New id. See flag 4. Second pass: gallery page JSON-LD datePublished 2022-08-26, dateModified 2024-02-02; no byline on the page; JSON-LD author is a site account (“Content Creator”); the page's author links sit on related-article cards (Hays, Carman, Litwa, Reid). Intro text from the embed URL in the gallery page. Pass.",
+      note: "Reference (Bible Odyssey, SBL). Unsigned. New id. See flag 4. Second pass: gallery page JSON-LD datePublished 2022-08-26, dateModified 2024-02-02; no byline on the page; JSON-LD author is a site account (“Content Creator”); the page's author links sit on related-article cards (Hays, Carman, Litwa, Reid). Intro text from the embed URL in the gallery page. Pass. Second pass (#212): Embed URL re-found in the gallery HTML; JSON-LD datePublished 2022-08-26, dateModified 2024-02-02; no byline (JSON-LD author is a site account id). Pass.",
     }
   newman-bo-alexander-the-great:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey, August 14, 2023 (modified October 14, 2026)",
-      note: "Reference (Bible Odyssey, SBL). Byline Judith H. Newman. New id. Second pass: byline and August 14, 2023 confirmed; bio (Emmanuel College, University of Toronto) on the page. Pass.",
+      note: "Reference (Bible Odyssey, SBL). Byline Judith H. Newman. New id. Second pass: byline and August 14, 2023 confirmed; bio (Emmanuel College, University of Toronto) on the page. Pass. Second pass (#212): Byline and date re-confirmed. Pass.",
     }
   austin-2006-hellenistic-world:
     {
       agent: pass,
       owner: "",
       edition: "2nd ed. (Cambridge University Press, 2006), publisher excerpt",
-      note: "Scholarly: academic press. New id. See flag 2. Second pass: 2nd ed., 2006 confirmed (Crossref). A sourcebook; the cited sentence is the editor's own introduction. Pass.",
+      note: "Scholarly: academic press. New id. See flag 2. Second pass: 2nd ed., 2006 confirmed (Crossref). A sourcebook; the cited sentence is the editor's own introduction. Pass. Second pass (#212): Crossref edition 2, 2006; the excerpt's “first edition of this book” confirms a later edition. Pass.",
     }
 leads:
-  - "Grabbe, A History of the Jews and Judaism in the Second Temple Period, vol. 1 (Persian Period, 539–331 BCE) and vol. 2 (Early Hellenistic Period, 335–175 BCE): titles seen in bibliographies; not read."
-  - "Adler, Between Yahwism and Judaism ... Early Hellenistic Period (332–175 BCE), Cambridge Elements 2025: abstract only; body not open."
-  - "Magness, The Archaeology of the Holy Land (2012), ch. 4 “The Early Hellenistic Period (332–167 B.C.E.)”: Cambridge Core summary only; not read."
-  - "Kee et al., Cambridge Companion to the Bible 2nd ed. (2007), “Jewish Responses to Greek and Roman Cultures, 322 b.c.e. to 200 c.e.”: Cambridge Core summary only (“A year later he took Egypt as well as the Mediterranean coast, and Jerusalem ... submitted”); not read."
+  - "Grabbe, A History of the Jews and Judaism in the Second Temple Period, vol. 1 (Persian Period, 539–331 BCE) and vol. 2 (Early Hellenistic Period, 335–175 BCE): titles seen in bibliographies; not read. Re-checked for #212: no open copy of vol. 2 found (retail e-book, library-only records)."
+  - "Adler, Between Yahwism and Judaism ... Early Hellenistic Period (332–175 BCE), Cambridge Elements 2025: Summary only; body not open (re-checked for #212 in Chrome: the core-reader redirects to the abstract page). The Summary's “(332–175 BCE)” is a period bound."
+  - "Magness, The Archaeology of the Holy Land (2012), ch. 4 “The Early Hellenistic Period (332–167 B.C.E.)”: Cambridge Core summary read for #212 (Alexander's invasion 334, battles “over the next four years”, Gaugamela 331; no year for Judea); body not open. The book's 332 sentence is in chapter 1, cited as critical/8."
+  - "Times of Transition (2021), chapters other than Honigman's introduction: De Gruyter Brill (read in Chrome for #212) marks the book and every chapter “Requires Authentication”; none open."
   - "Hengel, Cambridge History of Judaism vol. 2 ch. 2, “Alexander's campaign and Palestine (333–331 b.c.e.)”: summary only; 1990 print."
   - "Meyers and Chancey, Alexander to Constantine (Yale 2012); Shipley, The Greek World after Alexander 323–30 BC (2000): cited in other works; not read."
   - "Met Heilbrunn essays, Oxford Classical Dictionary, Smarthistory, Britannica: blocked (429/403); not read."
