@@ -3359,3 +3359,59 @@ martin-rlst152-l4:
   url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-4"
   hostAuthored: false
   tradition: null
+
+martin-rlst152-l23:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 23 transcript: Apocalyptic and Resistance"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-23"
+  hostAuthored: false
+  tradition: null
+
+desilva-bo-sign-of-the-beast:
+  author: "David A. deSilva"
+  title: "The Sign of the Beast"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/the-sign-of-the-beast/"
+  hostAuthored: false
+  tradition: null
+
+boxall-bo-patmos:
+  author: "Ian Boxall"
+  title: "Patmos"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2026
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/patmos/"
+  hostAuthored: false
+  tradition: null
+
+ligonier-mathison-2012-johns-prophecy:
+  author: "Keith Mathison"
+  title: "Understanding John’s Prophecy"
+  series: "Tabletalk"
+  publisher: "Ligonier Ministries"
+  year: 2012
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://learn.ligonier.org/articles/understanding-johns-prophecy"
+  hostAuthored: false
+  tradition: "Keith Mathison, writing for Ligonier Ministries, an international Christian discipleship organization"

@@ -362,3 +362,21 @@
   timestamp: "00:30:12.820"
   states: critical
   text: "They are the rabbis that, that end up establishing Rabbinic Judaism once the temple is destroyed around 70 CE."
+- entry: revelation
+  episode: 39
+  speaker: "Dan McClellan"
+  timestamp: "00:07:24.790"
+  states: critical
+  text: "The text most scholars think was probably written around the early 90s CE."
+- entry: revelation
+  episode: 98
+  speaker: "Dan McClellan"
+  timestamp: "00:49:51.110"
+  states: critical
+  text: "Revelation is late 1st century CE Jewish apocalyptic imagery written by followers of Jesus."
+- entry: revelation
+  episode: 119
+  speaker: "Dan McClellan"
+  timestamp: "00:17:27.500"
+  states: tradition
+  text: "particularly folks who want to put Revelation prior to 70 CE, because if, if it's written in 90, but about the events of 70 CE, well, well, that kind of undermines the notion that it is prophetic."
