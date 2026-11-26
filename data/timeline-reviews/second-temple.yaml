@@ -7,109 +7,126 @@
 # agent: the first pass (2026-11-26). Quotes script-matched against saved copies of each source (whitespace, quotes, dashes, entities normalised): 4 hits, 0 misses. USCCB and Britannica refuse scripted requests; both captured as page text via Claude in Chrome. Trigger Claims matched by script as substrings of their Transcript lines: 3 hits.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Eskenazi's “Most scholars date the actual completion of the restored temple to 516/515 B.C.E.” is uncited; is “515 BCE” right, or does #99 require “516/515 or 515”? (2) Coogan's quote says dedication, Porten and Britannica say completed; the title says completed. (3) Porten's sentence names “Darius” only; the note says “the sixth year of Darius”, not Darius I. (4) Hayes and Porten (EJ Zerubbabel) call the chronology uncertain; the entry carries no uncertainty note.
+# Independent second agent pass 2026-11-26 (#93 delegation, #110): all four sources re-fetched from their registry URLs into a fresh folder (Coogan and Porten by curl; Britannica and USCCB through Claude in Chrome, page text saved); Eskenazi (Bible Odyssey, uncited) also re-fetched for flag 1. All four quotes re-matched by script against the saved copies, read from the entry file (whitespace, quotes, dashes, entities, soft hyphens normalised): 4 hits, 0 misses, each at its locator (Coogan under the “Ezra 3–6” heading; Porten ¶ 6 counted from “The Temple of Zerubbabel”, subsection signed [Bezalel Porten]; Britannica's “Cyrus II” paragraph; NABRE intro ¶ 1). All three Trigger Claims re-matched by script (timestamp, speaker, verbatim substring of the line): 3 hits; about two minutes either side read (E130 00:12:21–00:16:56; E115 00:46:24–00:54:39; E187 00:52:35–00:56:50).
+# Second pass changed: nothing in the entry, triggers or registry; title, display “515 BCE”, from/precision and note all hold against the cited sources' strength and scope. No citation cut; nothing moved to uncited. Review notes updated; Eskenazi's uncited line now carries her second sentence too.
+# Second pass on the first-pass flags: (1) Eskenazi, re-read: says 516/515 twice (“Most scholars date the actual completion of the restored temple to 516/515 B.C.E.”; “the temple was completed in 516/515 B.C.E”). Uncited, so split-shown passes on the cited set; no citation added. Not a disagreement on the event: Porten's 3 Adar = March 12, 515 falls inside the regnal/civil year written 516/515, and #99 says a one-year calendar difference is no debate. Keep “515 BCE”. (2) Coogan's cited sentence says dedication, but the same page says “it was completed by 515 BCE” (paragraph just before the heading) and “after the Temple was completed in 515 BCE” (Third Isaiah), so the source dates completion too; Porten puts the dedicatory sacrifices right after completion. Title kept; quote left as is. (3) Note's “sixth year of Darius” is Porten's wording verbatim; NABRE ¶ 1 (cited) and Coogan name Haggai's Darius as Darius I. Kept unqualified. (4) Coogan, next to the cited sentence, calls Ezra 3–6 “Chronologically ... highly confused” and the period's sources too inconsistent for “any definitive conclusions”; so a cited source hedges the narrative, while giving 515 flatly three times. Porten's Zerubbabel uncertainty is about the actors, not the year. No uncertainty note added (none would date anything differently).
+# Flags for publish: (1) Eskenazi's 516/515 (“Most scholars”) is the only in-class dual form; adding her would be a new citation and, under #99, make the display “516/515 or 515 BCE”; second pass recommends keeping “515 BCE” (see above). Publisher's call. (2) Coogan's quote could be swapped to “it was completed by 515 BCE” to match the title; left to the publisher (same source, different sentence). (3) Coogan's chronology hedge is in critical/1's note only; not shown on the entry. (4) The show's 519 (all three Trigger Claims) is in no cited source; kept verbatim per #99. (5) check:timeline returns before the publish gate for a draft entry, so its pass does not check this file; the file was checked separately by YAML load. Encyclopedia.com prints no EJ edition or year (citation line blank), so registry year/edition null stays.
 review: ""
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary ch. 22, section “Ezra 3–6”, ¶ 1. Dedication in 515. Same source and year as isaiah-56-66 critical/1.",
+      note: "Coogan summary ch. 22, section “Ezra 3–6”, ¶ 1. Dedication in 515. Same source and year as isaiah-56-66 critical/1. Second pass: re-fetched, matched verbatim as ¶ 1 under the “Ezra 3–6” heading. The sentence dates the dedication; the same page dates completion (“completed by 515 BCE”, ¶ before the heading), so it backs the year of the title. Same ¶ hedges: “Chronologically the text is highly confused”. Verified.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Porten, EJ “Temple”, Second Temple history, “The Temple of Zerubbabel”, ¶ 6 (counted from the subsection heading). Completed 3 Adar, year 6 of Darius = March 12, 515. Backs the note's “sixth year of Darius”.",
+      note: "Porten, EJ “Temple”, Second Temple history, “The Temple of Zerubbabel”, ¶ 6 (counted from the subsection heading). Completed 3 Adar, year 6 of Darius = March 12, 515. Backs the note's “sixth year of Darius”. Second pass: re-fetched (curl), matched verbatim; ¶ 6 holds counting from the heading; ¶ 5 dates the resumption to September 21, 520; dedicatory sacrifices follow in the same ¶. Verified.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Temple of Jerusalem”, body paragraph on the Second Temple. Read in a browser (curl 403).",
+      note: "Britannica “Temple of Jerusalem”, body paragraph on the Second Temple. Read in a browser (curl 403). Second pass: re-read via Claude in Chrome, matched verbatim in the paragraph opening “Cyrus II, founder of the Achaemenian dynasty”; preceded by Cyrus's 538 order. Verified.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "NABRE Haggai introduction, ¶ 1. Backs the note's resumption in 520 only, not the completion. Read in a browser (curl 403).",
+      note: "NABRE Haggai introduction, ¶ 1. Backs the note's resumption in 520 only, not the completion. Read in a browser (curl 403). Second pass: re-read via Claude in Chrome, matched verbatim as the last sentence of ¶ 1; same ¶ names Darius I (522–486 B.C.). Verified.",
     }
 triggers:
   130@00:15:08:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Middle of the 00:15:08 turn, on Baruch's setting; keeps “like 519”. The show's 519 differs from the sources' 515; shown verbatim (#99).",
+      note: "states: critical. Middle of the 00:15:08 turn, on Baruch's setting; keeps “like 519”. The show's 519 differs from the sources' 515; shown verbatim (#99). Second pass: script-matched (timestamp, speaker, substring); 00:12:21–00:16:56 read; subject is the Temple's rebuilding, hedge “like” kept. Verified.",
     }
   115@00:52:56:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. First sentence of the turn. “Traditional” means conventional here (issue note), not a tradition's date; no Tradition Date.",
+      note: "states: critical. First sentence of the turn. “Traditional” means conventional here (issue note), not a tradition's date; no Tradition Date. Second pass: script-matched; 00:46:24–00:54:39 read (Haggai ch. 2, Zerubbabel's Temple); says dedication, which the sources date with completion in 515. Verified.",
     }
   187@00:55:06:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring after the turn's opening “Time.”. Relative date (about 20 years after Cyrus's 539); the next turns give “Five nineteen ish”.",
+      note: "states: critical. Substring after the turn's opening “Time.”. Relative date (about 20 years after Cyrus's 539); the next turns give “Five nineteen ish”. Second pass: script-matched; 00:52:35–00:56:50 read; “ish” kept. Verified.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Worded for the completion, which the sources date outright; the rebuilding as a span is dated as one range only by Hayes, hedged. Resumption year in the note.",
+      note: "Worded for the completion, which the sources date outright; the rebuilding as a span is dated as one range only by Hayes, hedged. Resumption year in the note. Second pass: agreed; no cited source gives a range.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "No split among cited sources: all give 515. Eskenazi's 516/515 is uncited (flag 1).",
+      note: "No split among cited sources: all give 515. Eskenazi's 516/515 is uncited (flag 1). Second pass: pass on the cited set; Eskenazi re-read, not a disagreement on the event (see header).",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; no trigger has states: tradition.",
+      note: "No Tradition Date; no trigger has states: tradition. Second pass: confirmed; E115's “traditional” read in context as conventional.",
     }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition sources cited." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition sources cited. Second pass: confirmed.",
+    }
   conditional-not-critical:
-    { agent: pass, owner: "", note: "No conditional date." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date. Second pass: confirmed.",
+    }
 sources:
   coogan-brief-4e-summary-ch22:
     {
       agent: pass,
       owner: "",
       edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
-      note: "Reference (#86). Already in the registry (isaiah-56-66).",
+      note: "Reference (#86). Already in the registry (isaiah-56-66). Second pass: page title “A Brief Introduction to the Old Testament 4e”.",
     }
   porten-ej-temple:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica as reproduced on Encyclopedia.com; subsection signed [Bezalel Porten]",
-      note: "Reference (encyclopedia), like paul-ej-creation-cosmogony.",
+      note: "Reference (encyclopedia), like paul-ej-creation-cosmogony. Second pass: signature [Bezalel Porten] closes the subsection; page prints no EJ edition or year.",
     }
   britannica-temple-of-jerusalem:
     {
       agent: pass,
       owner: "",
       edition: "Online, “most recently revised and updated by Adam Zeidan”",
-      note: "Reference (encyclopedia), like britannica-shroud-of-turin.",
+      note: "Reference (encyclopedia), like britannica-shroud-of-turin. Second pass: reviser line confirmed.",
     }
   nabre-haggai-intro:
     {
       agent: pass,
       owner: "",
       edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
-      note: "Reference (#86; CONTEXT.md).",
+      note: "Reference (#86; CONTEXT.md). Second pass: USCCB page confirmed; no year printed.",
     }
 leads:
   - "Edelman, The Origins of the Second Temple (2005), redating the rebuilding to c. 465 BCE under Artaxerxes I: known only through Boda's JHS 7 (2007) review summary; book not open."
   - "Williamson, cited for “conventionally dated to 515” in Marko Marina's guest post on bartehrman.com (out of class)."
   - "Grabbe, History of the Jews and Judaism in the Second Temple Period, vol. 1 (2004); Boda, “Haggai, Book of”, NIDB (2007): bibliography pointers, not read."
 uncited:
-  - "Eskenazi, Bible Odyssey “The Destruction and Reconstruction of the Temple”: “Most scholars date the actual completion of the restored temple to 516/515 B.C.E.” Read; not cited: the only in-class 516 form, a dual form; flagged for the second pass."
+  - "Eskenazi, Bible Odyssey “The Destruction and Reconstruction of the Temple”: “Most scholars date the actual completion of the restored temple to 516/515 B.C.E.” Read; not cited: the only in-class 516 form, a dual form; flagged for the second pass. Second pass: re-read; also “the temple was completed in 516/515 B.C.E, during the time of the Persian king Darius (525-486 B.C.E.)”. Kept uncited (no citations added)."
   - "Schiffman, Bible Odyssey “The Second Temple”: “The second temple was completed around 515 B.C.E.” and “began construction of the second temple in 521 B.C.E.” Read; not cited: agrees on 515 (hedged “around”); 521 start differs from NABRE's 520 and is not shown."
   - "Schiffman, From Text to Tradition excerpt on COJS: “In March of 515 B.C.E. the Temple was completed amidst great rejoicing.” Read; not cited: agrees; excerpt hosting is secondary."
   - "Chan, Bible Odyssey video transcript: “probably dedicated in 515 B.C.E.” Read; not cited: agrees, hedged."
