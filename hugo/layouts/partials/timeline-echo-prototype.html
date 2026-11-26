@@ -1,0 +1,45 @@
+{{- /*
+  PROTOTYPE (tradition gap, variant E): a critically placed entry's Tradition
+  Date, at its own year in the tradition lane. Takes the entry page.
+  */
+-}}
+{{- $e := . -}}
+{{- $p := $e.Params -}}
+{{- $c := $p.critical -}}
+{{- $t := $p.tradition -}}
+{{- $id := $e.File.ContentBaseName -}}
+{{- $cFrom := float $c.from -}}
+{{- $cTo := float ($c.to | default (cond (eq $c.precision "century") (add $cFrom 99) $cFrom)) -}}
+{{- $tFrom := float $t.from -}}
+{{- $gap := sub (div (add $cFrom $cTo) 2) (div (add $tFrom (float ($t.to | default $tFrom))) 2) -}}
+{{- $abs := math.Abs $gap -}}
+<li
+  class="timeline-entry timeline-entry--echo"
+  id="{{ $id }}-tradition"
+  tabindex="-1">
+  <span
+    class="timeline-entry__node timeline-entry__node--echo"
+    aria-hidden="true"></span>
+  <div
+    class="timeline-entry__tradition echo-card"
+    style="anchor-name: --echo-{{ $id }}">
+    <p class="echo-card__title">{{ $e.Title }}</p>
+    <p class="timeline-entry__label">
+      {{ $t.holder }}{{ if strings.Contains $t.holder "," }},{{ end }} holds
+    </p>
+    <p class="timeline-entry__date timeline-entry__date--tradition">
+      {{ $t.display }}
+    </p>
+    <a class="echo-card__jump" href="#{{ $id }}">
+      {{- if lt $abs 30 -}}
+        Scholars: about the same,
+        {{ $c.display }}
+      {{- else -}}
+        {{ cond (gt $gap 0) "↓" "↑" }} Scholars date it
+        ~{{ lang.FormatNumber 0 (mul (math.Round (div $abs 10)) 10) }} years
+        {{ cond (gt $gap 0) "later" "earlier" }}:
+        {{ $c.display }}
+      {{- end -}}
+    </a>
+  </div>
+</li>

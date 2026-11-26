@@ -351,3 +351,85 @@ html:not([data-proto="d"], [data-proto="cd"]) .gap-strip {
   min-inline-size: 16rem;
   text-align: center;
 }
+
+/* ---------- Variant E: the tradition at its own date, linked ---------- */
+
+html:not([data-proto="e"]) .timeline-entry--echo,
+html:not([data-proto="e"]) .echo-stub,
+html:not([data-proto="e"]) .echo-line,
+html[data-proto="e"]
+  .timeline-entry:not(.timeline-entry--by-tradition, .timeline-entry--echo)
+  > .timeline-entry__tradition {
+  display: none;
+}
+
+/* With its card moved away, the critical node loses its tradition-side connector. */
+html[data-proto="e"]
+  .timeline-entry--paired:not(.timeline-entry--by-tradition)
+  > .timeline-entry__node::after {
+  display: none;
+}
+
+/* The echo: hollow ring on the axis, card in the tradition lane only. */
+.timeline-entry--echo > .timeline-entry__node {
+  background: var(--tan-000);
+  border: var(--border-width-sm) dashed var(--tan-500);
+}
+
+.timeline-entry--echo > .timeline-entry__node::before {
+  display: none;
+}
+
+/* Echo and stub fill the tradition lane, so the line leaves both from the same edge. */
+.echo-card,
+html[data-proto="e"] .echo-stub {
+  justify-self: stretch;
+}
+
+.echo-card {
+  margin-block-start: 0;
+  position: relative;
+}
+
+.echo-card__title {
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+.echo-card__jump,
+.echo-stub {
+  font-size: var(--step--1);
+}
+
+/* Where the tradition card was: a small linked stub in the tradition lane. */
+.echo-stub {
+  border: var(--border-width-sm) dashed var(--tan-500);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-text-main);
+  display: grid;
+  gap: var(--space-4xs);
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: start;
+  margin-block-start: calc(var(--node-at) - var(--space-xs));
+  padding: var(--space-3xs) var(--space-xs);
+  text-decoration: none;
+}
+
+.echo-stub:hover,
+.echo-card__jump:hover {
+  text-decoration: underline;
+}
+
+/* The line: anchor-positioned in the spine from one card to the other, in the gutter before the tradition lane. */
+.timeline-spine {
+  position: relative;
+}
+
+.echo-line {
+  border-block: var(--border-width-sm) dashed var(--tan-500);
+  border-inline-end: var(--border-width-sm) dashed var(--tan-500);
+  border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+  pointer-events: none;
+  position: absolute;
+}

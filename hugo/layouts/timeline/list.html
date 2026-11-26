@@ -21,6 +21,17 @@
 
   {{ $eras := partial "timeline-eras.html" $placed }}
 
+  {{/* PROTOTYPE (tradition gap, variant E): each Tradition Date of a critically placed entry also sits at its own year, as an echo in the tradition lane. The axis uses these eras; the minimap keeps $eras. */}}
+  {{ $echoes := slice }}
+  {{ range $placed }}
+    {{ $p := .page.Params }}
+    {{ if and (eq .by "critical") $p.tradition (isset ($p.tradition | default dict) "from") }}
+      {{ $key := printf "%07d|2|%s" (add (int $p.tradition.from) 1000000) (lower .page.Title) }}
+      {{ $echoes = $echoes | append (dict "key" $key "page" .page "year" $p.tradition.from "by" "echo") }}
+    {{ end }}
+  {{ end }}
+  {{ $axisEras := partial "timeline-eras.html" (sort ($placed | append $echoes) "key") }}
+
   {{ $sourceIds := partial "timeline-source-ids.html" $ordered }}
   {{ $shortCites := partial "source-short-cites.html" $sourceIds }}
   {{ $registry := index hugo.Data "external-sources" }}
@@ -108,7 +119,7 @@
             class="timeline-axis"
             role="list"
             aria-label="Timeline Entries in date order, by era">
-            {{ range . }}
+            {{ range $axisEras }}
               {{ $eraClass := cond (gt (len .items) 0) "timeline-era" "timeline-era timeline-era--empty" }}
               <li
                 class="{{ $eraClass }}"
@@ -118,6 +129,10 @@
                 {{ with .items }}
                   <ol class="timeline-era__entries" role="list">
                     {{ range . }}
+                      {{ if eq .by "echo" }}
+                        {{ partial "timeline-echo-prototype.html" .page }}
+                        {{ continue }}
+                      {{ end }}
                       {{ partial "timeline-entry.html" (merge $ctx (dict
                         "entry" .page
                         "by" .by
@@ -130,6 +145,42 @@
               </li>
             {{ end }}
           </ol>
+          {{/* PROTOTYPE (variant E): one line per echo, from the earlier card to the later, by anchor positioning. */}}
+          {{ $lines := slice }}
+          {{ range $echoes }}
+            {{ $p := .page.Params }}
+            {{ $id := .page.File.ContentBaseName }}
+            {{ $cMid := div (add (float $p.critical.from) (float ($p.critical.to | default $p.critical.from))) 2 }}
+            {{ $tYear := float $p.tradition.from }}
+            {{ $tradEarlier := lt $tYear $cMid }}
+            {{ $lo := math.Min $tYear $cMid }}
+            {{ $hi := math.Max $tYear $cMid }}
+            {{ $taken := slice }}
+            {{ range $lines }}
+              {{ if and (lt .lo $hi) (gt .hi $lo) }}
+                {{ $taken = $taken | append .col }}
+              {{ end }}
+            {{ end }}
+            {{ $col := 0 }}
+            {{ range seq (len $taken) }}
+              {{ if in $taken $col }}{{ $col = add $col 1 }}{{ end }}
+            {{ end }}
+            {{ $lines = $lines | append (dict "lo" $lo "hi" $hi "col" $col) }}
+            {{ $top := cond $tradEarlier (printf "--echo-%s" $id) (printf "--stub-%s" $id) }}
+            {{ $bottom := cond $tradEarlier (printf "--stub-%s" $id) (printf "--echo-%s" $id) }}
+            {{ $style := printf "--col: %d; top: anchor(%s center); bottom: anchor(%s center); left: anchor(%s right); width: calc(var(--space-s) + %d * var(--space-xs))" $col $top $bottom $top $col }}
+            <span
+              class="echo-line"
+              data-echo-line="{{ $id }}"
+              aria-hidden="true"
+              style="{{ $style | safeCSS }}"></span>
+          {{ end }}
+          <style>
+            {{ range $echoes }}
+              {{ $id := .page.File.ContentBaseName }}
+              {{ printf `html[data-proto="e"] .timeline-spine:has(#%s:is(:hover, :focus-within, :target), #%s-tradition:is(:hover, :focus-within, :target)) [data-echo-line="%s"]` $id $id $id | safeCSS }} { border-color: var(--color-action); border-style: solid; z-index: 2; }
+            {{ end }}
+          </style>
         </section>
       </div>
     {{ end }}
@@ -232,6 +283,7 @@
           ["a", "Current"],
           ["b", "Minimap gap brackets"],
           ["c", "Gap chart"],
+          ["e", "Tradition at its own date, linked"],
           ["d", "Gap strip on each entry"],
           ["cd", "Gap chart + strips"],
           ["b", "Minimap brackets (old)"],

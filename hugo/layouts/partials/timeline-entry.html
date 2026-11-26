@@ -134,6 +134,29 @@
     </div>
   {{ end }}
 
+  {{- /* PROTOTYPE (tradition gap, variant E): the stub where the tradition card was; the card itself sits at its own date. */}}
+  {{ if and (eq $.by "critical") $t (isset $t "from") }}
+    {{ $id := $e.File.ContentBaseName }}
+    <a
+      class="echo-stub"
+      href="#{{ $id }}-tradition"
+      style="anchor-name: --stub-{{ $id }}">
+      {{ $cF := float $c.from }}
+      {{ $cT := float ($c.to | default (cond (eq $c.precision "century") (add $cF 99) $cF)) }}
+      {{ $g := sub (div (add $cF $cT) 2) (div (add (float $t.from) (float ($t.to | default $t.from))) 2) }}
+      <span class="type-eyebrow">
+        {{- if lt (math.Abs $g) 30 }}
+          Tradition: about the same
+        {{- else }}
+          {{ cond (gt $g 0) "↑" "↓" }} Tradition:
+          ~{{ lang.FormatNumber 0 (mul (math.Round (div (math.Abs $g) 10)) 10) }}
+          yrs {{ cond (gt $g 0) "earlier" "later" }}
+        {{ end -}}
+      </span>
+      {{ $t.display }}
+    </a>
+  {{ end }}
+
   {{- /* PROTOTYPE (tradition gap, variant D): the gap strip, on the Timeline's one shared scale. */}}
   {{ with $.gapScale }}
     {{ if and (eq $.by "critical") $t (isset $t "from") }}
