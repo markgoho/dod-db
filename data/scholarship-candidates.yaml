@@ -249,3 +249,19 @@ statements:
         timestamp: "00:40:42.040"
         text: "So, so, like, just very briefly, scholars are uniformly convinced that the Book of Daniel was not completed until well into the second century after the Hasmonean revolt, and that the prophecies in the Hebrew portion, beginning in chapter 8 through to 12, were all written after the fact and, you know, set in the mouth of Daniel as if they were predictions of the future."
     notes: "Conflict with date: “uniformly convinced” states unanimity; the statement reports, from Suchard (JBL 2022) and Valeta's Bible Odyssey box, that some still hold a sixth-century date. The second-century date itself agrees. Logged at the #155 first pass, 2026-11-25."
+  - page: david-and-the-united-monarchy
+    question: "Who killed Goliath?"
+    triggers:
+      - episode: 52
+        speaker: "Dan McClellan"
+        timestamp: "00:16:16.110"
+        text: "And so the scholarly consensus is that there was a story about a dude named Elhanan who killed this giant named Goliath. And suddenly there's a five finger discount going on by whoever is responsible for the David history."
+    notes: "Conflict with goliath: “the scholarly consensus is” states a consensus; the statement reports the Elhanan explanation as one explanation (HarperCollins “Some interpreters”, EJ “more likely”) and names dissent (EJ's Elhanan = David; Garsiel on the duel's general reality). Logged at the #150 publish, 2026-11-25."
+  - page: david-and-the-united-monarchy
+    question: "Did David and Solomon rule a united kingdom of Israel and Judah?"
+    triggers:
+      - episode: 139
+        speaker: "Dan McClellan"
+        timestamp: "00:48:17.291"
+        text: "and here's the thing, there was never a single united kingdom. Scholars are pretty sure that Judah in the south and Israel in the north were originally separate kingdoms."
+    notes: "Conflict with united-monarchy: “there was never a single united kingdom. Scholars are pretty sure …” states near-unanimity; the statement reports a debate, with Faust and Sapir and Garfinkel et al. arguing for an early state. The same turn goes on “maybe … Israel might have subjugated the southern kingdom”. Logged at the #150 publish, 2026-11-25."
