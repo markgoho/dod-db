@@ -2,7 +2,6 @@
 title: "The Priestly source, including Genesis 1"
 entryKind: composition
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-22
 related:
   { books: [genesis], tags: [priestly-source], topics: [priestly-source] }

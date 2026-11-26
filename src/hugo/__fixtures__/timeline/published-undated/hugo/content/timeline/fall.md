@@ -2,7 +2,6 @@
 title: "Fall of the City"
 entryKind: event
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-23
 related: { books: [], tags: [], topics: [] }
 undated:

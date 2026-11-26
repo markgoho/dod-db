@@ -152,6 +152,10 @@ _Avoid_: Chronology, dating page
 One subject on the **Timeline**, either an event or the composition of a text, with its **Critical Date** or a sourced statement that the sources give it no firm date or don't treat it as historical, and optionally a **Tradition Date**.
 _Avoid_: Row, dated claim
 
+**Timeline Entry Page**:
+One **Timeline Entry** at its own URL (`/timeline/<id>/`), made to be shared: its link preview shows the entry's title, its **Critical Date** or scholarly verdict, and the entry's card image.
+_Avoid_: Entry permalink, share page
+
 **Critical Date**:
 The date, range or relative date a Scholarly or Reference **External Source** gives for a **Timeline Entry**'s subject.
 _Avoid_: Real date, scholarly date
@@ -227,6 +231,9 @@ _Avoid_: Citation, snippet source
 - A new **Episode** can add a **Trigger Claim** to a **Synthesis Page** or suggest a new subject; it never changes a statement.
 - A **Speaker**'s assertion that contradicts a **Scholarship Page** statement is never attached to that page as a **Trigger Claim**; it is logged as a conflict for the owner's next re-review (2026-11-25).
 - A **Synthesis Page** shows the date its **External Sources** were read; its statements change only when the owner re-reviews it.
+- A **Timeline Entry**'s id is a public URL once published (its **Timeline Entry Page** and the **Timeline**'s `#<id>` link): it never changes (#219).
+- Every published **Timeline Entry** has a **Timeline Entry Page** card rendered from its current title and **Critical Date** or scholarly verdict, never its **Tradition Date**, and the **Timeline** has its own card; `check:timeline` fails a missing or stale card (`bun run timeline:cards --stale`) (#219, 2026-11-26, reversing #109's "an entry has no page" and #139's "no image").
+- A link to `/timeline/#<id>` previews the **Timeline**, never the entry: the link to share is the **Timeline Entry Page**'s.
 - A **Scholarship Page** statement's id is a public URL once published (its **Question Page** and the page's `#<id>` link): it never changes.
 - Every statement of a published **Scholarship Page** has a **Question Page** card rendered from its current question and short answer; `check:scholarship` fails a missing or stale card (`bun run scholarship:question-cards <slug>`).
 - An **External Source** is described once and shared by every **Synthesis Page** that cites it.

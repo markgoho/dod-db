@@ -2,7 +2,6 @@
 title: "The Book"
 entryKind: composition
 draft: true
-build: { render: never, list: always }
 sourcesRead:
 related: { books: [], tags: [], topics: [] }
 critical:

@@ -13,12 +13,17 @@
   episodesByNumber string Episode Number → Episode page, for quote-card.html
   shortCites       External Source id → author-date key
   byId             entry id → entry page, for seeAlso
+  timelineHref     set on a Timeline Entry Page (#219) only: the Timeline's
+  URL, which the links to other entries and to source rows then
+  start from. The sources open, and the entry has no link to its
+  own page
   */
 -}}
 {{- $e := .entry -}}
 {{- $p := $e.Params -}}
 {{- $c := $p.critical -}}
 {{- $t := $p.tradition -}}
+{{- $timelineHref := .timelineHref | default "" -}}
 {{- $byTradition := eq .by "tradition" -}}
 {{- $gap := .gap -}}
 {{- /* The Tradition Date has its own row (#214): the card here links to it, or is it. */ -}}
@@ -118,29 +123,39 @@
         {{ with index $.byId . }}
           <p class="timeline-entry__note">
             For when the account was written, see
-            <a href="#{{ .File.ContentBaseName }}">{{ .Title }}</a>.
+            <a href="{{ $timelineHref }}#{{ .File.ContentBaseName }}"
+              >{{ .Title }}</a
+            >.
           </p>
         {{ end }}
       {{ end }}
+      {{ if not $timelineHref }}
+        {{- /* The entry's own page (#219): the URL to share, since a #link has no link preview of its own. */ -}}
+        <p class="timeline-entry__share">
+          <a href="{{ $e.RelPermalink }}">Share this entry</a>
+        </p>
+      {{ end }}
 
 
-      <details class="scholarship-block timeline-entry__sources">
+      <details
+        class="scholarship-block timeline-entry__sources"
+        {{ if $timelineHref }}open{{ end }}>
         <summary class="disclosure-summary">
           <span class="type-eyebrow">Sources and what prompted this entry</span>
         </summary>
         <div class="scholarship-block__body timeline-entry__body">
           {{ with $p.undated }}<p>{{ .statement }}</p>{{ end }}
-          {{ partial "timeline-cites.html" (dict "cites" (or $c $p.undated).cites "shortCites" .shortCites) }}
+          {{ partial "timeline-cites.html" (dict "cites" (or $c $p.undated).cites "shortCites" .shortCites "timelineHref" $timelineHref) }}
           {{ with $p.setting }}
             <p class="timeline-entry__label">
               {{ $labels.setIn }}
               {{ .display }}
             </p>
-            {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites) }}
+            {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites "timelineHref" $timelineHref) }}
           {{ end }}
           {{ with $t }}
             <p class="timeline-entry__label">{{ $holds }}</p>
-            {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites) }}
+            {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites "timelineHref" $timelineHref) }}
           {{ end }}
           {{ with .triggers }}
             <p class="timeline-entry__label">

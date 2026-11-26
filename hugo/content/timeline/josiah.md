@@ -1,7 +1,6 @@
 ---
 title: "Josiah's reign and reform"
 entryKind: event
-build: { render: never, list: always }
 sourcesRead: 2026-11-26
 related: { books: [2-kings, 2-chronicles], tags: [josiah], topics: [josiah] }
 watch: [Josiah, Josiah's reform, cult centralization, book of the law, Hilkiah]

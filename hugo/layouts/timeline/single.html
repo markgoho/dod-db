@@ -1,0 +1,93 @@
+{{ define "head-styles" }}
+  {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/timeline.css") | resources.Concat "css/timeline-entry.css" | resources.Minify }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+  {{/* Timeline Entry Page (#219): one Timeline Entry at its own URL
+    (/timeline/<id>/). It exists to be shared: a link to /timeline/#<id> can't
+    carry a link preview of its own, because a crawler never receives the
+    fragment. The entry is drawn by the Timeline's own partial, never copied.
+
+    At #card the card alone fills a fixed 1200 by 630 image, which
+    `bun run timeline:cards <id>` photographs.
+  */}}
+  {{ $timeline := .Parent }}
+  {{ $id := .File.ContentBaseName }}
+  {{ $onTimeline := printf "%s#%s" $timeline.RelPermalink $id }}
+
+  {{ $episodesByNumber := dict }}
+  {{ range where site.RegularPages "Section" "episodes" }}
+    {{ $episodesByNumber = merge $episodesByNumber (dict (string .Params.episodeNumber) .) }}
+  {{ end }}
+
+  {{/* Short cites from every entry, so a key here is the key of its Sources used row on the Timeline. */}}
+  {{ $placement := partial "timeline-placement.html" $timeline.RegularPages }}
+  {{ $shortCites := partial "source-short-cites.html" (partial "timeline-source-ids.html" $placement.ordered) }}
+  {{ $summary := partial "timeline-entry-summary.html" . }}
+
+
+  <section class="term-page">
+    <header class="page-hero">
+      <p class="page-hero__eyebrow type-eyebrow panel panel--accent">
+        Timeline Entry ·
+        <a href="{{ $timeline.RelPermalink }}">{{ $timeline.Title }}</a>
+      </p>
+      <h1 class="page-hero__title">{{ .Title }}</h1>
+    </header>
+
+    <article class="scholarship-page timeline-entry-page">
+      <div class="scholarship-provenance panel panel--muted">
+        {{ partial "timeline-notice.html" . }}
+      </div>
+
+      <ul class="timeline-unplaced" role="list">
+        {{ partial "timeline-entry.html" (dict
+          "entry" .
+          "by" ""
+          "triggers" (where (hugo.Data.timeline.triggers | default slice) "entry" $id)
+          "episodesByNumber" $episodesByNumber
+          "shortCites" $shortCites
+          "byId" $placement.byId
+          "timelineHref" $timeline.RelPermalink
+          )
+        }}
+      </ul>
+
+      <p>
+        <a class="chip" href="{{ $onTimeline }}"
+          >{{ printf "See it among all %d entries on the %s" (len $timeline.RegularPages) $timeline.Title }}</a
+        >
+      </p>
+    </article>
+
+    {{/* The card image, shown only at #card. It shows the scholarly side only: never a Tradition Date. */}}
+    <div class="question-card" id="card" aria-hidden="true">
+      <p class="question-card__eyebrow">
+        <span>{{ $timeline.Title }}</span>
+        <span class="question-card__flag">What the scholarship says</span>
+      </p>
+      <div class="question-card__main timeline-card__main">
+        <p class="timeline-card__kind">{{ $summary.kind }}</p>
+        <p class="timeline-card__title">{{ .Title }}</p>
+        <p class="timeline-card__date">{{ $summary.date }}</p>
+      </div>
+      <div class="question-card__credit">
+        <p class="question-card__site">
+          {{ site.Title }}
+          <span
+            >{{ printf "%s%s" site.Params.canonicalHost (.RelPermalink | strings.TrimSuffix "/") }}</span
+          >
+        </p>
+        <p>
+          A summary of published scholarship, with every source cited on the
+          page. Not the show’s work.
+        </p>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "footer-scripts" }}
+  {{ partial "json-ld/breadcrumb.html" . }}
+{{ end }}

@@ -2,7 +2,6 @@
 title: "Merneptah stele: earliest mention of Israel outside the Bible"
 entryKind: event
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-25
 related: { books: [], tags: [stele], topics: [] }
 watch: [Merneptah, Merenptah, Israel Stela, Israel Stele]

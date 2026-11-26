@@ -18,13 +18,16 @@ afterAll(async () => {
  * meet every rule: `fall`, and `book` anchored to it with a Tradition Date)
  * with the named fixture's files laid over it.
  */
-async function check(name: string): Promise<string[]> {
+async function check(
+  name: string,
+  { cards = false }: { cards?: boolean } = {},
+): Promise<string[]> {
   const root = path.join(scratch, name);
   await $`cp -R ${path.join(fixtures, "published")} ${root}`.quiet();
   if (name !== "published") {
     await $`cp -R ${path.join(fixtures, name)}/. ${root}`.quiet();
   }
-  return checkTimeline(root);
+  return checkTimeline(root, { cards });
 }
 
 const triggers = "hugo/data/timeline/triggers.yaml";
@@ -36,6 +39,24 @@ describe("checkTimeline", () => {
 
   test("published entries that meet every rule pass", async () => {
     expect(await check("published")).toEqual([]);
+  });
+
+  test("fails an entry that still has render: never", async () => {
+    expect(await check("render-never")).toEqual([
+      "timeline/fall: build has render: never; drop the build line, an entry has its own page",
+    ]);
+  });
+
+  test("published entries whose cards match their text pass", async () => {
+    expect(await check("cards-current", { cards: true })).toEqual([]);
+  });
+
+  test("fails a missing card and a stale card", async () => {
+    const fix = "run bun run timeline:cards --stale";
+    expect(await check("cards-stale", { cards: true })).toEqual([
+      `timeline: no card image; ${fix}`,
+      `timeline/fall: card image is stale (its text changed); ${fix}`,
+    ]);
   });
 
   test("fails when a citation names a source missing from the registry", async () => {

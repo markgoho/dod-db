@@ -78,8 +78,11 @@ export function cardPath(root: string, slug: string, id: string): string {
   return path.join(root, CARD_DIR, slug, `${id}.png`);
 }
 
-export async function readCardManifest(root: string): Promise<CardManifest> {
-  const file = Bun.file(path.join(root, CARD_MANIFEST));
+export async function readCardManifest(
+  root: string,
+  manifestPath = CARD_MANIFEST,
+): Promise<CardManifest> {
+  const file = Bun.file(path.join(root, manifestPath));
   return (await file.exists()) ? ((await file.json()) as CardManifest) : {};
 }
 

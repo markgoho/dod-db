@@ -2,7 +2,6 @@
 title: "Isaiah 56–66 (Third Isaiah)"
 entryKind: composition
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-22
 related: { books: [isaiah], tags: [deutero-isaiah], topics: [deutero-isaiah] }
 watch: [Third Isaiah, Trito-Isaiah, Isaiah 56, Second Temple]

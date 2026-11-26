@@ -2,7 +2,6 @@
 title: "Reigns of David and Solomon"
 entryKind: event
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-25
 related:
   { books: [1-samuel, 2-samuel, 1-kings], tags: [david], topics: [david] }

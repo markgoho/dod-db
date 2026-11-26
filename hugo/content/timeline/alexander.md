@@ -2,7 +2,6 @@
 title: "Alexander conquers Judea"
 entryKind: event
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-26
 related: { books: [daniel], tags: [seleucid-empire], topics: [] }
 watch:

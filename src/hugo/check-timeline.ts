@@ -27,6 +27,13 @@ import {
   type Review,
   type Terms,
 } from "./synthesis-check.js";
+import {
+  checkTimelineCard,
+  entryCardKey,
+  INDEX,
+  indexCardKey,
+  readTimelineCardManifest,
+} from "./timeline-cards.js";
 
 const year = z.number().int();
 
@@ -73,10 +80,15 @@ const SettingSchema = z.object({
   cites: z.array(CiteSchema),
 });
 
+/** The Timeline's own page: what its link-preview card shows. */
+export const IndexSchema = z.object({ title: z.string(), dek: z.string() });
+
 export const EntrySchema = z.object({
   title: z.string(),
   entryKind: z.enum(["event", "composition"]),
   draft: z.boolean().default(false),
+  /** Read only to refuse `render: never`, which entries carried before #219. */
+  build: z.object({ render: z.string().optional() }).optional(),
   sourcesRead: dateValue.nullish(),
   related: z.object({
     books: z.array(z.string()),
@@ -149,6 +161,12 @@ function checkEntry(
   if (id.endsWith("-tradition"))
     errors.push(
       `${at}: an entry id can't end in "-tradition"; that anchor belongs to an entry's Tradition Date`,
+    );
+
+  // An entry has its own page, the Timeline Entry Page (#219).
+  if (entry.build?.render === "never")
+    errors.push(
+      `${at}: build has render: never; drop the build line, an entry has its own page`,
     );
 
   for (const { key, source } of keyedCites(entry)) {
@@ -275,8 +293,12 @@ function links(entry: Entry): ["anchor" | "seeAlso", string][] {
 /**
  * Check every Timeline Entry under `root` (a repo checkout).
  * Returns one message per problem; empty means the check passes.
+ * `cards` also checks the link-preview card images.
  */
-export async function checkTimeline(root: string): Promise<string[]> {
+export async function checkTimeline(
+  root: string,
+  { cards = true }: { cards?: boolean } = {},
+): Promise<string[]> {
   const errors: string[] = [];
   const contentDir = path.join(root, "hugo/content/timeline");
 
@@ -342,6 +364,34 @@ export async function checkTimeline(root: string): Promise<string[]> {
   };
   for (const [id, entry] of entries) {
     if (entry) errors.push(...checkEntry(id, entry, context));
+  }
+
+  // The Timeline and each published entry's page need their link-preview cards.
+  if (cards) {
+    const manifest = await readTimelineCardManifest(root);
+    const index = await loadParsed(
+      IndexSchema,
+      path.join(contentDir, "_index.md"),
+      root,
+      errors,
+      readFrontmatter,
+    );
+    if (index) {
+      errors.push(
+        ...(await checkTimelineCard(
+          root,
+          INDEX,
+          indexCardKey(index),
+          manifest,
+        )),
+      );
+    }
+    for (const [id, entry] of entries) {
+      if (!entry || entry.draft) continue;
+      errors.push(
+        ...(await checkTimelineCard(root, id, entryCardKey(entry), manifest)),
+      );
+    }
   }
 
   return errors;

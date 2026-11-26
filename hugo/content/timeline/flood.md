@@ -2,7 +2,6 @@
 title: "Noah's Flood"
 entryKind: event
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-24
 related: { books: [genesis], tags: [flood, noah], topics: [] }
 watch: [Flood, Noah, ark, global flood, Ararat, Atrahasis, Gilgamesh]

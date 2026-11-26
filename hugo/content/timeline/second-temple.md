@@ -2,7 +2,6 @@
 title: "Second Temple completed"
 entryKind: event
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-26
 related:
   { books: [ezra, haggai, zechariah], tags: [second-temple-period], topics: [] }

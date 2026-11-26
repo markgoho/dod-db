@@ -2,7 +2,6 @@
 title: "Second Temple destroyed"
 entryKind: event
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-26
 related:
   {

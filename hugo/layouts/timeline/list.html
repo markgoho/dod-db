@@ -4,7 +4,7 @@
 {{ end }}
 
 {{ define "main" }}
-  {{/* Entries are front matter only (render: never, list: always); drafts are absent without -D. */}}
+  {{/* Entries are front matter only, each with its own Timeline Entry Page (single.html); drafts are absent without -D. */}}
   {{ $entries := .RegularPages }}
   {{ $allTriggers := hugo.Data.timeline.triggers | default slice }}
 
@@ -200,6 +200,32 @@
         </div>
       </details>
     {{ end }}
+
+    {{/* The Timeline's own card image, shown only at #card (#219): what a
+      link to /timeline/#<id> previews. `bun run timeline:cards` photographs it.
+    */}}
+    <div class="question-card" id="card" aria-hidden="true">
+      <p class="question-card__eyebrow">
+        <span>{{ site.Title }}</span>
+        <span class="question-card__flag">What the scholarship says</span>
+      </p>
+      <div class="question-card__main">
+        <p class="question-card__question">{{ .Title }}</p>
+        <p class="question-card__short">{{ .Params.dek }}</p>
+      </div>
+      <div class="question-card__credit">
+        <p class="question-card__site">
+          {{ site.Title }}
+          <span
+            >{{ printf "%s%s" site.Params.canonicalHost (.RelPermalink | strings.TrimSuffix "/") }}</span
+          >
+        </p>
+        <p>
+          A summary of published scholarship, with every source cited on the
+          page. Not the show’s work.
+        </p>
+      </div>
+    </div>
   </section>
 {{ end }}
 

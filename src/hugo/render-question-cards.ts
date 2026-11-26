@@ -14,28 +14,21 @@
  */
 
 import { Glob } from "bun";
-import { mkdir } from "node:fs/promises";
 import path from "node:path";
 import { PageSchema } from "./check-scholarship.js";
-import { screenshot } from "./chrome.js";
 import {
   CARD_MANIFEST,
   cardKey,
   cardPath,
   readCardManifest,
 } from "./question-cards.js";
+import { baseUrl, renderCards, type CardJob } from "./render-cards.js";
 import { readFrontmatter } from "./synthesis-check.js";
-
-const CARD = { width: 1200, height: 630, scale: 1 };
-const PARALLEL = 4;
 
 async function main(): Promise<void> {
   const root = path.resolve(import.meta.dir, "../..");
   const args = process.argv.slice(2);
-  const base = (
-    args.find(arg => arg.startsWith("--base="))?.slice("--base=".length) ??
-    "http://localhost:1313"
-  ).replace(/\/$/, "");
+  const base = baseUrl(args);
   const staleOnly = args.includes("--stale");
   const contentDir = path.join(root, "hugo/content/scholarship");
 
@@ -53,61 +46,23 @@ async function main(): Promise<void> {
   }
 
   const manifest = await readCardManifest(root);
-  const jobs: { slug: string; id: string; key: string }[] = [];
+  const jobs: CardJob[] = [];
   for (const slug of slugs) {
     const page = PageSchema.parse(
       await readFrontmatter(path.join(contentDir, `${slug}.md`)),
     );
     for (const statement of page.statements) {
+      const name = `${slug}/${statement.id}`;
       const key = cardKey(page.title, statement);
-      const current =
-        manifest[`${slug}/${statement.id}`] === key &&
-        (await Bun.file(cardPath(root, slug, statement.id)).exists());
-      if (!staleOnly || !current) jobs.push({ slug, id: statement.id, key });
+      const out = cardPath(root, slug, statement.id);
+      const current = manifest[name] === key && (await Bun.file(out).exists());
+      if (!staleOnly || !current) {
+        jobs.push({ name, key, url: `${base}/scholarship/${name}/`, out });
+      }
     }
   }
 
-  // Fail fast when the server is down or serves another checkout.
-  if (jobs[0]) {
-    const probe = `${base}/scholarship/${jobs[0].slug}/${jobs[0].id}/`;
-    const response = await fetch(probe);
-    if (!response.ok || !(await response.text()).includes('id="card"')) {
-      throw new Error(
-        `${probe} has no #card (status ${response.status}). Is a Hugo server for this checkout up?`,
-      );
-    }
-  }
-
-  // Saved after every card, so a stalled run keeps what it finished.
-  async function saveManifest(): Promise<void> {
-    const sorted = Object.fromEntries(
-      Object.entries(manifest).toSorted(([a], [b]) => a.localeCompare(b)),
-    );
-    await Bun.write(
-      path.join(root, CARD_MANIFEST),
-      `${JSON.stringify(sorted, undefined, 2)}\n`,
-    );
-  }
-
-  const queue = [...jobs];
-  async function worker(): Promise<void> {
-    for (let job = queue.shift(); job; job = queue.shift()) {
-      const out = cardPath(root, job.slug, job.id);
-      await mkdir(path.dirname(out), { recursive: true });
-      await screenshot(
-        `${base}/scholarship/${job.slug}/${job.id}/#card`,
-        out,
-        CARD,
-      );
-      manifest[`${job.slug}/${job.id}`] = job.key;
-      await saveManifest();
-      console.log(`✓ ${path.relative(root, out)}`);
-    }
-  }
-  await Promise.all(Array.from({ length: PARALLEL }, () => worker()));
-
-  await saveManifest();
-  console.log(`${jobs.length} card(s) written; ${CARD_MANIFEST} updated`);
+  await renderCards(root, CARD_MANIFEST, manifest, jobs);
 }
 
 await main();

@@ -1,7 +1,6 @@
 ---
 title: "Cyrus takes Babylon"
 entryKind: event
-build: { render: never, list: always }
 sourcesRead: 2026-11-26
 related:
   {

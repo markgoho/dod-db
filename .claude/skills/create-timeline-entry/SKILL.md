@@ -43,7 +43,7 @@ Done when the entry rule in `CONTEXT.md` is met or plainly unmet.
 
 Write, with `draft: true` on the entry:
 
-- `hugo/content/timeline/<id>.md`: front matter only, `build: { render: never, list: always }`, `entryKind`, `related` (books, tags and topics that exist; a tag that only redirects to a topic is #161's flag), `watch` (terms `synthesis:gather` greps new Transcripts for) and the blocks from step 2. `sourcesRead` stays empty until publish.
+- `hugo/content/timeline/<id>.md`: front matter only (no `build` line: the entry has its own Timeline Entry Page, #219), `entryKind`, `related` (books, tags and topics that exist; a tag that only redirects to a topic is #161's flag), `watch` (terms `synthesis:gather` greps new Transcripts for) and the blocks from step 2. `sourcesRead` stays empty until publish.
 - `hugo/data/timeline/triggers.yaml`: append the Trigger Claims with `entry: <id>`.
 - `hugo/data/external-sources.yaml`: a registry entry per new source (a Tradition source sets `tradition:`).
 - `data/timeline-reviews/<id>.yaml`: the agent first pass, one item per citation (`critical/1`, `tradition/1` …), Trigger Claim (`<episode>@HH:MM:SS`), source and rule (`TIMELINE_RULES` in `check-timeline.ts`), with `owner: ""`, plus `leads`, `uncited` and header comments (sourcing test, issue instructions, what was dropped and why, flags for the second pass).
@@ -66,15 +66,18 @@ Done when the agent returns and its changes are in the files. Commit "Second age
 
 Resolve the second pass's flags conservatively and record each resolution in the review file's header. A cut that breaks the entry rule takes the step 2 exit.
 
-Then drop `draft`, set `sourcesRead` and the review file's `review` both to the `secondPass` date (the gate checks all three match), and run:
+Then drop `draft`, set `sourcesRead` and the review file's `review` both to the `secondPass` date (the gate checks all three match). Render the entry's link-preview card from the worktree's own `hugo server` (never another checkout's on 1313), then check:
 
 ```bash
+bun run timeline:cards <id> --base=http://localhost:<port>
 bun run check:timeline && bun run check && bun test
 ```
 
-Preview `/timeline/` in Claude in Chrome from the worktree's own `hugo server`: the entry sits in the right era and lane, its sources and Trigger Claims render, its Trigger Claim Episodes link back, and the minimap shows its tick without overlap. With both dates, its Tradition Date sits at its own year (`#<id>-tradition`, a diamond in the minimap) unless the two are under 30 years apart; follow both links between the cards. Never give an entry an id ending in `-tradition`. If the entry extends the axis or crowds other ticks, note it on #175.
+Read the card image (`hugo/static/assets/timeline/<id>.png`): title and date fit, and it shows the Critical Date or verdict, never the Tradition Date. Commit it with `data/timeline-cards.json`.
 
-Commit "Publish the <title> Timeline Entry (#<issue>)", push, and confirm the deploy succeeded and the live `/timeline/#<id>` loads. Comment on the issue (URL, Critical Date or statement, sources behind it, Tradition Date and holder if any, what the second pass changed, leads left open), then close it. File an issue for any follow-on work the leads point to.
+Preview `/timeline/` in Claude in Chrome from the worktree's own `hugo server`: the entry sits in the right era and lane, its sources and Trigger Claims render, its Trigger Claim Episodes link back, and the minimap shows its tick without overlap. With both dates, its Tradition Date sits at its own year (`#<id>-tradition`, a diamond in the minimap) unless the two are under 30 years apart; follow both links between the cards. Open the entry's "Share this entry" link: its Timeline Entry Page (`/timeline/<id>/`) shows the entry with its sources open. Never give an entry an id ending in `-tradition`. If the entry extends the axis or crowds other ticks, note it on #175.
+
+Commit "Publish the <title> Timeline Entry (#<issue>)", push, and confirm the deploy succeeded and the live `/timeline/#<id>` and `/timeline/<id>/` load. Comment on the issue (the `/timeline/<id>/` URL, which is the one that carries a link preview, Critical Date or statement, sources behind it, Tradition Date and holder if any, what the second pass changed, leads left open), then close it. File an issue for any follow-on work the leads point to.
 
 ## Report
 

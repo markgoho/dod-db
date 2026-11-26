@@ -2,7 +2,6 @@
 title: "Daniel"
 entryKind: composition
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-22
 related: { books: [daniel], tags: [daniel], topics: [daniel] }
 watch: [Daniel, Antiochus]

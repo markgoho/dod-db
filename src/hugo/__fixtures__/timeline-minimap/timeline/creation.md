@@ -2,7 +2,6 @@
 title: "Creation of the world"
 entryKind: event
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-24
 related: { books: [genesis], tags: [], topics: [] }
 watch: [creation, Genesis 1, young earth, "6,000 years", Ussher]

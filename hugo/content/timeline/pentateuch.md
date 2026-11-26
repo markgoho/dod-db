@@ -1,7 +1,6 @@
 ---
 title: "The Pentateuch"
 entryKind: composition
-build: { render: never, list: always }
 sourcesRead: 2026-11-26
 related:
   {

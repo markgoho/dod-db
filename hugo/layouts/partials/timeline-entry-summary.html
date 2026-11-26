@@ -1,0 +1,28 @@
+{{- /*
+  What a Timeline Entry Page's link preview and card say (#219). Takes the
+  entry; returns dict:
+  kind         "Event" or "Composition"
+  date         the Critical Date, or the scholarly verdict of an undated
+  entry; never a Tradition Date
+  description  the date with the entry's note, or its undated statement
+  card         the card image path, relative to static/
+  */
+-}}
+{{- $date := partial "timeline-undated-label.html" . -}}
+{{- $description := printf "%s." $date -}}
+{{- with .Params.undated -}}
+  {{- $description = printf "%s %s" $description .statement -}}
+{{- end -}}
+{{- with .Params.critical -}}
+  {{- $date = .display -}}
+  {{- $description = printf "Scholarly and reference sources: %s." (partial "timeline-midsentence.html" $date) -}}
+  {{- with .note -}}
+    {{- $description = printf "%s %s" $description . -}}
+  {{- end -}}
+{{- end -}}
+{{- return dict
+  "kind" (cond (eq .Params.entryKind "event") "Event" "Composition")
+  "date" $date
+  "description" $description
+  "card" (printf "assets/timeline/%s.png" .File.ContentBaseName)
+-}}

@@ -268,6 +268,12 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
         a.attrs.href,
         squash(a.text),
       ]);
+    // Its own page is the link to share (#219), apart from the jump.
+    expect(
+      select(page, '[id="daniel"] .timeline-entry__share a').map(
+        a => a.attrs.href,
+      ),
+    ).toEqual(["/timeline/daniel/"]);
     expect(link("daniel")).toEqual([
       [
         "#daniel-tradition",

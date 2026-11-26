@@ -2,7 +2,6 @@
 title: "Fall of the City, again"
 entryKind: event
 draft: true
-build: { render: never, list: always }
 sourcesRead: 2026-11-23
 related: { books: [], tags: [], topics: [] }
 watch: [fall]

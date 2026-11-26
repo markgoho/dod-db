@@ -2,7 +2,6 @@
 title: "Deuteronomy"
 entryKind: composition
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-22
 related: { books: [deuteronomy], tags: [josiah], topics: [josiah] }
 watch: [Deuteronomy, Josiah, book of the law, Esarhaddon]

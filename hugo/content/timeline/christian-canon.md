@@ -2,7 +2,6 @@
 title: "Earliest surviving list of the 27 New Testament books"
 entryKind: event
 draft: false
-build: { render: never, list: always }
 sourcesRead: 2026-11-26
 related: { books: [revelation], tags: [athanasius-of-alexandria], topics: [] }
 watch:

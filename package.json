@@ -18,6 +18,7 @@
     "check:quotes": "bun run src/hugo/check-quote-citations.ts",
     "check:scholarship": "bun run src/hugo/check-scholarship.ts",
     "check:timeline": "bun run src/hugo/check-timeline.ts",
+    "timeline:cards": "bun run src/hugo/render-timeline-cards.ts",
     "synthesis:gather": "bun run src/scripts/gather-synthesis-candidates.ts",
     "scholarship:checklist": "bun run src/hugo/scholarship-checklist.ts",
     "scholarship:infographic": "bun run src/hugo/render-scholarship-infographic.ts",
