@@ -1,0 +1,19 @@
+{{- /*
+  The Timeline's scripts, for the Timeline and each Timeline Entry Page. Takes
+  the Timeline's page, after timeline-body.html has run.
+  */
+-}}
+{{/* Only when the body drew the minimap: without drafts there is none. */}}
+{{ if .Store.Get "timelineMinimap" }}
+  {{ $js := resources.Get "ts/timeline-minimap.ts" | js.Build (dict "targetPath" "timeline-minimap.js") }}
+  {{ if hugo.IsProduction }}
+    {{ $js = $js | resources.Minify | resources.Fingerprint }}
+  {{ end }}
+  <script src="{{ $js.RelPermalink }}" type="module"></script>
+{{ end }}
+{{/* Copy-link and share buttons on each entry, and the entry's URL in the address bar. */}}
+{{ $links := resources.Get "ts/timeline-entry-links.ts" | js.Build (dict "targetPath" "timeline-entry-links.js") }}
+{{ if hugo.IsProduction }}
+  {{ $links = $links | resources.Minify | resources.Fingerprint }}
+{{ end }}
+<script src="{{ $links.RelPermalink }}" type="module"></script>

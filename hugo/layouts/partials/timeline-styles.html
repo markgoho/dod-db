@@ -1,0 +1,3 @@
+{{- /* The Timeline's styles, for the Timeline and each Timeline Entry Page. Takes nothing. */ -}}
+{{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/timeline.css") (resources.Get "css/timeline-minimap.css") | resources.Concat "css/timeline-list.css" | resources.Minify }}
+<style>{{ $inlineCSS.Content | safeCSS }}</style>

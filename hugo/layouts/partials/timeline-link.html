@@ -1,11 +1,11 @@
 {{- /*
   The only copy of the #109 §4 inbound link line. Takes a Timeline Entry.
-  The link goes to the entry's card on the Timeline, where it sits among the
-  others, not to its Timeline Entry Page, which is for sharing (#219). An undated entry shows its scholarly verdict
+  The link goes to the entry's own URL (#219): the Timeline, opened at the
+  entry's card. An undated entry shows its scholarly verdict
   where the display date goes, as its card and the JSON-LD do.
   */
 -}}
-{{- $href := printf "%s#%s" (site.GetPage "/timeline").RelPermalink .File.ContentBaseName -}}
+{{- $href := printf "%s#%s" .RelPermalink .File.ContentBaseName -}}
 {{- $date := partial "timeline-undated-label.html" . -}}
 {{- with .Params.critical -}}
   {{- $date = .display -}}

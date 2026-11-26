@@ -1,8 +1,7 @@
 {{- /*
   One Timeline Entry's citations: verbatim quote, then short cite (to its
   Sources used row), locator (to the passage) and class.
-  Takes dict: cites, shortCites (id → author-date key), and timelineHref (the
-  Timeline's URL, when the cites are not on the Timeline itself).
+  Takes dict: cites, shortCites (id → author-date key).
   */
 -}}
 {{- $registry := index hugo.Data "external-sources" -}}
@@ -15,7 +14,7 @@
     <li class="scholarship-cite">
       <blockquote class="scholarship-cite__quote">“{{ .quote }}”</blockquote>
       <p class="scholarship-meta">
-        <a href="{{ $.timelineHref }}#source-{{ .source }}">{{ $key }}</a>,
+        <a href="#source-{{ .source }}">{{ $key }}</a>,
         <a href="{{ $url }}" rel="noopener">{{ $locator }}</a> ·
         {{ $s.class }}
       </p>

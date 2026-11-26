@@ -13,17 +13,14 @@
   episodesByNumber string Episode Number → Episode page, for quote-card.html
   shortCites       External Source id → author-date key
   byId             entry id → entry page, for seeAlso
-  timelineHref     set on a Timeline Entry Page (#219) only: the Timeline's
-  URL, which the links to other entries and to source rows then
-  start from. The sources open, and the entry has no link to its
-  own page
+  Each row carries data-entry-url, the entry's own URL (#219), which
+  timeline-entry-links.ts puts in the address bar when the row is the target.
   */
 -}}
 {{- $e := .entry -}}
 {{- $p := $e.Params -}}
 {{- $c := $p.critical -}}
 {{- $t := $p.tradition -}}
-{{- $timelineHref := .timelineHref | default "" -}}
 {{- $byTradition := eq .by "tradition" -}}
 {{- $gap := .gap -}}
 {{- /* The Tradition Date has its own row (#214): the card here links to it, or is it. */ -}}
@@ -56,6 +53,7 @@
   <li
     class="timeline-entry timeline-entry--moved"
     id="{{ $id }}"
+    data-entry-url="{{ $e.RelPermalink }}"
     tabindex="-1"
     aria-label="{{ replace $moved "–" " to " }}">
     <span class="timeline-entry__node" aria-hidden="true"></span>
@@ -88,6 +86,7 @@
   <li
     class="{{ delimit $classes " " }}"
     id="{{ $e.File.ContentBaseName }}"
+    data-entry-url="{{ $e.RelPermalink }}"
     tabindex="-1"
     aria-label="{{ replace $label "–" " to " }}">
     <div class="timeline-entry__card panel">
@@ -129,39 +128,61 @@
         {{ with index $.byId . }}
           <p class="timeline-entry__note">
             For when the account was written, see
-            <a href="{{ $timelineHref }}#{{ .File.ContentBaseName }}"
-              >{{ .Title }}</a
-            >.
+            <a href="#{{ .File.ContentBaseName }}">{{ .Title }}</a>.
           </p>
         {{ end }}
       {{ end }}
-      {{ if not $timelineHref }}
-        {{- /* The entry's own page (#219): the URL to share, since a #link has no link preview of its own. */ -}}
-        <p class="timeline-entry__share">
-          <a href="{{ $e.RelPermalink }}">Share this entry</a>
-        </p>
-      {{ end }}
+      {{/* The link to share is the entry's own URL (#219): the Timeline, opened
+        at this entry, with the entry's link preview. timeline-entry-links.ts
+        reveals the buttons where they work.
+      */}}
+      <div
+        class="scholarship-question__actions timeline-entry__share"
+        id="{{ $e.File.ContentBaseName }}-links">
+        <span class="scholarship-question__copy">
+          <button
+            type="button"
+            class="chip scholarship-question__copy-button"
+            command="--copy-link"
+            commandfor="{{ $e.File.ContentBaseName }}-links"
+            data-url="{{ $e.Permalink }}"
+            hidden>
+            Copy link
+          </button>
+          <span class="scholarship-question__copy-tip" role="status"></span>
+        </span>
+        <button
+          type="button"
+          class="chip scholarship-question__share-button"
+          data-url="{{ $e.Permalink }}"
+          data-title="{{ printf "%s: %s" $e.Title $scholarly }}"
+          hidden>
+          Share
+        </button>
+        <noscript>
+          <a href="{{ $e.RelPermalink }}#{{ $e.File.ContentBaseName }}"
+            >Link to this entry</a
+          >
+        </noscript>
+      </div>
 
-
-      <details
-        class="scholarship-block timeline-entry__sources"
-        {{ if $timelineHref }}open{{ end }}>
+      <details class="scholarship-block timeline-entry__sources">
         <summary class="disclosure-summary">
           <span class="type-eyebrow">Sources and what prompted this entry</span>
         </summary>
         <div class="scholarship-block__body timeline-entry__body">
           {{ with $p.undated }}<p>{{ .statement }}</p>{{ end }}
-          {{ partial "timeline-cites.html" (dict "cites" (or $c $p.undated).cites "shortCites" .shortCites "timelineHref" $timelineHref) }}
+          {{ partial "timeline-cites.html" (dict "cites" (or $c $p.undated).cites "shortCites" .shortCites) }}
           {{ with $p.setting }}
             <p class="timeline-entry__label">
               {{ $labels.setIn }}
               {{ .display }}
             </p>
-            {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites "timelineHref" $timelineHref) }}
+            {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites) }}
           {{ end }}
           {{ with $t }}
             <p class="timeline-entry__label">{{ $holds }}</p>
-            {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites "timelineHref" $timelineHref) }}
+            {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites) }}
           {{ end }}
           {{ with .triggers }}
             <p class="timeline-entry__label">

@@ -461,9 +461,14 @@
   margin: 0;
 }
 
-.timeline-entry__jump,
-.timeline-entry__share {
+.timeline-entry__jump {
   font-size: var(--step--1);
+}
+
+/* Copy link and Share (scholarship-question__actions): small, under the card's text. */
+.timeline-entry__share {
+  font-size: var(--step--2);
+  margin-block-start: var(--space-3xs);
 }
 
 /* Entries not placed on the timeline: plain cards at the reading measure. */
@@ -559,16 +564,8 @@
 }
 
 /*
-  ---------- Timeline Entry Page (#219) ----------
-  One entry at its own URL: the tradition card sits under the entry's card.
+  ---------- Timeline Entry Page card (#219) ----------
 */
-
-.timeline-entry-page .timeline-entry__tradition {
-  grid-column: 1;
-  grid-row: 2;
-  justify-self: stretch;
-  margin-block-start: var(--space-s);
-}
 
 /* Its card image (.question-card, scholarship.css): kind, title, then the date as the headline. */
 .timeline-card__main {
