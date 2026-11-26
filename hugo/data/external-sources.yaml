@@ -3247,3 +3247,73 @@ dandamayev-iranica-babylonia-i:
   url: "https://www.iranicaonline.org/articles/babylonia-i"
   hostAuthored: false
   tradition: null
+
+honigman-2021-times-of-transition-intro:
+  author: "Sylvie Honigman"
+  title: "Introduction"
+  series: "In Sylvie Honigman, Christophe Nihan and Oded Lipschits (eds.), Times of Transition: Judea in the Early Hellenistic Period"
+  publisher: "Eisenbrauns / Penn State University Press"
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher sample-chapter PDF, open"
+  url: "https://www.eisenbrauns.org/sample_chapter/Honigman_introduction.pdf"
+  hostAuthored: false
+  tradition: null
+
+henze-werline-2020-ejmi:
+  author: "Matthias Henze and Rodney A. Werline (eds.)"
+  title: "Early Judaism and Its Modern Interpreters"
+  series: null
+  publisher: "SBL Press"
+  year: 2020
+  edition: "2nd ed."
+  class: Scholarly
+  kind: book
+  access: "Publisher full-text PDF, open"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/11/9780884144816_txt.pdf"
+  hostAuthored: false
+  tradition: null
+
+bo-timeline-second-temple-judaism:
+  author: null
+  title: "Second Temple Judaism (timeline)"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2022
+  edition: "Gallery page modified February 2, 2024"
+  class: Reference
+  kind: article
+  access: "Society website, open (timeline text served by the embedded Tiki-Toki timeline)"
+  url: "https://www.bibleodyssey.org/timeline-gallery/second-temple-judaism"
+  hostAuthored: false
+  tradition: null
+
+newman-bo-alexander-the-great:
+  author: "Judith H. Newman"
+  title: "Alexander the Great"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2023
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/alexander-the-great/"
+  hostAuthored: false
+  tradition: null
+
+austin-2006-hellenistic-world:
+  author: "M. M. Austin"
+  title: "The Hellenistic World from Alexander to the Roman Conquest: A Selection of Ancient Sources in Translation"
+  series: null
+  publisher: "Cambridge University Press"
+  year: 2006
+  edition: "2nd ed."
+  class: Scholarly
+  kind: book
+  access: "Publisher excerpt, open"
+  url: "https://assets.cambridge.org/052182/8600/excerpt/0521828600_excerpt.htm"
+  hostAuthored: false
+  tradition: null

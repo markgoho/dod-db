@@ -1,0 +1,157 @@
+# Review record for the Timeline Entry `alexander` (/timeline/#alexander; #93 shape). Not rendered.
+# Issue #193 (from #108), “Timeline Entry: Alexander and the start of the Hellenistic period”. Issue notes: date Alexander's conquest of the Levant; the period's span goes in the note; critical side only.
+# Sourcing test, 2026-11-26: met. Two Scholarly sources inside the 30-year window date the conquest outright to 332 BCE: Honigman 2021 (“Alexander’s conquest of the region in 332 BCE”, the region being Judea: the volume and conference are on Judea) and Henze and Werline 2020, Chronology (“332 Greek rule under Alexander begins”, beside “539 Persian rule of Judea begins”). A Reference source agrees (Bible Odyssey Second Temple timeline: Persians 538–332, Hellenistic kingdoms 332–63). Kind: event. No Tradition Date: every Trigger Claim states: critical. No setting (event entry).
+# Wording (CONTEXT.md: worded for what its sources date): the issue asks for the Levant; the 332 sources date the conquest of Judea (Honigman's “the region”) and Greek rule in a chronology of Judea, so the title says Judea. Newman (Bible Odyssey) puts the Levant march after Issus 333 with no year of its own; it is in the note, not the display.
+# Split (#99): the Hellenistic period's bounds differ by source. Bible Odyssey's timeline gives 332–63 BCE (Jewish life under the Hellenistic kingdoms, then Roman rule); Austin 2006 gives the period “as conventionally understood” from the invasion (334–323 BC) to the Roman take-over, “not complete till 30 BC”. Both are in the note, each attributed. Other bounds read and not cited: Rhyder (Bible Odyssey, “ca. 323–31 BCE”, hedged); Bugh 2006 (Alexander to Kleopatra, “30 b.c.”); Seeman 2020 (conquest “334–324 BCE”); Bible Odyssey Persian Empire map and the timeline's own Daniel entry (333). The Levant conquest year itself: no source read gives another year (Issus 333 is a battle date; Posen 333 then “within months”; Eastman and Lenzi give 331 for Egypt and Babylon).
+# Trigger Claims (#99: one to three): E187 00:55:43 (issue lead: 332, Hellenistic period 332 to 63 BCE; hedge kept inside the quote: “drinks himself to death or something like that”; the turn compresses 332 with the march to Babylon and his death), E71 00:52:25 (“in the late 300s BCE”), E11 00:07:34 (death “around 323 BCE”; the hedge “around” is kept in the quote). Not kept: E187 00:53:37 (already a Trigger Claim of cyrus-babylon; dates the Persian period's end, and Alexander is named only in the 00:54:01 reply); E187 00:57:12 (Job; 332 as the Persian period's end); E115 00:52:56 (“down until around the, the second half of the fourth century BCE”, hedged, dates the Persian overthrow); E62 00:09:10 and E123 00:39:19 (no year for Alexander).
+# Dropped: the exact day of Alexander's death (Bugh “June 11, 323”; other pages June 10 or 13) and the months of Tyre and Gaza (only an unsigned Warwick chronology and a Durham MA thesis give them). Out of scope.
+# agent: the first pass (2026-11-26). Two research agents (registry families; new open sources) fetched every page by curl into separate scratch folders, HTML stripped, entities decoded, pdftotext for PDFs (-layout for the Henze and Werline chronology, whose columns pair year and event). Britannica, Met Heilbrunn (429), Oxford Classical Dictionary (403), Smarthistory (403) not read. Every cited quote script-matched by the lead agent against the saved text (NFKC, whitespace, quotes, dashes, soft hyphens, entities normalised): 6/6, zero misses, each found once. Trigger Claims matched by script as normalised substrings of their Transcript lines at timestamp and speaker: 3/3.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Honigman's year: 2021 is from the volume's publication (the sample PDF carries 2020/2021 file dates, not a printed year); confirm. (2) Austin: the excerpt confirms a second edition (“When the first edition…”); 2006 is from the ISBN, not printed in the excerpt; confirm. Austin's work is a sourcebook; the cited sentence is the editor's own introduction. (3) Henze and Werline Chronology: the editors' table; row 332 does not name Judea itself (the 539 row does). Enough for “Alexander conquers Judea”? (4) Bible Odyssey timeline: the intro text is served by the embedded Tiki-Toki timeline (https://www.tiki-toki.com/timeline/embed/53310/6300800090/), not in the gallery page's HTML; registry URL is the gallery page. Unsigned (author line “Bible Odyssey”); its Issus entry (“in 333 B.C.E., allowing Alexander to take control of Syria, Palestine (including Judea), and Egypt”) could be read as dating control of Judea to 333: is that a split to show? (5) Newman opening gives his life span (356–323 BCE), used for “He died in 323 BCE.”. (6) Note says “went down the coast of the Levant” for Newman's “plunged down the coast of the Levant”.
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Honigman, Times of Transition introduction, first page. Conquest “of the region in 332 BCE”, flat; the region is Judea (volume on Judea in the early Hellenistic period). Scholarly, in window. See flag 1.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Henze and Werline (eds.), EJMI 2nd ed., Chronology p. xi, BCE column: “332 Greek rule under Alexander begins”. Flat. Scholarly, in window. See flag 3.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bible Odyssey timeline “Second Temple Judaism”, introduction. Persians 538–332, Hellenistic kingdoms after Alexander's conquest 332–63, Roman rule from 63. Backs the display and the note's 332–63 sentence. Reference. See flag 4.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Newman, Bible Odyssey “Alexander the Great”. Issus 333, then down the Levant coast toward Egypt. Backs the note's first sentence. Reference, in window. See flag 6.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Newman, opening paragraph: “Alexander the Great (356–323 BCE)”. Backs “He died in 323 BCE.”. See flag 5.",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Austin, Hellenistic World 2nd ed., introduction's opening sentence (Cambridge excerpt). Period framed by the invasion (334–323 BC) and the Roman take-over, complete in 30 BC. Backs the note's last clause (#99 split). Scholarly. See flag 2.",
+    }
+triggers:
+  187@00:55:43:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. The 00:55:43 turn from its start through “in 63 BCE”; the rest (Roman period, Second Temple overlap) dropped. Hedge “or something like that” kept. 332 for Alexander, Hellenistic period 332 to 63 BCE. Read 00:53:37–00:57:12 (period names).",
+    }
+  71@00:52:25:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. First sentence of the 00:52:25 turn; “late 300s BCE”, no year. Read 00:50:45–00:54:00 (Dan Beecher asks for the history behind Daniel; the previous turn is the Cyrus 539 Trigger Claim of cyrus-babylon).",
+    }
+  11@00:07:34:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Third sentence of the 00:07:34 turn; Alexander's death “around 323 BCE” (hedge kept). Read 00:05:04–00:08:43 (Septuagint in Alexandria; “Alexander the Great had come through in the previous century”).",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Title and display date the conquest of Judea (critical/1–3, 332 flat). Issus, the Levant march, his death and the period's bounds are in the note, each cited (critical/3–6).",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Conquest year: no split among sources read for the conquest of Judea (332). Period's bounds: 332–63 (Bible Odyssey timeline) vs 334–323 to 30 BC (Austin), both shown, attributed (#99). See flag 4.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; all three Trigger Claims states: critical.",
+    }
+  tradition-named:
+    { agent: pass, owner: "", note: "No Tradition sources cited." }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date cited. HarperCollins “Persia” (“ca. 330 BCE”) and Rhyder (“ca. 323–31 BCE”) are hedged and uncited.",
+    }
+sources:
+  honigman-2021-times-of-transition-intro:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Times of Transition (Eisenbrauns, 2021), publisher sample chapter",
+      note: "Scholarly: academic press, edited volume. New id. See flag 1.",
+    }
+  henze-werline-2020-ejmi:
+    {
+      agent: pass,
+      owner: "",
+      edition: "2nd ed. (SBL Press, 2020), open PDF",
+      note: "Scholarly: SBL Press, whole book open. New id.",
+    }
+  bo-timeline-second-temple-judaism:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey timeline gallery, published August 26, 2022, modified February 2, 2024",
+      note: "Reference (Bible Odyssey, SBL). Unsigned. New id. See flag 4.",
+    }
+  newman-bo-alexander-the-great:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey, August 14, 2023 (modified October 14, 2026)",
+      note: "Reference (Bible Odyssey, SBL). Byline Judith H. Newman. New id.",
+    }
+  austin-2006-hellenistic-world:
+    {
+      agent: pass,
+      owner: "",
+      edition: "2nd ed. (Cambridge University Press, 2006), publisher excerpt",
+      note: "Scholarly: academic press. New id. See flag 2.",
+    }
+leads:
+  - "Grabbe, A History of the Jews and Judaism in the Second Temple Period, vol. 1 (Persian Period, 539–331 BCE) and vol. 2 (Early Hellenistic Period, 335–175 BCE): titles seen in bibliographies; not read."
+  - "Adler, Between Yahwism and Judaism ... Early Hellenistic Period (332–175 BCE), Cambridge Elements 2025: abstract only; body not open."
+  - "Magness, The Archaeology of the Holy Land (2012), ch. 4 “The Early Hellenistic Period (332–167 B.C.E.)”: Cambridge Core summary only; not read."
+  - "Kee et al., Cambridge Companion to the Bible 2nd ed. (2007), “Jewish Responses to Greek and Roman Cultures, 322 b.c.e. to 200 c.e.”: Cambridge Core summary only (“A year later he took Egypt as well as the Mediterranean coast, and Jerusalem ... submitted”); not read."
+  - "Hengel, Cambridge History of Judaism vol. 2 ch. 2, “Alexander's campaign and Palestine (333–331 b.c.e.)”: summary only; 1990 print."
+  - "Meyers and Chancey, Alexander to Constantine (Yale 2012); Shipley, The Greek World after Alexander 323–30 BC (2000): cited in other works; not read."
+  - "Met Heilbrunn essays, Oxford Classical Dictionary, Smarthistory, Britannica: blocked (429/403); not read."
+uncited:
+  - "Seeman, “Jewish History from Alexander to Hadrian”, in Henze and Werline 2020, p. 21: “Alexander the Great’s conquest of the Persian Empire (334–324 BCE)”. Dates the whole Persian conquest; not needed."
+  - "Esler, in Henze and Werline 2020, p. 57: “In the Hellenistic period, beginning in the late fourth century BCE”. No year; not needed."
+  - "Henze and Werline 2020 Chronology: “63 Pompey captures Jerusalem; Roman rule of Judea begins”. Not needed; the Bible Odyssey timeline gives 63 for the note."
+  - "Bible Odyssey timeline, entries “Alexander the Great conquers the Persian Empire” (Issus 333, “allowing Alexander to take control of Syria, Palestine (including Judea), and Egypt”), “Alexander dies in Babylon” (323), “Court Tales in Daniel 1-6” (“early Hellenistic (333-168 B.C.E.)”), “Pompey invades Palestine” (63). Not needed; see flag 4 on the Issus entry."
+  - "Bible Odyssey “Persian Empire Map”: empire endured “until Alexander the Great's conquest of the ancient Near East in 333 B.C.E.”. Unsigned; dates the Persian Empire's end broadly, not Judea."
+  - "Silverman, Bible Odyssey “The Persian Period” (registry silverman-bo-persian-period): Persian control of the Levant to “Darius III’s defeat by Alexander III “the Great” (334–330 BCE)”. A range for Darius's defeat; already in cyrus-babylon's note; not needed."
+  - "Rhyder, Bible Odyssey: “During the Hellenistic period (ca. 323–31 BCE)”. Hedged."
+  - "HarperCollins (Bible Odyssey): “Persia” (“ca. 330 BCE”, hedged); “Alexandria” (“Founded in 332 BCE”, dates the city); “Tyre” (“late fourth century BCE”); “Seleucids” (no year)."
+  - "Eastman, Bible Odyssey “Alexandria”: conquest of Egypt “(331 B.C.E.)”; Lenzi, Bible Odyssey “Babylon”: took Babylon “in 331 B.C.E.”. Other places; not needed."
+  - "Hayes, RLST 145 lecture 23 (2006): Macedonian Greece “conquered the Ancient Near East in the 330's”. Decade only."
+  - "Martin, RLST 152 lecture 3 (2009): Granicus 334, died 323 in Babylon; same paragraph says “Darius II” for Darius III. Not needed."
+  - "Ehrman, Brief Introduction to the NT 5e ch. 2 and 3 summaries: “Alexander the Great (356–323 BCE)”; Romans conquered Israel in 63 BCE. Not needed."
+  - "Bugh (ed.), Cambridge Companion to the Hellenistic World (2006) introduction: Alexander “(d. 323)”; most scholars end the period with Kleopatra's death in 30 b.c. Not needed; Austin carries the 30 BC end."
+  - "Posen Library (Bakhos, 2025), “Hellenistic Conquest of the Levant”: Issus 333, then most of Syria fell; Tyre and Gaza “besieged and overtaken within months”; no year for Judea. “The Hellenistic Period in History and Memory”: “conquest of the Persian Empire in 331 BCE”. Not needed."
+  - "Encyclopaedia Iranica “Alexander the Great” (Briant, 1985 print) and “Darius III” (Badian, 1994 print): Issus November/late 333, Gaugamela 1 October 331; outside the 30-year window."
+  - "Encyclopaedia Judaica “Alexander the Great” (Schalit) and “Hellenism” (Momigliano, 323–30 b.c.e.): 1971 text; outside the window."
+  - "Griffiths, Encyclopedia of Religion “Hellenistic Religions” (1987): early phase began “with the conquests of Alexander the Great in 334 bce”. Outside the window."
+  - "Boardman, Durham MA thesis (1999): Tyre January 332, Gaza 332. A master's thesis; not used."
+  - "Coogan and Chapman ch. 25 summary; Hayes RLST 145 lecture 22: no Alexander date."
