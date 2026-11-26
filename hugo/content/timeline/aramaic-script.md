@@ -16,11 +16,11 @@ watch:
     Old Hebrew script,
   ]
 critical:
-  display: "Likely the 6th century BCE, or starting in the Persian period"
+  display: "Likely the 6th century BCE"
   from: -600
-  to: -330
-  precision: period
-  note: "One source dates Judean scribes' adoption of the Aramaic script likely to the sixth century BCE, when it was already widespread in the Neo-Babylonian empire. Two place the replacement of the old Hebrew script in the Persian period (ca. 539–330 BCE); one calls it gradual, reaching even Hebrew texts, and complete in Jewish circles only in the second century CE. On Hebrew texts, Richelle reports that Naveh had the old script still regularly used for them until the third century BCE, while Mizrahi sees the switch as a process starting in the Persian period. Judeans kept using the old script alongside the Aramaic in limited contexts. Placed from the start of the sixth century, the earlier side."
+  to: -501
+  precision: century
+  note: "One source dates Judean scribes' adoption of the Aramaic script likely to the sixth century BCE, when it was already widespread in the Neo-Babylonian empire (ca. 612–539 BCE); Judeans used the old Hebrew script alongside the Aramaic, and later the Jewish, script in limited contexts. Two others date the old script's replacement by the Aramaic script: one in the Persian period, the other starting in Persian-period Yehud and gradual, reaching even Hebrew texts and complete in Jewish circles only in the second century CE. On Hebrew texts, Richelle reports that Naveh had the old script still regularly used for them until the third century BCE, while Mizrahi sees the switch as a process starting in the Persian period."
   cites:
     - source: richelle-2026-ancient-hebrew-inscriptions
       locator: "Introduction, first paragraph"
@@ -35,7 +35,7 @@ critical:
       quote: "Starting in Persian-period Yehud, the old Hebrew script was gradually replaced by the Aramaic script even for Hebrew texts, a switch which was only completely accomplished in Jewish circles in the second century ce."
       read: 2026-11-26
     - source: richelle-2026-ancient-hebrew-inscriptions
-      locator: "§2.3.3 “What Was It Used for?”, third paragraph"
+      locator: "§2.3.3 “What Was It Used for?”, fourth paragraph"
       quote: "Naveh (1987: 117) argued that Paleo-Hebrew was still regularly used to write Hebrew texts until the third century BCE; Mizrahi (2017) regards the switch to Aramaic as a process starting in the Persian period, when he thinks Pentateuchal scrolls were transliterated from Paleo-Hebrew to Aramaic."
       read: 2026-11-26
     - source: richelle-2026-ancient-hebrew-inscriptions
