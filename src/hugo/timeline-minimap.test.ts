@@ -1,7 +1,11 @@
 /**
  * The Timeline minimap (#167 §1–§3), tested at the built page: Hugo builds the
  * site to a temporary directory, with and without drafts, and the tests read
- * the Timeline's HTML. Browser behaviour (scrollspy, fixed rail, popover) is
+ * the Timeline's HTML. The build reads a frozen set of entries from
+ * __fixtures__/timeline-minimap (copies of published entries; Isaiah 56–66 is
+ * a draft there), not hugo/content, so publishing an entry never moves a
+ * tick, slot or band the tests expect (#204). Sources and Trigger Claims
+ * still come from hugo/data. Browser behaviour (scrollspy, fixed rail, popover) is
  * checked in Chrome, not here.
  */
 import { beforeAll, describe, expect, test } from "bun:test";
@@ -10,6 +14,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 
 const HUGO_DIR = path.join(import.meta.dir, "../../hugo");
+const CONTENT_DIR = path.join(import.meta.dir, "__fixtures__/timeline-minimap");
 const hasHugo = Bun.which("hugo") !== null;
 if (!hasHugo) {
   console.warn(
@@ -26,7 +31,15 @@ interface El {
 async function buildTimeline(drafts: boolean): Promise<string> {
   const out = await mkdtemp(path.join(tmpdir(), "timeline-minimap-"));
   const proc = Bun.spawn(
-    ["hugo", "--quiet", "--destination", out, ...(drafts ? ["-D"] : [])],
+    [
+      "hugo",
+      "--quiet",
+      "--contentDir",
+      CONTENT_DIR,
+      "--destination",
+      out,
+      ...(drafts ? ["-D"] : []),
+    ],
     { cwd: HUGO_DIR, stderr: "pipe", stdout: "pipe" },
   );
   if ((await proc.exited) !== 0)
@@ -94,7 +107,7 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       buildTimeline(true),
       buildTimeline(false),
     ]);
-    // Two full site builds: well past Bun's 5s default on a busy machine.
+    // Two site builds: well past Bun's 5s default on a busy machine.
   }, 60_000);
 
   test("each era is a link to its axis band, which takes focus", () => {
@@ -149,24 +162,14 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     ).toEqual([
       ["creation", 0],
       ["adam", 1],
-      ["flood", 0],
-      ["abraham", 1],
-      ["jericho", 0],
-      ["exodus", 1],
-      ["merneptah-stele", 0],
-      ["david-and-solomon", 1],
       ["deuteronomy", 0],
-      ["fall-of-samaria", 1],
-      ["job", 2],
-      ["josiah", 3],
-      ["judges-dtr", 4],
-      ["fall-of-jerusalem", 5],
-      ["lamentations", 6],
-      ["priestly-genesis-1", 7],
-      ["second-temple", 0],
-      ["isaiah-56-66", 8],
+      ["judges-dtr", 1],
+      // 0.0426 of the strip after Deuteronomy: clear of it, so slot 0 again.
+      ["fall-of-jerusalem", 0],
+      ["lamentations", 2],
+      ["priestly-genesis-1", 3],
+      ["isaiah-56-66", 4],
       ["daniel", 0],
-      ["christian-canon", 0],
     ]);
     // Nothing moves a dot off its year.
     for (const t of ticks) expect(t.attrs.style).not.toContain("--tick-stack");
@@ -174,20 +177,16 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
 
   test("each band is placed by its era's years on the same scale as the ticks, so every tick falls in its own band", () => {
     const bands = select(page, ".timeline-minimap__band");
-    // The strip runs 5000 BCE to 500 CE in 1000- and 500-year eras.
-    const edges = [0, 1000, 2000, 3000, 3500, 4000, 4500, 5000, 5500];
-    const bandsAt = edges
-      .slice(0, -1)
-      .map((from, i) => [from / 5500, edges[i + 1]! / 5500]);
-    const bandVars = bands.map(b => [
-      vars(b)["era-start"]!,
-      vars(b)["era-end"]!,
+    // The strip runs 5000 BCE to 0 in 1000- and 500-year eras.
+    expect(bands.map(b => [vars(b)["era-start"], vars(b)["era-end"]])).toEqual([
+      [0, 0.2],
+      [0.2, 0.4],
+      [0.4, 0.6],
+      [0.6, 0.7],
+      [0.7, 0.8],
+      [0.8, 0.9],
+      [0.9, 1],
     ]);
-    expect(bandVars).toHaveLength(bandsAt.length);
-    for (const [i, [start, end]] of bandVars.entries()) {
-      expect(start).toBeCloseTo(bandsAt[i]![0]!, 10);
-      expect(end).toBeCloseTo(bandsAt[i]![1]!, 10);
-    }
     const byEra = new Map(bands.map(b => [b.attrs["data-era"], vars(b)]));
     for (const a of select(page, ".timeline-minimap__spy a")) {
       const band = byEra.get(a.attrs["data-entry-era"])!;
@@ -305,15 +304,15 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(settings.map(s => s.attrs["data-setting"])).toEqual(["daniel"]);
     expect(settings[0]?.attrs["aria-hidden"]).toBe("true");
 
-    // The strip runs 5000 BCE to 500 CE; Daniel is set 600–501 BCE.
+    // The strip runs 5000 BCE to 0; Daniel is set 600–501 BCE.
     const span = vars(
       select(
         page,
         '[data-setting="daniel"] .timeline-minimap__setting-span',
       )[0],
     );
-    expect(span["setting-start"]).toBeCloseTo(4400 / 5500, 4);
-    expect(span["setting-end"]).toBeCloseTo(4499 / 5500, 4);
+    expect(span["setting-start"]).toBeCloseTo(4400 / 5000, 4);
+    expect(span["setting-end"]).toBeCloseTo(4499 / 5000, 4);
 
     // The arc joins the span's middle to Daniel's dot: at its year, and in
     // its slot, which the setting carries too.
@@ -321,7 +320,7 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       select(page, '[data-setting="daniel"] .timeline-minimap__setting-arc')[0],
     );
     const tick = vars(select(page, '[data-tick="daniel"]')[0]);
-    expect(arc["arc-mid"]).toBeCloseTo((4400 + 4499) / 2 / 5500, 4);
+    expect(arc["arc-mid"]).toBeCloseTo((4400 + 4499) / 2 / 5000, 4);
     expect(vars(settings[0])).toEqual({
       "tick-at": tick["tick-at"]!,
       "tick-slot": tick["tick-slot"]!,
@@ -355,7 +354,13 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect([...linked].filter(id => !rows.includes(id))).toEqual([]);
   });
 
-  test("without drafts, the published entries get the notice, the minimap and its script", () => {
+  test("without drafts, the published entries get the notice, the minimap and its script, and a draft gets no tick", () => {
+    expect(hrefs(select(page, ".timeline-minimap__tick"))).toContain(
+      "isaiah-56-66",
+    );
+    expect(hrefs(select(published, ".timeline-minimap__tick"))).not.toContain(
+      "isaiah-56-66",
+    );
     expect(select(published, ".timeline-minimap")).toHaveLength(1);
     expect(select(published, 'script[src*="timeline-minimap"]')).toHaveLength(
       1,
