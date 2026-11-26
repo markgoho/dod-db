@@ -24,7 +24,9 @@
   <script>
     if (
       !location.hash &&
-      performance.getEntriesByType("navigation")[0]?.type === "navigate"
+      !["reload", "back_forward"].includes(
+        performance.getEntriesByType("navigation")[0]?.type,
+      )
     )
       location.replace({{ printf "#%s" $id }});
   </script>

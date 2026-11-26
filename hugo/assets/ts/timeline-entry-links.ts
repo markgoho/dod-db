@@ -16,8 +16,22 @@
 
 import { initCopy, initShare } from "./link-buttons.js";
 
+function timelineRoot(): HTMLElement | null {
+  return document.querySelector<HTMLElement>("[data-timeline-url]");
+}
+
+/** The tab's title follows the URL: the entry's, or the Timeline's. */
+function syncTitle(timeline: HTMLElement, entry: Element | null): void {
+  const title = entry
+    ? entry.querySelector(
+        ".timeline-entry__title, .timeline-entry__moved-title",
+      )?.textContent
+    : timeline.dataset["timelineTitle"];
+  if (title) document.title = title.trim();
+}
+
 function syncAddressBar(): void {
-  const timeline = document.querySelector<HTMLElement>("[data-timeline-url]");
+  const timeline = timelineRoot();
   const { hash, pathname, search } = globalThis.location;
   const target = document.getElementById(decodeURIComponent(hash.slice(1)));
   // Not on the Timeline, no target, or a target outside it (#card).
@@ -28,19 +42,30 @@ function syncAddressBar(): void {
   const url = `${path}${search}${entryUrl ? "" : hash}`;
   if (url === `${pathname}${search}${hash}`) return;
   globalThis.history.replaceState(globalThis.history.state, "", url);
-  // The tab's title follows the URL: the entry's, or the Timeline's.
-  const title = entryUrl
-    ? target.querySelector(
-        ".timeline-entry__title, .timeline-entry__moved-title",
-      )?.textContent
-    : timeline.dataset["timelineTitle"];
-  if (title) document.title = title.trim();
+  syncTitle(timeline, entryUrl ? target : null);
+}
+
+/** Back and forward move between entry URLs without a load or a hashchange. */
+function syncTitleToPath(): void {
+  const timeline = timelineRoot();
+  if (!timeline) return;
+  const { pathname } = globalThis.location;
+  const entry = [
+    ...timeline.querySelectorAll<HTMLElement>("[data-entry-url]"),
+  ].find(item => item.dataset["entryUrl"] === pathname);
+  if (entry || pathname === timeline.dataset["timelineUrl"])
+    syncTitle(timeline, entry ?? null);
+}
+
+function start(): void {
+  syncAddressBar();
+  globalThis.addEventListener("hashchange", syncAddressBar);
+  globalThis.addEventListener("popstate", syncTitleToPath);
 }
 
 initCopy();
 initShare();
 // On arrival the browser goes to the fragment as the page lays out, up to
 // load: dropping the fragment before then would leave the reader at the top.
-if (document.readyState === "complete") syncAddressBar();
-else globalThis.addEventListener("load", syncAddressBar, { once: true });
-globalThis.addEventListener("hashchange", syncAddressBar);
+if (document.readyState === "complete") start();
+else globalThis.addEventListener("load", start, { once: true });
