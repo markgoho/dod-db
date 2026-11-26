@@ -1,422 +1,329 @@
 /*
-  Custom block for the Pauline Authorship Scholarship Page: a pictogram of the
-  letters in Paul's name. One scroll per letter, every scroll the same size,
-  in three verdict groups, with Hebrews in a broken frame outside the
-  thirteen. Composes panel, type-section-title, cloud-section and
-  scholarship-meta.
+  Custom block for the Pauline Authorship Scholarship Page: a comic page.
+  One ink frame holds the title, four illustrated panels and the credit, so
+  the whole thing shares as one image. Each panel has a narration label flush
+  top-left and comic plates (scholarship.css) set on its art in clear
+  corners; letter names are ink chips on the plates. Panel 4's art is two
+  pictures split by a lightning bolt. Composes cloud-section,
+  type-section-title and scholarship-meta.
 
-  A scroll's seal is its group's verdict (Paul's seal, half a seal, Paul's
-  name struck through, no name), so the groups read without colour.
+  Distinctions without colour: who holds the pen in the art, and the plate's
+  words; the split's sides by position.
 */
-.paul-letters {
-  /* One scroll's width: three to a row on a phone. */
-  --paul-unit: 20cqi;
+.paul-comic {
   --paul-ink: var(--tan-900);
+  --paul-paper: var(--tan-000);
+  --paul-amber: var(--color-accent);
+  --paul-frame: var(--border-width-md);
 
-  container: paul-letters / inline-size;
+  container: paul-comic / inline-size;
 }
 
-.paul-defs {
-  block-size: 0;
-  inline-size: 0;
-  position: absolute;
-}
-
-.paul-letters__panel {
+/* The page: one frame around everything that is shared. */
+.paul-comic__page {
+  background: var(--paul-paper);
+  border: var(--paul-frame) solid var(--paul-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--paul-ink);
   display: grid;
   gap: var(--space-s);
   padding: var(--space-s);
 }
 
-/* The thirteen and the one outside share one grid, so their panels line up. */
-.paul-letters__thirteen {
-  display: contents;
-}
-
-/* Headline strip: the count in a burst, a quill at the far end. */
-.paul-letters__claim {
-  align-items: center;
-  background: var(--paul-ink);
-  color: var(--color-text-inverse);
-  column-gap: var(--space-xs);
+.paul-comic__head {
   display: grid;
-  font-family: var(--font-family-display);
-  font-size: var(--step-0);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  letter-spacing: var(--letter-spacing-heading);
-  line-height: var(--line-height-tight);
-  padding: var(--space-3xs) var(--space-xs);
-  text-wrap: balance;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
 }
 
-.paul-letters__badge {
-  display: grid;
-  inline-size: var(--space-2xl);
-  margin-block: calc(var(--space-2xs) * -1);
-  place-items: center;
-  rotate: -8deg;
-}
-
-.paul-letters__badge > * {
-  grid-area: 1 / 1;
-}
-
-.paul-letters__badge > svg {
-  aspect-ratio: 1;
-  fill: var(--color-accent);
-  inline-size: 100%;
-  overflow: visible;
-  stroke: var(--paul-ink);
-  stroke-linejoin: round;
-  stroke-width: 3;
-}
-
-.paul-letters__badge > span {
-  color: var(--paul-ink);
-  font-size: var(--step-3);
-}
-
-.paul-letters__quill {
-  aspect-ratio: 1;
-  /* No room beside the headline in a narrow column. */
-  display: none;
-  inline-size: var(--space-xl);
-  margin-block: calc(var(--space-xs) * -1);
-  overflow: visible;
-}
-
-.paul-quill__feather {
-  fill: var(--color-accent);
-  stroke: var(--color-text-inverse);
-  stroke-linejoin: round;
-  stroke-width: 3;
-}
-
-.paul-quill__spine {
-  fill: none;
-  stroke: var(--paul-ink);
-  stroke-linecap: round;
-  stroke-width: 3;
-}
-
-.paul-quill__nib {
-  fill: var(--color-text-inverse);
-}
-
-/* A group: a comic panel with halftone fading in from one corner. */
-.paul-letters__group {
-  align-content: start;
-  background:
-    linear-gradient(to top right, var(--tan-000) 55%, transparent),
-    radial-gradient(var(--paul-dots, var(--tan-300)) 24%, transparent 28%) 0 0 /
-      8px 8px,
-    var(--tan-000);
-  border: var(--border-width-md) solid var(--paul-ink);
-  display: grid;
-  gap: var(--space-s);
-  padding: var(--space-s);
-}
-
-.paul-letters__group--disputed {
-  --paul-dots: var(--color-accent);
-  --paul-roll: var(--color-accent);
-}
-
-.paul-letters__group--pastorals {
-  --paul-roll: var(--tan-000);
-}
-
-.paul-letters__group--outside {
-  --paul-roll: var(--tan-000);
-
-  border-style: dashed;
-}
-
-.paul-letters__head {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2xs) var(--space-s);
-}
-
-.paul-letters__name {
-  align-items: baseline;
-  column-gap: var(--space-2xs);
-  display: flex;
-  flex-wrap: wrap;
-  font-family: var(--font-family-display);
-  font-size: var(--step-1);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  letter-spacing: var(--letter-spacing-heading);
-  line-height: var(--line-height-tight);
+.paul-comic__head > p {
   margin: 0;
+}
+
+.paul-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
   text-transform: uppercase;
 }
 
-.paul-letters__count {
-  font-size: var(--step-4);
+/* Title lettering: ink capitals with an amber offset. */
+.paul-comic__title {
+  color: var(--paul-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
-  text-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
-}
-
-/* The verdict sits in a caption box, as a comic's narration does. */
-.paul-letters__verdict {
-  background: var(--color-accent-muted);
-  border: var(--border-width-sm) solid var(--paul-ink);
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--paul-ink);
-  font-size: var(--step--1);
-  font-weight: var(--font-weight-bold);
-  padding: var(--space-3xs) var(--space-2xs);
+  max-inline-size: 24ch;
+  text-shadow: 3px 3px 0 var(--paul-amber);
+  text-transform: uppercase;
   text-wrap: balance;
 }
 
-.paul-letters__note {
-  font-size: var(--step--2);
-  text-wrap: pretty;
-}
-
-.paul-letters__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs) var(--space-2xs);
+.paul-comic__strip {
+  display: grid;
+  gap: var(--space-s);
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.paul-letters__list > li {
-  align-content: start;
+.paul-comic__frame {
   display: grid;
+  min-inline-size: 0;
+}
+
+/* A panel: one ink frame around the art; the panel is its plates' container. */
+.paul-comic__figure {
+  border: var(--paul-frame) solid var(--paul-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.paul-comic__art {
+  aspect-ratio: 4 / 3;
+  line-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.paul-comic__art > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.08;
+}
+
+/* Panel 4: two pictures, each clipped to its side of the bolt. */
+.paul-comic__half {
+  inset: 0;
+  position: absolute;
+}
+
+.paul-comic__half--left {
+  clip-path: polygon(0 0, 57% 0, 45% 40%, 58% 52%, 43% 100%, 0 100%);
+}
+
+.paul-comic__half--right {
+  clip-path: polygon(57% 0, 100% 0, 100% 100%, 43% 100%, 58% 52%, 45% 40%);
+}
+
+.paul-comic__half > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 60%;
+  object-fit: cover;
+  scale: 1.08;
+}
+
+.paul-comic__half--right > img {
+  margin-inline-start: 40%;
+}
+
+/* The bolt: a thick ink stroke with an amber core. */
+.paul-comic__bolt {
+  block-size: 100%;
+  fill: none;
+  inline-size: 100%;
+  inset: 0;
+  position: absolute;
+  stroke-linejoin: miter;
+}
+
+.paul-comic__bolt > polyline:first-child {
+  stroke: var(--paul-ink);
+  stroke-width: 12px;
+  vector-effect: non-scaling-stroke;
+}
+
+.paul-comic__bolt > polyline:last-child {
+  stroke: var(--paul-amber);
+  stroke-width: 5px;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.paul-comic__box {
+  background: var(--paul-amber);
+  border-block-end: var(--paul-frame) solid var(--paul-ink);
+  border-inline-end: var(--paul-frame) solid var(--paul-ink);
   font-family: var(--font-family-display);
-  font-size: var(--step--2);
+  font-size: var(--step--1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
-  gap: var(--space-3xs);
-  grid-template-columns: minmax(0, 1fr);
-  inline-size: var(--paul-unit);
-  justify-items: center;
-  /* Every scroll is the same size: none grows or shrinks for its name. */
-  flex: none;
+  inset-block-start: 0;
+  inset-inline-start: 0;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+/* Panel 4's label also carries the three letters it is about. */
+.paul-comic__box--refs {
+  display: grid;
+  gap: var(--space-4xs);
+  max-inline-size: 52%;
+}
+
+.paul-comic__box--refs > h3 {
+  font: inherit;
+  margin: 0;
+}
+
+.paul-comic__box--refs .paul-comic__ref {
+  text-transform: none;
+}
+
+/* Letter names: ink chips, one per letter, each linking its opening verse. */
+.paul-comic__refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6cqi;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.paul-comic__refs > li {
+  line-height: 1;
+  margin: 0;
+}
+
+.comic-plate--tr .paul-comic__refs,
+.comic-plate--br .paul-comic__refs {
+  justify-content: flex-end;
+}
+
+.paul-comic__ref {
+  background: var(--paul-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: clamp(0.6rem, 2.2cqi, 0.85rem);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--paul-amber);
+  white-space: nowrap;
+}
+
+/* Panel 1's seven chips and panel 2's three need a wider plate than a bare count. */
+.paul-comic__frame--paul .comic-plate,
+.paul-comic__frame--later .comic-plate--tr {
+  max-inline-size: 46%;
+}
+
+.paul-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
   text-align: center;
 }
 
-/* The scroll and its seal. Lengths inside are the drawing's own units. */
-.paul-scroll {
-  aspect-ratio: 100 / 122;
-  font-family: var(--font-family-display);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  inline-size: 100%;
-  overflow: visible;
-  stroke: var(--paul-ink);
-  stroke-linejoin: round;
-  stroke-width: 4;
+.paul-comic__more {
+  margin-block-start: var(--space-s);
 }
 
-.paul-scroll__shadow {
-  fill: var(--paul-ink);
-  stroke: none;
-}
+/* A narrow panel (phone, or two-up on a narrow page): the plates are too big for the art, so they drop below it as a caption band. The query reads the panel's own width (the figure is the nearest container). */
+@container (width < 22rem) {
+  .paul-comic__figure > figcaption {
+    border-block-start: var(--paul-frame) solid var(--paul-ink);
+    display: grid;
+    gap: var(--space-2xs);
+    padding: var(--space-2xs);
+  }
 
-.paul-scroll__paper {
-  fill: var(--tan-000);
-}
+  .paul-comic__figure .comic-plate {
+    box-shadow: none;
+    max-inline-size: none;
+    position: static;
+    text-align: start;
+  }
 
-.paul-scroll__writing {
-  fill: none;
-  stroke: var(--tan-400);
-  stroke-linecap: round;
-}
+  .paul-comic__figure .paul-comic__refs {
+    justify-content: flex-start;
+  }
 
-.paul-scroll__roll {
-  fill: var(--paul-roll, var(--paul-ink));
-}
+  /* Panel 4's label and chips would cover a face, so they become a band above the art. */
+  .paul-comic__frame--today .paul-comic__figure {
+    display: flex;
+    flex-direction: column;
+  }
 
-.paul-scroll__shine {
-  fill: none;
-  stroke: var(--paul-shine, var(--tan-000));
-  stroke-linecap: round;
-  stroke-width: 2;
-}
+  .paul-comic__box--refs {
+    border-inline-end: 0;
+    max-inline-size: none;
+    order: -1;
+    position: static;
+  }
 
-.paul-letters__group--pastorals,
-.paul-letters__group--outside {
-  --paul-shine: transparent;
-}
-
-.paul-letters__group--outside :is(.paul-scroll__paper, .paul-scroll__roll) {
-  stroke-dasharray: 7 5;
-}
-
-.paul-letters__group--outside .paul-scroll__shadow {
-  fill: none;
-}
-
-.paul-seal__wax {
-  fill: var(--color-action);
-}
-
-.paul-seal__wax--half {
-  stroke: none;
-}
-
-.paul-seal__blank {
-  fill: var(--tan-000);
-}
-
-.paul-seal__edge {
-  fill: none;
-}
-
-.paul-seal__mark {
-  fill: var(--paul-ink);
-  font-size: 26px;
-  stroke: none;
-  text-anchor: middle;
-}
-
-.paul-seal__mark--on-wax {
-  fill: var(--color-text-inverse);
-}
-
-.paul-seal__mark--query {
-  paint-order: stroke;
-  stroke: var(--tan-000);
-  stroke-width: 5;
-}
-
-.paul-seal__strike {
-  stroke: var(--color-action);
-  stroke-linecap: round;
-  stroke-width: 4;
-}
-
-.paul-seal__unsigned {
-  stroke-dasharray: 6 5;
-  stroke-linecap: round;
-}
-
-.paul-letters__more {
-  border-block-start: var(--border-width-sm) solid var(--tan-300);
-  padding-block-start: var(--space-xs);
-}
-
-/*
-  Wide: seven across, then the two groups of three side by side under them,
-  then the one outside. Literal length: container conditions cannot read
-  custom properties.
-*/
-@container paul-letters (width >= 40rem) {
-  .paul-letters__panel {
-    --paul-unit: 10.5cqi;
-
+  /* The split keeps its sides: each verdict sits under its own half. */
+  .paul-comic__frame--today .paul-comic__figure > figcaption {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .paul-comic__frame--today .comic-plate--br {
+    text-align: end;
+  }
+}
+
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container paul-comic (width >= 40rem) {
+  .paul-comic__page {
     padding: var(--space-m);
   }
 
-  .paul-letters__panel > :not(.paul-letters__thirteen),
-  .paul-letters__claim,
-  .paul-letters__group--undisputed {
-    grid-column: 1 / -1;
+  .paul-comic__title {
+    font-size: var(--step-3);
   }
 
-  .paul-letters__claim {
-    font-size: var(--step-1);
-  }
-
-  .paul-letters__quill {
-    display: block;
-  }
-
-  .paul-letters__list {
-    justify-content: space-between;
-  }
-
-  .paul-letters__group--outside {
-    align-items: center;
-    grid-template-columns: auto minmax(0, 1fr);
-  }
-
-  .paul-letters__group--outside .paul-letters__list {
-    grid-column: 1;
-    grid-row: 1;
+  .paul-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* As an image the block is read from further away. */
-.scholarship-share:is(:target, :has(#share-card:target))
-  .paul-letters__list
-  > li {
-  font-size: var(--step--1);
-}
-
-/* The poster: tighter panels, so all three rows and the credit fit. */
-.scholarship-share:target .paul-letters__panel {
-  --paul-unit: 9cqi;
-
-  padding: var(--space-s);
-}
-
-.scholarship-share:target .paul-letters__group {
-  gap: var(--space-xs);
-  padding-block: var(--space-xs);
-}
-
-.scholarship-share:target .paul-letters__verdict {
-  font-size: var(--step-0);
-}
-
-.scholarship-share:target .paul-letters__count {
-  font-size: var(--step-3);
-}
-
-/*
-  The card is short: smaller scrolls, and the one outside moves up beside the
-  two groups of three.
-*/
-.scholarship-share:has(#share-card:target) .paul-letters__panel {
-  --paul-unit: 7cqi;
-
-  gap: var(--space-xs);
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.scholarship-share:has(#share-card:target) .paul-letters__group {
+/* The poster: two by two on the 4:5 canvas. */
+.scholarship-share:target .paul-comic__page {
   gap: var(--space-2xs);
-  padding-block: var(--space-2xs);
+  padding: var(--space-xs);
 }
 
-.scholarship-share:has(#share-card:target) .paul-letters__group--outside {
-  align-items: start;
-  grid-column: auto;
+.scholarship-share:target .paul-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
 }
 
-.scholarship-share:has(#share-card:target) .paul-letters__head {
-  row-gap: var(--space-3xs);
+.scholarship-share:target .paul-comic__head {
+  gap: 0;
 }
 
-.scholarship-share:has(#share-card:target) .paul-letters__name {
-  font-size: var(--step-0);
+.scholarship-share:target .paul-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.scholarship-share:has(#share-card:target) .paul-letters__count {
-  font-size: var(--step-2);
+/* The card: panels 1 and 2 side by side under the title. */
+.scholarship-share:has(#share-card:target) .paul-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
 }
 
-.scholarship-share:has(#share-card:target) .paul-letters__verdict {
-  font-size: var(--step--2);
-  padding-block: 0;
+.scholarship-share:has(#share-card:target) .paul-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
 }
 
-.scholarship-share:has(#share-card:target) .paul-letters__list {
-  row-gap: 0;
-}
-
-.scholarship-share:has(#share-card:target) .paul-letters__list > li {
-  font-size: var(--step--2);
+.scholarship-share:has(#share-card:target) .paul-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }

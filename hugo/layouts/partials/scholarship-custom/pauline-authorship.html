@@ -1,209 +1,159 @@
 {{- /*
-  Custom block for /scholarship/pauline-authorship/: the thirteen letters in
-  Paul's name drawn as scrolls and sorted into the three groups scholars use,
-  with Hebrews outside the thirteen. A view of the page's reviewed statements
-  (`undisputed`, `disputed`, `pastorals`, `pastorals-reasons`,
-  `pastorals-dissent`, `hebrews`); it makes no claim they don't. Reword a line
-  only when the statement it comes from is re-reviewed.
+  Custom block for /scholarship/pauline-authorship/: a four-panel comic page
+  in time order. Paul writes; after him, a different writer writes for a
+  later church; tradition shelves one more, unsigned letter beside his; and
+  scholars today split, by a lightning bolt, over the disputed three.
 
-  It is a pictogram: one scroll per letter, every scroll the same size, so the
-  rows count themselves. The seal on a scroll is its group's verdict. The
-  groups are three categories, not a scale: letters keep the statements' order
-  inside each group.
+  A view of the page's reviewed statements (`pastorals`, the core, with
+  `undisputed`, `pseudepigraphy`, `pastorals-reasons`, `pastorals-date`,
+  `pastorals-dissent`, `hebrews`, `disputed`); it makes no claim they don't.
+  Who holds the pen is a verdict, so only the undisputed panel draws Paul
+  writing, and every plate keeps its statement's hedge ("most scholars",
+  "some", "others"). The counts are on the plates, never in the art: each
+  scene handles one letter, or a shelf that runs out of the picture. Each
+  letter's chip links its opening verse, where it names its sender (Hebrews
+  1:1 names none). Reword a plate only when its statement is re-reviewed.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/pauline-authorship.yaml; every word,
+  count and link lives here.
   */
 -}}
-{{- $groups := slice
+{{- define "partials/inline/paul-refs.html" -}}
+  <ul class="paul-comic__refs">
+    {{- range . }}
+      <li>
+        <a
+          class="paul-comic__ref"
+          href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .) | safeURL }}"
+          rel="noopener"
+          >{{ replace . " " "&nbsp;" | safeHTML }}</a
+        >
+      </li>
+    {{- end }}
+  </ul>
+{{- end -}}
+{{- define "partials/inline/paul-img.html" -}}
+  {{- with resources.Get (printf "scholarship-art/pauline-authorship/%s.png" .id) }}
+    {{- $webp := .Process "resize 1200x webp q78" }}
+    <img
+      src="{{ $webp.RelPermalink }}"
+      width="{{ $webp.Width }}"
+      height="{{ $webp.Height }}"
+      alt="{{ $.alt }}"
+      loading="eager" />
+  {{- end }}
+{{- end -}}
+{{- $panels := slice
   (dict
-  "key" "undisputed"
-  "name" "Undisputed"
-  "verdict" "Most scholars accept these as Paul’s own."
-  "letters" (slice "Romans" "1 Corin&shy;thians" "2 Corin&shy;thians" "Gala&shy;tians" "Philip&shy;pians" "1 Thessa&shy;lonians" "Philemon"))
+  "id" "paul" "box" "Paul writes"
+  "alt" "Paul, a balding man with a dark beard, writes a letter on a scroll by lamplight."
+  "plates" (slice
+  (dict "pos" "tr" "big" "7 letters" "sub" "most scholars accept as Paul’s own"
+  "refs" (slice "Romans 1:1" "1 Corinthians 1:1" "2 Corinthians 1:1" "Galatians 1:1" "Philippians 1:1" "1 Thessalonians 1:1" "Philemon 1:1"))))
   (dict
-  "key" "disputed"
-  "name" "Disputed"
-  "verdict" "Some scholars accept these as Paul’s; others doubt it."
-  "letters" (slice "Ephe&shy;sians" "Colos&shy;sians" "2 Thessa&shy;lonians"))
+  "id" "later" "box" "After Paul"
+  "alt" "A different, younger writer writes a letter on the same kind of scroll; through a doorway beside him a congregation stands before a church leader."
+  "plates" (slice
+  (dict "pos" "tr" "big" "Not Paul’s" "sub" "most scholars agree; a small number disagree, at least for parts of 2 Timothy"
+  "refs" (slice "1 Timothy 1:1" "2 Timothy 1:1" "Titus 1:1"))
+  (dict "pos" "br" "big" "A later church" "sub" "a style unlike Paul’s, and a church structure from after his lifetime")))
   (dict
-  "key" "pastorals"
-  "name" "Pastoral Epistles"
-  "verdict" "Most scholars agree Paul did not write these."
-  "letters" (slice "1 Timothy" "2 Timothy" "Titus"))
+  "id" "hebrews" "box" "And Hebrews?"
+  "alt" "A later copyist slides one more scroll onto a crowded heap of scrolls that runs out of the picture."
+  "plates" (slice
+  (dict "pos" "tl" "big" "No name" "sub" "It does not claim to be by Paul. Tradition attributed it to him."
+  "refs" (slice "Hebrews 1:1"))))
 -}}
-<section class="cloud-section paul-letters">
+<section class="cloud-section paul-comic">
   <h2
     class="type-section-title cloud-section__title"
     id="at-a-glance"
     data-share-hide>
     At a glance
   </h2>
-  {{/* Drawn once, reused fourteen times: the scroll, and one seal per verdict. */}}
-  <svg class="paul-defs" aria-hidden="true" focusable="false">
-    <defs>
-      <clipPath id="paul-seal-left">
-        <rect x="0" y="40" width="50" height="70" />
-      </clipPath>
-      <g id="paul-scroll">
-        <rect
-          class="paul-scroll__shadow"
-          x="21"
-          y="22"
-          width="72"
-          height="92" />
-        <rect class="paul-scroll__paper" x="14" y="15" width="72" height="92" />
-        <path class="paul-scroll__writing" d="M26 34h48M26 43h48M26 52h28" />
-        <rect
-          class="paul-scroll__roll"
-          x="4"
-          y="4"
-          width="92"
-          height="18"
-          rx="9" />
-        <rect
-          class="paul-scroll__roll"
-          x="4"
-          y="100"
-          width="92"
-          height="18"
-          rx="9" />
-        <path class="paul-scroll__shine" d="M16 11h44M16 107h44" />
-      </g>
-      {{/* Sealed by Paul. */}}
-      <g id="paul-seal-undisputed">
-        <path
-          class="paul-seal__wax"
-          d="M50.0 53.0L54.1 58.5L60.5 55.8L61.3 62.7L68.2 63.5L65.5 69.9L71.0 74.0L65.5 78.1L68.2 84.5L61.3 85.3L60.5 92.2L54.1 89.5L50.0 95.0L45.9 89.5L39.5 92.2L38.7 85.3L31.8 84.5L34.5 78.1L29.0 74.0L34.5 69.9L31.8 63.5L38.7 62.7L39.5 55.8L45.9 58.5z" />
-        <text class="paul-seal__mark paul-seal__mark--on-wax" x="49" y="83">
-          P
-        </text>
-      </g>
-      {{/* Half a seal: accepted by some, doubted by others. */}}
-      <g id="paul-seal-disputed">
-        <path
-          class="paul-seal__blank"
-          d="M50.0 53.0L54.1 58.5L60.5 55.8L61.3 62.7L68.2 63.5L65.5 69.9L71.0 74.0L65.5 78.1L68.2 84.5L61.3 85.3L60.5 92.2L54.1 89.5L50.0 95.0L45.9 89.5L39.5 92.2L38.7 85.3L31.8 84.5L34.5 78.1L29.0 74.0L34.5 69.9L31.8 63.5L38.7 62.7L39.5 55.8L45.9 58.5z" />
-        <path
-          class="paul-seal__wax paul-seal__wax--half"
-          d="M50.0 53.0L54.1 58.5L60.5 55.8L61.3 62.7L68.2 63.5L65.5 69.9L71.0 74.0L65.5 78.1L68.2 84.5L61.3 85.3L60.5 92.2L54.1 89.5L50.0 95.0L45.9 89.5L39.5 92.2L38.7 85.3L31.8 84.5L34.5 78.1L29.0 74.0L34.5 69.9L31.8 63.5L38.7 62.7L39.5 55.8L45.9 58.5z"
-          clip-path="url(#paul-seal-left)" />
-        <path
-          class="paul-seal__edge"
-          d="M50.0 53.0L54.1 58.5L60.5 55.8L61.3 62.7L68.2 63.5L65.5 69.9L71.0 74.0L65.5 78.1L68.2 84.5L61.3 85.3L60.5 92.2L54.1 89.5L50.0 95.0L45.9 89.5L39.5 92.2L38.7 85.3L31.8 84.5L34.5 78.1L29.0 74.0L34.5 69.9L31.8 63.5L38.7 62.7L39.5 55.8L45.9 58.5z" />
-        <text class="paul-seal__mark paul-seal__mark--query" x="50" y="83">
-          ?
-        </text>
-      </g>
-      {{/* Paul's name, struck through. */}}
-      <g id="paul-seal-pastorals">
-        <path
-          class="paul-seal__blank"
-          d="M50.0 53.0L54.1 58.5L60.5 55.8L61.3 62.7L68.2 63.5L65.5 69.9L71.0 74.0L65.5 78.1L68.2 84.5L61.3 85.3L60.5 92.2L54.1 89.5L50.0 95.0L45.9 89.5L39.5 92.2L38.7 85.3L31.8 84.5L34.5 78.1L29.0 74.0L34.5 69.9L31.8 63.5L38.7 62.7L39.5 55.8L45.9 58.5z" />
-        <text class="paul-seal__mark" x="49" y="83">P</text>
-        <path class="paul-seal__strike" d="M33 91L67 57" />
-      </g>
-      {{/* No name at all: an empty line where one would be. */}}
-      <g id="paul-seal-outside">
-        <path class="paul-seal__unsigned" d="M30 82h40" />
-      </g>
-      <g id="paul-quill">
-        <path
-          class="paul-quill__feather"
-          d="M60 3C40 5 22 16 15 35l-4 13 6 6 13-4C49 43 60 25 60 3z" />
-        <path class="paul-quill__spine" d="M52 11L15 50" />
-        <path class="paul-quill__nib" d="M11 48L3 61l14-7z" />
-      </g>
-      <path
-        id="paul-burst"
-        d="M50.0 1.0L58.7 12.0L71.3 5.9L74.3 19.5L88.3 19.4L85.1 33.1L97.8 39.1L89.0 50.0L97.8 60.9L85.1 66.9L88.3 80.6L74.3 80.5L71.3 94.1L58.7 88.0L50.0 99.0L41.3 88.0L28.7 94.1L25.7 80.5L11.7 80.6L14.9 66.9L2.2 60.9L11.0 50.0L2.2 39.1L14.9 33.1L11.7 19.4L25.7 19.5L28.7 5.9L41.3 12.0z" />
-    </defs>
-  </svg>
-  <div class="paul-letters__panel panel">
-    <div class="paul-letters__thirteen">
-      <p class="paul-letters__claim">
-        <span class="paul-letters__badge">
-          <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-            <use href="#paul-burst" />
-          </svg>
-          <span>13</span>
-        </span>
-        <span class="paul-letters__claim-text"
-          >New Testament letters claim to be written by Paul</span
-        >
-        <svg
-          class="paul-letters__quill"
-          viewBox="0 0 64 64"
-          aria-hidden="true"
-          focusable="false">
-          <use href="#paul-quill" />
-        </svg>
+  <div class="paul-comic__page">
+    <header class="paul-comic__head">
+      <p class="paul-comic__kicker">
+        Thirteen letters in Paul’s name · most scholars agree
       </p>
-      {{- range $groups }}
-        {{- $key := .key }}
-        <section class="paul-letters__group paul-letters__group--{{ $key }}">
-          <div class="paul-letters__head">
-            <h3 class="paul-letters__name">
-              <span class="paul-letters__count">{{ len .letters }}</span>
-              {{ .name }}
-            </h3>
-            <p class="paul-letters__verdict">{{ .verdict }}</p>
-          </div>
-          <ul class="paul-letters__list">
-            {{- range .letters }}
-              <li>
-                <svg
-                  class="paul-scroll"
-                  viewBox="0 0 100 122"
-                  aria-hidden="true"
-                  focusable="false">
-                  <use href="#paul-scroll" />
-                  <use href="#paul-seal-{{ $key }}" />
-                </svg>
-                <span>{{ replace . " " "&nbsp;" | safeHTML }}</span>
-              </li>
-            {{- end }}
-          </ul>
-          {{- if eq $key "pastorals" }}
-            <p class="paul-letters__note" data-card-hide>
-              Their writing style differs from Paul’s undisputed letters, and
-              they presuppose a later church structure. A small number of
-              scholars think Paul had a hand in them, at least for parts of
-              2&nbsp;Timothy.
-            </p>
-          {{- end }}
-        </section>
-      {{- end }}
-    </div>
-    <section class="paul-letters__group paul-letters__group--outside">
-      <div class="paul-letters__head">
-        <h3 class="paul-letters__name">
-          <span class="paul-letters__count">+1</span>
-          Outside the thirteen
-        </h3>
-        <p class="paul-letters__verdict">
-          Does not claim to be by Paul. Tradition attributed it to him.
-        </p>
-      </div>
-      <ul class="paul-letters__list">
-        <li>
-          <svg
-            class="paul-scroll"
-            viewBox="0 0 100 122"
-            aria-hidden="true"
-            focusable="false">
-            <use href="#paul-scroll" />
-            <use href="#paul-seal-outside" />
-          </svg>
-          <span>Hebrews</span>
+      <p class="paul-comic__title">
+        Paul did not write 1 and 2&nbsp;Timothy and&nbsp;Titus
+      </p>
+    </header>
+    <ol class="paul-comic__strip">
+      {{- range $i, $p := $panels }}
+        <li
+          class="paul-comic__frame paul-comic__frame--{{ $p.id }}"
+          {{ if ge $i 2 }}data-card-hide{{ end }}>
+          <figure class="paul-comic__figure">
+            <div class="paul-comic__art">
+              {{ partial "inline/paul-img.html" (dict "id" $p.id "alt" $p.alt) }}
+            </div>
+            <h3 class="paul-comic__box">{{ $p.box }}</h3>
+            <figcaption>
+              {{- range $p.plates }}
+                <div class="comic-plate comic-plate--{{ .pos }}">
+                  <p class="comic-plate__big">{{ .big }}</p>
+                  <p class="comic-plate__sub">{{ .sub }}</p>
+                  {{- with .refs }}
+                    {{ partial "inline/paul-refs.html" . }}
+                  {{ end }}
+                </div>
+              {{- end }}
+            </figcaption>
+          </figure>
         </li>
-      </ul>
-    </section>
-    <p class="paul-letters__more scholarship-meta" data-share-hide>
-      Every line here comes from the cited answers below:
-      <a href="#undisputed">the seven most scholars accept</a>,
-      <a href="#disputed">the three that are disputed</a>,
-      <a href="#pastorals">1 and 2 Timothy and Titus</a>
-      (<a href="#pastorals-reasons">why</a>,
-      <a href="#pastorals-dissent">who disagrees</a>) and
-      <a href="#hebrews">Hebrews</a>.
+      {{- end }}
+      <li class="paul-comic__frame paul-comic__frame--today" data-card-hide>
+        <figure class="paul-comic__figure">
+          {{/* A lightning bolt: the page puts some scholars on one side and others on the other. */}}
+          <div class="paul-comic__art paul-comic__art--split">
+            <div class="paul-comic__half paul-comic__half--left">
+              {{ partial "inline/paul-img.html" (dict "id" "accept" "alt" "A present-day scholar, an older man in a cardigan, holds up a scroll and smiles, satisfied.") }}
+            </div>
+            <div class="paul-comic__half paul-comic__half--right">
+              {{ partial "inline/paul-img.html" (dict "id" "doubt" "alt" "Another present-day scholar, a younger woman, peers at the same kind of scroll through a magnifying glass, frowning, unconvinced.") }}
+            </div>
+            <svg
+              class="paul-comic__bolt"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+              focusable="false">
+              <polyline points="57,0 45,40 58,52 43,100" />
+              <polyline points="57,0 45,40 58,52 43,100" />
+            </svg>
+          </div>
+          <div class="paul-comic__box paul-comic__box--refs">
+            <h3>Disputed today</h3>
+            {{ partial "inline/paul-refs.html" (slice "Ephesians 1:1" "Colossians 1:1" "2 Thessalonians 1:1") }}
+          </div>
+          <figcaption>
+            <div class="comic-plate comic-plate--bl">
+              <p class="comic-plate__big">Paul’s</p>
+              <p class="comic-plate__sub">some scholars accept them</p>
+            </div>
+            <div class="comic-plate comic-plate--br">
+              <p class="comic-plate__big">Not Paul’s</p>
+              <p class="comic-plate__sub">others doubt it</p>
+            </div>
+          </figcaption>
+        </figure>
+      </li>
+    </ol>
+    <p class="paul-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions, counts
+      and sources are the page’s own.
     </p>
   </div>
+  <p class="paul-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#undisputed">the seven most scholars accept</a>,
+    <a href="#pastorals">1 and 2 Timothy and Titus</a>
+    (<a href="#pastorals-reasons">why</a>, <a href="#pastorals-date">when</a>,
+    <a href="#pastorals-dissent">who disagrees</a>),
+    <a href="#hebrews">Hebrews</a> and
+    <a href="#disputed">the three that are disputed</a>.
+  </p>
 </section>

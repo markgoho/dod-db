@@ -11,12 +11,12 @@ It is a **picture first**. The drawing carries the relation; the words caption i
 
 One source, two forms. On the page it is a live, responsive block. At `#share` the same block becomes a **poster**: a fixed 4:5 canvas (1080 by 1350) with the page title above and a credit below, which a script photographs to a PNG. At `#share-card` it becomes the **card**: a 1200 by 630 view of the lead part, which is the picture a social site shows when someone shares the page's link.
 
-Worked examples, read all four before building. The first three are the bar to meet; the last predates raster art and shows how exact marks are built. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
+Worked examples, read all four before building. The first three are the bar to meet; the last is a newer redraw not yet accepted. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
 
 - `noahs-ark-and-the-flood`: the best example of the default form below. Four chronological panels, each split by a lightning bolt into the two tellings, with art on both halves and each half's number or label set on the art as a plate.
 - `homosexuality-and-the-bible`: the default form with one scene per panel: four Gemini-drawn panels with people in them, each panel's words and scripture tags on a plate in a clear corner of its art. Read it for the illustration manifest, chained reference images, and a plate holding many tags.
 - `the-creation-stories-in-genesis`: the default form for a two-sided comparison where order matters. Every panel is bolt-split, Genesis 1 against Genesis 2. The sequence ("Humans last" / "The man first") sits on the plates, because the art can't assert an order. God appears only as light on one side and only as hands on the other, so the art keeps the page's contrast. Read it for 1/2 badges with the source hedge in the legend, regenerating art to clear the bolt, and seven panels (every drawable difference in `differ`) with a double-wide last panel, re-laid out three to a row on the poster with smaller plates.
-- `pauline-authorship`: exact marks. A pictogram: one drawn scroll per letter, the seal on each scroll is its group's verdict. Read it for how a drawing is made once and reused, sized by one unit, and re-laid out for the poster and the card.
+- `pauline-authorship`: the default form for a count sorted into groups. Four panels in time order, one group per panel; who holds the pen in the art is the group's verdict, and each count ("7 letters") is a plate with one chip per letter. Read it for plates holding many chips, a single bolt-split panel among unsplit ones, and a label that carries its panel's chips.
 
 ## The default form: an illustrated comic page
 
@@ -146,7 +146,7 @@ Poster: mark anything that only makes sense on the page (the section heading, "c
 
 Card: mark everything except the lead relation with `data-card-hide`, so the card shows the one thing worth a glance. The link's own title and description sit beside it, so the card carries no title. Link previews crop the image a little (Facebook trims the sides), so the card canvas keeps a safe margin (set in `scholarship.css`); the block fits inside it and nothing sits at the edge.
 
-Both are fixed canvases, so the block needs its own overrides for each, scoped as the Pauline stylesheet scopes them (`.scholarship-share:target` for the poster, `.scholarship-share:has(#share-card:target)` for the card): a smaller unit, tighter gaps, and for the card usually a different arrangement (wider, shorter) of the same parts.
+Both are fixed canvases, so the block needs its own overrides for each, scoped as the comic examples' stylesheets scope them (`.scholarship-share:target` for the poster, `.scholarship-share:has(#share-card:target)` for the card): a smaller unit, tighter gaps, and for the card usually a different arrangement (wider, shorter) of the same parts.
 
 ### 4b. Illustrations (every infographic)
 

@@ -1,0 +1,98 @@
+# Illustrations for /scholarship/pauline-authorship/ (generated with Gemini;
+# see src/scripts/generate-scholarship-illustrations.ts). Each picture shows
+# only what the listed statements support; every caption, link, claim and
+# count stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Four comic panels in time order: Paul writes; after him, someone else writes
+# in his name for a later church; tradition shelves an unsigned letter beside
+# his; scholars today split over the disputed three (two 4:5 halves split by a
+# lightning bolt). `paul` is the anchor for the letter scroll, which recurs in
+# every panel. Counts (7, 3, 13) are never in the art: each scene shows one
+# letter being handled, or a shelf running out of the picture.
+# Who holds the pen is a verdict: only the undisputed panel shows Paul writing.
+slug: pauline-authorship
+images:
+  - id: paul
+    statements: [undisputed]
+    aspect: "4:3"
+    alt: "Paul, a balding man with a dark beard, writes a letter on a scroll by lamplight."
+    prompt: >-
+      A first-century man in his fifties, balding with a short dark beard,
+      in a plain rust red robe, sits at a low wooden table on the LEFT half
+      of the picture, writing intently with a reed pen on ONE open papyrus
+      scroll; its rolled ends are wooden rods. A small clay oil lamp burns on
+      the table. The RIGHT third of the picture is a plain empty plaster wall
+      with nothing on it, and the top edge is plain wall too. Only one
+      scroll in the picture. Negative list: no other scrolls, no books, no
+      shelves, no other people, no halo, no cross, no text.
+
+  - id: later
+    statements: [pastorals, pseudepigraphy, pastorals-reasons, pastorals-date]
+    aspect: "4:3"
+    refs: [paul]
+    alt: "A different, younger writer copies a letter onto the same kind of scroll; through a doorway beside him a congregation stands before an appointed church leader."
+    prompt: >-
+      Wide view. The whole scene sits in the LOWER HALF of the picture;
+      the UPPER HALF is plain empty plaster wall across the full width, with
+      nothing on it. A DIFFERENT man from the reference image, clearly
+      younger, clean-shaven with short curly hair, in a light warm grey
+      tunic, sits at a low writing table on the LEFT, writing with a reed
+      pen on ONE open papyrus scroll of the SAME kind as in the reference
+      image (same wooden rods, same papyrus colour). On the RIGHT, through a
+      low wide open doorway, a small orderly congregation of men and women
+      stands facing an older church leader in a plain amber robe who stands
+      before them with one hand raised to speak. The leader wears no mitre,
+      no crown and holds no staff. Negative list: no other scrolls, no
+      cross, no altar, no halo, no windows, no text.
+
+  - id: hebrews
+    statements: [hebrews]
+    aspect: "4:3"
+    refs: [paul]
+    alt: "A later copyist slides one more scroll onto a crowded heap of scrolls that runs out of the picture."
+    prompt: >-
+      An elderly copyist in a plain dark brown ancient robe and headcloth (not a
+      monk's habit, no hood, no tonsure), white beard, stands on
+      the RIGHT of the picture and slides ONE papyrus scroll of the SAME kind
+      as in the reference image onto the right-hand end of a long wooden
+      shelf. The shelf is packed with many rolled scrolls lying side by side,
+      stacked several deep and overlapping, and it runs on out of the picture
+      at the left edge and the bottom edge, so the number of scrolls cannot
+      be counted: only their ends show in a dense heap. The scroll in his hands is plain
+      with no seal and no tag. Above the shelf, plain wall; below it, the
+      bottom left part of the picture is plain stone floor. Negative list: no
+      labels or tags on any scroll, no books, no other people, no cross, no
+      text.
+
+  - id: accept
+    statements: [disputed, ephesians-colossians, second-thessalonians]
+    aspect: "4:5"
+    refs: [paul]
+    alt: "A present-day scholar, an older man in a cardigan, holds up a scroll and nods, satisfied."
+    prompt: >-
+      A present-day academic, a generic older man with a grey beard and
+      round glasses, in an amber cardigan over a shirt, shown from the chest
+      up in the MIDDLE of the picture, the top of the head no higher than
+      one third down; the top third of the picture is plain empty wall, turned slightly toward the
+      right, holding up ONE open papyrus scroll of the SAME kind as in the
+      reference image and nodding with a satisfied, confident smile. The
+      bottom third of the picture is a plain empty wooden desk top. The top
+      left corner is plain wall. Negative list: no other scrolls, no books,
+      no other people, no text.
+
+  - id: doubt
+    statements: [disputed, ephesians-colossians, second-thessalonians]
+    aspect: "4:5"
+    refs: [paul, accept]
+    alt: "Another present-day scholar, a younger woman, peers at the same scroll through a magnifying glass, frowning and unconvinced."
+    prompt: >-
+      A DIFFERENT present-day academic from the second reference image: a
+      generic younger woman with dark hair in a short bob and rectangular
+      glasses, in a rust red blouse, shown from the chest up in the MIDDLE of the
+      picture, the top of her head no higher than one third down; the top
+      third of the picture is plain empty wall, turned slightly toward the left. She holds ONE
+      open papyrus scroll of the SAME kind as in the reference images and
+      peers at it through a magnifying glass, one eyebrow raised, frowning
+      and unconvinced. The bottom third of the picture is the SAME plain
+      empty wooden desk top. Negative list: no other scrolls, no books, no
+      other people, no text.
