@@ -39,6 +39,14 @@ term = ["html"]
 [permalinks]
 episodes = "/episodes/:contentbasename/"
 
+# A Timeline Entry's URL has no trailing slash (/timeline/flood, #219): Hugo
+# writes timeline/flood.html and Firebase Hosting serves it without the
+# extension (cleanUrls in firebase.json). Templates take the URL from
+# partials/clean-url.html, never .Permalink. The Timeline itself keeps
+# /timeline/ (url in its _index.md).
+[uglyURLs]
+timeline = true
+
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]

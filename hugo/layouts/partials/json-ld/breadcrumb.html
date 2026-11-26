@@ -7,7 +7,7 @@
   {{- $items = $items | append (dict "@type" "ListItem" "position" $pos "name" $name "item" (.Permalink | strings.TrimSuffix "/")) -}}
 {{- end -}}
 {{- $pos = add $pos 1 -}}
-{{- $items = $items | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" (.Permalink | strings.TrimSuffix "/")) -}}
+{{- $items = $items | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" ((partial "clean-url.html" .).abs | strings.TrimSuffix "/")) -}}
 {{- $schema := dict
   "@context" "https://schema.org"
   "@type" "BreadcrumbList"

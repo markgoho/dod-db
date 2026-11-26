@@ -1,5 +1,5 @@
 /**
- * Timeline Entry Pages (/timeline/<id>/, #219) and the Timeline's own page:
+ * Timeline Entry Pages (/timeline/<id>, #219) and the Timeline's own page:
  * their link-preview card images, and the record of which card was rendered
  * from which text.
  */

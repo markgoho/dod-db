@@ -153,7 +153,7 @@ One subject on the **Timeline**, either an event or the composition of a text, w
 _Avoid_: Row, dated claim
 
 **Timeline Entry Page**:
-The **Timeline** itself at one **Timeline Entry**'s own URL (`/timeline/<id>/`), opened at that entry: the URL to share, whose link preview shows the entry's title, its **Critical Date** or scholarly verdict, and the entry's card image. It is never a page of the entry alone.
+The **Timeline** itself at one **Timeline Entry**'s own URL (`/timeline/<id>`, no trailing slash), opened at that entry: the URL to share, whose link preview shows the entry's title, its **Critical Date** or scholarly verdict, and the entry's card image. It is never a page of the entry alone.
 _Avoid_: Entry permalink, share page
 
 **Critical Date**:

@@ -53,7 +53,7 @@
   <li
     class="timeline-entry timeline-entry--moved"
     id="{{ $id }}"
-    data-entry-url="{{ $e.RelPermalink }}"
+    data-entry-url="{{ (partial "clean-url.html" $e).rel }}"
     tabindex="-1"
     aria-label="{{ replace $moved "–" " to " }}">
     <span class="timeline-entry__node" aria-hidden="true"></span>
@@ -86,7 +86,7 @@
   <li
     class="{{ delimit $classes " " }}"
     id="{{ $e.File.ContentBaseName }}"
-    data-entry-url="{{ $e.RelPermalink }}"
+    data-entry-url="{{ (partial "clean-url.html" $e).rel }}"
     tabindex="-1"
     aria-label="{{ replace $label "–" " to " }}">
     <div class="timeline-entry__card panel">
@@ -145,7 +145,7 @@
             class="chip scholarship-question__copy-button"
             command="--copy-link"
             commandfor="{{ $e.File.ContentBaseName }}-links"
-            data-url="{{ $e.Permalink }}"
+            data-url="{{ (partial "clean-url.html" $e).abs }}"
             hidden>
             Copy link
           </button>
@@ -154,13 +154,15 @@
         <button
           type="button"
           class="chip scholarship-question__share-button"
-          data-url="{{ $e.Permalink }}"
+          data-url="{{ (partial "clean-url.html" $e).abs }}"
           data-title="{{ printf "%s: %s" $e.Title $scholarly }}"
           hidden>
           Share
         </button>
         <noscript>
-          <a href="{{ $e.RelPermalink }}">Link to this entry</a>
+          <a href="{{ (partial "clean-url.html" $e).rel }}"
+            >Link to this entry</a
+          >
         </noscript>
       </div>
 

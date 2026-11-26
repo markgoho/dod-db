@@ -1,6 +1,6 @@
 /**
  * Photograph the link-preview card of each Timeline Entry Page
- * (/timeline/<id>/, #219) and of the Timeline itself: the page's #card view,
+ * (/timeline/<id>, #219) and of the Timeline itself: the page's #card view,
  * 1200 by 630, saved to hugo/static/assets/timeline/<id>.png (the Timeline's:
  * hugo/static/assets/timeline-card.png) and recorded in
  * data/timeline-cards.json so check:timeline can tell when a card no longer
@@ -65,7 +65,7 @@ async function main(): Promise<void> {
     const out = timelineCardPath(root, id);
     const current = manifest[id] === key && (await Bun.file(out).exists());
     if (!staleOnly || !current) {
-      const url = `${base}/timeline/${id === INDEX ? "" : `${id}/`}`;
+      const url = `${base}/timeline/${id === INDEX ? "" : `${id}.html`}`;
       jobs.push({ name: id, key, url, out });
     }
   }

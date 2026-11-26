@@ -20,7 +20,9 @@
     {{ $searchCSS := resources.Get "css/search.css" | resources.Minify }}
     <style>{{ $searchCSS.Content | safeCSS }}</style>
 
-    <link rel="canonical" href="{{ .Permalink | absURL }}" />
+    <link
+      rel="canonical"
+      href="{{ (partial "clean-url.html" .).abs | absURL }}" />
   </head>
 
   <body>

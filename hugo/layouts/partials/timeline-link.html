@@ -5,7 +5,7 @@
   where the display date goes, as its card and the JSON-LD do.
   */
 -}}
-{{- $href := .RelPermalink -}}
+{{- $href := (partial "clean-url.html" .).rel -}}
 {{- $date := partial "timeline-undated-label.html" . -}}
 {{- with .Params.critical -}}
   {{- $date = .display -}}

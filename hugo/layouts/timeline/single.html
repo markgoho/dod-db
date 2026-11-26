@@ -4,7 +4,7 @@
 
 {{ define "main" }}
   {{/* Timeline Entry Page (#219): the Timeline itself, opened at one entry,
-    at the entry's own URL (/timeline/<id>/). A link to /timeline/#<id> can't
+    at the entry's own URL (/timeline/<id>). A link to /timeline/#<id> can't
     carry a link preview of its own, because a crawler never receives the
     fragment; this URL carries the entry's (opengraph.html).
 
@@ -44,7 +44,7 @@
       <p class="question-card__site">
         {{ site.Title }}
         <span
-          >{{ printf "%s%s" site.Params.canonicalHost (.RelPermalink | strings.TrimSuffix "/") }}</span
+          >{{ printf "%s%s" site.Params.canonicalHost (partial "clean-url.html" .).rel }}</span
         >
       </p>
       <p>

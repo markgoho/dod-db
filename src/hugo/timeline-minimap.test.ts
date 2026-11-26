@@ -273,7 +273,7 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       select(page, '[id="daniel"] .scholarship-question__copy-button').map(
         button => new URL(button.attrs["data-url"] ?? "").pathname,
       ),
-    ).toEqual(["/timeline/daniel/"]);
+    ).toEqual(["/timeline/daniel"]);
     expect(link("daniel")).toEqual([
       [
         "#daniel-tradition",

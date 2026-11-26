@@ -1,0 +1,11 @@
+{{- /*
+  A page's URL as readers see it. Takes a page; returns (dict "rel" "abs").
+  The same as .RelPermalink and .Permalink for every page but a Timeline
+  Entry, which Hugo writes as timeline/<id>.html (uglyURLs in hugo.toml) and
+  Firebase Hosting serves at /timeline/<id> (cleanUrls in firebase.json).
+  */
+-}}
+{{- return (dict
+  "rel" (strings.TrimSuffix ".html" .RelPermalink)
+  "abs" (strings.TrimSuffix ".html" .Permalink))
+-}}
