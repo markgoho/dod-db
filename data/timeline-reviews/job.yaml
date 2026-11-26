@@ -1,0 +1,190 @@
+# Review record for the Timeline Entry `job` (/timeline/#job; #93 shape). Not rendered.
+# agent: the first pass (#186, 2026-11-26). It does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); the `delegation` block records the independent second agent pass once it has run.
+# Issue #186 instructions: a Tradition Date needs a trigger stating the tradition's side and a Tradition source giving a year; "oldest" alone gives none. Consider `anchor` to a Cyrus entry if one publishes first: there is no Cyrus entry, and no source names the Persian period, so no anchor.
+# Sourcing test (2026-11-26): critical. NABRE (Reference) dates the composition outright, hedged only by "probably" (a hedge, not a condition), so the entry is `critical`, not `undated`: "Probably 7th–5th century BCE" in NABRE's own form, precision century, from -700 to -401 (the centuries' bounds, not years the source gives). The other sources' wider and differing views go in the note: Coogan (10th–3rd c. proposed; "for many an exilic date"), Hayes ("we really don't know its date … probably no earlier then the sixth century"), Newsom EoR ("early postexilic period"). Not treated as a split: only NABRE gives a range; the others are a spread of views and a lower bound, all in the note.
+# The Trigger Claims say "Persian period, 539–332 BCE" and "one of the youngest". No source read names the Persian period or ranks Job among the youngest books; per CONTEXT.md the entry is worded for what its sources date, and the mismatch is left unexplained (#86), as in Lamentations.
+# Setting: no source gives a year for the narrated period, so no from/to (no minimap span). Worded at Newsom's strength ("described in terms that evoke a patriarchal setting"), not "the patriarchal age"; Uz is in the display, Edom is not (flat in Hayes, "perhaps" in Bible Odyssey, "uncertain" in HarperCollins).
+# Tradition: CMI (Paul 2010, Journal of Creation, republished on creation.com) is the only Tradition source found that gives an unconditional date for the writing: "presumably written in the second millennium BC". Shown as "2nd millennium BCE", from -2000 to -1001. Holder from CMI's "What We Are" page (https://creation.com/en/pages/what-we-are): "Creation Ministries International is a group of non-profit ministries in several countries." and "We are apolitical and non-denominational (as an organisation, not as individuals within it)."; the holder combines those two self-descriptions.
+# First pass: three research agents (critical, tradition, setting) fetched every source on 2026-11-25/26 into separate scratch folders and copied quotes from the saved text; every quote then script-matched by the lead (whitespace, quotes, dashes, HTML entities normalised): 9/9, 0 misses. Trigger Claims matched by script against the final Transcript line (timestamp, speaker, verbatim text): 5/5.
+# Flags for the second pass: (1) Tradition Date rests on one CMI article; "presumably" is kept out of the display (the schema has no tradition note), as "likely" is for Daniel's Got Questions date; the holder joins two sentences from the same CMI page; cut to uncited if either reads too strong. (2) NABRE: the research agents' fetches differed: one got the page via https://bible.usccb.org/bible/job/0.md on the first try, another got Cloudflare 403 on /job/0, a retry and /job/0.md. Retry the .md alternate, then Claude in Chrome, before treating critical/1 as unreadable. (3) Newsom EoR edition and year: the Encyclopedia.com page signs the entry "Carol A. Newsom (2005)" and labels it "Encyclopedia of Religion" with no edition; registry edition null, as for the Sperling EoR entry. (4) The note's "for many an exilic date" (Coogan) and "early postexilic" (Newsom) are attributed views in the note, not the display. (5) critical/3 keeps the transcript's "then" for "than". (6) Episode 150's claim is a passing clause inside a zodiac answer; kept as a Trigger Claim, since it asserts the date.
+review:
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE Job introduction, ¶ 3 under “THE BOOK OF JOB” (¶ 1 names the book, ¶ 2 the prologue). Hedge “probably” kept in the display. Fetched via the .md alternate.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary ch. 24, section “Job”, ¶ 2. Backs the note's “hard to date … no historical events”, the 10th–3rd century spread and “for many an exilic date”.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l20 ch. 4 “Structure of and Literary Components in The Book of Job” [00:19:48], ¶ 1. Backs “no earlier than the sixth century” in the note; “scholars disagree” consistent with the note's framing. “then” is the transcript's.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Newsom, Encyclopedia of Religion “Job”, opening paragraph (before “Contents and Structure”). Backs “the early postexilic period” in the note, a single author's attributed view (“suggests”).",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l20 ch. 4 [00:19:48], ¶ 5. Backs the note's last sentence, “probably” kept.",
+    }
+  setting/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Newsom EoR opening paragraph, same sentence as critical/4. Backs “described in patriarchal terms”; no period or year.",
+    }
+  setting/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l20 ch. 4 [00:19:48], ¶ 5. Backs “in the land of Uz, outside Israel”.",
+    }
+  setting/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bible Odyssey, Newsom “Job” (September 25, 2014), “Did You Know?” item 1. Backs Uz and non-Israelite; its “perhaps a place in Edom” is why Edom stays out of the display.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "CMI, Paul 2010, opening paragraph after the Figure 1 caption, footnote 2 follows. “written” makes it a composition date, not when Job lived. See flag (1).",
+    }
+triggers:
+  18@00:37:12:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: both. Dan McClellan. Substring of the 00:37:12 turn, from “A lot of people think”; the turn opens “this text comes from the Persian period” and goes on “foreignizing and archaizing”. States the popular “oldest” view and the critical Persian date. Read 00:36:37–00:40:00.",
+    }
+  150@00:49:16:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Dan McClellan. Second sentence of the 00:49:16 turn, on the Mazzaroth; the date is a passing clause. Read 00:49:04–00:50:04.",
+    }
+  175@00:19:51:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. Dan McClellan. Second sentence of the turn; reports “the Job crowd”, no year. Read 00:18:26–00:22:01.",
+    }
+  175@00:20:26:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Dan McClellan. Opening of the 00:20:26 turn; relative (“one of the more recent”), no year.",
+    }
+  187@00:57:12:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Dan McClellan. Substring of the 00:57:12 turn from “And so when someone says”. Hedge “probably” kept. Read 00:55:43–00:59:31.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Display is NABRE's range with its “probably”; the note carries the other sources' views attributed by their own hedges. Narrower than and different from the Trigger Claims' Persian period; worded for the sources.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "No split in the #99 sense: only NABRE gives a range; the spread and differing views are in the note, each cited.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tradition Date shown: 18@00:37:12 (both) and 175@00:19:51 (tradition) state the tradition's side.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder named from CMI's own “What We Are” page. See flag (1).",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date in the Critical Date. Got Questions' conditional Moses/Solomon dates are uncited.",
+    }
+sources:
+  nabre-job-intro:
+    {
+      agent: pass,
+      owner: "",
+      edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
+      note: "Reference (#86; CONTEXT.md).",
+    }
+  coogan-brief-4e-summary-ch24:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 2019, as coogan-brief-4e-summary",
+      note: "Reference; chapter 24 page, “The Wisdom of the Sages”.",
+    }
+  hayes-rlst145-l20:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale Courses, 2006 lectures",
+      note: "Reference, as the other RLST 145 entries. Lecture title “Responses to Suffering and Evil: Lamentations and Wisdom Literature”.",
+    }
+  newsom-eor-2005-job:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Encyclopedia of Religion; the page signs it “Carol A. Newsom (2005)”, no edition printed",
+      note: "Reference (encyclopedia), as sperling EoR. See flag (3).",
+    }
+  newsom-2014-job:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey page dated September 25, 2014",
+      note: "Reference, as the other Bible Odyssey articles.",
+    }
+  cmi-paul-2010-behemoth:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Journal of Creation 24(3), pp. 94–100, November 2010; republished online 20 March 2015",
+      note: "Tradition: Creation Ministries International's own journal, republished on its ministry site.",
+    }
+leads:
+  - "Henry M. Morris, The Remarkable Record of Job (1988): print book, may give an explicit year for the writing; not read."
+  - "Britannica “Book of Job” (https://www.britannica.com/topic/The-Book-of-Job): 403 to scripts; not read."
+  - "Encyclopaedia Judaica via Jewish Virtual Library: served an empty shell; not read there (the Encyclopedia.com copy was read, see uncited)."
+uncited:
+  - "New Catholic Encyclopedia, Skehan, “Job, Book of” (Encyclopedia.com combined page https://www.encyclopedia.com/philosophy-and-religion/bible/old-testament/job): “The unknown author of Job lived in Palestine, probably in the 6th or 5th century b.c.” Agrees with NABRE; not needed, and the combined page shows no edition or year."
+  - "Hayes l21 ch. 2 [00:08:37]: “there is debate among scholars over the date of the Book of Job” and “the books reached their final form … only later, in the post-exilic period.” The second is about the Writings generally, not Job by name; the first adds nothing to l20."
+  - "Coogan ch. 24 ¶ 2 on Elihu as a later addition, and ¶ 1 on Job as “a well-known ancient figure”: not needed for the date."
+  - "Encyclopaedia Judaica, Ginsberg/Gruber “Job, Book of” (Encyclopedia.com): Uz in Edom; wealth “like that of the Patriarchs in Genesis”. Redundant with Newsom and Hayes for the setting."
+  - "HarperCollins Bible Dictionary “Uz” on Bible Odyssey: “The location of Uz is uncertain.” Read as the reason Edom stays out of the setting display."
+  - "Bible Odyssey dictionary “Job” and Linafelt “The Patience of Job”: no date or setting."
+  - "Got Questions “Summary of the Book of Job” (Date of Writing) and “When was Job written?”: Moses c. 1440 BC or Solomon c. 950 BC, conditional on the author, and “we can't know the date of writing”. Not a Tradition Date."
+  - "The Bible Says “Timeline of Old Testament Books”: “2000 BC Job”, hedged “it could be the earliest”; its About page names no tradition, so no holder in its own words."
+  - "ICR, Morris, “Modern Science In An Ancient” (1994): “recorded in Job almost 4000 years ago”; needs a conversion to a year."
+  - "Answers in Genesis, Oard “Where Does the Ice Age Fit?”: “written about 500 years or so after the Flood”; a year only by chaining to AiG's Flood date. AiG “Book of Job: Fact or Fiction”: date unknown."
+  - "Babylonian Talmud Bava Batra 14b–15a (Sefaria): Moses wrote Job; rabbis place Job's lifetime from Moses to the return from exile, or call him a parable. Authorship and lifetimes, no year for the writing."
+  - "CMI Paul 2010, concluding section: “A number of features in Job point toward a date in the second millennium shortly after the time of Israel's patriarchs.” Ambiguous between setting and writing; tradition/1 used instead."
+  - "Dates for when Job lived (AiG Kids c. 2100 BC, Ligonier 2100–1800 BC, Insight for Living 2100–1900 BC, Got Questions c. 2200 BC, Bible Hub): events, not the writing."
+  - "MacArthur Study Bible, GTY Q&A, ESV Study Bible (BLB), CSB Apologetics: no date for the writing."

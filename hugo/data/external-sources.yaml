@@ -2883,3 +2883,87 @@ abr-wood-2009-ur:
   url: "https://biblearchaeology.org/the-army-of-the-kings-of-ur/"
   hostAuthored: false
   tradition: "Associates for Biblical Research, an evangelical apologetics ministry"
+
+nabre-job-intro:
+  author: null
+  title: "Introduction to Job"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/job/0"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch24:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 24 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-24-summary"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l20:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 20 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-20"
+  hostAuthored: false
+  tradition: null
+
+newsom-eor-2005-job:
+  author: "Carol A. Newsom"
+  title: "Job"
+  series: "Encyclopedia of Religion"
+  publisher: null
+  year: 2005
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/job"
+  hostAuthored: false
+  tradition: null
+
+newsom-2014-job:
+  author: "Carol A. Newsom"
+  title: "Job"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2014
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/job/"
+  hostAuthored: false
+  tradition: null
+
+cmi-paul-2010-behemoth:
+  author: "Mart-Jan Paul"
+  title: "Behemoth and leviathan in the book of Job"
+  series: "Journal of Creation 24(3)"
+  publisher: "Creation Ministries International"
+  year: 2010
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://creation.com/en/articles/behemoth-and-leviathan"
+  hostAuthored: false
+  tradition: "Creation Ministries International, a group of non-denominational ministries"
