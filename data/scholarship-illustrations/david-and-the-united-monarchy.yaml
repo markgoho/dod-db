@@ -1,0 +1,127 @@
+# Illustrations for /scholarship/david-and-the-united-monarchy/ (generated
+# with Gemini; see src/scripts/generate-scholarship-illustrations.ts). Each
+# picture shows only what the listed statements support; every caption, link
+# and claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Five comic panels in the page's order: the Bible's picture of a vast
+# kingdom; Israel and Judah, split by a plain gutter; the Tel Dan stela; the
+# two Goliath stories, split by a bolt (each half is assigned to a verse);
+# and, full width, the debate: doubt (the grand kingdom as a scribe's
+# picture) against defenders' far more modest state. `king` is the anchor
+# for David; the halves that show him are chained from it. The giant is
+# chained from `david-goliath`. No inscription is legible.
+slug: david-and-the-united-monarchy
+images:
+  - id: king
+    statements: [david-ruler, origin]
+    aspect: "4:3"
+    alt: "A crowned king in a rust robe stands on a palace balcony looking out over a vast land of many walled cities stretching to the horizon."
+    prompt: >-
+      A bearded king in his forties with dark curly hair, a simple gold crown
+      and a deep rust red robe with an amber sash stands on the right side of
+      the picture on a grand stone palace balcony with tall columns, one arm
+      raised over the view. Below and to the left stretches a vast land of
+      rolling hills dotted with many walled cities and towers, receding to a
+      far horizon, suggesting a huge kingdom. The upper left of the picture
+      is open pale sky. The lower left corner is open plain ground. No other
+      figures, no flags, no maps, no text.
+
+  - id: north
+    statements: [israel-and-judah]
+    aspect: "4:5"
+    alt: "A large walled city with many towers on a broad hill, horses and chariots at its gate."
+    prompt: >-
+      A large, strong ancient Near Eastern Iron Age walled city on a broad
+      hilltop, seen from below: thick pale stone walls with square
+      flat-topped towers, many flat-roofed stone buildings and a large
+      columned palace inside, a big gateway with two horse-drawn chariots and
+      a few soldiers in front of it, rich fields around the hill. No pointed
+      roofs, no spires, no medieval castle features. The lower part of the picture is open plain ground. The top
+      of the picture is open pale sky. No flags, no banners, no text.
+
+  - id: south
+    statements: [israel-and-judah]
+    aspect: "4:5"
+    alt: "A small village of a few houses with a low wall on a rocky hilltop, a shepherd and some sheep below."
+    prompt: >-
+      A small, modest hilltop village on dry rocky hills: a handful of simple
+      flat-roofed stone houses inside a low, uneven wall, much smaller than a
+      city. Below the hill a single shepherd with a staff watches a few
+      sheep. Large open pale sky fills the top half of the picture. The
+      lower part is open rocky ground. No towers, no chariots, no flags, no
+      text.
+
+  - id: stela
+    statements: [tel-dan, house-of-david]
+    aspect: "4:3"
+    alt: "Broken fragments of a dark basalt stone slab with rows of carved marks, lying in an excavation trench beside a brush and trowel."
+    prompt: >-
+      Close view of an archaeological excavation trench in pale earth: three
+      broken fragments of a polished dark grey-black basalt stone slab lie
+      fitted roughly together in the centre-right, their flat face carved
+      with neat rows of small chiselled marks that are not readable letters,
+      just abstract incised strokes. One fragment is still partly embedded
+      in a rough stone wall. A soft brush and a mason's trowel lie beside
+      them. A pair of gloved hands gently brushes dust off one fragment. The
+      upper left of the picture is open plain earth. No faces, no readable
+      writing, no labels, no text.
+
+  - id: david-goliath
+    statements: [goliath]
+    aspect: "4:5"
+    refs: [king]
+    alt: "A young shepherd with a sling faces a towering armoured giant with a huge spear."
+    prompt: >-
+      The SAME man as the king in the reference image, but much younger, a
+      teenage shepherd: same dark curly hair, no crown, no beard, a short
+      plain rust red tunic, bare feet, a shepherd's bag at his hip, whirling
+      a sling. He stands small in the lower left. He faces a towering giant
+      warrior on the right, three times his height, in bronze scale armour
+      and a crested bronze helmet, holding an enormous spear with a shaft as
+      thick as a beam. Open dry valley ground between them. The top left of
+      the picture is open pale sky. No other figures, no blood, no wounds,
+      no text.
+
+  - id: elhanan-goliath
+    statements: [goliath]
+    aspect: "4:5"
+    refs: [david-goliath]
+    alt: "A grown soldier with a shield and a sword faces the same armoured giant."
+    prompt: >-
+      The SAME towering giant warrior as in the reference image, identical
+      bronze scale armour, crested bronze helmet and enormous beam-like
+      spear, standing on the left. Facing him on the right is a different
+      man: a grown, bearded soldier with short straight hair, a light grey
+      tunic, a leather breastplate, a round shield and a short sword, in a
+      steady fighting stance. Not a boy, no sling. Open dry valley ground
+      between them. The top right of the picture is open pale sky. No
+      blood, no wounds, no text.
+
+  - id: doubt
+    statements: [united-monarchy, origin]
+    aspect: "16:9"
+    refs: [king]
+    alt: "A scribe writes on a scroll at a desk; above the scroll a grand palace and a crowned king appear as a pale dotted vision."
+    prompt: >-
+      A scribe in a plain light grey robe sits at a simple wooden desk on the
+      right side of the picture, writing on a long unrolled scroll covered in
+      tiny illegible scribble marks. Rising from the scroll like a daydream,
+      drawn only in pale faded dotted outlines with no solid fill, is a grand
+      palace with columns and the SAME crowned king as in the reference image
+      on its balcony, floating in the air over the left half of the picture.
+      The lower left corner is open plain floor. No other figures, no
+      readable writing, no text.
+
+  - id: modest
+    statements: [united-monarchy]
+    aspect: "16:9"
+    refs: [king]
+    alt: "The bearded king, in a plain rust cloak, stands before a small hilltop stronghold with a few armed men."
+    prompt: >-
+      The SAME bearded man as the king in the reference image, now in a
+      plain rust red cloak with only a thin gold circlet, stands on the left
+      in front of a small, modest hilltop stronghold: a short stone wall, one
+      squat tower and a few small houses. Five or six men with spears and
+      plain tunics stand near him. Dry hills around. Much smaller and
+      plainer than a palace. The lower right of the picture is open rocky
+      ground. No banners, no maps, no text.

@@ -1,0 +1,392 @@
+/*
+  Custom block for the David, Saul and the United Monarchy Scholarship Page:
+  a comic page. One ink frame holds the title, five panels and the credit,
+  so the whole thing shares as one image. Panels carry one picture, or two
+  split by a plain gutter (two kingdoms), a lightning bolt (two verses, each
+  assigned a half) or a gutter with a ≠ roundel (two views among scholars).
+  A narration label sits flush top-left; the answers are plates set on the
+  art in corners the picture leaves clear. Composes cloud-section,
+  type-section-title, scholarship-meta and the shared comic-plate.
+
+  Distinctions without colour: each side's name is on its plate, and the
+  divider's shape says what kind of split it is.
+*/
+.dum-comic {
+  --dum-ink: var(--tan-900);
+  --dum-paper: var(--tan-000);
+  --dum-amber: var(--color-accent);
+  --dum-frame: var(--border-width-md);
+
+  container: dum-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.dum-comic__page {
+  background: var(--dum-paper);
+  border: var(--dum-frame) solid var(--dum-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--dum-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.dum-comic__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.dum-comic__head > p {
+  margin: 0;
+}
+
+.dum-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.dum-comic__title {
+  color: var(--dum-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  max-inline-size: 24ch;
+  text-shadow: 3px 3px 0 var(--dum-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.dum-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dum-comic__frame {
+  display: grid;
+  min-inline-size: 0;
+}
+
+/* A panel: one ink frame around the art; its labels sit on the art as shared comic plates (scholarship.css). */
+.dum-comic__figure {
+  border: var(--dum-frame) solid var(--dum-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.dum-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.dum-comic__half {
+  inset: 0;
+  position: absolute;
+}
+
+.dum-comic__art--bolt > .dum-comic__half--left {
+  clip-path: polygon(0 0, 57% 0, 45% 40%, 58% 52%, 43% 100%, 0 100%);
+}
+
+.dum-comic__art--bolt > .dum-comic__half--right {
+  clip-path: polygon(57% 0, 100% 0, 100% 100%, 43% 100%, 58% 52%, 45% 40%);
+}
+
+.dum-comic__art:is(.dum-comic__art--gutter, .dum-comic__art--vs)
+  > .dum-comic__half--left {
+  clip-path: inset(0 50% 0 0);
+}
+
+.dum-comic__art:is(.dum-comic__art--gutter, .dum-comic__art--vs)
+  > .dum-comic__half--right {
+  clip-path: inset(0 0 0 50%);
+}
+
+.dum-comic__half > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 60%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.12;
+}
+
+.dum-comic__art:is(.dum-comic__art--gutter, .dum-comic__art--vs)
+  .dum-comic__half
+  > img {
+  inline-size: 50%;
+}
+
+.dum-comic__half--right > img {
+  margin-inline-start: 40%;
+}
+
+.dum-comic__art:is(.dum-comic__art--gutter, .dum-comic__art--vs)
+  .dum-comic__half--right
+  > img {
+  margin-inline-start: 50%;
+}
+
+.dum-comic__half--whole > img {
+  inline-size: 100%;
+  scale: 1.06;
+}
+
+/* The bolt: a thick ink stroke with an amber core. */
+.dum-comic__bolt {
+  block-size: 100%;
+  fill: none;
+  inline-size: 100%;
+  inset: 0;
+  position: absolute;
+  stroke-linejoin: miter;
+}
+
+.dum-comic__bolt > polyline:first-child {
+  stroke: var(--dum-ink);
+  stroke-width: 12px;
+  vector-effect: non-scaling-stroke;
+}
+
+.dum-comic__bolt > polyline:last-child {
+  stroke: var(--dum-amber);
+  stroke-width: 5px;
+  vector-effect: non-scaling-stroke;
+}
+
+/* The neutral split: a straight ink gutter, with a ≠ roundel for two views. */
+.dum-comic__gutter {
+  background: var(--dum-ink);
+  inline-size: var(--dum-frame);
+  inset: 0 auto 0 calc(50% - var(--dum-frame) / 2);
+  position: absolute;
+}
+
+.dum-comic__vs {
+  aspect-ratio: 1;
+  background: var(--dum-paper);
+  border: 3px solid var(--dum-ink);
+  border-radius: 50%;
+  display: grid;
+  font-family: var(--font-family-display);
+  font-size: var(--step-1);
+  font-weight: var(--font-weight-boldest);
+  inline-size: 2.2em;
+  inset: 50% auto auto 50%;
+  line-height: 1;
+  place-items: center;
+  position: absolute;
+  translate: -50% -50%;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.dum-comic__box {
+  background: var(--dum-amber);
+  border-block-end: var(--dum-frame) solid var(--dum-ink);
+  border-inline-end: var(--dum-frame) solid var(--dum-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.comic-plate__sub > .dum-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates. */
+.dum-comic__ref {
+  background: var(--dum-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--dum-amber);
+  white-space: nowrap;
+}
+
+/* A plate with only a scripture tag under its name: no leading space. */
+.comic-plate__sub:has(> .dum-comic__ref:only-child) > .dum-comic__ref {
+  margin-inline-start: 0;
+}
+
+.dum-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.dum-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container dum-comic (width >= 40rem) {
+  .dum-comic__page {
+    padding: var(--space-m);
+  }
+
+  .dum-comic__title {
+    font-size: var(--step-3);
+  }
+
+  .dum-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* The last panel spans both columns, so its art is a wide strip. */
+  .dum-comic__frame--wide {
+    grid-column: 1 / -1;
+  }
+
+  .dum-comic__frame--wide .dum-comic__art {
+    aspect-ratio: 8 / 3;
+  }
+
+  /* The wide panel is twice as wide a container: halve the plates' cqi type so they match the other panels. */
+  .dum-comic__frame--wide .comic-plate {
+    max-inline-size: 30%;
+    padding: 0.45cqi 0.7cqi 0.55cqi;
+  }
+
+  .dum-comic__frame--wide .comic-plate__big {
+    font-size: clamp(0.95rem, 2.7cqi, 2.1rem);
+  }
+
+  .dum-comic__frame--wide .comic-plate__sub {
+    font-size: clamp(0.65rem, 1.25cqi, 0.95rem);
+  }
+
+  .dum-comic__frame--wide .comic-plate--bl {
+    inset: auto auto 1cqi 1cqi;
+  }
+
+  .dum-comic__frame--wide .comic-plate--br {
+    inset: auto 1cqi 1cqi auto;
+  }
+}
+
+/* The poster: two panels to a row on the 4:5 canvas, shorter art, the wide panel across the bottom. */
+
+.scholarship-share:target .dum-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .dum-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:target .dum-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:target .dum-comic__strip {
+  gap: var(--space-2xs);
+}
+
+.scholarship-share:target .dum-comic__art {
+  aspect-ratio: 3 / 2;
+}
+
+.scholarship-share:target .dum-comic__frame--wide .dum-comic__art {
+  aspect-ratio: 7 / 2;
+}
+
+.scholarship-share:target .dum-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.scholarship-share:target .dum-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
+}
+
+/* The card: the Bible's picture and the debate side by side under the title. */
+
+.scholarship-share:has(#share-card:target) .dum-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .dum-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:has(#share-card:target) .dum-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scholarship-share:has(#share-card:target) .dum-comic__frame--wide {
+  grid-column: auto;
+}
+
+.scholarship-share:has(#share-card:target)
+  .dum-comic__frame--wide
+  .dum-comic__art {
+  aspect-ratio: 4 / 3;
+}
+
+.scholarship-share:has(#share-card:target)
+  .dum-comic__frame--wide
+  .comic-plate {
+  max-inline-size: 42%;
+  padding: 0.9cqi 1.4cqi 1.1cqi;
+}
+
+.scholarship-share:has(#share-card:target)
+  .dum-comic__frame--wide
+  .comic-plate__sub {
+  font-size: clamp(0.65rem, 2.6cqi, 0.95rem);
+}
+
+/* In the card the wide panel's halves are narrow: aim each crop at its subject (the scribe and his scroll; the king with his men). */
+.scholarship-share:has(#share-card:target)
+  .dum-comic__frame--debate
+  .dum-comic__half--left
+  > img {
+  object-position: 74% 50%;
+}
+
+.scholarship-share:has(#share-card:target)
+  .dum-comic__frame--debate
+  .dum-comic__half--right
+  > img {
+  object-position: 14% 50%;
+}
+
+.scholarship-share:has(#share-card:target)
+  .dum-comic__frame--wide
+  .comic-plate__big {
+  font-size: clamp(0.95rem, 4.4cqi, 2.1rem);
+}

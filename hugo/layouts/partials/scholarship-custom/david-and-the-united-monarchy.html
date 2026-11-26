@@ -1,0 +1,163 @@
+{{- /*
+  Custom block for /scholarship/david-and-the-united-monarchy/: a five-panel
+  comic page in the page's own order. The Bible's picture of a vast kingdom;
+  Israel and Judah side by side (a plain gutter: two kingdoms, not two
+  views); the Tel Dan stela; the two Goliath stories (a lightning bolt: the
+  page assigns each half to a verse); and, full width, the debate the core
+  statement reports, split by a gutter with a ≠ roundel: the doubters'
+  "later literary construct" against the defenders' far more modest state.
+
+  A view of the page's reviewed statements united-monarchy (short),
+  origin (short; text and cite 6 for 2 Samuel 8), david-ruler (text, cite
+  4: "a vast Davidic empire"), israel-and-judah (short), tel-dan (short),
+  house-of-david (short) and goliath (short). It makes no claim they don't.
+  No inscription is legible in the art; the reading is on the plate, with
+  the short's "most scholars".
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/david-and-the-united-monarchy.yaml. Reword
+  a plate only when the statement it comes from is re-reviewed.
+  */
+-}}
+{{- define "partials/inline/dum-ref.html" -}}
+  <a
+    class="dum-comic__ref"
+    href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .ref) | safeURL }}"
+    rel="noopener"
+    >{{ replace .label " " "&nbsp;" | safeHTML }}</a
+  >
+{{- end -}}
+{{- define "partials/inline/dum-img.html" -}}
+  {{- $img := resources.Get (printf "scholarship-art/david-and-the-united-monarchy/%s.png" .id) }}
+  <div class="dum-comic__half dum-comic__half--{{ .side }}">
+    {{- with $img }}
+      {{- $webp := .Process "resize 1200x webp q78" }}
+      <img
+        src="{{ $webp.RelPermalink }}"
+        width="{{ $webp.Width }}"
+        height="{{ $webp.Height }}"
+        alt="{{ $.alt }}"
+        {{ with $.focus }}style="object-position: {{ . | safeCSS }}"{{ end }}
+        loading="eager" />
+    {{- end }}
+  </div>
+{{- end -}}
+{{- $panels := slice
+  (dict
+  "id" "bible" "box" "What does the Bible describe?" "split" "none"
+  "left" (dict "id" "king" "alt" "A crowned king on a palace balcony looks out over a vast land of many walled cities.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "A vast kingdom" "sub" "David’s conquests" "ref" "2 Samuel 8" "label" "2 Sam 8")))
+  (dict
+  "id" "stronger" "box" "Which kingdom was stronger?" "split" "gutter"
+  "left" (dict "id" "north" "alt" "A large walled city with towers and a palace on a broad hill, chariots at its gate.")
+  "right" (dict "id" "south" "alt" "A small village of a few houses with a low wall on a rocky hilltop, a shepherd and sheep below.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "Israel" "sub" "the stronger power")
+  (dict "pos" "br" "big" "Judah" "sub" "in its shadow")))
+  (dict
+  "id" "stela" "box" "What does the Tel Dan stela say?" "split" "none"
+  "left" (dict "id" "stela" "alt" "Broken fragments of a dark stone slab with rows of carved marks, being brushed clean in an excavation trench.")
+  "plates" (slice
+  (dict "pos" "tl" "big" "“House of David”" "sub" "how most scholars read it")))
+  (dict
+  "id" "goliath" "box" "Who killed Goliath?" "split" "bolt"
+  "left" (dict "id" "david-goliath" "alt" "A young shepherd with a sling faces a towering armoured giant.")
+  "right" (dict "id" "elhanan-goliath" "alt" "A grown soldier with a shield and sword faces the same giant.")
+  "plates" (slice
+  (dict "pos" "tl" "big" "David" "ref" "1 Samuel 17" "label" "1 Sam 17")
+  (dict "pos" "tr" "big" "Elhanan" "ref" "2 Samuel 21:19" "label" "2 Sam 21:19")))
+  (dict
+  "id" "debate" "box" "Did that kingdom exist?" "split" "vs" "wide" true
+  "left" (dict "id" "doubt" "alt" "A scribe writes a scroll; above it a grand palace and a crowned king float as a pale dotted vision.")
+  "right" (dict "id" "modest" "alt" "The king, in a plain cloak, stands with a few armed men before a small hilltop stronghold.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "Many doubt it" "sub" "a later literary construct")
+  (dict "pos" "br" "big" "Far more modest" "sub" "say those who defend an early state")))
+-}}
+<section class="cloud-section dum-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="dum-comic__page">
+    <header class="dum-comic__head">
+      <p class="dum-comic__kicker">1–2 Samuel · scholars debate it</p>
+      <p class="dum-comic__title">
+        Did David and Solomon rule a united kingdom?
+      </p>
+    </header>
+    <ol class="dum-comic__strip">
+      {{- range $panels }}
+        <li
+          class="dum-comic__frame dum-comic__frame--{{ .id }}{{ if .wide }}
+            dum-comic__frame--wide
+          {{ end }}"
+          {{ if in (slice "stronger" "stela" "goliath") .id }}
+            data-card-hide
+          {{ end }}>
+          <figure class="dum-comic__figure">
+            <div class="dum-comic__art dum-comic__art--{{ .split }}">
+              {{ partial "inline/dum-img.html" (merge .left (dict "side" (cond (eq .split "none") "whole" "left"))) }}
+              {{- with .right }}
+                {{ partial "inline/dum-img.html" (merge . (dict "side" "right")) }}
+              {{- end }}
+              {{- if eq .split "bolt" }}
+                {{/* The bolt: the page assigns each half to a verse. */}}
+                <svg
+                  class="dum-comic__bolt"
+                  viewBox="0 0 100 100"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                  focusable="false">
+                  <polyline points="57,0 45,40 58,52 43,100" />
+                  <polyline points="57,0 45,40 58,52 43,100" />
+                </svg>
+              {{- else if eq .split "gutter" }}
+                <span class="dum-comic__gutter" aria-hidden="true"></span>
+              {{- else if eq .split "vs" }}
+                {{/* Two views among scholars, assigned to no verse: a plain gutter and a ≠. */}}
+                <span class="dum-comic__gutter" aria-hidden="true"
+                  ><span class="dum-comic__vs">≠</span></span
+                >
+              {{- end }}
+            </div>
+            <h3 class="dum-comic__box">{{ .box }}</h3>
+            <figcaption>
+              {{- range .plates }}
+                {{- $plate := . }}
+                <p class="comic-plate comic-plate--{{ .pos }}">
+                  <span class="comic-plate__big">{{ .big }}</span>
+                  {{- if or .sub .ref }}
+                    <span class="comic-plate__sub">
+                      {{ .sub }}
+                      {{- with .ref }}
+                        {{ partial "inline/dum-ref.html" (dict "ref" . "label" $plate.label) -}}
+                      {{- end }}
+                    </span>
+                  {{- end }}
+                </p>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="dum-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
+  </div>
+  <p class="dum-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#united-monarchy">did David and Solomon rule a united kingdom</a>,
+    <a href="#origin">where the Bible’s picture comes from</a>,
+    <a href="#david-ruler">what kind of ruler David was</a>,
+    <a href="#israel-and-judah">which kingdom was stronger</a>,
+    <a href="#tel-dan">the Tel Dan inscription</a>,
+    <a href="#house-of-david">“house of David”</a> and
+    <a href="#goliath">who killed Goliath</a>.
+  </p>
+</section>
