@@ -133,4 +133,62 @@
       </p>
     </div>
   {{ end }}
+
+  {{- /* PROTOTYPE (tradition gap, variant D): the gap strip, on the Timeline's one shared scale. */}}
+  {{ with $.gapScale }}
+    {{ if and (eq $.by "critical") $t (isset $t "from") }}
+      {{ $min := .min }}
+      {{ $span := sub .max .min }}
+      {{ $cFrom := float ($c.from | default $c.sort) }}
+      {{ $cTo := float ($c.to | default (cond (eq $c.precision "century") (add $cFrom 99) $cFrom)) }}
+      {{ $tFrom := float $t.from }}
+      {{ $tTo := float ($t.to | default $tFrom) }}
+      {{ $gap := sub (div (add $cFrom $cTo) 2) (div (add $tFrom $tTo) 2) }}
+      {{ $abs := math.Abs $gap }}
+      {{ $c0 := div (sub $cFrom $min) $span }}
+      {{ $c1 := div (sub $cTo $min) $span }}
+      {{ $t0 := div (sub $tFrom $min) $span }}
+      {{ $t1 := div (sub $tTo $min) $span }}
+      <div class="gap-strip" aria-hidden="true">
+        <p class="gap-strip__gap">
+          {{- if lt $abs 30 }}
+            Scholars and tradition roughly agree
+          {{- else }}
+            Tradition puts it
+            <strong
+              >~{{ lang.FormatNumber 0 (mul (math.Round (div $abs 10)) 10) }}
+              years {{ cond (gt $gap 0) "earlier" "later" }}</strong
+            >
+            than scholars
+          {{- end }}
+        </p>
+        <div class="gap-strip__track">
+          {{ range seq (int $min) 500 (int .max) }}
+            <span
+              class="gap-strip__tick"
+              style="--at: {{ div (sub . $min) $span }}"
+              ><span
+                >{{ if lt . 0 }}
+                  {{ sub 0 . }} BCE
+                {{ else if eq . 0 }}
+                  1 CE
+                {{ else }}
+                  {{ . }} CE
+                {{ end }}</span
+              ></span
+            >
+          {{ end }}
+          <span
+            class="gap-chart__link"
+            style="--from: {{ math.Min $c1 $t1 }}; --to: {{ math.Max $c0 $t0 }}"></span>
+          <span
+            class="gap-chart__range gap-chart__range--tradition"
+            style="--from: {{ $t0 }}; --to: {{ $t1 }}"></span>
+          <span
+            class="gap-chart__range gap-chart__range--critical"
+            style="--from: {{ $c0 }}; --to: {{ $c1 }}"></span>
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
 </li>

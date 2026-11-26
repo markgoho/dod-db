@@ -39,7 +39,19 @@
     {{ end }}
   {{ end }}
 
-  {{ $ctx := dict "episodesByNumber" $episodesByNumber "shortCites" $shortCites "byId" $byId }}
+  {{/* PROTOTYPE (tradition gap, variant D): one shared scale for every entry's gap strip. */}}
+  {{ $gapYears := slice }}
+  {{ range $placed }}
+    {{ $p := .page.Params }}
+    {{ if and (eq .by "critical") $p.tradition (isset ($p.tradition | default dict) "from") }}
+      {{ $gapYears = $gapYears | append ($p.critical.from | default .year) ($p.critical.to | default .year) $p.tradition.from ($p.tradition.to | default $p.tradition.from) }}
+    {{ end }}
+  {{ end }}
+  {{ $gapScale := dict }}
+  {{ with $gapYears }}
+    {{ $gapScale = dict "min" (mul (math.Floor (div (float (math.Min .)) 500)) 500) "max" (mul (math.Ceil (div (float (math.Max .)) 500)) 500) }}
+  {{ end }}
+  {{ $ctx := dict "episodesByNumber" $episodesByNumber "shortCites" $shortCites "byId" $byId "gapScale" $gapScale }}
   {{ $labels := partial "timeline-labels.html" }}
 
 
@@ -220,7 +232,9 @@
           ["a", "Current"],
           ["b", "Minimap gap brackets"],
           ["c", "Gap chart"],
-          ["bc", "Both"],
+          ["d", "Gap strip on each entry"],
+          ["cd", "Gap chart + strips"],
+          ["b", "Minimap brackets (old)"],
         ];
         const bar = document.querySelector(".proto-switcher");
         const out = bar.querySelector("output");

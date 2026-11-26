@@ -13,7 +13,7 @@
   {{- $p := .page.Params -}}
   {{- if and (eq .by "critical") $p.tradition (isset ($p.tradition | default dict) "from") -}}
     {{- $cFrom := float ($p.critical.from | default .year) -}}
-    {{- $cTo := float ($p.critical.to | default $cFrom) -}}
+    {{- $cTo := float ($p.critical.to | default (cond (eq $p.critical.precision "century") (add $cFrom 99) $cFrom)) -}}
     {{- $tFrom := float $p.tradition.from -}}
     {{- $tTo := float ($p.tradition.to | default $tFrom) -}}
     {{- $gap := sub (div (add $cFrom $cTo) 2) (div (add $tFrom $tTo) 2) -}}
