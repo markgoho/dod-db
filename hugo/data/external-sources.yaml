@@ -3024,6 +3024,20 @@ nabre-kings-intro:
   hostAuthored: false
   tradition: null
 
+britannica-biblical-canon:
+  author: null
+  title: "Biblical canon"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online, Britannica Editors, revised by Michael Ray"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/topic/Biblical-canon"
+  hostAuthored: false
+  tradition: null
+
 britannica-josiah:
   author: null
   title: "Josiah"

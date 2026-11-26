@@ -19,7 +19,7 @@ critical:
   display: "367 CE"
   from: 367
   precision: year
-  note: "The list is in an Easter letter by Athanasius, bishop of Alexandria. Martin notes the letter was binding only on the churches of his Alexandrian diocese and did not set the canon; he says bishops' and councils' decrees never completely settled the question for all Christians."
+  note: "The list is in an Easter letter by Athanasius, bishop of Alexandria. Britannica says a list answering to Athanasius's was confirmed for the province of Africa in synods at Hippo Regius in 393 and at Carthage in 397 and 419. Martin notes the letter was binding only on the churches of his Alexandrian diocese and did not set the canon; he says bishops' and councils' decrees never completely settled the question for all Christians."
   cites:
     - source: martin-rlst152-l2
       locator: "ch. 2 “The Forming of Canons” [00:16:17]"
@@ -40,6 +40,10 @@ critical:
     - source: martin-rlst152-l2
       locator: "ch. 4 “A Slowly Developing (and Incomplete) Consensus” [00:32:50]"
       quote: "But they never completely settled the question for all Christians everywhere around the world."
+      read: 2026-11-26
+    - source: britannica-biblical-canon
+      locator: "section “Canon of the New Testament”, subsection “Formation of the canon”, second paragraph"
+      quote: "In 382 a synod was held at Rome under Pope Damasus at which the influence of Jerome secured the adoption of a list of books answering to that of Athanasius. This was ratified by Pope Gelasius at the end of the 5th century. The same list was confirmed independently for the province of Africa in a series of synods at Hippo Regius in 393 and at Carthage in 397 and 419 under the leadership of Augustine."
       read: 2026-11-26
 tradition:
   display: "Late 1st century CE, finalized by the Apostle John"
