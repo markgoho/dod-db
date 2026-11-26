@@ -236,6 +236,12 @@ describe("checkTimeline", () => {
     ]);
   });
 
+  test("fails a review whose owner holds text instead of a verdict (#223)", async () => {
+    expect(await check("delegated-owner-text")).toEqual([
+      `data/timeline-reviews/fall.yaml: citations.critical/1.owner: owner must be "", pass or fail; put notes in note (#223)`,
+    ]);
+  });
+
   test("fails a delegated review whose date doesn't match the entry's sourcesRead", async () => {
     expect(await check("delegated-sources-read-mismatch")).toEqual([
       `timeline/fall: sourcesRead "2026-11-23" doesn't match review date 2026-12-03`,

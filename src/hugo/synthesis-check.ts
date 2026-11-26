@@ -55,7 +55,10 @@ export const TriggersSchema = z.array(TriggerSchema);
 
 const ReviewItemSchema = z.object({
   agent: z.string().optional(),
-  owner: z.string(),
+  // Only a verdict; a reviewer's text goes in `note` (#223).
+  owner: z.enum(["", "pass", "fail"], {
+    error: 'owner must be "", pass or fail; put notes in note (#223)',
+  }),
   note: z.string().optional(),
   edition: z.string().optional(),
 });

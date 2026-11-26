@@ -24,95 +24,95 @@ citations:
   critical/1:
     {
       agent: pass,
-      owner: " Second pass: matched once, Introduction ¶1, third sentence; “the latter” = “the Aramaic alphabet” confirmed. Now the entry's only outright date for the title's subject (adoption); display narrowed to it (“Likely the 6th century BCE”), placed -600 to -501, precision century.",
-      note: "Richelle 2026, Introduction ¶1, sentence 3; “the latter” is “the Aramaic alphabet” of the sentence before. Supports “Likely the 6th century BCE” and the Neo-Babylonian/Persian ranges in the note. Hedge “likely” kept in display. Next sentence: the Aramaic script “gradually developed until it became the Jewish script”.",
+      owner: "",
+      note: "Richelle 2026, Introduction ¶1, sentence 3; “the latter” is “the Aramaic alphabet” of the sentence before. Supports “Likely the 6th century BCE” and the Neo-Babylonian/Persian ranges in the note. Hedge “likely” kept in display. Next sentence: the Aramaic script “gradually developed until it became the Jewish script”. Second pass: matched once, Introduction ¶1, third sentence; “the latter” = “the Aramaic alphabet” confirmed. Now the entry's only outright date for the title's subject (adoption); display narrowed to it (“Likely the 6th century BCE”), placed -600 to -501, precision century.",
     }
   critical/2:
     {
       agent: pass,
-      owner: " Second pass: matched once, p. 139 = PDF p. 151, under “Hebrew and Aramaic in the Persian Period”. Kept, but as the old script's replacement, not its adoption: “One gauge of the relative place of Hebrew and Aramaic is script” precedes it; the sentence after says Hebrew is “almost always written with Aramaic script” even in the Roman period. It dates the Aramaic script displacing the Hebrew script, not when scribes first took it up; Richelle ¶2 has the two in use side by side. Moved from display to the note (“one in the Persian period”). His own Persian period is 538–333 B.C. (same page).",
-      note: "Schniedewind 2006 p. 139 (chapter pp. 137ff.). Supports “in the Persian period” for the Hebrew script's replacement by Aramaic script. Outright. Context: a language-shift argument; p. 140 “certainly points to the shift from Hebrew to Aramaic that took place during the Persian period”.",
+      owner: "",
+      note: "Schniedewind 2006 p. 139 (chapter pp. 137ff.). Supports “in the Persian period” for the Hebrew script's replacement by Aramaic script. Outright. Context: a language-shift argument; p. 140 “certainly points to the shift from Hebrew to Aramaic that took place during the Persian period”. Second pass: matched once, p. 139 = PDF p. 151, under “Hebrew and Aramaic in the Persian Period”. Kept, but as the old script's replacement, not its adoption: “One gauge of the relative place of Hebrew and Aramaic is script” precedes it; the sentence after says Hebrew is “almost always written with Aramaic script” even in the Roman period. It dates the Aramaic script displacing the Hebrew script, not when scribes first took it up; Richelle ¶2 has the two in use side by side. Moved from display to the note (“one in the Persian period”). His own Persian period is 538–333 B.C. (same page).",
     }
   critical/3:
     {
       agent: pass,
-      owner: " Second pass: matched once, p. 11 = PDF p. 5, §3, third paragraph; n. 19 confirmed. Kept as replacement (“gradually replaced … even for Hebrew texts”), which presupposes the Aramaic script already in use; moved from display to the note, reworded “starting in Persian-period Yehud and gradual” (the first pass's “Two place the replacement … in the Persian period” overstated a switch he has only starting then and complete in the second century CE).",
-      note: "Longacre 2021 p. 11, §3. Supports “starting in the Persian period”, “gradual”, “even for Hebrew texts” and “complete in Jewish circles only in the second century CE”. Outright; footnote 19: the Samaritans kept a version of the old script.",
+      owner: "",
+      note: "Longacre 2021 p. 11, §3. Supports “starting in the Persian period”, “gradual”, “even for Hebrew texts” and “complete in Jewish circles only in the second century CE”. Outright; footnote 19: the Samaritans kept a version of the old script. Second pass: matched once, p. 11 = PDF p. 5, §3, third paragraph; n. 19 confirmed. Kept as replacement (“gradually replaced … even for Hebrew texts”), which presupposes the Aramaic script already in use; moved from display to the note, reworded “starting in Persian-period Yehud and gradual” (the first pass's “Two place the replacement … in the Persian period” overstated a switch he has only starting then and complete in the second century CE).",
     }
   critical/4:
     {
       agent: pass,
-      owner: " Second pass: matched once after stripping Cambridge's “Reference Naveh” / “Reference Mizrahi” pop-up text; locator corrected from “third paragraph” to “fourth paragraph” (raw <p> count under the §2.3.3 heading: “A few decades ago”, “A number of facts”, “It is possible”, then “The situation probably varied”, which holds the sentence). Note wording unchanged.",
-      note: "Richelle 2026 §2.3.3 ¶3. Supports the note's report of Naveh (third century BCE, Hebrew texts) and Mizrahi (process starting in the Persian period), attributed as Richelle's report. Naveh 1987 and Mizrahi 2017 not read themselves (leads).",
+      owner: "",
+      note: "Richelle 2026 §2.3.3 ¶3. Supports the note's report of Naveh (third century BCE, Hebrew texts) and Mizrahi (process starting in the Persian period), attributed as Richelle's report. Naveh 1987 and Mizrahi 2017 not read themselves (leads). Second pass: matched once after stripping Cambridge's “Reference Naveh” / “Reference Mizrahi” pop-up text; locator corrected from “third paragraph” to “fourth paragraph” (raw <p> count under the §2.3.3 heading: “A few decades ago”, “A number of facts”, “It is possible”, then “The situation probably varied”, which holds the sentence). Note wording unchanged.",
     }
   critical/5:
     {
       agent: pass,
-      owner: " Second pass: matched once, Introduction ¶2, third sentence. Note narrowed from “kept using … alongside the Aramaic” to “used the old Hebrew script alongside the Aramaic, and later the Jewish, script in limited contexts”: “kept” leaned on the uncited preceding sentence (“still used for centuries after”).",
-      note: "Richelle 2026 Introduction ¶2. Supports “Judeans kept using the old script alongside the Aramaic in limited contexts”.",
+      owner: "",
+      note: "Richelle 2026 Introduction ¶2. Supports “Judeans kept using the old script alongside the Aramaic in limited contexts”. Second pass: matched once, Introduction ¶2, third sentence. Note narrowed from “kept using … alongside the Aramaic” to “used the old Hebrew script alongside the Aramaic, and later the Jewish, script in limited contexts”: “kept” leaned on the uncited preceding sentence (“still used for centuries after”).",
     }
 triggers:
   152@00:37:40:
     {
       agent: pass,
-      owner: " Second pass: matched by script as a substring of the 00:37:40.218 Dan McClellan line (2026-03-01-literally-not-literal.txt); read 00:35:54 to 00:42:57. Turn opening (“Absolutely. And the first thing to note …”) trimmed, no hedge dropped. He says “Aramaic square script”; the entry dates the Aramaic script (critical-scope).",
-      note: "states: critical. Dan McClellan, 00:37:40.218; trimmed from the turn's start; no hedge dropped. Read 00:35:43–00:40:58. Says “after the Babylonian Exile”.",
+      owner: "",
+      note: "states: critical. Dan McClellan, 00:37:40.218; trimmed from the turn's start; no hedge dropped. Read 00:35:43–00:40:58. Says “after the Babylonian Exile”. Second pass: matched by script as a substring of the 00:37:40.218 Dan McClellan line (2026-03-01-literally-not-literal.txt); read 00:35:54 to 00:42:57. Turn opening (“Absolutely. And the first thing to note …”) trimmed, no hedge dropped. He says “Aramaic square script”; the entry dates the Aramaic script (critical-scope).",
     }
   43@00:45:20:
     {
       agent: pass,
-      owner: " Second pass: matched by script as a substring of the 00:45:20.710 Dan McClellan line (2024-01-29-episode-43-…-jesus-murks-a-tree.txt); read 00:43:07 to 00:47:47. Aside inside an Isaiah 40–55 dating argument; no hedge dropped. Both claims shown verbatim; Richelle's sixth century covers both “while they were exiles” and “after the Babylonian Exile”, and the entry follows the source, not the show.",
-      note: "states: critical. Dan McClellan, 00:45:20.710; one sentence from a turn on Isaiah 40–55's Aramaic loanwords; no hedge dropped. Read 00:43:07–00:46:47. Says “while they were exiles in Babylon”; differs from E152, shown verbatim (#99).",
+      owner: "",
+      note: "states: critical. Dan McClellan, 00:45:20.710; one sentence from a turn on Isaiah 40–55's Aramaic loanwords; no hedge dropped. Read 00:43:07–00:46:47. Says “while they were exiles in Babylon”; differs from E152, shown verbatim (#99). Second pass: matched by script as a substring of the 00:45:20.710 Dan McClellan line (2024-01-29-episode-43-…-jesus-murks-a-tree.txt); read 00:43:07 to 00:47:47. Aside inside an Isaiah 40–55 dating argument; no hedge dropped. Both claims shown verbatim; Richelle's sixth century covers both “while they were exiles” and “after the Babylonian Exile”, and the entry follows the source, not the show.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
-      owner: " Second pass: confirmed; the display now dates only the adoption (Richelle). Replacement (Schniedewind, Longacre) and Hebrew-text use (Naveh, Mizrahi via Richelle) are in the note as such.",
-      note: "Worded for Judean scribes' adoption of the Aramaic script, which the three outright cites date; not the later Jewish/square script (dropped from the title), not the Aramaic language, not Hebrew Bible manuscripts.",
+      owner: "",
+      note: "Worded for Judean scribes' adoption of the Aramaic script, which the three outright cites date; not the later Jewish/square script (dropped from the title), not the Aramaic language, not Hebrew Bible manuscripts. Second pass: confirmed; the display now dates only the adoption (Richelle). Replacement (Schniedewind, Longacre) and Hebrew-text use (Naveh, Mizrahi via Richelle) are in the note as such.",
     }
   split-shown:
     {
       agent: pass,
-      owner: " Second pass: revised. No split on the title's subject: only Richelle dates the adoption; Schniedewind and Longacre date a later stage (the old script's replacement), which Richelle's own ¶2 (both scripts used side by side) makes compatible with a sixth-century adoption. The first pass's “Likely the 6th century BCE, or starting in the Persian period” presented two stages as alternative dates; cut to Richelle's side. The split that does exist, Naveh vs Mizrahi on Hebrew texts, stays in the note, attributed as Richelle reports it.",
-      note: "Richelle (likely sixth century) vs Schniedewind and Longacre (Persian period); display shows both, each cited. On Hebrew texts, Naveh vs Mizrahi shown as Richelle reports them.",
+      owner: "",
+      note: "Richelle (likely sixth century) vs Schniedewind and Longacre (Persian period); display shows both, each cited. On Hebrew texts, Naveh vs Mizrahi shown as Richelle reports them. Second pass: revised. No split on the title's subject: only Richelle dates the adoption; Schniedewind and Longacre date a later stage (the old script's replacement), which Richelle's own ¶2 (both scripts used side by side) makes compatible with a sixth-century adoption. The first pass's “Likely the 6th century BCE, or starting in the Persian period” presented two stages as alternative dates; cut to Richelle's side. The split that does exist, Naveh vs Mizrahi on Hebrew texts, stays in the note, attributed as Richelle reports it.",
     }
   tradition-both-sides:
     {
       agent: pass,
-      owner: " Second pass: confirmed; both Trigger Claims state critical.",
-      note: "No Tradition Date; both Trigger Claims state critical. The Talmudic tradition crediting Ezra (b. Sanhedrin 21b) is recorded under uncited.",
+      owner: "",
+      note: "No Tradition Date; both Trigger Claims state critical. The Talmudic tradition crediting Ezra (b. Sanhedrin 21b) is recorded under uncited. Second pass: confirmed; both Trigger Claims state critical.",
     }
   tradition-named:
     {
       agent: pass,
-      owner: " Second pass: confirmed.",
-      note: "No Tradition Date; no Tradition source cited.",
+      owner: "",
+      note: "No Tradition Date; no Tradition source cited. Second pass: confirmed.",
     }
   conditional-not-critical:
     {
       agent: pass,
-      owner: " Second pass: confirmed; “likely” is a hedge, kept in display.",
-      note: "No date given on a condition. “Likely” (Richelle) and “gradually” (Longacre) are hedges, kept in display and note.",
+      owner: "",
+      note: "No date given on a condition. “Likely” (Richelle) and “gradually” (Longacre) are hedges, kept in display and note. Second pass: confirmed; “likely” is a hedge, kept in display.",
     }
 sources:
   richelle-2026-ancient-hebrew-inscriptions:
     {
       agent: pass,
-      owner: " Second pass: re-fetched by anonymous curl (browser user agent) from the registry URL: full HTML text present without login, all three quotes found; no licence or open-access statement found on the page (registry access line already says so). Registry fields unchanged.",
-      note: "Scholarly (Cambridge University Press, Elements in the Ancient Near Eastern World and the Bible; DOI 10.1017/9781009560245; online 14 Aug 2026). Matthieu Richelle, Université catholique de Louvain. New id.",
+      owner: "",
+      note: "Scholarly (Cambridge University Press, Elements in the Ancient Near Eastern World and the Bible; DOI 10.1017/9781009560245; online 14 Aug 2026). Matthieu Richelle, Université catholique de Louvain. New id. Second pass: re-fetched by anonymous curl (browser user agent) from the registry URL: full HTML text present without login, all three quotes found; no licence or open-access statement found on the page (registry access line already says so). Registry fields unchanged.",
     }
   schniedewind-2006-aramaic-death-of-written-hebrew:
     {
       agent: pass,
-      owner: " Second pass: whole-volume PDF re-fetched from isac-assets; chapter running head “Aramaic, the Death of Written Hebrew, and Language Shift”, p. 139 = PDF p. 151; author Schniedewind on p. 140 running head. Registry fields unchanged.",
-      note: "Scholarly (Oriental Institute Seminars 2, ©2006 University of Chicago; ISBN 1-885923-39-2). William M. Schniedewind (UCLA). Inside the 30-year window. New id.",
+      owner: "",
+      note: "Scholarly (Oriental Institute Seminars 2, ©2006 University of Chicago; ISBN 1-885923-39-2). William M. Schniedewind (UCLA). Inside the 30-year window. New id. Second pass: whole-volume PDF re-fetched from isac-assets; chapter running head “Aramaic, the Death of Written Hebrew, and Language Shift”, p. 139 = PDF p. 151; author Schniedewind on p. 140 running head. Registry fields unchanged.",
     }
   longacre-2021-chroms:
     {
       agent: pass,
-      owner: " Second pass: PDF re-fetched; byline “Drew Longacre, Qumran Institute, University of Groningen”. FDR record 8898: COMSt Bulletin 7, pp. 7–50, CC BY 4.0. Venue: the Hamburg AAI COMSt Bulletin page (https://www.aai.uni-hamburg.de/en/comst/publications/bulletin.html) calls it “a peer-reviewed international journal” (ISSN 2410-0951). Scholarly confirmed.",
-      note: "Scholarly (COMSt Bulletin 7, 2021, Comparative Oriental Manuscript Studies, Universität Hamburg; ERC-funded research). Drew Longacre, Qumran Institute, University of Groningen. New id.",
+      owner: "",
+      note: "Scholarly (COMSt Bulletin 7, 2021, Comparative Oriental Manuscript Studies, Universität Hamburg; ERC-funded research). Drew Longacre, Qumran Institute, University of Groningen. New id. Second pass: PDF re-fetched; byline “Drew Longacre, Qumran Institute, University of Groningen”. FDR record 8898: COMSt Bulletin 7, pp. 7–50, CC BY 4.0. Venue: the Hamburg AAI COMSt Bulletin page (https://www.aai.uni-hamburg.de/en/comst/publications/bulletin.html) calls it “a peer-reviewed international journal” (ISSN 2410-0951). Scholarly confirmed.",
     }
 leads:
   - "Naveh, Early History of the Alphabet, 2nd ed. 1987, p. 117: Paleo-Hebrew still regularly used for Hebrew texts until the third century BCE. Known via Richelle §2.3.3; archive.org copy borrow-only. Pre-1996."

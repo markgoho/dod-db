@@ -149,8 +149,8 @@ citations:
     note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read."
   david-ruler/9:
     agent: pass
-    owner: " Locator: “same paragraph” had no antecedent in this statement; now names the chapter and paragraph opening."
-    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read."
+    owner: ""
+    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read. Locator: “same paragraph” had no antecedent in this statement; now names the chapter and paragraph opening."
   david-ruler/10:
     agent: pass
     owner: ""
@@ -189,8 +189,8 @@ citations:
     note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read."
   israel-and-judah/3:
     agent: pass
-    owner: " Locator: “same paragraph” had no antecedent in this statement; now names the paragraph opening."
-    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read."
+    owner: ""
+    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read. Locator: “same paragraph” had no antecedent in this statement; now names the paragraph opening."
   israel-and-judah/4:
     agent: pass
     owner: ""
@@ -201,8 +201,8 @@ citations:
     note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read."
   israel-and-judah/6:
     agent: pass
-    owner: " Locator: “same paragraph” had no antecedent; now names the chapter title and paragraph opening."
-    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read."
+    owner: ""
+    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read. Locator: “same paragraph” had no antecedent; now names the chapter title and paragraph opening."
   israel-and-judah/7:
     agent: pass
     owner: ""
@@ -213,8 +213,8 @@ citations:
     note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read. Source is an SBL ICI repository copy (flag 1)."
   israel-and-judah/9:
     agent: pass
-    owner: " Locator: “same paragraph” had no antecedent; now names the chapter and paragraph opening."
-    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read. Quote trimmed to end at “some see it as later.” The dropped sentence (“Most concur that Israel was probably at this time the most important power in its region …”) is about Solomon’s kingdom (“at this time”), not the northern kingdom, and sat on a north-vs-south statement; moved to uncited."
+    owner: ""
+    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read. Quote trimmed to end at “some see it as later.” The dropped sentence (“Most concur that Israel was probably at this time the most important power in its region …”) is about Solomon’s kingdom (“at this time”), not the northern kingdom, and sat on a north-vs-south statement; moved to uncited. Locator: “same paragraph” had no antecedent; now names the chapter and paragraph opening."
   israel-and-judah/10:
     agent: pass
     owner: ""
@@ -441,8 +441,8 @@ citations:
     note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read. Short: “Scholars treat Saul as a real early leader” cut: Greene (“certainly”) and Finkelstein hold it, but Sergi p. 4 (cited elsewhere) reports scholars who argued Saul, David and Solomon were fictional and Goldingay p. 9 scholars who think the narrative “pure fiction”. New short: no outside mention, so whether he was ever a king is hard to determine (Greene “difficult to determine whether or not Saul was ever actually a king”; Coogan and Chapman “the lack of corroborating evidence makes it difficult to determine”; Goldingay p. 9 no mention), and the Israel-or-Judah dispute (Krause–Sergi–Weingart p. 2 “a matter of lasting dispute”; Finkelstein’s north Israelite polity vs Lipschits’s Jerusalem king, both via the volume introduction)."
   saul/4:
     agent: pass
-    owner: " Locator: the sentence is not the paragraph’s last (the HTML paragraph runs on to “In fact, most of the texts …”); now names the sentence opening."
-    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read."
+    owner: ""
+    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read. Locator: the sentence is not the paragraph’s last (the HTML paragraph runs on to “In fact, most of the texts …”); now names the sentence opening."
   saul/5:
     agent: pass
     owner: ""
@@ -481,8 +481,8 @@ citations:
     note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read."
   saul/14:
     agent: pass
-    owner: " Locator: “In fact, most of the texts describing Saul” is not a separate paragraph in the HTML; it continues paragraph 1 of the section; now names the section, paragraph and sentence opening."
-    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read."
+    owner: ""
+    note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read. Second pass 2026-11-25: re-fetched; script-matched at its locator (whitespace and HTML entities only); locator checked (PDF printed page; HTML heading, paragraph opening or ordinal, lecture chapter title and timestamp, by script); surrounding passage read. Locator: “In fact, most of the texts describing Saul” is not a separate paragraph in the HTML; it continues paragraph 1 of the section; now names the section, paragraph and sentence opening."
   samuel/1:
     agent: pass
     owner: ""
