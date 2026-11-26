@@ -11,7 +11,7 @@ critical:
   from: -640
   to: -609
   precision: year
-  note: "The sources use both years for the start of his reign. His reform is dated to around 622 BCE, the eighteenth year of his reign; other sources give about 621 or ca. 620. How much of the reform took place is debated: Coogan and Chapman call the biblical accounts idealized but find some substance behind them; Pakkala thinks it very unlikely that the reforms took place in the sense 2 Kings intends."
+  note: "The sources use both years for the start of his reign. Hayes dates his reform around 622 BCE, Britannica about 621 and the HarperCollins dictionary ca. 620; EJ dates the finding of the book of the law to his eighteenth year, 622. Coogan and Chapman call the biblical accounts of his reign idealized but find some substance to their portrait of it. Pakkala calls Josiah's reform in 2 Kings 23 one of the most edited and debated texts in the Hebrew Bible and thinks it very unlikely that the reforms took place in the sense 2 Kings intends."
   cites:
     - source: nabre-kings-intro
       locator: "Introduction, ¶ 7"
