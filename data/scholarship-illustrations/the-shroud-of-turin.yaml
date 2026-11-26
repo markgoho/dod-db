@@ -24,9 +24,11 @@ images:
       MIDDLE of the picture, two clergymen in plain white surplices over
       black cassocks hold up between them, at full stretch, a very long,
       narrow, pale cream linen cloth, far wider than it is tall. On the
-      cloth is a very faint, pale sepia outline of a full-length human
-      figure seen from the front, ghostly and barely visible, with no
-      wounds, no blood, no face detail. In the lower RIGHT foreground, a few
+      cloth is a very faint, pale sepia, blurry ghostly silhouette of a full-length
+      lying figure seen from the front, its hands crossed over the lower
+      body, drawn only as a soft smudged shape with no outline, no
+      anatomical detail, no nipples, no navel, no wounds, no blood, no face
+      detail. In the lower RIGHT foreground, a few
       medieval pilgrims in hooded travelling cloaks look up at the cloth;
       one holds a small round metal pilgrim's medallion on a cord. The upper
       LEFT corner and upper RIGHT corner are plain stone wall and vaulting,
@@ -117,9 +119,11 @@ images:
     alt: "Present-day researchers lean over the long linen cloth laid on a table, studying its faint image, puzzled."
     prompt: >-
       A present-day study room. The SAME long, narrow, pale cream linen
-      cloth as in the reference image, with the SAME very faint, pale sepia
-      ghostly outline of a full-length figure (no wounds, no blood, no face
-      detail), lies flat along a long table that runs across the LOWER half
+      cloth as in the reference image, with the SAME very faint, pale sepia, blurry ghostly silhouette of a full-length
+      lying figure seen from the front, its hands crossed over the lower
+      body, drawn only as a soft smudged shape with no outline, no
+      anatomical detail, no nipples, no navel, no wounds, no blood, no face
+      detail, lies flat along a long table that runs across the LOWER half
       of the picture. Two researchers (generic figures, not portraits of any
       real person), one in a white lab coat holding a magnifying glass, one
       in an amber sweater scratching their head, lean over it, puzzled. A
@@ -137,8 +141,10 @@ images:
       picture; the top fifth is plain stone vaulting and the bottom fifth is
       plain stone floor, both empty. Inside a large present-day cathedral,
       the SAME long, narrow, pale cream linen cloth as in the reference
-      image, with the SAME very faint, pale sepia ghostly outline of a
-      full-length figure (no wounds, no blood, no face detail), is
+      image, with the SAME very faint, pale sepia, blurry ghostly
+      silhouette of a lying figure with its hands crossed over the lower
+      body, a soft smudged shape with no outline, no anatomical detail, no
+      wounds, no blood, no face detail, is
       displayed horizontally in a long plain frame behind glass, in the
       centre. A quiet crowd of present-day pilgrims of many ages, seen
       mostly from behind, stands before it in reverence, some with hands
