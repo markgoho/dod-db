@@ -18,7 +18,7 @@ critical:
   display: "Toward the end of the 1st century CE"
   from: 90
   precision: period
-  note: "Martin says some date it to the 60s, when Nero was emperor, and more toward the end of the century. Ehrman's summary says parts were written in the 60s, at the time of Nero's persecutions, and other parts may be later, perhaps under Domitian (ca. 95 CE). The author is a John who is not John the son of Zebedee and not the author of the Gospel of John."
+  note: "Martin says some date it to the 60s, when Nero was emperor, and more toward the end of the century. Ehrman's summary says parts were written in the 60s, at the time of Nero's persecutions, and other parts may be later, perhaps under Domitian (ca. 95 CE). Britannica's editors say it appears to be a collection of separate units by unknown authors who lived in the last quarter of the 1st century, though it purports to have been written by a John at Patmos. Martin says the author is a John who is not John the son of Zebedee; Ehrman's summary says this John did not write the Gospel of John."
   cites:
     - source: desilva-bo-sign-of-the-beast
       locator: "opening paragraph, second sentence"
@@ -52,6 +52,10 @@ critical:
       locator: "section “The Revelation of John in Historical Context”"
       quote: "The author identifies himself as John, though he does not claim to be Jesus’ disciple, the son of Zebedee (nor is this author responsible for the Gospel of John)."
       read: 2026-11-26
+    - source: britannica-revelation-to-john
+      locator: "opening paragraph, third sentence"
+      quote: "Revelation to John appears to be a collection of separate units composed by unknown authors who lived during the last quarter of the 1st century, though it purports to have been written by an individual named John—who calls himself “the servant” of Jesus—at Patmos, in the Aegean Sea."
+      read: 2026-11-26
 setting:
   display: "the author's own time, with John on the island of Patmos"
   cites:
@@ -72,5 +76,9 @@ tradition:
     - source: ligonier-mathison-2012-johns-prophecy
       locator: "section “When Was Revelation Written?”, ¶ 1"
       quote: "There is a growing minority of scholars (including J. C. Wilson and Stephen S. Smalley), however, who argue that the book of Revelation was written between AD 64 and 70, during or just after the reign of the Roman Emperor Nero. While there are many good and godly men who disagree, I am convinced that the arguments for an early date are much stronger than those for a late date."
+      read: 2026-11-26
+    - source: ligonier-mathison-2012-johns-prophecy
+      locator: "section “The Prologue (1:1–8)”, ¶ 1"
+      quote: "This statement provides a major interpretive key to the book because the time frame revealed here indicates that at least some of what John will be talking about concerns things that are imminent as he is writing (AD 64–70)."
       read: 2026-11-26
 ---

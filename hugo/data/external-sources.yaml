@@ -3556,6 +3556,20 @@ ligonier-mathison-2012-johns-prophecy:
   hostAuthored: false
   tradition: "Keith Mathison, writing for Ligonier Ministries, an international Christian discipleship organization"
 
+britannica-revelation-to-john:
+  author: null
+  title: "Revelation to John"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online, Britannica Editors (Oct. 11, 2026)"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/topic/Revelation-to-John"
+  hostAuthored: false
+  tradition: null
+
 richelle-2026-ancient-hebrew-inscriptions:
   author: "Matthieu Richelle"
   title: "Ancient Hebrew Inscriptions"

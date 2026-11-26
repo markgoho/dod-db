@@ -17,6 +17,15 @@
 # Second pass on the Trigger Claims: E39 and E98 kept as stated. E119 kept: its stored text is a fragment (“particularly folks who want to put Revelation prior to 70 CE …”) whose subject, preterists, is set by Beecher's prior turn (00:17:01) and McClellan's own 00:15:26–00:16:48 turns; the trim drops “Yeah. And okay,” only. It states the preterists' side, which licenses the Tradition Date; Mathison's article calls its reading “basically preterist”.
 # Flags for publish: (1) Martin and the Ehrman summary disagree on the state of the field (whole book late by “More” vs “Most scholars agree that parts” 60s); the note now shows both, attributed, without a consensus word; the display carries none. (2) Mathison's 64–70: cited sentences give it as the minority's range before his “I am convinced … early date”; his own-voice “(AD 64–70)” is in the Prologue section, uncited. A republish could swap or add that sentence. (3) E119's stored text is a mid-sentence fragment; its subject (preterists) sits in the surrounding turns. (4) E39's “early 90s CE” is stronger than every source's end of century; shown verbatim per #99. (5) Britannica “Revelation to John” still unread (lead). (6) check:timeline may return before the publish gate for a draft entry; the review file was also YAML-loaded separately.
 # Publish resolutions, 2026-11-26: (1) Kept: display follows the three outright end-of-century statements; the note shows Martin's and the Ehrman summary's views, each attributed, no consensus word. (2) Kept the cited sentences: they hold the early date in Mathison's own voice (“I am convinced”), and the range is the one his article adopts in its own voice elsewhere; no citation swapped or added at publish. (3) E119 kept: the fragment names its subject's position (“folks who want to put Revelation prior to 70 CE”), and the surrounding turns set it as preterists. (4) E39 kept verbatim (#99). (5) Britannica stays a lead. (6) Publish gate now checks this file (draft dropped).
+# Delegated re-review for issue #215, 2026-11-26 (owner's delegation, #93/#110; no owner check). The issue's leads: Britannica “Revelation to John” (403 to scripts; read in a browser for the Critical Date and the 60s / end-of-century split); Mathison's own-voice “(AD 64–70)” under “The Prologue (1:1–8)” (swap or add, publish flag 2); Gentry, Before Jerusalem Fell and “The Preterist View” (Four Views); Kraybill, Apocalypse and Allegiance; Koester, Revelation and the End of All Things; Bible Odyssey “Fiction in a Time of Persecution”, “Apocalyptic Thought after Revelation”, dictionary “Persecution” and “Emperor”.
+# Re-review first pass (lead agent, 2026-11-26): every lead fetched into one scratch folder (curl, browser UA; HTML stripped with inline tags removed, entities decoded; the Gentry PDF by pdftotext), Britannica read in Claude in Chrome. Outcome per lead: (a) Britannica “Revelation to John” (Britannica Editors, Oct. 11, 2026): curl 403; in Chrome the page's own article (h1 “Revelation to John”) was saved from the article's p/h2 innerText (2526 characters, length checked against the tab; quote also matched with includes() in the tab). Its opening paragraph: Revelation “appears to be a collection of separate units composed by unknown authors who lived during the last quarter of the 1st century, though it purports to have been written by an individual named John … at Patmos”. Cited as critical/9: it agrees with the display (last quarter of the 1st century), hedged (“appears”), and takes no 60s side, so no #99 split to add. It disagrees with the note's old flat “The author is a John who …”: Britannica gives unknown authors and calls John's authorship a purport. So the note now shows Britannica's view by name and attributes the authorship sentence to Martin (not son of Zebedee, outright) and to Martin and the Ehrman summary (not the author of the Gospel of John). Trap for the second pass: Chrome's get_page_text returns a different article appended lower on the same page (Robert E. Lerner, “Apocalyptic literature”), not this one; read the h1 article's own paragraphs. (b) Mathison: the own-voice Prologue sentence, “… concerns things that are imminent as he is writing (AD 64–70)”, added as tradition/2 beside tradition/1 (not swapped: tradition/1 carries his own “I am convinced … early date”); same source, same holder; display unchanged (64–70 CE). The “If Revelation was written between AD 64 and 70 …” sentence (¶ 2 under “When Was Revelation Written?”) is conditional: uncited. (c) Gentry, Before Jerusalem Fell (Institute for Christian Economics, 1989): full PDF at the publisher's own Gary North freebooks site, read by search of the text, not in full (conclusion p. 336; ch. 12 “The Role of Nero Caesar”, p. 219; the mid- to late 60s summary sentence). His own range, late A.D. 64 to early 67, “65 or early A.D. 66” most suitable, is narrower than the Tradition Date and is another holder; one Tradition source per statement is enough (#86), so uncited. (d) Gentry, “The Preterist View” (Four Views, Zondervan 1998), Kraybill (Brazos 2010) and Koester (Eerdmans 2001): no open text at the publishers' pages or in a web search (Zondervan sample is the table of contents only; retail and library e-books only); stay leads. (e) Bible Odyssey: “Fiction in a Time of Persecution” is Polaski on Esther, not Revelation; “Apocalyptic Thought after Revelation” (DiTommaso) is reception history, no date for the writing; dictionary “Persecution” dates Nero's attack “after the fire in Rome in 64 CE”, not Revelation; dictionary “Emperor” has no date for Revelation: all uncited. Quotes script-matched against the saved text (NFKC, whitespace, quotes, dashes, soft hyphens normalised): all 13 citations, 13 hits, 0 misses (2 new, 11 existing re-fetched). Trigger Claims unchanged.
+# Caveat to the 2026-11-26 sourcing-test line “no source read names Domitian or a 90s year outright”: the Lerner “Apocalyptic literature” article appended on Britannica's Revelation page says Revelation was “Written in Asia Minor about 95 CE”. Touched, not sorted: listed under leads (outside #215's scope); it agrees with the display.
+# Flags for the re-review second pass: (1) Britannica critical/9 is hedged (“appears”); it backs the display's end of the century only as agreement, and the note's sentence. Cut if in doubt. (2) Note's authorship sentence now attributed; check it says no more than Martin l24 and the Ehrman summary. (3) tradition/2 locator: first paragraph under “The Prologue (1:1–8)”, third sentence. (4) Britannica registry: author null and edition “Online, Britannica Editors (Oct. 11, 2026)”, the page's byline.
+# Re-review second pass (#215, independent agent that built neither the entry nor the first pass), 2026-11-26: all seven cited sources re-fetched into a fresh scratch folder. Six by plain curl from their registry URLs (deSilva and Boxall Bible Odyssey, Ehrman ch. 19 summary, Martin l23 and l24, Mathison/Ligonier; all 200), plus Ligonier's Who We Are page for the holder wording; HTML stripped with inline tags removed without spaces, entities decoded. Britannica “Revelation to John” read in Claude in Chrome in its own tab: the first `article` element's p/h2 innerText under h1 “Revelation to John” saved (2526 characters, equal to the tab's length), not get_page_text. Quotes script-matched from the entry file against the saved text (whitespace, quotes, dashes, ellipsis, soft hyphens normalised): 13 citations, 13 hits, 0 misses, each found once, each at its locator. Trigger Claims script-matched (timestamp, speaker, verbatim substring of the final Transcript line): 3 hits; about two minutes either side read (E39 00:05:53–00:09:14; E98 00:48:09–00:53:11; E119 00:14:16–00:20:50).
+# Second pass changed: the entry's critical note, last sentence, from “Martin says the author is a John who is not John the son of Zebedee; he and Ehrman's summary say this John did not write the Gospel of John.” to “… ; Ehrman's summary says this John did not write the Gospel of John.” Reason: Martin l24's cited words are “not the same John who wrote the Gospels or wrote the letters” (plural, Gospel of John not named), so attributing “the Gospel of John” to him is stronger than his wording; cut when in doubt. Ehrman's summary says it outright (critical/8). Review notes corrected: tradition/2 sentence number; critical/9 backs the note's Britannica sentence, not the display. No citation cut or moved to uncited; title, both displays, setting and holder unchanged; triggers and registry unchanged.
+# Second-pass rulings on the first pass's flags: (1) critical/9 kept. The quote is hedged (“appears”) and dates when the authors lived (“the last quarter of the 1st century”), wider than the display; so it backs only the note's sentence, which keeps both the hedge and the purport (“though it purports to have been written by … John … at Patmos”). The display stands on deSilva, the Ehrman summary's opening and Martin's “More tend” (critical/1–3), all outright. Its “unknown authors” sits beside Martin's “somebody named John” in the note, each attributed: shown, not harmonised (#99). (2) Authorship sentence narrowed (above): Martin for “not John the son of Zebedee” (outright in critical/7), Ehrman's summary for the Gospel of John (critical/8); says no more than the two. (3) tradition/2's entry locator “¶ 1” is right; the review note's “third sentence” was wrong: it is the fifth sentence of ¶ 1 under “The Prologue (1:1–8)” (fourth without the parenthetical); corrected in the note. The sentence dates the writing in Mathison's own voice (“as he is writing (AD 64–70)”), so the Tradition Date 64–70 CE says no more than the source. (4) Britannica registry: author null fits the page (byline “Britannica Editors”, no named author); this read captured “Britannica Editors” and “Oct. 11, 2026”, not the word “updated”, so the edition's “updated” is unchecked here; the date matches. Pass.
+# Second pass, new flags: (a) Martin's “the Gospels” (plural) is loose; putting Martin back on the Gospel of John needs a sentence of his naming it (not sought; no citation added). (b) The Ehrman summary's “Most scholars agree that parts …” is reported in the note without the consensus word (earlier ruling under #80); unchanged. (c) Britannica's next sentence (“The text includes no indication that John of Patmos and St. John the Apostle are the same person.”) is uncited; it agrees with the note's authorship sentence.
+# Re-review publish resolutions, 2026-11-26 (lead agent, on the second pass's flags, conservatively): (1) Note's authorship narrowing accepted: Ehrman's summary alone carries “did not write the Gospel of John”; Martin's “the Gospels” stays unused for it (no new citation sought). (2) Ehrman's “Most scholars agree that parts …” stays in the note without the consensus word (#80 contested rule, earlier ruling). (3) Britannica's next sentence (“The text includes no indication that John of Patmos and St. John the Apostle are the same person.”) stays uncited: the note's authorship sentence already rests on critical/7–8. (4) Second pass's correction that critical/9 backs only the note's sentence, not the display, accepted. (5) Registry edition: the word “updated” was not on the byline captured (“Britannica Editors Oct. 11, 2026”), so it now reads “Online, Britannica Editors (Oct. 11, 2026)”. Delegated re-review for issue #215 (owner's delegation, #93/#110; no owner check): sourcesRead, review and delegation.secondPass all 2026-11-26.
 review: 2026-11-26
 delegation:
   by: owner
@@ -28,117 +37,129 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "deSilva, Bible Odyssey “The Sign of the Beast” (2017), opening paragraph, second sentence. End of the first century C.E., outright. Backs the display. Second pass: re-matched; first body ¶ (after the scripture-search widget), sentence 2. Verified.",
+      note: "deSilva, Bible Odyssey “The Sign of the Beast” (2017), opening paragraph, second sentence. End of the first century C.E., outright. Backs the display. Second pass: re-matched; first body ¶ (after the scripture-search widget), sentence 2. Verified. Re-review second pass (#215): re-fetched (curl, 200); re-matched, count 1, opening ¶ sentence 2 after the scripture-search widget. Verified.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 19 summary (OUP Learning Link), opening paragraph. “Near the end of the first century”, outright. Backs the display. Second pass: re-matched; it is the last (third) sentence of the opening ¶, not the first. Verified.",
+      note: "Ehrman ch. 19 summary (OUP Learning Link), opening paragraph. “Near the end of the first century”, outright. Backs the display. Second pass: re-matched; it is the last (third) sentence of the opening ¶, not the first. Verified. Re-review second pass (#215): re-matched, count 1, last sentence of the opening ¶. Verified.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Martin RLST 152 l23, ch. 3 [00:28:00] (chapter start time). “More tend to believe” end of the century: the majority side. Backs the display and the note's “more toward the end of the century”. Next sentence after critical/4. Second pass: re-matched. Lead-in is garbled in the transcript (“The part of Nero is when we don't when this text was written.”), so Martin gives no date of his own here; “the century” is the first in context (Nero dead). Verified.",
+      note: "Martin RLST 152 l23, ch. 3 [00:28:00] (chapter start time). “More tend to believe” end of the century: the majority side. Backs the display and the note's “more toward the end of the century”. Next sentence after critical/4. Second pass: re-matched. Lead-in is garbled in the transcript (“The part of Nero is when we don't when this text was written.”), so Martin gives no date of his own here; “the century” is the first in context (Nero dead). Verified. Re-review second pass (#215): re-matched, count 1, ch. 3 [00:28:00], sentence after critical/4. Verified.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Martin l23 ch. 3, sentence before critical/3. “Some” date it to the 60s under Nero. Backs the note's first clause. Second pass: re-matched. Source says “Some people”, so the note now reads “Martin says some”, not “Some scholars”. Verified.",
+      note: "Martin l23 ch. 3, sentence before critical/3. “Some” date it to the 60s under Nero. Backs the note's first clause. Second pass: re-matched. Source says “Some people”, so the note now reads “Martin says some”, not “Some scholars”. Verified. Re-review second pass (#215): re-matched, count 1, ch. 3, after the garbled lead-in. Verified.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 19 summary, “The Revelation of John in Historical Context”. Parts in the 60s, “Most scholars agree”. Backs the note's composite view. Second pass: re-matched (sentence 3). “Most scholars agree” dropped from the note under #80's contested rule (Martin's “More” late); the note keeps the claim attributed to the summary. Verified.",
+      note: "Ehrman ch. 19 summary, “The Revelation of John in Historical Context”. Parts in the 60s, “Most scholars agree”. Backs the note's composite view. Second pass: re-matched (sentence 3). “Most scholars agree” dropped from the note under #80's contested rule (Martin's “More” late); the note keeps the claim attributed to the summary. Verified. Re-review second pass (#215): re-matched, count 1, section sentence 3. Note's attributed wording (no “most”) checked. Verified.",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 19 summary, same section, next sentence. “may … perhaps … Domitian (ca. 95 CE)”: hedged, so in the note only. Second pass: re-matched (sentence 4). Note now keeps both hedges (“may be later, perhaps under Domitian”). Next sentence opens “Regardless of the date of the text”. Verified.",
+      note: "Ehrman ch. 19 summary, same section, next sentence. “may … perhaps … Domitian (ca. 95 CE)”: hedged, so in the note only. Second pass: re-matched (sentence 4). Note now keeps both hedges (“may be later, perhaps under Domitian”). Next sentence opens “Regardless of the date of the text”. Verified. Re-review second pass (#215): re-matched, count 1, section sentence 4; both hedges kept in the note. Verified.",
     }
   critical/7:
     {
       agent: pass,
       owner: "",
-      note: "Martin RLST 152 l24, ch. 1 [00:00:00]. Author not John son of Zebedee, not the Gospels' author. Backs the note's last sentence. Second pass: re-matched (¶ 1, sentence 2). The only source stating outright that he is not the son of Zebedee. Verified.",
+      note: "Martin RLST 152 l24, ch. 1 [00:00:00]. Author not John son of Zebedee, not the Gospels' author. Backs the note's last sentence. Second pass: re-matched (¶ 1, sentence 2). The only source stating outright that he is not the son of Zebedee. Verified. Re-review second pass (#215): re-matched, count 1, ch. 1 ¶ 1. Martin's words are “not the same John who wrote the Gospels or wrote the letters”: plural, no Gospel of John by name. So the note's “he and Ehrman's summary say this John did not write the Gospel of John” was narrowed to “Ehrman's summary says …”; this citation now backs only “a John who is not John the son of Zebedee”. Verified.",
     }
   critical/8:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 19 summary, “The Revelation of John in Historical Context”. Backs the note's “not the author of the Gospel of John”. Second pass: re-matched (sentence 2). Corrected: the summary says the author “does not claim to be” the son of Zebedee, not that he is not; that half rests on critical/7. Verified.",
+      note: "Ehrman ch. 19 summary, “The Revelation of John in Historical Context”. Backs the note's “not the author of the Gospel of John”. Second pass: re-matched (sentence 2). Corrected: the summary says the author “does not claim to be” the son of Zebedee, not that he is not; that half rests on critical/7. Verified. Re-review second pass (#215): re-matched, count 1, section sentence 2. Now the only citation for the note's “did not write the Gospel of John” (“nor is this author responsible for the Gospel of John”). Verified.",
+    }
+  critical/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Revelation to John” (Britannica Editors, Oct. 11, 2026), opening paragraph, third sentence. Separate units by unknown authors of the last quarter of the 1st century; purports to be by John at Patmos. Hedged (“appears”); agrees with the display; backs the note's Britannica sentence. Re-review (#215) first pass: read in Chrome (curl 403); matched in the saved text and by includes() in the tab. Re-review second pass (#215): read in Claude in Chrome (own tab, closed); h1 “Revelation to John”, first `article` p/h2 innerText saved (2526 characters, as in the tab); quote matched in the saved text (count 1, opening ¶ sentence 3) and by includes() in the tab. Kept, but it backs only the note's Britannica sentence, not the display: it dates when the authors lived (“last quarter of the 1st century”), wider than “toward the end”, and is hedged (“appears”); the note keeps the hedge and the purport. The display rests on critical/1–3. First pass's “agrees with the display” is agreement only, not backing. Verified.",
     }
   setting/1:
     {
       agent: pass,
       owner: "",
-      note: "Martin l23 ch. 1 [00:00:00]. The author “places it in his own time”: the text's own frame. Backs “the author's own time”. Second pass: re-matched (last ¶ of ch. 1); contrast is with pseudonymous apocalypses set “centuries in the past”. Verified.",
+      note: "Martin l23 ch. 1 [00:00:00]. The author “places it in his own time”: the text's own frame. Backs “the author's own time”. Second pass: re-matched (last ¶ of ch. 1); contrast is with pseudonymous apocalypses set “centuries in the past”. Verified. Re-review second pass (#215): re-matched, count 1, last ¶ of ch. 1 (before ch. 2 [00:12:49]). Verified.",
     }
   setting/2:
     {
       agent: pass,
       owner: "",
-      note: "Boxall, Bible Odyssey “Patmos” (2026), section “Why was John on Patmos?”, first sentence, quoting Rev 1:9. Backs “John on the island of Patmos” as the text's own claim. Second pass: re-matched. Boxall calls the reason “ambiguous” (exile plausible, alternatives possible); the setting says only that John was on Patmos. Verified.",
+      note: "Boxall, Bible Odyssey “Patmos” (2026), section “Why was John on Patmos?”, first sentence, quoting Rev 1:9. Backs “John on the island of Patmos” as the text's own claim. Second pass: re-matched. Boxall calls the reason “ambiguous” (exile plausible, alternatives possible); the setting says only that John was on Patmos. Verified. Re-review second pass (#215): re-matched, count 1, first sentence under “Why was John on Patmos?”. Verified.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "Mathison, Tabletalk / Ligonier (January 1, 2012), section “When Was Revelation Written?”, ¶ 1. 64–70 range, then his own “I am convinced … early date”. Second pass: re-matched (sentences 5–6; sentence 4, uncut, gives the consensus 95–96 under Domitian). Corrected: the own-voice “(AD 64–70)” is under “The Prologue (1:1–8)”, not an overview (uncited). Same section calls the reading “basically preterist”, tying E119 to this source. Verified.",
+      note: "Mathison, Tabletalk / Ligonier (January 1, 2012), section “When Was Revelation Written?”, ¶ 1. 64–70 range, then his own “I am convinced … early date”. Second pass: re-matched (sentences 5–6; sentence 4, uncut, gives the consensus 95–96 under Domitian). Corrected: the own-voice “(AD 64–70)” is under “The Prologue (1:1–8)”, not an overview (uncited). Same section calls the reading “basically preterist”, tying E119 to this source. Verified. Re-review second pass (#215): re-matched, count 1, ¶ 1 under “When Was Revelation Written?”, sentences 5–6 (sentence 4 gives the 95–96 consensus). Verified.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Mathison, same article, section “The Prologue (1:1–8)”, ¶ 1, third sentence. Own-voice “(AD 64–70)”: the range in his own words, beside tradition/1's “I am convinced … early date”. Re-review (#215) first pass: added per publish flag 2; matched once. Re-review second pass (#215): re-matched, count 1, ¶ 1 under “The Prologue (1:1–8)”. Corrected: it is that ¶'s fifth sentence (fourth if “(See chapter 18 …)” is not counted), not the third. The entry locator (“¶ 1”) is right. Own voice: “as he is writing (AD 64–70)” dates the writing; backs the display 64–70 CE, no more. Verified.",
     }
 triggers:
   39@00:07:24:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. “early 90s CE”, stronger than the sources' end of the century; shown verbatim (#99). Next turn hedges Domitian as an anchor but keeps “right around there”. 00:05:01–00:09:17 read. Second pass: re-matched; 00:06:00–00:09:17 read. Same turn also hedges the Domitian persecution (“probably wasn't that intense”). Kept.",
+      note: "states: critical. “early 90s CE”, stronger than the sources' end of the century; shown verbatim (#99). Next turn hedges Domitian as an anchor but keeps “right around there”. 00:05:01–00:09:17 read. Second pass: re-matched; 00:06:00–00:09:17 read. Same turn also hedges the Domitian persecution (“probably wasn't that intense”). Kept. Re-review second pass (#215): re-matched by script (timestamp, speaker, substring): hit. 00:05:53–00:09:14 read. Kept.",
     }
   98@00:49:51:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. “late 1st century CE”, matches the sources. Second sentence of the turn. 00:48:08–00:51:01 read. Second pass: re-matched; same span read. Kept.",
+      note: "states: critical. “late 1st century CE”, matches the sources. Second sentence of the turn. 00:48:08–00:51:01 read. Second pass: re-matched; same span read. Kept. Re-review second pass (#215): re-matched: hit. 00:48:09–00:53:11 read. Kept.",
     }
   119@00:17:27:
     {
       agent: pass,
       owner: "",
-      note: "states: tradition. The preterists' wish to put Revelation before 70 CE; licenses the Tradition Date. Starts after “Yeah. And okay,”. 00:15:26–00:19:11 read. Second pass: re-matched; same span read. Stored text is a fragment; subject (preterists) set by Beecher's 00:17:01 turn. Kept; flagged.",
+      note: "states: tradition. The preterists' wish to put Revelation before 70 CE; licenses the Tradition Date. Starts after “Yeah. And okay,”. 00:15:26–00:19:11 read. Second pass: re-matched; same span read. Stored text is a fragment; subject (preterists) set by Beecher's 00:17:01 turn. Kept; flagged. Re-review second pass (#215): re-matched: hit. 00:14:16–00:20:50 read; subject (preterists) set by 00:15:26–00:17:01. Kept.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Worded for what the sources date: the book's composition, toward the end of the first century. Not “early 90s” or “under Domitian”, which no source states outright. Second pass: confirmed; Domitian only in the summary's hedged sentence. Pass.",
+      note: "Worded for what the sources date: the book's composition, toward the end of the first century. Not “early 90s” or “under Domitian”, which no source states outright. Second pass: confirmed; Domitian only in the summary's hedged sentence. Pass. Re-review second pass (#215): confirmed; display “Toward the end of the 1st century CE” rests on critical/1–3 outright; Domitian only hedged (critical/6). Pass.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Sources report a 60s minority (Martin) and a composite view (Ehrman summary); both in the note, attributed. Display follows the three outright statements. Second pass: Martin and the summary disagree on the state of the field, so per #80 the note drops “most scholars”; both views kept, attributed by name. No consensus word on the entry. Pass.",
+      note: "Sources report a 60s minority (Martin) and a composite view (Ehrman summary); both in the note, attributed. Display follows the three outright statements. Second pass: Martin and the summary disagree on the state of the field, so per #80 the note drops “most scholars”; both views kept, attributed by name. No consensus word on the entry. Pass. Re-review second pass (#215): confirmed; Britannica (critical/9) takes no 60s side, so no new split; its unknown-authors view and Martin's “somebody named John” are both in the note, attributed. Pass.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "Trigger 119@00:17:27 has states: tradition. Second pass: confirmed. Pass.",
+      note: "Trigger 119@00:17:27 has states: tradition. Second pass: confirmed. Pass. Re-review second pass (#215): confirmed; 119@00:17:27 states: tradition. Pass.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "Holder equals the registry `tradition:`; names Mathison and Ligonier in Ligonier's own words. Never “the traditional date”. Second pass: holder equals registry `tradition:`; Ligonier wording confirmed on its Who We Are page. Pass.",
+      note: "Holder equals the registry `tradition:`; names Mathison and Ligonier in Ligonier's own words. Never “the traditional date”. Second pass: holder equals registry `tradition:`; Ligonier wording confirmed on its Who We Are page. Pass. Re-review second pass (#215): holder equals registry `tradition:`; Ligonier Who We Are page re-fetched (curl, 200): “Ligonier Ministries is the international Christian discipleship organization founded by …”. Pass.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date in the display. Martin l24's “if this document was written toward the last part of the first century” is conditional and uncited; Ehrman's hedged Domitian is in the note only. Second pass: confirmed. Pass.",
+      note: "No conditional date in the display. Martin l24's “if this document was written toward the last part of the first century” is conditional and uncited; Ehrman's hedged Domitian is in the note only. Second pass: confirmed. Pass. Re-review second pass (#215): confirmed; Mathison's “If Revelation was written between AD 64 and 70 …” stays uncited. Pass.",
     }
 sources:
   desilva-bo-sign-of-the-beast:
@@ -146,48 +167,54 @@ sources:
       agent: pass,
       owner: "",
       edition: "Bible Odyssey article, published 2017-06-08 (page metadata modified 2024-01-16)",
-      note: "Reference (Bible Odyssey, judged per author, #86). David A. deSilva, Trustees' Distinguished Professor of New Testament and Greek, Ashland Theological Seminary. Second pass: bio and datePublished confirmed on the page. Pass.",
+      note: "Reference (Bible Odyssey, judged per author, #86). David A. deSilva, Trustees' Distinguished Professor of New Testament and Greek, Ashland Theological Seminary. Second pass: bio and datePublished confirmed on the page. Pass. Re-review second pass (#215): bio (Ashland) and datePublished 2017-06-08 seen in this fetch. Pass.",
     }
   ehrman-brief-5e-ch19-summary:
     {
       agent: pass,
       owner: "",
       edition: "OUP Learning Link student resources for the 5th ed. (2020)",
-      note: "Reference (publisher chapter summary, #86), cited as the summary, not the textbook. Chapter “Christians and the Cosmos: The Book of Revelation”. Already in the registry. Second pass: chapter title confirmed on the page. Pass.",
+      note: "Reference (publisher chapter summary, #86), cited as the summary, not the textbook. Chapter “Christians and the Cosmos: The Book of Revelation”. Already in the registry. Second pass: chapter title confirmed on the page. Pass. Re-review second pass (#215): chapter title and section heading seen in this fetch. Pass.",
     }
   martin-rlst152-l23:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 152, recorded Spring 2009",
-      note: "Reference (introductory course, university-hosted transcript, #86). Lecture 23 “Apocalyptic and Resistance”. New id; hayes-rlst145-l23 is a different course. Second pass: lecture title and chapter headings confirmed. Pass.",
+      note: "Reference (introductory course, university-hosted transcript, #86). Lecture 23 “Apocalyptic and Resistance”. New id; hayes-rlst145-l23 is a different course. Second pass: lecture title and chapter headings confirmed. Pass. Re-review second pass (#215): chapter headings 1–4 seen in this fetch. Pass.",
     }
   martin-rlst152-l24:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 152, recorded Spring 2009",
-      note: "Reference. Lecture 24 “Apocalyptic and Accommodation”. Already in the registry. Second pass: confirmed. Pass.",
+      note: "Reference. Lecture 24 “Apocalyptic and Accommodation”. Already in the registry. Second pass: confirmed. Pass. Re-review second pass (#215): chapter headings seen in this fetch. Pass.",
     }
   boxall-bo-patmos:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey article, published 2026-07-24",
-      note: "Reference (Bible Odyssey, judged per author). Ian Boxall, Senior Fellow in New Testament and Professor of Biblical Studies, Aquinas Institute of Theology; author of Patmos in the Reception History of the Apocalypse (OUP 2013). Setting only. Second pass: bio and datePublished confirmed. Pass.",
+      note: "Reference (Bible Odyssey, judged per author). Ian Boxall, Senior Fellow in New Testament and Professor of Biblical Studies, Aquinas Institute of Theology; author of Patmos in the Reception History of the Apocalypse (OUP 2013). Setting only. Second pass: bio and datePublished confirmed. Pass. Re-review second pass (#215): bio (Aquinas Institute) and datePublished 2026-07-24 seen in this fetch. Pass.",
     }
   ligonier-mathison-2012-johns-prophecy:
     {
       agent: pass,
       owner: "",
       edition: "Tabletalk, January 1, 2012 (web article)",
-      note: "Tradition: Ligonier Ministries is a ministry (“international Christian discipleship organization”); Mathison is R.C. Sproul Chair of Theology at Reformation Bible College (page bio). Holder names the author because Ligonier's own devotional assumes the late date. Second pass: bio and datePublished 2012-01-01 confirmed; devotional not re-read (uncited, not a citation). Pass.",
+      note: "Tradition: Ligonier Ministries is a ministry (“international Christian discipleship organization”); Mathison is R.C. Sproul Chair of Theology at Reformation Bible College (page bio). Holder names the author because Ligonier's own devotional assumes the late date. Second pass: bio and datePublished 2012-01-01 confirmed; devotional not re-read (uncited, not a citation). Pass. Re-review second pass (#215): datePublished 2012-01-01 and “Originally published in Tabletalk” seen; Sproul Chair bio is in the page's embedded JSON (shortBio), not the visible text. Pass.",
+    }
+  britannica-revelation-to-john:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Online, Britannica Editors (Oct. 11, 2026)",
+      note: "Reference (online encyclopedia). Refuses scripted requests; read in Claude in Chrome. Re-review (#215) first pass: new id. Re-review second pass (#215): byline seen in the tab: “Britannica Editors”, “Oct. 11, 2026”; the word “updated” was not captured in this read, so the edition's “updated” is the first pass's wording, unchecked here (harmless: the date matches). Author null fits the page (no named author). Pass.",
     }
 leads:
-  - "Britannica “Revelation to John” (403 to scripts; not read). Could be read via a browser as a further Reference source."
-  - "Gentry, Before Jerusalem Fell and “The Preterist View” in Four Views on the Book of Revelation (Zondervan): book-length early-date arguments, not read."
-  - "Bible Odyssey “Fiction in a Time of Persecution”, “Apocalyptic Thought after Revelation” and dictionary “Persecution”, “Emperor”: not read."
-  - "Kraybill, Apocalypse and Allegiance (2010); Koester, Revelation and the End of All Things (2001): in deSilva's bibliography, not read."
+  - "Gentry, “The Preterist View” in Four Views on the Book of Revelation (Zondervan, 1998): no open text found (#215 re-review); not read."
+  - "Kraybill, Apocalypse and Allegiance (Brazos, 2010); Koester, Revelation and the End of All Things (Eerdmans, 2001): in deSilva's bibliography; no open text found at the publishers or in a web search (#215 re-review); not read."
+  - "Lerner, “Apocalyptic literature” (Britannica), appended below the Revelation to John article on the same page: “Written in Asia Minor about 95 CE by a Christian named John”. Seen while reading #215's Britannica lead, not sorted; agrees with the display."
 uncited:
   - "Martin l24 ch. 1: “One way to think about this is if this document was written toward the last part of the first century, as a lot of scholars think it is, he may--” Conditional and breaks off; critical/3 carries the same view outright."
   - "Martin l23 ch. 4: “He says he was imprisoned on the isle of Patmos in the Mediterranean when he wrote this” — “imprisoned” goes beyond Rev 1:9; setting/2 used instead."
@@ -198,3 +225,9 @@ uncited:
   - "Ligonier devotional “Reading John's Prophecy”: “We will tentatively assume the later date” — why the holder is Mathison, not Ligonier."
   - "Hanegraaff, CRI “Dating the Book of Revelation” (2009): calls the late date “untenable” but states no positive date of his own."
   - "GotQuestions “Book of Revelation” and “When was Revelation written?”: 90–95 (A.D.); a Tradition source holding the late date, not the preterist side the Trigger Claim states."
+  - "Mathison, “When Was Revelation Written?” ¶ 2: “If Revelation was written between AD 64 and 70, it is very likely that John was giving Israel a final prophetic warning” — conditional; tradition/1–2 carry the range."
+  - "Gentry, Before Jerusalem Fell (Institute for Christian Economics, 1989), p. 336: “A date in either A.D. 65 or early A.D. 66 would seem most suitable.” Holds the early date in his own voice but narrower than 64–70 and a different holder; Mathison is enough (#86). Read by search, not in full."
+  - "Bible Odyssey “Fiction in a Time of Persecution” (Polaski): about Esther, not Revelation."
+  - "Bible Odyssey “Apocalyptic Thought after Revelation” (DiTommaso): reception history; no date for the writing."
+  - "Bible Odyssey dictionary “Persecution”: “Nero attacked Christians after the fire in Rome in 64 CE” — dates the persecution, not Revelation."
+  - "Bible Odyssey dictionary “Emperor”: Revelation presents Rome as a monster (Rev 13); no date."
