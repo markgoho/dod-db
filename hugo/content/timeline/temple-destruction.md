@@ -7,7 +7,7 @@ related:
   {
     books: [mark],
     tags: [second-temple-period, flavius-josephus, preterism],
-    topics: [],
+    topics: [flavius-josephus, preterism],
   }
 watch:
   [

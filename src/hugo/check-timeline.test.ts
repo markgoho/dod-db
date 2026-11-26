@@ -135,6 +135,12 @@ describe("checkTimeline", () => {
     ]);
   });
 
+  test("fails a related tag that only redirects to a topic the entry doesn't list", async () => {
+    expect(await check("related-tag-redirects-to-topic")).toEqual([
+      `timeline/book: related tag "lxx" only redirects to topic "septuagint"; add "septuagint" to related topics`,
+    ]);
+  });
+
   test("fails an entry with both critical and undated", async () => {
     expect(await check("critical-and-undated")).toEqual([
       `timeline/book: has both critical and undated; give one`,

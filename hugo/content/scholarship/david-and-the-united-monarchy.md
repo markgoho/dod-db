@@ -18,6 +18,7 @@ related:
     - david
     - saul
     - goliath
+    - elhanan-son-of-jair
     - tel-dan-stele
 watch:
   - united monarchy

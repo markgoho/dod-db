@@ -6,7 +6,15 @@ sourcesRead: 2026-11-25
 related:
   books: [daniel]
   tags: [daniel, susanna, bel-and-the-dragon, dead-sea-scrolls, septuagint]
-  topics: [daniel, maccabean-revolt]
+  topics:
+    [
+      daniel,
+      maccabean-revolt,
+      susanna,
+      bel-and-the-dragon,
+      dead-sea-scrolls,
+      septuagint,
+    ]
 watch:
   [
     Daniel,

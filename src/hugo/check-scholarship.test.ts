@@ -96,6 +96,12 @@ describe("checkScholarship", () => {
     ]);
   });
 
+  test("fails a related tag that only redirects to a topic the page doesn't list", async () => {
+    expect(await check("related-tag-redirects-to-topic")).toEqual([
+      `${page}: related tag "moses" only redirects to topic "moses"; add "moses" to related topics`,
+    ]);
+  });
+
   test("fails when core names no statement", async () => {
     expect(await check("core-unresolved")).toEqual([
       `${page}: core "nope" names no statement`,

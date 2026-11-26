@@ -229,8 +229,14 @@ export async function loadEpisodes(
 
 export const TAXONOMIES = ["books", "tags", "topics"] as const;
 export type Taxonomy = (typeof TAXONOMIES)[number];
-/** Term keys per taxonomy, as Hugo keys term pages (taxonomyFolderSlug). */
-export type Terms = Record<Taxonomy, Set<string>>;
+/**
+ * Term keys per taxonomy, as Hugo keys term pages (taxonomyFolderSlug), and
+ * `tagTopics`: each tag key a topic page claims as an alias (`/tags/<key>/`),
+ * mapped to that topic's key.
+ */
+export type Terms = Record<Taxonomy, Set<string>> & {
+  tagTopics: Map<string, string>;
+};
 
 const EpisodeTermsSchema = z.object({
   books: z.array(z.string()).nullish(),
@@ -238,15 +244,27 @@ const EpisodeTermsSchema = z.object({
   topics: z.array(z.string()).nullish(),
 });
 
+const TopicAliasesSchema = z.object({
+  aliases: z.array(z.string()).nullish(),
+});
+
+const TAG_ALIAS = /^\/tags\/([^/]+)\/?$/;
+
 /**
  * The term pages Hugo builds: one per value in an Episode's books/tags/topics
  * front matter, plus each hand-authored hugo/content/<taxonomy>/<key>/_index.md.
+ * A topic page's `/tags/<key>/` aliases go in `tagTopics`.
  */
 export async function loadTerms(
   root: string,
   errors: string[],
 ): Promise<Terms> {
-  const terms: Terms = { books: new Set(), tags: new Set(), topics: new Set() };
+  const terms: Terms = {
+    books: new Set(),
+    tags: new Set(),
+    topics: new Set(),
+    tagTopics: new Map(),
+  };
   const content = path.join(root, "hugo/content");
   const episodeFiles = await Array.fromAsync(
     new Glob("episodes/*/index.md").scan({ cwd: content }),
@@ -271,26 +289,50 @@ export async function loadTerms(
       new Glob(`${taxonomy}/*/_index.md`).scan({ cwd: content }),
     );
     for (const bundle of bundles) {
-      terms[taxonomy].add(path.basename(path.dirname(bundle)));
+      const key = path.basename(path.dirname(bundle));
+      terms[taxonomy].add(key);
+      if (taxonomy !== "topics") continue;
+      const topic = await loadParsed(
+        TopicAliasesSchema,
+        path.join(content, bundle),
+        root,
+        errors,
+        readFrontmatter,
+      );
+      for (const alias of topic?.aliases ?? []) {
+        const tag = TAG_ALIAS.exec(alias)?.[1];
+        if (tag) terms.tagTopics.set(decodeURIComponent(tag), key);
+      }
     }
   }
   return terms;
 }
 
 /**
- * One error per `related` entry that names no term page. Same rule as
- * hugo/layouts/partials/scholarship-related-term.html.
+ * One error per `related` entry that names no term page (same rule as
+ * hugo/layouts/partials/scholarship-related-term.html), and per related tag
+ * whose URL only redirects to a topic page that `topics` doesn't list: the
+ * topic page would show no inbound link (#161).
  */
 export function unknownRelated(
   at: string,
   related: Record<Taxonomy, string[]>,
   terms: Terms,
 ): string[] {
-  return TAXONOMIES.flatMap(taxonomy =>
+  const unknown = TAXONOMIES.flatMap(taxonomy =>
     related[taxonomy]
       .filter(entry => !terms[taxonomy].has(taxonomyFolderSlug(entry)))
       .map(entry => `${at}: related ${taxonomy} "${entry}" names no term page`),
   );
+  const listedTopics = new Set(related.topics.map(t => taxonomyFolderSlug(t)));
+  const redirected = related.tags.flatMap(entry => {
+    const topic = terms.tagTopics.get(taxonomyFolderSlug(entry));
+    if (topic === undefined || listedTopics.has(topic)) return [];
+    return [
+      `${at}: related tag "${entry}" only redirects to topic "${topic}"; add "${topic}" to related topics`,
+    ];
+  });
+  return [...unknown, ...redirected];
 }
 
 /** Review key for a Trigger Claim: `<episode>@HH:MM:SS`. */

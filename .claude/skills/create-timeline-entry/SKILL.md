@@ -43,7 +43,7 @@ Done when the entry rule in `CONTEXT.md` is met or plainly unmet.
 
 Write, with `draft: true` on the entry:
 
-- `hugo/content/timeline/<id>.md`: front matter only (no `build` line: the entry has its own Timeline Entry Page, #219), `entryKind`, `related` (books, tags and topics that exist; a tag that only redirects to a topic is #161's flag), `watch` (terms `synthesis:gather` greps new Transcripts for) and the blocks from step 2. `sourcesRead` stays empty until publish.
+- `hugo/content/timeline/<id>.md`: front matter only (no `build` line: the entry has its own Timeline Entry Page, #219), `entryKind`, `related` (books, tags and topics that exist; a tag whose URL only redirects to a topic page needs that topic listed too, which `check:timeline` enforces), `watch` (terms `synthesis:gather` greps new Transcripts for) and the blocks from step 2. `sourcesRead` stays empty until publish.
 - `hugo/data/timeline/triggers.yaml`: append the Trigger Claims with `entry: <id>`.
 - `hugo/data/external-sources.yaml`: a registry entry per new source (a Tradition source sets `tradition:`).
 - `data/timeline-reviews/<id>.yaml`: the agent first pass, one item per citation (`critical/1`, `tradition/1` …), Trigger Claim (`<episode>@HH:MM:SS`), source and rule (`TIMELINE_RULES` in `check-timeline.ts`), with `owner: ""`, plus `leads`, `uncited` and header comments (sourcing test, issue instructions, what was dropped and why, flags for the second pass).
