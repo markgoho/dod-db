@@ -67,6 +67,25 @@
       {{- /* The period the text narrates (#167 §4); it never places the entry. */ -}}
       <p class="timeline-entry__setting">{{ $labels.setIn }} {{ .display }}</p>
     {{ end }}
+    {{- /* PROTOTYPE (tradition gap, variant G): a link to this entry's tradition card, which sits at its own date. */}}
+    {{ if and (eq $.by "critical") $t (isset $t "from") }}
+      {{ $cF := float $c.from }}
+      {{ $cT := float ($c.to | default (cond (eq $c.precision "century") (add $cF 99) $cF)) }}
+      {{ $g := sub (div (add $cF $cT) 2) (div (add (float $t.from) (float ($t.to | default $t.from))) 2) }}
+      <p class="echo-jump">
+        <a href="#{{ $e.File.ContentBaseName }}-tradition">
+          {{- if lt (math.Abs $g) 30 -}}
+            Tradition’s date, about the same:
+            {{ $t.display }}
+          {{- else -}}
+            {{ cond (gt $g 0) "↑" "↓" }} Tradition’s date,
+            ~{{ lang.FormatNumber 0 (mul (math.Round (div (math.Abs $g) 10)) 10) }}
+            years {{ cond (gt $g 0) "earlier" "later" }}:
+            {{ $t.display }}
+          {{- end -}}
+        </a>
+      </p>
+    {{ end }}
     {{ with $p.seeAlso }}
       {{ with index $.byId . }}
         <p class="timeline-entry__note">

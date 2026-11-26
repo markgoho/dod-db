@@ -355,17 +355,33 @@ html:not([data-proto="f"]) .gap-mini {
 
 /* ---------- Variant E: the tradition at its own date, linked ---------- */
 
-html:not([data-proto="e"]) .timeline-entry--echo,
+html:not([data-proto="e"], [data-proto="g"]) .timeline-entry--echo,
 html:not([data-proto="e"]) .echo-stub,
 html:not([data-proto="e"]) .echo-line,
-html[data-proto="e"]
+html:not([data-proto="g"]) .echo-jump,
+html:is([data-proto="e"], [data-proto="g"])
   .timeline-entry:not(.timeline-entry--by-tradition, .timeline-entry--echo)
   > .timeline-entry__tradition {
   display: none;
 }
 
+/* Variant G: the scholarly card's link to its tradition card. */
+.echo-jump {
+  font-size: var(--step--1);
+  margin: var(--space-3xs) 0 var(--space-2xs);
+}
+
+/* Arriving by link: the card you land on is ringed. */
+:is(
+  .timeline-entry--echo .echo-card,
+  .timeline-entry > .timeline-entry__card
+):is(:target > *) {
+  outline: var(--border-width-md) solid var(--color-action);
+  outline-offset: var(--space-4xs);
+}
+
 /* With its card moved away, the critical node loses its tradition-side connector. */
-html[data-proto="e"]
+html:is([data-proto="e"], [data-proto="g"])
   .timeline-entry--paired:not(.timeline-entry--by-tradition)
   > .timeline-entry__node::after {
   display: none;
