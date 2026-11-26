@@ -1,9 +1,9 @@
 ---
 title: "Abraham and the patriarchs"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-25
 related: { books: [genesis], tags: [abraham, isaac], topics: [jacob] }
 watch: [Abraham, Isaac, patriarchs, patriarchal period, ancestral stories]
 undated:

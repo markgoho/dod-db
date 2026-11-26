@@ -150,6 +150,7 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       ["creation", 0],
       ["adam", 1],
       ["flood", 0],
+      ["abraham", 1],
       ["jericho", 0],
       ["exodus", 1],
       ["merneptah-stele", 0],
