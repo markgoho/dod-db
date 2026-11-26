@@ -8,69 +8,67 @@
 # agent: the first pass (2026-11-26). Research agents per subject (Old Hebrew script; earliest Hebrew-language writing), each saving fetched pages; quotes copied from saved text only. Quotes script-matched against the saved text (whitespace, quotes, dashes, entities, soft and line-break hyphens normalised): 2 hits, 0 misses. Trigger Claim matched by script as a substring of its Transcript line at timestamp and speaker: 1 hit.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Sergi p. 34 says Hebrew written “through specific and differentiated scripts”: is that the earliest Hebrew writing, or the earliest Hebrew in a national script (which would make it a script date)? The note keeps his words. His p. 208 is hedged (“it seems”) and puts Israel's scribes in the first half of the 9th century, Judah's in the second; p. 34 is used because it is unhedged. (2) Rubin's parenthesis (“though a few biblical texts may have been composed a couple of centuries earlier”) is kept in the quote and left out of the note: it is about composition, not attested writing. (3) Rubin is a short Bible Odyssey article, Reference; check author and 2024 date. (4) Title “Earliest known Hebrew writing” is Rubin's phrase; Sergi's “earliest appearance … in the epigraphic finds” is the same notion. (5) display “Around 1000 BCE, or from the second half of the 9th century BCE” and to: -801: check neither side is overstated.
+# Independent second agent pass 2026-11-26 (#93 delegation, #110): both cited sources re-fetched by curl from their registry URLs into a fresh folder (Rubin, Bible Odyssey HTML stripped to text; Sergi 2023 SBL ICI PDF via pdftotext). Both quotes re-matched by script (whitespace, quotes, dashes, entities, soft and line-break hyphens, space before punctuation normalised): 2 hits, 0 misses, each at its locator (Rubin: section “Where did the Hebrew language come from?”, third paragraph, on Akkadian, sentence 3 after “by contrast,”; the whole article read, and it names no inscription or object and gives no other date for Hebrew writing (its close, “continuous written use for roughly three thousand years”, agrees); Sergi printed p. 34 = PDF p. 56, inside §2.1 “The Early Iron Age Levant: Forging Identities, Forming Polities”, pp. 30–41 per the TOC). Trigger Claim re-matched by script at timestamp and speaker in the final Transcript (via processed-videos.json): 1 hit; 00:42:59 to 00:47:38 read in full, plus the turns from 00:40:36. Registry checked against the sources: Sergi title and copyright pages (Archaeology and Biblical Studies Number 33; © 2023, SBL Press); Rubin author box (Ann and Jay Davis Professor of Jewish Studies, University of Georgia; PhD Harvard 2004), dated April 26, 2024; Sergi SBL ABS 33, 2023, opens without login (#80 clarification on ICI PDFs).
+# Second pass changed: Sergi p. 34 (old critical/2) cut to `uncited`. It is a script claim, not a date for the earliest Hebrew writing: the sentence just before it says the Late Bronze cuneiform system “was replaced by the earliest attempts to have the local spoken languages committed to writing through alphabetic scripts”, undated, so “earliest appearance … through specific and differentiated scripts” is limited by the differentiated (national, royal) scripts; its n. 13 points to §5.4, where Sergi puts alphabetic writing in Israel and Judah by the late 10th/early 9th century (pp. 205, 208) and Israel's scribes by the first half of the 9th, and ties Hebrew-language writing only to the Old Hebrew script, hedged (“it seems”, p. 208); he never calls the earlier alphabetic writing Hebrew. So p. 34 may date only Hebrew in its own script, the Old Hebrew script subject the first pass already left out; the reading is in doubt, so it is cut. With it gone there is no split: display “Around 1000 BCE, or from the second half of the 9th century BCE” → “Around 1000 BCE”; `to: -801` dropped (from -1000, precision century, as on david-and-solomon); note “The sources differ. One dates … Another sees …” → “One source dates the earliest known Hebrew writing to around 1000 BCE; it names no inscription.” `citations.critical/2` and `sources.sergi-2023-two-houses` removed from this file (registry entry kept; other entries cite it). Rules split-shown, critical-scope and conditional-not-critical corrected. Title unchanged (Rubin's phrase). Trigger Claim unchanged. No citation added.
+# Second pass on the first-pass flags: (1) Script claim; cut (above). (2) Kept: Rubin's parenthesis is about composition; the note leaves it out, and it does not hedge the date. (3) Pass: author and date confirmed on the page; Bible Odyssey is Reference judged per author (#86), Rubin is a professional Semitist. (4) Title kept; now rests on Rubin alone, whose phrase it is. (5) Display narrowed to Rubin's “around 1000 BCE”, which is no stronger than the source (“only around 1000 BCE”). E187's other date-bearing turns (00:44:45 “around 1000 … the Israelites … speak our language different”; 00:46:22 “between like 1000 and 800ish … asserting, we're this kingdom”) date language and kingdoms, not writing: no second show date for this subject, no #99 contradiction.
+# Flags for publish: (1) The entry now rests on one Reference source's passing remark (an aside in a paragraph on Akkadian) that names no inscription; it meets the entry rule (one Scholarly or Reference source, #80 one-source rule), but it is the thinnest kind of support. (2) The field reads later than Rubin and none of it is shown: Sergi's own picture (Hebrew written in Old Hebrew script by the 9th century, hedged, p. 208; differentiated scripts from the second half of the 9th, p. 34) and the Finkelstein–Sass lead (first half of the 9th, paywalled, via Naʼaman n. 13); the Gezer Calendar's and Qeiyafa ostracon's language is disputed (Rollston, Millard, Naʼaman, uncited). A publisher may prefer to hold the entry until a Scholarly source that dates the earliest Hebrew-language writing outright is read. (3) “Around 1000 BCE” sits in tension with Naʼaman p. 10 on `hebrew-language` (no epigraphic evidence that Hebrew detached from Canaanite in the first half of the 10th century). Kept as a tension between sources, not a contradiction between entries: each note is attributed, and `hebrew-language` dates the language, this entry its attestation in writing. (4) Placed at -1000, beside david-and-solomon (also -1000) and near merneptah-stele: check minimap crowding at preview (#175).
+review: null
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Rubin, Bible Odyssey “Where Did Hebrew Come From?”, section “Where did the Hebrew language come from?”, paragraph on Akkadian. Supports “around 1000 BCE” for the earliest known Hebrew writing. Outright; the parenthesis is about composition and is not used.",
-    }
-  critical/2:
-    {
-      agent: pass,
-      owner: "",
-      note: "Sergi 2023 p. 34 (PDF p. 56), §2.1. Supports “from the second half of the 9th century BCE”, the earliest appearance in the epigraphic finds of Hebrew committed to writing. Unhedged; the next sentence (“These finds apparently reflect …”) hedges only their purpose. See flag (1).",
+      note: "Rubin, Bible Odyssey “Where Did Hebrew Come From?”, section “Where did the Hebrew language come from?”, paragraph on Akkadian. Supports “around 1000 BCE” for the earliest known Hebrew writing. Outright; the parenthesis is about composition and is not used. Second pass: re-fetched and re-matched by script; third ¶ of the section (on Akkadian), sentence 3, after “by contrast,”. Whole article read: no inscription named, no other date for Hebrew writing. Verified. Now the entry's only citation; backs display and note.",
     }
 triggers:
   187@00:44:37:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Full turn at 00:44:37.460, Dan McClellan. Read 00:42:59 to 00:46:22. “The language” and “Hebrew” are carried from 00:44:31–00:44:36 (“Hebrew doesn't even exist yet” … “Least the written”). No hedge dropped.",
+      note: "states: critical. Full turn at 00:44:37.460, Dan McClellan. Read 00:42:59 to 00:46:22. “The language” and “Hebrew” are carried from 00:44:31–00:44:36 (“Hebrew doesn't even exist yet” … “Least the written”). No hedge dropped. Second pass: re-matched by script (timestamp, speaker, verbatim line); 00:42:59–00:47:38 read in full. Context confirmed: Beecher's “It doesn't even exist. Or at”, McClellan “Least the written”, Beecher “Language”. “Toward the end of Iron Age one” = about 1000 (00:42:59 “1200 to 1000 is Iron Age one”), matching the display. Kept.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Worded for the earliest attested Hebrew writing, which both sources date; the Old Hebrew script (9th century, Rollston, Naʼaman) and the language's emergence (hebrew-language) are left out. Matches the Trigger Claim's subject.",
+      note: "Worded for the earliest attested Hebrew writing, which both sources date; the Old Hebrew script (9th century, Rollston, Naʼaman) and the language's emergence (hebrew-language) are left out. Matches the Trigger Claim's subject. Second pass: “which both sources date” no longer holds; Sergi p. 34 dates Hebrew in a differentiated script, the excluded script subject, and is cut. Now worded for Rubin's earliest known Hebrew writing only. Pass.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Rubin around 1000 BCE vs Sergi from the second half of the 9th century BCE; display and note show both, each cited.",
+      note: "Rubin around 1000 BCE vs Sergi from the second half of the 9th century BCE; display and note show both, each cited. Second pass: no split left. Sergi p. 34 dates the differentiated scripts, not the earliest Hebrew writing (preceding sentence has undated “earliest attempts … through alphabetic scripts”), so it does not oppose Rubin; cut to uncited. Display and note show Rubin only. Pass (nothing to show).",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; the one Trigger Claim states critical.",
+      note: "No Tradition Date; the one Trigger Claim states critical. Second pass: confirmed. Pass.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; no Tradition source cited.",
+      note: "No Tradition Date; no Tradition source cited. Second pass: confirmed. Pass.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "Both dates are stated outright, with no condition. Sergi's hedged p. 208 is not cited.",
+      note: "Both dates are stated outright, with no condition. Sergi's hedged p. 208 is not cited. Second pass: now one date only, Rubin's, stated outright (“dates from only around 1000 BCE”). Pass.",
     }
 sources:
   rubin-bo-where-did-hebrew-come-from:
     {
       agent: pass,
       owner: "",
-      note: "Reference (Bible Odyssey, Society of Biblical Literature). New id. Aaron D. Rubin, Ann and Jay Davis Professor of Jewish Studies, University of Georgia, per the page's author box; article dated April 26, 2024, inside the 30-year window.",
-    }
-  sergi-2023-two-houses:
-    {
-      agent: pass,
-      owner: "",
-      note: "Scholarly (SBL Press, Archaeology and Biblical Studies 33, 2023). Reused id (merneptah-stele, david-and-solomon). Open PDF on sbl-site.org.",
+      note: "Reference (Bible Odyssey, Society of Biblical Literature). New id. Aaron D. Rubin, Ann and Jay Davis Professor of Jewish Studies, University of Georgia, per the page's author box; article dated April 26, 2024, inside the 30-year window. Second pass: re-fetched; author box (PhD 2004, Harvard), date and SBL hosting confirmed. Pass.",
     }
 leads:
   - "Finkelstein and Sass 2013, “The West Semitic Alphabetic Inscriptions, Late Bronze II to Iron IIA”, HeBAI 2: 149–220, pp. 164–66: writing in Hebrew began only in late Iron IIA, the first half of the 9th century BCE. Paywalled; known only via Naʼaman 2017 p. 10 n. 13."
@@ -82,9 +80,10 @@ leads:
 uncited:
   - "Rollston 2010 (SBL, Archaeology and Biblical Studies 11, open PDF), pp. 3, 29–35, 42, 44: script and language differ; Israelite scribes first wrote with the Phoenician script; Gezer Calendar and Tel Zayit abecedary in Phoenician script, late 10th or very early 9th century; Cross considers the Gezer Calendar's language Hebrew, Pardee Phoenician; the Old Hebrew script “became a distinct national script during the ninth century b.c.e.” and “no evidence for a distinct Old Hebrew national script during the tenth century”. Script dating, and a report of a dispute over one object's language; names no earliest Hebrew-language inscription. Read; not the entry's subject."
   - "Naʼaman 2017 (JHS 17), p. 10: the early Hebrew script “was formed only in the 9th century” (after Naveh 1982); pp. 10–11 on the Qeiyafa ostracon not proven Hebrew. Script, and the language's emergence (cited on hebrew-language)."
-  - "Sergi 2023 pp. 204–8, 212: Old Hebrew script at Tel Reḥov, Gath and Arad in late Iron IIA (ca. 900–800/780 BCE, his Table 1.1, p. 24); p. 208 “it seems that the royal scribes in both Israel and Judah made use of the Old Hebrew script for writing their own language—Hebrew” by the second half of the 9th century. Script, and hedged; p. 34 cited instead."
+  - "Sergi 2023 pp. 204–8, 212: Old Hebrew script at Tel Reḥov, Gath and Arad in late Iron IIA (ca. 900–800/780 BCE, his Table 1.1, p. 24); p. 208 “it seems that the royal scribes in both Israel and Judah made use of the Old Hebrew script for writing their own language—Hebrew” by the second half of the 9th century. Script, and hedged. (First pass cited p. 34 instead; the second pass cut it, below.)"
   - "Millard 2011 (Tyndale Bulletin 62.1), Qeiyafa ostracon (about 1000 BC): “the language may be Hebrew, Canaanite, Phoenician or Moabite”; “there is no proof the text is written in Hebrew rather than Canaanite”. One object; no date for the earliest Hebrew writing."
   - "Crenshaw, Bible Odyssey “Literacy in the Ancient World” (2017): the Gezer agricultural calendar “(southern Canaan, 10th century)” among finds from neighbouring lands; does not call it Hebrew."
   - "Ben-Dov, Bible Odyssey “The Calendar in the Hebrew Bible” (2025): the Gezer Calendar “a famous tenth century BCE inscription”; does not call it Hebrew."
   - "Nowogórski 2016 (Saeculum Christianum 23): national Hebrew script “used from the late tenth century BC”, then “It is impossible to determine when the national Hebrew script was developed”. Script; self-contradicting; theology journal."
   - "Bible Odyssey “The Mesha Stela”; Suriano, “The Samaria Ostraca” (Paleo-Hebrew of the late 9th and 8th centuries): no date for the earliest Hebrew writing."
+  - "Sergi 2023 p. 34 (PDF p. 56), §2.1: “From the second half of the ninth century BCE, we see in the epigraphic finds the earliest appearance of local dialects such as Hebrew, Aramaic, Moabite, and Ammonite committed to writing through specific and differentiated scripts.” Cut by the second pass (was critical/2): the date is qualified by “specific and differentiated scripts” (national, royal scripts). The sentence before it has undated “earliest attempts to have the local spoken languages committed to writing through alphabetic scripts”; n. 13 points to §5.4, which puts alphabetic writing in Israel and Judah by the late 10th/early 9th century (pp. 205, 208). The date may be for the script, not the language; in doubt, so cut."
