@@ -3457,3 +3457,45 @@ ligonier-mathison-2012-johns-prophecy:
   url: "https://learn.ligonier.org/articles/understanding-johns-prophecy"
   hostAuthored: false
   tradition: "Keith Mathison, writing for Ligonier Ministries, an international Christian discipleship organization"
+
+richelle-2026-ancient-hebrew-inscriptions:
+  author: "Matthieu Richelle"
+  title: "Ancient Hebrew Inscriptions"
+  series: "Elements in the Ancient Near Eastern World and the Bible"
+  publisher: "Cambridge University Press"
+  year: 2026
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Cambridge Core full-text HTML, opens without login (no open-access licence stated on the page)"
+  url: "https://www.cambridge.org/core/elements/ancient-hebrew-inscriptions/26E0DECA312B046780697E72296BF572"
+  hostAuthored: false
+  tradition: null
+
+schniedewind-2006-aramaic-death-of-written-hebrew:
+  author: "William M. Schniedewind"
+  title: "Aramaic, the Death of Written Hebrew, and Language Shift in the Persian Period"
+  series: "Margins of Writing, Origins of Cultures (ed. Seth L. Sanders), Oriental Institute Seminars 2"
+  publisher: "The Oriental Institute of the University of Chicago"
+  year: 2006
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Free PDF of the whole volume from the Institute for the Study of Ancient Cultures (University of Chicago), open"
+  url: "https://isac-assets.s3.amazonaws.com/isac-publications/OIS2.pdf"
+  hostAuthored: false
+  tradition: null
+
+longacre-2021-chroms:
+  author: "Drew Longacre"
+  title: "Comparative Hellenistic and Roman Manuscript Studies (CHRoMS): Script Interactions and Hebrew/Aramaic Writing Culture"
+  series: "COMSt Bulletin 7"
+  publisher: "Comparative Oriental Manuscript Studies, Universität Hamburg"
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access PDF in the Universität Hamburg research data repository, open"
+  url: "https://www.fdr.uni-hamburg.de/record/8898/files/longacre.pdf?download=1"
+  hostAuthored: false
+  tradition: null

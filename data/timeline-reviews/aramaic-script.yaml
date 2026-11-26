@@ -1,0 +1,126 @@
+# Review record for the Timeline Entry `aramaic-script` (/timeline/#aramaic-script; #93 shape). Not rendered.
+# Issue #218 (follow-on from #217, Old Hebrew script, blocked on a Trigger Claim), retitled “Timeline Entry: Hebrew writers adopt the Aramaic square script”. Issue notes: keep separate from `hebrew-writing`, `hebrew-language` and #217; the two Trigger Claims differ (“after the Babylonian Exile” vs “while they were exiles”), apply #99 if sources split. No Tradition Date expected.
+# Scope chosen: Judean scribes taking up the Aramaic script in place of the Old Hebrew script. Title drops “square”: the sources treat the Jewish (“square”) script as a later development out of the Aramaic script, from the third century BCE (Richelle, Introduction ¶1: Dead Sea scrolls' “Jewish script”, third century BCE – first century CE; Eshel 2014 Archaic book hand ca. 275–150 BCE; Posen guide), so “adopt the square script” would date something different. Id `aramaic-script` (not `-tradition`).
+# Two subjects kept apart: (A) Judean scribes take up the Aramaic script at all; (B) Hebrew texts are written in it instead of Old Hebrew. Richelle Introduction ¶1 is A (“Judean scribes adopted the latter likely in the sixth century BCE”); Schniedewind p. 139 is A/B (the Hebrew script “is replaced by Aramaic script” in the Persian period, inside a language-shift argument); Longacre p. 11 is B outright (“even for Hebrew texts”, starting in Persian-period Yehud). Naveh's third-century view, reported by Richelle §2.3.3, is about B only, and is shown as Richelle's report, opposite Mizrahi's Persian-period process. Title follows A, which all three outright cites support; B goes in the note, attributed.
+# Sourcing test, 2026-11-26: met as critical, split shown (#99). Richelle 2026 (Scholarly, Cambridge Elements) “likely in the sixth century BCE”; Schniedewind 2006 (Scholarly, OI Seminars 2) “in the Persian period”; Longacre 2021 (Scholarly, COMSt Bulletin) “Starting in Persian-period Yehud … gradually”. “Likely” and “gradually” are hedges, not conditions (cf. hezekiah-reform's “if the reform was an actual historical event”), so this is a Critical Date, shown in each side's own words. Either Schniedewind or Longacre alone meets the entry rule if Richelle is cut.
+# Placement: from -600 (start of Richelle's sixth century, the earlier side), to -330 (end of the Persian empire per Richelle's own “ca. 539–330 BCE”, which matches cyrus-babylon's 539), precision period. The note says where it is placed. Placing from -539 (anchor cyrus-babylon) would take the Persian-period side; flag for the second pass. Check minimap crowding near fall-of-jerusalem (587/586) at preview (#175).
+# Consistency: fall-of-jerusalem (587 or 586) and cyrus-babylon (539) agree with Richelle's Neo-Babylonian (ca. 612–539) and Persian (ca. 539–330) ranges. hebrew-writing (earliest Hebrew writing, ca. 1000 BCE) and hebrew-language (undated) are different subjects; nothing here dates them. No anchor or seeAlso (none needed; cyrus-babylon is published if the second pass prefers an anchor).
+# Trigger Claims: E152@00:37:40.218 (trimmed from the turn's opening “Absolutely. And the first thing to note …”; no hedge dropped; read 00:35:43 to 00:40:58; 00:38:30 adds that square-script letter confusions “would have had to have happened after the Babylonian Exile”, and 00:39:31 that most Hebrew Dead Sea scrolls are in square script, context only) and E43@00:45:20.710 (trimmed from a turn on Aramaic loanwords in Isaiah 40–55; no hedge dropped; read 00:43:07 to 00:46:47). Both Dan McClellan, both states: critical. They differ (“after” vs “while they were exiles”); per #99 both are shown verbatim and the gap is left unexplained; the entry's sides (sixth century, Persian period) follow the sources, not the show. Not stored: E52@00:10:04.930 (“the Hebrew Bible would not begin to be written down in the Aramaic square script until the post-exilic period”): its subject is copying the Hebrew Bible in square script (subject B, narrower), and two claims already cover the entry's subject; E152@00:38:30 (relative, textual-criticism aside).
+# agent: the first pass (2026-11-26). Two research agents, both on the critical side (no Trigger Claim states a tradition's side; an event has no setting): one on reference works, one on scholarly works, each saving every fetched page to its own scratch folder; quotes copied from saved text only. Richelle re-fetched by the lead with a clean anonymous curl: full text present (quote found), no login. Quotes script-matched against the saved text (whitespace, quotes, dashes, entities, soft and line-break hyphens, Cambridge's inline “Reference …” citation pop-ups normalised): 5 hits, 0 misses. Trigger Claims matched by script as substrings of their Transcript lines at timestamp and speaker: 2 hits.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Richelle's page states no open-access licence; it opened in full without login on 2026-11-26 but may be a time-limited free view. (2) Schniedewind p. 139 sits in a language-shift argument: does “is replaced by Aramaic script” date the script change, or Aramaic writing displacing Hebrew writing? (3) Display “Likely the 6th century BCE, or starting in the Persian period”: the sides overlap (539–501); check the “or” is fair and neither side overstated. (4) Placement from -600 picks the earlier side; consider anchor cyrus-babylon. (5) Longacre's venue (COMSt Bulletin, Hamburg) for the Scholarly class; author at the Qumran Institute, Groningen. (6) Zissu & Abadi 2014 (“During the Babylonian exile, the Jews adopted the “square Hebrew” script”) left uncited though it is the only unhedged exile-date source; confirm.
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Richelle 2026, Introduction ¶1, sentence 3; “the latter” is “the Aramaic alphabet” of the sentence before. Supports “Likely the 6th century BCE” and the Neo-Babylonian/Persian ranges in the note. Hedge “likely” kept in display. Next sentence: the Aramaic script “gradually developed until it became the Jewish script”.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Schniedewind 2006 p. 139 (chapter pp. 137ff.). Supports “in the Persian period” for the Hebrew script's replacement by Aramaic script. Outright. Context: a language-shift argument; p. 140 “certainly points to the shift from Hebrew to Aramaic that took place during the Persian period”.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Longacre 2021 p. 11, §3. Supports “starting in the Persian period”, “gradual”, “even for Hebrew texts” and “complete in Jewish circles only in the second century CE”. Outright; footnote 19: the Samaritans kept a version of the old script.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Richelle 2026 §2.3.3 ¶3. Supports the note's report of Naveh (third century BCE, Hebrew texts) and Mizrahi (process starting in the Persian period), attributed as Richelle's report. Naveh 1987 and Mizrahi 2017 not read themselves (leads).",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Richelle 2026 Introduction ¶2. Supports “Judeans kept using the old script alongside the Aramaic in limited contexts”.",
+    }
+triggers:
+  152@00:37:40:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Dan McClellan, 00:37:40.218; trimmed from the turn's start; no hedge dropped. Read 00:35:43–00:40:58. Says “after the Babylonian Exile”.",
+    }
+  43@00:45:20:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Dan McClellan, 00:45:20.710; one sentence from a turn on Isaiah 40–55's Aramaic loanwords; no hedge dropped. Read 00:43:07–00:46:47. Says “while they were exiles in Babylon”; differs from E152, shown verbatim (#99).",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Worded for Judean scribes' adoption of the Aramaic script, which the three outright cites date; not the later Jewish/square script (dropped from the title), not the Aramaic language, not Hebrew Bible manuscripts.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Richelle (likely sixth century) vs Schniedewind and Longacre (Persian period); display shows both, each cited. On Hebrew texts, Naveh vs Mizrahi shown as Richelle reports them.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; both Trigger Claims state critical. The Talmudic tradition crediting Ezra (b. Sanhedrin 21b) is recorded under uncited.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; no Tradition source cited.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No date given on a condition. “Likely” (Richelle) and “gradually” (Longacre) are hedges, kept in display and note.",
+    }
+sources:
+  richelle-2026-ancient-hebrew-inscriptions:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (Cambridge University Press, Elements in the Ancient Near Eastern World and the Bible; DOI 10.1017/9781009560245; online 14 Aug 2026). Matthieu Richelle, Université catholique de Louvain. New id.",
+    }
+  schniedewind-2006-aramaic-death-of-written-hebrew:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (Oriental Institute Seminars 2, ©2006 University of Chicago; ISBN 1-885923-39-2). William M. Schniedewind (UCLA). Inside the 30-year window. New id.",
+    }
+  longacre-2021-chroms:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (COMSt Bulletin 7, 2021, Comparative Oriental Manuscript Studies, Universität Hamburg; ERC-funded research). Drew Longacre, Qumran Institute, University of Groningen. New id.",
+    }
+leads:
+  - "Naveh, Early History of the Alphabet, 2nd ed. 1987, p. 117: Paleo-Hebrew still regularly used for Hebrew texts until the third century BCE. Known via Richelle §2.3.3; archive.org copy borrow-only. Pre-1996."
+  - "Mizrahi 2017, “Script-Switching …”, KUSATU 22: 101–123: switch a process starting in the Persian period. Via Richelle; academia.edu blocked."
+  - "Würthwein, The Text of the Old Testament (Eerdmans): transition “between the fourth and second centuries B.C. — it is impossible to be more precise”; Ezra c. 430 B.C. as Jewish tradition. Seen only on a bookseller listing. Pre-1996 edition."
+  - "Yardeni in Scrolls from the Dead Sea (1993) p. 130: post-exilic, the Aramaic cursive gradually replaced the ancient Hebrew script. Via Jewish Link (non-scholarly). Pre-1996."
+  - "Koller, TheTorah.com (2025), “The Transformation of Hebrew Script: From Paleo-Hebrew to Aramaic”: body text loads by script, not read; standfirst only."
+  - "Hamilton, “Paleo-Hebrew Texts and Scripts of the Persian Period”, in An Eye for Form (2014) pp. 253–290; Vanderhooft on Yehud scribes; Perrot & Richelle 2022; Gzella (Tübingen repository, timed out): not obtained."
+  - "Cross 1961, “The Development of the Jewish Scripts”: cited by Lexham and EJ; not open; pre-1996."
+  - "Britannica “Hebrew alphabet”: search snippets only (Square Hebrew traced from the 3rd century BCE); pages 403."
+uncited:
+  - "Zissu & Abadi 2014, Journal for Semitics 23/2i p. 654: “During the Babylonian exile, the Jews adopted the “square Hebrew” script …”. Peer-reviewed and unhedged, but dates the “square Hebrew” / “Jewish” script, which Richelle and Eshel date from the third century BCE: it conflates the Aramaic script with the later Jewish script. Left out."
+  - "Moore 2023, N.A.B.U. 2023/1 note 28 pp. 66–68: al-Yahudu epigraphs switch from Hebrew (latest 550 BCE) to Aramaic (from 538 BCE). One exile community's administrative language and script together; not Judean scribes generally. Same evidence reported by Richelle §2.3.1 as “tempting … although more evidence would be required”."
+  - "Encyclopaedia Judaica, “Alphabet, Hebrew” (encyclopedia.com), Naveh: “It seems likely that in the Persian period the Aramaic script was used for writing Aramaic texts only …”; Birnbaum: the new script “adopted by the Jews in Babylonia and elsewhere, and later penetrated Palestine”. Content from the 1971 edition (bibliography to 1968), outside the 30-year window; hedged; Naveh's view shown via Richelle instead. Also carries the Talmudic tradition (Sanh. 21b) crediting Ezra."
+  - "Posen Library guide, “Ancient Israelite Languages and Writing Systems”: “Later, in the Persian period, as Jews adopted the Aramaic language, they used its script …”. Unsigned; page partly gated for non-members."
+  - "Lexham Bible Dictionary, “Aramaic Script” (2016): “the Aramaic script gradually replaced the Hebrew abjad in the postexilic period”. Unsigned; evangelical publisher (Faithlife); not used."
+  - "BiblicalTraining.org, “Scripts”: “During and after the Babylonian exile, Jews increasingly wrote Hebrew in Aramaic letters.” Unsigned; confessional."
+  - "Eshel 2014 (An Eye for Form) and Longacre 2021 abstract: the Jewish formal hand from ca. 275 BCE; Greek reed pen in the third century BCE. The later Jewish script, a different subject."
+  - "Jewish Encyclopedia (1901), Lidzbarsky, “Alphabet, the Hebrew”: gradual adoption; Ezra tradition “certainly not correct”. Far outside the window."
+  - "Bible Odyssey (Perrin, Silverman, Breed ×2, Rubin, Tzoref, Davidson, Keddie “Money”, Young “Yahweh”): Aramaic language spread or Paleo-Hebrew persistence (Yehud coins); no date for the script change."
+  - "Tov 1996 (Scripta Classica Israelica 15) p. 268: Paleo-Hebrew Qumran texts written relatively late; no adoption date."
+  - "Rollston 2010 (SBL ABS 11): Iron Age only; nothing on the change."
