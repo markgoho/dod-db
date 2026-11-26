@@ -2296,20 +2296,6 @@ davis-bledsoe-2015-editions:
   hostAuthored: false
   tradition: null
 
-bullard-hatton-2006-ubs-handbook:
-  author: "Roger A. Bullard and Howard A. Hatton"
-  title: "A Handbook on the Shorter Books of the Deuterocanon"
-  series: "UBS Handbook Series (Helps for Translators)"
-  publisher: "United Bible Societies"
-  year: 2006
-  edition: null
-  class: Reference
-  kind: book
-  access: "Publisher's translation-resources website, open"
-  url: "https://tips.translation.bible/story/translation-introduction-to-susanna/"
-  hostAuthored: false
-  tradition: null
-
 glancy-jwa-susanna:
   author: "Jennifer A. Glancy"
   title: "Susanna: Apocrypha"

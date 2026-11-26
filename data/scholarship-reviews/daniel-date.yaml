@@ -7,728 +7,720 @@
 # Conflicts logged in data/scholarship-candidates.yaml, not attached as Trigger Claims (CONTEXT.md 2026-11-25): Ep 70 00:31:24 (Bel “probably written in Greek”, vs additions-origin) and Ep 45 00:40:42 (Kipp Davis, “scholars are uniformly convinced”, vs date).
 # First pass: three research agents fetched every source on 2026-11-25 into separate scratch folders and copied quotes from the fetched text; the NABRE ch. 3 and 13 notes, refused to curl, were re-read in Chrome by the lead agent. Every page quote was then script-matched (whitespace, HTML entities, tags, curly quotes and PDF line-break hyphens normalised) against those saved texts: 74/74, 0 misses. The second pass must re-fetch.
 # Flags for the second pass: (1) The date short says “scholars place it”, borrowing the OUP summary’s and Popović’s “scholars … date”, beside the debate Suchard and Valeta report; check it is not stronger than the sources. (2) Valeta’s sentence is in a “Did You Know?” box; whether it is Valeta’s or SBL editorial is not stated. (3) Bullard and Hatton (UBS Handbook): class doubtful (Bible-society publisher); used only attributed in additions-origin. (4) Most Reference citations are Bible Odyssey pages (independent authors, one platform). (5) The NABRE introduction text may carry over from the 1970 NAB; registry year 2011 follows the existing entry. (6) Silverman’s Bible Odyssey page is dated 21 August 2026. (7) Nel’s year 2006 is inferred from NGTT vol. 47; the page shows none. (8) The scrolls short says the oldest copy is dated close to the book’s completion: Nel (“closer to the autograph”) and Popović (“from the time of their presumed authors”). (9) The published Timeline Entry `daniel` states 167–164 flatly; Valeta and Suchard bear on it (issue filed for the owner’s re-review).
+# Second agent pass 2026-11-25 (#93 delegation, independent): every cited source re-fetched into the second pass's own scratch folder, not the first pass's files. By curl: Hayes l23 (oyc.yale.edu), the OUP ch. 25 summary, PLoS ONE (Popović), Suchard (Leiden repository PDF via the handle), Nel (NGTT inline HTML, plus its landing page for the year), PDFs of van Deventer, Davis Bledsoe and the three NETS introductions, Posen, JWA (Glancy), tips.translation.bible (Bullard–Hatton), both gotquestions.org pages and Bible Gateway (RSB). Bible Odyssey (9 articles, 5 HarperCollins entries) returned Cloudflare 403 to curl, and bible.usccb.org refuses scripted requests, so those were captured in Claude in Chrome (get_page_text; NABRE notes by reading the note elements) and saved as text; Bible Odyssey paragraph locators and datePublished years were then checked by DOM query in Chrome. The Chrome texts were saved by re-typing the tool output into chrome/*.txt; three files (Valeta; Murphy and Perrin; Wills, Silverman and Burnette-Bletsch) keep only the cited paragraphs and their neighbours, so the script match for those pages is against the captured passages, not the whole page. Quotes: 74 on the page; 73 matched by script (whitespace only, tags stripped), 1 miss (scrolls/5: page “14 C”, source <sup>14</sup>C → “14C”; quote corrected). 73 after the cut below. All 13 Trigger Claims re-matched by script at timestamp and speaker (full turn, final transcript) and read about two minutes either side; 13/13.
+# Second pass changes. Shorts: date (“scholars date it”, from the OUP summary and Popović, plus “The date has long been debated, and some still hold to the sixth century”, from Suchard and Valeta's box; the “court tales earlier” clause left the short, as within this statement only Hayes carries it); reasons (“in growing detail, and stop before his reign ends” cut, OUP summary alone; now “as prophecy, in coded references to the writer's own time”, OUP summary and Hayes); tales (Suchard's “One recent study argues …” moved to the text only, #133); scrolls (“the oldest is dated” → “one is dated”; neither Nel nor Popović says oldest); history (the ch. 4–Nabonidus clause cut: Merrill Willis alone, with unsourced “madness” and “last Babylonian king”; the short ends at “historical difficulties”); additions-origin (“Probably” → “Possibly”: NABRE “probably”, Posen “may”, McLay “suggest … uncertainty remains”); additions-status (“as part of Daniel” was sourced for Catholics only; now Catholic and Orthodox Christians count them as scripture, Catholic Bibles print them with Daniel). Texts: date says “Did You Know?” box, not “key points”, and Evans's “in the second century BCE, especially under Antiochus IV”; tales says Silverman dates the books, not the stories; additions-origin drops the Bullard–Hatton sentence; additions-status attributes the Glancy line to the article's “In Brief” summary. Cut to uncited: Bullard–Hatton (old additions-origin/7; class doubtful and carries “opinion today favors”); additions-origin/8 renumbered /7; registry entry removed. Quote: scrolls/5 “14 C” → “14C”. Locators: date/6, date/10 and scrolls/4 (§ 2.1), scrolls/5 (§ 6), reasons/4, tales/2, tales/6 (p. 134), scrolls/3 (§ 2), languages/2, history/4–6, canon/2, additions-origin/5, additions-status/3–4, porphyry/2–3 (“headnote”), tradition/1 and /3.
+# Second pass flags: (1) NABRE (intro and notes) is Reference by repo convention, but #155 says confessional study Bibles are Tradition and don't count toward the two; the publish rule holds without it, but the author short's “The author is unknown” rests on the NABRE introduction alone among that statement's cites (Merrill Willis and Evans back the fictional-hero clause). Lead to decide. (2) 34@00:44:03 kept: “scholarly consensus” allows a minority, which the date short reports; Ep 45's “uniformly convinced” (unanimity) stays logged as a conflict. Lead to confirm. (3) 34@00:51:05 “Some of the stories originate in the Late Babylonian period” sits beside the tales short (Persian or early Hellenistic); read as origins of material, not a contradiction. (4) Valeta's and Glancy's lines are in page boxes whose authorship is not stated; both are attributed to the box. (5) Posen editor (Carol Bakhos), Volume 2, 2025 and Yale University Press confirmed only in the page's JSON-LD metadata, not its visible text. (6) Single-source clauses kept as facts of the text: the scrolls switch clause (Nel), the languages mismatch clause (van Deventer, with Perrin's boundaries and Smith-Christopher's genre division), and “The author is unknown” (NABRE; see flag 1). Nel also reports Ulrich dating “the Scroll” to 50 BCE, in the sentence after his 4QDanc dating, without naming it. (7) Nel's issue is 3&4 per the landing page; registry series says 47.3 (not changed). (8) The published Timeline Entry `daniel` (first-pass flag 9) still states 167–164 flatly. Publish rule recomputed: core `date` backed by Hayes, Merrill Willis, the Coogan–Chapman summary, Evans (Reference) and Popović et al. (Scholarly): 5 independent authors without NABRE; Suchard and Valeta back only the debate clause. 13 statements. Holds. Ids, slug and draft unchanged.
 review: null
 delegation:
   by: owner
   date: 2026-11-23
   issue: "#93"
+  secondPass: 2026-11-25
 citations:
   date/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; NABRE counted with the core but not leaned on (#155: confessional study Bibles).",
     }
   date/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   date/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   date/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; one of the core authors.",
     }
   date/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   date/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Key-points box on the article page.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Key-points box on the article page. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator now “Did You Know?” box (the page's label), and the text says “its “Did You Know?” box”, not “key points”. Box authorship not stated.",
     }
   date/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; one of the core authors, and with Popović one of the two sources for “scholars date it”.",
     }
   date/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; “scholars place the date” is the source's own.",
     }
   date/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; text now carries Evans's “in the second century BCE, especially under Antiochus IV”.",
     }
   date/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected: the article has no “Results” heading; the paragraph is in § 2.1 “Radiocarbon dating”. Scholarly core source.",
     }
   date/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Suchard's sentence continues across a page break with “scholars.” after the footnote block; quote stops at “by some”. Reports the sixth-century date as still held; one of the two authors behind the short's dissent clause.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Suchard's sentence continues across a page break with “scholars.” after the footnote block; quote stops at “by some”. Reports the sixth-century date as still held; one of the two authors behind the short's dissent clause. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; with Valeta's box one of the two sources for the short's “long been debated … some still hold to the sixth century”.",
     }
   date/12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Key-points (“Did You Know?”) box on the article page, under Valeta's byline; authorship of the box not stated. Second author behind the dissent clause.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Key-points (“Did You Know?”) box on the article page, under Valeta's byline; authorship of the box not stated. Second author behind the dissent clause. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified (Chrome capture). Box authorship still not stated; backs only the debate clause with Suchard.",
     }
   reasons/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; “as each successive ruler is discussed, the detail becomes more and more vivid” and “apparently this has not happened yet” rest on this one source, so cut from the short (#133) and kept attributed in the text.",
     }
   reasons/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; with reasons/1 backs the short's “as prophecy, in coded references to the writer's own time”.",
     }
   reasons/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Transcript spells “Epiphanies”; quoted as written.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Transcript spells “Epiphanies”; quoted as written. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   reasons/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. The source's own “Scholarly consensus”, about the little horn, not the date; consensus-wording check.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. The source's own “Scholarly consensus”, about the little horn, not the date; consensus-wording check. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected: “Scholarly consensus” is mid-paragraph; the paragraph begins “Following the first three creatures” (Chrome DOM check).",
     }
   reasons/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   reasons/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   tales/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   tales/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Locator paragraph checked in saved HTML; second paragraph of the article body.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Locator paragraph checked in saved HTML; second paragraph of the article body. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected: the quote sits in the paragraph beginning “First, the book is written” (Chrome DOM check).",
     }
   tales/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   tales/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   tales/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; text now says Silverman dates the books with Persian-court stories (Esther, Daniel), not the stories.",
     }
   tales/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected p. 133 → p. 134 (printed page header).",
     }
   tales/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; Suchard's own “usually held” backs the short.",
     }
   tales/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; Suchard's later dating of Dan 2–6 is one author, so cut from the short (#133) and kept attributed in the text.",
     }
   scrolls/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; Nel's next paragraph says the eighth, 4QDane, preserves only the Dan 9 prayer and ‘does not qualify as a copy’; the short's “eight copies” also rests on Evans.",
     }
   scrolls/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   scrolls/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Nel dates 4QDanc palaeographically; Popović's 4Q114 is the same manuscript, but no read source equates the sigla, so the text gives each date under its own name.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Nel dates 4QDanc palaeographically; Popović's 4Q114 is the same manuscript, but no read source equates the sigla, so the text gives each date under its own name. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected § 3 → § 2 (the quote precedes the § 3 heading). Nel's next sentences report Cross (half a century from the autograph) and Ulrich (the scroll dated 50 BCE). Short narrowed from “the oldest is dated” to “one is dated”, since neither source says “oldest”.",
     }
   scrolls/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Quote starts mid-sentence: the source's “The accepted 2σ calibrated range” has σ as an image.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Quote starts mid-sentence: the source's “The accepted 2σ calibrated range” has σ as an image. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected to § 2.1 “Radiocarbon dating”.",
     }
   scrolls/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; matched only after a quote fix: the page had “14 C”, the source reads “14C” (<sup>14</sup>C, tags stripped); quote corrected. Locator corrected: no “Discussion” heading; the paragraph is in § 6 “Aramaic/Hebrew script development in ancient Judaea”.",
     }
   scrolls/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; the only source for “They keep its switches between Hebrew and Aramaic”, kept as an uncontested manuscript fact (flag).",
     }
   author/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   author/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   author/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   languages/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   languages/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected to the paragraph beginning “First, the book is written” (Chrome DOM check).",
     }
   languages/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   languages/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; the short's mismatch clause rests on van Deventer plus the language boundaries (Perrin) and genre division (Smith-Christopher's same paragraph), kept as a fact of the text.",
     }
   history/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; one of the two sources for “scholars say … historical difficulties”.",
     }
   history/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   history/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; the other source for the short's first clause.",
     }
   history/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected: “Extra-biblical records” is mid-paragraph; now section “Was Daniel an actual person” (Chrome DOM check). The chapter 4–Nabonidus link is Merrill Willis alone, so it left the short; the source says “exile”, not “madness”, and “Neo-Babylonian”, not “last Babylonian king”.",
     }
   history/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected: “Lastly” is mid-paragraph; the paragraph begins “The Greek translations” (Chrome DOM check). Backs the text only.",
     }
   history/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected: “In addition” is mid-paragraph. In the DOM one <p> (starting “The Joseph story in Gen 37-50”) holds this and the previous paragraph; in the page text it is the visible paragraph beginning “The Joseph story, Esther, and Dan 1-6 may have been”, which the locator names. Backs the text only.",
     }
   canon/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   canon/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected: the paragraph begins “Finally, the Christian canon” (Chrome DOM check).",
     }
   canon/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions-origin/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified (Chrome capture). “Probably” is NABRE's; the short now says “Possibly”, the strength NABRE, Posen (“may”) and McLay (“suggest”, “uncertainty remains”) share.",
     }
   additions-origin/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions-origin/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions-origin/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions-origin/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator now “headnote”: the headnote is a single paragraph, so “last paragraph” was misleading.",
     }
   additions-origin/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions-origin/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Flag: UBS class (Reference by kind; publisher a Bible society). The short does not rest on it; attributed in the text.",
-    }
-  additions-origin/8:
-    {
-      agent: pass,
-      owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified (renumbered from additions-origin/8 after the Bullard–Hatton cut).",
     }
   additions-status/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   additions-status/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; with nabre-daniel-notes backs the short's “Catholic Bibles print them with Daniel”. “As part of Daniel” for Orthodox Bibles is not sourced, so the short now says Catholic and Orthodox Christians count them as scripture.",
     }
   additions-status/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected to the visible paragraph beginning “The Joseph story, Esther, and Dan 1-6 may have been” (in the DOM one <p>, starting “The Joseph story in Gen 37-50”, holds it and the previous paragraph).",
     }
   additions-status/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected: the quote is in the “In Brief” box at the head of the article, not the body; box authorship not stated, so the text now says “The “In Brief” summary of Jennifer Glancy's encyclopedia article”. No equivalent in the body.",
     }
   additions-status/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   porphyry/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. PDF line break “pro- posed” rejoined as “proposed”.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. PDF line break “pro- posed” rejoined as “proposed”. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   porphyry/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator now “headnote” (single paragraph).",
     }
   porphyry/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator now “headnote” (single paragraph).",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected to “Author” (the quote is under that heading only).",
     }
   tradition/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
   tradition/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected: the quote is the answer's opening paragraph, not the closing one. Page last updated 11 June 2025; registry year left null (Tradition, no window).",
     }
   tradition/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
 triggers:
   32@00:24:33:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; the next turn (00:25:35) adds “Some of the traditions probably date to earlier”; the trimmed “within maybe two or three years” is the speaker's. No contradiction.",
     }
   34@00:05:04:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; no contradiction with the edited shorts.",
     }
   34@00:22:09:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; no contradiction with the edited shorts.",
     }
   34@00:32:31:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; no contradiction with the edited shorts.",
     }
   34@00:44:03:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. “the scholarly consensus is” is the speaker's; the page does not use the word for the date.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. “the scholarly consensus is” is the speaker's; the page does not use the word for the date. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; “the scholarly consensus is” kept attached: a consensus allows a dissenting minority, which is what the date short now reports (“long been debated, and some still hold to the sixth century”); Ep 45 00:40:42's “uniformly convinced” claims unanimity, which the short contradicts, so it stays logged as a conflict. Flag for the lead.",
     }
   34@00:47:19:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; no contradiction with the edited shorts.",
     }
   34@00:51:05:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; “Some of the stories originate in the Late Babylonian period” sits beside the tales short (Persian or early Hellenistic); read as origins of individual stories, not the dating of the tales, and Merrill Willis allows Neo-Babylonian material. Kept; flag.",
     }
   34@00:54:49:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. The speaker's “around 115-ish BCE” is his; the scrolls statement gives Nel's and Popović's dates.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. The speaker's “around 115-ish BCE” is his; the scrolls statement gives Nel's and Popović's dates. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; the speaker then says he does not know of a manuscript preserving both Hebrew and Aramaic; that is outside the trimmed quote, and the page's switch clause rests on Nel.",
     }
   45@00:42:17:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; the same turn goes on to date the two complete copies to the first century CE; outside the trimmed quote, and the scrolls short now says “one is dated close”, not “the oldest”.",
     }
   70@00:51:11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; no contradiction with the edited shorts.",
     }
   119@00:08:35:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. “which is when Daniel was supposed to have been written” states the traditional date.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. “which is when Daniel was supposed to have been written” states the traditional date. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; no contradiction with the edited shorts.",
     }
   147@00:28:31:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; “Some people say … as early as the late 6th century BCE, maybe Persian period” is hedged; no contradiction with tales.",
     }
   158@00:23:11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-25: re-matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side; no contradiction with the edited shorts.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Core `date` backed by NABRE intro, Hayes, Merrill Willis, Coogan–Chapman summary, Evans, Popović et al. (Reference/Scholarly): 7 independent authors with Suchard and Valeta. 13 statements.",
+      note: "First pass 2026-11-25: Core `date` backed by NABRE intro, Hayes, Merrill Willis, Coogan–Chapman summary, Evans, Popović et al. (Reference/Scholarly): 7 independent authors with Suchard and Valeta. 13 statements. Second pass 2026-11-25: recounted. The first pass's “7 … with Suchard and Valeta” counted the two dissent sources; they back the debate clause, not the core. Core `date` (second century BCE; visions 167–164 BCE) backed by Hayes (Reference), Merrill Willis (Reference), Coogan–Chapman summary (Reference), Evans (Reference) and Popović et al. (Scholarly): 5 independent authors without NABRE (6 with it; not leaned on given #155). 13 statements. Holds.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: “Consensus” appears only in Murphy's own sentence about the little horn (reasons), quoted. No date wording claims consensus or a majority; “usually held” in tales borrows Suchard's.",
+      note: "First pass 2026-11-25: “Consensus” appears only in Murphy's own sentence about the little horn (reasons), quoted. No date wording claims consensus or a majority; “usually held” in tales borrows Suchard's. Second pass 2026-11-25: re-checked. “Consensus” still appears only in Murphy's quoted sentence on the little horn. The date short now says “scholars date it” (OUP summary, Popović et al.) and “The date has long been debated” (Suchard “long been a controversial issue”, Valeta box “Scholars debate”), so it no longer reads as settled. “Usually held” (tales) is Suchard's.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Sixth-century date: Suchard and Valeta by name (date). Suchard's later dating of Dan 2–6 attributed (tales). McLay's “even a Greek composition” attributed (additions-origin).",
+      note: "First pass 2026-11-25: Sixth-century date: Suchard and Valeta by name (date). Suchard's later dating of Dan 2–6 attributed (tales). McLay's “even a Greek composition” attributed (additions-origin). Second pass 2026-11-25: Suchard's later dating of Dan 2–6 moved out of the tales short into the text only (#133). Bullard–Hatton's “opinion today favors” cut with its citation.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Got Questions Ministries, an evangelical ministry; Ligonier Ministries' Reformation Study Bible. The NABRE note's Catholic Church statement attributed to the NABRE notes.",
+      note: "First pass 2026-11-25: Got Questions Ministries, an evangelical ministry; Ligonier Ministries' Reformation Study Bible. The NABRE note's Catholic Church statement attributed to the NABRE notes. Second pass 2026-11-25: verified.",
     }
 sources:
   nabre-daniel-intro:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2011; Church-published study Bible, open.",
+      note: "First pass 2026-11-25: Reference; 2011; Church-published study Bible, open. Second pass 2026-11-25: Reference by repo convention (other nabre-* entries on trunk); #155 says confessional study Bibles are Tradition and don't count toward the two. Not needed for the publish rule. Flag. Text read in Chrome; copyright line 2019–2026.",
     }
   hayes-rlst145-l23:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2006; University courseware, open.",
+      note: "First pass 2026-11-25: Reference; 2006; University courseware, open. Second pass 2026-11-25: 2006, in window; chapter headings ch. 5 [00:35:21] and ch. 6 [00:42:36] confirmed.",
     }
   merrill-willis-bo-daniel:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2015; Society website, open.",
+      note: "First pass 2026-11-25: Reference; 2015; Society website, open. Second pass 2026-11-25: datePublished 2015-10-06 in page metadata; matches.",
     }
   coogan-brief-4e-summary-ch25:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2019; Publisher companion page, open.",
+      note: "First pass 2026-11-25: Reference; 2019; Publisher companion page, open. Second pass 2026-11-25: edition (4th ed., 2019) follows the existing coogan-brief-4e entries.",
     }
   evans-bo-daniel-later-lit:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2015; Society website, open.",
+      note: "First pass 2026-11-25: Reference; 2015; Society website, open. Second pass 2026-11-25: datePublished 2015-10-06; matches.",
     }
   popovic-2025-dating-scrolls:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; 2025; Open-access journal.",
+      note: "First pass 2026-11-25: Scholarly; 2025; Open-access journal. Second pass 2026-11-25: PLoS ONE 2025; section headings checked (no Results/Discussion headings).",
     }
   suchard-2022-greek-daniel-3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; 2022; University repository PDF, open.",
+      note: "First pass 2026-11-25: Scholarly; 2022; University repository PDF, open. Second pass 2026-11-25: JBL 141.1 (2022) 121–136 confirmed on the PDF's cover page and headers; handle resolves to the Leiden repository download.",
     }
   valeta-bo-lions-den:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2021; Society website, open.",
+      note: "First pass 2026-11-25: Reference; 2021; Society website, open. Second pass 2026-11-25: datePublished 2021-11-04; matches.",
     }
   murphy-bo-animal-imagery:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2017; Society website, open.",
+      note: "First pass 2026-11-25: Reference; 2017; Society website, open. Second pass 2026-11-25: datePublished 2017-06-20; matches.",
     }
   harpercollins-2009-dictionary:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2009; Entries reproduced on the Society of Biblical Literature's Bible Odyssey, open.",
+      note: "First pass 2026-11-25: Reference; 2009; Entries reproduced on the Society of Biblical Literature's Bible Odyssey, open. Second pass 2026-11-25: five entries re-read in Chrome.",
     }
   smith-christopher-bo-daniel-diaspora:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2015; Society website, open.",
+      note: "First pass 2026-11-25: Reference; 2015; Society website, open. Second pass 2026-11-25: datePublished 2015-10-20; matches.",
     }
   silverman-bo-persian-period:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2026; Society website, open.",
+      note: "First pass 2026-11-25: Reference; 2026; Society website, open. Second pass 2026-11-25: datePublished 2026-08-21; matches.",
     }
   nel-2006-dss-daniel:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; 2006; Journal website, open.",
+      note: "First pass 2026-11-25: Scholarly; 2006; Journal website, open. Second pass 2026-11-25: year confirmed: the article landing page's citation_date is 2006/12/31 (vol. 47, issue 3&4). Registry series says 47.3; issue is 3&4 (not changed).",
     }
   perrin-bo-aramaic-dss:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2017; Society website, open.",
+      note: "First pass 2026-11-25: Reference; 2017; Society website, open. Second pass 2026-11-25: datePublished 2017-06-20; matches.",
     }
   van-deventer-2003-daniel-structure:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; 2003; University repository PDF, open; article in Afrikaans, English abstract.",
+      note: "First pass 2026-11-25: Scholarly; 2003; University repository PDF, open; article in Afrikaans, English abstract. Second pass 2026-11-25: HTS 59(1) 2003 in the PDF running heads; 23 years, in window.",
     }
   wills-bo-court-tales:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2019; Society website, open.",
+      note: "First pass 2026-11-25: Reference; 2019; Society website, open. Second pass 2026-11-25: datePublished 2019-05-02; matches.",
     }
   burnette-bletsch-bo-bible-look:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; year not on page; Scholarly society website, open.",
+      note: "First pass 2026-11-25: Reference; year not on page; Scholarly society website, open. Second pass 2026-11-25: datePublished 2022-12-14 (site migration date); year null kept by convention.",
     }
   davis-bledsoe-2015-editions:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; 2015; University repository PDF, open.",
+      note: "First pass 2026-11-25: Scholarly; 2015; University repository PDF, open. Second pass 2026-11-25: pp. 176 and 179 confirmed in running heads.",
     }
   mclay-2007-nets-daniel:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; 2007; Translation's website PDF, open.",
+      note: "First pass 2026-11-25: Scholarly; 2007; Translation's website PDF, open. Second pass 2026-11-25: verified.",
     }
   nabre-daniel-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2011; Church-published study Bible; opens in a browser, refuses scripted requests.",
+      note: "First pass 2026-11-25: Reference; 2011; Church-published study Bible; opens in a browser, refuses scripted requests. Second pass 2026-11-25: same class flag as nabre-daniel-intro; notes on 3:24–90, 13:1–14:42 and 13:55–59 read in Chrome.",
     }
   mclay-2007-nets-sousanna:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; 2007; Translation's website PDF, open.",
+      note: "First pass 2026-11-25: Scholarly; 2007; Translation's website PDF, open. Second pass 2026-11-25: verified.",
     }
   mclay-2007-nets-bel:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; 2007; Translation's website PDF, open.",
+      note: "First pass 2026-11-25: Scholarly; 2007; Translation's website PDF, open. Second pass 2026-11-25: verified.",
     }
   posen-jerome-porphyry:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2025; Publisher's library website, open.",
-    }
-  bullard-hatton-2006-ubs-handbook:
-    {
-      agent: pass,
-      owner: "",
-      note: "First pass 2026-11-25: Reference; 2006; Publisher's translation-resources website, open.",
+      note: "First pass 2026-11-25: Reference; 2025; Publisher's library website, open. Second pass 2026-11-25: editor Carol Bakhos, Volume 2, datePublished 2025 and publisher Yale University Press found in the page's JSON-LD, not the visible text (footer “© 2026 Posen Library”). Matches.",
     }
   glancy-jwa-susanna:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2009; Encyclopedia website, open.",
+      note: "First pass 2026-11-25: Reference; 2009; Encyclopedia website, open. Second pass 2026-11-25: “How to cite” gives 27 February 2009; matches.",
     }
   gotquestions-book-of-daniel:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Tradition; year not on page; Ministry website, open.",
+      note: "First pass 2026-11-25: Tradition; year not on page; Ministry website, open. Second pass 2026-11-25: verified.",
     }
   gotquestions-when-daniel-written:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Tradition; year not on page; Ministry website, open.",
+      note: "First pass 2026-11-25: Tradition; year not on page; Ministry website, open. Second pass 2026-11-25: page last updated 11 June 2025; year null kept (Tradition).",
     }
   reformation-study-bible-dan-11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Tradition; year not on page; Bible Gateway study resources, open.",
+      note: "First pass 2026-11-25: Tradition; year not on page; Bible Gateway study resources, open. Second pass 2026-11-25: verified.",
     }
 leads:
   - "John J. Collins, A Short Introduction to the Hebrew Bible, 3rd ed. (Fortress 2018), ch. 27 “Daniel, 1–2 Maccabees”: read only as a JSTOR download reposted on a St Mary's University course server (palimpsest.stmarytx.edu); no publisher, author or Google Books copy found. Would carry the Dan 11:40–45 unfulfilled death prophecy, the Jehoiakim date, Darius the Mede, and the canon-placement link."
@@ -742,6 +734,7 @@ leads:
   - "Peter Flint, “The Daniel Tradition at Qumran” (Brill 2001); Ulrich, DJD 16: not public."
   - "TheTorah.com, Wills and Kratz on Antiochus IV's persecution: bodies rendered by script, not extractable; class unclear."
 uncited:
+  - "Bullard and Hatton, A Handbook on the Shorter Books of the Deuterocanon (UBS 2006), Introduction to Susanna, paragraph beginning “There is really no hard evidence”: “… opinion today favors an original in either Aramaic or Hebrew since the Greek occasionally reflects Semitic idiom”: read (first and second pass); cut at the second pass 2026-11-25 (was additions-origin/7): a translators' handbook from a Bible-society publisher fits none of #80's three classes cleanly, and it carries a state-of-the-field claim (“opinion today favors”); when in doubt, cut. Its registry entry removed."
   - "Hayes l23: “It was chronologically the latest book, written between 167 and 164 BCE.”: read; not cited, date/2 carries the date."
   - "Encyclopaedia Judaica, H. L. Ginsberg, “Daniel, Book of” (encyclopedia.com; JVL): read; first-edition text, outside the window; its four-author thesis for chs 7–12 and its Porphyry account not used."
   - "EJ entries Greenfield (Darius the Mede), Bayer (Belshazzar), Afonso (Nabonidus): read; outside the window."

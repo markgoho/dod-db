@@ -24,8 +24,8 @@ statements:
   - id: date
     group: "Dating the book"
     question: "When was the Book of Daniel written?"
-    short: "In the second century BCE, scholars place it: the visions of chapters 7–12 during Antiochus IV's persecution, 167–164 BCE, with the court tales of chapters 1–6 earlier. Some still hold a sixth-century date, the book's own setting."
-    text: "The NABRE introduction says the book was composed during the persecution carried on by Antiochus IV Epiphanes (167–164 BCE). Christine Hayes's Yale lectures date chapters 7–12 to between 167 and 164 BCE, and the first six chapters perhaps to the end of the third century. Amy Merrill Willis's Bible Odyssey article says the vision of Daniel 8 was written around 167 BCE and that the book's calculations for the end refer to events of 167–164 BCE; its key points say the Hebrew-Aramaic edition was completed around 163 BCE. The publisher's summary of Coogan and Chapman's introduction says the book was written in the second century BCE, and that scholars place it there. Craig Evans says the dangers Jews faced under Antiochus IV led to the writing of the book soon after. Mladen Popović and colleagues note that scholars date Daniel 8–11 on literary-historical grounds to the 160s BCE. The date is not unanimous. Benjamin Suchard writes that the dating has long been a controversial issue, and that the book's sixth-century setting was traditionally taken as its date of composition. The “Did You Know?” box on David Valeta's Bible Odyssey article says scholars debate the date, from as early as the sixth century BCE to as late as the second, and that both viewpoints have strong defenders."
+    short: "In the second century BCE, scholars date it, the visions of chapters 7–12 to Antiochus IV's persecution, 167–164 BCE. The date has long been debated, and some still hold to the sixth century, the book's own setting."
+    text: "The NABRE introduction says the book was composed during the persecution carried on by Antiochus IV Epiphanes (167–164 BCE). Christine Hayes's Yale lectures date chapters 7–12 to between 167 and 164 BCE, and the first six chapters perhaps to the end of the third century. Amy Merrill Willis's Bible Odyssey article says the vision of Daniel 8 was written around 167 BCE and that the book's calculations for the end refer to events of 167–164 BCE; its “Did You Know?” box says the Hebrew-Aramaic edition was completed around 163 BCE. The publisher's summary of Coogan and Chapman's introduction says the book was written in the second century BCE, and that scholars place it there. Craig Evans says the dangers Jews faced in the second century BCE, especially under Antiochus IV, led to the writing of the book soon after. Mladen Popović and colleagues note that scholars date Daniel 8–11 on literary-historical grounds to the 160s BCE. The date is not unanimous. Benjamin Suchard writes that the dating has long been a controversial issue, and that the book's sixth-century setting was traditionally taken as its date of composition. The “Did You Know?” box on David Valeta's Bible Odyssey article says scholars debate the date, from as early as the sixth century BCE to as late as the second, and that both viewpoints have strong defenders."
     cites:
       - source: nabre-daniel-intro
         locator: "Introduction, ¶ 2"
@@ -48,7 +48,7 @@ statements:
         quote: "The dates and calculations for the end refer to events that took place between 167 and 164 B.C.E, during the period of the Maccabean revolt rather than the period of the Babylonian exile."
         read: 2026-11-25
       - source: merrill-willis-bo-daniel
-        locator: "key points box"
+        locator: "“Did You Know?” box"
         quote: "There is a Hebrew edition of Daniel that consists of 12 chapters, which was actually written in both Hebrew and Aramaic. This edition was completed around 163 B.C.E."
         read: 2026-11-25
       - source: coogan-brief-4e-summary-ch25
@@ -64,7 +64,7 @@ statements:
         quote: "The dangers and difficulties that Torah-observant Jews faced during the second century B.C.E., especially during the reign of the Seleucid king Antiochus IV, led to the writing and circulation of the book of Daniel and a number of related materials soon after."
         read: 2026-11-25
       - source: popovic-2025-dating-scrolls
-        locator: "Results, paragraph beginning “Sample 4Q114”"
+        locator: "§ 2.1 “Radiocarbon dating”, paragraph beginning “Sample 4Q114”"
         quote: "The manuscript preserves Daniel 8–11, which scholars date on literary-historical grounds to the 160s BCE"
         read: 2026-11-25
       - source: suchard-2022-greek-daniel-3
@@ -78,7 +78,7 @@ statements:
   - id: reasons
     group: "Dating the book"
     question: "Why do scholars date the visions to the 160s BCE?"
-    short: "The visions tell the history from Babylon's fall to Antiochus IV as prophecy, in growing detail, and stop before his reign ends. Scholars identify their “little horn” with Antiochus."
+    short: "The visions present the history from the fall of Babylon down to Antiochus IV as prophecy, in coded references to the writer's own time. Scholars identify their “little horn” with Antiochus."
     text: "The publisher's summary of Coogan and Chapman's introduction says the visions present the succession of powers from the fall of Babylon to the division of Alexander's empire as future events, with detail growing more vivid toward Antiochus IV; the reader is told his reign will end, but apparently it has not yet, which is why scholars place the book in the second century BCE. Christine Hayes says the author disguises references to contemporary events and people in symbolic visions attributed to a remote past, and identifies the boastful little horn with Antiochus. Kelly Murphy's Bible Odyssey article calls it the scholarly consensus that the little horn is a coded way to discuss Antiochus IV, who desecrated the Jerusalem temple; the HarperCollins Bible Dictionary says he is usually identified with it. Amy Merrill Willis notes that the Maccabees resumed temple worship in the winter of 164 BCE and that Antiochus was dead by early 163 BCE."
     cites:
       - source: coogan-brief-4e-summary-ch25
@@ -94,7 +94,7 @@ statements:
         quote: "The boastful little horn is the Syrian king, Antiochus Epiphanies, himself."
         read: 2026-11-25
       - source: murphy-bo-animal-imagery
-        locator: "paragraph beginning “Scholarly consensus”"
+        locator: "paragraph beginning “Following the first three creatures”"
         quote: "Scholarly consensus is that the ten horns likely symbolize the Seleucid emperors who came to power in the wake of the fall of the Persian Empire, while the “little horn” is a coded way to discuss Antiochus Epiphanes IV, who is remembered for his tyrannical rule and how he desecrated the Temple in Jerusalem."
         read: 2026-11-25
       - source: harpercollins-2009-dictionary
@@ -109,15 +109,15 @@ statements:
   - id: tales
     group: "Dating the book"
     question: "Are the court tales older than the visions?"
-    short: "They are usually held to be, and dated to the Persian or early Hellenistic period. One recent study argues the collection of chapters 2–6 is no earlier than the second century BCE."
-    text: "Christine Hayes dates the first six chapters perhaps to the end of the third century BCE. Daniel Smith-Christopher's Bible Odyssey article says the stories could be dated to the late Persian or early Hellenistic periods (400–300 BCE), and that the book is a compendium of stories and visions gathered over time. Amy Merrill Willis says the tales took shape and eventually became a book. Jason Silverman puts the stories set at the Persian court most likely in the Hellenistic period. Benjamin Suchard writes that chapter 3 is held to have taken shape most likely in the Persian or earlier Hellenistic period, but argues from its Greek words that the collection of chapters 2–6 should be dated no earlier than the second century BCE, later than is usually held."
+    short: "They are usually held to be, dated to the Persian or early Hellenistic period."
+    text: "Christine Hayes dates the first six chapters perhaps to the end of the third century BCE. Daniel Smith-Christopher's Bible Odyssey article says the stories could be dated to the late Persian or early Hellenistic periods (400–300 BCE), and that the book is a compendium of stories and visions gathered over time. Amy Merrill Willis says the tales took shape and eventually became a book. Jason Silverman puts books with stories set at the Persian court, Daniel among them, most likely in the Hellenistic period. Benjamin Suchard writes that chapter 3 is held to have taken shape most likely in the Persian or earlier Hellenistic period, but argues from its Greek words that the collection of chapters 2–6 should be dated no earlier than the second century BCE, later than is usually held."
     cites:
       - source: hayes-rlst145-l23
         locator: "ch. 5 [00:35:21]"
         quote: "So the book, we know, was written quite late, perhaps the end of the third century, those first six chapters."
         read: 2026-11-25
       - source: smith-christopher-bo-daniel-diaspora
-        locator: "paragraph beginning “Second, there are two radically different kinds”"
+        locator: "paragraph beginning “First, the book is written”"
         quote: "The stories could be dated to the late Persian or early Hellenistic periods (400–300 B.C.E.)."
         read: 2026-11-25
       - source: smith-christopher-bo-daniel-diaspora
@@ -133,7 +133,7 @@ statements:
         quote: "However, several books with stories set in the Persian court (Esther, Daniel) are most likely from the later, Hellenistic period."
         read: 2026-11-25
       - source: suchard-2022-greek-daniel-3
-        locator: "p. 133"
+        locator: "p. 134"
         quote: "since Dan 3 as a whole is held to have taken shape most likely in the Persian or earlier Hellenistic period."
         read: 2026-11-25
       - source: suchard-2022-greek-daniel-3
@@ -147,7 +147,7 @@ statements:
   - id: scrolls
     group: "Dating the book"
     question: "What do the Dead Sea Scrolls show about Daniel?"
-    short: "Eight copies of Daniel were found at Qumran, and the oldest is dated close to the book's completion. They keep its switches between Hebrew and Aramaic."
+    short: "Eight copies of Daniel were found at Qumran, and one is dated close to the book's completion. They keep its switches between Hebrew and Aramaic."
     text: "Marius Nel counts eight copies of the biblical book among the Qumran scrolls, and Craig Evans eight fragmentary scrolls. Nel dates 4QDanc to the late second or early first century BCE, closer to its original than any other biblical book among the scrolls. Popović and colleagues' 2025 radiocarbon test gives 4Q114, a copy of Daniel 8–11, a range of 230–160 BCE, which they say makes it one of the first known fragments of a biblical book from the time of its presumed authors. Nel notes that the scrolls preserve the shift from Hebrew to Aramaic at 2:4b and back to Hebrew at 8:1."
     cites:
       - source: nel-2006-dss-daniel
@@ -159,16 +159,16 @@ statements:
         quote: "The popularity of Daniel and the writings associated with him is attested in the Dead Sea Scrolls, which include eight fragmentary scrolls of the book of Daniel"
         read: 2026-11-25
       - source: nel-2006-dss-daniel
-        locator: "§ 3"
+        locator: "§ 2"
         quote: "4QDanc from the late second or early first century B.C.E. is closer to the autograph than any other book among the biblical Qumran Scrolls."
         read: 2026-11-25
       - source: popovic-2025-dating-scrolls
-        locator: "Results, paragraph beginning “Sample 4Q114”"
+        locator: "§ 2.1 “Radiocarbon dating”, paragraph beginning “Sample 4Q114”"
         quote: "calibrated range for 4Q114, 230–160 BCE, overlaps with the period in which the final part of the biblical book of Daniel was presumably authored"
         read: 2026-11-25
       - source: popovic-2025-dating-scrolls
-        locator: "Discussion, paragraph beginning “Fourth”"
-        quote: "Fourth, this study’s 14 C result for 4Q114 and Enoch’s date prediction for 4Q109 now establish these to be the first known fragments of a biblical book from the time of their presumed authors"
+        locator: "§ 6 “Aramaic/Hebrew script development in ancient Judaea”, paragraph beginning “Fourth”"
+        quote: "Fourth, this study’s 14C result for 4Q114 and Enoch’s date prediction for 4Q109 now establish these to be the first known fragments of a biblical book from the time of their presumed authors"
         read: 2026-11-25
       - source: nel-2006-dss-daniel
         locator: "§ 3"
@@ -203,7 +203,7 @@ statements:
         quote: "This imperial history is reflected in the pages of the Bible itself, where certain texts were actually composed in Aramaic, including Gen 31:47, Jer 10:11, Ezra 4:8-6:18, Ezra 7:12-26, and Dan 2:4b-7:28."
         read: 2026-11-25
       - source: smith-christopher-bo-daniel-diaspora
-        locator: "paragraph beginning “The book of Daniel presents readers”"
+        locator: "paragraph beginning “First, the book is written”"
         quote: "First, the book is written in two different (although related) languages: Hebrew and Aramaic."
         read: 2026-11-25
       - source: coogan-brief-4e-summary-ch25
@@ -217,7 +217,7 @@ statements:
   - id: history
     group: "How the book was made"
     question: "Does Daniel get the history of the Babylonian and Persian kings right?"
-    short: "Not reliably, scholars say: its early chapters contain historical difficulties. Nebuchadnezzar's madness in chapter 4 may draw on traditions about Nabonidus, the last Babylonian king."
+    short: "Not reliably, scholars say: its early chapters contain historical difficulties."
     text: "Christine Hayes says Belshazzar was never king but a prince regent, defeated by Cyrus, not Darius, that the Median king Darius is unknown to history, and that these inaccuracies are a sign of a much later writer looking back. Amy Merrill Willis counts Daniel's seventy-year career under Babylonian, Median and Persian kings among the book's historical difficulties, and says Nebuchadnezzar's exile in chapter 4 may have been based on Nabonidus, adding that an account outside the Bible has Nabonidus consulting a Jewish seer. Daniel Smith-Christopher and Lawrence Wills note that a story called the Prayer of Nabonidus, found among the Dead Sea Scrolls, resembles the tales of Daniel 1–6."
     cites:
       - source: hayes-rlst145-l23
@@ -233,15 +233,15 @@ statements:
         quote: "Such a long career serving under so many different royal regimes—Babylonian, Median, Persian—would have been virtually impossible. These historical difficulties suggest that the character of Daniel was probably not an actual person"
         read: 2026-11-25
       - source: merrill-willis-bo-daniel
-        locator: "paragraph beginning “Extra-biblical records”"
+        locator: "section “Was Daniel an actual person”"
         quote: "Extra-biblical records and accounts suggest that some materials from the first half of the book of Daniel may be based on Neo-Babylonian realities. Notably, Nebuchadnezzar’s exile (Dan 4) may have been based on the Neo-Babylonian king Nabonidus. There is even an extra-biblical account of Nabonidus consulting with a Jewish seer, as Nebuchadnezzar does in chapter 4. Yet the extra-biblical account does not name Daniel."
         read: 2026-11-25
       - source: smith-christopher-bo-daniel-diaspora
-        locator: "paragraph beginning “Lastly”"
+        locator: "paragraph beginning “The Greek translations”"
         quote: "Lastly, a fragment of a story called “The Prayer of Nabonidus” was found among the Dead Sea Scrolls, and sounds very much like yet another Daniel tale."
         read: 2026-11-25
       - source: wills-bo-court-tales
-        locator: "paragraph beginning “In addition”"
+        locator: "paragraph beginning “The Joseph story, Esther, and Dan 1-6 may have been”"
         quote: "In addition, among the Dead Sea Scrolls at Qumran were found the Prayer of Nabonidus and Tales of the Persian Court. The former, concerning an unnamed Jewish exorcist, is similar to Dan 1-6"
         read: 2026-11-25
   - id: canon
@@ -256,7 +256,7 @@ statements:
         quote: "An OT book placed within the Writings in the Hebrew Bible, but within the Prophets in the LXX and English Bibles."
         read: 2026-11-25
       - source: burnette-bletsch-bo-bible-look
-        locator: "paragraph beginning “The Christian Old Testament”"
+        locator: "paragraph beginning “Finally, the Christian canon”"
         quote: "This section also includes the book of Daniel, which many Christians read prophetically even though scholars consider it an apocalyptic book."
         read: 2026-11-25
       - source: nabre-daniel-intro
@@ -297,8 +297,8 @@ statements:
   - id: additions-origin
     group: "The Greek additions"
     question: "In what language were the additions first written?"
-    short: "Probably Hebrew or Aramaic, though no such original survives and some uncertainty remains."
-    text: "The NABRE notes say the Prayer of Azariah and the stories of chapters 13–14 were probably first composed in Hebrew or Aramaic, though they now exist only in Greek and other translations. Timothy McLay says that, though uncertainty remains without a surviving Semitic source, several features of Susanna suggest a translation, and that the Theodotion text of Bel and the Dragon reads like a translation of a Semitic text while the Old Greek reads more like a dynamic translation or even a Greek composition. The Posen Library's headnote says the additions may have been written in Aramaic or Hebrew and were likely composed no earlier than the second century BCE. Susanna turns on wordplay that works in Greek: the NABRE note on 13:55–59 explains the puns between the trees the elders name and the punishments Daniel decrees. Roger Bullard and Howard Hatton's translators' handbook says those wordplays long supported a Greek original, but that opinion today favors an Aramaic or Hebrew one, since the Greek occasionally reflects Semitic idiom. Jennifer Glancy dates Susanna to the Hellenistic period."
+    short: "Possibly Hebrew or Aramaic, though no such original survives and uncertainty remains."
+    text: "The NABRE notes say the Prayer of Azariah and the stories of chapters 13–14 were probably first composed in Hebrew or Aramaic, though they now exist only in Greek and other translations. Timothy McLay says that, though uncertainty remains without a surviving Semitic source, several features of Susanna suggest a translation, and that the Theodotion text of Bel and the Dragon reads like a translation of a Semitic text while the Old Greek reads more like a dynamic translation or even a Greek composition. The Posen Library's headnote says the additions may have been written in Aramaic or Hebrew and were likely composed no earlier than the second century BCE. Susanna turns on wordplay that works in Greek: the NABRE note on 13:55–59 explains the puns between the trees the elders name and the punishments Daniel decrees. Jennifer Glancy dates Susanna to the Hellenistic period."
     cites:
       - source: nabre-daniel-notes
         url: "https://bible.usccb.org/bible/daniel/13"
@@ -319,18 +319,13 @@ statements:
         quote: "TH reads like a translation based on formal equivalence of a Semitic text. OG does so at times, but it reads more like a dynamic translation or even a Greek composition."
         read: 2026-11-25
       - source: posen-jerome-porphyry
-        locator: "headnote, last paragraph"
+        locator: "headnote"
         quote: "Although preserved only in Greek, these Greek additions to Daniel may have been written in Aramaic or Hebrew originally and were likely composed no earlier than the second century BCE."
         read: 2026-11-25
       - source: nabre-daniel-notes
         url: "https://bible.usccb.org/bible/daniel/13"
         locator: "note on 13:55–59"
         quote: "In the Greek text there is a play on words between the names of these two trees and the mortal punishment decreed by Daniel for the elders."
-        read: 2026-11-25
-      - source: bullard-hatton-2006-ubs-handbook
-        url: "https://tips.translation.bible/story/translation-introduction-to-susanna/"
-        locator: "Introduction to Susanna, paragraph beginning “There is really no hard evidence”"
-        quote: "There is really no hard evidence for the original language of the story. In verses 54-55 and 58-59, wordplays appear that are based on Greek. This has long supported the idea that the book was written in Greek, but opinion today favors an original in either Aramaic or Hebrew since the Greek occasionally reflects Semitic idiom"
         read: 2026-11-25
       - source: glancy-jwa-susanna
         locator: "paragraph beginning “Although the story has a Babylonian setting”"
@@ -339,8 +334,8 @@ statements:
   - id: additions-status
     group: "The Greek additions"
     question: "Are the additions part of the Bible?"
-    short: "In Catholic and Orthodox Bibles, yes, as part of Daniel. Protestant Bibles place them in the Apocrypha, and the Jewish Bible does not include them."
-    text: "The HarperCollins Bible Dictionary says Greek Orthodox and Roman Catholic Christians regard the books found in the Septuagint but not in the Jewish canon as scripture, often calling them deuterocanonical, and that Protestants include Bel and the Dragon among the Apocrypha while Catholics print it with Daniel. Lawrence Wills describes the Apocrypha as books included in the Catholic and Orthodox Old Testaments but not in the Jewish and Protestant Bibles, Bel and the Dragon among them. Jennifer Glancy says Susanna is in the Christian but not the Jewish canon. The NABRE notes say the Catholic Church has always included the stories of chapters 13–14 among the inspired writings, and that they are excluded from the Protestant canon."
+    short: "Catholic and Orthodox Christians count them as scripture, and Catholic Bibles print them with Daniel. Protestant Bibles place them in the Apocrypha, and the Jewish Bible does not include them."
+    text: "The HarperCollins Bible Dictionary says Greek Orthodox and Roman Catholic Christians regard the books found in the Septuagint but not in the Jewish canon as scripture, often calling them deuterocanonical, and that Protestants include Bel and the Dragon among the Apocrypha while Catholics print it with Daniel. Lawrence Wills describes the Apocrypha as books included in the Catholic and Orthodox Old Testaments but not in the Jewish and Protestant Bibles, Bel and the Dragon among them. The “In Brief” summary of Jennifer Glancy's encyclopedia article says Susanna is in the Christian but not the Jewish canon. The NABRE notes say the Catholic Church has always included the stories of chapters 13–14 among the inspired writings, and that they are excluded from the Protestant canon."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/apocrypha/"
@@ -353,11 +348,11 @@ statements:
         quote: "Protestants include Bel and the Dragon among the Apocrypha, while Catholics print it with the canonical text of Daniel."
         read: 2026-11-25
       - source: wills-bo-court-tales
-        locator: "paragraph beginning “In the Apocrypha”"
+        locator: "paragraph beginning “The Joseph story, Esther, and Dan 1-6 may have been”"
         quote: "In the Apocrypha (books included in the Catholic and Orthodox Christian Old Testaments but not in the Jewish and Protestant Bibles), the court tale of Bel and the Dragon is added to Daniel, and Susanna is a court tale set in the local court of the Jewish community in Babylon."
         read: 2026-11-25
       - source: glancy-jwa-susanna
-        locator: "opening paragraph"
+        locator: "“In Brief” box"
         quote: "Susanna’s story comes from Greek manuscripts of the Book of Daniel and is included in the Christian but not Jewish canon."
         read: 2026-11-25
       - source: nabre-daniel-notes
@@ -376,11 +371,11 @@ statements:
         quote: "Starting with the third-century CE Neoplatonic philosopher Porphyry, however, an alternative, second-century BCE date of composition has been proposed for the latest parts of the book."
         read: 2026-11-25
       - source: posen-jerome-porphyry
-        locator: "headnote, first paragraph"
+        locator: "headnote"
         quote: "In his prologue to the book of Daniel, the church father Jerome cites the philosopher Porphyry of Tyre (233–305 CE), who staunchly rejected Daniel’s authorship of the book. Porphyry argues that the book was originally composed in Greek by someone in Judaea during the reign of Antiochus IV Epiphanes (215–164 BCE) and discounts the concept of prophetic foresight altogether."
         read: 2026-11-25
       - source: posen-jerome-porphyry
-        locator: "headnote, first paragraph"
+        locator: "headnote"
         quote: "In his rebuttal, Jerome explains that Porphyry is confusing the original book of Daniel with the stories known as “additions to Daniel” concerning Susannah and Bel and the Dragon preserved in the Apocrypha, which he does not consider scriptural."
         read: 2026-11-25
   - id: tradition
@@ -390,7 +385,7 @@ statements:
     text: "Got Questions Ministries, an evangelical ministry, says the book identifies the prophet Daniel as its author and was likely written between 540 and 530 BCE; another of its pages puts it between 536 and 530 BCE, near the end of his captivity. Ligonier Ministries' Reformation Study Bible says certain details in Daniel 11:36–12:3 cannot be harmonized with the death of Antiochus IV, and that for this reason some interpreters read those verses as describing the Antichrist."
     cites:
       - source: gotquestions-book-of-daniel
-        locator: "Author; Date of Writing"
+        locator: "Author"
         quote: "The Book of Daniel identifies the Prophet Daniel as its author (Daniel 9:2; 10:2)."
         read: 2026-11-25
       - source: gotquestions-book-of-daniel
@@ -398,7 +393,7 @@ statements:
         quote: "The Book of Daniel was likely written between 540 and 530 B.C."
         read: 2026-11-25
       - source: gotquestions-when-daniel-written
-        locator: "closing paragraph"
+        locator: "opening paragraph"
         quote: "Internal and external evidence suggests that Daniel wrote the book between 536 and 530 BC, near the end of his time in captivity."
         read: 2026-11-25
       - source: reformation-study-bible-dan-11

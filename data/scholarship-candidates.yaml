@@ -240,7 +240,7 @@ statements:
         speaker: "Dan McClellan"
         timestamp: "00:31:24.860"
         text: "And so it, it's. It's an additional chapter that's tacked on at the. The end of Daniel and was probably written in Greek and added into the Book of Daniel."
-    notes: "Conflict with additions-origin: the quote has Bel and the Dragon probably written in Greek; the statement says the additions were probably first composed in Hebrew or Aramaic (NABRE notes, McLay, Posen), with McLay allowing that the Old Greek of Bel reads more like a dynamic translation or even a Greek composition. Logged at the #155 first pass, 2026-11-25."
+    notes: "Conflict with additions-origin: the quote has Bel and the Dragon probably written in Greek; the statement says the additions were possibly first composed in Hebrew or Aramaic (NABRE notes “probably”, Posen “may”, McLay “suggest”; short reworded at the #155 second pass, 2026-11-25), with McLay allowing that the Old Greek of Bel reads more like a dynamic translation or even a Greek composition. Logged at the #155 first pass, 2026-11-25."
   - page: daniel-date
     question: "When was the Book of Daniel written?"
     triggers:
