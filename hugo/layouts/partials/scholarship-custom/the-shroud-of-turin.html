@@ -1,175 +1,154 @@
 {{- /*
-  Custom block for /scholarship/the-shroud-of-turin/: one time axis with the
-  linen's radiocarbon range drawn above it and the three fourteenth-century
-  documents pinned below it. A view of the page's reviewed statements
-  (`radiocarbon`, `first-record`, `memorandum`, `clement`, `earlier`,
-  `reception`); it makes no claim they don't. Reword a line only when the
-  statement it comes from is re-reviewed.
+  Custom block for /scholarship/the-shroud-of-turin/: a seven-panel comic
+  page in time order. The cloth is shown at Lirey; a bishop writes that it
+  was painted; the pope allows it to be shown as a representation; three
+  laboratories date the linen; scholars split, by a lightning bolt, over
+  whether the date has held up; researchers puzzle over how the image
+  formed; and pilgrims stand before it today while the Church makes no
+  ruling.
 
-  Everything on the axis is placed by its year (see the stylesheet), so where
-  the pins fall against the band is arithmetic, not a drawing choice. The axis
-  fades in from the left with no first year: the statements give none.
+  A view of the page's reviewed statements (`first-record`, `earlier`,
+  `memorandum`, `clement`, `radiocarbon`, the core, `reception`, `image`,
+  `church`); it makes no claim they don't. The 1350s and 1260–1390 sit on
+  their own panels; nothing here says they agree, because only one cited
+  author (Currie, in `reception`) says so. The bishop's "painted" is in
+  quotation marks and attributed, and never drawn: the art shows him
+  writing, not an artist at work. The split in panel 5 is a bolt because
+  the page assigns each side (the weight of evidence; the defenders of
+  authenticity), but the sides are not equal, so the plates carry the
+  difference. Exactly three scientists are drawn in panel 4 (counted by
+  eye). Reword a plate only when its statement is re-reviewed.
 
-  Years: 1260 and 1390 are the `radiocarbon` short's range; "1350s" is the
-  `first-record` short, drawn as a decade; 1389 is the `memorandum` short;
-  1390 is the bull's date in the `clement` text (its short gives no year).
+  The art is generated with Gemini from
+  data/scholarship-illustrations/the-shroud-of-turin.yaml; every word,
+  date and count lives here.
   */
 -}}
-{{- $records := slice
+{{- define "partials/inline/shroud-img.html" -}}
+  {{- with resources.Get (printf "scholarship-art/the-shroud-of-turin/%s.png" .id) }}
+    {{- $webp := .Process "resize 1200x webp q78" }}
+    <img
+      src="{{ $webp.RelPermalink }}"
+      width="{{ $webp.Width }}"
+      height="{{ $webp.Height }}"
+      alt="{{ $.alt }}"
+      loading="eager" />
+  {{- end }}
+{{- end -}}
+{{- $panels := slice
   (dict
-  "key" "lirey"
-  "icon" "medallion"
-  "year" "1350s"
-  "stem" "M5 3L5 10"
-  "card" "First appears in the record, at Lirey"
-  "text" "The shroud first appears in the historical record, at Lirey in northeastern France.")
+  "id" "lirey" "box" "First in the record"
+  "alt" "In a small Gothic church, two clergymen hold up a long linen cloth bearing a faint image of a man; pilgrims look on, one holding a small medallion."
+  "plates" (slice
+  (dict "pos" "tl" "big" "1350s" "sub" "shown at Lirey; no document refers to it explicitly before the fourteenth century")))
   (dict
-  "key" "bishop"
-  "icon" "letter"
-  "year" "1389"
-  "stem" "M10 0L5 10"
-  "card" "The bishop wrote that an inquiry had found it painted"
-  "text" "Bishop Pierre d’Arcis wrote that an earlier bishop’s inquiry had found the cloth painted, and that the artist had attested this.")
+  "id" "bishop" "box" "The bishop, 1389"
+  "alt" "A medieval bishop in a mitre writes a letter with a quill by candlelight, frowning."
+  "plates" (slice
+  (dict "pos" "tr" "big" "“Painted”" "sub" "he wrote that an earlier inquiry had found it so, and its artist had attested it")))
   (dict
-  "key" "pope"
-  "icon" "bull"
-  "year" "1390"
-  "stem" "M0 0L5 10"
-  "card" "The pope allowed showings, as a representation"
-  "text" "Pope Clement VII allowed the cloth to be shown, on condition that it was announced as a figure or representation of Christ’s burial cloth, not the true one.")
+  "id" "pope" "box" "The pope, 1390"
+  "alt" "A medieval pope on a throne hands a parchment, its lead seal hanging from a cord, to a kneeling clergyman."
+  "plates" (slice
+  (dict "pos" "tl" "big" "A representation" "sub" "to be shown as one, not as the true burial cloth")))
+  (dict
+  "id" "labs" "box" "1988: the test"
+  "alt" "Three scientists in lab coats, each at a separate laboratory bench, each examining one tiny piece of linen."
+  "plates" (slice
+  (dict "pos" "tl" "big" "3 labs" "sub" "Arizona, Oxford and Zurich")
+  (dict "pos" "tr" "big" "1260–1390" "sub" "with 95 percent confidence")))
+  (dict
+  "id" "held" "box" "Has it held up?" "split" true
+  "left" (dict "id" "favour" "alt" "A scientist in a lab coat calmly holds up a printed chart of results.")
+  "right" (dict "id" "contest" "alt" "A different researcher frowns at a printed chart through a magnifying glass, unconvinced.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "Medieval" "sub" "the weight of evidence is taken to favour it")
+  (dict "pos" "br" "big" "Contested" "sub" "defenders of its authenticity still challenge it")))
+  (dict
+  "id" "image" "box" "How was the image made?"
+  "alt" "Present-day researchers lean over the long linen cloth laid on a table, studying its faint image, puzzled."
+  "plates" (slice
+  (dict "pos" "tl" "big" "No agreement" "sub" "no agreed explanation of how it formed")))
+  (dict
+  "id" "church" "box" "The Church today" "wide" true
+  "alt" "In a large present-day cathedral, the long linen cloth hangs in a frame behind glass while a crowd of people stands quietly before it."
+  "plates" (slice
+  (dict "pos" "tr" "big" "No ruling" "sub" "no official pronouncement on its authenticity")))
 -}}
-<section class="cloud-section shroud-dates">
+<section class="cloud-section shroud-comic">
   <h2
     class="type-section-title cloud-section__title"
     id="at-a-glance"
     data-share-hide>
     At a glance
   </h2>
-  {{/* Drawn once and reused: the sample vial, and one object per document. */}}
-  <svg class="shroud-defs" aria-hidden="true" focusable="false">
-    <defs>
-      <g id="shroud-vial">
-        <path class="shroud-ink-fill" d="M27 13h16v37a8 8 0 0 1-16 0z" />
-        <path class="shroud-paper" d="M23 9h16v37a8 8 0 0 1-16 0z" />
-        <path class="shroud-amber" d="M23 30h16v16a8 8 0 0 1-16 0z" />
-        <path class="shroud-thread" d="M28 36q3-4 6 0t-3 6" />
-        <rect class="shroud-paper" x="19" y="5" width="24" height="8" rx="2" />
-      </g>
-      {{/* The pilgrim's medallion from the Lirey showing. */}}
-      <g id="shroud-medallion">
-        <circle class="shroud-ink-fill" cx="35" cy="40" r="21" />
-        <circle class="shroud-paper" cx="32" cy="10" r="6" />
-        <circle class="shroud-amber" cx="32" cy="37" r="21" />
-        <rect class="shroud-paper" x="21" y="28" width="22" height="18" />
-        <path class="shroud-thread" d="M27 34h10M27 40h10" />
-      </g>
-      {{/* The bishop's letter. */}}
-      <g id="shroud-letter">
-        <rect class="shroud-ink-fill" x="17" y="11" width="38" height="48" />
-        <rect class="shroud-paper" x="12" y="6" width="38" height="48" />
-        <path class="shroud-writing" d="M20 18h22M20 27h22M20 36h22M20 45h12" />
-      </g>
-      {{/* The pope's bull: a sheet with its seal hanging from it. */}}
-      <g id="shroud-bull">
-        <rect class="shroud-ink-fill" x="17" y="9" width="38" height="34" />
-        <rect class="shroud-paper" x="12" y="4" width="38" height="34" />
-        <path class="shroud-writing" d="M20 14h22M20 22h22M20 30h12" />
-        <path class="shroud-cord" d="M28 38l3 10M34 38l-3 10" />
-        <circle class="shroud-seal" cx="31" cy="53" r="8" />
-      </g>
-      <path
-        id="shroud-burst"
-        d="M50.0 1.0L58.7 12.0L71.3 5.9L74.3 19.5L88.3 19.4L85.1 33.1L97.8 39.1L89.0 50.0L97.8 60.9L85.1 66.9L88.3 80.6L74.3 80.5L71.3 94.1L58.7 88.0L50.0 99.0L41.3 88.0L28.7 94.1L25.7 80.5L11.7 80.6L14.9 66.9L2.2 60.9L11.0 50.0L2.2 39.1L14.9 33.1L11.7 19.4L25.7 19.5L28.7 5.9L41.3 12.0z" />
-    </defs>
-  </svg>
-  <div class="shroud-dates__panel panel">
-    <p class="shroud-dates__claim">
-      <span class="shroud-dates__badge">
-        <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-          <use href="#shroud-burst" />
-        </svg>
-        <span>3</span>
-      </span>
-      <span>laboratories dated the linen to between 1260 and 1390</span>
-    </p>
-    <div class="shroud-dates__chart">
-      {{/* Above the axis: what the laboratories measured. */}}
-      <div class="shroud-dates__carbon">
-        <ul class="shroud-dates__labs">
-          {{- range slice "Arizona" "Oxford" "Zurich" }}
-            <li>
-              <svg
-                class="shroud-icon"
-                viewBox="0 0 64 64"
-                aria-hidden="true"
-                focusable="false">
-                <use href="#shroud-vial" />
-              </svg>
-              <span>{{ . }}</span>
-            </li>
-          {{- end }}
-        </ul>
-        <p class="shroud-dates__band">
-          <strong>1260–1390</strong>
-          <span>with 95 percent confidence</span>
-        </p>
-      </div>
-      <div class="shroud-dates__axis" aria-hidden="true">
-        <span class="shroud-year--1250">1250</span>
-        <span class="shroud-year--1300">1300</span>
-        <span class="shroud-year--1350">1350</span>
-        <span class="shroud-year--1400">1400</span>
-      </div>
-      {{/* Below the axis: what the documents record. */}}
-      <div class="shroud-dates__below">
-        <p class="shroud-dates__silence">
-          No document refers explicitly to the shroud before the fourteenth
-          century.
-        </p>
-        <div class="shroud-dates__pins" aria-hidden="true">
-          <span class="shroud-dates__decade"></span>
-          {{- range $index, $record := $records }}
-            <span class="shroud-pin shroud-pin--{{ $record.key }}">
-              <svg viewBox="0 0 10 10" preserveAspectRatio="none">
-                <path d="{{ $record.stem }}" />
-              </svg>
-              <span class="shroud-num">{{ add $index 1 }}</span>
-            </span>
-          {{- end }}
-        </div>
-      </div>
-    </div>
-    <ol class="shroud-dates__records">
-      {{- range $index, $record := $records }}
-        <li>
-          <span class="shroud-num" aria-hidden="true">{{ add $index 1 }}</span>
-          <svg
-            class="shroud-icon"
-            viewBox="0 0 64 64"
-            aria-hidden="true"
-            focusable="false">
-            <use href="#shroud-{{ $record.icon }}" />
-          </svg>
-          <strong>{{ $record.year }}</strong>
-          <span class="shroud-dates__record-text" data-card-hide
-            >{{ $record.text }}</span
-          >
-          {{/* The same statement cut to a glance, for the link-preview card only. */}}
-          <span class="shroud-dates__record-short">{{ $record.card }}</span>
+  <div class="shroud-comic__page">
+    <header class="shroud-comic__head">
+      <p class="shroud-comic__kicker">
+        The 1988 radiocarbon test · the weight of evidence is taken to favour it
+      </p>
+      <p class="shroud-comic__title">
+        Three laboratories dated the linen to&nbsp;1260–1390
+      </p>
+    </header>
+    <ol class="shroud-comic__strip">
+      {{- range $panels }}
+        <li
+          class="shroud-comic__frame shroud-comic__frame--{{ .id }}{{ if .wide }}
+            shroud-comic__frame--wide
+          {{ end }}"
+          {{ if not (in (slice "lirey" "labs") .id) }}data-card-hide{{ end }}>
+          <figure class="shroud-comic__figure">
+            {{- if .split }}
+              {{/* A lightning bolt: the page puts the weight of evidence on one side and the defenders of authenticity on the other. */}}
+              <div class="shroud-comic__art shroud-comic__art--split">
+                <div class="shroud-comic__half shroud-comic__half--left">
+                  {{ partial "inline/shroud-img.html" .left }}
+                </div>
+                <div class="shroud-comic__half shroud-comic__half--right">
+                  {{ partial "inline/shroud-img.html" .right }}
+                </div>
+                <svg
+                  class="shroud-comic__bolt"
+                  viewBox="0 0 100 100"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                  focusable="false">
+                  <polyline points="57,0 45,40 58,52 43,100" />
+                  <polyline points="57,0 45,40 58,52 43,100" />
+                </svg>
+              </div>
+            {{- else }}
+              <div class="shroud-comic__art">
+                {{ partial "inline/shroud-img.html" (dict "id" .id "alt" .alt) }}
+              </div>
+            {{- end }}
+            <h3 class="shroud-comic__box">{{ .box }}</h3>
+            <figcaption>
+              {{- range .plates }}
+                <div class="comic-plate comic-plate--{{ .pos }}">
+                  <p class="comic-plate__big">{{ .big }}</p>
+                  <p class="comic-plate__sub">{{ .sub }}</p>
+                </div>
+              {{- end }}
+            </figcaption>
+          </figure>
         </li>
       {{- end }}
     </ol>
-    <p class="shroud-dates__note" data-card-hide>
-      The weight of evidence is taken to favour the medieval date, though
-      defenders of the shroud’s authenticity still contest it.
-    </p>
-    <p class="shroud-dates__more scholarship-meta" data-share-hide>
-      Every line here comes from the cited answers below:
-      <a href="#radiocarbon">the radiocarbon date</a>
-      (<a href="#reception">has it held up?</a>),
-      <a href="#first-record">the first record</a>,
-      <a href="#earlier">the silence before it</a>,
-      <a href="#memorandum">the bishop</a> and <a href="#clement">the pope</a>.
+    <p class="shroud-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions, dates
+      and sources are the page’s own.
     </p>
   </div>
+  <p class="shroud-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#first-record">the first record</a>,
+    <a href="#earlier">nothing earlier</a>,
+    <a href="#memorandum">the bishop</a>, <a href="#clement">the pope</a>,
+    <a href="#radiocarbon">the radiocarbon date</a>
+    (<a href="#reception">has it held up?</a>),
+    <a href="#image">how the image was made</a> and
+    <a href="#church">what the Church says</a>.
+  </p>
 </section>

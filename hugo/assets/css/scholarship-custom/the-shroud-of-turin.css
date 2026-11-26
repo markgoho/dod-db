@@ -1,549 +1,363 @@
 /*
-  Custom block for the Shroud of Turin Scholarship Page: one time axis, the
-  linen's radiocarbon range as a swatch of cloth above it, the three
-  fourteenth-century documents as numbered pins below it. Composes panel,
-  type-section-title, cloud-section and scholarship-meta.
+  Custom block for the Shroud of Turin Scholarship Page: a comic page. One
+  ink frame holds the kicker, title, seven illustrated panels and the credit,
+  so the whole thing shares as one image. Each panel has a narration label
+  flush top-left and comic plates (scholarship.css) set on its art in clear
+  corners. Panel 5's art is two pictures split by a lightning bolt; panel 7
+  spans the row as a wide strip. Composes cloud-section, type-section-title
+  and scholarship-meta.
 
-  Above the axis is what was measured, below it what was written: position
-  carries the distinction, so it reads without colour. Everything on the axis
-  is placed from its year by one formula.
+  Distinctions without colour: the scene in each panel and its plate's
+  words; the split's sides by position.
 */
-.shroud-dates {
-  /* The axis runs from --shroud-from for --shroud-span years. */
-  --shroud-from: 1200;
-  --shroud-span: 220;
+.shroud-comic {
   --shroud-ink: var(--tan-900);
-  /* One numbered marker's width; the icons are a multiple of it. */
-  --shroud-unit: 8.5cqi;
+  --shroud-paper: var(--tan-000);
+  --shroud-amber: var(--color-accent);
+  --shroud-frame: var(--border-width-md);
 
-  container: shroud-dates / inline-size;
+  container: shroud-comic / inline-size;
 }
 
-.shroud-defs {
-  block-size: 0;
-  inline-size: 0;
-  position: absolute;
-}
-
-.shroud-dates__panel {
+/* The page: one frame around everything that is shared. */
+.shroud-comic__page {
+  background: var(--shroud-paper);
+  border: var(--shroud-frame) solid var(--shroud-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--shroud-ink);
   display: grid;
   gap: var(--space-s);
   padding: var(--space-s);
 }
 
-/* Headline strip: the count of laboratories in a burst. */
-.shroud-dates__claim {
-  align-items: center;
-  background: var(--shroud-ink);
-  color: var(--color-text-inverse);
-  column-gap: var(--space-xs);
+.shroud-comic__head {
   display: grid;
-  font-family: var(--font-family-display);
-  font-size: var(--step-0);
-  font-style: italic;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.shroud-comic__head > p {
+  margin: 0;
+}
+
+.shroud-comic__kicker {
+  font-size: var(--step--1);
   font-weight: var(--font-weight-boldest);
-  grid-template-columns: auto minmax(0, 1fr);
   letter-spacing: var(--letter-spacing-heading);
-  line-height: var(--line-height-tight);
-  padding: var(--space-3xs) var(--space-xs);
+  text-transform: uppercase;
   text-wrap: balance;
 }
 
-.shroud-dates__badge {
-  display: grid;
-  inline-size: var(--space-2xl);
-  margin-block: calc(var(--space-2xs) * -1);
-  place-items: center;
-  rotate: -8deg;
-}
-
-.shroud-dates__badge > * {
-  grid-area: 1 / 1;
-}
-
-.shroud-dates__badge > svg {
-  aspect-ratio: 1;
-  fill: var(--color-accent);
-  inline-size: 100%;
-  overflow: visible;
-  stroke: var(--shroud-ink);
-  stroke-linejoin: round;
-  stroke-width: 3;
-}
-
-.shroud-dates__badge > span {
+/* Title lettering: ink capitals with an amber offset. */
+.shroud-comic__title {
   color: var(--shroud-ink);
-  font-size: var(--step-3);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  max-inline-size: 24ch;
+  text-shadow: 3px 3px 0 var(--shroud-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
 }
 
-/* Drawn objects. Lengths inside are the drawing's own units. */
-.shroud-icon {
-  aspect-ratio: 1;
-  inline-size: calc(var(--shroud-unit) * 1.6);
-  overflow: visible;
-  stroke: var(--shroud-ink);
-  stroke-linejoin: round;
-  stroke-width: 4;
-}
-
-.shroud-ink-fill {
-  fill: var(--shroud-ink);
-  stroke: none;
-}
-
-.shroud-paper {
-  fill: var(--tan-000);
-}
-
-.shroud-amber {
-  fill: var(--color-accent);
-}
-
-.shroud-seal {
-  fill: var(--color-action);
-}
-
-:is(.shroud-thread, .shroud-writing, .shroud-cord) {
-  fill: none;
-  stroke-linecap: round;
-}
-
-.shroud-thread {
-  stroke-width: 3;
-}
-
-.shroud-writing {
-  stroke: var(--tan-400);
-}
-
-/* The chart: one inline axis that everything is measured against. */
-.shroud-dates__chart {
+.shroud-comic__strip {
   display: grid;
-}
-
-.shroud-year--1250 {
-  --year: 1250;
-}
-
-.shroud-year--1300 {
-  --year: 1300;
-}
-
-.shroud-year--1350 {
-  --year: 1350;
-}
-
-.shroud-year--1400 {
-  --year: 1400;
-}
-
-.shroud-dates__carbon {
-  --year: 1260;
-  --years: 130;
-
-  display: grid;
-  gap: var(--space-3xs);
-  inline-size: calc(var(--years) / var(--shroud-span) * 100%);
-  margin-inline-start: calc(
-    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
-  );
-}
-
-.shroud-dates__labs {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-s);
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.shroud-dates__labs > li {
+.shroud-comic__frame {
   display: grid;
-  font-family: var(--font-family-display);
-  /* Three names share the band's width on a phone. */
-  font-size: 3.9cqi;
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  justify-items: center;
-  letter-spacing: var(--letter-spacing-heading);
-  line-height: var(--line-height-tight);
+  min-inline-size: 0;
 }
 
-/* Each laboratory points down at the one range they reported. */
-.shroud-dates__labs > li::after {
-  border: var(--space-2xs) solid transparent;
-  border-block-end: 0;
-  border-block-start-color: var(--shroud-ink);
-  content: "";
-  margin-block-start: var(--space-4xs);
-}
-
-/* The range, as a swatch of the linen lying on the axis. */
-.shroud-dates__band {
-  align-content: center;
-  background:
-    repeating-linear-gradient(45deg, transparent 0 5px, var(--tan-300) 5px 6px),
-    repeating-linear-gradient(
-      -45deg,
-      transparent 0 5px,
-      var(--tan-300) 5px 6px
-    ),
-    var(--tan-000);
-  border: var(--border-width-md) solid var(--shroud-ink);
-  border-block-end: 0;
-  display: grid;
-  gap: var(--space-4xs);
-  justify-items: center;
-  padding: var(--space-2xs) var(--space-3xs);
-  text-align: center;
-}
-
-.shroud-dates__band > strong {
-  font-family: var(--font-family-display);
-  font-size: var(--step-1);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  letter-spacing: var(--letter-spacing-heading);
-  line-height: var(--line-height-tight);
-  text-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
-  white-space: nowrap;
-}
-
-.shroud-dates__band > span {
-  background: var(--color-accent-muted);
-  border: var(--border-width-sm) solid var(--shroud-ink);
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--shroud-ink);
-  font-size: var(--step--2);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-tight);
-  padding: var(--space-4xs) var(--space-3xs);
-  text-wrap: balance;
-}
-
-/*
-  The axis: a ruler with its years written on it. It fades in from the left
-  (no statement gives a first year) and runs on to the right.
-*/
-.shroud-dates__axis {
-  background: var(--shroud-ink);
-  block-size: var(--space-s);
-  clip-path: polygon(
-    0 0,
-    calc(100% - var(--space-2xs)) 0,
-    100% 50%,
-    calc(100% - var(--space-2xs)) 100%,
-    0 100%
-  );
-  color: var(--color-text-inverse);
-  font-size: var(--step--2);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--space-s);
-  mask-image: linear-gradient(to right, transparent, #000 16%);
+/* A panel: one ink frame around the art; the panel is its plates' container. */
+.shroud-comic__figure {
+  border: var(--shroud-frame) solid var(--shroud-ink);
+  container-type: inline-size;
+  margin: 0;
   position: relative;
 }
 
-.shroud-dates__axis > span {
-  inset-inline-start: calc(
-    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
-  );
-  position: absolute;
-  translate: -50% 0;
-}
-
-.shroud-dates__below {
-  min-block-size: calc(var(--shroud-unit) * 2);
+.shroud-comic__art {
+  aspect-ratio: 4 / 3;
+  line-height: 0;
+  overflow: hidden;
   position: relative;
 }
 
-/* The radiocarbon range carried down through the documents' side. */
-.shroud-dates__below::before {
-  --year: 1260;
-  --years: 130;
-
-  background: radial-gradient(var(--color-accent) 24%, transparent 28%) 0 0 /
-    8px 8px;
-  border-inline: var(--border-width-sm) dashed var(--shroud-ink);
-  content: "";
-  inline-size: calc(var(--years) / var(--shroud-span) * 100%);
-  inset-block: 0;
-  inset-inline-start: calc(
-    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
-  );
-  opacity: 0.5;
-  position: absolute;
+.shroud-comic__art > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.08;
 }
 
-/* Before 1300: an empty frame, open on the left. */
-.shroud-dates__silence {
-  --year: 1300;
-
-  border: var(--border-width-sm) dashed var(--shroud-ink);
-  border-block-start: 0;
-  border-inline-start: 0;
-  font-size: 3.9cqi;
-  font-weight: var(--font-weight-bold);
-  inline-size: calc(
-    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
-  );
-  line-height: var(--line-height-tight);
-  /* The words stop at 1260, where the range begins; the frame runs to 1300. */
-  padding: var(--space-3xs)
-    calc(40 / var(--shroud-span) * 100% + var(--space-3xs)) var(--space-3xs) 0;
-  position: relative;
-  text-wrap: pretty;
-}
-
-.shroud-dates__pins {
+/* Panel 5: two pictures, each clipped to its side of the bolt. */
+.shroud-comic__half {
   inset: 0;
   position: absolute;
 }
 
-/* The 1350s: a decade, not a year. */
-.shroud-dates__decade {
-  --year: 1350;
-  --years: 10;
-
-  border: var(--border-width-md) solid var(--shroud-ink);
-  border-block-start: 0;
-  block-size: var(--space-3xs);
-  inline-size: calc(var(--years) / var(--shroud-span) * 100%);
-  inset-block-start: 0;
-  inset-inline-start: calc(
-    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
-  );
-  position: absolute;
+.shroud-comic__half--left {
+  clip-path: polygon(0 0, 57% 0, 45% 40%, 58% 52%, 43% 100%, 0 100%);
 }
 
-/* A pin: a stem from its year on the axis down to its number. */
-.shroud-pin {
-  display: grid;
-  inline-size: var(--shroud-unit);
-  inset-block-start: 0;
-  inset-inline-start: calc(
-    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
-  );
-  position: absolute;
+.shroud-comic__half--right {
+  clip-path: polygon(57% 0, 100% 0, 100% 100%, 43% 100%, 58% 52%, 45% 40%);
 }
 
-.shroud-pin > svg {
-  block-size: calc(var(--shroud-unit) * 0.8);
+.shroud-comic__half > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 60%;
+  object-fit: cover;
+  scale: 1.08;
+}
+
+.shroud-comic__half--right > img {
+  margin-inline-start: 40%;
+}
+
+/* The bolt: a thick ink stroke with an amber core. */
+.shroud-comic__bolt {
+  block-size: 100%;
   fill: none;
   inline-size: 100%;
-  overflow: visible;
-  stroke: var(--shroud-ink);
-  stroke-linecap: round;
-  stroke-width: 3;
+  inset: 0;
+  position: absolute;
+  stroke-linejoin: miter;
 }
 
-.shroud-pin path {
+.shroud-comic__bolt > polyline:first-child {
+  stroke: var(--shroud-ink);
+  stroke-width: 12px;
   vector-effect: non-scaling-stroke;
 }
 
-.shroud-pin--lirey {
-  --year: 1355;
-
-  translate: -50% 0;
+.shroud-comic__bolt > polyline:last-child {
+  stroke: var(--shroud-amber);
+  stroke-width: 5px;
+  vector-effect: non-scaling-stroke;
 }
 
-/* 1389 and 1390 are a year apart: their numbers stand either side. */
-.shroud-pin--bishop {
-  --year: 1389;
-
-  translate: -100% 0;
-}
-
-.shroud-pin--pope {
-  --year: 1390;
-}
-
-.shroud-num {
-  aspect-ratio: 1;
-  background: var(--color-action);
-  border: var(--border-width-sm) solid var(--shroud-ink);
-  border-radius: 50%;
-  color: var(--color-text-inverse);
-  display: grid;
+/* Narration label, flush in the panel's top-left corner. */
+.shroud-comic__box {
+  background: var(--shroud-amber);
+  border-block-end: var(--shroud-frame) solid var(--shroud-ink);
+  border-inline-end: var(--shroud-frame) solid var(--shroud-ink);
   font-family: var(--font-family-display);
-  font-size: calc(var(--shroud-unit) * 0.55);
+  font-size: var(--step--1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
-  inline-size: var(--shroud-unit);
-  line-height: 1;
-  place-items: center;
-}
-
-/* The documents, in order: one comic panel each. */
-.shroud-dates__records {
-  display: grid;
-  gap: var(--space-2xs);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.shroud-dates__records > li {
-  align-items: center;
-  background:
-    linear-gradient(to top right, var(--tan-000) 55%, transparent),
-    radial-gradient(var(--tan-300) 24%, transparent 28%) 0 0 / 8px 8px,
-    var(--tan-000);
-  border: var(--border-width-md) solid var(--shroud-ink);
-  column-gap: var(--space-2xs);
-  display: grid;
-  grid-template-columns: auto auto minmax(0, 1fr);
-  padding: var(--space-2xs);
-  row-gap: var(--space-3xs);
-}
-
-.shroud-dates__records strong {
-  font-family: var(--font-family-display);
-  font-size: var(--step-2);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
-  text-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
-}
-
-.shroud-dates__record-text {
-  font-size: var(--step--2);
-  grid-column: 1 / -1;
-  text-wrap: pretty;
-}
-
-/* Only the link-preview card shows the cut-down line. */
-.shroud-dates__record-short {
-  display: none;
-}
-
-/* How the date has been received: a caption box, as a comic's narration. */
-.shroud-dates__note {
-  background: var(--color-accent-muted);
-  border: var(--border-width-sm) solid var(--shroud-ink);
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--shroud-ink);
-  font-size: var(--step--2);
-  font-weight: var(--font-weight-bold);
+  margin: 0;
+  max-inline-size: 60%;
   padding: var(--space-3xs) var(--space-2xs);
-  text-wrap: balance;
+  position: absolute;
+  text-transform: uppercase;
 }
 
-.shroud-dates__more {
-  border-block-start: var(--border-width-sm) solid var(--tan-300);
-  padding-block-start: var(--space-xs);
+/* Long sub-lines need a little more width than a bare count. */
+.shroud-comic__frame--bishop .comic-plate,
+.shroud-comic__frame--lirey .comic-plate {
+  max-inline-size: 44%;
 }
 
-/*
-  Wide: a fixed marker size and the three documents side by side. Literal
-  length: container conditions cannot read custom properties.
-*/
-@container shroud-dates (width >= 40rem) {
-  .shroud-dates__panel {
-    --shroud-unit: var(--space-m);
+/* "A representation" needs the room to stay on one line. */
+.shroud-comic__frame--pope .comic-plate {
+  max-inline-size: 54%;
+}
 
+/* The wide panel is twice as wide a container: halve the plates' cqi type so they match the other panels. */
+.shroud-comic__frame--wide .comic-plate {
+  max-inline-size: 24%;
+  padding: 0.45cqi 0.7cqi 0.55cqi;
+}
+
+.shroud-comic__frame--wide .comic-plate__big {
+  font-size: clamp(0.95rem, 2.7cqi, 2.1rem);
+}
+
+.shroud-comic__frame--wide .comic-plate__sub {
+  font-size: clamp(0.65rem, 1.25cqi, 0.95rem);
+}
+
+.shroud-comic__frame--wide .comic-plate--tr {
+  inset: 1cqi 1cqi auto auto;
+}
+
+.shroud-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.shroud-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* A narrow panel (phone): the plates are too big for the art, so they drop below it as a caption band. The query reads the panel's own width (the figure is the nearest container). */
+@container (width < 22rem) {
+  .shroud-comic__figure > figcaption {
+    border-block-start: var(--shroud-frame) solid var(--shroud-ink);
+    display: grid;
+    gap: var(--space-2xs);
+    padding: var(--space-2xs);
+  }
+
+  .shroud-comic__figure .comic-plate {
+    box-shadow: none;
+    max-inline-size: none;
+    position: static;
+    text-align: start;
+  }
+
+  /* The split keeps its sides: each verdict sits under its own half. */
+  .shroud-comic__frame--held .shroud-comic__figure > figcaption {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shroud-comic__frame--held .comic-plate--br {
+    text-align: end;
+  }
+}
+
+/* Wide: two panels to a row, the last one across both. Literal length: container conditions cannot read custom properties. */
+@container shroud-comic (width >= 40rem) {
+  .shroud-comic__page {
     padding: var(--space-m);
   }
 
-  .shroud-dates__claim {
-    font-size: var(--step-1);
+  .shroud-comic__title {
+    font-size: var(--step-3);
   }
 
-  .shroud-dates__labs > li {
-    font-size: var(--step--1);
+  .shroud-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .shroud-dates__silence {
-    font-size: var(--step--2);
+  .shroud-comic__frame--wide {
+    grid-column: 1 / -1;
   }
 
-  .shroud-dates__band > strong {
-    font-size: var(--step-4);
-  }
-
-  .shroud-dates__band > span {
-    font-size: var(--step--1);
-  }
-
-  .shroud-dates__records {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .shroud-dates__records > li {
-    align-content: start;
+  .shroud-comic__frame--wide .shroud-comic__art {
+    aspect-ratio: 8 / 3;
   }
 }
 
-/* The poster is tall: the picture grows to fill it. */
-.scholarship-share:target .shroud-dates__panel {
-  --shroud-unit: calc(var(--space-l) * 1.25);
-
-  gap: var(--space-m);
+/* The poster: three panels to a row on the 4:5 canvas, the wide panel across the bottom. */
+.scholarship-share:target .shroud-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
 }
 
-.scholarship-share:target .shroud-dates__band {
-  padding-block: var(--space-l);
+.scholarship-share:target .shroud-comic__head {
+  gap: 0;
 }
 
-.scholarship-share:target .shroud-dates__band > strong {
-  font-size: var(--step-5);
+.scholarship-share:target .shroud-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
 }
 
-.scholarship-share:target .shroud-dates__band > span {
-  font-size: var(--step-0);
+.scholarship-share:target .shroud-comic__strip {
+  gap: var(--space-2xs);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.scholarship-share:target .shroud-dates__axis {
-  block-size: var(--space-m);
-  font-size: var(--step--1);
-  line-height: var(--space-m);
+.scholarship-share:target .shroud-comic__frame--wide {
+  grid-column: 1 / -1;
+}
+
+.scholarship-share:target .shroud-comic__frame--wide .shroud-comic__art {
+  aspect-ratio: 3 / 1;
+}
+
+/* Three to a row makes each panel narrow: smaller labels and plates, and top-right plates drop below the label row. */
+.scholarship-share:target .shroud-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+/* The poster's panels are narrower than the phone breakpoint, but the canvas is fixed: keep the plates on the art. */
+.scholarship-share:target .shroud-comic__figure > figcaption {
+  border: 0;
+  display: block;
+  padding: 0;
+}
+
+.scholarship-share:target .shroud-comic__figure .comic-plate {
+  box-shadow: 3px 3px 0 var(--shroud-ink);
+  max-inline-size: 44%;
+  position: absolute;
 }
 
 .scholarship-share:target
-  :is(.shroud-dates__silence, .shroud-dates__record-text, .shroud-dates__note) {
-  font-size: var(--step--1);
+  .shroud-comic__figure
+  :is(.comic-plate--tr, .comic-plate--br) {
+  text-align: end;
 }
 
-/* The card is seen small: the picture fills it, each document cut to a line. */
-.scholarship-share:has(#share-card:target) .shroud-dates__panel {
-  --shroud-unit: calc(var(--space-l) * 0.9);
+.scholarship-share:target
+  .shroud-comic__frame:not(.shroud-comic__frame--wide)
+  .comic-plate {
+  padding: 0.6cqi 1cqi 0.8cqi;
+}
 
+.scholarship-share:target .shroud-comic__frame--wide .comic-plate {
+  max-inline-size: 24%;
+}
+
+.scholarship-share:target
+  .shroud-comic__frame:not(.shroud-comic__frame--wide)
+  .comic-plate__big {
+  font-size: 4.6cqi;
+}
+
+.scholarship-share:target
+  .shroud-comic__frame:not(.shroud-comic__frame--wide)
+  .comic-plate__sub {
+  font-size: 2.9cqi;
+}
+
+.scholarship-share:target
+  .shroud-comic__frame:not(.shroud-comic__frame--wide)
+  .comic-plate--tr {
+  inset-block-start: 9cqi;
+}
+
+/* The card: panels 1 and 4 side by side under the title. */
+.scholarship-share:has(#share-card:target) .shroud-comic__page {
   gap: var(--space-2xs);
+  padding: var(--space-xs);
 }
 
-.scholarship-share:has(#share-card:target) .shroud-dates__claim {
-  font-size: var(--step-2);
+.scholarship-share:has(#share-card:target) .shroud-comic__kicker {
+  display: none;
 }
 
-.scholarship-share:has(#share-card:target) .shroud-dates__labs > li {
-  font-size: var(--step-0);
+.scholarship-share:has(#share-card:target) .shroud-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
 }
 
-.scholarship-share:has(#share-card:target) .shroud-dates__band {
-  padding-block: var(--space-4xs);
+.scholarship-share:has(#share-card:target) .shroud-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.scholarship-share:has(#share-card:target) .shroud-dates__band > span {
-  font-size: var(--step-0);
-}
-
-.scholarship-share:has(#share-card:target) .shroud-dates__axis {
-  block-size: var(--space-m);
-  font-size: var(--step-0);
-  line-height: var(--space-m);
-}
-
-.scholarship-share:has(#share-card:target) .shroud-dates__silence {
-  font-size: var(--step-0);
-}
-
-.scholarship-share:has(#share-card:target) .shroud-dates__records > li {
-  padding: var(--space-3xs) var(--space-2xs);
-}
-
-.scholarship-share:has(#share-card:target) .shroud-dates__record-short {
-  display: block;
-  font-size: var(--step-0);
-  font-weight: var(--font-weight-bold);
-  grid-column: 1 / -1;
-  line-height: var(--line-height-tight);
-  text-wrap: balance;
+.scholarship-share:target .shroud-comic__frame--pope .comic-plate {
+  max-inline-size: 54%;
 }

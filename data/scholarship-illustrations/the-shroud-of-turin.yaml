@@ -1,0 +1,147 @@
+# Illustrations for /scholarship/the-shroud-of-turin/ (generated with Gemini;
+# see src/scripts/generate-scholarship-illustrations.ts). Each picture shows
+# only what the listed statements support; every caption, date, count and
+# claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Seven comic panels in time order: shown at Lirey (1350s); the bishop writes
+# (1389); the pope rules (1390); three laboratories date it (1988); has the
+# date held up (two halves split by a lightning bolt); how the image was made;
+# the Church today (a wide strip). The cloth is the recurring character:
+# `lirey` is its anchor and is passed as a reference wherever it appears.
+# The cloth's imprint is always faint and sepia, with no wounds or blood.
+# The bishop is never shown with an artist or a painted cloth: the page
+# reports what he wrote, and `image` says most scientists judge it no
+# painting. No pope appears in the Church panel (it would read as a real
+# pope); pilgrims venerate the cloth instead.
+slug: the-shroud-of-turin
+images:
+  - id: lirey
+    statements: [first-record]
+    aspect: "4:3"
+    alt: "In a small Gothic church, two canons hold up a long linen cloth bearing a faint image of a man; pilgrims look on, one holding a small medallion."
+    prompt: >-
+      Interior of a small fourteenth-century Gothic stone church. In the
+      MIDDLE of the picture, two clergymen in plain white surplices over
+      black cassocks hold up between them, at full stretch, a very long,
+      narrow, pale cream linen cloth, far wider than it is tall. On the
+      cloth is a very faint, pale sepia outline of a full-length human
+      figure seen from the front, ghostly and barely visible, with no
+      wounds, no blood, no face detail. In the lower RIGHT foreground, a few
+      medieval pilgrims in hooded travelling cloaks look up at the cloth;
+      one holds a small round metal pilgrim's medallion on a cord. The upper
+      LEFT corner and upper RIGHT corner are plain stone wall and vaulting,
+      empty. Negative list: no halo, no cross, no altar, no candles, no
+      windows with pictures, no text.
+
+  - id: bishop
+    statements: [memorandum]
+    aspect: "4:3"
+    alt: "A medieval bishop in a mitre writes a letter with a quill by candlelight, frowning."
+    prompt: >-
+      A stern elderly medieval bishop wearing a white mitre and a dark rust
+      red cope sits at a heavy wooden writing desk on the LEFT half of the
+      picture, writing with a quill pen on ONE sheet of parchment, frowning
+      with determination. A single candle burns on the desk. The RIGHT
+      third of the picture and the top edge are a plain stone wall with
+      nothing on it. Only one sheet of parchment. Negative list: no cloth,
+      no shroud, no painting, no easel, no other people, no books, no
+      halo, no cross, no text.
+
+  - id: pope
+    statements: [clement]
+    aspect: "4:3"
+    alt: "A medieval pope on a throne hands a parchment, its lead seal hanging from a cord, to a kneeling clergyman."
+    prompt: >-
+      A generic medieval pope (not a portrait of any real person), an older
+      man in a white robe, a red mozzetta cape and a tall white papal tiara,
+      sits on a carved wooden throne on the RIGHT of the picture and holds
+      out ONE folded parchment document, from which a round grey lead seal
+      hangs on a cord. On the LEFT, a clergyman in a plain white surplice
+      over a black cassock kneels and reaches to receive it. The upper LEFT
+      corner and the bottom LEFT corner are plain floor and plain stone wall,
+      empty. Negative list: no cloth, no shroud, no crowd, no halo, no cross,
+      no text.
+
+  - id: labs
+    statements: [radiocarbon]
+    aspect: "4:3"
+    refs: [lirey]
+    alt: "Three scientists in lab coats, each at a separate laboratory bench, each examining one tiny piece of linen."
+    prompt: >-
+      A 1980s scientific laboratory. EXACTLY THREE scientists in white lab
+      coats, clearly separated, each standing at their own separate bench
+      in a row from left to right: three benches, three scientists, no
+      more. A woman with short hair on the left, a bearded man in the
+      middle, a younger man with glasses on the right (generic figures, not
+      portraits of any real person). Each holds tweezers over ONE tiny
+      scrap of the SAME pale cream linen as the cloth in the reference
+      image, on a small glass dish. Behind them, beige 1980s laboratory
+      machines with dials and cables. The whole top quarter of the picture
+      is plain pale laboratory wall, empty. Negative list: no large cloth,
+      no shroud, no fourth person, no computer screens with text, no text.
+
+  - id: favour
+    statements: [reception]
+    aspect: "4:5"
+    refs: [labs]
+    alt: "A scientist in a lab coat calmly holds up a printed chart of results, confident."
+    prompt: >-
+      The SAME bearded scientist as in the middle of the reference image,
+      in the same white lab coat, shown from the waist up in the CENTRE of
+      the picture, standing calmly and holding up ONE printed sheet with a
+      simple bell-curve chart on it (no numbers, no words), with a
+      confident, settled expression. Plain pale laboratory wall behind him.
+      The top quarter and the bottom quarter of the picture are plain empty
+      wall and plain bench edge. Negative list: no cloth, no other people,
+      no text.
+
+  - id: contest
+    statements: [reception]
+    aspect: "4:5"
+    refs: [labs]
+    alt: "A different researcher frowns at a printed chart through a magnifying glass, unconvinced."
+    prompt: >-
+      A DIFFERENT person from the reference image, a middle-aged
+      researcher in a dark rust red sweater (no lab coat), with grey hair
+      and glasses, shown from the waist up in the CENTRE of the picture,
+      peering skeptically through a large magnifying glass at ONE printed
+      sheet with a simple bell-curve chart on it (no numbers, no words),
+      frowning, unconvinced. Plain warm study wall behind. The top quarter
+      and the bottom quarter of the picture are plain empty wall and plain
+      desk edge. Negative list: no cloth, no other people, no text.
+
+  - id: image
+    statements: [image]
+    aspect: "4:3"
+    refs: [lirey]
+    alt: "Present-day researchers lean over the long linen cloth laid on a table, studying its faint image, puzzled."
+    prompt: >-
+      A present-day study room. The SAME long, narrow, pale cream linen
+      cloth as in the reference image, with the SAME very faint, pale sepia
+      ghostly outline of a full-length figure (no wounds, no blood, no face
+      detail), lies flat along a long table that runs across the LOWER half
+      of the picture. Two researchers (generic figures, not portraits of any
+      real person), one in a white lab coat holding a magnifying glass, one
+      in an amber sweater scratching their head, lean over it, puzzled. A
+      comic thought bubble above them contains only a large question mark.
+      The upper LEFT corner is plain empty wall. Negative list: no paint, no
+      brushes, no fire, no other objects on the table, no text.
+
+  - id: church
+    statements: [church]
+    aspect: "16:9"
+    refs: [lirey]
+    alt: "In a large present-day cathedral, the long linen cloth hangs in a frame behind glass while a crowd of pilgrims stands quietly before it."
+    prompt: >-
+      Very wide view, all of the action in the MIDDLE horizontal band of the
+      picture; the top fifth is plain stone vaulting and the bottom fifth is
+      plain stone floor, both empty. Inside a large present-day cathedral,
+      the SAME long, narrow, pale cream linen cloth as in the reference
+      image, with the SAME very faint, pale sepia ghostly outline of a
+      full-length figure (no wounds, no blood, no face detail), is
+      displayed horizontally in a long plain frame behind glass, in the
+      centre. A quiet crowd of present-day pilgrims of many ages, seen
+      mostly from behind, stands before it in reverence, some with hands
+      folded. No clergy, no pope, no bishop. The far LEFT and far RIGHT of
+      the band are plain stone columns, empty. Negative list: no halo, no
+      cross, no candles, no text.
