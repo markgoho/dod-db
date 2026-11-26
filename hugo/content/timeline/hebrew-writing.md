@@ -1,9 +1,9 @@
 ---
 title: "Earliest known Hebrew writing"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead: null
+sourcesRead: 2026-11-26
 related: { books: [], tags: [canaanites], topics: [] }
 watch:
   [
