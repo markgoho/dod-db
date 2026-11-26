@@ -2827,3 +2827,45 @@ schmidt-2007-quest-summary:
   url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
   hostAuthored: false
   tradition: null
+
+hendel-2018-abraham:
+  author: "Ronald Hendel"
+  title: "Abraham"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2018
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/abraham/"
+  hostAuthored: false
+  tradition: null
+
+sarna-sperling-ej-patriarchs:
+  author: "Nahum M. Sarna and S. David Sperling"
+  title: "Patriarchs, The (biblical sections)"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/patriarchs"
+  hostAuthored: false
+  tradition: null
+
+abr-wood-2009-ur:
+  author: "Bryant G. Wood"
+  title: "The Army of the Kings of Ur"
+  series: null
+  publisher: "Associates for Biblical Research"
+  year: 2009
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://biblearchaeology.org/the-army-of-the-kings-of-ur/"
+  hostAuthored: false
+  tradition: "Associates for Biblical Research, an evangelical apologetics ministry"
