@@ -1,7 +1,6 @@
 ---
 title: "When Daniel Was Written"
 dek: "When scholars date the Book of Daniel and why, how its tales and visions came together, and what the Greek additions are."
-draft: true
 core: date
 sourcesRead: 2026-11-25
 related:
@@ -24,7 +23,7 @@ statements:
   - id: date
     group: "Dating the book"
     question: "When was the Book of Daniel written?"
-    short: "In the second century BCE, scholars date it, the visions of chapters 7–12 to Antiochus IV's persecution, 167–164 BCE. The date has long been debated, and some still hold to the sixth century, the book's own setting."
+    short: "Scholars date it to the second century BCE, and its visions (chapters 7–12) to Antiochus IV's persecution, 167–164 BCE. The date has long been debated, and some still hold to the sixth century, the book's own setting."
     text: "The NABRE introduction says the book was composed during the persecution carried on by Antiochus IV Epiphanes (167–164 BCE). Christine Hayes's Yale lectures date chapters 7–12 to between 167 and 164 BCE, and the first six chapters perhaps to the end of the third century. Amy Merrill Willis's Bible Odyssey article says the vision of Daniel 8 was written around 167 BCE and that the book's calculations for the end refer to events of 167–164 BCE; its “Did You Know?” box says the Hebrew-Aramaic edition was completed around 163 BCE. The publisher's summary of Coogan and Chapman's introduction says the book was written in the second century BCE, and that scholars place it there. Craig Evans says the dangers Jews faced in the second century BCE, especially under Antiochus IV, led to the writing of the book soon after. Mladen Popović and colleagues note that scholars date Daniel 8–11 on literary-historical grounds to the 160s BCE. The date is not unanimous. Benjamin Suchard writes that the dating has long been a controversial issue, and that the book's sixth-century setting was traditionally taken as its date of composition. The “Did You Know?” box on David Valeta's Bible Odyssey article says scholars debate the date, from as early as the sixth century BCE to as late as the second, and that both viewpoints have strong defenders."
     cites:
       - source: nabre-daniel-intro
@@ -109,7 +108,7 @@ statements:
   - id: tales
     group: "Dating the book"
     question: "Are the court tales older than the visions?"
-    short: "They are usually held to be, dated to the Persian or early Hellenistic period."
+    short: "Usually, yes: they are held to date from the Persian or early Hellenistic period."
     text: "Christine Hayes dates the first six chapters perhaps to the end of the third century BCE. Daniel Smith-Christopher's Bible Odyssey article says the stories could be dated to the late Persian or early Hellenistic periods (400–300 BCE), and that the book is a compendium of stories and visions gathered over time. Amy Merrill Willis says the tales took shape and eventually became a book. Jason Silverman puts books with stories set at the Persian court, Daniel among them, most likely in the Hellenistic period. Benjamin Suchard writes that chapter 3 is held to have taken shape most likely in the Persian or earlier Hellenistic period, but argues from its Greek words that the collection of chapters 2–6 should be dated no earlier than the second century BCE, later than is usually held."
     cites:
       - source: hayes-rlst145-l23
@@ -177,7 +176,7 @@ statements:
   - id: author
     group: "How the book was made"
     question: "Who wrote the Book of Daniel?"
-    short: "The author is unknown. Scholars read Daniel as the book's hero, probably a fictional one, not its writer."
+    short: "Not Daniel, scholars say: they read him as the book's hero, probably a fictional one, rather than its writer."
     text: "The NABRE introduction says the book takes its name not from its author, who is unknown, but from its hero, allegedly among the first Jews deported to Babylon. Amy Merrill Willis says the historical difficulties of Daniel's long career under Babylonian, Median and Persian kings suggest he was probably not an actual person but a fictional hero. Craig Evans calls him very likely a fictional character, perhaps inspired by a real figure of the ancient Near East known for wisdom."
     cites:
       - source: nabre-daniel-intro
