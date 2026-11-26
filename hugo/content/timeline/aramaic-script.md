@@ -1,8 +1,8 @@
 ---
 title: "Judean scribes adopt the Aramaic script"
 entryKind: event
-draft: true
-sourcesRead:
+draft: false
+sourcesRead: 2026-11-26
 related: { books: [], tags: [], topics: [] }
 watch:
   [
