@@ -22,11 +22,27 @@ critical:
   from: -912
   to: -323
   precision: period
-  note: "The dates are for the whole process of composition and editing, with the final collection at its end. Ska says many scholars agree that the Pentateuch as such was composed late, in the Persian period, though some of its elements are pre-exilic. Hayes puts its final form, probably, in the exilic to post-exilic periods. The Encyclopaedia Judaica entry has the addition of Genesis through Numbers accomplished by the mid-5th century BCE."
+  note: "The dates are for the whole process of composition and editing, with the final collection at its end. Schmid gives a span from the 9th or 8th century to the 4th century BCE for the composition of the Torah, and says the Pentateuch seems to be, in essence, pre-Hellenistic. Schorch writes that many scholars agree its text was completed, more or less in the version known today, in the Persian period, a conclusion originally drawn mainly from literary and religious history that received further support from text-historical study of the Dead Sea Scrolls. Ska says many scholars agree that the Pentateuch as such was composed late, in the Persian period; he adds that some of its elements come from the pre-exilic period. Hayes puts its final form, probably, in the exilic to post-exilic periods. The Encyclopaedia Judaica entry has the addition of Genesis through Numbers accomplished by the mid-5th century BCE."
   cites:
     - source: nihan-rhyder-bo-torah
       locator: "opening paragraph"
       quote: "Genesis–Deuteronomy is the result of a long compositional and editorial process, stretching over several centuries, from the Neo-Assyrian (ca. 912–612 BCE) to the Persian period (ca. 538–323 BCE)."
+      read: 2026-11-26
+    - source: schmid-2025-torah-multi-authorial
+      locator: "§2.3 “The Dating of the Torah”, p. 168"
+      quote: "There thus remains a historical span between the 9th or 8th century and the 4th century BCE for the composition of the Torah."
+      read: 2026-11-26
+    - source: schmid-2025-torah-multi-authorial
+      locator: "§2.3 “The Dating of the Torah”, p. 168"
+      quote: "The Pentateuch thus seems to be, in essence, a pre-Hellenistic text, dating from the time before Alexander the Great and the Hellenization of the East."
+      read: 2026-11-26
+    - source: schorch-2024-torah-closed-cluster
+      locator: "Introduction, ¶ 1, p. 413"
+      quote: "It is currently agreed by many scholars of the Hebrew Bible that the text of the Pentateuch was completed in the Persian period, more or less in the version known to us today, in terms of content, literary arrangement and even, although to a somewhat diminished degree, in terms of the textual surface."
+      read: 2026-11-26
+    - source: schorch-2024-torah-closed-cluster
+      locator: "Introduction, ¶ 1, p. 413"
+      quote: "While this conclusion was originally drawn mainly with reference to literary and religious history, it received further support from the data emerging from the text-historical analysis of the Dead Sea Scrolls."
       read: 2026-11-26
     - source: ska-bo-formation-pentateuch
       locator: "text below the video, ¶ 1"

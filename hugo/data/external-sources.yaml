@@ -3178,6 +3178,34 @@ ska-bo-formation-pentateuch:
   hostAuthored: false
   tradition: null
 
+schmid-2025-torah-multi-authorial:
+  author: "Konrad Schmid"
+  title: "The Torah as Multi-Authorial Literature of Discussion: The History, Aesthetics, and Hermeneutics of a Product of Collaborative Writing"
+  series: "Multiple Authorship (De Gruyter), pp. 159–180"
+  publisher: "De Gruyter"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Open-access chapter (CC BY-NC-ND 4.0), full text on the publisher's HTML page, doi 10.1515/9783111153384-008; scripts get an empty body, read in a browser"
+  url: "https://www.degruyterbrill.com/document/doi/10.1515/9783111153384-008/html"
+  hostAuthored: false
+  tradition: null
+
+schorch-2024-torah-closed-cluster:
+  author: "Stefan Schorch"
+  title: "The Torah as a Closed Cluster Text: Conceptualizing the Transmission of the Pentateuch in the Persian Period"
+  series: "Gad Barnea and Reinhard G. Kratz (eds.), Yahwism under the Achaemenid Empire: Professor Shaul Shaked in Memoriam (BZAW), pp. 413–432"
+  publisher: "De Gruyter"
+  year: 2024
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Open-access chapter (CC BY-NC-ND 4.0), full text on the publisher's HTML page, doi 10.1515/9783111018638-016; scripts get an empty body, read in a browser"
+  url: "https://www.degruyterbrill.com/document/doi/10.1515/9783111018638-016/html"
+  hostAuthored: false
+  tradition: null
+
 friedman-overton-ej-pentateuch:
   author: "Richard Elliott Friedman and Shawna Dolansky Overton"
   title: "Pentateuch"
