@@ -341,7 +341,7 @@
 
 /* The wide panel's plates: one per side, each in the open floor or wall beside its figure. */
 .heb-comic__frame--today .comic-plate--a {
-  inset: 2cqi auto auto 27%;
+  inset: 2cqi auto auto 26%;
 }
 
 .heb-comic__frame--today .comic-plate--b {
@@ -349,7 +349,7 @@
 }
 
 .heb-comic__frame--today .comic-plate {
-  max-inline-size: 24%;
+  max-inline-size: 22%;
 }
 
 /* On the poster the wide panel's plates match the narrow panels' smaller lettering. */
@@ -361,28 +361,20 @@
   font-size: 0.95cqi;
 }
 
-/* On the card the Jeremiah plates sit higher and flatter, clear of the scribe's face. */
-.scholarship-share:has(#share-card:target)
-  .heb-comic__frame--jeremiah
-  .comic-plate {
+/* Jeremiah's plates sit high and flat, clear of the two faces. */
+.heb-comic__frame--jeremiah .comic-plate {
   max-inline-size: 46%;
 }
 
-.scholarship-share:has(#share-card:target)
-  .heb-comic__frame--jeremiah
-  .comic-plate--tl {
+.heb-comic__frame--jeremiah .comic-plate--tl {
   inset-block-start: 7cqi;
 }
 
-.scholarship-share:has(#share-card:target)
-  .heb-comic__frame--jeremiah
-  .comic-plate__big {
+.heb-comic__frame--jeremiah .comic-plate__big {
   font-size: 4.2cqi;
 }
 
-.scholarship-share:has(#share-card:target)
-  .heb-comic__frame--jeremiah
-  .comic-plate--tr {
+.heb-comic__frame--jeremiah .comic-plate--tr {
   max-inline-size: 38%;
 }
 
@@ -413,10 +405,6 @@
   .heb-comic__frame--today .comic-plate--b {
     inset: auto 2cqi 2cqi auto;
     text-align: end;
-  }
-
-  .heb-comic__frame--jeremiah .comic-plate--tl {
-    inset-block-start: 11cqi;
   }
 
   .heb-comic__frame--jeremiah .comic-plate__big {
