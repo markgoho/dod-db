@@ -1,0 +1,188 @@
+# Illustrations for /scholarship/moses-and-the-exodus/ (generated with
+# Gemini; see src/scripts/generate-scholarship-illustrations.ts). Each picture
+# shows only what the listed statements support; every caption, link, claim
+# and count stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Six comic panels. Panels 1–4 are split in two: the left half is the story
+# as Exodus tells it, the right half what scholars report; each half is its
+# own 4:5 image. Panels 5 and 6 are single 4:3 scenes on the scholars' side.
+# Two recurring figures: Moses on the story halves (`court` is his anchor),
+# and a present-day archaeologist on the scholars' halves (`dig` is hers).
+# Nothing found is drawn as a find: the trench, the sieve and the archive
+# hold nothing. The stela's carving is illegible rows. No pharaoh is a
+# recognisable king. The crowd leaving Egypt is too dense to count; the
+# number is on the plate.
+slug: moses-and-the-exodus
+images:
+  - id: court
+    statements: [moses, evidence]
+    aspect: "4:5"
+    alt: "In the story: Moses, with a staff, and Aaron stand before a pharaoh on his throne."
+    prompt: >-
+      A tight, compact composition in an ancient Egyptian throne room: ALL
+      THREE figures fit within the LEFT TWO-THIRDS of the picture, close
+      together. At the far left stand two Hebrew men: in front, MOSES, a
+      sturdy middle-aged man with a full dark beard streaked with grey, a
+      rust red robe with a dark sash and a light grey headcloth with a
+      headband, holding a tall plain wooden shepherd's staff and raising his
+      free hand as he speaks; just behind him AARON, a slightly older man
+      with curly grey hair and a grey beard, in an amber robe. Directly
+      facing them, only an arm's length away and centred in the picture, a
+      pharaoh sits on a small stone throne on a low dais, wearing a striped
+      nemes headcloth and a plain white kilt, stern, arms folded; a generic
+      stylised face, not any particular king. The RIGHT THIRD of the
+      picture is only a plain stone wall with nothing in it, no figure, no
+      throne. The lower left corner is plain stone floor. No guards, no
+      other people, no animals, no snakes, no writing.
+
+  - id: dig
+    statements: [evidence]
+    aspect: "4:5"
+    alt: "A present-day archaeologist kneels in an empty trench in the Sinai desert, shaking a sieve that holds only sand."
+    prompt: >-
+      A present-day woman archaeologist, about forty, short dark curly
+      hair, wearing a wide-brimmed sun hat, a light grey work shirt with
+      rolled sleeves and khaki trousers, kneels in the RIGHT HALF of the
+      picture, facing left, in a shallow rectangular excavation trench marked out with string and pegs, in a vast empty
+      desert of sand and bare rocky mountains under a pale sky. She shakes
+      a wooden sieve over the trench: only fine sand falls through it, the
+      sieve is empty. She looks into it with a resigned, puzzled
+      expression. The trench is completely empty: no pottery, no bones, no
+      wheels, no objects of any kind. The left third of the picture is
+      empty desert sand, and the upper right quarter open pale sky with
+      nothing in it. No other people, no
+      animals, no vehicles, no text.
+
+  - id: basket-moses
+    statements: [sargon]
+    aspect: "4:5"
+    alt: "In the story: a baby lies in a small woven basket lined with dark tar, floating among the reeds at a river's edge, Egyptian palms behind."
+    prompt: >-
+      A calm river bank in ancient Egypt. Among tall green and amber reeds
+      at the water's edge floats a small oval woven basket, its seams
+      sealed with shiny black tar, and in it a sleeping baby wrapped in a
+      plain off-white cloth. Behind, on the far bank, a few date palms and
+      a low mud-brick wall. The upper part of the picture is open pale sky.
+      No adults, no other people, no animals, no text.
+
+  - id: basket-sargon
+    statements: [sargon]
+    aspect: "4:5"
+    refs: [basket-moses]
+    alt: "Sargon of Akkad's birth story: the same kind of tarred basket with a baby floats on a broad Mesopotamian river."
+    prompt: >-
+      The SAME small oval woven basket sealed with shiny black tar as in
+      the reference image, with a sleeping baby in a plain off-white cloth.
+      The basket is in the RIGHT HALF of the picture. This time it drifts on a
+      broad, slow, open river in ancient Mesopotamia, far from the bank;
+      on the distant flat bank stands a stepped mud-brick temple tower and
+      a few date palms. No reeds around the basket. The upper part of the
+      picture is open pale sky. No adults, no other people, no animals, no
+      text.
+
+  - id: records
+    statements: [moses]
+    aspect: "4:5"
+    refs: [dig]
+    alt: "The same archaeologist, by lamplight, searches walls of carved Egyptian inscriptions and stacks of papyrus, finding nothing."
+    prompt: >-
+      The SAME woman archaeologist as in the reference image (same face,
+      short dark curly hair, light grey work shirt, khaki trousers; sun hat
+      pushed back on her shoulders) stands in the RIGHT HALF of the picture,
+      in an ancient Egyptian stone chamber, holding up an electric lantern to a wall covered floor to
+      ceiling in rows of small carved hieroglyph-like signs, stylised and
+      illegible, with no human figures carved among them. Beside her, a
+      low stack of rolled papyrus scrolls. She runs one finger along the
+      rows, frowning, searching and not finding. The lower left quarter of
+      the picture is plain stone floor with nothing on it. No other people,
+      no animals, no letters of any alphabet, no text.
+
+  - id: crowd
+    statements: [numbers]
+    aspect: "4:5"
+    refs: [court]
+    alt: "In the story: Moses, staff raised, leads a vast crowd out of Egypt, so dense it runs off the picture and cannot be counted."
+    prompt: >-
+      The SAME MOSES as in the reference image (same face, dark beard
+      streaked with grey, rust red robe, light grey headcloth, tall wooden
+      staff) strides forward at the front left, in the lower half of the picture, staff raised high, leading
+      an enormous crowd of people out of Egypt across flat desert ground.
+      Behind him a dense, jostling multitude of men, women and children in
+      plain robes, with bundles on their shoulders, packs the whole middle
+      and right of the picture, overlapping, shrinking into the distance
+      and running out of the picture at the right edge, far too many to
+      count. Far behind, a hint of Egyptian pyramids on the horizon. The
+      whole UPPER HALF of the picture is open pale sky with nothing in it:
+      every figure stands in the lower half, heads below the middle line.
+      No animals, no chariots, no soldiers, no text.
+
+  - id: sea-story
+    statements: [sea]
+    aspect: "4:5"
+    refs: [court, crowd]
+    alt: "In the story: Moses holds up his staff as the people cross a sea on dry ground between two towering walls of water."
+    prompt: >-
+      The SAME MOSES as in the first reference image (same face, dark
+      beard streaked with grey, rust red robe, light grey headcloth, tall
+      wooden staff) stands on a rock at the lower left, holding his staff
+      up over the sea. The sea has split: two towering curling walls of
+      dark water rise on either side of a dry sandy path, and along the
+      path a long line of people in plain robes, like the crowd in the
+      second reference image, walks away from us into the distance between
+      the walls. The upper part of the picture is open pale sky between the
+      walls. No soldiers, no chariots, no animals, no text.
+
+  - id: reeds
+    statements: [sea]
+    aspect: "4:5"
+    refs: [dig]
+    alt: "The same archaeologist stands at the edge of a reedy marsh, holding an open map and looking around, unsure which water this is."
+    prompt: >-
+      The SAME woman archaeologist as in the reference image (same face,
+      short dark curly hair, wide-brimmed sun hat, light grey work shirt,
+      khaki trousers) stands at the lower right on the muddy edge of a wide
+      shallow marsh thick with tall green and amber reeds, holding open a
+      large blank folded map with only faint wavy coastline lines and no
+      writing, and looking out over the reeds with a puzzled, uncertain
+      expression, one hand shading her eyes. The upper left of the picture
+      is calm open water and pale sky. No other people, no boats, no
+      animals, no text.
+
+  - id: stela
+    statements: [merneptah]
+    aspect: "4:3"
+    refs: [dig]
+    alt: "The same archaeologist studies a tall round-topped stone slab carved with rows of small illegible signs, in a quiet museum gallery."
+    prompt: >-
+      The SAME woman archaeologist as in the reference image (same face,
+      short dark curly hair, light grey work shirt, khaki trousers, no
+      hat) stands at the left in a quiet, plain museum gallery, gazing up
+      thoughtfully at a tall upright slab of dark grey granite with a
+      rounded top, much taller than her, standing on a low plinth in the
+      centre-right. The slab is carved all over with many tight horizontal
+      rows of tiny simplified Egyptian hieroglyph-like signs (little birds,
+      feathers, reeds, loops, wavy water lines, seated figures), worn and
+      illegible, none shaped like a Latin letter, numeral or cuneiform
+      wedge, and a small worn carved scene in its rounded top with no
+      recognisable figures. She points gently at
+      one small spot near the bottom of the slab. The bottom left and
+      bottom right corners of the picture are plain floor. No other
+      people, no labels, no letters of any alphabet, no text.
+
+  - id: debate
+    statements: [kernel]
+    aspect: "4:3"
+    refs: [dig]
+    alt: "The same archaeologist and a second scholar disagree across a table of open books: one leans in, hand open, the other shakes her head, arms crossed."
+    prompt: >-
+      The SAME woman archaeologist as in the reference image (same face,
+      short dark curly hair, light grey work shirt, no hat) sits on the
+      left at a plain wooden library table spread with open books and
+      papers covered only in tiny illegible scribble marks. She leans
+      forward, eager, one open hand raised as if saying "there is something
+      to it". Across the table on the right sits a second present-day
+      scholar, an older man with short white hair and glasses, in a rust
+      red sweater, leaning back with arms crossed, shaking his head,
+      unconvinced. The bottom left and bottom right corners of the picture
+      are plain table top. No other people, no maps, no objects other than
+      books and papers, no text.

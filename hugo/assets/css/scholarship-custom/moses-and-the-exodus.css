@@ -1,539 +1,444 @@
 /*
-  Custom block for the Moses and the Exodus Scholarship Page: one time axis in
-  centuries BCE, the dates proposed for the Exodus flagged above it, the one
-  find (the Merneptah Stela) below it inside a frame of "nothing recovered".
-  Composes panel, type-section-title, cloud-section and scholarship-meta.
+  Custom block for the Moses and the Exodus Scholarship Page: a comic page.
+  One ink frame holds the title, six panels and the credit, so the whole
+  thing shares as one image. Panels 1–4 are two generated pictures split
+  down the middle, the story on the left and what scholars report on the
+  right; panels 5 and 6 are single scenes. A narration label sits flush
+  top-left, and the words are plates set on the art in corners the picture
+  leaves clear. Composes cloud-section, type-section-title and
+  scholarship-meta.
 
-  Above the axis is what was proposed, below it what was found; every flag is
-  dashed and the stela solid, so the split reads without colour. Everything
-  on the axis is placed from its year by one formula. BCE counts down, so a
-  year's place is (from - year) / span.
+  Distinctions without colour: story or scholarship is the side and the B or
+  S badge on the plate; a bolt divides opposed halves, a straight gutter
+  with ≈ parallel ones.
 */
-.exodus-when {
-  /* The axis runs from --exodus-from BCE for --exodus-span years. */
-  --exodus-from: 1600;
-  --exodus-span: 550;
-  --exodus-ink: var(--tan-900);
-  /* One flag's width; the stela is a multiple of it. */
-  --exodus-unit: 9cqi;
+.exo-comic {
+  --exo-ink: var(--tan-900);
+  --exo-paper: var(--tan-000);
+  --exo-amber: var(--color-accent);
+  --exo-rust: var(--rust-500);
+  --exo-frame: var(--border-width-md);
 
-  container: exodus-when / inline-size;
+  container: exo-comic / inline-size;
 }
 
-.exodus-defs {
-  block-size: 0;
-  inline-size: 0;
-  position: absolute;
-}
-
-.exodus-when__panel {
+/* The page: one frame around everything that is shared. */
+.exo-comic__page {
+  background: var(--exo-paper);
+  border: var(--exo-frame) solid var(--exo-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--exo-ink);
   display: grid;
   gap: var(--space-s);
   padding: var(--space-s);
 }
 
-/* Headline strip: a question mark in a burst, as the date is a question. */
-.exodus-when__claim {
-  align-items: center;
-  background: var(--exodus-ink);
-  color: var(--color-text-inverse);
-  column-gap: var(--space-xs);
+.exo-comic__head {
   display: grid;
-  font-family: var(--font-family-display);
-  font-size: var(--step-0);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  grid-template-columns: auto minmax(0, 1fr);
-  letter-spacing: var(--letter-spacing-heading);
-  line-height: var(--line-height-tight);
-  padding: var(--space-3xs) var(--space-xs);
-  text-wrap: balance;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
 }
 
-.exodus-when__badge {
-  display: grid;
-  inline-size: var(--space-2xl);
-  margin-block: calc(var(--space-2xs) * -1);
-  place-items: center;
-  rotate: -8deg;
-}
-
-.exodus-when__badge > * {
-  grid-area: 1 / 1;
-}
-
-.exodus-when__badge > svg {
-  aspect-ratio: 1;
-  fill: var(--color-accent);
-  inline-size: 100%;
-  overflow: visible;
-  stroke: var(--exodus-ink);
-  stroke-linejoin: round;
-  stroke-width: 3;
-}
-
-.exodus-when__badge > span {
-  color: var(--exodus-ink);
-  font-size: var(--step-3);
-}
-
-/* Drawn objects. Lengths inside are the drawing's own units. */
-.exodus-flag {
-  aspect-ratio: 50 / 60;
-  font-family: var(--font-family-display);
-  font-size: 17px;
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  inline-size: var(--exodus-unit);
-  overflow: visible;
-  stroke: var(--exodus-ink);
-  stroke-linejoin: round;
-  stroke-width: 3;
-}
-
-.exodus-flag text {
-  fill: var(--exodus-ink);
-  stroke: none;
-  text-anchor: middle;
-}
-
-.exodus-flag__shadow {
-  fill: var(--exodus-ink);
-  stroke: none;
-}
-
-/* A proposal, not a find: the flag's cloth is outlined in dashes. */
-.exodus-flag__cloth {
-  fill: var(--exodus-cloth, var(--tan-000));
-  stroke-dasharray: 5 3;
-}
-
-.exodus-flag__pole {
-  stroke-linecap: round;
-  stroke-width: 4;
-}
-
-.exodus-pin--thirteenth .exodus-flag,
-.exodus-when__item--thirteenth .exodus-flag {
-  --exodus-cloth: var(--color-accent);
-}
-
-.exodus-stela {
-  aspect-ratio: 60 / 80;
-  inline-size: calc(var(--exodus-unit) * 1.3);
-  overflow: visible;
-  stroke: var(--exodus-ink);
-  stroke-linejoin: round;
-  stroke-width: 4;
-}
-
-.exodus-stela__shadow {
-  fill: var(--exodus-ink);
-  stroke: none;
-}
-
-.exodus-stela__stone {
-  fill: var(--tan-200);
-}
-
-.exodus-stela__lunette {
-  fill: var(--tan-000);
-  stroke-width: 3;
-}
-
-.exodus-stela__writing {
-  fill: none;
-  stroke: var(--tan-500);
-  stroke-dasharray: 4 2;
-  stroke-linecap: round;
-  stroke-width: 3;
-}
-
-/* The chart: one inline axis that everything is measured against. */
-.exodus-when__chart {
-  display: grid;
-}
-
-.exodus-when__above {
-  block-size: calc(var(--exodus-unit) * 60 / 50 + var(--space-2xs));
-  position: relative;
-}
-
-.exodus-when__below {
-  min-block-size: calc(var(--exodus-unit) * 1.3 * 80 / 60 + var(--space-s));
-  position: relative;
-}
-
-/* Spans and pins sit at their years. */
-:is(.exodus-span, .exodus-pin, .exodus-when__axis > span) {
-  inset-inline-start: calc(
-    (var(--exodus-from) - var(--year)) / var(--exodus-span) * 100%
-  );
-  position: absolute;
-}
-
-/* A span: a bracket standing on the axis (above) or hanging from it (below). */
-.exodus-span {
-  block-size: var(--space-2xs);
-  border: var(--border-width-md) solid var(--exodus-ink);
-  inline-size: calc(var(--years) / var(--exodus-span) * 100%);
-}
-
-.exodus-when__above .exodus-span {
-  border-block-end: 0;
-  inset-block-end: 0;
-}
-
-.exodus-span--hyksos {
-  --year: 1575;
-  --years: 50;
-}
-
-.exodus-span--bible {
-  --year: 1475;
-  --years: 50;
-}
-
-/* Where scholars often place it: the whole century, dotted in amber. */
-.exodus-span--thirteenth {
-  --year: 1300;
-  --years: 100;
-
-  background: radial-gradient(var(--color-accent) 30%, transparent 34%) 0 0 /
-    6px 6px;
-}
-
-/* The stela's late 13th century: a solid bracket hung from the axis. */
-.exodus-span--stela {
-  --year: 1233;
-  --years: 33;
-
-  border-block-start: 0;
-  inset-block-start: 0;
-}
-
-/* A flag's pole stands on the middle of its span. */
-.exodus-pin {
-  inset-block-end: var(--space-2xs);
-  translate: calc(-8 / 50 * 100%) 0;
-}
-
-.exodus-pin--hyksos {
-  --year: 1550;
-}
-
-.exodus-pin--bible {
-  --year: 1450;
-}
-
-.exodus-pin--thirteenth {
-  --year: 1250;
-}
-
-.exodus-pin--stela {
-  --year: 1216.5;
-
-  inset-block: var(--space-2xs) auto;
-  translate: -50% 0;
-}
-
-/* The axis: a ruler with its centuries written on it, running on to the right. */
-.exodus-when__axis {
-  background: var(--exodus-ink);
-  block-size: var(--space-s);
-  clip-path: polygon(
-    0 0,
-    calc(100% - var(--space-2xs)) 0,
-    100% 50%,
-    calc(100% - var(--space-2xs)) 100%,
-    0 100%
-  );
-  color: var(--color-text-inverse);
-  font-size: var(--step--2);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--space-s);
-  position: relative;
-}
-
-.exodus-when__axis > span {
-  translate: -50% 0;
-}
-
-/* Century boundaries as ticks: five centuries in one tile, stops in tile units. */
-.exodus-when__axis::before {
-  background: repeating-linear-gradient(
-      to right,
-      transparent 0 calc(20% - 2px),
-      var(--tan-500) 0 20%
-    )
-    0 0 / calc(500 / var(--exodus-span) * 100%) 100% no-repeat;
-  content: "";
-  inset: 0;
-  position: absolute;
-}
-
-.exodus-c--16 {
-  --year: 1550;
-}
-
-.exodus-c--15 {
-  --year: 1450;
-}
-
-.exodus-c--14 {
-  --year: 1350;
-}
-
-.exodus-c--13 {
-  --year: 1250;
-}
-
-.exodus-c--12 {
-  --year: 1150;
-}
-
-/* No room before the arrowhead on a phone; the headline says BCE. */
-.exodus-c--bce {
-  --year: 1075;
-
-  display: none;
-}
-
-@container exodus-when (width >= 40rem) {
-  .exodus-c--bce {
-    display: block;
-  }
-}
-
-/* No find relates directly: an empty dashed frame under the whole axis. */
-.exodus-when__silence {
-  --year: 1270;
-
-  border: var(--border-width-sm) dashed var(--exodus-ink);
-  border-block-start: 0;
-  font-size: 3.9cqi;
-  font-weight: var(--font-weight-bold);
-  inset: 0;
-  line-height: var(--line-height-tight);
+.exo-comic__head > p {
   margin: 0;
-  padding: var(--space-xs) var(--space-xs) var(--space-xs)
-    calc(var(--space-3xs) + 1px);
-  padding-inline-end: calc(
-    100% - (var(--exodus-from) - var(--year)) / var(--exodus-span) * 100%
-  );
-  position: absolute;
-  text-wrap: balance;
 }
 
-/* The key: what each flag is, and what the stela is. */
-.exodus-when__key {
-  display: grid;
-  gap: var(--space-xs);
-}
-
-.exodus-when__group {
-  align-content: start;
-  background:
-    linear-gradient(to top right, var(--tan-000) 55%, transparent),
-    radial-gradient(var(--exodus-dots, var(--tan-300)) 24%, transparent 28%) 0
-      0 / 8px 8px,
-    var(--tan-000);
-  border: var(--border-width-md) dashed var(--exodus-ink);
-  display: grid;
-  gap: var(--space-xs);
-  padding: var(--space-s);
-}
-
-.exodus-when__group--found {
-  --exodus-dots: var(--color-accent);
-
-  border-style: solid;
-}
-
-.exodus-when__name {
-  font-family: var(--font-family-display);
-  font-size: var(--step-1);
-  font-style: italic;
+.exo-comic__kicker {
+  font-size: var(--step--1);
   font-weight: var(--font-weight-boldest);
   letter-spacing: var(--letter-spacing-heading);
-  line-height: var(--line-height-tight);
-  margin: 0;
   text-transform: uppercase;
 }
 
-.exodus-when__list {
+/* Title lettering: ink capitals with an amber offset. */
+.exo-comic__title {
+  color: var(--exo-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  max-inline-size: 24ch;
+  text-shadow: 3px 3px 0 var(--exo-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.exo-comic__legend {
+  font-size: var(--step--2);
+  line-height: var(--line-height-tight);
+}
+
+.exo-comic__legend-bolt {
+  color: var(--exo-amber);
+  -webkit-text-stroke: 1px var(--exo-ink);
+}
+
+.exo-comic__key {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  text-wrap: balance;
+}
+
+/* B and S: an ink-edged letter tile in the side's colour. */
+.exo-comic__badge {
+  background: var(--exo-badge);
+  border: 2px solid var(--exo-ink);
+  color: var(--exo-badge-text);
+  display: inline-grid;
+  font-family: var(--font-family-display);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inline-size: 1.6em;
+  line-height: 1.4;
+  place-items: center;
+  vertical-align: 0.05em;
+}
+
+.exo-comic__badge--b {
+  --exo-badge: var(--exo-rust);
+  --exo-badge-text: var(--color-text-inverse);
+}
+
+.exo-comic__badge--s {
+  --exo-badge: var(--exo-amber);
+  --exo-badge-text: var(--exo-ink);
+}
+
+.exo-comic__strip {
   display: grid;
-  gap: var(--space-xs);
+  gap: var(--space-s);
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.exodus-when__item {
-  align-items: center;
-  column-gap: var(--space-xs);
+.exo-comic__frame {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  min-inline-size: 0;
 }
 
-.exodus-when__item > svg {
-  grid-row: span 2;
+/* A panel: one ink frame around the art; its labels sit on the art as shared comic plates (scholarship.css). */
+.exo-comic__figure {
+  border: var(--exo-frame) solid var(--exo-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
 }
 
-.exodus-when__item > strong {
+.exo-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.exo-comic__art img {
+  block-size: 100%;
+  display: block;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.12;
+}
+
+.exo-comic__art--single img {
+  inline-size: 100%;
+  scale: 1.08;
+}
+
+/* Split art: two pictures, each clipped to its side of the divider. */
+.exo-comic__half {
+  inset: 0;
+  position: absolute;
+}
+
+.exo-comic__half img {
+  inline-size: 60%;
+}
+
+.exo-comic__half--right img {
+  margin-inline-start: 40%;
+}
+
+/* On the square poster panel, keep Aaron, at the court picture's left edge, in frame. */
+.scholarship-share:target .exo-comic__frame--court .exo-comic__half--left img {
+  object-position: left;
+}
+
+/* …and keep the crowd dense: the square crop shifts toward the people, not the empty desert. */
+.scholarship-share:target .exo-comic__frame--crowd .exo-comic__half--left img {
+  object-position: 85%;
+}
+
+.exo-comic__art--bolt > .exo-comic__half--left {
+  clip-path: polygon(0 0, 57% 0, 45% 40%, 58% 52%, 43% 100%, 0 100%);
+}
+
+.exo-comic__art--bolt > .exo-comic__half--right {
+  clip-path: polygon(57% 0, 100% 0, 100% 100%, 43% 100%, 58% 52%, 45% 40%);
+}
+
+.exo-comic__art--parallel > .exo-comic__half--left {
+  clip-path: inset(0 50% 0 0);
+}
+
+.exo-comic__art--parallel > .exo-comic__half--right {
+  clip-path: inset(0 0 0 50%);
+}
+
+/* The bolt: a thick ink stroke with an amber core. */
+.exo-comic__bolt {
+  block-size: 100%;
+  fill: none;
+  inline-size: 100%;
+  inset: 0;
+  position: absolute;
+  stroke-linejoin: miter;
+}
+
+.exo-comic__bolt > polyline:first-child {
+  stroke: var(--exo-ink);
+  stroke-width: 12px;
+  vector-effect: non-scaling-stroke;
+}
+
+.exo-comic__bolt > polyline:last-child {
+  stroke: var(--exo-amber);
+  stroke-width: 5px;
+  vector-effect: non-scaling-stroke;
+}
+
+/* The parallel split: a straight ink gutter with an ≈ roundel at its centre. */
+.exo-comic__gutter {
+  background: var(--exo-ink);
+  inline-size: var(--exo-frame);
+  inset: 0 auto 0 calc(50% - var(--exo-frame) / 2);
+  position: absolute;
+}
+
+.exo-comic__vs {
+  aspect-ratio: 1;
+  background: var(--exo-paper);
+  border: 3px solid var(--exo-ink);
+  border-radius: 50%;
+  display: grid;
   font-family: var(--font-family-display);
-  font-size: var(--step-1);
+  font-size: clamp(0.9rem, 5cqi, 1.6rem);
+  font-weight: var(--font-weight-boldest);
+  inline-size: 2.2em;
+  inset: 50% auto auto 50%;
+  line-height: 1;
+  place-items: center;
+  position: absolute;
+  translate: -50% -50%;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.exo-comic__box {
+  background: var(--exo-amber);
+  border-block-end: var(--exo-frame) solid var(--exo-ink);
+  border-inline-end: var(--exo-frame) solid var(--exo-ink);
+  font-family: var(--font-family-display);
+  /* Scales with the panel, so plates below it clear it at phone width too. */
+  font-size: clamp(0.6rem, 3.6cqi, 1rem);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
-  text-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
-}
-
-/* Only the link-preview card shows the cut-down line. */
-.exodus-when__short {
-  display: none;
-}
-
-.exodus-when__item > span {
-  align-self: start;
-  font-size: var(--step--1);
-  line-height: var(--line-height-tight);
-  text-wrap: pretty;
-}
-
-.exodus-when__item > :is(strong, span) {
-  grid-column: 2;
-}
-
-.exodus-when__item > strong {
-  align-self: end;
-}
-
-/* The stela's own caption: a caption box, as a comic's narration. */
-.exodus-when__group--found .exodus-when__item > span {
-  font-weight: var(--font-weight-bold);
-}
-
-.exodus-when__note {
-  background: var(--color-accent-muted);
-  border: var(--border-width-sm) solid var(--exodus-ink);
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--exodus-ink);
-  font-size: var(--step--1);
-  font-weight: var(--font-weight-bold);
-  justify-self: start;
+  margin: 0;
+  max-inline-size: 75%;
   padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
 }
 
-.exodus-when__more {
-  border-block-start: var(--border-width-sm) solid var(--tan-300);
-  padding-block-start: var(--space-xs);
+/* Every top plate sits below the label row; plate type may shrink further on a phone-width panel. */
+.exo-comic__figure .comic-plate--tr {
+  inset-block-start: 10cqi;
 }
 
-/*
-  Wide: a fixed flag size and the two keys side by side. Literal length:
-  container conditions cannot read custom properties.
-*/
-@container exodus-when (width >= 40rem) {
-  .exodus-when__panel {
-    --exodus-unit: var(--space-l);
+.exo-comic__figure .comic-plate__big {
+  font-size: clamp(0.75rem, 5.4cqi, 2.1rem);
+}
 
+.exo-comic__figure .comic-plate__sub {
+  font-size: clamp(0.55rem, 2.5cqi, 0.95rem);
+}
+
+.comic-plate__big > .exo-comic__badge {
+  font-size: 0.6em;
+  margin-inline-end: 0.2em;
+  text-shadow: none;
+  vertical-align: 0.25em;
+}
+
+.comic-plate__sub > .exo-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates. */
+.exo-comic__ref {
+  background: var(--exo-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: 0.95em;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--exo-amber);
+  white-space: nowrap;
+}
+
+.exo-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.exo-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container exo-comic (width >= 40rem) {
+  .exo-comic__page {
     padding: var(--space-m);
   }
 
-  .exodus-when__claim {
-    font-size: var(--step-1);
+  .exo-comic__title {
+    font-size: var(--step-3);
   }
 
-  .exodus-when__axis {
-    font-size: var(--step--1);
-  }
-
-  .exodus-when__silence {
-    font-size: var(--step-0);
-  }
-
-  .exodus-when__key {
-    grid-template-columns: 3fr 2fr;
+  .exo-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* The poster is tall: the picture grows to fill it. */
-.scholarship-share:target .exodus-when__panel {
-  --exodus-unit: calc(var(--space-xl) * 1.5);
+/* The poster: three square panels to a row on the 4:5 canvas. */
 
-  gap: var(--space-m);
-}
-
-.scholarship-share:target .exodus-when__key .exodus-flag {
-  inline-size: var(--space-xl);
-}
-
-.scholarship-share:target .exodus-stela--key {
-  inline-size: calc(var(--space-xl) * 1.5);
-}
-
-.scholarship-share:target .exodus-when__axis {
-  block-size: var(--space-m);
-  font-size: var(--step-0);
-  line-height: var(--space-m);
-}
-
-.scholarship-share:target .exodus-when__silence {
-  font-size: var(--step-1);
-}
-
-.scholarship-share:target .exodus-when__group {
+.scholarship-share:target .exo-comic__page {
+  gap: var(--space-2xs);
   padding: var(--space-xs);
 }
 
-/* The card is seen small: the picture fills it, the keys in one row. */
-.scholarship-share:has(#share-card:target) .exodus-when__panel {
-  --exodus-unit: var(--space-xl);
+.scholarship-share:target .exo-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
 
+.scholarship-share:target .exo-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:target .exo-comic__strip {
   gap: var(--space-2xs);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.scholarship-share:has(#share-card:target) .exodus-when__claim {
-  font-size: var(--step-2);
+/* Square art on the poster: two rows of three fill the 4:5 canvas. */
+.scholarship-share:target .exo-comic__art {
+  aspect-ratio: 1;
 }
 
-.scholarship-share:has(#share-card:target) .exodus-when__axis {
-  block-size: var(--space-m);
-  font-size: var(--step-0);
-  line-height: var(--space-m);
+/* Three to a row makes each panel narrow: smaller labels and plates, and top-right plates drop below the label row. */
+.scholarship-share:target .exo-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
 }
 
-.scholarship-share:has(#share-card:target) .exodus-when__silence {
-  font-size: var(--step-0);
+.scholarship-share:target .exo-comic__figure .comic-plate {
+  max-inline-size: 42%;
+  padding: 0.6cqi 1cqi 0.8cqi;
 }
 
-.scholarship-share:has(#share-card:target) .exodus-when__group {
-  gap: var(--space-3xs);
-  padding: var(--space-2xs) var(--space-xs);
+.scholarship-share:target .exo-comic__figure .comic-plate__big {
+  font-size: 4.6cqi;
 }
 
-.scholarship-share:has(#share-card:target) .exodus-when__name {
-  font-size: var(--step-0);
+.scholarship-share:target .exo-comic__figure .comic-plate__sub {
+  font-size: 2.9cqi;
 }
 
-.scholarship-share:has(#share-card:target) .exodus-when__list {
-  gap: var(--space-3xs);
+.scholarship-share:target .exo-comic__figure .comic-plate--tr {
+  inset-block-start: 9cqi;
 }
 
-.scholarship-share:has(#share-card:target) .exodus-when__item > svg {
-  inline-size: var(--space-l);
+.scholarship-share:target .exo-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
 }
 
-.scholarship-share:has(#share-card:target) .exodus-when__short {
-  display: block;
-  font-weight: var(--font-weight-bold);
+/* The card: panels 3 and 5 side by side under the title. */
+
+.scholarship-share:has(#share-card:target) .exo-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
 }
 
-.scholarship-share:has(#share-card:target) .exodus-when__item > strong {
-  font-size: var(--step-0);
+.scholarship-share:has(#share-card:target)
+  :is(.exo-comic__kicker, .exo-comic__key, .exo-comic__legend) {
+  display: none;
 }
 
-.scholarship-share:has(#share-card:target) .exodus-when__item > span {
-  font-size: var(--step-0);
+.scholarship-share:has(#share-card:target) .exo-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:has(#share-card:target) .exo-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/*
+  Below about 450px panels (a phone, or two columns on a tablet), plates
+  would cover faces in the picture, so they leave the art and sit side by side in a band below it, story on
+  the left, scholarship on the right, as on the art. Literal length:
+  container conditions cannot read custom properties.
+*/
+@container exo-comic (width < 56rem) {
+  .exo-comic__figure figcaption {
+    border-block-start: var(--exo-frame) solid var(--exo-ink);
+    display: grid;
+    gap: var(--space-2xs);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: var(--space-2xs);
+  }
+
+  /* Story plates in the left column, scholarship in the right; a single scene's plate spans both. */
+  .exo-comic__plate--b {
+    grid-column: 1;
+  }
+
+  .exo-comic__plate--s {
+    grid-column: 2;
+  }
+
+  .exo-comic__plate--none {
+    grid-column: 1 / -1;
+  }
+
+  .exo-comic__figure .comic-plate {
+    align-content: start;
+    box-shadow: 2px 2px 0 var(--exo-ink);
+    inset: auto;
+    max-inline-size: none;
+    position: static;
+    text-align: start;
+  }
+
+  .exo-comic__figure .comic-plate__big {
+    font-size: clamp(0.85rem, 5.4cqi, 1.3rem);
+  }
+
+  .exo-comic__figure .comic-plate__sub {
+    font-size: clamp(0.7rem, 3cqi, 0.85rem);
+  }
 }

@@ -1,185 +1,191 @@
 {{- /*
-  Custom block for /scholarship/moses-and-the-exodus/: one time axis, in
-  centuries BCE, with the dates proposed for the Exodus flagged above it and
-  what has been found outside the Bible below it. A view of the page's
-  reviewed statements (`date`, `evidence`, `merneptah`, `moses`); it makes no
-  claim they don't. Reword a line only when the statement it comes from is
-  re-reviewed.
+  Custom block for /scholarship/moses-and-the-exodus/: a six-panel comic page
+  that walks the story in its own order (the birth, the court, the crowd
+  leaving, the sea) and sets what scholars report beside each beat, then
+  ends on what has been found (the Merneptah Stela) and what is still argued
+  (whether any history lies behind it).
 
-  Above the axis is what was proposed, below it what was found: position
-  carries the distinction, and so does the outline (every flag dashed, the
-  stela solid). The flags are identical; the 13th century's is filled and its
-  span dotted because the `date` short says scholars often place it there.
-  Nothing joins that flag to the stela: `merneptah` says the stela does not
-  tell how Israel got to Canaan.
+  A view of the page's reviewed statements `evidence` (headline, panel 3),
+  `sargon` (panel 1), `moses` (panel 2), `numbers` (panel 3), `sea` (panel
+  4), `merneptah` (panel 5) and `kernel` (panel 6); it makes no claim they
+  don't. Panels 2–4 are split by a lightning bolt with the B and S badges:
+  the left half is the story as Exodus tells it, the right half what
+  scholars report. Panel 1 is split by a plain gutter with an ≈ roundel,
+  because `sargon` says the two birth stories are parallel, not opposed.
 
-  Spans are centuries, not years: "mid-16th" and "mid-15th" are the `date`
-  text's proposals drawn as the middle of their century, "13th" its short,
-  "late 13th" the `merneptah` short drawn as the century's last third.
-
-  Sources, line by line:
-  - headline: `date` short. Burst "?": `date` short's "if it happened".
-  - Mid-16th, Hyksos, Josephus: `date` text (cite 3).
-  - Mid-15th, the Bible's own chronology: `date` text (cite 2).
-  - 13th, often placed here if it happened: `date` short (cites 5, 6).
-  - Nothing recovered relates directly: `evidence` short (cites 1, 3, 4).
-  - Stela, earliest mention, a people, suggests in Canaan, silent on an exodus:
-  `merneptah` short and text (cites 1, 2, 4, 5).
-  - No text found in Egypt mentions Moses: `moses` short.
+  The art is generated with Gemini from
+  data/scholarship-illustrations/moses-and-the-exodus.yaml. The crowd in
+  panel 3 is too dense to count; its number is on the plate. Nothing found
+  is drawn as a find. Only Exodus 12:37 gets a scripture tag: it is the one
+  verse a drawn statement names. Reword a plate only when the statement it
+  comes from is re-reviewed.
   */
 -}}
-{{- $proposals := slice
+{{- define "partials/inline/exo-ref.html" -}}
+  <a
+    class="exo-comic__ref"
+    href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .ref) | safeURL }}"
+    rel="noopener"
+    >{{ replace .label " " "&nbsp;" | safeHTML }}</a
+  >
+{{- end -}}
+{{- define "partials/inline/exo-img.html" -}}
+  {{- $img := resources.Get (printf "scholarship-art/moses-and-the-exodus/%s.png" .id) }}
+  {{- with $img }}
+    {{- $webp := .Process "resize 1200x webp q78" }}
+    <img
+      src="{{ $webp.RelPermalink }}"
+      width="{{ $webp.Width }}"
+      height="{{ $webp.Height }}"
+      alt="{{ $.alt }}"
+      loading="eager" />
+  {{- end }}
+{{- end -}}
+{{- $panels := slice
   (dict
-  "key" "hyksos"
-  "when" "Mid-16th c."
-  "text" "When Egypt expelled its Hyksos rulers: a theory going back to Josephus."
-  "card" "Hyksos expelled: Josephus’s theory")
+  "id" "birth" "box" "A baby in a basket" "split" "parallel"
+  "left" (dict "id" "basket-moses" "alt" "In the story: a baby lies in a small basket sealed with tar, floating among the reeds of an Egyptian river.")
+  "right" (dict "id" "basket-sargon" "alt" "The same kind of tarred basket with a baby drifts on a broad Mesopotamian river, a stepped temple tower on the far bank.")
+  "plates" (slice
+  (dict "pos" "tl" "badge" "b" "big" "Moses" "sub" "set in the river in a basket")
+  (dict "pos" "tr" "badge" "s" "big" "Sargon of Akkad" "sub" "c. 2300 BCE: also in a basket lined with tar, put in the river")))
   (dict
-  "key" "bible"
-  "when" "Mid-15th c."
-  "text" "The Bible’s own chronology."
-  "card" "The Bible’s own chronology")
+  "id" "court" "box" "In Egypt’s records?" "split" "bolt"
+  "left" (dict "id" "court" "alt" "In the story: Moses, with a staff, and Aaron stand before a pharaoh on his throne.")
+  "right" (dict "id" "records" "alt" "A present-day archaeologist searches a wall of carved Egyptian inscriptions by lantern light, frowning.")
+  "plates" (slice
+  (dict "pos" "bl" "badge" "b" "big" "Moses and Aaron" "sub" "before Pharaoh")
+  (dict "pos" "tr" "badge" "s" "big" "No mention" "sub" "no text found in Egypt names Moses or Aaron")))
   (dict
-  "key" "thirteenth"
-  "when" "13th c."
-  "text" "Where scholars often place it, if it happened."
-  "card" "Often placed here, if it happened")
+  "id" "crowd" "box" "How many leave?" "split" "bolt"
+  "left" (dict "id" "crowd" "alt" "In the story: Moses, staff raised, leads a crowd out of Egypt so dense it runs off the picture.")
+  "right" (dict "id" "dig" "alt" "The same archaeologist kneels by an empty trench in the desert; her sieve holds only sand.")
+  "plates" (slice
+  (dict "pos" "tl" "badge" "b" "big" "600,000 men" "sub" "leaving Egypt" "ref" "Exodus 12:37" "label" "Exod 12:37")
+  (dict "pos" "tr" "badge" "s" "big" "No trace" "sub" "of a large-scale migration through Sinai")
+  (dict "pos" "br" "badge" "s" "big" "Inflated" "sub" "or schematic: the count, in the sources read")))
+  (dict
+  "id" "sea" "box" "Which sea?" "split" "bolt"
+  "left" (dict "id" "sea-story" "alt" "In the story: Moses holds up his staff as the people cross between two towering walls of water.")
+  "right" (dict "id" "reeds" "alt" "The same archaeologist stands at the edge of a reedy marsh with an open map, unsure which water this is.")
+  "plates" (slice
+  (dict "pos" "tl" "badge" "b" "big" "The Red Sea" "sub" "as English Bibles often call it")
+  (dict "pos" "tr" "badge" "s" "big" "Sea of Reeds" "sub" "yam suph, literally; which sea is meant is uncertain")))
+  (dict
+  "id" "stela" "box" "Earliest mention outside the Bible"
+  "art" (dict "id" "stela" "alt" "The same archaeologist studies a tall round-topped stone slab carved with rows of Egyptian signs, pointing at one line.")
+  "plates" (slice
+  (dict "pos" "br" "big" "Israel" "sub" "named as a people on Pharaoh Merneptah’s stela, late 13th c. BCE. Silent on whether they came by an exodus.")))
+  (dict
+  "id" "debate" "box" "Did some exodus happen?"
+  "art" (dict "id" "debate" "alt" "The archaeologist leans in, hand open, arguing; across the table a second scholar shakes his head, arms crossed.")
+  "plates" (slice
+  (dict "pos" "br" "big" "Contested" "sub" "the sources read differ on whether any history lies behind it")))
 -}}
-<section class="cloud-section exodus-when">
+<section class="cloud-section exo-comic">
   <h2
     class="type-section-title cloud-section__title"
     id="at-a-glance"
     data-share-hide>
     At a glance
   </h2>
-  {{/* Drawn once and reused: the proposal flag, the stela, the burst. */}}
-  <svg class="exodus-defs" aria-hidden="true" focusable="false">
-    <defs>
-      <g id="exodus-flag">
-        <path class="exodus-flag__shadow" d="M11 8h36l-8 11l8 11h-36z" />
-        <path class="exodus-flag__cloth" d="M8 5h36l-8 11l8 11h-36z" />
-        <path class="exodus-flag__pole" d="M8 3v55" />
-      </g>
-      {{/* The Merneptah Stela: a round-topped slab with its lines of text. */}}
-      <g id="exodus-stela">
-        <path class="exodus-stela__shadow" d="M15 78V30a21 21 0 0 1 42 0v48z" />
-        <path class="exodus-stela__stone" d="M9 74V26a21 21 0 0 1 42 0v48z" />
-        <path class="exodus-stela__lunette" d="M15 29a15 15 0 0 1 30 0z" />
-        <path
-          class="exodus-stela__writing"
-          d="M16 37h28M16 44h28M16 51h28M16 58h28M16 65h18" />
-      </g>
-      <path
-        id="exodus-burst"
-        d="M50.0 1.0L58.7 12.0L71.3 5.9L74.3 19.5L88.3 19.4L85.1 33.1L97.8 39.1L89.0 50.0L97.8 60.9L85.1 66.9L88.3 80.6L74.3 80.5L71.3 94.1L58.7 88.0L50.0 99.0L41.3 88.0L28.7 94.1L25.7 80.5L11.7 80.6L14.9 66.9L2.2 60.9L11.0 50.0L2.2 39.1L14.9 33.1L11.7 19.4L25.7 19.5L28.7 5.9L41.3 12.0z" />
-    </defs>
-  </svg>
-  <div class="exodus-when__panel panel">
-    <p class="exodus-when__claim">
-      <span class="exodus-when__badge">
-        <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-          <use href="#exodus-burst" />
-        </svg>
-        <span>?</span>
-      </span>
-      <span
-        >If it happened, scholars often place the Exodus in the 13th century
-        BCE</span
-      >
-    </p>
-    {{/* The drawing is hidden from assistive tech; the silence line is not. */}}
-    <div class="exodus-when__chart">
-      {{/* Above the axis: when it has been proposed. */}}
-      <div class="exodus-when__above" aria-hidden="true">
-        {{- range $index, $p := $proposals }}
-          <span class="exodus-span exodus-span--{{ $p.key }}"></span>
-          <span class="exodus-pin exodus-pin--{{ $p.key }}">
-            <svg class="exodus-flag" viewBox="0 0 50 60" focusable="false">
-              <use href="#exodus-flag" />
-              <text x="24" y="22">{{ add $index 1 }}</text>
-            </svg>
-          </span>
-        {{- end }}
-      </div>
-      <div class="exodus-when__axis" aria-hidden="true">
-        <span class="exodus-c--16">16th</span>
-        <span class="exodus-c--15">15th</span>
-        <span class="exodus-c--14">14th</span>
-        <span class="exodus-c--13">13th</span>
-        <span class="exodus-c--12">12th</span>
-        <span class="exodus-c--bce">BCE</span>
-      </div>
-      {{/* Below the axis: what has been found. */}}
-      <div class="exodus-when__below">
-        <p class="exodus-when__silence">
-          Nothing recovered relates directly to the Exodus
-        </p>
-        <span class="exodus-span exodus-span--stela" aria-hidden="true"></span>
-        <svg
-          class="exodus-stela exodus-pin exodus-pin--stela"
-          viewBox="0 0 60 80"
-          aria-hidden="true"
-          focusable="false">
-          <use href="#exodus-stela" />
-        </svg>
-      </div>
-    </div>
-    <div class="exodus-when__key">
-      <section class="exodus-when__group">
-        <h3 class="exodus-when__name">Dates proposed</h3>
-        <ol class="exodus-when__list">
-          {{- range $index, $p := $proposals }}
-            <li class="exodus-when__item exodus-when__item--{{ $p.key }}">
-              <svg
-                class="exodus-flag exodus-flag--key"
-                viewBox="0 0 50 60"
-                aria-hidden="true"
-                focusable="false">
-                <use href="#exodus-flag" />
-                <text x="24" y="22">{{ add $index 1 }}</text>
-              </svg>
-              <strong>{{ $p.when }}</strong>
-              <span class="exodus-when__text" data-card-hide
-                >{{ $p.text }}</span
-              >
-              {{/* The same line cut to a glance, for the link-preview card only. */}}
-              <span class="exodus-when__short">{{ $p.card }}</span>
-            </li>
-          {{- end }}
-        </ol>
-      </section>
-      <section class="exodus-when__group exodus-when__group--found">
-        <h3 class="exodus-when__name">Found outside the Bible</h3>
-        <div class="exodus-when__item">
-          <svg
-            class="exodus-stela exodus-stela--key"
-            viewBox="0 0 60 80"
-            aria-hidden="true"
-            focusable="false">
-            <use href="#exodus-stela" />
-          </svg>
-          <strong>Late 13th c.</strong>
-          <span class="exodus-when__text" data-card-hide
-            >The Merneptah Stela, the earliest mention of Israel outside the
-            Bible, names Israel as a people and suggests they were in Canaan. It
-            does not say whether they arrived there after an exodus.</span
-          >
-          <span class="exodus-when__short"
-            >Merneptah Stela: suggests Israel was in Canaan. Silent on whether
-            they came by an exodus.</span
-          >
-        </div>
-        <p class="exodus-when__note" data-card-hide>
-          No text found in Egypt mentions Moses.
-        </p>
-      </section>
-    </div>
-    <p class="exodus-when__more scholarship-meta" data-share-hide>
-      Every line here comes from the cited answers below:
-      <a href="#date">when it might have happened</a>,
-      <a href="#evidence">the evidence outside the Bible</a>,
-      <a href="#merneptah">the Merneptah Stela</a> and
-      <a href="#moses">Egyptian records of Moses</a>.
+  <div class="exo-comic__page">
+    <header class="exo-comic__head">
+      <p class="exo-comic__kicker">
+        Exodus · after more than a century of research
+      </p>
+      <p class="exo-comic__title">
+        Nothing recovered relates directly to the&nbsp;Exodus
+      </p>
+      <p class="exo-comic__key">
+        <span class="exo-comic__badge exo-comic__badge--b">B</span> the story,
+        as Exodus tells it ·
+        <span class="exo-comic__badge exo-comic__badge--s">S</span> what
+        scholars report
+      </p>
+      <p class="exo-comic__legend">
+        <span class="exo-comic__legend-bolt" aria-hidden="true">⚡</span>
+        splits the story from the scholarship; ≈, a parallel story.
+      </p>
+    </header>
+    <ol class="exo-comic__strip">
+      {{- range $panels }}
+        <li
+          class="exo-comic__frame exo-comic__frame--{{ .id }}"
+          {{ if not (in (slice "crowd" "stela") .id) }}data-card-hide{{ end }}>
+          <figure class="exo-comic__figure">
+            {{- if .split }}
+              <div class="exo-comic__art exo-comic__art--{{ .split }}">
+                <div class="exo-comic__half exo-comic__half--left">
+                  {{ partial "inline/exo-img.html" .left }}
+                </div>
+                <div class="exo-comic__half exo-comic__half--right">
+                  {{ partial "inline/exo-img.html" .right }}
+                </div>
+                {{- if eq .split "bolt" }}
+                  {{/* A lightning bolt: the story on one side, the scholarship on the other. */}}
+                  <svg
+                    class="exo-comic__bolt"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                    focusable="false">
+                    <polyline points="57,0 45,40 58,52 43,100" />
+                    <polyline points="57,0 45,40 58,52 43,100" />
+                  </svg>
+                {{- else }}
+                  {{/* A plain gutter: two stories the page calls parallel. */}}
+                  <span class="exo-comic__gutter" aria-hidden="true">
+                    <span class="exo-comic__vs">≈</span>
+                  </span>
+                {{- end }}
+              </div>
+            {{- else }}
+              <div class="exo-comic__art exo-comic__art--single">
+                {{ partial "inline/exo-img.html" .art }}
+              </div>
+            {{- end }}
+            <h3 class="exo-comic__box">{{ .box }}</h3>
+            {{/* The labels sit on the art, in corners the picture leaves clear. */}}
+            <figcaption>
+              {{- range .plates }}
+                <p
+                  class="comic-plate comic-plate--{{ .pos }} exo-comic__plate--{{ or .badge "none" }}">
+                  <span class="comic-plate__big">
+                    {{- with .badge }}
+                      <span
+                        class="exo-comic__badge exo-comic__badge--{{ . }}"
+                        title="{{ cond (eq . "b") "The story, as Exodus tells it" "What scholars report" }}"
+                        >{{ upper . }}</span
+                      >
+                    {{- end }}
+                    {{ .big }}
+                  </span>
+                  <span class="comic-plate__sub">
+                    {{- .sub }}
+                    {{ if .ref }}
+                      {{- partial "inline/exo-ref.html" (dict "ref" .ref "label" .label) -}}
+                    {{ end }}
+                  </span>
+                </p>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="exo-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
     </p>
   </div>
+  <p class="exo-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#evidence">the evidence outside the Bible</a>,
+    <a href="#sargon">Moses’s birth story</a>,
+    <a href="#moses">Egyptian records of Moses</a>,
+    <a href="#numbers">the 600,000</a>, <a href="#sea">the sea</a>,
+    <a href="#merneptah">the Merneptah Stela</a> and
+    <a href="#kernel">whether some exodus happened</a>.
+  </p>
 </section>
