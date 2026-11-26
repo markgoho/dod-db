@@ -11,7 +11,7 @@ critical:
   from: -700
   to: -401
   precision: century
-  note: "Hard to date: the text has no specific historical references. Scholars have proposed dates from the tenth to the third century BCE, and for many an exilic date is most reasonable; one source puts it probably no earlier than the sixth century, another in the early postexilic period. The prose frame was probably an older folktale."
+  note: "Hard to date: the text has no specific historical references. Scholars have proposed dates from the tenth to the third century BCE, and for many an exilic date is most reasonable; one source puts it probably no earlier than the sixth century, another says evidence from historical linguistics suggests the early postexilic period. The prose frame was probably an older folktale."
   cites:
     - source: nabre-job-intro
       locator: "Introduction, ¶ 3"
@@ -34,7 +34,7 @@ critical:
       quote: "Now the prose framework concerning a scrupulously righteous man named Job, afflicted by horrendous calamity, was probably a standard Ancient Near Eastern folktale of great antiquity."
       read: 2026-11-26
 setting:
-  display: "a world described in patriarchal terms, in the land of Uz, outside Israel"
+  display: "a world described in terms that evoke a patriarchal setting, in the land of Uz, outside Israel"
   cites:
     - source: newsom-eor-2005-job
       locator: "opening paragraph"
@@ -49,10 +49,10 @@ setting:
       quote: "Job is not an Israelite but is a Gentile from “the land of Uz,” perhaps a place in Edom."
       read: 2026-11-26
 tradition:
-  display: "2nd millennium BCE"
+  display: "Presumably 2nd millennium BCE"
   from: -2000
   to: -1001
-  holder: "Creation Ministries International, a group of non-denominational ministries"
+  holder: "Creation Ministries International, a group of non-profit ministries"
   cites:
     - source: cmi-paul-2010-behemoth
       locator: "opening paragraph"

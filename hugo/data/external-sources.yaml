@@ -2898,20 +2898,6 @@ nabre-job-intro:
   hostAuthored: false
   tradition: null
 
-coogan-brief-4e-summary-ch24:
-  author: "Michael D. Coogan and Cynthia R. Chapman"
-  title: "Student chapter 24 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
-  series: "OUP Learning Link"
-  publisher: "Oxford University Press"
-  year: 2019
-  edition: "4th ed."
-  class: Reference
-  kind: publisher-summary
-  access: "Publisher companion page, open"
-  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-24-summary"
-  hostAuthored: false
-  tradition: null
-
 hayes-rlst145-l20:
   author: "Christine Hayes"
   title: "Introduction to the Old Testament (Hebrew Bible), lecture 20 transcript"
@@ -2966,7 +2952,8 @@ cmi-paul-2010-behemoth:
   access: "Ministry website, open"
   url: "https://creation.com/en/articles/behemoth-and-leviathan"
   hostAuthored: false
-  tradition: "Creation Ministries International, a group of non-denominational ministries"
+  tradition: "Creation Ministries International, a group of non-profit ministries"
+
 brakke-htr-2010-festal-39:
   author: "David Brakke"
   title: "A New Fragment of Athanasius's Thirty-Ninth Festal Letter: Heresy, Apocrypha, and the Canon"
