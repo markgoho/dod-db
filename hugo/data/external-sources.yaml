@@ -3219,3 +3219,59 @@ rollston-bo-siloam:
   url: "https://www.bibleodyssey.org/articles/the-siloam-inscription-and-hezekiahs-tunnel/"
   hostAuthored: false
   tradition: null
+
+coogan-brief-4e-summary-ch21:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 21 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-21-summary"
+  hostAuthored: false
+  tradition: null
+
+dandamayev-iranica-babylonia-i:
+  author: "Muhammad A. Dandamayev"
+  title: "Babylonia i. History of Babylonia in the Median and Achaemenid Periods"
+  series: "Encyclopaedia Iranica, Vol. III, Fasc. 3, pp. 326–334"
+  publisher: "Encyclopaedia Iranica Foundation"
+  year: 1988
+  edition: "online, last updated March 22, 2013"
+  class: Reference
+  kind: article
+  access: "Encyclopaedia Iranica website, open"
+  url: "https://www.iranicaonline.org/articles/babylonia-i"
+  hostAuthored: false
+  tradition: null
+
+dandamayev-iranica-cyrus-ii:
+  author: "Muhammad A. Dandamayev"
+  title: "Cyrus iii. Cyrus II the Great"
+  series: "Encyclopaedia Iranica, Vol. VI, Fasc. 5, pp. 516–521"
+  publisher: "Encyclopaedia Iranica Foundation"
+  year: 1993
+  edition: "online, last updated August 29, 2013"
+  class: Reference
+  kind: article
+  access: "Encyclopaedia Iranica website, open"
+  url: "https://www.iranicaonline.org/articles/cyrus-iii/"
+  hostAuthored: false
+  tradition: null
+
+waerzeggers-2021-day-before-cyrus:
+  author: "Caroline Waerzeggers"
+  title: "The Day Before Cyrus Entered Babylon"
+  series: "In U. Gabbay and S. Gordin (eds.), Studies in Ancient Near Eastern Records 27, pp. 79–88, doi:10.1515/9781501514661-002"
+  publisher: "De Gruyter"
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher's version, open in the Leiden University repository"
+  url: "https://hdl.handle.net/1887/3281359"
+  hostAuthored: false
+  tradition: null
