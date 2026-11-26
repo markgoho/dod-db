@@ -3317,3 +3317,45 @@ austin-2006-hellenistic-world:
   url: "https://assets.cambridge.org/052182/8600/excerpt/0521828600_excerpt.htm"
   hostAuthored: false
   tradition: null
+
+avi-yonah-ej-temple:
+  author: "Michael Avi-Yonah"
+  title: "Temple: Second Temple, From the Roman Conquest until the Destruction"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/temple"
+  hostAuthored: false
+  tradition: null
+
+britannica-siege-of-jerusalem-70:
+  author: "Kate Lohnes"
+  title: "Siege of Jerusalem"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/event/Siege-of-Jerusalem-70"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l4:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 4 transcript: Judaism in the First Century"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-4"
+  hostAuthored: false
+  tradition: null

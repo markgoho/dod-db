@@ -1,0 +1,136 @@
+# Review record for the Timeline Entry `temple-destruction` (/timeline/#temple-destruction; #93 shape). Not rendered.
+# Issue #194 (from #108). Issue notes: critical as stated “Jewish War 66–70 CE; Temple destroyed summer 70 CE”; sides: critical only; check the minimap (#175) after it lands (not the first CE entry: christian-canon, 367 CE, is already placed). No anchor/seeAlso: second-temple (515 BCE) is the completion, a different event, and is left unchanged.
+# Sourcing test, 2026-11-26: met. Every in-class source read dates the destruction to 70 CE outright (Britannica “Temple of Jerusalem” and “Siege of Jerusalem”, Avi-Yonah EJ, Martin RLST 152 l4, Bible Odyssey Second Temple timeline; also Ehrman ch. 3 summary, Henze–Werline chronology, Stern EJ, Rogers BO). Display “70 CE”, worded for the destruction (title “Second Temple destroyed”, parallel to “Second Temple completed”). Month and day go in the note only, as sources give them: August 70 (Britannica Siege), 9th/10th of Av (Britannica Temple), tenth by Josephus / ninth by the Talmud (Avi-Yonah). The war's start (66) in the note, cited to Britannica Temple.
+# Dropped: the Jewish War as a span. Every source starts it in 66, but sources end it differently: 70 (Henze chronology “66–70 Jewish revolt against Rome”; Britannica Siege “four-year campaign”; Stern “in effect terminated the war”), 73 (Britannica Masada, Stern, BO timeline “66-73 C.E.”), 73/74 (Stiebel EJ Masada, Henze chronology), 74 (Martin l4 “by most people to 74”, Seeman in Henze “66–74 CE”, Rogers BO “66–74 CE”). The issue's “66–70” is one of these; no war span is shown, and the end-year split is left for a possible Masada entry (lead).
+# The show's “summer of 70 CE” (E143) is not in any source's words (sources say August or Av); shown verbatim (#99). E96 and E119 say “around 70 CE”.
+# Trigger Claims kept (3, #99): E143 00:23:32, E119 00:05:42, E96 00:30:12. All states: critical. No Tradition Date: no Trigger Claim states a tradition's side; the preterist passages (E32 00:06:08, E39, E119) describe a reading of prophecy that uses the same 70 CE, not a tradition's date for the event.
+# Dropped Trigger Claim leads: E32 00:06:08 (“culminated with the destruction of the Temple in 70 CE”, inside a description of preterism); E39 (preterist framing of Revelation's date); E43, E123, E172, E185 (no date for the event, or dating a text); E45 00:24:18 (Kipp Davis, “the theory is”, about the Essenes and Qumran) and 00:26:14 (68–70 is the scrolls' cut-off); E69 (Luke's date); E86 (“the Jewish War” is Josephus's book, c. 75 CE); E115 00:56:44 (“lasted until 70 CE”, Zerubbabel's temple); E140 (no hit); E165 (“over around 70 CE”, hedged aside); E187 00:55:30 (“68 to 70 CE”, end of the Second Temple period); E189 (dates Mark 65–70).
+# Hedges dropped by trimming: E143 keeps “I think most scholars would say”, drops the opening “Uh, no, probably 40. So it is— yeah,” (answer about Mark's date); E119 drops the turn's opening sentence about the Olivet Discourse; E96 drops the Pharisees definition before it.
+# agent: the first pass (2026-11-26). One critical-side research agent saved every page to its own scratch folder; quotes script-matched against the saved copies (whitespace, quotes, dashes, entities, soft hyphens normalised): 5 hits, 0 misses. Britannica pages refuse scripted requests; captured as page text via Claude in Chrome. Trigger Claims matched by script as substrings of their Transcript lines at timestamp and speaker: 3 hits.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) The note's “By August 70 the Romans had breached Jerusalem's final defenses” paraphrases Britannica Siege (“the final defenses”); check it says no more. (2) Day of Av: Britannica gives “9th/10th”, Avi-Yonah attributes tenth to Josephus and ninth to the Talmud; the note follows Avi-Yonah's attribution. Is a one-day split worth the note at all? (3) Martin l4's quote is a trimmed sentence (substring); check the trim keeps its sense. (4) Avi-Yonah's subsection is on the same Encyclopedia.com page as porten-ej-temple; signature “[Michael Avi-Yonah]” closes it; new id so the two authors stay apart. (5) Britannica Siege byline: Kate Lohnes; check the registry author.
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Temple of Jerusalem”, body paragraph beginning “The Herodian Temple was again the centre”. 66 start and 9th/10th of Av, 70 CE. Backs the display and the note's 66. Read in a browser (curl 403). Same source as second-temple critical/3.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Avi-Yonah, EJ “Temple”, Second Temple, “From the Roman Conquest until the Destruction”, last paragraph; subsection signed [Michael Avi-Yonah]. Tenth of Av per Josephus, ninth per the Talmud, 70 c.e. Backs the note's Av attribution.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Siege of Jerusalem”, section “The fall of Jerusalem”, ¶ 2. Backs the note's August 70. Read in a browser.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin, RLST 152 lecture 4 transcript, ch. 4 [00:36:40], ¶ 5 (counting paragraphs under the chapter heading). Opening clause of a long sentence; the rest is about early Christianity before and after 70.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bible Odyssey Second Temple Judaism timeline, gallery introduction. Same source as alexander critical/3.",
+    }
+triggers:
+  143@00:23:32:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Answering when Mark was written; the destruction date is given in passing (“summer of 70 CE”). Sources give August / Av; shown verbatim (#99). 00:21:39–00:25:12 read.",
+    }
+  119@00:05:42:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Second sentence of the turn: what the Olivet Discourse describes sounds like the events of about 70 CE. The speaker's own voice, before the preterism explanation. 00:03:42–00:07:40 read.",
+    }
+  96@00:30:12:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Middle of the turn, on the Pharisees becoming Rabbinic Judaism “once the temple is destroyed around 70 CE”. 00:28:39–00:31:25 read.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Worded for the destruction, which every source dates outright to 70 CE. The war as a span is not shown (sources split on its end year); its start is in the note only.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "No split on the year among cited sources: all give 70. Day of Av differs by source and is attributed in the note (Avi-Yonah). The war's end year splits (70/73/73-74/74) but is not dated here.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; no trigger has states: tradition or both.",
+    }
+  tradition-named:
+    { agent: pass, owner: "", note: "No Tradition sources cited." }
+  conditional-not-critical:
+    { agent: pass, owner: "", note: "No conditional date." }
+sources:
+  britannica-temple-of-jerusalem:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Online, “most recently revised and updated by Adam Zeidan”",
+      note: "Reference (encyclopedia). Already in the registry (second-temple).",
+    }
+  avi-yonah-ej-temple:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Encyclopaedia Judaica as reproduced on Encyclopedia.com; subsection signed [Michael Avi-Yonah]",
+      note: "Reference (encyclopedia), like porten-ej-temple (same page, different signed subsection). Page prints no EJ edition or year.",
+    }
+  britannica-siege-of-jerusalem-70:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Online",
+      note: "Reference (encyclopedia). Byline Kate Lohnes.",
+    }
+  martin-rlst152-l4:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale Courses (registry year 2009; no edition printed)",
+      note: "Reference (university courseware), like martin-rlst152-l2.",
+    }
+  bo-timeline-second-temple-judaism:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Gallery page modified February 2, 2024",
+      note: "Reference (SBL). Already in the registry (alexander).",
+    }
+leads:
+  - "Britannica “First Jewish Revolt” article (linked from the Siege page's Quick Facts): not opened; guessed URLs 404."
+  - "EJ “Zealots” on Encyclopedia.com: said by a search summary to give both 73 and 74 for Masada; not read."
+  - "Goodman, Rome and Jerusalem (2008); Rogers, For the Freedom of Zion: The Great Revolt of Jews against Romans, 66–74 CE (Yale 2022); Schwartz and Weiss (eds.), Was 70 CE a Watershed in Jewish History? (Brill 2011); Isaac 1984 (cited by Seeman for the 74 end point): bibliography pointers, not read."
+uncited:
+  - "Ehrman, Brief Intro NT 5e ch. 3 summary: “The Pharisees held very little political power until after the Jewish revolt against Rome that culminated in the destruction of the Temple in 70 CE.” Read; not cited: agrees; five sources already carry the year."
+  - "Henze and Werline (eds.), Early Judaism and Its Modern Interpreters (2020), Chronology p. xii: “66–70 Jewish revolt against Rome”, “70 Jerusalem temple destroyed by Titus”, “73/74 Masada falls to Romans”. Read; not cited: agrees on 70; its 66–70 revolt span conflicts with Seeman's 66–74 in the same book (war span not shown)."
+  - "Seeman, ch. 1 in Henze and Werline, p. 35: “the rebellion of 66–74 CE”. Read; not cited: war span not shown."
+  - "Rogers, Bible Odyssey “The Jewish Revolts Against Rome”: “the Great Revolt (66–74 CE)”; “It took the Romans more than four months to breach Jerusalem’s three walls”. Read; not cited: no year for the destruction itself in the quoted sentence; war span not shown."
+  - "Stern, EJ “History: Ereẓ Israel – Second Temple”: “The great revolt which broke out in 66 c.e.”; Jerusalem taken, Temple burnt, “in effect terminated the war”; Masada “(73)”. Read; not cited: war span not shown; Britannica Temple carries 66."
+  - "Stiebel, EJ “Masada”: “the Jewish War against Rome (66–73/74 c.e.)”. Read; not cited: Masada, a different event."
+  - "Britannica “Masada”: “(April 15, 73 CE)”. Read; not cited: Masada, a different event."
+  - "Britannica “Siege of Jerusalem” intro: “The fall of the city marked the effective conclusion of a four-year campaign against the Jewish insurgency in Judaea.” and “culminated in 66 CE in the First Jewish Revolt”; “In April 70 CE, about the time of Passover, the Roman general Titus besieged Jerusalem.” Read; not cited: siege start not shown; 66 carried by Britannica Temple."
+  - "Bible Odyssey timeline story “Destruction of the Second Temple”: date label “August, 70 C.E.”; text “on the ninth day of the month of Av”. Read; not cited: year only in a date label; gallery intro cited instead."
+  - "Martin l4 ¶ 5: the Romans “had surrounded Jerusalem for a full two years”; ¶ 6: “The end of the Jewish war is dated by most people to 74”. Read; not cited: siege length conflicts with Britannica/Rogers; war end not shown."
+  - "Martin l24 and l6: 70 CE in passing. Read; not cited: l4 is the fuller statement."
