@@ -1,9 +1,9 @@
 ---
 title: "Revelation"
 entryKind: composition
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-26
 related: { books: [revelation], tags: [domitian, nero], topics: [preterism] }
 watch:
   [
