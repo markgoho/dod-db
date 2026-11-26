@@ -9,114 +9,132 @@
 # agent: the first pass (2026-11-26). One critical-side research agent saved every page to its own scratch folder; quotes script-matched against the saved copies (whitespace, quotes, dashes, entities, soft hyphens normalised): 5 hits, 0 misses. Britannica pages refuse scripted requests; captured as page text via Claude in Chrome. Trigger Claims matched by script as substrings of their Transcript lines at timestamp and speaker: 3 hits.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) The note's “By August 70 the Romans had breached Jerusalem's final defenses” paraphrases Britannica Siege (“the final defenses”); check it says no more. (2) Day of Av: Britannica gives “9th/10th”, Avi-Yonah attributes tenth to Josephus and ninth to the Talmud; the note follows Avi-Yonah's attribution. Is a one-day split worth the note at all? (3) Martin l4's quote is a trimmed sentence (substring); check the trim keeps its sense. (4) Avi-Yonah's subsection is on the same Encyclopedia.com page as porten-ej-temple; signature “[Michael Avi-Yonah]” closes it; new id so the two authors stay apart. (5) Britannica Siege byline: Kate Lohnes; check the registry author.
+# Independent second agent pass 2026-11-26 (#93 delegation, #110): all five sources re-fetched from their registry URLs into a fresh folder (Avi-Yonah EJ, Martin l4 and Bible Odyssey by curl; both Britannica pages through Claude in Chrome, located paragraph text saved and the quote also checked in the live page by a normalised includes test). All five quotes re-matched by script against the saved copies, read from the entry file (whitespace, quotes, dashes, entities, soft hyphens normalised): 5 hits, 0 misses, each at its locator (Britannica Temple paragraph opening “The Herodian Temple was again the centre”; Avi-Yonah last ¶ of “From the Roman Conquest until the Destruction” under SECOND TEMPLE / history, followed by the ¶ “[Michael Avi-Yonah]”; Britannica Siege ¶ 2 of 2 under “The fall of Jerusalem”; Martin ch. 4 [00:36:40] ¶ 5; Bible Odyssey gallery introduction). All three Trigger Claims re-matched by script (timestamp, speaker, verbatim substring of the line): 3 hits; about two minutes either side read in full (E143 00:21:39–00:25:12; E119 00:03:40–00:07:48; E96 00:28:39–00:31:25).
+# Second pass changed: the entry note's Av clause, from “Avi-Yonah gives the tenth of Av by Josephus's reckoning and the ninth by the Talmud's” to “Avi-Yonah puts the burning of the Temple on the tenth of Av according to Josephus and on the ninth according to the Talmud”: the source's own attribution (“According to Josephus … according to the Talmud”), and the clause now names what the day dates, as far as Avi-Yonah's paragraph does (the building “went up in flames”; “the catastrophe occurred on the tenth of Av”). Nothing else in the entry; triggers and registry unchanged. E119's review note corrected (the claim comes after the preterism definition, not before it). No citation cut; nothing moved to uncited.
+# Second pass on the first-pass flags: (1) “By August 70 CE the Romans had breached the final defenses” is Britannica Siege's own sentence, in its Jerusalem section; the note's “Jerusalem's final defenses” says no more. Kept. (2) Kept. #99: where sources differ, show both, each attributed; Britannica gives the dual form “9th/10th of Av” and Avi-Yonah attributes each day. The display is the year, on which all agree, so the day split stays in the note only, attributed. (3) Martin's trim ends before “because a lot of important things in Christianity … happened either before 70”; the kept clause dates the destruction to 70 on its own. The quote has no “CE”, but the same ¶ opens “Now we're in the Common Era”. Kept. (4) Confirmed: heading “From the Roman Conquest until the Destruction” follows the ¶ “[Yehoshua M. Grintz]”, and the subsection ends with the ¶ “[Michael Avi-Yonah]”; separate id right. (5) Confirmed: the page reads “Written by Kate Lohnes”; registry author matches. Also: Britannica Temple reviser line reads “most recently revised and updated by Adam Zeidan” (registry edition matches); Martin's registry year 2009 is from the OYC course page (“recorded for Open Yale Courses in Spring 2009”); the lecture page prints none; Bible Odyssey's page metadata gives modified 2024-02-02.
+# Second pass on E119: kept. The 70 CE events are given in the speaker's own voice (“the events that are being described sound an awful lot like what happened around the year 70 CE when Rome … destroyed the temple in Jerusalem”), as history the preterist reading then uses (00:06:16). E32 was dropped for a different reason: its date sits inside the description of what preterists hold.
+# Flags for publish: (1) The show's “summer of 70 CE” (E143) is in no cited source's words (Britannica Siege “By August 70 CE”, Av in Britannica Temple and Avi-Yonah); summer is consistent; kept verbatim per #99. (2) E119 sits in a preterism discussion; kept as the speaker's own historical claim (see above); the publisher may prefer E143 and E96 alone (two triggers still meet the entry rule). (3) Martin's quote has no era marker; the same ¶ gives the Common Era. (4) Britannica Temple's top summary (“marking the end of the First Jewish Revolt”, apparently Britannica AI) conflicts with the 73/74 sources for the war's end; uncited; the war span is not shown. (5) check:timeline returns before the publish gate for a draft entry, so its pass may not check this file; it was also YAML-loaded separately.
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Temple of Jerusalem”, body paragraph beginning “The Herodian Temple was again the centre”. 66 start and 9th/10th of Av, 70 CE. Backs the display and the note's 66. Read in a browser (curl 403). Same source as second-temple critical/3.",
+      note: "Britannica “Temple of Jerusalem”, body paragraph beginning “The Herodian Temple was again the centre”. 66 start and 9th/10th of Av, 70 CE. Backs the display and the note's 66. Read in a browser (curl 403). Same source as second-temple critical/3. Second pass: re-read via Claude in Chrome; matched verbatim as the last sentence of the located paragraph, also checked in the live page. Backs 66 and 70 as stated. Verified.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Avi-Yonah, EJ “Temple”, Second Temple, “From the Roman Conquest until the Destruction”, last paragraph; subsection signed [Michael Avi-Yonah]. Tenth of Av per Josephus, ninth per the Talmud, 70 c.e. Backs the note's Av attribution.",
+      note: "Avi-Yonah, EJ “Temple”, Second Temple, “From the Roman Conquest until the Destruction”, last paragraph; subsection signed [Michael Avi-Yonah]. Tenth of Av per Josephus, ninth per the Talmud, 70 c.e. Backs the note's Av attribution. Second pass: re-fetched (curl), matched verbatim in the last ¶ of the subsection, the ¶ before the signature; the ¶ has the building going “up in flames”, so the note now says “burning of the Temple”. Verified.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Siege of Jerusalem”, section “The fall of Jerusalem”, ¶ 2. Backs the note's August 70. Read in a browser.",
+      note: "Britannica “Siege of Jerusalem”, section “The fall of Jerusalem”, ¶ 2. Backs the note's August 70. Read in a browser. Second pass: re-read via Claude in Chrome; ¶ 2 of 2 under the heading, matched verbatim, also in the live page. Verified.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Martin, RLST 152 lecture 4 transcript, ch. 4 [00:36:40], ¶ 5 (counting paragraphs under the chapter heading). Opening clause of a long sentence; the rest is about early Christianity before and after 70.",
+      note: "Martin, RLST 152 lecture 4 transcript, ch. 4 [00:36:40], ¶ 5 (counting paragraphs under the chapter heading). Opening clause of a long sentence; the rest is about early Christianity before and after 70. Second pass: re-fetched (curl); ¶ 5 under the chapter heading holds (¶ 1 “In 63, about a hundred years …”); trim keeps the sense. Verified.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Bible Odyssey Second Temple Judaism timeline, gallery introduction. Same source as alexander critical/3.",
+      note: "Bible Odyssey Second Temple Judaism timeline, gallery introduction. Same source as alexander critical/3. Second pass: re-fetched (curl), matched verbatim in the gallery introduction. Verified.",
     }
 triggers:
   143@00:23:32:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Answering when Mark was written; the destruction date is given in passing (“summer of 70 CE”). Sources give August / Av; shown verbatim (#99). 00:21:39–00:25:12 read.",
+      note: "states: critical. Answering when Mark was written; the destruction date is given in passing (“summer of 70 CE”). Sources give August / Av; shown verbatim (#99). 00:21:39–00:25:12 read. Second pass: script-matched (timestamp, speaker, substring); window read in full; “I think most scholars would say” hedges Mark's date, the temple's summer 70 is given flatly. Verified.",
     }
   119@00:05:42:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Second sentence of the turn: what the Olivet Discourse describes sounds like the events of about 70 CE. The speaker's own voice, before the preterism explanation. 00:03:42–00:07:40 read.",
+      note: "states: critical. Second sentence of the turn: what the Olivet Discourse describes sounds like the events of about 70 CE. The speaker's own voice. 00:03:42–00:07:40 read. Second pass: script-matched; 00:03:40–00:07:48 read in full. Correction: the claim comes after the preterism definition (00:03:47), before the partial/full preterism explanation (00:06:16); the date is his own historical statement (see header). Verified.",
     }
   96@00:30:12:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Middle of the turn, on the Pharisees becoming Rabbinic Judaism “once the temple is destroyed around 70 CE”. 00:28:39–00:31:25 read.",
+      note: "states: critical. Middle of the turn, on the Pharisees becoming Rabbinic Judaism “once the temple is destroyed around 70 CE”. 00:28:39–00:31:25 read. Second pass: script-matched; window read in full. Verified.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Worded for the destruction, which every source dates outright to 70 CE. The war as a span is not shown (sources split on its end year); its start is in the note only.",
+      note: "Worded for the destruction, which every source dates outright to 70 CE. The war as a span is not shown (sources split on its end year); its start is in the note only. Second pass: agreed.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "No split on the year among cited sources: all give 70. Day of Av differs by source and is attributed in the note (Avi-Yonah). The war's end year splits (70/73/73-74/74) but is not dated here.",
+      note: "No split on the year among cited sources: all give 70. Day of Av differs by source and is attributed in the note (Avi-Yonah). The war's end year splits (70/73/73-74/74) but is not dated here. Second pass: pass on the cited set; day split kept attributed (#99).",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; no trigger has states: tradition or both.",
+      note: "No Tradition Date; no trigger has states: tradition or both. Second pass: confirmed.",
     }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition sources cited." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition sources cited. Second pass: confirmed.",
+    }
   conditional-not-critical:
-    { agent: pass, owner: "", note: "No conditional date." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date. Second pass: confirmed.",
+    }
 sources:
   britannica-temple-of-jerusalem:
     {
       agent: pass,
       owner: "",
       edition: "Online, “most recently revised and updated by Adam Zeidan”",
-      note: "Reference (encyclopedia). Already in the registry (second-temple).",
+      note: "Reference (encyclopedia). Already in the registry (second-temple). Second pass: reviser line “Adam Zeidan” confirmed.",
     }
   avi-yonah-ej-temple:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica as reproduced on Encyclopedia.com; subsection signed [Michael Avi-Yonah]",
-      note: "Reference (encyclopedia), like porten-ej-temple (same page, different signed subsection). Page prints no EJ edition or year.",
+      note: "Reference (encyclopedia), like porten-ej-temple (same page, different signed subsection). Page prints no EJ edition or year. Second pass: signature confirmed; no edition or year printed.",
     }
   britannica-siege-of-jerusalem-70:
     {
       agent: pass,
       owner: "",
       edition: "Online",
-      note: "Reference (encyclopedia). Byline Kate Lohnes.",
+      note: "Reference (encyclopedia). Byline Kate Lohnes. Second pass: “Written by Kate Lohnes” confirmed.",
     }
   martin-rlst152-l4:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale Courses (registry year 2009; no edition printed)",
-      note: "Reference (university courseware), like martin-rlst152-l2.",
+      note: "Reference (university courseware), like martin-rlst152-l2. Second pass: page title “RLST 152 - Lecture 4 - Judaism in the First Century”; 2009 from the course page (“Spring 2009”).",
     }
   bo-timeline-second-temple-judaism:
     {
       agent: pass,
       owner: "",
       edition: "Gallery page modified February 2, 2024",
-      note: "Reference (SBL). Already in the registry (alexander).",
+      note: "Reference (SBL). Already in the registry (alexander). Second pass: dateModified 2024-02-02 confirmed.",
     }
 leads:
   - "Britannica “First Jewish Revolt” article (linked from the Siege page's Quick Facts): not opened; guessed URLs 404."

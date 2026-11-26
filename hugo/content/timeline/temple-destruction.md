@@ -27,7 +27,7 @@ critical:
   display: "70 CE"
   from: 70
   precision: year
-  note: "The revolt against Rome began in 66 CE. By August 70 the Romans had breached Jerusalem's final defenses; Avi-Yonah gives the tenth of Av by Josephus's reckoning and the ninth by the Talmud's."
+  note: "The revolt against Rome began in 66 CE. By August 70 the Romans had breached Jerusalem's final defenses; Avi-Yonah puts the burning of the Temple on the tenth of Av according to Josephus and on the ninth according to the Talmud."
   cites:
     - source: britannica-temple-of-jerusalem
       locator: "body, paragraph beginning “The Herodian Temple was again the centre”"
