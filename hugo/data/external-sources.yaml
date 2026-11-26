@@ -3206,6 +3206,20 @@ ej-sennacherib:
   hostAuthored: false
   tradition: null
 
+rubin-bo-where-did-hebrew-come-from:
+  author: "Aaron D. Rubin"
+  title: "Where Did Hebrew Come From?"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2024
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/where-did-hebrew-come-from/"
+  hostAuthored: false
+  tradition: null
+
 rollston-bo-siloam:
   author: "Christopher Rollston"
   title: "The Siloam Inscription and Hezekiah's Tunnel"
