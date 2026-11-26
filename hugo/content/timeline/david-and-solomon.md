@@ -20,7 +20,7 @@ critical:
   from: -1010
   to: -901
   precision: century
-  note: "One dictionary dates David's reign to about 1010–970 BCE and Solomon's to the second third of the tenth century. Scholars who place them in the tenth century differ on whether they ruled a united kingdom: Finkelstein accepts David and Solomon as historical but rejects a tenth-century United Monarchy, while Mazar describes it as a state in an early stage of development, far from the one the Bible portrays."
+  note: "One dictionary dates David's reign to about 1010–970 BCE and Solomon's to the second third of the tenth century. Schmidt summarises Finkelstein as upholding the historicity of David and Solomon while rejecting a tenth-century United Monarchy; Mazar describes the United Monarchy as a state in an early stage of development, far from the rich and widely expanding state portrayed in the biblical narrative."
   cites:
     - source: harpercollins-2009-dictionary
       locator: "entry “David”, opening sentence (Bible Odyssey, bibleodyssey.org/dictionary/david/)"
@@ -29,10 +29,6 @@ critical:
     - source: harpercollins-2009-dictionary
       locator: "entry “Solomon”, opening sentence (Bible Odyssey, bibleodyssey.org/dictionary/solomon/)"
       quote: "David’s son by Bathsheba, and his successor, who reigned for forty years in the second third of the tenth century BCE."
-      read: 2026-11-25
-    - source: coogan-brief-4e-summary-ch14
-      locator: "paragraph beginning “As with the earlier works”"
-      quote: "While it is likely that David was one of the most powerful monarchs in the region at the beginning of the tenth century BCE, it appears that the descriptions of his exploits are exaggerated."
       read: 2026-11-25
     - source: finkelstein-2007-quest-solomon
       locator: "p. 113"
