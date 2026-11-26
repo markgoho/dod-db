@@ -11,7 +11,7 @@ critical:
   from: -1208
   to: -1204
   precision: century
-  note: "The sources date the stele to about 1208, 1207, 1206 or 1204 BCE. It names Israel as a people in Canaan, the earliest mention of Israel outside the Bible."
+  note: "The sources date the stele to about 1208, 1207, 1206 or 1204 BCE. It lists Israel among the groups in Canaan that Merneptah claims to have defeated, the earliest mention of Israel outside the Bible."
   cites:
     - source: meyers-2005-exodus
       locator: "Introduction, excerpt PDF p. 5"
