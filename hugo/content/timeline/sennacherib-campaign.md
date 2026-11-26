@@ -1,9 +1,8 @@
 ---
 title: "Sennacherib's campaign against Judah"
 entryKind: event
-draft: true
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-26
 related:
   {
     books: [2-kings, isaiah, 2-chronicles],
