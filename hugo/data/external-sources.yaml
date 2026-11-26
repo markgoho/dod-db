@@ -3038,6 +3038,20 @@ britannica-biblical-canon:
   hostAuthored: false
   tradition: null
 
+britannica-hebrew-language:
+  author: null
+  title: "Hebrew language"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online, Britannica Editors, revised by Adam Zeidan"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/topic/Hebrew-language"
+  hostAuthored: false
+  tradition: null
+
 britannica-josiah:
   author: null
   title: "Josiah"
