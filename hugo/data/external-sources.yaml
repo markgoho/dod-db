@@ -2043,3 +2043,325 @@ ucc-2005-equal-marriage:
   url: "http://uccfiles.com/pdf/2005-EQUAL-MARRIAGE-RIGHTS-FOR-ALL.pdf"
   hostAuthored: false
   tradition: "the United Church of Christ"
+
+coogan-brief-4e-summary-ch25:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 25 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-25-summary"
+  hostAuthored: false
+  tradition: null
+
+merrill-willis-bo-daniel:
+  author: "Amy C. Merrill Willis"
+  title: "Daniel"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2015
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/daniel/"
+  hostAuthored: false
+  tradition: null
+
+evans-bo-daniel-later-lit:
+  author: "Craig A. Evans"
+  title: "Daniel in Later Literature"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2015
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/daniel-in-later-literature/"
+  hostAuthored: false
+  tradition: null
+
+smith-christopher-bo-daniel-diaspora:
+  author: "Daniel L. Smith-Christopher"
+  title: "The Book of Daniel in the Diaspora"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2015
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/the-book-of-daniel-in-the-diaspora/"
+  hostAuthored: false
+  tradition: null
+
+valeta-bo-lions-den:
+  author: "David M. Valeta"
+  title: "Daniel in the Lions’ Den"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2021
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/daniel-in-the-lions-den/"
+  hostAuthored: false
+  tradition: null
+
+murphy-bo-animal-imagery:
+  author: "Kelly J. Murphy"
+  title: "Animal Imagery in Apocalyptic Literature"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/animal-imagery-in-apocalyptic-literature/"
+  hostAuthored: false
+  tradition: null
+
+perrin-bo-aramaic-dss:
+  author: "Andrew B. Perrin"
+  title: "Aramaic Literature in the Dead Sea Scrolls"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/aramaic-literature-in-the-dead-sea-scrolls/"
+  hostAuthored: false
+  tradition: null
+
+wills-bo-court-tales:
+  author: "Lawrence M. Wills"
+  title: "Court Tales"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2019
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/court-tales/"
+  hostAuthored: false
+  tradition: null
+
+silverman-bo-persian-period:
+  author: "Jason M. Silverman"
+  title: "The Persian Period"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2026
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/the-persian-period/"
+  hostAuthored: false
+  tradition: null
+
+van-deventer-2003-daniel-structure:
+  author: "H. J. M. van Deventer"
+  title: "Struktuur en boodskap(pe) in die boek Daniël"
+  series: "HTS Teologiese Studies / Theological Studies 59.1, pp. 191–223"
+  publisher: "University of Pretoria"
+  year: 2003
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University repository PDF, open; article in Afrikaans, English abstract"
+  url: "https://repository.up.ac.za/bitstreams/c72f3874-61e8-46cb-afe6-67dc58d1ed1b/download"
+  hostAuthored: false
+  tradition: null
+
+suchard-2022-greek-daniel-3:
+  author: "Benjamin D. Suchard"
+  title: "The Greek in Daniel 3: Code-Switching, Not Loanwords"
+  series: "Journal of Biblical Literature 141.1, pp. 121–136"
+  publisher: "Society of Biblical Literature"
+  year: 2022
+  edition: "Publisher's version, Leiden University repository"
+  class: Scholarly
+  kind: article
+  access: "University repository PDF, open"
+  url: "https://hdl.handle.net/1887/3285162"
+  hostAuthored: false
+  tradition: null
+
+nel-2006-dss-daniel:
+  author: "Marius Nel"
+  title: "Contribution of the Dead Sea Scrolls to Textual Criticism and Understanding of the Canonical Book of Daniel"
+  series: "Nederduitse Gereformeerde Teologiese Tydskrif 47.3"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Journal website, open"
+  url: "https://ojs.reformedjournals.co.za/index.php/ngtt/article/download/1222/1716?inline=1"
+  hostAuthored: false
+  tradition: null
+
+popovic-2025-dating-scrolls:
+  author: "Mladen Popović et al."
+  title: "Dating ancient manuscripts using radiocarbon and AI-based writing style analysis"
+  series: "PLoS ONE 20.6, e0323185"
+  publisher: "Public Library of Science"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal"
+  url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323185"
+  hostAuthored: false
+  tradition: null
+
+posen-jerome-porphyry:
+  author: "Carol Bakhos (ed.)"
+  title: "Debates over Authorship amid Canonization, 3rd–5th Centuries (headnote to Jerome on Porphyry)"
+  series: "The Posen Library of Jewish Culture and Civilization, vol. 2"
+  publisher: "Yale University Press"
+  year: 2025
+  edition: null
+  class: Reference
+  kind: book
+  access: "Publisher's library website, open"
+  url: "https://www.posenlibrary.com/node/11670"
+  hostAuthored: false
+  tradition: null
+
+mclay-2007-nets-daniel:
+  author: "R. Timothy McLay"
+  title: "To the Reader of Daniel"
+  series: "A New English Translation of the Septuagint"
+  publisher: "Oxford University Press"
+  year: 2007
+  edition: "Electronic edition, 2009"
+  class: Scholarly
+  kind: book
+  access: "Translation's website PDF, open"
+  url: "https://ccat.sas.upenn.edu/nets/edition/40-daniel-nets.pdf"
+  hostAuthored: false
+  tradition: null
+
+mclay-2007-nets-sousanna:
+  author: "R. Timothy McLay"
+  title: "To the Reader of Sousanna"
+  series: "A New English Translation of the Septuagint"
+  publisher: "Oxford University Press"
+  year: 2007
+  edition: "Electronic edition, 2009"
+  class: Scholarly
+  kind: book
+  access: "Translation's website PDF, open"
+  url: "https://ccat.sas.upenn.edu/nets/edition/39-sousanna-nets.pdf"
+  hostAuthored: false
+  tradition: null
+
+mclay-2007-nets-bel:
+  author: "R. Timothy McLay"
+  title: "To the Reader of Bel and the Dragon"
+  series: "A New English Translation of the Septuagint"
+  publisher: "Oxford University Press"
+  year: 2007
+  edition: "Electronic edition, 2009"
+  class: Scholarly
+  kind: book
+  access: "Translation's website PDF, open"
+  url: "https://ccat.sas.upenn.edu/nets/edition/41-bel-nets.pdf"
+  hostAuthored: false
+  tradition: null
+
+davis-bledsoe-2015-editions:
+  author: "Amanda M. Davis Bledsoe"
+  title: "The Relationship of the Different Editions of Daniel: A History of Scholarship"
+  series: "Currents in Biblical Research 13.2, pp. 175–190"
+  publisher: "SAGE"
+  year: 2015
+  edition: "Author's copy, LMU Munich repository"
+  class: Scholarly
+  kind: article
+  access: "University repository PDF, open"
+  url: "https://epub.ub.uni-muenchen.de/58706/1/Bledsoe_Relationship.pdf"
+  hostAuthored: false
+  tradition: null
+
+bullard-hatton-2006-ubs-handbook:
+  author: "Roger A. Bullard and Howard A. Hatton"
+  title: "A Handbook on the Shorter Books of the Deuterocanon"
+  series: "UBS Handbook Series (Helps for Translators)"
+  publisher: "United Bible Societies"
+  year: 2006
+  edition: null
+  class: Reference
+  kind: book
+  access: "Publisher's translation-resources website, open"
+  url: "https://tips.translation.bible/story/translation-introduction-to-susanna/"
+  hostAuthored: false
+  tradition: null
+
+glancy-jwa-susanna:
+  author: "Jennifer A. Glancy"
+  title: "Susanna: Apocrypha"
+  series: "Shalvi/Hyman Encyclopedia of Jewish Women"
+  publisher: "Jewish Women's Archive"
+  year: 2009
+  edition: null
+  class: Reference
+  kind: article
+  access: "Encyclopedia website, open"
+  url: "https://jwa.org/encyclopedia/article/susanna-apocrypha"
+  hostAuthored: false
+  tradition: null
+
+nabre-daniel-notes:
+  author: null
+  title: "Notes to Daniel"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/daniel/13"
+  hostAuthored: false
+  tradition: null
+
+gotquestions-when-daniel-written:
+  author: null
+  title: "When was Daniel written?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/when-was-Daniel-written.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
+
+reformation-study-bible-dan-11:
+  author: null
+  title: "Reformation Study Bible note on Daniel 11:36–12:3"
+  series: "Reformation Study Bible"
+  publisher: "Ligonier Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: study-bible
+  access: "Bible Gateway study resources, open"
+  url: "https://www.biblegateway.com/resources/reformation-study-bible/Dan.11.36-Dan.12.3"
+  hostAuthored: false
+  tradition: "Ligonier Ministries' Reformation Study Bible"

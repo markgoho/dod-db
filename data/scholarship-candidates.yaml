@@ -132,13 +132,6 @@ subjects:
       - "Scottish Journal of Theology article “Creatio ex nihilo in Palestinian Judaism and Early Christianity” (Cambridge Core): a search summary says it describes a near-consensus that the doctrine originated in a second-century Christian reaction against Gnosticism, and disputes it; paywalled; not read."
       - "Paul Copan, “Is Creatio Ex Nihilo a Post-Biblical Invention?”, Trinity Journal 17 (1996): open PDF at gospelstudies.org.uk; argues against May; class (Scholarly or Tradition) not yet judged; not read."
 
-  - slug: daniel-date
-    subject: "When Daniel was written"
-    status: candidate
-    core: "Daniel was written in 167-164 BCE."
-    basis: "Inventory short-page tier: 2 Episodes; the consensus date is stated once (Ep 34)."
-    notes: "Dating claim; may belong on the Timeline (#108)."
-
   - slug: gospel-of-john-composition
     subject: "How the Gospel of John was composed"
     status: candidate
@@ -246,4 +239,20 @@ subjects:
         text: "Well, Moffatt also said it in the preface to his New Testament that you had to reject the idea of, uh, plenary verbal inspiration, mechanical inspiration, uh, however you want to phrase the thing."
     notes: '#125 gate-1 read (2026-11-23): every watch-term hit line in the 11 matching Transcripts, plus about two minutes either side of each recorded claim; the Ep 164 claim came from the inerrancy read. Substantive claims are almost all Ep 6 on 2 Timothy 3:16; the rest are passing mentions. The "overwhelming consensus" at 00:51:49 is among believing readers, not scholars. The life-giving reading rests on one scholar (John C. Poirier, The Invention of the Inspired, 2021), so the core may narrow to what theopneustos means in 2 Timothy 3:16. Core is the show''s thesis, not yet sourced.'
 
-statements: []
+statements:
+  - page: daniel-date
+    question: "In what language were the additions first written?"
+    triggers:
+      - episode: 70
+        speaker: "Dan McClellan"
+        timestamp: "00:31:24.860"
+        text: "And so it, it's. It's an additional chapter that's tacked on at the. The end of Daniel and was probably written in Greek and added into the Book of Daniel."
+    notes: "Conflict with additions-origin: the quote has Bel and the Dragon probably written in Greek; the statement says the additions were probably first composed in Hebrew or Aramaic (NABRE notes, McLay, Posen), with McLay allowing that the Old Greek of Bel reads more like a dynamic translation or even a Greek composition. Logged at the #155 first pass, 2026-11-25."
+  - page: daniel-date
+    question: "When was the Book of Daniel written?"
+    triggers:
+      - episode: 45
+        speaker: "Kipp Davis"
+        timestamp: "00:40:42.040"
+        text: "So, so, like, just very briefly, scholars are uniformly convinced that the Book of Daniel was not completed until well into the second century after the Hasmonean revolt, and that the prophecies in the Hebrew portion, beginning in chapter 8 through to 12, were all written after the fact and, you know, set in the mouth of Daniel as if they were predictions of the future."
+    notes: "Conflict with date: “uniformly convinced” states unanimity; the statement reports, from Suchard (JBL 2022) and Valeta's Bible Odyssey box, that some still hold a sixth-century date. The second-century date itself agrees. Logged at the #155 first pass, 2026-11-25."
