@@ -1,9 +1,9 @@
 ---
 title: "Job"
 entryKind: composition
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-26
 related: { books: [job], tags: [], topics: [] }
 watch: [Book of Job, Elihu, land of Uz]
 critical:

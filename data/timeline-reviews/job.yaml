@@ -11,7 +11,8 @@
 # Second agent pass 2026-11-26 (#93 delegation, extended to the Timeline by #110; independent): all 6 cited sources re-fetched by curl (browser User-Agent) into the second pass's own scratch folder, not the first pass's files, plus CMI's "What We Are" page for the holder: NABRE /bible/job/0 (200 on the first try; the /job/0.md alternate returned 403), OUP ch. 24 summary, Open Yale RLST 145 lecture 20, Encyclopedia.com (Newsom, EoR), Bible Odyssey (Newsom), creation.com (Paul 2010). All 9 quotes and both holder sentences script-matched (whitespace, quotes, dashes, HTML entities normalised): 11/11, 0 misses. Locators checked: NABRE ¶ 3 under "THE BOOK OF JOB"; Coogan section "Job" ¶ 2; Hayes ch. 4 [00:19:48] ¶ 1 and ¶ 5 (heading not counted); Newsom EoR first paragraph (it ends "Few clues exist as to the date of composition." before the quoted sentence); Bible Odyssey "Did You Know?" item 1; CMI opening paragraph after the Figure 1 caption. All 5 Trigger Claims script-matched as substrings of the final Transcript line at their timestamp and speaker (5/5), and each read about two minutes either side.
 # Second pass changes. Registry: duplicate key coogan-brief-4e-summary-ch24 removed (this branch re-added an identical block already on trunk; CONTEXT.md: a source is described once). Holder (entry and registry `tradition`): "Creation Ministries International, a group of non-denominational ministries" → "Creation Ministries International, a group of non-profit ministries", verbatim from the What We Are page; the old phrase spliced two sentences, and "non-denominational" is qualified there "(as an organisation, not as individuals within it)". Tradition display: "2nd millennium BCE" → "Presumably 2nd millennium BCE", keeping the source's hedge. Setting display: "a world described in patriarchal terms, …" → "a world described in terms that evoke a patriarchal setting, …", Newsom's wording. Critical note: "another in the early postexilic period" → "another says evidence from historical linguistics suggests the early postexilic period", keeping Newsom's "suggests". No citation cut; keys unchanged; Critical display, from/to and title unchanged.
 # Second pass flags: (1) Hayes (critical/3) puts Job "probably no earlier then the sixth century", which disagrees with the start of NABRE's 7th–5th century range; the display is NABRE's alone and the note shows Hayes's view, attributed. Not treated as a #99 split (Hayes gives a lower bound, not a range), but the lead may prefer a display that shows both. (2) The Tradition Date rests on one CMI journal article by Mart-Jan Paul, attributed to CMI as its own journal republished on its ministry site (as ABR's Wood article is for Abraham); the creation.com page carries no disclaimer disowning authors' views. (3) Daniel's tradition display drops Got Questions' "likely"; not edited here (out of scope), but it is the same hedge question as this entry's "presumably". (4) Five Trigger Claims, above #99's one to three; flood also keeps five. Weakest: 150@00:49:16 (a passing clause in a zodiac answer) and 175@00:20:26 (relative, no year). Not dropped: all five match. (5) "non-profit ministries" names the organisation but not a religious tradition; the page offers no closer self-description that is a single phrase. (6) The registry YAML loader accepts duplicate top-level keys silently (the Coogan duplicate passed check:timeline and prettier); worth a gate check.
-review:
+# Publish 2026-11-26 (lead agent, on the second pass's flags): (1) Display kept as NABRE's range: Hayes gives only a lower bound, attributed in the note with its "probably"; no #99 split. (2) CMI kept: its own journal, republished on its ministry site, as ABR's Wood article for Abraham. (3) Daniel's dropped "likely" is out of this entry's scope; filed as a follow-on issue. (4) Trigger Claims cut to three, per #99 ("one to three"): kept 18@00:37:12 (both), 175@00:19:51 (tradition), 187@00:57:12 (critical, the only explicit years); dropped 150@00:49:16 (a passing clause in a zodiac answer) and 175@00:20:26 (relative, no year; 18@00:37:12 states the same "youngest" verdict). Both removed from triggers.yaml and from this file. (5) Holder kept as the second pass's verbatim "a group of non-profit ministries"; the registry `tradition` matches. (6) Duplicate-key gate: filed as a follow-on issue. The trunk rebase also re-merged the registry around a concurrent Hebrew-language draft; no duplicate keys after it. draft flag dropped; sourcesRead and review set to the secondPass date.
+review: 2026-11-26
 delegation:
   by: owner
   date: 2026-11-23
@@ -79,23 +80,11 @@ triggers:
       owner: "",
       note: "states: both. Dan McClellan. Substring of the 00:37:12 turn, from “A lot of people think”; the turn opens “this text comes from the Persian period” and goes on “foreignizing and archaizing”. States the popular “oldest” view and the critical Persian date. Read 00:36:37–00:40:00. Second pass: re-matched by script at timestamp and speaker, re-read 00:35:10–00:39:15.",
     }
-  150@00:49:16:
-    {
-      agent: pass,
-      owner: "",
-      note: "states: critical. Dan McClellan. Second sentence of the 00:49:16 turn, on the Mazzaroth; the date is a passing clause. Read 00:49:04–00:50:04. Second pass: re-matched by script, re-read 00:48:15–00:51:00; weakest trigger (second pass flag 4).",
-    }
   175@00:19:51:
     {
       agent: pass,
       owner: "",
       note: "states: tradition. Dan McClellan. Second sentence of the turn; reports “the Job crowd”, no year. Read 00:18:26–00:22:01. Second pass: re-matched by script, re-read 00:18:01–00:22:08.",
-    }
-  175@00:20:26:
-    {
-      agent: pass,
-      owner: "",
-      note: "states: critical. Dan McClellan. Opening of the 00:20:26 turn; relative (“one of the more recent”), no year. Second pass: re-matched by script; second pass flag 4.",
     }
   187@00:57:12:
     {
