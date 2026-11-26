@@ -1,362 +1,301 @@
 /*
-  Custom block for the Univocality Scholarship Page: texts that disagree,
-  drawn as pairs of identical scrolls speaking in comic speech bubbles with a
-  ≠ between them. Composes panel, type-section-title, cloud-section and
-  scholarship-meta.
+  Custom block for the Univocality Scholarship Page: a comic page. One ink
+  frame holds the title, six panels and the credit, so the whole thing
+  shares as one image. A panel carries one picture, or two split by a
+  straight gutter with a ≠ roundel (two texts that disagree; neither side
+  means anything). A narration label sits flush top-left; the answers are
+  plates set on the art in corners the picture leaves clear. Composes
+  cloud-section, type-section-title, scholarship-meta and the shared
+  comic-plate.
 
-  Without colour: the ≠ between the bubbles carries the clash; the scrolls
-  are identical, so only what they say differs.
+  Distinctions without colour: each text's name or claim is on its plate,
+  and the ≠ marks a disagreement.
 */
-.univ-voices {
-  /* One scroll's width: two to a pair, one pair to a row on a phone. */
-  --univ-unit: 22cqi;
+.univ-comic {
   --univ-ink: var(--tan-900);
+  --univ-paper: var(--tan-000);
+  --univ-amber: var(--color-accent);
+  --univ-frame: var(--border-width-md);
 
-  container: univ-voices / inline-size;
+  container: univ-comic / inline-size;
 }
 
-.univ-defs {
-  block-size: 0;
-  inline-size: 0;
-  position: absolute;
-}
-
-.univ-voices__panel {
+/* The page: one frame around everything that is shared. */
+.univ-comic__page {
+  background: var(--univ-paper);
+  border: var(--univ-frame) solid var(--univ-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--univ-ink);
   display: grid;
   gap: var(--space-s);
-  padding: var(--space-2xs);
+  padding: var(--space-s);
 }
 
-/* Headline strip: a ≠ in a burst. */
-.univ-voices__claim {
-  align-items: center;
-  background: var(--univ-ink);
-  color: var(--color-text-inverse);
-  column-gap: var(--space-xs);
+.univ-comic__head {
   display: grid;
-  font-family: var(--font-family-display);
-  font-size: var(--step-0);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  grid-template-columns: auto minmax(0, 1fr);
-  letter-spacing: var(--letter-spacing-heading);
-  line-height: var(--line-height-tight);
-  padding: var(--space-3xs) var(--space-xs);
-  text-wrap: balance;
-}
-
-.univ-voices__badge {
-  display: grid;
-  inline-size: var(--space-2xl);
-  margin-block: calc(var(--space-2xs) * -1);
-  place-items: center;
-  rotate: -8deg;
-}
-
-.univ-voices__badge > * {
-  grid-area: 1 / 1;
-}
-
-.univ-voices__badge > svg {
-  aspect-ratio: 1;
-  fill: var(--color-accent);
-  inline-size: 100%;
-  overflow: visible;
-  stroke: var(--univ-ink);
-  stroke-linejoin: round;
-  stroke-width: 3;
-}
-
-.univ-voices__badge > span {
-  color: var(--univ-ink);
-  font-size: var(--step-3);
-}
-
-.univ-voices__pairs {
-  display: grid;
-  gap: var(--space-s);
-}
-
-/* A pair: a comic panel with halftone fading in from one corner. */
-.univ-voices__pair {
-  align-content: start;
-  background:
-    linear-gradient(to top right, var(--tan-000) 55%, transparent),
-    radial-gradient(var(--tan-300) 24%, transparent 28%) 0 0 / 8px 8px,
-    var(--tan-000);
-  border: var(--border-width-md) solid var(--univ-ink);
-  display: grid;
-  gap: var(--space-s);
+  gap: var(--space-3xs);
   justify-items: center;
-  padding: var(--space-2xs);
+  text-align: center;
 }
 
-/* The topic sits in a caption box, as a comic's narration does. */
-.univ-voices__topic {
-  background: var(--color-accent-muted);
-  border: var(--border-width-sm) solid var(--univ-ink);
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--univ-ink);
+.univ-comic__head > p {
+  margin: 0;
+}
+
+.univ-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.univ-comic__title {
+  color: var(--univ-ink);
   font-family: var(--font-family-display);
-  font-size: var(--step-0);
+  font-size: var(--step-3);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
-  justify-self: start;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
-  margin: 0;
-  padding: var(--space-3xs) var(--space-2xs);
+  text-shadow: 3px 3px 0 var(--univ-amber);
+  text-transform: uppercase;
   text-wrap: balance;
 }
 
-/*
-  Speaker, ≠, speaker. Each speaker spans three subgrid rows (bubble, scroll,
-  name), so the two bubbles, scrolls and names line up across the pair.
-*/
-.univ-voices__speakers {
-  align-items: end;
-  column-gap: var(--space-3xs);
+.univ-comic__key {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  text-wrap: balance;
+}
+
+/* The key's ≠: the same roundel as on the art, at text size. */
+.univ-comic__key-vs {
+  background: var(--univ-paper);
+  border: 2px solid var(--univ-ink);
+  border-radius: 50%;
+  display: inline-grid;
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-boldest);
+  inline-size: 1.6em;
+  line-height: 1.5;
+  margin-inline: 0.2em;
+  place-items: center;
+}
+
+.univ-comic__strip {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-  grid-template-rows: auto auto auto;
-  inline-size: 100%;
+  gap: var(--space-s);
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.univ-voices__speaker {
+.univ-comic__frame {
   display: grid;
-  grid-row: span 3;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: subgrid;
-  justify-items: center;
-  row-gap: var(--space-2xs);
+  min-inline-size: 0;
 }
 
-.univ-voices__ne {
-  align-self: center;
+/* A panel: one ink frame around the art; its labels sit on the art as shared comic plates (scholarship.css). */
+.univ-comic__figure {
+  border: var(--univ-frame) solid var(--univ-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.univ-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.univ-comic__half {
+  inset: 0;
+  position: absolute;
+}
+
+.univ-comic__art--vs > .univ-comic__half--left {
+  clip-path: inset(0 50% 0 0);
+}
+
+.univ-comic__art--vs > .univ-comic__half--right {
+  clip-path: inset(0 0 0 50%);
+}
+
+.univ-comic__half > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 50%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.12;
+}
+
+.univ-comic__half--right > img {
+  margin-inline-start: 50%;
+}
+
+.univ-comic__half--whole > img {
+  inline-size: 100%;
+  scale: 1.06;
+}
+
+/* The split: a straight ink gutter with a ≠ roundel. */
+.univ-comic__gutter {
+  background: var(--univ-ink);
+  inline-size: var(--univ-frame);
+  inset: 0 auto 0 calc(50% - var(--univ-frame) / 2);
+  position: absolute;
+}
+
+.univ-comic__vs {
   aspect-ratio: 1;
-  background: var(--color-action);
-  border: var(--border-width-sm) solid var(--univ-ink);
+  background: var(--univ-paper);
+  border: 3px solid var(--univ-ink);
   border-radius: 50%;
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--univ-ink);
-  color: var(--color-text-inverse);
   display: grid;
   font-family: var(--font-family-display);
-  font-size: var(--step-2);
+  font-size: clamp(1rem, 6cqi, 1.8rem);
   font-weight: var(--font-weight-boldest);
-  grid-column: 2;
-  grid-row: 1;
-  inline-size: var(--space-m);
+  inline-size: 2em;
+  inset: 50% auto auto 50%;
   line-height: 1;
   place-items: center;
-}
-
-/* A speech bubble whose tail points down at its scroll. */
-.univ-voices__bubble {
-  align-self: stretch;
-  background: var(--tan-000);
-  border: var(--border-width-md) solid var(--univ-ink);
-  border-radius: var(--space-s);
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--univ-ink);
-  box-sizing: border-box;
-  display: grid;
-  font-family: var(--font-family-display);
-  font-size: var(--step--2);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  inline-size: 100%;
-  line-height: var(--line-height-tight);
-  margin-block-end: var(--space-xs);
-  padding: var(--space-3xs);
-  place-items: center;
-  position: relative;
-  text-align: center;
-  text-wrap: balance;
-}
-
-.univ-voices__bubble::after {
-  aspect-ratio: 1;
-  background: var(--tan-000);
-  border-block-end: var(--border-width-md) solid var(--univ-ink);
-  border-inline-end: var(--border-width-md) solid var(--univ-ink);
-  content: "";
-  inline-size: var(--space-s);
-  inset-block-end: calc(var(--space-s) / -2 - var(--border-width-md) / 2);
-  inset-inline-start: calc(50% - var(--space-s) / 2);
   position: absolute;
-  rotate: 45deg;
+  translate: -50% -50%;
 }
 
-/* The scroll. Lengths inside are the drawing's own units. */
-.univ-scroll {
-  aspect-ratio: 100 / 122;
-  /* Every scroll is the same size. */
-  inline-size: var(--univ-unit);
-  overflow: visible;
-  stroke: var(--univ-ink);
-  stroke-linejoin: round;
-  stroke-width: 4;
+/* A plate at the bottom-left of the right half, where that picture leaves ground clear. */
+.univ-comic__plate--rbl {
+  inset: auto auto 2cqi calc(50% + 2cqi);
 }
 
-.univ-scroll__shadow {
-  fill: var(--univ-ink);
-  stroke: none;
-}
-
-.univ-scroll__paper {
-  fill: var(--tan-000);
-}
-
-.univ-scroll__writing {
-  fill: none;
-  stroke: var(--tan-400);
-  stroke-linecap: round;
-}
-
-.univ-scroll__roll {
-  fill: var(--univ-ink);
-}
-
-.univ-scroll__shine {
-  fill: none;
-  stroke: var(--tan-000);
-  stroke-linecap: round;
-  stroke-width: 2;
-}
-
-.univ-voices__who {
+/* Narration label, flush in the panel's top-left corner. */
+.univ-comic__box {
+  background: var(--univ-amber);
+  border-block-end: var(--univ-frame) solid var(--univ-ink);
+  border-inline-end: var(--univ-frame) solid var(--univ-ink);
   font-family: var(--font-family-display);
-  font-size: var(--step--1);
+  /* Scales down with a narrow panel, so the label stays one line and clears the faces below it. */
+  font-size: min(var(--step--1), 4.4cqi);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.comic-plate__sub > .univ-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates. */
+.univ-comic__ref {
+  background: var(--univ-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--univ-amber);
+  white-space: nowrap;
+}
+
+/* A plate with only a scripture tag under its name: no leading space. */
+.comic-plate__sub:has(> .univ-comic__ref:only-child) > .univ-comic__ref {
+  margin-inline-start: 0;
+}
+
+.univ-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
   text-align: center;
 }
 
-.univ-voices__note {
-  font-size: var(--step--1);
-  text-align: center;
-  text-wrap: balance;
+.univ-comic__more {
+  margin-block-start: var(--space-s);
 }
 
-.univ-voices__more {
-  border-block-start: var(--border-width-sm) solid var(--tan-300);
-  padding-block-start: var(--space-xs);
-}
-
-/* Wide: the three pairs side by side. Literal length: container conditions cannot read custom properties. */
-/*
-  Wide: each pair is one row, its question beside the two speakers. Literal
-  length: container conditions cannot read custom properties.
-*/
-@container univ-voices (width >= 46rem) {
-  .univ-voices__panel {
-    --univ-unit: 8cqi;
-
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container univ-comic (width >= 40rem) {
+  .univ-comic__page {
     padding: var(--space-m);
   }
 
-  .univ-voices__claim {
-    font-size: var(--step-1);
+  .univ-comic__title {
+    font-size: var(--step-4);
   }
 
-  .univ-voices__pair {
-    align-items: center;
-    column-gap: var(--space-m);
-    padding: var(--space-s);
-    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
-  }
-
-  .univ-voices__speakers {
-    column-gap: var(--space-2xs);
-  }
-
-  .univ-voices__bubble {
-    padding: var(--space-2xs);
-  }
-
-  .univ-voices__ne {
-    inline-size: var(--space-xl);
-  }
-
-  :is(.univ-voices__bubble, .univ-voices__who) {
-    font-size: var(--step-0);
+  .univ-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* The poster: the pairs stacked, read from further away. */
-.scholarship-share:target .univ-voices__panel {
-  --univ-unit: 11cqi;
+/* The poster: two panels to a row, three rows of shorter (16:10) art on the 4:5 canvas. */
 
-  gap: var(--space-xs);
-  padding: var(--space-s);
-}
-
-.scholarship-share:target .univ-voices__pairs {
-  gap: var(--space-xs);
-}
-
-.scholarship-share:target .univ-voices__pair {
-  padding: var(--space-xs) var(--space-s);
-}
-
-.scholarship-share:target .univ-voices__topic {
-  font-size: var(--step-1);
-}
-
-.scholarship-share:target :is(.univ-voices__bubble, .univ-voices__who) {
-  font-size: var(--step-0);
-}
-
-.scholarship-share:target .univ-voices__ne {
-  inline-size: var(--space-xl);
-}
-
-.scholarship-share:target .univ-voices__note {
-  font-size: var(--step-0);
-}
-
-/* The card: the three pairs side by side, the headline kept short. */
-.scholarship-share:has(#share-card:target) .univ-voices__panel {
-  --univ-unit: 7cqi;
-
-  gap: var(--space-xs);
-}
-
-.scholarship-share:has(#share-card:target) .univ-voices__pairs {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-template-rows: auto auto;
-}
-
-.scholarship-share:has(#share-card:target) .univ-voices__pair {
-  align-items: stretch;
+.scholarship-share:target .univ-comic__page {
   gap: var(--space-2xs);
-  grid-row: span 2;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: subgrid;
-  padding: var(--space-2xs);
+  padding: var(--space-xs);
 }
 
-.scholarship-share:has(#share-card:target) .univ-voices__ne {
-  font-size: var(--step-0);
-  inline-size: var(--space-m);
+.scholarship-share:target .univ-comic__head {
+  gap: 0;
 }
 
-.scholarship-share:has(#share-card:target) .univ-voices__speakers {
-  column-gap: var(--space-3xs);
+.scholarship-share:target .univ-comic__title {
+  font-size: var(--step-2);
 }
 
-.scholarship-share:has(#share-card:target) .univ-voices__bubble {
-  padding: var(--space-3xs);
+.scholarship-share:target .univ-comic__strip {
+  gap: var(--space-2xs);
 }
 
-.scholarship-share:has(#share-card:target) .univ-voices__topic {
-  font-size: var(--step--1);
+.scholarship-share:target .univ-comic__art {
+  aspect-ratio: 16 / 10;
 }
 
-.scholarship-share:has(#share-card:target)
-  :is(.univ-voices__bubble, .univ-voices__who) {
-  font-size: var(--step--1);
+.scholarship-share:target .univ-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.scholarship-share:target .univ-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
+}
+
+/* The card: the two Hebrew Bible disagreements side by side under the title. */
+
+.scholarship-share:has(#share-card:target) .univ-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .univ-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:has(#share-card:target) .univ-comic__kicker {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .univ-comic__title {
+  font-size: var(--step-2);
+}
+
+.scholarship-share:has(#share-card:target) .univ-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }

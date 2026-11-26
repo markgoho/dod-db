@@ -1,129 +1,159 @@
 {{- /*
-  Custom block for /scholarship/univocality/: biblical texts that say
-  different things about the same matter, drawn as scrolls speaking in comic
-  speech bubbles with a ≠ between them. A view of the page's reviewed
-  statements (`one-voice`, `hebrew-bible`, `the-end`) and their cited quotes
-  (Judges 1: hebrew-bible/3 and /10);
-  it makes no claim they don't. Reword a bubble only when the statement it
-  comes from is re-reviewed.
+  Custom block for /scholarship/univocality/: a six-panel comic page told in
+  order. Many writers, in many places, each at their own scroll (a library,
+  not a book); three places where two texts say different things about the
+  same matter, each split by a straight gutter with a ≠ roundel; Tatian
+  weaving four Gospels into one; and, paying that off, a historical critic
+  reading four Gospels apart.
 
-  Two sides, three times: every speaker is the same scroll, so the only
-  difference inside a pair is what the bubbles say. Bubbles restate what the
-  cited scholars say each text says; they are not Bible quotations, so they
-  carry no quotation marks, and the references link to the verses.
+  A view of the page's reviewed statements one-voice (short), anthology
+  (short; text for Breed's thousand years), hebrew-bible (cites 2, 3 and 10),
+  gospels (cite 5: Bond on Herod and Luke's census), harmonizing (short) and
+  methods (short, its historical-critical half). It makes no claim they
+  don't. The split is a plain gutter with a ≠: the page says two texts
+  disagree, and the side a text sits on means nothing.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/univocality.yaml. Reword a plate only when
+  the statement it comes from is re-reviewed.
   */
 -}}
-{{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
-{{- $pairs := slice
+{{- define "partials/inline/univ-ref.html" -}}
+  <a
+    class="univ-comic__ref"
+    href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .ref) | safeURL }}"
+    rel="noopener"
+    >{{ replace .label " " "&nbsp;" | safeHTML }}</a
+  >
+{{- end -}}
+{{- define "partials/inline/univ-img.html" -}}
+  {{- $img := resources.Get (printf "scholarship-art/univocality/%s.png" .id) }}
+  <div class="univ-comic__half univ-comic__half--{{ .side }}">
+    {{- with $img }}
+      {{- $webp := .Process "resize 1200x webp q78" }}
+      <img
+        src="{{ $webp.RelPermalink }}"
+        width="{{ $webp.Width }}"
+        height="{{ $webp.Height }}"
+        alt="{{ $.alt }}"
+        {{ with $.focus }}style="object-position: {{ . | safeCSS }}"{{ end }}
+        loading="eager" />
+    {{- end }}
+  </div>
+{{- end -}}
+{{- $panels := slice
   (dict
-  "key" "goliath"
-  "topic" "Who kills Goliath?"
-  "a" (dict "who" "1 Samuel 17:50" "ref" "1 Samuel 17:50" "says" "David kills Goliath.")
-  "b" (dict "who" "2 Samuel 21:19" "ref" "2 Samuel 21:19" "says" "Elhanan kills Goliath."))
+  "id" "library" "box" "One book?" "split" "none"
+  "left" (dict "id" "library" "alt" "Many writers in different dress and different settings, each bent over their own scroll, too many to count.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "A library" "sub" "many authors, over a thousand years")))
   (dict
-  "key" "conquest"
-  "topic" "Was the whole land conquered?"
-  "a" (dict "who" "Joshua 10:40" "ref" "Joshua 10:40" "says" "The Israelites conquered the whole land.")
-  "b" (dict "who" "Judges 1" "ref" "Judges 1" "says" "Many Canaanites survived."))
+  "id" "goliath" "box" "Who killed Goliath?" "split" "vs"
+  "left" (dict "id" "goliath-david" "alt" "A shepherd boy with a sling faces a towering armoured giant.")
+  "right" (dict "id" "goliath-elhanan" "alt" "A grown soldier with a shield and sword faces the same giant.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "David" "ref" "1 Samuel 17:50" "label" "1 Sam 17:50")
+  (dict "pos" "br" "big" "Elhanan" "ref" "2 Samuel 21:19" "label" "2 Sam 21:19")))
   (dict
-  "key" "end"
-  "topic" "When will the end come?"
-  "a" (dict "who" "Paul" "ref" "" "says" "The end is near.")
-  "b" (dict "who" "2 Peter" "ref" "" "says" "It could be a thousand years."))
+  "id" "conquest" "box" "Was the whole land taken?" "split" "vs"
+  "left" (dict "id" "whole-land" "alt" "Israelite soldiers on a hilltop look out over a wide land of quiet, empty towns.")
+  "right" (dict "id" "canaanites" "alt" "A walled town still full of its own people; soldiers camp outside, looking at it.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "The whole land" "ref" "Joshua 10:40" "label" "Josh 10:40")
+  (dict "pos" "br" "big" "Canaanites remain" "sub" "in many places" "ref" "Judges 1" "label" "Judg 1")))
+  (dict
+  "id" "birth" "box" "When was Jesus born?" "split" "vs"
+  "left" (dict "id" "herod" "alt" "An old king sits on a throne in a palace hall.")
+  "right" (dict "id" "census" "alt" "A Roman official records names on a scroll while families wait in line, a man and a pregnant woman at the front.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "Before Herod died" "ref" "Matthew 2:1" "label" "Matt 2:1")
+  (dict "pos" "rbl" "big" "At Luke’s census" "sub" "if historical, at odds with Matthew" "ref" "Luke 2:2" "label" "Luke 2:2")))
+  (dict
+  "id" "tatian" "box" "Reconcile them?" "split" "none"
+  "left" (dict "id" "tatian" "alt" "A second-century writer copies from four rolled scrolls into one book; four ribbons run from the scrolls into it.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "Four into one" "sub" "Tatian, second century, resolving their conflicts")))
+  (dict
+  "id" "critic" "box" "Historical critics today" "split" "none"
+  "left" (dict "id" "critic" "alt" "A modern scholar reads one of four books laid out apart on a long desk.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "Each on its own" "sub" "not harmonized")))
 -}}
-<section class="cloud-section univ-voices">
+<section class="cloud-section univ-comic">
   <h2
     class="type-section-title cloud-section__title"
     id="at-a-glance"
     data-share-hide>
     At a glance
   </h2>
-  {{/* Drawn once, reused six times: the speaking scroll. */}}
-  <svg class="univ-defs" aria-hidden="true" focusable="false">
-    <defs>
-      <g id="univ-scroll">
-        <rect
-          class="univ-scroll__shadow"
-          x="21"
-          y="22"
-          width="72"
-          height="92" />
-        <rect class="univ-scroll__paper" x="14" y="15" width="72" height="92" />
-        <path class="univ-scroll__writing" d="M26 34h48M26 43h48M26 52h28" />
-        <rect
-          class="univ-scroll__roll"
-          x="4"
-          y="4"
-          width="92"
-          height="18"
-          rx="9" />
-        <rect
-          class="univ-scroll__roll"
-          x="4"
-          y="100"
-          width="92"
-          height="18"
-          rx="9" />
-        <path class="univ-scroll__shine" d="M16 11h44M16 107h44" />
-      </g>
-      <path
-        id="univ-burst"
-        d="M50.0 1.0L58.7 12.0L71.3 5.9L74.3 19.5L88.3 19.4L85.1 33.1L97.8 39.1L89.0 50.0L97.8 60.9L85.1 66.9L88.3 80.6L74.3 80.5L71.3 94.1L58.7 88.0L50.0 99.0L41.3 88.0L28.7 94.1L25.7 80.5L11.7 80.6L14.9 66.9L2.2 60.9L11.0 50.0L2.2 39.1L14.9 33.1L11.7 19.4L25.7 19.5L28.7 5.9L41.3 12.0z" />
-    </defs>
-  </svg>
-  <div class="univ-voices__panel panel">
-    <p class="univ-voices__claim">
-      <span class="univ-voices__badge" aria-hidden="true">
-        <svg viewBox="0 0 100 100" focusable="false">
-          <use href="#univ-burst" />
-        </svg>
-        <span>≠</span>
-      </span>
-      <span>One voice? Scholars hear many, and at times they conflict.</span>
-    </p>
-    <div class="univ-voices__pairs">
-      {{- range $pairs }}
-        <section class="univ-voices__pair">
-          <h3 class="univ-voices__topic">{{ .topic }}</h3>
-          <ul class="univ-voices__speakers">
-            {{- range $i, $side := slice .a .b }}
-              {{- if eq $i 1 }}
-                <li class="univ-voices__ne" aria-hidden="true">≠</li>
+  <div class="univ-comic__page">
+    <header class="univ-comic__head">
+      <p class="univ-comic__kicker">The Bible · as scholars describe it</p>
+      <p class="univ-comic__title">Many voices, not one</p>
+      <p class="univ-comic__key">
+        Their views differ, and at times conflict.
+        <span class="univ-comic__key-vs" aria-hidden="true">≠</span>
+        splits two texts that disagree.
+      </p>
+    </header>
+    <ol class="univ-comic__strip">
+      {{- range $panels }}
+        <li
+          class="univ-comic__frame univ-comic__frame--{{ .id }}"
+          {{ if not (in (slice "goliath" "conquest") .id) }}
+            data-card-hide
+          {{ end }}>
+          <figure class="univ-comic__figure">
+            <div class="univ-comic__art univ-comic__art--{{ .split }}">
+              {{ partial "inline/univ-img.html" (merge .left (dict "side" (cond (eq .split "none") "whole" "left"))) }}
+              {{- with .right }}
+                {{ partial "inline/univ-img.html" (merge . (dict "side" "right")) }}
               {{- end }}
-              <li class="univ-voices__speaker">
-                <p class="univ-voices__bubble">{{ $side.says }}</p>
-                <svg
-                  class="univ-scroll"
-                  viewBox="0 0 100 122"
-                  aria-hidden="true"
-                  focusable="false">
-                  <use href="#univ-scroll" />
-                </svg>
-                <p class="univ-voices__who">
-                  {{- with $side.ref }}
-                    <a
-                      href="{{ printf "%s%s" $bg (urlquery .) | safeURL }}"
-                      rel="noopener"
-                      >{{ replace $side.who " " "&nbsp;" | safeHTML }}</a
-                    >
-                  {{- else }}
-                    {{ replace $side.who " " "&nbsp;" | safeHTML }}
+              {{- if eq .split "vs" }}
+                {{/* Two texts that disagree: a plain gutter and a ≠; neither side means anything. */}}
+                <span class="univ-comic__gutter" aria-hidden="true"
+                  ><span class="univ-comic__vs">≠</span></span
+                >
+              {{- end }}
+            </div>
+            <h3 class="univ-comic__box">{{ .box }}</h3>
+            <figcaption>
+              {{- range .plates }}
+                {{- $plate := . }}
+                <p
+                  class="comic-plate {{ if eq .pos "rbl" }}
+                    univ-comic__plate--rbl
+                  {{ else }}
+                    comic-plate--{{ .pos }}
+                  {{ end }}">
+                  <span class="comic-plate__big">{{ .big }}</span>
+                  {{- if or .sub .ref }}
+                    <span class="comic-plate__sub">
+                      {{ .sub }}
+                      {{- with .ref }}
+                        {{ partial "inline/univ-ref.html" (dict "ref" . "label" $plate.label) -}}
+                      {{- end }}
+                    </span>
                   {{- end }}
                 </p>
-              </li>
-            {{- end }}
-          </ul>
-        </section>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
       {{- end }}
-    </div>
-    <p class="univ-voices__note" data-card-hide>
-      Each bubble restates what a cited scholar says the text says.
-    </p>
-    <p class="univ-voices__more scholarship-meta" data-share-hide>
-      Every line here comes from the cited answers below:
-      <a href="#one-voice">does the Bible speak with one voice</a>,
-      <a href="#hebrew-bible">where the Hebrew Bible differs</a> and
-      <a href="#the-end">when the end will come</a>.
+    </ol>
+    <p class="univ-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
     </p>
   </div>
+  <p class="univ-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#one-voice">does the Bible speak with one voice</a>,
+    <a href="#anthology">is the Bible a single book</a>,
+    <a href="#hebrew-bible">where the Hebrew Bible differs</a>,
+    <a href="#gospels">do the Gospels tell the same story</a>,
+    <a href="#harmonizing">how early readers handled the differences</a> and
+    <a href="#methods">how scholars read them today</a>.
+  </p>
 </section>

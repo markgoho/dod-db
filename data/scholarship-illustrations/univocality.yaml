@@ -1,0 +1,151 @@
+# Illustrations for /scholarship/univocality/ (generated with Gemini; see
+# src/scripts/generate-scholarship-illustrations.ts). Each picture shows only
+# what the listed statements support; every caption, link and claim stays in
+# hugo/layouts/partials/scholarship-custom/univocality.html.
+#
+# Six comic panels in the story's order: many writers in many places (a
+# library, not a book); three places where two texts disagree, each split by
+# a straight gutter with a ≠ into one half per text; Tatian weaving four
+# Gospels into one; a historical critic reading four Gospels apart. Split
+# halves are 4:5; whole panels 4:3. The giant is chained from `goliath-david`
+# so both halves show the same Goliath; the four books are chained from
+# `tatian` to `critic`. Confrontation only, never a kill. Nobody in the
+# birth halves is a magus, shepherd, star or manger: the page names only
+# Herod and Luke's census.
+slug: univocality
+images:
+  - id: library
+    statements: [anthology]
+    aspect: "4:3"
+    alt: "Many writers in different dress and different settings, each bent over their own scroll, spread across a long scene."
+    prompt: >-
+      A long continuous scene showing many different ancient writers, each
+      working alone on their own scroll or codex, spread from left to right
+      across the picture and receding into the distance so that they are too
+      many to count: one under a tent awning in a desert, one at a palace
+      table with columns, one on a rooftop, one by a lamp in a small stone
+      room, one in a Roman-era courtyard, and more, smaller, further back.
+      They wear different clothes from different times and places, and none
+      of them looks at the others. Piles of separate scrolls lie beside
+      them. The upper left of the picture is open pale sky. The lower left
+      corner is open plain ground. No single book, no text.
+
+  - id: goliath-david
+    statements: [hebrew-bible]
+    aspect: "4:5"
+    alt: "Seen from low behind a shepherd boy with a sling, a towering armoured giant looms over the scene."
+    prompt: >-
+      Low angle, seen from just behind and to the side of a young shepherd
+      boy in a plain off-white tunic, a leather sling hanging from his right
+      hand, a small shepherd's bag at his hip. He stands in the lower left,
+      looking up. Facing him and filling the upper right of the picture
+      towers an enormous armoured giant warrior: bronze helmet, scale armour,
+      a huge spear held upright, a round shield, a dark beard. The two are
+      facing each other across open ground; nobody is struck or hurt. The
+      bottom of the picture is open dry ground. No other figures, no blood,
+      no text.
+
+  - id: goliath-elhanan
+    statements: [hebrew-bible]
+    aspect: "4:5"
+    refs: [goliath-david]
+    alt: "The same giant, now faced by a bearded grown soldier with a round shield and a sword."
+    prompt: >-
+      The SAME enormous armoured giant as in the reference image, with the
+      same helmet, scale armour, upright spear and dark beard, towering in
+      the upper left of the picture. Facing him from the lower right,
+      seen from just behind and to the side at the same low angle, stands
+      a grown bearded soldier in a rust red tunic with a round wooden shield
+      and a short sword held ready. He is clearly an adult warrior, not a
+      boy, and has no sling. The two face each other across open ground;
+      nobody is struck or hurt. The bottom of the picture is open dry ground.
+      No other figures, no blood, no text.
+
+  - id: whole-land
+    statements: [hebrew-bible]
+    aspect: "4:5"
+    alt: "Israelite soldiers stand on a hilltop over a wide land of quiet, emptied towns, holding it all."
+    prompt: >-
+      A small group of ancient Israelite soldiers in simple tunics, with
+      spears held upright, stand on a hilltop in the upper part of the
+      picture, looking out with satisfaction over a wide land of hills and
+      small walled towns that stretches to the horizon. The towns are quiet
+      and still, their gates open, nobody in them: the whole land is
+      theirs. Calm, no fighting, no fire, no smoke, no bodies. The bottom of
+      the picture is open plain ground. No flags, no banners, no text.
+
+  - id: canaanites
+    statements: [hebrew-bible]
+    aspect: "4:5"
+    refs: [whole-land]
+    alt: "A walled town with its gates shut and its own people busy inside; soldiers camp outside, looking at it."
+    prompt: >-
+      The SAME landscape and the same Israelite soldiers as in the reference
+      image, but now a walled town in the upper part of the picture is still
+      full of its own people: Canaanite townsfolk on the walls and rooftops,
+      going about their lives, a woman carrying a water jar, a man with a
+      donkey, smoke rising from a cooking fire. Its gate is shut. Outside
+      the wall, in the middle distance, the Israelite soldiers sit in a
+      small camp of tents, looking at the town. Calm, no fighting, no
+      weapons raised. The bottom of the picture is open plain ground. No
+      flags, no banners, no text.
+
+  - id: herod
+    statements: [gospels]
+    aspect: "4:5"
+    alt: "An old king sits on a throne in a palace hall."
+    prompt: >-
+      An old, grey-bearded king in a deep rust red robe and a gold crown
+      sits on a stone throne in a palace hall with tall columns, in the
+      upper part of the picture, looking frail but proud, a staff in one
+      hand. Nobody else is in the hall. No visitors, no star, no baby. The
+      bottom of the picture is open plain stone floor. No text.
+
+  - id: census
+    statements: [gospels]
+    aspect: "4:5"
+    alt: "A Roman official at a table records names on a scroll while a line of families waits, among them a man and a pregnant woman."
+    prompt: >-
+      A Roman official in a white toga sits at a wooden table in the upper
+      part of the picture, writing names in a large scroll for a census. A
+      line of ordinary families in plain tunics waits in front of the table;
+      at the front of the line stand a bearded man and a young pregnant
+      woman in a light grey shawl. No soldiers, no star, no baby, no
+      manger, no animals. The bottom of the picture is open plain ground.
+      Writing on the scroll is tiny illegible marks. No text.
+
+  - id: tatian
+    statements: [harmonizing]
+    aspect: "4:3"
+    alt: "A second-century writer at a desk copies from four scrolls into one new book; four amber ribbons run from the scrolls into it."
+    prompt: >-
+      A bearded Syrian Christian writer of the second century, in a plain
+      off-white robe, sits at a wooden desk on the right of the picture,
+      writing with a reed pen in ONE large open codex in front of him.
+      Along the far edge of the desk, standing upright side by side in a
+      single neat row with clear space between them, are FOUR rolled-up
+      scrolls, each a single closed cylinder tied with an amber ribbon:
+      exactly 4 scrolls, one, two, three, four, no more and no fewer, and no
+      open scrolls anywhere. From each of the four scrolls one amber ribbon
+      runs across the desk and all four ribbons meet in the open codex.
+      Simple stone room, a single oil lamp. The upper left of the picture is
+      open plain wall. Writing in the codex is tiny illegible marks. No
+      other scrolls, no other books, no other people, no text.
+
+  - id: critic
+    statements: [methods]
+    aspect: "4:3"
+    refs: [tatian]
+    alt: "A modern scholar at a long desk reads one of four books laid out separately in a row."
+    prompt: >-
+      A modern scholar, a middle-aged woman with glasses and a rust red
+      cardigan, sits at a long plain modern desk on the right of the
+      picture. Laid out across the desk in ONE straight row from left to
+      right, well apart from one another and not touching, are FOUR open
+      books of the same size: exactly 4 books, one, two, three, four, no
+      more and no fewer. She leans over the book nearest her, reading it
+      closely, a pencil in her hand; the other three books lie open and
+      apart, waiting. No notebook, no papers, no extra books, no ribbons, no
+      computer. A desk lamp and a mug. The upper left of the picture is open
+      plain wall. Writing in the books is tiny illegible marks. No other
+      people, no text.
