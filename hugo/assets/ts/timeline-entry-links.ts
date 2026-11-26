@@ -2,16 +2,17 @@
  * Timeline Entry links (#219).
  *
  * - Copy link and Share (link-buttons.ts): the entry's own URL
- *   (/timeline/<id>/), the one whose link preview shows this entry.
- * - Address bar: a #<id> link has no link preview of its own, because a
- *   crawler never receives the fragment. So whenever an entry is the target,
- *   the address bar takes the entry's URL (/timeline/<id>/), which serves
- *   this same Timeline: the URL a reader copies from the address bar previews
- *   the entry. The fragment is dropped once the browser has gone to the
- *   entry, since the path already names it. Any other target takes the
- *   Timeline's own URL back and keeps its fragment.
- *   replaceState, so no history entry, no load and no scroll.
- *   The tab's title follows.
+ *   (/timeline/<id>), the one whose link preview shows this entry.
+ * - Arrival at an entry's URL: it serves the whole Timeline, so go to the
+ *   entry and mark it ([data-arrived], styled as :target is). The address is
+ *   left exactly as the reader gave it; a /timeline/#<id> link stays as
+ *   typed too.
+ * - A jump inside the Timeline: a #<id> link has no link preview of its own,
+ *   because a crawler never receives the fragment. So when a jump lands on an
+ *   entry, the address bar takes the entry's URL in the same step, without the
+ *   fragment the path already names. Any other target takes the Timeline's
+ *   own URL back and keeps its fragment. replaceState, so no extra history
+ *   entry, no load and no scroll. The tab's title follows.
  */
 
 import { initCopy, initShare } from "./link-buttons.js";
@@ -57,15 +58,47 @@ function syncTitleToPath(): void {
     syncTitle(timeline, entry ?? null);
 }
 
-function start(): void {
+function onJump(): void {
+  for (const entry of document.querySelectorAll("[data-arrived]"))
+    entry.removeAttribute("data-arrived");
   syncAddressBar();
-  globalThis.addEventListener("hashchange", syncAddressBar);
-  globalThis.addEventListener("popstate", syncTitleToPath);
+}
+
+function arrive(): void {
+  const id = document.querySelector<HTMLElement>("[data-timeline-arrive]")
+    ?.dataset["timelineArrive"];
+  const entry = id ? document.getElementById(id) : null;
+  if (!entry || globalThis.location.hash) return;
+  entry.dataset["arrived"] = "";
+  // A reload or back/forward keeps the place the browser restores.
+  const [navigation] = performance.getEntriesByType("navigation");
+  if (
+    navigation instanceof PerformanceNavigationTiming &&
+    ["reload", "back_forward"].includes(navigation.type)
+  )
+    return;
+  // As a fragment would: scroll there and move focus to the entry.
+  entry.scrollIntoView();
+  entry.focus({ preventScroll: true });
+  if (document.readyState === "complete") return;
+  // The page is still laying out: go again at load, unless the reader has
+  // moved on by then.
+  const controller = new AbortController();
+  const options = { signal: controller.signal, passive: true };
+  for (const type of ["wheel", "touchstart", "keydown", "pointerdown"])
+    globalThis.addEventListener(type, () => controller.abort(), options);
+  globalThis.addEventListener(
+    "load",
+    () => {
+      entry.scrollIntoView();
+      controller.abort();
+    },
+    options,
+  );
 }
 
 initCopy();
 initShare();
-// On arrival the browser goes to the fragment as the page lays out, up to
-// load: dropping the fragment before then would leave the reader at the top.
-if (document.readyState === "complete") start();
-else globalThis.addEventListener("load", start, { once: true });
+arrive();
+globalThis.addEventListener("hashchange", onJump);
+globalThis.addEventListener("popstate", syncTitleToPath);

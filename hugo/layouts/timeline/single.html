@@ -17,19 +17,10 @@
 
   {{ partialCached "timeline-body.html" $timeline }}
 
-  {{/* A shared link arrives without a fragment: go to the entry, as #<id>
-    would (timeline-entry-links.ts then drops the fragment again). Not on
-    reload or back/forward, where the browser restores the reader's place.
+  {{/* A shared link arrives without a fragment: timeline-entry-links.ts goes
+    to this entry and marks it, and leaves the address as it is.
   */}}
-  <script>
-    if (
-      !location.hash &&
-      !["reload", "back_forward"].includes(
-        performance.getEntriesByType("navigation")[0]?.type,
-      )
-    )
-      location.replace({{ printf "#%s" $id }});
-  </script>
+  <template data-timeline-arrive="{{ $id }}"></template>
   <noscript>
     <p class="timeline-measure">
       <a href="#{{ $id }}"

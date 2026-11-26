@@ -233,7 +233,7 @@ _Avoid_: Citation, snippet source
 - A **Synthesis Page** shows the date its **External Sources** were read; its statements change only when the owner re-reviews it.
 - A **Timeline Entry**'s id is a public URL once published (its **Timeline Entry Page** and the **Timeline**'s `#<id>` link): it never changes (#219).
 - Every published **Timeline Entry** has a **Timeline Entry Page** card rendered from its current title and **Critical Date** or scholarly verdict, never its **Tradition Date**, and the **Timeline** has its own card; `check:timeline` fails a missing or stale card (`bun run timeline:cards --stale`) (#219, 2026-11-26, reversing #109's "an entry has no page" and #139's "no image").
-- A link to `/timeline/#<id>` previews the **Timeline**, never the entry: the link to share is the **Timeline Entry Page**'s, which the **Timeline** keeps in the address bar while an entry is the target and offers as each entry's Copy link.
+- A link to `/timeline/#<id>` previews the **Timeline**, never the entry: the link to share is the **Timeline Entry Page**'s, which each entry's Copy link gives and a jump inside the **Timeline** puts in the address bar. The address never changes on its own after a page loads: a `/timeline/#<id>` link stays as typed.
 - A **Timeline Entry** is always read in place among the others: nothing shows one entry on a page of its own (owner, 2026-11-26).
 - A **Scholarship Page** statement's id is a public URL once published (its **Question Page** and the page's `#<id>` link): it never changes.
 - Every statement of a published **Scholarship Page** has a **Question Page** card rendered from its current question and short answer; `check:scholarship` fails a missing or stale card (`bun run scholarship:question-cards <slug>`).
