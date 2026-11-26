@@ -1,0 +1,150 @@
+# Review record for the Timeline Entry `christian-canon` (/timeline/#christian-canon; #93 shape). Not rendered.
+# Issue #196 (from #108), “Timeline Entry: The Christian canon”. Issue notes: word for what the sources date (first list of the 27 books), not “the canon closed”; the Nicaea legend is not a tradition's date; a Tradition Date needs a Tradition source that holds an early canon, in its own words; latest entry, check the axis end and minimap.
+# Sourcing test, 2026-11-26: met. Martin l2 (Reference, Open Yale intro lecture), Brakke 2010 (Scholarly, HTR) and Ehrman's OUP ch. 1 summary (Reference) date the list to 367 outright. Martin and Brakke say “extant” / “that survives” / “first extant … precisely”; Ehrman's summary says “not until 367”. The title follows the weaker pair: “Earliest surviving list of the 27 New Testament books”, not “the canon closed” or “first list”. Two non-Ehrman sources, since Ehrman is also a Trigger Claim speaker (E4).
+# Note: each clause cited (Martin ch. 2 for the Easter letter and Alexandria; Martin ch. 4 for “not binding … So it didn't set the canon” and “never completely settled”). Hippo 393 and Carthage 397 are left out: of the sources read only Becerra (uncited) names Carthage, none Hippo. Nicaea is left out: no source read says Nicaea had nothing to do with the canon.
+# Trigger Claims (#99, one to three): E4 00:27:39 (Ehrman, first to list the 27 books; the turn goes on “Athanasius didn't decide the canon. He gave his judgment on it, but his judgment eventually prevailed.”); E119 00:46:52 (367; the trimmed quote keeps its condition “If the Muratorian Fragment is late 4th century”; the turn's earlier sentences on the Muratorian fragment's date are dropped); E119 00:49:34 (states: both, apologists' end of first / beginning of second century, and “that's just not the case”). Not kept: E39 00:54:40 (“I believe”; dates Revelation's endorsement); E5 00:41:21 (the Nicaea legend, per the issue); E20 00:42:51 (“more or less”, no date); the inventory's other Episodes.
+# Tradition: E119 00:49:34 states the apologists' side. Got Questions and Catholic Answers (read) date the 27 books to the fourth century, so they hold no early date (uncited). The Continuing Church of God's Statement of Beliefs (ccog.org) says the Bible “was finalized by the Apostle John” and links “The New Testament Canon” to cogwriter.com/canon.htm, which dates it: “finalized by the Apostle John in the late 1st century”, in a paragraph headed by “We in the Continuing Church of God believe”. Holder “the Continuing Church of God” is the church's own name on both pages. `from: 90` is a placement year for “late 1st century”, not a source year; it does not place the entry (the Critical Date does).
+# CE axis: first entry after 165 BCE; the eras partial handles CE (labels “1–500 CE”); the axis grows to 500 CE. Check the minimap at publish and note on #175.
+# agent: the first pass (2026-11-26). Two research agents (critical, tradition) saved every fetched page into their own scratch folders; the lead agent fetched ccog.org itself. Every quote script-matched (whitespace, quotes, dashes, entities normalised) against the saved texts: 7/7, 0 misses. Trigger Claims matched by script as substrings of their final Transcript lines at timestamp and speaker: 3/3.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Brakke is cited from the publisher page's open extract only; the full text is paywalled. Is a fully visible extract sentence “read in the source itself” (#80)? (2) Ehrman's summary lacks “extant”; it dates the same list flat. (3) The holder is one small church; its canon paper sits on cogwriter.com (Bob Thiel's site), tied to the church by the Statement of Beliefs link and the paper's “We in the Continuing Church of God”. Is that a Tradition source or an excluded personal site (#80, #86)? CARM, Ligonier, Answers in Genesis and Crossway were not reached. (4) Tradition display “Late 1st century CE, finalized by the Apostle John” dates the canon's finalizing, not a list; the issue allows “a Tradition source that holds an early canon”. (5) Note's “which was never completely settled for all Christians” follows Martin's “they never completely settled the question for all Christians everywhere”, said of the councils. (6) `related.books: [revelation]`: the Trigger Claims centre on Revelation's place in the list; drop if loose.
+review:
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin l2, ch. 2 “The Forming of Canons” [00:16:17]. Dates the earliest surviving 27-book list to 367; names the Easter letter and Athanasius of Alexandria (note's first sentence).",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Brakke 2010, HTR 103.1, p. 47, first sentence of the article as shown in the Cambridge Core extract. “first extant list of precisely the twenty-seven books”, 367. Flag 1.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Ehrman OUP ch. 1 summary, section “The Development of the Christian Canon”. 367, without “extant”. Flag 2.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin l2, ch. 4 “A Slowly Developing (and Incomplete) Consensus” [00:32:50]. Note's “binding only on the churches of his Alexandrian diocese and did not set the canon”; restates 367 as the earliest matching list.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin l2, ch. 4, next paragraph. Note's “never completely settled for all Christians”. Flag 5.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "CCOG Statement of Beliefs, section “The Holy Bible”, first sentence; the sentence continues “… 27 from the Greek Scriptures ( The New Testament Canon )”, linking cogwriter.com/canon.htm. Gives no year. Supports the display's “finalized by the Apostle John” and ties the paper to the church.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Thiel, cogwriter.com/canon.htm, paragraph beginning “We in the Continuing Church of God believe that view”. Gives “late 1st century”, flat. Flag 3.",
+    }
+triggers:
+  4@00:27:39:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Bart Ehrman (guest). Substring of the turn; the turn continues “Athanasius didn't decide the canon”. No date in the quote; Dan McClellan's prior turn asks “In what, 367?”. A datable verdict on the entry's subject (#99).",
+    }
+  119@00:46:52:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring from “If the Muratorian Fragment…”; keeps the condition. Ends before “and Revelation isn't really formally a part of it until then either.”",
+    }
+  119@00:49:34:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: both. States what apologists argue (end of first, beginning of second century) and rejects it. The turn's opening (“squishy edges to Athanasius's canon”) and closing (Revelation a Johnny-come-lately) are dropped.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Dates the earliest surviving list of the 27 books, the scope Martin and Brakke share; not the canon's closing, which Martin says the letter did not do.",
+    }
+  split-shown: { agent: pass, owner: "", note: "No split; all three say 367." }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tradition Date shown; 119@00:49:34 states the tradition's side (states: both).",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “the Continuing Church of God”, the church's own name on both cited pages; no “traditional view” wording. Flag 3.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date cited. E119 00:46:52's condition is the show's, not a source's.",
+    }
+sources:
+  martin-rlst152-l2:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 152 (registry year 2009; term not checked)",
+      note: "Reference (introductory course, university-hosted transcript, #86). Already in the registry.",
+    }
+  brakke-htr-2010-festal-39:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Harvard Theological Review 103 (1), January 2010, pp. 47–66, DOI 10.1017/S0017816009990307",
+      note: "Scholarly (peer-reviewed journal). New. Flag 1.",
+    }
+  ehrman-brief-5e-ch1-summary:
+    {
+      agent: pass,
+      owner: "",
+      edition: "5th ed., 2020 (registry)",
+      note: "Reference (publisher chapter summary, #86). Already in the registry.",
+    }
+  ccog-statement-of-beliefs:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tradition. New. The church's own statement of beliefs on ccog.org (body served from ccogorg.ccogdr.eu). Self-description on ccog.org: “The Continuing Church of God, which attempts to represent the most faithful remnant of the Philadelphia (Revelation 3:7) portion of the Church of God, bases its beliefs on the Holy Bible.”",
+    }
+  cogwriter-thiel-nt-canon:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Revision line “(c) 2004/…/2019 / 2021 0414”",
+      note: "Tradition. New. Bob Thiel, “By COGwriter”; linked as the church's New Testament Canon page from its Statement of Beliefs. Flag 3.",
+    }
+leads:
+  - "Gallagher and Meade, The Biblical Canon Lists from Early Christianity (OUP 2017): Google Books returned a CAPTCHA, OUP an empty shell; no preview confirmed."
+  - "Metzger, The Canon of the New Testament (1987): “the first time … exactly the twenty-seven books” seen only quoted on Christianity Today / Christian History Institute pages; also outside the 30-year window."
+  - "Brakke, “Canon Formation and Social Conflict in Fourth-Century Egypt”, HTR 1994: paywalled; outside the 30-year window."
+  - "Ehrman blog, “Was the New Testament Canon Really Closed in 367 CE?” (Hippo 393, Carthage 397/419): search snippet; blogs are excluded."
+  - "McDonald, The Biblical Canon (2007), and McDonald and Sanders, The Canon Debate (lists appendix): cited by others, not read."
+uncited:
+  - "Becerra, “The Canonization of the New Testament”, in Blumell (ed.), New Testament History, Culture, and Society (BYU RSC / Deseret, 2019): “The first canon list to name all twenty-seven books of the New Testament as exclusively authoritative was written by Athanasius … AD 367 … later ratified by the Council of Carthage in AD 397”. Not cited: the author is listed as a PhD candidate, not a professional scholar (#80), so Carthage 397 has no qualifying source here."
+  - "McDonald, “The New Testament Canon”, Bible Odyssey: “By the fourth century C.E., most Christians had accepted most of the NT writings, but canon lists varied well into the eighth or ninth centuries.” Not cited: does not name Athanasius or 367."
+  - "Martin l2 ch. 2 on the Muratorian fragment (“composed around the year 200 or around the year 400 … probably the majority of scholars would say … a later period”). Not cited: the entry does not date the fragment."
+  - "Got Questions, “What is the canon of the Bible?”: Hippo 393 and Carthage 397 “affirmed the same 27 books”; “The closed canon”: recognition “finalized by the early Christian church by the end of the fourth century”. Not cited: a fourth-century date, not the early canon the Trigger Claim states."
+  - "Catholic Answers, “Who compiled the Bible and when?” (Rome 382, Hippo 393, Carthage 397, Trent 1546) and “Was the Canon of Scripture Determined before the Church Councils…?” (“not settled in the first years of the Church”). Not cited: fourth-century dates."
+  - "Grace Evangelical Society (Wilkin 2025): AD 70 attributed to “many”; AD 70 or 95 to “some”. Not cited: attributed, not the source's own date."
+  - "Kruger, Canon Fodder (2013): 22-book core “established and in place” at the end of the second century. Not cited: a blog, and a core, not the 27."
+  - "Theology Matters (Hobson 2014): “closed but not settled” at the close of the second century. Not cited: not the 27 books."
+  - "cogwriter.com/canon.htm: “the New Testament canon must have been finalized by the end of the first century A.D.” (an inference, “must have been”) and a block quote from Tomorrow's World (another publication's words). Not cited; the flat “late 1st century” sentence is."

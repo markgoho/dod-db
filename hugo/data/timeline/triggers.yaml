@@ -218,3 +218,21 @@
   timestamp: "00:57:12.750"
   states: critical
   text: "And so when someone says, you know, when I get up and I go, Job is Persian period, you know, that means, okay, it was probably written in that period between 539 BCE and 332 BCE, so late 6th century, 5th century, early 4th century."
+- entry: christian-canon
+  episode: 4
+  speaker: "Bart Ehrman"
+  timestamp: "00:27:39.990"
+  states: critical
+  text: "But yeah, Athanasius is the first one to list our 27 books, including Revelation, and just our 27 books."
+- entry: christian-canon
+  episode: 119
+  speaker: "Dan McClellan"
+  timestamp: "00:46:52.200"
+  states: critical
+  text: "If the Muratorian Fragment is late 4th century, you don't really have a canon as we know it today. Until Athanasius's letter from 367 CE so the, the canon firms up toward the, the second half of the fourth century CE"
+- entry: christian-canon
+  episode: 119
+  speaker: "Dan McClellan"
+  timestamp: "00:49:34.720"
+  states: both
+  text: "like even you even have people who think it was more or less in place at the end of the first century, beginning of the second century CE. You have apologists who will argue that. And the reality is that that's just not the case."

@@ -2967,3 +2967,44 @@ cmi-paul-2010-behemoth:
   url: "https://creation.com/en/articles/behemoth-and-leviathan"
   hostAuthored: false
   tradition: "Creation Ministries International, a group of non-denominational ministries"
+brakke-htr-2010-festal-39:
+  author: "David Brakke"
+  title: "A New Fragment of Athanasius's Thirty-Ninth Festal Letter: Heresy, Apocrypha, and the Canon"
+  series: "Harvard Theological Review 103 (1): 47–66"
+  publisher: "Cambridge University Press"
+  year: 2010
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher article page; opening extract open, full text paywalled"
+  url: "https://www.cambridge.org/core/journals/harvard-theological-review/article/new-fragment-of-athanasiuss-thirtyninth-festal-letter-heresy-apocrypha-and-the-canon/A089F889895A8B49B6848A177978D7D4"
+  hostAuthored: false
+  tradition: null
+
+ccog-statement-of-beliefs:
+  author: null
+  title: "Statement of Beliefs of the Continuing Church of God"
+  series: null
+  publisher: "Continuing Church of God"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Church website, open"
+  url: "https://www.ccog.org/statement-of-beliefs/"
+  hostAuthored: false
+  tradition: "the Continuing Church of God"
+
+cogwriter-thiel-nt-canon:
+  author: "Bob Thiel"
+  title: "The New Testament Canon - From the Bible and History"
+  series: null
+  publisher: "COGwriter"
+  year: 2021
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Website linked as “The New Testament Canon” from the Continuing Church of God's Statement of Beliefs, open"
+  url: "https://www.cogwriter.com/canon.htm"
+  hostAuthored: false
+  tradition: "the Continuing Church of God"
