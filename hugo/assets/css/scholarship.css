@@ -3,20 +3,26 @@
   stat-display, cloud-section, page-hero, disclosure-summary, tag-hero__dek and
   quote-card (tag-quote); only what those lack lives here.
 
-  A Scholarship Page is read, not browsed: one column at a 70ch measure, so
-  the statements and citation quotes keep a comfortable line length.
+  A Scholarship Page fills the content area; its running text keeps a 70ch
+  measure, so the statements and citation quotes stay readable.
 */
 .scholarship-page {
   counter-reset: scholarship-question;
   display: grid;
   gap: var(--space-xl);
-  margin-inline: auto;
-  max-width: var(--content-max-width-measure);
 }
 
 .scholarship-page p,
 .scholarship-page blockquote {
   margin: 0;
+}
+
+.scholarship-page:not(.timeline-page)
+  :is(p, blockquote, .scholarship-question__short):not(
+    .panel,
+    .scholarship-notice
+  ) {
+  max-inline-size: var(--content-max-width-measure);
 }
 
 /* List page intro: a long paragraph reads left-aligned. */
@@ -28,12 +34,7 @@
   text-align: start;
 }
 
-/* The list page is browsed, not read: cards fill the content area; only the intro keeps the measure. */
-.scholarship-page--index {
-  margin-inline: 0;
-  max-width: none;
-}
-
+/* The list page intro keeps the reading measure while the cards fill the content area. */
 .scholarship-page--index .page-hero__description {
   justify-self: center;
   max-width: var(--content-max-width-measure);
