@@ -1,0 +1,1035 @@
+# Review record for /scholarship/the-origins-of-the-trinity/ (#93 shape). Not rendered.
+# agent: results of the agent first pass (#154, 2026-11-27). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass once it has run.
+# Issue #154 instructions: merges Holy Spirit and Council of Nicaea; possible trigger Ep 5 (Nicaea, homoousios). Short answers report the state of scholarship (#133); confessional study Bibles are Tradition. Scope against overlap pages: the Johannine comma (1 John 5:7–8) is new-testament-later-additions' `comma` and is not restated; Matthew 28:19 appears only as a triadic text a source names, with no claim about its authenticity (#241 has no in-window source for that); the monotheism page's `elohim` (is Elohim plural?) is not re-answered: `plural` asks only whether the plural points to the Trinity. No candidate entry existed for this subject (slug from the issue title).
+# Sourcing test (#154, 2026-11-27): gate 1, eleven Trigger Claims in Episodes 5, 42, 53, 109, 160 and 182, each read with about two minutes either side. Gate 2, the core: no candidate core; the sources set it as “no explicit doctrine of the Trinity in the New Testament; worked out later; whether it can be inferred is contested”. Gate 3: four independent authors behind the core: Kärkkäinen 2017 (Scholarly, Fortress), Tuggy 2025 (Reference, SEP), Martin 2009 (Reference, Yale), Lietaert Peerbolte 2015 (Scholarly, HTS); none Host-authored. Gate 4: 18 statements.
+# Dropped for want of a qualifying source or a second author: whether Nicaea decided the biblical canon (Huggins, Midwestern Journal of Theology 2010, a seminary house journal, and Meade, Text & Canon Institute, an apologetic site, read; the FCC editors' note on Jerome's Judith preface read; the New Catholic Encyclopedia lists the surviving acts but does not discuss the canon; the 2025 Taylor & Francis article and Voltaire could not be fetched): leads, issue to file; Nicholas of Myra slapping Arius and the iota story (no admissible source mentions either; Gibson's NCE entry, read, says only that Nicholas's presence at Nicaea is legend, one author); Justin's and Philo's “second god” as a statement (Pépin 1987 only; Justin's sentence is quoted in `subordination` as a fact about the text); the filioque (Catholic and Orthodox Tradition sources only); Constantine as the source of homoousios beyond Eusebius's report (Fernández, Theological Studies 2025, blocked).
+# Show conflicts not attached as Trigger Claims (CONTEXT.md, 2026-11-25), logged in data/scholarship-candidates.yaml: 5@00:36:39 (Eusebius of Nicomedia exiled with Arius) vs nicaea; 42@00:40:01's later sentences (three persons in one being and consubstantiality first asserted at Nicaea) vs persons and homoousios; 42@00:45:28 (Arius a bishop) vs arius.
+# First pass: four research agents fetched every source on 2026-11-27 with curl into separate scratch folders and copied quotes from the saved text; the page's quotes were then extracted by script from those saved texts between anchors and re-matched (whitespace, HTML entities and curly quotes normalised; PDF line-break hyphens joined): 105/105, 0 misses. The second pass must re-fetch.
+# Flags for the second pass: (1) Dale Tuggy is himself a unitarian and his SEP supplement cites his own counter-narrative; used for what the New Testament does not state explicitly, the dating of trias/trinitas, “many scholars call this strain subordinationist”, Arius, and the Cappadocians, all attributed. (2) Kärkkäinen's “scholarly consensus” sentence is about the Bible as a whole and he says it applies “first and foremost” to the Old Testament; his NT judgment is his own p. 15 sentence; the short does not say “consensus”. (3) Moser's “consensus” is about high Christology, not the Trinity; reported in `worship` beside the dissent he names; the worship short calls it a disagreement. (4) New Catholic Encyclopedia entries (Catholic University of America) are classed Reference by registry precedent; most carry first-edition text (bibliographies to 1956–1993; “Trinity, Holy” to 2000); used for facts (dates, names, the creed's wording), with the state-of-the-field shorts resting on in-window authors. (5) LaCugna's and Pépin's Encyclopedia of Religion entries are 1987 text in the 2005 edition: used only for specific claims (the Cappadocians' vocabulary; Justin's sentence), never for a state of the field. (6) Haykin writes in the Journal of the Evangelical Theological Society (peer-reviewed; a society with a doctrinal basis) and Parsons and Noble in Tyndale Bulletin (registry precedent: Scholarly); Haykin backs only Gregory of Nazianzus's criticism, beside Noble; Parsons only the implicit-Trinitarianism side of the `word` debate. (7) Van Aarde 1999 is an OCR scan; quote matched in the plain text. (8) Fredriksen's offprint is marked “For use by the Author only” but posted openly by her department. (9) Kärkkäinen is read in the publisher's free sample chapter (ch. 1 only). (10) The Church History forum (2025) has several authors; each section is its own registry entry; section attributions follow the forum's headings. (11) Kim 2025 and J. Rebecca Lyman appear twice each (forum and other work); counted once each. (12) Bowker entries are one author (John Bowker, ed.) across four entries. (13) Carr and Brettler's Bible Odyssey answer does not say which of them wrote it; attributed jointly.
+review: null
+citations:
+  new-testament/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  new-testament/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  new-testament/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  new-testament/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  new-testament/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  new-testament/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  new-testament/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  new-testament/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  worship/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  worship/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  worship/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  worship/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  worship/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  worship/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  triadic/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  triadic/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  triadic/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  triadic/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  spirit/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  spirit/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  spirit/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  spirit/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  spirit/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  spirit/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  plural/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  plural/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  plural/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  plural/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  plural/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  word/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  word/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  word/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  word/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  word/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  word/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  subordination/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  subordination/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  subordination/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  subordination/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  subordination/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  subordination/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius-roots/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius-roots/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius-roots/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius-roots/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius-roots/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  arius-roots/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  nicaea/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  nicaea/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  nicaea/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  nicaea/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  nicaea/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  nicaea/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  nicaea/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  nicaea/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  homoousios/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  homoousios/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  homoousios/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  homoousios/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  homoousios/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  homoousios/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  easter/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  easter/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  easter/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  easter/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  after-nicaea/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  after-nicaea/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  after-nicaea/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  after-nicaea/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  after-nicaea/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  after-nicaea/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  spirit-nicaea/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  spirit-nicaea/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  spirit-nicaea/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  spirit-nicaea/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  constantinople/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  constantinople/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  constantinople/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  constantinople/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  constantinople/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  constantinople/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  constantinople/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  creed/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  creed/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  creed/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  creed/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  creed/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  persons/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  persons/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  persons/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  persons/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  persons/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  persons/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  tradition/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  tradition/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  tradition/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  tradition/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+triggers:
+  42@00:39:22:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+    }
+  42@00:40:01:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+    }
+  160@00:56:44:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+    }
+  182@00:19:44:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+    }
+  5@00:30:01:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+    }
+  42@00:47:44:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+    }
+  5@00:28:53:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+    }
+  5@00:34:49:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+    }
+  109@00:07:18:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+    }
+  5@00:47:42:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+    }
+  53@00:32:00:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: 18 statements. Core new-testament cites Kärkkäinen 2017 (Scholarly), Tuggy 2025 (Reference), Martin 2009 (Reference) and Lietaert Peerbolte 2015 (Scholarly): 4 independent authors, all in the window, none Host-authored.",
+    }
+  consensus-wording:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: no short says “consensus”. “Consensus” appears only in Moser's quote, attributed in worship text with its dissent. “Most scholars” appears only as Carr and Brettler's and Martin's words (plural) and Demacopoulos's (easter), attributed. #133 per short: new-testament (Kärkkäinen, Tuggy, Martin, Peerbolte; contested: Tuggy, Martin, Kärkkäinen); worship (Hurtado, Kärkkäinen vs Fredriksen, Dunn as reported by Moser); triadic (fact, Peppard; differ: Kärkkäinen vs Levison's minimal reading); spirit (HarperCollins, Bowker, van Aarde; Levison attributed); plural (HarperCollins, Carr and Brettler, Kärkkäinen, Martin); word (fact: Whittaker, Richard and Hill, Tuggy; debate Tuggy vs Parsons); subordination (Delport, Edwards, Tuggy, Hamell); arius (Tuggy, Lyman, De Clercq, Bowker, Delport); arius-roots (Lyman, Delport, De Clercq, Edwards; debated: Lyman); nicaea, homoousios, easter, spirit-nicaea (facts, 2+ authors each); after-nicaea (Kim, Lyman, Ortiz de Urbina, De Clercq); constantinople (Bowker, Hauser, Kreilkamp, Kim, Baber; creed wording Haykin, Noble); creed (Kim, Ryan, Bowker, Noble; debated Ryan vs Bowker); persons (Tuggy, Baber, LaCugna); tradition (Tradition sources, exempt).",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Hurtado's binitarian devotion, Moser's report of McGrath and Dunn, and Fredriksen named (worship); Levison's minimal reading (triadic) and his challenge to the power/person contrast (spirit) named; Parsons's implicit Trinitarianism named (word); Lyman's “no single interpretation” named (arius-roots); Bowker's doubt about the creed's origin named (creed).",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: ccc-232-267 named as the Catholic Church (registry convention); hopko-oca-orthodox-faith as the Orthodox Church in America, its publisher; bfm-2000 as the Southern Baptist Convention. None supports what scholars think.",
+    }
+sources:
+  baber-iep-trinity:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  bfm-2000:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  bowker-arianism:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  bowker-holy-spirit:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  bowker-nicaea:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  bowker-nicene-creed:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  carr-brettler-bo-genesis:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  ccc-232-267:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  declercq-nce-arianism:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  declercq-nce-eusebius-nicomedia:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  delport-2026-nicaea:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  demacopoulos-2025-nicaea-forum:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  edwards-2020-subordinationism:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  edwards-2026-nicene-creed:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  fernandez-2025-nicaea-forum:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  fredriksen-2020-high-christology:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  hamell-nce-subordinationism:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  harpercollins-2009-dictionary:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  hauser-nce-pneumatomachians:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  haykin-2019-spirit:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  hopko-oca-orthodox-faith:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  hurtado-2008-binitarian:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  karkkainen-2017-trinity:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  kim-2025-nicaea-forum:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  kreilkamp-nce-constantinople:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  lacugna-eor-trinity:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  levison-saet-2024-spirit:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  lyman-2005-arius:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  lyman-2025-nicaea-forum:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  martin-rlst152-l1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  martin-rlst152-l22:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  moser-saet-2024-preexistence:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  nce-homoousios:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  noble-1988-nazianzen-spirit:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  ortiz-nce-nicaea:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  parsons-2014-trinitarian-expressions:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  peerbolte-2015-spirit:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  pepin-eor-logos:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  peppard-bo-baptism:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  richard-hill-nce-trinity:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  ryan-nce-nicene-creed:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  tuggy-sep-trinity-history:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  vanaarde-1999-spirit:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+  whittaker-nce-theophilus:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+    }
+leads:
+  - "Britannica “Trinity”, “Arianism”, “Council of Nicaea”, “Pneumatomachian” and “First Council of Constantinople”: 403 or challenge to scripted fetches; not read."
+  - "Keith Thompson, “The Origins of the Christian Idea of Trinity”, Religions 15(4): 402 (2024): MDPI returned 403; not read."
+  - "Samuel Fernández, “The Council of Nicaea 325: Reassessing the Role of Eusebius of Caesarea”, Theological Studies 86(3) (2025): PDF blocked; would bear on homoousios and Constantine."
+  - "“The first Nicene Council and the New Testament canon”, Taylor & Francis 2025, doi:10.1080/21692327.2025.2564797: blocked; the likeliest Scholarly source for whether Nicaea set the canon."
+  - "Synodicon Vetus on the Nicaea canon miracle (Duffy and Parker, Dumbarton Oaks 1979, p. 29) and Voltaire's Philosophical Dictionary, “Councils”: seen only as quoted in Huggins and Meade; originals not opened."
+  - "Roy Hoover, Bible Review 1993 (“The Council of Nicea in 325 did not address the question”), Chadwick's 1982 JTS review, Ehrman 2004 on Constantine and the canon: seen only as quoted in Huggins."
+  - "Hanson, The Search for the Christian Doctrine of God (1988); Ayres, Nicaea and Its Legacy (2004); Kelly, Early Christian Doctrines and Early Christian Creeds; Williams, Arius (2001); Latinovic 2017; Löhr 2006/2007: cited inside read sources; not open."
+  - "Bauckham, Jesus and the God of Israel (2008); Dunn, Did the First Christians Worship Jesus? (2010); McGrath 2009; Fee, God's Empowering Presence (1994); Hasker 2013: seen only through Moser, Kärkkäinen, Peerbolte or Tuggy."
+  - "Litwa 2014 on Philo's “second god”: seen only as quoted in Lévy's SEP entry on Philo."
+  - "Luislampe and Bolgiani on Basil and the Spirit; Hanson 1969 on Basil's treatise: seen only as quoted in Haykin or Noble."
+  - "Matthew 28:19's textual history: see #241; not researched here."
+uncited:
+  - "Catherine Mowry LaCugna, Encyclopedia of Religion “Trinity”: “exegetes and theologians agree that the New Testament also does not contain an explicit doctrine of the Trinity” and the Hebrew Bible sentence: read; 1987 text, outside the window for a state-of-the-field statement; not used for the core."
+  - "Kärkkäinen 2017, p. 23 on 2 Cor 13:14 and Ephesians 1:3–14: read; the triadic text describes his position from the two cited sentences."
+  - "C. Draina, New Catholic Encyclopedia “Trinity, Holy (in the Bible)”: read; says Matt 28:19 “clearly teaches” equal divinity, in a confessional frame; not cited (a Tradition-like reading in a Reference entry; the triadic statement rests on Peppard, Kärkkäinen, Levison)."
+  - "Dirk Van der Merwe, HTS 75(1) 2019, on John as Trinitarian: read; a theological reading, not needed for the worship or new-testament debate."
+  - "Henry Warner Bowden, “Trinity”, Contemporary American Religion: read; calls trinus Greek (it is Latin); not cited."
+  - "Graham Twelftree, “The Holy Spirit in Luke-Acts” (Bible Odyssey): read; the spirit statement is about the Hebrew Bible; not cited."
+  - "Encyclopaedia Judaica, “Ruaḥ ha-Kodesh”: read; about rabbinic usage, not the Hebrew Bible."
+  - "Hans Schwarz, Encyclopedia of Science and Religion, “Holy Spirit”: read; one generic line on 381."
+  - "Hurtado, JSNT 2004 response to Casey: read; the 2008 chapter carries the binitarian claim."
+  - "Edward Moore, IEP “Origen of Alexandria”: read; not needed beside Lyman and Edwards."
+  - "Jean Pépin, Encyclopedia of Religion “Logos”: Philo's “second god” and the “prisoners of the Zeitgeist” judgment read; 1987 text, one author's view; only Justin's sentence is quoted."
+  - "Mark Edwards, TheoLogica 2020, p. 80 “all Christians before Nicaea … held that the persons differed in rank”: read; his summary of Cudworth, not his own claim; not cited."
+  - "I. Ortiz de Urbina and the NCE “Homoousios” entry on whether the creed meant numerical identity: read; they disagree; no statement made."
+  - "T. Ryan, NCE “Nicene Creed”, on Eusebius's creed as the model: read; conflicts with Ortiz de Urbina and Fernández; no statement made."
+  - "Rugare Rukuni and Erna Oliver, HTS 75(4) 2019: read; weak sourcing (“320 delegates”); not cited."
+  - "Bart Ehrman, Truth and Fiction in The Da Vinci Code, excerpt on Beliefnet: read; does not address the canon; popular reprint."
+  - "Paul Freedman, Yale HIST 210 lecture 3: read; not needed beside Kim, Lyman and the NCE."
+  - "Ronald Huggins, Midwestern Journal of Theology 8.2/9.1 (2010), and John Meade, Text & Canon Institute (2021), on Nicaea and the canon: read; a seminary house journal and an apologetic site, no Scholarly or Reference source beside them; the canon statement is not made."
+  - "A. G. Gibson, NCE “Nicholas of Myra, St.”: read; one author on the legend of his presence at Nicaea; no statement made."
+  - "Kim, Cambridge Companion to the Council of Nicaea, introduction (publisher excerpt, pp. 1–10): read; the forum carries the same point in full."
+  - "Michael Haykin, JETS 2019, on Basil not calling the Spirit God and the Pneumatomachi at the council: read; not needed beside Bowker, Kreilkamp and Noble."
+  - "Augsburg Confession, Art. I (bookofconcord.org): read; a privately run site, not a church body's own; not cited."
+  - "Orthodox Church in America, Hopko, on the filioque: read; the filioque is not stated on the page."
+  - "Catechism of the Catholic Church §§242–247 on 381 and the filioque: read; not needed for the tradition statement."

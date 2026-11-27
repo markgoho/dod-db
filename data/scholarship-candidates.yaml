@@ -448,3 +448,27 @@ statements:
         timestamp: "00:29:37.380"
         text: "But a fun example is the story of Joseph being sold into slavery because we seem to have again, these narrative incongruities. And is it the Midianites? Is it? Is it the Ishmaelites?"
     notes: "Conflict with joseph-sale: the full turn says the two stories have “their own beginnings, their own middles, and their own ends” and calls this “very strong evidence” of two sources; the statement reports that reconstruction as debated (Römer, Schmid and Bühler 2021). Logged at the #153 publish, 2026-11-27."
+  - page: the-origins-of-the-trinity
+    question: "What did the Council of Nicaea decide about the Son?"
+    triggers:
+      - episode: 5
+        speaker: "Dan McClellan"
+        timestamp: "00:36:39.060"
+        text: "But by the end of this, you basically have all but two bishops signing on to this Nicene Creed. So we've got Arius and these two other bishops, including Eusebius of Nicomedia, who are exiled to the eastern, the land to the east of Illyria I think is what it's called to the east of the Adriatic Sea."
+    notes: "Conflict with nicaea: places Eusebius of Nicomedia among the two bishops exiled with Arius; the statement reports (New Catholic Encyclopedia, Ortiz de Urbina) that the two who refused were Secundus and Theonas, and (De Clercq) that Eusebius signed and was exiled about three months later. Not attached as a Trigger Claim. Logged at the #154 first pass, 2026-11-27."
+  - page: the-origins-of-the-trinity
+    question: "When did the formula “one substance, three persons” take shape?"
+    triggers:
+      - episode: 42
+        speaker: "Dan McClellan"
+        timestamp: "00:40:01.760"
+        text: "And this is the first time that Christians actually assert this notion of consubstantiality as a whole. The idea being that the Trinity is. Comprises three different persons within the one being that is God."
+    notes: "Conflict with persons and homoousios: places the three-persons-in-one-being formula and the first assertion of consubstantiality at Nicaea; the statements report that the ousia/hypostasis formula is credited to the Cappadocians later in the fourth century, with the two words still interchangeable at Nicaea (Tuggy, Baber, LaCugna), and that homoousios was in theological use by the mid-third century (New Catholic Encyclopedia). The same turn's first sentence (“the framework of the Trinity develops between the 2nd and the 5th centuries CE”) is attached. Logged at the #154 first pass, 2026-11-27."
+  - page: the-origins-of-the-trinity
+    question: "What did Arius teach?"
+    triggers:
+      - episode: 42
+        speaker: "Dan McClellan"
+        timestamp: "00:45:28.610"
+        text: "And, and we get this, this bishop in Alexandria named Arius, who is looking at the New Testament, it says it's very clear that Jesus is subordinate to God and that Jesus is a creation of God."
+    notes: "Conflict with arius: calls Arius a bishop; the statement's sources call him a presbyter or priest of Alexandria (Tuggy, Bowker); Episode 5 at 00:28:53 calls him a presbyter. Not attached. Logged at the #154 first pass, 2026-11-27."

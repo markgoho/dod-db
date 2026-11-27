@@ -7728,3 +7728,579 @@ gotquestions-camels:
   url: "https://www.gotquestions.org/camels-in-the-Bible.html"
   hostAuthored: false
   tradition: "Got Questions Ministries, an evangelical ministry"
+
+karkkainen-2017-trinity:
+  author: "Veli-Matti Kärkkäinen"
+  title: "Christian Understandings of the Trinity: The Historical Trajectory, ch. 1, “The Christian Trinity: Biblical Antecedents”"
+  series: null
+  publisher: "Fortress Press"
+  year: 2017
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher's sample chapter PDF, open"
+  url: "https://ms.fortresspress.com/downloads/9781451479959Chapter1.pdf"
+  hostAuthored: false
+  tradition: null
+
+tuggy-sep-trinity-history:
+  author: "Dale Tuggy"
+  title: "History of Trinitarian Doctrines (supplement to “Trinity”)"
+  series: "Stanford Encyclopedia of Philosophy"
+  publisher: "Metaphysics Research Lab, Stanford University"
+  year: 2025
+  edition: "Substantive revision of 14 August 2025"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia, open"
+  url: "https://plato.stanford.edu/entries/trinity/trinity-history.html"
+  hostAuthored: false
+  tradition: null
+
+peerbolte-2015-spirit:
+  author: "L. J. Lietaert Peerbolte"
+  shortAuthor: "Lietaert Peerbolte"
+  title: "“Do Not Quench the Spirit!” The Discourse of the Holy Spirit in Earliest Christianity"
+  series: "HTS Teologiese Studies/Theological Studies 71(1), Art. #3098"
+  publisher: "AOSIS"
+  year: 2015
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal; publisher PDF in the Vrije Universiteit Amsterdam repository"
+  url: "https://research.vu.nl/ws/files/1298085/3098-27771-2-PB.PDF"
+  hostAuthored: false
+  tradition: null
+
+hurtado-2008-binitarian:
+  author: "Larry W. Hurtado"
+  title: "The Binitarian Pattern of Earliest Christian Devotion and Early Doctrinal Development"
+  series: "In Bryan D. Spinks (ed.), The Place of Christ in Liturgical Prayer, 23–50"
+  publisher: "Liturgical Press"
+  year: 2008
+  edition: "Author's manuscript"
+  class: Scholarly
+  kind: article
+  access: "Author's manuscript in the Edinburgh Research Archive, open"
+  url: "https://era.ed.ac.uk/bitstreams/71117d8a-67ea-420f-b69c-a7bfb0ee9b73/download"
+  hostAuthored: false
+  tradition: null
+
+moser-saet-2024-preexistence:
+  author: "David Moser"
+  title: "Jesus' Preexistence and Incarnation"
+  series: "St Andrews Encyclopaedia of Theology"
+  publisher: "University of St Andrews"
+  year: 2024
+  edition: null
+  class: Reference
+  kind: article
+  access: "Online encyclopedia, open (PDF)"
+  url: "https://www.saet.ac.uk/Christianity/JesusPreexistenceandIncarnation.pdf"
+  hostAuthored: false
+  tradition: null
+
+fredriksen-2020-high-christology:
+  author: "Paula Fredriksen"
+  title: "How High Can Early High Christology Be?"
+  series: "In Matthew V. Novenson (ed.), Monotheism and Christology in Greco-Roman Antiquity"
+  publisher: "Brill"
+  year: 2020
+  edition: "Author's offprint"
+  class: Scholarly
+  kind: article
+  access: "Author's offprint posted by Boston University's Department of Religion, open"
+  url: "https://www.bu.edu/religion/files/2022/03/Fredriksen-How-High-can-Early-High-Christology-Be-MONOTHEISM-AND-CHRISTOLOGY-202098.pdf"
+  hostAuthored: false
+  tradition: null
+
+levison-saet-2024-spirit:
+  author: "John R. Levison"
+  title: "The Spirit in the Christian Bible"
+  series: "St Andrews Encyclopaedia of Theology"
+  publisher: "University of St Andrews"
+  year: 2024
+  edition: null
+  class: Reference
+  kind: article
+  access: "Online encyclopedia, open (PDF)"
+  url: "https://www.saet.ac.uk/Christianity/TheSpiritintheChristianBible.pdf"
+  hostAuthored: false
+  tradition: null
+
+peppard-bo-baptism:
+  author: "Michael Peppard"
+  title: "Baptism in Early Christianity"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "SBL website, open"
+  url: "https://www.bibleodyssey.org/articles/baptism-in-early-christianity/"
+  hostAuthored: false
+  tradition: null
+
+carr-brettler-bo-genesis:
+  author: "David M. Carr and Marc Zvi Brettler"
+  title: "The Book of Genesis"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "SBL website, open"
+  url: "https://www.bibleodyssey.org/articles/the-book-of-genesis/"
+  hostAuthored: false
+  tradition: null
+
+vanaarde-1999-spirit:
+  author: "Andries van Aarde"
+  title: "The Spirit of God in the New Testament: Diverse witnesses"
+  series: "HTS Teologiese Studies/Theological Studies 55(1)"
+  publisher: "University of Pretoria"
+  year: 1999
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal; scanned PDF"
+  url: "https://hts.org.za/index.php/hts/article/download/1554/2847"
+  hostAuthored: false
+  tradition: null
+
+bowker-holy-spirit:
+  author: "John Bowker"
+  title: "Holy Spirit"
+  series: "The Concise Oxford Dictionary of World Religions"
+  publisher: "Oxford University Press"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/holy-spirit"
+  hostAuthored: false
+  tradition: null
+
+bowker-arianism:
+  author: "John Bowker"
+  title: "Arianism"
+  series: "The Concise Oxford Dictionary of World Religions"
+  publisher: "Oxford University Press"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/arianism"
+  hostAuthored: false
+  tradition: null
+
+bowker-nicaea:
+  author: "John Bowker"
+  title: "Nicaea, Council of"
+  series: "The Concise Oxford Dictionary of World Religions"
+  publisher: "Oxford University Press"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/christianity/roman-catholic-and-orthodox-churches-councils-and-treaties-17"
+  hostAuthored: false
+  tradition: null
+
+bowker-nicene-creed:
+  author: "John Bowker"
+  title: "Nicene Creed"
+  series: "The Concise Oxford Dictionary of World Religions"
+  publisher: "Oxford University Press"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/nicene-creed"
+  hostAuthored: false
+  tradition: null
+
+whittaker-nce-theophilus:
+  author: "M. Whittaker"
+  title: "Theophilus of Antioch"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/theophilus-antioch"
+  hostAuthored: false
+  tradition: null
+
+richard-hill-nce-trinity:
+  author: "R. L. Richard and W. J. Hill"
+  title: "Trinity, Holy"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd-edition text (bibliography to 2000)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/trinity-holy"
+  hostAuthored: false
+  tradition: null
+
+parsons-2014-trinitarian-expressions:
+  author: "Stuart E. Parsons"
+  title: "Very Early Trinitarian Expressions"
+  series: "Tyndale Bulletin 65(1): 141–152"
+  publisher: null
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal, PDF"
+  url: "https://tyndalebulletin.org/article/29371.pdf"
+  hostAuthored: false
+  tradition: null
+
+delport-2026-nicaea:
+  author: "Khegan M. Delport"
+  title: "The symbol and the banquet: A prolegomena to a future metaphysics of Nicaea"
+  series: "In die Skriflig/In Luce Verbi 60(2), a3225"
+  publisher: "AOSIS"
+  year: 2026
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal"
+  url: "https://indieskriflig.org.za/index.php/skriflig/article/view/3225/9428"
+  hostAuthored: false
+  tradition: null
+
+edwards-2020-subordinationism:
+  author: "Mark Edwards"
+  title: "Is Subordinationism a Heresy?"
+  series: "TheoLogica 4(2)"
+  publisher: "UCLouvain"
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal, PDF"
+  url: "https://ojs.uclouvain.be/index.php/theologica/article/download/23803/51063"
+  hostAuthored: false
+  tradition: null
+
+edwards-2026-nicene-creed:
+  author: "Mark Edwards"
+  title: "What did the Nicene Creed say?"
+  series: "Ecclesiastical Law Journal 28(1): 106–116"
+  publisher: "Cambridge University Press"
+  year: 2026
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access article (CC BY 4.0) on Cambridge Core"
+  url: "https://www.cambridge.org/core/product/390BBFCFD3285033A40C55B807AF7B6C/core-reader"
+  hostAuthored: false
+  tradition: null
+
+hamell-nce-subordinationism:
+  author: "P. J. Hamell"
+  title: "Subordinationism"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/subordinationism"
+  hostAuthored: false
+  tradition: null
+
+pepin-eor-logos:
+  author: "Jean Pépin"
+  title: "Logos"
+  series: "Encyclopedia of Religion"
+  publisher: "Macmillan Reference USA"
+  year: 2005
+  edition: "2nd ed.; article text of 1987, translated by Denis O'Brien"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/philosophy/philosophy-terms-and-concepts/logos"
+  hostAuthored: false
+  tradition: null
+
+lyman-2005-arius:
+  author: "J. Rebecca Lyman"
+  title: "Arius and Arianism"
+  series: "Encyclopedia of Philosophy"
+  publisher: "Macmillan Reference USA"
+  year: 2005
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/arius-and-arianism"
+  hostAuthored: false
+  tradition: null
+
+declercq-nce-arianism:
+  author: "V. C. De Clercq"
+  title: "Arianism"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/arianism"
+  hostAuthored: false
+  tradition: null
+
+declercq-nce-eusebius-nicomedia:
+  author: "V. C. De Clercq"
+  title: "Eusebius of Nicomedia"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/eusebius-nicomedia"
+  hostAuthored: false
+  tradition: null
+
+ortiz-nce-nicaea:
+  author: "I. Ortiz de Urbina"
+  shortAuthor: "Ortiz de Urbina"
+  title: "Nicaea I, Council of"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/nicaea-i-council"
+  hostAuthored: false
+  tradition: null
+
+nce-homoousios:
+  author: null
+  title: "Homoousios"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/homoousios"
+  hostAuthored: false
+  tradition: null
+
+ryan-nce-nicene-creed:
+  author: "T. Ryan"
+  title: "Nicene Creed"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/nicene-creed"
+  hostAuthored: false
+  tradition: null
+
+kim-2025-nicaea-forum:
+  author: "Young Richard Kim"
+  title: "Introduction, in Young Richard Kim et al., “Reflections on Nicaea at 1700: A Forum on the Legacy of the Council and the Creed”"
+  series: "Church History 94(2): 338–377"
+  publisher: "Cambridge University Press"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access article (CC BY) on Cambridge Core"
+  url: "https://www.cambridge.org/core/journals/church-history/article/reflections-on-nicaea-at-1700-a-forum-on-the-legacy-of-the-council-and-the-creed/F2F325D5C22C6ACF4DA126F62DDE784D"
+  hostAuthored: false
+  tradition: null
+
+lyman-2025-nicaea-forum:
+  author: "J. Rebecca Lyman"
+  title: "Response, in Young Richard Kim et al., “Reflections on Nicaea at 1700: A Forum on the Legacy of the Council and the Creed”"
+  series: "Church History 94(2): 338–377"
+  publisher: "Cambridge University Press"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access article (CC BY) on Cambridge Core"
+  url: "https://www.cambridge.org/core/journals/church-history/article/reflections-on-nicaea-at-1700-a-forum-on-the-legacy-of-the-council-and-the-creed/F2F325D5C22C6ACF4DA126F62DDE784D"
+  hostAuthored: false
+  tradition: null
+
+demacopoulos-2025-nicaea-forum:
+  author: "George E. Demacopoulos"
+  title: "“The Significance of Nicaea for the Orthodox Christian Tradition”, in Young Richard Kim et al., “Reflections on Nicaea at 1700: A Forum on the Legacy of the Council and the Creed”"
+  series: "Church History 94(2): 338–377"
+  publisher: "Cambridge University Press"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access article (CC BY) on Cambridge Core"
+  url: "https://www.cambridge.org/core/journals/church-history/article/reflections-on-nicaea-at-1700-a-forum-on-the-legacy-of-the-council-and-the-creed/F2F325D5C22C6ACF4DA126F62DDE784D"
+  hostAuthored: false
+  tradition: null
+
+fernandez-2025-nicaea-forum:
+  author: "Samuel Fernández"
+  title: "“Nicaea from the Catholic Perspective”, in Young Richard Kim et al., “Reflections on Nicaea at 1700: A Forum on the Legacy of the Council and the Creed”"
+  series: "Church History 94(2): 338–377"
+  publisher: "Cambridge University Press"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access article (CC BY) on Cambridge Core"
+  url: "https://www.cambridge.org/core/journals/church-history/article/reflections-on-nicaea-at-1700-a-forum-on-the-legacy-of-the-council-and-the-creed/F2F325D5C22C6ACF4DA126F62DDE784D"
+  hostAuthored: false
+  tradition: null
+
+haykin-2019-spirit:
+  author: "Michael A. G. Haykin"
+  title: "“The Lord, the Life-Giver”: Confessing the Holy Spirit in the Fourth Century"
+  series: "Journal of the Evangelical Theological Society 62(1): 65–80"
+  publisher: "Evangelical Theological Society"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Society journal PDF, open"
+  url: "https://etsjets.org/wp-content/uploads/2019/03/files_JETS-PDFs_62_62-1_JETS_62.1_65-80_Haykin.pdf"
+  hostAuthored: false
+  tradition: null
+
+noble-1988-nazianzen-spirit:
+  author: "T. A. Noble"
+  title: "Gregory Nazianzen's Use of Scripture in Defence of the Deity of the Spirit"
+  series: "Tyndale Bulletin 39: 101–123"
+  publisher: null
+  year: 1988
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal, PDF"
+  url: "https://tyndalebulletin.org/article/30552-gregory-nazianen-s-use-of-scripture-in-defence-of-the-deity-of-the-spirit.pdf"
+  hostAuthored: false
+  tradition: null
+
+baber-iep-trinity:
+  author: "H. E. Baber"
+  title: "Trinity"
+  series: "Internet Encyclopedia of Philosophy"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Online encyclopedia, open"
+  url: "https://iep.utm.edu/trinity/"
+  hostAuthored: false
+  tradition: null
+
+hauser-nce-pneumatomachians:
+  author: "F. Hauser"
+  title: "Pneumatomachians"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/pneumatomachians"
+  hostAuthored: false
+  tradition: null
+
+kreilkamp-nce-constantinople:
+  author: "H. D. Kreilkamp"
+  title: "Constantinople I, Council of"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/constantinople-i-council"
+  hostAuthored: false
+  tradition: null
+
+lacugna-eor-trinity:
+  author: "Catherine Mowry LaCugna"
+  title: "Trinity"
+  series: "Encyclopedia of Religion"
+  publisher: "Macmillan Reference USA"
+  year: 2005
+  edition: "2nd ed.; article text of 1987, revised bibliography"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/trinity"
+  hostAuthored: false
+  tradition: null
+
+ccc-232-267:
+  author: null
+  title: "Catechism of the Catholic Church, §§232–267"
+  series: null
+  publisher: "Libreria Editrice Vaticana"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va, open"
+  url: "https://www.vatican.va/archive/ENG0015/__P17.HTM"
+  hostAuthored: false
+  tradition: "the Catholic Church"
+
+hopko-oca-orthodox-faith:
+  author: "Thomas Hopko"
+  title: "The Orthodox Faith, vol. 1, Doctrine and Scripture"
+  series: null
+  publisher: "Orthodox Church in America"
+  year: null
+  edition: null
+  class: Tradition
+  kind: book
+  access: "oca.org, open"
+  url: "https://www.oca.org/orthodoxy/the-orthodox-faith/doctrine-scripture"
+  hostAuthored: false
+  tradition: "the Orthodox Church in America"
+
+bfm-2000:
+  author: null
+  title: "The Baptist Faith and Message 2000"
+  series: null
+  publisher: "Southern Baptist Convention"
+  year: 2000
+  edition: null
+  class: Tradition
+  kind: article
+  access: "sbc.net, open"
+  url: "https://bfm.sbc.net/bfm2000/"
+  hostAuthored: false
+  tradition: "the Southern Baptist Convention"
