@@ -8304,3 +8304,356 @@ bfm-2000:
   url: "https://bfm.sbc.net/bfm2000/"
   hostAuthored: false
   tradition: "the Southern Baptist Convention"
+
+swenson-bo-mary-magdalene:
+  author: "Kristin Swenson"
+  title: "Mary Magdalene"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2015
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/mary-magdalene/"
+  hostAuthored: false
+  tradition: null
+
+clanton-bo-mm-popular-culture:
+  author: "Dan W. Clanton Jr."
+  shortAuthor: "Clanton"
+  title: "Mary Magdalene in Popular Culture"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2014
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/mary-magdalene-in-popular-culture/"
+  hostAuthored: false
+  tradition: null
+
+webster-bo-mm-last-temptation:
+  author: "Jane S. Webster"
+  title: "Mary Magdalene in The Last Temptation of Christ"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2019
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/mary-magdalene-in-the-last-temptation-of-christ/"
+  hostAuthored: false
+  tradition: null
+
+beavis-bo-mary-and-martha:
+  author: "Mary Ann Beavis"
+  title: "Mary and Martha"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2016
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/mary-and-martha/"
+  hostAuthored: false
+  tradition: null
+
+dilley-bo-peter:
+  author: "Paul Dilley"
+  title: "Peter"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2015
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/peter/"
+  hostAuthored: false
+  tradition: null
+
+mullervanvelden-2024-memory:
+  author: "N. E. Müller van Velden"
+  shortAuthor: "Müller van Velden"
+  title: "Memory, Jesus, and Mary Magdalene: Whose memory matters?"
+  series: "Acta Theologica 44, Supplementum 37: 121–144"
+  publisher: "University of the Free State"
+  year: 2024
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "SciELO South Africa PDF, open access"
+  url: "https://scielo.org.za/pdf/at/v44s37/08.pdf"
+  hostAuthored: false
+  tradition: null
+
+jozwiak-2024-gregory-magdalene:
+  author: "Magdalena Jóźwiak"
+  title: "“The Apostle of the Apostles,” Prostitute or Penitent? A Typology of Mary Magdalene in the Homilies of Gregory the Great"
+  series: "Verbum Vitae 42(4): 871–886"
+  publisher: "John Paul II Catholic University of Lublin"
+  year: 2024
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University repository PDF, open access (CC BY-ND)"
+  url: "https://theo-logos.pl/server/api/core/bitstreams/247d86f4-e87c-4d76-96c3-16397135331a/content"
+  hostAuthored: false
+  tradition: null
+
+kent-2010-same-person:
+  author: "Grenville Kent"
+  title: "Mary Magdalene, Mary of Bethany and the Sinful Woman of Luke 7: The Same Person?"
+  series: "Journal of Asia Adventist Seminary 13(1): 13–28"
+  publisher: "Adventist International Institute of Advanced Studies"
+  year: 2010
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Journal website PDF, open"
+  url: "https://journals.aiias.edu/jaas/article/download/599/545/1128"
+  hostAuthored: false
+  tradition: null
+
+schrader-2017-martha-htr:
+  author: "Elizabeth Schrader"
+  title: "Was Martha of Bethany Added to the Fourth Gospel in the Second Century?"
+  series: "Harvard Theological Review 110(3): 360–392"
+  publisher: "Cambridge University Press"
+  year: 2017
+  edition: "Author's manuscript (18 May 2016), cited by manuscript page"
+  class: Scholarly
+  kind: article
+  access: "DukeSpace institutional repository, author's manuscript PDF, open (the bitstream URL opens directly; the item page sits behind a browser check)"
+  url: "https://dukespace.lib.duke.edu/server/api/core/bitstreams/b8fc64e3-e73b-4d1f-983c-ee9370b9b893/content"
+  hostAuthored: false
+  tradition: null
+
+taylor-2014-missing-magdala:
+  author: "Joan E. Taylor"
+  title: "Missing Magdala and the Name of Mary “Magdalene”"
+  series: "Palestine Exploration Quarterly 146(3): 205–223"
+  publisher: "Taylor & Francis"
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "King's College London repository; abstract open, full text paywalled (abstract only cited)"
+  url: "https://kclpure.kcl.ac.uk/portal/en/publications/missing-magdala-and-the-name-of-mary-magdalene/"
+  hostAuthored: false
+  tradition: null
+
+schrader-taylor-2021-meaning-magdalene:
+  author: "Elizabeth Schrader and Joan E. Taylor"
+  title: "The Meaning of “Magdalene”: A Review of Literary Evidence"
+  series: "Journal of Biblical Literature 140(4): 751–773"
+  publisher: "Society of Biblical Literature"
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "King's College London repository; abstract open, full text paywalled (abstract only cited)"
+  url: "https://kclpure.kcl.ac.uk/portal/en/publications/the-meaning-of-magdalene-a-review-of-literary-evidence/"
+  hostAuthored: false
+  tradition: null
+
+fellows-2023-bethany-variants:
+  author: "Richard G. Fellows"
+  title: "Early Textual Variants That Downplay the Roles of Women in the Bethany Account"
+  series: "TC: A Journal of Biblical Textual Criticism 28: 67–82"
+  publisher: null
+  year: 2023
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Journal PDF, open access; jbtc.org returned 522 on 2026-11-27, so read at the Internet Archive copy of the same URL (#93 dead-URL rule)"
+  url: "https://web.archive.org/web/20260220104212/https://jbtc.org/v28/TC-2023_Fellows.pdf"
+  hostAuthored: false
+  tradition: null
+
+schraderpolczer-2025-response:
+  author: "Elizabeth Schrader Polczer"
+  shortAuthor: "Schrader Polczer"
+  title: "Missing the Forest for the Trees: A Response to Richard Fellows"
+  series: "TC: A Journal of Biblical Textual Criticism 30: 147–154"
+  publisher: "Scholarly Publishing Collective"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher PDF, free to read; opens in a browser (automated fetches get 403)"
+  url: "https://doi.org/10.15699/tc.30.2025.08"
+  hostAuthored: false
+  tradition: null
+
+fellows-2025-counter-response:
+  author: "Richard G. Fellows"
+  title: "The Presence of Martha in the Archetype of the Bethany Narrative in John: A Counter-Response to Elizabeth Schrader Polczer"
+  series: "TC: A Journal of Biblical Textual Criticism 30: 155–159"
+  publisher: "Scholarly Publishing Collective"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher PDF, free to read; opens in a browser (automated fetches get 403)"
+  url: "https://doi.org/10.15699/tc.30.2025.09"
+  hostAuthored: false
+  tradition: null
+
+king-2014-htr-wife:
+  author: "Karen L. King"
+  title: "“Jesus said to them, ‘My wife . . .’”: A New Coptic Papyrus Fragment"
+  series: "Harvard Theological Review 107(2): 131–159"
+  publisher: "Cambridge University Press"
+  year: 2014
+  edition: "Author's manuscript, cited by its printed page numbers"
+  class: Scholarly
+  kind: article
+  access: "Harvard DASH repository, author's manuscript PDF, open access"
+  url: "https://dash.harvard.edu/server/api/core/bitstreams/7312037d-26c9-6bd4-e053-0100007fdf3b/content"
+  hostAuthored: false
+  tradition: null
+
+king-2013-nts-philip:
+  author: "Karen L. King"
+  title: "The Place of the Gospel of Philip in the Context of Early Christian Claims about Jesus's Marital Status"
+  series: "New Testament Studies 59(4): 565–587"
+  publisher: "Cambridge University Press"
+  year: 2013
+  edition: "Author's manuscript, cited by its printed page numbers"
+  class: Scholarly
+  kind: article
+  access: "Harvard DASH repository, author's manuscript PDF, open access"
+  url: "https://dash.harvard.edu/server/api/core/bitstreams/7312037c-e1a5-6bd4-e053-0100007fdf3b/content"
+  hostAuthored: false
+  tradition: null
+
+gathercole-2015-gjw-context:
+  author: "Simon Gathercole"
+  title: "The Gospel of Jesus' Wife: Constructing a Context"
+  series: "New Testament Studies 61(3): 292–313"
+  publisher: "Cambridge University Press"
+  year: 2015
+  edition: "Accepted manuscript, cited by its page numbers"
+  class: Scholarly
+  kind: article
+  access: "Apollo, University of Cambridge repository, accepted manuscript PDF, open"
+  url: "https://www.repository.cam.ac.uk/bitstreams/91a87282-1ab8-4eb9-8b73-4b118a5c0f3f/download"
+  hostAuthored: false
+  tradition: null
+
+nts-2015-editorial:
+  author: null
+  title: "Editorial"
+  series: "New Testament Studies 61(3): 289–291"
+  publisher: "Cambridge University Press"
+  year: 2015
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Cambridge Core reader, full text free"
+  url: "https://www.cambridge.org/core/product/7C8A4F4B97B379DAA77F1CD6C3BA2561/core-reader"
+  hostAuthored: false
+  tradition: null
+
+cirafesi-2022-magdala-stone:
+  author: "Wally V. Cirafesi"
+  title: "“Mystical Spirituality” in Second Temple Period Judaism? Light from the Decorated Stone in the Magdala Synagogue"
+  series: "Religions 13(12): 1218"
+  publisher: "MDPI"
+  year: 2022
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher website, open access; opens in a browser (automated fetches get 403)"
+  url: "https://www.mdpi.com/2077-1444/13/12/1218"
+  hostAuthored: false
+  tradition: null
+
+cinamon-2014-migdal-report:
+  author: "Gilad Cinamon"
+  title: "Migdal: Final Report"
+  series: "Hadashot Arkheologiyot 126"
+  publisher: "Israel Antiquities Authority"
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Israel Antiquities Authority website, open"
+  url: "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=11620"
+  hostAuthored: false
+  tradition: null
+
+avshalomgorni-stern-2016-migdal-report:
+  author: "Dina Avshalom-Gorni and Edna J. Stern"
+  title: "Migdal: Final Report"
+  series: "Hadashot Arkheologiyot 128"
+  publisher: "Israel Antiquities Authority"
+  year: 2016
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Israel Antiquities Authority website, open"
+  url: "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=25051"
+  hostAuthored: false
+  tradition: null
+
+vatican-2016-mm-feast-decree:
+  author: null
+  title: "Decree on the celebration of Saint Mary Magdalene raised to the rank of a feast in the General Roman Calendar (Prot. N. 257/16)"
+  series: null
+  publisher: "Congregation for Divine Worship and the Discipline of the Sacraments"
+  year: 2016
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va PDF, open"
+  url: "https://www.vatican.va/roman_curia/congregations/ccdds/documents/sanctae-m-magdalenae-decretum_en.pdf"
+  hostAuthored: false
+  tradition: "the Catholic Church"
+
+roche-2016-apostle-of-apostles:
+  author: "Arthur Roche"
+  title: "Apostle of the Apostles"
+  series: null
+  publisher: "Congregation for Divine Worship and the Discipline of the Sacraments"
+  year: 2016
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va PDF, open"
+  url: "https://www.vatican.va/roman_curia/congregations/ccdds/documents/articolo-roche-maddalena_en.pdf"
+  hostAuthored: false
+  tradition: "the Catholic Church"
+
+oca-mary-magdalene-life:
+  author: null
+  title: "Myrrhbearer and Equal of the Apostles Mary Magdalene"
+  series: "Lives of the Saints"
+  publisher: "Orthodox Church in America"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "oca.org, open"
+  url: "https://www.oca.org/saints/lives/2016/07/22/102070-myrrhbearer-and-equal-of-the-apostles-mary-magdalene"
+  hostAuthored: false
+  tradition: "the Orthodox Church in America"
+
+fenton-parish-who-was-mm:
+  author: null
+  title: "Who was St. Mary Magdalene?"
+  series: null
+  publisher: "St. Mary Magdalene Orthodox Church, Fenton, Michigan (published by Pravoslavie.ru / OrthoChristian.com)"
+  year: 2013
+  edition: null
+  class: Tradition
+  kind: article
+  access: "orthochristian.com, open"
+  url: "https://orthochristian.com/63238.html"
+  hostAuthored: false
+  tradition: "St. Mary Magdalene Orthodox Church in Fenton, Michigan"
