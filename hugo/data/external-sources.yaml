@@ -6384,3 +6384,45 @@ urj-shma:
   url: "https://www.reformjudaism.org/practice/prayers-blessings/worship-services-shma"
   hostAuthored: false
   tradition: "Reform Judaism"
+
+stern-ej-hasmoneans:
+  author: "Menahem Stern"
+  title: "Hasmoneans"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/hasmoneans"
+  hostAuthored: false
+  tradition: null
+
+britannica-palestine-hasmoneans:
+  author: null
+  title: "Palestine: The Hasmonean priest-princes"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/place/Palestine/The-Hasmonean-priest-princes"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-maccabees-13-notes:
+  author: null
+  title: "Notes to 1 Maccabees 13"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1maccabees/13"
+  hostAuthored: false
+  tradition: null

@@ -1,0 +1,194 @@
+# Review record for the Timeline Entry `hasmonean-state` (/timeline/#hasmonean-state; #93 shape). Not rendered.
+# Issue #236 (from #108), “Timeline Entry: The Hasmonean kingdom”. Issue notes: the show gives three start dates (165 E71, 160 E123, 141 E158), so use the sourced value and show the disagreeing Trigger Claims per #99; the end, 63 BCE, must agree with `alexander` (Hellenistic kingdoms to 63 BCE, Roman rule from 63); the Maccabean revolt entry (`maccabean-revolt`) precedes it, so don't double-date the revolt; Torah as public, enforced law in the Hasmonean period (E126 00:08:14, Adler) is a separate claim, kept out. Lead-agent brief: no seeAlso or anchor to #237 (death of Herod).
+# Id `hasmonean-state`; title “The independent Hasmonean state”, worded for what the sources date: Judea's independence from the Seleucids to Pompey. Not “kingdom”: Henze and Werline (row 104–103) and Stern (EJ) make Aristobulus I the first Hasmonean king, so a “kingdom” from 143–129 is wider than the sources. The end is independence, not the dynasty: Stern runs Hasmonean rule to Antigonus's death in 37 BCE (in the note).
+# Sourcing test, 2026-11-27: met. No source read dates the span in one breath (Henze and Werline body, Magness 2012 intro and Kee 2007 summary searched; none gives a Hasmonean period), so the display joins sourced start and end. Start, each source attaching its year to independence itself: Stern, EJ “Hasmoneans” (Reference; “In 143–142 b.c.e., Demetrius ii recognized the independence of Judea”), Levine 1999 (Reference; Simon “declared his independence from Seleucid rule” in 141), Henze and Werline 2020 Chronology (Scholarly, in window; “129 Judea becomes independent”). Sources differ, so #99: all three shown, each cited; EJ's “143–142” is a dual form, shown as given. End, unanimous: 63 BCE (Henze and Werline row 63; Britannica “Palestine”; Bible Odyssey Second Temple timeline; Stern's “Pompey's annexation” sentence, no year). Kind: event. No Tradition Date: every Trigger Claim states critical. No setting (event entry). No anchor, no seeAlso.
+# Milestones, not display sides (they date something other than independence): NABRE note to 1 Mc 13:41 (year 170 = March 142 to April 141 B.C., the verse's “yoke of the Gentiles was removed”: the claim is the verse's, the note only converts the year); Britannica “Palestine” 142–141 (Akra and the decree for Simon); Henze and Werline 140 (Simon high priest, commander, ethnarch) and 198–142 (Seleucid rule of Judea; noted beside their 129). All in the note, attributed.
+# Consistency: `alexander` (Hellenistic kingdoms 332–63, Roman rule from 63, Bible Odyssey) agrees with this entry's 63; the same Bible Odyssey intro is cited here. `maccabean-revolt` (167 desecration, 164 rededication): not restated; that review left every Hasmonean-kingdom date for #236. `daniel`, `temple-destruction` untouched. Herod (37 king, 4 BCE death) kept out except Antigonus's 37 as the end of Hasmonean rule.
+# Trigger Claims (#99: one to three; shown verbatim, disagreeing with each other and with the display): E158 00:18:34 (141 to 63, Pompey annexes Judea), E123 00:42:45 (“160 BCE to around 63 BCE”, hedge kept), E71 00:54:06 (“until like 165 BCE”, hedge kept; “marginally autonomous independent kingdom”). Not kept: E158 00:17:18 (“a high priest appointed in 141 BCE who institutes the Hasmonean Kingdom”, hedged “I want to say”; E158 00:18:34 states the span), E158 00:22:25 (Seleucids annexed 64 BCE), E112 00:02:19 (“middle of the 2nd century BCE”, no year), E112 00:08:08 (2 Maccabees' composition), E118 00:12:15 (63 BCE annexation, about modern Israel), E187 00:55:43 and 00:59:31 (Hellenistic period 332–63; “160s, 150s”), E123 00:40:24 and 00:41:37 (no start year).
+# agent: the first pass (2026-11-27), lead agent alone (one side: critical). Saved into scratchpad/hasm-p1: Henze and Werline PDF (curl; pdftotext -layout and plain), Levine at cojs.org (curl, HTML stripped), EJ “Hasmoneans” at Encyclopedia.com (curl, HTML stripped; Hebrew and Greek characters come out as “?”, none quoted), Bible Odyssey Tiki-Toki embed (curl), Magness 2012 excerpt PDF (curl; no Hasmonean dates), Kee 2007 summary (curl; none). In Claude in Chrome, page innerText saved verbatim for the cited paragraphs with their headings: Britannica “Palestine” section “The Hasmonean priest-princes”, Britannica “Hasmonean dynasty” opening paragraph, USCCB 1 Maccabees 13 (vv. 41–42, notes 13:41, 13:51) and 14 (notes 14:16, 14:27, 14:47). Every cited quote script-matched against the saved text (NFKC, entities, whitespace, curly quotes, dashes, ellipsis normalised): 14/14 found. Trigger Claims matched by script as substrings of the only turn at that timestamp and speaker in each final Transcript (episode per processed-videos.json): 3/3.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Display “143–142, 141 or 129 to 63 BCE”: three start sides plus a shared end; is “to” clear, and is each side a date for independence in its own source? (2) Henze and Werline 129 sits beside their own “198–142 Seleucids rule Judea”: is 129 fairly their start date for independence (their row says “Judea becomes independent”)? (3) Stern's EJ text is the first edition's (Menahem Stern) carried into the 2nd ed. (2007); the registry leaves year null as for the other EJ entries; in window? (4) Levine 1999 is Reference (BAS, popular venue; class ruled on `maccabean-revolt`); 27 years, in window. (5) critical/13 (Stern, “was the first Hasmonean to arrogate to himself the title of king”) has no subject or year in the quote; the note's “Aristobulus I (104–103 BCE)” rests on Henze and Werline row 104–103 and the same EJ sentence. (6) The note's “ending the Hasmonean state's independence” joins Henze and Werline row 63 with Stern's undated sentence. (7) Bible Odyssey quote is from the timeline introduction (embed meta description), as on `alexander`.
+review: null
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Stern, EJ “Hasmoneans” (Encyclopedia.com; credit line “[Menahem Stern]”), first history paragraph: Demetrius II recognized the independence of Judea in 143–142 b.c.e. Dual form, shown as given. Reference. Backs the display's first start side and the note's first sentence.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Levine 1999, Part II (cojs.org), section headed “4. 152–141 B.C.E.”: Simon “declared his independence from Seleucid rule” in a public ceremony in 141 B.C.E. Flat. Reference (class per `maccabean-revolt`). Backs the display's 141 side.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Henze and Werline (eds.), EJMI 2nd ed., Chronology p. xi (BCE), row 129: “Judea becomes independent”. Flat. Scholarly, 2020, in window. Backs the display's 129 side. See flag 2.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Henze and Werline Chronology p. xi, row 63: “Pompey captures Jerusalem; Roman rule of Judea begins”. Backs the display's end and the note's 63 sentence.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Palestine”, section “The Hasmonean priest-princes”: Pompey “arranged the affairs of Palestine (63 BCE)”; the paragraph goes on that he laid siege to and captured Jerusalem. Reference; attributed to Britannica. Backs the 63 end.",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bible Odyssey Second Temple timeline introduction (Tiki-Toki embed meta description): Hellenistic kingdoms 332–63 BCE, Roman rule from 63 BCE. Reference. Backs the 63 end; agrees with `alexander`, which cites the same passage.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Stern, EJ: “Pompey's annexation brought the independence of the Hasmonean state to an end.” No year; backs the note's “ending the Hasmonean state's independence” and the title's wording (“Hasmonean state”). See flag 6.",
+    }
+  critical/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Henze and Werline Chronology p. xi, row 198–142: “Seleucids rule Judea”. Backs the note's parenthesis beside their 129 (flag 2).",
+    }
+  critical/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE note to 1 Mc 13:41 (USCCB 1maccabees/13, read in Chrome): year 170 = March 142 to April 141 B.C. The verse (13:41) reads “the yoke of the Gentiles was removed from Israel”; the note converts the year only, so the note attributes the year to 1 Maccabees via the NABRE note, not as a scholar's date for independence. Reference.",
+    }
+  critical/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Palestine”, paragraph beginning “In 142–141 BCE”: Simon took the Akra and the Jews passed a decree in his honor. Backs the note's milestone sentence; not a display side (dates the Akra and the decree).",
+    }
+  critical/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Henze and Werline Chronology p. xi, row 140: “Simon becomes high priest, commander, ethnarch”. Backs the note's 140.",
+    }
+  critical/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "Henze and Werline Chronology p. xi, row 104–103: “Aristobulus I is high priest and king”. Backs the note's Aristobulus I (104–103 BCE) and the title's avoidance of “kingdom” before then.",
+    }
+  critical/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "Stern, EJ, same paragraph: “John's heir, *Aristobulus i (104–103 b.c.e.), was the first Hasmonean to arrogate to himself the title of king.” Quote trimmed to the predicate (the asterisk is the EJ cross-reference mark). Backs “the first Hasmonean to take the title of king”. See flag 5.",
+    }
+  critical/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "Stern, EJ, same paragraph: Antigonus's “defeat and death in 37 b.c.e. at the hands of the Romans brought the Hasmonean rule to a close”. Backs the note's last clause.",
+    }
+triggers:
+  158@00:18:34:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:18:34.296 Dan McClellan turn in data/transcripts/2026-04-12-i-will-have-mercy-not-dogma.txt (E158). Trimmed off: the turn's opening (scholars date 1 and 2 Maccabees close to the events because they treat the Romans as allies) and its close (“So you got almost 80 good years. Of an independent Judean kingdom, which was also characterized by a lot of infighting…”). Read 00:16:34 to 00:20:34: 00:17:18 has “I want to say it continues on until like the 140s” and “a high priest appointed in 141 BCE who institutes the Hasmonean Kingdom”. 141 sits inside the sources' spread (Levine 141); the show's “kingdom” is wider than the title.",
+    }
+  123@00:42:45:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:42:45.855 Dan McClellan turn in data/transcripts/2025-08-11-jezebel.txt (E123); hedge kept (“around 63 BCE”). Trimmed off: the Pharisees and Sadducees after it. Read 00:40:35 to 00:44:55: 00:41:37 has Pompey annexing Judea “after 63 BCE”. 160 disagrees with the display; shown verbatim (#99).",
+    }
+  71@00:54:06:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:54:06.120 Dan McClellan turn in data/transcripts/2024-08-12-episode-71-august-12-2024-the-rapture-is-not-coming.txt (E71); hedge kept (“until like 165 BCE”) and its own qualifier (“marginally autonomous”). Trimmed off: the turn's opening on Antiochus IV and the revolt. Read 00:51:56 to 00:56:16. 165 disagrees with the display; shown verbatim (#99).",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Title and display date Judea's independence from the Seleucids to 63 BCE, what the sources date; narrower than the Trigger Claims' “kingdom” (first king 104–103 per Henze and Werline and Stern). The revolt is not restated (`maccabean-revolt`).",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Start splits three ways (143–142 Stern; 141 Levine; 129 Henze and Werline): all three on the display, each cited (critical/1–3). End unanimous (63). Milestones (142/141 1 Maccabees year via NABRE, 142–141 Akra and decree, 140 ethnarch) in the note, attributed. See flag 1.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; all three Trigger Claims state critical.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; no Tradition source cited.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date. Bible Odyssey's “a certain degree of political independence” (Simon item) is uncited.",
+    }
+sources:
+  stern-ej-hasmoneans:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (Encyclopaedia Judaica, 2nd ed., entry credited to Menahem Stern; Encyclopedia.com reproduction). New id. curl. See flag 3.",
+    }
+  levine-1999-age-of-hellenism:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (reused id; class ruled on `maccabean-revolt`). cojs.org re-fetched by curl 2026-11-27.",
+    }
+  henze-werline-2020-ejmi:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (SBL Press, 2nd ed., 2020). Reused id; publisher PDF re-fetched 2026-11-27, Chronology p. xi read in full.",
+    }
+  britannica-palestine-hasmoneans:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference. New id (Britannica “Palestine”, section “The Hasmonean priest-princes”). Refuses scripts; read in Chrome; attributed to Britannica (bylines rotate).",
+    }
+  bo-timeline-second-temple-judaism:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (Bible Odyssey, SBL). Reused id; Tiki-Toki embed re-fetched by curl 2026-11-27.",
+    }
+  nabre-1-maccabees-13-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (NABRE notes, Catholic Biblical Association). New id. Refuses scripts; read in Chrome.",
+    }
+leads: []
+uncited:
+  - "Britannica “Hasmonean dynasty” (opening paragraph): Simon succeeded Jonathan “In 143 (or 142) BCE” and “soon became independent of the Seleucids as high priest, ruler, and ethnarch of Judaea”; accession, and independence without a year. Agrees; Britannica “Palestine” carries the cited milestones."
+  - "Britannica “Palestine”, first paragraph of “The Hasmonean priest-princes”: Jonathan 161/160–143/142, Simon 143/142–134, Jonathan high priest in 153, Simon's exemption from taxation from Demetrius II. Accession dates, not independence."
+  - "Bible Odyssey timeline item “Simon the Hasmonean (142-134 B.C.E.)”: “a certain degree of political independence for Judea, despite the continued presence of Seleucid rule”; “In 141 B.C.E., Simon expelled Seleucid forces from Jerusalem.” Hedged; no year for independence."
+  - "Bible Odyssey timeline item “Pompey invades Palestine” (63 B.C.E.): Pompey “took control of Jerusalem, marking the beginning of Roman rule in Judea”. Agrees; the quote itself has no year (the item's date field does); the introduction (critical/6) carries 63."
+  - "NABRE notes to 1 Mc 13:51 (“June 3, 141 B.C.”, the Akra's capture), 14:16 (embassy “probably in 142 B.C.”), 14:27 (“September 13, 140 B.C.”, the decree for Simon) and 14:47 (“Ethnarch: a subordinate ruler over an ethnic group whose office needed confirmation by a higher authority within the empire.”). Milestones carried by other cites; 14:47 qualifies “ethnarch” but dates nothing."
+  - "Levine: the Akra “was conquered only in 141, after Simon the Hasmonean rose to power”; Jonathan “was killed in 143 B.C.E.”; his section heading “4. 152–141 B.C.E.” (Hasmonean ascendancy culminating in an independent state). Agrees; critical/2 carries 141."
+  - "Stern, EJ: Jonathan high priest in 152; the 140 decree by the Great Assembly confirming Simon's offices as hereditary; John Hyrcanus 134–104; Alexander Yannai 103–76; Salome Alexandra 76–67. Agrees; not needed beyond the cited lines."
+  - "Henze and Werline Chronology rows 160, 152, 142 (“Jonathan dies; Simon becomes leader”), 134, 103–76, 76–67, 67–66, 37 (Herod king). Context; 37 and Herod kept out (#237)."
+  - "Magness 2012 intro (registered): early Hellenistic period 332–167; no Hasmonean or 63 date in the excerpt. Kee 2007 summary (registered): Hellenistic period “until ... between 200 and 31 b.c.e.”; no Hasmonean date."
