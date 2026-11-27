@@ -19,7 +19,7 @@ critical:
   from: 101
   to: 200
   precision: century
-  note: "Martin believes it was written sometime in the second century, maybe even decades after Paul's letters and Revelation, by an author who uses the Letter of Jude as a source. The HarperCollins Bible Dictionary says it is usually regarded as written in the second century; Britannica's editors say the two Letters of Peter were perhaps written during the early 2nd century. Hultin says it is difficult to say how late it is, perhaps the end of the 1st century or even well into the 2nd, and that modern scholars have often considered it the latest of all the New Testament writings. Ehrman says scholars have typically considered it the final book of the New Testament, written around 120 CE or so."
+  note: "Martin believes it was written sometime in the second century, maybe even decades after Paul's letters and Revelation, by an author who uses the Letter of Jude as a source. The HarperCollins Bible Dictionary says it is usually regarded as written in the second century; Britannica's editors say the two Letters of Peter were perhaps written during the early 2nd century. Hultin says it is difficult to say how late it is, perhaps the end of the 1st century or even well into the 2nd, and that modern scholars have often considered it the latest of all the New Testament writings."
   cites:
     - source: martin-rlst152-l24
       locator: "ch. 4 “2 Peter: A Letter from the Post-apostolic Age” [00:37:00]"
@@ -40,9 +40,5 @@ critical:
     - source: hultin-2015-bo-2-peter
       locator: "body, ¶ 1"
       quote: "That ancient Christians gave 2 Peter a tepid reception is just one of the reasons modern scholars have often considered 2 Peter to be the latest of all the New Testament writings, likely penned by someone other than Peter. How late is “latest”? It’s difficult to say, but perhaps the end of the first century or even well into the second century—a considerable time after the real Peter lived."
-      read: 2026-11-26
-    - source: ehrman-blog-2025-2-peter
-      locator: "post body, concluding paragraph"
-      quote: "It appears then that 2 Peter was written long after Peter’s death, and for a number of reasons scholars have typically considered it to be the final book of the New Testament, written around 120 CE or so."
       read: 2026-11-26
 ---
