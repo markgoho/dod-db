@@ -693,7 +693,11 @@
   /* At most the room beside the labels shared by the places (100%: the strip's width, read only in insets), so before the strip is measured dots may crowd but never reach the labels. */
   --tick-pitch: min(
     round(up, 1.25 * var(--tick-dot) + 1px, 1px),
-    (100% - var(--era-label-width) - var(--setting-room)) / var(--places)
+    (
+        100% - var(--era-label-width) - var(--period-room, 0px) -
+          var(--setting-room)
+      ) /
+      var(--places)
   );
   --row-centre: calc(var(--places) * var(--tick-pitch) / 2);
   /* How far the outermost place's centre sits from the row's. */
@@ -749,7 +753,7 @@
         (
             (
                 var(--strip-inline, 100vw) - var(--era-label-width) -
-                  var(--setting-room)
+                  var(--period-room, 0px) - var(--setting-room)
               ) /
               var(--places) - 2px
           ) /
@@ -969,4 +973,261 @@
     );
     outline-offset: var(--border-width-sm);
   }
+}
+
+/* ---------- PROTOTYPE (minimap periods): ?variant= A tinted bands, B side tracks, C periods as eras, D current only ---------- */
+
+.timeline-minimap__periods {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  position: relative;
+}
+
+.timeline-minimap__period {
+  --p-top: round(down, var(--p-start) * 100%, 1px);
+  --p-bottom: calc(100% - round(down, var(--p-end) * 100%, 1px));
+  --p-label-size: calc(var(--step--2) / 1.2);
+
+  box-sizing: border-box;
+  display: none;
+  font-size: var(--p-label-size);
+  inset-block: var(--p-top) var(--p-bottom);
+  line-height: 1.1;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.timeline-minimap__period-label {
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+/* The temple track, in A and C: a thin stripe just right of the labels, inked by period. */
+:is([data-period-variant="A"], [data-period-variant="C"])
+  [data-track="temple"] {
+  background: var(--tan-700);
+  display: block;
+  inline-size: 3px;
+  inset-inline-start: calc(var(--era-label-width) + 1px);
+}
+
+:is([data-period-variant="A"], [data-period-variant="C"])
+  [data-period="exile"] {
+  background: repeating-linear-gradient(
+    0deg,
+    var(--tan-700) 0 1px,
+    transparent 0 3px
+  );
+}
+
+:is([data-period-variant="A"], [data-period-variant="C"])
+  [data-period="second-temple"] {
+  background: var(--tan-500);
+}
+
+:is([data-period-variant="A"], [data-period-variant="C"])
+  [data-track="temple"]
+  .timeline-minimap__period-label {
+  display: none;
+}
+
+/* A: the age periods as alternating tints across the dots' area, a dashed line and a small name at each start. */
+[data-period-variant="A"] [data-track="age"] {
+  background: if(
+    style(--is-current: 1): color-mix(
+        in srgb,
+        var(--color-accent) 22%,
+        transparent
+      );
+      else: transparent
+  );
+  border-block-start: var(--border-width-sm) dashed var(--tan-500);
+  display: block;
+  inset-inline: calc(var(--era-label-width) + 5px) 0;
+  padding: 1px 2px;
+  text-align: end;
+}
+
+[data-period-variant="A"] [data-track="age"][data-parity="odd"] {
+  background: if(
+    style(--is-current: 1): color-mix(
+        in srgb,
+        var(--color-accent) 22%,
+        transparent
+      );
+      else: color-mix(in srgb, var(--tan-300) 45%, transparent)
+  );
+}
+
+/* B: two side tracks between the labels and the dots, each a bar per period with its name running down it. */
+[data-period-variant="B"] {
+  --p-track: round(up, var(--step--2) / 1.2 * 1.1 + 3px, 1px);
+  --period-room: calc(2 * var(--p-track) + 2px);
+}
+
+/* Sideways, so physical sides: a vertical box's logical insets turn with it. */
+[data-period-variant="B"] .timeline-minimap__period {
+  background: if(
+    style(--is-current: 1): var(--color-accent); else: var(--tan-100)
+  );
+  border: var(--border-width-sm) solid var(--tan-900);
+  bottom: var(--p-bottom);
+  display: block;
+  padding: 2px 0;
+  top: var(--p-top);
+  width: var(--p-track);
+  writing-mode: vertical-rl;
+}
+
+[data-period-variant="B"] [data-track="age"] {
+  left: calc(var(--era-label-width) + 1px);
+}
+
+[data-period-variant="B"] [data-track="temple"] {
+  left: calc(var(--era-label-width) + var(--p-track) + 2px);
+}
+
+[data-period-variant="B"] [data-track="age"][data-parity="odd"] {
+  background: if(
+    style(--is-current: 1): var(--color-accent); else: var(--tan-300)
+  );
+}
+
+[data-period-variant="B"] .timeline-minimap__period-label {
+  color: var(--color-text-main);
+}
+
+/* C: the periods are the bands. The 500-year labels and lines go; each period's name sits in the label column. */
+[data-period-variant="C"] .timeline-minimap__era {
+  color: transparent;
+}
+
+[data-period-variant="C"] .timeline-minimap__era-mark {
+  display: none;
+}
+
+[data-period-variant="C"]
+  .timeline-minimap__band
+  + .timeline-minimap__band:not(.timeline-minimap__band--bce-end + *) {
+  box-shadow: none;
+}
+
+[data-period-variant="C"] [data-track="age"] {
+  background: if(
+    style(--is-current: 1): color-mix(
+        in srgb,
+        var(--color-accent) 22%,
+        transparent
+      );
+      else: transparent
+  );
+  border-block-start: var(--border-width-sm) solid var(--tan-500);
+  display: block;
+  inset-inline: 0;
+}
+
+[data-period-variant="C"] [data-track="age"] .timeline-minimap__period-label {
+  box-sizing: border-box;
+  color: var(--color-text-main);
+  display: block;
+  font-weight: if(
+    style(--is-current: 1): var(--font-weight-bold); else: normal
+  );
+  inline-size: var(--era-label-width);
+  overflow: hidden;
+  padding: 1px 2px;
+  text-overflow: ellipsis;
+}
+
+@media (width >= 114rem) and (height >= 40rem) {
+  [data-period-variant="C"] [data-track="age"] .timeline-minimap__period-label {
+    block-size: 100%;
+    inline-size: auto;
+    padding: 2px 0;
+    width: var(--era-label-width);
+    writing-mode: vertical-rl;
+  }
+}
+
+/* D: nothing at rest. The current entry's periods tint the strip and are named under "You are here". */
+[data-period-variant="D"] [data-track="age"] {
+  background: color-mix(in srgb, var(--color-accent) 22%, transparent);
+  border-block: var(--border-width-sm) solid var(--color-accent);
+  display: if(style(--is-current: 1): block; else: none);
+  inset-inline: var(--era-label-width) 0;
+  padding: 1px 2px;
+  text-align: end;
+}
+
+[data-period-variant="D"] [data-track="age"] .timeline-minimap__period-label {
+  color: var(--color-text-main);
+}
+
+[data-period-variant="D"] [data-track="temple"] {
+  background: var(--color-accent);
+  display: if(style(--is-current: 1): block; else: none);
+  inline-size: 3px;
+  inset-inline-start: calc(var(--era-label-width) + 1px);
+}
+
+[data-period-variant="D"]
+  [data-track="temple"]
+  .timeline-minimap__period-label {
+  display: none;
+}
+
+.timeline-minimap__period-now {
+  display: none;
+}
+
+[data-period-variant="D"] .timeline-minimap__caption {
+  --lines: 4;
+
+  grid-template: auto auto minmax(0, 1fr) / minmax(0, 1fr);
+}
+
+[data-period-variant="D"] .timeline-minimap__period-now {
+  color: var(--color-text-muted);
+  display: block;
+  font-style: italic;
+}
+
+.timeline-minimap__period-now > span {
+  display: if(style(--is-current: 1): inline; else: none);
+}
+
+.timeline-minimap__period-now > [data-now-track="temple"]::before {
+  content: " · ";
+}
+
+.timeline-minimap__proto-bar {
+  align-items: center;
+  background: #111;
+  border-radius: 999px;
+  bottom: 1rem;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 40%);
+  color: #fff;
+  display: flex;
+  font:
+    600 14px/1 system-ui,
+    sans-serif;
+  gap: 0.75rem;
+  left: 50%;
+  padding: 0.5rem 0.75rem;
+  position: fixed;
+  translate: -50% 0;
+  z-index: 10000;
+}
+
+.timeline-minimap__proto-bar button {
+  background: #333;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.35rem 0.7rem;
 }

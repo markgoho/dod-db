@@ -119,6 +119,7 @@
       {{- end -}}
     {{- end -}}
     {{- $entries = $entries | append (dict
+      "year" .year
       "setting" $setting
       "id" (cond $isMoved (printf "%s-tradition" .page.File.ContentBaseName) .page.File.ContentBaseName)
       "moved" $isMoved
@@ -132,6 +133,34 @@
       "y" (math.Min (math.Max $at (add $eraStart $edge)) (sub $eraEnd $edge)))
     -}}
   {{- end -}}
+{{- end -}}
+
+{{- /*
+  PROTOTYPE (minimap periods): conventional period dates, unsourced, for
+  looking at only. Two tracks: "age" (political/archaeological, back to back)
+  and "temple" (First Temple, Exile, Second Temple). [from, to).
+  */
+-}}
+{{- $periodDefs := slice
+  (dict "id" "bronze" "track" "age" "label" "Bronze Age" "short" "Bronze" "from" -2000 "to" -1200)
+  (dict "id" "iron-i" "track" "age" "label" "Iron Age I: settlement and judges" "short" "Iron I" "from" -1200 "to" -1000)
+  (dict "id" "monarchy" "track" "age" "label" "Monarchy (Iron Age II)" "short" "Monarchy" "from" -1000 "to" -586)
+  (dict "id" "babylonian" "track" "age" "label" "Babylonian period" "short" "Babyl." "from" -586 "to" -539)
+  (dict "id" "persian" "track" "age" "label" "Persian period" "short" "Persian" "from" -539 "to" -332)
+  (dict "id" "hellenistic" "track" "age" "label" "Hellenistic period" "short" "Hellen." "from" -332 "to" -63)
+  (dict "id" "roman" "track" "age" "label" "Roman period" "short" "Roman" "from" -63 "to" 500)
+  (dict "id" "first-temple" "track" "temple" "label" "First Temple period" "short" "1st Temple" "from" -960 "to" -586)
+  (dict "id" "exile" "track" "temple" "label" "Exile" "short" "Exile" "from" -586 "to" -538)
+  (dict "id" "second-temple" "track" "temple" "label" "Second Temple period" "short" "2nd Temple" "from" -516 "to" 70)
+-}}
+{{- $periods := slice -}}
+{{- range $i, $d := $periodDefs -}}
+  {{- $to := math.Min (float $d.to) $axis.end -}}
+  {{- $periods = $periods | append (merge $d (dict
+    "index" $i
+    "start" (partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" $d.from))
+    "end" (partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" $to))))
+  -}}
 {{- end -}}
 
 {{- /* The pairs: each moved Tradition Date's diamond and its entry's dot. */ -}}
@@ -322,6 +351,7 @@
     aria-label="Timeline minimap">
     <div
       class="timeline-minimap__strip"
+      data-period-variant="A"
       data-overflow="{{ $overflow }}"
       data-pair-split="{{ len $splitPairs }}"
       style="--places: {{ $places }}; --tick-window: {{ $window }}; --tick-edge: {{ $edge }}">
@@ -360,6 +390,30 @@
                 >BCE</span
               >
             {{- end }}
+          </li>
+        {{- end }}
+      </ol>
+      {{- /* PROTOTYPE (minimap periods): the periods, one layer over the bands and under the ticks. */}}
+      <ol class="timeline-minimap__periods" role="list" aria-label="Periods">
+        {{- range $i, $p := where $periods "track" "age" }}
+          <li
+            class="timeline-minimap__period"
+            data-period="{{ .id }}"
+            data-track="age"
+            data-parity="{{ cond (modBool $i 2) "even" "odd" }}"
+            title="{{ .label }} ({{ .from }} to {{ .to }})"
+            style="--p-start: {{ .start }}; --p-end: {{ .end }}">
+            <span class="timeline-minimap__period-label">{{ .short }}</span>
+          </li>
+        {{- end }}
+        {{- range where $periods "track" "temple" }}
+          <li
+            class="timeline-minimap__period"
+            data-period="{{ .id }}"
+            data-track="temple"
+            title="{{ .label }} ({{ .from }} to {{ .to }})"
+            style="--p-start: {{ .start }}; --p-end: {{ .end }}">
+            <span class="timeline-minimap__period-label">{{ .short }}</span>
           </li>
         {{- end }}
       </ol>
@@ -427,6 +481,95 @@
     </div>
   </nav>
 
+  {{- /* PROTOTYPE (minimap periods): ?variant= switcher, never in production. */}}
+  {{- if not hugo.IsProduction }}
+    <div class="timeline-minimap__proto-bar" aria-hidden="true">
+      <button type="button" data-proto-step="-1">←</button>
+      <span data-proto-label></span>
+      <button type="button" data-proto-step="1">→</button>
+    </div>
+    <script>
+      (() => {
+        const variants = {
+          A: "Tinted bands",
+          B: "Side tracks",
+          C: "Periods replace 500-year eras",
+          D: "Current period only",
+        };
+        const keys = Object.keys(variants);
+        const strip = document.querySelector(".timeline-minimap__strip");
+        const label = document.querySelector("[data-proto-label]");
+        const show = k => {
+          strip.dataset.periodVariant = k;
+          strip.closest(".timeline-minimap__map").dataset.periodVariant = k;
+          label.textContent = `${k} · ${variants[k]}`;
+          const u = new URL(location.href);
+          u.searchParams.set("variant", k);
+          history.replaceState(history.state, "", u);
+        };
+        const step = d =>
+          show(
+            keys[
+              (keys.indexOf(strip.dataset.periodVariant) + d + keys.length) %
+                keys.length
+            ],
+          );
+        const start = new URLSearchParams(location.search).get("variant");
+        show(keys.includes(start) ? start : "A");
+        document
+          .querySelectorAll("[data-proto-step]")
+          .forEach(b =>
+            b.addEventListener("click", () => step(+b.dataset.protoStep)),
+          );
+        addEventListener("keydown", e => {
+          if (e.target.closest("input, textarea, [contenteditable]")) return;
+          if (e.key === "ArrowLeft") step(-1);
+          if (e.key === "ArrowRight") step(1);
+        });
+      })();
+    </script>
+    <script>
+      // PROTOTYPE: flag the current entry's periods, only when the entry changes.
+      (() => {
+        const spy = document.querySelector(".timeline-minimap__spy");
+        const periods = [...document.querySelectorAll("[data-period]")];
+        if (!spy || !CSS.supports("selector(:target-current)")) return;
+        let last;
+        const sync = () => {
+          const id = spy.querySelector("a:target-current")?.hash.slice(1);
+          if (id === last) return;
+          last = id;
+          const tick =
+            id && document.querySelector(`[data-tick="${CSS.escape(id)}"]`);
+          const at = tick
+            ? parseFloat(tick.style.getPropertyValue("--tick-at"))
+            : NaN;
+          for (const p of periods) {
+            const on =
+              at >= parseFloat(p.style.getPropertyValue("--p-start")) &&
+              at < parseFloat(p.style.getPropertyValue("--p-end"));
+            if (on) p.style.setProperty("--is-current", "1");
+            else p.style.removeProperty("--is-current");
+          }
+        };
+        let frame = 0;
+        addEventListener(
+          "scroll",
+          () => {
+            frame ||= requestAnimationFrame(() => {
+              frame = 0;
+              sync();
+            });
+          },
+          { passive: true },
+        );
+        addEventListener("scrollend", () =>
+          requestAnimationFrame(() => requestAnimationFrame(sync)),
+        );
+        requestAnimationFrame(() => requestAnimationFrame(sync));
+      })();
+    </script>
+  {{- end }}
   {{- /*
     Hover (a pointer that can hover): a hovered tick or its hint marks its
     pair's other tick as its partner and shows the pair's line. One :has()
