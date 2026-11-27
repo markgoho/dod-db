@@ -424,3 +424,27 @@ statements:
         timestamp: "00:09:06.415"
         text: "So a man is legally not prohibited from going out and having sex with a sex worker or with a woman who is not betrothed or married to someone else, whether he's married or not."
     notes: "Conflict with adultery: the quote says a man was not legally prohibited from sex with an unbetrothed woman; the statement's text reports Slager that married men could have sex with unpledged virgins and prostitutes “with a penalty less than death applied” (Deut 22:28–29, Exod 22:16–17). The definition itself agrees. Raised by the #152 second pass, logged at publish, 2026-11-27."
+  - page: patriarchs
+    question: "Were Abraham, Isaac and Jacob originally one family story?"
+    triggers:
+      - episode: 121
+        speaker: "Dan McClellan"
+        timestamp: "00:13:48.870"
+        text: "And it is the consensus view that the stories of Abraham, the stories of Isaac, the stories of Jacob, all circulated independently of each other before being stitched together into the single lineage. They initially were not so related to each other."
+    notes: "Conflict with traditions: “it is the consensus view” states a consensus; the statement reports “many scholars hold” (Greenspahn “Many modern scholars”, Lombaard “long accepted”, Lemański “according to scholars”), and no source read says consensus for the whole thesis (Lemański's “consensus” covers only the three-name formula). Logged at the #153 publish, 2026-11-27."
+  - page: patriarchs
+    question: "Was Joseph sold to Ishmaelites or to Midianites?"
+    triggers:
+      - episode: 74
+        speaker: "Dan McClellan"
+        timestamp: "00:41:52.980"
+        text: "Okay, so we've got two entirely different stories of how Joseph was conspired against by his brothers and how he basically made his way into Egypt. In one, Reuben tries to save him, the Midianites intercept him and sell him into Egypt. In the other, Judah is the one who saves him and sells him to the Ishmaelites who take him to Egypt."
+    notes: "Conflict with joseph-sale: asserts “two entirely different stories” as fact; the statement says whether two complete stories can be recovered is debated (Römer, Schmid and Bühler 2021: “no one has succeeded in reconstructing two coherent, independent narratives”). Logged at the #153 publish, 2026-11-27."
+  - page: patriarchs
+    question: "Was Joseph sold to Ishmaelites or to Midianites?"
+    triggers:
+      - episode: 22
+        speaker: "Dan McClellan"
+        timestamp: "00:29:37.380"
+        text: "But a fun example is the story of Joseph being sold into slavery because we seem to have again, these narrative incongruities. And is it the Midianites? Is it? Is it the Ishmaelites?"
+    notes: "Conflict with joseph-sale: the full turn says the two stories have “their own beginnings, their own middles, and their own ends” and calls this “very strong evidence” of two sources; the statement reports that reconstruction as debated (Römer, Schmid and Bühler 2021). Logged at the #153 publish, 2026-11-27."

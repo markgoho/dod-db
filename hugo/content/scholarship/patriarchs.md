@@ -1,9 +1,8 @@
 ---
 title: "Abraham, Isaac and Jacob"
 dek: "How scholars read the stories of Israel's ancestors in Genesis, from Abraham to Joseph and Hagar: where the traditions came from, how old they are, why some are told twice, and what religious traditions hold."
-draft: true
 core: traditions
-sourcesRead:
+sourcesRead: 2026-11-27
 related:
   books: [genesis, hosea]
   tags: [abraham, isaac, jacob, joseph, ishmael]
