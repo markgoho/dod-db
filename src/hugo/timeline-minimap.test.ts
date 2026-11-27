@@ -13,6 +13,7 @@ import { beforeAll, describe, expect, test } from "bun:test";
 import { mkdtemp, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
+import { lens } from "./timeline-lens.js";
 
 const HUGO_DIR = path.join(import.meta.dir, "../../hugo");
 const CONTENT_DIR = path.join(import.meta.dir, "__fixtures__/timeline-minimap");
@@ -87,6 +88,10 @@ const vars = (el: El | undefined): Record<string, number> =>
     ),
   );
 
+/** A tick's column: placed by a tradition's date (dashed dot, diamond), or by a scholarly date. */
+const column = (t: El) =>
+  /--(placed|moved)/.test(t.attrs.class ?? "") ? "tradition" : "critical";
+
 /** The generated selector for "the scrollspy link with this attribute is current". */
 const on = (attr: string, value: string) =>
   `.timeline-minimap:has(.timeline-minimap__spy [${attr}="${value}"]:is(:target-current, .target-current))`;
@@ -154,33 +159,98 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       );
   });
 
-  test("ticks closer than a dot apart share a row: each stays at its year and takes the lowest slot inward none of them has", () => {
+  test("ticks closer than a dot apart share a row in their own column: each stays at its year, takes the lowest slot none of them has, and fans out from the column's centre", () => {
     // A dot's pitch is under 0.04 of any strip, 200 years: Creation and Adam
     // (4004, 4000 BCE) once drew as one tick, and three entries share 587 BCE.
+    // Ticks placed by a tradition's date (dashed dots, and the diamonds of
+    // #214) have their own column, so they never take a scholarly dot's slot.
     const ticks = select(page, ".timeline-minimap__tick");
     expect(
-      ticks.map(t => [t.attrs["data-tick"], vars(t)["tick-slot"]]),
+      ticks.map(t => [
+        t.attrs["data-tick"],
+        vars(t)["tick-slot"],
+        vars(t)["tick-lane"],
+      ]),
     ).toEqual([
-      ["creation", 0],
-      ["adam", 1],
-      ["jericho", 0],
-      // Tradition Dates at their own years (#214) take slots like any tick.
-      ["deuteronomy-tradition", 1],
-      ["jericho-tradition", 2],
-      ["david-and-solomon", 0],
+      ["creation", 0, 0],
+      ["adam", 1, 1],
+      ["jericho", 0, 0],
+      // The tradition column: Deuteronomy's and Jericho's Tradition Dates
+      // are within a dot of each other, not of a scholarly dot.
+      ["deuteronomy-tradition", 0, 0],
+      ["jericho-tradition", 1, 1],
+      ["david-and-solomon", 0, 0],
       // Within a dot of David and Solomon (1000 BCE), so slot 1.
-      ["deuteronomy", 1],
+      ["deuteronomy", 1, 1],
       // Clear of David and Solomon, and Deuteronomy holds 1, so slot 0.
-      ["judges-dtr", 0],
-      ["fall-of-jerusalem", 1],
-      ["lamentations", 2],
-      ["priestly-genesis-1", 3],
-      ["daniel-tradition", 4],
-      ["isaiah-56-66", 5],
-      ["daniel", 0],
+      ["judges-dtr", 0, 0],
+      // Slots fan out: 0 on the column's centre line, then 1, -1, 2, -2.
+      ["fall-of-jerusalem", 1, 1],
+      ["lamentations", 2, -1],
+      ["priestly-genesis-1", 3, 2],
+      ["daniel-tradition", 0, 0],
+      ["isaiah-56-66", 4, -2],
+      ["daniel", 0, 0],
     ]);
     // No vertical stacking: a dot stays at its year, nudged at most inside its band (CSS).
     for (const t of ticks) expect(t.attrs.style).not.toContain("--tick-stack");
+  });
+
+  test("each tick carries its nearest column neighbours' years, above and below, so the CSS can pull a row in where its dots clear each other", () => {
+    const ticks = select(page, ".timeline-minimap__tick");
+    for (const t of ticks) {
+      const { "tick-at": at, "tick-prev": prev, "tick-next": next } = vars(t);
+      const others = ticks
+        .filter(o => o !== t && column(o) === column(t))
+        .map(o => vars(o)["tick-at"]!);
+      expect(prev).toBe(Math.max(-1, ...others.filter(o => o <= at!)));
+      expect(next).toBe(Math.min(2, ...others.filter(o => o >= at!)));
+    }
+    // The three at 587 BCE are each other's neighbours: no gap either side.
+    const lamentations = vars(select(page, '[data-tick="lamentations"]')[0]);
+    expect(lamentations["tick-prev"]).toBe(lamentations["tick-at"]!);
+    expect(lamentations["tick-next"]).toBe(lamentations["tick-at"]!);
+    // Daniel is the last scholarly dot: nothing below it.
+    expect(vars(select(page, '[data-tick="daniel"]')[0])["tick-next"]).toBe(2);
+  });
+
+  test("the lens's inputs: a generated rule per entry sets --lens-current to its year, and on hover a still slice or a tick sets --lens-hover", () => {
+    const styles = select(page, ".timeline-minimap style");
+    expect(styles).toHaveLength(2);
+    const css = styles[1]?.text ?? "";
+    const ticks = select(page, ".timeline-minimap__tick");
+    for (const t of ticks) {
+      const id = t.attrs["data-tick"]!;
+      const at = vars(t)["tick-at"];
+      expect(css).toContain(
+        `${on("href", `#${id}`)} { --lens-current: ${at}; }`,
+      );
+      expect(css).toContain(
+        `.timeline-minimap:has(:is([data-tick="${id}"], [id="timeline-minimap-tip-${id}"]):hover) { --lens-hover: ${at}; }`,
+      );
+    }
+    // Hover rules only where there is hover (a tap would leave :hover stuck).
+    expect(css.indexOf("@media (hover: hover)")).toBeLessThan(
+      css.indexOf("--lens-hover"),
+    );
+    expect(css.indexOf("@media (hover: hover)")).toBeGreaterThan(
+      css.lastIndexOf("--lens-current"),
+    );
+    // One still slice per hover rule, each focusing the year the lens puts at its middle.
+    const slices = select(page, ".timeline-minimap__lens > span");
+    expect(slices.length).toBeGreaterThan(16);
+    expect(
+      select(page, ".timeline-minimap__lens")[0]?.attrs["aria-hidden"],
+    ).toBe("true");
+    for (let i = 1; i <= slices.length; i++) {
+      const rule = new RegExp(
+        String.raw`\.timeline-minimap:has\(\.timeline-minimap__lens > :nth-child\(${i}\):hover\) \{ --lens-hover: ([\d.e-]+); \}`,
+      ).exec(css);
+      expect(lens(Number(rule?.[1]), Number(rule?.[1]))).toBeCloseTo(
+        (i - 0.5) / slices.length,
+        6,
+      );
+    }
   });
 
   test("each band is placed by its era's years on the same scale as the ticks, and each tick carries its band's edges, so the CSS keeps its dot inside it (#175)", () => {
@@ -444,14 +514,19 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
         "era-start": start,
         "era-end": end,
       } = vars(select(page, `[data-tick="${id}"]`)[0]);
+      const tick = vars(select(page, `[data-tick="${id}"]`)[0]);
       expect(vars(s)).toEqual({
         "era-end": end!,
         "era-start": start!,
         "tick-at": at!,
+        "tick-lane": tick["tick-lane"]!,
+        "tick-next": tick["tick-next"]!,
+        "tick-prev": tick["tick-prev"]!,
         "tick-slot": slot!,
       });
     }
     expect(vars(settings[0])["tick-slot"]).toBe(2);
+    expect(vars(settings[0])["tick-lane"]).toBe(-1);
   });
 
   test("the minimap script loads once, from the footer scripts, not inside the minimap", () => {

@@ -412,7 +412,14 @@
 /* ---------- Strip: era bands by year span, a tick per entry at its year ---------- */
 
 .timeline-minimap__strip {
-  --tick-track-width: var(--space-s);
+  /*
+    The era labels' own column at the strip's inline start, so no row of dots
+    ever runs into a label: two lines ("1000–500" over "BCE") in the popover,
+    one sideways line on the rail (see the rail's rule below).
+  */
+  --era-label-width: calc(5 * var(--space-s));
+  /* The tradition column: three dots' places (a centre and one either side). */
+  --tradition-width: calc(2 * var(--tick-pitch) + var(--tick-dot));
 
   anchor-name: --timeline-minimap-strip;
   background: var(--tan-000);
@@ -439,9 +446,12 @@
   (whole pixels, down), so a tick always falls in its own band.
 */
 .timeline-minimap__band {
+  --era-y-start: var(--era-start);
+  --era-y-end: var(--era-end);
+
   background: transparent;
-  inset-block: round(down, var(--era-start) * 100%, 1px)
-    calc(100% - round(down, var(--era-end) * 100%, 1px));
+  inset-block: round(down, var(--era-y-start) * 100%, 1px)
+    calc(100% - round(down, var(--era-y-end) * 100%, 1px));
   inset-inline: 0;
   position: absolute;
 }
@@ -450,29 +460,57 @@
   box-shadow: inset 0 var(--border-width-sm) 0 var(--tan-300);
 }
 
-/* The whole band is its era's link; the tick track sits over its end. */
+/*
+  Each era's link is its label, in the label column from the band's top
+  line down; the dots' columns (and the lens's hover slices) take the rest
+  of the band. In the popover the label is two lines, its range over its
+  BCE/CE suffix.
+*/
 .timeline-minimap__era {
   block-size: 100%;
+  box-sizing: border-box;
   color: var(--color-text-main);
   display: block;
   font-size: var(--step--2);
   font-weight: normal;
+  inline-size: var(--era-label-width);
   line-height: var(--line-height-heading);
   overflow: hidden;
-  padding: var(--space-4xs) calc(var(--tick-track-width) + var(--space-3xs))
-    var(--space-4xs) var(--space-3xs);
+  padding: var(--space-4xs) var(--space-3xs);
   text-decoration: none;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
+.timeline-minimap__suffix {
+  display: block;
+}
+
 /*
-  A rail narrower than a full era label drops the BCE/CE suffix (the link's
-  name keeps it). A media query, not a container query: the spacing tokens
-  are cqi-based and would shrink inside a container this narrow. Literal:
-  media queries cannot read custom properties.
+  The rail is too narrow for a label column a word wide, so there each label
+  runs sideways down its band, one line, and drops the BCE/CE suffix (the
+  link's name keeps it; the era pill shows the current one in full). A media
+  query, not a container query: the spacing tokens are cqi-based and would
+  shrink inside a container this narrow. Literal: media queries cannot read
+  custom properties.
 */
-@media (108rem <= width < 112rem) {
+@media (width >= 108rem) {
+  .timeline-minimap__strip {
+    --era-label-width: round(
+      up,
+      var(--step--2) * var(--line-height-heading) + 2 * var(--space-4xs),
+      1px
+    );
+  }
+
+  /* Sideways, its logical sizes turn: so the label's width and height here. */
+  .timeline-minimap__era {
+    height: 100%;
+    padding: var(--space-4xs);
+    text-overflow: ellipsis;
+    width: var(--era-label-width);
+    writing-mode: vertical-rl;
+  }
+
   .timeline-minimap__suffix {
     display: none;
   }
@@ -490,6 +528,28 @@
 .timeline-minimap__era:focus-visible {
   outline: var(--border-width-sm) solid var(--color-action);
   outline-offset: calc(-1 * var(--border-width-sm));
+}
+
+/* The strip's box, the anchor for anchor-size() in a tick's --lane-pull. */
+.timeline-minimap__frame {
+  anchor-name: --timeline-minimap-frame;
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+/*
+  The lens's hover targets: still slices of the dots' columns, top to bottom,
+  that never bend, so the year under the pointer is always the slice's own.
+  Only take the pointer where the lens runs (the end of this file).
+*/
+.timeline-minimap__lens {
+  display: grid;
+  grid-auto-rows: minmax(0, 1fr);
+  margin-inline-start: var(--era-label-width);
+  pointer-events: none;
+  /* Positioned, so over the bands (positioned too) and under the ticks. */
+  position: relative;
 }
 
 /* Its own stacking context, so a setting can sit under the ticks and over the bands. */
@@ -563,39 +623,67 @@
   A tick is centred on its year (--tick-top, its top edge), kept inside its
   own band (--era-start, --era-end, rounded as the band is): a dot at an
   era's edge would straddle the band's line, so it is nudged in, clear of
-  the line and of the current tick's 1.5× growth (#175). Ticks that would
-  overlap share a row: slot 0 is centred in the tick track and each slot
-  (--tick-slot, from timeline-minimap.html) sits a pitch further in
-  (--tick-x, from the strip's inline end). A row longer than the strip is
-  wide stops at the last whole slot and its dots overlap there. Whole
-  pixels. Worked out on the tick and on its setting alike, so the setting's
-  arc meets the dot. The current one: see the end.
+  the line and of the current tick's 1.5× growth (#175). The --*-y values are
+  those years on the strip: the same as --tick-at and the rest at rest, bent
+  by the lens where it is on (the end of this file).
+
+  Across, two columns right of the label column: the scholarly dots against
+  the strip's inline end, and the tradition column (dashed dots and
+  diamonds) between them and the labels. A row fans out from its column's
+  centre line (--tick-lane, signed, from timeline-minimap.html) a pitch a
+  place, scaled by --lane-pull (1, or less where the row's dots already
+  clear each other vertically; the end of this file). A row longer than its
+  column is wide stops at the column's last whole place either side and its
+  dots overlap there. Whole pixels. Worked out on the tick and on its setting
+  alike, so the setting's arc meets the dot. The current one: see the end.
 */
 .timeline-minimap__tick,
 .timeline-minimap__setting {
-  --tick-track-inset: round(
+  --tick-y: var(--tick-at);
+  --tick-prev-y: var(--tick-prev);
+  --tick-next-y: var(--tick-next);
+  --era-y-start: var(--era-start);
+  --era-y-end: var(--era-end);
+  --critical-width: calc(
+    100% - var(--era-label-width) - var(--tradition-width)
+  );
+  --column-width: var(--critical-width);
+  --column-centre: round(down, var(--critical-width) / 2, 1px);
+  /* How far a dot's centre may sit from the column's, in whole places. */
+  --column-reach: round(
     down,
-    (var(--tick-track-width) - var(--tick-dot)) / 2,
-    1px
+    (var(--column-width) - var(--tick-dot)) / 2,
+    var(--tick-pitch)
   );
   /* Room for the current tick's growth: (1.5 - 1) / 2 of a dot each side. */
   --tick-grow: round(up, var(--tick-dot) / 4, 1px);
   --tick-top: clamp(
-    round(down, var(--era-start) * 100%, 1px) + var(--border-width-sm) +
+    round(down, var(--era-y-start) * 100%, 1px) + var(--border-width-sm) +
       var(--tick-grow),
-    round(down, var(--tick-at) * 100%, 1px) - var(--tick-dot) / 2,
-    round(down, var(--era-end) * 100%, 1px) - var(--tick-dot) - var(--tick-grow)
+    round(down, var(--tick-y) * 100%, 1px) - var(--tick-dot) / 2,
+    round(down, var(--era-y-end) * 100%, 1px) - var(--tick-dot) -
+      var(--tick-grow)
   );
-  --tick-x: calc(
-    var(--tick-track-inset) +
-      min(
-        var(--tick-slot) * var(--tick-pitch),
-        round(
-          down,
-          100% - var(--tick-track-inset) - var(--tick-pitch),
-          var(--tick-pitch)
-        )
-      )
+  --tick-x: round(
+    var(--column-centre) - var(--tick-dot) / 2 -
+      clamp(
+        -1 * var(--column-reach),
+        var(--tick-lane-wrapped, var(--tick-lane)) * var(--tick-pitch) *
+          var(--lane-pull, 1),
+        var(--column-reach)
+      ),
+    1px
+  );
+}
+
+.timeline-minimap__tick--placed,
+.timeline-minimap__tick--moved,
+.timeline-minimap__setting--tradition {
+  --column-width: var(--tradition-width);
+  --column-centre: round(
+    down,
+    var(--critical-width) + var(--tradition-width) / 2,
+    1px
   );
 }
 
@@ -692,22 +780,17 @@
 
 /*
   The current entry's narrated setting (#170): a faint hatched span at its
-  years, beside the tick track, and a dotted arc from the span's middle to
-  the tick's dot (--tick-top, --tick-x). Shown only while its entry is
-  current. The span sits just inward of the track's first slots, or of its
-  own dot when that sits further in (--setting-x, from the strip's inline
-  end), so a dot shifted along its row never lands on it (#175); never past
-  the strip's inline start. Under the ticks: where the row runs on past its
-  dot, the next dots cover the span, not the reverse.
+  years and a dotted arc from the span's middle to the tick's dot (--tick-top,
+  --tick-x). Shown only while its entry is current. The span sits on its
+  column's inline-start edge (--setting-x, from the strip's inline end), where
+  no dot of that column ever lands (#175), so it is always clear of its own
+  dot and the arc always runs one way. Under the ticks.
 */
 .timeline-minimap__setting {
-  --setting-width: var(--space-2xs);
-  --setting-x: min(
-    max(
-      var(--tick-track-width) + var(--space-xs) - var(--setting-width),
-      var(--tick-x) + var(--tick-dot) + var(--space-3xs)
-    ),
-    100% - var(--setting-width)
+  --setting-width: var(--space-3xs);
+  --setting-x: round(
+    var(--column-centre) + var(--column-width) / 2 - var(--setting-width) / 2,
+    1px
   );
 
   /* display, not visibility: a visible child would show through the hidden rail. */
@@ -721,8 +804,11 @@
 }
 
 .timeline-minimap__setting-span {
-  inset-block: round(down, var(--setting-start) * 100%, 1px)
-    round(down, (1 - var(--setting-end)) * 100%, 1px);
+  --setting-y-start: var(--setting-start);
+  --setting-y-end: var(--setting-end);
+
+  inset-block: round(down, var(--setting-y-start) * 100%, 1px)
+    round(down, (1 - var(--setting-y-end)) * 100%, 1px);
   background: repeating-linear-gradient(
     -45deg,
     var(--tan-500) 0 var(--border-width-sm),
@@ -734,7 +820,8 @@
 }
 
 .timeline-minimap__setting-arc {
-  --arc-mid-at: round(down, var(--arc-mid) * 100%, 1px);
+  --arc-y-mid: var(--arc-mid);
+  --arc-mid-at: round(down, var(--arc-y-mid) * 100%, 1px);
   --arc-dot-at: calc(var(--tick-top) + var(--tick-dot) / 2);
 
   inset-block: min(var(--arc-mid-at), var(--arc-dot-at))
@@ -743,9 +830,7 @@
   border-end-start-radius: var(--space-2xs);
   border-inline-end: 0;
   border-start-start-radius: var(--space-2xs);
-  inset-inline: calc(
-      100% - var(--setting-x) - var(--setting-width) - var(--space-3xs)
-    )
+  inset-inline: calc(100% - var(--setting-x) - var(--setting-width))
     calc(var(--tick-x) + var(--tick-dot));
 }
 
@@ -791,5 +876,267 @@
 
   .timeline-minimap__setting {
     display: if(style(--is-current: 1): contents; else: none);
+  }
+}
+
+/*
+  ---------- The lens: a fisheye along the axis, in CSS ----------
+  Around a focus year the strip's scale grows (up to about 2.8× at the
+  focus), so a dense era's dots spread apart; everywhere else it shrinks a
+  little (to about 0.8×) so the strip still holds the whole Timeline. Its
+  ends stay put and its order never changes: every year, band edge, setting
+  and arc on the strip goes through the same map, so a dot never leaves its
+  band and the #175 clamp above works unchanged.
+
+  The map (src/hugo/timeline-lens.ts is the same formula, tested): with
+  focus f, gain a and width w, the strip's density is
+  1 + a·w² / (w + |x − f|)², whose integral is the year x plus
+  a·w·(x − f) / (w + |x − f|); scaled so the ends stay at 0 and 1:
+
+    y(x) = (x + a·w·(x − f) / (w + |x − f|) + c0) / n
+    c0 = a·w·f / (w + f)
+    n = 1 + a·w·((1 − f) / (w + 1 − f) + f / (w + f))
+
+  Smooth and strictly increasing for any a ≥ 0; a = 0 is the to-scale map.
+
+  The focus (--lens-focus) is the current entry's year (the scrollspy's
+  generated rules in timeline-minimap.html set --lens-current), or, on
+  hover, the year under the pointer: the hover targets are still slices that
+  never bend (.timeline-minimap__lens), so the year under the pointer stays
+  under it as the lens grows round it. A hovered tick or its hint focuses
+  its own year, so the dot stays where it is. The focus and gain are
+  registered numbers, so they ease from one place to the next; with reduced
+  motion they jump.
+
+  --lens-rest-gain is the lens with nothing hovered: the full gain, around
+  the current entry. Set it to 0 for a to-scale rail that bends only under
+  the pointer (and in the open popover, which has no hover).
+
+  Without abs() (or @property, then without the easing) the strip is to
+  scale: every --*-y above is its year.
+*/
+@property --lens-focus {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0.5;
+}
+
+@property --lens-gain {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+.timeline-minimap {
+  --lens-width: 0.06;
+  --lens-max-gain: 2.5;
+  --lens-rest-gain: var(--lens-max-gain);
+  /* No current entry yet (above the axis): no lens. */
+  --lens-gain: 0;
+  --lens-focus: var(--lens-hover, var(--lens-current, 0.5));
+
+  transition:
+    --lens-focus var(--duration-fast) var(--ease-standard),
+    --lens-gain var(--duration-fast) var(--ease-standard);
+}
+
+.timeline-minimap:has(
+  .timeline-minimap__spy :is(:target-current, .target-current)
+) {
+  --lens-gain: var(--lens-rest-gain);
+}
+
+/* The open popover (narrow screens) is always lensed, on the current entry. */
+.timeline-minimap:has(.timeline-minimap__map:popover-open) {
+  --lens-gain: var(--lens-max-gain);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-minimap {
+    transition: none;
+  }
+}
+
+@supports (width: calc(abs(1px))) {
+  @media (hover: hover) {
+    .timeline-minimap__lens > * {
+      pointer-events: auto;
+    }
+
+    .timeline-minimap:has(
+      :is(
+        .timeline-minimap__lens > *,
+        .timeline-minimap__tick,
+        .timeline-minimap__tip
+      ):hover
+    ) {
+      --lens-gain: var(--lens-max-gain);
+    }
+  }
+
+  .timeline-minimap__strip {
+    --lens-aw: calc(var(--lens-gain) * var(--lens-width));
+    --lens-c0: calc(
+      var(--lens-aw) * var(--lens-focus) /
+        (var(--lens-width) + var(--lens-focus))
+    );
+    --lens-n: calc(
+      1 + var(--lens-aw) *
+        (
+          (1 - var(--lens-focus)) /
+            (var(--lens-width) + 1 - var(--lens-focus)) + var(--lens-focus) /
+            (var(--lens-width) + var(--lens-focus))
+        )
+    );
+  }
+
+  .timeline-minimap__band {
+    --era-y-start: calc(
+      (
+          var(--era-start) + var(--lens-aw) *
+            (var(--era-start) - var(--lens-focus)) /
+            (var(--lens-width) + abs(var(--era-start) - var(--lens-focus))) +
+            var(--lens-c0)
+        ) /
+        var(--lens-n)
+    );
+    --era-y-end: calc(
+      (
+          var(--era-end) + var(--lens-aw) *
+            (var(--era-end) - var(--lens-focus)) /
+            (var(--lens-width) + abs(var(--era-end) - var(--lens-focus))) +
+            var(--lens-c0)
+        ) /
+        var(--lens-n)
+    );
+  }
+
+  .timeline-minimap__tick,
+  .timeline-minimap__setting {
+    --tick-y: calc(
+      (
+          var(--tick-at) + var(--lens-aw) *
+            (var(--tick-at) - var(--lens-focus)) /
+            (var(--lens-width) + abs(var(--tick-at) - var(--lens-focus))) +
+            var(--lens-c0)
+        ) /
+        var(--lens-n)
+    );
+    --tick-prev-y: calc(
+      (
+          var(--tick-prev) + var(--lens-aw) *
+            (var(--tick-prev) - var(--lens-focus)) /
+            (var(--lens-width) + abs(var(--tick-prev) - var(--lens-focus))) +
+            var(--lens-c0)
+        ) /
+        var(--lens-n)
+    );
+    --tick-next-y: calc(
+      (
+          var(--tick-next) + var(--lens-aw) *
+            (var(--tick-next) - var(--lens-focus)) /
+            (var(--lens-width) + abs(var(--tick-next) - var(--lens-focus))) +
+            var(--lens-c0)
+        ) /
+        var(--lens-n)
+    );
+    --era-y-start: calc(
+      (
+          var(--era-start) + var(--lens-aw) *
+            (var(--era-start) - var(--lens-focus)) /
+            (var(--lens-width) + abs(var(--era-start) - var(--lens-focus))) +
+            var(--lens-c0)
+        ) /
+        var(--lens-n)
+    );
+    --era-y-end: calc(
+      (
+          var(--era-end) + var(--lens-aw) *
+            (var(--era-end) - var(--lens-focus)) /
+            (var(--lens-width) + abs(var(--era-end) - var(--lens-focus))) +
+            var(--lens-c0)
+        ) /
+        var(--lens-n)
+    );
+  }
+
+  .timeline-minimap__setting-span {
+    --setting-y-start: calc(
+      (
+          var(--setting-start) + var(--lens-aw) *
+            (var(--setting-start) - var(--lens-focus)) /
+            (
+              var(--lens-width) + abs(var(--setting-start) - var(--lens-focus))
+            ) +
+            var(--lens-c0)
+        ) /
+        var(--lens-n)
+    );
+    --setting-y-end: calc(
+      (
+          var(--setting-end) + var(--lens-aw) *
+            (var(--setting-end) - var(--lens-focus)) /
+            (var(--lens-width) + abs(var(--setting-end) - var(--lens-focus))) +
+            var(--lens-c0)
+        ) /
+        var(--lens-n)
+    );
+  }
+
+  .timeline-minimap__setting-arc {
+    --arc-y-mid: calc(
+      (
+          var(--arc-mid) + var(--lens-aw) *
+            (var(--arc-mid) - var(--lens-focus)) /
+            (var(--lens-width) + abs(var(--arc-mid) - var(--lens-focus))) +
+            var(--lens-c0)
+        ) /
+        var(--lens-n)
+    );
+  }
+}
+
+/*
+  Two refinements that need a length divided by a length, and the strip's
+  height in pixels (anchor-size()); without them, rows keep their full lanes
+  and pile up at their column's last place.
+
+  A row longer than its column has places wraps round to the centre line
+  again (slot 7 of 7 places shares slot 0's lane), rather than piling its
+  last dots on one place at the edge: a slot that many places further on is
+  further down the row's years too.
+
+  And a row's dots pull in towards their column's centre line where they
+  already clear each other vertically (at rest on a tall rail, and near the
+  lens's focus): with r the vertical gap to the tick's nearest column
+  neighbour in dot places, its lane shrinks to √(1 − r²) of a place, so two
+  dots a lane apart are always at least a place apart; r ≥ 1 puts it on the
+  line.
+*/
+@supports (inset-inline-end: anchor-size(block)) and
+  (width: calc(1px * (1px / 1px))) {
+  .timeline-minimap__tick,
+  .timeline-minimap__setting {
+    --column-places: calc(2 * var(--column-reach) / var(--tick-pitch) + 1);
+    --tick-wrap: mod(var(--tick-slot), var(--column-places));
+    /* Fan out again: 0, 1, -1, 2, -2… */
+    --tick-lane-wrapped: calc(
+      round(up, var(--tick-wrap) / 2) * (2 * mod(var(--tick-wrap), 2) - 1)
+    );
+    --tick-gap: min(
+      var(--tick-y) - var(--tick-prev-y),
+      var(--tick-next-y) - var(--tick-y)
+    );
+    --lane-pull: sqrt(
+      max(
+        0,
+        1 -
+          pow(
+            var(--tick-gap) * anchor-size(--timeline-minimap-frame block) /
+              var(--tick-pitch),
+            2
+          )
+      )
+    );
   }
 }
