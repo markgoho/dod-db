@@ -1,8 +1,7 @@
 ---
 title: "The birth of Jesus"
 entryKind: event
-draft: true
-sourcesRead:
+sourcesRead: 2026-11-26
 related:
   {
     books: [matthew, luke],
@@ -29,7 +28,7 @@ critical:
   cites:
     - source: britannica-jesus
       locator: "opening paragraph (the article's lede), first sentence"
-      quote: "Jesus (born c. 6–4 BCE"
+      quote: "born c. 6–4 BCE"
       read: 2026-11-26
     - source: britannica-jesus
       locator: "section “Summary of Jesus’ life”, ¶ 1, second sentence"
