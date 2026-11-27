@@ -25,11 +25,11 @@ critical:
   from: -6
   to: -4
   precision: year
-  note: "Sanders, in Britannica, places it between 6 BCE and shortly before the death of Herod the Great in 4 BCE, citing Matthew 2 and Luke 1:5. Bond says that in all probability the earliest Christians did not know exactly when Jesus was born, and that both Gospel writers wove their stories around memorable events from roughly the right period: Matthew the death of Herod, Luke the census of Quirinius, which she dates to 6 CE. She says that, if historical, Luke's account would contradict Matthew's clear indication of a birth shortly before Herod died, around a decade earlier, and that attempts to read Luke's “first registration” as an earlier census by Quirinius have not been successful. Landau sees the same gap within Luke: Quirinius began his appointment in 6 CE, while Luke 1:5 strongly implies a birth before Herod's death in 4 BCE."
+  note: "Britannica places it between 6 BCE and shortly before the death of Herod the Great in 4 BCE, citing Matthew 2 and Luke 1:5. Bond says that in all probability the earliest Christians did not know exactly when Jesus was born, and that both Gospel writers wove their stories around memorable events from roughly the right period: Matthew the death of Herod, Luke the census of Quirinius, which she dates to 6 CE. She says that, if historical, Luke's account would contradict Matthew's clear indication of a birth shortly before Herod died, around a decade earlier, and that attempts to read Luke's “first registration” as an earlier census by Quirinius have not been successful. Landau sees the same gap within Luke: Quirinius began his appointment in 6 CE, while Luke 1:5 strongly implies a birth before Herod's death in 4 BCE."
   cites:
     - source: britannica-jesus
       locator: "opening paragraph (the article's lede), first sentence"
-      quote: "Jesus (born c. 6–4 BCE, Bethlehem—died c. 30 CE, Jerusalem) was a religious leader revered in Christianity"
+      quote: "Jesus (born c. 6–4 BCE"
       read: 2026-11-26
     - source: britannica-jesus
       locator: "section “Summary of Jesus’ life”, ¶ 1, second sentence"

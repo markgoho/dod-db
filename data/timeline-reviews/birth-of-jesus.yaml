@@ -10,101 +10,117 @@
 # agent: the first pass (2026-11-26). One research agent (critical side) saved every fetched page into its own scratch folder (birth-critical) and copied quotes only from the saved text. The lead read Britannica “Jesus” in Claude in Chrome (script-blocked): JSON-LD datePublished 1998-07-20, dateModified 2026-11-20, author E.P. Sanders; byline “E.P. Sanders … Britannica Editors Nov. 20, 2026”; article h1/h2/p innerText 14930 characters; the first <p> under the h1 is a hidden AI Q&A block (div.ai-qna-answer), not the article, and is not cited; the lede is p.topic-paragraph. The cited Britannica sentences were matched with document.body.innerText split counts in the tab, once each; relevant paragraphs saved (birth-lead/britannica-jesus.txt). Quotes script-matched from the entry file against the saved copies (whitespace, quotes, dashes, entities, NFKC, soft hyphens normalised): 7 hits, 0 misses, each once. Trigger Claims matched by script as substrings of their final Transcript lines at timestamp and speaker: 3 hits.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) The entry rests on Britannica alone for its Critical Date. Check that “born c. 6–4 BCE” and “sometime between 6 BCE and shortly before the death of Herod the Great (Matthew 2; Luke 1:5) in 4 BCE” are Britannica's own dating, not a report of Matthew (contrast “according to Matthew and Luke” on Bethlehem in the same paragraph). If you judge it a report, cut and say so: the entry then exits. (2) The lede quote includes “Bethlehem”, which Britannica asserts as the birthplace in the lede while hedging it in the summary; the entry says nothing on the birthplace. Check that citing the clause doesn't import it, or trim. (3) Display “c. 6–4 BCE”: check no stronger than Britannica given Bond's “did not know exactly”. (4) Note: check Bond's and Landau's paraphrases keep scope (Bond: Luke vs Matthew, conditional; Landau: within Luke, “strongly implies”). (5) Britannica's 1998 first publication with a 2026 update: check the window (#86) as for earlier Britannica cites.
+# Second agent pass, 2026-11-26 (fresh agent; did not build the entry; read none of the first pass's scratch folders). Re-fetched into its own scratch folder (birth-p2). Bond and Landau: curl with a browser User-Agent returned a Cloudflare 403 challenge (Bond three times: Chrome UA twice, Firefox UA once; Landau once), so both were read in Claude in Chrome in tabs of this pass's own (closed after), via get_page_text on <main>, relevant paragraphs saved; Bond date line May 8, 2018 (JSON-LD datePublished 2018-05-08, dateModified 2024-01-16), Landau April 20, 2020 (datePublished 2020-04-20, dateModified 2024-01-16). Britannica “Jesus” read in Claude in Chrome (own tabs, closed after): JSON-LD datePublished 1998-07-20, dateModified 2026-11-20; lede is p.topic-paragraph (the first <p> is inside div.ai-qna-answer, the hidden AI Q&A block, which rewords the lede: “Bethlehem–died … is a religious leader”; not the article, not cited); the summary sentence is the first text paragraph of “Summary of Jesus’ life”, second sentence, not in the AI block.
+# Match counts. In the tabs (document.body.innerText split counts, whitespace/quotes/dashes normalised; the authoritative match, since the saved copies were retyped from tab output): 7 of 7 quotes as received hit once; Bond's four sit in “Was there really a census?” ¶¶ 3, 3, 1, 2 and Landau's in main <p> [7] after the dek = body ¶ 7, as the locators say. Script re-match of the entry file against the saved copies (whitespace, quotes, dashes, HTML entities, NFKC, soft hyphens normalised): 7 of 7 hit once as received; after the edits, the script reports 6 of 7 hit once: the trimmed lede quote hits twice in the saved copy, once in the AI-block line recorded there and once in the article's lede; it occurs once in the article (the tab returned the lede paragraph's text in full; the trimmed quote was not re-counted in a tab, which closed before the trim). Trigger Claims script-matched as substrings of their final Transcript lines at exact timestamp and speaker: 3 of 3 hit, each line once; read E141 01:03:20–01:06:58, E87 00:22:32–00:25:42 and 00:35:06–00:40:17.
+# Britannica authorship (new finding). The first pass recorded the JSON-LD author and byline as Sanders; this pass saw Pelikan on its first load. Re-fetching showed the byline (“Written by …”) and JSON-LD author rotate per request between the two primary contributors (three fetches of /biography/Jesus: Pelikan, Sanders, Sanders; two section pages each gave both). The /additional-info page lists Primary Contributors Jaroslav Jan Pelikan, E.P. Sanders and the Editors; the citation line reads “Pelikan, Jaroslav Jan, Sanders, E.P.”. No section-level signature was found, so no one sentence can be assigned to Sanders.
+# Second pass changed: (a) the note's “Sanders, in Britannica, places it” narrowed to “Britannica places it” (authorship above). (b) Registry `britannica-jesus` author “E. P. Sanders” → “Jaroslav Jan Pelikan and E. P. Sanders” (Britannica's own citation line), edition string to match, and this file's `sources.britannica-jesus.edition` likewise; the public short cite becomes “Pelikan and Sanders 1998”. (c) critical/1 quote trimmed from “Jesus (born c. 6–4 BCE, Bethlehem—died c. 30 CE, Jerusalem) was a religious leader revered in Christianity” to “Jesus (born c. 6–4 BCE” (flag 2). Nothing cut: title, display, from/to/precision, all seven citations and the three Trigger Claims stand; no review keys renumbered; no registry entry removed.
+# Second-pass rulings on the first-pass flags: (1) Own voice; kept. The summary paragraph marks three claims as the Gospels' (“Although born in Bethlehem, according to Matthew and Luke”; “According to Matthew and Luke, however, Joseph was only legally his father”; “Joseph is said to have been a carpenter”) and leaves the date sentence unmarked, with Matthew 2 and Luke 1:5 in parentheses as evidence; its 6 BCE lower edge is in neither Gospel, so it is Britannica's inference, not a report. The article says it flatly twice more (“When Jesus was born, all of Jewish Palestine … was ruled by … Herod the Great”; “When Herod died shortly after Jesus’ birth”, both uncited) and the lede gives “born c. 6–4 BCE” with no attribution. Not conditional (no “if”). The date rests on the Gospels' Herod setting, which the note says (“citing Matthew 2 and Luke 1:5”). (2) Trimmed (change c): the lede asserts Bethlehem flatly where the same article hedges it (“according to Matthew and Luke”) and Bond doubts it (“it seems more likely that the story was developed within early Christian circles”, uncited); the entry says nothing on the birthplace, so the quote no longer carries it. Short quotes have precedent (“King of Assyria 705–681 BCE.”, “The year was 1406 B.C.”). (3) Display “c. 6–4 BCE” is Britannica's own form and hedge; Bond's “In all probability … did not know exactly” and “roughly the right period” sit in the note, attributed, and give no other date (no #99 alternative). Pass. (4) Bond: the note keeps “in all probability”, “roughly the right period”, “if historical”, Luke against Matthew, and does not show her “6 B.C.E.” as her date; it drops Matthew's star, which narrows only. Landau: the note keeps “strongly implies” and the gap within Luke (1:5 against the census). Pass. (5) 1998 is inside the ~30-year window (#86; the excluded NABRE NT is 1986) on first publication alone; updated 2026-11-20. Pass.
+# Rules re-read: CONTEXT.md Timeline/Synthesis Page lines; #80 (sourcing), #86 (window), #93 with its owner comments, #99 (incl. the E34 ruling), #110; nothing in them on naming a multi-contributor reference work; read, no further change.
+# Flags for the lead: (1) The short cite changes to “Pelikan and Sanders 1998”; check the rendered Sources line and that nothing else expects “Sanders 1998” (no other file cites `britannica-jesus`). (2) Britannica rotates its displayed author per request, so a later reader may see either name; the registry now carries both as its citation line does. (3) The lede quote, trimmed, also occurs in the hidden AI Q&A block; its locator (the article's lede, p.topic-paragraph) settles which. (4) Bond's sidebar (“Neither Matthew nor Luke gives a specific date for Jesus’ birth”) and body ¶ 1 (“they assume that by this time the precise details of Jesus’ birth had been forgotten”) agree with the note; read, not cited, not added. (5) Bible Odyssey now blocks curl with a Cloudflare challenge; later passes will need the browser; the registry `access` lines for both still say “open”. (6) Publish gate: check:timeline passes on this draft with a `delegation` block, no `review` and an empty `sourcesRead`, so the gate did not run on the draft; at publish, `review` and `sourcesRead` must both be 2026-11-26 (matching `secondPass`). (7) Neither the trimmed quote (it ends inside an open parenthesis) nor the new short cite was viewed rendered; reverting to the full lede quote is the fallback if it reads badly. (8) Other Britannica registry entries name a single contributor (“Kate Lohnes”, “Carol Zaleski”); if those pages rotate bylines too, they may need the same fix; not checked, not changed.
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Jesus” (Sanders), lede, first sentence. Own-voice approximate date (“born c. 6–4 BCE”). Backs the display and from/to. Flags 1, 2, 5.",
+      note: "Britannica “Jesus” (Sanders), lede, first sentence. Own-voice approximate date (“born c. 6–4 BCE”). Backs the display and from/to. Flags 1, 2, 5. Second pass: read in Claude in Chrome (own tab); lede p.topic-paragraph, not the AI Q&A block; in-tab split count 1 as received. Quote trimmed to “Jesus (born c. 6–4 BCE” so it no longer carries the flat Bethlehem (flag 2). Own voice, not a report (flag 1); 1998 inside the window (flag 5). Author line now Pelikan and Sanders (rotating byline). Pass.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Jesus”, section “Summary of Jesus’ life”, ¶ 1, second sentence. Own-voice bounds, 6 BCE to shortly before Herod's death in 4 BCE, with Matthew 2 and Luke 1:5 as basis. Backs the note's first sentence and the 4 BCE bound. Flag 1.",
+      note: "Britannica “Jesus”, section “Summary of Jesus’ life”, ¶ 1, second sentence. Own-voice bounds, 6 BCE to shortly before Herod's death in 4 BCE, with Matthew 2 and Luke 1:5 as basis. Backs the note's first sentence and the 4 BCE bound. Flag 1. Second pass: in-tab split count 1; “Summary of Jesus’ life”, first text paragraph, second sentence, not in the AI block. Own voice: unmarked between “according to Matthew and Luke” sentences, 6 BCE edge not in either Gospel (flag 1). Note now says “Britannica”, not “Sanders” (authorship not assignable). Pass.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Bond, Bible Odyssey “The Nativity” (May 8, 2018), section “Was there really a census?”, ¶ 3. Hedged own voice (“In all probability”) that the year was not known exactly. Backs the note's uncertainty clause. Flag 3.",
+      note: "Bond, Bible Odyssey “The Nativity” (May 8, 2018), section “Was there really a census?”, ¶ 3. Hedged own voice (“In all probability”) that the year was not known exactly. Backs the note's uncertainty clause. Flag 3. Second pass: read in Claude in Chrome (curl 403, Cloudflare); in-tab split count 1; ¶ 3 of the section. Hedge kept in the note (flag 3). Pass.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Bond 2018, same ¶ 3. Both evangelists used events from “roughly the right period” (Herod's death; Quirinius's census). Backs the note's second clause.",
+      note: "Bond 2018, same ¶ 3. Both evangelists used events from “roughly the right period” (Herod's death; Quirinius's census). Backs the note's second clause. Second pass: in-tab split count 1; ¶ 3. Note drops Matthew's star (narrows only); keeps “roughly the right period”. Pass.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Bond 2018, ¶ 1. Own voice: the census taken “in 6 C.E.”. Backs “which she dates to 6 CE”.",
+      note: "Bond 2018, ¶ 1. Own voice: the census taken “in 6 C.E.”. Backs “which she dates to 6 CE”. Second pass: in-tab split count 1; ¶ 1, last sentence. Pass.",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "Bond 2018, ¶ 2. Conditional (“if historical”): Luke would contradict Matthew's indication of a birth shortly before Herod died, a decade earlier; earlier-census readings of Luke 2:2 “have not been successful”. Backs the note's third sentence. Her 6 B.C.E. is Matthew's indication, not shown as a date. Flag 4.",
+      note: "Bond 2018, ¶ 2. Conditional (“if historical”): Luke would contradict Matthew's indication of a birth shortly before Herod died, a decade earlier; earlier-census readings of Luke 2:2 “have not been successful”. Backs the note's third sentence. Her 6 B.C.E. is Matthew's indication, not shown as a date. Flag 4. Second pass: in-tab split count 1; ¶ 2, last two sentences. Note keeps “if historical”, Luke against Matthew, and her 6 B.C.E. as Matthew's indication only (flag 4). Pass.",
     }
   critical/7:
     {
       agent: pass,
       owner: "",
-      note: "Landau, Bible Odyssey “Was Luke a Historian?” (April 20, 2020), body ¶ 7. Own voice: Quirinius's appointment 6 CE; Luke 1:5 “strongly implies” a birth before Herod's death in 4 BCE; a 10-year gap within Luke. Backs the note's last sentence. Flag 4.",
+      note: "Landau, Bible Odyssey “Was Luke a Historian?” (April 20, 2020), body ¶ 7. Own voice: Quirinius's appointment 6 CE; Luke 1:5 “strongly implies” a birth before Herod's death in 4 BCE; a 10-year gap within Luke. Backs the note's last sentence. Flag 4. Second pass: read in Claude in Chrome (curl 403); in-tab split count 1; main <p> [7] after the dek = body ¶ 7. Note keeps “strongly implies” and the gap within Luke (flag 4). Pass.",
     }
 triggers:
   141@01:05:18:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Luke 2:2 dates the census and birth to 6 CE against Luke 1 (Herod, or shortly after his death in 4 BCE). McClellan's reading of Luke's chronology. Drops the prote argument and its hedge (“not … utterly impossible … not a plausible reading”). E141 01:04:09–01:06:43 read.",
+      note: "states: critical. Luke 2:2 dates the census and birth to 6 CE against Luke 1 (Herod, or shortly after his death in 4 BCE). McClellan's reading of Luke's chronology. Drops the prote argument and its hedge (“not … utterly impossible … not a plausible reading”). E141 01:04:09–01:06:43 read. Second pass: script-matched at 01:05:18.395, Dan McClellan, line once; E141 01:03:20–01:06:58 read; verbatim; the hedge about the prote reading is about that reading, not the date. states critical confirmed (McClellan's reading of Luke, #99 E34). Pass.",
     }
   87@00:24:17:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Matthew 2:16's two years before Herod's death: “around 6 to 4 BCE”. Matches the display. E87 00:23:33–00:29:04 read.",
+      note: "states: critical. Matthew 2:16's two years before Herod's death: “around 6 to 4 BCE”. Matches the display. E87 00:23:33–00:29:04 read. Second pass: script-matched at 00:24:17.360, Dan McClellan, line once; 00:22:32–00:25:42 read; the 00:24:01 turn gives the Matthew 2:16 basis; verbatim. states critical (a reading of Matthew, #99 E34). Pass.",
     }
   87@00:38:07:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Quirinius's census in Judea in 6 CE, “a full 10 years” after Herod's death. Matches Bond's 6 CE and Landau's gap. E87 00:37:34–00:40:00 read.",
+      note: "states: critical. Quirinius's census in Judea in 6 CE, “a full 10 years” after Herod's death. Matches Bond's 6 CE and Landau's gap. E87 00:37:34–00:40:00 read. Second pass: script-matched at 00:38:07.610, Dan McClellan, line once; 00:35:06–00:40:17 read; verbatim; dates the census, which the next turn (00:39:15) ties to Luke's birth story. states critical. Pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Worded for what Britannica dates: the birth's year range. Nothing on the birthplace, the virgin birth or December 25 (issue's other claims dropped; flag 2).",
+      note: "Worded for what Britannica dates: the birth's year range. Nothing on the birthplace, the virgin birth or December 25 (issue's other claims dropped; flag 2). Second pass: lede quote trimmed so nothing on the birthplace is quoted either. Pass.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "One Critical Date (Britannica); no source gives a different one (Retief's 5/6 BC falls inside; uncited). Bond's uncertainty and the Luke conflict are attributed in the note. No consensus word.",
+      note: "One Critical Date (Britannica); no source gives a different one (Retief's 5/6 BC falls inside; uncited). Bond's uncertainty and the Luke conflict are attributed in the note. No consensus word. Second pass: no source read gives a different Critical Date; Bond's “did not know exactly” is uncertainty, not an alternative. Pass.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date. All three triggers states: critical (readings of the texts' chronology, #99 E34 precedent). E86's December 25 is a day, not a year, and a different subject.",
+      note: "No Tradition Date. All three triggers states: critical (readings of the texts' chronology, #99 E34 precedent). E86's December 25 is a day, not a year, and a different subject. Second pass: confirmed; all three triggers are readings of the texts. Pass.",
     }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition Date; nothing to name." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; nothing to name. Second pass: confirmed. Pass.",
+    }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "Bond's “if historical … Matthew's clear indication … 6 B.C.E.” is conditional and reports Matthew: in the note only, attributed, never in the display.",
+      note: "Bond's “if historical … Matthew's clear indication … 6 B.C.E.” is conditional and reports Matthew: in the note only, attributed, never in the display. Second pass: confirmed against Bond ¶ 2. Pass.",
     }
 sources:
   britannica-jesus:
     {
       agent: pass,
       owner: "",
-      edition: "Online, E. P. Sanders with Britannica Editors (first published July 20, 1998; updated Nov. 20, 2026)",
+      edition: "Online, Jaroslav Jan Pelikan and E. P. Sanders with Britannica Editors (first published July 20, 1998; updated Nov. 20, 2026)",
     }
   bond-2018-nativity:
     {
@@ -136,3 +152,7 @@ uncited:
   - "Jensen, Bible Odyssey “Herod the Great” (2018): “Herod ruled from the year 40-4 BCE but first captured the throne in 37 BCE.” Herod's reign; for #237."
   - "Compton, “Once More: Quirinius's Census”, DBSJ 14 (2009) p. 46: “a reign ended by Herod's death in March/April of 4 B.C.” Seminary journal, harmonising frame; no birth year."
   - "Ehrman, Brief Introduction 5e chapter summaries (OUP), ch. 7: the birth narratives differ; no date. Powell, Bible Odyssey “Jesus” (2016): no date. Nissenbaum, Bible Odyssey (2017): the calendar day, not the year."
+  - "Bond 2018, “Did you know?” sidebar: “Neither Matthew nor Luke gives a specific date for Jesus’ birth.” Read by the second pass; agrees with the note; not needed."
+  - "Bond 2018, body ¶ 1: “Most scholars date these texts to 80-100 C.E., and they assume that by this time the precise details of Jesus’ birth had been forgotten.” Read by the second pass; a report of scholars on the details, not a date; not needed."
+  - "Bond 2018, section “Was Jesus born in Bethlehem?”, last ¶: “it seems more likely that the story was developed within early Christian circles to connect Jesus with the Davidic Messiah.” Birthplace only; the reason the lede quote was trimmed (second pass)."
+  - "Britannica “Jesus”, section “The political situation”: “When Jesus was born, all of Jewish Palestine—as well as some of the neighboring Gentile areas—was ruled by Rome’s able “friend and ally” Herod the Great.” Own-voice support for flag 1's ruling (second pass); not needed."
