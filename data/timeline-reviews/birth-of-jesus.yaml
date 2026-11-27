@@ -1,0 +1,138 @@
+# Review record for the Timeline Entry `birth-of-jesus` (/timeline/#birth-of-jesus; #93 shape). Not rendered.
+# Issue #231 (from #108), “Timeline Entry: The birth of Jesus”. Issue notes: kind event; tradition as stated “Matthew: under Herod the Great, so 6–4 BCE; Luke: census of Quirinius, 6 CE; December 25”; critical as stated “the two Gospel datings contradict by a decade; Bethlehem and the virgin birth are later accretions; probably born in Nazareth. December 25 first argued c. 210 CE”; the contrast is between two Gospels, not tradition and scholarship; no critical year is stated on the show, so “likely a ‘no date’ or conditional entry”; a Tradition Date needs a Tradition source holding a year in its own words, not the Gospels; keep consistent with the Death of Herod entry (#237, not yet published: no anchor or seeAlso; the 4 BCE bound is cited here through Britannica's and Landau's own sentences); related open issue #201 (Univocality: Matthew verse for the birth under Herod); NABRE NT introductions are outside the 30-year window (#86), not used.
+# Shape decision (step 2): `critical`, display “c. 6–4 BCE”, Britannica's own form. The issue's “likely undated” was a prediction; the sourcing test overrides it. Britannica (Sanders, Reference) dates the birth flatly twice: the lede, “born c. 6–4 BCE”, and the “Summary of Jesus’ life” sentence, “born … sometime between 6 BCE and shortly before the death of Herod the Great (Matthew 2; Luke 1:5) in 4 BCE”. In the same paragraph Britannica marks Bethlehem and the virgin birth “according to Matthew and Luke”, but not the date: the Gospel references stand in parentheses as its basis, so the date is in its own voice (flag 1). `from: -6`, `to: -4`, `precision: year`. No “probably” on the display: “c.” is the source's own hedge; the uncertainty is in the note, from Bond (“In all probability, the earliest Christians did not know exactly when Jesus was born”). If the second pass cuts Britannica, the entry has no Critical Date and takes the step 2 exit; it is not reshaped to `undated` on the remaining sources without a fresh sourcing test.
+# Attribution scope in the note: Bond dates the census to 6 CE in her own voice; her conflict is Luke against Matthew and conditional (“if historical”); her “6 B.C.E.” is Matthew's indication, not her date, and is not shown as one. Landau says Quirinius “began his appointment” in 6 CE and places the 10-year gap within Luke (1:5 against the census); he is not made to contradict Matthew. Britannica's date rests on Matthew 2 and Luke 1:5, as the note says.
+# Consistency: #201 / Univocality (`gospels` statement) says Bond calls Matthew's indication a birth shortly before Herod I died; this entry says the same. Herod's death 4 BCE: Britannica, Bond (“When Herod I died in 4 B.C.E.”, uncited) and Landau agree; the Death of Herod entry (#237) is not yet published.
+# Sourcing test, 2026-11-26: met, as a `critical` entry (Britannica, Reference, own voice). #99: no source gives a different Critical Date. Retief et al. 2005 (“5 BC or 6 BC”) falls inside the display, so is not a #99 alternative (uncited, below). Bond's 6 BCE is Matthew's indication (conditional), not a date of hers.
+# Tradition: none. All three Trigger Claims are McClellan's readings of the texts' own chronology (Matthew's Herod, Luke's census), the #99 E34 precedent: a reading of a text, not a date a tradition is said to hold. E86 00:34:56–00:37:32 (December 25 first argued by Hippolytus c. 210 CE, “this was just a tradition”) states a tradition's day, not a year; the Timeline places by year (TraditionSchema needs `from`) and the December 25 calculation is a different subject (follow-on issue at publish). No tradition research agent dispatched.
+# Trigger Claims (#99, three): 141@01:05:18 (critical; the issue's lead), 87@00:24:17 (critical; Matthew's implied 6 to 4 BCE), 87@00:38:07 (critical; Quirinius's census 6 CE, 10 years after Herod's death). All Dan McClellan. Hedges and nuance dropped by trimming: 141@01:05:18 opens with the *prote* argument and “while it's not an … utterly impossible reading, it is not a plausible reading”; it sets Luke 2:2 against Luke 1 (as Landau does), not against Matthew (as Bond does). 87@00:24:17 opens “So as much as two years is from there”. 87@00:38:07 drops the Luke 2:1–2 quotation and the Archelaus account before it; the next turn (00:39:15) says Luke's story “cannot work because it is placing two different events that took place 10 years apart”, and 00:39:50 adds that the nativity “might be a secondary addition to Luke … like the middle of the second century CE”. Read: E141 01:04:09–01:06:43; E87 00:23:33–00:29:04 and 00:37:30–00:40:10; E86 00:33:30–00:37:45; E144 00:08:16–00:10:33 (Herod died 4 BCE; no birth date); E106 00:41:07–00:43:09 (Archelaus deposed 6 CE, Luke's census confusion; no birth date); E37 lead lines by search only (Matthew's setting under Herod, 00:07:56; December 25 astrotheology, 00:33:26–00:39:23; no year stated in them).
+# Dropped Trigger Claim leads: 87@00:39:15 (the 10-year contradiction, no year; three suffice); 87@00:28:50 (“after 4 BCE so he's anywhere from 1 to 3, maybe 4 years old”); 106@00:41:31 (6 CE census, in a turn on Luke 19); 144@00:08:33 and 00:09:33 (Herod's death, not the birth); 141@00:37:31 and 87@00:26:39 (Nazareth: birthplace, not date); E86 December 25 lines (different subject).
+# agent: the first pass (2026-11-26). One research agent (critical side) saved every fetched page into its own scratch folder (birth-critical) and copied quotes only from the saved text. The lead read Britannica “Jesus” in Claude in Chrome (script-blocked): JSON-LD datePublished 1998-07-20, dateModified 2026-11-20, author E.P. Sanders; byline “E.P. Sanders … Britannica Editors Nov. 20, 2026”; article h1/h2/p innerText 14930 characters; the first <p> under the h1 is a hidden AI Q&A block (div.ai-qna-answer), not the article, and is not cited; the lede is p.topic-paragraph. The cited Britannica sentences were matched with document.body.innerText split counts in the tab, once each; relevant paragraphs saved (birth-lead/britannica-jesus.txt). Quotes script-matched from the entry file against the saved copies (whitespace, quotes, dashes, entities, NFKC, soft hyphens normalised): 7 hits, 0 misses, each once. Trigger Claims matched by script as substrings of their final Transcript lines at timestamp and speaker: 3 hits.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) The entry rests on Britannica alone for its Critical Date. Check that “born c. 6–4 BCE” and “sometime between 6 BCE and shortly before the death of Herod the Great (Matthew 2; Luke 1:5) in 4 BCE” are Britannica's own dating, not a report of Matthew (contrast “according to Matthew and Luke” on Bethlehem in the same paragraph). If you judge it a report, cut and say so: the entry then exits. (2) The lede quote includes “Bethlehem”, which Britannica asserts as the birthplace in the lede while hedging it in the summary; the entry says nothing on the birthplace. Check that citing the clause doesn't import it, or trim. (3) Display “c. 6–4 BCE”: check no stronger than Britannica given Bond's “did not know exactly”. (4) Note: check Bond's and Landau's paraphrases keep scope (Bond: Luke vs Matthew, conditional; Landau: within Luke, “strongly implies”). (5) Britannica's 1998 first publication with a 2026 update: check the window (#86) as for earlier Britannica cites.
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Jesus” (Sanders), lede, first sentence. Own-voice approximate date (“born c. 6–4 BCE”). Backs the display and from/to. Flags 1, 2, 5.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Jesus”, section “Summary of Jesus’ life”, ¶ 1, second sentence. Own-voice bounds, 6 BCE to shortly before Herod's death in 4 BCE, with Matthew 2 and Luke 1:5 as basis. Backs the note's first sentence and the 4 BCE bound. Flag 1.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bond, Bible Odyssey “The Nativity” (May 8, 2018), section “Was there really a census?”, ¶ 3. Hedged own voice (“In all probability”) that the year was not known exactly. Backs the note's uncertainty clause. Flag 3.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bond 2018, same ¶ 3. Both evangelists used events from “roughly the right period” (Herod's death; Quirinius's census). Backs the note's second clause.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bond 2018, ¶ 1. Own voice: the census taken “in 6 C.E.”. Backs “which she dates to 6 CE”.",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bond 2018, ¶ 2. Conditional (“if historical”): Luke would contradict Matthew's indication of a birth shortly before Herod died, a decade earlier; earlier-census readings of Luke 2:2 “have not been successful”. Backs the note's third sentence. Her 6 B.C.E. is Matthew's indication, not shown as a date. Flag 4.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Landau, Bible Odyssey “Was Luke a Historian?” (April 20, 2020), body ¶ 7. Own voice: Quirinius's appointment 6 CE; Luke 1:5 “strongly implies” a birth before Herod's death in 4 BCE; a 10-year gap within Luke. Backs the note's last sentence. Flag 4.",
+    }
+triggers:
+  141@01:05:18:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Luke 2:2 dates the census and birth to 6 CE against Luke 1 (Herod, or shortly after his death in 4 BCE). McClellan's reading of Luke's chronology. Drops the prote argument and its hedge (“not … utterly impossible … not a plausible reading”). E141 01:04:09–01:06:43 read.",
+    }
+  87@00:24:17:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Matthew 2:16's two years before Herod's death: “around 6 to 4 BCE”. Matches the display. E87 00:23:33–00:29:04 read.",
+    }
+  87@00:38:07:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Quirinius's census in Judea in 6 CE, “a full 10 years” after Herod's death. Matches Bond's 6 CE and Landau's gap. E87 00:37:34–00:40:00 read.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Worded for what Britannica dates: the birth's year range. Nothing on the birthplace, the virgin birth or December 25 (issue's other claims dropped; flag 2).",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "One Critical Date (Britannica); no source gives a different one (Retief's 5/6 BC falls inside; uncited). Bond's uncertainty and the Luke conflict are attributed in the note. No consensus word.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date. All three triggers states: critical (readings of the texts' chronology, #99 E34 precedent). E86's December 25 is a day, not a year, and a different subject.",
+    }
+  tradition-named:
+    { agent: pass, owner: "", note: "No Tradition Date; nothing to name." }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bond's “if historical … Matthew's clear indication … 6 B.C.E.” is conditional and reports Matthew: in the note only, attributed, never in the display.",
+    }
+sources:
+  britannica-jesus:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Online, E. P. Sanders with Britannica Editors (first published July 20, 1998; updated Nov. 20, 2026)",
+    }
+  bond-2018-nativity:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey article, dated May 8, 2018",
+    }
+  landau-2020-luke-historian:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey article, dated April 20, 2020",
+    }
+leads:
+  - "Mark D. Smith, “Of Jesus and Quirinius”, CBQ 62 (2000): academia.edu copy login-walled; not read."
+  - "B. W. R. Pearson, “The Lucan Censuses, Revisited”, CBQ 61 (1999): cited in Compton n. 6; paywalled; not read."
+  - "John M. Rist, “Luke 2:2: Making Sense of the Date of Jesus' Birth” (reported as JBL 2000 in a search summary; venue unconfirmed): not fetched."
+  - "Tyndale House Cambridge, “Was Luke wrong about the census?”: TLS errors on two tries; likely apologetic; not read."
+  - "Bible Odyssey podcast “Ancient Censuses—Does Luke's Christmas Story Make Sense?” (2024): no transcript on the page."
+uncited:
+  - "Retief, Cilliers and Hoffman, “Die geboortedatum van Christus as ’n historiese probleem”, Acta Theologica 25.1 (2005) 69–88, English abstract p. 69: “the date of birth of Jesus should be placed in 5 BC or 6 BC (between March and November)”; body p. 84: “Ons eie voorstel van 5 v.C., dalk 6 v.C.” and “Die meerderheidsgroepering val egter binne ’n nou band van 7 tot 4 v.C.” Not used: falls inside the display (not a #99 alternative); the body is Afrikaans (any translation would be ours); the method accepts the birth narratives as history (p. 70); authors are classicists and a physicist."
+  - "HarperCollins Bible Dictionary (2009), entry “Quirinius” on Bible Odyssey: Josephus “tells of a census carried out under Quirinius's authority in 6 or 7 CE”; “There is a historical problem, however, in relating this census to the one mentioned in (Luke 2:1-3), because Jesus is also said to have been born during the reign of Herod the Great (Matt 2:1-22; Luke 1:5), who died in 4 BCE.” Not used: the census year is given as 6 or 7 CE; the note attributes 6 CE to Bond rather than stating it flatly; the birth is reported (“is also said”). Bond and Landau carry the conflict."
+  - "HarperCollins, entry “Herod”: “From 37 until his death in 4 BCE, Herod ruled as king of the Jews … According to (Matt 2:1-18, Luke 1:5), the birth of Jesus occurred while Herod was king.” A report of the Gospels; Britannica carries the 4 BCE bound."
+  - "Denzey Lewis, Bible Odyssey “How Does the New Testament Relate to History?” (2022), body ¶ 6: “Herod died around 5 B.C.E., while Quirinius was not legate of Syria until around 5 C.E.—some 10 years later.” Not used: her years (c. 5 BCE / c. 5 CE) differ from Bond, Landau and Britannica; the decade conflict is carried by Bond and Landau."
+  - "Bond 2018, ¶ 1 of “Was there really a census?”: “When Herod I died in 4 B.C.E., his kingdom was divided among three of his sons”. Agrees; Britannica and Landau carry 4 BCE."
+  - "Britannica “Jesus”, section “The political situation”: “When Herod died shortly after Jesus’ birth, his kingdom was divided into five parts.” Agrees with the cited summary sentence; not needed."
+  - "Martin, Open Yale RLST 152 lecture 13, ch. 1: “Most of us think we don't know anything about the birth of Jesus. All the Christmas stories are later tradition”; ch. 2: “The birth narratives, we just throw up our hands.” No year; scope is the birth stories."
+  - "Bird, Bible Odyssey “Bethlehem” (2017): “many scholars conclude that Jesus was probably born in Nazareth rather than in Bethlehem”. Birthplace only; not this entry's subject."
+  - "Jensen, Bible Odyssey “Herod the Great” (2018): “Herod ruled from the year 40-4 BCE but first captured the throne in 37 BCE.” Herod's reign; for #237."
+  - "Compton, “Once More: Quirinius's Census”, DBSJ 14 (2009) p. 46: “a reign ended by Herod's death in March/April of 4 B.C.” Seminary journal, harmonising frame; no birth year."
+  - "Ehrman, Brief Introduction 5e chapter summaries (OUP), ch. 7: the birth narratives differ; no date. Powell, Bible Odyssey “Jesus” (2016): no date. Nissenbaum, Bible Odyssey (2017): the calendar day, not the year."

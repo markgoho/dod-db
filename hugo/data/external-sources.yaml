@@ -4983,3 +4983,31 @@ hultin-2015-bo-2-peter:
   url: "https://www.bibleodyssey.org/articles/2-peter/"
   hostAuthored: false
   tradition: null
+
+britannica-jesus:
+  author: "E. P. Sanders"
+  title: "Jesus"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 1998
+  edition: "Online, by E. P. Sanders, with Britannica Editors (first published July 20, 1998; updated Nov. 20, 2026)"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/biography/Jesus"
+  hostAuthored: false
+  tradition: null
+
+landau-2020-luke-historian:
+  author: "Brent Landau"
+  title: "Was Luke a Historian?"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2020
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/was-luke-a-historian/"
+  hostAuthored: false
+  tradition: null
