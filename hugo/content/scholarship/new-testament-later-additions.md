@@ -39,7 +39,7 @@ statements:
         quote: "The KJV’s translators used a printed Greek text that included about 16 verses not included in more recent printed editions of the Greek text."
         read: 2026-11-26
       - source: holmes-bo-english-translations
-        locator: "paragraph beginning “On the basis of this older evidence”"
+        locator: "paragraph 5"
         quote: "On the basis of this older evidence, it soon became clear that the text of the New Testament had “grown” slightly as it was copied by hand century after century."
         read: 2026-11-26
       - source: holmes-bo-english-translations
@@ -81,7 +81,7 @@ statements:
   - id: why-added
     group: "Later additions"
     question: "Why did scribes add these verses?"
-    short: "Often to bring a Gospel into line with a parallel passage in another Gospel, or to copy an explanation or liturgical wording into the text."
+    short: "The sources give several reasons: a verse from a parallel passage in another Gospel was added, a marginal explanation was copied into the text, or readers added liturgical wording such as the doxology to the Lord's Prayer."
     text: "Holmes says that in some cases, such as Matthew 18:11, a verse from the parallel passage in another Gospel was added, and that in others, such as John 5:3b–4, a scribe mistook an explanatory marginal comment for a correction and copied it into the text. Wasserman says some scribes added words to Luke at an early stage to bring it into harmony with Matthew, and that readers, especially in liturgical settings, could be expected to add a doxology to the Lord's Prayer. The NABRE notes call Matthew 17:21 a variant of Mark 9:29, say Mark 9:44 and 9:46 simply repeat 9:48, and call the angel of John 5:4 a popular explanation of the pool's turbulence and healing powers."
     cites:
       - source: holmes-bo-english-translations
@@ -149,7 +149,7 @@ statements:
   - id: mark-ending
     group: "The ending of Mark"
     question: "Did the author of Mark write Mark 16:9–20?"
-    short: "Most scholars say no: the longer ending, like the shorter one, was added later, probably in the second century."
+    short: "Most scholars say no: the longer ending, like the shorter one, was added later, by the second century."
     text: "The publisher's summary of Bart Ehrman's textbook says most modern scholars agree that the additional twelve verses are secondary. Helen Bond's Bible Odyssey talk says most scholars think neither the shorter nor the longer ending is original to Mark. J. Gertrud Tönsing's article in Scriptura says most scholars agree the additional endings are probably all not original, judging from the manuscripts and from style and vocabulary not typical of Mark, and counts sixteen words in the longer ending that occur nowhere else in Mark. Tönsing says many scholars agree the longer ending is ancient, from the early second century at the latest; James Kelhoffer dates both added endings probably to the second quarter of the second century; and the NABRE notes say early citations show the longer ending was composed by the second century. Joan Taylor argues that, on redactional grounds, the longer ending is the oldest form of Mark's text to survive, while judging it probably not entirely the initial text. The NABRE notes say the Catholic Church has traditionally accepted the passage as canonical, as the Council of Trent defined. Far Eastern Bible College, which holds to the Greek text underlying the King James Version, affirms the passage as authentic."
     cites:
       - source: ehrman-brief-5e-ch5-summary
@@ -195,8 +195,8 @@ statements:
   - id: mark-manuscripts
     group: "The ending of Mark"
     question: "Which manuscripts end Mark at 16:8?"
-    short: "The two oldest manuscripts that contain the end of Mark, the fourth-century codices Sinaiticus and Vaticanus. Most later manuscripts include 16:9–20."
-    text: "Tönsing says the earliest and best manuscripts, the fourth-century Codex Sinaiticus and Codex Vaticanus, both end Mark at 16:8, and that the vast majority of documents support the longer ending, though in textual criticism the age and spread of the witnesses count more than their number. Claire Clivaz writes that no Greek witness to Mark 16 from before the middle of the fourth century survives. Patrick Andrist calls Sinaiticus and Vaticanus the main witnesses to the ending at 16:8, and finds that the lost leaves of Sinaiticus had no room for the longer ending. Kelhoffer says the passage is preserved in 99 percent of the more than 1,600 known manuscripts of Mark, and Taylor that it appears in the vast majority of ancient texts. Modern translations print 16:9–20 with a note: the NRSVue footnote says some of the most ancient authorities end the book at 16:8."
+    short: "The oldest Greek manuscripts that contain the end of Mark, the fourth-century codices Sinaiticus and Vaticanus. Most later manuscripts include 16:9–20."
+    text: "Tönsing says the earliest and best manuscripts, the fourth-century Codex Sinaiticus and Codex Vaticanus, both end Mark at 16:8, and that the vast majority of documents support the longer ending, though in textual criticism the age and spread of the witnesses count more than their number. Claire Clivaz writes that no Greek witness to Mark 16 from before the middle of the fourth century survives. Patrick Andrist calls Sinaiticus and Vaticanus the main witnesses to the ending at 16:8, and finds that the original bifolio at the end of Mark in Sinaiticus, which a later scribe replaced, had no room for the longer ending. Kelhoffer says the passage is preserved in 99 percent of the more than 1,600 known manuscripts of Mark, and Taylor that it appears in the vast majority of ancient texts. The NRSVue prints 16:9–20 with a footnote saying some of the most ancient authorities end the book at 16:8."
     cites:
       - source: tonsing-2022-ending-of-mark
         locator: "section “Textual evidence”, paragraph 1"
@@ -233,8 +233,8 @@ statements:
   - id: mark-16-8
     group: "The ending of Mark"
     question: "Did Mark mean to end his Gospel at 16:8?"
-    short: "Debated. Scholars agree the earliest text that can be recovered ends there; most recent scholarship takes the ending as intended, though some still argue that an original ending was lost."
-    text: "Tönsing writes that there is at present an overwhelming consensus that the only copy of Mark we can reach ended at 16:8, but substantial disagreement over whether Mark meant it to; scholarship in recent decades has moved away from the lost-ending hypothesis, and she says the debate is not yet settled. Bond says some think Mark wrote more or meant to, or that the end of the scroll was damaged, but that most scholars think he intended to finish with the frightened women at the tomb. Martin's Yale lectures say scholars in the twentieth century came pretty much to reject the lost-ending theories and take Mark as ending at 16:8, even intentionally. The NABRE notes say the abrupt ending leads some to believe the original ending may have been lost."
+    short: "Debated. Scholars agree the earliest text that can be recovered ends there; recent scholarship has moved toward reading the ending as intended, though some still argue that an original ending was lost."
+    text: "Tönsing writes that there is at present an overwhelming consensus that the only copy of Mark we can reach ended at 16:8, but substantial disagreement over whether Mark meant it to; scholarship in recent decades has moved away from the lost-ending hypothesis, and she says the debate is not yet settled. Bond says some think Mark wrote more or meant to, or that the end of the scroll was damaged, but that most scholars think he intended to finish with the frightened women at the tomb. Martin's Yale lectures, after listing theories that Mark's original ending was lost, say twentieth-century scholars came pretty much to reject most of them and take Mark as ending at 16:8, even intentionally. The NABRE notes say the abrupt ending leads some to believe the original ending may have been lost."
     cites:
       - source: tonsing-2022-ending-of-mark
         locator: "end of section on style and vocabulary"
@@ -335,8 +335,8 @@ statements:
   - id: adulteress-origin
     group: "The woman caught in adultery"
     question: "Where did the story come from, if not from John?"
-    short: "Scholars think it circulated on its own before it was placed in John; its earliest explicit citation is in the third-century Didascalia Apostolorum."
-    text: "Knust's Bible Odyssey article says the story likely circulated orally or in a noncanonical source before it was placed in some copies of John, that it was first cited in the third-century church order the Didascalia Apostolorum, whose writer did not know it from John, and that there may be allusions to it in Papias and the Proto-Gospel of James. Knust and Wasserman call the Didascalia's discussion the earliest explicit reference to the episode. Pinchard argues from Papias's wording that the story was not originally found in John. Knust writes that Didymus the Blind cited it while noting it was found only in “certain Gospels”, and that Jerome included it in the Vulgate while admitting it was missing from some copies of John."
+    short: "It probably circulated outside John, orally or in another source, before it was placed there; its earliest explicit citation is in the third-century Didascalia Apostolorum."
+    text: "Knust's Bible Odyssey article says the story likely circulated orally or in a noncanonical source before it was placed in some copies of John, that it was first cited in the third-century church order the Didascalia Apostolorum, whose writer did not know it from John, and that there may be allusions to it in Papias and the Proto-Gospel of James. Knust and Wasserman call the Didascalia's discussion the earliest explicit reference to the episode. Pinchard says the source Eusebius gives for a similar story known to Papias, the Gospel according to the Hebrews, confirms that the text was not originally found in John. Knust writes that Didymus the Blind cited it while noting it was found only in “certain Gospels”, and that Jerome included it in the Vulgate while admitting it was missing from some copies of John."
     cites:
       - source: knust-bo-woman-caught-adultery
         locator: "box “Did You Know?”"
@@ -359,11 +359,11 @@ statements:
         quote: "Yet, the origin of the quotation not only confirms that the text was not originally found in the Gospel of John but also indicates that the expression “caught in adultery” is a later development despite its being the reading of all the manuscripts which contain the PA except Codex Bezae."
         read: 2026-11-26
       - source: knust-bo-woman-caught-adultery
-        locator: "section on early readers"
+        locator: "section “Is this story ‘gospel’?”"
         quote: "The Egyptian theologian Didymus the Blind (circa 313–398 C.E.), for example, cited Jesus’s response to the adulteress to exhort bishops to be compassionate when judging sinners, even as he acknowledged that the story was found only in “certain Gospels.”"
         read: 2026-11-26
       - source: knust-bo-woman-caught-adultery
-        locator: "section on early readers"
+        locator: "section “Is this story ‘gospel’?”"
         quote: "Similarly, Jerome (circa 347–420 C.E.) cited the passage and included it in the Vulgate, while also openly admitting that it was missing from some copies of John."
         read: 2026-11-26
   - id: comma
@@ -493,15 +493,15 @@ statements:
   - id: textus-receptus
     group: "Erasmus, the Textus Receptus and the King James Version"
     question: "What is the Textus Receptus?"
-    short: "The printed Greek text that descends from Erasmus's editions through those of Stephanus and Beza; its name, “received text”, comes from a 1633 edition by the Elzevirs."
+    short: "The printed Greek text that descends from Erasmus's editions through those of Stephanus and Beza, standardised in the Elzevirs' Leiden editions; its name, “received text”, comes from a 1633 publisher's blurb."
     text: "Holmes says virtually all English translations from the Geneva Bible and the KJV down to 1880 used the same basic Greek text, which later came to be known, from a 1633 publisher's blurb, as the received text, and was basically Erasmus's text edited on the basis of a few twelfth-century manuscripts. He says Robert Estienne's (Stephanus's) 1551 edition was the first with verse divisions. McDonald describes the textus receptus as the form of the text standardised in the Elzevirs' Leiden editions. The Trinitarian Bible Society, which defends the Received Text, says it is a group of printed texts beginning with Erasmus's first edition of 1516."
     cites:
       - source: holmes-bo-english-translations
-        locator: "paragraph on the Textus Receptus"
+        locator: "paragraph 4"
         quote: "Virtually all English translations from the Geneva Bible and the KJV down to 1880 used the same basic Greek text as their foundation, a form that later came to be known (on the basis of a 1633 “publisher’s blurb”) as the “received text” (Latin, Textus Receptus). This was basically Erasmus’ text, edited on the basis of a few 12th-century Greek manuscripts."
         read: 2026-11-26
       - source: holmes-bo-english-translations
-        locator: "paragraph on Erasmus's successors"
+        locator: "paragraph 4"
         quote: "These include the 1550 third edition of Robert Estienne (also known as Robertus Stephanus), whose 1551 fourth edition was the first to include verse divisions."
         read: 2026-11-26
       - source: mcdonald-2011-raising-ghost-arius
@@ -527,7 +527,7 @@ statements:
         quote: "The Roman Catholic Rheims Bible was not specified in the instructions, but was undoubtedly used as well."
         read: 2026-11-26
       - source: holmes-bo-english-translations
-        locator: "paragraph on Erasmus's successors"
+        locator: "paragraph 4"
         quote: "The many editions of Théodore Beza (Calvin’s successor at Geneva) differed little from Estienne’s fourth edition, and Beza’s 1588-89 and 1598 editions were heavily used by the translators of the 1611 KJV."
         read: 2026-11-26
       - source: mcdonald-2011-raising-ghost-arius
@@ -541,7 +541,7 @@ statements:
   - id: revised-version
     group: "Erasmus, the Textus Receptus and the King James Version"
     question: "When did an English Bible first depart from the Textus Receptus?"
-    short: "With the Revised Version of 1881, the first English translation to leave out the added verses, following Greek editions built on older manuscripts."
+    short: "Virtually all English translations used the Textus Receptus until 1880; the Revised Version of 1881 was the first to bring the older manuscript evidence to public attention, leaving out the added verses."
     text: "Holmes says printed Greek editions based on the older manuscript evidence began with Karl Lachmann's in 1831, that Tischendorf's and Westcott and Hort's editions left out all the added verses, and that not until the Revised Version of 1881 did an English translation bring this to public attention, causing an uproar. Wasserman says Westcott and Hort's 1881 edition, based chiefly on the fourth-century codices Vaticanus and Sinaiticus, dealt the death blow to the Textus Receptus, which had dominated Greek editions and, indirectly, translations such as the King James Version for hundreds of years."
     cites:
       - source: holmes-bo-english-translations
@@ -614,7 +614,7 @@ statements:
         read: 2026-11-26
       - source: nongbri-2020-p52
         locator: "abstract"
-        quote: "Yet the date generally assigned to the fragment (‘about 125 ad ’) is based entirely on palaeography, or analysis of handwriting, which cannot provide such a precise date."
+        quote: "Yet the date generally assigned to the fragment (‘about 125 ad’) is based entirely on palaeography, or analysis of handwriting, which cannot provide such a precise date."
         read: 2026-11-26
       - source: nongbri-2020-p52
         locator: "abstract"

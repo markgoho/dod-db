@@ -7,1220 +7,1224 @@
 # Conflicts (data/scholarship-candidates.yaml, not attached): 160@00:11:06 (Erasmus's promise) vs promise; 160@00:12:17 (KJV relied on Erasmus's third edition) vs kjv-text; 17@00:39:07 (“our earliest manuscript of the full Bible”) vs sinaiticus.
 # First pass: four research agents fetched every source on 2026-11-26 into separate scratch folders (curl; Internet Archive snapshots where bible.usccb.org, tbsbibles.org and codexsinaiticus.org refused scripted requests) and copied quotes from the fetched text. Every page quote was then script-matched, per cited source, against the saved text of that source with whitespace collapsed, HTML entities decoded, ligatures expanded and soft hyphens removed (a soft hyphen at a PDF line break joins the word): 136/136, 0 misses. De Jonge 1980's Leiden scan has unusable OCR and its page image drops punctuation; its four quotes were checked word by word against the rendered page images (pp. 385, 388, 389, at 110 and 300 dpi), with punctuation from a third-party transcription (dick.wursten.be).
 # Flags for the second pass: (1) corinthians-14: the short says only what Payne, Fellows 2019 and Martin carry together (some argue addition; every manuscript has the verses); “others disagree” rests on Martin (2009) alone and stays in the text; Fellows 2019 takes no position on authorship; Fellows's 2024 JSNT article (named in Episode 60) was not read (SAGE 403). Payne and Fellows list no academic post. (2) promise rests on de Jonge 1980 (outside the window; documentary) and McDonald 2011 (his doctoral student, in-window). (3) nongbri-2020-p52 cited from its abstract only. (4) Holmes, Bond and Wasserman (Alexandrian text) years null: Bible Odyssey page dates are migration dates (#177 convention). (5) Tönsing's “overwhelming consensus” covers only that the copy we have ends at 16:8; quoted in the text as she scopes it. (6) NABRE NT notes (1986) carry facts only, never a field-wording short. (7) McDonald 2011 is a doctoral thesis, registered as kind book. (8) Karrer's quotes are German; his post is not stated in the saved text. (9) Peer review not verified for the COMSt Bulletin 8/2 papers (Kelhoffer, Andrist, Clivaz, Taylor) or BABELAO (Pinchard). (10) Ciurea 2025 dates the Didascalia to ca. 300–330, later than Knust's third century; not cited, the text gives Knust's date. (11) Codex Sinaiticus Project, INTF and Manchester are unsigned institutional pages (author null, kind article), never alone behind a field-wording short.
+# Second agent pass 2026-11-26 (#93 delegation, independent; did not read the first pass's files or scratch folders): all 44 cited sources re-fetched by curl into the second pass's own folder (49 URLs): 7 Bible Odyssey pages, 2 Martin lectures on oyc.yale.edu, 2 OUP summaries, SciELO (Tönsing), FEBC (article and Position Statement), BibleGateway (NRSVue), CUL captions, 2 INTF pages, Manchester (page and metadata JSON), 3 Cambridge Core pages (Payne open access, Fellows share link, Nongbri 2020 abstract), and PDFs (pdftotext) of Knust–Wasserman (Princeton excerpt), Pinchard, the four COMSt papers (fdr.uni-hamburg.de), Karrer (LMU), the SBL volume, Nongbri 2019, Gurry (Apollo API), McDonald and de Jonge (Leiden scholarly publications; the handles resolve to a JavaScript catalogue). Internet Archive snapshots for 7 NABRE chapters (bible.usccb.org; served gzip, decompressed), 2 TBS pages (live site 403) and 3 Codex Sinaiticus Project pages (live site timed out). Quotes: 136/136 verified: 131 script-matched verbatim (whitespace, entities, quotes and dashes normalised), Manchester's Origin quote matched in the item's metadata JSON, de Jonge's 4 matched word by word in the OCR at pp. 385, 388, 389 (the scan has no punctuation). Every page locator re-found (PDF page offsets: Knust–Wasserman −4, McDonald −11; COMSt, SBL, Karrer, Pinchard, Gurry, Nongbri 2019 pages read from the page headers). Trigger Claims: 17/17 re-matched by script at timestamp and speaker, verbatim within the turn, and read about two minutes either side.
+# Second pass changes. Shorts: why-added (no “Often”; the reasons listed as the sources give them); mark-ending (“by the second century”, not “probably in the second century”: only Kelhoffer says “probably”, Tönsing has “at the latest from the early second century”); mark-manuscripts (“The oldest Greek manuscripts”, not “The two oldest manuscripts”: Clivaz's statement is about Greek witnesses); mark-16-8 (“recent scholarship has moved toward reading the ending as intended”, Tönsing's wording, not “most recent scholarship takes”: she reports substantial disagreement); adulteress-origin (“It probably circulated outside John”, not “Scholars think it circulated on its own”: Knust says “likely”, and no read source says scholars generally hold it); textus-receptus (the 1633 name from a “publisher's blurb”, Holmes, and the text standardised in the Elzevirs' editions, McDonald; no source names the 1633 edition as the Elzevirs'); revised-version (Holmes's scope: “virtually all” to 1880, and the RV the first to bring the older evidence to public attention). Texts: mark-manuscripts (Andrist's replaced bifolio, not “lost leaves”; the note sentence narrowed to the NRSVue); mark-16-8 (Martin's “those theories” described as he gives them); adulteress-origin (Pinchard's argument from Eusebius's source for Papias's story). Locators: added-verses/2 (“paragraph 5”; the paragraph begins “The situation changed dramatically”), textus-receptus/1, textus-receptus/2, kjv-text/3 (“paragraph 4”), adulteress-origin/6–7 (heading “Is this story ‘gospel’?”). Quote: p52/3 stray space removed. No citation cut; registry unchanged; triggers file unchanged.
+# Second pass flags: (1) de Jonge 1980: the scan carries no punctuation, so the commas in his four quotes still rest on the first pass's third-party transcription; words verified. (2) 17@00:46:44: “even that ending may have been added later on” is ambiguous (Shorter Ending or 16:8); not a contradiction of mark-16-8 on either reading, kept. (3) keith-bo-john-8 and wasserman-bo-lords-prayer share a datePublished stamp to the second (2017-06-20T15:51:50), possibly a bulk import; years kept at 2017 (inside the window either way), while wasserman-bo-alexandrian-text (2017-06-20T15:48:11) is null. (4) corinthians-14's “every surviving manuscript includes them” rests on the 1986 NABRE note as a fact; no read source contradicts it, but no in-window source states it. (5) The first pass's flags (2), (3), (7), (8), (9) and (11) stand as recorded: none changes a short after this pass's narrowing. Publish rule recounted: 20 statements; core adulteress backed by Knust–Wasserman 2019 (Scholarly) and Keith (Reference), 2 independent authors, none Host-authored; holds.
 review: null
 delegation:
   by: owner
   date: 2026-11-23
   issue: "#93"
+  secondPass: 2026-11-26
 citations:
   added-verses/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   added-verses/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Locator corrected from “paragraph beginning ‘On the basis of this older evidence’” to “paragraph 5”: the paragraph begins “The situation changed dramatically”.",
     }
   added-verses/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. The list is in paragraph 5.",
     }
   added-verses/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   added-verses/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   added-verses/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   added-verses/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   added-verses/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   added-verses/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   added-verses/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   added-verses/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   why-added/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Short narrowed: “Often” cut, as Holmes says “In some cases … In other cases”; the short now lists the reasons the sources give, with no frequency word.",
     }
   why-added/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Supports the narrowed short (marginal explanation copied into the text).",
     }
   why-added/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Wasserman's Luke additions are words and phrases, not whole verses; the text says “words”.",
     }
   why-added/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Supports the narrowed short's liturgical clause (“readers and users, especially in liturgical contexts”).",
     }
   why-added/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   why-added/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   why-added/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   corinthians-14/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Martin (2009) is the only cited author who reports that some scholars think the verses are Paul's; that view is kept in the text, attributed, not in the short.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Martin (2009) is the only cited author who reports that some scholars think the verses are Paul's; that view is kept in the text, attributed, not in the short. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Martin (2009) alone reports the “others disagree” side; kept in the text, attributed.",
     }
   corinthians-14/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Fellows says “many”; the short's “Some scholars argue” is weaker, kept.",
     }
   corinthians-14/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. 1986 note: its “often considered an interpolation” is not used; cited only for “all of which contain them”, which no read source contradicts.",
     }
   corinthians-14/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   corinthians-14/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   corinthians-14/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   corinthians-14/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-ending/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-ending/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-ending/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-ending/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-ending/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Short narrowed from “probably in the second century” to “by the second century”: Tönsing has “at the latest from the early second century”, and only Kelhoffer says “probably” (second quarter).",
     }
   mark-ending/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Kelhoffer's “probably … second quarter” is one author's dating; the short now says only “by the second century”, which he, Tönsing and the NABRE note share.",
     }
   mark-ending/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Backs “by the second century” as a dated fact (1986 note, facts only).",
     }
   mark-ending/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. “it” is the Longer Ending (paragraph read).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. “it” is the Longer Ending (paragraph read). Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-ending/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-ending/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition (Far Eastern Bible College, named in the text in its own words).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition (Far Eastern Bible College, named in the text in its own words). Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-manuscripts/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Short narrowed from “The two oldest manuscripts” to “The oldest Greek manuscripts”: Tönsing calls them the earliest, and Clivaz's statement covers Greek witnesses only.",
     }
   mark-manuscripts/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-manuscripts/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Scopes the short to Greek witnesses (“no Greek witness of chapter 16 before the middle of the fourth century”).",
     }
   mark-manuscripts/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Andrist's “Shortest Ending” is the ending at 16:8 (paragraph read).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Andrist's “Shortest Ending” is the ending at 16:8 (paragraph read). Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-manuscripts/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Text reworded: Andrist's “original lost bifolio” is the one scribe D replaced (§1.1, “replacement bifolios”), not lost leaves of the codex today.",
     }
   mark-manuscripts/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-manuscripts/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-manuscripts/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Text narrowed: “Modern translations print 16:9–20 with a note” rested on the NRSVue alone; now says only what the NRSVue does.",
     }
   mark-16-8/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Short narrowed: “most recent scholarship takes the ending as intended” became “recent scholarship has moved toward reading the ending as intended”, Tönsing's wording; she also says “substantial disagreement” and “not yet settled”.",
     }
   mark-16-8/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Backs the narrowed short (“moved more and more away from the ‘lost’ ending hypothesis”).",
     }
   mark-16-8/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Backs “Debated” and the narrowed short.",
     }
   mark-16-8/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   mark-16-8/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Bond's “Most scholars” stays in the text, attributed; the short no longer uses “most” for intent, as Tönsing reports substantial disagreement.",
     }
   mark-16-8/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Text reworded: “those theories” in Martin are the lost-ending theories he lists two paragraphs earlier (heart attack, mice, fire); the text now says so instead of naming them itself.",
     }
   mark-16-8/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress-manuscripts/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress-manuscripts/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress-manuscripts/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress-manuscripts/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress-manuscripts/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress-manuscripts/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress-manuscripts/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress-origin/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Short narrowed: “Scholars think it circulated on its own” became “It probably circulated outside John, orally or in another source”, Knust's “likely”, with Pinchard; no read source says scholars generally hold it.",
     }
   adulteress-origin/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress-origin/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress-origin/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   adulteress-origin/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Text reworded: Pinchard's argument rests on the source Eusebius names for Papias's story (the Gospel according to the Hebrews), not on Papias's wording.",
     }
   adulteress-origin/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Locator changed from “section on early readers” to the paragraph's heading, “Is this story ‘gospel’?”.",
     }
   adulteress-origin/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Locator changed to the heading, as adulteress-origin/6.",
     }
   comma/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   comma/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   comma/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   comma/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   comma/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. The list is in paragraph 5.",
     }
   comma/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition (Trinitarian Bible Society, named in the text).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition (Trinitarian Bible Society, named in the text). Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   comma-erasmus/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   comma-erasmus/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   comma-erasmus/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   comma-erasmus/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. McDonald also states in his own voice (ch. 2, not cited) that the Montfortianus comma “is clearly translated from the Latin Vulgate”, so the short's clause has his support beyond Erasmus's belief.",
     }
   comma-erasmus/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Words checked against the Leiden page image (p. 385); punctuation from the third-party transcription, as the image drops punctuation.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Words checked against the Leiden page image (p. 385); punctuation from the third-party transcription, as the image drops punctuation. Second pass 2026-11-26: re-fetched (Leiden scan PDF). OCR text read at p. 385: every word matches; the scan carries no punctuation (page image rendered at 110 dpi), so commas rest on the first pass's transcription.",
     }
   comma-erasmus/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Words checked against the Leiden page image (p. 388).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Words checked against the Leiden page image (p. 388). Second pass 2026-11-26: re-fetched; OCR text at p. 388 matches word for word (“applicable to the Codex Britannicus the Comma Johanneum was no more than a retroversion of the Vulgate”); punctuation not in the scan.",
     }
   comma-erasmus/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   comma-erasmus/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   promise/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Words checked against the Leiden page image (p. 389). 1980, outside the 30-year window: a documentary finding, restated in-window by McDonald 2011.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Words checked against the Leiden page image (p. 389). 1980, outside the 30-year window: a documentary finding, restated in-window by McDonald 2011. Second pass 2026-11-26: re-fetched; OCR text at p. 389, Conclusions (1), matches word for word; punctuation not in the scan.",
     }
   promise/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Words checked against the Leiden page image (p. 385); punctuation from the third-party transcription.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Words checked against the Leiden page image (p. 385); punctuation from the third-party transcription. Second pass 2026-11-26: re-fetched; OCR text at p. 385 matches word for word (“justificalion”, “uniulfillcd” are OCR noise); punctuation not in the scan.",
     }
   promise/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   promise/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   promise/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   erasmus/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   erasmus/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   erasmus/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   erasmus/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. German; the text paraphrases it.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. German; the text paraphrases it. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   erasmus/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. German; the text paraphrases it. Greek uses polytonic code points.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. German; the text paraphrases it. Greek uses polytonic code points. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   erasmus/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. German; the text paraphrases it.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. German; the text paraphrases it. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   textus-receptus/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Locator changed to “paragraph 4” (it begins “Later editions”). Short narrowed: no cited source says the 1633 edition was the Elzevirs'; the short now gives Holmes's “1633 publisher's blurb” and McDonald's “standardised in the editions of the Elzeviers of Leiden”.",
     }
   textus-receptus/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Locator changed to “paragraph 4”.",
     }
   textus-receptus/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Backs the short's new “standardised in the Elzevirs' Leiden editions”.",
     }
   textus-receptus/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition (Trinitarian Bible Society, named in the text).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition (Trinitarian Bible Society, named in the text). Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   kjv-text/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   kjv-text/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   kjv-text/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Locator changed to “paragraph 4”.",
     }
   kjv-text/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   kjv-text/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   revised-version/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Short narrowed: “the first English translation to leave out the added verses” became Holmes's scope, “virtually all” translations to 1880 and the RV the first to bring the older evidence to public attention.",
     }
   revised-version/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   revised-version/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Backs the narrowed short.",
     }
   revised-version/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   revised-version/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   originals/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   originals/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   originals/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   originals/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   originals/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   originals/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   originals/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   p52/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   p52/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Not in the page's static HTML: the Origin field loads from the item's metadata JSON (digitalcollections.manchester.ac.uk/view/MS-GREEK-P-00457.json), where it matches verbatim.",
     }
   p52/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Abstract on the publisher page; full text paywalled. The short stands on Manchester and Nongbri 2019 without it.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Abstract on the publisher page; full text paywalled. The short stands on Manchester and Nongbri 2019 without it. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read. Quote corrected: a stray space removed in “(‘about 125 ad’)”; small caps in the source.",
     }
   p52/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Abstract only, as above.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Abstract only, as above. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   p52/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   sinaiticus/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   sinaiticus/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   sinaiticus/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   sinaiticus/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   sinaiticus/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   sinaiticus/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   sinaiticus/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   initial-text/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   initial-text/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   initial-text/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   initial-text/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   initial-text/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   initial-text/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
   initial-text/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched into the second pass's own folder and matched verbatim at its locator; surrounding passage read.",
     }
 triggers:
   11@01:01:31:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   11@01:03:10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. “like, the fifth century” kept; sources give about 400 or fifth century.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. “like, the fifth century” kept; sources give about 400 or fifth century. Second pass 2026-11-26: re-matched by script at timestamp and speaker, verbatim; read about two minutes either side. “until, like, the fifth century” is the speaker's hedge; Keith and Knust–Wasserman give about 400.",
     }
   11@00:59:35:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   17@00:05:42:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   17@00:37:02:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   17@00:45:43:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   17@00:46:44:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker, verbatim; read about two minutes either side. Flag: “We have this much, much shorter ending … And even that ending may have been added later on” is ambiguous (the Shorter Ending, or 16:8 itself); read as the Shorter Ending or a lost-ending view, it does not contradict mark-16-8, so kept.",
     }
   17@00:48:44:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   48@00:52:22:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Extended past “I think that's a later interpolation” to “got incorporated”, so the claim names 1 Corinthians 14; McClellan's preceding turn names 14:34.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Extended past “I think that's a later interpolation” to “got incorporated”, so the claim names 1 Corinthians 14; McClellan's preceding turn names 14:34. Second pass 2026-11-26: re-matched by script at timestamp and speaker, verbatim; read about two minutes either side; McClellan's question at 00:52:18 names 14:34. Bond, a Guest Speaker, is also the author of bond-bo-ending-of-mark (a different statement).",
     }
   160@00:10:00:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   160@00:05:26:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   174@00:08:05:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   174@00:08:16:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. “really eager, enthusiastic textual critics would say” kept; the next turn (00:08:52) gives the later range, also attached.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. “really eager, enthusiastic textual critics would say” kept; the next turn (00:08:52) gives the later range, also attached. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   174@00:08:52:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   174@00:06:52:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Extended to “earliest recoverable form of a given text”.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Extended to “earliest recoverable form of a given text”. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   174@00:25:35:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
   174@00:26:43:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker (full turn), verbatim; read about two minutes either side. Second pass 2026-11-26: re-matched by script at timestamp and speaker against the Transcript at transcriptPath, verbatim within the turn; read about two minutes either side; no conflict with a statement.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: 20 statements. Core adulteress cites Knust and Wasserman 2019 (Scholarly), Keith BO (Reference), Knust BO (Reference; same first author as the book) and the NABRE John 8 notes (facts only): 2 independent authors by hand (Knust, Keith), plus Wasserman as co-author; none Host-authored.",
+      note: "First pass 2026-11-26: 20 statements. Core adulteress cites Knust and Wasserman 2019 (Scholarly), Keith BO (Reference), Knust BO (Reference; same first author as the book) and the NABRE John 8 notes (facts only): 2 independent authors by hand (Knust, Keith), plus Wasserman as co-author; none Host-authored. Second pass 2026-11-26: recounted after the changes: no citation cut; 20 statements; core adulteress unchanged (Knust–Wasserman 2019 Scholarly, Keith BO Reference, Knust BO; 2 independent authors, Wasserman co-author); no Host-authored source. Holds.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: “most scholars” appears in shorts only where an in-window Scholarly or Reference source says it: mark-ending (Ehrman summary, Bond, Tönsing), adulteress (Knust and Wasserman, Keith, Knust BO). “consensus” appears in no short; Tönsing's “overwhelming consensus” is quoted in the text, scoped as she scopes it. “all but universally rejected” (comma) rests on McDonald's “virtually universal rejection”, with Holmes listing the words among the added verses. mark-16-8 “most recent scholarship” rests on Tönsing (“Scholarship in the last decades has moved”), Bond (“Most scholars”) and Martin.",
+      note: "First pass 2026-11-26: “most scholars” appears in shorts only where an in-window Scholarly or Reference source says it: mark-ending (Ehrman summary, Bond, Tönsing), adulteress (Knust and Wasserman, Keith, Knust BO). “consensus” appears in no short; Tönsing's “overwhelming consensus” is quoted in the text, scoped as she scopes it. “all but universally rejected” (comma) rests on McDonald's “virtually universal rejection”, with Holmes listing the words among the added verses. mark-16-8 “most recent scholarship” rests on Tönsing (“Scholarship in the last decades has moved”), Bond (“Most scholars”) and Martin. Second pass 2026-11-26: “most scholars” stays only in mark-ending and adulteress, each with 2+ in-window authors saying it. mark-16-8 no longer says “most recent scholarship”: now “recent scholarship has moved toward”, Tönsing's wording, with Bond's “most scholars” attributed in the text. adulteress-origin no longer says “Scholars think”. “consensus” in no short.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Taylor (priority of the longer ending), Payne and Fellows (1 Cor 14), Martin's report of those who hold 1 Cor 14:34–35 original, Parker and Strutwolf (initial vs original text), Nongbri (P52 date) named in the text.",
+      note: "First pass 2026-11-26: Taylor (priority of the longer ending), Payne and Fellows (1 Cor 14), Martin's report of those who hold 1 Cor 14:34–35 original, Parker and Strutwolf (initial vs original text), Nongbri (P52 date) named in the text. Second pass 2026-11-26: verified: each dissent or single-author view named in the text (Taylor, Payne, Fellows, Martin's “others”, Parker, Strutwolf, Nongbri, Kelhoffer's dating now out of the short).",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Far Eastern Bible College named in its own words (holds to the Greek text underlying the KJV); Trinitarian Bible Society named. The Catholic Church's acceptance of Mark 16:9–20 and John 7:53–8:11 is reported from the NABRE notes (Reference).",
+      note: "First pass 2026-11-26: Far Eastern Bible College named in its own words (holds to the Greek text underlying the KJV); Trinitarian Bible Society named. The Catholic Church's acceptance of Mark 16:9–20 and John 7:53–8:11 is reported from the NABRE notes (Reference). Second pass 2026-11-26: FEBC's wording checked on its Position Statement page (febc.edu.sg/position_statement: “the Traditional Greek Text for the New Testament underlying the King James Version”); TBS named; NABRE (Reference) reports the Catholic Church's acceptance.",
     }
 sources:
   holmes-bo-english-translations:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (Bible Odyssey, judged per author, #86). BO bio: University Professor of Biblical Studies and Early Christianity, Bethel University; editor of the SBL Greek New Testament. Page date 14 December 2022 is the site migration date, so year null (#177 convention); the article cites the NKJV and “the past 75 years”, inside the window.",
+      note: "First pass 2026-11-26: Reference (Bible Odyssey, judged per author, #86). BO bio: University Professor of Biblical Studies and Early Christianity, Bethel University; editor of the SBL Greek New Testament. Page date 14 December 2022 is the site migration date, so year null (#177 convention); the article cites the NKJV and “the past 75 years”, inside the window. Second pass 2026-11-26: re-fetched by curl; bio, page date and paragraph order confirmed (11 body paragraphs; locators now by number where the first pass named a paragraph by a sentence inside it).",
     }
   nabre-matthew-17-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (NABRE notes, #86); 1986 revised New Testament, outside the 30-year window: uncontested manuscript facts only, never a field-wording short. Internet Archive snapshot (bible.usccb.org refuses curl).",
+      note: "First pass 2026-11-26: Reference (NABRE notes, #86); 1986 revised New Testament, outside the 30-year window: uncontested manuscript facts only, never a field-wording short. Internet Archive snapshot (bible.usccb.org refuses curl). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   nabre-mark-9-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986, facts only; Internet Archive snapshot.",
+      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986, facts only; Internet Archive snapshot. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   nabre-john-5-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986, facts only; Internet Archive snapshot.",
+      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986, facts only; Internet Archive snapshot. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   nabre-acts-8-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986, facts only; Internet Archive snapshot.",
+      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986, facts only; Internet Archive snapshot. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   wasserman-bo-lords-prayer:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (Bible Odyssey). BO bio: academic dean and lecturer in New Testament, Örebro School of Theology (bio dated; later professor at Ansgar). Page datePublished 20 June 2017.",
+      note: "First pass 2026-11-26: Reference (Bible Odyssey). BO bio: academic dean and lecturer in New Testament, Örebro School of Theology (bio dated; later professor at Ansgar). Page datePublished 20 June 2017. Second pass 2026-11-26: re-fetched by curl; datePublished stamp shared to the second with keith-bo-john-8 (flag, see there); year kept.",
     }
   martin-rlst152-l19:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Already registered (Reference, Open Yale RLST 152, 2009, introductory course).",
+      note: "First pass 2026-11-26: Already registered (Reference, Open Yale RLST 152, 2009, introductory course). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   fellows-2019-distigme:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (NTS, CUP). Byline gives only a Vancouver address, no academic post (flag). Read via a publisher read-only share link.",
+      note: "First pass 2026-11-26: Scholarly (NTS, CUP). Byline gives only a Vancouver address, no academic post (flag). Read via a publisher read-only share link. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   nabre-1-corinthians-14-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986; its “often considered an interpolation” is outside the window and not used as field wording; cited for the manuscript facts.",
+      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986; its “often considered an interpolation” is outside the window and not used as field wording; cited for the manuscript facts. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   payne-2017-distigme:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (NTS, CUP, CC BY 4.0). Byline: Linguist's Software, Edmonds, WA; no academic post (flag). Argues the interpolation view; attributed.",
+      note: "First pass 2026-11-26: Scholarly (NTS, CUP, CC BY 4.0). Byline: Linguist's Software, Edmonds, WA; no academic post (flag). Argues the interpolation view; attributed. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   ehrman-brief-5e-ch5-summary:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Already registered (Reference, OUP Learning Link summary, 5th ed., 2020).",
+      note: "First pass 2026-11-26: Already registered (Reference, OUP Learning Link summary, 5th ed., 2020). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   bond-bo-ending-of-mark:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (Bible Odyssey video transcript). BO bio: Professor of Christian Origins and Head of the School of Divinity, University of Edinburgh. JSON-LD 2022 stamp likely a migration; the bio's forthcoming 2020 book puts the talk about 2019; year null; inside the window.",
+      note: "First pass 2026-11-26: Reference (Bible Odyssey video transcript). BO bio: Professor of Christian Origins and Head of the School of Divinity, University of Edinburgh. JSON-LD 2022 stamp likely a migration; the bio's forthcoming 2020 book puts the talk about 2019; year null; inside the window. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   tonsing-2022-ending-of-mark:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (Scriptura 121(1), Stellenbosch, 2022, DOI 10.7833/121-1-2027). Author: Biblical and Ancient Studies, UNISA.",
+      note: "First pass 2026-11-26: Scholarly (Scriptura 121(1), Stellenbosch, 2022, DOI 10.7833/121-1-2027). Author: Biblical and Ancient Studies, UNISA. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   kelhoffer-2022-longer-ending:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (COMSt Bulletin 8/2, 2022; issue imprint February 2023). Author: Uppsala University. Peer review of the Bulletin not verified (flag).",
+      note: "First pass 2026-11-26: Scholarly (COMSt Bulletin 8/2, 2022; issue imprint February 2023). Author: Uppsala University. Peer review of the Bulletin not verified (flag). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   nabre-mark-16-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986, facts only (Trent, second-century composition); Internet Archive snapshot.",
+      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986, facts only (Trent, second-century composition); Internet Archive snapshot. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   taylor-2022-cerinthus:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (COMSt Bulletin 8/2, 2022). Author: King's College London. Argues the priority of the longer ending; attributed. Peer review not verified (flag).",
+      note: "First pass 2026-11-26: Scholarly (COMSt Bulletin 8/2, 2022). Author: King's College London. Argues the priority of the longer ending; attributed. Peer review not verified (flag). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   febc-khoo-mark-16:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Tradition. Far Eastern Bible College's position statement affirms the Traditional Greek Text underlying the KJV; named in those words. Undated (site © 2004–2016).",
+      note: "First pass 2026-11-26: Tradition. Far Eastern Bible College's position statement affirms the Traditional Greek Text underlying the KJV; named in those words. Undated (site © 2004–2016). Second pass 2026-11-26: article and the college's Position Statement page fetched; the registry's tradition wording is the Position Statement's.",
     }
   clivaz-2022-mark16:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (COMSt Bulletin 8/2, 2022; issue introduction by the MARK16 project PI, SIB Lausanne). Peer review not verified (flag).",
+      note: "First pass 2026-11-26: Scholarly (COMSt Bulletin 8/2, 2022; issue introduction by the MARK16 project PI, SIB Lausanne). Peer review not verified (flag). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   andrist-2022-ending-of-mark-codices:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (COMSt Bulletin 8/2, 2022). Author: LMU München and Université de Fribourg. Peer review not verified (flag).",
+      note: "First pass 2026-11-26: Scholarly (COMSt Bulletin 8/2, 2022). Author: LMU München and Université de Fribourg. Peer review not verified (flag). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   nrsvue-2021-mark-16:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (NRSVue, National Council of Churches, 2021), footnote only.",
+      note: "First pass 2026-11-26: Reference (NRSVue, National Council of Churches, 2021), footnote only. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   martin-rlst152-l6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Already registered (Reference, Open Yale RLST 152, 2009). Course page: Woolsey Professor Emeritus of Religious Studies, Yale.",
+      note: "First pass 2026-11-26: Already registered (Reference, Open Yale RLST 152, 2009). Course page: Woolsey Professor Emeritus of Religious Studies, Yale. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   knust-wasserman-2019-cast-first-stone:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (Princeton University Press, 2019; paperback ISBN 9780691203126). Publisher excerpt PDF (Introduction, pp. 1–11); printed page = PDF page minus 4. Princeton page: Knust, Boston University; Wasserman, Ansgar Teologiske Høgskole.",
+      note: "First pass 2026-11-26: Scholarly (Princeton University Press, 2019; paperback ISBN 9780691203126). Publisher excerpt PDF (Introduction, pp. 1–11); printed page = PDF page minus 4. Princeton page: Knust, Boston University; Wasserman, Ansgar Teologiske Høgskole. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   keith-bo-john-8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (Bible Odyssey). BO bio: professor of New Testament and Early Christianity, St Mary's University. Page datePublished 20 June 2017.",
+      note: "First pass 2026-11-26: Reference (Bible Odyssey). BO bio: professor of New Testament and Early Christianity, St Mary's University. Page datePublished 20 June 2017. Second pass 2026-11-26: re-fetched by curl; JSON-LD datePublished 2017-06-20T15:51:50, the same second as wasserman-bo-lords-prayer (and 15:48 for wasserman-bo-alexandrian-text, kept null), which may be a bulk import stamp; year 2017 kept (inside the window either way), flagged.",
     }
   knust-bo-woman-caught-adultery:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (Bible Odyssey). BO bio: Professor of Religious Studies, Duke University. Page datePublished 8 June 2017. Same first author as knust-wasserman-2019-cast-first-stone; counted once by hand.",
+      note: "First pass 2026-11-26: Reference (Bible Odyssey). BO bio: Professor of Religious Studies, Duke University. Page datePublished 8 June 2017. Same first author as knust-wasserman-2019-cast-first-stone; counted once by hand. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   nabre-john-8-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986, facts only; the 7:53–8:11 note is on the John 8 page; Internet Archive snapshot.",
+      note: "First pass 2026-11-26: As nabre-matthew-17-notes: 1986, facts only; the 7:53–8:11 note is on the John 8 page; Internet Archive snapshot. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   pinchard-2019-pericope-adulterae:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly by venue (BABELAO 8, 2019, UCLouvain open-access journal); peer review not verified (flag). Author: PhD, University of Wales Trinity Saint David.",
+      note: "First pass 2026-11-26: Scholarly by venue (BABELAO 8, 2019, UCLouvain open-access journal); peer review not verified (flag). Author: PhD, University of Wales Trinity Saint David. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   mcdonald-2011-raising-ghost-arius:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (Leiden doctoral thesis, 2011, corrected publisher's version; registered as kind book, flag). A 2016 book version exists, not read.",
+      note: "First pass 2026-11-26: Scholarly (Leiden doctoral thesis, 2011, corrected publisher's version; registered as kind book, flag). A 2016 book version exists, not read. Second pass 2026-11-26: the handle resolves to a JavaScript Primo page; full-text PDF downloaded from scholarlypublications.universiteitleiden.nl/handle/1887/16486 (file 1, “Full text”); pdftotext; printed page = PDF page minus 11.",
     }
   tbs-1993-1-john-5-7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Tradition (Trinitarian Bible Society; article written 1993 per its endnote). Internet Archive snapshot (Cloudflare on the live site).",
+      note: "First pass 2026-11-26: Tradition (Trinitarian Bible Society; article written 1993 per its endnote). Internet Archive snapshot (Cloudflare on the live site). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   dejonge-1980-erasmus-comma:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (ETL 56.4, 1980). Outside the 30-year window: documentary findings only, restated in-window by McDonald 2011. Leiden scan's OCR unusable; quotes checked word by word against the page images, punctuation from a third-party transcription (the image drops punctuation) (flag).",
+      note: "First pass 2026-11-26: Scholarly (ETL 56.4, 1980). Outside the 30-year window: documentary findings only, restated in-window by McDonald 2011. Leiden scan's OCR unusable; quotes checked word by word against the page images, punctuation from a third-party transcription (the image drops punctuation) (flag). Second pass 2026-11-26: PDF downloaded from scholarlypublications.universiteitleiden.nl/handle/1887/1023; ABBYY OCR read at pp. 385, 388, 389; page image of p. 385 rendered: the scan has no punctuation (flag kept).",
     }
   cul-2011-kjv-exhibition:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (Cambridge University Library exhibition captions, © 2011; unsigned, institution counted once).",
+      note: "First pass 2026-11-26: Reference (Cambridge University Library exhibition captions, © 2011; unsigned, institution counted once). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   karrer-2020-codex-reuchlin:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (De Gruyter, Manuscripta Biblica 5, 2020; Open Access LMU copy). Karrer is the volume editor; his post (Kirchliche Hochschule Wuppertal/Bethel) is not stated in the saved text (flag). German; quotes from the raw text layer.",
+      note: "First pass 2026-11-26: Scholarly (De Gruyter, Manuscripta Biblica 5, 2020; Open Access LMU copy). Karrer is the volume editor; his post (Kirchliche Hochschule Wuppertal/Bethel) is not stated in the saved text (flag). German; quotes from the raw text layer. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   tbs-2002-received-text:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Tradition (Trinitarian Bible Society, © 2002). Internet Archive snapshot.",
+      note: "First pass 2026-11-26: Tradition (Trinitarian Bible Society, © 2002). Internet Archive snapshot. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   wasserman-bo-alexandrian-text:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (Bible Odyssey); same author as wasserman-bo-lords-prayer, counted once. Bio and bibliography run to 2013; the 2017 page stamp is a migration date, so year null; inside the window either way.",
+      note: "First pass 2026-11-26: Reference (Bible Odyssey); same author as wasserman-bo-lords-prayer, counted once. Bio and bibliography run to 2013; the 2017 page stamp is a migration date, so year null; inside the window either way. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   intf-initial-text:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (INTF, University of Münster, institute page; unsigned, undated). Counted with intf-ecm as one institution.",
+      note: "First pass 2026-11-26: Reference (INTF, University of Münster, institute page; unsigned, undated). Counted with intf-ecm as one institution. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   intf-ecm:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (INTF institute page; unsigned, undated). Same institution as intf-initial-text.",
+      note: "First pass 2026-11-26: Reference (INTF institute page; unsigned, undated). Same institution as intf-initial-text. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   ehrman-brief-5e-ch1-summary:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Already registered (Reference, OUP Learning Link summary, 5th ed., 2020).",
+      note: "First pass 2026-11-26: Already registered (Reference, OUP Learning Link summary, 5th ed., 2020). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   gurry-2016-variants:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (NTS 62, 2016; author accepted manuscript on Apollo, CC BY-NC 2.0 UK; manuscript pagination).",
+      note: "First pass 2026-11-26: Scholarly (NTS 62, 2016; author accepted manuscript on Apollo, CC BY-NC 2.0 UK; manuscript pagination). Second pass 2026-11-26: the Apollo page is a JavaScript app; the PDF (“Gurry 2015 New Testament Studies.pdf”) fetched through the repository's API (api.repository.cam.ac.uk bitstream content).",
     }
   manchester-p52:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (University of Manchester Library catalogue record, unsigned; cites Orsini–Clarysse 2012, Nongbri 2005, Mazza 2019).",
+      note: "First pass 2026-11-26: Reference (University of Manchester Library catalogue record, unsigned; cites Orsini–Clarysse 2012, Nongbri 2005, Mazza 2019). Second pass 2026-11-26: page and its metadata JSON fetched; abstract in the HTML, Origin field in the JSON.",
     }
   nongbri-2020-p52:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (NTS 66.4, 2020). Only the abstract is open; cited from the abstract only (flag). Same author as nongbri-2019-palaeography.",
+      note: "First pass 2026-11-26: Scholarly (NTS 66.4, 2020). Only the abstract is open; cited from the abstract only (flag). Same author as nongbri-2019-palaeography. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   nongbri-2019-palaeography:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (JSNT 42.1, 2019, Sage; author-posted copy).",
+      note: "First pass 2026-11-26: Scholarly (JSNT 42.1, 2019, Sage; author-posted copy). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   codex-sinaiticus-project:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Reference (Codex Sinaiticus Project pages; history text agreed by the British Library, Leipzig University Library, National Library of Russia and St Catherine's; unsigned, undated). Live site refuses connections; Internet Archive snapshots (January 2024).",
+      note: "First pass 2026-11-26: Reference (Codex Sinaiticus Project pages; history text agreed by the British Library, Leipzig University Library, National Library of Russia and St Catherine's; unsigned, undated). Live site refuses connections; Internet Archive snapshots (January 2024). Second pass 2026-11-26: three Internet Archive snapshots (history, date, content; January 2024) re-fetched; live codexsinaiticus.org timed out again.",
     }
   wachtel-holmes-2011-intro:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (SBL Text-Critical Studies 8, 2011; whole volume as a free PDF on SBL's site). Holmes is also the author of holmes-bo-english-translations; counted once by hand.",
+      note: "First pass 2026-11-26: Scholarly (SBL Text-Critical Studies 8, 2011; whole volume as a free PDF on SBL's site). Holmes is also the author of holmes-bo-english-translations; counted once by hand. Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   parker-2011-initial-text:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (same SBL volume, 2011).",
+      note: "First pass 2026-11-26: Scholarly (same SBL volume, 2011). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
   strutwolf-2011-original-text:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (same SBL volume, 2011).",
+      note: "First pass 2026-11-26: Scholarly (same SBL volume, 2011). Second pass 2026-11-26: re-fetched into the second pass's own folder (curl; Internet Archive snapshot where the first pass used one); class, venue and year confirmed against the fetched page.",
     }
 leads:
   - "Fellows 2024, “The Interpolation of 1 Cor. 14.34–35 and the Reversal of the Name Order of Prisca and Aquila at 1 Cor. 16.19”, JSNT 47.2 (cited in Episode 60 as open access): SAGE returned 403; not read."
