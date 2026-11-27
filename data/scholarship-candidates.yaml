@@ -281,3 +281,11 @@ statements:
         timestamp: "00:53:30.770"
         text: "So we have a dualism that seems to pop up within early Judaism following the Babylonian exile. And a lot of scholars would say Zoroastrianism seems like the most likely source of that."
     notes: "Conflict with persia: “a lot of scholars would say … most likely” states a majority view; the statement reports the question as contested (Collins “controversial”, Silverman “in no way … proved or disproved”, the Angra Mainyu derivation “typically rejected”), with Stephens, Hayes and Jonker on the side of influence. Logged at the #147 first pass, 2026-11-26."
+  - page: satan-demons-and-angels
+    question: "When do angels get names?"
+    triggers:
+      - episode: 28
+        speaker: "Dan McClellan"
+        timestamp: "00:24:30.320"
+        text: "So New Testament angels, very different from Hebrew Bible angels. And they have names."
+    notes: "Conflict with names: as trimmed, the quote sets named New Testament angels against Hebrew Bible angels; the statement reports that Daniel, among the latest books of the Hebrew Bible, first names Gabriel and Michael (Sommer, Merrill Willis, Bamberger). The speaker goes on (00:25:51, hedged) to place Michael in Daniel. Removed from the page by the #147 second pass and logged at the #147 publish, 2026-11-26."

@@ -1,7 +1,6 @@
 ---
 title: "Satan, Demons and Angels"
 dek: "What the Hebrew Bible means by satan, how Satan became the devil, what angels are in the Bible, and where ancient Jews and Christians thought demons came from."
-draft: true
 core: satan
 sourcesRead: 2026-11-26
 related:
@@ -232,7 +231,7 @@ statements:
   - id: lucifer
     group: "How Satan became the devil"
     question: "Is Lucifer in Isaiah 14 Satan?"
-    short: "Not in Isaiah, where the poem is framed as a taunt against a king of Babylon. “Lucifer” is the Latin Vulgate's word for the morning star, and some church fathers later read the passage as the fall of the devil."
+    short: "Not in Isaiah, where the poem is framed as a taunt against a king of Babylon. “Lucifer” is the Latin Vulgate's word for the morning star."
     text: "John Bowker's Concise Oxford Dictionary of World Religions says Lucifer, Latin for “light-bringer”, is an epithet for the king of Babylon in the Vulgate and King James Version of Isaiah 14:12, and that some of the church fathers, reading it with Luke 10:18, took it as a name for the devil, so that Isaiah 14:12–16 became one basis for the idea that the devil is a rebellious angel cast into hell. Laura Quick's article in Vetus Testamentum says the poem is linked to a Babylonian ruler only in a secondary way, by its framing verses, and that hêlēl ben-šaḥar is almost universally understood as the morning star, the planet Venus, the reading behind the Vulgate's Lucifer. Quick herself argues that Venus is not the necessary or even the most obvious reading."
     cites:
       - source: bowker-lucifer

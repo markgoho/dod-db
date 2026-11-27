@@ -3788,21 +3788,6 @@ sommer-bo-angels-hebrew-bible:
   hostAuthored: false
   tradition: null
 
-dewolf-parks-bo-angels-monsters:
-  author: "A. DeWolf and Sara Parks"
-  shortAuthor: "DeWolf and Parks"
-  title: "Are Biblical Angels Monsters?"
-  series: "Bible Odyssey"
-  publisher: "Society of Biblical Literature"
-  year: 2026
-  edition: null
-  class: Reference
-  kind: article
-  access: "Society of Biblical Literature website, open"
-  url: "https://www.bibleodyssey.org/articles/are-biblical-angels-monsters/"
-  hostAuthored: false
-  tradition: null
-
 twelftree-bo-exorcism-gospels:
   author: "Graham H. Twelftree"
   title: "Exorcism in the Gospels"
@@ -3985,20 +3970,6 @@ fallon-nce-angels:
   hostAuthored: false
   tradition: null
 
-fallon-nce-uriel:
-  author: "T. L. Fallon"
-  title: "Uriel"
-  series: "New Catholic Encyclopedia"
-  publisher: null
-  year: null
-  edition: "2nd ed."
-  class: Reference
-  kind: article
-  access: "Entry reproduced on Encyclopedia.com, open"
-  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/uriel"
-  hostAuthored: false
-  tradition: null
-
 hartman-nce-demon-bible:
   author: "L. F. Hartman"
   title: "Demon (in the Bible)"
@@ -4041,20 +4012,6 @@ collins-eor-apocalypse:
   hostAuthored: false
   tradition: null
 
-piras-eor-angels:
-  author: "Andrea Piras"
-  title: "Angels"
-  series: "Encyclopedia of Religion"
-  publisher: null
-  year: 2005
-  edition: "2nd ed."
-  class: Reference
-  kind: article
-  access: "Entry reproduced on Encyclopedia.com, open"
-  url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/angels"
-  hostAuthored: false
-  tradition: null
-
 lesses-eor-lilith:
   author: "Rebecca M. Lesses"
   title: "Lilith"
@@ -4066,20 +4023,6 @@ lesses-eor-lilith:
   kind: article
   access: "Entry reproduced on Encyclopedia.com, open"
   url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/lilith"
-  hostAuthored: false
-  tradition: null
-
-caciola-eor-exorcism:
-  author: "Nancy Caciola"
-  title: "Exorcism"
-  series: "Encyclopedia of Religion"
-  publisher: null
-  year: 2005
-  edition: "2nd ed."
-  class: Reference
-  kind: article
-  access: "Entry reproduced on Encyclopedia.com, open"
-  url: "https://www.encyclopedia.com/philosophy-and-religion/other-religious-beliefs-and-general-terms/religion-general/exorcism"
   hostAuthored: false
   tradition: null
 
@@ -4137,20 +4080,6 @@ silverman-2011-iranian-influence:
   kind: article
   access: "University-hosted journal website, open"
   url: "https://bibleinterp.arizona.edu/articles/sil358017"
-  hostAuthored: false
-  tradition: null
-
-silverman-2014-zechariah-3:
-  author: "Jason M. Silverman"
-  title: "Vetting the Priest in Zechariah 3: The Satan between Divine and Achaemenid Administrations"
-  series: "Journal of Hebrew Scriptures 14, article 6"
-  publisher: null
-  year: 2014
-  edition: null
-  class: Scholarly
-  kind: article
-  access: "Open-access journal article (PDF), open"
-  url: "https://jhsonline.org/index.php/jhs/article/download/29337/21357"
   hostAuthored: false
   tradition: null
 
