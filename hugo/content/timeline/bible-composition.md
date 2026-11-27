@@ -1,8 +1,8 @@
 ---
 title: "The Bible's composition, earliest texts to latest"
 entryKind: composition
-draft: true
-sourcesRead:
+draft: false
+sourcesRead: 2026-11-26
 related: { books: [], tags: [univocality], topics: [univocality] }
 watch:
   [
