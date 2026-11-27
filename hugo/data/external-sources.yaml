@@ -4500,7 +4500,7 @@ nabre-daniel-12-notes:
   edition: "Old Testament revision"
   class: Reference
   kind: study-bible
-  access: "Church-published study Bible, open"
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
   url: "https://bible.usccb.org/bible/daniel/12"
   hostAuthored: false
   tradition: null

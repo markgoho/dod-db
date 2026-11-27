@@ -8,1192 +8,1174 @@
 # Conflicts (data/scholarship-candidates.yaml, not attached): 98@00:10:40's first sentence (King James “hell every single time”) vs translations; 89@00:41:01 (“Hades … never occur in any of Paul's writings”) vs paul (Janse van Rensburg and Van Eck: 1 Cor 15:54–55); 15@00:30:11 (Paul reflects none of the three categories) vs paul (Bakhos, Janse van Rensburg and Van Eck: destruction/annihilation). Not attached, no conflict: 15@00:09:14 (“necromancy was phenomenally common”, stronger than the-dead's “debated”); 15@00:30:52 (systematisation in the fourth and fifth centuries; later-doctrine reports sixth-century councils only).
 # First pass: four research agents fetched every source on 2026-11-26 into separate scratch folders with curl (Internet Archive snapshots where bible.usccb.org, Britannica and Iranica bot-checked) and copied quotes from the fetched text; every page quote was then script-matched (whitespace, quotes, dashes, line-end hyphens and HTML entities normalised) against those saved texts: 129/129, 0 misses (Montgomery's Kimchi sentence against the page image, owing to OCR damage). The second pass must re-fetch.
 # Flags for the second pass: (1) Papaioannou (MJT 2017) argues a conditionalist thesis; classed Scholarly by venue; cited on isaiah-66, gehenna-punishment, rubbish-dump and nt-words, never alone behind a short. (2) Bakhos's Posen introduction has no volume or year on the page and a members banner; check it reads in full without login. (3) Sonia's SBL Press book is a publisher-hosted full text marked “All rights reserved” (#80 clarification). (4) NABRE New Testament notes (Mt 5, 1 Pet 3, 2 Pet 2) are the 1986 edition, outside the window; each is attributed and none stands alone behind a short. (5) Henning's two Bible Odyssey articles count once; Sim's two HTS articles count once. (6) The rubbish-dump short's “the studies that examine the claim” rests on Henning, Papaioannou and Segovia; Segovia leans on Bailey and Papaioannou. (7) the-dead short says “debated” on Sonia's “divide scholarly opinion” and the HarperCollins counter-view. (8) daniel-12 short's “the only explicit passage” is Hayes's “only passage … to explicitly espouse”; Merrill Willis and HarperCollins say “first”. (9) descent: NCE fifth century vs Buitendag fourth; the short names neither. (10) persia-greece short attributes the “strong influence” view to “some” (Shaked) against Wyatt, Collins and Silverman; consistent with the published persia statement.
+# Second pass (independent agent, 2026-11-26, #93 delegation): re-fetched every source with curl into its own scratch folder (seven NABRE pages via Internet Archive snapshots of the same URLs, bible.usccb.org returning 403 to curl; Shaked and Zaleski at their per-citation snapshots; Montgomery's OCR checked on the page image); 129/129 quotes found verbatim after normalising whitespace, quotes and dashes (Montgomery's Kimchi sentence on the image); every Trigger Claim re-read at timestamp and speaker with about two minutes either side: 18/18 pass. Changed: shorts of sheol (ends at “without judgment or torment”: its “no passage describes a fiery place of eternal punishment” sat against isaiah-66's Ogden and Sterk reading of Isaiah 66:24; the clause stays in the text, attributed to Dolansky and Bakhos), the-dead (“or consulted” dropped), daniel-12 (Hayes-only “the only explicit passage” → “first passage on individual resurrection”, split on earlier texts kept), rubbish-dump (Henning's “no conclusive literary or archaeological evidence”; “the studies that examine the claim … still” dropped), why (“the wicked prospered” not in the quotes), nt-views (“others of destruction” not said of NT passages → Zaleski's forever/fixed term and McGuckin's annihilation), later-doctrine (question and short: councils named “among others”, “from the sixth century on” dropped), descent (question and short reframed to the creed's history, “By about 400”: the meaning rested on Quinn and Rohling alone). Registry: nabre-daniel-12-notes access line now says it was read in an Internet Archive snapshot, like the other six NABRE entries. Texts: sheol and separate-fates (Shaked “setting out the case for Zoroastrian influence”), the-dead, daniel-12, rubbish-dump (“following Lloyd Bailey”; Kimchi “Jewish”, not “medieval”), varied-views, paul (“following Alan Bernstein”), descent (Buitendag's “seems”). Cut to uncited: sheol/4 (Henning box; sheol/5–12 → 4–11), daniel-12/3 (dates Daniel 8; 4–9 → 3–8), varied-views/3 (about the fall narratives; 4–8 → 3–7), descent/5 (“Aquileian text [of 309 A.D.]”; 6–8 → 5–7). No Trigger Claim removed; no registry entry removed (every cited source still cited). Locators corrected: daniel-12/2, isaiah-66/2–3, separate-fates/2–3 and 7, why/2, persia-greece/8, varied-views/4 (was 5), nt-words/9, nt-views/2–5, later-doctrine/3, descent/2–4 and 5–6 (were 6–7), traditions/5. Counts after: 18 statements, 125 citations, 18 Trigger Claims. Flags for the lead: (a) descent now answers when, not what: Buitendag's Hades sentence (uncited) could restore a sourced meaning short with Calvin as dissent; (b) the seven NABRE notes were read only in Internet Archive snapshots (live pages bot-check curl, not dead); registry URLs kept as live; (c) daniel-12's 167 BCE now rests on HarperCollins alone (a date, exempt); (d) isaiah-66's “what happens to dead bodies” side rests mainly on Papaioannou (conditionalist), with the NABRE's corpses; (e) 160@00:27:16 kept with a note (leans toward Ep 98's logged “every single time”).
 review: null
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+  secondPass: 2026-11-26
 citations:
   sheol/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   sheol/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   sheol/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   sheol/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; the introduction reads in full without login (the members-only banner covers some primary-text excerpts, none cited); quote matched verbatim at its locator; verified. (Was sheol/5 before the second pass's cuts.)",
     }
   sheol/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was sheol/6 before the second pass's cuts.)",
     }
   sheol/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Read in the Internet Archive snapshot of the same URL (iranicaonline.org bot-checks curl). Second pass 2026-11-26: re-fetched from the per-citation Internet Archive snapshot (web.archive.org/web/20241117204131/; live Iranica page bot-checks curl); quote matched verbatim. The sentence sits in Shaked's setting-out of “the arguments for connecting the Jewish developments … to an Iranian influence”, so the text now attributes it as “setting out the case for Zoroastrian influence”. Verified. (Was sheol/7 before the second pass's cuts.)",
     }
   sheol/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Read in the Internet Archive snapshot of the same URL (iranicaonline.org bot-checks curl).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was sheol/8 before the second pass's cuts.)",
     }
   sheol/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was sheol/9 before the second pass's cuts.)",
     }
   sheol/9:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was sheol/10 before the second pass's cuts.)",
     }
   sheol/10:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Suriano's nuance (Sheol a metaphor for dying, not the sum of burials) is attributed in the text; the view that Sheol was mainly for the wicked or the badly dead (Johnston, Levenson) is known only through Suriano and Hess and is kept under leads. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was sheol/11 before the second pass's cuts.)",
     }
   sheol/11:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Suriano's nuance (Sheol a metaphor for dying, not the sum of burials) is attributed in the text; the view that Sheol was mainly for the wicked or the badly dead (Johnston, Levenson) is known only through Suriano and Hess and is kept under leads.",
-    }
-  sheol/12:
-    {
-      agent: "pass",
-      owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was sheol/12 before the second pass's cuts.)",
     }
   the-dead/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   the-dead/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   the-dead/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   the-dead/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   the-dead/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Sonia's “divide scholarly opinion” and her named minimalists (Schmidt, Johnston) carry the short's “debated”.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Sonia's “divide scholarly opinion” and her named minimalists (Schmidt, Johnston) carry the short's “debated”. Second pass 2026-11-26: re-fetched (SBL Press PDF, no login); quote matched verbatim at p. 6. Sonia's quotes cover the cult of dead kin only, so the short drops “or consulted” (“How far Israelites cared for the dead is debated”); text “the question divides” → “the subject divides”, closer to “divide scholarly opinion on the subject”. Verified.",
     }
   the-dead/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   the-dead/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   the-dead/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   the-dead/9:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Counter-view: HarperCollins says Israel's theologians taught the dead were for practical purposes nonexistent; reported in the text.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Counter-view: HarperCollins says Israel's theologians taught the dead were for practical purposes nonexistent; reported in the text. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   translations/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. ISBE is 1915 text: outside the 30-year window, used only for the uncontested fact of the King James renderings, attributed with its date. No count of “hell” vs “grave” is stated on the page: the 31/31 split appears only in Blue Letter Bible and Watch Tower Insight (see uncited).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. ISBE is 1915 text: outside the 30-year window, used only for the uncontested fact of the King James renderings, attributed with its date. No count of “hell” vs “grave” is stated on the page: the 31/31 split appears only in Blue Letter Bible and Watch Tower Insight (see uncited). Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   translations/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE text with a 1965 bibliography; a fact about the Douay, attributed.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE text with a 1965 bibliography; a fact about the Douay, attributed. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   translations/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   translations/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Read in the Internet Archive snapshot web.archive.org/web/20261028184600/ (Britannica bot-checks curl).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Read in the Internet Archive snapshot web.archive.org/web/20261028184600/ (Britannica bot-checks curl). Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   translations/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   daniel-12/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at ch. 6 [00:42:36]. The short's “the only explicit passage” rested on Hayes alone (#133); short now says “first passage on individual resurrection” (Merrill Willis, HarperCollins) and reports the earlier-texts view (Cook, Ogden and Sterk) against the NABRE; Hayes's “only” stays attributed in the text. Verified.",
     }
   daniel-12/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; the page has no “Key points” box: the sentence is in the “Did you know?” box; locator corrected. Verified.",
     }
   daniel-12/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim. Now the only citation for the short's “written around 167 BCE” after daniel-12/3 (old numbering) was cut: a date, exempt under #133. Verified. (Was daniel-12/4 before the second pass's cuts.)",
     }
   daniel-12/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was daniel-12/5 before the second pass's cuts.)",
     }
   daniel-12/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Read in an Internet Archive snapshot of the same URL. Two groups, as the NABRE reads it; Cook reads “many” as all (not cited, see uncited). Second pass 2026-11-26: re-fetched from the Internet Archive snapshot web.archive.org/web/20260214045940/ of the same URL (live bible.usccb.org returns 403 to curl; registry URL kept); quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was daniel-12/6 before the second pass's cuts.)",
     }
   daniel-12/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Read in an Internet Archive snapshot of the same URL. Two groups, as the NABRE reads it; Cook reads “many” as all (not cited, see uncited).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Dissent on “first”, attributed: Cook puts 1 Enoch 27 and Isa 26:19 earlier. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; with Ogden and Sterk now carries the short's “Others find resurrection in earlier texts such as Isaiah 26:19”. Verified. (Was daniel-12/7 before the second pass's cuts.)",
     }
   daniel-12/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Dissent on “first”, attributed: Cook puts 1 Enoch 27 and Isa 26:19 earlier.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. “Commentators generally agree” is Ogden and Sterk's own state-of-the-field sentence, with their own qualification; the NABRE note disagrees, so the short reports the split. Second pass 2026-11-26: re-fetched at the per-citation TIPs URL for Isaiah 26:19; quote matched verbatim. “Commentators generally agree” is a state-of-the-field sentence; the NABRE note disagrees, so the short reports a split, not the agreement. Verified. (Was daniel-12/8 before the second pass's cuts.)",
     }
   daniel-12/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. “Commentators generally agree” is Ogden and Sterk's own state-of-the-field sentence, with their own qualification; the NABRE note disagrees, so the short reports the split.",
-    }
-  daniel-12/9:
-    {
-      agent: "pass",
-      owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched from the Internet Archive snapshot web.archive.org/web/20260425191132/ of the same URL (live bible.usccb.org returns 403 to curl; registry URL kept); quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was daniel-12/9 before the second pass's cuts.)",
     }
   isaiah-66/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Read in an Internet Archive snapshot of the same URL.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Read in an Internet Archive snapshot of the same URL. Second pass 2026-11-26: re-fetched from the Internet Archive snapshot web.archive.org/web/20260627234849/ of the same URL (live bible.usccb.org returns 403 to curl; registry URL kept); quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   isaiah-66/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Papaioannou argues a conditionalist reading; classed Scholarly by venue (peer-reviewed section of MJT). Flag for second pass.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Papaioannou argues a conditionalist reading; classed Scholarly by venue (peer-reviewed section of MJT). Flag for second pass. Second pass 2026-11-26: re-fetched; quote matched verbatim on p. 16, which is in §1 (“Gehenna in Mark 9:43–48”) of the part “Theology of Gehenna: Everlasting Torment or Annihilation”, not the Background's §1; locator corrected. Papaioannou argues a conditionalist reading; the short reports the split without taking a side. Verified.",
     }
   isaiah-66/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim on p. 17; locator corrected as for isaiah-66/2. Verified.",
     }
   isaiah-66/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   isaiah-66/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   isaiah-66/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Read in an Internet Archive snapshot of the same URL.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Read in an Internet Archive snapshot of the same URL. Second pass 2026-11-26: re-fetched from the Internet Archive snapshot web.archive.org/web/20260305053126/ of the same URL (live bible.usccb.org returns 403 to curl; registry URL kept); quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched after normalising quotes; the Encyclopedia.com URL carries several “Hell” entries, and the quote sits inside the entry signed Robert Fastiggi (International Encyclopedia of the Social Sciences). Verified.",
     }
   gehenna/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. EJ text from the 1st ed.; a definition, attributed.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. EJ text from the 1st ed.; a definition, attributed. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna-punishment/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna-punishment/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna-punishment/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna-punishment/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna-punishment/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NABRE New Testament notes are the 1986 edition (USCCB revised-edition page), outside the window; attributed, used for the split only. Read in an Internet Archive snapshot.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NABRE New Testament notes are the 1986 edition (USCCB revised-edition page), outside the window; attributed, used for the split only. Read in an Internet Archive snapshot. Second pass 2026-11-26: re-fetched from the Internet Archive snapshot web.archive.org/web/20261029195819/ of the same URL (live bible.usccb.org returns 403 to curl; registry URL kept); quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna-punishment/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. “It is commonly believed” is Papaioannou's report of the common view, which he then argues against; both are attributed.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. “It is commonly believed” is Papaioannou's report of the common view, which he then argues against; both are attributed. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna-punishment/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim. The same page reports Gehenna in the Sibylline Oracles 2 and 4, which Papaioannou dates first century CE and later; consistent with the split the short reports. Verified.",
     }
   gehenna-punishment/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   gehenna-punishment/9:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   rubbish-dump/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim. Short narrowed to this sentence's own words (“no conclusive literary or archaeological evidence”, from “no good evidence … say the studies that examine the claim … still describe”, the page's own characterisation). Verified.",
     }
   rubbish-dump/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   rubbish-dump/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; the sentence opens “as Bailey points out”, so the text now says Papaioannou writes “following Lloyd Bailey” (Bailey stays a Lead). Verified.",
     }
   rubbish-dump/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   rubbish-dump/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   rubbish-dump/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Montgomery is 1908, attributed with its date, not used for the short. The archive.org text layer is OCR-damaged here (“«ense”, footnote marker 36); the quote was checked against the page image of p. 34 and drops the footnote number.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Montgomery is 1908, attributed with its date, not used for the short. The archive.org text layer is OCR-damaged here (“«ense”, footnote marker 36); the quote was checked against the page image of p. 34 and drops the footnote number. Second pass 2026-11-26: the archive.org OCR is damaged (“«ense”, footnote marker read as “w”); checked against the page image of the archive.org PDF (PDF page 12 = p. 34): verbatim apart from the omitted footnote marker 36. Montgomery calls Kimchi one of the “Jewish commentators”, not medieval: text now says “the Jewish commentator Kimchi”. Verified.",
     }
   rubbish-dump/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: matched in the OCR and checked against the page image, p. 34. Verified.",
     }
   rubbish-dump/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Reported as the contrary view (“waste tip”). Page gives no year for the Concise Oxford Dictionary.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Reported as the contrary view (“waste tip”). Page gives no year for the Concise Oxford Dictionary. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   rubbish-dump/9:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Reported as the contrary view; “refuseburning” is the source's spelling.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Reported as the contrary view; “refuseburning” is the source's spelling. Second pass 2026-11-26: re-fetched; quote matched verbatim inside the entry signed J. A. McGuckin (Macmillan Encyclopedia of Death and Dying) on the shared Encyclopedia.com page, section “The Teachings of Jesus on Gehenna”. Verified.",
     }
   separate-fates/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. “for the first time” is Bakhos's; attributed, not in the short.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. “for the first time” is Bakhos's; attributed, not in the short. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   separate-fates/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; both separate-fates quotes sit in the one paragraph beginning “By the Second Temple period”; locator corrected. Verified.",
     }
   separate-fates/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; locator corrected as for separate-fates/2. Verified.",
     }
   separate-fates/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched from the per-citation Internet Archive snapshot; quote matched verbatim; text attribution reworded as for sheol (Shaked “setting out the case for Zoroastrian influence”). Verified.",
     }
   separate-fates/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. OCR scan; quote checked for OCR damage; the parenthetical verse list after it (1 En 10:6, 13-16; cf 21:7-10) is not quoted.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. OCR scan; quote checked for OCR damage; the parenthetical verse list after it (1 En 10:6, 13-16; cf 21:7-10) is not quoted. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   separate-fates/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   separate-fates/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; it is the first paragraph of the section “Who are the Watchers?”, not the article's opening; locator corrected. Verified.",
     }
   separate-fates/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Bor dates 1 Enoch c. 160 BCE and cites 1 Enoch 22:11 for the accursed valley (27:1 in standard numbering); neither is quoted or stated.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Bor dates 1 Enoch c. 160 BCE and cites 1 Enoch 22:11 for the accursed valley (27:1 in standard numbering); neither is quoted or stated. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   why/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at ch. 3. Short narrowed: “the righteous suffered and the wicked prospered” is in neither Hayes's nor Wyatt's quote; now “when reward and punishment were not seen to be given out in this life”. Verified.",
     }
   why/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Spans the p. 181–182 break and footnote 34 in the PDF; the matched span is on p. 182 after the break.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Spans the p. 181–182 break and footnote 34 in the PDF; the matched span is on p. 182 after the break. Second pass 2026-11-26: re-fetched; quote matched verbatim, all on p. 182 (the sentence begins on p. 181 outside the quote); locator corrected. Verified.",
     }
   why/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Wyatt's “could then develop” kept as a possibility in the text.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Wyatt's “could then develop” kept as a possibility in the text. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   why/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   persia-greece/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Shaked leans to influence; his own caveat (persia-greece/2–3) is cited beside it. Consistent with the published satan-demons-and-angels persia statement (contested).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Shaked leans to influence; his own caveat (persia-greece/2–3) is cited beside it. Consistent with the published satan-demons-and-angels persia statement (contested). Second pass 2026-11-26: re-fetched from the per-citation Internet Archive snapshot; quote matched verbatim. Verified.",
     }
   persia-greece/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched from the per-citation Internet Archive snapshot; quote matched verbatim. Verified.",
     }
   persia-greece/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched from the per-citation Internet Archive snapshot; quote matched verbatim. Verified.",
     }
   persia-greece/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   persia-greece/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   persia-greece/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   persia-greece/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   persia-greece/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim in the paragraph beginning “During this same period”; locator corrected from “paragraph 6”. Verified.",
     }
   persia-greece/9:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   varied-views/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   varied-views/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   varied-views/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at p. 175; now Wyatt's only citation in varied-views (the text keeps “a range of descriptions of the underworld”). Verified. (Was varied-views/4 before the second pass's cuts.)",
     }
   varied-views/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; it is in §9.1.3 “Textual evidence”, not §9.1.2; locator corrected. Verified. (Was varied-views/5 before the second pass's cuts.)",
     }
   varied-views/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was varied-views/6 before the second pass's cuts.)",
     }
   varied-views/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was varied-views/7 before the second pass's cuts.)",
     }
   varied-views/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
-    }
-  varied-views/8:
-    {
-      agent: "pass",
-      owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was varied-views/8 before the second pass's cuts.)",
     }
   nt-words/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   nt-words/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   nt-words/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   nt-words/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   nt-words/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched from the Internet Archive snapshot web.archive.org/web/20261024014218/ of the same URL (live bible.usccb.org returns 403 to curl; registry URL kept); quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   nt-words/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   nt-words/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. The count is Britannica's (Zaleski) and Papaioannou's own sentences; the page does not count.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. The count is Britannica's (Zaleski) and Papaioannou's own sentences; the page does not count. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   nt-words/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   nt-words/9:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Dissent: Sim reads Matthew's Hades as Gehenna's equivalent, against HarperCollins's distinction; attributed.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Dissent: Sim reads Matthew's Hades as Gehenna's equivalent, against HarperCollins's distinction; attributed. Second pass 2026-11-26: re-fetched; quote matched verbatim in the section “The violent eschatological Jesus”; locator corrected. Verified.",
     }
   nt-views/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched from the per-citation Internet Archive snapshot; quote matched verbatim. Short narrowed: “some passages speak … of destruction” was in no cited quote about New Testament passages; now “its passages on hell are ambiguous, and Christians have disagreed over whether the wicked suffer forever or for a fixed term, or are annihilated” (Zaleski; McGuckin). Verified.",
     }
   nt-views/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Janse van Rensburg and Van Eck paraphrase Räisänen 2007 (a lead); attributed with “following Heikki Räisänen”.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Janse van Rensburg and Van Eck paraphrase Räisänen 2007 (a lead); attributed with “following Heikki Räisänen”. Second pass 2026-11-26: re-fetched; quote matched verbatim in §9.2.2; locator corrected; Räisänen attributed in the text. Verified.",
     }
   nt-views/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; locator corrected to the section “The violent eschatological Jesus”. Verified.",
     }
   nt-views/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim inside McGuckin's entry, in its last section “Christian Theologians on Hell” (on modern evangelicals turning to annihilation); locator named. Carries the short's “or are annihilated”. Verified.",
     }
   nt-views/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim in the last paragraph; locator corrected. Verified.",
     }
   paul/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   paul/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   paul/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. The article says Paul refers to Hades once (1 Cor 15:54–55); manuscripts differ there (the critical text reads thanatos); the page reports the article's claim, attributed. Trigger 89@00:41:01 conflicts and is logged.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. The article says Paul refers to Hades once (1 Cor 15:54–55); manuscripts differ there (the critical text reads thanatos); the page reports the article's claim, attributed. Trigger 89@00:41:01 conflicts and is logged. Second pass 2026-11-26: re-fetched; quote matched verbatim in §9.2.3, which paraphrases Bernstein 1993 (cited before and after); the text now attributes it “following Alan Bernstein”. Verified.",
     }
   paul/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; attributed as for paul/3. Verified.",
     }
   later-doctrine/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim inside Fastiggi's entry on the shared Encyclopedia.com page. “From the sixth century on” was the page's inference (Fastiggi gives 543 and 1215 as examples, not a start): question narrowed to “When did church councils affirm eternal punishment?” and the short names the councils. Verified.",
     }
   later-doctrine/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Zaleski gives 553 for Origen's condemnation; Fastiggi and Williams and Lane give 543 for the synod; the short names no year.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Zaleski gives 553 for Origen's condemnation; Fastiggi and Williams and Lane give 543 for the synod; the short names no year. Second pass 2026-11-26: re-fetched from the per-citation Internet Archive snapshot; quote matched verbatim; 553 against Williams and Lane's 543 reported in the short as “in 543 or 553 by different accounts”. Verified.",
     }
   later-doctrine/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim under “Historical Perspectives”, “Early Church”; locator named. Verified.",
     }
   descent/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. The Hebrew and Greek words before this span carry split diacritics in the Encyclopedia.com text (š e ' ō l (sheol), Ἅ ι δ η ζ (hades)); the quote starts after them.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. The Hebrew and Greek words before this span carry split diacritics in the Encyclopedia.com text (š e ' ō l (sheol), Ἅ ι δ η ζ (hades)); the quote starts after them. Second pass 2026-11-26: re-fetched; quote matched verbatim. The old short's first sentence (the clause means the abode of the dead, not the hell of the damned) rested on Quinn and Rohling alone, and Buitendag reports Calvin reading it as Godforsakenness: question reframed to “When did “he descended into hell” enter the Apostles' Creed?”, short to the creed's history; the meaning stays in the text, attributed to the encyclopedia. Verified.",
     }
   descent/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim in the section “Later Fathers”; locator named. Verified.",
     }
   descent/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim in the section “Later Fathers”; locator named. With descent/5 (Buitendag) carries the new short (Rufinus c. 400, Aquileia). Verified.",
     }
   descent/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim in the section “Earlier Fathers”; locator named. Text now reports Buitendag's hedge separately (“seems to have been the first”). Verified.",
     }
   descent/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Buitendag's dates look garbled elsewhere (“309 A.D.”); only the Aquileian-text sentence and the Rufinus clause are quoted. The NCE says fifth century, Buitendag fourth: both are reported in the text.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; it is in the Introduction, not a history section; locator corrected. The sentence goes on “and which was accepted at the Council of Ariminum in 359” (not quoted). Verified. (Was descent/6 before the second pass's cuts.)",
     }
   descent/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim in the section “Wirkungsgeschichte”; locator corrected; “seems to be” now kept in the text. Verified. (Was descent/7 before the second pass's cuts.)",
     }
   descent/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
-    }
-  descent/8:
-    {
-      agent: "pass",
-      owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NABRE 1986 NT note, read in an Internet Archive snapshot; attributed.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NABRE 1986 NT note, read in an Internet Archive snapshot; attributed. Second pass 2026-11-26: re-fetched from the Internet Archive snapshot web.archive.org/web/20261027202939/ of the same URL (live bible.usccb.org returns 403 to curl; registry URL kept); quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified. (Was descent/8 before the second pass's cuts.)",
     }
   traditions/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition: named as the Catechism of the Catholic Church.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition: named as the Catechism of the Catholic Church. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   traditions/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   traditions/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   traditions/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition: named as Got Questions Ministries, an evangelical ministry.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition: named as Got Questions Ministries, an evangelical ministry. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   traditions/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition: named as Got Questions Ministries, an evangelical ministry.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition: named as Got Questions Ministries, an evangelical ministry. Second pass 2026-11-26: re-fetched; quote matched verbatim; it is in the opening paragraph, not a conclusion; locator corrected. Verified.",
     }
 triggers:
   15@00:13:44:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Trimmed from the turn's middle; the turn goes on that many English translations render Sheol as hell, grave or pit. Subject Sheol.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Trimmed from the turn's middle; the turn goes on that many English translations render Sheol as hell, grave or pit. Subject Sheol. Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   15@00:15:06:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Trimmed: the sentence before (“So when we get into the Hellenistic period …”) sets the period and asserts Zoroastrian and Greco-Roman “bleeding into Judaism”, not quoted; the sentence after is the Host's own hedged thesis (“still debated, but I would argue”), not quoted. A transcript artifact (“argument to make.re's still an argument to make”) is outside the quote.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Trimmed: the sentence before (“So when we get into the Hellenistic period …”) sets the period and asserts Zoroastrian and Greco-Roman “bleeding into Judaism”, not quoted; the sentence after is the Host's own hedged thesis (“still debated, but I would argue”), not quoted. A transcript artifact (“argument to make.re's still an argument to make”) is outside the quote. Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   15@00:16:24:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “I think there's an argument to make” kept; the Host's own thesis, consistent with why (justice).",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “I think there's an argument to make” kept; the Host's own thesis, consistent with why (justice). Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   15@00:17:06:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The turn begins with the Host's thesis (“I'm going to posit … working on research”), not quoted; the quoted sentence names Daniel 12 and Isaiah 66:24 next.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The turn begins with the Host's thesis (“I'm going to posit … working on research”), not quoted; the quoted sentence names Daniel 12 and Isaiah 66:24 next. Second pass 2026-11-26: matched at timestamp and speaker, verbatim; read about two minutes either side. “Divine punishment … in the most recent layers of the Hebrew Bible” (Daniel 12, Isaiah 66:24) is not “a fiery place of eternal torment” (sheol) and the next turn says Isaiah 66:24 “doesn't have to be interpreted” as torment; no conflict. Pass.",
     }
   15@00:18:08:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Daniel 12. The turn goes on to Isaiah 66:24 (“doesn't have to be interpreted”).",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Daniel 12. The turn goes on to Isaiah 66:24 (“doesn't have to be interpreted”). Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   15@00:20:00:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The transcript line carries a merged timestamp fragment (“Yeah.:00.690] Dan McClellan:”) before the quoted text; the quote is a clean contiguous span after it. Subject Isaiah 66:24; consistent with isaiah-66 (sources read it differently).",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The transcript line carries a merged timestamp fragment (“Yeah.:00.690] Dan McClellan:”) before the quoted text; the quote is a clean contiguous span after it. Subject Isaiah 66:24; consistent with isaiah-66 (sources read it differently). Second pass 2026-11-26: matched at the timestamp and speaker; the quoted span follows a merged-timestamp fragment (“Yeah.:00.690] Dan McClellan:”) in the same Dan McClellan line; read about two minutes either side; pass.",
     }
   15@00:22:14:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The preceding turn (00:21:10) introduces the landfill idea; subject rubbish-dump.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The preceding turn (00:21:10) introduces the landfill idea; subject rubbish-dump. Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   15@00:22:35:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject the landfill claim's date; consistent with Henning's “medieval period”.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject the landfill claim's date; consistent with Henning's “medieval period”. Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   15@00:23:32:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The turn ends with a garbled repeat (“McClellan: Is kind of the”), not quoted. Subject Gehenna as place of punishment.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The turn ends with a garbled repeat (“McClellan: Is kind of the”), not quoted. Subject Gehenna as place of punishment. Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   15@00:27:57:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The line opens with a transcript artifact (“entirely.rely.”) before the quoted text. Hedge “I think” kept. Consistent with varied-views (Fastiggi's three forms).",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The line opens with a transcript artifact (“entirely.rely.”) before the quoted text. Hedge “I think” kept. Consistent with varied-views (Fastiggi's three forms). Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   15@00:29:05:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Second Temple and NT views not systematised.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Second Temple and NT views not systematised. Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   15@00:32:02:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The line runs on without a break into a merged Dan Beecher fragment (“[00:33:02.050] Dan Beecher: Right.”) at its end, not quoted. Hedge “perhaps by Zoroastrianism, although we do not have a lot of great data” kept; consistent with persia-greece (disagreement).",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The line runs on without a break into a merged Dan Beecher fragment (“[00:33:02.050] Dan Beecher: Right.”) at its end, not quoted. Hedge “perhaps by Zoroastrianism, although we do not have a lot of great data” kept; consistent with persia-greece (disagreement). Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   98@00:08:06:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “may have been inserted … between the second and fourth or fifth century” kept; consistent with descent (Rufinus c. 400; NCE fifth century, Buitendag fourth).",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “may have been inserted … between the second and fourth or fifth century” kept; consistent with descent (Rufinus c. 400; NCE fifth century, Buitendag fourth). Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   98@00:10:40:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Trimmed: the turn's first sentence (“in the King James Version, that is translated as hell every single time”) conflicts with translations and is logged in data/scholarship-candidates.yaml, not attached.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Trimmed: the turn's first sentence (“in the King James Version, that is translated as hell every single time”) conflicts with translations and is logged in data/scholarship-candidates.yaml, not attached. Second pass 2026-11-26: matched at timestamp and speaker, verbatim; read about two minutes either side. The quoted sentence does not conflict with any statement; the turn's first sentence (“translated as hell every single time”) stays logged as a conflict, not attached. Pass.",
     }
   98@00:14:10:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Tartarus and Gehenna; the turn goes on to the worm-and-fire reinterpretation, not quoted.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Tartarus and Gehenna; the turn goes on to the worm-and-fire reinterpretation, not quoted. Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   157@00:44:04:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “I think” kept. Subject 1 Enoch 10 and post-mortem punishment; the turn goes on to the valleys of the earth merging with the Valley of Hinnom.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “I think” kept. Subject 1 Enoch 10 and post-mortem punishment; the turn goes on to the valleys of the earth merging with the Valley of Hinnom. Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
   160@00:27:16:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The turn goes on “the reality is that they did not have a concept of hell in the Hebrew Bible. Everybody went to the same place, good, bad.” Consistent with sheol and translations (“hell” in some places).",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The turn goes on “the reality is that they did not have a concept of hell in the Hebrew Bible. Everybody went to the same place, good, bad.” Consistent with sheol and translations (“hell” in some places). Second pass 2026-11-26: matched at timestamp and speaker, verbatim; read about two minutes either side. Kept with a note: after Beecher's lead-in (“translates a bunch of different words all to the word hell”), the unqualified “translated hell” leans toward Ep 98's logged “every single time”, but the sentence itself does not say “always” and does not contradict translations (“hell” in some places). Pass.",
     }
   160@00:27:46:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Gehenna and Topheth; the turn's earlier “that's a mistranslation” is not quoted.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Gehenna and Topheth; the turn's earlier “that's a mistranslation” is not quoted. Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
 rules:
   publish-rule:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: 18 statements. Core sheol cites Dolansky (Reference, 2019), Henning (Reference, 2017), Bakhos (Reference), Hayes l21 (Reference, 2006), Shaked (Reference, 1998/2012), Reyburn and Fry (Reference, 1997), the NABRE Psalm 6 notes (Reference, 2011) and Suriano (Scholarly, 2016): eight independent authors, none Host-authored. Rule met.",
+      note: "First pass 2026-11-26: 18 statements. Core sheol cites Dolansky (Reference, 2019), Henning (Reference, 2017), Bakhos (Reference), Hayes l21 (Reference, 2006), Shaked (Reference, 1998/2012), Reyburn and Fry (Reference, 1997), the NABRE Psalm 6 notes (Reference, 2011) and Suriano (Scholarly, 2016): eight independent authors, none Host-authored. Rule met. Second pass 2026-11-26: after four cuts, 18 statements and 125 citations; the core short now ends at “without judgment or torment” (its “no passage describes a fiery place of eternal punishment” sat against isaiah-66's Ogden and Sterk and stays in the text, attributed to Dolansky and Bakhos); the core sheol still cites Dolansky, Henning, Bakhos, Hayes, Shaked, Reyburn and Fry, the NABRE and Suriano (sheol/4, Henning's box, cut; Henning still cited at sheol/3). Rule met.",
     }
   consensus-wording:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: “consensus” and “most scholars” are not used by the page. Shorts saying “scholars say” rest on two or more authors stating it (sheol: Dolansky, Henning, Bakhos, Hayes, Shaked; daniel-12: Hayes, Merrill Willis, HarperCollins, NABRE). Quoted state-of-the-field sentences are attributed: Ogden and Sterk “Commentators generally agree” (with Cook and the NABRE against, so the short reports a split), Papaioannou “It is commonly believed” (with his dissent), Bakhos “for the first time” (not in the short), Shaked “not all scholars subscribe”. The rubbish-dump short says “the studies that examine the claim” (Henning, Papaioannou, Segovia) and names the reference works that still call it a dump.",
+      note: "First pass 2026-11-26: “consensus” and “most scholars” are not used by the page. Shorts saying “scholars say” rest on two or more authors stating it (sheol: Dolansky, Henning, Bakhos, Hayes, Shaked; daniel-12: Hayes, Merrill Willis, HarperCollins, NABRE). Quoted state-of-the-field sentences are attributed: Ogden and Sterk “Commentators generally agree” (with Cook and the NABRE against, so the short reports a split), Papaioannou “It is commonly believed” (with his dissent), Bakhos “for the first time” (not in the short), Shaked “not all scholars subscribe”. The rubbish-dump short says “the studies that examine the claim” (Henning, Papaioannou, Segovia) and names the reference works that still call it a dump. Second pass 2026-11-26: re-checked; “consensus” and “most scholars” still unused. Shorts narrowed where they went past their sources: daniel-12 (Hayes-only “only explicit passage”), rubbish-dump (“the studies that examine the claim … still”), why, nt-views, later-doctrine and descent. “Scholars say”/“Scholars disagree” remain only in sheol (five authors) and persia-greece (Shaked's “not all scholars subscribe”, Collins, Silverman). Pass.",
     }
   dissent-attributed:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Named: Suriano on Sheol; HarperCollins “death” and Sonia's minimalists (Schmidt, Johnston) on care for the dead; Cook against “Daniel first”; NABRE against Ogden and Sterk on Isaiah 26:19; Papaioannou and the NABRE against Ogden and Sterk on Isaiah 66:24; Papaioannou and the NABRE against HarperCollins and Henning on the name Gehenna; Bowker and McGuckin against Henning, Papaioannou and Segovia on the dump; Shaked against Wyatt, Collins and Silverman on Persia; Sim against HarperCollins on Hades; Zaleski (553) beside Fastiggi and Williams and Lane (543); NCE (fifth century) beside Buitendag (fourth).",
+      note: "First pass 2026-11-26: Named: Suriano on Sheol; HarperCollins “death” and Sonia's minimalists (Schmidt, Johnston) on care for the dead; Cook against “Daniel first”; NABRE against Ogden and Sterk on Isaiah 26:19; Papaioannou and the NABRE against Ogden and Sterk on Isaiah 66:24; Papaioannou and the NABRE against HarperCollins and Henning on the name Gehenna; Bowker and McGuckin against Henning, Papaioannou and Segovia on the dump; Shaked against Wyatt, Collins and Silverman on Persia; Sim against HarperCollins on Hades; Zaleski (553) beside Fastiggi and Williams and Lane (543); NCE (fifth century) beside Buitendag (fourth). Second pass 2026-11-26: re-checked; added attributions: Papaioannou “following Lloyd Bailey” (rubbish-dump), Janse van Rensburg and Van Eck “following Alan Bernstein” (paul), Shaked “setting out the case for Zoroastrian influence” (sheol, separate-fates), Buitendag's “seems” (descent). Pass.",
     }
   tradition-named:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: ccc-1033 named as the Catechism of the Catholic Church; gotquestions-hell-real and gotquestions-annihilationism as Got Questions Ministries, an evangelical ministry. None counts toward the core.",
+      note: "First pass 2026-11-26: ccc-1033 named as the Catechism of the Catholic Church; gotquestions-hell-real and gotquestions-annihilationism as Got Questions Ministries, an evangelical ministry. None counts toward the core. Second pass 2026-11-26: Got Questions' About page calls it “Christian, evangelical, theologically conservative, and nondenominational” and a “parachurch ministry”, so “an evangelical ministry” is in its own words; the Catechism named as such. Pass.",
     }
 sources:
   dolansky-bo-sheol:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: New entry; Reference, 2019.",
+      note: "First pass 2026-11-26: New entry; Reference, 2019. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   henning-bo-hell:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: New entry; Reference, 2017.",
+      note: "First pass 2026-11-26: New entry; Reference, 2017. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   bakhos-posen-afterlife-wicked:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Posen Library introduction by Carol Bakhos (UCLA). The page shows no volume or year; the introduction is fully readable without login, some primary-text excerpts are members-only (not used).",
+      note: "First pass 2026-11-26: Reference; Posen Library introduction by Carol Bakhos (UCLA). The page shows no volume or year; the introduction is fully readable without login, some primary-text excerpts are members-only (not used). Second pass 2026-11-26: re-fetched with curl; the introduction reads in full without login (first-pass flag 2 resolved); no volume or year on the page; pass.",
     }
   hayes-rlst145-l21:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: New entry; Reference (Open Yale Courses, 2006), like hayes-rlst145-l20.",
+      note: "First pass 2026-11-26: New entry; Reference (Open Yale Courses, 2006), like hayes-rlst145-l20. Second pass 2026-11-26: re-fetched with curl; author confirmed on the fetched page; the page shows no year, so the registry's 2006 (Open Yale Courses recording) is kept as entered; pass.",
     }
   shaked-iranica-eschatology:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopaedia Iranica, originally 1998, updated 2012. Read in an Internet Archive snapshot (live site bot-checks curl).",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Iranica, originally 1998, updated 2012. Read in an Internet Archive snapshot (live site bot-checks curl). Second pass 2026-11-26: re-fetched the per-citation Internet Archive snapshot (20241117204131); class and dates re-checked; pass.",
     }
   reyburn-fry-1997-genesis:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference (UBS translators' handbook, 1997), reproduced with permission on TIPs.",
+      note: "First pass 2026-11-26: Reference (UBS translators' handbook, 1997), reproduced with permission on TIPs. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   nabre-psalms-6-notes:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; NABRE 2011 Old Testament revision notes (scholarly-association notes per CONTEXT.md).",
+      note: "First pass 2026-11-26: Reference; NABRE 2011 Old Testament revision notes (scholarly-association notes per CONTEXT.md). Second pass 2026-11-26: re-fetched live with curl (this page returned 200); the page names no edition year, so the registry year is kept as entered; pass.",
     }
   suriano-2016-sheol:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; peer-reviewed open-access journal (JHS), 2016.",
+      note: "First pass 2026-11-26: Scholarly; peer-reviewed open-access journal (JHS), 2016. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   sonia-2020-caring-for-the-dead:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; SBL Press monograph (2020), full text hosted by SBL at a public URL (#80 clarification on publisher-hosted texts).",
+      note: "First pass 2026-11-26: Scholarly; SBL Press monograph (2020), full text hosted by SBL at a public URL (#80 clarification on publisher-hosted texts). Second pass 2026-11-26: re-fetched with curl; SBL-hosted PDF opens with no login (#80 clarification); pass.",
     }
   harpercollins-2009-dictionary:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Already registered (Reference, 2009). Entries “death”, “hell”, “immortality”, “Gehenna”, “Topheth”, “Sadducees”, “Hades” on Bible Odyssey; per-citation urls.",
+      note: "First pass 2026-11-26: Already registered (Reference, 2009). Entries “death”, “hell”, “immortality”, “Gehenna”, “Topheth”, “Sadducees”, “Hades” on Bible Odyssey; per-citation urls. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   isbe-1915-sheol:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference, 1915: outside the window; used only for a fact about the King James's renderings.",
+      note: "First pass 2026-11-26: Reference, 1915: outside the window; used only for a fact about the King James's renderings. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   gorski-nce-hell-bible:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; NCE text with a 1965 bibliography: used only for a fact about the Douay.",
+      note: "First pass 2026-11-26: Reference; NCE text with a 1965 bibliography: used only for a fact about the Douay. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   zaleski-britannica-hell:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; signed Britannica article (Carol Zaleski), first published 1998, revised; read in Internet Archive snapshots (live site bot-checks curl); AI-generated summary blocks on the page not used.",
+      note: "First pass 2026-11-26: Reference; signed Britannica article (Carol Zaleski), first published 1998, revised; read in Internet Archive snapshots (live site bot-checks curl); AI-generated summary blocks on the page not used. Second pass 2026-11-26: re-fetched the two per-citation Internet Archive snapshots (20261028184600, 20260723201234); signed Carol Zaleski; pass.",
     }
   hayes-rlst145-l23:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Already registered (Reference, 2006).",
+      note: "First pass 2026-11-26: Already registered (Reference, 2006). Second pass 2026-11-26: re-fetched with curl; author confirmed on the fetched page; the page shows no year, so the registry's 2006 (Open Yale Courses recording) is kept as entered; pass.",
     }
   merrill-willis-bo-daniel:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Already registered; Reference, 2015.",
+      note: "First pass 2026-11-26: Already registered; Reference, 2015. Second pass 2026-11-26: re-fetched with curl; still cited at daniel-12/2 (daniel-12/3 cut: it dates Daniel 8); pass.",
     }
   nabre-daniel-12-notes:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; NABRE 2011 Old Testament revision notes (scholarly-association notes per CONTEXT.md).",
+      note: "First pass 2026-11-26: Reference; NABRE 2011 Old Testament revision notes (scholarly-association notes per CONTEXT.md). Second pass 2026-11-26: live page returned 403 to curl; read in an Internet Archive snapshot of the same URL (snapshot named in its citation's note); the page names no edition year, so the registry year is kept as entered; class unchanged (NABRE notes, scholarly-association notes per CONTEXT.md). Registry access line changed from “open” to the Internet Archive wording the other six NABRE entries use; pass.",
     }
   cook-bo-resurrection:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: New entry; Reference, 2016.",
+      note: "First pass 2026-11-26: New entry; Reference, 2016. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   ogden-sterk-2011-isaiah:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference (UBS translators' handbook, 2011), reproduced with permission on TIPs; per-citation url for Isaiah 26:19.",
+      note: "First pass 2026-11-26: Reference (UBS translators' handbook, 2011), reproduced with permission on TIPs; per-citation url for Isaiah 26:19. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   nabre-isaiah-26-notes:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; NABRE 2011 Old Testament revision notes (scholarly-association notes per CONTEXT.md); read in an Internet Archive snapshot.",
+      note: "First pass 2026-11-26: Reference; NABRE 2011 Old Testament revision notes (scholarly-association notes per CONTEXT.md); read in an Internet Archive snapshot. Second pass 2026-11-26: live page returned 403 to curl; read in an Internet Archive snapshot of the same URL (snapshot named in its citation's note); the page names no edition year, so the registry year is kept as entered; class unchanged (NABRE notes, scholarly-association notes per CONTEXT.md); pass.",
     }
   nabre-isaiah-66-notes:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; NABRE 2011 Old Testament revision notes (scholarly-association notes per CONTEXT.md); read in an Internet Archive snapshot.",
+      note: "First pass 2026-11-26: Reference; NABRE 2011 Old Testament revision notes (scholarly-association notes per CONTEXT.md); read in an Internet Archive snapshot. Second pass 2026-11-26: live page returned 403 to curl; read in an Internet Archive snapshot of the same URL (snapshot named in its citation's note); the page names no edition year, so the registry year is kept as entered; class unchanged (NABRE notes, scholarly-association notes per CONTEXT.md); pass.",
     }
   papaioannou-2017-gehenna:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly by venue (peer-reviewed section of the Melanesian Journal of Theology); the author argues a conditionalist position, so his views are attributed and never stand alone behind a short. Flag for second pass.",
+      note: "First pass 2026-11-26: Scholarly by venue (peer-reviewed section of the Melanesian Journal of Theology); the author argues a conditionalist position, so his views are attributed and never stand alone behind a short. Flag for second pass. Second pass 2026-11-26: re-fetched with curl. First-pass flag 1 re-checked: the abstract says “Gehenna fits best into a conditionalist outlook”; cited on isaiah-66 (one side of a reported split, with the NABRE's corpses), gehenna-punishment (with the NABRE), rubbish-dump (with Henning and Segovia; now attributed “following Lloyd Bailey”) and nt-words (a count, with Zaleski); never alone behind a short. Pass.",
     }
   nabre-2-kings-23-notes:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; NABRE 2011 Old Testament revision notes (scholarly-association notes per CONTEXT.md); read in an Internet Archive snapshot.",
+      note: "First pass 2026-11-26: Reference; NABRE 2011 Old Testament revision notes (scholarly-association notes per CONTEXT.md); read in an Internet Archive snapshot. Second pass 2026-11-26: live page returned 403 to curl; read in an Internet Archive snapshot of the same URL (snapshot named in its citation's note); the page names no edition year, so the registry year is kept as entered; class unchanged (NABRE notes, scholarly-association notes per CONTEXT.md); pass.",
     }
   fastiggi-iess-hell:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; International Encyclopedia of the Social Sciences, 2nd ed., bibliography to 2005.",
+      note: "First pass 2026-11-26: Reference; International Encyclopedia of the Social Sciences, 2nd ed., bibliography to 2005. Second pass 2026-11-26: re-fetched with curl; the URL is shared with mcguckin-medd-hell (one Encyclopedia.com page of several “Hell” entries); every Fastiggi quote sits inside the entry signed Robert Fastiggi; pass.",
     }
   ej-gehinnom:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; EJ text from the 1st ed.; definition only.",
+      note: "First pass 2026-11-26: Reference; EJ text from the 1st ed.; definition only. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   wyatt-2009-hell:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; Numen 56 (Brill, 2009), publisher's version of record in the Edinburgh repository.",
+      note: "First pass 2026-11-26: Scholarly; Numen 56 (Brill, 2009), publisher's version of record in the Edinburgh repository. Second pass 2026-11-26: re-fetched with curl; varied-views/3 (old numbering) cut; locators re-checked against the printed page heads. Pass.",
     }
   nabre-matthew-5-notes:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; NABRE New Testament notes are the 1986 revised NT (USCCB revised-edition page), outside the window; read in an Internet Archive snapshot.",
+      note: "First pass 2026-11-26: Reference; NABRE New Testament notes are the 1986 revised NT (USCCB revised-edition page), outside the window; read in an Internet Archive snapshot. Second pass 2026-11-26: live page returned 403 to curl; read in an Internet Archive snapshot of the same URL (snapshot named in its citation's note); the page names no edition year, so the registry year is kept as entered; class unchanged (NABRE notes, scholarly-association notes per CONTEXT.md); pass.",
     }
   segovia-2023-treasures-in-hell:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; Philippiniana Sacra (University of Santo Tomas), 2023. Derivative on the dump question (leans on Bailey and Papaioannou); used for one sentence.",
+      note: "First pass 2026-11-26: Scholarly; Philippiniana Sacra (University of Santo Tomas), 2023. Derivative on the dump question (leans on Bailey and Papaioannou); used for one sentence. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   montgomery-1908-holy-city-gehenna:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly (JBL), 1908: outside the window; attributed with its date.",
+      note: "First pass 2026-11-26: Scholarly (JBL), 1908: outside the window; attributed with its date. Second pass 2026-11-26: re-fetched the archive.org OCR text and PDF; the Kimchi passage checked on the page image (p. 34); pass.",
     }
   bowker-gehenna:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference (OUP); page gives no year. Reported as a contrary view.",
+      note: "First pass 2026-11-26: Reference (OUP); page gives no year. Reported as a contrary view. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   mcguckin-medd-hell:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Macmillan Encyclopedia of Death and Dying, bibliography to 1998; page gives no year.",
+      note: "First pass 2026-11-26: Reference; Macmillan Encyclopedia of Death and Dying, bibliography to 1998; page gives no year. Second pass 2026-11-26: re-fetched with curl; shared URL with fastiggi-iess-hell; both McGuckin quotes sit inside the entry signed J. A. McGuckin; pass.",
     }
   henning-bo-afterlife-jesus:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: New entry; Reference, 2016.",
+      note: "First pass 2026-11-26: New entry; Reference, 2016. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   sim-1999-angels-punishment:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; HTS 1999. Same author as sim-2011-pacifist-jesus: counted once.",
+      note: "First pass 2026-11-26: Scholarly; HTS 1999. Same author as sim-2011-pacifist-jesus: counted once. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   collins-eor-apocalypse:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Already registered; Reference, 2005.",
+      note: "First pass 2026-11-26: Already registered; Reference, 2005. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   boling-proctor-bo-watchers:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Already registered; Reference, 2024.",
+      note: "First pass 2026-11-26: Already registered; Reference, 2024. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   bor-saet-death-afterlife:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; St Andrews Encyclopaedia of Theology, 2025.",
+      note: "First pass 2026-11-26: Reference; St Andrews Encyclopaedia of Theology, 2025. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   silverman-2011-iranian-influence:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Already registered; Reference, 2011.",
+      note: "First pass 2026-11-26: Already registered; Reference, 2011. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   janse-van-rensburg-van-eck-2008-hell:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; HTS 2008. Much of it paraphrases Bernstein 1993 and Räisänen 2007, which are leads; attributed accordingly.",
+      note: "First pass 2026-11-26: Scholarly; HTS 2008. Much of it paraphrases Bernstein 1993 and Räisänen 2007, which are leads; attributed accordingly. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   nabre-2-peter-2-notes:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; NABRE 1986 NT notes; read in an Internet Archive snapshot; a definition.",
+      note: "First pass 2026-11-26: Reference; NABRE 1986 NT notes; read in an Internet Archive snapshot; a definition. Second pass 2026-11-26: live page returned 403 to curl; read in an Internet Archive snapshot of the same URL (snapshot named in its citation's note); the page names no edition year, so the registry year is kept as entered; class unchanged (NABRE notes, scholarly-association notes per CONTEXT.md); pass.",
     }
   sim-2011-pacifist-jesus:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; HTS 2011. Same author as sim-1999-angels-punishment: counted once.",
+      note: "First pass 2026-11-26: Scholarly; HTS 2011. Same author as sim-1999-angels-punishment: counted once. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   williams-lane-nce-eschatology:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; NCE 2nd ed., bibliography to 1995.",
+      note: "First pass 2026-11-26: Reference; NCE 2nd ed., bibliography to 1995. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   quinn-rohling-nce-descent:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; NCE 2nd ed. entry, bibliography to 1997, cites CCC 631–35.",
+      note: "First pass 2026-11-26: Reference; NCE 2nd ed. entry, bibliography to 1997, cites CCC 631–35. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   buitendag-2009-descendit:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; HTS 2009. Some dates in the article look garbled (309; Ariminum 359); only the two clauses on Aquileia/Rufinus and Clement are quoted.",
+      note: "First pass 2026-11-26: Scholarly; HTS 2009. Some dates in the article look garbled (309; Ariminum 359); only the two clauses on Aquileia/Rufinus and Clement are quoted. Second pass 2026-11-26: re-fetched with curl; descent/5 (old numbering: “commonplace … Aquileian text”) cut because the sentence ends “of 309 A.D.”, the garbled date the first pass noted; two quotes remain. Pass.",
     }
   nabre-1-peter-3-notes:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; NABRE 1986 NT notes; read in an Internet Archive snapshot.",
+      note: "First pass 2026-11-26: Reference; NABRE 1986 NT notes; read in an Internet Archive snapshot. Second pass 2026-11-26: live page returned 403 to curl; read in an Internet Archive snapshot of the same URL (snapshot named in its citation's note); the page names no edition year, so the registry year is kept as entered; class unchanged (NABRE notes, scholarly-association notes per CONTEXT.md); pass.",
     }
   ccc-1033:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Tradition (the Catholic Church); vatican.va.",
+      note: "First pass 2026-11-26: Tradition (the Catholic Church); vatican.va. Second pass 2026-11-26: re-fetched with curl; author and year confirmed on the fetched page; class and access consistent with it (edition not re-checked against a publisher's catalogue); pass.",
     }
   gotquestions-hell-real:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Tradition (Got Questions Ministries, an evangelical ministry).",
+      note: "First pass 2026-11-26: Tradition (Got Questions Ministries, an evangelical ministry). Second pass 2026-11-26: re-fetched with curl; the About page confirms “evangelical” in the ministry's own words; pass.",
     }
   gotquestions-annihilationism:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Tradition (Got Questions Ministries, an evangelical ministry).",
+      note: "First pass 2026-11-26: Tradition (Got Questions Ministries, an evangelical ministry). Second pass 2026-11-26: re-fetched with curl; the About page confirms “evangelical” in the ministry's own words; pass.",
     }
 leads:
   - "Lloyd R. Bailey, “Gehenna: The Topography of Hell”, Biblical Archaeologist 49 (1986): 187–91, on Kimhi's c. 1200 commentary on Psalm 27 as the source of the dump explanation and on the lack of literary or archaeological support: read only in a scan posted on a private website (godawa.com), neither a publisher nor an author copy; not cited. Also quoted via Papaioannou and Segovia."
@@ -1239,4 +1221,9 @@ uncited:
   - "Bor: 2 Maccabees, 4 Ezra and Jubilees passages (Jubilees dated “c. 170 CE”, an apparent error): read; not cited."
   - "Collins: the Aramaic Enoch fragments dated “second century ce” (apparently an error): read; not cited."
   - "Sim 1999: Persian influence “usually attributed” and Greek influence on angelic torturers: read; not cited, persia-greece is carried by Shaked, Wyatt, Collins and Silverman."
-  - "Henning, “Hell”, “The idea of a bifurcated afterlife (heaven above, hell below) is an early Christian invention”: cited for its second sentence only; its first sentence sits in tension with Bakhos, Sim and Henning's own “Views on the Afterlife”, which find separate fates in Jewish apocalyptic texts, and is not stated on the page."
+  - "Henning, “Hell”, box “Did you know?”: “The idea of a bifurcated afterlife (heaven above, hell below) is an early Christian invention. This idea is not present in the Hebrew Bible.”: read; second pass 2026-11-26 moved from sheol/4. The first sentence sits against separate-fates (Bakhos, Sim, Bor and Henning's own “Views on the Afterlife” place separate fates in Jewish apocalyptic texts), and the second (“This idea …”) does not stand without it; sheol keeps Henning at sheol/3."
+  - "Amy C. Merrill Willis, “Daniel” (Bible Odyssey): “the passage itself was written in or near Jerusalem around 167 B.C.E., during the Hellenistic period.”: read; second pass 2026-11-26 moved from daniel-12/3. The sentence follows “Although this vision of the end claims to happen during the Babylonian exile, circa 546 B.C.E. (Daniel 8:1)”: it dates Daniel 8, not Daniel 12; the short's 167 BCE rests on HarperCollins “immortality”."
+  - "Nicolas Wyatt, Numen 56 (2009), p. 175: “This is typical of apocalyptic literature: it is very confused, repetitive and contradictory.”: read; second pass 2026-11-26 moved from varied-views/3. It follows Wyatt's summary of the Watchers story in 1 Enoch 6–16 (Azazel's doublets) and characterises the fall narratives, not views of the fate of the wicked."
+  - "Johan Buitendag, HTS 65.1 (2009), section “Origin”: “it is commonplace that it appeared for the first time in the West in the Aquileian text of 309 A.D.”: read; second pass 2026-11-26 moved from descent/5. The quote stopped one word before “of 309 A.D.”, a garbled date (Rufinus wrote c. 400); cut when in doubt."
+  - "Johan Buitendag, HTS 65.1 (2009): inferna “corresponds to the Greek word Hades … Hades signifies, like the Hebrew word sheol, the unseen spirit–world, the abode of all the departed”; and Calvin's reading “Hell in the Apostolicum is therefore defined by the cross. Hell is Godforsakenness”: read; second pass 2026-11-26, not cited (the second pass adds no citations). With Quinn and Rohling it could carry the clause's meaning as a short; Calvin's reading would then be the attributed dissent."
+  - "Ogden and Sterk, UBS Handbook on Isaiah, on Isaiah 66:24: the corpses “are probably in the rubbish dump of the Hinnom valley just outside the city” and “burning forever on the rubbish heap”: read; second pass 2026-11-26, not cited; another reference work that describes the valley as a dump (rubbish-dump cites Bowker and McGuckin)."
