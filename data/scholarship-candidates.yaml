@@ -342,3 +342,19 @@ statements:
         timestamp: "00:50:52.840"
         text: "Well, one, the question of where the threshold is is the wrong question to begin with. But two, it's definitely not anywhere in the Bible."
     notes: "Conflict with explicit: both turns deny that monotheism appears anywhere in the Bible, Second Isaiah included; the statement reports, from Coogan and Chapman, the NABRE notes, Hayes, Sperling, Markl and Machinist, that Second Isaiah is the first explicit denial that other gods exist, with Fredriksen's reading of such declarations as loyalty language attributed in the text. Logged at the #151 first pass, 2026-11-27."
+  - page: the-emergence-of-monotheism-and-the-divine-council
+    question: "Is the Shema a statement of monotheism?"
+    triggers:
+      - episode: 126
+        speaker: "Dan McClellan"
+        timestamp: "00:16:02.934"
+        text: 'So I think most scholars would say, "The Lord our God, namely, the Lord is one," or "Adonai is one. "'
+    notes: "Conflict with shema: “most scholars would say … Adonai is one” states a majority for one rendering; the statement reports that the meaning is uncertain, with Dolansky, Tigay (“most likely”, “not certain”) and Kimelman reading it as exclusive worship of Yahweh and the NABRE note listing several renderings. Raised by the #151 second pass, logged at publish, 2026-11-27."
+  - page: the-emergence-of-monotheism-and-the-divine-council
+    question: "When does the Bible first deny that other gods exist?"
+    triggers:
+      - episode: 59
+        speaker: "Dan McClellan"
+        timestamp: "00:14:06.690"
+        text: "And I argue that that is harmful to the academic endeavor and that we need to acknowledge that there's not monotheism in the Bible."
+    notes: "Conflict with explicit: denies monotheism anywhere in the Bible; the statement reports Second Isaiah as the first explicit denial that other gods exist (Coogan and Chapman, NABRE, Hayes, Markl), with Fredriksen's dissent attributed. Raised by the #151 second pass, logged at publish, 2026-11-27."

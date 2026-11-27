@@ -2,8 +2,7 @@
 title: "The Emergence of Monotheism and the Divine Council"
 dek: "When the Bible first denies that other gods exist, how scholars use the word monotheism, and the council of gods the Hebrew Bible places around Yahweh."
 core: explicit
-draft: true
-sourcesRead: null
+sourcesRead: 2026-11-27
 related:
   books:
     [
@@ -242,7 +241,7 @@ statements:
   - id: explicit
     group: "When monotheism emerged"
     question: "When does the Bible first deny that other gods exist?"
-    short: "In Second Isaiah (Isaiah 40–55), written in the sixth century BCE during the Babylonian exile, scholars say. Earlier texts call for the worship of Yahweh alone without denying that other gods exist."
+    short: "In Second Isaiah (Isaiah 40–55), scholars say. Earlier texts call for the worship of Yahweh alone without denying that other gods exist."
     text: "Coogan and Chapman's textbook summary says Second Isaiah emphasises strict monotheism, and that it is the first passage in the Bible to state explicitly that there is no God other than Yahweh; the summary dates Second Isaiah to the sixth century, in Babylon. The New American Bible's note on Isaiah 44:6 says that with Second Isaiah, Israel's faith is declared to be explicitly monotheistic, while earlier formulas, not even the first commandment, did not exclude the existence of other gods. Hayes's lectures say the monotheism implicit in Isaiah becomes quite explicit in Second Isaiah, and Sperling calls Second Isaiah the most consistent monotheist among the prophets, insisting that Yahveh was the sole god in existence. Sperling writes that scholars are in agreement that Judaism was a monotheistic religion by the end of the Babylonian exile, about 539 BCE, and that the present state of the evidence suggests that monolatry arose early in Israel but monotheism was a late development. Dominik Markl finds the earliest evidence of the explicit claim in Deuteronomy 4 and Second Isaiah, both likely composed around or some time after 539 BCE, and notes that whether Deuteronomy 4 comes first is a matter of debate. Peter Machinist reports that, depending on the scholar, monotheism in the strict sense could be as late as the exile, and that for those who date it late, Second Isaiah has been the favoured option. Other scholars date it differently. Baruch Levine places the transition to what he calls global monotheism, the concept that Yahweh is the only God and rules over all nations, in the late eighth to early seventh century BCE. Markl reports that Sven Petry concluded monotheism was introduced in Second Isaiah no earlier than the fifth century BCE. Paula Fredriksen writes that in biblical narrative other divine forces are often simply there, and reads declarations of God's unique supremacy, such as Deuteronomy 4:35, 39 and Isaiah 43:10–11; 44:6; 45:14, as an index of a people's cultic and affective loyalty, like similar statements about pagan gods."
     cites:
       - source: coogan-brief-4e-summary-ch21
