@@ -5572,3 +5572,31 @@ codex-sinaiticus-project:
   url: "http://web.archive.org/web/20240118064339id_/https://codexsinaiticus.org/en/codex/history.aspx"
   hostAuthored: false
   tradition: null
+
+bond-2013-dating-death:
+  author: "Helen K. Bond"
+  title: "‘Dating the Death of Jesus’: Memory and the Religious Imagination"
+  series: "New Testament Studies 59"
+  publisher: "Cambridge University Press"
+  year: 2013
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Author's peer-reviewed manuscript, Edinburgh Research Explorer (University of Edinburgh), open"
+  url: "https://www.pure.ed.ac.uk/ws/portalfiles/portal/10489469/Dating_the_Death_of_Jesus_Memory_and_the_Religious_Imagination.pdf"
+  hostAuthored: false
+  tradition: null
+
+gotquestions-year-jesus-died:
+  author: null
+  title: "In what year did Jesus die?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/what-year-did-Jesus-die.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"

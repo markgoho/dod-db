@@ -512,3 +512,21 @@
   timestamp: "00:38:07.610"
   states: critical
   text: "And so in 6 CE, Quirinius ran a census in Judea, which means that this is a full 10 years separated from after the death of Herod the Great."
+- entry: crucifixion-of-jesus
+  episode: 48
+  speaker: "Helen Bond"
+  timestamp: "00:03:49.270"
+  states: critical
+  text: "So I suppose scholars make a distinction between the historical Jesus who is, you know, the man who walked the Galilean hills in the 30s CE and, and, and was executed on a Roman cross, and the, the Christ of faith as he's known in the churches as, as he already is in the Gospels."
+- entry: crucifixion-of-jesus
+  episode: 86
+  speaker: "Dan McClellan"
+  timestamp: "00:39:25.820"
+  states: critical
+  text: "So Josephus was likely born around 37 CE, so a handful of years after Jesus was probably crucified."
+- entry: crucifixion-of-jesus
+  episode: 109
+  speaker: "Dan McClellan"
+  timestamp: "00:19:41.389"
+  states: tradition
+  text: "Yes. And it was not April 3, 33 CE, because a lunar eclipse does not cause darkness."

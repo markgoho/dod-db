@@ -1,0 +1,172 @@
+# Review record for the Timeline Entry `crucifixion-of-jesus` (/timeline/#crucifixion-of-jesus; #93 shape). Not rendered.
+# Issue #232 (from #108), “Timeline Entry: The crucifixion of Jesus”. Issue notes: kind event; tradition as stated “April 3, 33 CE (lunar-eclipse argument)”; critical as stated “the 30s CE; exact date unknown”; sides “both, weakly”: April 3, 33 CE is stated only to be rejected, so a Tradition Date needs a Tradition source holding it in its own words; no critical year stated on the show, so likely a period or a “no exact date” statement; NABRE NT introductions outside the window (#86), not used; date one thing (ministry or execution): this entry dates the execution only; Pilate's prefecture bounds it but no published entry covers it (no anchor, no seeAlso; the 26–36 CE prefecture is cited through Britannica's own sentence); crowding of CE entries is #175.
+# Shape decision (step 2): `critical`, display “c. 30 CE”, `from: 30`, `precision: year`. The issue's prediction (a period or “no exact date”) is overridden by the sourcing test: Britannica (Reference) gives “died c. 30 CE” in the lede in its own voice, and Ehrman's OUP companion summary (Reference) says “Scholars agree that Jesus died around 30 CE”. Britannica's summary narrows it to the Passover “Sometime between 29 and 33 CE—possibly 30 CE” at which he was “arrested, tried, and executed”, so the date is the execution's, not only the death's (critical-scope). Bond 2013 (Scholarly, NTS) argues in her own voice that the precise date “can no longer be recovered” and allows only “any time between 29 and 34 CE”: that is shown in the note, attributed, as the limit on the display's “c.”. No `to`: Britannica's 29–33 and Bond's 29–34 are different ranges, so neither is made the span; the display is the form both Reference sources give.
+# #99: no Scholarly or Reference source read gives a different year in its own voice. Bond reports the two most popular dates (7 April 30 and, for a smaller group, 3 April 33) and accepts neither; both reports are in the note, attributed. The 33 CE scholarly proponents (Humphreys and Waddington, Nature 1983 and Tyndale Bulletin 1992; Hoehner 1977) are outside the window or not read (leads). Encyclopaedia Judaica “Crucifixion” (“It seems reasonable, therefore, that the crucifixion took place in the year 30 c.e.”) agrees (uncited). Chadwick (BYU Studies) also argues AD 30 but argues partly from Latter-day Saint scripture (uncited).
+# Attribution: the note says “Britannica”, never a named author: the byline and JSON-LD author rotate per load (birth-of-jesus review; this pass saw Pelikan on the Scribes-and-Pharisees page), although a section sign-off “E.P. Sanders” is printed after “The Resurrection”. Bond is the guest who speaks the E48 Trigger Claim; she is not a Host, and her NTS article is an External Source in its own right (the Trigger Claim is shown apart from the note).
+# Tradition: Trigger Claim 109@00:19:41 names April 3, 33 CE to reject it; recorded `states: tradition` on the E138 Exodus and E183 Flood precedent (a host stating the other side's date to reject it). Got Questions (Tradition, registry string reused: “Got Questions Ministries, an evangelical ministry”; About page: “We are Christian, evangelical, theologically conservative, and nondenominational”) holds “Friday, April 3, AD 33” in its own voice. Its argument is the Passover plus John the Baptist's start, not the eclipse; the page itself names the AD 30 alternative and prefers 33 (“The later date seems more in keeping with the historical record”, uncited). Display “April 3, 33 CE” (CE for the Timeline's era style; the day is the source's). Middles 30 and 33 are under 30 years apart, so the Tradition Date stays beside the entry (#214).
+# Trigger Claims (#99, three): 48@00:03:49 (critical; Helen Bond: “walked the Galilean hills in the 30s CE and … was executed on a Roman cross”), 86@00:39:25 (critical; McClellan: Josephus born around 37 CE, “a handful of years after Jesus was probably crucified”), 109@00:19:41 (tradition; McClellan: “it was not April 3, 33 CE, because a lunar eclipse does not cause darkness”). Hedges and context dropped by trimming: 48 opens “Yeah, a good point. That scholars get so used to …” and goes on (“a real man in the 30s”); its decade covers the ministry and the execution together. 86's “probably” is kept; the line is a Who's That on Josephus, the crucifixion is a relative aside. 109 sits in an Easter-date segment: Beecher's turn before (00:19:20) says “We don't know the date of the actual resurrection … the killing of Jesus”, and after (00:19:51) “because we don't know the actual date”; “We've been through that one” points to E90.
+# Read: E48 00:02:01–00:07:43; E86 00:37:43–00:41:31; E109 00:15:41–00:20:59; E90 00:23:03–00:31:30 (the NASA lunar-eclipse list, “Crucifixion of Christ?”; the eclipse started around 6:20 pm in Jerusalem; no year stated except the garbled “04343” in the transcript at 00:23:38, not stored); E50 00:37:40–00:38:35 (apologetic eclipse-year attempts; no year) and 00:49:39–00:50:08 (Friday; no year); E16 (Apostlepalooza!, episode 16 per data/processed-videos.json): no crucifixion date found by search (00:57:24 mentions “the years between the death of Jesus and the writing of Romans”, no year); “Don't Get Cross With Me” 00:08:27–00:09:21 (“about 100 years after Jesus”; graffito dates, not the crucifixion); “Bring Me the Head of John the Baptist!” 00:09:33 (Antipas 4 BCE–39 CE; not the crucifixion).
+# Dropped Trigger Claim leads: 109@00:19:20 and 00:19:51 (Beecher, “we don't know the actual date”: a verdict, no year; three suffice); E90 00:23:38 (garbled year in the transcript); E50 00:38:09 (no year); E80 00:42:59 (Jerusalem Council “in the 30s CE”: a different subject, flagged as a likely slip in the inventory).
+# agent: the first pass (2026-11-26). Two research agents (critical side; tradition side) saved every fetched page into their own scratch folders (cruc-critical, cruc-tradition) and copied quotes only from the saved text; no setting agent (an event). The lead read Britannica “Jesus” in Claude in Chrome (script-blocked): /biography/Jesus and /biography/Jesus/Scribes-and-Pharisees; JSON-LD datePublished 1998-07-20, dateModified 2026-11-20; the lede is p.topic-paragraph, not the hidden AI Q&A block; in-tab document.body.innerText split counts 1 for each cited Britannica sentence; relevant paragraphs saved (cruc-lead/britannica-jesus.txt). Bond 2013 read as the Edinburgh Research Explorer PDF (author's peer-reviewed version; locators by section, not NTS page). Quotes script-matched from the entry file against the saved copies (whitespace, quotes, dashes, entities, NFKC, soft hyphens normalised): 9 hits, 0 misses, each once. Trigger Claims matched by script as substrings of their final Transcript lines at timestamp and speaker: 3 hits.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Display “c. 30 CE” against Bond's “the precise date can no longer be recovered … any time between 29 and 34 CE”: check “c.” is no stronger than the sources together, or narrow (e.g. to Britannica's own range). If the display is cut to nothing, the entry is re-tested, not reshaped. (2) Britannica's lede dates the death; check the “Summary of Jesus’ life” sentence pair ties the execution to that Passover, so the title passes critical-scope. (3) #99: check that Bond's reported 3 April 33 minority is a report, not a Critical Date of hers, and that no cited source gives 33 in its own voice. (4) Ehrman's “Scholars agree” is a consensus word in a source; the note attributes it to his companion summary. Check that is enough, given Bond's reported spread. (5) 109@00:19:41 `states: tradition`: the line rejects the date; check against the E138 / E183 precedents. (6) Got Questions' date: own voice? It names the AD 30 alternative in the next sentence; check that “April 3, 33 CE” as display is no stronger than “narrows down … to”. (7) Bond 2013's manuscript is the author's peer-reviewed version, not the NTS typeset text; check the quotes would read the same (no access to the typeset version expected).
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Jesus”, lede (p.topic-paragraph), first sentence: “died c. 30 CE”, trimmed so it carries neither Bethlehem nor Jerusalem. Own-voice approximate date. Backs the display and from. Flags 1, 2.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Jesus”, “Summary of Jesus’ life”, ¶ 2, sentences 4–5. Own-voice range for the final Passover (29–33 CE, possibly 30), with arrest, trial and execution there. Ties the date to the execution (flag 2); the Gospels are cited only for the triumphal entry. Backs the note's first sentence.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Jesus”, “The political situation”, ¶ 2. Pilate prefect during Jesus' public career, ruled 26–36 CE. Backs the note's Pilate clause (the bound the issue names).",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Ehrman, OUP Learning Link companion summary of A Brief Introduction to the New Testament 5e, ch. 4, “Oral Traditions behind the Gospels”, ¶ 1, sentence 1. Report of agreement (“Scholars agree”), around 30 CE. Backs the note's Ehrman sentence. Flag 4.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bond 2013 (NTS 59), opening paragraph after the epigraphs. Report: 7 April 30 CE “widely regarded by many modern Jesus scholars”. Backs the note's first Bond clause. Flag 3.",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bond 2013, § I, last paragraph, last sentence. Report of the two most popular dates; a smaller group opts for 3 April 33. Backs the note's “with a smaller group favouring 3 April 33”. Flag 3.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bond 2013, abstract, sentence 1. Own voice: the precise date “can no longer be recovered”. Backs the note's “She argues that the precise date can no longer be recovered”. Flags 1, 7.",
+    }
+  critical/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bond 2013, Conclusion, last sentence. Own voice: around the Passover, perhaps a few days before, any time between 29 and 34 CE. Backs the note's last clause. Flag 1.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Got Questions, “In what year did Jesus die?”, answer ¶ 4, sentence 2. Own voice: “narrows down the date of the crucifixion to Friday, April 3, AD 33”. Backs display and from. Holder is the registry's existing string. Flag 6.",
+    }
+triggers:
+  48@00:03:49:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Helen Bond (guest): the historical Jesus “walked the Galilean hills in the 30s CE” and “was executed on a Roman cross”. The decade covers ministry and execution; agrees with the display. Script-matched at 00:03:49.270; E48 00:02:01–00:07:43 read.",
+    }
+  86@00:39:25:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. McClellan: Josephus born around 37 CE, “a handful of years after Jesus was probably crucified”. Relative, hedged; agrees. Script-matched at 00:39:25.820; E86 00:37:43–00:41:31 read.",
+    }
+  109@00:19:41:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. McClellan names April 3, 33 CE to reject it (a lunar eclipse does not cause darkness). States the other side's date, as E138 (Exodus) and E183 (Flood) are recorded. Flag 5. Script-matched at 00:19:41.389; E109 00:15:41–00:20:59 and E90 00:23:03–00:31:30 read.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Worded for the execution; Britannica's summary puts arrest, trial and execution at the dated Passover; Ehrman and the lede date the death. Nothing on the ministry's length, the day of the week or the Passover link (Bond's day argument is narrowed to her year range). Flag 2.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "No source read gives a different Critical Date in its own voice. Bond's reported 30 and 33 and her 29–34 range are in the note, attributed. Flag 3.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tradition Date shown because 109@00:19:41 states the tradition's date (states: tradition). Flag 5.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “Got Questions Ministries, an evangelical ministry”, the registry string from the ministry's own About page (#86). Never “the traditional date”.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bond's “if we accept the historicity of Luke 3.1 … between 29 and 34 CE” (§ I) is conditional and uncited; her Conclusion gives the same range unconditionally and is the one cited. Bond's 14 Nisan dates (30 or 33) are reported astronomy, not hers.",
+    }
+sources:
+  britannica-jesus:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Online, Jaroslav Jan Pelikan and E. P. Sanders with Britannica Editors (first published July 20, 1998; updated Nov. 20, 2026)",
+    }
+  ehrman-brief-5e-ch4-summary:
+    {
+      agent: pass,
+      owner: "",
+      edition: "5th ed., 01 October 2020 (the OUP catalogue record verified for this textbook in the Scholarship reviews, ehrman-brief-5e-ch11-summary)",
+    }
+  bond-2013-dating-death:
+    {
+      agent: pass,
+      owner: "",
+      edition: "New Testament Studies 59.4 (2013) 461–475; author's peer-reviewed manuscript on Edinburgh Research Explorer",
+    }
+  gotquestions-year-jesus-died:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Web page, “This page last updated: January 21, 2026”",
+    }
+leads:
+  - "Humphreys and Waddington, “Dating the Crucifixion”, Nature 306 (1983), and “The Jewish Calendar, a Lunar Eclipse and the Date of Christ's Crucifixion”, Tyndale Bulletin 43.2 (1992): Friday 3 April AD 33; outside the ~30-year window (#86); not read."
+  - "Colin J. Humphreys, The Mystery of the Last Supper (Cambridge University Press, 2011): AD 33 per Bond n. 4; not read."
+  - "Schaefer, “Lunar Visibility and the Crucifixion”, QJRAS 31 (1990): disputes the eclipse's visibility (cited by ABR); not read."
+  - "Raymond E. Brown, The Death of the Messiah (1994): undecided between 30 and 33 per Bond n. 4; not read."
+  - "Köstenberger and Taylor, “April 3, AD 33”, First Things (2014), and The Final Days of Jesus (Crossway, 2014): not read; First Things is a journal, not a ministry."
+  - "Blumell and Wayment, BYU Studies Quarterly 51.3 (2012): “we cannot know with any degree of certainty in which year Jesus died” per Chadwick; not read."
+  - "Bond, Cambridge Core blog post on dating Jesus' death (29–34 CE per a search snippet): 503 on fetch; not read."
+  - "Jimmy Akin, Catholic Answers audio on the date of the crucifixion: not listened to."
+uncited:
+  - "Bond 2013, § I ¶ 5: “if we accept the historicity of Luke 3.1 … Jesus’ death must have taken place some time between 29 and 34 CE.” Conditional; the Conclusion's unconditional sentence is cited instead."
+  - "Bond 2013, § I last ¶: “14th Nisan appears to have fallen on two possible dates within our broader time period: Friday April 7th 30 CE or April 3rd 33.” Reported astronomy; the following sentence (cited) carries both dates."
+  - "Bond 2013, Conclusion: “we can no longer use astronomy to date Jesus’ death” and “We simply have no way of knowing.” About the day, not the year; the abstract carries the verdict."
+  - "Britannica “Jesus”, “Jesus’ last week”, ¶ 1: “About the year 30 CE Jesus and his disciples went to Jerusalem from Galilee to observe Passover.” Agrees with the lede; not needed. ¶ 9: “They took him and two thieves outside Jerusalem and crucified them.” No date."
+  - "Britannica “Jesus”, “The political situation”: Caiaphas “held the office from about 18 to 36 CE”. A second bound; Pilate's suffices."
+  - "Ehrman, ch. 9 summary: “Pontius Pilate, not Jewish authorities, sentenced him to crucifixion.” No year."
+  - "Cohn / Gibson, Encyclopaedia Judaica 2nd ed., “Crucifixion” (Encyclopedia.com): sentenced by Pilate “between 27 and 36 c.e.”; “The accepted view is that the death of Jesus took place late in the 20s or early in the 30s of the first century. It seems reasonable, therefore, that the crucifixion took place in the year 30 c.e.” Agrees; not needed; which of the two authors wrote the passage is not stated."
+  - "Flusser, Encyclopaedia Judaica “Jesus”: “JESUS (d. 30 c.e.)”; “died in the year 30 c.e.” Body likely from the 1971 first edition, outside the window."
+  - "Orlett, New Catholic Encyclopedia “Jesus Christ, I (in the Bible)” (Encyclopedia.com): Pilate governor “from a.d. 26 to 36. One can only conjecture about a more precise date for His death.” Edition year unverified; Bond carries the verdict."
+  - "Buckley, New Catholic Encyclopedia “Pilate, Pontius”: appointed “In a.d. 26”; same entry says Pilate killed himself on Caligula's orders “in a.d. 30”, an evident error; not used."
+  - "HarperCollins Bible Dictionary (2009) on Bible Odyssey, “Pilate, Pontius”: prefect “(26–36 CE)”. Agrees with Britannica; not needed. Carter, Bible Odyssey “Pontius Pilate”: governor “(26-37 CE)”; recalled “in early 37 CE”. Different end year from Britannica; the prefecture is context only, Britannica's sentence carries it."
+  - "Chadwick, “Dating the Death of Jesus Christ”, BYU Studies 54.4: “Jesus did in fact die in AD 30 … April 6”. Argues partly from Latter-day Saint scripture and apostles; class unsettled; not used."
+  - "Bible Odyssey: Cook “Crucifixion in the Roman World”, Powell “The Crucifixion of Jesus and the Jews” and “Jesus”, Eberhart “Last Supper”; HarperCollins “Jesus Christ”; Martin, Open Yale RLST 152 lecture 13; NCE “Christ”: no year for the crucifixion."
+  - "Got Questions, same page ¶ 4: “There is also an argument for an earlier date (April 7, AD 30) … The later date seems more in keeping with the historical record.” The ministry's own alternative; the cited sentence carries its date."
+  - "Ligonier (Myers, “When Did Jesus Die?”, 2025): “The historical death of Jesus of Nazareth is widely recognized by His crucifixion on Friday, April 3, AD 33”. Same date; “widely recognized” claims recognition rather than holding it; one Tradition source suffices."
+  - "Answers in Genesis (Köstenberger, “Placing the Cross in History”, 2014): “This author concludes that Jesus was most likely crucified on April 3, AD 33.” The author's judgment, hedged; not needed."
+  - "ESV Study Bible (Crossway), “The Date of Jesus’ Crucifixion” on Bible Study Tools: “Jesus was probably crucified on April 3 (Nisan 14) in a.d. 33”; paywalled beyond the closing section; not used."
+  - "Reasons to Believe (Leung, 2024): “the crucifixion probably occurred in AD 33”; April 3 only as a report of Humphreys. Not used."
+  - "The Gospel Coalition (Howard, “When Did Jesus Die?”, 2026): AD 33 but “Friday, March 6, AD 33” (conditional), rejecting April 3; TGC calls itself “a group of pastors and churches in the Reformed tradition”. A different tradition date; not shown (one Tradition source suffices; noted for the second pass)."
+  - "Associates for Biblical Research (Lanser, 2020): crucified “in AD 30”, “ruling out an AD 33 Crucifixion”, conditional on a baptism in AD 27; Lanser 2019 leaves 30 or 33 open. Another ministry's different date; not shown."
