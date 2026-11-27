@@ -10,110 +10,120 @@
 # agent: the first pass (2026-11-26). Two research agents (critical side; tradition side) saved every fetched page into their own scratch folders (cruc-critical, cruc-tradition) and copied quotes only from the saved text; no setting agent (an event). The lead read Britannica “Jesus” in Claude in Chrome (script-blocked): /biography/Jesus and /biography/Jesus/Scribes-and-Pharisees; JSON-LD datePublished 1998-07-20, dateModified 2026-11-20; the lede is p.topic-paragraph, not the hidden AI Q&A block; in-tab document.body.innerText split counts 1 for each cited Britannica sentence; relevant paragraphs saved (cruc-lead/britannica-jesus.txt). Bond 2013 read as the Edinburgh Research Explorer PDF (author's peer-reviewed version; locators by section, not NTS page). Quotes script-matched from the entry file against the saved copies (whitespace, quotes, dashes, entities, NFKC, soft hyphens normalised): 9 hits, 0 misses, each once. Trigger Claims matched by script as substrings of their final Transcript lines at timestamp and speaker: 3 hits.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Display “c. 30 CE” against Bond's “the precise date can no longer be recovered … any time between 29 and 34 CE”: check “c.” is no stronger than the sources together, or narrow (e.g. to Britannica's own range). If the display is cut to nothing, the entry is re-tested, not reshaped. (2) Britannica's lede dates the death; check the “Summary of Jesus’ life” sentence pair ties the execution to that Passover, so the title passes critical-scope. (3) #99: check that Bond's reported 3 April 33 minority is a report, not a Critical Date of hers, and that no cited source gives 33 in its own voice. (4) Ehrman's “Scholars agree” is a consensus word in a source; the note attributes it to his companion summary. Check that is enough, given Bond's reported spread. (5) 109@00:19:41 `states: tradition`: the line rejects the date; check against the E138 / E183 precedents. (6) Got Questions' date: own voice? It names the AD 30 alternative in the next sentence; check that “April 3, 33 CE” as display is no stronger than “narrows down … to”. (7) Bond 2013's manuscript is the author's peer-reviewed version, not the NTS typeset text; check the quotes would read the same (no access to the typeset version expected).
+# Second agent pass, 2026-11-26 (fresh agent; did not build the entry; read none of the first pass's scratch folders or files). Re-fetched into its own scratch folder (cruc-p2): Ehrman summary, Got Questions page and About page, Bond PDF by curl (200 each); Cambridge Core record via doi.org (abstract and citation metadata). Britannica /biography/Jesus and the OUP US catalogue page read in Claude in Chrome in tabs of this pass (closed after). Britannica JSON-LD on this load: datePublished 1998-07-20, dateModified 2026-11-20, author E.P. Sanders (rotates per load; the note keeps “Britannica”).
+# Match counts. Britannica: in-tab document.body.innerText split counts 1/1/1 for the three quotes (the authoritative match; the saved excerpt file was copied from tab output, so a script match against it is circular). Other six: script-matched against the saved copies (whitespace, quotes, dashes, entities, NFKC, soft hyphens normalised): 6 hits, each once; 9 of 9 overall, every locator confirmed. Trigger Claims: script-matched as substrings of the final Transcript lines at timestamp and speaker: 3 of 3, each once; ~2 min either side read.
+# Second pass changed: (a) entry note “possibly 30, when the Roman prefect was Pontius Pilate (ruled 26–36 CE)” → “possibly 30; the Roman prefect during Jesus' public career was Pontius Pilate (ruled 26–36 CE)” (Britannica's own scope). (b) Registry `bond-2013-dating-death` title “‘Dating the Death of Jesus’: Memory …” → “Dating the Death of Jesus: Memory and the Religious Imagination” (Cambridge Core citation_title and the manuscript's own title line; the quote marks came from the repository's citation string). (c) This file: Ehrman edition re-verified on the OUP US catalogue (Fifth Edition, 01 October 2020, ISBN 9780190089528); Bond edition notes the Cambridge Core metadata (59.4, 461–475, 2013/10). No citation cut; no Trigger Claim cut; keys unchanged.
+# Second-pass rulings on the first-pass flags: (1) Display “c. 30 CE” kept: it is the form of Britannica (own voice) and Ehrman's summary (report of agreement); no cited source gives a rival year in its own voice; Bond's 29–34 contains 30 and is a limit on precision (she targets the day 7 April 30), shown in the note, attributed. (2) Pass: “While there he was arrested, tried, and executed” follows the dated Passover sentence; Bond's abstract (critical/7) names the crucifixion. (3) Pass: Bond reports 33 as the “smaller group”'s (and, uncited, “a sizeable minority of largely conservative scholars favour 33”); no cited source gives 33 in its own voice. (4) Pass: “Scholars agree” is the source's own sentence, quoted and attributed; #86 makes reasons required only when a source gives them; Bond herself calls the agreement “truly astounding” (uncited), so the report is not contradicted, only its confidence. (5) Pass: settled by the issue (#232) and the E138/E183 records. (6) Pass: own voice (see tradition/1). (7) Verified a difference: Cambridge Core's published abstract has “7 April 30 CE” where the manuscript has “7th April 30 CE”; the cited URL is the manuscript and the quote matches it; kept; body text of the typeset version not accessible.
+# Flags for the lead: (1) critical/7 quote differs from the typeset NTS abstract (“7 April” vs “7th April”); fine against the cited manuscript URL, but don't relabel the source as the typeset version. (2) The trimmed lede quote “died c. 30 CE” also occurs in Britannica's hidden AI-summary block (“Bethlehem–died c. 30 CE”, en dash); not in innerText (count 1), the locator names the lede. (3) Check the rendered Sources line for Bond after the registry title change (quote marks dropped). (4) 109@00:19:41 rejects the eclipse argument; Got Questions argues from Passover and Luke 3:1, not the eclipse: same date, different argument; the Tradition card shows the date only. (5) Not re-fetched by this pass: the uncited items and the leads (Encyclopaedia Judaica, NCE, Bible Odyssey, Ligonier, AiG, ESV, RTB, TGC, ABR, Chadwick, Humphreys et al.); they back nothing on the page.
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Jesus”, lede (p.topic-paragraph), first sentence: “died c. 30 CE”, trimmed so it carries neither Bethlehem nor Jerusalem. Own-voice approximate date. Backs the display and from. Flags 1, 2.",
+      note: "Britannica “Jesus”, lede (p.topic-paragraph), first sentence: “died c. 30 CE”, trimmed so it carries neither Bethlehem nor Jerusalem. Own-voice approximate date. Backs the display and from. Flags 1, 2. Second pass: re-read in Claude in Chrome (own tab, closed after); lede p.topic-paragraph 1, first sentence; in-tab innerText count 1. Own voice; pass.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Jesus”, “Summary of Jesus’ life”, ¶ 2, sentences 4–5. Own-voice range for the final Passover (29–33 CE, possibly 30), with arrest, trial and execution there. Ties the date to the execution (flag 2); the Gospels are cited only for the triumphal entry. Backs the note's first sentence.",
+      note: "Britannica “Jesus”, “Summary of Jesus’ life”, ¶ 2, sentences 4–5. Own-voice range for the final Passover (29–33 CE, possibly 30), with arrest, trial and execution there. Ties the date to the execution (flag 2); the Gospels are cited only for the triumphal entry. Backs the note's first sentence. Second pass: in-tab count 1; “Summary of Jesus’ life” ¶ 2 (second <p> of the section), sentences 4–5 as located. Own voice; “arrested, tried, and executed” at that Passover ties the date to the execution (flag 2). Pass.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Jesus”, “The political situation”, ¶ 2. Pilate prefect during Jesus' public career, ruled 26–36 CE. Backs the note's Pilate clause (the bound the issue names).",
+      note: "Britannica “Jesus”, “The political situation”, ¶ 2. Pilate prefect during Jesus' public career, ruled 26–36 CE. Backs the note's Pilate clause (the bound the issue names). Second pass: in-tab count 1; “The political situation” ¶ 2, last sentence. Britannica's scope is “During Jesus’ public career”, so the note's “when the Roman prefect was” (tied to the Passover) was narrowed to “the Roman prefect during Jesus' public career was”. Pass as narrowed.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman, OUP Learning Link companion summary of A Brief Introduction to the New Testament 5e, ch. 4, “Oral Traditions behind the Gospels”, ¶ 1, sentence 1. Report of agreement (“Scholars agree”), around 30 CE. Backs the note's Ehrman sentence. Flag 4.",
+      note: "Ehrman, OUP Learning Link companion summary of A Brief Introduction to the New Testament 5e, ch. 4, “Oral Traditions behind the Gospels”, ¶ 1, sentence 1. Report of agreement (“Scholars agree”), around 30 CE. Backs the note's Ehrman sentence. Flag 4. Second pass: re-fetched (curl, 200); count 1 at ¶ 1 sentence 1 under “Oral Traditions behind the Gospels”. Consensus wording is the source's own and quoted; attributed in the note (#80; #86 makes reasons required only when a source gives them). Pass (flag 4).",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Bond 2013 (NTS 59), opening paragraph after the epigraphs. Report: 7 April 30 CE “widely regarded by many modern Jesus scholars”. Backs the note's first Bond clause. Flag 3.",
+      note: "Bond 2013 (NTS 59), opening paragraph after the epigraphs. Report: 7 April 30 CE “widely regarded by many modern Jesus scholars”. Backs the note's first Bond clause. Flag 3. Second pass: re-fetched PDF (200); count 1, first sentence after the five epigraphs, manuscript p. 1. A report, not her date. Pass.",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "Bond 2013, § I, last paragraph, last sentence. Report of the two most popular dates; a smaller group opts for 3 April 33. Backs the note's “with a smaller group favouring 3 April 33”. Flag 3.",
+      note: "Bond 2013, § I, last paragraph, last sentence. Report of the two most popular dates; a smaller group opts for 3 April 33. Backs the note's “with a smaller group favouring 3 April 33”. Flag 3. Second pass: count 1; last sentence of the last § I paragraph (“The most recent calculations …”). Report of the two popular dates; 33 is the “smaller group”'s, not hers (flag 3). Pass.",
     }
   critical/7:
     {
       agent: pass,
       owner: "",
-      note: "Bond 2013, abstract, sentence 1. Own voice: the precise date “can no longer be recovered”. Backs the note's “She argues that the precise date can no longer be recovered”. Flags 1, 7.",
+      note: "Bond 2013, abstract, sentence 1. Own voice: the precise date “can no longer be recovered”. Backs the note's “She argues that the precise date can no longer be recovered”. Flags 1, 7. Second pass: count 1 in the manuscript abstract. Cambridge Core's published abstract (via doi.org, this pass) reads “7 April 30 CE”, not “7th April 30 CE”; the quote matches the cited URL (the manuscript), so kept (flag 7). Carries the word “crucifixion”. Pass.",
     }
   critical/8:
     {
       agent: pass,
       owner: "",
-      note: "Bond 2013, Conclusion, last sentence. Own voice: around the Passover, perhaps a few days before, any time between 29 and 34 CE. Backs the note's last clause. Flag 1.",
+      note: "Bond 2013, Conclusion, last sentence. Own voice: around the Passover, perhaps a few days before, any time between 29 and 34 CE. Backs the note's last clause. Flag 1. Second pass: count 1; Conclusion, last sentence. Unconditional as worded (the § I derivation is conditional on Luke 3.1; uncited). The note reports it attributed, not as the Critical Date. Pass.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "Got Questions, “In what year did Jesus die?”, answer ¶ 4, sentence 2. Own voice: “narrows down the date of the crucifixion to Friday, April 3, AD 33”. Backs display and from. Holder is the registry's existing string. Flag 6.",
+      note: "Got Questions, “In what year did Jesus die?”, answer ¶ 4, sentence 2. Own voice: “narrows down the date of the crucifixion to Friday, April 3, AD 33”. Backs display and from. Holder is the registry's existing string. Flag 6. Second pass: re-fetched (curl, 200; “This page last updated: January 21, 2026”); count 1 at answer ¶ 4 sentence 2. Own voice: “narrows down … to”, “The later date seems more in keeping with the historical record”, and the closing ¶ “what happened in AD 33”. Display no stronger (flag 6). Holder re-checked on the About page (“Christian, evangelical, theologically conservative, and nondenominational”). Pass.",
     }
 triggers:
   48@00:03:49:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Helen Bond (guest): the historical Jesus “walked the Galilean hills in the 30s CE” and “was executed on a Roman cross”. The decade covers ministry and execution; agrees with the display. Script-matched at 00:03:49.270; E48 00:02:01–00:07:43 read.",
+      note: "states: critical. Helen Bond (guest): the historical Jesus “walked the Galilean hills in the 30s CE” and “was executed on a Roman cross”. The decade covers ministry and execution; agrees with the display. Script-matched at 00:03:49.270; E48 00:02:01–00:07:43 read. Second pass: script-matched as a substring of the final Transcript line at 00:03:49.270, Helen Bond, count 1; read 00:01:03–00:06:46. Pass.",
     }
   86@00:39:25:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. McClellan: Josephus born around 37 CE, “a handful of years after Jesus was probably crucified”. Relative, hedged; agrees. Script-matched at 00:39:25.820; E86 00:37:43–00:41:31 read.",
+      note: "states: critical. McClellan: Josephus born around 37 CE, “a handful of years after Jesus was probably crucified”. Relative, hedged; agrees. Script-matched at 00:39:25.820; E86 00:37:43–00:41:31 read. Second pass: script-matched at 00:39:25.820, Dan McClellan, count 1; read 00:37:32–00:41:34 (Who's That on Josephus). Pass.",
     }
   109@00:19:41:
     {
       agent: pass,
       owner: "",
-      note: "states: tradition. McClellan names April 3, 33 CE to reject it (a lunar eclipse does not cause darkness). States the other side's date, as E138 (Exodus) and E183 (Flood) are recorded. Flag 5. Script-matched at 00:19:41.389; E109 00:15:41–00:20:59 and E90 00:23:03–00:31:30 read.",
+      note: "states: tradition. McClellan names April 3, 33 CE to reject it (a lunar eclipse does not cause darkness). States the other side's date, as E138 (Exodus) and E183 (Flood) are recorded. Flag 5. Script-matched at 00:19:41.389; E109 00:15:41–00:20:59 and E90 00:23:03–00:31:30 read. Second pass: script-matched at 00:19:41.389, Dan McClellan, count 1; read 00:17:12–00:21:59. states: tradition settled by the issue (#232: “April 3, 33 CE is stated only to be rejected, so a Tradition Date needs a Tradition source holding it in its own words”) and the E138 00:44:09 / E183 00:07:37 records (flag 5). The line rejects the eclipse argument; Got Questions reaches the date by Passover plus Luke 3:1, not the eclipse (same date, different argument). Pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Worded for the execution; Britannica's summary puts arrest, trial and execution at the dated Passover; Ehrman and the lede date the death. Nothing on the ministry's length, the day of the week or the Passover link (Bond's day argument is narrowed to her year range). Flag 2.",
+      note: "Worded for the execution; Britannica's summary puts arrest, trial and execution at the dated Passover; Ehrman and the lede date the death. Nothing on the ministry's length, the day of the week or the Passover link (Bond's day argument is narrowed to her year range). Flag 2. Second pass: title is the execution; Britannica's summary ties “executed” to the dated Passover, and Bond's abstract (critical/7) names the crucifixion. Pilate clause narrowed to Britannica's “public career” scope. Pass.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "No source read gives a different Critical Date in its own voice. Bond's reported 30 and 33 and her 29–34 range are in the note, attributed. Flag 3.",
+      note: "No source read gives a different Critical Date in its own voice. Bond's reported 30 and 33 and her 29–34 range are in the note, attributed. Flag 3. Second pass: no cited Scholarly or Reference source gives a rival year in its own voice; Bond's 29–34 contains 30 and limits precision; it is in the note, attributed. Display kept (flag 1). Pass.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "Tradition Date shown because 109@00:19:41 states the tradition's date (states: tradition). Flag 5.",
+      note: "Tradition Date shown because 109@00:19:41 states the tradition's date (states: tradition). Flag 5. Second pass: pass (see 109@00:19:41).",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "Holder “Got Questions Ministries, an evangelical ministry”, the registry string from the ministry's own About page (#86). Never “the traditional date”.",
+      note: "Holder “Got Questions Ministries, an evangelical ministry”, the registry string from the ministry's own About page (#86). Never “the traditional date”. Second pass: registry string matches the #86 ruling and the About page. Pass.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "Bond's “if we accept the historicity of Luke 3.1 … between 29 and 34 CE” (§ I) is conditional and uncited; her Conclusion gives the same range unconditionally and is the one cited. Bond's 14 Nisan dates (30 or 33) are reported astronomy, not hers.",
+      note: "Bond's “if we accept the historicity of Luke 3.1 … between 29 and 34 CE” (§ I) is conditional and uncited; her Conclusion gives the same range unconditionally and is the one cited. Bond's 14 Nisan dates (30 or 33) are reported astronomy, not hers. Second pass: pass; agreed.",
     }
 sources:
   britannica-jesus:
@@ -126,13 +136,13 @@ sources:
     {
       agent: pass,
       owner: "",
-      edition: "5th ed., 01 October 2020 (the OUP catalogue record verified for this textbook in the Scholarship reviews, ehrman-brief-5e-ch11-summary)",
+      edition: "5th ed., 01 October 2020, OUP US catalogue (re-read in the browser by the second pass), print ISBN 9780190089528",
     }
   bond-2013-dating-death:
     {
       agent: pass,
       owner: "",
-      edition: "New Testament Studies 59.4 (2013) 461–475; author's peer-reviewed manuscript on Edinburgh Research Explorer",
+      edition: "New Testament Studies 59.4 (2013) 461–475 (Cambridge Core citation metadata, second pass); author's peer-reviewed manuscript on Edinburgh Research Explorer",
     }
   gotquestions-year-jesus-died:
     {

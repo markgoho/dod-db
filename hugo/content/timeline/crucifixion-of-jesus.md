@@ -25,7 +25,7 @@ critical:
   display: "c. 30 CE"
   from: 30
   precision: year
-  note: "Britannica dates Jesus' death to c. 30 CE, and places the Passover at which he was arrested, tried and executed sometime between 29 and 33 CE, possibly 30, when the Roman prefect was Pontius Pilate (ruled 26–36 CE). Ehrman's companion summary says scholars agree that Jesus died around 30 CE. Bond reports 7 April 30 CE as widely regarded by many modern Jesus scholars as the day, with a smaller group favouring 3 April 33. She argues that the precise date can no longer be recovered: the evidence allows only that Jesus died some time around the Passover, perhaps a few days before the feast, any time between 29 and 34 CE."
+  note: "Britannica dates Jesus' death to c. 30 CE, and places the Passover at which he was arrested, tried and executed sometime between 29 and 33 CE, possibly 30; the Roman prefect during Jesus' public career was Pontius Pilate (ruled 26–36 CE). Ehrman's companion summary says scholars agree that Jesus died around 30 CE. Bond reports 7 April 30 CE as widely regarded by many modern Jesus scholars as the day, with a smaller group favouring 3 April 33. She argues that the precise date can no longer be recovered: the evidence allows only that Jesus died some time around the Passover, perhaps a few days before the feast, any time between 29 and 34 CE."
   cites:
     - source: britannica-jesus
       locator: "opening paragraph (the article's lede), first sentence"
