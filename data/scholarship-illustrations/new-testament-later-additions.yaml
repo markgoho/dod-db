@@ -1,0 +1,137 @@
+# Illustrations for /scholarship/new-testament-later-additions/ (generated
+# with Gemini; see src/scripts/generate-scholarship-illustrations.ts). Each
+# picture shows only what the listed statements support; every caption, link
+# and claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Seven comic panels in time order: an ancient scribe copying a Gospel, with a
+# note in the margin; the women fleeing the empty tomb, where the oldest Greek
+# manuscripts end Mark; Jesus writing on the ground before the woman caught
+# in adultery; a Renaissance scholar's desk in Basel with a few manuscripts
+# and a printed two-column Greek and Latin book; the same desk with one
+# handwritten Greek manuscript handed in; translators marking up a printed
+# English Bible in 1611; and, across the bottom, a modern reader's open Bible
+# with one paragraph set in large double brackets. `basel` is the anchor for
+# the desk, chained into `comma`. No real, identifiable person: Erasmus is
+# never drawn, only hands and a desk. No count of manuscripts is asserted:
+# the statements give none.
+slug: new-testament-later-additions
+images:
+  - id: scribe
+    statements: [why-added]
+    aspect: "4:3"
+    alt: "An ancient scribe at a low table copies a Gospel from one scroll onto a fresh sheet, glancing at a short note written in the margin of the scroll he is copying."
+    prompt: >-
+      An ancient scribe in a plain tunic sits cross-legged at a low wooden
+      table in a simple whitewashed room, copying by hand. In front of him
+      lies an open scroll he is copying FROM, and beside it a fresh sheet of
+      papyrus he is copying ONTO, with a reed pen and an ink pot. In the
+      margin of the scroll he is copying from there is a short extra note in
+      tiny scribble marks, set apart from the columns, and the scribe is
+      glancing at that margin note with his pen raised, about to copy it into
+      his new column. All writing is tiny illegible scribble marks. The
+      scribe and the table fill the RIGHT two thirds of the picture. The
+      BOTTOM LEFT quarter of the picture is plain empty floor. The TOP LEFT
+      corner is plain wall. Negative list: no letters, no words, no books,
+      no candles, no other people, no text.
+
+  - id: mark
+    statements: [mark-manuscripts, mark-ending, mark-16-8]
+    aspect: "4:3"
+    alt: "At dawn, three women run from an open rock-cut tomb, its round stone rolled aside, looking back over their shoulders in fear."
+    prompt: >-
+      Dawn outside a rock-cut tomb in a hillside in ancient Judea. The round
+      stone that closed the tomb has been rolled aside and the dark doorway
+      stands open and empty. Three women in plain long robes and head
+      coverings are running away from the tomb toward the RIGHT, clutching
+      their robes, looking back over their shoulders with wide, frightened
+      eyes. The tomb is in the upper LEFT middle of the picture, the women
+      in the RIGHT half. The BOTTOM LEFT quarter of the picture is plain
+      bare rocky ground with nothing in it. The sky is pale with soft amber
+      dawn light. Negative list: no angels, no young man, no Jesus, no
+      halos, no light rays from the tomb, no other people, no text.
+
+  - id: adulteress
+    statements: [adulteress, adulteress-manuscripts, adulteress-origin]
+    aspect: "4:3"
+    alt: "In a temple courtyard, Jesus stoops and writes with his finger on the ground; a woman stands alone, head bowed, as the men who brought her walk away, stones dropped."
+    prompt: >-
+      A sunlit stone courtyard of an ancient temple with tall columns. In
+      the MIDDLE, a man in a plain robe (a generic first-century Jewish
+      teacher, no halo) stoops low and writes with his finger in the dust of
+      the ground; the marks are a few illegible lines in the dust. On the
+      RIGHT stands a woman alone in a plain robe and head covering, head
+      bowed, hands clasped. In the background on the LEFT, a few older men
+      in robes are turning and walking away, and loose stones lie dropped on
+      the paving behind them. The BOTTOM LEFT quarter of the picture is
+      plain empty paving. Negative list: no halo, no blood, no injuries, no
+      thrown stones in the air, no crowd, no letters, no words, no text.
+
+  - id: basel
+    statements: [erasmus]
+    aspect: "4:3"
+    alt: "A Renaissance scholar's desk in a print shop: a few old handwritten manuscripts lie open beside a freshly printed book whose pages have two columns."
+    prompt: >-
+      A sturdy wooden desk in a Renaissance print shop in about 1516, seen
+      from slightly above. Only a scholar's hands in dark sleeves are
+      visible, turning a page; no face, no head, no person shown beyond the
+      hands and forearms. On the desk lie a few old, worn, handwritten
+      manuscript books, bound in leather and open, loosely spread across the
+      LEFT half of the desk, not stacked in a neat row. In the RIGHT half
+      lies a freshly printed large book, open, each page set in two neat
+      columns of tiny illegible grey type marks. A quill and an ink pot. In
+      the background, out of focus, the dark wooden frame of an old printing
+      press. The BOTTOM RIGHT corner of the picture is plain desk wood with
+      nothing on it. Negative list: no faces, no heads, no candles, no
+      letters, no words, no text.
+
+  - id: comma
+    statements: [comma, comma-erasmus]
+    aspect: "4:3"
+    refs: [basel]
+    alt: "The same desk: a second pair of hands sets down one small, newly written Greek manuscript beside the printed two-column book and an open Latin book."
+    prompt: >-
+      The SAME wooden desk in the SAME Renaissance print shop as in the
+      reference image, with the SAME freshly printed two-column book open on
+      the RIGHT. Now a second pair of hands, in a lighter sleeve, reaches in
+      from the TOP LEFT and sets down on the desk one small, clean,
+      newly written handwritten manuscript book, open, its pages bright and
+      new, not old and worn. Beside it lies a different old book open, with
+      large decorated initial capitals in rust red (a Latin Bible). The
+      scholar's dark-sleeved hands rest on the printed book. No faces, no
+      heads, no person beyond hands and forearms. The BOTTOM LEFT corner of
+      the picture is plain desk wood with nothing on it. Negative list: no
+      faces, no heads, no candles, no readable letters, no words, no text.
+
+  - id: kjv
+    statements: [kjv-text, revised-version]
+    aspect: "4:3"
+    alt: "Translators in early seventeenth-century dress sit around a long table, pens in hand, marking changes in the margins of a large printed English Bible."
+    prompt: >-
+      Early seventeenth-century England, about 1611. Four translators in
+      plain black scholars' gowns and white ruffs, generic faces, sit around
+      a long oak table in a wood-panelled room. In the middle of the table
+      lies one large printed Bible, open, and the men lean over it with quill
+      pens, marking small changes in its wide margins; more open books lie
+      near them. All type and writing is tiny illegible grey marks. The
+      group fills the TOP two thirds and the RIGHT side. The BOTTOM LEFT
+      quarter of the picture is plain floorboards and the table's edge with
+      nothing on it. Negative list: no crowns, no king, no portraits on the
+      walls, no letters, no words, no text.
+
+  - id: today
+    statements: [added-verses, revised-version]
+    aspect: "16:9"
+    alt: "Today: a reader at a kitchen table looks at an open modern Bible in which one paragraph is set off inside large double square brackets."
+    prompt: >-
+      Present day. A wide view of a reader, a woman in a sweater, sitting at
+      a plain kitchen table with a mug of tea, looking with curiosity at a
+      large open modern printed Bible lying in the MIDDLE of the picture,
+      drawn big and clear. Each page has two columns of tiny illegible grey
+      type marks; on the RIGHT page, one paragraph is set off inside a pair
+      of LARGE bold black double square brackets, [[ at its start and ]] at
+      its end, and under it a thin rule with a few lines of smaller
+      footnote marks at the foot of the page. The reader sits on the RIGHT
+      side. The BOTTOM LEFT quarter of the picture is plain table top with
+      nothing on it. Negative list: no letters, no words, no numbers, no
+      phone, no laptop, no other people, no text other than the two double
+      square brackets.

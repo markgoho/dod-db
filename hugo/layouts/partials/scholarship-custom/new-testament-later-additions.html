@@ -1,0 +1,139 @@
+{{- /*
+  Custom block for /scholarship/new-testament-later-additions/: a seven-panel
+  comic page in time order. A scribe copies a Gospel, a margin note about to
+  enter the text; the women flee the empty tomb, where the oldest Greek
+  manuscripts end Mark; Jesus writes on the ground before the woman caught in
+  adultery, a story added to John; Erasmus's desk in 1516 with a few late
+  manuscripts (hands only, never a portrait); the same desk in 1522 as a newly
+  written manuscript brings in 1 John 5:7–8; the 1611 translators; and, across
+  the bottom, a modern Bible with a passage in double brackets.
+
+  A view of the page's reviewed statements `why-added` (short; Holmes's
+  Matt 18:11 and John 5:3b–4), `mark-manuscripts` and `mark-ending` (shorts),
+  `adulteress` (short, the core), `erasmus` (short; Rev 22:16c–21 from
+  McDonald), `comma-erasmus` (short), `added-verses` (cite 1 for the KJV's
+  Greek text; short and the NABRE note for Matt 17:21) and `revised-version`
+  (1881); it makes no claim they don't. No count is drawn: the page's only
+  count ("about 16") is Holmes's alone and stays in the answers below.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/new-testament-later-additions.yaml. Reword a
+  plate only when the statement it comes from is re-reviewed.
+  */
+-}}
+{{- define "partials/inline/ntx-ref.html" -}}
+  <a
+    class="ntx-comic__ref"
+    href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .ref) | safeURL }}"
+    rel="noopener"
+    >{{ replace .label " " "&nbsp;" | safeHTML }}</a
+  >
+{{- end -}}
+{{- $panels := slice
+  (dict
+  "id" "scribe" "box" "Copied by hand"
+  "alt" "An ancient scribe at a low table copies a Gospel from a scroll onto a fresh sheet, pen raised over a note in the scroll's margin."
+  "plates" (slice
+  (dict "pos" "bl" "big" "Verses added" "sub" "a parallel from another Gospel, or a note from the margin, copied into the text" "refs" (slice (dict "ref" "Matthew 18:11" "label" "Matt 18:11") (dict "ref" "John 5:4" "label" "John 5:4")))))
+  (dict
+  "id" "mark" "box" "Where does Mark end?"
+  "alt" "At dawn, three women run from an open rock-cut tomb, its round stone rolled aside, looking back in fear."
+  "plates" (slice
+  (dict "pos" "bl" "big" "At 16:8" "sub" "in the oldest Greek manuscripts; most scholars say the rest was added later" "refs" (slice (dict "ref" "Mark 16:8" "label" "Mark 16:8") (dict "ref" "Mark 16:9-20" "label" "Mark 16:9–20")))))
+  (dict
+  "id" "adulteress" "box" "The woman caught in adultery"
+  "alt" "In a temple courtyard, Jesus stoops and writes on the ground; a woman stands alone, head bowed, as the men who brought her walk away, stones dropped."
+  "plates" (slice
+  (dict "pos" "bl" "big" "Added to John" "sub" "missing from the earliest manuscripts, most scholars say" "refs" (slice (dict "ref" "John 7:53-8:11" "label" "John 7:53–8:11")))))
+  (dict
+  "id" "basel" "box" "Erasmus, 1516"
+  "alt" "A scholar's hands at a print-shop desk: a few old handwritten manuscripts lie open beside a freshly printed two-column book; a printing press stands behind."
+  "plates" (slice
+  (dict "pos" "br" "big" "A few late manuscripts" "sub" "those used most from the 12th century; Revelation’s last verses translated back from Latin" "refs" (slice (dict "ref" "Revelation 22:16-21" "label" "Rev 22:16–21")))))
+  (dict
+  "id" "comma" "box" "1 John 5:7–8, in 1522"
+  "alt" "The same desk: a second pair of hands sets down one small, newly written manuscript beside an old Latin Bible and the printed book."
+  "plates" (slice
+  (dict "pos" "bl" "big" "Added in 1522" "sub" "from a Greek manuscript whose words were translated from the Latin" "refs" (slice (dict "ref" "1 John 5:7-8" "label" "1 John 5:7–8")))))
+  (dict
+  "id" "kjv" "box" "1611"
+  "alt" "Translators in black gowns and white ruffs sit around a long table, quills in hand, marking changes in the margins of a large printed Bible."
+  "plates" (slice
+  (dict "pos" "bl" "big" "The King James Version" "sub" "translated a Greek text that included the added verses")))
+  (dict
+  "id" "today" "box" "Since 1881" "wide" true
+  "alt" "Today: a reader at a table looks at an open modern Bible in which one paragraph is set off inside large double square brackets."
+  "plates" (slice
+  (dict "pos" "bl" "big" "Left out or bracketed" "sub" "modern translations drop the added verses or set them in brackets or footnotes" "refs" (slice (dict "ref" "Matthew 17:21" "label" "Matt 17:21")))))
+-}}
+<section class="cloud-section ntx-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="ntx-comic__page">
+    <header class="ntx-comic__head">
+      <p class="ntx-comic__kicker">Later additions · most scholars say</p>
+      <p class="ntx-comic__title">Not in the earliest manuscripts</p>
+    </header>
+    <ol class="ntx-comic__strip">
+      {{- range $panels }}
+        <li
+          class="ntx-comic__frame ntx-comic__frame--{{ .id }}{{ if .wide }}
+            ntx-comic__frame--wide
+          {{ end }}"
+          {{ if not (in (slice "mark" "adulteress") .id) }}
+            data-card-hide
+          {{ end }}>
+          <figure class="ntx-comic__figure">
+            {{- $alt := .alt }}
+            <div class="ntx-comic__art">
+              {{- with resources.Get (printf "scholarship-art/new-testament-later-additions/%s.png" .id) }}
+                {{- $webp := .Process "resize 1200x webp q78" }}
+                <img
+                  src="{{ $webp.RelPermalink }}"
+                  width="{{ $webp.Width }}"
+                  height="{{ $webp.Height }}"
+                  alt="{{ $alt }}"
+                  loading="eager" />
+              {{- end }}
+            </div>
+            <h3 class="ntx-comic__box">{{ .box }}</h3>
+            <figcaption>
+              {{- range .plates }}
+                <p class="comic-plate comic-plate--{{ .pos }}">
+                  <span class="comic-plate__big">{{ .big }}</span>
+                  {{- if or .sub .refs }}
+                    <span class="comic-plate__sub">
+                      {{ .sub }}
+                      {{- range .refs }}
+                        {{ partial "inline/ntx-ref.html" . -}}
+                      {{- end }}
+                    </span>
+                  {{- end }}
+                </p>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="ntx-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
+  </div>
+  <p class="ntx-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#why-added">why scribes added verses</a>,
+    <a href="#mark-manuscripts">which manuscripts end Mark at 16:8</a>,
+    <a href="#mark-ending">who wrote Mark 16:9–20</a>,
+    <a href="#adulteress">the woman caught in adultery</a>,
+    <a href="#erasmus">Erasmus’s Greek New Testament</a>,
+    <a href="#comma-erasmus">how the Johannine comma got into it</a>,
+    <a href="#added-verses">the verses modern translations leave out</a> and
+    <a href="#revised-version">the Revised Version of 1881</a>.
+  </p>
+</section>

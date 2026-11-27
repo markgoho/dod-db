@@ -1,0 +1,284 @@
+/*
+  Custom block for The New Testament Text Scholarship Page: a comic page. One
+  ink frame holds the title, seven panels and the credit, so the whole thing
+  shares as one image. The last panel spans the row as a wide strip. A
+  narration label sits flush top-left; the answers are plates set on the art
+  in corners the picture leaves clear. Composes cloud-section,
+  type-section-title, scholarship-meta and the shared comic-plate.
+
+  Distinctions without colour: time order runs panel to panel; the 1516 and
+  1522 desks are the same desk, the second with a new manuscript handed in.
+*/
+.ntx-comic {
+  --ntx-ink: var(--tan-900);
+  --ntx-paper: var(--tan-000);
+  --ntx-amber: var(--color-accent);
+  --ntx-frame: var(--border-width-md);
+
+  container: ntx-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.ntx-comic__page {
+  background: var(--ntx-paper);
+  border: var(--ntx-frame) solid var(--ntx-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--ntx-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.ntx-comic__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.ntx-comic__head > p {
+  margin: 0;
+}
+
+.ntx-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.ntx-comic__title {
+  color: var(--ntx-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-3);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  text-shadow: 3px 3px 0 var(--ntx-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.ntx-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ntx-comic__frame {
+  display: grid;
+  min-inline-size: 0;
+}
+
+/* A panel: one ink frame around the art; its labels sit on the art as shared comic plates (scholarship.css). */
+.ntx-comic__figure {
+  border: var(--ntx-frame) solid var(--ntx-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.ntx-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.ntx-comic__art > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.06;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.ntx-comic__box {
+  background: var(--ntx-amber);
+  border-block-end: var(--ntx-frame) solid var(--ntx-ink);
+  border-inline-end: var(--ntx-frame) solid var(--ntx-ink);
+  font-family: var(--font-family-display);
+  /* Scales down with a narrow panel, so the label stays one line. */
+  font-size: min(var(--step--1), 4.4cqi);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.comic-plate__sub > .ntx-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates, linked to BibleGateway. */
+.ntx-comic__ref {
+  background: var(--ntx-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--ntx-amber);
+  white-space: nowrap;
+}
+
+.comic-plate__sub:has(> .ntx-comic__ref:only-child) > .ntx-comic__ref {
+  margin-inline-start: 0;
+}
+
+.ntx-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.ntx-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* At phone width the wide panel is an ordinary panel, a little shorter. */
+.ntx-comic__frame--wide .ntx-comic__art {
+  aspect-ratio: 16 / 9;
+}
+
+/* Wide: two panels to a row, the last across the bottom. Literal length: container conditions cannot read custom properties. */
+@container ntx-comic (width >= 40rem) {
+  .ntx-comic__page {
+    padding: var(--space-m);
+  }
+
+  .ntx-comic__title {
+    font-size: var(--step-4);
+  }
+
+  .ntx-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ntx-comic__frame--wide {
+    grid-column: 1 / -1;
+  }
+
+  .ntx-comic__frame--wide .ntx-comic__art {
+    aspect-ratio: 8 / 3;
+  }
+
+  /* The wide panel is twice as wide a container: halve the plates' cqi type so they match the other panels. */
+  .ntx-comic__frame--wide .comic-plate {
+    max-inline-size: 30%;
+    padding: 0.45cqi 0.7cqi 0.55cqi;
+  }
+
+  .ntx-comic__frame--wide .comic-plate__big {
+    font-size: clamp(0.95rem, 2.7cqi, 2.1rem);
+  }
+
+  .ntx-comic__frame--wide .comic-plate__sub {
+    font-size: clamp(0.65rem, 1.25cqi, 0.95rem);
+  }
+
+  .ntx-comic__frame--wide .comic-plate--bl {
+    inset: auto auto 1cqi 1cqi;
+  }
+
+  .ntx-comic__frame--wide .ntx-comic__box {
+    font-size: min(var(--step--1), 2.2cqi);
+  }
+}
+
+/* The poster: three shorter (4:3) panels to a row and a 3:1 strip across the bottom, on the 4:5 canvas. */
+
+.scholarship-share:target .ntx-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .ntx-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:target .ntx-comic__title {
+  font-size: var(--step-2);
+}
+
+.scholarship-share:target .ntx-comic__strip {
+  gap: var(--space-2xs);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.scholarship-share:target .ntx-comic__frame--wide {
+  grid-column: 1 / -1;
+}
+
+/* Three to a row makes each panel narrow: smaller plates. */
+.scholarship-share:target
+  .ntx-comic__frame:not(.ntx-comic__frame--wide)
+  .comic-plate {
+  max-inline-size: 48%;
+  padding: 0.6cqi 1cqi 0.8cqi;
+}
+
+.scholarship-share:target
+  .ntx-comic__frame:not(.ntx-comic__frame--wide)
+  .comic-plate__big {
+  font-size: 4.8cqi;
+}
+
+.scholarship-share:target
+  .ntx-comic__frame:not(.ntx-comic__frame--wide)
+  .comic-plate__sub {
+  font-size: 3.2cqi;
+}
+
+.scholarship-share:target .ntx-comic__frame--wide .ntx-comic__art {
+  aspect-ratio: 3 / 1;
+}
+
+.scholarship-share:target .ntx-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.scholarship-share:target .ntx-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
+}
+
+/* The card: Sheol and the divided underworld, side by side under the title. */
+
+.scholarship-share:has(#share-card:target) .ntx-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .ntx-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:has(#share-card:target) .ntx-comic__kicker {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .ntx-comic__title {
+  font-size: var(--step-2);
+}
+
+.scholarship-share:has(#share-card:target) .ntx-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
