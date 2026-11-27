@@ -8,105 +8,114 @@
 # agent: the first pass (2026-11-26, lead agent). Two research agents (critical; tradition) each fetched pages by curl into their own scratch folders (bc-critical, bc-tradition) and quotes were copied from that saved text; Britannica read by the lead in Claude in Chrome (refuses scripts) and the Top Questions box saved verbatim from the DOM text (bc-lead). One script matched every quote against its saved text (whitespace, quotes, dashes and HTML entities normalised): 9/9 hits, 0 misses, each occurring once; both Trigger Claims matched as substrings of their Transcript lines at timestamp and speaker: 2/2.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Britannica's answer is in a collapsed Top Questions box: get_page_text returns another article (the Dead Sea Scrolls); read document.body.textContent. Byline "Britannica Editors", last updated 19 November 2026. (2) Display "From perhaps the 10th century BCE, or the 8th or 7th, to the 2nd century CE": the "perhaps" scopes Britannica's start; the split is Breed's attributed "many scholars now claim"; check the display reads no stronger than either. (3) from -1000 / to 200 are the century bounds of "10th century BCE" and "2nd century CE", not years a source gives. (4) Hayes's "the Bible" in lecture 1 is the Hebrew Bible (an Old Testament course; "the last book within the Hebrew Bible"); the note says "the Hebrew Bible's writings". (5) Breed's span quote says "wrote and edited", so the note says "the writing and editing"; cut if it reads as a composition span. (6) Got Questions' end year is 90, the Trigger Claim's 100: shown as the source has it. (7) Neufeld's Bible Odyssey date: page metadata 2022-12-14 looks like a site-migration stamp; registry year stays null as for Breed.
+# Independent second agent pass 2026-11-26 (#93 delegation, #110): a fresh agent that did not build the entry, working from its own scratch folder only (bc-p2). Re-fetched by curl (browser UA): oyc.yale.edu rlst-145/lecture-1 and rlst-152/lecture-1; bibleodyssey.org how-was-the-bible-written-and-transmitted and in-what-ways-is-the-new-testament-a-religious-text; learninglink.oup.com ehrman_briefnt5e chapter-1-summary; gotquestions.org how-old-is-the-Bible.html and about.html. HTML tags stripped, entities decoded. Britannica read in a new Claude in Chrome tab, document.body.textContent; passage saved; then in-page counts of both quotes (each twice: the rendered Top Questions box once, the FAQ JSON-LD once). Quotes re-matched by one script (NFKC, whitespace, curly quotes, dashes normalised): 9/9, each once in its saved text, each at its locator (chapter headings and paragraph positions checked). Trigger Claims re-matched by script as substrings of the line at that timestamp and speaker: 2/2; read 00:12:48–00:23:10.
+# Second pass changed (entry note only; title, display, from/to, tradition display and holder unchanged; no citation or Trigger Claim cut): (a) “Breed says many scholars now date the earliest biblical texts to the 8th or even 7th century BCE” became “Breed says many scholars now claim the earliest biblical texts were written down in the 8th or even 7th century BCE” (Breed's verb). (b) “Ehrman's summary and Neufeld date the New Testament's books between about 50 and 120 CE” became “Ehrman's summary dates the New Testament's books between 50 CE and 120 CE, Neufeld between approximately 50 and 120” (each source's own hedge). (c) “…, and that the exact dates of composition are unrecoverable” became “…, and adds that the exact dates of composition are unrecoverable” (Breed's own sentence, not the many scholars'). (d) “Breed puts the writing and editing of both testaments at over a thousand years.” became “Breed says the writing and editing of the books of both testaments extended over a thousand-year period.” (“over a … period” is across, not more than).
+# Second-pass rulings on the first pass's flags: (1) Confirmed: byline and Nov. 19, 2026 update; the passage is in DOM text and FAQ JSON-LD. (2) Accepted: the display reads no stronger than either source; “perhaps” is Britannica's and the “or the 8th or 7th” alternative is Breed's attributed claim. (3) Accepted: same century-bound convention as `hebrew-writing`, `job`, `aramaic-script`; `to` is not rendered (check-timeline.ts). (4) Accepted: Hayes's course and “the last book within the Hebrew Bible” make it the Hebrew Bible. (5) Kept, reworded (change c): Breed's sentence covers both testaments' writing and editing, which is what the note now says. (6) Accepted (#80: the entry follows the source). (7) Confirmed: Neufeld died 2015 and Breed's page carries the same 2022-12-14 publish stamp, so it is a migration stamp; year null right.
+# Flags for the lead: (1) Britannica is Reference by precedent only (all Britannica registry entries; no explicit ruling on encyclopedias in #80/#86), and both its cites are the unsigned Top Questions box, not the article body. If ruled out: the start rests on Hayes (approximately 1000 BCE) and Breed (8th or 7th), the end on Ehrman, Neufeld and Martin (50 to 120 or 150), and the display's “perhaps” and “2nd century CE”, Britannica's words, need rewording. (2) Stored span is 1000 BCE–200 CE by century bounds; no named scholar's end goes past 150 (Martin), and Britannica's “2nd century” is the only source for the 200 bound. Fine while `to` is unrendered; revisit if the scale returns. (3) Ehrman 5th ed. year 2020 not re-confirmed from an OUP catalogue (pre-existing registry entry; #86 asks for it; univocality's scholarship review cites an earlier “OUP catalogue check recorded for this textbook”). (4) Got Questions ¶¶ 3–4 narrow its own dates to 1450–1400 BC and AD 90–95; display keeps ¶ 1's “around 1400 BC … around AD 90”. (5) Breed's ¶ 3 gives the traditional mid- to late second-millennium date (circa 1500–1200 B.C.E.) as what Christians and Jews traditionally held: a Reference source reporting tradition, not a Tradition source; correctly unused for the tradition lane.
 review:
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Bible”, Top Questions “When was the Bible written?”, first sentence. Read in Chrome 2026-11-26, saved from DOM text; matched once. Backs the display's start “perhaps the 10th century BCE”; hedge kept.",
+      note: "Britannica “Bible”, Top Questions “When was the Bible written?”, first sentence. Read in Chrome 2026-11-26, saved from DOM text; matched once. Backs the display's start “perhaps the 10th century BCE”; hedge kept. Second pass 2026-11-26: re-read in my own Chrome tab, document.body.textContent; quote found twice, once in the rendered Top Questions box (“When was the Bible written?” then this sentence, count 1) and once in the page's FAQ JSON-LD (same text); first sentence of the answer, locator confirmed. Supports “perhaps the 10th century BCE” at the hedge given. Kept.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Same answer, last sentence. Matched once. Backs the display's end “to the 2nd century CE”. The sentences between (Torah redaction and canonization; “The entire Hebrew Bible was complete by about 100 CE”) are canon, not composition; uncited.",
+      note: "Same answer, last sentence. Matched once. Backs the display's end “to the 2nd century CE”. The sentences between (Torah redaction and canonization; “The entire Hebrew Bible was complete by about 100 CE”) are canon, not composition; uncited. Second pass 2026-11-26: same tab; found twice (box and JSON-LD), last sentence of the answer, preceded by “The entire Hebrew Bible was complete by about 100 CE.”. Supports the display's end. Kept; the canon sentences stay uncited.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l1 ch. 3 [00:29:33]. Matched once. Backs the note's “from approximately 1000 BCE, noting very diverse opinions”; the Hebrew Bible only. Next sentence (older traditions “may even date back”) not used.",
+      note: "Hayes l1 ch. 3 [00:29:33]. Matched once. Backs the note's “from approximately 1000 BCE, noting very diverse opinions”; the Hebrew Bible only. Next sentence (older traditions “may even date back”) not used. Second pass 2026-11-26: re-fetched oyc.yale.edu rlst-145/lecture-1; matched once under “Chapter 3. An Overview of the Structure of the Bible [00:29:33]” (ch. 4 starts [00:40:17]). Kept.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Breed, Bible Odyssey, ¶ 3. Matched once. Backs the #99 split in the display (“or the 8th or 7th”) and the note's “many scholars now date … and that the exact dates of composition are unrecoverable”. Attributed to “many scholars”, as Breed says.",
+      note: "Breed, Bible Odyssey, ¶ 3. Matched once. Backs the #99 split in the display (“or the 8th or 7th”) and the note's “many scholars now date … and that the exact dates of composition are unrecoverable”. Attributed to “many scholars”, as Breed says. Second pass 2026-11-26: re-fetched; matched once in body ¶ 3 (¶ 3 also gives the traditional mid- to late second millennium date, unused). Note narrowed from “many scholars now date the earliest biblical texts to the 8th or even 7th century BCE” to “many scholars now claim the earliest biblical texts were written down in …”, Breed's verb; “and that the exact dates … are unrecoverable” became “and adds that …”, so it reads as Breed's own sentence, not the scholars'. Kept.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 1 OUP summary (5th ed., 2020), “The New Testament in a Nutshell”. Matched once. Backs the note's 50–120 CE for the New Testament's books.",
+      note: "Ehrman ch. 1 OUP summary (5th ed., 2020), “The New Testament in a Nutshell”. Matched once. Backs the note's 50–120 CE for the New Testament's books. Second pass 2026-11-26: re-fetched; matched once, first sentence under “The New Testament in a Nutshell”. Unhedged “between 50 CE and 120 CE”; the note now gives it without “about”. Kept.",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "Neufeld, Bible Odyssey. Matched once. Backs the same 50–120 (“approximately”); second author for it.",
+      note: "Neufeld, Bible Odyssey. Matched once. Backs the same 50–120 (“approximately”); second author for it. Second pass 2026-11-26: re-fetched; matched once in the ¶ beginning “The collection of 27 books”. Byline confirms Neufeld (1949–2015), UBC. Kept; the note now carries his “approximately” as his.",
     }
   critical/7:
     {
       agent: pass,
       owner: "",
-      note: "Martin l1 ch. 2 [00:13:23]. Matched once. Backs the note's “Martin says probably 50 to 150”; hedge kept.",
+      note: "Martin l1 ch. 2 [00:13:23]. Matched once. Backs the note's “Martin says probably 50 to 150”; hedge kept. Second pass 2026-11-26: re-fetched oyc.yale.edu rlst-152/lecture-1; matched once under “Chapter 2. The Bible As A Historical Text [00:13:23]” (ch. 3 starts [00:24:17]). Kept.",
     }
   critical/8:
     {
       agent: pass,
       owner: "",
-      note: "Breed, ¶ 3, first sentence. Matched once. Backs the note's last sentence; “wrote and edited” kept as “writing and editing” (flag 5). No endpoints, so it places nothing.",
+      note: "Breed, ¶ 3, first sentence. Matched once. Backs the note's last sentence; “wrote and edited” kept as “writing and editing” (flag 5). No endpoints, so it places nothing. Second pass 2026-11-26: re-fetched; matched once, ¶ 3 first sentence. “Extended over a thousand-year period” is a span across a thousand years, not “more than”: note narrowed from “Breed puts the writing and editing of both testaments at over a thousand years.” to “Breed says the writing and editing of the books of both testaments extended over a thousand-year period.”. Kept.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "Got Questions “How old is the Bible?”, answer ¶ 1. Matched once. Backs display “Around 1400 BCE to around 90 CE”, from -1400 / to 90. Ministry self-description (gotquestions.org/about.html): “We are Christian, evangelical, theologically conservative, and nondenominational.” Holder is the registry string already used for Got Questions.",
+      note: "Got Questions “How old is the Bible?”, answer ¶ 1. Matched once. Backs display “Around 1400 BCE to around 90 CE”, from -1400 / to 90. Ministry self-description (gotquestions.org/about.html): “We are Christian, evangelical, theologically conservative, and nondenominational.” Holder is the registry string already used for Got Questions. Second pass 2026-11-26: re-fetched gotquestions.org/how-old-is-the-Bible.html (page last updated January 21 [2026]); matched once, answer ¶ 1. About page re-fetched: “Christian, evangelical, theologically conservative” confirmed. Display and from/to agree (BC/AD rendered BCE/CE). ¶¶ 3–4 give sharper ranges (authorship 1450–1400 BC; Revelation AD 90–95, both as “most conservative Bible scholars believe”), inside ¶ 1's “around”; display unchanged. Kept.",
     }
 triggers:
   175@00:20:26:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the [00:20:26.730] Dan McClellan line, starting after “Job was, was definitely not the, the oldest texts of the Hebrew Bible. One of, one of the more recent.” Keeps his condition (“this is assuming … go back to 1000 BCE”). Next turn (00:21:29): “absolute max is 1200 years … Probably closer to 1100”, consistent. Read 00:18:26–00:23:10.",
+      note: "states: critical. Substring of the [00:20:26.730] Dan McClellan line, starting after “Job was, was definitely not the, the oldest texts of the Hebrew Bible. One of, one of the more recent.” Keeps his condition (“this is assuming … go back to 1000 BCE”). Next turn (00:21:29): “absolute max is 1200 years … Probably closer to 1100”, consistent. Read 00:18:26–00:23:10. Second pass 2026-11-26: re-matched by script as a substring of the [00:20:26.730] Dan McClellan line; read 00:18:26–00:23:10. states: critical right (his chronological window, with his own “this is assuming” condition). Kept.",
     }
   175@00:15:14:
     {
       agent: pass,
       owner: "",
-      note: "states: tradition. First sentence of the [00:15:14.180] Dan McClellan line, McClellan stating what apologists (Wes Huff, named in Beecher's question at 00:14:49) hold. The rest of the turn (Huff on the New Testament completed by the end of the first century; the early-Exodus 1560-ish) is #230's and `exodus`'s, not stored.",
+      note: "states: tradition. First sentence of the [00:15:14.180] Dan McClellan line, McClellan stating what apologists (Wes Huff, named in Beecher's question at 00:14:49) hold. The rest of the turn (Huff on the New Testament completed by the end of the first century; the early-Exodus 1560-ish) is #230's and `exodus`'s, not stored. Second pass 2026-11-26: re-matched by script as a substring of the [00:15:14.180] Dan McClellan line; read 00:12:48–00:17:06. He reports what “they” (Wes Huff, named at 00:14:49) think: states: tradition right. Kept.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Worded for what the sources date: the composition of the Bible's texts, earliest to latest. No “complete”, no canon, no 2 Peter, no author count.",
+      note: "Worded for what the sources date: the composition of the Bible's texts, earliest to latest. No “complete”, no canon, no 2 Peter, no author count. Second pass 2026-11-26: confirmed; title and display date composition only.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Start: Britannica (perhaps 10th c.) and Hayes (approximately 1000 BCE) against Breed's many scholars (8th or even 7th c.): both in the display, attributed in the note. End: 120 (Ehrman summary, Neufeld) against 150 (Martin, probably): in the note; the display's “2nd century CE” is Britannica's and covers both.",
+      note: "Start: Britannica (perhaps 10th c.) and Hayes (approximately 1000 BCE) against Breed's many scholars (8th or even 7th c.): both in the display, attributed in the note. End: 120 (Ehrman summary, Neufeld) against 150 (Martin, probably): in the note; the display's “2nd century CE” is Britannica's and covers both. Second pass 2026-11-26: confirmed; both starts in the display, the end split attributed in the note (#99).",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "Trigger 175@00:15:14 has states: tradition.",
+      note: "Trigger 175@00:15:14 has states: tradition. Second pass 2026-11-26: confirmed.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "Holder “Got Questions Ministries, an evangelical ministry”, the ministry's own “evangelical”; never “the traditional view”.",
+      note: "Holder “Got Questions Ministries, an evangelical ministry”, the ministry's own “evangelical”; never “the traditional view”. Second pass 2026-11-26: confirmed against the about page.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date used. Britannica's “perhaps” is a hedge, kept in the display. The Trigger Claim's “this is assuming” condition is the show's, not a source's.",
+      note: "No conditional date used. Britannica's “perhaps” is a hedge, kept in the display. The Trigger Claim's “this is assuming” condition is the show's, not a source's. Second pass 2026-11-26: confirmed; “perhaps” and “probably” are hedges, kept.",
     }
 sources:
   britannica-bible:
@@ -114,48 +123,48 @@ sources:
       agent: pass,
       owner: "",
       edition: "Online, Britannica Editors, last updated 19 November 2026",
-      note: "Reference (encyclopedia, #80). Unsigned editors' article; inside the 30-year window.",
+      note: "Reference (encyclopedia, #80). Unsigned editors' article; inside the 30-year window. Second pass 2026-11-26: byline “Written and fact-checked by Britannica Editors”, “Last updated Nov. 19, 2026” confirmed in my tab. Class Reference by precedent, not by an explicit #80/#86 ruling (#80 lists study Bibles, dictionaries, textbooks; no encyclopedia ruling found in #80, #86, #110): every Britannica registry entry is Reference (britannica-josiah, -temple-of-jerusalem, -biblical-canon, -revelation-to-john, used on published entries such as `christian-canon`). Both cites rest on the unsigned Top Questions box only (each sentence found twice: box and FAQ JSON-LD, not the article body). Lead flag 1.",
     }
   hayes-rlst145-l1:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale Courses, RLST 145, Fall 2006",
-      note: "Reference (university lecture transcript, #86). Inside the window.",
+      note: "Reference (university lecture transcript, #86). Inside the window. Second pass 2026-11-26: confirmed; introductory course, university-hosted transcript (#86).",
     }
   breed-bo-written-transmitted:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey article (page metadata 2022-12-14, modified 2024-01-16)",
-      note: "Reference (Bible Odyssey, judged per author, #86): Brennan Breed, Columbia Theological Seminary. Already in the registry.",
+      note: "Reference (Bible Odyssey, judged per author, #86): Brennan Breed, Columbia Theological Seminary. Already in the registry. Second pass 2026-11-26: re-fetched: datePublished 2022-12-14, dateModified 2024-01-16, the same publish stamp as Neufeld's (who died 2015), so a migration stamp; year null right. Columbia Theological Seminary byline confirmed. Reference.",
     }
   ehrman-brief-5e-ch1-summary:
     {
       agent: pass,
       owner: "",
       edition: "5th ed. (2020), OUP Learning Link companion summary",
-      note: "Reference (publisher chapter summary, #86), cited as the summary, not the textbook.",
+      note: "Reference (publisher chapter summary, #86), cited as the summary, not the textbook. Second pass 2026-11-26: confirmed as the companion summary; page footer shows only the site copyright (2026), so 2020 was not re-confirmed from a catalogue; registry entry pre-existing.",
     }
   neufeld-bo-nt-religious-text:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey article",
-      note: "Reference (Bible Odyssey, per author): Dietmar Neufeld, University of British Columbia. Already in the registry.",
+      note: "Reference (Bible Odyssey, per author): Dietmar Neufeld, University of British Columbia. Already in the registry. Second pass 2026-11-26: re-fetched: byline Neufeld (1949–2015), UBC; datePublished 2022-12-14 is a site-migration stamp (answers flag 7); written before 2015 and after Bible Odyssey's launch, inside the window.",
     }
   martin-rlst152-l1:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale Courses, RLST 152, Spring 2009",
-      note: "Reference (university lecture transcript, #86). Inside the window.",
+      note: "Reference (university lecture transcript, #86). Inside the window. Second pass 2026-11-26: confirmed; introductory course, university-hosted transcript.",
     }
   gotquestions-how-old-is-the-bible:
     {
       agent: pass,
       owner: "",
-      note: "Tradition (#86: Got Questions). Supports only what the ministry holds.",
+      note: "Tradition (#86: Got Questions). Supports only what the ministry holds. Second pass 2026-11-26: confirmed Tradition (#86); supports only what the ministry holds.",
     }
 leads:
   - "Britannica “Second Letter of Peter” and “Song of Deborah” (britannica.com/topic/…): URLs not verified, not read."

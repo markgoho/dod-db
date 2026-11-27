@@ -23,7 +23,7 @@ critical:
   from: -1000
   to: 200
   precision: century
-  note: "Britannica's editors say parts of the Hebrew Bible were written perhaps in the 10th century BCE and the books of the New Testament in the 1st and 2nd centuries CE. The sources differ on the early end: Hayes dates the Hebrew Bible's writings from approximately 1000 BCE, noting very diverse opinions on how far back they go; Breed says many scholars now date the earliest biblical texts to the 8th or even 7th century BCE, and that the exact dates of composition are unrecoverable. On the late end, Ehrman's summary and Neufeld date the New Testament's books between about 50 and 120 CE; Martin says probably 50 to 150. Breed puts the writing and editing of both testaments at over a thousand years."
+  note: "Britannica's editors say parts of the Hebrew Bible were written perhaps in the 10th century BCE and the books of the New Testament in the 1st and 2nd centuries CE. The sources differ on the early end: Hayes dates the Hebrew Bible's writings from approximately 1000 BCE, noting very diverse opinions on how far back they go; Breed says many scholars now claim the earliest biblical texts were written down in the 8th or even 7th century BCE, and adds that the exact dates of composition are unrecoverable. On the late end, Ehrman's summary dates the New Testament's books between 50 CE and 120 CE, Neufeld between approximately 50 and 120; Martin says probably 50 to 150. Breed says the writing and editing of the books of both testaments extended over a thousand-year period."
   cites:
     - source: britannica-bible
       locator: "Top Questions box, “When was the Bible written?”, first sentence (collapsed answer, in the page's DOM text)"
