@@ -2,7 +2,6 @@
 title: "The Rapture and the Second Coming"
 dek: "Where the idea of the rapture came from, what the New Testament passages behind it say, how the thousand years of Revelation 20 have been read, and what religious traditions hold."
 core: origin
-draft: true
 sourcesRead: 2026-11-27
 related:
   books: [1-thessalonians, matthew, mark, revelation]
@@ -283,8 +282,8 @@ statements:
         read: 2026-11-27
   - id: scripture
     group: "The New Testament passages"
-    question: "Do scholars find the rapture in the New Testament?"
-    short: "Many scholars criticize it, sources say. It combines 1 Thessalonians 4:17 with Matthew 24:40–41 and passages from Revelation."
+    question: "What do scholars make of the rapture as a reading of the New Testament?"
+    short: "Many criticize the doctrine, sources say. It combines 1 Thessalonians 4:17 with Matthew 24:40–41 and passages from Revelation."
     text: "Sydney Tooth says that, despite having little support among most scholars, rapture theology remains extremely popular among many Christians, and that besides 1 Thessalonians 4:13–18 it draws on Matthew 24 and Revelation 20:1–6, Matthew 24:40–41 above all. The New Catholic Encyclopedia says many scholars criticize the doctrine on both biblical and theological grounds. The New American Bible notes call it a construction that combines 1 Thessalonians 4:17 with Matthew 24:40–41, Luke 17:34–35 and passages from Revelation in a scheme of millennial dispensationalism, and read the one “taken” in Matthew 24:40–41 as probably taken into the kingdom at the coming of the Son of Man. Sean Durbin says dispensationalists developed the doctrine to maintain their distinction between Israel and the church; Peter Lee's doctoral thesis on Darby says that for Darby the pretribulation rapture was derived not from Scripture as such but from the doctrine of the two peoples of God."
     cites:
       - source: tooth-2023-cdamm-1-thessalonians
