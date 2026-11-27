@@ -1,0 +1,224 @@
+/*
+  Custom block for the Marriage, Polygamy and Adultery in the Bible
+  Scholarship Page: a comic page. One ink frame holds the title, four panels
+  and the credit, so the whole thing shares as one image. A narration label
+  sits flush top-left; the answers are plates set on the art in corners the
+  picture leaves clear. Composes cloud-section, type-section-title,
+  scholarship-meta and the shared comic-plate.
+
+  Distinctions without colour: the order runs panel to panel (stories, law,
+  kings, later); the two wives are drawn as two figures, the king's court as
+  a crowd that asserts no number.
+*/
+.mpa-comic {
+  --mpa-ink: var(--tan-900);
+  --mpa-paper: var(--tan-000);
+  --mpa-amber: var(--color-accent);
+  --mpa-frame: var(--border-width-md);
+
+  container: mpa-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.mpa-comic__page {
+  background: var(--mpa-paper);
+  border: var(--mpa-frame) solid var(--mpa-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--mpa-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.mpa-comic__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.mpa-comic__head > p {
+  margin: 0;
+}
+
+.mpa-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.mpa-comic__title {
+  color: var(--mpa-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-3);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  text-shadow: 3px 3px 0 var(--mpa-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.mpa-comic__key {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+.mpa-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mpa-comic__frame {
+  display: grid;
+  min-inline-size: 0;
+}
+
+/* A panel: one ink frame around the art; its labels sit on the art as shared comic plates (scholarship.css). */
+.mpa-comic__figure {
+  border: var(--mpa-frame) solid var(--mpa-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.mpa-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.mpa-comic__art > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.06;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.mpa-comic__box {
+  background: var(--mpa-amber);
+  border-block-end: var(--mpa-frame) solid var(--mpa-ink);
+  border-inline-end: var(--mpa-frame) solid var(--mpa-ink);
+  font-family: var(--font-family-display);
+  /* Scales down with a narrow panel, so the label stays one line. */
+  font-size: min(var(--step--1), 4.4cqi);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.comic-plate__sub > .mpa-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates, linked to BibleGateway. */
+.mpa-comic__ref {
+  background: var(--mpa-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--mpa-amber);
+  white-space: nowrap;
+}
+
+.comic-plate__sub:has(> .mpa-comic__ref:only-child) > .mpa-comic__ref {
+  margin-inline-start: 0;
+}
+
+.mpa-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.mpa-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container mpa-comic (width >= 40rem) {
+  .mpa-comic__page {
+    padding: var(--space-m);
+  }
+
+  .mpa-comic__title {
+    font-size: var(--step-4);
+  }
+
+  .mpa-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* The poster: two by two on the 4:5 canvas. */
+
+.scholarship-share:target .mpa-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .mpa-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:target .mpa-comic__title {
+  font-size: var(--step-2);
+}
+
+.scholarship-share:target .mpa-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scholarship-share:target .mpa-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+/* The card: the stories (two wives) beside the king's court, under the title. */
+
+.scholarship-share:has(#share-card:target) .mpa-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .mpa-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:has(#share-card:target)
+  :is(.mpa-comic__kicker, .mpa-comic__key) {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .mpa-comic__title {
+  font-size: var(--step-2);
+}
+
+.scholarship-share:has(#share-card:target) .mpa-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}

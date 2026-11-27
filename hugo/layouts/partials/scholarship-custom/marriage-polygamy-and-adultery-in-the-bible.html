@@ -1,0 +1,120 @@
+{{- /*
+  Custom block for /scholarship/marriage-polygamy-and-adultery-in-the-bible/:
+  a four-panel comic page on the page's core claim. A herdsman stands
+  between his two wives (the stories); a father shares out his goods between
+  the sons of his two wives (the law of Deuteronomy 21:15–17); a king's hall
+  is crowded with wives too many to count (the warning to kings, and 1 Kings
+  11's claim for Solomon); a scribe writes in a cave above the Dead Sea (the
+  later turn).
+
+  A view of the page's reviewed statements `polygyny` (short, the core; text
+  and cites 1, 2, 4, 8, 10) and `second-temple` (short); it makes no claim
+  they don't. The two wives in the first two panels are counted by eye; the
+  king's court asserts no number, which stays on its plate as 1 Kings' own
+  claim. The Dead Sea Scrolls plate keeps the statement's hedge ("commonly
+  read") as a question.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/marriage-polygamy-and-adultery-in-the-bible.yaml.
+  Reword a plate only when the statement it comes from is re-reviewed.
+  */
+-}}
+{{- define "partials/inline/mpa-ref.html" -}}
+  <a
+    class="mpa-comic__ref"
+    href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .ref) | safeURL }}"
+    rel="noopener"
+    >{{ replace .label " " "&nbsp;" | safeHTML }}</a
+  >
+{{- end -}}
+{{- $panels := slice
+  (dict
+  "id" "stories" "box" "In the stories"
+  "alt" "A bearded herdsman stands outside his tent between his two wives, one on each side, with sheep grazing behind them."
+  "plates" (slice
+  (dict "pos" "tl" "big" "More than one wife" "sub" "Abraham, Jacob, David, Solomon and others" "refs" (slice (dict "ref" "Genesis 29:15-30" "label" "Gen 29:15–30")))))
+  (dict
+  "id" "law" "box" "In the law"
+  "alt" "An old father at a low table shares out sacks of grain and silver between two young men; behind each stands his mother, the father's two wives."
+  "plates" (slice
+  (dict "pos" "tr" "big" "Assumed" "sub" "the law sets out whose offspring inherit when a man has two wives" "refs" (slice (dict "ref" "Deuteronomy 21:15-17" "label" "Deut 21:15–17")))))
+  (dict
+  "id" "kings" "box" "For kings"
+  "alt" "A crowned king on a throne in a pillared hall, the floor around him crowded with richly dressed wives, too many to count."
+  "plates" (slice
+  (dict "pos" "tl" "big" "Advised against" "sub" "a king is not to take many wives" "refs" (slice (dict "ref" "Deuteronomy 17:17" "label" "Deut 17:17")))
+  (dict "pos" "br" "big" "700 wives" "sub" "and 300 concubines, 1 Kings claims for Solomon" "refs" (slice (dict "ref" "1 Kings 11:1-3" "label" "1 Kgs 11:1–3")))))
+  (dict
+  "id" "scrolls" "box" "Later"
+  "alt" "In a cave above the Dead Sea, a scribe writes on a long scroll by lamplight beside tall clay storage jars."
+  "plates" (slice
+  (dict "pos" "tl" "big" "Still legal" "sub" "in the Hellenistic period, with a tendency toward monogamy")
+  (dict "pos" "br" "big" "A ban?" "sub" "texts among the Dead Sea Scrolls are commonly read as forbidding it")))
+-}}
+<section class="cloud-section mpa-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="mpa-comic__page">
+    <header class="mpa-comic__head">
+      <p class="mpa-comic__kicker">The Hebrew Bible · scholars say</p>
+      <p class="mpa-comic__title">
+        In the main, the texts accept a man with more than one&nbsp;wife
+      </p>
+      <p class="mpa-comic__key">How common it was is not known.</p>
+    </header>
+    <ol class="mpa-comic__strip">
+      {{- range $panels }}
+        <li
+          class="mpa-comic__frame mpa-comic__frame--{{ .id }}"
+          {{ if in (slice "law" "scrolls") .id }}data-card-hide{{ end }}>
+          <figure class="mpa-comic__figure">
+            {{- $alt := .alt }}
+            <div class="mpa-comic__art">
+              {{- with resources.Get (printf "scholarship-art/marriage-polygamy-and-adultery-in-the-bible/%s.png" .id) }}
+                {{- $webp := .Process "resize 1200x webp q78" }}
+                <img
+                  src="{{ $webp.RelPermalink }}"
+                  width="{{ $webp.Width }}"
+                  height="{{ $webp.Height }}"
+                  alt="{{ $alt }}"
+                  loading="eager" />
+              {{- end }}
+            </div>
+            <h3 class="mpa-comic__box">{{ .box }}</h3>
+            <figcaption>
+              {{- range .plates }}
+                <p class="comic-plate comic-plate--{{ .pos }}">
+                  <span class="comic-plate__big">{{ .big }}</span>
+                  {{- if or .sub .refs }}
+                    <span class="comic-plate__sub">
+                      {{ .sub }}
+                      {{- range .refs }}
+                        {{ partial "inline/mpa-ref.html" . -}}
+                      {{- end }}
+                    </span>
+                  {{- end }}
+                </p>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="mpa-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
+  </div>
+  <p class="mpa-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#polygyny">does the Hebrew Bible allow a man more than one wife</a>
+    and
+    <a href="#second-temple"
+      >did Jews still practise polygamy in the Second Temple period</a
+    >.
+  </p>
+</section>
