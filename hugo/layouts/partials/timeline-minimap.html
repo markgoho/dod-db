@@ -430,25 +430,6 @@
         {{- end }}
       </div>
     </div>
-    {{- /* The three dots, in the Timeline's own labels. */}}
-    <ul class="timeline-minimap__legend" role="list">
-      <li>
-        <span class="timeline-minimap__dot" aria-hidden="true"></span>
-        {{ $labels.scholarlyPlaced }}
-      </li>
-      <li>
-        <span
-          class="timeline-minimap__dot timeline-minimap__dot--placed"
-          aria-hidden="true"></span>
-        {{ $placedLabel }}
-      </li>
-      <li>
-        <span
-          class="timeline-minimap__dot timeline-minimap__dot--moved"
-          aria-hidden="true"></span>
-        {{ $labels.moved }}
-      </li>
-    </ul>
   </nav>
 
   {{- /* The current-state rules: one selector per scrollspy target. */}}

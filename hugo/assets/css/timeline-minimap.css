@@ -111,9 +111,10 @@
 }
 
 /*
-  The minimap's three stacked rows (caption, strip, legend), as a popover or
-  as the rail. --tick-dot-max is the largest a dot is drawn: the legend's,
-  and the strip's where it has room (see the ticks below).
+  The minimap's two stacked rows (caption, strip), as a popover or as the
+  rail; no legend under the strip, so the strip takes the height (the
+  Timeline's own legend names the dots). --tick-dot-max is the largest a dot
+  is drawn, where the strip has room (see the ticks below).
 */
 .timeline-minimap__map {
   /* Even, so a dot centred on a whole pixel has whole-pixel edges. */
@@ -121,7 +122,7 @@
   --tick-dot: var(--tick-dot-max);
 
   gap: round(var(--space-3xs), 1px);
-  grid-template: auto minmax(0, 1fr) auto / minmax(0, 1fr);
+  grid-template: auto minmax(0, 1fr) / minmax(0, 1fr);
 }
 
 /*
@@ -590,9 +591,8 @@
 /*
   The axis node's look (timeline.css), small: a filled dot for an entry placed
   by its Critical Date, a dashed hollow one for one placed by a tradition's
-  date. The legend's swatches are the same dots.
+  date.
 */
-.timeline-minimap__dot,
 .timeline-minimap__tick {
   background: var(--tan-900);
   block-size: var(--tick-dot);
@@ -609,16 +609,11 @@
   dot's own outline (the current and hover ring) alone. Inside, the band
   shows through: hollow.
 */
-.timeline-minimap__dot--placed,
 .timeline-minimap__tick--placed {
   --dot-ink: var(--tan-900);
 
   background: none;
   border: 0;
-}
-
-.timeline-minimap__dot--placed {
-  position: relative;
 }
 
 /*
@@ -627,7 +622,6 @@
   inside a dot's box, and the current one grown 1.5× (1.0607) inside the
   grown dot's: the pitch and window clear it as they clear a dot.
 */
-.timeline-minimap__dot--moved,
 .timeline-minimap__tick--moved {
   background: none;
   border-radius: 0;
@@ -635,7 +629,6 @@
   scale: 0.7071;
 }
 
-.timeline-minimap__dot--placed::before,
 .timeline-minimap__tick--placed::before {
   background: repeating-conic-gradient(
     var(--dot-ink) 0 40deg,
@@ -814,35 +807,6 @@
 .timeline-minimap__ticks:has(:is(:interest-source, .interest-source))
   .timeline-minimap__tick {
   interest-delay-start: 0s;
-}
-
-/* ---------- Legend: the two dots, under the strip ---------- */
-
-/* Whole pixels tall, so the strip above it ends on a whole pixel too (see the rail). */
-.timeline-minimap__legend {
-  block-size: calc-size(auto, round(up, size, 1px));
-  display: grid;
-  font-size: var(--step--2);
-  gap: var(--space-4xs);
-  line-height: var(--line-height-heading);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.timeline-minimap__legend > li {
-  align-items: start;
-  display: grid;
-  /* typography.css sizes every li; the legend's size is set on the list. */
-  font-size: inherit;
-  gap: var(--space-3xs);
-  grid-template-columns: var(--tick-dot) minmax(0, 1fr);
-  line-height: inherit;
-}
-
-/* Level with the first line of a wrapped label. */
-.timeline-minimap__legend .timeline-minimap__dot {
-  margin-block-start: calc((1lh - var(--tick-dot)) / 2);
 }
 
 /*

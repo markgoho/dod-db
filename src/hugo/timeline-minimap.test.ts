@@ -436,30 +436,10 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     ).toEqual(["5000", "2000", "1500", "1000", "500", "1 CE"]);
   });
 
-  test("under the strip, a three-item legend names the three dots, in the Timeline's own labels", () => {
-    const items = select(page, ".timeline-minimap__legend > li");
-    expect(items.map(i => squash(i.text))).toEqual([
-      "Placed by a scholarly date",
-      "Placed by a tradition’s date",
-      "A tradition’s date for an entry scholars date elsewhere",
-    ]);
-    // The diamond's words are the main legend's moved heading.
-    expect(squash(select(page, ".timeline-legend strong")[1]?.text)).toBe(
-      `${squash(items[2]?.text)}:`,
-    );
-    // The hollow dot's words are the main legend's placed heading.
-    expect(squash(select(page, ".timeline-legend strong")[0]?.text)).toBe(
-      `${squash(items[1]?.text)}:`,
-    );
-    const dots = select(
-      page,
-      ".timeline-minimap__legend .timeline-minimap__dot",
-    );
-    expect(dots.map(d => [d.attrs.class, d.attrs["aria-hidden"]])).toEqual([
-      ["timeline-minimap__dot", "true"],
-      ["timeline-minimap__dot timeline-minimap__dot--placed", "true"],
-      ["timeline-minimap__dot timeline-minimap__dot--moved", "true"],
-    ]);
+  test("the minimap has no legend: the strip takes the height, and the Timeline's own legend names the dots", () => {
+    expect(select(page, ".timeline-minimap__legend")).toEqual([]);
+    expect(select(page, ".timeline-minimap__dot")).toEqual([]);
+    expect(select(page, ".timeline-legend")).not.toEqual([]);
   });
 
   test("a Tradition Date 30 or more years from the Critical Date sits at its own year, as its own row and diamond tick; a closer one stays beside its entry (#214)", () => {
