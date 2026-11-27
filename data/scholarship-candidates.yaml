@@ -358,3 +358,43 @@ statements:
         timestamp: "00:14:06.690"
         text: "And I argue that that is harmful to the academic endeavor and that we need to acknowledge that there's not monotheism in the Bible."
     notes: "Conflict with explicit: denies monotheism anywhere in the Bible; the statement reports Second Isaiah as the first explicit denial that other gods exist (Coogan and Chapman, NABRE, Hayes, Markl), with Fredriksen's dissent attributed. Raised by the #151 second pass, logged at publish, 2026-11-27."
+  - page: marriage-polygamy-and-adultery-in-the-bible
+    question: "Was the bride price a payment to buy a wife?"
+    triggers:
+      - episode: 108
+        speaker: "Dan McClellan"
+        timestamp: "00:09:48.760"
+        text: "So there were different kinds of contracts that, that this could be, but basically the, the man was purchasing use and the bride price was the, the price of the, the transaction, her sexual availability and her procreative capacities, which were not her own."
+    notes: "Conflict with bride-price: the quote treats the bride price as the price of a purchase; the statement reports Lemos (most, though not all, scholars take the mohar as bridewealth; the purchase debate died down) and Meyers (purchase assertions “now known to be flawed”), with Bergant's exchange framing attributed. Logged at the #152 first pass, 2026-11-27."
+  - page: marriage-polygamy-and-adultery-in-the-bible
+    question: "Who could divorce in the Hebrew Bible?"
+    triggers:
+      - episode: 108
+        speaker: "Dan McClellan"
+        timestamp: "00:45:30.250"
+        text: "And this kind of turns the tables on the folks who are trying to restore this concept of marriage for today, because these are the folks who are like, I don't want my wife to be able to divorce me right now. Back then, they weren't allowed to at all."
+    notes: "Conflict with divorce: the quote says wives were not allowed to divorce at all; the statement reports that every biblical reference has the husband initiating it and no biblical law lets a wife do so (Feinstein, HarperCollins), but that it is not known for certain that Israelite women could not (Feinstein), and that Jewish women did at Elephantine (Feinstein, Encyclopaedia Judaica). Logged at the #152 first pass, 2026-11-27."
+  - page: marriage-polygamy-and-adultery-in-the-bible
+    question: "Why was adultery treated as a crime?"
+    triggers:
+      - episode: 133
+        speaker: "Dan McClellan"
+        timestamp: "00:13:09.445"
+        text: "This is—this is a question of property rights, and adultery comes down to property rights. It is not a moral—it is not a fundamentally moral question. It's a question of property rights, right?"
+    notes: "Conflict with why-adultery: the quote denies that adultery was a moral question; the statement reports that scholars explain it in different ways, including Moshe Greenberg's reading (via Rosen-Zvi and Hayes) of biblical adultery as first and foremost a religious transgression, and Collins's that it was primarily a concern of the community. Logged at the #152 first pass, 2026-11-27."
+  - page: marriage-polygamy-and-adultery-in-the-bible
+    question: "Does Leviticus 18:18 forbid polygamy?"
+    triggers:
+      - episode: 139
+        speaker: "Dan McClellan"
+        timestamp: "00:12:21.037"
+        text: "But the argument is that this does not mean— this is not only limited to a biological sister, but just don't take any woman as a— who could become a rival to a first wife, meaning polygamy, no good. And that reading isn't supported by anything."
+    notes: "Conflict with leviticus-18-18: the quote says the general-ban reading “isn't supported by anything”; the statement reports the majority two-sisters reading (Heger) and that some scholars argue for the ban reading (Tosato and Gruber, as reported by Sassoon and Heger; Sassoon's own study comes close to Tosato). Logged at the #152 first pass, 2026-11-27."
+  - page: marriage-polygamy-and-adultery-in-the-bible
+    question: "Does Genesis 2:24 define marriage as one man and one woman?"
+    triggers:
+      - episode: 44
+        speaker: "Dan McClellan"
+        timestamp: "00:23:11.900"
+        text: "Well, I was just going to say that the one man, one woman, that's one— there's nothing prescriptive going on in Genesis 2:24 at all."
+    notes: "Conflict with genesis-2-24: the quote is certain the verse is not prescriptive; the statement reports a scholarly split (Warner: some read it as a normative definition of marriage, others disagree). The same claim appears at 139@00:13:17 (“it's clearly not a prescription of proper marriage”), whose polygyny sentences are attached as a Trigger Claim without it. Logged at the #152 first pass, 2026-11-27."
