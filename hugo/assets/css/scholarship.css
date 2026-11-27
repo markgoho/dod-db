@@ -28,6 +28,17 @@
   text-align: start;
 }
 
+/* The list page is browsed, not read: cards fill the content area; only the intro keeps the measure. */
+.scholarship-page--index {
+  margin-inline: 0;
+  max-width: none;
+}
+
+.scholarship-page--index .page-hero__description {
+  justify-self: center;
+  max-width: var(--content-max-width-measure);
+}
+
 /* The hero runs full width; the dek keeps the body's reading measure. */
 .scholarship-dek {
   display: grid;
