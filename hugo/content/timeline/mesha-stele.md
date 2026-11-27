@@ -1,8 +1,8 @@
 ---
 title: "Mesha stele: earliest reference outside the Bible to Yahweh as Israel's god"
 entryKind: event
-draft: true
-sourcesRead:
+draft: false
+sourcesRead: 2026-11-27
 related: { books: [], tags: [moab], topics: [yhwh] }
 watch:
   [
