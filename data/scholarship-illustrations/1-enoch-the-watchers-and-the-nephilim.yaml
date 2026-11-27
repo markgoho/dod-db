@@ -1,0 +1,94 @@
+# Illustrations for /scholarship/1-enoch-the-watchers-and-the-nephilim/
+# (generated with Gemini; see src/scripts/generate-scholarship-illustrations.ts).
+# Each picture shows only what the listed statements support; every caption,
+# link and claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Four comic panels following the book through time: its two oldest parts
+# (the Book of the Watchers and the Astronomical Book, split by a plain
+# gutter: two booklets side by side, no order between them), the Book of
+# Parables written later by another hand, the Aramaic fragments among the
+# Dead Sea Scrolls, and the whole book in Ge'ez in the Ethiopian Orthodox
+# Church. Different writers in each panel: the page's claim is different
+# authors over several centuries. `luminaries` is the style anchor.
+# Scrolls and books carry only illegible marks; God is never shown.
+slug: 1-enoch-the-watchers-and-the-nephilim
+images:
+  - id: luminaries
+    statements: [oldest, calendar]
+    aspect: "4:5"
+    alt: "An aged white-bearded man stands on a hilltop at dawn beside a radiant winged angel, who points up at the rising sun and a pale crescent moon."
+    prompt: >-
+      An aged man with a long white beard, in a plain undyed wool robe and a
+      rust red mantle, stands on a rocky hilltop at dawn beside a tall
+      radiant angel with large pale wings and a simple white robe. The angel
+      points up and across the sky, where a large rising sun glows amber on
+      the horizon and a pale crescent moon hangs high on the other side; the
+      old man shades his eyes and looks where the angel points. Open pale sky
+      fills the upper part of the picture. The lower-right corner is open
+      bare rock with nothing in it. No other figures, no text, no letters,
+      no numbers.
+
+  - id: watchers
+    statements: [oldest, strands]
+    aspect: "4:5"
+    refs: [luminaries]
+    alt: "At night a band of radiant winged angels descends from the stars toward a dark mountain peak above a small ancient town."
+    prompt: >-
+      Same drawing style as the reference image. A night scene: from a sky
+      full of stars, a band of about a dozen radiant angels with large pale
+      wings and white robes descends in a long diagonal line toward the dark
+      summit of a tall mountain. Far below, at the foot of the mountain, a
+      small ancient town of flat-roofed mud-brick houses with a few lit
+      windows. The angels are small in the frame, seen from afar; no faces
+      in detail. The lower-left corner is open dark hillside with nothing in
+      it. No humans in view, no weapons, no text, no letters.
+
+  - id: parables
+    statements: [parables, composite]
+    aspect: "4:3"
+    refs: [luminaries]
+    alt: "A Judean scribe of a later age, in a stone room lit by an oil lamp, writes on a long scroll; a rolled older scroll lies beside him."
+    prompt: >-
+      Same drawing style as the reference image. A Judean scribe of the early
+      Roman period, a heavy-set middle-aged man, bald on top with a grey
+      fringe of hair and a full grey beard, in a plain light grey tunic and an amber mantle, sits at a low wooden writing table in a
+      stone-walled room lit by a small clay oil lamp, writing with a reed pen
+      on a long scroll covered in tiny illegible scribble marks. Beside him on
+      the table lies an older, darker rolled-up scroll tied with a cord. A
+      small window shows a pale evening sky. The upper-right corner of the
+      picture is plain stone wall with nothing on it, and the lower-left
+      corner is open floor. No other figures, no text, no letters.
+
+  - id: qumran
+    statements: [languages, parables]
+    aspect: "4:3"
+    refs: [luminaries]
+    alt: "Inside a desert cave, a tall lidded clay jar stands beside small torn fragments of old scrolls lying on the rock floor."
+    prompt: >-
+      Same drawing style as the reference image. The interior of a dry
+      limestone cave in a desert cliff, light falling in from the cave mouth
+      on the left. A tall cylindrical clay storage jar with a bowl-shaped lid
+      stands on the rocky floor in the middle right; beside it lie a few
+      small torn, brown, fragile fragments of old parchment scrolls, their
+      edges ragged, covered in tiny illegible scribble marks. The upper-left
+      corner is the bright open cave mouth with pale sky, and the lower-left
+      corner is open rock floor with nothing on it. No figures, no text, no
+      letters.
+
+  - id: geez
+    statements: [languages, canon]
+    aspect: "4:3"
+    refs: [luminaries]
+    alt: "In a round church, an Ethiopian Orthodox priest in white robes and a white turban reads from a large open parchment book written in two colours of ink."
+    prompt: >-
+      Same drawing style as the reference image. Inside a round Ethiopian
+      church with plain whitewashed walls and a carved wooden doorway, an
+      elderly Ethiopian Orthodox priest with a short grey beard, wearing
+      layered white cotton robes and a white wrapped turban, stands at a
+      wooden lectern reading from a very large open parchment book bound in
+      wooden boards; its pages carry columns of small abstract squiggles and
+      dots in black and red ink, like distant unreadable handwriting: no
+      letters of any alphabet, no words, nothing legible. He holds a small hand cross at his side. The upper-right
+      corner is plain whitewashed wall with nothing on it, and the
+      lower-left corner is open stone floor. No other figures, no painted
+      faces on the walls, no text, no letters.
