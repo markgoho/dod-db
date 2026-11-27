@@ -1,0 +1,1043 @@
+# Review record for /scholarship/patriarchs/ (#93 shape). Not rendered.
+# agent: results of the agent first pass (#153, 2026-11-27). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass once it has run.
+# Issue #153: queued as candidate `patriarchs` ("Abraham, Isaac and Jacob"); the issue adds Joseph and Hagar (statements joseph-sale, joseph-story, hagar-twice, ishmael, hagar-exodus). Confessional study Bibles are Tradition and don't count toward the core; NABRE is Reference (scholarly-association notes, CONTEXT.md). Overlaps kept out: God of the fathers / El (the-origins-of-yahweh el, resemblance), Hagar as slave-wife or concubine (marriage-polygamy-and-adultery-in-the-bible concubines), teraphim and Abraham as first monotheist (the-emergence-of-monotheism-and-the-divine-council); the Exodus itself (moses-and-the-exodus). Registry ids reused: coogan-brief-4e-summary-ch4, -ch5, hayes-rlst145-l6, -l7, nabre-genesis-intro, hendel-2018-abraham, ej-history-beginning-monarchy, finkelstein-2013-forgotten-kingdom, gafney-bo-hagar, abr-wood-2009-ur. The Timeline's abraham entry (#187, #199) dates the patriarchs; this page does not, and follows #199's note not to reuse EJ History's “first half of the second millennium” setting sentence.
+# Sourcing test (#153, 2026-11-27): gate 1, 20 Trigger Claims in Episodes 1, 3, 22, 63, 64, 74, 111, 118, 121, 157 and 169 (the inventory's six from Episodes 63, 121 and 157 among them; 63@00:07:47 not used for its two slips, 00:07:22 and 00:08:44 instead), each read with about two minutes either side. Gate 2, the core: the candidate “Abraham, Isaac and Jacob come from separate traditions woven together” sourced as “their traditions came from different groups and were only later joined as grandfather, father and son”, with “many scholars hold” from Greenspahn (“Many modern scholars consider…”), Lombaard 2010 (“a point long accepted”) and Lemański 2020 (“according to scholars involved with historical-critical studies”). No source says “consensus” for the whole thesis (E121's word); Lemański's “consensus” covers only the three-name formula (uncited). Gate 3: 6 independent authors behind the core (Lombaard, Greenspahn, Lemański, Coogan and Chapman, Hong, Tobolowsky). Gate 4: 13 statements.
+# Dropped for want of a second author or a readable source: the twelve-tribe scheme as a separate statement (field: Tobolowsky only; two of his sentences kept in traditions); Isaac and a southern tribe (Coogan only; in the traditions text); Hagar's name (sources call it obscure; the ger link is wordplay); Galatians 4 (sources disagree); Jacob and the Exodus as rival origin traditions as a separate statement (Schmid's self-report and Lemański's “unsolved”; both in the jacob-first text); the Joseph story's date as “most scholars … Persian or Hellenistic” (Shupak's abstract only, a view she argues against; lead); Genesis 22:19 as evidence of an E version where Isaac dies (no qualifying source).
+# Rulings: historical: the sources disagree about the field itself (Mazar “most scholars … late invention”, Hayes “seriously divided”, Lombaard 2010 “the greater part … some historical referentiality”), so the short says “Scholars are divided” with no frequency word (#80), as #199 found. jacob-first: Lemański (“generally agreed”) and Lombaard (“already accepted”) on a late Abraham narrative stand against NABRE's “a few regard them as late” and Coogan's “some scholars have dismissed these narratives as a historical fiction from late”, so the short says the Abraham question “remains debated”; the Hosea 12 point keeps its field wording (Lombaard 2014 and Lemański). joseph-sale: the short leads with the textual fact; the two-traditions reading rests on NABRE and EJ (own view) and the debate on Römer et al.; E74 and E22, which assert two complete stories, take one side of a split the statement shows and are kept (CONTEXT, 2026-11-25), flagged.
+# First pass: four research agents fetched every source on 2026-11-27 into separate scratch folders and copied quotes from the saved text; the lead re-read the NABRE chapter notes live. Every page quote script-matched: 92 against saved text (whitespace, HTML entities, quotes, dashes normalised; PDF line-end hyphens joined; footnote markers after punctuation ignored), 10 NABRE notes matched in the live page in Chrome by JavaScript on whitespace-normalised text (bible.usccb.org refuses scripted requests with a bot check; an Internet Archive fetch was refused by this session's permission rules and not retried): 102/102, 0 misses. NABRE intro ¶ 7 matched against a saved copy. The second pass must re-fetch, and read NABRE in a browser.
+# Access quirks for the second pass: bsw.org (Hong, Schmid) serves one HTML page per printed page and double-encodes punctuation (mojibake) in scripted copies; Lemański's PDF sets the first letter as a drop cap; Tushima's two-column PDF interleaves with a QR caption in layout mode (use plain pdftotext); encyclopedia.com “people” URLs aggregate several encyclopedias' entries (sarna-sperling-ej-abraham, greenspahn-er-*, sarna-ej-joseph): attribute by the signature after each entry; Bible Odyssey may challenge scripts.
+# Flags for the second pass: (1) Greenspahn's ER entries are signed “1987 and 2005”; which wording is 2005 is not shown (window). (2) EJ 2nd-ed. entries revised by Sperling: sentence dates not shown; four EJ ids share the reviser, and no short rests on two EJ ids alone. (3) sarna-ej-joseph is signed by Sarna alone and may be first-edition text; it backs own-view descriptions only. (4) Lombaard 2010's “long accepted” is a parenthesis inside his own list of positions. (5) Schmid's “increased acceptance” is a proponent's self-report, attributed (“he says”). (6) Mazar's p. 58 anachronisms sentence describes the pre-1970s view; text says “were once considered”. (7) Tushima's “had been” is past tense. (8) Coogan ch. 4's “almost all biblical scholars” is about the Pentateuch's repetitions in general, used in the wife-sister text only. (9) tradition short: “Evangelical ministries treat the patriarchs' stories as history” is our summary of ABR (Wood's chronology, Caesar's “reflection of historical reality”) and Got Questions; check it is no stronger than they are. (10) ishmael short's “Abraham's son by Hagar” is the biblical narrative, uncontested. (11) The hagar-exodus short's “They differ” reports a split among the cited sources (Marzouk, Trible via Noble vs Frymer-Kensky and Kamionkowski, Noble); the page does not count them.
+review: null
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+citations:
+  traditions/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core author (Lombaard). The field claim is the parenthesis “a point long accepted in Old Testament scholarship”, inside a list of his own positions.",
+    }
+  traditions/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core author (Greenspahn, field “Many modern scholars”). Flag: entry signed “1987 and 2005”; which wording is 2005 is not shown.",
+    }
+  traditions/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core author (Lemański, field “according to scholars involved with historical-critical studies”).",
+    }
+  traditions/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Lemański's own view, attributed (“holds”). Source spelling “one other” kept.",
+    }
+  traditions/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Coogan and Chapman: hedged (“may”, “help to support the contention”); text keeps both.",
+    }
+  traditions/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. “scholars have suggested”: one source, kept in the text, not the short.",
+    }
+  traditions/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Hong's “several scholars” (his n. 68); per-page bsw.org URL.",
+    }
+  traditions/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  traditions/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Typo “Either away” is the source's.",
+    }
+  jacob-first/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Field statement on Hosea 12's usual date; Lombaard's own later dating is attributed in the text.",
+    }
+  jacob-first/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Quote stops before “, for not all the details…”; nothing hedged dropped.",
+    }
+  jacob-first/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  jacob-first/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Finkelstein's “probably” kept.",
+    }
+  jacob-first/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  jacob-first/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  jacob-first/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  jacob-first/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. NABRE intro ¶ 7: counter-field statement on dating; reason the short says the Abraham question “remains debated”.",
+    }
+  jacob-first/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Schmid's self-report of increased acceptance (a proponent's claim); text says “he says”. Summary page p. 208.",
+    }
+  jacob-first/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Fragment of a longer sentence: “…whether the combination of the patriarchal traditions with that of the Exodus took place … has remained unsolved”; text renders the whole.",
+    }
+  historical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  historical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  historical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  historical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Mazar's three-way field statement; covers patriarchs, exodus and conquest together.",
+    }
+  historical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Mazar's “most scholars”, followed on p. 59 by his own dissent (historical/6 and the text).",
+    }
+  historical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  historical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Lombaard 2010's counter-field statement; the reason the short drops a frequency word (#80).",
+    }
+  historical/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  historical/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Hedged twice (“it seems”, “though certain details provide verisimilitude”); both kept.",
+    }
+  historical/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  historical/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  historical/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  parallels/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  parallels/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  parallels/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  parallels/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Source wording “between the Abrahamic stories” (sic, no comparandum) kept.",
+    }
+  parallels/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  parallels/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  anachronisms/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  anachronisms/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  anachronisms/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  anachronisms/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  anachronisms/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  anachronisms/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  anachronisms/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: live page read in Chrome (bot check refuses scripts); quote matched in-browser on whitespace-normalised text; surrounding note read. NABRE “seemingly” kept.",
+    }
+  anachronisms/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: live page read in Chrome (bot check refuses scripts); quote matched in-browser on whitespace-normalised text; surrounding note read. NABRE “probable … perhaps” kept.",
+    }
+  anachronisms/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: live page read in Chrome (bot check refuses scripts); quote matched in-browser on whitespace-normalised text; surrounding note read.",
+    }
+  anachronisms/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Describes the pre-1970s view; text says “were once considered”.",
+    }
+  anachronisms/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  anachronisms/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  wife-sister/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: live page read in Chrome (bot check refuses scripts); quote matched in-browser on whitespace-normalised text; surrounding note read.",
+    }
+  wife-sister/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: live page read in Chrome (bot check refuses scripts); quote matched in-browser on whitespace-normalised text; surrounding note read.",
+    }
+  wife-sister/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: live page read in Chrome (bot check refuses scripts); quote matched in-browser on whitespace-normalised text; surrounding note read.",
+    }
+  wife-sister/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: live page read in Chrome (bot check refuses scripts); quote matched in-browser on whitespace-normalised text; surrounding note read.",
+    }
+  wife-sister/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Tushima's “had been” (past); text says “had understood”.",
+    }
+  wife-sister/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  wife-sister/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Shortened to the part after the PDF's page footer; matched against a pdftotext extraction.",
+    }
+  wife-sister/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. General statement about the Pentateuch's repetitions, with its own hedge, used in the text only.",
+    }
+  wife-sister/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  joseph-sale/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: live page read in Chrome (bot check refuses scripts); quote matched in-browser on whitespace-normalised text; surrounding note read.",
+    }
+  joseph-sale/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: live page read in Chrome (bot check refuses scripts); quote matched in-browser on whitespace-normalised text; surrounding note read.",
+    }
+  joseph-sale/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Signed by Sarna alone (no 2nd-ed. reviser); may be first-edition text. Own-view description only.",
+    }
+  joseph-sale/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  joseph-sale/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Footnote markers 3 and 4 dropped from the quote.",
+    }
+  joseph-sale/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  joseph-story/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  joseph-story/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  joseph-story/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  joseph-story/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  joseph-story/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  joseph-story/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Sarna alone; see joseph-sale/3.",
+    }
+  joseph-story/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  joseph-story/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  joseph-story/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  hagar-twice/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Field statement (“Contemporary critical scholarship… agreed”); 2nd-ed. entry, sentence date not shown.",
+    }
+  hagar-twice/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  hagar-twice/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. “It has been suggested”, and the entry prefers “separate crystallizations”; both in the text.",
+    }
+  hagar-twice/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  hagar-twice/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: live page read in Chrome (bot check refuses scripts); quote matched in-browser on whitespace-normalised text; surrounding note read. NABRE's “(?)” kept in the text.",
+    }
+  hagar-twice/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  ishmael/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  ishmael/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  ishmael/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  ishmael/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Conditional in the source (“if the narratives are considered separate crystallizations”); text says the entry “reads” them so.",
+    }
+  ishmael/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  hagar-exodus/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  hagar-exodus/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  hagar-exodus/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  hagar-exodus/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  hagar-exodus/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  hagar-exodus/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Noble reporting Trible (Texts of Terror, 1984); Trible's own words are a lead.",
+    }
+  hagar-exodus/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  akedah/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  akedah/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  akedah/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  akedah/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Spiegel (1967/1969) as reported by the entry; the sentence continues with possible motives, not used.",
+    }
+  akedah/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Footnote marker 16 printed in the source text, kept in the quote.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  tradition/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  tradition/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  tradition/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+  tradition/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+    }
+triggers:
+  63@00:07:22:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+  63@00:07:32:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+  121@00:13:48:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side. Says “the consensus view”; no source read says consensus for the whole thesis. The core short says “many scholars hold”; Trigger Claim shown verbatim (#80: the page never follows the show's strength).",
+    }
+  1@00:50:50:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+  64@00:31:16:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+  169@00:03:01:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+  63@00:08:44:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+  118@00:07:18:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side. Trimmed from “And, and this is probably…”; about Genesis 12, both “probably”s kept.",
+    }
+  63@00:22:26:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side. Trimmed to the claim; the turn continues on Hosea 12.",
+    }
+  157@00:03:56:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side. “probably literary creations” is stronger than the divided historical short; a Trigger Claim gates the subject, not a statement.",
+    }
+  118@00:09:00:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+  121@00:29:35:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+  121@00:38:16:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+  74@00:41:52:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side. Asserts two complete stories; joseph-sale reports both the two-source reading (NABRE, EJ) and Römer et al.'s view that no one has reconstructed two coherent narratives. The claim takes one side of a split the statement shows, so it does not contradict a statement (CONTEXT, 2026-11-25); flagged.",
+    }
+  22@00:29:37:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side. Same ruling as 74@00:41:52; trimmed before “But you can tease these things apart…”.",
+    }
+  3@00:33:57:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+  157@00:12:36:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+  157@00:30:27:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side. Next turn hedges: “Maybe that's just us hallucinating stuff”. hagar-exodus says nothing about the story's date.",
+    }
+  63@00:06:42:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side. Preceded by “And maybe. Or maybe his dad did kill him.”",
+    }
+  111@00:25:55:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script as a verbatim substring of the final Transcript line at timestamp and speaker; read about two minutes either side.",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: 13 statements. Core traditions cites Lombaard 2010 (Scholarly), Greenspahn ER (Reference), Lemański 2020 (Scholarly), Coogan and Chapman (Reference), Hong 2013 (Scholarly), Tobolowsky (Reference): 6 independent authors, none Host-authored; the field claim rests on Lombaard, Greenspahn and Lemański.",
+    }
+  consensus-wording:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: no statement says “consensus”. “most scholars” appears only attributed (Mazar in historical; Lemański on the Priestly merger in jacob-first). “many scholars” in the traditions short rests on Greenspahn's “Many modern scholars” and Lombaard's “long accepted”; in the historical short on Mazar's “many scholars regard”.",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Lombaard's later Hosea 12, Finkelstein's pre-exilic sources, NABRE's traditional dating, Schmid's proposal, Mazar's own dissent, Van Seters on the wife-sister stories, Römer et al. on the Joseph sources, Tebes's confusion reading, Trible vs Noble: each named in the text.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: ccc-59-61 and ccc-144-146 as the Catholic Church (in the Catechism's title); abr-wood-2009-ur and abr-caesar-2009-patriarchs-wealth as the Associates for Biblical Research, an evangelical apologetics ministry; gotquestions-camels as Got Questions Ministries, an evangelical ministry (registry wording).",
+    }
+sources:
+  lombaard-2010-exile-patriarchs:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2010. Same author string as lombaard-2014-jacob-come-lately, so counted once.",
+    }
+  greenspahn-er-jacob:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2005, 2nd ed. (entry signed “1987 and 2005”). Entry signed “1987 and 2005”; window borderline, flagged.",
+    }
+  lemanski-2020-abraham-versus-jacob:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2020, English translation of the Polish article in Collectanea Theologica 88(4), 2018. Translation of the 2018 Polish article; PDF drop cap splits the first word.",
+    }
+  coogan-brief-4e-summary-ch5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2019, 4th ed..",
+    }
+  hong-2013-northern-elohist:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2013. bsw.org page-per-page HTML; raw HTML double-encoded (mojibake), repaired for matching.",
+    }
+  tobolowsky-bo-twelve-tribes:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2020." }
+  lombaard-2014-jacob-come-lately:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2014. Byline “C.J.S. Lombaard”; author string matched to lombaard-2010.",
+    }
+  finkelstein-2013-forgotten-kingdom:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Scholarly; 2013." }
+  finkelstein-2007-quest-patriarchs:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2007. Chapter adapted from The Bible Unearthed (2001).",
+    }
+  nabre-genesis-intro:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2011, Old Testament revision.",
+    }
+  schmid-2012-genesis-exodus:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2012. bsw.org, as Hong. Same author string as schmid-2025-torah-multi-authorial; Schmid also co-edits romer-schmid-buhler-2021-joseph.",
+    }
+  hayes-rlst145-l6:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2006." }
+  mazar-2007-quest-patriarchs:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2007. Separate chapter id in the shared SBL PDF.",
+    }
+  sarna-sperling-ej-abraham:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not printed, 2nd ed.. Biblical sections signed “Nahum M. Sarna / S. David Sperling (2nd ed.)”; the page also carries Van Seters's ER entry (1987), not cited.",
+    }
+  ej-history-beginning-monarchy:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not printed, 2nd ed.. Already registered (#199); unsigned on the page.",
+    }
+  hendel-2018-abraham:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2018." }
+  sarna-sperling-ej-genesis:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not printed, 2nd ed.. Signed “Nahum M. Sarna / S. David Sperling (2nd ed.)”; same author string as sarna-sperling-ej-abraham, so counted once.",
+    }
+  nabre-genesis-12-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2011, Old Testament revision. Read live in Chrome; refuses scripted requests.",
+    }
+  nabre-genesis-21-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2011, Old Testament revision. Read live in Chrome; refuses scripted requests.",
+    }
+  nabre-genesis-11-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2011, Old Testament revision. Read live in Chrome; refuses scripted requests.",
+    }
+  nabre-genesis-20-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2011, Old Testament revision. Read live in Chrome; refuses scripted requests.",
+    }
+  nabre-genesis-26-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2011, Old Testament revision. Read live in Chrome; refuses scripted requests.",
+    }
+  tushima-2018-wife-exchange:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2018. Two-column PDF interleaves with a QR caption in layout extraction; matched against a plain pdftotext extraction. Same author string as tushima-2021-sodom-liminality.",
+    }
+  coogan-brief-4e-summary-ch4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2019, 4th ed..",
+    }
+  nabre-genesis-37-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2011, Old Testament revision. Read live in Chrome; refuses scripted requests.",
+    }
+  sarna-ej-joseph:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not printed. Signed “[Nahum M. Sarna]” only; may be first-edition text; own-view descriptions only.",
+    }
+  romer-schmid-buhler-2021-joseph:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2021. Publisher sample PDF of an open-access volume; introduction pp. 1–4 read.",
+    }
+  tebes-bo-midian:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2019." }
+  hayes-rlst145-l7:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2006." }
+  greenspahn-er-joseph:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2005, 2nd ed. (entry signed “1987 and 2005”). Signed “1987 and 2005”; same page as sarna-ej-joseph.",
+    }
+  lang-bo-joseph:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2016." }
+  halvorson-taylor-bo-diaspora:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2015." }
+  friedberg-sperling-ej-hagar:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not printed, 2nd ed.. Signed “Maurice Friedberg / S. David Sperling (2nd ed.)”; shares the reviser with the other EJ ids.",
+    }
+  noble-2016-hagars-son:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2016. Two publisher excerpt PDFs; per-cite url.",
+    }
+  elitzur-sperling-ej-ishmael:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not printed, 2nd ed.. Signed “Yehuda Elitzur / S. David Sperling (2nd ed.)”.",
+    }
+  shectman-bo-abrahams-family:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2016." }
+  tracy-bo-hagar:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2015." }
+  gafney-bo-hagar:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2016." }
+  marzouk-bo-hagar:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2015." }
+  onwukwe-2020-genesis-16:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2020. Repository copy; journal Scriptura (open access).",
+    }
+  frymer-kensky-kamionkowski-jwa-hagar:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2021." }
+  greenspahn-er-isaac:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2005, 2nd ed. (entry signed “1987 and 2005”). Signed “1987 and 2005”.",
+    }
+  jacobs-sagi-ej-akedah:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not printed, 2nd ed.. Section signed “Louis Jacobs / Avi Sagi (2nd ed.)”; cites nothing after Spiegel; used for uncontested reports of traditions.",
+    }
+  davis-bo-binding-of-isaac:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference; 2017." }
+  ccc-59-61:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; year not printed.",
+    }
+  ccc-144-146:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; year not printed.",
+    }
+  abr-wood-2009-ur:
+    { agent: pass, owner: "", note: "First pass 2026-11-27: Tradition; 2009." }
+  abr-caesar-2009-patriarchs-wealth:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; 2009. Dated 14 October 2009 on the page.",
+    }
+  gotquestions-camels:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; year not printed. Year not on page.",
+    }
+leads:
+  - "Finkelstein and Römer, “Comments on the Historical Background of the Jacob Narrative in Genesis”, ZAW 126 (2014) 317–338, and “…of the Abraham Narrative”, HeBAI 3 (2014) 3–23: author offprints behind bot walls (serval.unil.ch, HAL); not read."
+  - "Shupak, “The Joseph Story (Genesis 37–50) from an Egyptological Perspective”, JAOS 145.2 (2025): abstract only (“Most scholars today regard the Joseph story as an exilic novella…”, a view she argues against); article paywalled."
+  - "Schipper, “The Egyptian Background of the Joseph Story”, HeBAI 8/1 (2019): summary only; paywalled."
+  - "Encyclopedia of the Bible and Its Reception, “Abraham” (De Gruyter 2009): copy found was a licensed, watermarked download; not cited."
+  - "de Pury, “The Jacob Story and the Beginning of the Formation of the Pentateuch” (SBLSymS 34, 2006); Schmid, Genesis and the Moses Story (2010): no open copy."
+  - "Dozeman, “The Wilderness and Salvation History in the Hagar Story”, JBL 117 (1998): no open copy; known via Onwukwe."
+  - "Trible, Texts of Terror (1984); Levenson, Death and Resurrection of the Beloved Son (1993); Spiegel, The Last Trial: known only as reported (Noble, EJ)."
+  - "Westermann, Genesis 12–36; T.D. Alexander 1992; Peleg 2006: known only via Tushima. Baden, The Composition of the Pentateuch (2012), on J/E in Gen 37: via Römer et al. n. 3."
+  - "Sapir-Hen and Ben-Yosef, “The Introduction of Domestic Camels to the Southern Levant”, Tel Aviv 40 (2013): repository link broken; TAU press release only (not a qualifying class)."
+  - "Grossman, “Two Double Narratives in Genesis: Hagar's Departure (16, 21)”, Megadim 29 (1998): catalogue record only."
+  - "Chabad.org, Posner, “Who Was Abraham?”: 403 to scripts; one sentence via a fetch tool, not saved; no Jewish denominational source on the tradition statement."
+  - "Kitchen, “The Patriarchal Age: Myth or History?”, BAR 21:2 (1995): teaser excerpt only; outside the window."
+  - "Shenhav, “Rethinking the Aqedah after the Holocaust”, in Aqedah (De Gruyter 2025): PDF on a third-party site (Agnon House), licence unclear; not cited."
+uncited:
+  - "Lemański 2020, p. 67, “There is a consensus among exegetes that the formula marks the final stage of coalescing of the patriarchal traditions.”: read; covers only the three-name formula, not the whole thesis, so not used for the core's wording."
+  - "Tobolowsky, “Since the 1930s, many scholars have argued that there were twelve tribes…”: read; a separate twelve-tribes statement was cut (field rests on Tobolowsky alone); two sentences kept in traditions."
+  - "Hayes l6, Isaac as “the most invisible of the patriarchs”; Mbuvi, Bible Odyssey “Isaac”: read; an Isaac statement was cut (the southern-tribe suggestion is Coogan alone)."
+  - "Hagar's name: EJ Hagar (“The etymology of Hagar is obscure”), Drey, AUSS 40.2 (2002), Gafney (“perhaps more epithet than name”), JWA (“could be heard as hagger”): read; only wordplay, no statement."
+  - "Galatians 4:21–31: EJ Ishmael, Greenspahn ER Isaac and Moyise (Bible Odyssey) read; they disagree on whom Paul's Hagar stands for; no statement and no Trigger Claim."
+  - "Schmid 2012, p. 190 (common ground with Baden) and p. 203 (Hosea 12, Ezek 20 and 33): read; the jacob-first text uses only his summary."
+  - "Finkelstein, The Forgotten Kingdom, pp. 141–142, the configuration putting Abraham first as “a late construct”: read; the sentence breaks across a page and figure caption; not cited."
+  - "EJ Genesis, “All this makes it likely that some Genesis narratives have preserved some authentic reminiscences of early tribal history.”: read; the historical text carries the split through Hayes, Mazar and Lombaard."
+  - "NABRE intro ¶ 7, “it is reasonable to accept the Bible’s own chronology…”: read; NABRE's own lean (as on the Timeline's abraham entry), not cited."
+  - "EJ Camel (Feliks, first-edition text) on camel bones in early Egypt: read; outside the window."
+  - "Hoffmeier, Tyndale Bulletin 43.1 (1992), “Clearly there is no agreement on the question of sources”: read; outside the window."
+  - "Hayes l5, the wife-sister stories as rhetorical questions: read; framing only."
+  - "EJ Philistines (Greenfield / Sperling), “anachronistic”: read; anachronisms carried by Finkelstein, EJ Genesis and NABRE."
+  - "Answers in Genesis, M. McClellan, “Abraham and the Chronology of Ancient Mesopotamia”, ARJ 5 (2012): read; the page disclaims AiG's own view, so not cited for a tradition."
+  - "Got Questions, “Who are the biblical patriarchs?”; ABR About page; CCC §2570 prayer passage: read; not needed."
+  - "Bible Odyssey articles on Sarah, Rebekah, Rachel, Leah, Jacob (Cook), the Torah (Nihan and Rhyder); Kaminsky on the Akedah; EJ Patriarchs: read; nothing used."
+  - "Hendel, Bible Odyssey, Haran and El as possible ancient memories: read; the historical text uses his existence sentence."
+  - "Greenspahn ER Jacob, the Bronze Age setting for those who accept the patriarchs' historicity: read; not used."
+  - "Mazar, p. 59, his parallels-too-close sentence: read; summarised in the historical text, cited only via historical/6."

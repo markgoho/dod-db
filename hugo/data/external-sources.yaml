@@ -7182,3 +7182,549 @@ gotquestions-divorce-remarriage:
   url: "https://www.gotquestions.org/divorce-remarriage.html"
   hostAuthored: false
   tradition: "Got Questions Ministries, an evangelical ministry"
+
+lombaard-2010-exile-patriarchs:
+  author: "Christo Lombaard"
+  title: "The exile of the patriarchs amongst the prophets: A new beginning or first beginnings?"
+  series: "Verbum et Ecclesia 31(1), Art. #408"
+  publisher: "AOSIS"
+  year: 2010
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal, open"
+  url: "https://verbumetecclesia.org.za/index.php/VE/article/view/408/473"
+  hostAuthored: false
+  tradition: null
+
+lombaard-2014-jacob-come-lately:
+  author: "Christo Lombaard"
+  title: "Jacob come lately? Hosea 12 and the problem of dating the patriarchs of ancient Israel"
+  series: "Scriptura 113 (2014:1), 1–9"
+  publisher: "Stellenbosch University"
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal, open; byline “C.J.S. Lombaard”"
+  url: "https://scriptura.journals.ac.za/pub/article/view/913/878"
+  hostAuthored: false
+  tradition: null
+
+lemanski-2020-abraham-versus-jacob:
+  author: "Janusz Lemański"
+  title: "Abraham versus Jacob"
+  series: "Collectanea Theologica 90(5), 65–81"
+  publisher: "Cardinal Stefan Wyszyński University in Warsaw"
+  year: 2020
+  edition: "English translation of the Polish article in Collectanea Theologica 88(4), 2018"
+  class: Scholarly
+  kind: article
+  access: "Open-access journal, PDF open; the PDF sets the first letter as a separate drop cap"
+  url: "https://czasopisma.uksw.edu.pl/index.php/ct/article/view/7506/7373"
+  hostAuthored: false
+  tradition: null
+
+hong-2013-northern-elohist:
+  author: "Koog P. Hong"
+  title: "Abraham, Genesis 20–22, and the Northern Elohist"
+  series: "Biblica 94 (2013), 321–339"
+  publisher: "Gregorian Biblical Press"
+  year: 2013
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Full text open on bsw.org, one HTML page per printed page (article-p<page>.html); the server double-encodes punctuation, so curly quotes and dashes arrive garbled in scripted copies"
+  url: "https://www.bsw.org/biblica/vol-94-2013/abraham-genesis-20-22-and-the-northern-elohist/533/article-p321.html"
+  hostAuthored: false
+  tradition: null
+
+schmid-2012-genesis-exodus:
+  author: "Konrad Schmid"
+  title: "Genesis and Exodus as Two Formerly Independent Traditions of Origins for Ancient Israel"
+  series: "Biblica 93 (2012), 187–208"
+  publisher: "Gregorian Biblical Press"
+  year: 2012
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Full text open on bsw.org, one HTML page per printed page (article-p<page>.html); the server double-encodes punctuation, so curly quotes and dashes arrive garbled in scripted copies"
+  url: "https://www.bsw.org/biblica/vol-93-2012/genesis-and-exodus-as-two-formerly-independent-traditions-of-origins-for-ancient-israel/493/article-p187.html"
+  hostAuthored: false
+  tradition: null
+
+greenspahn-er-jacob:
+  author: "Frederick E. Greenspahn"
+  title: "Jacob"
+  series: "Encyclopedia of Religion, 2nd ed."
+  publisher: "Macmillan Reference USA"
+  year: 2005
+  edition: "2nd ed. (entry signed “1987 and 2005”)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open; the page also carries other works' entries on the same name"
+  url: "https://www.encyclopedia.com/people/philosophy-and-religion/biblical-proper-names-biographies/jacob"
+  hostAuthored: false
+  tradition: null
+
+greenspahn-er-isaac:
+  author: "Frederick E. Greenspahn"
+  title: "Isaac"
+  series: "Encyclopedia of Religion, 2nd ed."
+  publisher: "Macmillan Reference USA"
+  year: 2005
+  edition: "2nd ed. (entry signed “1987 and 2005”)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open; the page also carries other works' entries on the same name"
+  url: "https://www.encyclopedia.com/people/philosophy-and-religion/biblical-proper-names-biographies/isaac"
+  hostAuthored: false
+  tradition: null
+
+greenspahn-er-joseph:
+  author: "Frederick E. Greenspahn"
+  title: "Joseph"
+  series: "Encyclopedia of Religion, 2nd ed."
+  publisher: "Macmillan Reference USA"
+  year: 2005
+  edition: "2nd ed. (entry signed “1987 and 2005”)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open; the page also carries other works' entries on the same name"
+  url: "https://www.encyclopedia.com/people/philosophy-and-religion/biblical-proper-names-biographies/joseph"
+  hostAuthored: false
+  tradition: null
+
+tobolowsky-bo-twelve-tribes:
+  author: "Andrew Tobolowsky"
+  title: "The Twelve Tribes of Israel"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2020
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://bibleodyssey.org/people/main-articles/the-twelve-tribes-of-israel"
+  hostAuthored: false
+  tradition: null
+
+finkelstein-2007-quest-patriarchs:
+  author: "Israel Finkelstein"
+  title: "Patriarchs, Exodus, Conquest: Fact or Fiction?"
+  series: "Israel Finkelstein and Amihai Mazar, The Quest for the Historical Israel: Debating Archaeology and the History of Early Israel, ed. Brian B. Schmidt (Archaeology and Biblical Studies 17)"
+  publisher: "Society of Biblical Literature"
+  year: 2007
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
+  hostAuthored: false
+  tradition: null
+
+mazar-2007-quest-patriarchs:
+  author: "Amihai Mazar"
+  title: "The Patriarchs, Exodus, and Conquest Narratives in Light of Archaeology"
+  series: "Israel Finkelstein and Amihai Mazar, The Quest for the Historical Israel: Debating Archaeology and the History of Early Israel, ed. Brian B. Schmidt (Archaeology and Biblical Studies 17)"
+  publisher: "Society of Biblical Literature"
+  year: 2007
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
+  hostAuthored: false
+  tradition: null
+
+sarna-sperling-ej-abraham:
+  author: "Nahum M. Sarna and S. David Sperling"
+  title: "Abraham (biblical sections)"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open; the page also carries other works' entries on the same name"
+  url: "https://www.encyclopedia.com/people/philosophy-and-religion/biblical-proper-names-biographies/abraham"
+  hostAuthored: false
+  tradition: null
+
+sarna-sperling-ej-genesis:
+  author: "Nahum M. Sarna and S. David Sperling"
+  title: "Genesis, Book of"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/genesis-book"
+  hostAuthored: false
+  tradition: null
+
+sarna-ej-joseph:
+  author: "Nahum M. Sarna"
+  title: "Joseph (biblical sections)"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open; the page also carries other works' entries on the same name; the biblical sections are signed by Sarna alone, with no 2nd-edition reviser"
+  url: "https://www.encyclopedia.com/people/philosophy-and-religion/biblical-proper-names-biographies/joseph"
+  hostAuthored: false
+  tradition: null
+
+tushima-2018-wife-exchange:
+  author: "Cephas T. A. Tushima"
+  title: "Exchange of wife for social and food security: A famine refugee’s strategy for survival (Gn 12:10–13:2)"
+  series: "HTS Teologiese Studies/Theological Studies 74(1)"
+  publisher: "AOSIS"
+  year: 2018
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal, PDF on SciELO South Africa, open"
+  url: "https://scielo.org.za/pdf/hts/v74n1/12.pdf"
+  hostAuthored: false
+  tradition: null
+
+romer-schmid-buhler-2021-joseph:
+  author: "Thomas Römer, Konrad Schmid and Axel Bühler"
+  title: "Introduction"
+  series: "The Joseph Story between Egypt and Israel (Archaeology and Bible 5)"
+  publisher: "Mohr Siebeck"
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Open-access volume (CC BY-NC-ND 4.0); front matter and introduction in the publisher’s sample PDF, open"
+  url: "https://cdn.mohrsiebeck.com/ad,73b5a7df3848fe92f875c56e72d7ce.pdf"
+  hostAuthored: false
+  tradition: null
+
+tebes-bo-midian:
+  author: "Juan Manuel Tebes"
+  title: "Midian"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2019
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/midian/"
+  hostAuthored: false
+  tradition: null
+
+lang-bo-joseph:
+  author: "Bernhard Lang"
+  title: "Joseph"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2016
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/joseph/"
+  hostAuthored: false
+  tradition: null
+
+halvorson-taylor-bo-diaspora:
+  author: "Martien A. Halvorson-Taylor"
+  title: "Diaspora Literature"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2015
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/people/related-articles/diaspora-literature/"
+  hostAuthored: false
+  tradition: null
+
+friedberg-sperling-ej-hagar:
+  author: "Maurice Friedberg and S. David Sperling"
+  title: "Hagar (biblical sections)"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/hagar"
+  hostAuthored: false
+  tradition: null
+
+elitzur-sperling-ej-ishmael:
+  author: "Yehuda Elitzur and S. David Sperling"
+  title: "Ishmael (biblical sections)"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/ishmael"
+  hostAuthored: false
+  tradition: null
+
+jacobs-sagi-ej-akedah:
+  author: "Louis Jacobs and Avi Sagi"
+  title: "Akedah"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/akedah"
+  hostAuthored: false
+  tradition: null
+
+noble-2016-hagars-son:
+  author: "John T. Noble"
+  title: "A Place for Hagar's Son: Ishmael as a Case Study in the Priestly Tradition"
+  series: null
+  publisher: "Fortress Press"
+  year: 2016
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher-posted excerpts (introduction; part of chapter 2), open PDFs"
+  url: "https://ms.fortresspress.com/downloads/9781506402000_Introduction.pdf"
+  hostAuthored: false
+  tradition: null
+
+shectman-bo-abrahams-family:
+  author: "Sarah Shectman"
+  title: "Abraham's Family"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2016
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/abrahams-family/"
+  hostAuthored: false
+  tradition: null
+
+tracy-bo-hagar:
+  author: "Elizabeth Tracy"
+  title: "Hagar, She Who Speaks with God"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2015
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/hagar-she-who-speaks-with-god/"
+  hostAuthored: false
+  tradition: null
+
+marzouk-bo-hagar:
+  author: "Safwat Marzouk"
+  title: "Hagar from an Egyptian Christian Perspective"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2015
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/hagar-from-an-egyptian-christian-perspective/"
+  hostAuthored: false
+  tradition: null
+
+onwukwe-2020-genesis-16:
+  author: "Vincent Chukwuma Onwukwe"
+  title: "Characterisation and Plot(s) in Genesis 16: A Narrative-Critical Analysis"
+  series: "Scriptura 119, 1–17"
+  publisher: "Stellenbosch University"
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Copy in the KU Leuven repository (Lirias), open; journal open access"
+  url: "https://lirias.kuleuven.be/retrieve/588907"
+  hostAuthored: false
+  tradition: null
+
+frymer-kensky-kamionkowski-jwa-hagar:
+  author: "Tikva Frymer-Kensky and Tamar Kamionkowski"
+  title: "Hagar: Bible"
+  series: "Shalvi/Hyman Encyclopedia of Jewish Women"
+  publisher: "Jewish Women's Archive"
+  year: 2021
+  edition: null
+  class: Reference
+  kind: article
+  access: "Encyclopedia website, open"
+  url: "https://jwa.org/encyclopedia/article/hagar-bible"
+  hostAuthored: false
+  tradition: null
+
+davis-bo-binding-of-isaac:
+  author: "Ellen F. Davis"
+  title: "The Binding of Isaac"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-binding-of-isaac/"
+  hostAuthored: false
+  tradition: null
+
+nabre-genesis-11-notes:
+  author: null
+  title: "Notes to Genesis 11"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests (bot check)"
+  url: "https://bible.usccb.org/bible/genesis/11"
+  hostAuthored: false
+  tradition: null
+
+nabre-genesis-12-notes:
+  author: null
+  title: "Notes to Genesis 12"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests (bot check)"
+  url: "https://bible.usccb.org/bible/genesis/12"
+  hostAuthored: false
+  tradition: null
+
+nabre-genesis-20-notes:
+  author: null
+  title: "Notes to Genesis 20"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests (bot check)"
+  url: "https://bible.usccb.org/bible/genesis/20"
+  hostAuthored: false
+  tradition: null
+
+nabre-genesis-21-notes:
+  author: null
+  title: "Notes to Genesis 21"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests (bot check)"
+  url: "https://bible.usccb.org/bible/genesis/21"
+  hostAuthored: false
+  tradition: null
+
+nabre-genesis-26-notes:
+  author: null
+  title: "Notes to Genesis 26"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests (bot check)"
+  url: "https://bible.usccb.org/bible/genesis/26"
+  hostAuthored: false
+  tradition: null
+
+nabre-genesis-37-notes:
+  author: null
+  title: "Notes to Genesis 37"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests (bot check)"
+  url: "https://bible.usccb.org/bible/genesis/37"
+  hostAuthored: false
+  tradition: null
+
+ccc-59-61:
+  author: null
+  title: "Catechism of the Catholic Church, §§59–61"
+  series: null
+  publisher: "Libreria Editrice Vaticana"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va, open"
+  url: "https://www.vatican.va/archive/ENG0015/__PG.HTM"
+  hostAuthored: false
+  tradition: "the Catholic Church"
+
+ccc-144-146:
+  author: null
+  title: "Catechism of the Catholic Church, §§144–146"
+  series: null
+  publisher: "Libreria Editrice Vaticana"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va, open"
+  url: "https://www.vatican.va/archive/ENG0015/__PV.HTM"
+  hostAuthored: false
+  tradition: "the Catholic Church"
+
+abr-caesar-2009-patriarchs-wealth:
+  author: "Stephen Caesar"
+  title: "The Wealth and Power of the Biblical Patriarchs"
+  series: null
+  publisher: "Associates for Biblical Research"
+  year: 2009
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://biblearchaeology.org/research-articles/the-wealth-and-power-of-the-biblical-patriarchs/"
+  hostAuthored: false
+  tradition: "Associates for Biblical Research, an evangelical apologetics ministry"
+
+gotquestions-camels:
+  author: null
+  title: "Were there camels in the Middle East during Bible times?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/camels-in-the-Bible.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"

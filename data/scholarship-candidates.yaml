@@ -124,12 +124,6 @@ subjects:
     core: "" # the cluster mixes composition claims with John 1:1 grammar; the test states one thesis or drops it as not-a-subject
     basis: "Inventory short-page tier: 3 Episodes, 7 claims, 5 from Guest Speakers."
 
-  - slug: patriarchs
-    subject: "Abraham, Isaac and Jacob"
-    status: candidate
-    core: "Abraham, Isaac and Jacob come from separate traditions woven together."
-    basis: "Inventory cluster: 3 Episodes, 6 claims, 3 contested."
-
   - slug: psalms-authorship
     subject: "Who wrote the Psalms"
     status: candidate
