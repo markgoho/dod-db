@@ -1,0 +1,309 @@
+/*
+  Custom block for the Satan, Demons and Angels Scholarship Page: a comic
+  page. One ink frame holds the title, six panels and the credit, so the
+  whole thing shares as one image. A panel carries one picture, or two split
+  by a straight gutter with a ≠ roundel (two verses that differ; neither
+  side means anything). A narration label sits flush top-left; the answers
+  are plates set on the art in corners the picture leaves clear. Composes
+  cloud-section, type-section-title, scholarship-meta and the shared
+  comic-plate.
+
+  Distinctions without colour: each verse's answer is on its plate, the ≠
+  marks a difference, and the figure's robe goes from the court's grey to
+  near-black.
+*/
+.satan-comic {
+  --satan-ink: var(--tan-900);
+  --satan-paper: var(--tan-000);
+  --satan-amber: var(--color-accent);
+  --satan-frame: var(--border-width-md);
+
+  container: satan-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.satan-comic__page {
+  background: var(--satan-paper);
+  border: var(--satan-frame) solid var(--satan-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--satan-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.satan-comic__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.satan-comic__head > p {
+  margin: 0;
+}
+
+.satan-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.satan-comic__title {
+  color: var(--satan-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-3);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  text-shadow: 3px 3px 0 var(--satan-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.satan-comic__key {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  text-wrap: balance;
+}
+
+/* The key's ≠: the same roundel as on the art, at text size. */
+.satan-comic__key-vs {
+  background: var(--satan-paper);
+  border: 2px solid var(--satan-ink);
+  border-radius: 50%;
+  display: inline-grid;
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-boldest);
+  inline-size: 1.6em;
+  line-height: 1.5;
+  margin-inline: 0.2em;
+  place-items: center;
+}
+
+.satan-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.satan-comic__frame {
+  display: grid;
+  min-inline-size: 0;
+}
+
+/* A panel: one ink frame around the art; its labels sit on the art as shared comic plates (scholarship.css). */
+.satan-comic__figure {
+  border: var(--satan-frame) solid var(--satan-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.satan-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.satan-comic__half {
+  inset: 0;
+  position: absolute;
+}
+
+.satan-comic__art--vs > .satan-comic__half--left {
+  clip-path: inset(0 50% 0 0);
+}
+
+.satan-comic__art--vs > .satan-comic__half--right {
+  clip-path: inset(0 0 0 50%);
+}
+
+.satan-comic__half > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 50%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.12;
+}
+
+.satan-comic__half--right > img {
+  margin-inline-start: 50%;
+}
+
+.satan-comic__half--whole > img {
+  inline-size: 100%;
+  scale: 1.06;
+}
+
+/* The split: a straight ink gutter with a ≠ roundel. */
+.satan-comic__gutter {
+  background: var(--satan-ink);
+  inline-size: var(--satan-frame);
+  inset: 0 auto 0 calc(50% - var(--satan-frame) / 2);
+  position: absolute;
+}
+
+.satan-comic__vs {
+  aspect-ratio: 1;
+  background: var(--satan-paper);
+  border: 3px solid var(--satan-ink);
+  border-radius: 50%;
+  display: grid;
+  font-family: var(--font-family-display);
+  font-size: clamp(1rem, 6cqi, 1.8rem);
+  font-weight: var(--font-weight-boldest);
+  inline-size: 2em;
+  /* Above the plates and below the label row, where both halves show wall. */
+  inset: 30% auto auto 50%;
+  line-height: 1;
+  place-items: center;
+  position: absolute;
+  translate: -50% -50%;
+}
+
+/* A plate at the bottom-left of the right half, where that picture leaves ground clear. */
+.satan-comic__plate--rbl {
+  inset: auto auto 2cqi calc(50% + 2cqi);
+}
+
+/* A plate over open ground or sky, with room to run wider than the usual 40%. */
+.satan-comic__plate--wide {
+  max-inline-size: 55%;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.satan-comic__box {
+  background: var(--satan-amber);
+  border-block-end: var(--satan-frame) solid var(--satan-ink);
+  border-inline-end: var(--satan-frame) solid var(--satan-ink);
+  font-family: var(--font-family-display);
+  /* Scales down with a narrow panel, so the label stays one line and clears the faces below it. */
+  font-size: min(var(--step--1), 4.4cqi);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.comic-plate__sub > .satan-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates. */
+.satan-comic__ref {
+  background: var(--satan-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--satan-amber);
+  white-space: nowrap;
+}
+
+/* A plate with only a scripture tag under its name: no leading space. */
+.comic-plate__sub:has(> .satan-comic__ref:only-child) > .satan-comic__ref {
+  margin-inline-start: 0;
+}
+
+.satan-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.satan-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container satan-comic (width >= 40rem) {
+  .satan-comic__page {
+    padding: var(--space-m);
+  }
+
+  .satan-comic__title {
+    font-size: var(--step-4);
+  }
+
+  .satan-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* The poster: two panels to a row, three rows of shorter (16:10) art on the 4:5 canvas. */
+
+.scholarship-share:target .satan-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .satan-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:target .satan-comic__title {
+  font-size: var(--step-2);
+}
+
+.scholarship-share:target .satan-comic__strip {
+  gap: var(--space-2xs);
+}
+
+.scholarship-share:target .satan-comic__art {
+  aspect-ratio: 16 / 10;
+}
+
+.scholarship-share:target .satan-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.scholarship-share:target .satan-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
+}
+
+/* The card: the court and the figure standing apart, side by side under the title. */
+
+.scholarship-share:has(#share-card:target) .satan-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .satan-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:has(#share-card:target)
+  :is(.satan-comic__kicker, .satan-comic__key) {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .satan-comic__title {
+  font-size: var(--step-2);
+}
+
+.scholarship-share:has(#share-card:target) .satan-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}

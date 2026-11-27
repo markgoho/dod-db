@@ -1,0 +1,138 @@
+# Illustrations for /scholarship/satan-demons-and-angels/ (generated with
+# Gemini; see src/scripts/generate-scholarship-illustrations.ts). Each picture
+# shows only what the listed statements support; every caption, link and
+# claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Six comic panels in time order, following one figure: "the satan", a member
+# of God's court in Job; the census of David, split by a straight gutter with
+# a ≠ (2 Samuel 24:1 has the LORD incite it, 1 Chronicles 21:1 has satan);
+# the figure standing apart, in the Jewish writings of the last centuries
+# BCE; the same figure set against Jesus in the Gospels; then two older texts
+# later read as Satan: the serpent of Genesis 3 and the morning star of
+# Isaiah 14. `court` is the anchor for the figure and is chained into every
+# panel he appears in. God is never drawn as a figure, only as light. No
+# figure has wings, halo, horns, tail or pitchfork: the page says angels
+# appear in human form, and no statement gives Satan a look. His robe turns
+# from the court's grey to near-black once he stands opposed to God.
+slug: satan-demons-and-angels
+images:
+  - id: court
+    statements: [satan]
+    aspect: "4:3"
+    alt: "A heavenly court: a row of identical robed attendants stands before a great blaze of light; one of them steps forward, pointing down toward the earth as if making a case."
+    prompt: >-
+      A heavenly court above the clouds. On the RIGHT side of the picture a
+      great blaze of golden amber light shines from an empty raised seat:
+      no figure, no face, no hands, only light. In the MIDDLE and LEFT, a
+      row of six identical attendants stands facing the light: tall men in
+      long plain light-grey robes, all dressed exactly alike, calm. One of
+      them, in the centre-left, has stepped a pace forward from the row and
+      points down past the clouds toward a small distant earth below, like a
+      prosecuting lawyer making a case: a tall lean man with a sharp
+      intelligent face, close-cropped black hair and a short black beard,
+      in the SAME long plain light-grey robe as the others. The BOTTOM third
+      of the picture is plain soft clouds with nothing in it. The TOP LEFT
+      corner is plain pale sky. Negative list: no wings, no halos, no horns,
+      no tails, no crowns, no weapons, no throne figure, no text.
+
+  - id: census-lord
+    statements: [chronicles]
+    aspect: "4:5"
+    alt: "King David on his throne gives an order to a court official holding a tally scroll; a shaft of golden light falls on the king from above."
+    prompt: >-
+      A palace hall in ancient Israel. King David, a bearded man in his
+      forties with dark curly hair, a simple gold circlet and a rust red
+      robe, sits on a plain wooden throne in the MIDDLE of the picture and
+      points forward, giving an order to a court official who bows and
+      holds a blank tally scroll. A broad shaft of golden amber light falls
+      on the king from the upper part of the picture: no figure in it, no
+      face, no hands, only light. The BOTTOM third of the picture is plain
+      stone floor with nothing on it. Negative list: no other figures, no
+      wings, no halos, no text.
+
+  - id: census-satan
+    statements: [chronicles]
+    aspect: "4:5"
+    refs: [census-lord, court]
+    alt: "The same king gives the same order, but now a tall robed man stands at his shoulder, leaning in to speak in his ear."
+    prompt: >-
+      The SAME palace hall, the SAME King David (same face, beard, gold
+      circlet and rust red robe) on the SAME plain wooden throne, pointing
+      forward and giving the same order to the same bowing official with a
+      blank tally scroll, as in the first reference image. But there is no
+      shaft of light. Instead, standing just behind the king's shoulder and
+      leaning in to speak quietly in his ear, is the tall lean man from the
+      second reference image (same sharp face, close-cropped black hair,
+      short black beard, long plain light-grey robe). The BOTTOM third of
+      the picture is plain stone floor with nothing on it. Negative list:
+      no wings, no halos, no horns, no tails, no shadows with faces, no
+      text.
+
+  - id: apart
+    statements: [devil]
+    aspect: "4:3"
+    refs: [court]
+    alt: "The same tall man, now in a near-black robe, stands alone on a dark rocky height with his back to a distant light, a crowd of shadowy spirits gathered behind him."
+    prompt: >-
+      The SAME tall lean man as in the reference image (same sharp face,
+      close-cropped black hair and short black beard), but now in a long
+      near-black robe with a deep rust red lining. He stands alone on a
+      dark rocky height in the RIGHT half of the picture, arms folded,
+      turned AWAY from a small distant blaze of golden amber light far off
+      in the upper left of the sky, looking out of the picture with a cold,
+      defiant expression. Behind him, a loose crowd of faceless grey shadowy
+      spirit shapes, too many to count, drifts after him. The BOTTOM LEFT
+      quarter of the picture is plain dark empty ground. Negative list: no
+      wings, no halos, no horns, no tails, no pitchfork, no fire, no
+      weapons, no monsters, no text.
+
+  - id: gospels
+    statements: [devil]
+    aspect: "4:3"
+    refs: [apart]
+    alt: "Jesus, in a plain off-white tunic, stands on a hillside speaking to a few listeners; across from him, apart in shadow, the same tall man in the near-black robe watches him."
+    prompt: >-
+      A low hillside in Galilee in daylight. In the RIGHT half of the
+      picture stands Jesus: a first-century Jewish man of about thirty with
+      shoulder-length dark brown hair and a short dark beard, olive skin,
+      in a plain off-white tunic, one hand raised as he speaks with calm
+      conviction to three ordinary villagers in plain tunics and headcloths
+      who sit on the slope listening. Soft golden amber light falls on his
+      side of the picture. In the LEFT half, standing apart under a dark
+      cloud, is the SAME tall lean man as in the reference image (same
+      sharp face, close-cropped black hair, short black beard, long
+      near-black robe with rust red lining), arms folded, watching Jesus as
+      his opponent. The BOTTOM LEFT quarter of the picture is plain bare
+      hillside. Negative list: no halo, no glow around Jesus's head, no
+      wings, no horns, no tails, no fire, no weapons, no fighting, no
+      desert, no text.
+
+  - id: serpent
+    statements: [serpent]
+    aspect: "4:3"
+    alt: "In a lush garden, a snake coiled on a branch of a fruit tree talks to a woman who stands listening."
+    prompt: >-
+      A lush ancient garden. In the RIGHT half of the picture, a fruit tree
+      heavy with round fruit; coiled along one of its low branches is an
+      ordinary snake, a plain amber and ink-patterned serpent, its head
+      raised as if talking. Beside the tree a young woman with long dark
+      hair, fully clothed in a simple plain knee-length light warm grey
+      tunic with short sleeves, stands listening to it, curious. The snake
+      is just an animal: no human face, no horns, no crown, no legs, no
+      glowing eyes. The BOTTOM LEFT quarter of the picture is plain grass
+      with nothing in it. The TOP LEFT is plain pale sky. Negative list: no
+      man, no other figures, no text.
+
+  - id: babylon
+    statements: [lucifer]
+    aspect: "4:3"
+    alt: "Dawn over the walls and ziggurat of an ancient Babylonian city; one bright morning star shines low in the pale sky."
+    prompt: >-
+      Dawn over an ancient Babylonian city: in the RIGHT half of the
+      picture, the city's high walls, gates and a stepped ziggurat in
+      silhouette against a pale amber sunrise sky. Low in the sky above
+      the city shines one single bright morning star, drawn as a bold
+      white-and-amber star with short rays, the only star in the sky. The
+      BOTTOM LEFT quarter of the picture is plain dark empty plain. The TOP
+      LEFT is plain pale sky. Negative list: no figures, no people, no
+      falling figure, no wings, no moon, no other stars, no text.
