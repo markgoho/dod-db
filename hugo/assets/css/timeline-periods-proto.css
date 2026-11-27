@@ -1,0 +1,96 @@
+/* PROTOTYPE, throwaway (prototype/timeline-periods-main). */
+.proto-bar {
+  background: var(--tan-900);
+  border-radius: var(--border-radius-md);
+  bottom: 12px;
+  color: var(--tan-000);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--step--1);
+  gap: 4px 12px;
+  left: 50%;
+  padding: 8px 14px;
+  position: fixed;
+  translate: -50% 0;
+  z-index: 100;
+}
+.proto-bar a { color: var(--tan-000); }
+.proto-bar a[aria-current] { font-weight: 700; text-decoration-thickness: 3px; }
+
+/* A: chips beside the era pill. */
+.proto-chips {
+  display: flex;
+  gap: 4px;
+  inset-block-start: 50%;
+  inset-inline-start: calc(100% + 6px);
+  position: absolute;
+  translate: 0 -50%;
+  white-space: nowrap;
+}
+.proto-chip {
+  background: var(--tan-000);
+  border: 1px solid var(--tan-900);
+  border-radius: 999px;
+  color: var(--tan-900);
+  font-size: var(--step--2);
+  font-weight: 600;
+  padding: 1px 8px;
+}
+.proto-chip--temple { border-style: dashed; }
+
+/* B–D: a layer behind the rows. */
+.proto-layer {
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+}
+.timeline-axis > .timeline-era { position: relative; z-index: 1; }
+.timeline-axis > .timeline-era > .timeline-era__entries { pointer-events: auto; }
+
+.proto-band {
+  inset-inline: 0;
+  position: absolute;
+}
+.proto-band--age { border-block-start: 1px dashed color-mix(in srgb, var(--tan-900) 45%, transparent); }
+.proto-band--age[data-parity="odd"] { background: color-mix(in srgb, var(--tan-300) 45%, transparent); }
+.proto-band--temple {
+  background: var(--tan-900);
+  inset-inline: auto;
+  left: calc(var(--axis-at) + 6px);
+  width: 3px;
+}
+.proto-band--temple:first-of-type,
+.proto-band--temple:has(+ *) { }
+.proto-band__label {
+  background: var(--tan-000);
+  border: 1px solid var(--tan-900);
+  border-radius: 999px;
+  font-size: var(--step--2);
+  font-weight: 700;
+  left: calc(var(--axis-at) + 12px);
+  padding: 1px 8px;
+  position: sticky;
+  top: 8px;
+  display: inline-block;
+  margin-inline-start: calc(var(--axis-at) + var(--space-s) + 12px);
+  margin-block-start: 4px;
+}
+
+.proto-marker {
+  background: var(--tan-000);
+  border: var(--border-width-md) solid var(--tan-900);
+  border-radius: 999px;
+  font-size: var(--step--2);
+  left: var(--axis-at);
+  padding: 1px 10px;
+  position: absolute;
+  translate: -50% 0;
+  white-space: nowrap;
+  z-index: 2;
+}
+.proto-marker span { opacity: 0.75; }
+.proto-marker--temple { border-style: dashed; left: calc(var(--axis-at) + 90px); translate: 0 0; }
+
+/* D: the era pills give way to the periods. */
+[data-proto-periods="d"] .timeline-era__label { visibility: hidden; height: 0; padding: 0; }

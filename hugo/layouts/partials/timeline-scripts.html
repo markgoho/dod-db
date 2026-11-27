@@ -23,3 +23,8 @@
   {{ $links = $links | resources.Minify | resources.Fingerprint }}
 {{ end }}
 <script src="{{ $links.RelPermalink }}" type="module"></script>
+{{/* PROTOTYPE (prototype/timeline-periods-main): periods on the main Timeline. */}}
+{{ $proto := resources.Get "ts/timeline-periods-proto.ts" | js.Build (dict "targetPath" "timeline-periods-proto.js") }}
+{{ $protoCss := resources.Get "css/timeline-periods-proto.css" }}
+<link rel="stylesheet" href="{{ $protoCss.RelPermalink }}">
+<script src="{{ $proto.RelPermalink }}" type="module"></script>
