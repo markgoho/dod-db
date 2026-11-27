@@ -12,7 +12,7 @@
   (scroll-target-group); it stays rendered while the popover is closed, so the
   bar tracks the era with no geometry. The generated :has() rules below set
   one flag, --is-current: 1, on whatever its :target-current link makes
-  current: the caption label, the bar's era, the band, the tick, the
+  current: the bar's era, the band, the tick, the
   entry's narrated setting (#170) and the entry on the axis. timeline-minimap.css says what the flag
   shows. Only entries are scroll targets, so the highlight never alternates
   between eras and entries. timeline-minimap.ts (loaded from the list
@@ -317,16 +317,6 @@
     class="timeline-minimap__map"
     popover
     aria-label="Timeline minimap">
-    <p class="timeline-minimap__caption">
-      <span class="type-eyebrow">You are here</span>
-      <span class="timeline-minimap__slot">
-        {{- range $ticks }}
-          <span class="timeline-minimap__now" data-now="{{ .id }}"
-            ><strong>{{ .title }}</strong> {{ .date }}</span
-          >
-        {{- end }}
-      </span>
-    </p>
     <div
       class="timeline-minimap__strip"
       data-overflow="{{ $overflow }}"
@@ -373,6 +363,8 @@
       <div class="timeline-minimap__ticks">
         {{- /* The strip's box, for anchor-size(): the dots are sized to its width and height. */}}
         <span class="timeline-minimap__frame" aria-hidden="true"></span>
+        {{- /* The part of the Timeline on screen (#253): placed by timeline-minimap.ts from the entries in view; hidden until then. */}}
+        <span class="timeline-minimap__view" aria-hidden="true" hidden></span>
         {{- range $ticks }}
           <a
             class="timeline-minimap__tick{{ if .placed }}

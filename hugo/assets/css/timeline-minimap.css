@@ -111,9 +111,10 @@
 }
 
 /*
-  The minimap's two stacked rows (caption, strip), as a popover or as the
-  rail; no legend under the strip, so the strip takes the height (the
-  Timeline's own legend names the dots). --tick-dot-max is the largest a dot
+  The minimap is the strip alone, as a popover or as the rail: no caption
+  over it (#253; the strip's window shows where the reader is) and no legend
+  under it (the Timeline's own legend names the dots), so it takes the
+  height. --tick-dot-max is the largest a dot
   is drawn, where the strip has room (see the ticks below).
 */
 .timeline-minimap__map {
@@ -122,7 +123,7 @@
   --tick-dot: var(--tick-dot-max);
 
   gap: round(var(--space-3xs), 1px);
-  grid-template: auto minmax(0, 1fr) / minmax(0, 1fr);
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
 }
 
 /*
@@ -360,33 +361,7 @@
   }
 }
 
-/* ---------- Caption: a fixed slot, so a long label never moves the strip ---------- */
-
-.timeline-minimap__caption {
-  --lines: 3;
-
-  block-size: round(
-    up,
-    (1 + var(--lines)) * var(--line-height-heading) * 1em,
-    1px
-  );
-  display: grid;
-  font-size: var(--step--2);
-  grid-template: auto minmax(0, 1fr) / minmax(0, 1fr);
-  line-height: var(--line-height-heading);
-  margin: 0;
-}
-
-/* The current entry's name carries the card's highlighter stroke (timeline.css). */
-.timeline-minimap__caption strong {
-  background: var(--timeline-highlighter);
-  box-decoration-break: clone;
-}
-
-.timeline-minimap__caption .type-eyebrow {
-  color: var(--color-text-muted);
-  font-size: inherit;
-}
+/* ---------- Labels: the bar's and the era pill's fixed slot, so a long label never moves anything ---------- */
 
 /* Every label shares one cell; only the current one shows (-webkit-box, for the clamp). */
 .timeline-minimap__slot {
@@ -406,7 +381,6 @@
 
 /* No scrollspy: nothing to say where the reader is, so say nothing. */
 @supports not (scroll-target-group: auto) {
-  .timeline-minimap__caption,
   .timeline-minimap__status {
     visibility: hidden;
   }
@@ -579,6 +553,36 @@
   inset: 0;
   pointer-events: none;
   position: absolute;
+}
+
+/*
+  The part of the Timeline on screen (#253): from the earliest entry in view
+  to the latest (--view-start, --view-end, shares of the strip, set by
+  timeline-minimap.ts), across the dots' area, under the dots. Tall enough to
+  see when a single entry fills the screen. It glides as the reader scrolls,
+  unless they prefer less motion.
+*/
+.timeline-minimap__view {
+  background: color-mix(in srgb, var(--color-accent) 25%, transparent);
+  border: var(--border-width-sm) solid var(--tan-900);
+  box-sizing: border-box;
+  inset-block: round(down, var(--view-start) * 100%, 1px)
+    calc(100% - round(up, var(--view-end) * 100%, 1px));
+  inset-inline: var(--era-label-width) 0;
+  min-block-size: var(--space-xs);
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+}
+
+.timeline-minimap__view[hidden] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .timeline-minimap__view {
+    transition: inset-block 150ms ease-out;
+  }
 }
 
 /* Its own stacking context, so a setting can sit under the ticks and over the bands. */

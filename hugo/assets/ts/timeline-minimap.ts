@@ -58,6 +58,71 @@ if (minimap && CSS.supports("scroll-target-group", "auto")) {
   document.addEventListener("scrollend", syncSoon);
 }
 
+/**
+ * The strip's window (#253): the part of the Timeline on screen. An
+ * IntersectionObserver keeps the axis rows in view; the window runs from the
+ * earliest of their ticks to the latest. With no entry in view (an empty era
+ * fills the screen), it covers the eras in view instead. Positions are the
+ * shares the template already wrote on each tick and band.
+ */
+const share = (el: HTMLElement, name: string): number =>
+  Number.parseFloat(el.style.getPropertyValue(name));
+
+function trackViewport(root: Element): void {
+  const view = root.querySelector<HTMLElement>(".timeline-minimap__view");
+  const axis = document.querySelector(".timeline-axis");
+  if (!view || !axis) return;
+
+  const tickAt = new Map<string, number>();
+  for (const tick of root.querySelectorAll<HTMLElement>("[data-tick]"))
+    tickAt.set(tick.dataset.tick ?? "", share(tick, "--tick-at"));
+  const eraSpan = new Map<string, [number, number]>();
+  for (const band of root.querySelectorAll<HTMLElement>("[data-era]"))
+    eraSpan.set(band.dataset.era ?? "", [
+      share(band, "--era-start"),
+      share(band, "--era-end"),
+    ]);
+
+  const entries = new Set<string>();
+  const eras = new Set<string>();
+  let frame = 0;
+  const draw = () => {
+    frame = 0;
+    let spans = [...entries].flatMap(id => {
+      const at = tickAt.get(id);
+      return at === undefined ? [] : [[at, at] as [number, number]];
+    });
+    if (spans.length === 0)
+      spans = [...eras].flatMap(id => {
+        const span = eraSpan.get(id);
+        return span ? [span] : [];
+      });
+    view.hidden = spans.length === 0;
+    if (view.hidden) return;
+    view.style.setProperty(
+      "--view-start",
+      String(Math.min(...spans.map(s => s[0]))),
+    );
+    view.style.setProperty(
+      "--view-end",
+      String(Math.max(...spans.map(s => s[1]))),
+    );
+  };
+
+  const observer = new IntersectionObserver(records => {
+    for (const { target, isIntersecting } of records) {
+      const set = target.classList.contains("timeline-era") ? eras : entries;
+      if (isIntersecting) set.add(target.id);
+      else set.delete(target.id);
+    }
+    frame ||= requestAnimationFrame(draw);
+  });
+  for (const row of axis.querySelectorAll(".timeline-era, .timeline-entry"))
+    observer.observe(row);
+}
+
+if (minimap) trackViewport(minimap);
+
 // Browsers without beforematch do not reveal a fragment target inside a
 // closed <details> either (Safari): open it, then go to the target.
 function revealTarget(): void {

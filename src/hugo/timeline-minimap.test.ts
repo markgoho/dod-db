@@ -548,14 +548,15 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     }
   });
 
-  test("the caption has a label per entry, shown by a generated :has() rule", () => {
-    const daniel = select(
+  test("no caption over the strip; the strip's window, hidden until the script places it, shows the part on screen (#253)", () => {
+    expect(select(page, ".timeline-minimap__caption")).toEqual([]);
+    const view = select(
       page,
-      '.timeline-minimap__caption [data-now="daniel"]',
+      ".timeline-minimap__ticks > .timeline-minimap__view",
     );
-    expect(daniel.map(e => e.text.replaceAll(/\s+/g, " ").trim())).toEqual([
-      "Daniel 167–164 BCE",
-    ]);
+    expect(
+      view.map(v => [v.attrs["aria-hidden"], "hidden" in v.attrs]),
+    ).toEqual([["true", true]]);
   });
 
   test("the era pill has a label per era, in axis order, each shown by its era's generated rule", () => {
