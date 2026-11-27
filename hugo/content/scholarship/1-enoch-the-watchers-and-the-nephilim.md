@@ -27,7 +27,7 @@ statements:
   - id: composite
     group: "The book of 1 Enoch"
     question: "What is 1 Enoch?"
-    short: "An anthology of Jewish writings in at least five parts, composed by different authors over several centuries and attributed to the patriarch Enoch."
+    short: "An anthology of Jewish writings in at least five parts, composed by different authors over several centuries and largely attributed to the patriarch Enoch."
     text: "Kelley Coblentz Bautch's Bible Odyssey article calls 1 Enoch an anthology of at least five distinctive booklets, and says writings like the Epistle of Enoch are pseudepigraphal: they present the words, visions or experiences of Enoch but were written by someone else and attributed to him. Loren Stuckenbruck and Gabriele Boccaccini's introduction to an SBL Press volume calls the book a collection of some twenty or more traditions that reflect up to four hundred years of writing, collecting and editing by Jews who wrote at different times, and says the Ethiopic manuscripts divide its 108 chapters into five major sections: the Book of the Watchers (chapters 1–36), the Book of Parables (37–71), the Book of the Heavenly Luminaries (72–82), the Book of Dreams (83–90) and the Epistle (91/92–105). Patricia Ahearne-Kroll's chapter in another SBL Press volume says these portions were produced by different writers at different times. Eibert Tigchelaar's chapter says the manuscripts show different Enochic booklets that could be copied both on their own and as a collection. Olivia Stewart Lester's Bible Odyssey article names 1 Enoch among the texts ancient Jewish scribes wrote in the voices of figures such as Enoch, Ezra and Moses."
     cites:
       - source: coblentz-bautch-bo-enoch
@@ -35,7 +35,7 @@ statements:
         quote: "First Enoch is an anthology made up of at least five distinctive booklets."
         read: 2026-11-27
       - source: coblentz-bautch-bo-enoch
-        locator: "section “Where did the books of Enoch come from”"
+        locator: "section “Where did the books of Enoch come from and how were they used?”"
         quote: "Rather, writings like the Epistle of Enoch are considered pseudepigraphal. This means that even though the texts appear to contain the words, visions, or experiences of Enoch, they were, in fact, written by someone else and attributed to the patriarch."
         read: 2026-11-27
       - source: stuckenbruck-boccaccini-2016-intro
@@ -62,7 +62,7 @@ statements:
     group: "The book of 1 Enoch"
     question: "Which parts of 1 Enoch are the oldest?"
     short: "The Book of the Watchers (chapters 1–36) and the Astronomical Book (72–82), among the earliest known apocalypses. Their composition is commonly dated to the third century BCE, though some sources allow an earlier or a later date."
-    text: "Matthew Goff's chapter in an SBL Press volume says the earliest manuscripts of these two works, 4Q201 and 4Q208, date to roughly the first half of the second century BCE, and that it is reasonable to posit, as is commonly acknowledged, that their formation began in the third century. Lorenzo DiTommaso's chapter in the same volume says their present versions are the result of a long editorial process that began in the third or even fourth century BCE, and reports James VanderKam's caution against presuming so early a date. Annette Yoshiko Reed's Fallen Angels says the paleography of the earliest fragments dates both to the third century BCE. John Collins's entry in the Encyclopedia of Religion dates the Book of the Watchers to the third century BCE. George Nickelsburg and James VanderKam's introduction to their translation says the Astronomical Book may have been composed in the third century BCE, possibly earlier, and may be the oldest Enochic composition. Joseph Angel's Bible Odyssey article says parts of the Book of the Watchers date as early as the fourth century BCE; McKenna Boling and Travis Proctor's dates it to the third or second century BCE. Tigchelaar reports that Józef Milik's proposal of a fourth-century or older booklet of chapters 6–19 has met criticism or dismissal."
+    text: "Matthew Goff's chapter in an SBL Press volume says the earliest manuscripts of these two works, 4Q201 and 4Q208, date to roughly the first half of the second century BCE, and that it is reasonable to posit, as is commonly acknowledged, that their formation began in the third century. Lorenzo DiTommaso's chapter in the same volume says their present versions are the result of a long editorial process that began in the third or even fourth century BCE. Annette Yoshiko Reed's Fallen Angels says the paleography of the earliest fragments suggested that both date from the third century BCE. John Collins's entry in the Encyclopedia of Religion dates the Book of the Watchers to the third century BCE. George Nickelsburg and James VanderKam's introduction to their translation says the Astronomical Book may have been composed in the third century BCE, possibly earlier, and may be the oldest Enochic composition. Joseph Angel's Bible Odyssey article says parts of the Book of the Watchers date as early as the fourth century BCE; McKenna Boling and Travis Proctor's dates it to the third or second century BCE. Tigchelaar reports that Józef Milik's proposal of a fourth-century or older booklet of chapters 6–19 has met criticism or dismissal."
     cites:
       - source: goff-2023-aramaic
         locator: "p. 201"
@@ -71,10 +71,6 @@ statements:
       - source: ditommaso-2023-revealed
         locator: "p. 93 n. 27"
         quote: "The evidence strongly suggests that the present versions of the Book of Watchers and the Astronomical Book are the result of a long and complicated editorial process that began in the third or even fourth centuries BCE."
-        read: 2026-11-27
-      - source: ditommaso-2023-revealed
-        locator: "p. 93 n. 26"
-        quote: "VanderKam, though, cautions against the presumption of such an early date of composition."
         read: 2026-11-27
       - source: reed-2005-fallen-angels
         locator: "Introduction, p. 3"
@@ -85,19 +81,19 @@ statements:
         quote: "date from the third century bce, making them our oldest known apocalypses and among our most ancient nonbiblical examples of Jewish literature."
         read: 2026-11-27
       - source: collins-eor-apocalypse
-        locator: "section on otherworldly journeys"
+        locator: "section “The Jewish Apocalypses”"
         quote: 'In the earliest example of this type, the "Book of the Watchers" in 1 Enoch (third century bce), Enoch ascends to the presence of God.'
         read: 2026-11-27
       - source: nickelsburg-vanderkam-2012-introduction
-        locator: "p. 7"
+        locator: "p. 6"
         quote: "Since the earliest copy of the Book of the Luminaries dates from about 200–150 b.c.e., the work may have been composed in the third century b.c.e., possibly earlier. It may therefore be the oldest Enochic composition."
         read: 2026-11-27
       - source: angel-bo-nephilim
-        locator: "paragraph on the Book of the Watchers"
+        locator: "section “How did the Nephilim legend grow in later tradition?”"
         quote: "The earliest account derives from the part of the book of 1 Enoch known as The Book of the Watchers, parts of which date as early as the fourth century BCE."
         read: 2026-11-27
       - source: boling-proctor-bo-watchers
-        locator: "opening paragraphs"
+        locator: "section “Who are the Watchers?”"
         quote: "The most fully developed narrative of the Watchers appears in the Book of the Watchers, an ancient Jewish text of the third or second century BCE that is now collected in 1 Enoch 1–36."
         read: 2026-11-27
       - source: tigchelaar-2019-milik
@@ -108,7 +104,7 @@ statements:
     group: "The book of 1 Enoch"
     question: "When was the Book of Parables written?"
     short: "Around the turn of the era or in the first century CE, in the prevailing view, though sources differ within that window. It is the one major part of 1 Enoch not found among the Dead Sea Scrolls."
-    text: "Lorenzo DiTommaso says the origin and authorship of the Parables (or Similitudes) have been much debated and that the communis opinio inclines to a date in the late Second Temple period, likely the first century CE. Lester Grabbe's chapter in an SBL Press volume dates it to the late first century BCE or the first part of the first century CE and calls that the date becoming widely recognized in scholarship. Leslie Baynes's chapter in the same volume says recent research has been crystallizing around a date around the turn of the era, an emerging consensus. John Collins's entry in the Encyclopedia of Religion calls it a Jewish work of the mid-first century CE, and Max Botner's Bible Odyssey article says many specialists date some form of it before the Synoptic Gospels. Eibert Tigchelaar reports that Józef Milik's late dating, around 270 CE, has met criticism or dismissal. Sidnie White Crawford's Bible Odyssey article and Philip Davies's entry in the Encyclopaedia Judaica say the Parables have not been found among the Qumran scrolls."
+    text: "Lorenzo DiTommaso says the origin and authorship of the Parables (or Similitudes) have been much debated and that the communis opinio inclines to a date in the late Second Temple period, likely the first century CE. Lester Grabbe's chapter in an SBL Press volume says that, if 1 Enoch 67:5–13 refers to Herod's last months, this would suggest a composition in the late first century BCE or the first part of the first century CE, and calls that the date becoming widely recognized in scholarship. Leslie Baynes's chapter in the same volume says recent research has been crystallizing around a date around the turn of the era, an emerging consensus. John Collins's entry in the Encyclopedia of Religion calls it a Jewish work of the mid-first century CE, and Max Botner's Bible Odyssey article says many specialists date some form of it before the Synoptic Gospels. Eibert Tigchelaar reports that Józef Milik's late dating, around 270 CE, has met criticism or dismissal. Sidnie White Crawford's Bible Odyssey article and Philip Davies's entry in the Encyclopaedia Judaica say the Parables have not been found among the Qumran scrolls."
     cites:
       - source: ditommaso-2023-revealed
         locator: "p. 96"
@@ -127,7 +123,7 @@ statements:
         quote: "If Luke was influenced by the Parables of Enoch, then one of the primary results of this research has been to help undergird this emerging consensus."
         read: 2026-11-27
       - source: collins-eor-apocalypse
-        locator: "section on otherworldly journeys"
+        locator: "section “The Jewish Apocalypses”"
         quote: "The Similitudes of Enoch, a Jewish work of the mid-first century ce, combines allegorical visions with an ascent and is largely concerned with political and social abuses."
         read: 2026-11-27
       - source: botner-bo-christ
@@ -161,7 +157,7 @@ statements:
         quote: "This essay focuses on the fact that our earliest examples of the genre apocalypse, the Astronomical Book and the Book of the Watchers, were composed in Aramaic."
         read: 2026-11-27
       - source: wright-2019-within-without
-        locator: "pp. 148–49"
+        locator: "p. 148"
         quote: "the Enochic Astronomical Book (1 En. 72–82), which was originally composed in Aramaic, was translated into Greek, and then into Ethiopic, the language in which the complete text"
         read: 2026-11-27
       - source: coblentz-bautch-bo-enoch
@@ -169,7 +165,7 @@ statements:
         quote: "While parts of 1 Enoch are found in Aramaic and Greek, the entire anthology survives only in Classical Ethiopic."
         read: 2026-11-27
       - source: collins-eor-apocalypse
-        locator: "opening section"
+        locator: "section “The Jewish Apocalypses”"
         quote: "Both types are found in the collection of writings known as 1 Enoch, which is known in full only in Geez (Ethiopic) translations, but is now attested in Aramaic fragments from the Dead Sea Scrolls"
         read: 2026-11-27
       - source: stuckenbruck-boccaccini-2016-intro
@@ -187,8 +183,8 @@ statements:
   - id: canon
     group: "The book of 1 Enoch"
     question: "Is 1 Enoch in any Bible?"
-    short: "In the Bible of the Ethiopian Orthodox Church, whose Old Testament includes 1 Enoch and Jubilees. Elsewhere, interest in the Enochic books waned among Jews and Christians, and they were largely forgotten in the West until their modern rediscovery."
-    text: "Lorenzo DiTommaso and Matthew Goff say the Enochic writings and Jubilees, largely forgotten in the West until their scholarly rediscovery, are books of the Old Testament in the Ethiopian Orthodox Church. Benjamin Wright says 1 Enoch and Jubilees found their way into the canon of the Ethiopian church. Bruk Ayele Asale's article in the Journal for Semitics says 1 Enoch disappeared from the Jewish and Christian world where it had gained canonical authority and survives in its entirety in the Ethiopian Orthodox Tewahedo Church, where for over a millennium it has been kept alive only. Kelley Coblentz Bautch says the book is sometimes included in that church's Old Testament, and that interest in books attributed to Enoch, once popular among ancient Christians, eventually waned among Jews and Christians. Patricia Ahearne-Kroll says Tertullian defended its importance when Christian contemporaries were rejecting it. Boling and Proctor say later Christian writers increasingly preferred other explanations for the origins of evil, and Dale Martin's Yale lectures say 2 Peter, reworking Jude, leaves out its quotation of Enoch."
+    short: "In the Bible of the Ethiopian Orthodox Church, whose Old Testament includes 1 Enoch and Jubilees. Elsewhere, interest in the Enochic books waned among Jews and Christians, and they were largely forgotten in the West until their scholarly rediscovery."
+    text: "Lorenzo DiTommaso and Matthew Goff say the Enochic writings and Jubilees, largely forgotten in the West until their scholarly rediscovery, are books of the Old Testament in the Ethiopian Orthodox Church. Benjamin Wright says 1 Enoch and Jubilees found their way into the canon of the Ethiopian church. Bruk Ayele Asale's article in the Journal for Semitics says 1 Enoch disappeared centuries ago from the Jewish and Christian world where it originated, that it survives in its entirety in the Ethiopian Orthodox Tewahedo Church, and that for over a millennium it was kept alive and used only in Ethiopia. Kelley Coblentz Bautch says the book is sometimes included in that church's Old Testament, and that interest in books attributed to Enoch, once popular among ancient Christians, eventually waned among Jews and Christians. Patricia Ahearne-Kroll says Tertullian defended its importance when Christian contemporaries were rejecting it. Boling and Proctor say later Christian writers increasingly preferred other explanations for the origins of evil."
     cites:
       - source: ditommaso-goff-2023-intro
         locator: "p. 2"
@@ -211,7 +207,7 @@ statements:
         quote: "The Book of Enoch (commonly known as 1 Enoch) is sometimes included in the Old Testament of the Ethiopian Orthodox Church."
         read: 2026-11-27
       - source: coblentz-bautch-bo-enoch
-        locator: "section “Where did the books of Enoch come from”"
+        locator: "section “Where did the books of Enoch come from and how were they used?”"
         quote: "While interest in books attributed to Enoch eventually waned among Jews and Christians, one can still find references to this mysterious figure in Jewish, Christian, and Islamic literature into the Middle Ages."
         read: 2026-11-27
       - source: ahearne-kroll-2019-history
@@ -221,10 +217,6 @@ statements:
       - source: boling-proctor-bo-watchers
         locator: "closing section"
         quote: "Classical rabbinic literature contains almost no traces of Watchers traditions, and later Christian writers increasingly preferred alternative explanations for the origins of evil."
-        read: 2026-11-27
-      - source: martin-rlst152-l24
-        locator: "on 2 Peter and Jude"
-        quote: "He edits out of Jude stuff, that by that time, he believes is not really part of Christian scripture."
         read: 2026-11-27
   - id: jude
     group: "The book of 1 Enoch"
@@ -237,11 +229,11 @@ statements:
         quote: "Inquiries into the Nachleben of the Book of the Watchers have mostly centered on the quotation of 1 En. 1:9 in the NT Epistle of Jude and the allusions to 1 En. 6–16 in Jude, 1 Peter, and 2 Peter."
         read: 2026-11-27
       - source: coblentz-bautch-bo-enoch
-        locator: "section “Where did the books of Enoch come from”"
+        locator: "section “Where did the books of Enoch come from and how were they used?”"
         quote: "Books associated with Enoch were popular among ancient Christians, and a selection from the Book of the Watchers (which we find today in 1 Enoch) is quoted in Jude 14-15."
         read: 2026-11-27
       - source: martin-rlst152-l24
-        locator: "on Jude"
+        locator: "Chapter 4, “2 Peter: A Letter from the Post-apostolic Age” [00:37:00]"
         quote: "Notice what he's doing, he's quoting Enochic literature, which isn't in our Bible, as if it is also true prophecy and scripture from Enoch."
         read: 2026-11-27
       - source: crawford-bo-other-bible
@@ -249,18 +241,18 @@ statements:
         quote: "Interestingly, Enoch is quoted as scripture in the New Testament, in Jude 1:14-15."
         read: 2026-11-27
       - source: mbuvi-bo-jude-apocryphal
-        locator: "opening paragraph"
+        locator: "section “How did Jude use 1 Enoch?”"
         quote: "the letter’s reference to 1 Enoch may suggest that Jude accepted the text as Scripture, just like the community at Qumran did."
         read: 2026-11-27
       - source: mbuvi-bo-jude-apocryphal
-        locator: "paragraph beginning “Another possible explanation”"
+        locator: "section “How did Jude use 1 Enoch?”, paragraph beginning “Another possible explanation”"
         quote: "In such a case, the texts would have been quoted not in recognition of their authority but as a tool against opponents."
         read: 2026-11-27
   - id: son-of-man
     group: "The book of 1 Enoch"
     question: "Is the Son of Man of the Parables connected with the Son of Man of the Gospels?"
-    short: "Sources see some connection, with both figures developing the “one like a son of man” of Daniel 7, but disagree on whether the Gospels drew on the Parables directly."
-    text: "Loren Stuckenbruck and Gabriele Boccaccini say the Parables have been highlighted time and again in this connection, though met with skepticism from some quarters; for them a connection between the Son of Man of the Parables and the figure in Matthew seems certain, and a literary one possible but less certain. Lester Grabbe says scholars have much disagreed on the “son of man” question; he says the figure develops from the one “like a son of man” of Daniel 7:13, that it has taken on a messianic identity in the Parables, and that the argument for direct influence of the Parables on Matthew seems to him well based, while noting scholars who argue that “Son of Man” is not a title in the Parables. Benjamin Reynolds's Bible Odyssey article says the Danielic view of Jesus's use of the phrase now appears more plausible than the idiomatic view, and that the Parables present the son of man as a royal or messianic judge. Max Botner's Bible Odyssey article says many specialists date the Parables before the Synoptic Gospels."
+    short: "Sources see some connection between the Son of Man of the Parables and the one in Matthew's Gospel, both developing the “one like a son of man” of Daniel 7; whether Matthew drew on the Parables directly is not settled."
+    text: "Loren Stuckenbruck and Gabriele Boccaccini say the Parables have been highlighted time and again in this connection, though met with skepticism from some quarters; for them, if the Parables can be dated before the Common Era or preserve tradition from that time, a connection between the Son of Man of the Parables and the figure in Matthew seems certain, and a literary one possible but less certain. Lester Grabbe says scholars have much disagreed on the “son of man” question; he says the figure develops from the one “like a son of man” of Daniel 7:13, that it has taken on a messianic identity in the Parables, and that the argument for direct influence of the Parables on Matthew seems to him well based, while noting scholars who argue that “Son of Man” is not a title in the Parables. Benjamin Reynolds's Bible Odyssey article says the Danielic view of Jesus's use of the phrase now appears more plausible than the idiomatic view, and that the Parables present the son of man as a royal or messianic judge. Max Botner's Bible Odyssey article says many specialists date some form of the Parables before the Synoptic Gospels."
     cites:
       - source: stuckenbruck-boccaccini-2016-intro
         locator: "p. 6"
@@ -373,29 +365,29 @@ statements:
         quote: "Instead, some rabbis suggest reading elohim as judges or lords."
         read: 2026-11-27
       - source: usue-2005-divine-sonship
-        locator: "p. 819"
+        locator: "p. 820"
         quote: "The above discussion reveals that there is basically no consensus among scholars concerning the meaning of the term ‘sons of God’ contained in Genesis 6."
         read: 2026-11-27
       - source: usue-2005-divine-sonship
-        locator: "p. 819"
+        locator: "p. 820"
         quote: "Therefore, I adopt the viewpoint that the sons of God in Genesis 6 refer to kings/rulers and leaders."
         read: 2026-11-27
   - id: nephilim
     group: "Genesis 6:1–4"
     question: "Who are the Nephilim?"
-    short: "Genesis 6:4 leaves unclear whether they are the children of the sons of God, though they have often been read that way. The name is commonly explained as “fallen ones”, but its origin is uncertain; the Septuagint calls them “giants”, and Numbers 13:33 makes them beings of great size."
+    short: "Genesis 6:4 leaves unclear whether they are the children of the sons of God, though they have often been read that way. The name is glossed as “fallen ones”, though other sources say its meaning is uncertain; the Septuagint calls them “giants”, and Numbers 13:33 makes them beings of great size."
     text: "Joseph Angel's Bible Odyssey article says Nephilim literally means “fallen ones” and that their origins, mentioned apart from the offspring of the sons of God, remain notoriously vague; many early interpreters took the two to be the same group, as the Septuagint does in calling both “giants”. Rachel Adelman says the causal connection between the unions and the Nephilim is not explicit in the text. Ki-Eun Jang's article in Religions says earlier scholarship often took the Nephilim to be the offspring of the unions, and argues that they were not meant to be understood that way. The New American Bible's note on Numbers 13:33 explains the name as “fallen ones”, a reference to fallen heroes of old, rendered “giants” in the Septuagint; Michael Segal also notes the Septuagint's “giants”. Reyburn and Fry say there have been many guesses at the history of the word but none has any real likelihood of being true, and Jaap Doedens says evidence for its meaning remains lacking, while Numbers 13 undoubtedly ties the Nephilim to beings of tall stature."
     cites:
       - source: angel-bo-nephilim
-        locator: "section “Who are the Nephilim”"
+        locator: "section “Who are the Nephilim and what does the Bible say about them?”"
         quote: "Nephilim (literally “fallen ones”) are first mentioned in Gen 6:1–4, a famously difficult passage that tells of an apparent breach in the boundary between the divine and the human realms in primordial times."
         read: 2026-11-27
       - source: angel-bo-nephilim
-        locator: "section “Who are the Nephilim”"
+        locator: "section “Who are the Nephilim and what does the Bible say about them?”"
         quote: "While the offspring of this union are clearly identified as the mighty “heroes” of old, the origins of the Nephilim, who are mentioned separately, remain notoriously vague."
         read: 2026-11-27
       - source: angel-bo-nephilim
-        locator: "section “Who are the Nephilim”"
+        locator: "section “Who are the Nephilim and what does the Bible say about them?”"
         quote: "Many early interpreters assumed that the different terms refer to the same group of children. This is reflected both in the Greek Septuagint translation, which uses the word “giants” to refer to both of them, and in the Aramaic translation of Targum Onkelos."
         read: 2026-11-27
       - source: adelman-2015-thetorah-fallen-angels
@@ -434,8 +426,8 @@ statements:
   - id: fragment
     group: "Genesis 6:1–4"
     question: "Is Genesis 6:1–4 a fragment of an older myth?"
-    short: "It reads as one, sources say: a terse remnant of an older myth or legend about divine beings and human women, akin to stories of gods and demigods elsewhere in the ancient world. Whether it was meant to explain the flood is debated."
-    text: "Jaap Doedens says the present majority view reads the passage as a fragment of ancient Near Eastern mythology, though no exact equivalent has been found, and that it appears to summarise a longer version of the story. The New American Bible's notes say it apparently alludes to an old legend and is placed here to account for the prehistoric giants and to introduce the flood story. Benjamin Sommer's TheTorah.com article calls it a fragment of what sounds like a pagan myth, the kind of story of gods begetting giants one would not be surprised to find in Gilgamesh or the Iliad. Rachel Adelman calls it the relic of an ancient mythological saga, far terser than the legends of the ancient Near East or Greek myth, and says Second Temple writers took it as an explanation for the flood, though the Torah never says so. Christine Hayes's Yale lectures present Hermann Gunkel's view of it as an older fragment of mythology or legend. Ki-Eun Jang argues, against what he calls the majority view, that the passage was originally an independent tradition with no direct connection to the flood story."
+    short: "It reads as one, sources say: a terse remnant of an older myth or legend about divine beings and human women, akin to stories of gods and demigods elsewhere in the ancient world."
+    text: "Jaap Doedens says the present majority view reads the passage as a fragment of ancient Near Eastern mythology, though no exact equivalent has been found, and that it appears to summarise a longer version of the story. The New American Bible's notes say it apparently alludes to an old legend and is placed here to account for the prehistoric giants and to introduce the flood story. Benjamin Sommer's TheTorah.com article calls it a fragment of what sounds like a pagan myth, the kind of story of gods begetting giants one would not be surprised to find in Gilgamesh or the Iliad. Rachel Adelman calls it the relic of an ancient mythological saga, far terser than the legends of the ancient Near East or Greek myth, and says the expanded versions in 1 Enoch and Jubilees each take it as an explanation for the flood, though the Torah never says so. Christine Hayes's Yale lectures present Hermann Gunkel's view of it as an older fragment of mythology or legend. Ki-Eun Jang's article argues, against what it calls the prevailing scholarly view that the passage provides the rationale for the flood narrative, that it was originally an independent tradition with no direct connection to the flood story."
     cites:
       - source: doedens-2013-sons-of-god
         locator: "§1.2, p. 8"
@@ -450,27 +442,27 @@ statements:
         quote: "The text, apparently alluding to an old legend, shares a common ancient view that the heavenly world was populated by a multitude of beings, some of whom were wicked and rebellious. It is incorporated here, not only in order to account for the prehistoric giants, whom the Israelites called the Nephilim, but also to introduce the story of the flood with a moral orientation—the constantly increasing wickedness of humanity."
         read: 2026-11-27
       - source: sommer-2015-thetorah-demigods
-        locator: "opening paragraphs"
+        locator: "section “They Might Be Giants”"
         quote: "If we were reading polytheistic literature such as the Babylonian Epic of Gilgamesh or Homer’s Iliad, we wouldn’t be surprised to hear this sort of story, in which gods have sex with humans to produce a race of giants. But in the Torah this story comes as a surprise."
         read: 2026-11-27
       - source: sommer-2015-thetorah-demigods
-        locator: "opening paragraphs"
+        locator: "section “Demigods in the Monotheistic Torah”"
         quote: "Why, then, does it include this fragment of what sounds like a pagan myth?"
         read: 2026-11-27
       - source: adelman-2015-thetorah-fallen-angels
-        locator: "opening paragraphs"
+        locator: "section “Origin of the Myth of Fallen Angels”"
         quote: "The origin of this modern, romantic fantasy is found in the cryptic opening of the sixth chapter of Genesis, essentially the relic of an ancient mythological saga concerned with the relations between divine beings and mortal women (Gen. 6:1-4)."
         read: 2026-11-27
       - source: adelman-2015-thetorah-fallen-angels
-        locator: "section “A Just-So Story about Demigods”"
+        locator: "section “Comparison with Greek and ANE Mythology”"
         quote: "Unlike the long and detailed legends we find in ANE or Greek myth, the account here in the Torah of the demigods is exceedingly terse and contains not even one example of a named hero or a heroic feat."
         read: 2026-11-27
       - source: adelman-2015-thetorah-fallen-angels
-        locator: "section on the Second Temple period"
+        locator: "section “The Myth of the Corruption of Humans before the Flood in the 2nd Temple Period”"
         quote: "Each uses this myth to account for the existence of evil in the world, and each assumes that the brief story of the Nephilim, which appears immediately before the flood story in the Torah, was meant as an explanation for the flood (the Torah never says this)."
         read: 2026-11-27
       - source: hayes-rlst145-l5
-        locator: "on Gunkel and Genesis 6"
+        locator: "Chapter 4, “Critical Methodology Used in Biblical Scholarship” [00:34:42]"
         quote: "This is an older fragment of a mythology or a legend which is put into place here. It's explaining the origin of heroes and great men of renown in the old days."
         read: 2026-11-27
       - source: jang-2025-religions
@@ -480,8 +472,8 @@ statements:
   - id: genesis-6
     group: "Genesis 6:1–4"
     question: "Does the Book of the Watchers expand Genesis 6, or preserve an older story?"
-    short: "Scholars have tended to hold that it builds on Genesis 6:1–4, but there is no consensus: some argue that Genesis abbreviates the Enochic story, and others that both draw on a common older tradition."
-    text: "The introduction to The Watchers in Jewish and Christian Traditions, edited by Angela Kim Harkins, Kelley Coblentz Bautch and John Endres, says there is no absolute consensus on the relationship: in the last fifty years scholars have tended to favour the idea that the Book of the Watchers depends on Genesis 6:1–4, some prominent dissidents have argued that Genesis abbreviates the Enochic version, and a growing number suggest both render a common tradition independently. George Nickelsburg and James VanderKam call chapters 6–11 an interpretation of Genesis 6–9. Jaap Doedens says that, according to some scholars, Genesis 6:1–4 summarises an earlier Enochic tale, but that it is more likely the Book of Enoch expounds Genesis. Coblentz Bautch's Bible Odyssey article says many scholars understand the traditions about Enoch as emerging from interpretation of Genesis, but that they may have had ancient roots extending beyond Genesis."
+    short: "Scholars have tended to hold that it builds on Genesis 6:1–4, but this is debated: some argue that Genesis instead summarises an older Enochic story."
+    text: "The introduction to The Watchers in Jewish and Christian Traditions, edited by Angela Kim Harkins, Kelley Coblentz Bautch and John Endres, says there is no absolute consensus on the relationship: in the last fifty years scholars have tended to favour the idea that the Book of the Watchers depends on Genesis 6:1–4, some prominent dissidents have argued that Genesis abbreviates the Enochic version, and a growing number suggest both render a common tradition independently. George Nickelsburg and James VanderKam call chapters 6–11 an interpretation of Genesis 6–9. Jaap Doedens says that, according to some scholars, Genesis 6:1–4 summarises an earlier Enochic tale, but that it is more likely the Book of Enoch expounds Genesis."
     cites:
       - source: harkins-bautch-endres-2014-introduction
         locator: "p. 4"
@@ -492,20 +484,12 @@ statements:
         quote: "Chapters 6–11 are an interpretation of Genesis 6–9 that identifies events of the primordial past with those of the author’s time."
         read: 2026-11-27
       - source: doedens-2013-sons-of-god
-        locator: "pp. 189–90"
+        locator: "p. 189"
         quote: "According to some scholars, Gen 6:1–4 provides a short summary of an already earlier existent tale which is found in the Enochic tradition."
         read: 2026-11-27
       - source: doedens-2013-sons-of-god
-        locator: "pp. 189–90"
+        locator: "p. 190"
         quote: "However, it is more likely that the Book of Enoch expounds on Gen 6:1–4 than that Gen 6:1–4 summarises the Enochic tradition."
-        read: 2026-11-27
-      - source: coblentz-bautch-bo-enoch
-        locator: "section “Where did the books of Enoch come from”"
-        quote: "Many scholars understand the vibrant traditions about Enoch emerging from close reading and interpretation of Genesis."
-        read: 2026-11-27
-      - source: coblentz-bautch-bo-enoch
-        locator: "section “Where did the books of Enoch come from”"
-        quote: "Simply put, traditions associated with Enoch may have been widespread, with ancient roots extending beyond Genesis."
         read: 2026-11-27
   - id: strands
     group: "The Watchers story"
@@ -538,7 +522,7 @@ statements:
         quote: "Dimant has written a detailed interpretation of chapters 6–11 in which she argues for three basic strands within the story."
         read: 2026-11-27
       - source: orlov-2022-worthless-secrets
-        locator: "pp. 245–46"
+        locator: "p. 245"
         quote: "Scholars usually attribute these two stories to two different literary traditions, associating one with the motif of sexual misdeeds and the other with the motif of illicit pedagogy."
         read: 2026-11-27
       - source: orlov-2022-worthless-secrets
@@ -546,7 +530,7 @@ statements:
         quote: "Although some experts have routinely objected to the treatments of Shemihazah and Asael in isolation"
         read: 2026-11-27
       - source: brand-2016-thetorah-watchers
-        locator: "section on the Book of the Watchers"
+        locator: "section “3. Mating and Reproducing with Women”"
         quote: "The predominant tradition and main thread in the Book of Watchers, into which the other traditions are interwoven, focuses on the desire of the angels, led by Shemihaza,"
         read: 2026-11-27
       - source: boling-proctor-bo-watchers
@@ -556,8 +540,8 @@ statements:
   - id: origin-of-evil
     group: "The Watchers story"
     question: "What is the Watchers story about?"
-    short: "Where evil came from, in scholars' readings: it traces human corruption to rebel angels rather than to Adam and Eve. Its historical setting has no consensus; proposals include the wars of Alexander's successors and a polemic against the Jerusalem priesthood."
-    text: "Andrei Orlov's article in Scrinium says the Book of the Watchers offers an etiology of evil strikingly different from that of Genesis, linking humankind's fall to an angelic rebellion rather than to Adam and Eve. Annette Yoshiko Reed says the motif of illicit angelic instruction is central to it, shaping its approach to the origins of evil and the limits of human knowledge, and that even authors who depend on it seem reluctant to accept that sin has a supernatural origin. Boling and Proctor say the Watchers traditions explain the origins of human sin and suffering, and Joseph Angel says the myth reflects influential early Jewish understandings of the origins of evil. On the setting, Chad Pierce's Durham dissertation says it has not reached scholarly consensus, reporting George Nickelsburg's view that the story responds to the wars of the Diadochi and David Suter's that the fallen angels are a metaphor for impure priests. Archie Wright reports these and other proposals, among them John Collins's that the myth could fit the oppression felt through much of the Hellenistic period. Nickelsburg and VanderKam say the giants can be read as stand-ins for the Hellenistic kings. Loren Stuckenbruck calls the socio-political reading attractive, while arguing for more nuance."
+    short: "Where evil came from, in scholars' readings: it traces human corruption to rebel angels rather than to Adam and Eve. Its historical setting is debated; proposals include the wars of Alexander's successors and a metaphor for impure priests."
+    text: "Andrei Orlov's article in Scrinium says the Book of the Watchers offers an etiology of evil strikingly different from that of Genesis, linking humankind's fall to an angelic rebellion rather than to Adam and Eve. Annette Yoshiko Reed says the motif of illicit angelic instruction is central to it, shaping its approach to the origins of evil and the limits of human knowledge, and that even authors who depend on it seem reluctant to accept that sin has a supernatural origin. Boling and Proctor say the Watchers traditions explain the origins of human sin and suffering, and Joseph Angel says the myth reflects influential early Jewish understandings of the origins of evil. On the setting, Chad Pierce's Durham dissertation says it has not reached scholarly consensus, reporting George Nickelsburg's view that the story responds to the wars of the Diadochi and David Suter's that the fall of the angels is a metaphor for impure priests. Archie Wright reports these and other proposals, among them John Collins's that the myth could fit the oppression felt through much of the Hellenistic period. Nickelsburg and VanderKam say the giants can be read as stand-ins for the Hellenistic kings. Loren Stuckenbruck calls the socio-political reading attractive, while arguing for more nuance."
     cites:
       - source: orlov-2022-worthless-secrets
         locator: "p. 244"
@@ -572,7 +556,7 @@ statements:
         quote: "As we shall see, even authors who are otherwise dependent on this apocalypse seem reticent to accept its assertion that sinfulness has a supernatural origin, arising neither from a primeval act of human disobedience, nor from an evil inclination in the human heart, but from a breach of heavenly harmony."
         read: 2026-11-27
       - source: boling-proctor-bo-watchers
-        locator: "section on the origins of evil"
+        locator: "section “What evil did the Watchers introduce into the world?”"
         quote: "The Watchers traditions position angelic descent as an explanation for the origins of human sin and suffering."
         read: 2026-11-27
       - source: angel-bo-nephilim
@@ -580,11 +564,11 @@ statements:
         quote: "in later tradition they came to play a giant role in the myth of the Watchers, which reflects influential early Jewish understandings of the origins of evil and the nature of divine justice."
         read: 2026-11-27
       - source: pierce-2009-spirits-proclamation
-        locator: "p. 29"
+        locator: "p. 30"
         quote: "Ascertaining the social context of the BW has not reached scholarly consensus. Some have attempted to find specific historical contexts that may underlie this work. Nickelsburg has argued that the angelic descent in BW is a description of and a response to the wars of the Diadochi."
         read: 2026-11-27
       - source: pierce-2009-spirits-proclamation
-        locator: "p. 29"
+        locator: "p. 30"
         quote: "Suter claims, rather, that the fall of the angels is a metaphor for impure priests."
         read: 2026-11-27
       - source: wright-2015-origin-evil-spirits
@@ -622,11 +606,11 @@ statements:
         quote: "In these revelations to Enoch there are two calendars: a solar year of 364 days and a lunar year of 354 days."
         read: 2026-11-27
       - source: ben-dov-bo-calendar
-        locator: "section on the Second Temple period"
+        locator: "section “What was the calendar like?”"
         quote: "The astronomical section of the book of Enoch (in Qumran fragments and later in 1 En. 72–82), whose roots lie in the third century BCE, introduced the idea of a 364-day year, which was further developed in the book of Jubilees (second century BCE). Jubilees’s calendar centered around the Sabbaths and divided the year precisely into 52 weeks, with four seasons of 13 weeks, for a total of 91 days each."
         read: 2026-11-27
       - source: ben-dov-bo-calendar
-        locator: "section on the Second Temple period"
+        locator: "section “What was the calendar like?”"
         quote: "This calendar was central to their religious identity, and they strongly opposed the lunar calendar used by other Jewish groups."
         read: 2026-11-27
       - source: segal-2014-thetorah-calendar
@@ -638,7 +622,7 @@ statements:
         quote: "A similar calendar has been discovered in some of the Dead Sea scrolls from Qumran."
         read: 2026-11-27
       - source: segal-2014-thetorah-calendar
-        locator: "section on the moon"
+        locator: "paragraph after the calendar charts"
         quote: "Jubilees polemicizes against those Jewish groups who incorporate the moon into their calendrical calculations"
         read: 2026-11-27
       - source: hanneken-2014-jubilees
@@ -664,11 +648,11 @@ statements:
         quote: "This revelation retells the basic story of Genesis and the first half of Exodus, with frequent additions, deletions, summaries, and alternate versions of stories."
         read: 2026-11-27
       - source: segal-2014-thetorah-shavuot
-        locator: "section on Jubilees"
+        locator: "opening paragraphs"
         quote: "The entire book is presented as a revelation to Moses on Mt. Sinai, through an angelic intermediary referred to as the Angel of Presence"
         read: 2026-11-27
       - source: segal-2014-thetorah-shavuot
-        locator: "section on Jubilees"
+        locator: "opening paragraphs"
         quote: "all of the events in these books are dated according to a heptadic (based on the number seven) chronological framework of years, “weeks” of years, and “jubilees” = 49 years."
         read: 2026-11-27
       - source: zahn-2021-thetorah-torah
@@ -686,8 +670,8 @@ statements:
   - id: jubilees-date
     group: "Jubilees"
     question: "When was Jubilees written?"
-    short: "In the second century BCE, sources say, and James VanderKam's dating to between 161 and 152 BCE is widely followed. Some scholars argue for a later date, or for revision continuing into the first century BCE."
-    text: "Jacques van Ruiten says external and internal evidence places the book in the middle of the second century BCE. Todd Hanneken says it seems unaware of Jonathan's union of high priesthood and kingship in 152, and that it was likely composed between 159 and 152 BCE, though some scholars think it, or its final form, was completed shortly before the oldest known copy from the last quarter of the second century. Michael Segal, Molly Zahn and Jonathan Ben-Dov all place it in the second century BCE. Matthew Monger's dissertation surveys the proposals: R. H. Charles's 135–105 BCE, Louis Finkelstein's 170s, VanderKam's single author between 161 and 152, which he says many scholars follow, and Menahem Kister's late second century; Monger himself argues for a redactional process throughout the first century BCE."
+    short: "In the second century BCE, sources say, probably around the middle of that century; some scholars argue for a later date within it."
+    text: "Jacques van Ruiten says external and internal evidence places the book in the middle of the second century BCE. Todd Hanneken says it seems unaware of Jonathan's union of high priesthood and kingship in 152, and that it was likely composed between 159 and 152 BCE, though some scholars think it, or its final form, was completed shortly before the oldest known copy from the last quarter of the second century. Michael Segal, Molly Zahn and Jonathan Ben-Dov all place it in the second century BCE. Matthew Monger's dissertation surveys the proposals: R. H. Charles's 135–105 BCE, Louis Finkelstein's 170s, VanderKam's single author between 161 and 152, whose understanding of the composition he says many scholars working on literary and theological issues follow, and Menahem Kister's late second century; Monger himself argues for a redactional process throughout the first century BCE."
     cites:
       - source: vanruiten-2007-angels-demons
         locator: "p. 585 n. 1"
@@ -702,7 +686,7 @@ statements:
         quote: "If, as seems likely, the book was composed between 159 and 152 BCE"
         read: 2026-11-27
       - source: segal-2014-thetorah-shavuot
-        locator: "section on Jubilees"
+        locator: "opening paragraphs"
         quote: "a Jewish work composed in the second century BCE"
         read: 2026-11-27
       - source: zahn-2021-thetorah-torah
@@ -710,7 +694,7 @@ statements:
         quote: "The book of Jubilees (2nd cent. B.C.E.) was originally composed in Hebrew"
         read: 2026-11-27
       - source: ben-dov-bo-calendar
-        locator: "section on the Second Temple period"
+        locator: "section “What was the calendar like?”"
         quote: "the book of Jubilees (second century BCE)"
         read: 2026-11-27
       - source: monger-2018-4q216
@@ -744,11 +728,11 @@ statements:
     text: "Todd Hanneken says Jubilees was written in Hebrew, that fourteen Hebrew copies were found near Qumran, and that from Hebrew it was copied into Greek and perhaps Syriac, and from Greek into Latin and Ethiopic, with part of one Latin copy surviving. Michael Segal says it is preserved in about fifteen fragmentary copies among the Dead Sea Scrolls and in its entirety only in Ge'ez. Matthew Monger counts fifteen Qumran manuscripts whose text resembles Ethiopic Jubilees and describes the same chain of translation; he questions the assumption that the text of Jubilees is stable."
     cites:
       - source: hanneken-2014-jubilees
-        locator: "pp. 3–4"
+        locator: "p. 3"
         quote: "Jubilees was written in Hebrew. Fourteen Hebrew copies were found near Qumran (see especially DJD 13 [1994])."
         read: 2026-11-27
       - source: hanneken-2014-jubilees
-        locator: "pp. 3–4"
+        locator: "p. 4"
         quote: "From Hebrew the work was copied into Greek and perhaps Syriac, and from Greek into Latin and Ethiopic."
         read: 2026-11-27
       - source: hanneken-2014-jubilees
@@ -756,7 +740,7 @@ statements:
         quote: "Part of one Latin copy has survived."
         read: 2026-11-27
       - source: segal-2014-thetorah-shavuot
-        locator: "section on Jubilees"
+        locator: "opening paragraphs"
         quote: "preserved in about 15 fragmentary copies in the Dead Sea scrolls"
         read: 2026-11-27
       - source: segal-2014-thetorah-shavuot
@@ -812,8 +796,8 @@ statements:
   - id: tradition
     group: "Religious traditions"
     question: "What do religious traditions hold about 1 Enoch?"
-    short: "They differ. The Ethiopian Orthodox Tewahedo Church counts Enoch and Jubilees among the books of its Old Testament; Got Questions Ministries, an evangelical ministry, holds that 1 Enoch is not the inspired Word of God."
-    text: "The website ethiopianorthodox.org, which presents what the Ethiopian Orthodox Tewahedo Church holds and teaches about Scripture, says the church has 46 books of the Old Testament and 35 of the New, 81 in all, and that its Old Testament includes the book of Enoch; Jubilees is also on its list. Got Questions Ministries, an evangelical ministry, says 1 Enoch should be read as an interesting but fallible historical document, not as the inspired, authoritative Word of God, and that Jude's quotation does not make it inspired; on Genesis 6 it holds that the sons of God were fallen angels. Jimmy Akin's article for Catholic Answers, a Catholic media ministry, says the Catholic Church included Jude in its canon but not Enoch. The Church of Jesus Christ of Latter-day Saints, in its Bible Dictionary, classes the Enoch books among the pseudepigrapha and says that, on the basis of latter-day revelation, some truths appear to be contained in them."
+    short: "They differ. The Ethiopian Orthodox Tewahedo Church counts Enoch among the books of its Old Testament; Got Questions Ministries, an evangelical ministry, holds that 1 Enoch is not the inspired Word of God."
+    text: "The website ethiopianorthodox.org, which presents what the Ethiopian Orthodox Tewahedo Church holds and teaches about Scripture, says the church has 46 books of the Old Testament and 35 of the New, 81 in all, and that its Old Testament includes the book of Enoch. Got Questions Ministries, an evangelical ministry, says 1 Enoch should be read as an interesting but fallible historical document, not as the inspired, authoritative Word of God, and that Jude's quotation does not make it inspired; on Genesis 6 it holds that the sons of God were fallen angels. Jimmy Akin's article for Catholic Answers, a Catholic media ministry, says the Catholic Church included Jude in its canon but not Enoch. The Church of Jesus Christ of Latter-day Saints, in its Bible Dictionary, classes the Enoch books among the pseudepigrapha and says that, on the basis of latter-day revelation, some truths appear to be contained in them."
     cites:
       - source: eotc-canon
         locator: "section “The Bible”"
@@ -840,7 +824,7 @@ statements:
         quote: "1) they were fallen angels"
         read: 2026-11-27
       - source: gotquestions-sons-of-god
-        locator: "paragraph after the three views"
+        locator: "paragraph beginning “We believe the first view”"
         quote: "We believe the first view is the best interpretation."
         read: 2026-11-27
       - source: catholic-answers-akin-enoch
