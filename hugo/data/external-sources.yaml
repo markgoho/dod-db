@@ -3631,3 +3631,31 @@ longacre-2021-chroms:
   url: "https://www.fdr.uni-hamburg.de/record/8898/files/longacre.pdf?download=1"
   hostAuthored: false
   tradition: null
+
+britannica-bible:
+  author: null
+  title: "Bible"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online, Britannica Editors, last updated 19 November 2026"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests. The Top Questions answers are collapsed: in the page's DOM text, not its visible text until opened"
+  url: "https://www.britannica.com/topic/Bible"
+  hostAuthored: false
+  tradition: null
+
+gotquestions-how-old-is-the-bible:
+  author: null
+  title: "How old is the Bible?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/how-old-is-the-Bible.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"

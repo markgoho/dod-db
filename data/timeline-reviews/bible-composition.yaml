@@ -1,0 +1,182 @@
+# Review record for the Timeline Entry `bible-composition` (/timeline/#bible-composition; #93 shape). Not rendered.
+# Issue #226 (from #108). Issue notes: the critical side is a span, not a date: decide whether the entry plots a range (earliest text to latest) or only the endpoints, and word it as what the sources date. #99 inconsistency in the show: E11 puts the Hebrew Bible's start at c. 600 BCE, E175 at c. 1000 BCE poetry, E115 "about a thousand to eleven hundred years" to Daniel. Overlaps: early end must agree with `hebrew-writing` ("Around 1000 BCE, or the 9th century BCE"); late end touches `daniel` (167–164 BCE), `revelation` and the unpublished New Testament complete entry (#230, same E175 lead at 00:15:14); not to be conflated with `christian-canon` (367 CE, a list). NABRE New Testament introductions are outside the 30-year window (#86). The Tradition Date needs a Tradition source holding the 1400 BCE–100 CE span in its own words.
+# Shape chosen: one `critical` range, earliest texts to latest, placed by its start (from -1000). Britannica's "When was the Bible written?" answer (Reference) is the only source read that dates both testaments in one place, and it does so unconditionally: parts of the Hebrew Bible "perhaps" in the 10th century BCE, the New Testament's books "in the 1st and 2nd centuries CE". "Perhaps" is a hedge, not a condition (conditional-not-critical): the display keeps it. Not `undated`: no source says the span is dated only conditionally or not at all; Breed's "exact dates … unrecoverable" sits beside his own centuries (contrast `hebrew-language`, which went undated because its sources gave only lower limits).
+# Sourcing test, 2026-11-26: met. Critical: britannica-bible (both ends), hayes-rlst145-l1 (approximately 1000 BCE, with "very diverse opinions"), breed-bo-written-transmitted (#99 split on the start: "many scholars now claim" the 8th or even 7th century BCE), ehrman-brief-5e-ch1-summary and neufeld-bo-nt-religious-text (New Testament 50–120 CE), martin-rlst152-l1 (50–150, "probably"), Breed again for the whole span ("over a thousand-year period", writing and editing). Tradition: gotquestions-how-old-is-the-bible gives both years itself, "around 1400 BC" to "around AD 90", with "around 1,500 years"; the display keeps "around". Its end year is 90, not the Trigger Claim's 100 CE; the entry follows the source (#80).
+# Scope: worded for what the sources date: composition of the texts, earliest to latest. No "complete" wording and no 2 Peter in the title or display: Martin's 2 Peter date (l24) is his own view ("I believe"), Hultin's is hedged ("perhaps the end of the first century or even well into the second"); both uncited. Hebrew Bible-only spans (Coogan ch. 1 "written and collected over a thousand years", Rubin's sidebar) uncited: narrower subject, and Coogan's includes collecting. No author counts in the display or note: "40 authors" is the tradition's claim, and no Scholarly or Reference source read counts the Bible's authors (Ehrman counts the New Testament's only).
+# Overlaps checked: `hebrew-writing` dates the earliest known Hebrew writing (around 1000 BCE or the 9th century); this entry dates composition, "perhaps the 10th century" by Britannica, so no contradiction; Rubin (cited there) adds that a few biblical texts "may have been composed a couple of centuries earlier". `daniel` 167–164 BCE agrees with Hayes's "the 160s BCE". `revelation` (toward the end of the 1st century) sits inside the 1st–2nd century end. Nothing here says when the canon or New Testament was complete (#230; `christian-canon`). No `anchor` or `seeAlso`: #230 is unpublished; `hebrew-writing` is a different subject.
+# #99 on the show: Trigger Claims kept: E175@00:20:26 (critical: 1100 to 1200 years tops, 2 Peter 120–150, poetry going back to 1000 BCE) and E175@00:15:14 (tradition: "1400 BCE to 100 CE"). Not stored: E11@00:03:58 (Hebrew Bible only, "between around 600 BCE and down to around … 164-ish BCE"), E115@00:07:48 (Hebrew Bible only, "about a thousand to eleven hundred years … down to the book of Daniel"; the inventory's lead at 00:07:15 is a Dan Beecher question), E55@00:18:10 ("About a thousand years. Yeah.", answering a Beecher question), E137@00:32:59 (McClellan quoting the "1,500 years, 45 authors" meme; E175@00:15:14 already states the tradition's side). The gap between the show's 1000 BCE start and Breed's 8th–7th century alternative is left unexplained (#99, #86).
+# agent: the first pass (2026-11-26, lead agent). Two research agents (critical; tradition) each fetched pages by curl into their own scratch folders (bc-critical, bc-tradition) and quotes were copied from that saved text; Britannica read by the lead in Claude in Chrome (refuses scripts) and the Top Questions box saved verbatim from the DOM text (bc-lead). One script matched every quote against its saved text (whitespace, quotes, dashes and HTML entities normalised): 9/9 hits, 0 misses, each occurring once; both Trigger Claims matched as substrings of their Transcript lines at timestamp and speaker: 2/2.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Britannica's answer is in a collapsed Top Questions box: get_page_text returns another article (the Dead Sea Scrolls); read document.body.textContent. Byline "Britannica Editors", last updated 19 November 2026. (2) Display "From perhaps the 10th century BCE, or the 8th or 7th, to the 2nd century CE": the "perhaps" scopes Britannica's start; the split is Breed's attributed "many scholars now claim"; check the display reads no stronger than either. (3) from -1000 / to 200 are the century bounds of "10th century BCE" and "2nd century CE", not years a source gives. (4) Hayes's "the Bible" in lecture 1 is the Hebrew Bible (an Old Testament course; "the last book within the Hebrew Bible"); the note says "the Hebrew Bible's writings". (5) Breed's span quote says "wrote and edited", so the note says "the writing and editing"; cut if it reads as a composition span. (6) Got Questions' end year is 90, the Trigger Claim's 100: shown as the source has it. (7) Neufeld's Bible Odyssey date: page metadata 2022-12-14 looks like a site-migration stamp; registry year stays null as for Breed.
+review:
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Bible”, Top Questions “When was the Bible written?”, first sentence. Read in Chrome 2026-11-26, saved from DOM text; matched once. Backs the display's start “perhaps the 10th century BCE”; hedge kept.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same answer, last sentence. Matched once. Backs the display's end “to the 2nd century CE”. The sentences between (Torah redaction and canonization; “The entire Hebrew Bible was complete by about 100 CE”) are canon, not composition; uncited.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l1 ch. 3 [00:29:33]. Matched once. Backs the note's “from approximately 1000 BCE, noting very diverse opinions”; the Hebrew Bible only. Next sentence (older traditions “may even date back”) not used.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Breed, Bible Odyssey, ¶ 3. Matched once. Backs the #99 split in the display (“or the 8th or 7th”) and the note's “many scholars now date … and that the exact dates of composition are unrecoverable”. Attributed to “many scholars”, as Breed says.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Ehrman ch. 1 OUP summary (5th ed., 2020), “The New Testament in a Nutshell”. Matched once. Backs the note's 50–120 CE for the New Testament's books.",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Neufeld, Bible Odyssey. Matched once. Backs the same 50–120 (“approximately”); second author for it.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin l1 ch. 2 [00:13:23]. Matched once. Backs the note's “Martin says probably 50 to 150”; hedge kept.",
+    }
+  critical/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Breed, ¶ 3, first sentence. Matched once. Backs the note's last sentence; “wrote and edited” kept as “writing and editing” (flag 5). No endpoints, so it places nothing.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Got Questions “How old is the Bible?”, answer ¶ 1. Matched once. Backs display “Around 1400 BCE to around 90 CE”, from -1400 / to 90. Ministry self-description (gotquestions.org/about.html): “We are Christian, evangelical, theologically conservative, and nondenominational.” Holder is the registry string already used for Got Questions.",
+    }
+triggers:
+  175@00:20:26:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the [00:20:26.730] Dan McClellan line, starting after “Job was, was definitely not the, the oldest texts of the Hebrew Bible. One of, one of the more recent.” Keeps his condition (“this is assuming … go back to 1000 BCE”). Next turn (00:21:29): “absolute max is 1200 years … Probably closer to 1100”, consistent. Read 00:18:26–00:23:10.",
+    }
+  175@00:15:14:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. First sentence of the [00:15:14.180] Dan McClellan line, McClellan stating what apologists (Wes Huff, named in Beecher's question at 00:14:49) hold. The rest of the turn (Huff on the New Testament completed by the end of the first century; the early-Exodus 1560-ish) is #230's and `exodus`'s, not stored.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Worded for what the sources date: the composition of the Bible's texts, earliest to latest. No “complete”, no canon, no 2 Peter, no author count.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Start: Britannica (perhaps 10th c.) and Hayes (approximately 1000 BCE) against Breed's many scholars (8th or even 7th c.): both in the display, attributed in the note. End: 120 (Ehrman summary, Neufeld) against 150 (Martin, probably): in the note; the display's “2nd century CE” is Britannica's and covers both.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Trigger 175@00:15:14 has states: tradition.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “Got Questions Ministries, an evangelical ministry”, the ministry's own “evangelical”; never “the traditional view”.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date used. Britannica's “perhaps” is a hedge, kept in the display. The Trigger Claim's “this is assuming” condition is the show's, not a source's.",
+    }
+sources:
+  britannica-bible:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Online, Britannica Editors, last updated 19 November 2026",
+      note: "Reference (encyclopedia, #80). Unsigned editors' article; inside the 30-year window.",
+    }
+  hayes-rlst145-l1:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale Courses, RLST 145, Fall 2006",
+      note: "Reference (university lecture transcript, #86). Inside the window.",
+    }
+  breed-bo-written-transmitted:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey article (page metadata 2022-12-14, modified 2024-01-16)",
+      note: "Reference (Bible Odyssey, judged per author, #86): Brennan Breed, Columbia Theological Seminary. Already in the registry.",
+    }
+  ehrman-brief-5e-ch1-summary:
+    {
+      agent: pass,
+      owner: "",
+      edition: "5th ed. (2020), OUP Learning Link companion summary",
+      note: "Reference (publisher chapter summary, #86), cited as the summary, not the textbook.",
+    }
+  neufeld-bo-nt-religious-text:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey article",
+      note: "Reference (Bible Odyssey, per author): Dietmar Neufeld, University of British Columbia. Already in the registry.",
+    }
+  martin-rlst152-l1:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale Courses, RLST 152, Spring 2009",
+      note: "Reference (university lecture transcript, #86). Inside the window.",
+    }
+  gotquestions-how-old-is-the-bible:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tradition (#86: Got Questions). Supports only what the ministry holds.",
+    }
+leads:
+  - "Britannica “Second Letter of Peter” and “Song of Deborah” (britannica.com/topic/…): URLs not verified, not read."
+  - "Bauckham, Jude, 2 Peter (1983, outside the window), cited by Hultin; Kugel 1999 and Echols 2008, cited by Frolov; Carr 2011 and Schniedewind 2004, cited by Wright and Walker: not read."
+  - "NABRE Deuteronomy 33 notes and Psalms introduction: USCCB blocked scripted requests; not read."
+  - "Ken Ham's “40 authors” sermon (sermonaudio.com): not read."
+uncited:
+  - "Britannica “When was the Bible written?”: “The final redaction and canonization of the Torah … most likely took place during the Babylonian Exile (6th–5th century BCE). The entire Hebrew Bible was complete by about 100 CE.” Redaction and canon, not composition; and the subject of #230 and `christian-canon`, not this entry."
+  - "Hultin, Bible Odyssey “2 Peter”: modern scholars “have often considered 2 Peter to be the latest of all the New Testament writings … perhaps the end of the first century or even well into the second century”. Hedged and names one book; the display's end rests on Britannica."
+  - "Martin l24 ch. 4 [00:37:00]: “I believe 2 Peter was written sometime in the second century”; Martin l19 ch. 1: Pastorals “maybe even toward the middle of the second century … later than a lot of scholars would put them”. One scholar's own view; no 2 Peter claim on the entry."
+  - "Coogan ch. 1 OUP summary: the Hebrew Bible “an anthology that was written and collected over a thousand years”. Hebrew Bible only, and includes collecting; Breed carries the span for both testaments."
+  - "Rubin, Bible Odyssey, sidebar: the Hebrew Bible written “over a period of about a thousand years”; body: “a few biblical texts may have been composed a couple of centuries earlier” than 1000 BCE. Hebrew Bible only; hedged; cited on `hebrew-writing`."
+  - "McCarter 2008 (Cambridge chapter summary): earliest poetry “may have been composed before the end of the second millennium BC”. Hedged twice; the entry's start rests on Britannica and Hayes."
+  - "Frolov, Bible Odyssey “How Old Is the Song of Deborah?”: many scholars date Judges 5 to the 11th or even 12th century BCE; Frolov himself argues for around the Babylonian exile. One text's date, debated; not the Bible's span."
+  - "Koosed, Bible Odyssey “Deborah”: body reports both views on Judg 5; the “Did You Know?” bullet (“The two oldest passages in the Bible are both victory songs attributed to women”) is unsigned box text and gives no date."
+  - "Wright and Walker, Bible Odyssey “How Was the Bible Formed?”: “most scholars today now conclude that the first major period of literary production was … (eighth–sixth centuries B.C.E.)”. Co-author Walker is listed as a Ph.D. student (#86 per-author check); left uncited."
+  - "Werrett, Bible Odyssey (scribes): earliest portions committed to writing “perhaps in the eighth to seventh centuries B.C.E.”. Agrees with Breed; Breed carries the split."
+  - "NABRE notes on Exodus 15 (“regarded by many scholars as one of the oldest compositions in the Bible”), Judges 5, Genesis 49, Psalm 68, Deuteronomy 32: no dates; Exodus 15, Genesis 49, Psalm 68 and Deuteronomy 32 read in Chrome as typed excerpts only."
+  - "Hayes l8 ch. 2: the oldest account of the sea event is Exodus 15; Tobolowsky (Bible Odyssey): Judg 5 “generally considered to be the oldest tribal text”. No dates; narrower subjects."
+  - "Hayes l23 ch. 5 (Daniel the latest book, 167–164) and Coogan ch. 25: the Hebrew Bible's late end, covered by `daniel` and Hayes l1."
+  - "Ehrman ch. 18 summary: 2 Peter not by Peter; Jude near the end of the first century. Authorship, no 2 Peter date."
+  - "Got Questions “Who were the authors of the books of the Bible?”: “approximately 40 men … over the course of 1500 years”, with years only in the book list. The “How old is the Bible?” page states both years in its own sentence."
+  - "Blue Letter Bible, Don Stewart, “The Bible’s Unique Design”: “a period of about fifteen hundred years … The Old Testament was written between 1400 and 400 B.C. The books of the New Testament were written from approximately A.D. 40 to A.D. 90.” Agrees with Got Questions; BLB's disclaimer says its authors' content is not necessarily affirmed by the ministry, so the holder would be Stewart, not a tradition; one Tradition source is enough (#86)."
+  - "Christian Research Institute, Dean Davis, “One Shot, One Book, One God” (2004): “about 1,500 of them”, no start year."
