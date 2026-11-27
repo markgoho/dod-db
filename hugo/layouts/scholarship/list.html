@@ -21,11 +21,7 @@
     {{ with .Pages.ByTitle }}
       <ul class="scholarship-cards" role="list">
         {{ range . }}
-          {{ $stats := partial "scholarship-stats.html" . }}
           <li class="scholarship-card panel">
-            <p class="scholarship-card__kicker type-eyebrow">
-              {{ printf "%d %s · %d %s" $stats.questions (cond (eq $stats.questions 1) "question" "questions") $stats.sources (cond (eq $stats.sources 1) "source" "sources") }}
-            </p>
             <h2 class="scholarship-card__title">
               <a class="scholarship-card__link" href="{{ .RelPermalink }}"
                 >{{ .Title }}</a
@@ -35,8 +31,6 @@
             {{ with index .Params.statements 0 }}
               <p class="scholarship-card__teaser">{{ .question }}</p>
             {{ end }}
-            {{ partial "scholarship-date-line.html" . }}
-            <span class="scholarship-card__arrow" aria-hidden="true">→</span>
           </li>
         {{ end }}
       </ul>

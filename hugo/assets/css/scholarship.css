@@ -584,35 +584,33 @@
   }
 }
 
-/* List page: each card is one link (stretched from the title), with its scope as a kicker. */
+/* List page: each card is one link (stretched from the title); two up from tablet width. */
 .scholarship-cards {
   display: grid;
   gap: var(--space-m);
+  grid-template-columns: minmax(0, 1fr);
   margin: 0;
   padding: 0;
 }
 
+@media (width >= 48rem) {
+  .scholarship-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .scholarship-card {
-  column-gap: var(--space-s);
+  align-content: start;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
   padding: var(--space-s) var(--space-m);
   position: relative;
   row-gap: var(--space-2xs);
   transition: background-color var(--duration-fast) var(--ease-standard);
 }
 
-.scholarship-card > * {
-  grid-column: 1;
-}
-
 .scholarship-card:hover,
 .scholarship-card:focus-within {
   background: var(--color-accent);
-}
-
-.scholarship-card__kicker {
-  color: var(--color-action);
 }
 
 .scholarship-card__title {
@@ -646,29 +644,6 @@
   font-style: italic;
   font-weight: var(--font-weight-bold);
   padding-inline-start: var(--space-xs);
-}
-
-.scholarship-card__arrow {
-  align-self: center;
-  color: var(--color-action);
-  font-family: var(--font-family-display);
-  font-size: var(--step-3);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  grid-column: 2;
-  grid-row: 1 / span 5;
-}
-
-/* On a phone the whole card is the target; the arrow column only costs measure. */
-@media (width < 48rem) {
-  .scholarship-card {
-    grid-template-columns: minmax(0, 1fr);
-    padding-inline: var(--space-s);
-  }
-
-  .scholarship-card__arrow {
-    display: none;
-  }
 }
 
 .scholarship-empty {
