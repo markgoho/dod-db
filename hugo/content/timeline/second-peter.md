@@ -1,8 +1,8 @@
 ---
 title: "2 Peter"
 entryKind: composition
-draft: true
-sourcesRead:
+draft: false
+sourcesRead: 2026-11-26
 related: { books: [2-peter], tags: [forgery], topics: [] }
 watch:
   [
