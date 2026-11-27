@@ -1,7 +1,6 @@
 ---
 title: "The Ten Commandments and the Covenant Code"
 dek: "What the Bible calls the Ten Commandments, how its versions differ and when scholars think they were written, and what scholars say about the Covenant Code, its age and its relation to the Laws of Hammurabi."
-draft: true
 core: oldest
 sourcesRead: 2026-11-27
 related:
@@ -216,7 +215,7 @@ statements:
   - id: ritual-decalogue
     group: "The Ten Commandments"
     question: "Is the Ritual Decalogue of Exodus 34 older than the Ten Commandments of Exodus 20?"
-    short: "Scholars disagree. Many hold it to be the original or earliest Decalogue; others question that dating, and some now read Exodus 34 as a late compilation that draws on earlier laws."
+    short: "Scholars disagree. Some regard it as the original or earliest Decalogue; others read Exodus 34 as a late compilation that draws on earlier laws."
     text: "Brettler says many scholars believe the laws of Exodus 34:10–26, often named the Cultic Decalogue, were the original or earliest Decalogue. Sherman says many contemporary scholars now reject Julius Wellhausen's claim that Exodus 34 contains an ancient Ritual Decalogue, and argue that the whole chapter is a late compilation that draws on earlier laws; she says its festival and ritual laws are very close to those of the Covenant Code and end with exactly the same laws, while adding expansions that connect them to other legal collections. The Encyclopaedia Judaica's article on the Decalogue, in text carried over from its first edition, reports that critics regarded the Exodus 34 list as the more ancient, and questions the basis of that dating."
     cites:
       - source: brettler-2015-thetorah-ten-insights

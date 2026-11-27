@@ -8992,7 +8992,7 @@ nabre-exodus-34-notes:
   edition: null
   class: Reference
   kind: study-bible
-  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
   url: "https://bible.usccb.org/bible/exodus/34"
   hostAuthored: false
   tradition: null
@@ -9204,7 +9204,7 @@ chabad-ten-commandments:
   edition: null
   class: Tradition
   kind: article
-  access: "Website; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  access: "Website; opens in a browser, refuses scripted requests"
   url: "https://www.chabad.org/library/article_cdo/aid/2896/jewish/What-Are-the-Ten-Commandments.htm"
   hostAuthored: false
   tradition: "Chabad-Lubavitch"
