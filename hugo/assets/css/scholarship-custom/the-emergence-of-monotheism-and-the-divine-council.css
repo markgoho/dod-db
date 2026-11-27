@@ -1,0 +1,286 @@
+/*
+  Custom block for The Emergence of Monotheism and the Divine Council
+  Scholarship Page: a comic page. One ink frame holds the title, seven panels
+  and the credit, so the whole thing shares as one image. The last panel, the
+  angels over the nations, spans the row as a wide strip that answers the
+  first. A narration label sits flush top-left; the answers are plates set on
+  the art in corners the picture leaves clear. Composes cloud-section,
+  type-section-title, scholarship-meta and the shared comic-plate.
+
+  Distinctions without colour: the order runs panel to panel; the first and
+  last panels are the same lands, divine beings in one and winged angels in
+  the other; the altar panel's own altar has no statue, its neighbours' do.
+*/
+.emd-comic {
+  --emd-ink: var(--tan-900);
+  --emd-paper: var(--tan-000);
+  --emd-amber: var(--color-accent);
+  --emd-frame: var(--border-width-md);
+
+  container: emd-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.emd-comic__page {
+  background: var(--emd-paper);
+  border: var(--emd-frame) solid var(--emd-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--emd-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.emd-comic__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.emd-comic__head > p {
+  margin: 0;
+}
+
+.emd-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.emd-comic__title {
+  color: var(--emd-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-3);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  text-shadow: 3px 3px 0 var(--emd-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.emd-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emd-comic__frame {
+  display: grid;
+  min-inline-size: 0;
+}
+
+/* A panel: one ink frame around the art; its labels sit on the art as shared comic plates (scholarship.css). */
+.emd-comic__figure {
+  border: var(--emd-frame) solid var(--emd-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.emd-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.emd-comic__art > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.06;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.emd-comic__box {
+  background: var(--emd-amber);
+  border-block-end: var(--emd-frame) solid var(--emd-ink);
+  border-inline-end: var(--emd-frame) solid var(--emd-ink);
+  font-family: var(--font-family-display);
+  /* Scales down with a narrow panel, so the label stays one line. */
+  font-size: min(var(--step--1), 4.4cqi);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.comic-plate__sub > .emd-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates, linked to BibleGateway. */
+.emd-comic__ref {
+  background: var(--emd-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--emd-amber);
+  white-space: nowrap;
+}
+
+.comic-plate__sub:has(> .emd-comic__ref:only-child) > .emd-comic__ref {
+  margin-inline-start: 0;
+}
+
+.emd-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.emd-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* At phone width the wide panel is an ordinary panel, a little shorter. */
+.emd-comic__frame--wide .emd-comic__art {
+  aspect-ratio: 16 / 9;
+}
+
+/* Wide: two panels to a row, the last across the bottom. Literal length: container conditions cannot read custom properties. */
+@container emd-comic (width >= 40rem) {
+  .emd-comic__page {
+    padding: var(--space-m);
+  }
+
+  .emd-comic__title {
+    font-size: var(--step-4);
+  }
+
+  .emd-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .emd-comic__frame--wide {
+    grid-column: 1 / -1;
+  }
+
+  .emd-comic__frame--wide .emd-comic__art {
+    aspect-ratio: 8 / 3;
+  }
+
+  /* The wide panel is twice as wide a container: halve the plates' cqi type so they match the other panels. */
+  .emd-comic__frame--wide .comic-plate {
+    max-inline-size: 30%;
+    padding: 0.45cqi 0.7cqi 0.55cqi;
+  }
+
+  .emd-comic__frame--wide .comic-plate__big {
+    font-size: clamp(0.95rem, 2.7cqi, 2.1rem);
+  }
+
+  .emd-comic__frame--wide .comic-plate__sub {
+    font-size: clamp(0.65rem, 1.25cqi, 0.95rem);
+  }
+
+  .emd-comic__frame--wide .comic-plate--bl {
+    inset: auto auto 1cqi 1cqi;
+  }
+
+  .emd-comic__frame--wide .emd-comic__box {
+    font-size: min(var(--step--1), 2.2cqi);
+  }
+}
+
+/* The poster: three shorter (4:3) panels to a row and a 3:1 strip across the bottom, on the 4:5 canvas. */
+
+.scholarship-share:target .emd-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .emd-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:target .emd-comic__title {
+  font-size: var(--step-2);
+}
+
+.scholarship-share:target .emd-comic__strip {
+  gap: var(--space-2xs);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.scholarship-share:target .emd-comic__frame--wide {
+  grid-column: 1 / -1;
+}
+
+/* Three to a row makes each panel narrow: smaller plates. */
+.scholarship-share:target
+  .emd-comic__frame:not(.emd-comic__frame--wide)
+  .comic-plate {
+  max-inline-size: 48%;
+  padding: 0.6cqi 1cqi 0.8cqi;
+}
+
+.scholarship-share:target
+  .emd-comic__frame:not(.emd-comic__frame--wide)
+  .comic-plate__big {
+  font-size: 4.8cqi;
+}
+
+.scholarship-share:target
+  .emd-comic__frame:not(.emd-comic__frame--wide)
+  .comic-plate__sub {
+  font-size: 3.2cqi;
+}
+
+.scholarship-share:target .emd-comic__frame--wide .emd-comic__art {
+  aspect-ratio: 3 / 1;
+}
+
+.scholarship-share:target .emd-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.scholarship-share:target .emd-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
+}
+
+/* The card: one god worshipped (the altar) beside no other god (Second Isaiah), under the title. */
+
+.scholarship-share:has(#share-card:target) .emd-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .emd-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:has(#share-card:target) .emd-comic__kicker {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .emd-comic__title {
+  font-size: var(--step-2);
+}
+
+.scholarship-share:has(#share-card:target) .emd-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}

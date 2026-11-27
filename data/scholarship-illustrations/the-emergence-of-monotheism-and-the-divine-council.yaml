@@ -1,0 +1,134 @@
+# Illustrations for /scholarship/the-emergence-of-monotheism-and-the-divine-council/
+# (generated with Gemini; see src/scripts/generate-scholarship-illustrations.ts).
+# Each picture shows only what the listed statements support; every caption,
+# link and claim stays in
+# hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Seven comic panels, from the older texts to the later ones: divine beings
+# standing over the nations (Deut 32:8–9); a prophet at the edge of a heavenly
+# throne room full of divine beings (the council scenes); Israelites at one
+# altar while neighbouring peoples' shrines with their own statues stand on the
+# horizon (the first commandment: one god worshipped, others not denied);
+# Rachel sitting on a camel saddle with small figurines hidden in it (the
+# teraphim); a prophet speaking to exiles by a Babylonian river (Second
+# Isaiah, the first outright denial); a small temple on a Nile island where a
+# scribe writes an Aramaic letter (Elephantine); and, across the bottom, winged
+# angelic princes hovering over the lands (Daniel). `nations` is the anchor for
+# the divine beings, chained into `council` and `angels`. God is never drawn
+# as a figure: the throne is light. No being is drawn as Yahweh or set over
+# Israel: the page leaves who the Most High is to the-origins-of-yahweh. No
+# count of gods or nations is asserted: the statements give none.
+slug: the-emergence-of-monotheism-and-the-divine-council
+images:
+  - id: nations
+    statements: [deuteronomy-32, other-gods]
+    aspect: "4:3"
+    alt: "Seen from above, a landscape divided into many separate lands, each with its own tall robed divine figure standing guard over it, glowing faintly."
+    prompt: >-
+      A wide ancient landscape seen from high above, like a colourful map
+      come to life: rolling hills in amber and grey, rivers and a coastline,
+      divided into many separate lands by dashed boundary lines. Over each
+      land stands one tall, calm, robed divine being, far larger than the
+      tiny villages around its feet, glowing with a soft amber aura of light
+      around its whole body so it is clearly not human, each slightly
+      different in robe and ancient Near Eastern headdress or veil, each
+      watching over its own land. The beings are spread across the RIGHT two
+      thirds and the TOP of the picture, too many and too far apart to count
+      easily. The BOTTOM LEFT quarter of the picture is plain open ground and
+      sea with nothing in it. Negative list: no single central god, no
+      throne, no crowns, no bishops' mitres, no crosses, no ring halos, no
+      wings, no weapons, no letters, no text.
+
+  - id: council
+    statements: [council, other-gods]
+    aspect: "4:3"
+    refs: [nations]
+    alt: "A heavenly throne room: a throne blazing with light, no figure on it, surrounded by rows of robed divine beings; a small human prophet stands at the edge, watching."
+    prompt: >-
+      A vast heavenly throne room above the clouds. In the upper middle stands
+      a high throne that is pure blazing light, with NO figure visible on it,
+      only radiance. Around it, in curved rows, stand many robed divine
+      beings like those in the reference image, attentive, turned toward the
+      throne, as if in a formal assembly. At the far RIGHT edge, a small human
+      prophet in a plain cloak stands on a cloud, wide-eyed, watching and
+      listening. The BOTTOM LEFT quarter of the picture is plain cloud with
+      nothing in it. Negative list: no figure on the throne, no face in the
+      light, no wings, no bishops' mitres, no crosses, no halos, no weapons,
+      no letters, no text.
+
+  - id: altar
+    statements: [first-commandment, monolatry]
+    aspect: "4:3"
+    alt: "Ancient Israelite villagers bring an offering to a single stone altar; far off on the hills behind them stand other peoples' shrines, each with its own statue of a god."
+    prompt: >-
+      An ancient hill-country village scene. In the right foreground a small
+      group of villagers in simple tunics and headscarves gather around ONE
+      plain stone altar with a thin column of smoke, bringing a lamb and
+      bread, facing the altar. There is NO statue at their altar. Far off in
+      the background, on distant hills, stand two or three other small shrines
+      belonging to neighbouring peoples, each with its own small statue of a
+      god on a pedestal, clearly separate and far away. The TOP LEFT corner
+      is open sky. The BOTTOM LEFT quarter is plain open ground. Negative
+      list: no statue near the villagers, no violence, no letters, no text.
+
+  - id: teraphim
+    statements: [teraphim]
+    aspect: "4:3"
+    alt: "Inside a tent, a young woman sits calmly on a camel saddle; the heads of a few small human-shaped figurines peek out from the saddlebag beneath her while an older man searches the tent."
+    prompt: >-
+      Inside a large goat-hair tent lit by daylight. On the RIGHT side a young
+      woman in a long dress and headscarf sits calmly on a camel saddle on the
+      floor, hands folded, looking innocent. From the saddlebag beneath her,
+      the heads of three small human-shaped clay figurines, each about the
+      size of a hand, peek out, hidden from view of the man. In the middle
+      distance an older bearded man in a robe rummages through baskets and
+      rugs, searching, his back half-turned to her. The TOP LEFT corner is
+      plain tent wall. The BOTTOM LEFT quarter is plain rug-covered floor.
+      Negative list: no weapons, no anger, no letters, no text.
+
+  - id: exile
+    statements: [explicit]
+    aspect: "4:3"
+    alt: "By a wide river under a stepped Mesopotamian tower, a prophet stands with one hand raised, speaking to a group of seated exiles who listen intently."
+    prompt: >-
+      A riverbank in ancient Babylon. In the background on the far right, a
+      tall stepped temple tower (a ziggurat) and city walls under an evening
+      sky. On the RIGHT side, an older prophet in a plain cloak stands on a
+      low rock with one hand raised high, index finger pointing up, speaking
+      with conviction. Below and around him, a small group of exiles in
+      travel-worn tunics sit on the ground listening intently, a few holding
+      bundles. Willow trees by the water. The TOP LEFT is open evening sky.
+      The BOTTOM LEFT quarter is plain riverbank with water and reeds and
+      nothing else. Negative list: no statues, no idols, no broken objects,
+      no violence, no letters, no text.
+
+  - id: elephantine
+    statements: [elephantine-temple, elephantine-gods]
+    aspect: "4:3"
+    alt: "A small island in a wide river with palm trees and granite boulders; on it a modest walled temple courtyard, and in the foreground a scribe sits writing a letter on papyrus."
+    prompt: >-
+      A small rocky island in the wide Nile river, with smooth rounded granite
+      boulders, a few date palms and a calm blue river around it, a sailing
+      boat on the water. On the island stands a modest temple with a walled
+      courtyard, mudbrick and stone, an altar in the courtyard. On the RIGHT
+      in the foreground, a scribe in a simple tunic sits on a mat writing on a
+      sheet of papyrus with a reed pen, the writing only tiny illegible
+      scribble marks. The TOP LEFT is open sky. The BOTTOM LEFT quarter is
+      plain calm river water. Negative list: no statues of gods, no pyramids,
+      no sphinx, no letters, no text.
+
+  - id: angels
+    statements: [angels, deuteronomy-32]
+    aspect: "16:9"
+    refs: [nations]
+    alt: "The same landscape of separate lands as the first panel, but now a winged angelic prince in armour-like robes hovers over each land."
+    prompt: >-
+      The same landscape of many separate lands divided by faint boundary
+      lines as in the reference image, seen from above, now in a wide view.
+      Over each land, instead of the tall glowing robed beings, hovers a
+      WINGED angelic prince with large feathered wings, a simple circlet and
+      a long robe, calm and watchful, each over its own land. The winged
+      princes are spread across the RIGHT two thirds of the picture, too many
+      to count easily. The LEFT third of the picture is plain sky and open
+      land with no figures. Negative list: no fighting, no weapons drawn, no
+      throne, no letters, no text.

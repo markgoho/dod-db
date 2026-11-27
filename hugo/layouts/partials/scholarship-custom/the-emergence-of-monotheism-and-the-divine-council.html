@@ -1,0 +1,141 @@
+{{- /*
+  Custom block for /scholarship/the-emergence-of-monotheism-and-the-divine-council/:
+  a seven-panel comic page. Divine beings stand over the nations' lands; a
+  prophet watches Yahweh's council around a throne of light (no figure on
+  it); villagers worship at one altar while neighbouring peoples' shrines
+  keep their statues; Rachel sits on the saddle that hides the teraphim; a
+  prophet speaks to exiles by a Babylonian river; a scribe writes on the
+  Elephantine island beside its temple; and, across the bottom, the same
+  lands as the first panel with a winged angelic prince over each.
+
+  A view of the page's reviewed statements `deuteronomy-32` (short), `council`
+  (short), `first-commandment` (short), `teraphim` (short; Cook's Genesis 31
+  saddlebag in the text), `explicit` (short, the core; Coogan and Chapman's
+  sixth century in Babylon in the text), `elephantine-temple` and
+  `elephantine-gods` (shorts) and `angels` (short); it makes no claim they
+  don't. No being is drawn as Yahweh or set over Israel, and God is never
+  drawn: who the Most High is in Deuteronomy 32 is left to
+  the-origins-of-yahweh. No count of gods or nations is drawn: the page gives
+  none.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/the-emergence-of-monotheism-and-the-divine-council.yaml.
+  Reword a plate only when the statement it comes from is re-reviewed.
+  */
+-}}
+{{- define "partials/inline/emd-ref.html" -}}
+  <a
+    class="emd-comic__ref"
+    href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .ref) | safeURL }}"
+    rel="noopener"
+    >{{ replace .label " " "&nbsp;" | safeHTML }}</a
+  >
+{{- end -}}
+{{- $panels := slice
+  (dict
+  "id" "nations" "box" "The nations’ gods"
+  "alt" "Seen from above, a landscape divided into many lands, each with its own tall robed divine being glowing with light and standing guard over it."
+  "plates" (slice
+  (dict "pos" "bl" "big" "A divine being for each nation" "sub" "in the reading of a Dead Sea Scroll and the Septuagint" "refs" (slice (dict "ref" "Deuteronomy 32:8-9" "label" "Deut 32:8–9")))))
+  (dict
+  "id" "council" "box" "The divine council"
+  "alt" "A heavenly throne blazing with light, no figure on it, with robed divine beings gathered around it; a man in a dark cloak stands among them at the right."
+  "plates" (slice
+  (dict "pos" "bl" "big" "A council of gods" "sub" "biblical scenes of Yahweh’s council, scholars generally recognise" "refs" (slice (dict "ref" "1 Kings 22:19-23" "label" "1 Kgs 22:19–23") (dict "ref" "Job 1:6" "label" "Job 1:6") (dict "ref" "Isaiah 6:1-8" "label" "Isa 6")))))
+  (dict
+  "id" "altar" "box" "No other gods before me"
+  "alt" "Villagers bring a lamb and bread to a single stone altar with no statue; far off on the hills, other peoples' shrines each hold a statue of a god."
+  "plates" (slice
+  (dict "pos" "bl" "big" "Worship Yahweh alone" "sub" "without denying that other gods exist, scholars say" "refs" (slice (dict "ref" "Exodus 20:3" "label" "Exod 20:3")))))
+  (dict
+  "id" "teraphim" "box" "In the household"
+  "alt" "Inside a tent, a young woman sits calmly on a camel saddle; three small clay figurines peek from the saddlebag beneath her while an older man searches the baskets."
+  "plates" (slice
+  (dict "pos" "bl" "big" "Teraphim" "sub" "figurines linked with divination; household gods or dead ancestors is debated" "refs" (slice (dict "ref" "Genesis 31:34" "label" "Gen 31:34")))))
+  (dict
+  "id" "exile" "box" "Second Isaiah"
+  "alt" "By a river below a stepped Babylonian tower, a prophet stands on a rock with one finger raised, speaking to seated exiles."
+  "plates" (slice
+  (dict "pos" "bl" "big" "No other god" "sub" "first stated outright in Second Isaiah, scholars say" "refs" (slice (dict "ref" "Isaiah 44:6" "label" "Isa 44:6")))))
+  (dict
+  "id" "elephantine" "box" "Elephantine"
+  "alt" "A small rocky island in the Nile with palm trees and a modest walled temple; in front, a scribe writes on papyrus."
+  "plates" (slice
+  (dict "pos" "bl" "big" "Yahu and other deities" "sub" "named in the community’s 5th-century BCE papyri; how to read them is disputed")))
+  (dict
+  "id" "angels" "box" "Later texts" "wide" true
+  "alt" "The same lands as the first panel, now with a winged angelic prince standing over each one."
+  "plates" (slice
+  (dict "pos" "bl" "big" "Recast as angels" "sub" "where older texts speak of the nations’ gods, Daniel speaks of angelic princes" "refs" (slice (dict "ref" "Daniel 10:13" "label" "Dan 10:13")))))
+-}}
+<section class="cloud-section emd-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="emd-comic__page">
+    <header class="emd-comic__head">
+      <p class="emd-comic__kicker">Second Isaiah · scholars say</p>
+      <p class="emd-comic__title">One god worshipped, then no other god</p>
+    </header>
+    <ol class="emd-comic__strip">
+      {{- range $panels }}
+        <li
+          class="emd-comic__frame emd-comic__frame--{{ .id }}{{ if .wide }}
+            emd-comic__frame--wide
+          {{ end }}"
+          {{ if not (in (slice "altar" "exile") .id) }}
+            data-card-hide
+          {{ end }}>
+          <figure class="emd-comic__figure">
+            {{- $alt := .alt }}
+            <div class="emd-comic__art">
+              {{- with resources.Get (printf "scholarship-art/the-emergence-of-monotheism-and-the-divine-council/%s.png" .id) }}
+                {{- $webp := .Process "resize 1200x webp q78" }}
+                <img
+                  src="{{ $webp.RelPermalink }}"
+                  width="{{ $webp.Width }}"
+                  height="{{ $webp.Height }}"
+                  alt="{{ $alt }}"
+                  loading="eager" />
+              {{- end }}
+            </div>
+            <h3 class="emd-comic__box">{{ .box }}</h3>
+            <figcaption>
+              {{- range .plates }}
+                <p class="comic-plate comic-plate--{{ .pos }}">
+                  <span class="comic-plate__big">{{ .big }}</span>
+                  {{- if or .sub .refs }}
+                    <span class="comic-plate__sub">
+                      {{ .sub }}
+                      {{- range .refs }}
+                        {{ partial "inline/emd-ref.html" . -}}
+                      {{- end }}
+                    </span>
+                  {{- end }}
+                </p>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="emd-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
+  </div>
+  <p class="emd-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#deuteronomy-32">the gods of the nations in Deuteronomy 32</a>,
+    <a href="#council">the divine council</a>,
+    <a href="#first-commandment">the first commandment</a>,
+    <a href="#teraphim">the teraphim</a>,
+    <a href="#explicit">when the Bible first denies other gods</a>,
+    <a href="#elephantine-temple">the temple at Elephantine</a>,
+    <a href="#elephantine-gods">its other deities</a> and
+    <a href="#angels">what became of the nations’ gods</a>.
+  </p>
+</section>
