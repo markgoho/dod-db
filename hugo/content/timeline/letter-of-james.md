@@ -1,8 +1,8 @@
 ---
 title: "Letter of James"
 entryKind: composition
-draft: true
-sourcesRead:
+draft: false
+sourcesRead: 2026-11-26
 related: { books: [james], tags: [james], topics: [james] }
 watch:
   [
