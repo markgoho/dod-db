@@ -1,8 +1,8 @@
 ---
 title: "The independent Hasmonean state"
 entryKind: event
-draft: true
-sourcesRead: null
+draft: false
+sourcesRead: 2026-11-27
 related:
   { books: [], tags: [maccabees, seleucid-empire], topics: [maccabean-revolt] }
 watch:
