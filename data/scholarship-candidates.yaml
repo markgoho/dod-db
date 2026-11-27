@@ -213,6 +213,22 @@ subjects:
     notes: '#125 gate-1 read (2026-11-23): every watch-term hit line in the 11 matching Transcripts, plus about two minutes either side of each recorded claim; the Ep 164 claim came from the inerrancy read. Substantive claims are almost all Ep 6 on 2 Timothy 3:16; the rest are passing mentions. The "overwhelming consensus" at 00:51:49 is among believing readers, not scholars. The life-giving reading rests on one scholar (John C. Poirier, The Invention of the Inspired, 2021), so the core may narrow to what theopneustos means in 2 Timothy 3:16. Core is the show''s thesis, not yet sourced.'
 
 statements:
+  - page: 1-enoch-the-watchers-and-the-nephilim
+    question: "In what language was 1 Enoch written, and how has it survived?"
+    triggers:
+      - episode: 157
+        speaker: "Dan McClellan"
+        timestamp: "00:39:02.580"
+        text: "But there were like 12 to 14 copies of Enoch found among the Dead Sea Scrolls."
+    notes: "Conflict with languages: the statement's text gives the eleven manuscripts of Aramaic Enoch that Milik identified (VanderKam, DSD 2026, abstract), as Episode 62 at 00:37:56 also says. Logged at the #159 first pass, 2026-11-27."
+  - page: satan-demons-and-angels
+    question: "Where do demons come from in 1 Enoch?"
+    triggers:
+      - episode: 62
+        speaker: "Dan McClellan"
+        timestamp: "00:13:48.140"
+        text: "And so now we have evil spirits in the Greco Roman world. And so the watchers, when they die, their spirits leave their corpses and become the evil spirits that possess people, that compel people to do bad things."
+    notes: "Conflict with watchers: the quote has the Watchers' own spirits become the evil spirits; the statement, with 1 Enoch 15:9–12 (Boling and Proctor), Angel and Proctor, has the spirits of the giants, the Watchers' offspring. Found at the #159 first pass, 2026-11-27, and not attached to 1-enoch-the-watchers-and-the-nephilim."
   - page: daniel-date
     question: "In what language were the additions first written?"
     triggers:
