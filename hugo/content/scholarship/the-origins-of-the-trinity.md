@@ -1,7 +1,6 @@
 ---
 title: "The Origins of the Trinity"
 dek: "Whether the Bible teaches the Trinity, how Christian writers before Nicaea spoke of Father, Son and Spirit, and what the councils of Nicaea in 325 and Constantinople in 381 decided."
-draft: true
 core: new-testament
 sourcesRead: 2026-11-27
 related:
@@ -147,8 +146,8 @@ statements:
         read: 2026-11-27
   - id: plural
     group: "The Bible"
-    question: "Do the plural Elohim and God's “Let us make” in Genesis 1:26 point to the Trinity?"
-    short: "No, scholars say. They reject reading the Trinity into Genesis, and read the “us” of Genesis 1:26 as a plural of majesty or deliberation, or as God addressing a heavenly council."
+    question: "Does God's “Let us make” in Genesis 1:26 point to the Trinity?"
+    short: "No, scholars say. They read the “us” of Genesis 1:26 as a plural of majesty or deliberation, or as God addressing a heavenly council, not as the Trinity."
     text: "The HarperCollins Bible Dictionary says the plural Elohim implied grandeur in Israelite religion, without any suggestion of multiple identities. David Carr and Marc Zvi Brettler's Bible Odyssey answer says Christian interpreters once saw the Trinity in the plurals of Genesis 1, but that most scholars now agree Genesis 1:26 and similar verses are either a “plural of deliberation” or reflect the idea of a council of semi-divine beings around the God of Israel. Veli-Matti Kärkkäinen says current exegesis regards Genesis 1:26 as a plural of majesty and that contemporary scholarship does not agree with reading such prooftexts as evidence for the Trinity. Dale Martin's Yale lectures say most historical critics would call it certainly wrong to read the doctrine of the Trinity into Genesis."
     cites:
       - source: harpercollins-2009-dictionary
