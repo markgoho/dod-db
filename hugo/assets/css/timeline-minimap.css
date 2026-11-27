@@ -186,6 +186,8 @@
 */
 @media (width >= 114rem) and (height >= 40rem) {
   .timeline-page {
+    /* PROTOTYPE: the rail is this much wider, and the axis starts this much further in. */
+    --rail-extra: 3rem;
     --timeline-bleed: max(
       0px,
       (100dvw - min(100dvw, var(--content-max-width))) / 2 + var(--space-s) -
@@ -194,7 +196,7 @@
   }
 
   .timeline-spine > .timeline-axis {
-    margin-inline-end: calc(-1 * var(--timeline-bleed));
+    margin-inline: var(--rail-extra) calc(-1 * var(--timeline-bleed));
   }
 }
 
@@ -222,8 +224,8 @@
       down,
       min(
         (var(--rail-viewport) - var(--content-max-width)) / 2 + var(--space-s) -
-          2 * var(--rail-gap),
-        var(--content-max-width-sidebar)
+          2 * var(--rail-gap) + var(--rail-extra, 0px),
+        var(--content-max-width-sidebar) + var(--rail-extra, 0px)
       ),
       1px
     );
@@ -349,7 +351,8 @@
       /* The axis bleeds right (below): its middle sits half the bleed right of the spine's. */
       --axis-offset: calc(
         (min(100%, var(--content-max-width)) - 2 * var(--space-s)) *
-          (var(--timeline-axis-share) - 0.5) + var(--timeline-bleed) / 2
+          (var(--timeline-axis-share) - 0.5) + var(--timeline-bleed) / 2 +
+          var(--rail-extra, 0px) / 2
       );
 
       animation: timeline-minimap-show linear;
@@ -1262,4 +1265,84 @@
 [data-period-variant="A3"] .timeline-minimap__view {
   background: none;
   border-width: var(--border-width-md);
+}
+
+/*
+  A3, iterated: the window and the current period's tint run the strip's
+  full width; the period names get their own gutter beside the years
+  (--period-room, which the dots keep out of), sideways on the rail like the
+  years. A name longer than its period is cut, but the current one shows in
+  full over its neighbours. The temple stripe is the gutter's far edge.
+*/
+[data-period-variant="A3"].timeline-minimap__strip {
+  --period-room: 4.5rem;
+}
+
+@media (width >= 114rem) and (height >= 40rem) {
+  [data-period-variant="A3"].timeline-minimap__strip {
+    --period-room: calc(var(--era-label-width) + 3px);
+  }
+}
+
+[data-period-variant="A3"] .timeline-minimap__view {
+  inset-inline: 0;
+}
+
+[data-period-variant="A3"] [data-track="age"] {
+  border-block-start: 0;
+  inset-inline: 0;
+  overflow: visible;
+  padding: 0;
+}
+
+/* The boundary: dashed, from the period gutter across the dots, never through the years. */
+[data-period-variant="A3"] [data-track="age"]::before {
+  border-block-start: var(--border-width-sm) dashed var(--tan-500);
+  content: "";
+  inset-block-start: 0;
+  inset-inline: var(--era-label-width) 0;
+  position: absolute;
+}
+
+[data-period-variant="A3"] [data-track="age"] .timeline-minimap__period-label {
+  background: if(style(--is-current: 1): var(--tan-000); else: transparent);
+  box-sizing: border-box;
+  color: if(
+    style(--is-current: 1): var(--color-text-main);
+      else: var(--color-text-muted)
+  );
+  font-weight: if(
+    style(--is-current: 1): var(--font-weight-bold); else: normal
+  );
+  inline-size: calc(var(--period-room) - 4px);
+  inset-block-start: 0;
+  inset-inline-start: var(--era-label-width);
+  max-block-size: if(style(--is-current: 1): none; else: 100%);
+  overflow: hidden;
+  padding: 1px 2px;
+  position: absolute;
+  text-overflow: clip;
+  white-space: nowrap;
+  z-index: if(style(--is-current: 1): 1; else: auto);
+}
+
+@media (width >= 114rem) and (height >= 40rem) {
+  /* Sideways, as the years are; physical sides, as a vertical box's logical ones turn. */
+  [data-period-variant="A3"]
+    [data-track="age"]
+    .timeline-minimap__period-label {
+    height: auto;
+    inline-size: auto;
+    left: var(--era-label-width);
+    max-block-size: none;
+    max-height: if(style(--is-current: 1): none; else: 100%);
+    padding: 2px 0;
+    top: 0;
+    width: calc(var(--period-room) - 4px);
+    writing-mode: vertical-rl;
+  }
+}
+
+[data-period-variant="A3"] [data-track="temple"] {
+  inset-inline-start: calc(var(--era-label-width) + var(--period-room) - 3px);
 }
