@@ -184,10 +184,6 @@ const where = (v: Record<string, number>) => ({
 const hover = (id: string) =>
   `.timeline-minimap__ticks:has(:is([data-tick="${id}"], [id="timeline-minimap-tip-${id}"]):hover)`;
 
-/** The generated selector for "the scrollspy link with this attribute is current". */
-const on = (attr: string, value: string) =>
-  `.timeline-minimap:has(.timeline-minimap__spy [${attr}="${value}"]:is(:target-current, .target-current))`;
-
 /** A stylesheet's rules: each one's comma-split selectors and its trimmed body. */
 function parseRules(css: string): { selectors: string[]; body: string }[] {
   return [...css.matchAll(/([^{}]+)\{([^{}]*)\}/g)].map(m => ({
@@ -564,16 +560,15 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
 
   test("no caption over the strip; the strip's window, hidden until the script places it, shows the part on screen (#253)", () => {
     expect(select(page, ".timeline-minimap__caption")).toEqual([]);
+    // Its own layer, outside the ticks', so moving it restyles nothing else.
     const view = select(
       page,
-      ".timeline-minimap__ticks > .timeline-minimap__view",
+      '.timeline-minimap__strip > .timeline-minimap__window[aria-hidden="true"] > .timeline-minimap__view',
     );
-    expect(
-      view.map(v => [v.attrs["aria-hidden"], "hidden" in v.attrs]),
-    ).toEqual([["true", true]]);
+    expect(view.map(v => "hidden" in v.attrs)).toEqual([true]);
   });
 
-  test("the era pill has a label per era, in axis order, each shown by its era's generated rule", () => {
+  test("the era pill has a label per era, in axis order, each named by its era's id for the script to flag", () => {
     const pill = select(page, ".timeline-minimap__era-pill");
     expect(pill).toHaveLength(1);
     expect(pill[0]?.attrs["aria-hidden"]).toBe("true");
@@ -586,43 +581,21 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
         h => h.text.trim(),
       ),
     );
-
-    const selectors = parseRules(
-      select(page, ".timeline-minimap style")[0]?.text ?? "",
-    ).flatMap(r => r.selectors);
-    for (const id of ids(eras))
-      expect(selectors).toContain(
-        `${on("data-entry-era", id)} [data-now="${id}"]`,
-      );
   });
 
-  test("the generated rules set only flags: --is-current, one selector per entry and era (and per pair's connector), and flag the current entry on the axis", () => {
+  test("no generated rule reads the scrollspy: timeline-minimap.ts flags the current entry's few elements, so the only generated rules are the pairs' hover rules", () => {
     const style = select(page, ".timeline-minimap style")[0]?.text ?? "";
-    const [current, ...rest] = parseRules(style);
-    expect(current?.body).toBe("--is-current: 1");
-    for (const r of rest)
-      expect(["--is-current: 1", "--is-partner: 1"]).toContain(r.body);
-
-    const entries = ids(select(page, ".timeline-axis .timeline-entry"));
-    const eras = ids(select(page, ".timeline-axis > .timeline-era"));
-    expect(current?.selectors).toEqual([
-      ...entries.map(id => `${on("href", `#${id}`)} [data-now="${id}"]`),
-      ...eras.map(id => `${on("data-entry-era", id)} [data-now="${id}"]`),
-      ...eras.map(id => `${on("data-entry-era", id)} [data-era="${id}"]`),
-      ...entries.map(id => `${on("href", `#${id}`)} [data-tick="${id}"]`),
-      `${on("href", "#lamentations")} [data-setting="lamentations"]`,
-      `${on("href", "#daniel")} [data-setting="daniel"]`,
-      // A pair's connector shows while either of its ticks is current.
-      ...["deuteronomy", "jericho", "daniel"].flatMap(id => [
-        `${on("href", `#${id}`)} [data-pair="${id}"]`,
-        `${on("href", `#${id}-tradition`)} [data-pair="${id}"]`,
-      ]),
-      // The entry on the axis, a sibling of the minimap, so read from the layout.
-      ...entries.map(
-        id =>
-          `.timeline-minimap-layout:has(.timeline-minimap__spy [href="#${id}"]:is(:target-current, .target-current)) .timeline-axis [id="${id}"]`,
-      ),
+    expect(style).not.toContain("target-current");
+    expect(style).not.toContain("timeline-minimap-layout");
+    expect(parseRules(style).map(r => r.body)).toEqual([
+      "--is-partner: 1",
+      "--is-current: 1",
     ]);
+    // Every element the script flags is found by an attribute the template writes.
+    for (const id of ids(select(page, ".timeline-axis .timeline-entry")))
+      expect(select(page, `[data-tick="${id}"]`)).toHaveLength(1);
+    for (const id of ids(select(page, ".timeline-axis > .timeline-era")))
+      expect(select(page, `[data-era="${id}"]`)).toHaveLength(1);
   });
 
   test("an entry's dot and its moved Tradition Date's diamond are a pair: a line in their shared place from the dot's year to the diamond's, and each marks the other as its partner while current or hovered", () => {
@@ -649,16 +622,8 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
 
     const style = select(page, ".timeline-minimap style")[0]?.text ?? "";
     const rules = parseRules(style);
-    const partner = (a: string, b: string) => [
-      `${on("href", `#${a}`)} [data-tick="${b}"]`,
-      `${on("href", `#${b}`)} [data-tick="${a}"]`,
-    ];
     const pairIds = ["deuteronomy", "jericho", "daniel"];
-    expect(rules.slice(1).map(r => [r.body, r.selectors])).toEqual([
-      [
-        "--is-partner: 1",
-        pairIds.flatMap(id => partner(id, `${id}-tradition`)),
-      ],
+    expect(rules.map(r => [r.body, r.selectors])).toEqual([
       [
         "--is-partner: 1",
         pairIds.flatMap(id => [

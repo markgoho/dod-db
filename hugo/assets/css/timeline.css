@@ -259,8 +259,8 @@
 }
 
 /*
-  The highlighter follows the reader: timeline-minimap.html's scrollspy rules
-  set --is-current: 1 on the entry it marks current, and its placing card's
+  The highlighter follows the reader: timeline-minimap.ts sets
+  --is-current: 1 on the entry the scrollspy marks current, and its placing card's
   heading and date carry the stroke. Inline and cloned, so the stroke runs
   the length of each line's text. Without if() (and so without the
   scrollspy) it marks the card you landed on instead.

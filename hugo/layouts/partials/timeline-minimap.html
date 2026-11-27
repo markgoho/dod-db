@@ -8,15 +8,18 @@
   out; nothing is measured in the page.
   Takes the eras from timeline-eras.html.
 
-  "You are here" is CSS. One hidden list of entry links is the only scrollspy
+  "You are here": one hidden list of entry links is the only scrollspy
   (scroll-target-group); it stays rendered while the popover is closed, so the
-  bar tracks the era with no geometry. The generated :has() rules below set
-  one flag, --is-current: 1, on whatever its :target-current link makes
-  current: the bar's era, the band, the tick, the
-  entry's narrated setting (#170) and the entry on the axis. timeline-minimap.css says what the flag
-  shows. Only entries are scroll targets, so the highlight never alternates
-  between eras and entries. timeline-minimap.ts (loaded from the list
-  layout's footer scripts) mirrors the current tick into aria-current.
+  bar tracks the era with no geometry. timeline-minimap.ts reads its
+  :target-current link and sets one flag, --is-current: 1, on the bar's and
+  pill's era label, the band, the tick, the entry's narrated setting (#170),
+  its pair's line and the entry on the axis, and --is-partner: 1 on its
+  pair's other tick; timeline-minimap.css says what the flags show. Set on
+  those few elements, not by generated rules: a :has() per entry on the
+  layout was matched again on every style change under it, every frame of a
+  scroll, and an attribute on the layout restyled all of it whenever the
+  entry changed (70ms, measured). Only entries are scroll targets, so the
+  highlight never alternates between eras and entries.
   */
 -}}
 {{- $eras := . -}}
@@ -360,11 +363,11 @@
           </li>
         {{- end }}
       </ol>
+      {{- /* The part of the Timeline on screen (#253), placed by timeline-minimap.ts; hidden until then. Its own layer, outside the ticks', so moving it every frame restyles nothing else. */}}
+      <div class="timeline-minimap__window" aria-hidden="true">
+        <span class="timeline-minimap__view" hidden></span>
+      </div>
       <div class="timeline-minimap__ticks">
-        {{- /* The strip's box, for anchor-size(): the dots are sized to its width and height. */}}
-        <span class="timeline-minimap__frame" aria-hidden="true"></span>
-        {{- /* The part of the Timeline on screen (#253): placed by timeline-minimap.ts from the entries in view; hidden until then. */}}
-        <span class="timeline-minimap__view" aria-hidden="true" hidden></span>
         {{- range $ticks }}
           <a
             class="timeline-minimap__tick{{ if .placed }}
@@ -424,68 +427,33 @@
     </div>
   </nav>
 
-  {{- /* The current-state rules: one selector per scrollspy target. */}}
-  {{- $current := `:is(:target-current, .target-current)` }}
-  {{- $labels := slice }}
-  {{- $marks := slice }}
-  {{- $settings := slice }}
-  {{- $eraLabels := slice }}
-  {{- $eraBands := slice }}
-  {{- $entries := slice }}
-  {{- range $ticks }}
-    {{- /* The entry itself, on the axis beside the minimap: its placing card's heading takes the highlighter (timeline.css). */}}
-    {{- $entries = $entries | append (printf `.timeline-minimap-layout:has(.timeline-minimap__spy [href="#%s"]%s) .timeline-axis [id="%s"]` .id $current .id) }}
-    {{- $on := printf `.timeline-minimap:has(.timeline-minimap__spy [href="#%s"]%s)` .id $current }}
-    {{- $labels = $labels | append (printf `%s [data-now="%s"]` $on .id) }}
-    {{- $marks = $marks | append (printf `%s [data-tick="%s"]` $on .id) }}
-    {{- if .setting }}
-      {{- $settings = $settings | append (printf `%s [data-setting="%s"]` $on .id) }}
-    {{- end }}
-  {{- end }}
   {{- /*
-    A pair: while either tick is current, the other is its partner and the
-    connector shows. On hover (a pointer that can hover), the same for the
-    hovered tick or its hint: one :has() per pair on the ticks layer, so a
-    hover never restyles more than that pair.
+    Hover (a pointer that can hover): a hovered tick or its hint marks its
+    pair's other tick as its partner and shows the pair's line. One :has()
+    per pair on the ticks layer, so a hover never restyles more than that
+    pair; the ticks layer changes only when the current entry does (the
+    strip's window is outside it).
   */}}
-  {{- $partners := slice }}
-  {{- $connectors := slice }}
   {{- $hoverPartners := slice }}
   {{- $hoverConnectors := slice }}
   {{- range $pairs }}
     {{- $dot := .dot }}
     {{- $diamond := .diamond }}
-    {{- $onDot := printf `.timeline-minimap:has(.timeline-minimap__spy [href="#%s"]%s)` $dot $current }}
-    {{- $onDiamond := printf `.timeline-minimap:has(.timeline-minimap__spy [href="#%s"]%s)` $diamond $current }}
-    {{- $partners = $partners | append (printf `%s [data-tick="%s"]` $onDot $diamond) (printf `%s [data-tick="%s"]` $onDiamond $dot) }}
-    {{- $connectors = $connectors | append (printf `%s [data-pair="%s"]` $onDot .id) (printf `%s [data-pair="%s"]` $onDiamond .id) }}
     {{- $hoverDot := printf `.timeline-minimap__ticks:has(:is([data-tick="%s"], [id="timeline-minimap-tip-%s"]):hover)` $dot $dot }}
     {{- $hoverDiamond := printf `.timeline-minimap__ticks:has(:is([data-tick="%s"], [id="timeline-minimap-tip-%s"]):hover)` $diamond $diamond }}
     {{- $hoverPartners = $hoverPartners | append (printf `%s [data-tick="%s"]` $hoverDot $diamond) (printf `%s [data-tick="%s"]` $hoverDiamond $dot) }}
     {{- $hoverConnectors = $hoverConnectors | append (printf `%s [data-pair="%s"]` $hoverDot .id) (printf `%s [data-pair="%s"]` $hoverDiamond .id) }}
   {{- end }}
-  {{- range $bands }}
-    {{- $on := printf `.timeline-minimap:has(.timeline-minimap__spy [data-entry-era="%s"]%s)` .id $current }}
-    {{- $eraLabels = $eraLabels | append (printf `%s [data-now="%s"]` $on .id) }}
-    {{- $eraBands = $eraBands | append (printf `%s [data-era="%s"]` $on .id) }}
+  {{- with $pairs }}
+    <style>
+      @media (hover: hover) {
+        {{ delimit $hoverPartners ",\n" | safeCSS }} {
+          --is-partner: 1;
+        }
+        {{ delimit $hoverConnectors ",\n" | safeCSS }} {
+          --is-current: 1;
+        }
+      }
+    </style>
   {{- end }}
-  {{- /* Flags only: what each flag shows is in timeline-minimap.css. */}}
-  <style>
-    {{ delimit ($labels | append $eraLabels | append $eraBands | append $marks | append $settings | append $connectors | append $entries) ",\n" | safeCSS }} {
-      --is-current: 1;
-    }
-    {{- with $partners }}
-    {{ delimit . ",\n" | safeCSS }} {
-      --is-partner: 1;
-    }
-    @media (hover: hover) {
-      {{ delimit $hoverPartners ",\n" | safeCSS }} {
-        --is-partner: 1;
-      }
-      {{ delimit $hoverConnectors ",\n" | safeCSS }} {
-        --is-current: 1;
-      }
-    }
-    {{- end }}
-  </style>
 </aside>
