@@ -1308,10 +1308,8 @@
 [data-period-variant="A3"] [data-track="age"] .timeline-minimap__period-label {
   background: if(style(--is-current: 1): var(--tan-000); else: transparent);
   box-sizing: border-box;
-  color: if(
-    style(--is-current: 1): var(--color-text-main);
-      else: var(--color-text-muted)
-  );
+  /* Full ink, as the years are: muted was too faint at this size. */
+  color: var(--color-text-main);
   font-weight: if(
     style(--is-current: 1): var(--font-weight-bold); else: normal
   );
@@ -1346,4 +1344,33 @@
 
 [data-period-variant="A3"] [data-track="temple"] {
   inset-inline-start: calc(var(--era-label-width) + var(--period-room) - 3px);
+}
+
+/* A name that doesn't fit its period (measured by the prototype script) is left out, never cut; the current one always shows. */
+[data-period-variant="A3"]
+  [data-track="age"][data-unfit]
+  .timeline-minimap__period-label {
+  visibility: if(style(--is-current: 1): visible; else: hidden);
+}
+
+/*
+  A3: the years sit over the period tints, on the strip's own light ground,
+  as the current period's name does, so a tint never runs behind them.
+*/
+[data-period-variant="A3"] .timeline-minimap__era {
+  position: relative;
+  z-index: 1;
+}
+
+[data-period-variant="A3"]
+  :is(
+    .timeline-minimap__era-full,
+    .timeline-minimap__era-start,
+    .timeline-minimap__era-mark
+  ) {
+  background: var(--tan-000);
+}
+
+[data-period-variant="A3"] .timeline-minimap__era-mark {
+  z-index: 1;
 }

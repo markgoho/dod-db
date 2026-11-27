@@ -142,12 +142,12 @@
   */
 -}}
 {{- $periodDefs := slice
-  (dict "id" "bronze" "track" "age" "label" "Bronze Age" "short" "Bronze" "from" -2000 "to" -1200)
-  (dict "id" "iron-i" "track" "age" "label" "Iron Age I: settlement and judges" "short" "Iron I" "from" -1200 "to" -1000)
+  (dict "id" "bronze" "track" "age" "label" "Bronze Age" "short" "Bronze Age" "from" -2000 "to" -1200)
+  (dict "id" "iron-i" "track" "age" "label" "Iron Age I: settlement and judges" "short" "Iron Age I" "from" -1200 "to" -1000)
   (dict "id" "monarchy" "track" "age" "label" "Monarchy (Iron Age II)" "short" "Monarchy" "from" -1000 "to" -586)
-  (dict "id" "babylonian" "track" "age" "label" "Babylonian period" "short" "Babyl." "from" -586 "to" -539)
+  (dict "id" "babylonian" "track" "age" "label" "Babylonian period" "short" "Babylonian" "from" -586 "to" -539)
   (dict "id" "persian" "track" "age" "label" "Persian period" "short" "Persian" "from" -539 "to" -332)
-  (dict "id" "hellenistic" "track" "age" "label" "Hellenistic period" "short" "Hellen." "from" -332 "to" -63)
+  (dict "id" "hellenistic" "track" "age" "label" "Hellenistic period" "short" "Hellenistic" "from" -332 "to" -63)
   (dict "id" "roman" "track" "age" "label" "Roman period" "short" "Roman" "from" -63 "to" 500)
   (dict "id" "first-temple" "track" "temple" "label" "First Temple period" "short" "1st Temple" "from" -960 "to" -586)
   (dict "id" "exile" "track" "temple" "label" "Exile" "short" "Exile" "from" -586 "to" -538)
@@ -569,6 +569,19 @@
           requestAnimationFrame(() => requestAnimationFrame(sync)),
         );
         requestAnimationFrame(() => requestAnimationFrame(sync));
+        // A name longer than its period is left out (data-unfit), measured when the strip changes size.
+        const strip = document.querySelector(".timeline-minimap__strip");
+        new ResizeObserver(() => {
+          for (const p of periods) {
+            const label = p.querySelector(".timeline-minimap__period-label");
+            if (!label) continue;
+            // The label's whole length (scrollHeight: it is clipped to its period); sideways on the rail, so height either way.
+            p.toggleAttribute(
+              "data-unfit",
+              label.scrollHeight > p.clientHeight + 0.5,
+            );
+          }
+        }).observe(strip);
       })();
     </script>
   {{- end }}
