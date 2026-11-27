@@ -1,0 +1,137 @@
+# Review record for the Timeline Entry `second-peter` (/timeline/#second-peter; #93 shape). Not rendered.
+# Issue #230 (from #108), “Timeline Entry: New Testament complete”. Issue notes: kind composition; tradition as stated “all 27 books written by the end of the 1st century CE (apologists; Wes Huff named)”; critical as stated “laughably untrue; some books early to mid 2nd century CE; 2 Peter 120–150 CE, probably the last New Testament text written” (E104); word for what the sources date, the composition of the latest NT book (likely 2 Peter), not the canon; overlaps `christian-canon` (367 CE, the earliest list; a different subject, not restated) and `revelation` (“Toward the end of the 1st century CE”; not the latest book on the critical view); same E175 lead as the Bible-as-a-whole entry; NABRE NT introductions are outside the 30-year window (#86), not used; “consider whether this is better as a note on a 2 Peter entry; decide at step 1”.
+# Shape decision (step 1/2): a 2 Peter composition entry, id `second-peter` (not `2-peter`: an id starting with a digit is not a valid CSS id selector), title “2 Peter”. Reasons: (a) no source read dates “the New Testament complete” or “the last NT book” in its own voice; Hultin and Ehrman report it as what scholars have often or typically considered; so the latest-book claim is in the note only, attributed. (b) The NT's late end is already on `bible-composition` (Ehrman summary 50–120, Neufeld 50–120, Martin 50–150; Britannica “1st and 2nd centuries CE”); an NT-complete entry would restate it. (c) The sources date 2 Peter itself, and three Trigger Claims date 2 Peter. Fit with published entries: this entry's 2nd century and Ehrman's “around 120 CE or so” sit inside `bible-composition`'s late end (120 / 150); Martin's “decades after … the Book of Revelation” agrees with `revelation` (end of the 1st century); nothing about the canon list (`christian-canon`) is stated. Dropped from the issue's framing: the E175 00:15:14 Wes Huff claim (below) and “all 27 books”.
+# Sourcing test, 2026-11-26: met, as a `critical` entry. Martin (Open Yale RLST 152 lecture 24, Reference) dates it outright in his own voice: “I believe 2 Peter was written sometime in the second century”. The HarperCollins Bible Dictionary (Reference) reports the usual view, “usually regarded as … written in the second century”. Britannica's editors (Reference) hedge: the two letters were “perhaps written during the early 2nd century”. Hultin (Bible Odyssey 2015, Reference) hedges: “difficult to say, but perhaps the end of the first century or even well into the second century”. Ehrman's blog (2025, his edited account of Forgery and Counterforgery, OUP) reports scholars' typical view, “written around 120 CE or so”. Display “Probably the 2nd century CE”: Martin's outright century, with “Probably” because every other source hedges or reports (“seems”, “usually regarded”, “perhaps”); `from: 101`, `to: 200`, `precision: century`. Not shown as #99 alternatives: Hultin's “perhaps the end of the first century” is a hedged possibility, not a range of its own, and sits in the note (as the James ruling on hedged reports). The show's “between 120 and 150” is not on the page: no source read gives that range in its own voice.
+# State of the field (#80): no consensus word on the page. HarperCollins's “usually regarded”, Hultin's “often considered” and Ehrman's “typically considered” are each attributed in the note. The show's “agreed by the majority of scholars” (E104) stays off the page.
+# Setting: none; a letter narrates no period. Tradition: none. No Trigger Claim states a tradition's side for 2 Peter's date: the only tradition-side claim in the issue, E175 00:15:14 (“he believes that 99% of all biblical scholars believe the 27 books of the New Testament were completed by the end of the first century CE, which is laughably untrue”), is McClellan reporting Huff's claim about what scholars believe of all 27 books, not a tradition's date for 2 Peter (same ruling as the Acts and James second passes); no tradition research agent was dispatched. E175 00:15:14's first sentence is already a `bible-composition` trigger (tradition).
+# Trigger Claims (#99, three): 104@00:07:08 (critical), 175@00:20:26 (critical; also a `bible-composition` trigger, there with the full turn), 99@00:27:31 (critical). All Dan McClellan; all give 120–150. Hedges dropped by trimming: 104@00:07:08 is the last sentence of a turn on Jude's date (“I personally think we're probably looking at the 90s or maybe … the aughts of the … second century CE … most scholars think that Second Peter is probably referencing parts of Jude”); the next turn (00:08:05) adds “So that. That was probably the last text that was written in the whole New Testament”. 175@00:20:26 drops the turn's opening (“the New Testament has texts that were probably written in the second century CE”) and its Bible-span conclusion. 99@00:27:31 is preceded by 00:27:17 (“the Catholic epistles … overwhelmingly probably second century”) and goes on to the Pastorals (“maybe first quarter of the second century”). E104 00:06:25–00:09:00, E175 00:14:49–00:22:01, E99 00:25:15–00:29:00 read.
+# Dropped Trigger Claim leads: E98 00:08:41 (“So 2 Peter is probably somewhere between 120 to 150 CE”, in a turn about 1 Peter; three triggers suffice); E6 00:46:38 (“These are among the last texts of the New Testament written. So we're early to mid-2nd century CE”, McClellan unsure whether 1 or 2 Peter); E119 00:27:52 (“it's probably over a century after Jesus's death that the final books are being … completed”: no book named); E175 00:23:56 (Alexandria, place not date); E104 00:39:30 (Jude/2 Peter relative order “a little tricky”).
+# agent: the first pass (2026-11-26). One research agent (critical side) saved every fetched page into its own scratch folder (peter-critical) and copied quotes only from the saved text; the lead read Britannica “Letters of Peter” and “Biblical literature” (Jude section) in Claude in Chrome (script-blocked), saving the `article` h1/h2/p innerText (Letters of Peter 2346 characters; cited sentence matched with includes() in the tab, true); JSON-LD datePublished 1998-07-20 (Letters of Peter), 1998-10-19 (Biblical literature), no dateModified. Quotes script-matched by the lead from the entry file against the saved copies (whitespace, quotes, dashes, entities, NFKC, soft hyphens normalised): 6 hits, 0 misses, each once. Trigger Claims matched by script as substrings of their final Transcript lines at timestamp and speaker: 3 hits.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) The Ehrman blog has no registry precedent (a blog post); classed Reference, kind article, since Ehrman says it is an edited account of Forgery and Counterforgery (OUP 2013). Its sentence is a report (“scholars have typically considered”). Cut if the class doesn't hold; the note's latest-book report then rests on Hultin alone. (2) Display: Martin is the only outright date, first person (“I believe”); check “Probably the 2nd century CE” is no stronger than the sources, and whether `from: 101` should open earlier given Hultin's “perhaps the end of the first century” and Ehrman's “hard to imagine … before the end of the first century, at best” (uncited). (3) Britannica's sentence dates both Letters of Peter together, hedged; note says “the two Letters of Peter”. The same article has an apparent error (“only 2 John and 2 Peter were universally recognized”; Britannica's own search snippets for its Letters of John and Biblical literature articles say 1 John and 1 Peter); not cited. (4) Martin lecture 24 (2009) is inside the window; check its chapter locator. (5) Hultin's quote is two-and-a-bit sentences including the latest-book report; check the note's paraphrase.
+review:
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin, Open Yale RLST 152 lecture 24, ch. 4 [00:37:00]. Outright century date in his own voice (“I believe”), with a hedged relative date (“maybe even decades after” Paul and Revelation). Backs the display, from/to and the note's first sentence.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin lecture 24, ch. 4 [00:37:00]. Relative: 2 Peter uses Jude as a source. Backs the note's “by an author who uses the Letter of Jude as a source”.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "HarperCollins Bible Dictionary (abridged 2009), entry “Peter, The Second Letter of”, reproduced on Bible Odyssey, ¶ 1. Report of the usual view (“usually regarded … in the second century”). Backs the note's HarperCollins clause.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Letters of Peter” (The Editors; datePublished 1998-07-20), opening paragraph, first sentence. Read in Chrome. Hedged (“perhaps”), both letters together (flag 3). Backs the note's Britannica clause.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hultin, Bible Odyssey “2 Peter” (dated November 23, 2015), body ¶ 1. Hedged range in his voice (“difficult to say, but perhaps the end of the first century or even well into the second century”) and a report (“modern scholars have often considered 2 Peter to be the latest”). Backs the note's Hultin sentence (flags 2, 5).",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Ehrman, “2 Peter: Who Wrote It, When, and Why?”, The Bart Ehrman Blog (August 24, 2025), post body, concluding paragraph (not a reader comment). Report of scholars' typical view: final NT book, around 120 CE or so. Backs the note's last sentence (flag 1).",
+    }
+triggers:
+  104@00:07:08:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. 120–150 CE, framed as “agreed by the majority of scholars” (show's wording; off the page). Inside the display's 2nd century. 00:06:25–00:09:00 read; the latest-text remark is in the next turn (00:08:05).",
+    }
+  175@00:20:26:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Early to mid 2nd century, 120–150, “probably the last text of the New Testament written”. Inside the display; latest-book remark matches the note's attributed reports. Also a `bible-composition` trigger. 00:14:49–00:22:01 read.",
+    }
+  99@00:27:31:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. “probably considered the last one written … between 120 and 150 CE”. Inside the display. 00:25:15–00:29:00 read.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Worded for what the sources date: the composition of 2 Peter, not the completion of the New Testament or the canon (header shape decision). Title “2 Peter”. The latest-book claim is attributed in the note, never in the title or display.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "One outright date (Martin) in the display; hedged positions (Hultin's perhaps end of 1st century, Britannica's perhaps early 2nd) and reports (HarperCollins, Ehrman's ~120) in the note, each attributed. No consensus word.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; no Trigger Claim states a tradition's side for 2 Peter (header: E175 00:15:14 is a claim about scholars and all 27 books). All three triggers states: critical.",
+    }
+  tradition-named:
+    { agent: pass, owner: "", note: "No Tradition Date; nothing to name." }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date in the display. Rodenbiker's “likely late (mid-second-century or later) date based on possible sources” and Mbuvi's authorship-conditional dates are uncited.",
+    }
+sources:
+  martin-rlst152-l24:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale Courses RLST 152, lecture 24 transcript (2009)",
+    }
+  harpercollins-2009-dictionary:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Abridged ed. (HarperOne, 2009), entry “Peter, The Second Letter of”, reproduced on Bible Odyssey (page dated October 31, 2022)",
+    }
+  britannica-letters-of-peter:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Online, The Editors of Encyclopaedia Britannica (first published July 20, 1998)",
+    }
+  hultin-2015-bo-2-peter:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey article, dated November 23, 2015",
+    }
+  ehrman-blog-2025-2-peter:
+    { agent: pass, owner: "", edition: "Blog post, August 24, 2025" }
+leads:
+  - "Foster, “Does the Apocalypse of Peter Help to Determine the Date of 2 Peter?”, in Frey, den Dulk and van der Watt (eds.), 2 Peter and the Apocalypse of Peter (Brill, 2019), pp. 217–260, doi 10.1163/9789004399549_010. Submitted manuscript at research.ed.ac.uk (files/32936291) and core.ac.uk (425532963): bot-check pages to curl and in Chrome; not read. Likely the strongest Scholarly source on the date."
+  - "Frey, The Letter of Jude and the Second Letter of Peter (Baylor, 2018): cited by Rodenbiker; no open text; not read."
+  - "Thornhill, 2 Peter (Cambridge): the publisher excerpt ends before its date section; not read."
+  - "Bauckham, Jude, 2 Peter (WBC, 1983), 80–90 CE: reported second-hand by Mbuvi; outside the 30-year window (#86); not read."
+uncited:
+  - "Rodenbiker, Novum Testamentum 65 (2023) 109–131 (open access), pp. 123–124: “likely late (mid-second-century or later) date based on possible sources including the Apocalypse of Peter”. Hedged and conditional on possible sources, inside a list of reasons that “arguably preclude” Petrine authorship; the sentence is broken by a page break and footnotes. Not a Critical Date."
+  - "Mbuvi, Jude and 2 Peter (New Covenant Commentary, Lutterworth 2016), introduction sample, p. 15: two camps, “early pre-70 CE dating” (Petrine) “versus pseudepigraphic writing which puts it between 70 CE and 125 CE”. Conditional on authorship; Mbuvi doubts pseudepigraphy (pp. 20–21). Not a Critical Date."
+  - "Ehrman blog 2025, Paul-collection paragraph: “It is hard to imagine any such situation before the end of the first century, at best.” Earliest-possible bound only; flag 2."
+  - "Ehrman blog 2025, Jude paragraph: “2 Peter is, as a consequence, later still.” Relative; Martin carries the Jude relation."
+  - "Martin lecture 24, page overview: “2 Peter seems to be a letter dating from the second century, from the post-apostolic age.” Courseware summary, not the lecture transcript; the transcript sentence is cited."
+  - "Britannica “Biblical literature”, section “The Letter of Jude” (datePublished 1998-10-19): “The date is probably near the end of the 1st century and before II Peter, which draws upon it.” Dates Jude; relative for 2 Peter; Martin carries the relation."
+  - "Britannica “Letters of Peter”, closing sentence: doubts about authorship “as early as the 3rd century … reinforced by subsequent scholarship”. Authorship only."
+  - "Hultin 2015, ¶ 1: “we have no explicit mention of 2 Peter until the early third century C.E.” Attestation, not composition."
+  - "Ehrman Brief 5e ch. 18 summary: Jude “written near the end of the first century” and used by 2 Peter. Publisher paraphrase; no date for 2 Peter."

@@ -4955,3 +4955,45 @@ allison-2015-jewish-setting-james:
   url: "https://indieskriflig.org.za/index.php/skriflig/article/view/1897/3169"
   hostAuthored: false
   tradition: null
+
+britannica-letters-of-peter:
+  author: null
+  title: "Letters of Peter"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 1998
+  edition: "Online, The Editors of Encyclopaedia Britannica (first published July 20, 1998)"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/topic/Letters-of-Peter"
+  hostAuthored: false
+  tradition: null
+
+hultin-2015-bo-2-peter:
+  author: "Jeremy F. Hultin"
+  title: "2 Peter"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2015
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/2-peter/"
+  hostAuthored: false
+  tradition: null
+
+ehrman-blog-2025-2-peter:
+  author: "Bart D. Ehrman"
+  title: "2 Peter: Who Wrote It, When, and Why?"
+  series: "The Bart Ehrman Blog"
+  publisher: null
+  year: 2025
+  edition: "Blog post, August 24, 2025; the author calls it an edited account of his discussion in Forgery and Counterforgery (Oxford University Press)"
+  class: Reference
+  kind: article
+  access: "Author's blog; this post's body is public"
+  url: "https://ehrmanblog.org/2-peter-who-wrote-it-when-and-why/"
+  hostAuthored: false
+  tradition: null
