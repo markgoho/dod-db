@@ -1,0 +1,141 @@
+# Review record for the Timeline Entry `death-of-herod` (/timeline/#death-of-herod; #93 shape). Not rendered.
+# Issue #237 (from #108), “Timeline Entry: The death of Herod the Great”. Issue notes: kind event; critical as stated 4 BCE (inventory event spine, no row); sides critical only; date Herod's death, not his reign (37–4 BCE), the reign may go in the note; check the Speaker of E144 00:09:33 (inventory credits Dan Beecher, transcript shows Dan McClellan); check E187's “Lay of the Land”; overlaps: bounds Matthew's dating in `birth-of-jesus` (open #201), keep naming consistent with `temple-destruction` (“Herodian Temple”), `hasmonean-state` ends before Herod. Lead brief: stay consistent with `birth-of-jesus` (c. 6–4 BCE, Britannica's “death of Herod the Great … in 4 BCE”), `hasmonean-state` (Hasmonean rule ends 37 BCE) and `maccabean-revolt`; apply #99 if sources split (4 vs 1 BCE).
+# Id `death-of-herod` (as `death-of-james`); title “The death of Herod the Great”, the name every cited source and `birth-of-jesus` use.
+# Sourcing test, 2026-11-27: met. Three sources date the death to 4 BCE in their own voice: Henze and Werline 2020 Chronology (Scholarly, in window; row “4 Herod the Great dies”), Britannica “Herod” (Reference; “died March/April, 4 BCE, Jericho”), Encyclopaedia Judaica “Herod I” (Reference, credited “[Shimon Applebaum]”; “(73?–4 b.c.e.)”). Kind: event. No Tradition Date: every Trigger Claim states critical. No setting (event entry). No anchor. No seeAlso: no published composition entry is the account of this event (`birth-of-jesus` is an event entry).
+# #99 and the dissent: De Caro, La Greca and Matricciani 2021 (MDPI Histories, peer-reviewed; class Scholarly by the registry's MDPI precedent, krajewski-2026, karapanagiotis-2025) argue for a death early in 3 CE and report Filmer's 1 BC. Their own abstract says “most scholars still assume” the 13 March 4 BC eclipse, i.e. they frame their date as against the majority. Ruled (lead, first pass): display stays “4 BCE”, not “4 BCE or 3 CE”: #80 says “No equal space by default; weight follows the sources” and that a minority view is characterised in a source's own words; here three in-window sources give 4 BCE flat and the one dissenting source itself reports the majority. The dissent is shown in the note, attributed by name, with its own “most scholars” sentence quoted (critical/6), per #80 (“Where sources show a split, the page shows the split”; “A dissenting view appears only if a Scholarly or Reference source holds or reports it, attributed by name”). Filmer's 1 BC enters only as De Caro et al.'s report (critical/8); Filmer himself not read (lead). No “contested” label: no source read calls the date debated in those words. See flag 1.
+# Consistency: `birth-of-jesus` (Britannica “Jesus”: Herod's death in 4 BCE; Landau 4 B.C.E.) agrees. `hasmonean-state` (Stern: Antigonus's death in 37 brought Hasmonean rule to a close, “prepared the way for Herod”) agrees with Herod king from 37 (Henze and Werline row 37; Britannica 37–4; EJ from 37). `temple-destruction` untouched (no Temple named here). `maccabean-revolt` untouched.
+# Trigger Claims (#99: three kept; all agree with the display): E144 00:08:33 (“Herod the Great who dies in 4 BCE”; trimmed before the turn's trailing “And Herod—”), E144 00:09:33 (Antipas rules “from 4 BCE when his father dies to 39 CE”; trimmed before “Oh wow”, Dan Beecher's interjection merged into the turn), E141 01:05:18 (Luke 1 has the birth during Herod's reign “or very shortly after his death in 4 BCE”; the same sentence is a Trigger Claim of `birth-of-jesus`). Speaker of E144 00:09:33: Dan McClellan in both the final and the raw Transcript; the turn is the explainer's (McClellan lays out the Herodian family from 00:08:03 on); the inventory's Beecher credit (its line 32 note on mislabelled turns) does not hold here. Not kept: E87 00:28:50 (“depending on when you date it, if it's after Herod's died, so it's after 4 BCE”, McClellan; hedged, the year is a premise for Jesus's age; three suffice); E141 00:48:54 and 01:00:02 (Herod's death, no year); E87 00:23:25 and 00:25:09 (Beecher retelling Matthew, no year); E37 00:12:34 (“time traveled to 4 BCE”, Aaron Adair, a joke about the star, not a dating). E187 Lay of the Land (00:34:19–01:03:57): read; it runs Persian 539–332, Hellenistic from 332, then the Roman period, and never names Herod or 4 BCE; no Trigger Claim.
+# agent: the first pass (2026-11-27), lead agent alone (one side: critical). Saved into scratchpad/herod-p1: Henze and Werline PDF (curl; pdftotext -layout and plain), EJ “Herod I” at Encyclopedia.com (curl, HTML stripped; Hebrew characters come out as “?”, none quoted). In Claude in Chrome: Britannica “Herod” (lede, Quick Facts and the paragraph beginning “In his last years”, transcribed from innerText; the saved last paragraph carries a “...” elision, nothing quoted across it); Bible Odyssey “Herod the Great” (Jensen; get_page_text, cited-candidate lines saved); MDPI Histories article (get_page_text; abstract, list in section 2, section 5.2 ¶ 1 and conclusions transcribed). Every cited quote script-matched against the saved text (NFKC, entities, whitespace, curly quotes, dashes normalised): 8/8 found, once each. Trigger Claims matched by script as substrings of the only turn at that timestamp and speaker in each final Transcript (episode per processed-videos.json): 3/3; context read about two minutes either side.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) The #99/#80 ruling above: is “4 BCE” with the 3 CE dissent in the note right, or should the display show “4 BCE or 3 CE”? Is MDPI Histories / these authors (De Caro, CNR crystallographer; La Greca, historian, Salerno; Matricciani, engineer, Politecnico di Milano, as the lead understands them; not stated on the saved page) Scholarly? If not, cut critical/6–8 to `uncited` and drop the note's last sentence. (2) critical/6 says most scholars assume the 4 BC eclipse, not in so many words the 4 BC death; the note says “placed the lunar eclipse … on 13 March 4 BC”, keeping their scope; check. (3) “early in 3 CE” renders “in the first month of 3 AD”. (4) EJ text: the 2nd-ed. entry credited to Applebaum, registry year null as for the other EJ entries; the “Herod apparently died of cardio-renal failure” sentence and the add. bibliography mark the 2007 revision; in window? (5) Britannica's byline (Stewart Henry Perowne, Britannica Editors) rotates; attributed to “Britannica”, author null. (6) Britannica's 37–4 and Henze and Werline's row 37 carry the reign in the note (issue: reign only in the note).
+review: null
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Henze and Werline (eds.), EJMI 2nd ed., Chronology p. xi (BCE), row 4: “Herod the Great dies”. Flat. Scholarly, 2020, in window. Backs the display, from and to, and the note's first sentence.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Herod”, lede, first sentence, trimmed after “(37–4 BCE)”. Own voice: died March/April, 4 BCE, Jericho; king 37–4 BCE. Reference; attributed to Britannica. Backs the display, the note's March or April and Jericho, and the reign (Quick Facts agree: “Died: March/April, 4 BCE, Jericho, Judaea”).",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "EJ “Herod I” (Encyclopedia.com; section credit “[Shimon Applebaum]” closes the history section that opens with this sentence). “(73?–4 b.c.e.), king of Judea from 37 b.c.e. until his death.” Reference. Backs the display and the reign from 37. The “?” is on the birth year only.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "EJ “Herod I”, paragraph beginning “Antipater thus appeared to be the unopposed heir”: Antipater executed “in the year 4”, Herod lying in his palace in Jericho, “died five days later”. Backs the note's palace at Jericho and five days. The year is b.c.e. by the article's context (from 7 b.c.e. in the next sentence).",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Henze and Werline Chronology p. xi, row 37: “Herod the Great becomes king of Judea”. Backs the note's “king of Judea since 37 BCE”; agrees with `hasmonean-state` (Antigonus's death in 37).",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "De Caro, La Greca and Matricciani 2021, abstract, second sentence, trimmed before “, so that Dionysius Exiguus was wrong”. Their report of the majority: most scholars since the 19th century assume the 13 March 4 BC eclipse (the one Josephus puts before Herod's death, per the abstract's first sentence). Backs the note's “most scholars have placed the lunar eclipse … on 13 March 4 BC” (#80: “most scholars” only in a source's own words, quoted). See flags 1–2.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "De Caro et al., abstract, last sentence, trimmed before “and, very likely, Dionysius Exiguus was correct”. Their own date: first month of 3 AD. Backs the note's “they argue instead that he died early in 3 CE”, attributed. See flags 1, 3.",
+    }
+  critical/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "De Caro et al., section 5.2, ¶ 1: Filmer “concluded that Herod’s reign lasted 34 years and finished in 1 BC.” Their report of another view (they reject it, 5.2). Backs the note's “report Filmer's earlier case for 1 BC”. Filmer not read (lead).",
+    }
+triggers:
+  144@00:08:33:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:08:33.816 Dan McClellan turn in data/transcripts/2026-01-04-bring-me-the-head-of-john-the-baptist.txt (E144). Trimmed off: the turn's trailing “And Herod—” (cut off by Beecher at 00:08:42). Read 00:07:42 to 00:12:02: McClellan introduces the Herods from 00:08:03 (“Now this is Herod Antipas.”). No hedge dropped.",
+    }
+  144@00:09:33:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring (first sentence) of the 00:09:33.069 Dan McClellan turn in the same Transcript (E144). Speaker checked per the issue: Dan McClellan in both the final and the raw Transcript; the content continues his family survey; “Oh wow” right after the quote reads as Dan Beecher's interjection merged into the turn, so the quote stops before it. Trimmed off: the tetrarchy, Archelaus, Philip II. Dates Herod's death via Antipas's start; agrees with the display.",
+    }
+  141@01:05:18:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring (last sentence) of the 01:05:18.395 Dan McClellan turn in data/transcripts/2025-12-15-did-jesus-fulfill-prophesy.txt (E141). Trimmed off: the Greek grammar of prōtē in Luke 2:2. Read 01:04:09 to 01:06:58. The same sentence is a `birth-of-jesus` Trigger Claim; here it is kept for “his death in 4 BCE”. No hedge dropped (“or very shortly after” is about the birth, not the death).",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Title and display date the death, as the issue asks; the reign (37–4) is in the note only. Every cited source dates the death itself.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Three in-window sources give 4 BCE flat. One Scholarly source (De Caro et al. 2021) argues for 3 CE and itself reports that most scholars hold the 4 BC eclipse: shown in the note, attributed, with its majority sentence quoted (#80), not as a second display side. See flag 1.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; all three Trigger Claims state critical.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; no Tradition source cited.",
+    }
+  conditional-not-critical:
+    { agent: pass, owner: "", note: "No conditional date." }
+sources:
+  henze-werline-2020-ejmi:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (SBL Press, 2nd ed., 2020). Reused id; publisher PDF re-fetched 2026-11-27, Chronology p. xi read in full.",
+    }
+  britannica-herod:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference. New id (Britannica “Herod”, king of Judaea). Refuses scripts; read in Chrome; attributed to Britannica (bylines rotate). See flag 5.",
+    }
+  applebaum-ej-herod:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (Encyclopaedia Judaica, 2nd ed.; history section credited to Shimon Applebaum; the arts section after it is Bathja Bayer's, not cited). New id. curl. See flag 4.",
+    }
+  decaro-2021-christian-era:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly by venue (MDPI Histories 1(3):16, 2021, peer-reviewed open-access journal; doi 10.3390/histories1030016). New id. Refuses scripts (403); read in Chrome. Used only for the attributed dissent and its report of the majority. See flag 1.",
+    }
+leads:
+  - "Andrew E. Steinmann, “When Did Herod the Great Reign?”, Novum Testamentum 51 (2009): argues for 1 BC (cited by De Caro et al., ref. 24, and on the Bible History Daily page below). Not openly readable; not read."
+  - "W. E. Filmer, “The Chronology of the Reign of Herod the Great”, JTS 17 (1966): the 1 BC case De Caro et al. report. Not read."
+  - "Bible History Daily (BAS), “Herod's Death, Jesus' Birth and a Lunar Eclipse” (BAS Staff; letters by John A. Cramer, Jeffrey R. Chadwick, Andrew Steinmann): sets the 4 BC and 1 BC eclipse arguments side by side; its intro calls the 4 BC eclipse “generally regarded as” Josephus's. Refuses curl; only partly read in Chrome (truncated slices), so a lead, not uncited. A staff-compiled letters page near the excluded blog class (#80, #86); not citable as is."
+uncited:
+  - "Bible Odyssey, Morten Hørning Jensen, “Herod the Great”: “Herod ruled from the year 40-4 BCE but first captured the throne in 37 BCE.” Dates the reign (from the Senate's grant in 40), not the death; agrees on 4. Not needed beside the three death-dating sources."
+  - "Britannica “Herod”, paragraph beginning “In his last years”: Matthew's slaying of the infants “not corroborated by any other contemporary witness”; “After an unsuccessful attempt at suicide, Herod died.” No year; concerns `birth-of-jesus`, not this entry."
+  - "Henze and Werline body, section 3.3 “Provincia Iudaea?”: “The death of Herod the Great provoked contention over Judea’s future.” No year; the chronology row carries it. Row “4 BCE–6 CE Archelaus rules Judea, Idumea, and Samaria”: succession, not the death."
+  - "EJ “Herod I”: illnesses “from around 7 b.c.e.”, “cardio-renal failure”; the will dividing the kingdom among Archelaus, Antipas and Philip. Context; not needed."
+  - "De Caro et al., section 2 list of eclipses proposed (Barnes 5 BC, Schürer 4 BC, Filmer and Pratt 1 BC, Fedalto 2 AD) and section 1 on Schürer's 4 BC. Carried by critical/6–8; not quoted further."

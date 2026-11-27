@@ -6412,3 +6412,45 @@ nabre-1-maccabees-13-notes:
   url: "https://bible.usccb.org/bible/1maccabees/13"
   hostAuthored: false
   tradition: null
+
+britannica-herod:
+  author: null
+  title: "Herod"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/biography/Herod-king-of-Judaea"
+  hostAuthored: false
+  tradition: null
+
+applebaum-ej-herod:
+  author: "Shimon Applebaum"
+  title: "Herod I"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/herod-i"
+  hostAuthored: false
+  tradition: null
+
+decaro-2021-christian-era:
+  author: "Liberato De Caro, Fernando La Greca and Emilio Matricciani"
+  title: "The Beginning of the Christian Era Revisited: New Findings"
+  series: "Histories 1, no. 3: 16"
+  publisher: "MDPI"
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article; opens in a browser, refuses scripted requests"
+  url: "https://www.mdpi.com/2409-9252/1/3/16"
+  hostAuthored: false
+  tradition: null
