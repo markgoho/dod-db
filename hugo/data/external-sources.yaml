@@ -5642,3 +5642,31 @@ jackson-mccabe-bo-james:
   url: "https://www.bibleodyssey.org/articles/james/"
   hostAuthored: false
   tradition: null
+
+frevel-2021-when-where-yhwh:
+  author: "Christian Frevel"
+  title: "When and from Where did YHWH Emerge? Some Reflections on Early Yahwism in Israel and Judah"
+  series: "Entangled Religions 12.2"
+  publisher: "Ruhr-Universität Bochum"
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (CC BY 4.0), publisher PDF, open"
+  url: "https://doi.org/10.46586/er.12.2021.8776"
+  hostAuthored: false
+  tradition: null
+
+tebes-2021-desert-origins:
+  author: "Juan Manuel Tebes"
+  title: "The Archaeology of Cult of Ancient Israel’s Southern Neighbors and the Midianite-Kenite Hypothesis"
+  series: "Entangled Religions 12.2"
+  publisher: "Ruhr-Universität Bochum"
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (CC BY 4.0), publisher PDF, open"
+  url: "https://doi.org/10.46586/er.12.2021.8847"
+  hostAuthored: false
+  tradition: null
