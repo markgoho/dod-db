@@ -1,0 +1,1632 @@
+# Review record for /scholarship/1-enoch-the-watchers-and-the-nephilim/ (#93 shape). Not rendered.
+# agent: results of the agent first pass (#159, 2026-11-27). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass once it has run.
+# Issue #159: new subject from the topic ranking (31 Episodes in the topic group); merges Jubilees. Instructions applied: #96 publish rule; short answers report the state of scholarship, never one scholar's view (#133); confessional study Bibles are Tradition and don't count toward the two. No candidate entry in data/scholarship-candidates.yaml matched the subject (grep: enoch, watcher, nephil, jubilee); slug made from the issue title.
+# Overlap: nothing here restates satan-demons-and-angels#watchers (demons as the giants' spirits; 2 Peter 2:4 and Jude 6), the-origins-of-hell (1 Enoch 22, the accursed valley, separate fates), the-emergence-of-monotheism-and-the-divine-council (gods recast as angels; Deuteronomy 32; Jubilees 15:31–32) or noahs-ark-and-the-flood (J and P). The jude statement repeats only the fact that Jude 14–15 quotes 1 Enoch, with new sources, to carry the question of its status. Reused registry ids: coblentz-bautch-bo-enoch, boling-proctor-bo-watchers, angel-bo-nephilim, collins-eor-apocalypse, davies-ej-dead-sea-scrolls, martin-rlst152-l24, reyburn-fry-1997-genesis (per-citation urls for Gen 6:2 and 6:4), sommer-bo-angels-hebrew-bible, hayes-rlst145-l5.
+# Sourcing test (#159, 2026-11-27): gate 1, 30 Trigger Claims in Episodes 27, 62, 124, 137 and 157 (the Book of Enoch, Nephilim and Jubilees tags' top Episodes and their Genesis 6, 1 Enoch and Jubilees segments), each script-matched at its turn's leading timestamp and speaker and read unfiltered about two minutes either side. Not attached, because a statement's sources contradict them: 157@00:39:02 (“like 12 to 14 copies of Enoch” at Qumran; the sourced count is eleven, as 62@00:37:56 says), 62@00:10:38's “seven different” sections (sources: five major sections, as 157@00:51:15 says), 62@00:13:48 (the Watchers' own spirits become evil spirits; satan-demons-and-angels#watchers has the giants' spirits). Gate 2, the core: the candidate thesis “1 Enoch is a composite pseudepigraphic work written over several centuries” sourced as worded, without a fixed number of books (sources say “at least five” and “five major sections” plus additions): Coblentz Bautch (Reference), Stuckenbruck and Boccaccini (Scholarly), Ahearne-Kroll (Scholarly), Tigchelaar (Scholarly), Stewart Lester (Reference, pseudepigraphy). Gate 3: 5 independent authors behind the core, none Host-authored. Gate 4: 19 statements.
+# Shorts (#133): no short says “consensus”. State-of-field words in shorts and their authors: oldest “commonly dated” (Goff's “as is commonly acknowledged”; DiTommaso, Reed, Collins, Nickelsburg–VanderKam agree; Angel and Boling–Proctor give the earlier and later bounds); parables “in the prevailing view” (DiTommaso's “communis opinio”, Grabbe's “becoming widely recognized”, Baynes's “emerging consensus”; Collins and Botner within the window); son-of-man “sources see some connection … disagree” (Stuckenbruck–Boccaccini, Grabbe, Reynolds); sons-of-god “the reading nearly all translations follow” (Reyburn–Fry's own words; usage backed by NABRE, Adelman, Segal, Sommer; Doedens's “majority” attributed in the text; Usue's “no consensus” attributed); nephilim “commonly explained … origin uncertain” (Angel, NABRE; Reyburn–Fry, Doedens); fragment “sources say … debated” (Doedens's “present majority view”, NABRE, Sommer, Adelman, Hayes/Gunkel; flood link: NABRE and Adelman vs Jang); genesis-6 “scholars have tended to hold … no consensus” (Harkins–Coblentz Bautch–Endres; Doedens; Coblentz Bautch BO; Nickelsburg–VanderKam); strands “scholars generally agree” (Wright's “generally acknowledged”, Orlov's “scholars usually attribute”; Nickelsburg–VanderKam, Harkins et al., Brand, Boling–Proctor describe the strands); origin-of-evil “in scholars' readings … no consensus” (Orlov, Reed, Boling–Proctor, Angel; Pierce's “not reached scholarly consensus”, Wright); jubilees-date “sources say … widely followed” (van Ruiten, Hanneken, Segal, Zahn, Ben-Dov; Monger's “many scholars … follow VanderKam's understanding of the composition”). Uncontested or descriptive shorts: composite, languages, canon, jude (the quotation; its status shown as divided), calendar, jubilees, jubilees-text, jubilees-watchers (van Ruiten, Hanneken). tradition: Tradition sources, exempt.
+# Dropped for want of a second author or a qualifying source: the rediscovery (James Bruce's copies, 1773; Hessayon 2023 alone for Bruce, Laurence 1821 with Stuckenbruck–Boccaccini); the Animal Apocalypse's Maccabean date (DiTommaso alone, reporting Nickelsburg); the Epistle's date (no post-1996 source); 1 Peter 3:19 as the Watchers (Pierce's survey alone among sources read; Reed lists allusions in 1 Peter generally); Revelation 12:4 and 1 Corinthians 11:10 (no usable source); Jubilees 4:30 and a day as a thousand years, and angelic mediation of the law (Hanneken alone); Mastema (van Ruiten and Hanneken, but not needed for any statement); the Ethiopic manuscript counts (Hanneken 27 vs Monger 57); Aramaic coverage of 1 Enoch (Nickelsburg's BAR “perhaps one fifth” vs Stuckenbruck–Boccaccini's “about 5 percent”; BAR not cited, a popular magazine).
+# First pass: five research agents fetched every source on 2026-11-27 into separate scratch folders (curl; MDPI, Groningen and the MF repository via Internet Archive copies of the same URLs) and copied quotes from the fetched text; every page quote was then script-matched against those saved texts (whitespace, HTML entities, inline tags, soft hyphens and line-end hyphens normalised; curly quotes and dashes not normalised): 177/177, 0 misses. Quotes broken by a page header or footnote block in the PDF text are split into two citations at the break rather than joined. The second pass must re-fetch.
+# Flags for the second pass: (1) Bible Odyssey (Coblentz Bautch, Angel, Boling–Proctor, Stewart Lester, White Crawford, Mbuvi, Reynolds, Botner, Ben-Dov, Sommer) and TheTorah.com (Adelman, Sommer, Brand, Segal ×3, Zahn) carry many Reference citations: independent authors, two platforms. (2) Theses: Doedens 2013 (Kampen doctoral dissertation; the book version, Brill 2019, is a lead), Pierce 2009 (Durham PhD), Monger 2018 (MF PhD, open version), all classed Scholarly as doctoral work in university repositories. (3) Unbylined publisher excerpts: the Fortress introductions to Nickelsburg–VanderKam 2012 and Harkins, Coblentz Bautch and Endres 2014 are credited to the translators and editors; Wright 2015 ch. 2 is his own book. (4) Hanneken 2014 is an author-posted course PDF of an introduction prepared for a reader of early Jewish literature; its published venue is unverified, so it is classed Reference (introduction) and backs no short alone. (5) VanderKam 2026 is cited from its abstract only (the eleven manuscripts). (6) eotc-canon: ethiopianorthodox.org calls itself a non-profit introducing the faith and history of the Ethiopian Orthodox Tewahedo Church and speaks as “our church”; it is not shown to be the Patriarchate's own site. The church's canon is also stated by Scholarly sources in canon. (7) Catholic Answers is a media apostolate, not a magisterial voice; the text names it as such. (8) Reed 2005 is the Cambridge excerpt (introduction only). (9) Collins EoR dates the Aramaic fragments “second century ce” (an error); the quote stops before it. Stuckenbruck–Boccaccini's “Birth of Enoch” (for Birth of Noah) and “1 Pet 2:18–22” are not quoted. (10) Jang 2025 calls the flood link the “prevailing scholarly view” and argues against it; reported as his. (11) Grabbe's Matthew claim is split across a page header (pp. 196–97) into two citations.
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+citations:
+  composite/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composite/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composite/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composite/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Quote stops before “followed by two shorter additions (Birth of Enoch …)”: the source's “Birth of Enoch” is an error for Birth of Noah.",
+    }
+  composite/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composite/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composite/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Footnote 27, on the same page as the body text; with n. 26 backs the text's caution, not the short's third-century date alone.",
+    }
+  oldest/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. VanderKam's caution as DiTommaso reports it; attributed.",
+    }
+  oldest/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Split from oldest/5 at the PDF's “1 –36” spacing artefact.",
+    }
+  oldest/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Tigchelaar's report of Milik's dismissed proposals; the quote starts after a running head that breaks “sev-/eral”.",
+    }
+  parables/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  parables/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Grabbe's own date, plus his statement that it is becoming widely recognized.",
+    }
+  parables/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Split from parables/4 at the footnote marker 66.",
+    }
+  parables/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  parables/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  parables/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  parables/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Same sentence as oldest/10; the Similitudes clause.",
+    }
+  parables/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  parables/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  languages/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  languages/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  languages/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Quote ends at a footnote block that interrupts “has come down to modern scholars”.",
+    }
+  languages/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  languages/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Quote stops before “which date to the second century ce” (an error for BCE).",
+    }
+  languages/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  languages/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  languages/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Abstract only; the article is paywalled.",
+    }
+  canon/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  canon/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  canon/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  canon/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  canon/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. “sometimes included”: the short's wording is DiTommaso–Goff's and Wright's; Coblentz Bautch's hedge kept in the text.",
+    }
+  canon/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  canon/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  canon/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  canon/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Martin on 2 Peter's reworking of Jude; the preceding transcript lines say “he takes out the quotation from Enoch”.",
+    }
+  jude/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jude/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jude/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jude/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jude/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jude/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  son-of-man/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  son-of-man/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  son-of-man/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  son-of-man/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  son-of-man/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  son-of-man/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Split from son-of-man/7 at the running head “SON OF MAN” 197.",
+    }
+  son-of-man/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  son-of-man/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Starts after the line-end break “present-/day”.",
+    }
+  son-of-man/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  son-of-man/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  son-of-man/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Doedens's “majority” is one author's characterisation; attributed in the text, not used as the short.",
+    }
+  sons-of-god/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Source prints “Gen 6:2.4”.",
+    }
+  sons-of-god/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/15:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  sons-of-god/16:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  nephilim/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  nephilim/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  nephilim/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  nephilim/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  nephilim/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  nephilim/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  nephilim/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  nephilim/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  nephilim/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  nephilim/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. The quote's subject is the Hebrew word נפלים, garbled in the PDF's font; the sentence begins “In summary, it must be noted that evidence for the meaning of the word …”.",
+    }
+  nephilim/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. As nephilim/10: the sentence begins “Because Num 13 undoubtedly ties the [נפלים]”.",
+    }
+  fragment/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  fragment/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  fragment/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  fragment/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  fragment/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  fragment/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  fragment/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  fragment/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  fragment/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Hayes presenting Gunkel's view; attributed to Gunkel in the text.",
+    }
+  fragment/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Jang's own argument against what he calls the prevailing view; attributed.",
+    }
+  genesis-6/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. The state-of-field sentence for the short; Doedens and Coblentz Bautch carry the same split independently.",
+    }
+  genesis-6/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  genesis-6/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  genesis-6/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  genesis-6/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  genesis-6/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  strands/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  strands/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  strands/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  strands/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  strands/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  strands/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  strands/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  strands/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  strands/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  strands/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  origin-of-evil/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  origin-of-evil/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  origin-of-evil/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  origin-of-evil/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  origin-of-evil/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  origin-of-evil/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Split from origin-of-evil/7 at the footnote marker 91.",
+    }
+  origin-of-evil/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  origin-of-evil/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  origin-of-evil/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Wright reporting Collins's view; attributed to Collins in the text.",
+    }
+  origin-of-evil/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  origin-of-evil/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  calendar/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  calendar/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Quote ends before a page break that interrupts “with one extra day in the third, sixth, ninth, [p. 7] and twelfth months”; the text says only “with added days”.",
+    }
+  calendar/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  calendar/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  calendar/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  calendar/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  calendar/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  calendar/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  calendar/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-date/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-date/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-date/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-date/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-date/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-date/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-date/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-date/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. “he” is R. H. Charles in Monger's survey (preceding sentence); named in the text.",
+    }
+  jubilees-date/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-date/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. “understanding of the composition” covers VanderKam's single author and date (preceding sentence, jubilees-date/9); the short's “widely followed” rests on it.",
+    }
+  jubilees-date/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-date/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-text/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Split from jubilees-text/2 at a page number that interrupts the next sentence.",
+    }
+  jubilees-text/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-text/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-text/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-text/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-text/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-text/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-text/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-watchers/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-watchers/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-watchers/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-watchers/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-watchers/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-watchers/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  jubilees-watchers/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. ethiopianorthodox.org's own framing; see the source note.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. “The first view” is “1) they were fallen angels” (tradition/7).",
+    }
+  tradition/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+triggers:
+  62@00:02:17:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  62@00:03:19:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  62@00:09:10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept (“probably” twice). The turn goes on to the final chapter's date (“around the time of some of the New Testament”); not trimmed in, as no statement dates ch. 108.",
+    }
+  62@00:10:38:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Trimmed to the Genesis 6 sentence; the turn's opening “seven different scholars, generally divided into five to seven different segments” is not attached (sources: five major sections).",
+    }
+  62@00:11:59:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  62@00:19:43:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  62@00:22:16:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  62@00:37:56:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  62@00:43:06:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. “the most expansive canon within Christendom” is not a statement on the page; the claim gates the canon subject.",
+    }
+  62@00:47:00:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  27@00:23:28:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  27@00:32:17:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept (“there is some debate”, “I think most scholars would probably say”).",
+    }
+  27@00:33:36:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  27@00:34:44:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedge “Many scholars would say” kept.",
+    }
+  124@00:36:50:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedge “it's not clear to me” kept.",
+    }
+  124@00:49:23:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  124@00:56:32:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  137@00:03:04:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  137@00:04:12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  137@00:04:21:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept (“Most scholars would say”, “probably”). The page says “widely followed” for VanderKam's 161–152, not “most scholars”.",
+    }
+  137@00:04:32:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Trimmed after “written in Hebrew”; the rest of the turn traces the translations (Syriac, Greek, Latin, Ge'ez) with “probably”.",
+    }
+  137@00:06:28:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  137@00:17:08:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  137@00:22:45:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  157@00:34:15:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+  157@00:37:30:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Answer to Beecher's “When was this written?” about 1 Enoch 6–11; hedge “probably … more likely” kept.",
+    }
+  157@00:38:18:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedge “there are scholars out there who think … ongoing debate” kept.",
+    }
+  157@00:39:36:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedge “a lot of scholars would suggest” kept.",
+    }
+  157@00:51:15:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedge “I think” kept.",
+    }
+  157@00:57:39:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker against the final Transcript, verbatim; read the turns about two minutes either side, unfiltered. Hedges kept.",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: 19 statements. Core composite cites Coblentz Bautch (Bible Odyssey, Reference, 2022), Stuckenbruck and Boccaccini (SBL Press, Scholarly, 2016), Ahearne-Kroll (SBL Press, Scholarly, 2019), Tigchelaar (SBL Press, Scholarly, 2019) and Stewart Lester (Bible Odyssey, Reference, 2023): 5 independent authors, all inside the window, none Host-authored. Coblentz Bautch is also an editor of harkins-bautch-endres-2014-introduction, not cited in the core.",
+    }
+  consensus-wording:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: no short says “consensus”; “consensus” appears in texts only as the sources' own words, attributed (Harkins et al. “no absolute consensus”, Usue “basically no consensus”, Pierce “not reached scholarly consensus”, Baynes “emerging consensus”, DiTommaso “communis opinio”). “majority” appears only as Doedens's and Jang's words, attributed. “many specialists” is Botner's, attributed. Hedged shorts listed in the header with their authors (#133).",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Usue (sons of God as rulers), Jang (Nephilim not the offspring; Genesis 6:1–4 originally independent of the flood), Milik's dismissed proposals (via Tigchelaar), VanderKam's caution (via DiTommaso), Monger's redaction into the first century BCE, Kister's late date (via Monger), Stuckenbruck's call for nuance, Mbuvi's polemical-tool reading of Jude, Grabbe's report of scholars who deny “Son of Man” is a title: each named.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: eotc-canon named as the website ethiopianorthodox.org presenting what the Ethiopian Orthodox Tewahedo Church holds (its own words, “our church holds and teaches”); gotquestions-* as Got Questions Ministries, an evangelical ministry (registry convention); catholic-answers-akin-enoch as Catholic Answers, a Catholic media ministry (its about page: “a media ministry”); lds-bd-enoch as The Church of Jesus Christ of Latter-day Saints, in its Bible Dictionary. None supports what scholars think.",
+    }
+sources:
+  coblentz-bautch-bo-enoch:
+    {
+      agent: pass,
+      owner: "",
+      note: "Already registered (Reference, 2022). First pass 2026-11-27: re-fetched; “Did You Know?” box and section “Where did the books of Enoch come from …”.",
+    }
+  stuckenbruck-boccaccini-2016-intro:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; EJL 44 (SBL Press 2016), SBL ICI open PDF (#80 clarification). Stuckenbruck also co-authors lied-stuckenbruck (not cited) and wrote stuckenbruck-2014-oppressors: different author strings, counted once by hand where it matters.",
+    }
+  ahearne-kroll-2019-history:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; EJL 50 (SBL Press 2019), SBL ICI open PDF.",
+    }
+  tigchelaar-2019-milik:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; EJL 50, SBL ICI open PDF.",
+    }
+  stewart-lester-bo-pseudepigraphy:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2023.",
+    }
+  goff-2023-aramaic:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; EJL 57, SBL ICI open PDF.",
+    }
+  ditommaso-2023-revealed:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; EJL 57, SBL ICI open PDF.",
+    }
+  reed-2005-fallen-angels:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; Cambridge University Press 2005; publisher excerpt (introduction).",
+    }
+  collins-eor-apocalypse:
+    {
+      agent: pass,
+      owner: "",
+      note: "Already registered (Reference, 2005). The entry's “second century ce” for the Aramaic fragments is an error; not quoted.",
+    }
+  nickelsburg-vanderkam-2012-introduction:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; Fortress 2012; publisher excerpt PDF of the introduction, which has no separate byline (credited to the translators by the ISBN in the URL). Flag (3).",
+    }
+  angel-bo-nephilim:
+    { agent: pass, owner: "", note: "Already registered (Reference, 2024)." }
+  boling-proctor-bo-watchers:
+    {
+      agent: pass,
+      owner: "",
+      note: "Already registered (Reference, 2024). Shares Proctor with proctor-bo-demons (not cited here).",
+    }
+  grabbe-2016-son-of-man:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; EJL 44, SBL ICI open PDF.",
+    }
+  baynes-2016-parables-luke:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; EJL 44, SBL ICI open PDF.",
+    }
+  botner-bo-christ:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2019.",
+    }
+  crawford-bo-other-bible:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2017. Same author as crawford-2019-thetorah-recensions (author string identical). Its “365-day” solar year for Enoch is an error; not quoted.",
+    }
+  davies-ej-dead-sea-scrolls:
+    {
+      agent: pass,
+      owner: "",
+      note: "Already registered (Reference; year null). The Encyclopaedia Judaica 2nd ed. (2007) credits Philip Davies for the revised entry.",
+    }
+  wright-2019-within-without:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; EJL 50, SBL ICI open PDF. Benjamin G. Wright III, not Archie T. Wright (wright-2015-origin-evil-spirits).",
+    }
+  vanderkam-2026-dsd-milik:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; Dead Sea Discoveries 33.3 (2026), Brill. Abstract only: the article is paywalled.",
+    }
+  ditommaso-goff-2023-intro:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; EJL 57 (SBL Press 2023), SBL ICI open PDF. Same authors as ditommaso-2023-revealed and goff-2023-aramaic.",
+    }
+  asale-2014-legacy:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; Journal for Semitics 23/2i (2014), Unisa Press, peer-reviewed; open PDF. The source spells “Tewhahedo”.",
+    }
+  martin-rlst152-l24:
+    { agent: pass, owner: "", note: "Already registered (Reference, 2009)." }
+  mbuvi-bo-jude-apocryphal:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2019. Andrew M. Mbuvi, not Amanda Mbuvi (mbuvi-bo-rachel).",
+    }
+  reynolds-bo-son-of-man:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2022.",
+    }
+  reyburn-fry-1997-genesis:
+    {
+      agent: pass,
+      owner: "",
+      note: "Already registered (Reference, 1997). Per-citation urls: the handbook's pages for Gen 6:2 and 6:4.",
+    }
+  nabre-genesis-6-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference (NABRE notes, as the registry's other nabre-* entries); fetched by curl with no bot check.",
+    }
+  adelman-2015-thetorah-fallen-angels:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; TheTorah.com 2015 (registry convention for TheTorah); text from the page's embedded article data.",
+    }
+  segal-2026-thetorah-nephilim:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; TheTorah.com 2026. Same author as segal-2014-*.",
+    }
+  sommer-bo-angels-hebrew-bible:
+    {
+      agent: pass,
+      owner: "",
+      note: "Already registered (Reference, 2017). Same author as sommer-2015-thetorah-demigods: counted once.",
+    }
+  doedens-2013-sons-of-god:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly (doctoral dissertation, Theologische Universiteit Kampen, 2013); university repository. The Hebrew in the PDF is garbled by its font; quotes avoid it. Flag (2).",
+    }
+  usue-2005-divine-sonship:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; Verbum et Ecclesia 26(3) (2005); University of Pretoria repository.",
+    }
+  jang-2025-religions:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; Religions 16(8): 972 (MDPI 2025), open access; read in an Internet Archive copy of the article URL (MDPI refuses scripted requests).",
+    }
+  nabre-numbers-13-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference (NABRE notes).",
+    }
+  sommer-2015-thetorah-demigods:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; TheTorah.com 2015. Same author as sommer-bo-angels-hebrew-bible.",
+    }
+  hayes-rlst145-l5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Already registered (Reference, 2006). Cited only for Hayes's presentation of Gunkel.",
+    }
+  harkins-bautch-endres-2014-introduction:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; Fortress 2014; publisher excerpt PDF of the introduction, no separate byline (credited to the editors). Flag (3).",
+    }
+  wright-2015-origin-evil-spirits:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; Fortress 2015 revised edition (edition confirmed by the JHS review, doi 10.5508/jhs.2017.v17.r41); publisher excerpt of ch. 2.",
+    }
+  orlov-2022-worthless-secrets:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; Scrinium 18 (2022), Brill; author-posted proof (Marquette).",
+    }
+  brand-2016-thetorah-watchers:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; TheTorah.com 2016.",
+    }
+  pierce-2009-spirits-proclamation:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly (doctoral thesis); Durham E-Theses. Flag (2).",
+    }
+  stuckenbruck-2014-oppressors:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; WUNT 2.372 (Mohr Siebeck 2014); publisher reading sample.",
+    }
+  ben-dov-bo-calendar:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2025. Same author as ben-dov-2018-thetorah-deuteronomy.",
+    }
+  segal-2014-thetorah-calendar:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; TheTorah.com 2014.",
+    }
+  hanneken-2014-jubilees:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; author-posted PDF (St. Mary's University course site) of an introduction and reader on Jubilees, self-cited as for an Eerdmans introduction and reader of early Jewish literature (2014; venue unverified). Flag (4).",
+    }
+  vanruiten-2007-angels-demons:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; Deuterocanonical and Cognate Literature Yearbook 2007 (De Gruyter); publisher's PDF in the Groningen repository, read in an Internet Archive copy (the live repository refuses scripted requests). OCR text; printed page = PDF page + 583.",
+    }
+  segal-2014-thetorah-shavuot:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; TheTorah.com 2014.",
+    }
+  zahn-2021-thetorah-torah:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; TheTorah.com 2021.",
+    }
+  monger-2018-4q216:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly (PhD dissertation, MF Norwegian School of Theology, 2018); the open version (introduction and conclusion), read in an Internet Archive copy. Locators are sections; printed pages not extractable. Flag (2).",
+    }
+  eotc-canon:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition. ethiopianorthodox.org's about page: “a none profitable organization. The purpose of this website is to provide a brief introduction of the Faith, the Order and History of the Ethiopian Orthodox Tewahedo church”; footer “©2003-Ethiopian Orthodox Tewahedo Church”. Not shown to be the Patriarchate's site. Flag (6). The OT list's “Jublee” and “Enoch” entries read.",
+    }
+  gotquestions-book-of-enoch:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; Got Questions Ministries (about page: “Christian, evangelical, theologically conservative, and nondenominational … parachurch ministry”).",
+    }
+  gotquestions-sons-of-god:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; Got Questions Ministries.",
+    }
+  catholic-answers-akin-enoch:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; Catholic Answers (about page: “a media ministry that serves Christ by explaining and defending the Catholic faith”); page metadata gives 2021-01-11. Flag (7).",
+    }
+  lds-bd-enoch:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; the Church's Bible Dictionary on churchofjesuschrist.org.",
+    }
+leads:
+  - "Nickelsburg, 1 Enoch 1 (Hermeneia 2001), and Nickelsburg and VanderKam, 1 Enoch 2 (Hermeneia 2012): no open excerpt beyond the translation's introduction; known through DiTommaso, Doedens and Orlov."
+  - "Milik, The Books of Enoch (1976) and HTR 64 (1971); Black (1985); Kvanvig, SJOT 18 (2004); Collins, “Sons of God and Daughters of Men” (2008); Hendel, JBL 106 (1987) and “The Nephilim were on the Earth” (2004); Alexander, JJS 23 (1972): read only as reported by Doedens, Jang, Wright or Tigchelaar."
+  - "Doedens, The Sons of God in Genesis 6:1–4 (Brill OTS 76, 2019): the book version of the cited dissertation; closed."
+  - "Charlesworth and Bock (eds.), Parables of Enoch: A Paradigm Shift (2013): search-snippet text only (“consensus seems to be growing for the late first century bce”)."
+  - "Sacchi (2007) on the Camaldoli consensus for the Parables: cited by Baynes n. 66; not read."
+  - "VanderKam, Jubilees: The Hermeneia Translation (Fortress 2020), introduction: read only in a third-party copy (AlHaTorah.org) with no licence shown."
+  - "Chabad.org, “Nephilim: Fallen Angels, Giants or Men?” (Shurpin): Cloudflare refused scripted fetches; only short WebFetch excerpts seen."
+  - "Papaioannou, JBL (2021), on 2 Peter 2:4 and Jude 6: abstract only (logged by satan-demons-and-angels)."
+  - "Drawnel, Qumran Cave 4: The Aramaic Books of Enoch (OUP 2019), for an updated manuscript count: closed."
+  - "Britannica, “Book of Enoch”: 403 to scripted requests; nothing saved."
+uncited:
+  - "Nickelsburg, “Dead Sea Scrolls Spotlight: The Book of Enoch”, Biblical Archaeology Review 33:5 (2007): read; a popular magazine, not a Scholarly or Reference venue. Its “11 Aramaic manuscripts”, “perhaps one fifth” coverage and Aramaic → Greek → Ethiopic chain not cited."
+  - "Hessayon, “James Bruce and His Copies of Ethiopic Enoch” (Brill 2023, Goldsmiths repository): read; the rediscovery statement was dropped for want of a second author on Bruce."
+  - "Lied and Stuckenbruck 2019, n. 24 (only the Ge'ez preserves chs. 37–71): read; the footnote is split by a page break in the PDF text; the Parables' absence is carried by White Crawford and Davies."
+  - "DiTommaso 2023, p. 92 (“among the earliest known apocalyptic texts”): read; the sentence is broken by a footnote block; DiTommaso n. 27 carries his point."
+  - "DiTommaso 2023, p. 100 and n. 44: the Animal Apocalypse in a Maccabean setting, 165–163 BCE per Nickelsburg: read; one author."
+  - "Stuckenbruck and Boccaccini 2016, p. 3 (“Hardly anyone would doubt … Jude 6 and 14–15 … citing 1 En. 1:9 directly”): read; the sentence also cites “1 Pet 2:18–22”, apparently an error, so not quoted."
+  - "Coblentz Bautch 2016 (EJL 44, p. 105): Augustine and Jerome's consternation about Enochic literature: read; same author as coblentz-bautch-bo-enoch."
+  - "Pierce 2009 on 1 Peter 3:19–20 as the Watchers (Dalton's reading “dominated scholarship since … 1964”): read; no statement on 1 Peter."
+  - "Sim 1999 (HTS) on Matthew knowing the Book of the Watchers: read; one author's argument. Sim and Wright on the Watchers bound until judgment: read; background, covered by satan-demons-and-angels and the-origins-of-hell."
+  - "Reed 2005 p. 6 n. 27 (the instruction motif only in Jubilees and the Similitudes before the second century CE): read; not needed."
+  - "Hanneken 2014 on Jubilees 4:30 (a thousand years as one day) and on angelic mediation of the Torah: read; one author each."
+  - "van Ruiten 2007 and Hanneken 2014 on Mastema and on where Jubilees' demons come from (10:5): read; they disagree; no statement."
+  - "Monger 2018 on 57 Ethiopic manuscripts vs Hanneken's 27: read; counts differ, not stated."
+  - "Britannica, “Book of Jubilees” (Internet Archive copy): read; no year on the page; “not included in any canon of scripture” conflicts with the Ethiopian canon in every other source."
+  - "Davies, EJ, “ten Hebrew manuscripts” of Jubilees: read; lower than Hanneken's fourteen and Segal's “about 15”; not stated."
+  - "White Crawford, Bible Odyssey: “a calendar based on the 365-day rotation of the sun” for Enoch: read; an error against Nickelsburg–VanderKam, Ben-Dov and Segal; not quoted."
+  - "Encyclopaedia Judaica: Grintz, “Enoch, Ethiopic Book of” and “Jubilees, Book of”; Ahituv, “Azazel”; Bamberger, “Nephilim” (also registered as ej-nephilim); Montague, NCE “Sons of God”; Skehan and Plastaras, NCE “Enoch”: read; pre-1996 text, not used for state-of-field statements."
+  - "Usue's dependence on Walton and Mathews (“ignorance on this subject”): read; Usue cited for his own conclusion only."
+  - "Wright 2005 Durham thesis (“the majority of scholars assume” the Nephilim are the offspring; “as most scholars would agree, Genesis 6.1-4”): read; the title page restricts quotation without consent; not cited."
+  - "Reed 2004 PSCO paper (rabbinic suppression from the second century; Genesis and the Watchers may draw from Israelite lore): read; venue class unsettled."
+  - "Aish.com, “Sons of God – Bnei Elohim” (Rosenfeld, Ask the Rabbi): read; most commentators read judges and noblemen: no organisational self-description found; not cited."
+  - "Catechism of the Catholic Church §120: read; its canon list omits Enoch and Jubilees but does not name them."
+  - "New American Bible notes on Jude on vatican.va (“Cited from the apocryphal Book of Enoch 1:9”): read; the NAB, not the NABRE; not needed."
+  - "Got Questions, “Who / what were the Nephilim?” and “What is the Book of Jubilees …?”: read; not needed for the tradition statement."
+  - "Lindbeck and Fraade (TheTorah.com) on Jubilees: read; not needed."
+  - "Boling and Proctor on the Watchers and boundaries between Jews and non-Jews: read; not stated."
