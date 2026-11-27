@@ -8,126 +8,140 @@
 # agent: the first pass (2026-11-27), lead agent alone (one side: critical). Saved into scratchpad/herod-p1: Henze and Werline PDF (curl; pdftotext -layout and plain), EJ “Herod I” at Encyclopedia.com (curl, HTML stripped; Hebrew characters come out as “?”, none quoted). In Claude in Chrome: Britannica “Herod” (lede, Quick Facts and the paragraph beginning “In his last years”, transcribed from innerText; the saved last paragraph carries a “...” elision, nothing quoted across it); Bible Odyssey “Herod the Great” (Jensen; get_page_text, cited-candidate lines saved); MDPI Histories article (get_page_text; abstract, list in section 2, section 5.2 ¶ 1 and conclusions transcribed). Every cited quote script-matched against the saved text (NFKC, entities, whitespace, curly quotes, dashes normalised): 8/8 found, once each. Trigger Claims matched by script as substrings of the only turn at that timestamp and speaker in each final Transcript (episode per processed-videos.json): 3/3; context read about two minutes either side.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) The #99/#80 ruling above: is “4 BCE” with the 3 CE dissent in the note right, or should the display show “4 BCE or 3 CE”? Is MDPI Histories / these authors (De Caro, CNR crystallographer; La Greca, historian, Salerno; Matricciani, engineer, Politecnico di Milano, as the lead understands them; not stated on the saved page) Scholarly? If not, cut critical/6–8 to `uncited` and drop the note's last sentence. (2) critical/6 says most scholars assume the 4 BC eclipse, not in so many words the 4 BC death; the note says “placed the lunar eclipse … on 13 March 4 BC”, keeping their scope; check. (3) “early in 3 CE” renders “in the first month of 3 AD”. (4) EJ text: the 2nd-ed. entry credited to Applebaum, registry year null as for the other EJ entries; the “Herod apparently died of cardio-renal failure” sentence and the add. bibliography mark the 2007 revision; in window? (5) Britannica's byline (Stewart Henry Perowne, Britannica Editors) rotates; attributed to “Britannica”, author null. (6) Britannica's 37–4 and Henze and Werline's row 37 carry the reign in the note (issue: reign only in the note).
+# Independent second agent pass 2026-11-27 (#93 delegation, #110): a fresh agent that did not build the entry, working only in its own scratch folder scratchpad/herod-p2 (herod-p1 and its match script not read). Re-fetched: Henze and Werline PDF from the registry URL (curl, browser UA; pdftotext -layout; Chronology p. xi read in full); EJ “Herod I” at Encyclopedia.com (curl, browser UA; HTML stripped; history and arts sections and credits read). In Claude in Chrome (own tab, closed after): Britannica “Herod” (innerText: Quick Facts, lede, every sentence with “4 BCE”, “Jericho”, “death” or “Herod died”); MDPI Histories article (innerText: affiliations, publication history, abstract in full, section 5.2 ¶¶ 1–2, a scan for sentences with “most scholars”, “majority”, “consensus”, “scholars” or “generally accepted”, capped at 15 hits, of which the first 6 were read in full and the output was truncated after the 7th). The browser text was saved as transcribed excerpts of what the page returned, not the full page.
+# Second pass matches: quotes 8/8 found once each by script (NFKC, entities, whitespace, curly quotes, dashes normalised): Henze 2/2 and EJ 2/2 against the full fetched text; Britannica 1/1 and De Caro 3/3 against the saved excerpts and again by an in-page normalised occurrence count over document.body.innerText (each found once). Locators all find their quote. Trigger Claims 3/3 by script (exactly one line at the timestamp, speaker as stored, text a substring) in the final Transcripts per processed-videos.json; about two minutes read either side. E144 00:09:33 Speaker: Dan McClellan in final and raw Transcript; inventory's Beecher credit does not hold. E187 Transcript: no “Herod” or “4 BCE” anywhere, agreeing with the first pass.
+# Second pass changed (note only; display, from, to, precision, cites, triggers and registry unchanged): (a) “has the aged king die in his palace at Jericho five days after the execution of his son Antipater” → “has the aged king lying in his palace at Jericho when his son Antipater was executed, and dying five days later” (EJ has him lying in the palace, not dying there). (b) “most scholars have placed the lunar eclipse that Josephus puts before Herod's death on 13 March 4 BC” → “most scholars still assume that the lunar eclipse Josephus puts before Herod's death occurred on 13 March 4 BC” (source's verb). (c) “died early in 3 CE” → “died in the first month of 3 CE” (source's words). (d) “Filmer's earlier case” → “Filmer's case” (Filmer's date not read).
+# Second pass rulings on the first-pass flags: (1) Display stays “4 BCE”; dissent stays in the note only. #99 says sources that differ are both shown and the row “does not pick one”; the second pass reads that as written for sources of comparable standing (its example: 587 vs 586), and a lone dissent that itself reports the majority is governed by #80's Disagreement section (attributed by name in the text, which a display cannot do; “weight follows the sources”), and three in-window sources give 4 BCE flat. De Caro et al. is Scholarly under #80's definition (“works by professional scholars from … peer-reviewed journals”); #80's “Scholars are classed by venue, not confession” concerns confession, not field, so it does not by itself settle the two out-of-field authors: affiliations CNR, Salerno (humanities) and Politecnico di Milano, and an editor-and-review publication history, read on the page; registry precedent de-caro-2022-xray-dating (MDPI Heritage, Scholarly); the first pass's precedent ids “krajewski-2026” and “karapanagiotis-2025” are registered as krajewski-2026-israelites-number and karapanagiotis-2025-shroud-overview. Kept. (2) Scope: the source says most scholars assume the eclipse date, not the death date; the note keeps the eclipse scope and now uses the source's verb. (3) Now “in the first month of 3 CE”. (4) EJ 2nd ed., year null as for the other EJ entries (house pattern); the edition's year was not read on the page; no state-of-the-field claim rests on EJ, and the display stands on Henze and Werline (2020) and Britannica without it. Kept. (5) Britannica: author null as for the other britannica-* entries; page shows Perowne and Britannica Editors. Kept. (6) Reign only in the note; agree.
+# Flags for the lead: (1) The De Caro et al. dissent is a single 2021 paper whose authors are two outside history (crystallography, electronic engineering); it is Scholarly by venue as #80 classes it, but if the lead prefers a stricter reading, cutting critical/6–8 to `uncited` and the note's last sentence leaves the entry valid on three sources. The literal alternative reading of #99 would make the display “4 BCE or 3 CE”; the second pass rejects it (ruling 1), but it is a tension between two recorded decisions (#80 Disagreement vs #99) that the lead may want ruled. (2) critical/6 is a “most scholars” sentence; #80 wants reasons after it: the note's eclipse clause is the basis (Josephus's eclipse before the death), no further reasons quoted. (3) The edited note sentence mixes “4 BC”/“1 BC” (the source's era) with “3 CE” (rendering its “3 AD”); `alexander` keeps a source's “BC” when attributed; left as the first pass had it. (4) At publish the gate requires `sourcesRead` to equal `delegation.secondPass` (2026-11-27).
 review: null
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-27
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Henze and Werline (eds.), EJMI 2nd ed., Chronology p. xi (BCE), row 4: “Herod the Great dies”. Flat. Scholarly, 2020, in window. Backs the display, from and to, and the note's first sentence.",
+      note: "Henze and Werline (eds.), EJMI 2nd ed., Chronology p. xi (BCE), row 4: “Herod the Great dies”. Flat. Scholarly, 2020, in window. Backs the display, from and to, and the note's first sentence. Second pass: re-fetched (curl, pdftotext -layout); matched once on p. xi under the BCE heading, row “4”, between rows 37 and “4 BCE–6 CE”. Pass.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Herod”, lede, first sentence, trimmed after “(37–4 BCE)”. Own voice: died March/April, 4 BCE, Jericho; king 37–4 BCE. Reference; attributed to Britannica. Backs the display, the note's March or April and Jericho, and the reign (Quick Facts agree: “Died: March/April, 4 BCE, Jericho, Judaea”).",
+      note: "Britannica “Herod”, lede, first sentence, trimmed after “(37–4 BCE)”. Own voice: died March/April, 4 BCE, Jericho; king 37–4 BCE. Reference; attributed to Britannica. Backs the display, the note's March or April and Jericho, and the reign (Quick Facts agree: “Died: March/April, 4 BCE, Jericho, Judaea”). Second pass: read in Chrome (innerText); lede and Quick Facts as stated; matched once in the saved excerpt and seen verbatim in page text. Pass.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "EJ “Herod I” (Encyclopedia.com; section credit “[Shimon Applebaum]” closes the history section that opens with this sentence). “(73?–4 b.c.e.), king of Judea from 37 b.c.e. until his death.” Reference. Backs the display and the reign from 37. The “?” is on the birth year only.",
+      note: "EJ “Herod I” (Encyclopedia.com; section credit “[Shimon Applebaum]” closes the history section that opens with this sentence). “(73?–4 b.c.e.), king of Judea from 37 b.c.e. until his death.” Reference. Backs the display and the reign from 37. The “?” is on the birth year only. Second pass: re-fetched (curl); matched once in the opening sentence; credit “[Shimon Applebaum]” closes the history section, “[Bathja Bayer]” the arts section. Pass.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "EJ “Herod I”, paragraph beginning “Antipater thus appeared to be the unopposed heir”: Antipater executed “in the year 4”, Herod lying in his palace in Jericho, “died five days later”. Backs the note's palace at Jericho and five days. The year is b.c.e. by the article's context (from 7 b.c.e. in the next sentence).",
+      note: "EJ “Herod I”, paragraph beginning “Antipater thus appeared to be the unopposed heir”: Antipater executed “in the year 4”, Herod lying in his palace in Jericho, “died five days later”. Backs the note's palace at Jericho and five days. The year is b.c.e. by the article's context (from 7 b.c.e. in the next sentence). Second pass: re-fetched; matched once in the named paragraph. The source has Herod “lying in his palace in Jericho” and dying five days later, not dying in the palace: note narrowed from “die in his palace at Jericho five days after the execution of his son Antipater” to “lying in his palace at Jericho when his son Antipater was executed, and dying five days later”. Pass after narrowing.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Henze and Werline Chronology p. xi, row 37: “Herod the Great becomes king of Judea”. Backs the note's “king of Judea since 37 BCE”; agrees with `hasmonean-state` (Antigonus's death in 37).",
+      note: "Henze and Werline Chronology p. xi, row 37: “Herod the Great becomes king of Judea”. Backs the note's “king of Judea since 37 BCE”; agrees with `hasmonean-state` (Antigonus's death in 37). Second pass: matched once, p. xi row 37. Pass.",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "De Caro, La Greca and Matricciani 2021, abstract, second sentence, trimmed before “, so that Dionysius Exiguus was wrong”. Their report of the majority: most scholars since the 19th century assume the 13 March 4 BC eclipse (the one Josephus puts before Herod's death, per the abstract's first sentence). Backs the note's “most scholars have placed the lunar eclipse … on 13 March 4 BC” (#80: “most scholars” only in a source's own words, quoted). See flags 1–2.",
+      note: "De Caro, La Greca and Matricciani 2021, abstract, second sentence, trimmed before “, so that Dionysius Exiguus was wrong”. Their report of the majority: most scholars since the 19th century assume the 13 March 4 BC eclipse (the one Josephus puts before Herod's death, per the abstract's first sentence). Backs the note's “most scholars have placed the lunar eclipse … on 13 March 4 BC” (#80: “most scholars” only in a source's own words, quoted). See flags 1–2. Second pass: read in Chrome; matched once in the abstract, second sentence. Scope kept to the eclipse (flag 2): note's verb narrowed from “have placed … on” to the source's “still assume … occurred on”. The note's eclipse clause is the basis the source gives for the date (abstract, first sentence: death after a lunar eclipse, per Josephus). Page text also has “Starting from Schürer’s work [13], many scholars have concluded that Herod died in 4 BC” (not cited; adds nothing). Pass after narrowing.",
     }
   critical/7:
     {
       agent: pass,
       owner: "",
-      note: "De Caro et al., abstract, last sentence, trimmed before “and, very likely, Dionysius Exiguus was correct”. Their own date: first month of 3 AD. Backs the note's “they argue instead that he died early in 3 CE”, attributed. See flags 1, 3.",
+      note: "De Caro et al., abstract, last sentence, trimmed before “and, very likely, Dionysius Exiguus was correct”. Their own date: first month of 3 AD. Backs the note's “they argue instead that he died early in 3 CE”, attributed. See flags 1, 3. Second pass: matched once, abstract, last sentence. Flag 3: note's “early in 3 CE” replaced by the source's own “in the first month of 3 CE” (AD rendered CE). Pass after narrowing.",
     }
   critical/8:
     {
       agent: pass,
       owner: "",
-      note: "De Caro et al., section 5.2, ¶ 1: Filmer “concluded that Herod’s reign lasted 34 years and finished in 1 BC.” Their report of another view (they reject it, 5.2). Backs the note's “report Filmer's earlier case for 1 BC”. Filmer not read (lead).",
+      note: "De Caro et al., section 5.2, ¶ 1: Filmer “concluded that Herod’s reign lasted 34 years and finished in 1 BC.” Their report of another view (they reject it, 5.2). Backs the note's “report Filmer's earlier case for 1 BC”. Filmer not read (lead). Second pass: matched once in section 5.2 ¶ 1. The quote starts mid-sentence: the paragraph opens “Because of these arguments, Filmer abandoned …”; the dropped clause refers back to the preceding section (not read) and changes nothing in the quoted claim. Filmer's year not read, so the note's “Filmer's earlier case” narrowed to “Filmer's case”. Pass after narrowing.",
     }
 triggers:
   144@00:08:33:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:08:33.816 Dan McClellan turn in data/transcripts/2026-01-04-bring-me-the-head-of-john-the-baptist.txt (E144). Trimmed off: the turn's trailing “And Herod—” (cut off by Beecher at 00:08:42). Read 00:07:42 to 00:12:02: McClellan introduces the Herods from 00:08:03 (“Now this is Herod Antipas.”). No hedge dropped.",
+      note: "states: critical. Substring of the 00:08:33.816 Dan McClellan turn in data/transcripts/2026-01-04-bring-me-the-head-of-john-the-baptist.txt (E144). Trimmed off: the turn's trailing “And Herod—” (cut off by Beecher at 00:08:42). Read 00:07:42 to 00:12:02: McClellan introduces the Herods from 00:08:03 (“Now this is Herod Antipas.”). No hedge dropped. Second pass: matched by script (one line at the timestamp, speaker Dan McClellan, text a substring); read 00:07:20 to 00:12:50. Pass.",
     }
   144@00:09:33:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring (first sentence) of the 00:09:33.069 Dan McClellan turn in the same Transcript (E144). Speaker checked per the issue: Dan McClellan in both the final and the raw Transcript; the content continues his family survey; “Oh wow” right after the quote reads as Dan Beecher's interjection merged into the turn, so the quote stops before it. Trimmed off: the tetrarchy, Archelaus, Philip II. Dates Herod's death via Antipas's start; agrees with the display.",
+      note: "states: critical. Substring (first sentence) of the 00:09:33.069 Dan McClellan turn in the same Transcript (E144). Speaker checked per the issue: Dan McClellan in both the final and the raw Transcript; the content continues his family survey; “Oh wow” right after the quote reads as Dan Beecher's interjection merged into the turn, so the quote stops before it. Trimmed off: the tetrarchy, Archelaus, Philip II. Dates Herod's death via Antipas's start; agrees with the display. Second pass: Speaker verified per the issue: Dan McClellan in the final Transcript (line 41) and the raw Transcript (line 41); preceding turn 00:09:23 is Dan Beecher's aside to the listener, and the 00:09:33 turn continues McClellan's family survey from 00:08:49. The inventory's Beecher credit does not hold. Text matched as a substring. Pass.",
     }
   141@01:05:18:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring (last sentence) of the 01:05:18.395 Dan McClellan turn in data/transcripts/2025-12-15-did-jesus-fulfill-prophesy.txt (E141). Trimmed off: the Greek grammar of prōtē in Luke 2:2. Read 01:04:09 to 01:06:58. The same sentence is a `birth-of-jesus` Trigger Claim; here it is kept for “his death in 4 BCE”. No hedge dropped (“or very shortly after” is about the birth, not the death).",
+      note: "states: critical. Substring (last sentence) of the 01:05:18.395 Dan McClellan turn in data/transcripts/2025-12-15-did-jesus-fulfill-prophesy.txt (E141). Trimmed off: the Greek grammar of prōtē in Luke 2:2. Read 01:04:09 to 01:06:58. The same sentence is a `birth-of-jesus` Trigger Claim; here it is kept for “his death in 4 BCE”. No hedge dropped (“or very shortly after” is about the birth, not the death). Second pass: matched by script; read 01:04:09 to 01:06:58; speaker Dan McClellan; the same sentence is the `birth-of-jesus` Trigger Claim at triggers.yaml line 502 (confirmed). Pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Title and display date the death, as the issue asks; the reign (37–4) is in the note only. Every cited source dates the death itself.",
+      note: "Title and display date the death, as the issue asks; the reign (37–4) is in the note only. Every cited source dates the death itself. Second pass: agree; title, display, from/to date the death; reign only in the note (flag 6). Pass.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Three in-window sources give 4 BCE flat. One Scholarly source (De Caro et al. 2021) argues for 3 CE and itself reports that most scholars hold the 4 BC eclipse: shown in the note, attributed, with its majority sentence quoted (#80), not as a second display side. See flag 1.",
+      note: "Three in-window sources give 4 BCE flat. One Scholarly source (De Caro et al. 2021) argues for 3 CE and itself reports that most scholars hold the 4 BC eclipse: shown in the note, attributed, with its majority sentence quoted (#80), not as a second display side. See flag 1. Second pass: agree (flag 1 ruling in the header): display stays “4 BCE”; dissent attributed by name in the note, weight following the sources (#80 Disagreement). Pass.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; all three Trigger Claims state critical.",
+      note: "No Tradition Date; all three Trigger Claims state critical. Second pass: agree. Pass.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; no Tradition source cited.",
+      note: "No Tradition Date; no Tradition source cited. Second pass: agree. Pass.",
     }
   conditional-not-critical:
-    { agent: pass, owner: "", note: "No conditional date." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date. Second pass: agree. Pass.",
+    }
 sources:
   henze-werline-2020-ejmi:
     {
       agent: pass,
       owner: "",
-      note: "Scholarly (SBL Press, 2nd ed., 2020). Reused id; publisher PDF re-fetched 2026-11-27, Chronology p. xi read in full.",
+      note: "Scholarly (SBL Press, 2nd ed., 2020). Reused id; publisher PDF re-fetched 2026-11-27, Chronology p. xi read in full. Second pass: re-fetched from the registry URL (PDF, 670 pp.); Scholarly, in window. Pass.",
     }
   britannica-herod:
     {
       agent: pass,
       owner: "",
-      note: "Reference. New id (Britannica “Herod”, king of Judaea). Refuses scripts; read in Chrome; attributed to Britannica (bylines rotate). See flag 5.",
+      note: "Reference. New id (Britannica “Herod”, king of Judaea). Refuses scripts; read in Chrome; attributed to Britannica (bylines rotate). See flag 5. Second pass: read in Chrome 2026-11-27; byline shown “Stewart Henry Perowne, Britannica Editors”; author null matches the other britannica-* entries. Reference. Pass.",
     }
   applebaum-ej-herod:
     {
       agent: pass,
       owner: "",
-      note: "Reference (Encyclopaedia Judaica, 2nd ed.; history section credited to Shimon Applebaum; the arts section after it is Bathja Bayer's, not cited). New id. curl. See flag 4.",
+      note: "Reference (Encyclopaedia Judaica, 2nd ed.; history section credited to Shimon Applebaum; the arts section after it is Bathja Bayer's, not cited). New id. curl. See flag 4. Second pass: re-fetched (curl); year null matches the other EJ entries in the registry. Reference. Pass.",
     }
   decaro-2021-christian-era:
     {
       agent: pass,
       owner: "",
-      note: "Scholarly by venue (MDPI Histories 1(3):16, 2021, peer-reviewed open-access journal; doi 10.3390/histories1030016). New id. Refuses scripts (403); read in Chrome. Used only for the attributed dissent and its report of the majority. See flag 1.",
+      note: "Scholarly by venue (MDPI Histories 1(3):16, 2021, peer-reviewed open-access journal; doi 10.3390/histories1030016). New id. Refuses scripts (403); read in Chrome. Used only for the attributed dissent and its report of the majority. See flag 1. Second pass: read in Chrome. Page shows affiliations: De Caro, Istituto di Cristallografia, CNR, Bari; La Greca, Dipartimento di Studi Umanistici, Università di Salerno; Matricciani, Dipartimento di Elettronica, Informazione e Bioingegneria, Politecnico di Milano; Academic Editor Jon Mathieu; received 10 June 2021, revised 26 July, accepted 2 August, published 11 August 2021. Scholarly under #80 (professional researchers, peer-reviewed journal; classed by venue), as de-caro-2022-xray-dating (MDPI Heritage) is. Pass.",
     }
 leads:
   - "Andrew E. Steinmann, “When Did Herod the Great Reign?”, Novum Testamentum 51 (2009): argues for 1 BC (cited by De Caro et al., ref. 24, and on the Bible History Daily page below). Not openly readable; not read."

@@ -21,7 +21,7 @@ critical:
   from: -4
   to: -4
   precision: year
-  note: "Henze and Werline's chronology, Britannica and the Encyclopaedia Judaica (Applebaum) date Herod the Great's death to 4 BCE. Britannica puts it in March or April, at Jericho; the Encyclopaedia Judaica has the aged king die in his palace at Jericho five days after the execution of his son Antipater. He had been king of Judea since 37 BCE (Henze and Werline; Britannica's reign of 37–4 BCE). De Caro, La Greca and Matricciani write that since the 19th century most scholars have placed the lunar eclipse that Josephus puts before Herod's death on 13 March 4 BC; they argue instead that he died early in 3 CE, and report Filmer's earlier case for 1 BC."
+  note: "Henze and Werline's chronology, Britannica and the Encyclopaedia Judaica (Applebaum) date Herod the Great's death to 4 BCE. Britannica puts it in March or April, at Jericho; the Encyclopaedia Judaica has the aged king lying in his palace at Jericho when his son Antipater was executed, and dying five days later. He had been king of Judea since 37 BCE (Henze and Werline; Britannica's reign of 37–4 BCE). De Caro, La Greca and Matricciani write that since the 19th century most scholars still assume that the lunar eclipse Josephus puts before Herod's death occurred on 13 March 4 BC; they argue instead that he died in the first month of 3 CE, and report Filmer's case for 1 BC."
   cites:
     - source: henze-werline-2020-ejmi
       locator: "Chronology, p. xi (BCE), row 4"
