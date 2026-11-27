@@ -1,8 +1,8 @@
 ---
 title: "The death of Herod the Great"
 entryKind: event
-draft: true
-sourcesRead: null
+draft: false
+sourcesRead: 2026-11-27
 related:
   { books: [matthew], tags: [herod-the-great, herod-antipas], topics: [] }
 watch:
