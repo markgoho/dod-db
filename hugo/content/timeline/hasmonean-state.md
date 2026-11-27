@@ -20,7 +20,7 @@ watch:
     "63 BCE",
   ]
 critical:
-  display: "143–142, 141 or 129 to 63 BCE"
+  display: "From 143–142, 141 or 129 to 63 BCE"
   from: -143
   to: -63
   precision: year
@@ -45,10 +45,6 @@ critical:
     - source: britannica-palestine-hasmoneans
       locator: "section “The Hasmonean priest-princes”, paragraph beginning “At that stage the Romans appeared”"
       quote: "Pompey the Great, during his reorganization of the lands of the newly conquered Seleucid kingdom, also arranged the affairs of Palestine (63 BCE)."
-      read: 2026-11-27
-    - source: bo-timeline-second-temple-judaism
-      locator: "timeline introduction"
-      quote: "then under the Hellenistic kingdoms created in the aftermath of Alexander the Great's conquest (332–63 BCE), and finally under Roman rule (63 BCE–70 CE and beyond)."
       read: 2026-11-27
     - source: stern-ej-hasmoneans
       locator: "paragraph beginning “to Judaism. The internal crisis”"
@@ -79,7 +75,7 @@ critical:
       quote: "was the first Hasmonean to arrogate to himself the title of king"
       read: 2026-11-27
     - source: stern-ej-hasmoneans
-      locator: "paragraph beginning “to Judaism. The internal crisis”"
+      locator: "paragraph beginning “to Judaism. The internal crisis”, last sentence, running on into the next paragraph (“a close, and prepared the way for Herod”)"
       quote: "His defeat and death in 37 b.c.e. at the hands of the Romans brought the Hasmonean rule to a close"
       read: 2026-11-27
 ---
