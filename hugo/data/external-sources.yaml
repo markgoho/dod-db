@@ -4101,7 +4101,7 @@ white-1999-angel-of-the-lord:
   author: "Stephen L. White"
   title: "Angel of the Lord: Messenger or Euphemism?"
   series: "Tyndale Bulletin 50, no. 2: 299–305"
-  publisher: "Tyndale House"
+  publisher: null
   year: 1999
   edition: null
   class: Scholarly
@@ -4250,3 +4250,115 @@ gotquestions-when-was-isaiah-written:
   url: "https://www.gotquestions.org/when-was-Isaiah-written.html"
   hostAuthored: false
   tradition: "Got Questions Ministries, an evangelical ministry"
+
+seccombe-2020-dating-luke-acts:
+  author: "David Seccombe"
+  title: "Dating Luke-Acts: Further Arguments for an Early Date"
+  series: "Tyndale Bulletin 71 (2): 207–227"
+  publisher: null
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (PDF), open"
+  url: "https://tyndalebulletin.org/article/27747.pdf"
+  hostAuthored: false
+  tradition: null
+
+armstrong-2017-early-date-acts:
+  author: "Karl L. Armstrong"
+  title: "A New Plea for an Early Date of Acts"
+  series: "Journal of Greco-Roman Christianity and Judaism 13: 79–110"
+  publisher: null
+  year: 2017
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (PDF), open"
+  url: "https://www.jgrchj.net/volume13/JGRChJ13-3_Armstrong.pdf"
+  hostAuthored: false
+  tradition: null
+
+tyson-2011-when-why-acts:
+  author: "Joseph B. Tyson"
+  title: "When and Why Was the Acts of the Apostles Written?"
+  series: "The Bible and Interpretation"
+  publisher: "University of Arizona"
+  year: 2011
+  edition: null
+  class: Reference
+  kind: article
+  access: "University-hosted journal website, open"
+  url: "https://bibleinterp.arizona.edu/opeds/actapo358006"
+  hostAuthored: false
+  tradition: null
+
+britannica-acts-of-the-apostles:
+  author: null
+  title: "Acts of the Apostles"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 1998
+  edition: "Online, Britannica Editors (first published July 20, 1998)"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/topic/The-Acts-of-the-Apostles-New-Testament"
+  hostAuthored: false
+  tradition: null
+
+fredriksen-bo-christian:
+  author: "Paula Fredriksen"
+  title: "Christian"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2019
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/christian/"
+  hostAuthored: false
+  tradition: null
+
+ehrman-brief-5e-ch10-summary:
+  author: "Bart D. Ehrman"
+  title: "Student chapter 10 summary of A Brief Introduction to the New Testament"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "5th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-10-summary"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l9:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 9 transcript: The Gospel of Luke"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-9"
+  hostAuthored: false
+  tradition: null
+
+insight-swindoll-acts:
+  author: "Charles R. Swindoll"
+  title: "Acts"
+  series: null
+  publisher: "Insight for Living"
+  year: 2010
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://insight.org/resources/bible/the-history-books/acts"
+  hostAuthored: false
+  tradition: "Insight for Living, the Bible-teaching ministry of Pastor Chuck Swindoll"
