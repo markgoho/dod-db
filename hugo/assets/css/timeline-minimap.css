@@ -786,15 +786,18 @@
 /*
   The current entry's narrated setting (#170): a faint hatched span at its
   years and a dotted arc from the span's middle to the tick's dot (--tick-top,
-  --tick-x). Shown only while its entry is current. The span sits on its
-  column's inline-start edge (--setting-x, from the strip's inline end), where
-  no dot of that column ever lands (#175), so it is always clear of its own
-  dot and the arc always runs one way. Under the ticks.
+  --tick-x). Shown only while its entry is current. The span sits just inward
+  of its column's last place (--setting-x, from the strip's inline end),
+  where no dot of that column ever lands, current or not (#175), so it is
+  always clear of its own dot and the arc always runs one way. Under the
+  ticks: a tradition dot on the next column's outer place may cover it.
 */
 .timeline-minimap__setting {
   --setting-width: var(--space-3xs);
+  /* Just past the column's last place inward, clear of its dot grown 1.5×. */
   --setting-x: round(
-    var(--column-centre) + var(--column-width) / 2 - var(--setting-width) / 2,
+    var(--column-centre) + var(--column-reach) + var(--tick-dot) / 2 +
+      var(--tick-grow),
     1px
   );
 
