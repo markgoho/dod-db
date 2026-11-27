@@ -1,7 +1,6 @@
 ---
 title: "Mary Magdalene"
 dek: "What the gospels say about Mary Magdalene, where the image of her as a reformed prostitute came from, and what scholars make of her name, her identity and the later writings that feature her."
-draft: true
 core: prostitute
 sourcesRead: 2026-11-27
 related:
@@ -167,8 +166,8 @@ statements:
   - id: bethany
     group: "The later image"
     question: "Was Mary Magdalene the same woman as Mary of Bethany?"
-    short: "Modern scholarship has tended to treat them as two women, though some scholars have challenged that. Pope Gregory the Great identified them in a sixth-century sermon."
-    text: "The HarperCollins Bible Dictionary lists Mary of Bethany and Mary Magdalene as separate women among the seven women named Mary in the New Testament, “unless two or more are identical”. Kristin Swenson says Magdalene refers to a town in Galilee, which should distinguish her from Mary of Bethany, near Jerusalem. Elizabeth Schrader, who argues in the Harvard Theological Review that a text of John without Martha would strongly imply that Mary of Bethany was Mary Magdalene, writes that Mary Ann Beavis and Mark Goodacre had already challenged the relatively recent scholarly tendency to draw a clear line between them. Beavis says early Christians sometimes confused the two Marys because of their similar names, that Eastern Christians resisted the conflation and traditionally regarded them as distinct saints, and that in the West Gregory the Great identified the sinner of Luke 7 with Mary Magdalene. Swenson and Dan Clanton say Gregory's sermon equated Mary of Bethany with Mary Magdalene as well."
+    short: "Modern scholarship has tended to treat them as two women, though some scholars have challenged that."
+    text: "The HarperCollins Bible Dictionary lists Mary of Bethany and Mary Magdalene as separate women among the seven women named Mary in the New Testament, “unless two or more are identical”. Kristin Swenson says Magdalene refers to a town in Galilee, which should distinguish her from Mary of Bethany, near Jerusalem. Elizabeth Schrader, who argues in the Harvard Theological Review that a text of John without Martha would strongly imply that Mary of Bethany was Mary Magdalene, writes that Mary Ann Beavis and Mark Goodacre had already challenged the relatively recent scholarly tendency to draw a clear line between them. Beavis says early Christians sometimes confused the two Marys because of their similar names, that Eastern Christians resisted the conflation and traditionally regarded them as distinct saints, and that in the West Gregory the Great identified the sinner of Luke 7 with Mary Magdalene rather than with Mary of Bethany. Swenson and Dan Clanton, by contrast, say Gregory's sermon equated Mary of Bethany with Mary Magdalene as well."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/mary/"
