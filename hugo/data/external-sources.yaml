@@ -5670,3 +5670,115 @@ tebes-2021-desert-origins:
   url: "https://doi.org/10.46586/er.12.2021.8847"
   hostAuthored: false
   tradition: null
+
+nabre-1-maccabees-1-notes:
+  author: null
+  title: "Notes to 1 Maccabees 1"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1maccabees/1"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-maccabees-4-notes:
+  author: null
+  title: "Notes to 1 Maccabees 4"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1maccabees/4"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-maccabees-6-notes:
+  author: null
+  title: "Notes to 1 Maccabees 6"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1maccabees/6"
+  hostAuthored: false
+  tradition: null
+
+levine-1999-age-of-hellenism:
+  author: "Lee I. Levine"
+  title: "The Age of Hellenism: Alexander the Great and the Rise and Fall of the Hasmonean Kingdom"
+  series: "Ancient Israel: From Abraham to the Roman Destruction of the Temple, edited by Hershel Shanks"
+  publisher: "Biblical Archaeology Society"
+  year: 1999
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Chapter excerpt (Part II) hosted by the Center for Online Judaic Studies, open"
+  url: "https://cojs.org/?p=6555"
+  hostAuthored: false
+  tradition: null
+
+seeman-bo-hanukkah:
+  author: "Chris Seeman"
+  title: "Hanukkah"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2019
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society website, open"
+  url: "https://www.bibleodyssey.org/articles/hanukkah/"
+  hostAuthored: false
+  tradition: null
+
+britannica-hanukkah:
+  author: null
+  title: "Hanukkah"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online, Britannica Editors"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/topic/Hanukkah"
+  hostAuthored: false
+  tradition: null
+
+britannica-antiochus-iv-epiphanes:
+  author: null
+  title: "Antiochus IV Epiphanes"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/biography/Antiochus-IV-Epiphanes"
+  hostAuthored: false
+  tradition: null
+
+britannica-maccabees:
+  author: null
+  title: "Maccabees"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/topic/Maccabees"
+  hostAuthored: false
+  tradition: null

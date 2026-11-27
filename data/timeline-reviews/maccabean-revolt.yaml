@@ -1,0 +1,187 @@
+# Review record for the Timeline Entry `maccabean-revolt` (/timeline/#maccabean-revolt; #93 shape). Not rendered.
+# Issue #235 (from #108), “Timeline Entry: Antiochus IV and the Maccabean revolt”. Issue notes: the E34 lead quote dates Daniel's composition, not the event, so a Trigger Claim must date the persecution or revolt itself; date one thing (the persecution and desecration, 167, or the rededication, 164) and put the rest in the note; Onias III 171 (E32) or 170 (E34) is a #99 inconsistency; must agree with `daniel` (167–164 BCE) and not restate Daniel's composition; `alexander` overlaps (Hellenistic period to 63 BCE); the Hasmonean kingdom entry (#236) follows from the revolt.
+# Id `maccabean-revolt` (matches the topic slug). Title worded for what the display dates: the rededication of the Temple by Judas Maccabeus's forces.
+# Sourcing test, 2026-11-27: met. Every source read dates the rededication to 164 BCE, none to 165, none conditionally: Henze and Werline 2020 Chronology (Scholarly, in window; row 164 “Rededication of the Jerusalem temple”), Levine 1999 (Scholarly, in window; “in the month of Kislev, 164 B.C.E.”), NABRE note to 1 Mc 4:52 (Reference; “December 14, 164 B.C.”), Seeman, Bible Odyssey “Hanukkah” (Reference; “in 164 BCE”), Britannica “Hanukkah” (Reference; “Kislev 25, 164 BCE”). Kind: event. No Tradition Date: the one Trigger Claim states critical. No setting (event entry).
+# Why 164, not 167 (issue: date one thing): the rededication's year is unanimous; the revolt's outbreak splits three ways (167 Henze and Werline; 166 Levine and Britannica “Antiochus IV”; Britannica “Maccabees” gives the wars as 168–164) and Britannica “Maccabees” also has a 168 act of desacralizing the Holy of Holies before the December 167 Zeus dedication. The desecration (167) and the revolt's start go in the note, the split shown (#99). The day of the rededication differs (NABRE December 14; Britannica “Maccabees” December 24; both Kislev 25): days are out of the display.
+# Dropped: Antiochus IV's accession. Henze and Werline's chronology gives his rule as “177–164”, against 175 in NABRE (1 Mc 1:10 note, “September, 175 B.C.”), Britannica, Bible Odyssey and the Second Temple timeline; Iranica (Sievers, 1986, out of window) says “late in 175” and calls September too early. Rather than show a likely misprint as a split, the note leaves the accession out. Onias III (171/170): no source read dates his death; the show's two years are Daniel 9 exegesis (E32 00:26:51, E34 00:40:25) and are out of scope. Every Hasmonean-kingdom date (Henze and Werline 142/140/129; the show's 141) is left for #236.
+# Consistency: `daniel` dates its chapters 7–12 to the persecution “(167–164 B.C.)” (NABRE): this entry's 167 desecration and 164 rededication agree, and it does not restate Daniel's composition. `alexander` (332; Hellenistic kingdoms to 63) untouched. seeAlso: daniel (published). No anchor: the entry has its own sourced year.
+# Trigger Claims (#99: one to three): E158 00:15:58 (dates the revolt “I want to say this is 167 BCE” and the rededication “around 164”; hedges kept inside the quote; the trim drops the turn's opening on Mattathias, which begins “in the story”, and the 167 points at the guerrilla campaign, not the desecration). Not kept: E158 00:09:46 (accession “around 175 BCE”, not in the entry); E34 00:44:03 (Daniel's composition, issue note) and 00:47:19 (no year); E123 00:42:45 (“160 BCE to around 63 BCE”, the Hasmonean kingdom, #236); E87 00:33:26 (“160 years before”, relative, about the Maccabees' kingdom); E71 00:54:06, E123 00:38:50 (no year).
+# agent: the first pass (2026-11-27). Henze and Werline PDF and the Bible Odyssey Tiki-Toki embed fetched by curl by the lead agent (pdftotext plain and -layout). A research agent saved Levine (cojs.org, curl), Iranica (curl), the USCCB 1–2 Maccabees pages, Britannica and Bible Odyssey (Claude in Chrome, abridged transcriptions). The lead agent re-read the cited NABRE notes (1 Mc 1, 4, 6), Britannica “Hanukkah”, “Maccabees”, “Antiochus IV Epiphanes” and Seeman's “Hanukkah” in Claude in Chrome (page innerText) and saved the cited paragraphs verbatim. Every cited quote script-matched against the saved text (NFKC, whitespace, curly quotes, dashes, ellipsis normalised): 12/12, each found once. Trigger Claim matched by script as a substring of the E158 line at that timestamp and speaker: 1/1.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Levine 1999: excerpt of a chapter in Shanks (ed.), Ancient Israel (BAS, 1999; the page spells the editor “Hershal”), hosted by the Center for Online Judaic Studies; Scholarly class (a scholar's chapter in a popular-audience volume)? Edition left null (revised edition unconfirmed). (2) Britannica “Maccabees”: “in 168 BCE, Antiochus invaded Jerusalem and desacralized the Holy of Holies”, then “later in the same year” the December 25, 167 Zeus dedication; read as a separate act and internally inconsistent, not cited, not a split for the note's “desecrated the Temple in 167 BCE”. Agree? (3) Henze and Werline “177–164”: dropped as above; does leaving the accession out suffice? (4) The note's “the year Levine dates his decree” leans on Levine's “Kislev (December), 167 B.C.E., the king issued a decree”; “desecrated the Temple in 167” rests on Henze and Werline row 167 and NABRE 1 Mc 1:54. (5) Britannica “Maccabees” 168–164 is a span of the “wars of independence”, shown as a third outbreak date; is it fair to report it as dating the outbreak?
+review: null
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Henze and Werline (eds.), EJMI 2nd ed., Chronology p. xi, BCE column, row 164: “Rededication of the Jerusalem temple” / “Antiochus IV dies” (two lines of one row, joined by whitespace normalisation, -layout). Flat. Scholarly, 2020, in window. Backs the display and the note's death sentence.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE note to 1 Mc 4:52, USCCB page 1maccabees/4 (read in Chrome). Flat: December 14, 164 B.C. Reference (scholarly-association notes). Backs the display.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Levine 1999, Part II excerpt (cojs.org), paragraph beginning “Six months later”: Judah captured the city and purified the Temple, “in the month of Kislev, 164 B.C.E.”. Flat. Scholarly, in window. See flag 1.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Seeman, Bible Odyssey “Hanukkah” (byline Chris Seeman; JSON-LD datePublished 2019-05-29 per the research agent), opening paragraph. Flat: “in 164 BCE”. Reference.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Hanukkah” (Britannica Editors), origin section, opening paragraph: “the rededication of the Temple on Kislev 25, 164 BCE”. Flat. Reference.",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Henze and Werline Chronology row 167: “Antiochus IV desecrates Jerusalem temple” / “Hasmonean revolt begins”. Backs the note's 167 desecration and the 167 side of the outbreak split.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE note to 1 Mc 1:54 (desolating abomination on the altar): December 6, 167 B.C. Backs the note's 167 desecration.",
+    }
+  critical/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Levine Part II: decree of Kislev (December) 167 B.C.E. banning circumcision and religious observance. Backs the note's “the year Levine dates his decree”. See flag 4.",
+    }
+  critical/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Levine Part II: armed conflict broke out at Modi‘in “In the year following the imposition of these decrees” (so 166; his next section is headed “166–164 B.C.E.”). Relative date; backs the 166 side of the outbreak split, shown as Levine's “the year following”.",
+    }
+  critical/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Antiochus IV Epiphanes”, section “The revolt of Judas Maccabeus”: “at the beginning of their rebellion in 166”. Backs the 166 side of the split.",
+    }
+  critical/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Maccabees”, opening paragraph: Judas “the hero of the Jewish wars of independence, 168–164 BCE”. Shown as that article's span for the wars. See flag 5.",
+    }
+  critical/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE note to 1 Mc 6:16: Antiochus died in November or early December of 164, about the same time as the rededication. Backs the note's last sentence with critical/1.",
+    }
+triggers:
+  158@00:15:58:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:15:58.862 Dan McClellan turn in data/transcripts/2026-04-12-i-will-have-mercy-not-dogma.txt (E158). Hedges kept: “I want to say”, “around 164”. Trimmed off: the turn's opening on Mattathias (“in the story, he's supposed to perform a pagan sacrifice”). Read 00:09:46 to 00:18:34: accession “around 175 BCE” (00:09:46), Hanukkah and the oil story (00:17:00), fighting to the 140s and the Hasmonean kingdom from 141 (00:17:18, #236). The show's 167 for the revolt agrees with Henze and Werline and differs from Levine and Britannica's 166; shown apart from the entry (#99).",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Display dates the rededication (164), which the title names; the Trigger Claim is wider (revolt 167 and rededication 164); entry narrower, allowed. Daniel's composition not restated.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "No split on the display (every source read: 164). The revolt's outbreak splits (167 / 166 / 168–164): all three shown in the note, each attributed. Accession (177 vs 175) left out of the note, so not shown (flag 3).",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; the Trigger Claim states critical.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; no Tradition source cited.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date. Seeman's “allegedly” (para 2, the day of the earlier desecration) and Britannica “Hanukkah”'s “According to I Maccabees” are in uncited passages.",
+    }
+sources:
+  henze-werline-2020-ejmi:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (SBL Press, 2nd ed., 2020). Reused id; publisher PDF re-fetched 2026-11-27.",
+    }
+  nabre-1-maccabees-1-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (NABRE notes, Catholic Biblical Association; same class as the registry's other NABRE notes). New id. Refuses curl; read in Chrome.",
+    }
+  nabre-1-maccabees-4-notes:
+    { agent: pass, owner: "", note: "Reference. New id. Read in Chrome." }
+  nabre-1-maccabees-6-notes:
+    { agent: pass, owner: "", note: "Reference. New id. Read in Chrome." }
+  levine-1999-age-of-hellenism:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly? Lee I. Levine's chapter in Shanks (ed.), Ancient Israel (Biblical Archaeology Society, 1999), excerpt Part II at cojs.org. New id. In window (27 years). See flag 1.",
+    }
+  seeman-bo-hanukkah:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (Bible Odyssey, SBL). New id. Blocks curl; read in Chrome.",
+    }
+  britannica-hanukkah:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference. New id. Read in Chrome; attributed to Britannica.",
+    }
+  britannica-antiochus-iv-epiphanes:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference. New id. Read in Chrome; attributed to Britannica (byline rotates).",
+    }
+  britannica-maccabees:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference. New id. Read in Chrome; attributed to Britannica (byline rotates).",
+    }
+leads:
+  - "Dates of 165 BCE for the rededication (World History Encyclopedia audio page; My Jewish Learning): search snippets only, not read; neither is a Scholarly or Reference source by the registry's tests."
+  - "Honigman, Tales of High Priests and Taxes (UC Press 2014): not open access (Project MUSE); not read."
+  - "Rhyder, offprint on the Maccabean commemoration of war (Brill): no open copy reached."
+uncited:
+  - "Henze and Werline Chronology row “177–164 Antiochus IV rules Seleucid Empire”: every other source gives 175 for the accession; accession left out of the note (header)."
+  - "NABRE note to 1 Mc 1:10: “Antiochus IV seized the throne in September, 175 B.C.” Accession out of scope."
+  - "NABRE notes to 1 Mc 1:20 (169, Egypt), 2:70 (Mattathias died 166); 2 Mc notes 1:11–12 and 9:1–29 (death 164), 5:1 (second pillage 167 after the 168 invasion of Egypt), 10:3 (two vs three years). Context; not needed."
+  - "Britannica “Maccabees”: “Finally, in 168 BCE, Antiochus invaded Jerusalem and desacralized the Holy of Holies in the Temple.” and the December 25, 167 Zeus dedication; “Antiochus IV ruled Syria from 175 to 164/163 BCE.”; Mattathias's death “c. 166”; reconsecration December 24 (Kislev 25), 164. See flag 2."
+  - "Britannica “Antiochus IV Epiphanes”: “When Antiochus returned from Egypt in 167 he took Jerusalem by storm”; “in December 164 was able to tear down the altar of Zeus and reconsecrate the Temple”; death “at the end of 164”. Agrees; not needed beyond critical/10."
+  - "Britannica “Hanukkah” para 2 (“According to I Maccabees …”): narrative, not a date."
+  - "Seeman, Bible Odyssey “Hanukkah” para 2: “Three years earlier” Antiochus forbade Jewish practices; the day “allegedly” that of the desecration. Relative and hedged; critical/6–8 carry 167."
+  - "Seeman, Bible Odyssey “Maccabees”: reign “175-164 BCE” only."
+  - "Merrill Willis, Bible Odyssey “Daniel” (registered): outlawed Judaism in 167, temple worship resumed “in the winter of 164 B.C.E.”, Antiochus dead “by early 163”. Agrees; cited on `daniel`, not needed here."
+  - "Bible Odyssey Second Temple timeline (bo-timeline-second-temple-judaism): “Desecration of the temple” item attributes the 167 decree to 1 Maccabees (“According to the book of 1 Maccabees”); “2 Maccabees” item: Hanukkah celebrates “the rededication of the Jerusalem temple in 164 B.C.E.”; “Antiochus IV Epiphanes (175-164 B.C.E.)”. Agrees; texts sit in the embed's JS object with escaped apostrophes; not needed."
+  - "Sievers, Encyclopaedia Iranica “Antiochus” (1986, updated 2015): accession “late in 175”, robbery of the Temple treasury “169 or 168”, death news in Babylon November 19 to December 19, 164; Granius Licinianus gives 163. Out of the 30-year window."
+  - "Zank, Boston University course page on Seleucid chronology: undated, unsigned page, heads Antiochus IV “187-164”; fails the class test."
