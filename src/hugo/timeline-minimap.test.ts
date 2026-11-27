@@ -89,6 +89,7 @@ function select(html: string, selector: string): El[] {
 }
 
 const ids = (els: El[]) => els.map(e => e.attrs.id ?? "");
+const classes = (el: El) => (el.attrs.class ?? "").split(/\s+/);
 const squash = (t: string | undefined) => t?.replaceAll(/\s+/g, " ").trim();
 const hrefs = (els: El[]) => els.map(e => e.attrs.href?.replace(/^#/, ""));
 /** The numeric custom properties in an element's style attribute. */
@@ -440,6 +441,19 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(select(page, ".timeline-minimap__legend")).toEqual([]);
     expect(select(page, ".timeline-minimap__dot")).toEqual([]);
     expect(select(page, ".timeline-legend")).not.toEqual([]);
+  });
+
+  test("the axis has no lanes: rows alternate sides across the whole axis, moved Tradition Dates included (#254)", () => {
+    expect(select(page, ".timeline-lanes")).toEqual([]);
+    const rows = select(page, ".timeline-axis .timeline-entry");
+    expect(rows.some(r => classes(r).includes("timeline-entry--moved"))).toBe(
+      true,
+    );
+    expect(rows.map(r => classes(r).includes("timeline-entry--end"))).toEqual(
+      rows.map((_, i) => i % 2 === 1),
+    );
+    // Counted over the whole axis, so the alternation runs on across eras.
+    expect(select(page, ".timeline-era__entries").length).toBeGreaterThan(1);
   });
 
   test("a Tradition Date 30 or more years from the Critical Date sits at its own year, as its own row and diamond tick; a closer one stays beside its entry (#214)", () => {

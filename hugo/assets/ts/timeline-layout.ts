@@ -65,6 +65,31 @@ function packList(list: HTMLElement, pack: boolean): void {
   if (tail > 0) list.style.setProperty("--pack-tail", `${Math.round(tail)}px`);
 }
 
+/**
+ * Packing pulls rows up by up to thousands of pixels, so a reader who
+ * arrived at an entry (#<id>, or an entry's own URL, [data-arrived]) would
+ * be left looking at a later one. Until they scroll themselves, each pack
+ * brings the entry they came for back into view, as the fragment did.
+ */
+let readerScrolled = false;
+for (const type of ["wheel", "touchstart", "keydown", "mousedown"])
+  addEventListener(
+    type,
+    () => {
+      readerScrolled = true;
+    },
+    { once: true, passive: true },
+  );
+
+function keepArrival(axis: HTMLElement): void {
+  if (readerScrolled) return;
+  const id = decodeURIComponent(globalThis.location.hash.slice(1));
+  const target =
+    axis.querySelector("[data-arrived]") ??
+    (id ? document.getElementById(id) : null);
+  if (target && axis.contains(target)) target.scrollIntoView();
+}
+
 const axis = document.querySelector<HTMLElement>(".timeline-axis");
 if (axis) {
   const lists = [
@@ -76,7 +101,11 @@ if (axis) {
     const pack =
       getComputedStyle(axis).getPropertyValue("--timeline-pack").trim() === "1";
     for (const list of lists) packList(list, pack);
+    keepArrival(axis);
   };
+  // Once now, before timeline-entry-links.ts scrolls to an entry's URL, so
+  // it scrolls to the packed place; then whenever a row changes size.
+  packAll();
   const schedule = () => {
     frame ||= requestAnimationFrame(packAll);
   };

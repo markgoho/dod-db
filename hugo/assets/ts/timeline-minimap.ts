@@ -59,66 +59,97 @@ if (minimap && CSS.supports("scroll-target-group", "auto")) {
 }
 
 /**
- * The strip's window (#253): the part of the Timeline on screen. An
- * IntersectionObserver keeps the axis rows in view; the window runs from the
- * earliest of their ticks to the latest. With no entry in view (an empty era
- * fills the screen), it covers the eras in view instead. Positions are the
- * shares the template already wrote on each tick and band.
+ * The strip's window (#253): the part of the Timeline on screen, following
+ * the scroll frame by frame. Each era's top and each row's node are control
+ * points, a page position paired with its share of the strip (the era's
+ * start, the tick's year, both written by the template); the viewport's top
+ * and bottom are mapped between the points either side of them, so the
+ * window glides as the page does. The points are measured again whenever the
+ * axis changes size (packing, a disclosure, the width). Off the axis, no
+ * window.
  */
 const share = (el: HTMLElement, name: string): number =>
   Number.parseFloat(el.style.getPropertyValue(name));
 
+type Point = { y: number; at: number };
+
+function shareAt(points: Point[], y: number): number {
+  const first = points[0];
+  const last = points.at(-1);
+  if (!first || !last) return 0;
+  if (y <= first.y) return first.at;
+  if (y >= last.y) return last.at;
+  let lo = 0;
+  let hi = points.length - 1;
+  while (hi - lo > 1) {
+    const mid = (lo + hi) >> 1;
+    if ((points[mid]?.y ?? 0) <= y) lo = mid;
+    else hi = mid;
+  }
+  const a = points[lo]!;
+  const b = points[hi]!;
+  return b.y === a.y ? a.at : a.at + ((b.at - a.at) * (y - a.y)) / (b.y - a.y);
+}
+
 function trackViewport(root: Element): void {
   const view = root.querySelector<HTMLElement>(".timeline-minimap__view");
-  const axis = document.querySelector(".timeline-axis");
+  const axis = document.querySelector<HTMLElement>(".timeline-axis");
   if (!view || !axis) return;
 
   const tickAt = new Map<string, number>();
   for (const tick of root.querySelectorAll<HTMLElement>("[data-tick]"))
     tickAt.set(tick.dataset.tick ?? "", share(tick, "--tick-at"));
-  const eraSpan = new Map<string, [number, number]>();
+  const eraStart = new Map<string, number>();
   for (const band of root.querySelectorAll<HTMLElement>("[data-era]"))
-    eraSpan.set(band.dataset.era ?? "", [
-      share(band, "--era-start"),
-      share(band, "--era-end"),
-    ]);
+    eraStart.set(band.dataset.era ?? "", share(band, "--era-start"));
 
-  const entries = new Set<string>();
-  const eras = new Set<string>();
+  let points: Point[] = [];
+  let axisTop = 0;
+  let axisBottom = 0;
+  const measure = () => {
+    const scroll = globalThis.scrollY;
+    const box = axis.getBoundingClientRect();
+    axisTop = box.top + scroll;
+    axisBottom = box.bottom + scroll;
+    points = [];
+    for (const row of axis.querySelectorAll<HTMLElement>(
+      ".timeline-era, .timeline-entry",
+    )) {
+      const isEra = row.classList.contains("timeline-era");
+      const at = isEra ? eraStart.get(row.id) : tickAt.get(row.id);
+      const mark = isEra
+        ? row
+        : (row.querySelector(".timeline-entry__node") ?? row);
+      if (at !== undefined)
+        points.push({ y: mark.getBoundingClientRect().top + scroll, at });
+    }
+    // Page order is date order; keep the shares from ever running back.
+    points.sort((a, b) => a.y - b.y);
+    for (let i = 1; i < points.length; i++)
+      points[i]!.at = Math.max(points[i]!.at, points[i - 1]!.at);
+    // The axis's end is the strip's.
+    points.push({ y: axisBottom, at: 1 });
+  };
+
   let frame = 0;
   const draw = () => {
     frame = 0;
-    let spans = [...entries].flatMap(id => {
-      const at = tickAt.get(id);
-      return at === undefined ? [] : [[at, at] as [number, number]];
-    });
-    if (spans.length === 0)
-      spans = [...eras].flatMap(id => {
-        const span = eraSpan.get(id);
-        return span ? [span] : [];
-      });
-    view.hidden = spans.length === 0;
+    const top = globalThis.scrollY;
+    const bottom = top + globalThis.innerHeight;
+    view.hidden = bottom <= axisTop || top >= axisBottom;
     if (view.hidden) return;
-    view.style.setProperty(
-      "--view-start",
-      String(Math.min(...spans.map(s => s[0]))),
-    );
-    view.style.setProperty(
-      "--view-end",
-      String(Math.max(...spans.map(s => s[1]))),
-    );
+    view.style.setProperty("--view-start", String(shareAt(points, top)));
+    view.style.setProperty("--view-end", String(shareAt(points, bottom)));
   };
-
-  const observer = new IntersectionObserver(records => {
-    for (const { target, isIntersecting } of records) {
-      const set = target.classList.contains("timeline-era") ? eras : entries;
-      if (isIntersecting) set.add(target.id);
-      else set.delete(target.id);
-    }
+  const schedule = () => {
     frame ||= requestAnimationFrame(draw);
-  });
-  for (const row of axis.querySelectorAll(".timeline-era, .timeline-entry"))
-    observer.observe(row);
+  };
+  new ResizeObserver(() => {
+    measure();
+    schedule();
+  }).observe(axis);
+  addEventListener("scroll", schedule, { passive: true });
+  addEventListener("resize", schedule);
 }
 
 if (minimap) trackViewport(minimap);
