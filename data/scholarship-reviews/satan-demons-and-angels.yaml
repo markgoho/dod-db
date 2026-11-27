@@ -7,1042 +7,1024 @@
 # Conflicts: Ep 18 00:50:40 (“we don't really see an explicit identification of Satan either with the serpent … or with Lucifer until … the 2nd and 3rd centuries CE”) is not attached: it contradicts the serpent text's NABRE reading of Wisdom 2:24 as an identification, though Dolansky agrees with it; logged as a conflict for the owner's next re-review in data/scholarship-candidates.yaml.
 # First pass: four research agents fetched every source on 2026-11-26 into separate scratch folders with curl and copied quotes from the fetched text; every page quote was then script-matched (whitespace and HTML entities normalised) against those saved texts: 103/103, 0 misses. The second pass must re-fetch. bible.usccb.org and Britannica returned bot checks to most agents; the three NABRE notes cited were fetched by one agent.
 # Flags for the second pass: (1) Many Reference citations are Bible Odyssey pages (Porter, Dolansky, Anderson, Proctor, Boling and Proctor, Angel, Coblentz Bautch, Sommer, Twelftree, Feldman, Merrill Willis): independent authors, one platform. (2) Several EJ and NCE entries carry pre-1996 text; each is attributed and none is the only support for a short. (3) Lucifer: “some church fathers” rests on Bowker alone among modern sources (Bowker's page has no year); Quick (2018) carries the window. (4) Persia: Jonker's “Scholars are in agreement” is reported and called contested; check that wording. (5) Exorcism short: “most historical Jesus scholars agree” rests on Craffert's sentence; Twelftree and Proctor back the Gospel facts. (6) chronicles short says “some … others”; check it does not count scholars. (7) Trigger 28@00:09:46's turn goes on to the Host's own interpolation argument; the page reports interpolation as one reading among several. (8) Boling and Proctor and Proctor share an author; counted once for any rule.
+# Second pass (independent agent, 2026-11-26, #93 delegation): re-fetched every source with curl into its own scratch folder (NABRE Job 1, Wisdom 2 and Genesis 3 via Internet Archive snapshots of the same URLs: bible.usccb.org bot-checks curl); 103/103 quotes found verbatim after normalising whitespace, quotes and dashes, Lesses only at a corrected URL; every Trigger Claim re-read at timestamp and speaker with about two minutes either side. Changed: shorts of chronicles (“first use” → “Satan used as a proper name”), persia (“Persian dualism”; the “others” half narrowed to the dating point Collins and Silverman share), demons (rewritten to Proctor and Hartman: “Rarely … relatively little … insignificant role in its older books”; Lilith not disputed per Lesses; Azazel and shedim left to the text), exorcism (Craffert-only “most … agree” and “disagree about what” moved out; short scoped to the Gospels, Twelftree and Proctor). Texts: chronicles (“primarily”; “of 2 Samuel 24” not in EJ), persia (Jonker's “scholars are in agreement” and the page's “contested” clause dropped per #80; Silverman 2014 sentence cut), serpent (Dolansky's “not the Eden serpent” not in her words), names (EJ's “only” attaches to personalities; Piras clause cut; Gutmann reported, not as an explanation of names), watchers (EJ's “none of these ideas” scope). Cut to uncited: persia/4 (Silverman 2014 n. 3: the article argues for Persian influence; persia/5–7 renumbered 4–6) and names/8 (Piras: not about names). Triggers removed: 28@00:24:30 (sets named angels against the Hebrew Bible, contra names; conflict to log) and 84@00:12:26 (drops the next-line hedge “According to one narrative”). Locators corrected: chronicles/1–2, devil/6–7, persia/5 (was 6), lucifer/3–5, angels/3–4, angel-of-the-lord/4–6, names/4, names/6–7, watchers/8. Registry: lesses-eor-lilith url corrected. Counts after: 14 statements, 101 citations, 17 Trigger Claims. Flags for the lead: (a) log 28@00:24:30 as a conflict in data/scholarship-candidates.yaml; (b) the three NABRE notes were read only in Internet Archive snapshots (live pages bot-checked, not dead); (c) lesses-eor-lilith url changed in the shared registry; (d) silverman-2014-zechariah-3 and piras-eor-angels are now uncited by any page, like dewolf-parks-bo-angels-monsters, fallon-nce-uriel and caciola-eor-exorcism added in cd9a57e; (e) lucifer's “some church fathers” still rests on Bowker alone (kept as an uncontested fact about ancient readers); (f) Bible Odyssey carries most Reference citations (first-pass flag 1), unchanged.
 review: null
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+  secondPass: 2026-11-26
 citations:
   satan/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   satan/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   satan/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   satan/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   satan/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Hayes's next sentence says “the satan” occurs in Numbers 22; EJ reads Num 22:32 as “a satan” without the article. That sentence is not quoted.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Hayes's next sentence says “the satan” occurs in Numbers 22; EJ reads Num 22:32 as “a satan” without the article. That sentence is not quoted. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   satan/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   satan/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched from the Internet Archive snapshot web.archive.org/web/20260316024837/ (live page bot-checked; registry URL kept); quote matched verbatim. Verified.",
     }
   satan/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   satan/9:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Encyclopedia.com page signs only Louis Isaac Rabinowitz at the end; the biblical section is unsigned and its bibliography is pre-1970, so not used for a state-of-the-field claim. The entry uses Hebrew verse numbers (2 Sam 19:23, 1 Kgs 5:18); the text names only verses whose English and Hebrew numbering agree.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Encyclopedia.com page signs only Louis Isaac Rabinowitz at the end; the biblical section is unsigned and its bibliography is pre-1970, so not used for a state-of-the-field claim. The entry uses Hebrew verse numbers (2 Sam 19:23, 1 Kgs 5:18); the text names only verses whose English and Hebrew numbering agree. Second pass 2026-11-26: re-fetched; quote matched verbatim; the text's 1 Kings 11:14 is in the same sentence after the quoted words; verified.",
     }
   satan/10:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   chronicles/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim, but in the Introduction on p. 1, not the p. 6 section: locator corrected to “Introduction, p. 1”; text now keeps the source's “primarily”. Verified.",
     }
   chronicles/2:
     {
-      agent: "pass",
+      agent: "pass Locator now names its section (“A reference to why Satan was brought into the story and his character”, p. 6), since chronicles/1 moved to the Introduction; chronicles/3–4 “same section, p. 6” follow it.",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   chronicles/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   chronicles/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   chronicles/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; verified. Short narrowed from “the first use of Satan as a proper name” to “Satan used as a proper name”: Porter says “only”, EJ “seems”; neither says “first”.",
     }
   chronicles/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Older text (see satan/9); “seems” kept as “seems to be” in the text.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Older text (see satan/9); “seems” kept as “seems to be” in the text. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   chronicles/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; EJ does not name 2 Samuel 24 here, so the text drops “of 2 Samuel 24” (the short's 2 Sam 24:1 rests on Geyser-Fouché and Chukwuka p. 6). Verified.",
     }
   chronicles/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE text with a pre-1966 bibliography; attributed by name as one reading.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE text with a pre-1966 bibliography; attributed by name as one reading. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   devil/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   devil/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   devil/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   devil/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   devil/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   devil/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; locator corrected to the entry's heading, section “Judaism”. Verified.",
     }
   devil/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; locator corrected to the entry's heading, section “Christianity”. Verified.",
     }
   devil/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   devil/9:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   devil/10:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   devil/11:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. EJ Satan is older text; its view is reported as a difference in emphasis, attributed.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. EJ Satan is older text; its view is reported as a difference in emphasis, attributed. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   devil/12:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   persia/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; verified. Collins's “remains controversial” and Silverman against Jonker carry the short's “Scholars disagree” (#80). The short's second half is narrowed to the dating point Collins and Silverman both carry (“the Persian sources are hard to date, which makes the comparison difficult”).",
     }
   persia/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; verified. The old short's “Persian influence is unproven” leaves; “neither proved nor disproved” is Silverman alone and stays in the text, attributed.",
     }
   persia/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   persia/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched (was persia/5); quote matched verbatim in ch. 3 [00:23:05]; verified.",
     }
   persia/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Stephens states the influence flatly; attributed by name, not used for the short. Second pass 2026-11-26: re-fetched (was persia/6); quote matched verbatim; locator corrected to section “Judaism”. Verified.",
     }
   persia/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Stephens states the influence flatly; attributed by name, not used for the short.",
-    }
-  persia/7:
-    {
-      agent: "pass",
-      owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Jonker's “Scholars are in agreement” is footnoted only to Spangenberg 2013 and conflicts with Collins (“controversial”) and Silverman (“in no way … proved or disproved”; Angra Mainyu derivation “typically rejected”). Per #80, two sources disagreeing on the state of the field make it contested: Jonker's sentence is attributed, and the text says the sources show it is contested; the short says “Scholars disagree”.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Jonker's “Scholars are in agreement” is footnoted only to Spangenberg 2013 and conflicts with Collins (“controversial”) and Silverman (“in no way … proved or disproved”; Angra Mainyu derivation “typically rejected”). Per #80, two sources disagreeing on the state of the field make it contested: Jonker's sentence is attributed, and the text says the sources show it is contested; the short says “Scholars disagree”. Second pass 2026-11-26: re-fetched (was persia/7); quote matched verbatim. Per #80 (two sources disagree on the state of the field: the page calls it contested and drops the word), the text no longer relays Jonker's “scholars are in agreement” or adds the page's own “the sources above show that this is contested”; it reports only Jonker's claim. Short's “Scholars disagree” carries the contest. Verified.",
     }
   serpent/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   serpent/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   serpent/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   serpent/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NABRE note's scope is “biblical” in the Catholic canon (Wisdom); the text keeps that wording as the NABRE's.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NABRE note's scope is “biblical” in the Catholic canon (Wisdom); the text keeps that wording as the NABRE's. Second pass 2026-11-26: re-fetched from the Internet Archive snapshot web.archive.org/web/20260421014212/ (live bible.usccb.org returned a bot check to curl; registry URL kept, page not dead); quote matched verbatim. Verified.",
     }
   serpent/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched from the Internet Archive snapshot web.archive.org/web/20260914015929/ (live page bot-checked; registry URL kept); quote matched verbatim. Verified.",
     }
   serpent/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Dolansky's “It is thought by biblical scholars” is her own judgment; attributed and not used as the short.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Dolansky's “It is thought by biblical scholars” is her own judgment; attributed and not used as the short. Second pass 2026-11-26: re-fetched; quote matched verbatim. The quote says Revelation's serpent is “not Satan”; the text had read that as “not the Eden serpent”. Text now follows the quote's positive claim only (the serpent of the combat myth). Verified.",
     }
   serpent/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   lucifer/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Bowker's page on Encyclopedia.com gives no year. The “some of the fathers” clause rests on Bowker alone among modern sources; it is a fact about what ancient texts did (Tertullian, Against Marcion 5.11, 5.17; Origen, De Principiis 1.5.5 read in the ANF translation, not cited). Flag for second pass.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Bowker's page on Encyclopedia.com gives no year. The “some of the fathers” clause rests on Bowker alone among modern sources; it is a fact about what ancient texts did (Tertullian, Against Marcion 5.11, 5.17; Origen, De Principiis 1.5.5 read in the ANF translation, not cited). Flag for second pass. Second pass 2026-11-26: re-fetched; verified. “some of the fathers” rests on Bowker; kept as an uncontested fact about ancient readers (#133 exemption), not a state-of-the-field claim.",
     }
   lucifer/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; matched after dash spacing (PDF “-by” for “– by”); verified.",
     }
   lucifer/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Quick's “almost universally” reports the field; Quick's own dissent is attributed.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Quick's “almost universally” reports the field; Quick's own dissent is attributed. Second pass 2026-11-26: re-fetched; quote matched verbatim in the abstract; locator corrected to “abstract, p. 1”. Verified.",
     }
   lucifer/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; it sits after the heading “Who or What is hêlēl ben-šaḥar?”, p. 12: locator corrected. Verified.",
     }
   lucifer/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim as the last sentence before the heading “Who or What is hêlēl ben-šaḥar?”, p. 12: locator corrected. Verified.",
     }
   angels/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angels/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angels/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. EJ Bamberger text appears to be 1st-ed. (1971) carried into the 2nd ed.; used for attributed detail.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. EJ Bamberger text appears to be 1st-ed. (1971) carried into the 2nd ed.; used for attributed detail. Second pass 2026-11-26: re-fetched; quote matched verbatim; signed Bamberger; locator corrected to the entry's headings, section “Bible”, subsection “terminology”. Verified.",
     }
   angels/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; locator corrected to section “Bible”, subsection “terminology”. Verified.",
     }
   angels/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE Fallon text; “for the most part” kept.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE Fallon text; “for the most part” kept. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angels/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angel-of-the-lord/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angel-of-the-lord/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angel-of-the-lord/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angel-of-the-lord/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; locator corrected to the article's heading “The meaning of the juxtaposition of the angel of the LORD and Yahweh”, p. 303. Verified.",
     }
   angel-of-the-lord/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Quote stops before an OCR-garbled word (“ofYahweh”); the text paraphrases the rest (“seemed too anthropomorphic”), which follows in the source.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Quote stops before an OCR-garbled word (“ofYahweh”); the text paraphrases the rest (“seemed too anthropomorphic”), which follows in the source. Second pass 2026-11-26: re-fetched; quote matched verbatim, p. 304, with no heading between it and the p. 303 heading; locator given the page. The theory is Heidt's, reported by White; the text says White “describes” it. Verified.",
     }
   angel-of-the-lord/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; locator corrected to section “Bible”, subsection “terminology”. Verified.",
     }
   angel-of-the-lord/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   names/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   names/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   names/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   names/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; locator corrected to section “Bible”, subsection “daniel” (signed Bamberger). EJ's “only biblical book” attaches to distinct personalities, not proper names: text reworded to “in Daniel the angels now have proper names … the only biblical book in which angels have distinct personalities”. Verified.",
     }
   names/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   names/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; the block is headed “Apocrypha” and signed Gutmann: locator corrected. Verified.",
     }
   names/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
-    }
-  names/8:
-    {
-      agent: "pass",
-      owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Piras reports Persian adaptations; attributed as one explanation among three.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; locator corrected to section “Apocrypha” (Gutmann). The quote is about “a special doctrine of angels”; the paragraph opens with angels “distinguishable by their own names”, but the quote does not, so the text no longer calls it an explanation of names: it reports Sommer and Gutmann side by side, with Gutmann's own words. Verified.",
     }
   demons/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; verified. Short reworded to what two authors carry: “Rarely, scholars say. The Hebrew Bible has relatively little to say about demons, and demonology plays an insignificant role in its older books” (Proctor, demons/1; Hartman, demons/3). Dropped: “Hebrew has no word for demon” (overstates Proctor's “no direct equivalent”; Hillers glosses shedim with Akkadian šêdu), “few passages” (Hillers: “numerous small traces”), Lilith “disputed” (Lesses: “clear reference”), Azazel (Feldman alone).",
     }
   demons/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   demons/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE Hartman text, older bibliography; attributed. Proctor (2024) carries the window.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE Hartman text, older bibliography; attributed. Proctor (2024) carries the window. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   demons/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. EJ Hillers text (bibliography to 1970); used for attributed detail.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. EJ Hillers text (bibliography to 1970); used for attributed detail. Second pass 2026-11-26: re-fetched; verified. Not used by the short; the text's shedim sentence stays, attributed.",
     }
   demons/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; verified. Hillers's “numerous small traces” is why the short no longer says “few passages”; it stays in the text, attributed.",
     }
   demons/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: Registry URL (…/religion/…/lilith) now serves Gershom Scholem's EJ entry, not Lesses; the quote was found verbatim in Lesses's signed Encyclopedia of Religion entry at …/environment/…/lilith, and the registry url is corrected to it (no citation added). Short no longer calls Lilith disputed: Lesses calls Isa 34:14 a “clear reference”. Verified.",
     }
   demons/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; verified. Azazel rests on Feldman alone, so it leaves the short and stays in the text, attributed.",
     }
   daimon/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   daimon/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   daimon/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   daimon/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   watchers/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   watchers/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   watchers/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   watchers/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   watchers/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Angel dates parts of the Book of the Watchers to the fourth century BCE; Boling and Proctor say third or second century. Both dates are given, attributed.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Angel dates parts of the Book of the Watchers to the fourth century BCE; Boling and Proctor say third or second century. Both dates are given, attributed. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   watchers/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   watchers/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   watchers/8:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim; locator corrected to section “Judaism”. Verified.",
     }
   watchers/9:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; verified. Text reworded: EJ's “None of these ideas is in the biblical text” covers the rebel angels and wicked giants named before the parenthesis, not the demon-spirits after it; the text now names those ideas.",
     }
   watchers/10:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; verified (see watchers/9).",
     }
   watchers/11:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. “Many scholars” is Coblentz Bautch's own wording, attributed; Papaioannou (JBL 2021) dissents but was read only as an abstract (leads).",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. “Many scholars” is Coblentz Bautch's own wording, attributed; Papaioannou (JBL 2021) dissents but was read only as an abstract (leads). Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   exorcism/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Craffert's “most historical Jesus scholars agree” is the source's own sentence (Scholarly, 2015, in window), quoted as the basis for the short's “most historical Jesus scholars agree”.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Craffert's “most historical Jesus scholars agree” is the source's own sentence (Scholarly, 2015, in window), quoted as the basis for the short's “most historical Jesus scholars agree”. Second pass 2026-11-26: re-fetched; verified. Short no longer says “most historical Jesus scholars agree”: one author (Craffert) for a state-of-the-field clause (#133); it stays in the text, attributed. The short is scoped to what the Gospels portray, not a historical verdict.",
     }
   exorcism/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Backs the short's “disagree about what his exorcisms were”.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Backs the short's “disagree about what his exorcisms were”. Second pass 2026-11-26: re-fetched; verified. “disagree about what his exorcisms were” likewise left the short (Craffert alone) and stays in the text.",
     }
   exorcism/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; verified. Backs the new short, scoped to the Gospels (“In the Gospels, yes. Mark portrays Jesus as a prolific exorcist … John's Gospel reports none”), with exorcism/4–5.",
     }
   exorcism/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   exorcism/5:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   exorcism/6:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   exorcism/7:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   tradition/1:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition source; named in the text as the Catechism and the Catholic Church.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition source; named in the text as the Catechism and the Catholic Church. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   tradition/2:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   tradition/3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   tradition/4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition source; named in the text as Got Questions Ministries, an evangelical ministry.",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition source; named in the text as Got Questions Ministries, an evangelical ministry. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
 triggers:
   1@00:28:55:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “maybe” kept. Next sentences (00:29:08) are about the serpent as a symbol of healing.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “maybe” kept. Next sentences (00:29:08) are about the serpent as a symbol of healing. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   1@00:30:14:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Closes the turn begun at 00:28:55 on the serpent; subject Satan.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Closes the turn begun at 00:28:55 on the serpent; subject Satan. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   18@00:12:11:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Trimmed from the turn's middle; the line also carries a merged timestamp fragment at its end ([00:13:09.900]) not quoted. Turn continues “But I would go even further…” (the angel as God), not quoted.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Trimmed from the turn's middle; the line also carries a merged timestamp fragment at its end ([00:13:09.900]) not quoted. Turn continues “But I would go even further…” (the angel as God), not quoted. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   18@00:27:23:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-26: verbatim, trimmed from the turn's middle; “that understanding” refers to Satan as a malevolent figure opposed to God, stated in the turn's first sentence. Verified.",
     }
   18@00:32:04:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedges “Some people will argue” and “probably” kept; the turn goes on with “what I would argue here” about the Chronicler's motive, not quoted.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedges “Some people will argue” and “probably” kept; the turn goes on with “what I would argue here” about the Chronicler's motive, not quoted. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   18@00:34:08:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Job 1:6, ha-satan.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Job 1:6, ha-satan. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   18@00:37:12:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Earlier sentences say Job “comes from the Persian period”, not quoted and not stated on the page (sources disagree on Job's date).",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Earlier sentences say Job “comes from the Persian period”, not quoted and not stated on the page (sources disagree on Job's date). Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   18@00:45:03:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “I think around Justin Martyr or somewhere around there” kept; the page names no first father, so no conflict with lucifer.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “I think around Justin Martyr or somewhere around there” kept; the page names no first father, so no conflict with lucifer. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   18@00:51:43:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge kept in full. The 00:53:30 turn's “a lot of scholars would say Zoroastrianism seems like the most likely source” is not attached; the page reports the question as contested.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge kept in full. The 00:53:30 turn's “a lot of scholars would say Zoroastrianism seems like the most likely source” is not attached; the page reports the question as contested. Second pass 2026-11-26: verbatim; hedge “I don't think we have enough data … to say for sure” kept; the claim ends mid-thought (“I think it's likely that.”), as spoken. Consistent with the persia short (contested). Verified.",
     }
   18@00:54:50:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedged turn (“I think”) on the New Testament systematising Satan; trimmed sentence is the turn's own summary.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedged turn (“I think”) on the New Testament systematising Satan; trimmed sentence is the turn's own summary. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   28@00:02:34:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   28@00:03:40:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   28@00:09:46:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The turn goes on with “as I argued in my book … they insert this word for messenger” (the interpolation view); the page reports interpolation as one of several readings, attributed to the sources, and the Host is not its authority.",
-    }
-  28@00:24:30:
-    {
-      agent: "pass",
-      owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject angels' names.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The turn goes on with “as I argued in my book … they insert this word for messenger” (the interpolation view); the page reports interpolation as one of several readings, attributed to the sources, and the Host is not its authority. Second pass 2026-11-26: verbatim; the turn goes on with the Host's own interpolation argument, not quoted; the page reports interpolation as one reading, attributed to Fallon, White and Bamberger. Verified.",
     }
   28@00:34:57:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject shedim (Deut 32:17).",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject shedim (Deut 32:17). Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   28@00:48:16:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Watchers and demons.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Watchers and demons. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   84@00:06:19:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Greek daimon.",
-    }
-  84@00:12:26:
-    {
-      agent: "pass",
-      owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Watchers' giants and demons; Book of Enoch context in the turns around it.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Greek daimon. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
   84@00:39:01:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Jesus' exorcisms.",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Jesus' exorcisms. Second pass 2026-11-26: re-read at timestamp and speaker with about two minutes either side; verbatim; hedges checked; subject on the page; verified.",
     }
 rules:
   publish-rule:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: 14 statements. Core satan cites HarperCollins (Powell, ed., Reference, 2009), Porter (Bible Odyssey, Reference, 2022), Hayes l20 (Reference, 2006), NABRE Job 1 notes (Reference, 2011, no author), Dolansky (Reference) and Encyclopaedia Judaica (Reference, older text): at least five independent authors, none Host-authored. Rule met.",
+      note: "First pass 2026-11-26: 14 statements. Core satan cites HarperCollins (Powell, ed., Reference, 2009), Porter (Bible Odyssey, Reference, 2022), Hayes l20 (Reference, 2006), NABRE Job 1 notes (Reference, 2011, no author), Dolansky (Reference) and Encyclopaedia Judaica (Reference, older text): at least five independent authors, none Host-authored. Rule met. Second pass 2026-11-26: 14 statements, 101 citations, 17 Trigger Claims after the pass. Core (satan) unchanged and passes: HarperCollins, Porter, Hayes, NABRE Job 1 notes, Dolansky and EJ, at least five independent authors, two or more Reference within the window, none Host-authored. Rule met.",
     }
   consensus-wording:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: “consensus” not used. “most historical Jesus scholars agree” (exorcism short) is Craffert's own sentence, quoted. “Scholars are in agreement” (Jonker) is attributed and called contested because Collins and Silverman disagree (#80). “almost universally” (Quick), “It is thought by biblical scholars” (Dolansky), “Many scholars” (Coblentz Bautch), “most common account” (Proctor) are attributed. Shorts saying “scholars say” rest on two or more authors stating it (#133).",
+      note: "First pass 2026-11-26: “consensus” not used. “most historical Jesus scholars agree” (exorcism short) is Craffert's own sentence, quoted. “Scholars are in agreement” (Jonker) is attributed and called contested because Collins and Silverman disagree (#80). “almost universally” (Quick), “It is thought by biblical scholars” (Dolansky), “Many scholars” (Coblentz Bautch), “most common account” (Proctor) are attributed. Shorts saying “scholars say” rest on two or more authors stating it (#133). Second pass 2026-11-26: exorcism short no longer carries Craffert's “most historical Jesus scholars agree” (one author, #133); the sentence stays in the text, attributed. persia text no longer relays Jonker's “scholars are in agreement” nor adds the page's own “contested” clause (#80: call it contested, drop the word); the short's “Scholars disagree” rests on Collins's “remains controversial” and Silverman against Jonker. demons short no longer says “Few” (Hillers: “numerous small traces”). Remaining “almost universally” (Quick), “It is thought by biblical scholars” (Dolansky), “Many scholars” (Coblentz Bautch), “most common account” (Proctor), “Some scholars … Others” (EJ Bamberger; Geyser-Fouché and Chukwuka) are attributed in the text. Pass.",
     }
   dissent-attributed:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Geyser-Fouché and Chukwuka vs Porter, EJ and Barnett on 1 Chr 21:1; EJ Satan's “barely personalized” vs the others on the Apocrypha; Collins, Silverman vs Stephens, Jonker, Hayes on Persian influence; Dolansky on Revelation's serpent vs NABRE; Quick's dissent on Venus; the angel-of-the-Lord readings (Fallon, White, Bamberger, Sommer); causes of angel names (Sommer, Piras, Gutmann); Angel vs Boling and Proctor on dating; all named.",
+      note: "First pass 2026-11-26: Geyser-Fouché and Chukwuka vs Porter, EJ and Barnett on 1 Chr 21:1; EJ Satan's “barely personalized” vs the others on the Apocrypha; Collins, Silverman vs Stephens, Jonker, Hayes on Persian influence; Dolansky on Revelation's serpent vs NABRE; Quick's dissent on Venus; the angel-of-the-Lord readings (Fallon, White, Bamberger, Sommer); causes of angel names (Sommer, Piras, Gutmann); Angel vs Boling and Proctor on dating; all named. Second pass 2026-11-26: re-checked; persia's Silverman 2014 sentence cut (persia/4 moved to uncited) and names' Piras explanation cut (names/8 moved to uncited); remaining splits all named. Pass.",
     }
   tradition-named:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: ccc-328 and ccc-391 named as the Catechism of the Catholic Church and the Catholic Church (registry convention, ccc-112); gotquestions-demons as Got Questions Ministries, an evangelical ministry. Neither counts toward the core.",
+      note: "First pass 2026-11-26: ccc-328 and ccc-391 named as the Catechism of the Catholic Church and the Catholic Church (registry convention, ccc-112); gotquestions-demons as Got Questions Ministries, an evangelical ministry. Neither counts toward the core. Second pass 2026-11-26: re-checked against ccc-328, ccc-391 and gotquestions-demons fetched today; named as in the registry. Pass.",
     }
 sources:
   harpercollins-2009-dictionary:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Already registered (Reference, 2009). Entries “Satan”, “devil”, “demon” on Bible Odyssey; per-citation urls.",
+      note: "First pass 2026-11-26: Already registered (Reference, 2009). Entries “Satan”, “devil”, “demon” on Bible Odyssey; per-citation urls. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   porter-bo-satan:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Bible Odyssey 2022",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2022 Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   hayes-rlst145-l20:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Already registered (Reference, 2006).",
+      note: "First pass 2026-11-26: Already registered (Reference, 2006). Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   nabre-job-1-notes:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference (NABRE notes, USCCB, 2011, scholarly association notes per CONTEXT.md).",
+      note: "First pass 2026-11-26: Reference (NABRE notes, USCCB, 2011, scholarly association notes per CONTEXT.md). Second pass 2026-11-26: live bible.usccb.org served a bot check to curl; read the Internet Archive snapshot of the same URL (web.archive.org/web/20260316024837/). Page not dead, registry url kept.",
     }
   dolansky-bo-satan-name-video:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Bible Odyssey",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   ej-satan:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica on Encyclopedia.com. Only signature on the page is Rabinowitz's at the end; the biblical section is unsigned, so author null. Bibliography 1922–1962: older text, never alone for a state-of-the-field claim.",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica on Encyclopedia.com. Only signature on the page is Rabinowitz's at the end; the biblical section is unsigned, so author null. Bibliography 1922–1962: older text, never alone for a state-of-the-field claim. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   geyser-fouche-chukwuka-2021-1-chronicles-21:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; HTS 77(4) 2021, open access. Chukwuka's 2020 Pretoria thesis contradicts this article on 1 Chr 21:1 as a name; the thesis is not cited.",
+      note: "First pass 2026-11-26: Scholarly; HTS 77(4) 2021, open access. Chukwuka's 2020 Pretoria thesis contradicts this article on 1 Chr 21:1 as a name; the thesis is not cited. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   barnett-nce-satan:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference (New Catholic Encyclopedia, Catholic publisher, scholarly entries); bibliography to 1965.",
+      note: "First pass 2026-11-26: Reference (New Catholic Encyclopedia, Catholic publisher, scholarly entries); bibliography to 1965. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   jonker-2017-satan-figure:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; Old Testament Essays 30/2 (2017), peer-reviewed (submission note on p. 348).",
+      note: "First pass 2026-11-26: Scholarly; Old Testament Essays 30/2 (2017), peer-reviewed (submission note on p. 348). Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   stephens-eor-demons:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005",
+      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005 Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   ej-mastema:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   ej-belial:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   collins-eor-apocalypse:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005",
+      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005 Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   silverman-2011-iranian-influence:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; The Bible and Interpretation (University of Arizona), Oct 2011; Silverman is a specialist in Iranian influence (Persepolis and Jerusalem, 2012). Same author as silverman-2014-zechariah-3: counted once.",
+      note: "First pass 2026-11-26: Reference; The Bible and Interpretation (University of Arizona), Oct 2011; Silverman is a specialist in Iranian influence (Persepolis and Jerusalem, 2012). Same author as silverman-2014-zechariah-3: counted once. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   silverman-2014-zechariah-3:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; Journal of Hebrew Scriptures 14 (2014), DOI 10.5508/jhs.2014.v14.a6.",
+      note: "First pass 2026-11-26: Scholarly; Journal of Hebrew Scriptures 14 (2014), DOI 10.5508/jhs.2014.v14.a6. Second pass 2026-11-26: no longer cited on this page (persia/4 moved to uncited): the article argues for Persian influence on Satan via Achaemenid administration, and citing only its n. 3 on Angra Mainyu set it on the sceptical side.",
     }
   hayes-rlst145-l23:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Already registered (Reference, 2006).",
+      note: "First pass 2026-11-26: Already registered (Reference, 2006). Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   hayes-rlst145-l4:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Already registered (Reference, 2006).",
+      note: "First pass 2026-11-26: Already registered (Reference, 2006). Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   anderson-bo-reception-second-creation:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Bible Odyssey 2020",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2020 Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   nabre-wisdom-2-notes:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference (NABRE).",
+      note: "First pass 2026-11-26: Reference (NABRE). Second pass 2026-11-26: live page bot-checked; read the Internet Archive snapshot web.archive.org/web/20260421014212/. Registry url kept.",
     }
   nabre-genesis-3-notes:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference (NABRE).",
+      note: "First pass 2026-11-26: Reference (NABRE). Second pass 2026-11-26: live page bot-checked; read the Internet Archive snapshot web.archive.org/web/20260914015929/ (earlier 2026 snapshots are bot-check pages). Registry url kept.",
     }
   dolansky-bo-ancient-serpent-video:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Bible Odyssey",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   bowker-lucifer:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Concise Oxford Dictionary of World Religions (OUP), on Encyclopedia.com; the page gives no year.",
+      note: "First pass 2026-11-26: Reference; Concise Oxford Dictionary of World Religions (OUP), on Encyclopedia.com; the page gives no year. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   quick-2018-helel:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; Vetus Testamentum 68.1 (2018); author's accepted manuscript on ORA, metadata from the ORA record.",
+      note: "First pass 2026-11-26: Scholarly; Vetus Testamentum 68.1 (2018); author's accepted manuscript on ORA, metadata from the ORA record. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   sommer-bo-angels-hebrew-bible:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Bible Odyssey 2017",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2017 Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   white-1999-angel-of-the-lord:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; Tyndale Bulletin 50.2 (1999), evangelical venue, peer-reviewed; used only for the messenger meaning and the state of explanation.",
+      note: "First pass 2026-11-26: Scholarly; Tyndale Bulletin 50.2 (1999), evangelical venue, peer-reviewed; used only for the messenger meaning and the state of explanation. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   ej-angels-bible:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   fallon-nce-angels:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference (NCE). Confessional passages (“an object of divine faith”) not used.",
+      note: "First pass 2026-11-26: Reference (NCE). Confessional passages (“an object of divine faith”) not used. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   fallon-nce-angel-of-the-lord:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference (NCE). The entry's later Logos/Christ reading is not used.",
+      note: "First pass 2026-11-26: Reference (NCE). The entry's later Logos/Christ reading is not used. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   merrill-willis-bo-daniel:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Already registered (Reference, 2015).",
+      note: "First pass 2026-11-26: Already registered (Reference, 2015). Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   ej-raphael:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   ej-angels-apocrypha:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   piras-eor-angels:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005",
+      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005 Second pass 2026-11-26: no longer cited on this page (names/8 moved to uncited): Piras's sentence is about post-exilic angelology in general, not angels' names.",
     }
   proctor-bo-demons:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Bible Odyssey 2024",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2024 Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   hartman-nce-demon-bible:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference (NCE); bibliography to the 1960s.",
+      note: "First pass 2026-11-26: Reference (NCE); bibliography to the 1960s. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   ej-demons:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   lesses-eor-lilith:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005",
+      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005 Second pass 2026-11-26: registry url corrected from …/religion/…/lilith (now serves Gershom Scholem's EJ “Lilith”) to …/environment/…/lilith, where Lesses's signed 2005 entry and the demons/6 quote read verbatim. Edition and class unchanged.",
     }
   feldman-bo-scapegoat:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Bible Odyssey 2020",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2020 Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   boling-proctor-bo-watchers:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Bible Odyssey 2024",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2024 Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   angel-bo-nephilim:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Bible Odyssey 2024",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2024 Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   ej-nephilim:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   coblentz-bautch-bo-enoch:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Bible Odyssey 2022",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2022 Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   craffert-2015-possession:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Scholarly; HTS 71(1) 2015, art. 2891, CC-BY.",
+      note: "First pass 2026-11-26: Scholarly; HTS 71(1) 2015, art. 2891, CC-BY. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   twelftree-bo-exorcism-gospels:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Reference; Bible Odyssey 2019",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2019 Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   ccc-328:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Tradition; §§328–336 on vatican.va (__P1A), named as the Catholic Church.",
+      note: "First pass 2026-11-26: Tradition; §§328–336 on vatican.va (__P1A), named as the Catholic Church. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   ccc-391:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Tradition; §§391–395 on vatican.va (__P1C), named as the Catholic Church.",
+      note: "First pass 2026-11-26: Tradition; §§391–395 on vatican.va (__P1C), named as the Catholic Church. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
   gotquestions-demons:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Tradition; unsigned, page last updated 5 Dec 2025; named as Got Questions Ministries, an evangelical ministry.",
+      note: "First pass 2026-11-26: Tradition; unsigned, page last updated 5 Dec 2025; named as Got Questions Ministries, an evangelical ministry. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
 leads:
   - "Peggy L. Day, An Adversary in Heaven: śāṭān in the Hebrew Bible (1988): standard monograph; not public."
@@ -1084,3 +1066,7 @@ uncited:
   - "Catholic Encyclopedia (1910), “Lucifer”: read; outside the window and Tradition; not cited."
   - "Catechism §§330, 336, 392, 395 and Got Questions, “How, why, and when did Satan fall from heaven?”: read; not cited."
   - "Encyclopedia.com juvenile and occult entries (U*X*L, Encyclopedia of Occultism and Parapsychology, Gale): read; excluded classes."
+  - "Jason M. Silverman, JHS 14 (2014), p. 2 n. 3: “This is the form of influence typically rejected as well”: read; second pass 2026-11-26 moved from persia/4. The article itself argues for Persian influence on the formation of Satan from Achaemenid administration (p. 2); citing only the note set Silverman on the sceptical side."
+  - "Andrea Piras, “Angels”, Encyclopedia of Religion (2005): “The history of post-exile Judaism contains interesting cultural adaptations from Persian angelology.”: read; second pass 2026-11-26 moved from names/8. The sentence is about angelology generally, not about angels getting names."
+  - "Trigger Claim removed 2026-11-26 (second pass): Ep 28, Dan McClellan, 00:24:30.320: “So New Testament angels, very different from Hebrew Bible angels. And they have names.” As trimmed it sets named angels against the Hebrew Bible, against the names statement (Gabriel and Michael named in Daniel); per the 2026-11-25 rule it is not attached. Logging it as a conflict in data/scholarship-candidates.yaml is left to the lead agent."
+  - "Trigger Claim removed 2026-11-26 (second pass): Ep 84, Dan McClellan, 00:12:26.090: “… the spirits of the deceased Nephilim are the evil spirits that then become the demons.” The trimmed text drops the hedge spoken next at 00:12:42 (“According to one narrative, there are a bunch of different narratives”); 28@00:48:16 (“one kind of origin story”) keeps the subject with its hedge."

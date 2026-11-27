@@ -75,15 +75,15 @@ statements:
   - id: chronicles
     group: "Satan in the Hebrew Bible"
     question: "Is “Satan” a name in 1 Chronicles 21:1?"
-    short: "Scholars disagree. The verse has satan incite David's census where 2 Samuel 24:1 has the Lord; some read it as the first use of Satan as a proper name, others as a common noun for an adversary."
-    text: "Ananda Geyser-Fouché and Ebele Chukwuka's article in HTS Teologiese Studies calls 1 Chronicles 21 a much-debated text because of the presence of Satan or satan. It reports that some scholars see the figure as an attempt to remove evil from Yahweh, and that English translations follow a long tradition of reading Satan as a proper noun; the authors conclude that Satan there still serves as a common noun for an adversary, and that Chronicles holds evil as well as good to come from God. Adam Porter's Bible Odyssey article says 1 Chronicles 21:1 is the only place the Hebrew Bible uses the noun as a name. The Encyclopaedia Judaica says the article is dropped there and Satan seems to be a real proper name, substituted for “the Lord” of 2 Samuel 24 because of doctrinal considerations. W. F. Barnett's entry in the New Catholic Encyclopedia reads the verse as showing that the Chronicler knew a personal principle of evil that warred against God."
+    short: "Scholars disagree. The verse has satan incite David's census where 2 Samuel 24:1 has the Lord; some read it as Satan used as a proper name, others as a common noun for an adversary."
+    text: "Ananda Geyser-Fouché and Ebele Chukwuka's article in HTS Teologiese Studies calls 1 Chronicles 21 a much-debated text, primarily because of the presence of Satan or satan. It reports that some scholars see the figure as an attempt to remove evil from Yahweh, and that English translations follow a long tradition of reading Satan as a proper noun; the authors conclude that Satan there still serves as a common noun for an adversary, and that Chronicles holds evil as well as good to come from God. Adam Porter's Bible Odyssey article says 1 Chronicles 21:1 is the only place the Hebrew Bible uses the noun as a name. The Encyclopaedia Judaica says the article is dropped there and Satan seems to be a real proper name, substituted for “the Lord” because of doctrinal considerations. W. F. Barnett's entry in the New Catholic Encyclopedia reads the verse as showing that the Chronicler knew a personal principle of evil that warred against God."
     cites:
       - source: geyser-fouche-chukwuka-2021-1-chronicles-21
-        locator: "section “A reference to why Satan was brought into the story and his character”, p. 6"
+        locator: "Introduction, p. 1"
         quote: "1 Chronicles 21 has been a much-debated text, primarily because of the presence of Satan or satan"
         read: 2026-11-26
       - source: geyser-fouche-chukwuka-2021-1-chronicles-21
-        locator: "same section, p. 6"
+        locator: "section “A reference to why Satan was brought into the story and his character”, p. 6"
         quote: "Some scholars believe that the insertion of the figure Satan in this verse is an attempt to extract the evil from Yahweh."
         read: 2026-11-26
       - source: geyser-fouche-chukwuka-2021-1-chronicles-21
@@ -137,11 +137,11 @@ statements:
         quote: "By the time of the New Testament, Jews had come to understand Satan as a more independent and evil entity, opposed to God, rather than obeying God"
         read: 2026-11-26
       - source: stephens-eor-demons
-        locator: "section on Judaism and Christianity"
+        locator: "section “Judaism”"
         quote: "The Jewish apocrypha and pseudepigrapha accelerated the dualistic process that turned all demons into the enemies of God."
         read: 2026-11-26
       - source: stephens-eor-demons
-        locator: "section on Judaism and Christianity"
+        locator: "section “Christianity”"
         quote: "Jesus and the Gospel writers present Satan as Jesus's declared personal adversary (Mark 3:23; Luke 11:18–21), paralleling the representation of Satan as Yahweh's adversary in Jewish apocrypha"
         read: 2026-11-26
       - source: ej-mastema
@@ -168,8 +168,8 @@ statements:
   - id: persia
     group: "How Satan became the devil"
     question: "Did Persian religion shape the idea of Satan?"
-    short: "Scholars disagree. Some see Zoroastrian dualism behind the Jewish idea of a cosmic enemy of God; others say Persian influence is unproven, partly because the Zoroastrian texts are hard to date."
-    text: "John Collins's entry in the Encyclopedia of Religion says Persian dualism seems to have influenced the Jewish sect behind the Dead Sea Scrolls, but that the dating of Persian traditions is fraught with difficulty and remains controversial. Jason Silverman's article in The Bible and Interpretation says Iranian influence on Judaism can in no way yet be said to have been proved or disproved, and that the Zoroastrian documents known to scholarship come from late in the Sassanian period. In the Journal of Hebrew Scriptures he notes that deriving the satan from Angra Mainyu, the evil spirit of later Zoroastrianism, is the form of influence typically rejected. Christine Hayes's Yale lectures say later apocalypses do seem to show some Persian influence in their oppositions of light and darkness and good and evil. Walter Stephens's entry in the Encyclopedia of Religion says the Israelites met dualistic theologies deriving from Zarathushtra during the exile. Louis Jonker's article in Old Testament Essays says scholars are in agreement that the dualistic worldview that developed in the late Achaemenid era played a major role in personalising evil as a Satan figure; the sources above show that this is contested."
+    short: "Scholars disagree. Some see Persian dualism behind the Jewish idea of a cosmic enemy of God; others note that the Persian sources are hard to date, which makes the comparison difficult."
+    text: "John Collins's entry in the Encyclopedia of Religion says Persian dualism seems to have influenced the Jewish sect behind the Dead Sea Scrolls, but that the dating of Persian traditions is fraught with difficulty and remains controversial. Jason Silverman's article in The Bible and Interpretation says Iranian influence on Judaism can in no way yet be said to have been proved or disproved, and that the Zoroastrian documents known to scholarship come from late in the Sassanian period. Christine Hayes's Yale lectures say later apocalypses do seem to show some Persian influence in their oppositions of light and darkness and good and evil. Walter Stephens's entry in the Encyclopedia of Religion says the Israelites met dualistic theologies deriving from Zarathushtra during the exile. Louis Jonker's article in Old Testament Essays says the dualistic worldview that developed in the late Achaemenid era played a major role in personalising evil as a Satan figure."
     cites:
       - source: collins-eor-apocalypse
         locator: "section “Origins of the Genre”"
@@ -183,16 +183,12 @@ statements:
         locator: "paragraph on the Zoroastrian sources"
         quote: "are difficult and problematic for comparative use since the documents currently known to scholarship are from late in the reign of the last Iranian empire before the Arab invasion (known as the Sassanian Empire)."
         read: 2026-11-26
-      - source: silverman-2014-zechariah-3
-        locator: "p. 2, n. 3"
-        quote: "This is the form of influence typically rejected as well"
-        read: 2026-11-26
       - source: hayes-rlst145-l23
         locator: "ch. 3, “Features of Apocalyptic Literature” [00:23:05]"
         quote: "So there does seem to be some Persian influence and of course we're well into the Persian period at this point."
         read: 2026-11-26
       - source: stephens-eor-demons
-        locator: "section on Judaism"
+        locator: "section “Judaism”"
         quote: "During the exile, the Israelites became acquainted with dualistic theologies deriving from the teachings of Zarathushtra, wherein divine rivals of equal power compete for human allegiance."
         read: 2026-11-26
       - source: jonker-2017-satan-figure
@@ -203,7 +199,7 @@ statements:
     group: "How Satan became the devil"
     question: "Is the serpent in Genesis 3 Satan?"
     short: "Not in Genesis itself, scholars say. Later Jewish and Christian readers identified the serpent with the devil."
-    text: "Christine Hayes's Yale lectures say that although many later Hellenistic Jewish texts and the New Testament identify the snake as a Satan, in Genesis 3 it is simply a talking animal. Brad Anderson's Bible Odyssey article says the text does not reveal the serpent's nature or identity, that the serpent's association with evil became common in Judaism in the Second Temple period (1 Enoch, the Life of Adam and Eve), and that it was not a long stretch for readers to equate it with Satan. The New American Bible calls Wisdom 2:24 the first biblical text to equate the serpent of Genesis 3 with the devil, and says Christian tradition identified the snake with the devil, citing also John 8:44 and Revelation 12:9 and 20:2. Shawna Dolansky's Bible Odyssey talk says biblical scholars think the “ancient serpent” of Revelation is not the Eden serpent but the serpent of the ancient Near Eastern combat myth, and that the associations of Satan are not brought together with the serpent in the garden until early Christian writings."
+    text: "Christine Hayes's Yale lectures say that although many later Hellenistic Jewish texts and the New Testament identify the snake as a Satan, in Genesis 3 it is simply a talking animal. Brad Anderson's Bible Odyssey article says the text does not reveal the serpent's nature or identity, that the serpent's association with evil became common in Judaism in the Second Temple period (1 Enoch, the Life of Adam and Eve), and that it was not a long stretch for readers to equate it with Satan. The New American Bible calls Wisdom 2:24 the first biblical text to equate the serpent of Genesis 3 with the devil, and says Christian tradition identified the snake with the devil, citing also John 8:44 and Revelation 12:9 and 20:2. Shawna Dolansky's Bible Odyssey talk says biblical scholars think the “ancient serpent” of Revelation is the serpent of the ancient Near Eastern combat myth, and that the associations of Satan are not brought together with the serpent in the garden until early Christian writings."
     cites:
       - source: hayes-rlst145-l4
         locator: "ch. 2 [00:05:44]"
@@ -248,15 +244,15 @@ statements:
         quote: "Accordingly, while in its present position the poem can be linked to a Babylonian ruler only in a secondary way – by the framing vv. 3-4a and 22-23, and not by any particular historical link in the text itself"
         read: 2026-11-26
       - source: quick-2018-helel
-        locator: "introduction"
+        locator: "abstract, p. 1"
         quote: "almost universally understood by commentators and translators alike to refer to the ‘Day Star, son of the Dawn’, and thus taken to refer to the ‘morning star’, the planet Venus."
         read: 2026-11-26
       - source: quick-2018-helel
-        locator: "section on previous interpretations"
+        locator: "section “Who or What is hêlēl ben-šaḥar?”, p. 12"
         quote: "the Vulgate has Lucifer, qui mane oriebaris, ‘Lucifer [sc. Venus], who used to rise early in the morning’ – the interpretation which has dominated the subsequent translations."
         read: 2026-11-26
       - source: quick-2018-helel
-        locator: "end of the section on previous interpretations"
+        locator: "last sentence before the heading “Who or What is hêlēl ben-šaḥar?”, p. 12"
         quote: "Yet despite the prevalence of this interpretation of hêlēl ben-šaḥar in modern translations, the meaning ‘Venus’ is by no means the necessary or even the most obvious reading of the phrase."
         read: 2026-11-26
   - id: angels
@@ -274,11 +270,11 @@ statements:
         quote: "It means messenger or representative, both human and divine."
         read: 2026-11-26
       - source: ej-angels-bible
-        locator: "section “In the Bible”, terminology"
+        locator: "section “Bible”, subsection “terminology”"
         quote: 'It is applied frequently to human agents (e.g., Gen. 32:4) and is sometimes used figuratively (e.g., Ps. 104:4). This term was rendered in the Greek Bible by angelos which has the same variety of meanings; only when it was borrowed by the Latin Bible and then passed into other European languages did it acquire the exclusive meaning of "angel."'
         read: 2026-11-26
       - source: ej-angels-bible
-        locator: "section “In the Bible”, terminology"
+        locator: "section “Bible”, subsection “terminology”"
         quote: 'Often the angel is called simply "man."'
         read: 2026-11-26
       - source: fallon-nce-angels
@@ -308,15 +304,15 @@ statements:
         quote: "Each theory has valid elements that aid in the understanding of the individual passages, but none of them solves all the problems concerned with the messenger of the Lord wherever it appears."
         read: 2026-11-26
       - source: white-1999-angel-of-the-lord
-        locator: "section on the interchangeability of the angel of the LORD and Yahweh"
+        locator: "section “The meaning of the juxtaposition of the angel of the LORD and Yahweh”, p. 303"
         quote: "As widely noted as the device of interchangeability of the angel of the LORD and Yahweh is, it is surprising to find so little in the literature that satisfactorily explains this phenomenon."
         read: 2026-11-26
       - source: white-1999-angel-of-the-lord
-        locator: "section on Heidt's three theories"
+        locator: "same section, on Heidt's three theories, p. 304"
         quote: "The Interpolation Theory, Heidt's third offering, suggests that the theological ideas of the people of Israel were transformed over the course of its long history and the 'angel of the LORD' was added to the text in those instances where the operations of"
         read: 2026-11-26
       - source: ej-angels-bible
-        locator: "section “In the Bible”, terminology"
+        locator: "section “Bible”, subsection “terminology”"
         quote: "Some scholars infer from this phenomenon that the angel was not regarded as an independent being, but simply as a manifestation of the Divine power and will. Others suppose that in the earliest version of these stories a human being was confronted directly by God, and that later scribes toned down the boldness of this concept by interposing an angel."
         read: 2026-11-26
       - source: sommer-bo-angels-hebrew-bible
@@ -327,7 +323,7 @@ statements:
     group: "Angels"
     question: "When do angels get names?"
     short: "In the latest books of the Hebrew Bible, scholars say: Gabriel and Michael are first named in Daniel, written in the second century BCE. Raphael and Uriel appear as angels' names in Jewish writings outside the Hebrew Bible, such as Tobit and 1 Enoch."
-    text: "Benjamin Sommer's Bible Odyssey article says some of the latest texts of the Hebrew Bible start using names for angels, such as Gabriel and Michael in Daniel, written in the second century BCE. Amy Merrill Willis's Bible Odyssey article says Daniel provides the first references to Michael and Gabriel as named angels. Bernard Bamberger's entry in the Encyclopaedia Judaica says Daniel is the only biblical book in which angels have proper names and distinct personalities, and the first in which each nation has an angelic patron. Gershom Scholem's entry says Raphael first appears as an angel's name in Tobit 12:15 and 1 Enoch 20:3, where he is one of the seven archangels, and Joshua Gutmann's says later apocalyptic writings name Uriel and others as interpreters of visions. The sources explain the change differently: Sommer says that by Daniel's time polytheism was no longer a major threat, so authors could speak of heavenly beings more freely; Andrea Piras's entry in the Encyclopedia of Religion speaks of cultural adaptations from Persian angelology after the exile; Gutmann says the conditions for a doctrine of angels existed only in the Hellenistic period."
+    text: "Benjamin Sommer's Bible Odyssey article says some of the latest texts of the Hebrew Bible start using names for angels, such as Gabriel and Michael in Daniel, written in the second century BCE. Amy Merrill Willis's Bible Odyssey article says Daniel provides the first references to Michael and Gabriel as named angels. Bernard Bamberger's entry in the Encyclopaedia Judaica says that in Daniel the angels now have proper names, that it is the only biblical book in which angels have distinct personalities, and that it is the first in which each nation has an angelic patron. Gershom Scholem's entry says Raphael first appears as an angel's name in Tobit 12:15 and 1 Enoch 20:3, where he is one of the seven archangels, and Joshua Gutmann's says later apocalyptic writings name Uriel and others as interpreters of visions. Sommer says that by Daniel's time polytheism was no longer a major threat, so authors could speak of heavenly beings more freely; Gutmann says the conditions for a special doctrine of angels existed only in the Hellenistic period."
     cites:
       - source: sommer-bo-angels-hebrew-bible
         locator: "paragraph on names"
@@ -342,7 +338,7 @@ statements:
         quote: "The Book of Daniel provides the first references to Michael and Gabriel as named angels in the Hebrew Bible/Old Testament."
         read: 2026-11-26
       - source: ej-angels-bible
-        locator: "section “In the Bible”, on Daniel"
+        locator: "section “Bible”, subsection “daniel”"
         quote: "Moreover, the angels now have proper names: *Gabriel (8:16; 9:21) and *Michael (10:13; 12:1). This is the only biblical book in which angels have distinct personalities. Finally, the idea that each nation has an angelic patron, whose actions and destinies are bound up with those of his nation, is encountered for the first time."
         read: 2026-11-26
       - source: ej-raphael
@@ -350,21 +346,17 @@ statements:
         quote: "The name occurs in the Bible (i Chron. 26:7) but not yet as an angelic name, first appearing as such in the Apocrypha (Tob. 12:15 and i En. 20:3), where he is one of the seven archangels."
         read: 2026-11-26
       - source: ej-angels-apocrypha
-        locator: "section “In the Apocrypha and Pseudepigrapha”"
+        locator: "section “Apocrypha”"
         quote: "In later apocalyptic writings various angels appear as interpreters of symbolic visions, such as Uriel (i En. 19:1; 27:2), Raguel (23:4), Raphael (32:6), and Michael (60:4 ff.; Testament of Abraham, ed. James, passim)."
         read: 2026-11-26
       - source: ej-angels-apocrypha
-        locator: "section “In the Apocrypha and Pseudepigrapha”"
+        locator: "section “Apocrypha”"
         quote: "It was not, however, until the Hellenistic period of Jewish history that the conditions existed for a special doctrine of angels."
-        read: 2026-11-26
-      - source: piras-eor-angels
-        locator: "section on Judaism"
-        quote: "The history of post-exile Judaism contains interesting cultural adaptations from Persian angelology."
         read: 2026-11-26
   - id: demons
     group: "Demons"
     question: "Are there demons in the Hebrew Bible?"
-    short: "Few, scholars say. Hebrew has no word for “demon”, and the few passages read that way are uncertain: some name foreign gods, and figures such as Lilith and Azazel are disputed."
+    short: "Rarely, scholars say. The Hebrew Bible has relatively little to say about demons, and demonology plays an insignificant role in its older books."
     text: "Travis Proctor's Bible Odyssey article says the Hebrew Bible has relatively little to say about demons proper, that the Greek term has no direct equivalent in Hebrew, and that the Septuagint uses “demon” mainly for foreign gods; demon-like creatures may be implied in Isaiah 34:14–15, and foreign gods may carry demonic overtones in Deuteronomy 32:17. L. F. Hartman's entry in the New Catholic Encyclopedia says demonology played an insignificant role in the older books of the Old Testament, though belief in demons was widespread in the ancient Near East. Delbert Hillers's entry in the Encyclopaedia Judaica says the Bible's foreign gods are called shedim, a word related to Akkadian šêdu, and warns against overestimating the small traces of belief in demons in the Bible or underestimating the difficulty of interpreting them, since it is often impossible to tell whether a named demon belonged to living belief or to literary language. Rebecca Lesses's entry in the Encyclopedia of Religion says Isaiah 34:14 is the only clear reference to Lilith in the Hebrew Scriptures, and that Lilith as a demon is developed in later Jewish literature. Liane Feldman's Bible Odyssey article says Azazel, to whom the scapegoat is sent in Leviticus 16, remains somewhat enigmatic, and has been identified as a place, a foreign deity or a wilderness demon."
     cites:
       - source: proctor-bo-demons
@@ -422,7 +414,7 @@ statements:
     group: "Demons"
     question: "Where do demons come from in 1 Enoch?"
     short: "From the Watchers. In the Book of the Watchers, now 1 Enoch 1–36, angels descend and father giants with human women, and the giants' spirits live on after death as demons."
-    text: "Travis Proctor's Bible Odyssey article on demons says the most common account among ancient Jews and Christians made demons the spirits of primordial giants born of fallen angels and mortal women, a narrative found in the Book of the Watchers. McKenna Boling and Travis Proctor's article on the Watchers dates that book to the third or second century BCE, says its Watchers almost certainly have some connection to the sons of God of Genesis 6, and cites 1 Enoch 15:9–12 for the giants' souls tormenting the earth as demonic beings after their death. Joseph Angel's Bible Odyssey article says the Book of the Watchers makes the biblical sons of God rebellious angels, says parts of it date as early as the fourth century BCE, and notes that in some versions the giants' disembodied spirits survive as demonic forces. Walter Stephens's entry in the Encyclopedia of Religion says pseudepigraphic and Talmudic sources identify some demons as the souls of the dead giants. Bernard Bamberger's entry on the Nephilim in the Encyclopaedia Judaica says these ideas are not in the biblical text, which Second Temple writings elaborated and reinterpreted. Kelley Coblentz Bautch's Bible Odyssey article says many scholars think 2 Peter 2:4 and Jude 6 allude to the punishment of fallen angels in the Enoch literature, and that Jude 14–15 quotes the Book of the Watchers."
+    text: "Travis Proctor's Bible Odyssey article on demons says the most common account among ancient Jews and Christians made demons the spirits of primordial giants born of fallen angels and mortal women, a narrative found in the Book of the Watchers. McKenna Boling and Travis Proctor's article on the Watchers dates that book to the third or second century BCE, says its Watchers almost certainly have some connection to the sons of God of Genesis 6, and cites 1 Enoch 15:9–12 for the giants' souls tormenting the earth as demonic beings after their death. Joseph Angel's Bible Odyssey article says the Book of the Watchers makes the biblical sons of God rebellious angels, says parts of it date as early as the fourth century BCE, and notes that in some versions the giants' disembodied spirits survive as demonic forces. Walter Stephens's entry in the Encyclopedia of Religion says pseudepigraphic and Talmudic sources identify some demons as the souls of the dead giants. Bernard Bamberger's entry on the Nephilim in the Encyclopaedia Judaica says Second Temple writings elaborated and reinterpreted the fragmentary narrative of Genesis 6, making the angels rebels against God and their giant offspring wicked, ideas it says are not in the biblical text. Kelley Coblentz Bautch's Bible Odyssey article says many scholars think 2 Peter 2:4 and Jude 6 allude to the punishment of fallen angels in the Enoch literature, and that Jude 14–15 quotes the Book of the Watchers."
     cites:
       - source: proctor-bo-demons
         locator: "section “Where do demons come from?”"
@@ -453,7 +445,7 @@ statements:
         quote: "In others, they are drowned, but their disembodied spirits survive as demonic forces that continue to afflict humanity until the final judgement."
         read: 2026-11-26
       - source: stephens-eor-demons
-        locator: "section on Judaism"
+        locator: "section “Judaism”"
         quote: 'Pseudepigraphic and Talmudic sources identify some demons as the souls of deceased evil giants, who were born when the Watchers, also called bene haelohim or "sons of God," mated with the "daughters of men"'
         read: 2026-11-26
       - source: ej-nephilim
@@ -471,7 +463,7 @@ statements:
   - id: exorcism
     group: "Demons"
     question: "Was Jesus known as an exorcist?"
-    short: "Yes, most historical Jesus scholars agree, though they disagree about what his exorcisms were. Exorcism is the miracle Mark mentions most, and John reports none."
+    short: "In the Gospels, yes. Mark portrays Jesus as a prolific exorcist, and exorcism is the miracle that Gospel mentions most; John's Gospel reports none."
     text: "Pieter Craffert's article in HTS Teologiese Studies says the one aspect most historical Jesus scholars agree on is that Jesus was a successful healer and an exorcist of repute, but that there is no agreement on what he did when exorcising demons. Graham Twelftree's Bible Odyssey article says Mark portrays Jesus as a prolific exorcist, that no other figure in antiquity is known for whom exorcism was so important, and that John's Gospel mentions no exorcisms. Travis Proctor's Bible Odyssey article says exorcism is the miracle of Jesus that Mark mentions most often, that Mark's first miracle is an exorcism in the synagogue at Capernaum (Mark 1:21–28), and that the idea that demons could possess bodies and be cast out by ritual experts is found in Jewish texts such as the Dead Sea Scrolls and Josephus."
     cites:
       - source: craffert-2015-possession
