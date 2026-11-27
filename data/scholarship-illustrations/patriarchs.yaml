@@ -1,0 +1,60 @@
+# Illustrations for /scholarship/patriarchs/ (generated with Gemini; see
+# src/scripts/generate-scholarship-illustrations.ts). Each picture shows only
+# what the listed statements support; every caption, link and claim stays in
+# hugo/layouts/partials/scholarship-custom/patriarchs.html. The three camps'
+# colours (amber, rust, dark indigo) return as the three scroll cords, so the
+# separate traditions and their later joining read as the same three things.
+slug: patriarchs
+images:
+  - id: camps
+    statements: [traditions]
+    aspect: "4:3"
+    alt: "Three separate tent camps on three hills, far apart, each with its own small group gathered around a fire listening to an elder."
+    prompt: >-
+      A wide landscape of dry rolling hill country at dusk. On three separate
+      hilltops, far apart from one another with empty valleys between them,
+      are three small tent camps. Each camp has its own small group of people
+      sitting around its own campfire, listening to an elderly storyteller who
+      gestures as he speaks. The first camp's tents are amber, the second
+      camp's tents are rust red, the third camp's tents are dark indigo. No
+      paths connect the camps. Open evening sky across the top right of the
+      picture and open ground in the bottom right corner.
+  - id: hosea
+    statements: [jacob-first]
+    aspect: "4:3"
+    alt: "An ancient prophet writes on a scroll by lamplight; a thought cloud above him shows a man wrestling a figure at a river at dawn."
+    prompt: >-
+      An ancient Israelite prophet, an older bearded man in a plain robe and
+      headcloth, seated on a low stool, writing with a reed pen on a scroll
+      by the light of a small clay oil lamp, in a mud-brick room. A large
+      comic thought cloud above and to the left of him shows a small scene:
+      a man wrestling with another figure at a river ford at dawn. The
+      bottom right corner of the picture is plain mud-brick wall.
+  - id: bound
+    statements: [traditions]
+    aspect: "4:3"
+    refs: [camps]
+    alt: "A scribe binds three scrolls, tied with amber, rust and indigo cords, into one bundle with a single long cord."
+    prompt: >-
+      An ancient scribe, a bearded man in a simple robe and headcloth, seated
+      at a low wooden table, tying three separate rolled scrolls together
+      into one bundle with a single long brown cord. Each of the three
+      scrolls already has its own small cord in one of the camp colours from
+      the reference image: one amber, one rust red, one dark indigo. The
+      three scrolls lie side by side and are clearly being joined into one.
+      Plain plastered wall behind him; the bottom right corner of the
+      picture is empty tabletop and wall.
+  - id: dig
+    statements: [historical]
+    aspect: "4:3"
+    alt: "Two present-day scholars at an excavation trench disagree: one points hopefully into the trench, the other frowns with arms crossed."
+    prompt: >-
+      Two present-day scholars standing at the edge of an archaeological
+      excavation trench in dry hill country, generic figures (not portraits
+      of any real person), both in sun hats. On the left, a woman leans
+      forward and points hopefully down into the trench, with a small comic
+      bubble containing only an exclamation mark. On the right, a man stands
+      with his arms crossed and a skeptical frown, with a small comic bubble
+      containing only a question mark. The trench holds only bare earth and
+      stones. Open sky across the top and open ground in the bottom right
+      corner.

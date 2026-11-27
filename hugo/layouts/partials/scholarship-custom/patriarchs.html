@@ -1,0 +1,97 @@
+{{- /*
+  Custom block for /scholarship/patriarchs/: a four-panel comic page. Three
+  separate camps, each around its own storyteller; a prophet writing with
+  Jacob's wrestling match in mind; a scribe binding three scrolls, corded in
+  the camps' three colours, into one bundle; two present-day scholars
+  disagreeing over a bare excavation trench. A view of the page's reviewed
+  statements (`traditions`, `jacob-first`, `historical`); it makes no claim
+  they don't. Reword a caption only when the statement it comes from is
+  re-reviewed. The art does not say which camp belongs to which ancestor,
+  because the page does not.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/patriarchs.yaml (no words in it); every
+  caption, link and claim lives here. The comic furniture is CSS.
+  */
+-}}
+{{- $slug := "patriarchs" -}}
+{{- $alt := dict
+  "camps" "Three separate tent camps on three hills, far apart, each with its own small group gathered around a fire listening to an elder."
+  "hosea" "An ancient prophet writes on a scroll by lamplight; a thought cloud above him shows two men wrestling at a river at dawn."
+  "bound" "A scribe ties three scrolls, each with its own amber, rust or indigo cord, together into one bundle."
+  "dig" "Two present-day scholars at a bare excavation trench disagree: one points hopefully into it, the other frowns with arms crossed."
+-}}
+{{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
+{{- /* Each panel's words sit on its art as a plate, in the corner the picture leaves clear. */ -}}
+{{- $frames := slice
+  (dict "id" "camps" "box" "Different groups" "pos" "br" "big" "Three traditions" "sub" "Abraham’s, Isaac’s and Jacob’s, from different groups, many scholars hold")
+  (dict "id" "hosea" "box" "Which is oldest?" "pos" "bl" "big" "Jacob’s" "sub" "on the usual reading of Hosea 12, from the 8th century BCE" "refs" (slice "Hosea 12:3–4"))
+  (dict "id" "bound" "box" "Only later" "pos" "tr" "big" "One family" "sub" "joined as grandfather, father and son" "refs" (slice "Genesis 25:19–26"))
+  (dict "id" "dig" "box" "Scholars today" "pos" "br" "big" "Divided" "sub" "on how much history the stories hold; no record outside the Bible names them")
+-}}
+<section class="cloud-section ptr-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="ptr-comic__page">
+    <p class="ptr-comic__kicker">Genesis · many scholars hold</p>
+    <p class="ptr-comic__title">
+      Separate traditions, later joined as grandfather, father and son
+    </p>
+    <ol class="ptr-comic__strip">
+      {{- range $i, $f := $frames }}
+        {{- $img := resources.Get (printf "scholarship-art/%s/%s.png" $slug $f.id) }}
+        <li
+          class="ptr-comic__frame ptr-comic__frame--{{ $f.id }}"
+          {{ if or (eq $f.id "hosea") (eq $f.id "dig") }}
+            data-card-hide
+          {{ end }}>
+          <figure class="ptr-comic__figure">
+            <div class="ptr-comic__art">
+              {{- with $img }}
+                {{- $webp := .Process "resize 1200x webp q78" }}
+                <img
+                  src="{{ $webp.RelPermalink }}"
+                  width="{{ $webp.Width }}"
+                  height="{{ $webp.Height }}"
+                  alt="{{ index $alt $f.id }}"
+                  loading="eager" />
+              {{- end }}
+            </div>
+            <h3 class="ptr-comic__box">{{ $f.box }}</h3>
+            <figcaption class="comic-plate comic-plate--{{ $f.pos }}">
+              <p class="comic-plate__big">{{ $f.big }}</p>
+              <p class="comic-plate__sub">{{ $f.sub }}</p>
+              {{- with $f.refs }}
+                <ul class="ptr-comic__refs">
+                  {{- range . }}
+                    <li class="ptr-comic__ref">
+                      <a
+                        href="{{ printf "%s%s" $bg (urlquery .) | safeURL }}"
+                        rel="noopener"
+                        >{{ replace . " " "&nbsp;" | safeHTML }}</a
+                      >
+                    </li>
+                  {{- end }}
+                </ul>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="ptr-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
+  </div>
+  <p class="ptr-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#traditions">were they originally one family story</a>,
+    <a href="#jacob-first">which tradition is oldest</a> and
+    <a href="#historical">were they historical people</a>.
+  </p>
+</section>

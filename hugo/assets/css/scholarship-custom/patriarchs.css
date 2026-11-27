@@ -1,0 +1,195 @@
+/*
+  Custom block for the Abraham, Isaac and Jacob Scholarship Page: a comic
+  page. One ink frame holds the title, four illustrated panels and the
+  credit, so the whole thing shares as one image. Each panel is an ink frame
+  around its art, with a narration label in the top-left corner and a
+  comic plate set on the art in a clear corner. Composes
+  cloud-section, type-section-title and scholarship-meta.
+
+  The art is raster (generated); everything around it is CSS.
+*/
+.ptr-comic {
+  --ptr-ink: var(--tan-900);
+  --ptr-frame: var(--border-width-md);
+
+  container: ptr-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.ptr-comic__page {
+  background: var(--tan-000);
+  border: var(--border-width-lg, 5px) solid var(--ptr-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--ptr-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+/* Kicker: the scope and the core statement's verdict. */
+.ptr-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  justify-self: center;
+  letter-spacing: var(--letter-spacing-heading);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.ptr-comic__title {
+  color: var(--ptr-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  justify-self: center;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  max-inline-size: 26ch;
+  text-align: center;
+  text-shadow: 3px 3px 0 var(--color-accent);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.ptr-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ptr-comic__frame {
+  display: grid;
+}
+
+/* A panel: one ink frame around the art; its words sit on the art as a comic plate (scholarship.css), so the panel is the plates' container. */
+.ptr-comic__figure {
+  border: var(--ptr-frame) solid var(--ptr-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.ptr-comic__art {
+  aspect-ratio: 4 / 3;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.ptr-comic__art > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.03;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.ptr-comic__box {
+  background: var(--color-accent);
+  border-block-end: var(--ptr-frame) solid var(--ptr-ink);
+  border-inline-end: var(--ptr-frame) solid var(--ptr-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+/* Scripture tags: ink chips on a panel's plate. */
+.ptr-comic__refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5cqi;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ptr-comic__ref {
+  background: var(--ptr-ink);
+  font-family: var(--font-family-main);
+  font-size: clamp(0.6rem, 2.2cqi, 0.85rem);
+  font-style: normal;
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.ptr-comic__ref > a {
+  color: var(--color-text-inverse);
+  text-decoration-color: var(--color-accent);
+}
+
+.ptr-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  text-align: center;
+}
+
+.ptr-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container ptr-comic (width >= 40rem) {
+  .ptr-comic__page {
+    padding: var(--space-m);
+  }
+
+  .ptr-comic__title {
+    font-size: var(--step-3);
+  }
+
+  .ptr-comic__strip {
+    gap: var(--space-s);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* The poster: two by two on the 4:5 canvas. */
+.scholarship-share:target .ptr-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .ptr-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: 34ch;
+}
+
+.scholarship-share:target .ptr-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* The card: panels 1 and 3 (separate, then joined) side by side under the title. */
+.scholarship-share:has(#share-card:target) .ptr-comic__kicker {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .ptr-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .ptr-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:has(#share-card:target) .ptr-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
