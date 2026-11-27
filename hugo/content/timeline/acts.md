@@ -24,7 +24,7 @@ critical:
   from: 70
   to: 120
   precision: period
-  note: "Seccombe, who argues for an early date himself, says a majority of scholars favour a date between 70 and the early 90s. The sources differ on the range within it: Tyson puts the intermediate date at about 80–90 CE, Armstrong's middle group dates it from after 70 to about 80, and Britannica's editors say perhaps between 70 and 90 CE. Tyson gives as one reason that the destruction of Jerusalem in 70 is not mentioned in Acts but is probably alluded to in Luke 21:20–24. Tyson says a growing number of scholars prefer about 110–120 CE, and Fredriksen dates Acts to the early second century. Tyson says some scholars prefer the early 60s, a view Armstrong and Seccombe argue for. Tyson says the date cannot be determined with certainty."
+  note: "Seccombe, who argues for an early date himself, describes the post-70 first-century view as a date between 70 and the early 90s. The sources differ on the range: Tyson puts the intermediate date at about 80–90 CE, Armstrong's middle group dates it from after 70 to about 80, and Britannica's editors say perhaps between 70 and 90 CE. Tyson says those who favour the intermediate date cite, among other factors, that the destruction of Jerusalem in 70 is not mentioned in Acts but is probably alluded to in Luke 21:20–24. Tyson says a growing number of scholars prefer about 110–120 CE, and Fredriksen dates Acts to the early second century. Tyson says some scholars prefer the early 60s; Armstrong argues for a date as early as 62–63 CE and no later than 70. Tyson says the date cannot be determined with certainty."
   cites:
     - source: seccombe-2020-dating-luke-acts
       locator: "§1, p. 208"
@@ -67,7 +67,7 @@ critical:
       quote: "A great deal rides on decisions about the date of Acts, which unfortunately cannot be de-termined with certainty."
       read: 2026-11-26
 setting:
-  display: "from the church's beginnings in Jerusalem, after Jesus's resurrection, to Paul in Rome"
+  display: "from Christianity's beginnings in Jerusalem, after Jesus's resurrection, to Paul in Rome"
   cites:
     - source: ehrman-brief-5e-ch10-summary
       locator: "section “Luke’s Second Volume: The Book of Acts”, ¶ 1, second sentence"
@@ -76,15 +76,5 @@ setting:
     - source: martin-rlst152-l9
       locator: "ch. 1 “The Structure of Luke and Acts” [00:00:00]"
       quote: "Then you have the second missionary journey of Paul, and then the third missionary journey of Paul, and then you have Paul in Jerusalem and then arrested and taken to Rome, and then you have Paul in Rome and ending the whole book, chapter 28:17-31."
-      read: 2026-11-26
-tradition:
-  display: "60–62 CE"
-  from: 60
-  to: 62
-  holder: "Insight for Living, the Bible-teaching ministry of Pastor Chuck Swindoll"
-  cites:
-    - source: insight-swindoll-acts
-      locator: "section “Where are we?”, ¶ 1"
-      quote: "More than likely, Luke completed the book before either of these events occurred, sometime between AD 60 and AD 62, while Paul sat in prison, awaiting the resolution of his appeal."
       read: 2026-11-26
 ---

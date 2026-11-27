@@ -10,135 +10,139 @@
 # agent: the first pass (2026-11-26). Three research agents (critical, tradition, setting) saved every fetched page into their own scratch folders; the lead agent read Britannica “Acts of the Apostles” in Claude in Chrome (curl 403; the old URL /topic/Acts-of-the-Apostles-New-Testament is an error page; the live page is /topic/The-Acts-of-the-Apostles-New-Testament), saving the page's own `article` p/h2 innerText (1213 characters; quote also matched with includes() in the tab). Quotes script-matched by the lead agent from the entry file against the named saved copies (whitespace, quotes, dashes, entities, soft hyphens normalised): 13 hits, 0 misses. Trigger Claims matched by script as substrings of their final Transcript lines at timestamp and speaker: 3 hits; E189 00:33:34–00:42:37 and E80 00:43:21–00:47:58 read.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Display as alternatives vs a single span: is “70 to the early 90s CE, or the early 2nd century CE” the right weight, given Seccombe's majority sentence and Fredriksen's single outright late date? (2) Tyson in The Bible and Interpretation: an op-ed by a professor emeritus (SMU), classed Reference as the registry does for Silverman 2011; check. (3) Seccombe's PDF gives no post (email only); classed Scholarly by venue (Tyndale Bulletin, peer-reviewed). (4) Britannica's datePublished is 1998-07-20 with no modified date: inside the ~30-year window only just; its sentence is hedged (“apparently … perhaps”) and backs the note only. (5) E189 00:35:59 `states: both`: the tradition half is weak (above); cut the Tradition Date if in doubt. (6) Tyson ¶ 4's next sentence “But Acts could not have been written before c. 90 CE” contradicts his own 80–90 and reads as a slip for “after”: uncited; check the cited span stops before it. (7) Fredriksen's dating sentence is a passing remark in a “Did You Know?” box on the word “Christian”; check it carries the late alternative together with Tyson's “growing number”. (8) Insight for Living's page is unsigned; author set to Charles R. Swindoll from the copyright line and author box.
+# Independent second agent pass 2026-11-26 (#93 delegation, #110; an agent that built neither the entry nor the first pass; the first pass's scratch files not read). Re-fetched into a fresh scratch folder by curl (browser User-Agent) from the registry URLs, all 200: Seccombe and Armstrong PDFs (pdftotext, plain and -layout), Tyson (Bible and Interpretation), Fredriksen (Bible Odyssey), Ehrman ch. 10 summary, Martin RLST 152 l9, Insight for Living (301 to /resources/bible/the-history-of-the-early-church/acts). HTML stripped (inline tags removed, entities decoded). Britannica refused scripts as before; read in Claude in Chrome in a new tab of this pass's own: the page's `article` p/h2 innerText (1213 characters, saved in two returns and joined; byte count 1218 with the file's newlines and curly quotes ties out), h1 “Acts of the Apostles”, byline “Britannica Editors”, JSON-LD datePublished 1998-07-20, no dateModified; tab closed.
+# Quotes re-matched by script, read from the entry file as received (git HEAD) and as edited (whitespace, quotes, dashes, NFKC, soft hyphens and line-break hyphens normalised), with the surrounding passage printed and read: 13 of 13 hit as received; 12 of 12 remain after the cut of tradition/1. critical/2 first missed against plain pdftotext, which fuses the line-break compound “first-/century” to “firstcentury”; matched by the re-run against the -layout text with a line-end hyphen kept, so the quote's “first-century” is right. Locators checked by position: Seccombe pp. 208 and 210 and Armstrong pp. 101 and 109 from running heads and page numbers; Tyson ¶ 2, 4, 6 and last paragraph by paragraph order (¶ 1 “The range of proposed dates …”); Martin quote before the ch. 2 heading [00:17:35]; Ehrman under “Luke’s Second Volume: The Book of Acts”; Fredriksen in “Did You Know?”. Trigger Claims script-matched as substrings of their final Transcript lines at timestamp and speaker: 3 hits; E189 00:33:34–00:42:37 and E80 00:43:21–00:47:58 read.
+# Second pass changed: (a) Tradition Date cut. The `tradition:` block (display “60–62 CE”, holder Insight for Living, tradition/1) removed from the entry; trigger 189@00:35:59 `states: both` → `critical`; registry entry `insight-swindoll-acts` removed (nothing else cites it); its quote moved to `uncited`. Reason: Patel frames the pre-64 date among “the scholarly arguments for dating Acts” (00:33:49) and calls its holders “people”; no turn in the window names a tradition, and the cited sources report the early date as a scholarly minority view. CONTEXT.md shows a Tradition Date only when a Trigger Claim states the tradition's side; in doubt, cut. Tradition and Critical middles no longer apply (#214 moot). (b) Critical note, from “Seccombe, who argues for an early date himself, says a majority of scholars favour a date between 70 and the early 90s. The sources differ on the range within it: Tyson puts the intermediate date at about 80–90 CE, Armstrong's middle group dates it from after 70 to about 80, and Britannica's editors say perhaps between 70 and 90 CE. Tyson gives as one reason that the destruction of Jerusalem in 70 is not mentioned in Acts but is probably alluded to in Luke 21:20–24. … Tyson says some scholars prefer the early 60s, a view Armstrong and Seccombe argue for. …” to “Seccombe, who argues for an early date himself, describes the post-70 first-century view as a date between 70 and the early 90s. The sources differ on the range: Tyson puts the intermediate date at about 80–90 CE, Armstrong's middle group dates it from after 70 to about 80, and Britannica's editors say perhaps between 70 and 90 CE. Tyson says those who favour the intermediate date cite, among other factors, that the destruction of Jerusalem in 70 is not mentioned in Acts but is probably alluded to in Luke 21:20–24. … Tyson says some scholars prefer the early 60s; Armstrong argues for a date as early as 62–63 CE and no later than 70. …” Reasons: #80 (two sources disagree about the state of the field → drop the consensus word): Seccombe, Tyson and Armstrong each name a majority and disagree on its range, so no “majority” on the page; the Jerusalem reason is what the intermediate-date scholars cite in Tyson, not Tyson's own; Armstrong's cited range runs to 70, and no Seccombe sentence of his own date is cited. (c) Setting display “from the church's beginnings …” → “from Christianity's beginnings …”: the cited Ehrman sentence says “traces Christianity from its beginnings”. Display, title, from/to/precision unchanged.
+# Second-pass rulings on the first-pass flags: (1) Display kept as two alternatives. It is worded without a consensus word and contains every source's middle range; the late alternative rests on Fredriksen's own-voice date with Tyson's “growing number”. But the asymmetry is real: the early date is held in their own voice by two Scholarly sources (Armstrong, Seccombe) and reported by Tyson and Britannica as “some”, and Tyson calls three dates (early, intermediate, late) “prominent in the scholarly literature”; under #99 the early 60s could be a third alternative. Not changed by this pass (a widening, not a cut); publish flag 1. (2) Tyson kept as Reference: same venue as silverman-2011-iranian-influence; byline confirms a professor emeritus; it backs reports of what scholars prefer and the uncertainty sentence only. (3) Seccombe kept as Scholarly by venue (#80 “classed by venue”); no post on the PDF, confirmed. (4) Britannica kept: datePublished 1998-07-20 is inside the ~30-year window in 2026; hedged, note only. (5) Cut the Tradition Date (above). (6) Confirmed: critical/3's span ends before “But Acts could not have been written before c. 90 CE”; that sentence stays uncited. (7) Fredriksen kept: an own-voice outright date by a professional scholar in an SBL-hosted signed article (#86 per author); a passing remark, so it carries the late alternative only together with Tyson's “growing number”. (8) Moot after the cut; Insight left the entry and the registry.
+# Flags for publish: (1) Display vs Tyson's three “prominent” dates: consider whether the early 60s (critical/8–9) should be a third alternative, or the display left as is with the early date in the note; this pass did not widen it. Weightier after the Tradition cut: before it the early 60s showed on the Timeline as the Tradition Date; now it has no date on the entry, only a note sentence, while the late view is in the display on one Reference passing remark (Fredriksen) plus Tyson's report, and the early view has two Scholarly own-voice sources (Armstrong; Seccombe, whose own-date sentences are uncited) plus Tyson's “Some scholars”. (2) The note's first sentence still calls Seccombe an early-date advocate on the strength of his title (“Further Arguments for an Early Date”); his own-date sentences were read but are uncited. (3) Armstrong's middle-group range “after 70 to about 80” is his heading's (and p. 83's) wording; his next sentence (“after 90 is too late”) is looser. (4) `watch` still lists “house arrest” (the early-date argument); harmless, but it no longer maps to a shown date.
 review:
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Seccombe, Tyndale Bulletin 71.2 (2020), §1 p. 208, ¶ 2 first sentence (cut before “primarily, I think, …”). State of the field from an early-date advocate. Backs the display's first alternative and the note's first sentence.",
+      note: "Seccombe, Tyndale Bulletin 71.2 (2020), §1 p. 208, ¶ 2 first sentence (cut before “primarily, I think, …”). State of the field from an early-date advocate. Backs the display's first alternative and the note's first sentence. Second pass: re-matched at p. 208 (running heads). The note no longer repeats “A majority of scholars”: Seccombe, Tyson and Armstrong each give a majority range and differ (#80: sources disagree on the state of the field → drop the word); now “Seccombe … describes the post-70 first-century view as a date between 70 and the early 90s” (not his own date). Still backs the display's first alternative. Pass.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Seccombe p. 210. Post-70 first-century dating “is the majority view, long-established”. Backs the note's “after 70” framing; same author as critical/1.",
+      note: "Seccombe p. 210. Post-70 first-century dating “is the majority view, long-established”. Backs the note's “after 70” framing; same author as critical/1. Second pass: re-matched; p. 210 from the running heads. Plain pdftotext fuses the line-break “first-/century” to “firstcentury”; the -layout text keeps the hyphen, so the quote stands as given. Its “majority view” is no longer stated on the page; it now backs only the display's first alternative (post-70 first-century dating), with critical/1. Pass.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Tyson, The Bible and Interpretation (April 2011), ¶ 4, first two sentences. “Most modern scholars … c. 80-c. 90 CE” and the Jerusalem reason. Backs the note's Tyson range and reason. The third sentence (“could not have been written before c. 90 CE”) is uncited (slip).",
+      note: "Tyson, The Bible and Interpretation (April 2011), ¶ 4, first two sentences. “Most modern scholars … c. 80-c. 90 CE” and the Jerusalem reason. Backs the note's Tyson range and reason. The third sentence (“could not have been written before c. 90 CE”) is uncited (slip). Second pass: re-matched at ¶ 4; the cited span stops before “But Acts could not have been written before c. 90 CE …” (flag 6). The note's reason sentence reworded to Tyson's scope: the reason is one of the factors those favouring 80–90 cite (“they cite a number of factors”), not Tyson's own: “Tyson says those who favour the intermediate date cite, among other factors, …”. Pass.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Armstrong, JGRChJ 13 (2017), section heading “The Middle Dating Advocates (post-70 CE to ~80)”, p. 101, first sentence. Hedged (“seems”). Backs the note's Armstrong range (taken from the heading). Armstrong argues for the early date himself.",
+      note: "Armstrong, JGRChJ 13 (2017), section heading “The Middle Dating Advocates (post-70 CE to ~80)”, p. 101, first sentence. Hedged (“seems”). Backs the note's Armstrong range (taken from the heading). Armstrong argues for the early date himself. Second pass: re-matched; heading and sentence on p. 101 (pdf page 23). The next sentence (“before 70 CE is too early, and after 90 is too late”) is looser than the heading's “~80”; the note keeps the heading's range, which p. 83 repeats (“post-70 CE to around 80 CE”, uncited). Pass.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Acts of the Apostles” (Britannica Editors; datePublished 1998-07-20), opening paragraph, fourth sentence. Hedged (“apparently … perhaps”); “some think a slightly earlier date is also possible”. Backs the note's Britannica clause only. Read in Chrome.",
+      note: "Britannica “Acts of the Apostles” (Britannica Editors; datePublished 1998-07-20), opening paragraph, fourth sentence. Hedged (“apparently … perhaps”); “some think a slightly earlier date is also possible”. Backs the note's Britannica clause only. Read in Chrome. Second pass: re-read in Claude in Chrome in a new tab (h1 “Acts of the Apostles”, byline “Britannica Editors”, JSON-LD datePublished 1998-07-20, no dateModified); opening paragraph, fourth sentence. Pass (note only).",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "Tyson ¶ 6, first sentence. “A growing number of scholars prefer … c. 110-120 CE”. Backs the display's second alternative and the note; `to: 120`.",
+      note: "Tyson ¶ 6, first sentence. “A growing number of scholars prefer … c. 110-120 CE”. Backs the display's second alternative and the note; `to: 120`. Second pass: re-matched at ¶ 6 (¶ 1 “The range of proposed dates …”). “A growing number” is Tyson's own characterisation, attributed in the note (#80: minority wording borrowed from a source). Pass.",
     }
   critical/7:
     {
       agent: pass,
       owner: "",
-      note: "Fredriksen, Bible Odyssey “Christian” (2019-09-04), “Did You Know?” box, second point. Outright: Acts dates to the early second century. Backs the display's second alternative. Author: Aurelio Professor of Scripture emerita, Boston University (page bio).",
+      note: "Fredriksen, Bible Odyssey “Christian” (2019-09-04), “Did You Know?” box, second point. Outright: Acts dates to the early second century. Backs the display's second alternative. Author: Aurelio Professor of Scripture emerita, Boston University (page bio). Second pass: re-matched in the “Did You Know?” box; byline and 2019-09-04 date on the page; author bio confirms the emerita post. Passing remark, but an own-voice outright date by a professional scholar: carries the late alternative together with critical/6 (flag 7). Pass.",
     }
   critical/8:
     {
       agent: pass,
       owner: "",
-      note: "Tyson ¶ 2, first sentence. “Some scholars prefer an early date, i.e., the early 60's”. Backs the note's early-date sentence.",
+      note: "Tyson ¶ 2, first sentence. “Some scholars prefer an early date, i.e., the early 60's”. Backs the note's early-date sentence. Second pass: re-matched at ¶ 2. Pass.",
     }
   critical/9:
     {
       agent: pass,
       owner: "",
-      note: "Armstrong, “Concluding Observations: Early, Middle or Late?”, p. 109. His own view, 62–63 to before summer 64, no later than 70. Backs “a view Armstrong and Seccombe argue for” (Seccombe's title, “Further Arguments for an Early Date”, and his summary carry his side; no separate cite).",
+      note: "Armstrong, “Concluding Observations: Early, Middle or Late?”, p. 109. His own view, 62–63 to before summer 64, no later than 70. Backs “a view Armstrong and Seccombe argue for” (Seccombe's title, “Further Arguments for an Early Date”, and his summary carry his side; no separate cite). Second pass: re-matched on p. 109 (pdf page 31). The note's “the early 60s, a view Armstrong and Seccombe argue for” narrowed to “Armstrong argues for a date as early as 62–63 CE and no later than 70”: Armstrong's cited range runs to 70, not only the early 60s, and no Seccombe sentence giving his own date is cited (his summary and p. 216 conclusion, “both Luke and Acts were probably written before the Jewish–Roman War”, were read but stay uncited; no citation added). Pass.",
     }
   critical/10:
     {
       agent: pass,
       owner: "",
-      note: "Tyson, last paragraph before the notes, first sentence. “cannot be de-termined with certainty” (the hyphen is on the page). Backs the note's last sentence.",
+      note: "Tyson, last paragraph before the notes, first sentence. “cannot be de-termined with certainty” (the hyphen is on the page). Backs the note's last sentence. Second pass: re-matched in the last paragraph before “Notes” (“de-termined” is on the page). Pass.",
     }
   setting/1:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 10 summary (OUP Learning Link), section “Luke’s Second Volume: The Book of Acts”, ¶ 1, second sentence. Backs “from the church's beginnings in Jerusalem, after Jesus's resurrection”. The display leaves out “the arrest … in Rome”.",
+      note: "Ehrman ch. 10 summary (OUP Learning Link), section “Luke’s Second Volume: The Book of Acts”, ¶ 1, second sentence. Backs “from the church's beginnings in Jerusalem, after Jesus's resurrection”. The display leaves out “the arrest … in Rome”. Second pass: re-matched. The display's “the church's beginnings” changed to “Christianity's beginnings”: the cited sentence says “traces Christianity from its beginnings”; “church” came from the uncited previous sentence. Pass.",
     }
   setting/2:
     {
       agent: pass,
       owner: "",
-      note: "Martin RLST 152 l9, ch. 1 [00:00:00]. Structure of Acts ending with Paul in Rome (28:17–31). Backs “to Paul in Rome”. Martin treats the outline as Luke's arrangement, not history.",
-    }
-  tradition/1:
-    {
-      agent: pass,
-      owner: "",
-      note: "Insight for Living, Acts overview, section “Where are we?”, ¶ 1, third sentence; the first two sentences give the reason (abrupt ending; no mention of Paul's death or Nero's persecution). Own voice, “More than likely” (hedge, not condition). Backs 60–62 CE.",
+      note: "Martin RLST 152 l9, ch. 1 [00:00:00]. Structure of Acts ending with Paul in Rome (28:17–31). Backs “to Paul in Rome”. Martin treats the outline as Luke's arrangement, not history. Second pass: re-matched in ch. 1 (before the ch. 2 heading [00:17:35]). Pass.",
     }
 triggers:
   189@00:35:59:
     {
       agent: pass,
       owner: "",
-      note: "states: both. “80, 90 … mid range” (critical) and “people who will date Acts very early, that is prior to 64 CE” (the early date the Tradition source holds). Weak tradition side; flagged. 00:33:34–00:40:25 read.",
+      note: "states: both. “80, 90 … mid range” (critical) and “people who will date Acts very early, that is prior to 64 CE” (the early date the Tradition source holds). Weak tradition side; flagged. 00:33:34–00:40:25 read. Second pass: script-matched at 00:35:59.660, Shaily Patel; 00:33:34–00:42:37 read. states changed both → critical. Patel opens the stretch with “the scholarly arguments for dating Acts” (00:33:49), calls the early daters only “people”, and gives their argument as one of those scholarly arguments; no turn in the window names a tradition holding the pre-64 date (contrast revelation's E119, where preterists are named). The early date is a scholarly minority view in the cited sources (Tyson ¶ 2, Armstrong, Britannica). So no Trigger Claim states the tradition's side and the Tradition Date is cut (CONTEXT.md: a Tradition Date only when a Trigger Claim states the tradition's side). The 80–90 “mid range” keeps the claim as critical. Text unchanged, verbatim.",
     }
   189@00:40:25:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. “perhaps written in the early second century”; the hedge is kept in the quote. 00:38:01–00:42:37 read.",
+      note: "states: critical. “perhaps written in the early second century”; the hedge is kept in the quote. 00:38:01–00:42:37 read. Second pass: script-matched at 00:40:25.460, Shaily Patel; dropped hedges (“It depends on … the honest answer is we don't really know”) confirmed. Pass.",
     }
   80@00:45:22:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Luke-Acts “as late as the 110s CE”; matches Tyson's c. 110–120. The trimmed second sentence is the Council-in-the-30s slip. 00:43:21–00:47:58 read.",
+      note: "states: critical. Luke-Acts “as late as the 110s CE”; matches Tyson's c. 110–120. The trimmed second sentence is the Council-in-the-30s slip. 00:43:21–00:47:58 read. Second pass: script-matched at 00:45:22.180, Dan McClellan; 00:43:21–00:47:58 read. “it” is the dating of Luke-Acts (00:44:55), answering Beecher's “when Acts was written” (00:44:34). Pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Worded for what the sources date: the book of Acts' composition. Seccombe dates Luke-Acts in his title but his majority sentences speak of Acts; the display names no Luke date.",
+      note: "Worded for what the sources date: the book of Acts' composition. Seccombe dates Luke-Acts in his title but his majority sentences speak of Acts; the display names no Luke date. Second pass: confirmed. Pass.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Two alternatives in the display, each cited; the sources' differing majority ranges are in the note, attributed; early 60s shown as a minority view held by named scholars. No consensus word on the display.",
+      note: "Two alternatives in the display, each cited; the sources' differing majority ranges are in the note, attributed; early 60s shown as a minority view held by named scholars. No consensus word on the display. Second pass: the note now reports each source's range without the consensus word (#80: the three majority statements disagree on the range). Display kept as two alternatives; the early 60s stays in the note, attributed (publish flag 1). Pass.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "Trigger 189@00:35:59 has states: both. Weak; flagged.",
+      note: "Trigger 189@00:35:59 has states: both. Weak; flagged. Second pass: Tradition Date cut; 189@00:35:59 now states: critical, so no Trigger Claim states the tradition's side and none is needed. Pass.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "Holder equals the registry `tradition:`; the ministry's own banner wording. Never “the traditional date”.",
+      note: "Holder equals the registry `tradition:`; the ministry's own banner wording. Never “the traditional date”. Second pass: no Tradition Date and no Tradition source cited after the cut. Pass.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date in the display. Tyson's Josephus sentence (“If the author of Acts knew …”) and E189 00:38:01 are conditional and unused for the display.",
+      note: "No conditional date in the display. Tyson's Josephus sentence (“If the author of Acts knew …”) and E189 00:38:01 are conditional and unused for the display. Second pass: confirmed; Tyson ¶ 6 conditional and E189 00:38:01 unused. Pass.",
     }
 sources:
   seccombe-2020-dating-luke-acts:
@@ -146,56 +150,49 @@ sources:
       agent: pass,
       owner: "",
       edition: "Tyndale Bulletin 71.2 (2020) 207–227, doi 10.53751/001c.27747",
-      note: "Scholarly (peer-reviewed journal). Author argues for an early date; his state-of-field sentences go against his own view. No post on the PDF.",
+      note: "Scholarly (peer-reviewed journal). Author argues for an early date; his state-of-field sentences go against his own view. No post on the PDF. Second pass: PDF re-fetched (200); Tyndale Bulletin 71.2 running heads and pagination confirmed. No post on the PDF; class by venue kept (flag 3).",
     }
   armstrong-2017-early-date-acts:
     {
       agent: pass,
       owner: "",
       edition: "JGRChJ 13 (2017) 79–110",
-      note: "Scholarly (peer-reviewed journal). Author (McMaster Divinity College) argues for an early date.",
+      note: "Scholarly (peer-reviewed journal). Author (McMaster Divinity College) argues for an early date. Second pass: PDF re-fetched (200); pagination 79–110 confirmed from page numbers.",
     }
   tyson-2011-when-why-acts:
     {
       agent: pass,
       owner: "",
       edition: "The Bible and Interpretation op-ed, April 2011",
-      note: "Reference, as the registry classes The Bible and Interpretation (silverman-2011-iranian-influence). Joseph B. Tyson, professor emeritus of Religious Studies, Southern Methodist University (byline). Holds a late date himself.",
+      note: "Reference, as the registry classes The Bible and Interpretation (silverman-2011-iranian-influence). Joseph B. Tyson, professor emeritus of Religious Studies, Southern Methodist University (byline). Holds a late date himself. Second pass: re-fetched (200); byline “Professor emeritus of Religious Studies, Southern Methodist University”, “Apr. 2011”. Reference kept, as the registry classes Silverman 2011 in the same venue; it backs only reports of what scholars prefer and the note's last sentence (flag 2).",
     }
   britannica-acts-of-the-apostles:
     {
       agent: pass,
       owner: "",
       edition: "Online, Britannica Editors (first published July 20, 1998)",
-      note: "Reference (online encyclopedia). Refuses scripted requests; read in Claude in Chrome. Author null: byline “Britannica Editors”.",
+      note: "Reference (online encyclopedia). Refuses scripted requests; read in Claude in Chrome. Author null: byline “Britannica Editors”. Second pass: read in Chrome; datePublished 1998-07-20, no modified date shown: inside the ~30-year window (#80) by 2026, just. Hedged; backs the note only (flag 4).",
     }
   fredriksen-bo-christian:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey article, published 2019-09-04",
-      note: "Reference (Bible Odyssey, judged per author, #86). Paula Fredriksen, Aurelio Professor of Scripture emerita, Boston University; Distinguished Visiting Professor, Hebrew University.",
+      note: "Reference (Bible Odyssey, judged per author, #86). Paula Fredriksen, Aurelio Professor of Scripture emerita, Boston University; Distinguished Visiting Professor, Hebrew University. Second pass: re-fetched (200); date and bio confirmed; passes the per-author test (#86).",
     }
   ehrman-brief-5e-ch10-summary:
     {
       agent: pass,
       owner: "",
       edition: "OUP Learning Link student resources for the 5th ed. (2020)",
-      note: "Reference (publisher chapter summary, #86), cited as the summary. Setting only.",
+      note: "Reference (publisher chapter summary, #86), cited as the summary. Setting only. Second pass: re-fetched (200). Setting only.",
     }
   martin-rlst152-l9:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 152, recorded Spring 2009",
-      note: "Reference (introductory course, university-hosted transcript, #86). Lecture 9 “The Gospel of Luke”. Setting only.",
-    }
-  insight-swindoll-acts:
-    {
-      agent: pass,
-      owner: "",
-      edition: "Book overview web page, © 2010 Charles R. Swindoll, Inc.",
-      note: "Tradition: Insight for Living calls itself “The Bible-Teaching Ministry of Pastor Chuck Swindoll” (site banner, About page); Swindoll is chancellor emeritus of Dallas Theological Seminary (About page). Unsigned page; author from the copyright line and author box.",
+      note: "Reference (introductory course, university-hosted transcript, #86). Lecture 9 “The Gospel of Luke”. Setting only. Second pass: re-fetched (200). Setting only.",
     }
 leads:
   - "Pervo, Dating Acts (Polebridge, 2006) and Acts (Hermeneia, 2009); Keener, Acts vol. 1 (Baker, 2012); Tyson, Marcion and Luke-Acts (2006); Nasrallah, JBL 127 (2008): cited in Seccombe and Armstrong; no open text found; not read."
@@ -217,3 +214,5 @@ uncited:
   - "Got Questions “Summary of the Book of Acts”: “The book of Acts was likely written between AD 61 and 64.” and “When was Acts written?”: “likely between AD 58 and 62” — the ministry's two pages differ; Insight for Living gives one range with the house-arrest argument."
   - "Ehrman ch. 10 summary ¶ 1, first sentence: “The book of Acts is the first history of the Christian church.” Treats the narrative as history; setting/1 uses the next sentence."
   - "HarperCollins dictionary “Rome” (Bible Odyssey): “The book of Acts relates that Paul was taken to Rome as a prisoner and held there for two years under house arrest” — agrees with setting/2; not needed."
+  - "Insight for Living, Acts overview (insight.org/resources/bible/the-history-books/acts, now 301 to /the-history-of-the-early-church/acts; © 2010 Charles R. Swindoll, Inc.), section “Where are we?”, ¶ 1: “More than likely, Luke completed the book before either of these events occurred, sometime between AD 60 and AD 62, while Paul sat in prison, awaiting the resolution of his appeal.” Was tradition/1. Second pass cut the Tradition Date: no Trigger Claim states the tradition's side (189@00:35:59 frames the pre-64 date among scholarly arguments); registry entry insight-swindoll-acts removed."
+  - "Seccombe, Summary (p. 207) and p. 216: “three considerations … which support Mittelstaedt’s and Armstrong’s view” (early 60s) and “I conclude therefore that both Luke and Acts were probably written before the Jewish–Roman War and Nero’s pogrom.” His own early date; read by the second pass, not cited (no citations added), so the note no longer says Seccombe argues for the early 60s."
