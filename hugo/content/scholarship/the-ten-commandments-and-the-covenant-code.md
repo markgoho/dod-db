@@ -33,7 +33,7 @@ statements:
         quote: "Indeed, the Bible refers to them not as “commandments” at all but more generally as “words” or “sayings” (Hebrew devarim; Exod 34:28, Deut 4:13, Deut 10:4). Hence, “Decalogue” is a more appropriate name than “Ten Commandments” (deca = ten, logos = word)."
         read: 2026-11-27
       - source: brettler-2015-thetorah-ten-insights
-        locator: "item “1”"
+        locator: "item “1. These should be called the Ten Commandments.”"
         quote: "The Hebrew term עשרת הדברים, popularly known as “the Ten Commandments,” appears three times: Exodus 34:28; Deut 4:13; 10:4, and is more accurately translated “The Ten Sayings,” which is reflected in the more preferable English term Decalogue, from Greek “deca logoi,” i.e., “Ten Sayings.”"
         read: 2026-11-27
       - source: brettler-2015-thetorah-ten-insights
@@ -49,11 +49,11 @@ statements:
         quote: "the translation Ten Commandments is actually a very poor translation; in the Hebrew, it simply means ten statements, ten utterances"
         read: 2026-11-27
       - source: brettler-wyrick-2023-thetorah-decalogue
-        locator: "section on the Septuagint"
+        locator: "section “Statements/Words (Logoi)”"
         quote: "LXX to Deuteronomy 10:4 renders it identically."
         read: 2026-11-27
       - source: brettler-wyrick-2023-thetorah-decalogue
-        locator: "section on the Septuagint"
+        locator: "section “Coining the Term ‘Decalogue’”"
         quote: "Clement of Alexandria (ca. 150 – 215 C.E.) and the Gnostic writer Ptolemy (2nd century C.E.) in his Letter to Flora—early Christian authors writing in Greek—built upon the Septuagint’s designation and coined the term, hê dekalogos, apparently a nominalized feminine singular adjective, meaning something like “the ten-statemented thing.”"
         read: 2026-11-27
   - id: versions
@@ -106,7 +106,7 @@ statements:
   - id: ten-words
     group: "The Ten Commandments"
     question: "Which list do the “ten words” of Exodus 34:28 refer to?"
-    short: "Scholars disagree. The verse has commonly been read as referring to the Decalogue of Exodus 20; many scholars argue that it refers to the laws in Exodus 34 itself, and some think the phrase was added later."
+    short: "Scholars disagree. It may refer to the Decalogue of Exodus 20, but many scholars argue that it refers to the laws in Exodus 34 itself."
     text: "The NABRE notes take the “ten words” of Exodus 34:28 as the Decalogue and the “words” of 34:27 as the commands of 34:11–26. David Frankel calls the Decalogue the most common interpretation of what was written on the tablets, then argues that the phrase in 34:28 is almost certainly not a reference to Exodus 20 but to the cultic laws of the chapter itself. Brettler and Wyrick allow that the verse may refer to Exodus 20, but say many scholars have argued that it refers to the laws of Exodus 34, which they name the Cultic Decalogue; Cynthia Edenburg also reads it that way. Tina Sherman says the difficulty of finding ten laws in the chapter has led some scholars to view the phrase as a later addition, and that Deuteronomy's references to the ten words seem to mean the better-known Decalogue."
     cites:
       - source: nabre-exodus-34-notes
@@ -114,11 +114,11 @@ statements:
         quote: "Words: a common term for commandments, especially the Decalogue (see v. 28). In v. 27 “words” connotes the commands given in vv. 11–26."
         read: 2026-11-27
       - source: frankel-2018-thetorah-tablets
-        locator: "opening section"
+        locator: "section “‘The Teaching and the Commandment’ – The Decalogue?”"
         quote: "The most common interpretation is that they were inscribed with the Decalogue."
         read: 2026-11-27
       - source: frankel-2018-thetorah-tablets
-        locator: "body, second half"
+        locator: "section “The Cultic Decalogue: A Different Set of ‘Ten Words’”"
         quote: "Once the account in Exodus 34 is decoupled from the other accounts, it becomes clear that the Ten Words in 34:28 is almost certainly not a reference to the Decalogue of Exodus 20. Rather, these Ten Words much more naturally refer to the cultic laws listed in verses 10-26 of this very chapter."
         read: 2026-11-27
       - source: brettler-wyrick-2023-thetorah-decalogue
@@ -126,15 +126,15 @@ statements:
         quote: "It is possible that ten devarim in this verse refers to the list of laws in Exodus 20 (vv. 2–17) known as the Decalogue. Nevertheless, many scholars have argued that the ten devarim here refer to the laws found in chapter 34 itself (vv. 11–26), naming them “the Cultic Decalogue.”"
         read: 2026-11-27
       - source: edenburg-2023-thetorah-origins-decalogue
-        locator: "Appendix"
+        locator: "section “Is This Set of Laws Really a Decalogue?”"
         quote: "In this context, however, the “Ten Words” likely refers to the so-called “Cultic Decalogue” which appears earlier in this same chapter (Exod 34:17–26)."
         read: 2026-11-27
       - source: sherman-2024-thetorah-ritual-decalogue
-        locator: "Appendix"
+        locator: "section “Is the Ritual Decalogue a Decalogue?”"
         quote: "This solution is not definitive; at least thirty-six different proposals have been offered for finding only ten laws here."
         read: 2026-11-27
       - source: sherman-2024-thetorah-ritual-decalogue
-        locator: "Appendix"
+        locator: "section “Is the Ritual Decalogue a Decalogue?”"
         quote: "The difficulty has led some scholars to view the reference to עֲשֶׂרֶת הַדְּבָרִים (v. 28) as a later addition to the text, perhaps intended to reinforce the idea that the covenant with YHWH is based on the Decalogue."
         read: 2026-11-27
       - source: sherman-2024-thetorah-ritual-decalogue
@@ -160,7 +160,7 @@ statements:
         quote: "In Exodus the reason is theological, harking back to the creation story in Gen 1:1-2:4a, where God rests on the seventh day after the labor of creation (Gen 2:2). In Deuteronomy the reason is historical remembrance; as the Israelites were freed from slavery in Egypt, they should allow their own slaves one day of rest per week."
         read: 2026-11-27
       - source: solomon-2013-thetorah-two-shabbats
-        locator: "opening section"
+        locator: "section “‘Observe’ and ‘Remember’”"
         quote: "The two versions have a variety of differences; the most extensive is in the Shabbat commandment. In Exodus it is a reminder of creation, in Deuteronomy it is a reminder of the exodus."
         read: 2026-11-27
       - source: hayes-rlst145-l10
@@ -182,15 +182,15 @@ statements:
   - id: composition
     group: "The Ten Commandments"
     question: "When were the Ten Commandments written?"
-    short: "There is no agreed date. Many scholars think both versions grew out of a shorter, older Decalogue, but they do not agree on what it said or how old it is."
-    text: "Brettler says most scholars believe both versions reflect changes over time to a much shorter original Decalogue, although no unanimity has been reached about that original text; Tzemah Yoreh says most scholars believe an earlier version gave no reason for observing the Sabbath, and White Crawford says the two reasons were most likely added to an older, shorter version. The NABRE notes call the present form of the commands the product of a long development. On the age of the Decalogue, the Coogan and Chapman chapter summary says the evidence indicates that its traditions are quite old, citing references in Hosea and Jeremiah and the agrarian society it presumes; Edenburg argues instead that the Decalogue appears to be a later addition to both Exodus and Deuteronomy, at least part of it added by Deuteronomistic editors."
+    short: "Over a long period, scholars say. Many think both versions grew out of a shorter, older Decalogue, but they do not agree on what it said."
+    text: "Brettler says most scholars believe both versions reflect changes over time to a much shorter original Decalogue, although no unanimity has been reached about that original text; Tzemah Yoreh says most scholars believe an earlier version gave no reason for observing the Sabbath, and White Crawford says the two reasons were most likely added to an older, shorter version. The NABRE notes call the present form of the commands the product of a long development. On the age of the Decalogue, the Coogan and Chapman chapter summary says the evidence indicates that its traditions are quite old, citing references in Hosea and Jeremiah and the agrarian society it presumes. Edenburg argues that the Decalogue was a later addition to the narratives of both Exodus and Deuteronomy, at least part of it added by Deuteronomistic editors."
     cites:
       - source: brettler-2015-thetorah-ten-insights
         locator: "item “9. We know ‘the’ text of the Decalogue.”"
         quote: "Thus, most scholars believe that both the Exodus and Deuteronomy version reflect changes over time to a much shorter original Decalogue, although no unanimity has been attained about that more original text."
         read: 2026-11-27
       - source: yoreh-2015-thetorah-original-decalogue
-        locator: "opening section"
+        locator: "section “The Utility of this Divergence: Shabbat as a Test Case”"
         quote: "Most scholars believe that an earlier version of the Decalogue contained no reason for observing the Sabbath, and that the versions in Exodus and Deuteronomy reflect two different reasons provided by different authors, with each presenting his worldview."
         read: 2026-11-27
       - source: crawford-2019-thetorah-recensions
@@ -216,7 +216,7 @@ statements:
   - id: ritual-decalogue
     group: "The Ten Commandments"
     question: "Is the Ritual Decalogue of Exodus 34 older than the Ten Commandments of Exodus 20?"
-    short: "Scholars disagree. Many have held it to be the original or earliest Decalogue; many scholars now read Exodus 34 instead as a late compilation that draws on earlier laws."
+    short: "Scholars disagree. Many hold it to be the original or earliest Decalogue; others question that dating, and some now read Exodus 34 as a late compilation that draws on earlier laws."
     text: "Brettler says many scholars believe the laws of Exodus 34:10–26, often named the Cultic Decalogue, were the original or earliest Decalogue. Sherman says many contemporary scholars now reject Julius Wellhausen's claim that Exodus 34 contains an ancient Ritual Decalogue, and argue that the whole chapter is a late compilation that draws on earlier laws; she says its festival and ritual laws are very close to those of the Covenant Code and end with exactly the same laws, while adding expansions that connect them to other legal collections. The Encyclopaedia Judaica's article on the Decalogue, in text carried over from its first edition, reports that critics regarded the Exodus 34 list as the more ancient, and questions the basis of that dating."
     cites:
       - source: brettler-2015-thetorah-ten-insights
@@ -232,11 +232,11 @@ statements:
         quote: "These laws are very close to the festival calendar and ritual laws found in the Covenant Collection (Exod 21–23), but the Ritual Decalogue also includes expansions or deviations that connect its laws to other biblical legal compositions."
         read: 2026-11-27
       - source: sherman-2024-thetorah-ritual-decalogue
-        locator: "section “Firstfruits and Animals”"
+        locator: "run-in heading “Firstfruits and Animals”, section “The Ritual Decalogue’s Festival Calendar”"
         quote: "The fact that the Covenant Collection and the Ritual Decalogue end with exactly the same laws hardly seems coincidental."
         read: 2026-11-27
       - source: greenberg-ej-decalogue
-        locator: "introductory section"
+        locator: "section “Problems of the Literary Setting”"
         quote: 'Critics have called the stipulations of Exodus 34 the "cultic decalogue," as distinguished from the traditional – or the "ethical" – decalogue, and regard it as the more ancient. This relative dating rests in large measure on the supposition that the "ethical decalogue" reflects the teachings of the literary prophets.'
         read: 2026-11-27
   - id: numbering
@@ -267,7 +267,7 @@ statements:
         quote: "the so-called commandments are actually numbered differently by Jews and by Christians and then even within the Christian community, different Christian denominations number the commandments one through ten quite differently from one another."
         read: 2026-11-27
       - source: brettler-2015-thetorah-ten-insights
-        locator: "item on the number ten"
+        locator: "item “3. We know how to get to the number ten.”"
         quote: "This is done by combining various sayings together, and/or by seeing “I am YHWH your God” as introductory, and not counting among the ten. Even Jewish tradition does not offer a single definitive way of doing this."
         read: 2026-11-27
   - id: name-in-vain
@@ -319,7 +319,7 @@ statements:
         quote: "The last Commandment is addressed explicitly only to men, just as the standing at Sinai verse was."
         read: 2026-11-27
       - source: brenner-idan-2016-thetorah-female-readers
-        locator: "closing section"
+        locator: "section “How Does a Modern Woman Adopt the Ten Commandments? Not with Apologetic Translations”"
         quote: "since it is largely agreed that I am by proxy a subgenre of the m[grammatical masculine]/M [social male] “you,” indirectly implicated albeit never explicitly addressed."
         read: 2026-11-27
   - id: covenant-code
@@ -360,7 +360,7 @@ statements:
     group: "The Covenant Code"
     question: "Is the Covenant Code the oldest collection of laws in the Bible?"
     short: "Probably, scholars say: it is widely considered the earliest collection of biblical law. But its date is debated, and some scholars place it later."
-    text: "Chaya Halberstam's chapter in the Cambridge Companion to Judaism and Law calls the Covenant Code most likely the earliest of the Hebrew Bible's three significant law collections, and the Deuteronomic Code one that most likely grew out of a revision of it. Nili Samet's Hebrew University course says scholars consider it the oldest law code of its kind in the Bible, and the abstract of Edenburg's Oxford Handbook chapter says it is widely considered the earliest collection of biblical law. The Encyclopaedia Judaica also calls it the earliest collection of biblical law, in a passage that may come from its first edition. Hayes's Yale lectures add that the Priestly source seems to represent an equally early set of laws. John Van Seters argues against what he calls the shared assumption that the Covenant Code is the oldest code, dating it to the Babylonian exile, after Deuteronomy and the Holiness Code."
+    text: "Chaya Halberstam's chapter in the Cambridge Companion to Judaism and Law calls the Covenant Code most likely the earliest of the Hebrew Bible's three significant law collections, and the Deuteronomic Code one that most likely grew out of a revision of it. Nili Samet's Hebrew University course says scholars consider it the oldest law code of its kind in the Bible, and the abstract of Edenburg's Oxford Handbook chapter says it is widely considered the earliest collection of biblical law. The Encyclopaedia Judaica also calls it the earliest collection of biblical law, in a passage that may come from its first edition. The abstract of John Van Seters's book describes it as challenging the shared assumption that the Covenant Code is the oldest code: it argues that the Covenant Code's laws that resemble Deuteronomy and the Holiness Code are later than both, and places the code in the Babylonian exile."
     cites:
       - source: halberstam-2017-law-biblical-israel
         locator: "section “The Biblical Law Collections and Other Literary Discourses”, paragraph 1"
@@ -382,10 +382,6 @@ statements:
         locator: "section “Similarity to Cuneiform Laws”, paragraph 2"
         quote: "In content too, this earliest collection of biblical law remains to a great extent within the legal orbit of its cuneiform predecessors."
         read: 2026-11-27
-      - source: hayes-rlst145-l11
-        locator: "transcript, paragraphs on Weinfeld"
-        quote: "The Priestly source seems to represent an equally early set of laws, legal traditions, that just emanated from a very different circle and had different concerns."
-        read: 2026-11-27
       - source: van-seters-2003-law-book-diaspora
         locator: "abstract"
         quote: "The foundation for all scholarly study in biblical law is the shared assumption that the Covenant Code, as contained in Exodus 20:23–23:33, is the oldest code of laws in the Hebrew Bible and that all other laws are later revisions of that code."
@@ -397,7 +393,7 @@ statements:
   - id: date
     group: "The Covenant Code"
     question: "When was the Covenant Code written?"
-    short: "Scholars do not agree. Proposals range from the early monarchy to the Babylonian exile; many place its origins in the time of the monarchy."
+    short: "Scholars do not agree. Proposals range from the time of Moses to after the exile; many place its origins in the time of the monarchy."
     text: "The Encyclopaedia Judaica says dates from the time of Moses to after the exile have been proposed, and that the monarchic period suggests itself because its laws resemble the royal law collections of the ancient Near East, a hypothesis it calls plausible but unproved. Edenburg's abstract traces its origins to the period of the monarchy. Hayes's Yale lectures say the laws in Exodus tend to be dated to the tenth or ninth century in their written form. Marvin Sweeney places it in northern Israel in the mid-eighth century BCE, and David P. Wright, who holds that it draws on the Laws of Hammurabi, between 740 and 640 BCE, before the Deuteronomic laws, which he says are generally dated to the second half of the seventh century. Van Seters places it in the Babylonian exile."
     cites:
       - source: paul-sperling-ej-book-covenant
@@ -489,7 +485,7 @@ statements:
   - id: parallels
     group: "The Covenant Code"
     question: "Which of its laws have parallels in other ancient law collections?"
-    short: "More than half of them, according to the NABRE notes. Among the best known are the laws on an ox that gores, which have counterparts in the Laws of Eshnunna and of Hammurabi."
+    short: "More than half of them, according to the NABRE notes. They include the laws on an ox that gores, which have counterparts in the Laws of Eshnunna and of Hammurabi."
     text: "The NABRE notes say more than half of the collection's laws have parallels in the cuneiform laws of the ancient Near East. Elaine Goodfriend says the goring-ox laws of Exodus 21 have counterparts in the Laws of Eshnunna (53–55) and of Hammurabi (250–252), divided in much the same way but with different penalties: only the Torah kills the offending ox, and the owner of a habitual gorer. Wright sets the goring-ox laws beside Hammurabi's 250–252 as having the same basic content, formulation and sequence, supplemented from a law like Eshnunna 53. Kazen and Lipka say several of Israel's neighbours had a similar series of goring-ox laws. Hayes's Yale lectures say there are many general and specific parallels between Israelite and ancient Near Eastern laws, among them many goring oxen and pregnant women struck by accident."
     cites:
       - source: nabre-exodus-21-notes
@@ -497,11 +493,11 @@ statements:
         quote: "More than half of the civil and religious laws in this collection (20:22–23:33), designated in 24:7 as “the book of the covenant,” have parallels in the cuneiform laws of the ancient Near East."
         read: 2026-11-27
       - source: goodfriend-2017-thetorah-goring-ox
-        locator: "section on the ancient Near Eastern laws"
+        locator: "section “The Most Celebrated Animal in Legal History”"
         quote: "The ANE law collections have more or less the same division, but with different penalties. Two differences that stand out are that in the Torah, the offending animal is killed and if the animal is a habitual gorer, the owner is killed as well. The Babylonian codes never kill the ox or the owner."
         read: 2026-11-27
       - source: wright-2009-inventing-gods-law
-        locator: "introduction, pp. 7–8"
+        locator: "introduction, p. 8"
         quote: "Though CC here exhibits some notable differences, its laws are nonetheless remarkably similar to those in LH, having the same basic content, formulation, and sequence."
         read: 2026-11-27
       - source: wright-2009-inventing-gods-law
@@ -509,7 +505,7 @@ statements:
         quote: "using a law from another cuneiform law source (similar to Eshnunna Law [= LE] 53) to supplement the basic goring ox law from LH."
         read: 2026-11-27
       - source: kazen-lipka-2026-thetorah-torah-law
-        locator: "body, on the goring ox"
+        locator: "paragraph beginning “3. An entire cluster of laws”"
         quote: "Several of Israel’s Near Eastern neighbors had a similar series of laws involving goring oxen."
         read: 2026-11-27
       - source: hayes-rlst145-l10
@@ -531,19 +527,19 @@ statements:
         quote: "Death to the woman results in death to the guilty part, while the death of the fetus (premature birth) is recompensed with money."
         read: 2026-11-27
       - source: jacobs-2020-thetorah-pregnant-woman
-        locator: "body"
+        locator: "section “Financial Compensation for Miscarriage”"
         quote: "Here if the woman lost her unborn child in the affray, her assailant had to pay a fine to her husband, which was subject to adjudication—possibly by an elder—and where the assessed amount was “based on reckoning.”"
         read: 2026-11-27
       - source: jacobs-2020-thetorah-pregnant-woman
-        locator: "body"
+        locator: "section “Financial Compensation for Miscarriage”"
         quote: "As was the case elsewhere in biblical law such assaults were perceived as an infringement of male property rights, rather than an attack on the personhood of the woman."
         read: 2026-11-27
       - source: wright-2019-thetorah-hammurabi
-        locator: "section “Aggravated Miscarriage”"
+        locator: "section “Aggravated Miscarriage and the Problem of Vicarious Punishment”"
         quote: "According to this, if the pregnant woman survives the blow, the penalty is purely financial. If she does not, the assailant is punished vicariously, namely his daughter is killed."
         read: 2026-11-27
       - source: wright-2019-thetorah-hammurabi
-        locator: "section “Aggravated Miscarriage”"
+        locator: "section “Talion: A Replacement Penalty in the Covenant Code”"
         quote: "CC’s talion law reads in this comparative context as a replacement for Hammurabi’s penalty of vicarious punishment."
         read: 2026-11-27
       - source: nabre-exodus-21-notes
@@ -553,7 +549,7 @@ statements:
   - id: talion
     group: "The Covenant Code"
     question: "Was “an eye for an eye” meant literally?"
-    short: "It is debated whether it was ever applied literally. Scholars describe it as a principle of proportionate penalty, and note that, unlike Hammurabi's laws, the biblical rule draws no distinction of social rank."
+    short: "Whether it was ever applied literally is debatable, the NABRE notes say. Unlike Hammurabi's laws, the biblical rule draws no distinction of social rank."
     text: "The NABRE note says it is debatable whether talion was ever understood or applied literally in Israel. John J. Collins says the law has long been interpreted as symbolic, meaning monetary compensation, and that its purpose was to control vengeance by making retaliation proportional to the damage done. Wright argues that the talion of Exodus 21 requires payment, not the literal infliction of injury. Marc Van De Mieroop's Bible Odyssey article says that in Hammurabi's laws the same injury is inflicted only when the two people are of the same social status, and a lower-ranking victim receives a fine; Horowitz and Collins say the biblical talion laws make no such distinction of rank."
     cites:
       - source: nabre-exodus-21-notes
@@ -561,15 +557,15 @@ statements:
         quote: "However, it is debatable whether talion was ever understood or applied literally in Israel."
         read: 2026-11-27
       - source: collins-2024-thetorah-eye-for-eye
-        locator: "body"
+        locator: "section “An Alternative Biblical Response”"
         quote: "Although the law has long been interpreted as symbolic—monetary compensation as opposed to actual dismemberment—its very tit-for-tat principle has often been dismissed as primitive and vengeful."
         read: 2026-11-27
       - source: collins-2024-thetorah-eye-for-eye
-        locator: "body"
+        locator: "section “The Talion and Justice: Balancing between Forbearance and Vengeance”"
         quote: "The purpose of the talion law was first of all to control the impulse to vengeance by subjecting it to the rule of law. It limits the scope of retaliation by making it proportional to the damage inflicted."
         read: 2026-11-27
       - source: wright-2019-thetorah-hammurabi
-        locator: "section on the talion law"
+        locator: "section ““וְנָתַתָּה”: What Does the Inadvertent Killer/Damager “Give”?”"
         quote: "That the talion law requires payment, not literal infliction of death or injury, is indicated in part by the indirect and hence unintentional nature of the assault."
         read: 2026-11-27
       - source: van-de-mieroop-bo-code-of-hammurabi
@@ -587,8 +583,8 @@ statements:
   - id: courts
     group: "The Covenant Code"
     question: "Were laws like these applied in courts?"
-    short: "Probably not as written statutes, many scholars say: collections like Hammurabi's are read as royal or scribal compositions rather than manuals for judges. Some think the Covenant Code did serve as law."
-    text: "Van De Mieroop says modern scholars do not regard Hammurabi's code as a manual that guided judges, and that many prefer to call it a proclamation of the king as guarantor of justice. Hayes's Yale lectures say these are collections rather than codes, that how they were used is not known, and that it is thought unlikely they were used by courts, though scribes copied them as part of a learned tradition. Bernard M. Levinson says it is unlikely Hammurabi's text ever had statutory force, and places the Covenant Collection in the curriculum of scribal schools before it had the status of public law; Zev Farber says little evidence suggests that the collections, the Covenant Collection among them, were used in the law courts. Sweeney, by contrast, thinks the Covenant Code likely functioned as an active law code in northern Israel, and the NABRE notes call its ordinances judicial precedents for settling questions of law and custom."
+    short: "Probably not as written statutes, many scholars say: collections like Hammurabi's are read as royal or scribal compositions rather than manuals for judges."
+    text: "Van De Mieroop says modern scholars do not regard Hammurabi's code as a manual that guided judges, and that many prefer to call it a proclamation of the king as guarantor of justice. Hayes's Yale lectures say these are collections rather than codes, that how they were used is not known, and that it is thought unlikely they were used by courts, though scribes copied them as part of a learned tradition. Bernard M. Levinson says it is unlikely Hammurabi's text ever had statutory force, and places the Covenant Collection in the curriculum of scribal schools before it had the status of public law; Zev Farber says little evidence suggests that the collections, the Covenant Collection among them, were used in the law courts. Sweeney, by contrast, thinks the Covenant Code likely functioned as an active law code in northern Israel. The NABRE notes gloss its “ordinances” as judicial precedents for settling questions of law and custom."
     cites:
       - source: van-de-mieroop-bo-code-of-hammurabi
         locator: "body"
@@ -671,7 +667,7 @@ statements:
         quote: "the term was limited to six years by Exodus, by the Covenant Code. In the Priestly code, it's prohibited altogether."
         read: 2026-11-27
       - source: hayes-rlst145-l11
-        locator: "transcript, paragraphs on Weinfeld"
+        locator: "ch. 3 “Updated and Revised Laws According to New Ideas” [00:22:16]"
         quote: "Like D, P often updates and revises laws of the Covenant Code. We can see that in the fact that the Priestly source abolishes Israelite debt slavery altogether and insists that slaves must be acquired only from the nations around Israel: no Israelite can enslave another Israelite."
         read: 2026-11-27
       - source: sweeney-2016-thetorah-debt-slavery
@@ -738,7 +734,7 @@ statements:
         read: 2026-11-27
       - source: chabad-ten-commandments
         locator: "opening paragraph"
-        quote: "The 10 Commandments (or Aseret Hadibrot, “The Ten Statements,” in Hebrew) were communicated by G‑d to the people of Israel at Mount Sinai, 50 days after the Exodus from Egypt."
+        quote: 'The 10 Commandments (עשרת הדברות, "Aseret Hadibrot," “The Ten Statements,” in Hebrew) were communicated by G‑d to the people of Israel at Mount Sinai, 50 days after the Exodus from Egypt.'
         read: 2026-11-27
       - source: chabad-ten-commandments
         locator: "section “The Symmetry of the Ten Commandments”"

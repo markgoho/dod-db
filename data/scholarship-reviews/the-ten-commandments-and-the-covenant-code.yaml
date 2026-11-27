@@ -8,1321 +8,1319 @@
 # Dropped for want of a second author or a qualifying source: which of Exodus 20 and Deuteronomy 5 is older (Gnuse, Qeios 2023, open post-publication review, not shown to be peer-reviewed: uncited); Deuteronomy's coveting commandment as two commandments (the Coogan summary only; kept in the differences text as the summary's words); the name commandment as "bearing" the name in public (Imes 2018, publisher blurb only: lead); the Holiness Code revising the Covenant Code beyond the slave law (Sweeney, Wright JHS; Farber disagrees; slaves statement keeps only the slave law); law collections as royal propaganda vs. guidance vs. scribal treatises (Morrow, The Bible and Interpretation, a web magazine: uncited); the ear-piercing location in Exodus 21:6 (NABRE vs Farber/Levinson: not stated).
 # First pass: five research agents fetched every source on 2026-11-27 into separate scratch folders and copied quotes from the fetched text; every page quote was then script-matched against those saved texts (whitespace, HTML entities, curly quotes, dashes, soft and non-breaking hyphens, Hebrew vowel points and inline tags normalised; bracketed footnote markers such as [27] stripped from the source text, as earlier pages drop them from quotes): 150/150, 0 misses. The second pass must re-fetch.
 # Flags for the second pass: (1) TheTorah.com: 21 articles by named scholars, classed Reference as the registry's earlier TheTorah entries are; the live pages render by script, so the text was read from the embedded article data or Internet Archive copies. Many statements lean on this one platform (independent authors, one site). (2) Abstract-only citations: Edenburg 2019 and Van Seters 2003 (OUP abstracts; chapter and book paywalled), as the registry's abstract-only convention. Edenburg 2019 backs the core; the core holds without her (Halberstam, Samet, Paul/Sperling). (3) Encyclopaedia Judaica: Paul/Sperling "Book of the Covenant" — its "earliest collection" sentence is probably 1st-ed. (1971) text, so it is not relied on for the state of the field; the "Date" section is 2nd-ed. Greenberg "Decalogue" — biblical section is 1st-ed. text with one 2nd-ed. sentence (Staples, Sperling); used for what it reports ("traditionally", "Critics … regard"), not for the current field. (4) Wright 2009 read in an ebook distributor's (pageplace.de) preview PDF of the OUP book, not an OUP-hosted page. (5) Samet 2017: edX asset PDF of IsraelX courseware (lecture text), treated like Open Yale transcripts. (6) SBL lesson plan: no author or date on the PDF (uploaded 2024/08). (7) Van De Mieroop and Farber Bible Odyssey pages: page dates are site bulk-import timestamps; year null. (8) Numbering: Brown and the NABRE place the Anglican tradition on opposite sides; the text says so and the short leaves Anglicans out. (9) Hayes l10 contains a slip ("vain oath as opposed to a false oath" for Deut 5) not cited; her "She" in name-in-vain/4 is Israel. (10) Chabad.org's live site refuses scripted requests; read in an Internet Archive snapshot. (11) Sweeney's extent "Exodus 21:1-24:18" is idiosyncratic; cited only for his date and his law-code view.
+# Second agent pass 2026-11-27 (#93 delegation, independent): all 47 cited sources (47 URLs) re-fetched into the second pass's own scratch folder, not the first pass's files. 42 by curl with a browser User-Agent (TheTorah.com text from the page's embedded article data, decoded; PDFs through pdftotext); NABRE Exodus 21 and 34, both OUP abstracts (Edenburg 2019, Van Seters 2003) and Chabad.org returned 403 to curl and were read live in Claude in Chrome as rendered page text (the OUP book page showed a Cloudflare check that cleared on its own; nothing was worked around); no Internet Archive copy was used. Of the 150 first-pass quotes, 135 matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags, Hebrew points and [n] footnote markers normalised) and 14 by eye in the browser text; 1 miss: tradition/9 (Chabad), whose live wording differs from the first pass's snapshot, re-transcribed from the live page. Footnote locators checked against the [n] markers (Sherman 3, Horowitz 9 and 13, Milstein 7, Kazen-Lipka 21, Jacobs 23, Collins 23, Levinson 2021 3); Wright 2009 page locators against printed folios; Hayes chapter locators against the transcript chapter headings. All 17 Trigger Claims re-matched by script at timestamp and speaker in the final transcripts as contiguous spans inside the turn and read about two minutes either side. 149 citations after the cut below.
+# Second pass changes. Cut to uncited: oldest/6 (Hayes l11 “equally early”: compares P with D, and her next sentence has P revising the Covenant Code, so it is no counterweight in oldest); oldest/7–8 renumbered /6–/7; its text sentence dropped. Shorts: ten-words (“commonly been read” had no quote for 34:28 itself; “some think the phrase was added later” Sherman alone; now “It may refer to the Decalogue of Exodus 20, but many scholars argue …”); composition (“There is no agreed date … or how old it is”, stated by no source, to “Over a long period, scholars say … but they do not agree on what it said”); ritual-decalogue (“Many have held” to “Many hold”; “many scholars now read … late compilation”, Sherman's report alone, to “others question that dating, and some now read …”: Greenberg and Sherman); date (“range from the early monarchy” contradicted EJ's “from the period of Moses”; now “from the time of Moses to after the exile”); parallels (“Among the best known” unsourced, to “They include”); talion (“It is debated” NABRE alone, now “Whether it was ever applied literally is debatable, the NABRE notes say”; “principle of proportionate penalty” Collins alone, out of the short); courts (“Some think the Covenant Code did serve as law” Sweeney alone, out of the short; the NABRE “judicial precedents” line glosses a word, not use). Text: composition Edenburg clause made its own sentence, “Edenburg argues that the Decalogue was a later addition to the narratives …”, out from under “On the age of the Decalogue” (she dates its insertion, not its traditions); courts NABRE “ordinances” gloss given its own sentence, off Sweeney's contrast side; oldest Van Seters sentence attributed to his book's abstract (third-person publisher copy) and narrowed to “laws that resemble Deuteronomy and the Holiness Code are later than both”. Quote: tradition/9 re-transcribed from the live Chabad page. Locators: name/2 (item “1. These should be called the Ten Commandments.”), name/6 (section “Statements/Words (Logoi)”), name/7 (section “Coining the Term ‘Decalogue’”), ten-words/2, /3, /5, /6 and /7, differences/4, composition/2, ritual-decalogue/4 and /5, addressed/5, parallels/2, miscarriage/3–6 and talion/2–4 (each now the nearest section heading before the quote, found by script), parallels/5 (paragraph beginning “3. An entire cluster of laws”), numbering/6 (item 3), parallels/3 (p. 8), slaves/2 (Hayes l11 ch. 3 [00:22:16]). Triggers file and registry not edited.
+# Second pass flags: (1) Brown's Bible Odyssey “Did You Know?” box (versions/2, numbering/2) sits under the byline and may be editorial; the Mary Magdalene pass declined such a box (Swenson), but trunk already cites this Brown box (the-emergence-of-monotheism-and-the-divine-council), so kept; numbering/2 is the only quote for the Jewish first word at 20:2 and Brown's Anglican placement (text only). (2) Registry access lines for nabre-exodus-21-notes, nabre-exodus-34-notes and chabad-ten-commandments still say “read in an Internet Archive snapshot”; this pass read them live in Chrome; the Chabad live text differs from the snapshot. (3) Triggers: 66@00:34:04 (“almost certainly … an oath”) is stronger than the name-in-vain short; 93@00:20:23 is unhedged against the courts short (same direction); 31@00:06:51's turn continues into an unhedged “basically an adaptation” of Hammurabi, outside the span; 23@00:48:07, 93@00:04:24 and 93@00:27:05 do not name their subject in the span. None contradicts a statement; all kept. (4) ritual-decalogue: inside the 30-year window each side of “Scholars disagree” rests on one author: Brettler 2015 (“many scholars believe”) for the old dating, Sherman 2024 (“many contemporary scholars now reject”) for the late compilation; Greenberg's questioning is 1st-ed. EJ text. Gesundheit and Carr are leads. The lead may prefer to drop “others question … some now read …” from the short and keep it in the text only. (5) First-pass flags (1)–(11) re-checked: TheTorah.com articles' bodies are in the embedded article data, not an Archive copy, for all 21; Paul/Sperling byline “(2nd ed.)”; Greenberg “© 2008 The Gale Group”; Samet's PDF is lecture text and gives the Book of the Covenant as Exodus 20:22–24:3 (not cited); Sweeney's extent stands. (6) numbering and tradition ask near-identical questions (“Do all traditions number …” / “How do religious traditions number …”); ids unchanged, flagged for the lead. Publish rule recomputed: 20 statements; core oldest on Halberstam, Samet, Edenburg 2019 and Paul/Sperling (4 independent authors; Van Seters not counted); none Host-authored. Ids, slug, draft and review unchanged.
 delegation:
   by: owner
   date: 2026-11-23
   issue: "#93"
+  secondPass: 2026-11-27
 citations:
   name/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   name/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator made findable as item “1. These should be called the Ten Commandments.”; supports the statement.",
     }
   name/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   name/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   name/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   name/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator changed to the section heading “Statements/Words (Logoi)”; the preceding sentence gives LXX Exod 34:28 τους δεκα λογους and Deut 4:13 the synonymous “ten words”, so “renders the phrase ‘the ten words’” holds.",
     }
   name/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator changed to the section heading “Coining the Term ‘Decalogue’”; supports the statement.",
     }
   versions/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   versions/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; the quote is in Brown's “Did You Know?” box under the byline, which may be editorial (the Mary Magdalene pass declined such a box for Swenson); kept, as trunk already cites this box (the-emergence-of-monotheism-and-the-divine-council) and HarperCollins backs the same point; flagged.",
     }
   versions/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   versions/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   versions/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   versions/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   versions/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   versions/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   versions/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   versions/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   ten-words/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; the note reads v. 28’s words as “especially the Decalogue”; backs the short's “may refer to the Decalogue of Exodus 20” with ten-words/4.",
     }
   ten-words/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator changed to the section heading “‘The Teaching and the Commandment’ – The Decalogue?”. The sentence is about the tablets of Exodus 24:12 (tied there to 34:28’s “Ten Words”), not the phrase in 34:28 itself, so the short no longer says the verse “has commonly been read” as the Decalogue; the text’s “of what was written on the tablets” is accurate.",
     }
   ten-words/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator changed to the section heading “The Cultic Decalogue: A Different Set of ‘Ten Words’”; supports the statement.",
     }
   ten-words/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   ten-words/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   ten-words/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   ten-words/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; “some scholars … later addition” is Sherman alone, so it is out of the short and kept in the text, attributed. Locator changed to the nearest section heading before the quote (found by script).",
     }
   ten-words/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   differences/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   differences/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   differences/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   differences/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   differences/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   differences/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   differences/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   differences/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   composition/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; with composition/4 (NABRE “long development”) backs the new short “Over a long period, scholars say”.",
     }
   composition/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   composition/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   composition/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator checked; backs “Over a long period” with Brettler (composition/1).",
     }
   composition/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   composition/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script. Edenburg argues the Decalogue was added later to the Sinai narratives and has its origins in wisdom literature; she does not date its traditions late against Coogan, so the text's “argues instead” is now a separate sentence, “Edenburg argues that the Decalogue was a later addition to the narratives of both Exodus and Deuteronomy …”, out from under “On the age of the Decalogue”, and the short drops “no agreed date … or how old it is”, which no source states.",
     }
   composition/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; “at least this opening” is the Decalogue's religious opening; the text's “at least part of it” holds.",
     }
   ritual-decalogue/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; present tense (“many scholars believe”), so the short now says “Many hold”.",
     }
   ritual-decalogue/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator checked. “Many contemporary scholars now … late compilation” is Sherman's report alone (Gesundheit and Carr are leads), so the short narrows it to “some now read Exodus 34 as a late compilation”; with ritual-decalogue/5 (Greenberg questioning the dating) it backs “others question that dating”. Inside the 30-year window each side rests on one author (Brettler 2015; Sherman 2024); Greenberg's text is 1st-ed.; flagged.",
     }
   ritual-decalogue/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   ritual-decalogue/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   ritual-decalogue/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; the next sentences argue that nothing peculiar to literary prophecy appears in the ethical decalogue, so EJ questions the basis of the dating, as the text says; with Sherman the second author behind the short's “others question that dating”. Locator changed to the nearest section heading before the quote (found by script).",
     }
   numbering/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   numbering/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; “Did You Know?” box (see versions/2); kept on the trunk precedent and flagged: it is the only quote for the Jewish first word at 20:2 and for Brown's Anglican placement, which stay in the text only.",
     }
   numbering/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   numbering/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   numbering/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   numbering/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator made findable as item “3. We know how to get to the number ten.”; supports the statement.",
     }
   name-in-vain/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   name-in-vain/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   name-in-vain/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   name-in-vain/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; ch. 2 [00:03:38] confirmed; “She” is Israel, the vassal; supports the text.",
     }
   name-in-vain/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   addressed/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   addressed/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   addressed/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   addressed/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   addressed/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   covenant-code/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   covenant-code/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   covenant-code/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; locator checked; surrounding passage read; supports the statement as worded.",
     }
   covenant-code/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   covenant-code/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   covenant-code/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   covenant-code/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   oldest/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   oldest/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   oldest/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   oldest/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; locator checked; surrounding passage read; supports the statement as worded.",
     }
   oldest/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; the sentence sits in the descriptive section of the entry (2nd-ed. byline “Shalom M. Paul/S. David Sperling (2nd ed.)” at the foot), but may be 1st-ed. text as the first pass flagged; the text keeps “may come from its first edition”.",
     }
   oldest/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched (Claude in Chrome; curl 403; Cloudflare check cleared on its own, not worked around); matched by eye in the rendered abstract. The abstract is third-person publisher copy, so the text now attributes the framing to the abstract instead of “what he calls”.",
     }
   oldest/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
-    }
-  oldest/8:
-    {
-      agent: pass,
-      owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome; matched by eye; the text's “laws that resemble Deuteronomy and the Holiness Code are later than both” now follows the abstract instead of dating the whole code “after” D and H.",
     }
   date/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; “ranging from the period of Moses to post-exilic times” contradicted the old short's “range from the early monarchy”; the short now says “from the time of Moses to after the exile”.",
     }
   date/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   date/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   date/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; locator checked; surrounding passage read; supports the statement as worded.",
     }
   date/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; ch. 1 [00:00:00] confirmed; “they” are the laws scholars call the JE laws, in Exodus, as the text says.",
     }
   date/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; Sweeney says the code functioned in mid-eighth-century northern Israel; the text's “places it” is kept as the time he gives.",
     }
   date/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   date/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   date/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; locator checked; surrounding passage read; supports the statement as worded.",
     }
   hammurabi/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   hammurabi/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   hammurabi/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   hammurabi/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   hammurabi/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   hammurabi/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   hammurabi/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   hammurabi/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   hammurabi/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   hammurabi/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   hammurabi/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; locator checked; surrounding passage read; supports the statement as worded.",
     }
   parallels/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; locator checked; surrounding passage read; supports the statement as worded.",
     }
   parallels/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; the Eshnunna 53–55 and Hammurabi 250–252 numbers are in the same article's opening section (read), not in the quoted span. The short's “Among the best known” had no quote (only Goodfriend's report of Bernard Jackson's phrase, a lead); now “They include”. Locator changed to the nearest section heading before the quote (found by script).",
     }
   parallels/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; the sentence is wholly on printed p. 8 (pdftotext page with folio 8), so locator changed from “pp. 7–8” to “p. 8”.",
     }
   parallels/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   parallels/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   parallels/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   miscarriage/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   miscarriage/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   miscarriage/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   miscarriage/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   miscarriage/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   miscarriage/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   miscarriage/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; locator checked; surrounding passage read; supports the statement as worded.",
     }
   talion/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye. “It is debated” in the old short rested on this note alone; the short now reads “Whether it was ever applied literally is debatable, the NABRE notes say”.",
     }
   talion/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator changed to the section heading “An Alternative Biblical Response”. “Long been interpreted as symbolic” is Collins's concessive report of later interpretation, one voice, so it backs the text only; no compensation clause in the short.",
     }
   talion/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator changed to the section heading “The Talion and Justice: Balancing between Forbearance and Vengeance”; “proportional” is Collins alone, so it is out of the short and kept in the text, attributed.",
     }
   talion/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded. Locator changed to the nearest section heading before the quote (found by script).",
     }
   talion/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   talion/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   talion/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; footnote 23 confirmed; Collins's “except that Babylonian law varies the penalty depending on social status” implies the biblical law does not, as the text says.",
     }
   courts/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   courts/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   courts/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   courts/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   courts/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   courts/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; the old short's “Some think the Covenant Code did serve as law” rested on Sweeney alone (courts/7 glosses the word “ordinances”, not the code's use), so it is out of the short; Sweeney and the NABRE gloss stay in the text, attributed.",
     }
   courts/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye; a gloss on “ordinances”, not a claim about use; the text now gives it its own sentence (“The NABRE notes gloss its ‘ordinances’ as …”), off Sweeney's contrast side.",
     }
   deuteronomy/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   deuteronomy/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   deuteronomy/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   deuteronomy/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   deuteronomy/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   deuteronomy/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   deuteronomy/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   deuteronomy/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; Koller's own reading of the Exodus 21 and Deuteronomy 15 female-slave laws; supports the text.",
     }
   deuteronomy/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; locator checked; surrounding passage read; supports the statement as worded.",
     }
   slaves/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   slaves/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator changed from “transcript, paragraphs on Weinfeld” to ch. 3 “Updated and Revised Laws According to New Ideas” [00:22:16]; supports the statement.",
     }
   slaves/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   slaves/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   slaves/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   slaves/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   slaves/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   slaves/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: 'First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403). The live page reads “(עשרת הדברות, "Aseret Hadibrot," “The Ten Statements,” in Hebrew)”, not the first pass''s Internet Archive wording “(or Aseret Hadibrot, …)”; the quote is re-transcribed verbatim from the live page, same sentence and locator; supports the text.',
     }
   tradition/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the section “The Symmetry of the Ten Commandments”; supports the text.",
     }
 triggers:
   21@00:35:38:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed. Hedges kept (“probably”, “maybe 10th, probably more likely 9th or 8th”); the date is within the range the date statement reports.",
     }
   23@00:48:07:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed. The span does not name its subject (the Exodus 21 miscarriage law, named in the 00:47:06 turn before); flagged for the lead.",
     }
   31@00:02:50:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed.",
     }
   31@00:04:58:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed.",
     }
   31@00:06:51:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed. The turn continues past the span into an unhedged claim that the Covenant Code is “basically an adaptation” of the Laws of Hammurabi, stronger than the hammurabi short (scholars disagree); not in the span, so not a conflict on the page as attached; flagged.",
     }
   31@00:22:57:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed.",
     }
   31@00:23:14:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed.",
     }
   66@00:34:04:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed. “Almost certainly a reference to swearing an oath” is stronger than the name-in-vain short (“traditionally … false oaths … may cover more than that”); not a contrary fact (Hayes and Edenburg read it as a false oath), so kept; flagged.",
     }
   66@00:55:37:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed.",
     }
   93@00:04:24:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed. The span (“this is the earliest legal material”) does not name the Covenant Code, named earlier in the same turn; the turn goes on “So, like Ten Commandments that came together over a few centuries …”, and the next turn's “probably exilic in its final form” (00:05:29) is about that Decalogue of Exodus 20 (Beecher's follow-up), not the Covenant Code; flagged.",
     }
   93@00:05:52:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed.",
     }
   93@00:08:49:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed.",
     }
   93@00:19:21:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed.",
     }
   93@00:20:23:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed. Unhedged (“were not … on-the-ground, actual jurisprudence”) against the courts short (“Probably not …, many scholars say”); same direction, so kept; flagged.",
     }
   93@00:27:05:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed. The span does not name its law (the kidnapping law, Exodus 21:16, discussed in the turns before); flagged.",
     }
   167@00:05:27:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed.",
     }
   187@00:05:58:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript (contiguous span inside the turn, not the full turn); read the full turns about two minutes either side; Speaker, text and subject confirmed.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: 20 statements, 150 citations. Core oldest cites Halberstam 2017 (Scholarly), Samet 2017 (Reference), Edenburg 2019 (Scholarly, abstract), Paul and Sperling (EJ, Reference), Hayes l11 (Reference, nuance), Van Seters 2003 (Scholarly, abstract, dissent): 6 author strings, 4 counted by hand for the claim (Hayes and Van Seters not counted), none Host-authored.",
+      note: "First pass 2026-11-27: 20 statements, 150 citations. Core oldest cites Halberstam 2017 (Scholarly), Samet 2017 (Reference), Edenburg 2019 (Scholarly, abstract), Paul and Sperling (EJ, Reference), Hayes l11 (Reference, nuance), Van Seters 2003 (Scholarly, abstract, dissent): 6 author strings, 4 counted by hand for the claim (Hayes and Van Seters not counted), none Host-authored. Second pass 2026-11-27: recomputed after the cuts: 20 statements, 149 citations (oldest/6, Hayes l11 “equally early”, cut to uncited). Core oldest cites Halberstam 2017 (Scholarly), Samet 2017 (Reference), Edenburg 2019 (Scholarly, abstract), Paul and Sperling (EJ, Reference; sentence possibly 1st-ed. text) and Van Seters 2003 (Scholarly, abstract, dissent): 4 independent authors counted for the claim (Van Seters not counted), at least one Scholarly and inside the 30-year window, none Host-authored. Holds.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: “consensus” is not used on the page. “Most scholars” appears only as a source's own words, attributed (Brettler, Yoreh, Wright on his opponents, Farber), never in a short. “Many scholars” in shorts (ten-words, ritual-decalogue, hammurabi, courts, deuteronomy) is quoted from 2+ sources in each statement.",
+      note: "First pass 2026-11-27: “consensus” is not used on the page. “Most scholars” appears only as a source's own words, attributed (Brettler, Yoreh, Wright on his opponents, Farber), never in a short. “Many scholars” in shorts (ten-words, ritual-decalogue, hammurabi, courts, deuteronomy) is quoted from 2+ sources in each statement. Second pass 2026-11-27: “consensus” still not used; “most scholars” only in sources’ own words, attributed. Shorts narrowed for #133: ten-words (“commonly been read” had no quote for 34:28; “added later” Sherman alone, text only); composition (“no agreed date … how old it is” stated by no source; now “Over a long period”: NABRE, Brettler, White Crawford); ritual-decalogue (“have held” to “hold”, Brettler present tense; “many scholars now … late compilation” Sherman alone, now “others question that dating” on Greenberg and Sherman, “some now read”); date (range corrected to EJ’s “from the period of Moses to post-exilic times”); parallels (“Among the best known” unsourced, now “They include”); talion (“debated” NABRE alone, now attributed in the short; “proportionate” Collins alone, text only); courts (“Some think the Covenant Code did serve as law” Sweeney alone, text only). Independence counted with Brettler 2015 and Brettler-Wyrick, Edenburg 2019 and 2023, Wright 2009/2011/2019, Levinson 2021 and 2026, both Farbers, Hayes l10 and l11, Coogan ch. 7 and 8, and the three NABRE chapters each as one voice.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: every dissent is named in the text: Edenburg (composition), Greenberg/EJ (ritual-decalogue), Van Seters (oldest, date, deuteronomy), Hayes (oldest: equally early P), Wright (hammurabi), Koller (deuteronomy), Sweeney and NABRE (courts).",
+      note: "First pass 2026-11-27: every dissent is named in the text: Edenburg (composition), Greenberg/EJ (ritual-decalogue), Van Seters (oldest, date, deuteronomy), Hayes (oldest: equally early P), Wright (hammurabi), Koller (deuteronomy), Sweeney and NABRE (courts). Second pass 2026-11-27: re-checked; Hayes l11 “equally early” (oldest) cut, so no longer a named dissent; Van Seters now attributed through his book’s abstract (publisher copy); Sweeney (courts) remains named in the text; NABRE’s “judicial precedents” gloss is text only, not a dissent; Edenburg (composition) no longer framed as “instead” of Coogan.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: tradition statement names each Tradition source in its own words: the Catholic Church (Catechism), Lutheran (Luther's Small Catechism), Reformed (Heidelberg Catechism, CRCNA), Chabad-Lubavitch (Chabad.org).",
+      note: "First pass 2026-11-27: tradition statement names each Tradition source in its own words: the Catholic Church (Catechism), Lutheran (Luther's Small Catechism), Reformed (Heidelberg Catechism, CRCNA), Chabad-Lubavitch (Chabad.org). Second pass 2026-11-27: re-checked: Catechism of the Catholic Church (Vatican), Luther’s Small Catechism (bookofconcord.org) as a Lutheran confession, Heidelberg Catechism (CRCNA) as a Reformed confession, Chabad.org of the Chabad-Lubavitch movement (live page, byline Menachem Posner); none supports what scholars think.",
     }
 sources:
   brown-bo-ten-commandments:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2017; access: Society of Biblical Literature website, open.",
+      note: "First pass 2026-11-27: Reference; 2017; access: Society of Biblical Literature website, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   brettler-2015-thetorah-ten-insights:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   nabre-exodus-20-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2011; access: Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests.",
+      note: "First pass 2026-11-27: Reference; 2011; access: Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   hayes-rlst145-l10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2006; access: University courseware, open.",
+      note: "First pass 2026-11-27: Reference; 2006; access: University courseware, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   brettler-wyrick-2023-thetorah-decalogue:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2023; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2023; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   harpercollins-2009-dictionary:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2009; access: Entries reproduced on the Society of Biblical Literature's Bible Odyssey, open.",
+      note: "First pass 2026-11-27: Reference; 2009; access: Entries reproduced on the Society of Biblical Literature's Bible Odyssey, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   coogan-brief-4e-summary-ch7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2019; access: Publisher companion page, open.",
+      note: "First pass 2026-11-27: Reference; 2019; access: Publisher companion page, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   coogan-brief-4e-summary-ch8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2019; access: Publisher companion page, open.",
+      note: "First pass 2026-11-27: Reference; 2019; access: Publisher companion page, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   nabre-exodus-34-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2011; access: Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests.",
+      note: "First pass 2026-11-27: Reference; 2011; access: Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests. Second pass 2026-11-27: live site returns 403 to curl; read live in Claude in Chrome (rendered page text); the registry access line still says “read in an Internet Archive snapshot” (flagged). Class and recency window re-checked.",
     }
   frankel-2018-thetorah-tablets:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2018; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2018; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   edenburg-2023-thetorah-origins-decalogue:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2023; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2023; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   sherman-2024-thetorah-ritual-decalogue:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2024; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2024; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   crawford-2019-thetorah-recensions:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2019; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2019; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   solomon-2013-thetorah-two-shabbats:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2013; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2013; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   yoreh-2015-thetorah-original-decalogue:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   greenberg-ej-decalogue:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year not on page; access: Entry reproduced on the Jewish Virtual Library, open.",
+      note: "First pass 2026-11-27: Reference; year not on page; access: Entry reproduced on the Jewish Virtual Library, open. Second pass 2026-11-27: re-fetched; “© 2008 The Gale Group”; bibliography runs to Sperling (1998) with the 1st-ed. biblical text; used for what it reports (“traditionally”, “Critics … regard”), not the current field, with NABRE (2011) inside the window for the same shorts. Class re-checked.",
     }
   brenner-idan-2016-thetorah-female-readers:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2016; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2016; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   paul-sperling-ej-book-covenant:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year not on page; access: Entry reproduced on Encyclopedia.com, open.",
+      note: "First pass 2026-11-27: Reference; year not on page; access: Entry reproduced on Encyclopedia.com, open. Second pass 2026-11-27: re-fetched; byline “Shalom M. Paul/S. David Sperling (2nd ed.)”; class re-checked; the “earliest collection” sentence may be 1st-ed. text (first-pass flag stands); the core holds without it.",
     }
   edenburg-2019-book-of-covenant:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; 2019; access: Publisher abstract, open (chapter paywalled; abstract only cited).",
+      note: "First pass 2026-11-27: Scholarly; 2019; access: Publisher abstract, open (chapter paywalled; abstract only cited). Second pass 2026-11-27: curl 403; abstract read in Claude in Chrome on the OUP chapter page; abstract only cited. Class and recency window re-checked.",
     }
   halberstam-2017-law-biblical-israel:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; 2017; access: Publisher chapter page, full text open.",
+      note: "First pass 2026-11-27: Scholarly; 2017; access: Publisher chapter page, full text open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   samet-2017-israelx-ane-law:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2017; access: University courseware PDF, open.",
+      note: "First pass 2026-11-27: Reference; 2017; access: University courseware PDF, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   hayes-rlst145-l11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2006; access: University courseware, open.",
+      note: "First pass 2026-11-27: Reference; 2006; access: University courseware, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   van-seters-2003-law-book-diaspora:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; 2003; access: Publisher abstract, open (book paywalled; abstract only cited).",
+      note: "First pass 2026-11-27: Scholarly; 2003; access: Publisher abstract, open (book paywalled; abstract only cited). Second pass 2026-11-27: curl 403; abstract read in Claude in Chrome on the OUP book page (a Cloudflare check cleared on its own; nothing was worked around); the abstract is third-person publisher copy; abstract only cited. Class and recency window re-checked.",
     }
   sweeney-2016-thetorah-debt-slavery:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2016; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2016; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   wright-2019-thetorah-hammurabi:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2019; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2019; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   horowitz-2024-thetorah-eye-for-eye:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2024; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2024; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   sbl-hammurabi-lesson:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year not on page; access: Society of Biblical Literature website PDF, open.",
+      note: "First pass 2026-11-27: Reference; year not on page; access: Society of Biblical Literature website PDF, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   wright-2009-inventing-gods-law:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; 2009; access: Publisher ebook preview PDF (introduction), open.",
+      note: "First pass 2026-11-27: Scholarly; 2009; access: Publisher ebook preview PDF (introduction), open. Second pass 2026-11-27: re-fetched the pageplace.de preview PDF; printed folios checked (PDF p. 18 = p. 3, p. 23 = p. 8, p. 31 = p. 16, p. 38 = p. 23). Class and recency window re-checked.",
     }
   milstein-2021-thetorah-levirate:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2021; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2021; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   kazen-lipka-2026-thetorah-torah-law:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2026; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2026; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   jacobs-2020-thetorah-pregnant-woman:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2020; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2020; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   nabre-exodus-21-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2011; access: Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests.",
+      note: "First pass 2026-11-27: Reference; 2011; access: Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests. Second pass 2026-11-27: live site returns 403 to curl and the Internet Archive fetch was not available to this pass; read live in Claude in Chrome (rendered page text); the registry access line still says “read in an Internet Archive snapshot” (flagged). Class and recency window re-checked.",
     }
   goodfriend-2017-thetorah-goring-ox:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2017; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2017; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   garroway-bo-abortion-miscarriage:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2022; access: Society of Biblical Literature website, open.",
+      note: "First pass 2026-11-27: Reference; 2022; access: Society of Biblical Literature website, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   collins-2024-thetorah-eye-for-eye:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2024; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2024; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   van-de-mieroop-bo-code-of-hammurabi:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year not on page; access: Society of Biblical Literature website, open.",
+      note: "First pass 2026-11-27: Reference; year not on page; access: Society of Biblical Literature website, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   levinson-2021-thetorah-judicial-system:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2021; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2021; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   levinson-2026-thetorah-tradition:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2026; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2026; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   farber-2015-thetorah-hebrew-slave:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   wright-2011-jhs-review-westbrook-wells:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; 2011; access: Open-access journal, open.",
+      note: "First pass 2026-11-27: Scholarly; 2011; access: Open-access journal, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   koller-2015-thetorah-hebrew-slave:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy). Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   farber-bo-slavery-hebrew-bible:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year not on page; access: Society of Biblical Literature website, open.",
+      note: "First pass 2026-11-27: Reference; year not on page; access: Society of Biblical Literature website, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   ccc-2052-2074:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition; year not on page; access: Vatican website, open.",
+      note: "First pass 2026-11-27: Tradition; year not on page; access: Vatican website, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   ccc-2514:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition; year not on page; access: Vatican website, open.",
+      note: "First pass 2026-11-27: Tradition; year not on page; access: Vatican website, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   luther-small-catechism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition; year not on page; access: Website, open.",
+      note: "First pass 2026-11-27: Tradition; year not on page; access: Website, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   heidelberg-catechism-crcna:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition; year not on page; access: Denominational website, open.",
+      note: "First pass 2026-11-27: Tradition; year not on page; access: Denominational website, open. Second pass 2026-11-27: re-fetched; class and recency window re-checked.",
     }
   chabad-ten-commandments:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition; year not on page; access: Website; read in an Internet Archive snapshot, as the live site refuses scripted requests.",
+      note: "First pass 2026-11-27: Tradition; year not on page; access: Website; read in an Internet Archive snapshot, as the live site refuses scripted requests. Second pass 2026-11-27: live site returns 403 to curl; read live in Claude in Chrome; the live opening sentence differs from the first pass’s snapshot wording (tradition/9 re-transcribed); byline Menachem Posner; the registry access line still says “read in an Internet Archive snapshot” (flagged).",
     }
 leads:
   - "Erhard Blum, “The Decalogue and the Composition History of the Pentateuch”, in The Pentateuch: International Perspectives (FAT 78, 2011): five-prohibition core; read only as reported by Edenburg 2023."
@@ -1349,3 +1347,4 @@ uncited:
   - "Ada Taggar-Cohen, “Hittite Laws and Texts” (Bible Odyssey): read; Hittite laws were in use, unlike Mesopotamian collections; not cited (about Hittite law, not the Covenant Code)."
   - "Coogan and Chapman ch. 10 summary: read; Deuteronomy's laws “parallel and modify laws found elsewhere”; generic, not naming the Covenant Code; not cited."
   - "Rollston (TheTorah 2017), Levinson 2021 body, Morrow via Wright: read or seen; not needed beyond the cited Hammurabi sources."
+  - "Christine Hayes, RLST 145 lecture 11, ch. 3 [00:22:16]: “The Priestly source seems to represent an equally early set of laws, legal traditions, that just emanated from a very different circle and had different concerns” (was oldest/6). Read; cut by the second pass (2026-11-27): the sentence compares P with D, and her next sentence says P “often updates and revises laws of the Covenant Code”, so it does not set P as early as the Covenant Code in the oldest statement."
