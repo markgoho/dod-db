@@ -1,8 +1,8 @@
 ---
 title: "December 25 first attested as the date of Jesus' birth"
 entryKind: event
-draft: true
-sourcesRead:
+draft: false
+sourcesRead: 2026-11-27
 related:
   {
     books: [matthew, luke],
