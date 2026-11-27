@@ -21,7 +21,7 @@ critical:
   from: -850
   to: -840
   precision: century
-  note: "The sources date the Mesha stele, a royal inscription of Mesha, king of Moab, to around 840 BCE or the middle of the ninth century BCE. It is the oldest reference to Yahweh outside the Bible, and in it Yahweh is identified with Israel, the rival kingdom Mesha's campaign expelled. Two older Egyptian lists of Shasu lands, from about 1380 and 1270/1250 BCE, name a land yhw. One source says they very probably refer to the name Yahweh; another finds no reliable link between them and the Yahweh of Israel and Judah."
+  note: "The sources date the Mesha stele, a royal inscription of Mesha, king of Moab, to around 840 BCE or the middle of the ninth century BCE. Two sources call it the oldest reference to Yahweh outside the Bible; in it Yahweh is identified with Israel, the rival kingdom Mesha's campaign sought to expel from the region north of Dibon. Two older Egyptian topographical lists depicting Shasu people date from about 1380 and 1270/1250 BCE. One source says they refer with high probability to the name Yahweh; another finds no reliable extra-biblical link between that evidence and the Yahweh of Israel and Judah."
   cites:
     - source: fleming-2021-yahweh-before-israel
       locator: "p. 3"
@@ -42,10 +42,6 @@ critical:
     - source: frevel-2021-when-where-yhwh
       locator: "¶ 31, p. 13"
       quote: "the passage is a clear indication that at the time of Omri’s expansion to the Moabite plateau YHWH was understood as a kind of ‘national’ God who was closely associated with the king’s policy and by that with Israel."
-      read: 2026-11-27
-    - source: tebes-2021-desert-origins
-      locator: "¶ 3, p. 2"
-      quote: "The oldest extra-biblical source demonstrating the cult of Yahweh as the national god of Israel comes from the ninth-century BCE (the Moabite stele of king Mesha, Tebes 2018)"
       read: 2026-11-27
     - source: tebes-2021-desert-origins
       locator: "¶ 23, pp. 7–8 (the sentence runs across the page break)"

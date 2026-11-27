@@ -8,130 +8,134 @@
 # agent: the first pass (2026-11-27). Research agent saved every source page; quotes script-matched against the saved text (whitespace, quotes, dashes, ligatures, entities, line-break hyphens and paragraph numbers normalised): 8 hits, 0 misses; Tebes ¶23 matched as two halves either side of the pp. 7–8 page break (footnote 8, running head and the Figure 1 caption between). Trigger Claims matched by script as substrings of their Transcript lines at timestamp and speaker: 3 hits.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Tebes 2021 ¶3's sentence sits in his summary of "conventional accounts" of the Midianite-Kenite hypothesis, which the article goes on to turn around; is the Mesha sentence his own statement or only part of the view he reports? If only reported, cut it. (2) Fleming p. 1 hedges ("no certain evidence … before"); p. 3 is flat. Does the unqualified title "earliest reference" outrun the "certain" hedge, given the note carries the Shasu lists? (3) Title "as Israel's god": Fleming p. 1 says "Yahweh is identified with that enemy" (Israel) and Frevel ¶31 "a kind of 'national' God … associated … with Israel"; only Tebes ¶3 says "national god of Israel" in the same sentence as the date. (4) Note's "very probably" paraphrases Tebes's "with high probabilities". (5) Frevel and Tebes co-edited Entangled Religions 12.2; their articles are separately authored.
+# Independent second agent pass 2026-11-27 (#93 delegation, #110): every source re-fetched into a fresh scratch folder (Fleming excerpt PDF by curl; Frevel and Tebes PDFs via their registry DOIs in Chrome); quotes parsed from the entry and re-matched by script per PDF page (whitespace, quotes, dashes, ligatures, entities, line-break hyphens normalised): 8 of 8 hits at their locators before the cut, Tebes ¶23 as two halves split at “if / not” across pp. 7–8 (footnote 8, margin numbers, running head and Figure 1 caption skipped). ¶ numbers confirmed in pdftotext -layout. Trigger Claims parsed from triggers.yaml and re-matched by script (text a substring of the turn at that timestamp and speaker; states critical), about two minutes either side read in full: 3 hits.
+# Second pass changed: cut Tebes ¶3 (was critical/6) to `uncited` (flag 1); old critical/7 and critical/8 renumbered to critical/6 and critical/7. So two sources, not three, now date the stele; the sourcing-test line above ("Three Scholarly sources … Tebes 'the ninth-century BCE'") is superseded: Fleming and Frevel date it outright, which meets the entry rule. Note, sentence 2: "It is the oldest reference to Yahweh outside the Bible, and in it Yahweh is identified with Israel, the rival kingdom Mesha's campaign expelled." became "Two sources call it the oldest reference to Yahweh outside the Bible; in it Yahweh is identified with Israel, the rival kingdom Mesha's campaign sought to expel from the region north of Dibon." (attributed, since Tebes ¶23 is in the same note; Fleming says "a campaign to expel"). Shasu sentences: "Two older Egyptian lists of Shasu lands, from about 1380 and 1270/1250 BCE, name a land yhw. One source says they very probably refer to the name Yahweh; another finds no reliable link between them and the Yahweh of Israel and Judah." became "Two older Egyptian topographical lists depicting Shasu people date from about 1380 and 1270/1250 BCE. One source says they refer with high probability to the name Yahweh; another finds no reliable extra-biblical link between that evidence and the Yahweh of Israel and Judah." ("Shasu lands"/"a land yhw" rested on Tebes's unquoted next sentence; "extra-biblical" is Frevel's). Title, display, from/to and Trigger Claims unchanged.
+# Answers to the five flags: (1) cut, see `uncited` (cut on doubt; the sentence is inside his summary of the conventional view). (2) Title kept: its "as Israel's god" scope sidesteps Fleming's "no certain evidence … before" hedge, which concerns the Shasu Yhwȝ reference Fleming raises in his next paragraph (pp. 1–2); Fleming pp. 1–2 calls the Shasu Yhwȝ reference "certainly without connection to Israel", so it is no counter-example to the title; the hedge bit the note's flat "It is the oldest reference to Yahweh", now attributed to two sources. (3) Title kept but now a combination: no remaining cited sentence says "as Israel's god" with the date; Fleming p. 3 (date) + p. 1 (identified with Israel) and Frevel ¶31's two sentences (date; "a kind of 'national' God … associated … with Israel") carry it. Narrower than both sources' unqualified claim, so allowed; publisher may prefer "earliest reference outside the Bible to Yahweh" plus the note. (4) "very probably" changed to "with high probability" (Tebes's "with high probabilities"). (5) Moot for the date, which now rests on Fleming and Frevel; Tebes is cited only for the Shasu sentence; the articles are separately authored.
+# Flags for publish: (a) E182 00:21:35's date is for Adonai's appearance "before the middle of the 9th century"; only "by the 9th century BCE we have the Mesha inscription" dates this subject; kept under #99 (verbatim, datable statement), cut it if the publisher wants Trigger Claims to date the row's subject in their main clause. (b) from -850 to -840 with display "Mid-9th century BCE": the range is the first pass's; neither source gives a span, and Fleming's 840 is "around". (c) Title combination (flag 3).
 review: null
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-27
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Fleming 2021 excerpt PDF, printed p. 3 (running head “The Search for Yahweh’s Origins 3”). Supports “oldest reference to Yahweh outside the Bible” and around 840. Flat, no hedge. Same quote as the-origins-of-yahweh `attestation`.",
+      note: "Fleming 2021 excerpt PDF, printed p. 3 (running head “The Search for Yahweh’s Origins 3”). Supports “oldest reference to Yahweh outside the Bible” and around 840. Flat, no hedge. Same quote as the-origins-of-yahweh `attestation`. Second pass: re-fetched (curl, pdftotext); matched verbatim on PDF p. 3, running head “The Search for Yahweh’s Origins 3”. “around 840” carries no BCE; Fleming’s n. 1 (p. 1) says all dates are BCE. Verified.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Fleming p. 1, Introduction, first paragraph. Supports mid-9th century BCE (display). Hedged “no certain evidence … before”; cited for the date. Sentence continues “, where the desecration of his sanctuary at Nebo follows its destruction by the king of Moab.”",
+      note: "Fleming p. 1, Introduction, first paragraph. Supports mid-9th century BCE (display). Hedged “no certain evidence … before”; cited for the date. Sentence continues “, where the desecration of his sanctuary at Nebo follows its destruction by the king of Moab.” Second pass: matched verbatim on PDF p. 1 (printed 1), Introduction ¶1; the line-break hyphen in “desecra-tion” lies after the quote. Fleming names “the king of Moab”, not Mesha, in this sentence; the next paragraph (pp. 1–2) says “Reference to Yhwȝ of Shasu-land in New Kingdom Egyptian texts predates any evidence for the name Israel and is most likely older, certainly without connection to Israel”, and p. 5 calls that exception “mysterious and open to debate”; so his “no certain evidence … before” leaves the Shasu reference open, and it is not a reference to Yahweh as Israel’s god. Verified for the date.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Fleming p. 1, next sentence. Supports the note's “identified with Israel, the rival kingdom Mesha's campaign expelled” and the title's “as Israel's god”.",
+      note: "Fleming p. 1, next sentence. Supports the note's “identified with Israel, the rival kingdom Mesha's campaign expelled” and the title's “as Israel's god”. Second pass: matched verbatim, PDF p. 1. Fleming says “a campaign to expel”, not that Israel was expelled: the note now says “sought to expel from the region north of Dibon”. Verified.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Frevel ¶31, PDF p. 13. Supports “first mention” and “the middle of the ninth century BCE” (display). Unhedged.",
+      note: "Frevel ¶31, PDF p. 13. Supports “first mention” and “the middle of the ninth century BCE” (display). Unhedged. Second pass: re-fetched in Chrome (DOI → er.ceres.rub.de article 8776, PDF galley 8448); matched verbatim on PDF p. 13; margin number [31] confirmed in layout mode (the paragraph opens on p. 12). “Outside the Bible” scope (the entry’s “Two sources call it …”) comes from the section heading “The Extra-Biblical Evidence for YHWH in the Ninth Century BCE” and ¶31’s opening, not from this sentence. Verified.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Frevel ¶31, p. 13, same paragraph. Supports Yahweh as Israel's god in the stele (title). Quote begins after “Among other things,”.",
+      note: "Frevel ¶31, p. 13, same paragraph. Supports Yahweh as Israel's god in the stele (title). Quote begins after “Among other things,”. Second pass: matched verbatim, PDF p. 13, ¶31. Hedge “a kind of ‘national’ God” kept in the quote; with critical/3 it carries the title’s “as Israel’s god”. Verified.",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "Tebes 2021 ¶3, p. 2. Supports “oldest extra-biblical” and “as the national god of Israel”, ninth century. Sentence continues “, and therefore the ascendancy to pre-eminence of Yahweh cannot be dated later than the tenth century BCE.” See flag (1).",
+      note: "Tebes 2021 ¶23, pp. 7–8, across the page break. Supports the note's Shasu sentence: two lists, about 1380 and 1270/1250 BCE, very probably referring to the name. The lists name “tᵓ šsw yhw (Yahu)” in the next sentence (read, not quoted); the note's “name a land yhw” rests on that and on Frevel's “Shasu related to yhw”. Second pass: renumbered from critical/7 (Tebes ¶3 cut). Re-fetched in Chrome (article 8847, PDF galley 8453); matched as two halves, “… refers to the name Yahweh, if” on PDF p. 7 and “not the existence of his cult, …” on PDF p. 8, skipping footnote 8, margin numbers [21]–[23], the running head “TEBES / Entangled Religions 12.2 (2021)” and the Figure 1 caption. Margin [23] confirmed. The note no longer says “lists of Shasu lands” or “name a land yhw”, which rested on the unquoted next sentence (and Tebes there says Yahu may be a geographical, tribal or deity name); it now says “topographical lists depicting Shasu people”, the quote’s words, and “with high probability” for “with high probabilities”. Verified.",
     }
   critical/7:
     {
       agent: pass,
       owner: "",
-      note: "Tebes 2021 ¶23, pp. 7–8, across the page break. Supports the note's Shasu sentence: two lists, about 1380 and 1270/1250 BCE, very probably referring to the name. The lists name “tᵓ šsw yhw (Yahu)” in the next sentence (read, not quoted); the note's “name a land yhw” rests on that and on Frevel's “Shasu related to yhw”.",
-    }
-  critical/8:
-    {
-      agent: pass,
-      owner: "",
-      note: "Frevel ¶31, p. 13, the sentence before critical/4. Supports “no reliable link” between the Shasu evidence and the Yahweh of Israel and Judah. Quote starts mid-sentence after “although the Egyptian lists mention a group of Shasu related to yhw (whatever is meant by this, a region, a clan, or a deity),”, which runs over the p. 12–13 break; the locator carries the context.",
+      note: "Frevel ¶31, p. 13, the sentence before critical/4. Supports “no reliable link” between the Shasu evidence and the Yahweh of Israel and Judah. Quote starts mid-sentence after “although the Egyptian lists mention a group of Shasu related to yhw (whatever is meant by this, a region, a clan, or a deity),”, which runs over the p. 12–13 break; the locator carries the context. Second pass: renumbered from critical/8. Matched verbatim on PDF p. 13 (start of p. 13 after the running head); ¶31 confirmed. Note restored Frevel’s “extra-biblical” (“no reliable extra-biblical link between that evidence and the Yahweh of Israel and Judah”). Verified.",
     }
 triggers:
   1@00:42:12:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:42:12 turn, after “But where does the divine name come from? What does it mean? And what are the origins of the deity who possesses that name?”. Names the three inscriptions in the next turn (00:43:27): Mesha, Tel Dan, Black Obelisk. Hedges kept: “about”, “probably”. 00:40:42 to 00:45:35 read.",
+      note: "states: critical. Substring of the 00:42:12 turn, after “But where does the divine name come from? What does it mean? And what are the origins of the deity who possesses that name?”. Names the three inscriptions in the next turn (00:43:27): Mesha, Tel Dan, Black Obelisk. Hedges kept: “about”, “probably”. 00:40:42 to 00:45:35 read. Second pass: re-matched by script: substring of the 00:42:12.570 Dan McClellan turn. Read 00:40:42 to 00:45:35 in full. States the earliest references to the name (wider than the entry’s “as Israel’s god”; entry narrower, allowed); “second half of the 9th century … about 850” is the show’s, kept verbatim (#99); 840 lies in it. Verified.",
     }
   66@00:41:41:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:41:41 turn from “So we've probably mentioned”; cut before “And we got a couple.”. Hedge “probably the third or fourth quarter” kept. 00:41:41 to 00:46:10 read; 00:43:53 gives “around 850-825ish BCE” for names of kings and the patron deity, not stored (#99).",
+      note: "states: critical. Substring of the 00:41:41 turn from “So we've probably mentioned”; cut before “And we got a couple.”. Hedge “probably the third or fourth quarter” kept. 00:41:41 to 00:46:10 read; 00:43:53 gives “around 850-825ish BCE” for names of kings and the patron deity, not stored (#99). Second pass: re-matched by script: substring of the 00:41:41.020 Dan McClellan turn. Read 00:40:08 to 00:44:33 in full. Closest to the entry’s scope (“as a reference to the God of Israel”, Mesha named). “third or fourth quarter of the ninth century” is the show’s; 840 lies in it. Verified.",
     }
   182@00:21:35:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:21:35 turn after “Yes.”; cut before “We have the Tel Dan stele …”. Hedge “seems to show up” kept. Read 00:20:25 to 00:23:39.",
+      note: "states: critical. Substring of the 00:21:35 turn after “Yes.”; cut before “We have the Tel Dan stele …”. Hedge “seems to show up” kept. Read 00:20:25 to 00:23:39. Second pass: re-matched by script: substring of the 00:21:35.010 Dan McClellan turn. Read 00:19:35 to 00:23:39 in full. Its date is for Adonai’s appearance (“before the middle of the 9th century”); the datable part on this subject is “by the 9th century BCE we have the Mesha inscription talking about Adonai”. Kept under #99 (one to three, a datable statement on the subject, shown verbatim); flagged in the header. Verified.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Dates the earliest extra-biblical reference to Yahweh as Israel's god (the Mesha stele), not Yahweh's arrival in Israel (issue note) nor the earliest occurrence of the name (contested by Tebes ¶23). Title worded for that.",
+      note: "Dates the earliest extra-biblical reference to Yahweh as Israel's god (the Mesha stele), not Yahweh's arrival in Israel (issue note) nor the earliest occurrence of the name (contested by Tebes ¶23). Title worded for that. Second pass: holds. With Tebes ¶3 cut, “as Israel’s god” rests on Fleming p. 1 (critical/3) and Frevel ¶31 (critical/5), each a sentence apart from the dated one, not on one sentence; narrower than both sources’ unqualified “oldest/first” reference to Yahweh, so allowed.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "No split: 840 (Fleming) lies within the mid-9th century (Fleming, Frevel) and the ninth century (Tebes). The note gives 840 and the middle of the ninth century, each cited.",
+      note: "No split: 840 (Fleming) lies within the mid-9th century (Fleming, Frevel) and the ninth century (Tebes). The note gives 840 and the middle of the ninth century, each cited. Second pass: re-checked after the Tebes ¶3 cut: two sources now date the stele (Fleming around 840 and mid-9th century; Frevel the middle of the ninth century); still no split. Verified.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; every Trigger Claim states critical.",
+      note: "No Tradition Date; every Trigger Claim states critical. Second pass: verified.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; no Tradition source cited.",
+      note: "No Tradition Date; no Tradition source cited. Second pass: verified.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date. Fleming p. 1's “no certain evidence … before” hedges what came before the stele, not the stele's date.",
+      note: "No conditional date. Fleming p. 1's “no certain evidence … before” hedges what came before the stele, not the stele's date. Second pass: verified; Fleming p. 1’s hedge concerns the earlier Shasu Yhwȝ reference (pp. 1–2, p. 5), which the note carries through Tebes ¶23 and Frevel ¶31.",
     }
 sources:
   fleming-2021-yahweh-before-israel:
     {
       agent: pass,
       owner: "",
-      note: "Scholarly (Cambridge University Press, 2021, inside the 30-year window). Reused id; publisher excerpt PDF re-fetched 2026-11-27.",
+      note: "Scholarly (Cambridge University Press, 2021, inside the 30-year window). Reused id; publisher excerpt PDF re-fetched 2026-11-27. Second pass: re-fetched from the registry URL 2026-11-27 (10-page excerpt PDF). Class verified.",
     }
   frevel-2021-when-where-yhwh:
     {
       agent: pass,
       owner: "",
-      note: "Scholarly: peer-reviewed open-access journal (Entangled Religions 12.2, Ruhr-Universität Bochum, CC BY 4.0), 2021. Author at Ruhr-Universität Bochum and University of Pretoria (PDF title page). New id. The site's bot check blocks curl; PDF fetched in Chrome.",
+      note: "Scholarly: peer-reviewed open-access journal (Entangled Religions 12.2, Ruhr-Universität Bochum, CC BY 4.0), 2021. Author at Ruhr-Universität Bochum and University of Pretoria (PDF title page). New id. The site's bot check blocks curl; PDF fetched in Chrome. Second pass: re-fetched via the registry DOI in Chrome 2026-11-27; title, author and affiliations (Ruhr-Universität Bochum; University of Pretoria) match the PDF title page. Class verified.",
     }
   tebes-2021-desert-origins:
     {
       agent: pass,
       owner: "",
-      note: "Scholarly: same journal issue, 2021. Author at the Catholic University of Argentina and CONICET (PDF title page). New id. Fetched as Frevel.",
+      note: "Scholarly: same journal issue, 2021. Author at the Catholic University of Argentina and CONICET (PDF title page). New id. Fetched as Frevel. Second pass: re-fetched via the registry DOI in Chrome 2026-11-27; title matches. Now cited only for the Shasu sentence (critical/6), not for the stele’s date. Class verified.",
     }
 leads:
   - "Theodore J. Lewis, The Origin and Character of God (OUP 2020), ch. 6: cited in Fleming p. 3 n. 4; no open copy read."
   - "Other articles in Entangled Religions 12.2 (2021), “The Desert Origins of God”, eds. Tebes and Frevel: open access, not read."
   - "University of Pretoria doctoral thesis, ch. 4 “Name YHWH and related forms” (author per PDF metadata only): quotes others calling the Shasu Yhw lists “the earliest evidence for the god Yahweh”; a thesis, likely fails the class test; the quotes inside it are leads."
 uncited:
+  - "Tebes 2021 ¶3, p. 2 (was critical/6, cut by the second pass): “The oldest extra-biblical source demonstrating the cult of Yahweh as the national god of Israel comes from the ninth-century BCE (the Moabite stele of king Mesha, Tebes 2018)”. Cut on doubt: the sentence sits in Tebes’s summary of what “conventional accounts” of the Midianite-Kenite hypothesis “generally agree” (“First, it is normally assumed …”), and its “and therefore …” is that view’s inference; the self-citation makes the premise plausibly his own, but whether he asserts or reports it is not settled by the text."
   - "Tebes 2018, “The Mesha Inscription and Relations with Moab and Edom”, in Behind the Scenes of the Old Testament (Baker Academic), p. 286: “the earliest extrabiblical attestation of Yahweh as Israel's god”, with “Mesha (ca. 850 BCE)” earlier in the paragraph. Not cited: the publication year is unconfirmed from the scan, the OCR is broken at the gutter of the sentence, and the date is not in the cited sentence; Tebes 2021 carries the same author's point. p. 292: “almost unmistakably the earliest reference to the name “Yahweh” as a deity outside the Hebrew Bible”, undated."
   - "Fleming p. 5: the Egyptian Shasu exception is “mysterious and open to debate” (cited on the-origins-of-yahweh); not needed here, Tebes ¶23 and Frevel ¶31 carry the Shasu sentence."
   - "Frevel ¶32: Tel Dan “dated a bit later”; “all our oldest evidence for YHWH comes from the North or is related to the Omrides”. Not needed for the date."
