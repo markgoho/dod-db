@@ -31,7 +31,7 @@ statements:
     group: "Where the idea came from"
     question: "Is the rapture an old Christian teaching?"
     short: "No, sources say. The rapture as it is taught today goes back to the dispensationalist teaching of John Nelson Darby in the early nineteenth century. Whether anyone anticipated it before him is debated."
-    text: "Sydney Tooth's entry on 1 Thessalonians in the Critical Dictionary of Apocalyptic and Millenarian Movements says rapture theology did not become popular until the early nineteenth century, when John Nelson Darby, a Plymouth Brethren leader, taught it as part of his dispensationalist theology, and that before Darby commentators did not discuss a rapture theology such as is found in modern eschatological discussions. Sean Durbin's entry on dispensationalism in the same dictionary says it was developed in the early 1800s by Darby, an Irish Brethren preacher. Pieter de Villiers's article in the Stellenbosch Theological Journal says there is general agreement that contemporary teaching on the millennium and the rapture was the result of Darby's life and work. The New Catholic Encyclopedia says Darby was the first to systematize and promote dispensational theology. Mark Sweetnam and Crawford Gribben, in the Journal of the Evangelical Theological Society, say that in 1829 Darby still expected Christ's return after the tribulation, and that he was developing his eschatology throughout the early 1830s. Michael Emerson and Robyn Minahan's entry in Contemporary American Religion says that, though there were certainly earlier formulations, the concept of the rapture was not fully developed until the mid-1800s. Sweetnam and Gribben call the genesis of dispensationalism difficult to account for; David Malcolm Bennett, in the Evangelical Quarterly, reports a heated debate over the origins of the pretribulation rapture, between those who believe it was taught in the early church and those who say it did not emerge until the nineteenth century; and de Villiers says recent research has brought to light neglected texts that illuminate the origins of the rapture."
+    text: "Sydney Tooth's entry on 1 Thessalonians in the Critical Dictionary of Apocalyptic and Millenarian Movements says rapture theology did not become popular until the early nineteenth century, when John Nelson Darby, a Plymouth Brethren leader, taught it as part of his dispensationalist theology, and that before Darby commentators did not discuss a rapture theology such as is found in modern eschatological discussions. Sean Durbin's entry on dispensationalism in the same dictionary says it was developed in the early 1800s by Darby, an Irish Brethren preacher. Pieter de Villiers's article in the Stellenbosch Theological Journal says there is general agreement that contemporary teaching on the millennium and the rapture was the result of Darby's life and work. The New Catholic Encyclopedia says Darby was the first to systematize and promote dispensational theology. Mark Sweetnam and Crawford Gribben, in the Journal of the Evangelical Theological Society, say that in his first writing on prophecy, published in 1829, Darby still expected Christ's return after the tribulation, and that he was developing his eschatology throughout the early 1830s. Michael Emerson and Robyn Minahan's entry in Contemporary American Religion says that, though there were certainly earlier formulations, the concept of the rapture was not fully developed until the mid-1800s. Sweetnam and Gribben call the genesis of dispensationalism difficult to account for; David Malcolm Bennett, in the Evangelical Quarterly, reports a heated debate over the origins of the pretribulation rapture, between those who believe it was taught in the early church and those who say it did not emerge until the nineteenth century; and de Villiers says recent research has brought to light neglected texts that illuminate the origins of millenarian thinking and the rapture."
     cites:
       - source: tooth-2023-cdamm-1-thessalonians
         locator: "section “Rapture Theology”"
@@ -54,7 +54,7 @@ statements:
         quote: "Darby was the first to systematize and promote dispensational theology."
         read: 2026-11-27
       - source: sweetnam-gribben-2009-jets-darby
-        locator: "p. 574"
+        locator: "pp. 573–74"
         quote: "His expectation of Christ’s return was also post-tribulational—it would be some time before the pre-wrath and “secret” Rapture would fully emerge in his thought. Throughout the early 1830s, then, Darby was developing both his ecclesiology and his eschatology."
         read: 2026-11-27
       - source: emerson-minahan-car-rapture
@@ -76,7 +76,7 @@ statements:
   - id: dispensationalism
     group: "Where the idea came from"
     question: "What is dispensationalism, and where does the rapture fit in it?"
-    short: "A system of reading the Bible that divides history into periods, or dispensations, and keeps God's plans for Israel and for the Church apart. Its rapture lifts true Christians off the earth for a time of tribulation, after which Jesus returns with them to reign for a thousand years."
+    short: "A system of reading the Bible that divides history into periods, or dispensations, and keeps God's plans for Israel and for the Church apart. Most dispensationalists place its rapture before a time of tribulation: true Christians are lifted off the earth, and afterwards Jesus returns with them to reign for a thousand years."
     text: "Diana Butler Bass's entry in Contemporary American Religion calls dispensationalism a system of biblical interpretation popular with Protestant evangelicals and fundamentalists, who divide biblical history into periods called dispensations, and says the doctrine of the secret rapture is unique to it. Sean Durbin's entry in the Critical Dictionary of Apocalyptic and Millenarian Movements names its key features as a stark distinction between Israel and the church and the doctrine of the rapture; the New Catholic Encyclopedia lists the sharp distinction between Israel and the Church as one of its three central ideas. Durbin says dispensationalists developed the rapture to maintain that distinction: an at-any-moment event that lifts true Christians off the earth for the duration of the Great Tribulation, after which Jesus returns to earth with the raptured church and establishes a millennial kingdom for a thousand years. Bass says the majority of dispensationalists place the rapture before the tribulation, and some halfway through it or at its end."
     cites:
       - source: bass-car-dispensationalism
@@ -123,7 +123,7 @@ statements:
     group: "Where the idea came from"
     question: "How did the idea spread?"
     short: "Through the Scofield Reference Bible of 1909, sources say, and later through Hal Lindsey's The Late Great Planet Earth (1970) and the Left Behind novels of Tim LaHaye and Jerry B. Jenkins."
-    text: "Randall Balmer's entry in Contemporary American Religion says the success of dispensationalism, brought to North America from Great Britain by Darby, was enhanced by the Scofield Reference Bible, published in 1909 by Oxford University Press. The New Catholic Encyclopedia says the dissemination of dispensational thought was greatly aided by it, and Diana Butler Bass says it made dispensational theology widely accessible and became a best-seller. Sean Durbin says it was through Scofield's commentaries that terms such as “the Rapture” and “the Great Tribulation” were first introduced to large swathes of the American population. Durbin and Bass say Hal Lindsey's The Late Great Planet Earth (1970) further popularized dispensational teaching; Durbin, Sydney Tooth and George Marsden and William Svelmoe's Encyclopedia of Religion entry say the same of the Left Behind novels by Tim LaHaye and Jerry B. Jenkins, which Marsden and Svelmoe call phenomenal best-sellers of the 1990s and early 2000s."
+    text: "Randall Balmer's entry in Contemporary American Religion says the success of dispensationalism, brought to North America from Great Britain by Darby, was enhanced by the Scofield Reference Bible, published in 1909 by Oxford University Press. The New Catholic Encyclopedia says the dissemination of dispensational thought was greatly aided by it, and Diana Butler Bass says it made dispensational theology widely accessible and became a best-seller. Sean Durbin says it was through Scofield's commentaries that terms such as “the Rapture” and “the Great Tribulation” were first introduced to large swathes of the American population. Durbin and Bass say Hal Lindsey's The Late Great Planet Earth (1970) further popularized dispensational teaching; Durbin and Sydney Tooth say the same of the Left Behind novels by Tim LaHaye and Jerry B. Jenkins, which George Marsden and William Svelmoe's Encyclopedia of Religion entry calls essentially a fictionalization of the events described by Lindsey and dispensational prophecy teachers, and phenomenal best-sellers of the 1990s and early 2000s."
     cites:
       - source: balmer-car-premillennialism
         locator: "s.v. “Premillennialism”"
@@ -158,13 +158,13 @@ statements:
         quote: "Both the film series and The Late Great Planet Earth influenced the best-selling Left Behind book series by Tim LaHaye and Jerry B. Jenkins (see McAlister 2003), which in turn helped to popularize dispensationalist, premillennial/pretribulational eschatology."
         read: 2026-11-27
       - source: marsden-svelmoe-eor-evangelical
-        locator: "s.v. “Evangelical and Fundamental Christianity”"
+        locator: "s.v. “Evangelical and Fundamental Christianity”, section “The Continuing Impact of Fundamentalist Evangelicals”"
         quote: "The pastor and author Tim LaHaye's Left Behind series of novels, essentially a fictionalization of the events described earlier by Lindsey and any number of dispensational prophecy teachers, became phenomenal best-sellers in the 1990s and early 2000s."
         read: 2026-11-27
   - id: today
     group: "Where the idea came from"
     question: "Who holds the belief today?"
-    short: "Chiefly conservative Protestants, sources say, above all in the United States, where dispensationalism found its greatest following."
+    short: "Chiefly conservative Christians, sources say. Dispensationalism, the system that teaches it, found its greatest following in the United States and has shaped conservative American Christianity."
     text: "Michael Emerson and Robyn Minahan say only premillennialists espouse the rapture, primarily conservative Christians in the United States and Britain of the past century and a half. The New Catholic Encyclopedia says certain groups of fundamentalist Christians hold it today. Sean Durbin says dispensationalism, though it originated in Britain, gained its greatest following in the United States in the early twentieth century and has had considerable influence on conservative American Christianity, and Diana Butler Bass says it helped define modern American evangelicalism. Sydney Tooth says the Left Behind books set the eschatological agenda for many evangelicals, so that rapture theology now holds a wide appeal."
     cites:
       - source: emerson-minahan-car-rapture
@@ -254,7 +254,7 @@ statements:
   - id: paul-expected
     group: "The New Testament passages"
     question: "Did Paul expect to be alive when Jesus came?"
-    short: "Many scholars read 1 Thessalonians 4:15 that way, where Paul counts himself among “we who are alive”, and say he expected the coming soon."
+    short: "Many take 1 Thessalonians 4:15 that way, sources say: Paul counts himself among “we who are alive”, and expected the coming soon. Others argue he was only placing himself among the living as he wrote."
     text: "The New American Bible notes say Paul here assumes that the second coming will occur within his own lifetime, though the time is unknown, and that in 1 Corinthians 15:51 he expected some of his contemporaries might still be alive at Christ's return. The chapter summary for Bart Ehrman's textbook says Paul still expected some of the Thessalonian church members, including himself, to be alive when his apocalyptic expectations were realized. Dale Martin's Yale lectures say that in 1 Thessalonians Paul says it is coming very soon. Sydney Tooth says many have taken “we who are alive, who remain” to mean that Paul thought he would still be alive at Jesus's coming, while others argue that he was only placing himself among the living, the group he belonged to as he wrote."
     cites:
       - source: nabre-1-thessalonians-4-notes
@@ -262,7 +262,7 @@ statements:
         quote: "Paul here assumes that the second coming, or parousia, will occur within his own lifetime but insists that the time or season is unknown"
         read: 2026-11-27
       - source: nabre-1-corinthians-15-notes
-        locator: "note on 15:51"
+        locator: "note on 15:51–52"
         quote: "Paul expected that some of his contemporaries might still be alive at Christ’s return; after the death of Paul and his whole generation, copyists altered this statement in various ways."
         read: 2026-11-27
       - source: ehrman-brief-5e-ch12-summary
@@ -284,7 +284,7 @@ statements:
   - id: scripture
     group: "The New Testament passages"
     question: "Do scholars find the rapture in the New Testament?"
-    short: "Rapture theology has little support among most scholars, sources say. It combines 1 Thessalonians 4:17 with Matthew 24:40–41 and passages from Revelation."
+    short: "Many scholars criticize it, sources say. It combines 1 Thessalonians 4:17 with Matthew 24:40–41 and passages from Revelation."
     text: "Sydney Tooth says that, despite having little support among most scholars, rapture theology remains extremely popular among many Christians, and that besides 1 Thessalonians 4:13–18 it draws on Matthew 24 and Revelation 20:1–6, Matthew 24:40–41 above all. The New Catholic Encyclopedia says many scholars criticize the doctrine on both biblical and theological grounds. The New American Bible notes call it a construction that combines 1 Thessalonians 4:17 with Matthew 24:40–41, Luke 17:34–35 and passages from Revelation in a scheme of millennial dispensationalism, and read the one “taken” in Matthew 24:40–41 as probably taken into the kingdom at the coming of the Son of Man. Sean Durbin says dispensationalists developed the doctrine to maintain their distinction between Israel and the church; Peter Lee's doctoral thesis on Darby says that for Darby the pretribulation rapture was derived not from Scripture as such but from the doctrine of the two peoples of God."
     cites:
       - source: tooth-2023-cdamm-1-thessalonians
@@ -323,14 +323,14 @@ statements:
     group: "The New Testament passages"
     question: "Do the Gospels expect the Second Coming within a generation?"
     short: "Mark does, sources say: its discourse sets the Son of Man's coming within “this generation” (Mark 13:30), after the temple's destruction. Luke places the end later."
-    text: "The New American Bible notes say that in Mark 13 God's intervention will come only after the destruction, which will happen before the end of the first Christian generation, and that Luke sets the parousia at a later date, after “the time of the Gentiles”. Dale Martin's Yale lectures say Mark has told his readers it will happen during their own generation, and that translating “generation” as “race”, as some conservative readers do, is just wrong, since Mark means to put a time limit on it; he adds that Luke edits Mark's passage to add the temple's destruction before Jesus comes back. Lynne Moss Bahr's entry on Mark 13 in the Critical Dictionary of Apocalyptic and Millenarian Movements says most scholars agree Mark's audience would have understood its signs to refer to the destruction of the temple and Jerusalem, and that they anticipated the Son of Man's coming imminently. The chapter summary for Bart Ehrman's textbook says that in Luke Jesus does not preach the imminent end, which will occur after the mission to the gentiles."
+    text: "The New American Bible notes say that in Mark 13 God's intervention will come only after the destruction, which will happen before the end of the first Christian generation, and that Luke sets the parousia at a later date, after “the time of the Gentiles”. Dale Martin's Yale lectures say Mark has told his readers it will happen during their own generation, and that translating “generation” as “race”, as some conservative readers do, is just wrong, since Mark means to put a time limit on it; he adds that Luke edits Mark's passage to add the temple's destruction before Jesus comes back. Lynne Moss Bahr's entry on Mark 13 in the Critical Dictionary of Apocalyptic and Millenarian Movements says most scholars agree Mark's audience would have understood its signs to refer to the destruction of the temple and Jerusalem; the entry adds, citing Robert Stein, that they anticipated the Son of Man's coming imminently. The chapter summary for Bart Ehrman's textbook says that in Luke Jesus does not preach the imminent end, which will occur after the mission to the gentiles."
     cites:
       - source: nabre-mark-13-notes
-        locator: "note on 13:1–37"
+        locator: "note on 13:3–37"
         quote: "Intervention will occur only after destruction ( Mk 13:24 – 27 ), which will happen before the end of the first Christian generation ( Mk 13:28 – 31 )."
         read: 2026-11-27
       - source: nabre-mark-13-notes
-        locator: "note on 13:1–37"
+        locator: "note on 13:3–37"
         quote: "Luke sets the parousia at a later date, after “the time of the Gentiles” ( Lk 21:24 )."
         read: 2026-11-27
       - source: martin-rlst152-l6
@@ -346,25 +346,25 @@ statements:
         quote: "When you read Luke, who used Mark as one of his sources, you'll notice that the writer of the Gospel of Luke uses this passage out of Mark and he edits it, to add in the destruction of the temple before Jesus comes back."
         read: 2026-11-27
       - source: bahr-2024-cdamm-mark-13
-        locator: "section before “Conclusion”, last paragraph"
+        locator: "section “Internal vs External Context”, last paragraph"
         quote: "Most scholars agree that they would have understood them to refer to the destruction of the temple and Jerusalem as God’s judgment upon Israel. However, they would see the Son of Man as the risen Jesus of Nazareth coming from heaven in glory, as in 1 Thessalonians 4:16–17, and they anticipated him imminently (Stein 2014, 112–17)."
         read: 2026-11-27
       - source: ehrman-brief-5e-ch7-summary
-        locator: "section on Luke's apocalyptic teaching"
+        locator: "section “Luke’s Distinctive Emphases throughout His Gospel”, last paragraph"
         quote: "In Luke, Jesus does not preach the imminent end. Rather, the end will occur after the mission to the gentiles is completed."
         read: 2026-11-27
   - id: millennium
     group: "The thousand years, preterism and Israel"
     question: "What are premillennialism, postmillennialism and amillennialism?"
     short: "Readings of the thousand-year reign in Revelation 20. Premillennialists expect Christ to return before it, postmillennialists after it, and amillennialists read it as symbolic, as Augustine did."
-    text: "The Critical Dictionary of Apocalyptic and Millenarian Movements says the thousand years of Revelation 20 have been understood as a precise timeframe or as an indeterminate but lengthy period, and defines premillennialism as the expectation of a Second Coming before the thousand-year reign and postmillennialism as a Second Coming after it. Charles Lippy's entry in Contemporary American Religion says premillennialism holds that Christ will return and reign over the earth for a thousand years after a time of great tribulation, that postmillennialism has Christ return after a thousand years of prosperity, and that amillennialism sees the millennium in symbolic terms; he says most Christian religious groups have opted for amillennialism. Sean Durbin says Augustine's City of God played a crucial role in transforming the millennium from a material to a symbolic entity, and Pieter de Villiers says amillennialism is commonly understood as the result of the influence of Origen and Augustine, who rejected a literal reading of the thousand years."
+    text: "The Critical Dictionary of Apocalyptic and Millenarian Movements says the thousand years of Revelation 20 have been understood as a precise timeframe or as an indeterminate but lengthy period, and defines premillennialism as the expectation of a Second Coming before the thousand-year reign and postmillennialism as a Second Coming after a given period of time. Charles Lippy's entry in Contemporary American Religion says premillennialism holds that Christ will return and reign over the earth for a thousand years after a time of great tribulation, that postmillennialism has Christ return after a thousand years of prosperity, and that amillennialism sees the millennium in symbolic terms; he says most Christian religious groups have opted for amillennialism. Sean Durbin says Augustine's City of God played a crucial role in transforming the millennium from a material to a symbolic entity, and Pieter de Villiers says amillennialism is commonly understood as the result of the influence of Origen and Augustine, who rejected a literal reading of the thousand years."
     cites:
       - source: censamm-2021-cdamm-millenarianism
-        locator: "s.v. “Millenarianism”"
+        locator: "s.v. “Millenarianism”, section “Background”"
         quote: "The reference has been understood as a precise timeframe of a thousand years, or simply as a reference to an indeterminate but lengthy period of time."
         read: 2026-11-27
       - source: censamm-2021-cdamm-millenarianism
-        locator: "s.v. “Millenarianism”"
+        locator: "s.v. “Millenarianism”, section “History and Definitions”"
         quote: "‘premillennialism’ (anticipation of a Second Coming of Jesus before the thousand-year reign) and ‘postmillennialism’ (a Second Coming of Jesus after a given period of time)"
         read: 2026-11-27
       - source: lippy-car-millennialism
@@ -380,7 +380,7 @@ statements:
         quote: "most Christian religious groups have opted for a less precise understanding called amillennialism. This view sees the millennium more in symbolic terms"
         read: 2026-11-27
       - source: durbin-2023-cdamm-premillennialism
-        locator: "s.v. “Premillennialism”"
+        locator: "s.v. “Premillennialism”, section “Premillennialism in Early Christian Theology”"
         quote: "The publication of Augustine's City of God in the fifth century played a crucial role in transforming the concept of the Millennium from a material to a symbolic entity"
         read: 2026-11-27
       - source: devilliers-2019-stj-millennialism
@@ -391,7 +391,7 @@ statements:
     group: "The thousand years, preterism and Israel"
     question: "What is preterism?"
     short: "A way of reading Revelation as already fulfilled, for the most part, in the past. It is one of the main schools of reading the book, beside futurist and historicist readings."
-    text: "Ulrich Lehner's article in the Journal of Baroque Studies says that for preterists most of Revelation was already fulfilled, while futurists argued that only a small part had been, and that most Protestant interpreters adopted a historicist view that saw Christian history foretold in the book. He calls the Jesuit Luis de Alcázar's commentary the first preterist commentary on Revelation, reading almost the entire book as early church history, and says many interpreters of all denominations followed him. Carlos Molina's doctoral thesis at the University of Pretoria names four major schools of interpreting Revelation: preterism, futurism, historicism and idealism. Keith Mathison, writing for Ligonier Ministries, an international Christian discipleship organization, holds that Revelation should be read in a basically preterist manner, with many of its prophecies concerning the destruction of Jerusalem in AD 70. Got Questions Ministries, an evangelical ministry, describes preterism as the view that the end-times prophecies have already been fulfilled and divides it into full and partial preterism."
+    text: "Ulrich Lehner's article in the Journal of Baroque Studies says that for preterists most of Revelation was already fulfilled, while futurists argued that only a small part had been, and that most Protestant interpreters adopted a historicist view that saw Christian history foretold in the book. He calls the Jesuit Luis de Alcázar's commentary the first preterist commentary on Revelation, reading almost the entire book as early church history, and says many interpreters of all denominations followed him. Carlos Molina's doctoral thesis at the University of Pretoria names four major schools of interpreting Revelation: preterism, futurism, historicism and idealism. Keith Mathison, writing for Ligonier Ministries, an international Christian discipleship organization, holds that if many of Revelation's prophecies concerned the imminent AD 70 destruction of Jerusalem, the book should be read in a basically preterist manner."
     cites:
       - source: lehner-2014-post-tridentine-revelation
         locator: "p. 26, section “Post-Reformation Interpreters”"
@@ -417,19 +417,11 @@ statements:
         locator: "paragraph beginning “If many of the prophecies”"
         quote: "If many of the prophecies in John’s book concerned the imminent AD 70 destruction of Jerusalem, we should interpret this New Testament prophetic book in a basically preterist manner as well."
         read: 2026-11-27
-      - source: gotquestions-preterist
-        locator: "opening paragraph"
-        quote: "Thus, preterism is the view that the biblical prophecies concerning the “end times” have already been fulfilled—in the past."
-        read: 2026-11-27
-      - source: gotquestions-preterist
-        locator: "second paragraph"
-        quote: "Preterism is divided into two types: full (or consistent) preterism and partial preterism."
-        read: 2026-11-27
   - id: israel
     group: "The thousand years, preterism and Israel"
     question: "What is Christian Zionism, and how is it tied to the rapture?"
     short: "Support for Zionism on Christian theological grounds. Sources tie it to dispensationalism, for which the founding of the State of Israel in 1948 fulfilled prophecy and signalled that the end was near."
-    text: "Philip La Grange Du Toit's article in In die Skriflig defines Christian Zionism as support for Zionism on Christian theological grounds, says most Christian Zionists hold dispensationalist views, and says they take the establishment of the State of Israel in 1948 as a signal that the last days have arrived. Sean Durbin says that, because of Israel's place in dispensational theology, dispensationalism has been and remains an important undercurrent in politically influential Christian Zionism; that after 1948 Israel's establishment and expansion were seen by dispensationalists as the fulfilment of prophecy and as a clear affirmation that the rapture was close at hand. The New Catholic Encyclopedia says dispensationalists consider Israel's establishment in 1948 the fulfilment of prophecy about the regathering of God's people. Robert O. Smith's Baylor dissertation argues instead that a longer trajectory of English and American apocalyptic hope, rather than Darby's dispensationalism, best explains the foundations of American Christian affinity for Israel and of Christian Zionism today."
+    text: "Philip La Grange Du Toit's article in In die Skriflig defines Christian Zionism as support for Zionism on Christian theological grounds, says most Christian Zionists hold dispensationalist views, and says they take the establishment of the State of Israel in 1948 as a signal that the last days have arrived. Sean Durbin says that, because of Israel's place in dispensational theology, dispensationalism has been and remains an important undercurrent in politically influential Christian Zionism; that after 1948 Israel's establishment and expansion were seen by dispensationalists as the fulfilment of prophecy and as a clear affirmation that the rapture was close at hand. The New Catholic Encyclopedia says dispensationalists consider Israel's establishment in 1948 the fulfilment of prophecy about the regathering of God's people. Robert O. Smith's Baylor dissertation argues instead that a longer trajectory of English and American apocalyptic hope, rather than Darby's dispensationalism, best explains the foundations of American popular affinity for the State of Israel and the characteristics of contemporary American Christian Zionism."
     cites:
       - source: dutoit-2016-skriflig-christian-zionism
         locator: "p. 1, “Introduction”"
@@ -465,14 +457,10 @@ statements:
         read: 2026-11-27
   - id: tradition
     group: "What traditions hold"
-    question: "What do religious traditions hold about the rapture?"
-    short: "They differ. Got Questions Ministries, an evangelical ministry, holds that the rapture comes before the tribulation; the Lutheran Church–Missouri Synod calls a pre-tribulation rapture a false hope; the Catholic Church teaches that the Church must pass through a final trial before Christ's second coming."
-    text: "Got Questions Ministries, an evangelical ministry, says the timing of the rapture is one of the most controversial issues in the church today and holds the pre-tribulational position to be the most biblically based. Dallas Theological Seminary's doctrinal statement holds that the next great event in prophecy will be the Lord's coming in the air to receive his own into heaven, and that the church will be in heaven during Israel's seventieth week. The Lutheran Church–Missouri Synod's Commission on Theology and Church Relations says the views of a pre-tribulation or mid-tribulation rapture offer Christians the false hope of exemption from the persecution at the end. The Catechism of the Catholic Church teaches that before Christ's second coming the Church must pass through a final trial that will shake the faith of many believers, and that the Church has rejected even modified forms of millenarianism."
+    question: "What do religious traditions hold about the rapture and the end times?"
+    short: "They differ. Got Questions Ministries, an evangelical ministry, holds that the rapture comes before the tribulation; the Lutheran Church–Missouri Synod's Commission on Theology and Church Relations calls a pre-tribulation rapture a false hope; the Catholic Church teaches that the Church must pass through a final trial before Christ's second coming."
+    text: "Got Questions Ministries, an evangelical ministry, holds the pre-tribulational position to be the most biblically based interpretation. Dallas Theological Seminary's doctrinal statement holds that the next great event in prophecy will be the Lord's coming in the air to receive his own into heaven, and that the church will be in heaven during Israel's seventieth week. The Lutheran Church–Missouri Synod's Commission on Theology and Church Relations says the views of a pre-tribulation or mid-tribulation rapture offer Christians the false hope of exemption from the persecution at the end. The Catechism of the Catholic Church teaches that before Christ's second coming the Church must pass through a final trial that will shake the faith of many believers, and that the Church has rejected even modified forms of millenarianism."
     cites:
-      - source: gotquestions-rapture-tribulation
-        locator: "opening paragraph"
-        quote: "The timing of the rapture in relation to the tribulation is one of the most controversial issues in the church today."
-        read: 2026-11-27
       - source: gotquestions-rapture-tribulation
         locator: "closing paragraphs"
         quote: "If the Bible is interpreted literally and consistently, the pre-tribulational position is the most biblically-based interpretation."

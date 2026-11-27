@@ -6,619 +6,611 @@
 # Dropped for want of a second author or any qualifying source: a parousia statement (meaning disputed as a technical term; no short needs it); Matthew 24:40–41 as taken in judgment (Tradition only; the NABRE reading is attributed in scripture); partial vs full preterism and preterism as fulfilment in 70 CE (Tradition only; attributed in preterism); 1967 as prophetic (Smith only); survey figures for rapture belief (none found; Pew asks other questions).
 # First pass: three research agents fetched every source on 2026-11-27 into separate scratch folders and copied quotes from the fetched text; every page quote was then script-matched (whitespace, HTML entities, curly quotes and dashes normalised; HTML tags stripped with and without a space; two PDF line-break hyphens joined, Gundry and Cosby) against those saved texts: 99/99, 0 misses. The second pass must re-fetch.
 # Flags for the second pass: (1) Five sources are Critical Dictionary of Apocalyptic and Millenarian Movements entries (four authors and a corporate CenSAMM entry), an open academic dictionary from an academic centre: classed Reference. (2) De Villiers 2019 carries the only “general agreement” sentence and has slips elsewhere (p. 172). (3) Three doctoral theses (Lee, Molina, Smith) are classed Scholarly by the McDonald precedent; Molina is the second author for the preterism short's list of schools. (4) Bennett (Evangelical Quarterly) and Sweetnam and Gribben (JETS) are in evangelical venues, classed Scholarly by the JETS and Tyndale Bulletin precedents; used for the debate and Darby's development. (5) Contemporary American Religion's year (2000) comes from library catalogues, not the page. (6) NABRE notes (1986) and NCE entries (undated, older text) never carry a short alone. (7) Trigger 32@00:33:06 states the royal-arrival reading flatly; attached as a side the statement reports, while 71@00:15:48 (“critical scholarship … finds”) is logged as a conflict. (8) Du Toit's article argues a confessional case; only its definitions are cited.
+# Second agent pass 2026-11-27 (#93 delegation, independent; did not build the page; the first pass's scratch folders not read): all 39 cited sources re-fetched by curl (browser User-Agent) into the second pass's own folder, plus Plevnik's p. 545 page and Du Toit's article galley; every URL returned HTTP 200 except bible.usccb.org Mark 13 and Matthew 24 (403 to scripted requests), read in the Wayback snapshots the first pass named (20260202070742, 20251228060054). PDFs read with pdftotext 26.01 in its default mode, which itself joins line-break hyphens (so Gundry and Cosby matched without the first pass's hyphen joins). Every quote script-matched (whitespace, non-breaking spaces, soft hyphens, fi/fl ligatures, ellipses, doubly escaped HTML entities, curly quotes and dashes normalised; HTML tags stripped, with a space and, for three quotes, without; for seven quotes after the cuts (eight before), the space left before punctuation by a stripped inline link closed up): 99/99 before cuts, 96/96 after, 0 misses. Each quote's nearest heading (HTML) or PDF page and running head printed and compared with its locator; Encyclopedia.com quotes confirmed inside the signed entry each is credited to. All ten Trigger Claims and the three conflict entries in data/scholarship-candidates.yaml re-matched by script at timestamp and speaker (full turn, final Transcript) and read about two minutes either side.
+# Second pass changes. Cut to uncited (3): preterism/7 and /8 (gotquestions-preterist: a Tradition source describing a view it opposes, not what its tradition holds), tradition/1 (Got Questions on the church's controversies, not what it holds); tradition keys renumbered (old 2–8 now 1–7). Shorts: dispensationalism (pre-tribulation timing now “Most dispensationalists”, Bass's “majority”); today (“Chiefly conservative Christians”, Emerson and Minahan and Frohlich; “above all in the United States” replaced by dispensationalism's US following as a separate sentence, Durbin and Bass; Emerson and Minahan's “United States and Britain” stays in the text, as theirs alone); paul-expected (“Many scholars” to “Many take”, Tooth's “many have taken”, plus the entry's “Others argue”); scripture (“little support among most scholars, sources say” to “Many scholars criticize it, sources say”: the “most” is Tooth's alone and “on biblical and theological grounds” Frohlich's alone; both authors support “many scholars criticize”); tradition (LCMS's Commission on Theology and Church Relations named, not the Synod). Question: tradition widened to “the rapture and the end times” (the Catechism paragraphs never mention a rapture). Texts: origin (Darby's 1829 writing named, from p. 573; de Villiers's “millenarian thinking and the rapture”); spread (Marsden and Svelmoe's own words, not “say the same”); this-generation (Bahr's imminence clause set apart and credited to Stein); millennium (CenSAMM's postmillennialism “after a given period of time”); preterism (Mathison kept conditional; Got Questions sentence dropped with its cut); israel (Smith's scope: “popular affinity” and “characteristics of contemporary American Christian Zionism”); tradition (Got Questions controversies clause dropped). Locators corrected (10): origin/6 (pp. 573–74), spread/9, this-generation/1–2 (note on 13:3–37), this-generation/6 and /7, paul-expected/2 (15:51–52), millennium/1, /2 and /6 (section headings). Registry and Trigger Claims files not edited. Counts after: 13 statements, 96 citations, 10 Trigger Claims.
+# Second pass flags for the lead: (1) gotquestions-preterist is now cited by no page; its registry entry (added in this draft) is left in hugo/data/external-sources.yaml; drop it or keep it for later use. (2) The preterism short's definition (“already fulfilled, for the most part, in the past”) is quoted from Lehner alone; Molina §3.1.2 defines preterism in the sentences after the quoted list but is quoted only for the list. Treated as a descriptive definition (#133 exemption); the lead may want Molina's definition quoted on a re-review. (3) durbin-2023-cdamm-premillennialism: byline “Published: 3rd January 2023”, but the page's citation block says “3 January 2022”; registry 2023 kept. (4) Contemporary American Religion: Open Library has 2000 and one November 1999 record; 2000 kept. (5) First-pass flags (1)–(8) re-checked and stand; (3) Molina now carries only the list (see 2); (7) 32@00:33:06 and 71@00:16:55 stay attached as one side of a debate the statement reports. (6) The trigger 119@00:03:47 (partial and full preterism) now matches no statement sentence; a Trigger Claim gates the subject, not a statement, so it stays. Publish rule recomputed: core origin backed by Tooth 2023 (Reference), Durbin 2022 (Reference) and de Villiers 2019 (Scholarly), plus Whalen and Stancil (Reference); 13 statements; none Host-authored: met. Ids, slug and draft unchanged.
 review: null
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+  secondPass: 2026-11-27
 citations:
   origin/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core: one of the in-window core authors (Tooth 2023, Reference)."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core: one of the in-window core authors (Tooth 2023, Reference). Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Core: Tooth 2023 (Reference)."
   origin/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core. Text keeps Tooth's qualifier “such as is found in modern eschatological discussions”."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core. Text keeps Tooth's qualifier “such as is found in modern eschatological discussions”. Second pass 2026-11-27: re-fetched; script-matched verbatim after stripping inline link tags (the stripped text has a space before the punctuation that follows a link); locator finds it; surrounding passage read; supports the statement as worded. Core."
   origin/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core (Durbin 2022, Reference): “developed in the early 1800s by … Darby”."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core (Durbin 2022, Reference): “developed in the early 1800s by … Darby”. Second pass 2026-11-27: re-fetched; script-matched verbatim after stripping inline link tags (the stripped text has a space before the punctuation that follows a link); locator finds it; surrounding passage read; supports the statement as worded. Core: Durbin 2022 (Reference)."
   origin/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core (de Villiers 2019, Scholarly): the only “general agreement” sentence; flag: the same article has factual slips on p. 172 (Scofield “revised in 1907”), not cited."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core (de Villiers 2019, Scholarly): the only “general agreement” sentence; flag: the same article has factual slips on p. 172 (Scofield “revised in 1907”), not cited. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Core: de Villiers 2019 (Scholarly); “general agreement” is his, attributed. His p. 176 also reports precedents (n. 29: Morgan Edwards; Margaret Macdonald) only through other works; not cited."
   origin/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   origin/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Locator now pp. 573–74: the post-tribulational expectation is that of Darby's first writing on prophecy, published in 1829, in the sentence that begins at the foot of p. 573; the text now names that writing instead of a bare “in 1829”."
   origin/7:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Debate side: “certainly earlier formulations”; attributed. Year 2000 (Contemporary American Religion)."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Debate side: “certainly earlier formulations”; attributed. Year 2000 (Contemporary American Religion). Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Within Emerson and Minahan's signed entry on the shared Encyclopedia.com page (the page also carries Frohlich's NCE entry)."
   origin/8:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Context: some scholarship “with a clear investment in dispensational teaching” seeks proto-dispensationalism in the early church; others stress Darby's novelty."
   origin/9:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Debate: Bennett reports the debate in his opening; the quote avoids the OCR-damaged ‘Left Behindtl’ sentence before it."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Debate: Bennett reports the debate in his opening; the quote avoids the OCR-damaged ‘Left Behindtl’ sentence before it. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. OCR scan (“Oavid”, “Left Behindtl”); the quote is a clean line. The text's “heated debate” paraphrases the sentence before it in the same paragraph (“A heated debate rages over the origins of … a pretribulation rapture”), not quoted because of the OCR damage."
   origin/10:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Text narrowed back to the source's scope: “the origins of millenarian thinking and the rapture”, not the rapture alone."
   dispensationalism/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   dispensationalism/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   dispensationalism/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   dispensationalism/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   dispensationalism/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Bass's statement is “unique to dispensationalism”, as worded."
   dispensationalism/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; script-matched verbatim with inline tags stripped without a space (a tag splits a word or abuts punctuation); locator finds it; surrounding passage read; supports the statement as worded."
   dispensationalism/7:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   dispensationalism/8:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; script-matched verbatim after stripping inline link tags (the stripped text has a space before the punctuation that follows a link); locator finds it; surrounding passage read; supports the statement as worded."
   dispensationalism/9:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   dispensationalism/10:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Short narrowed: it stated the pre-tribulation timing flatly; now “Most dispensationalists place its rapture before a time of tribulation”, as Bass's “the majority” says."
   spread/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   spread/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   spread/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   spread/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   spread/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   spread/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   spread/7:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   spread/8:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   spread/9:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Locator now names the section (“The Continuing Impact of Fundamentalist Evangelicals”). Text reworded: Marsden and Svelmoe call the novels “essentially a fictionalization” of dispensational prophecy and “phenomenal best-sellers”; they no longer “say the same” (popularized) as Durbin and Tooth."
   today/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Short narrowed: “above all in the United States” went beyond this entry's “the United States and Britain”; the short now says “Chiefly conservative Christians” (with Frohlich) and gives dispensationalism's US following (Durbin, Bass) as a separate sentence; the Britain clause, theirs alone, stays in the text."
   today/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   today/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Durbin's “greatest following” is in the early twentieth century; the short says only where it found its greatest following."
   today/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   today/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; script-matched verbatim after stripping inline link tags (the stripped text has a space before the punctuation that follows a link); locator finds it; surrounding passage read; supports the statement as worded."
   today/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   thessalonians/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   thessalonians/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   thessalonians/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   thessalonians/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   thessalonians/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Gundry adds that apantesis “does not by itself connote” a reception; the text says only that the description comes closer, as he does."
   thessalonians/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Cosby 1994 is outside the 30-year window; it backs only his attributed argument, as Gundry 1996 replies to it."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Cosby 1994 is outside the 30-year window; it backs only his attributed argument, as Gundry 1996 replies to it. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Cosby 1994 is outside the 30-year window; backs only his attributed argument. Cosby also calls Peterson's view “widely held among biblical scholars”; not stated."
   thessalonians/7:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   thessalonians/8:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   thessalonians/9:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Martin backs the return-to-earth reading only; he does not invoke the reception custom."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Martin backs the return-to-earth reading only; he does not invoke the reception custom. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Martin backs the return-to-earth reading only; he does not invoke the reception custom."
   word/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. NABRE note 4:17; the space before the colon is the page's."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. NABRE note 4:17; the space before the colon is the page's. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. The space before the colon is the page's."
   word/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   word/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; script-matched verbatim after stripping inline link tags (the stripped text has a space before the punctuation that follows a link); locator finds it; surrounding passage read; supports the statement as worded."
   paul-expected/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   paul-expected/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Locator corrected: the note is headed [15:51–52], not 15:51."
   paul-expected/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   paul-expected/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   paul-expected/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; script-matched verbatim after stripping inline link tags (the stripped text has a space before the punctuation that follows a link); locator finds it; surrounding passage read; supports the statement as worded. Short narrowed: Tooth says “many have taken” it so, not “many scholars”; the short now says “Many take … that way” and carries the entry's “Others argue”."
   paul-expected/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Now reflected in the short (“Others argue he was only placing himself among the living as he wrote”)."
   scripture/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Tooth's “little support among most scholars” carries the short; Frohlich's “Many scholars” is not upgraded."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Tooth's “little support among most scholars” carries the short; Frohlich's “Many scholars” is not upgraded. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Short narrowed: “little support among most scholars” is Tooth's alone (an aside in the entry's “Popular Reception” section), so “sources say” overstated it; the short now says “Many scholars criticize it, sources say”, which Frohlich says and Tooth's sentence supports; Frohlich's “biblical and theological grounds” and Tooth's wording stay in the text, attributed."
   scripture/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   scripture/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. New Catholic Encyclopedia entry (bibliography to 1995): supports “many scholars criticize”, as worded."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. New Catholic Encyclopedia entry (bibliography to 1995): supports “many scholars criticize”, as worded. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Now carries the short's state-of-field clause, with Tooth (scripture/1)."
   scripture/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; script-matched verbatim with inline tags stripped without a space (a tag splits a word or abuts punctuation); locator finds it; surrounding passage read; supports the statement as worded."
   scripture/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   scripture/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; script-matched verbatim with inline tags stripped without a space (a tag splits a word or abuts punctuation); locator finds it; surrounding passage read; supports the statement as worded."
   scripture/7:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Lee 2010 doctoral thesis (Scholarly by registry precedent for theses); attributed. The PDF text layer runs “per se” together as “perse”, so the quote is split at that word."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Lee 2010 doctoral thesis (Scholarly by registry precedent for theses); attributed. The PDF text layer runs “per se” together as “perse”, so the quote is split at that word. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. The text layer runs “per se” together as “perse”; split there, as the first pass did."
   scripture/8:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second half of Lee's sentence (see scripture/7)."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second half of Lee's sentence (see scripture/7). Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   this-generation/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Locator corrected: the note is headed [13:3–37], not 13:1–37."
   this-generation/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Locator corrected: note on 13:3–37."
   this-generation/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   this-generation/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   this-generation/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   this-generation/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Bahr's “Most scholars agree” covers the audience's reading of the signs as the temple's destruction, not the imminence clause, which she sources to Stein; the text keeps both as she words them."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Bahr's “Most scholars agree” covers the audience's reading of the signs as the temple's destruction, not the imminence clause, which she sources to Stein; the text keeps both as she words them. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Locator now names the section (“Internal vs External Context”, last paragraph). Text narrowed: Bahr's “Most scholars agree” covers the audience's reading of the signs; the imminence clause is now set apart (“the entry adds, citing Robert Stein”), as the entry sources it (Stein, Robert H. 2014, in its references)."
   this-generation/7:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Locator now names the section (“Luke’s Distinctive Emphases throughout His Gospel”, last paragraph)."
   millennium/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Locator now names the section (“Background”)."
   millennium/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Locator now names the section (“History and Definitions”). Text corrected: CenSAMM defines postmillennialism as a Second Coming “after a given period of time”, not after the thousand-year reign (that is Lippy's wording)."
   millennium/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Within Lippy's signed Contemporary American Religion entry; the same Encyclopedia.com page also carries NCE “Millenarianism” (Kuehner, Dolan) and other entries."
   millennium/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   millennium/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Sentence begins “While both premillennial and postmillennial ideas have had advocates in the twentieth century”; attributed."
   millennium/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Locator now names the section (“Premillennialism in Early Christian Theology”)."
   millennium/7:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   preterism/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   preterism/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   preterism/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   preterism/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   preterism/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Molina 2010 doctoral thesis (Scholarly by registry precedent; examined, not peer-reviewed; argues from a historicist standpoint): used only for the list of four schools. Flag for the second pass."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Molina 2010 doctoral thesis (Scholarly by registry precedent; examined, not peer-reviewed; argues from a historicist standpoint): used only for the list of four schools. Flag for the second pass. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Molina 2010 thesis, §3.1.2: used only for the list of schools; his next sentences define preterism but are not quoted."
   preterism/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
-  preterism/7:
-    agent: pass
-    owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
-  preterism/8:
-    agent: pass
-    owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Text corrected: the quoted sentence is conditional (“If many of the prophecies …”); the text now says so. In context he favours an early date (AD 64–70)."
   israel/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   israel/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   israel/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   israel/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; script-matched verbatim after stripping inline link tags (the stripped text has a space before the punctuation that follows a link); locator finds it; surrounding passage read; supports the statement as worded."
   israel/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   israel/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. “They” are Israel's establishment and expansion, as interpreted by Christians influenced by dispensationalism (and some sceptics of it)."
   israel/7:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded."
   israel/8:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Smith 2010 Baylor dissertation (Scholarly by registry precedent for theses): his dissent from the Darby-roots account, attributed."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Smith 2010 Baylor dissertation (Scholarly by registry precedent for theses): his dissent from the Darby-roots account, attributed. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Text corrected to Smith's scope: “the foundations of American popular affinity for the State of Israel and the characteristics of contemporary American Christian Zionism”, not “the foundations … of Christian Zionism today”."
   tradition/1:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Was tradition/2 (tradition/1 cut). Text now leads with what the ministry holds."
   tradition/2:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Was tradition/3. Dallas Theological Seminary's own terms (“translation of the church”)."
   tradition/3:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Was tradition/4."
   tradition/4:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. LCMS quote split at the etext's line-wrap hyphen (“mid- tribulation”). Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Was tradition/5. Section III of part 4, point 6. The short now names the Commission on Theology and Church Relations, whose report it is (“for the study and guidance of the members of the Synod”), not the Synod as such."
   tradition/5:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. LCMS quote split at the etext's line-wrap hyphen (“mid- tribulation”)."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Was tradition/6. Quote begins after the etext's line-wrap hyphen (“mid- tribulation”)."
   tradition/6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Was tradition/7. §675 does not mention a rapture; the question is widened to “the rapture and the end times” so the short does not imply a Catholic rapture position."
   tradition/7:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
-  tradition/8:
-    agent: pass
-    owner: ""
-    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Was tradition/8. §676."
 triggers:
   32@00:33:06:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Takes the royal-arrival side the thessalonians statement reports; attached (the turn begins “Yeah.”, dropped)."
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Takes the royal-arrival side the thessalonians statement reports; attached (the turn begins “Yeah.”, dropped). Second pass 2026-11-27: script-matched at timestamp and speaker (full turn, final Transcript), verbatim; read about two minutes either side; Speaker, subject and dropped hedges confirmed."
   32@00:34:59:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Hedge kept: “I don't remember the exact year … I think, the 1830s”. Sweetnam and Gribben have Darby developing his eschatology throughout the early 1830s."
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Hedge kept: “I don't remember the exact year … I think, the 1830s”. Sweetnam and Gribben have Darby developing his eschatology throughout the early 1830s. Second pass 2026-11-27: script-matched at timestamp and speaker (full turn, final Transcript), verbatim; read about two minutes either side; Speaker, subject and dropped hedges confirmed."
   32@00:35:14:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Trimmed to the turn's later sentences; the earlier “You don't have any concept of the Rapture for the other 1800 years” is logged as a conflict with origin in data/scholarship-candidates.yaml."
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Trimmed to the turn's later sentences; the earlier “You don't have any concept of the Rapture for the other 1800 years” is logged as a conflict with origin in data/scholarship-candidates.yaml. Second pass 2026-11-27: script-matched at timestamp and speaker (full turn, final Transcript), verbatim; read about two minutes either side; Speaker, subject and dropped hedges confirmed. The Transcript repeats “It's U.S. Protestants primarily, who maintained this concept of a Rapture.” twice in a row; the claim stops at the first. The conflict entry for this turn's “1800 years” sentence re-matched."
   71@00:07:39:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. The turn's first sentence (“But sometimes people say …”) dropped; definitions only."
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. The turn's first sentence (“But sometimes people say …”) dropped; definitions only. Second pass 2026-11-27: script-matched at timestamp and speaker (full turn, final Transcript), verbatim; read about two minutes either side; Speaker, subject and dropped hedges confirmed. The 00:08:18 conflict entry re-matched; it stays logged, not attached."
   71@00:12:01:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Trimmed to the clause on Darby; the same turn's slip “1st Thessalonians 7:14” (corrected to 4:17 at 00:13:11) is left out."
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Trimmed to the clause on Darby; the same turn's slip “1st Thessalonians 7:14” (corrected to 4:17 at 00:13:11) is left out. Second pass 2026-11-27: script-matched at timestamp and speaker (full turn, final Transcript), verbatim; read about two minutes either side; Speaker, subject and dropped hedges confirmed."
   71@00:16:55:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. The speaker's own reading (“it makes more sense”); attached as taking a side the thessalonians statement reports. The turn before (00:15:48), crediting critical scholarship, is logged as a conflict."
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. The speaker's own reading (“it makes more sense”); attached as taking a side the thessalonians statement reports. The turn before (00:15:48), crediting critical scholarship, is logged as a conflict. Second pass 2026-11-27: script-matched at timestamp and speaker (full turn, final Transcript), verbatim; read about two minutes either side; Speaker, subject and dropped hedges confirmed. The 00:15:48 conflict entry re-matched; it stays logged, not attached."
   71@00:20:11:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side."
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-27: script-matched at timestamp and speaker (full turn, final Transcript), verbatim; read about two minutes either side; Speaker, subject and dropped hedges confirmed."
   118@00:12:38:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. “this” is the founding of Israel (Beecher, 00:11:58: the reoccupation “was fulfillment of prophecy”). The turn's first sentences (“Fulfillment of prophecy. I don't think we can go that far.”) are the speaker's own view and are dropped."
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. “this” is the founding of Israel (Beecher, 00:11:58: the reoccupation “was fulfillment of prophecy”). The turn's first sentences (“Fulfillment of prophecy. I don't think we can go that far.”) are the speaker's own view and are dropped. Second pass 2026-11-27: script-matched at timestamp and speaker (full turn, final Transcript), verbatim; read about two minutes either side; Speaker, subject and dropped hedges confirmed. The dropped “I don't think we can go that far” is the speaker's view of Beecher's “fulfillment of prophecy”; the claim reports Christian Zionists' view only."
   119@00:03:47:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side."
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Second pass 2026-11-27: script-matched at timestamp and speaker (full turn, final Transcript), verbatim; read about two minutes either side; Speaker, subject and dropped hedges confirmed."
   119@00:05:42:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Hedges kept (“makes it sound like”, “sound an awful lot like”); the turn's opening “The Olivet Discourse, right.” and closing sentence dropped."
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Hedges kept (“makes it sound like”, “sound an awful lot like”); the turn's opening “The Olivet Discourse, right.” and closing sentence dropped. Second pass 2026-11-27: script-matched at timestamp and speaker (full turn, final Transcript), verbatim; read about two minutes either side; Speaker, subject and dropped hedges confirmed. The dropped closing sentence (“So it sounds like that already happened.”) is hedged as the rest."
 rules:
   publish-rule:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: 13 statements. Core origin cites Tooth 2023 (Reference, CDAMM), Durbin 2022 (Reference, CDAMM), de Villiers 2019 (Scholarly, STJ), Whalen and Stancil (Reference, NCE, undated text), Sweetnam and Gribben 2009 (Scholarly, JETS), Emerson and Minahan 2000 (Reference), Bennett 2008 (Scholarly, EQ): Tooth, Durbin and de Villiers each back the main clause inside the window; the debate clause rests on Bennett, Sweetnam and Gribben, de Villiers and Emerson and Minahan. None Host-authored."
+    note: "First pass 2026-11-27: 13 statements. Core origin cites Tooth 2023 (Reference, CDAMM), Durbin 2022 (Reference, CDAMM), de Villiers 2019 (Scholarly, STJ), Whalen and Stancil (Reference, NCE, undated text), Sweetnam and Gribben 2009 (Scholarly, JETS), Emerson and Minahan 2000 (Reference), Bennett 2008 (Scholarly, EQ): Tooth, Durbin and de Villiers each back the main clause inside the window; the debate clause rests on Bennett, Sweetnam and Gribben, de Villiers and Emerson and Minahan. None Host-authored. Second pass 2026-11-27: recomputed after the cuts: 13 statements, 96 citations. Core origin: Tooth 2023 (Reference), Durbin 2022 (Reference) and de Villiers 2019 (Scholarly) each back the main clause inside the window, plus Whalen and Stancil (Reference, NCE); the debate clause rests on Bennett 2008, Sweetnam and Gribben 2009 and de Villiers (Scholarly), with Emerson and Minahan (Reference). At least two independent authors, at least one Scholarly or Reference: met. None Host-authored. The cuts (preterism/7–8, tradition/1) touch no core citation."
   consensus-wording:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: no statement says “consensus”. “general agreement” appears only as de Villiers's words, attributed (origin). “most scholars” appears in the scripture short as Tooth's “little support among most scholars”, with Frohlich's “many scholars criticize” beside it; in this-generation only as Bahr's “Most scholars agree”, attributed, scoped as she scopes it; Lippy's “most Christian religious groups” attributed (millennium). #133 per short: origin (Tooth, Durbin, de Villiers; debate Bennett, Sweetnam and Gribben, Emerson and Minahan); dispensationalism (Bass, Durbin, Stancil, Whalen and Stancil); spread (Balmer, Stancil, Bass, Durbin, Tooth, Marsden and Svelmoe); today (Emerson and Minahan, Frohlich, Durbin, Bass, Tooth); thessalonians (Tooth; Gundry for, Plevnik and Cosby against, Martin); word (NABRE, Tooth); paul-expected (NABRE, Ehrman, Martin, Tooth); scripture (Tooth, Frohlich, NABRE, Durbin, Lee); this-generation (NABRE, Martin, Bahr; Luke: NABRE, Martin, Ehrman); millennium (CenSAMM, Lippy; Augustine: Durbin, de Villiers); preterism (Lehner, Molina); israel (Du Toit, Durbin, Stancil; dissent Smith); tradition (Tradition sources, exempt)."
+    note: "First pass 2026-11-27: no statement says “consensus”. “general agreement” appears only as de Villiers's words, attributed (origin). “most scholars” appears in the scripture short as Tooth's “little support among most scholars”, with Frohlich's “many scholars criticize” beside it; in this-generation only as Bahr's “Most scholars agree”, attributed, scoped as she scopes it; Lippy's “most Christian religious groups” attributed (millennium). #133 per short: origin (Tooth, Durbin, de Villiers; debate Bennett, Sweetnam and Gribben, Emerson and Minahan); dispensationalism (Bass, Durbin, Stancil, Whalen and Stancil); spread (Balmer, Stancil, Bass, Durbin, Tooth, Marsden and Svelmoe); today (Emerson and Minahan, Frohlich, Durbin, Bass, Tooth); thessalonians (Tooth; Gundry for, Plevnik and Cosby against, Martin); word (NABRE, Tooth); paul-expected (NABRE, Ehrman, Martin, Tooth); scripture (Tooth, Frohlich, NABRE, Durbin, Lee); this-generation (NABRE, Martin, Bahr; Luke: NABRE, Martin, Ehrman); millennium (CenSAMM, Lippy; Augustine: Durbin, de Villiers); preterism (Lehner, Molina); israel (Du Toit, Durbin, Stancil; dissent Smith); tradition (Tradition sources, exempt). Second pass 2026-11-27: re-checked. No “consensus”. The scripture short no longer says “most scholars” (Tooth's alone; kept in the text, attributed); it now says “Many scholars criticize it”, which Frohlich and Tooth both support. The paul-expected short says “Many take”, from Tooth's “many have taken”, with the entry's “Others argue”. Bahr's “Most scholars agree” is now scoped to the signs, as the entry scopes it. De Villiers's “general agreement” and Lippy's “most Christian religious groups” attributed. #133 per short after the changes: origin (Tooth, Durbin, de Villiers; debate Bennett, Sweetnam and Gribben, de Villiers); dispensationalism (Bass, Durbin, Stancil, Whalen and Stancil; timing Bass's “majority”, with Durbin and Whalen and Stancil); spread (Balmer, Stancil, Bass, Durbin, Tooth, Marsden and Svelmoe); today (Emerson and Minahan, Frohlich; US following Durbin, Bass); thessalonians (Tooth; Gundry, Plevnik, Cosby; Martin); word (NABRE, Tooth); paul-expected (Tooth; NABRE, Ehrman, Martin); scripture (Frohlich, Tooth; passages NABRE, Tooth); this-generation (Martin, Bahr, NABRE; Luke: NABRE, Martin, Ehrman); millennium (CenSAMM, Lippy; Augustine: Durbin, de Villiers); preterism (Lehner, Molina; the definition is Lehner's, descriptive); israel (Du Toit, Durbin, Stancil; dissent Smith in the text); tradition (exempt)."
   dissent-attributed:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: earlier formulations (Emerson and Minahan) and the origins debate (Bennett; Sweetnam and Gribben; de Villiers) attributed; Plevnik's and Cosby's rejection of the reception reading and Gundry's reply attributed; Tooth's “Others argue” on Paul's expectation attributed; Smith's dissent on Christian Zionism's roots attributed; Bass's majority/some on the rapture's timing attributed."
+    note: "First pass 2026-11-27: earlier formulations (Emerson and Minahan) and the origins debate (Bennett; Sweetnam and Gribben; de Villiers) attributed; Plevnik's and Cosby's rejection of the reception reading and Gundry's reply attributed; Tooth's “Others argue” on Paul's expectation attributed; Smith's dissent on Christian Zionism's roots attributed; Bass's majority/some on the rapture's timing attributed. Second pass 2026-11-27: re-checked; stands. Also: Tooth's “Others argue” now in the paul-expected short as a reported view; Smith's dissent stays in the israel text, scoped to his words."
   tradition-named:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: gotquestions-* as Got Questions Ministries, an evangelical ministry (registry convention); dts-doctrinal-statement as Dallas Theological Seminary (its own name); lcms-ctcr-1989-end-times as the Lutheran Church–Missouri Synod and its Commission on Theology and Church Relations (its own names); ccc-668-677 as the Catholic Church (as ccc-1033); ligonier-mathison-2012-johns-prophecy as Keith Mathison, writing for Ligonier Ministries, an international Christian discipleship organization (registry line). None supports what scholars think."
+    note: "First pass 2026-11-27: gotquestions-* as Got Questions Ministries, an evangelical ministry (registry convention); dts-doctrinal-statement as Dallas Theological Seminary (its own name); lcms-ctcr-1989-end-times as the Lutheran Church–Missouri Synod and its Commission on Theology and Church Relations (its own names); ccc-668-677 as the Catholic Church (as ccc-1033); ligonier-mathison-2012-johns-prophecy as Keith Mathison, writing for Ligonier Ministries, an international Christian discipleship organization (registry line). None supports what scholars think. Second pass 2026-11-27: re-checked. Cut: gotquestions-preterist (both citations; it describes a view it opposes, not what its tradition holds) and gotquestions-rapture-tribulation's “most controversial issues in the church” (a claim about the church, not what the ministry holds). The tradition short now names the Lutheran Church–Missouri Synod's Commission on Theology and Church Relations, whose report it is. Mathison's sentence now kept conditional. The question is widened to “the rapture and the end times”, as the Catechism paragraphs never mention a rapture."
 sources:
   tooth-2023-cdamm-1-thessalonians:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: signed entry in the Critical Dictionary of Apocalyptic and Millenarian Movements (eds. James Crossley and Alastair Lockhart; CenSAMM; about page: “articles written by academic authorities”), 11 January 2023, CC BY-NC-ND. Flag: CenSAMM is an academic centre, not a press. Author's gender not stated; text uses no pronoun."
+    note: "First pass 2026-11-27: Reference: signed entry in the Critical Dictionary of Apocalyptic and Millenarian Movements (eds. James Crossley and Alastair Lockhart; CenSAMM; about page: “articles written by academic authorities”), 11 January 2023, CC BY-NC-ND. Flag: CenSAMM is an academic centre, not a press. Author's gender not stated; text uses no pronoun. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Article information: Sydney E. Tooth, 2023, 11 January 2023, eds. Crossley and Lockhart, CC BY-NC-ND. First-pass flag (1) on CDAMM as Reference stands: signed entries in an edited academic dictionary; the Premillennialism entry carries a Cambridge repository DOI (10.17863/CAM.121440)."
   durbin-2022-cdamm-dispensationalism:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: CDAMM signed entry, 19 December 2022."
+    note: "First pass 2026-11-27: Reference: CDAMM signed entry, 19 December 2022. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page."
   devilliers-2019-stj-millennialism:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Scholarly: Stellenbosch Theological Journal 5(1), 2019, peer-reviewed, open on SciELO. Printed pages from the running heads (PDF p. 9 = p. 171). Flag: p. 172 has slips (Scofield “revised in 1907”; Scofield “accompanied Darby”), not cited."
+    note: "First pass 2026-11-27: Scholarly: Stellenbosch Theological Journal 5(1), 2019, peer-reviewed, open on SciELO. Printed pages from the running heads (PDF p. 9 = p. 171). Flag: p. 172 has slips (Scofield “revised in 1907”; Scofield “accompanied Darby”), not cited. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page."
   whalen-stancil-nce-darby:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference (NCE), bibliography to 1985; year null. Shares Stancil with stancil-nce-dispensational-theology; the validator counts author strings, so by hand Stancil counts once."
+    note: "First pass 2026-11-27: Reference (NCE), bibliography to 1985; year null. Shares Stancil with stancil-nce-dispensational-theology; the validator counts author strings, so by hand Stancil counts once. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Signed “[w. j. whalen/ w. t. stancil] New Catholic Encyclopedia”."
   sweetnam-gribben-2009-jets-darby:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Scholarly by registry precedent for JETS (haykin-2019-spirit): both authors at Trinity College Dublin. JETS 52(3), 2009."
+    note: "First pass 2026-11-27: Scholarly by registry precedent for JETS (haykin-2019-spirit): both authors at Trinity College Dublin. JETS 52(3), 2009. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. First page: “JETS 52/3 (September 2009) 569–77”."
   emerson-minahan-car-rapture:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: Contemporary American Religion (Wade Clark Roof, ed., Macmillan Reference USA, 2000, per library catalogue records; the page shows no year). Second entry on the Encyclopedia.com page."
+    note: "First pass 2026-11-27: Reference: Contemporary American Religion (Wade Clark Roof, ed., Macmillan Reference USA, 2000, per library catalogue records; the page shows no year). Second entry on the Encyclopedia.com page. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Quotes sit inside the entry signed “Michael O. Emerson, Robyn Minahan, Contemporary American Religion”. Year: Open Library lists Contemporary American Religion (Macmillan Reference USA) as 2000, one record November 1999; 2000 kept."
   bennett-2008-eq-pseudo-ephraem:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Scholarly by venue: Evangelical Quarterly (Paternoster), peer-reviewed, as Tyndale Bulletin is classed. Text is an OCR scan; quotes chosen from clean lines. Used for the report of a debate only."
+    note: "First pass 2026-11-27: Scholarly by venue: Evangelical Quarterly (Paternoster), peer-reviewed, as Tyndale Bulletin is classed. Text is an OCR scan; quotes chosen from clean lines. Used for the report of a debate only. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page."
   bass-car-dispensationalism:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: Contemporary American Religion, 2000 (the entry says “As of 1999”)."
+    note: "First pass 2026-11-27: Reference: Contemporary American Religion, 2000 (the entry says “As of 1999”). Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Signed “Diana Hochstedt Butler Bass, Contemporary American Religion”. Year 2000 per catalogue (see emerson-minahan-car-rapture)."
   stancil-nce-dispensational-theology:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference (NCE), bibliography to 1993; year null."
+    note: "First pass 2026-11-27: Reference (NCE), bibliography to 1993; year null. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Signed “[w. t. stancil] New Catholic Encyclopedia”."
   balmer-car-premillennialism:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: Contemporary American Religion, 2000."
+    note: "First pass 2026-11-27: Reference: Contemporary American Religion, 2000. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Signed “Randall Balmer, Contemporary American Religion”."
   marsden-svelmoe-eor-evangelical:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: Encyclopedia of Religion 2nd ed., credit line Marsden (1987 and 2005), Svelmoe (2005)."
+    note: "First pass 2026-11-27: Reference: Encyclopedia of Religion 2nd ed., credit line Marsden (1987 and 2005), Svelmoe (2005). Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Credit line “George M. Marsden (1987 and 2005), William L. Svelmoe (2005), Encyclopedia of Religion”."
   frohlich-nce-rapture:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference by registry precedent for the New Catholic Encyclopedia; entry signed M. Frohlich, bibliography to 1995; year null. Same Encyclopedia.com page as emerson-minahan-car-rapture."
+    note: "First pass 2026-11-27: Reference by registry precedent for the New Catholic Encyclopedia; entry signed M. Frohlich, bibliography to 1995; year null. Same Encyclopedia.com page as emerson-minahan-car-rapture. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Quotes sit inside the entry signed “[m. frohlich] New Catholic Encyclopedia” on the shared page."
   gundry-1996-bbr-apantesis:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Scholarly: BBR 6 (1996), peer-reviewed; IBR's free PDF, now gone live, read in the Wayback snapshot 20130530190206. Quote matched after joining a line-break hyphen (“recep- tions”)."
+    note: "First pass 2026-11-27: Scholarly: BBR 6 (1996), peer-reviewed; IBR's free PDF, now gone live, read in the Wayback snapshot 20130530190206. Quote matched after joining a line-break hyphen (“recep- tions”). Second pass 2026-11-27: Wayback snapshot 20130530190206 re-fetched; BBR 6 (1996); p. 41 confirmed."
   cosby-1994-bbr-apantesis:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Scholarly: BBR 4 (1994); Wayback snapshot 20130530184425. Outside the 30-year window: backs only his attributed argument. Quote matched after joining a line-break hyphen (“miss- ing”)."
+    note: "First pass 2026-11-27: Scholarly: BBR 4 (1994); Wayback snapshot 20130530184425. Outside the 30-year window: backs only his attributed argument. Quote matched after joining a line-break hyphen (“miss- ing”). Second pass 2026-11-27: Wayback snapshot 20130530184425 re-fetched; BBR 4 (1994) 15–34 on the first page. Outside the window; attributed only."
   plevnik-1999-biblica-1-thess-4-17:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Scholarly: Biblica 80 (1999), Pontifical Biblical Institute; journal archive on bsw.org, one HTML page per printed page (p537, p545 read)."
+    note: "First pass 2026-11-27: Scholarly: Biblica 80 (1999), Pontifical Biblical Institute; journal archive on bsw.org, one HTML page per printed page (p537, p545 read). Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. p537 and p545 pages fetched separately."
   martin-rlst152-l14:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: Open Yale Courses RLST 152, 2009, lecture 14 “Paul as Missionary”; chapter 3 heading “Paul the Apocalyptic Apostle to the Gentiles” [00:30:07]."
+    note: "First pass 2026-11-27: Reference: Open Yale Courses RLST 152, 2009, lecture 14 “Paul as Missionary”; chapter 3 heading “Paul the Apocalyptic Apostle to the Gentiles” [00:30:07]. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. The fetched page shows no year; 2009 is the registry's (as for l6 and l24), not re-checked."
   nabre-1-thessalonians-4-notes:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference (NABRE notes, scholarly association; registry precedent), 1986 revised NT; live page fetched. Flag: outside the 30-year window, so no short rests on it alone."
+    note: "First pass 2026-11-27: Reference (NABRE notes, scholarly association; registry precedent), 1986 revised NT; live page fetched. Flag: outside the 30-year window, so no short rests on it alone. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page."
   nabre-1-corinthians-15-notes:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference (NABRE), 1986; Wayback snapshot 20260109135303."
+    note: "First pass 2026-11-27: Reference (NABRE), 1986; Wayback snapshot 20260109135303. Second pass 2026-11-27: live URL returned 200 to curl this time; note headed [15:51–52]. Reference, 1986."
   ehrman-brief-5e-ch12-summary:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: OUP Learning Link summary, 5th ed., 2020."
+    note: "First pass 2026-11-27: Reference: OUP Learning Link summary, 5th ed., 2020. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. The page shows the 5th edition only in its URL (briefnt5e); the year 2020 is the registry's, as for the already-registered ch. 7 summary, not re-checked."
   martin-rlst152-l24:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Already registered (Reference, 2009). Chapter 2 heading “2 Thessalonians, the Lawless One, and Politics” [00:12:22]."
+    note: "First pass 2026-11-27: Already registered (Reference, 2009). Chapter 2 heading “2 Thessalonians, the Lawless One, and Politics” [00:12:22]. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page."
   nabre-matthew-24-notes:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference (NABRE), 1986; Wayback snapshot 20251228060054."
+    note: "First pass 2026-11-27: Reference (NABRE), 1986; Wayback snapshot 20251228060054. Second pass 2026-11-27: live URL returned 403 to curl; read in the Wayback snapshot 20251228060054 (gzip-decoded). Reference, 1986."
   lee-2010-darby-eschatology:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Scholarly by registry precedent for doctoral theses (McDonald, Leiden): University of Wales, Lampeter, 2010. Flag: unpublished thesis, not peer-reviewed; attributed."
+    note: "First pass 2026-11-27: Scholarly by registry precedent for doctoral theses (McDonald, Leiden): University of Wales, Lampeter, 2010. Flag: unpublished thesis, not peer-reviewed; attributed. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Title page: University of Wales, Lampeter, 2010, PhD."
   nabre-mark-13-notes:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference (NABRE), 1986; Wayback snapshot 20260202070742."
+    note: "First pass 2026-11-27: Reference (NABRE), 1986; Wayback snapshot 20260202070742. Second pass 2026-11-27: live URL returned 403 to curl; read in the Wayback snapshot 20260202070742 (gzip-decoded). Note headed [13:3–37]. Reference, 1986."
   martin-rlst152-l6:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Already registered (Reference, 2009). Chapter 4 “The Apocalyptic in Mark” [00:30:26]."
+    note: "First pass 2026-11-27: Already registered (Reference, 2009). Chapter 4 “The Apocalyptic in Mark” [00:30:26]. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page."
   bahr-2024-cdamm-mark-13:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: CDAMM signed entry, 23 September 2024."
+    note: "First pass 2026-11-27: Reference: CDAMM signed entry, 23 September 2024. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page."
   ehrman-brief-5e-ch7-summary:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Already registered (Reference, 2020)."
+    note: "First pass 2026-11-27: Already registered (Reference, 2020). Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page."
   censamm-2021-cdamm-millenarianism:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: CDAMM entry by CenSAMM (corporate author), 15 January 2021. Used for definitions."
+    note: "First pass 2026-11-27: Reference: CDAMM entry by CenSAMM (corporate author), 15 January 2021. Used for definitions. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page."
   lippy-car-millennialism:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: Contemporary American Religion, 2000; third entry on the Encyclopedia.com page."
+    note: "First pass 2026-11-27: Reference: Contemporary American Religion, 2000; third entry on the Encyclopedia.com page. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Quotes sit inside the entry signed “Charles H. Lippy, Contemporary American Religion” (third entry; the page also carries NCE Kuehner–Dolan and other “Millennialism” entries)."
   durbin-2023-cdamm-premillennialism:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Reference: CDAMM signed entry, page dated 3 January 2023 (the PDF's citation line says 2022). Same author as durbin-2022; counted once."
+    note: "First pass 2026-11-27: Reference: CDAMM signed entry, page dated 3 January 2023 (the PDF's citation line says 2022). Same author as durbin-2022; counted once. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Byline: “Author: Sean Durbin. Published: 3rd January 2023” (DOI 10.17863/CAM.121440); the page's own citation block says “3 January 2022” and omits the author. Registry 2023 follows the byline. Flag."
   lehner-2014-post-tridentine-revelation:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Scholarly: Journal of Baroque Studies 1(2), 2014, University of Malta; author Marquette faculty (bepress record). Page numbers from the printed page heads."
+    note: "First pass 2026-11-27: Scholarly: Journal of Baroque Studies 1(2), 2014, University of Malta; author Marquette faculty (bepress record). Page numbers from the printed page heads. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. University of Malta OAR record: Journal of Baroque Studies 1(2), 25–53, 2014, “peer-reviewed”; PDF pp. 1–3 are printed pp. 25–27."
   molina-2010-revelation-7:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Scholarly by thesis precedent: University of Pretoria PhD, 2010 (supervisor Ernest van Eck), chapter 3. Flag: argues from a historicist standpoint; used only for the list of schools."
+    note: "First pass 2026-11-27: Scholarly by thesis precedent: University of Pretoria PhD, 2010 (supervisor Ernest van Eck), chapter 3. Flag: argues from a historicist standpoint; used only for the list of schools. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Chapter 3 PDF, §3.1.2 on its p. 109."
   ligonier-mathison-2012-johns-prophecy:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Already registered (Tradition). Re-fetched; it says “a basically preterist manner”, not “partial preterism”."
-  gotquestions-preterist:
-    agent: pass
-    owner: ""
-    note: "First pass 2026-11-27: Tradition (registry line). An opponent's description of preterism; attributed as what the ministry says."
+    note: "First pass 2026-11-27: Already registered (Tradition). Re-fetched; it says “a basically preterist manner”, not “partial preterism”. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Its sentence is conditional; the text now keeps the condition. Tradition line (registry) not re-checked against an about page; the text names the source as the registry does."
   dutoit-2016-skriflig-christian-zionism:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Scholarly by venue: In die Skriflig 50(1), 2016, peer-reviewed (AOSIS). Flag: the article argues against Christian Zionism on confessional grounds; only its descriptive sentences are cited. The PDF's first page is the 2017 erratum (surname Du Toit). Its next sentence garbles the rapture's order (after the tribulation); not cited."
+    note: "First pass 2026-11-27: Scholarly by venue: In die Skriflig 50(1), 2016, peer-reviewed (AOSIS). Flag: the article argues against Christian Zionism on confessional grounds; only its descriptive sentences are cited. The PDF's first page is the 2017 erratum (surname Du Toit). Its next sentence garbles the rapture's order (after the tribulation); not cited. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Article galley PDF (file 4113, 10 pp., erratum page first; file 4894 is the erratum alone). In die Skriflig 50(1), a2164, 2016, AOSIS, CC BY."
   smith-2010-baylor-christian-affinity-israel:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Scholarly by thesis precedent: Baylor PhD, December 2010 (later an OUP book, not read)."
+    note: "First pass 2026-11-27: Scholarly by thesis precedent: Baylor PhD, December 2010 (later an OUP book, not read). Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Abstract on PDF p. 2 (mentor Barry G. Hankins). Dated December 2010 in the PDF."
   gotquestions-rapture-tribulation:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Tradition (registry line)."
+    note: "First pass 2026-11-27: Tradition (registry line). Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Now cited only for what the ministry holds (the pre-tribulational position); the “most controversial issues” sentence cut. Tradition line (registry) not re-checked against an about page; the text names the source as the registry does."
   dts-doctrinal-statement:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Tradition: a seminary's own doctrinal statement; it says “translation of the church”, not “rapture”; the text reports it in its own terms."
+    note: "First pass 2026-11-27: Tradition: a seminary's own doctrinal statement; it says “translation of the church”, not “rapture”; the text reports it in its own terms. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Tradition line (registry) not re-checked against an about page; the text names the source as the registry does."
   lcms-ctcr-1989-end-times:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Tradition: LCMS Commission on Theology and Church Relations, September 1989; Project Wittenberg etext part 4."
+    note: "First pass 2026-11-27: Tradition: LCMS Commission on Theology and Church Relations, September 1989; Project Wittenberg etext part 4. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Tradition line (registry) not re-checked against an about page; the text names the source as the registry does."
   ccc-668-677:
     agent: pass
     owner: ""
-    note: "First pass 2026-11-27: Tradition: Catechism §§668–677 on vatican.va (__P1V.HTM); footnote markers dropped; none of these paragraphs mentions a rapture."
+    note: "First pass 2026-11-27: Tradition: Catechism §§668–677 on vatican.va (__P1V.HTM); footnote markers dropped; none of these paragraphs mentions a rapture. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Tradition line (registry) not re-checked against an about page; the text names the source as the registry does."
 leads:
   - "Barbara Rossing, The Rapture Exposed (2004), “Invention of the Rapture”: read only as quoted in Lee 2010 and de Villiers 2019."
   - "Crawford Gribben, J. N. Darby and the Roots of Dispensationalism (OUP 2024) and SZRKG 110 (2016): not public (403)."
@@ -652,3 +644,5 @@ uncited:
   - "Du Toit 2016, “Christian Zionism has never enjoyed much support in New Testament scholarship”: read; not cited, as it comes from an article arguing a confessional case against Christian Zionism."
   - "Lippy, Balmer, Huber (Bible Odyssey “Millennium”): Huber's “Premillennialism, the dominant perspective among most evangelical Christians”: read; not cited, today rests on rapture-specific sources."
   - "Got Questions, “Origin of the rapture theory”; Thomas Ice, “A Brief History of the Rapture”: read; Tradition sources making historical claims (forerunners), not what a tradition holds; see leads."
+  - "Got Questions Ministries, “What is the preterist view of the end times?” (gotquestions-preterist), opening and second paragraphs (preterism as fulfilled prophecy; full versus partial): read; cut at the second pass (were preterism/7–8): a Tradition source describing a view it does not hold, which is neither what its tradition holds nor what scholars think. The registry entry is no longer cited by any page."
+  - "Got Questions Ministries, “When is the Rapture going to occur in relation to the Tribulation?”, opening paragraph (“one of the most controversial issues in the church today”): read; cut at the second pass (was tradition/1): a claim about the state of the church, not what the ministry holds."
