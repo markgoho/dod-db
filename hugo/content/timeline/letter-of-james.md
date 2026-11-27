@@ -17,7 +17,7 @@ critical:
   from: 55
   to: 100
   precision: period
-  note: "The date is debated. Brosend calls the letter a document of uncertain age that gives few clues as to when it was written. Britannica's editors report wide disagreement over the date, and say many scholars hold that it was probably written after the apostles' time, likely at the turn of the 1st century. Painter says it was likely written after James's death and the destruction of Jerusalem in 70 CE. Allison says that if Jesus's brother wrote it, it appeared before the mid-60s, and that if he did not, it could be very late; some put it in the 2nd century."
+  note: "The date is debated. Brosend calls the letter a document of uncertain age, written sometime between 55 and 100 CE, that gives few clues as to when it was written. Britannica's editors report wide disagreement over the date, and say many scholars hold that it was probably written after the apostles' time, likely at the turn of the 1st century. Painter says it was likely written after James's death and the destruction of Jerusalem in 70 CE. Allison says that if Jesus's brother wrote it, it appeared before the mid-60s, and that if he did not, it could be very late; some put it in the 2nd century."
   cites:
     - source: brosend-2015-who-wrote-james
       locator: "¶ 2"
@@ -34,15 +34,5 @@ critical:
     - source: allison-2015-jewish-setting-james
       locator: "section “Introduction”, ¶ 2"
       quote: "When was James written? If the brother of Jesus wrote it, it must have appeared before he died, which means before the mid-60s. If, however, he did not write it, the book could be very late. Some informed voices put it in the 2nd century – even the mid-second century (e.g. Nienhuis 2007)."
-      read: 2026-11-26
-tradition:
-  display: "Likely 45–48 CE"
-  from: 45
-  to: 48
-  holder: "Insight for Living, the Bible-teaching ministry of Pastor Chuck Swindoll"
-  cites:
-    - source: insight-swindoll-james
-      locator: "section “Where are we?”, ¶ 1"
-      quote: "This council met in AD 49, meaning James likely wrote his letter in AD 45–48."
       read: 2026-11-26
 ---

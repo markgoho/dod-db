@@ -5,91 +5,89 @@
 # Setting: none. The letter narrates no period; its addressees (“the twelve tribes in the Dispersion”) are not a period, and the sources split on Palestine (HarperCollins dictionary entry) vs the diaspora (Painter). Dropped.
 # Tradition: Trigger 170@00:08:53 states the traditional author's date (“if it was actually written by James, the brother of Jesus, it was obviously written in the middle of the 1st century CE”). Cited: Insight for Living's James overview (© 2010 Charles R. Swindoll, Inc.): “This council met in AD 49, meaning James likely wrote his letter in AD 45–48.” Display “Likely 45–48 CE” keeps the hedge. Holder in the ministry's own words from its site banner and About page, “The Bible-Teaching Ministry of Pastor Chuck Swindoll” (as the Acts first pass worded it). Alternatives (uncited): Got Questions “perhaps as early as AD 45” (lower bound only, no `to`; the upper bound is James's death); ESV.org “Introduction to James” (Crossway) “probably written about A.D. 40–45”, but the page names no study Bible or author. Tradition middle (46.5) and Critical middle (77.5) are 31 years apart, so the Tradition Date sits at its own year (#214), just.
 # Trigger Claims (#99, one to three): E170 00:31:19 (critical, “beginning of the 2nd century when this was probably written”), E99 00:26:18 (critical, “opinion is … remarkably diverse”), E170 00:08:53 (tradition). Shown verbatim. Hedges dropped by trimming: E170 00:31:19 is introduced by “there are scholars who are going to say” (kept in the quote) and the turn goes on to “did James think that's really what Paul meant … that's a little more granular than I want to get”. E99 00:26:18 is McClellan reading Dale Allison's ICC commentary (2013) aloud (“As for the date of James, opinion is here, as on so much else, remarkably diverse. Here is a sampling”); the rest of the turn lists the proposals (120–150, before 50, 44–66 …) and the stored text stops before them; the ICC is not open, so the list is a lead, never a citation. E170 00:08:53 drops the sentence before (“if this was written in like the early to mid-1st century CE as as some scholars have argued, why did nobody talk about it”) and after (“there are a lot of scholars who think that it was not actually written by James. It is pseudepigraphic”).
-# Dropped Trigger Claim leads: E99 00:27:17 (“the Catholic epistles … overwhelmingly probably second century”: all four, not James alone); E99 00:25:15 and E170 00:10:01 (authorship only: “scholarly consensus … not written by the brother of Jesus”, “majority of scholars are going to say it's pseudepigraphic”); E170 00:07:41–00:08:01 (first explicit reference by Origen, third century: reception, not a date of writing).
+# Dropped Trigger Claim leads: E170 00:08:53 (cut by the second pass: the conditional “if it was actually written by James, the brother of Jesus, it was obviously written in the middle of the 1st century CE”, in a turn that names only “some scholars” for the early date; neither a tradition's side nor a critical date); E99 00:27:17 (“the Catholic epistles … overwhelmingly probably second century”: all four, not James alone); E99 00:25:15 and E170 00:10:01 (authorship only: “scholarly consensus … not written by the brother of Jesus”, “majority of scholars are going to say it's pseudepigraphic”); E170 00:07:41–00:08:01 (first explicit reference by Origen, third century: reception, not a date of writing).
 # agent: the first pass (2026-11-26). Two research agents (critical, tradition) saved every fetched page into their own scratch folders (james-critical, james-tradition); the lead agent read Britannica “Letter of James” in Claude in Chrome (curl 403 behind a Cloudflare challenge), saving the page's `article` p/h1/h2 innerText (1928 characters; both cited and uncited sentences also matched with includes() in the tab); JSON-LD datePublished 1998-07-20, no dateModified. Quotes script-matched by the lead agent from the entry file against the named saved copies (whitespace, quotes, dashes, entities, NFKC, soft hyphens normalised): 5 hits, 0 misses, each occurring once. Trigger Claims matched by script as substrings of their final Transcript lines at timestamp and speaker: 3 hits; E170 00:06:00–00:11:00 and 00:29:01–00:33:39, E99 00:22:34–00:27:31 read.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) The display rests on one Reference article (Brosend), whose author holds that James the brother of Jesus wrote the letter (“I will stick with the tradition”); his range itself spans both authorship views. Check it carries the display, and whether the display should instead be an `undated` statement given “uncertain age”, Britannica's “wide disagreement” and Allison's “extraordinary differences in learned judgement” (uncited). (2) Brosend is professor of Homiletics (School of Theology, University of the South) and author of James and Jude (New Cambridge Bible Commentary, 2004): the #86 per-author check passes on the commentary; check. (3) Tradition side: the E170 00:08:53 turn frames the early date as what “some scholars have argued”, as the Acts second pass found for its Tradition Date (cut there). Kept here because the stored sentence names the traditional author (James the brother of Jesus) and Brosend himself calls that authorship “the tradition”; cut if in doubt. (4) Britannica's sentence is hedged (“probably … likely”) and a report (“many scholars hold”); backs the note only. Its datePublished 1998-07-20 is inside the ~30-year window just. (5) Painter's next sentence has a doubled “in in”; the cited span stops before it. (6) The note's “after the apostles' time” paraphrases Britannica's “post-apostolic”; check.
+# Second agent pass, 2026-11-26 (fresh agent; did not build the entry; read none of the first pass's scratch folders). Re-fetched into its own scratch folder (james-p2): Brosend, Painter (Bible Odyssey), Allison (In die Skriflig HTML full text) and Insight for Living by curl with a browser User-Agent (all 200), saved as text with python3 -I; Britannica by curl 403, so read in Claude in Chrome in a new tab of its own (closed after): `article` h1/h2/p innerText, 1930 characters, saved; the cited sentence also matched with includes() in the tab (the authoritative match: the saved copy was reassembled from sliced reads); JSON-LD datePublished 1998-07-20T00:00:00Z, no dateModified; byline The Editors of Encyclopaedia Britannica, “most recently revised and updated by Melissa Petruzzello”. Bible Odyssey date lines: Brosend August 24, 2015; Painter September 25, 2014.
+# Quotes re-matched by script from the entry file as received against the saved copies (whitespace, quotes, dashes, HTML entities, NFKC, soft hyphens normalised): 5 of 5 hit, each once; after the edits, re-run on the edited entry: 4 of 4 hit; triggers re-run on the edited triggers.yaml: 2 of 2 hit. Locators checked by position: Brosend ¶ 2 (¶ 1 the bar joke); Painter ¶ 4 (after the Acts 15/21 paragraph; the doubled “in in” is in the next sentence, outside the span); Allison under “Introduction”, ¶ 2 (¶ 1 “Who wrote it?”); Britannica opening paragraph, second sentence; Insight “Where are we?” ¶ 1, third sentence. Trigger Claims script-matched as substrings of their Transcript lines at timestamp and speaker: 3 of 3 hit; E170 00:05:08–00:11:00 and 00:28:12–00:33:39, E99 00:23:58–00:28:49 read; both transcripts grepped for tradition, church, believers, traditional, early date and first-century turns.
+# Second pass changed: (a) Tradition Date cut. The `tradition:` block (display “Likely 45–48 CE”, holder Insight for Living, tradition/1) removed from the entry; trigger 170@00:08:53 (`states: tradition`) removed from triggers.yaml and moved to the dropped leads above (it states no critical date either, so not relabelled); registry entry `insight-swindoll-james` removed (nothing else cites it); its quote moved to `uncited`. Reason: in the 00:08:53 turn the only holders named for the early date are “some scholars” (“if this was written in like the early to mid-1st century CE as as some scholars have argued”), and the stored sentence is a conditional on authorship; calling that authorship “the tradition” comes from Brosend, not from the show, and no turn in either window names a tradition, church or confessional holder for the date (grep above). Same doubt the Acts second pass cut on (189@00:35:59); CONTEXT.md shows a Tradition Date only when a Trigger Claim states the tradition's side; in doubt, cut. #214 middles moot. (b) Critical note: “Brosend calls the letter a document of uncertain age that gives few clues as to when it was written.” → “Brosend calls the letter a document of uncertain age, written sometime between 55 and 100 CE, that gives few clues as to when it was written.” Reason: the display rests on Brosend alone; naming the range in his sentence makes that single-source basis visible. Display, title, from/to/precision unchanged.
+# Second-pass rulings on the first-pass flags: (1) Display kept as `critical` “Between 55 and 100 CE”, not `undated`. Brosend's range is outright, unconditional and in his own voice in a signed Reference article; his “uncertain age” and Britannica's “wide disagreement” are carried by the note's “The date is debated”, as `job` and `daniel` carry debated dates. An `undated` no-firm-date verdict would be a restructure, not a cut, and would sit against three sources that each give a date or bound (Brosend's range, Britannica's turn of the century, Painter's after 70). #99 alternatives not added: no second source gives a range of its own. But the display's `to: 100` excludes the 2nd-century dating the only Scholarly source reports (Allison, “Some informed voices”) and the 170@00:31:19 Trigger Claim voices; flagged. (2) Brosend per-author check passes: the article's bio box says professor of Homiletics, School of Theology, the University of the South, Episcopal priest, author of James and Jude (2004); its bibliography lists James and Jude, New Cambridge Bible Commentary (CUP, 2004). (3) Cut (change a). (4) Britannica kept, note only: hedged report; datePublished 1998-07-20 is inside the ~30-year window in 2026. (5) Confirmed: Painter's span stops before “in in”. (6) “after the apostles' time” kept as a fair plain-English paraphrase of “post-apostolic”; the citation quotes Britannica's own word.
+# Flags for the lead: (1) The issue lists “Sides: both” and “Tradition as stated: James the brother of Jesus, so mid-1st century CE”, and the cut sentence does name the traditional author; reinstate (block, trigger, registry entry, tradition/1 from `uncited`) only if you judge a conditional on traditional authorship states the tradition's side, which the Acts ruling suggests it doesn't. (2) Display `to: 100` vs 2nd-century proposals (Allison's report, the 00:31:19 claim, the E99 00:26:18 list read aloud from the ICC); left as is because no read source gives a 2nd-century date in its own voice; the ICC (lead) might. (3) Brosend's range frames the field's bounds rather than his own date (he holds that James the brother of Jesus wrote it, and puts that James's execution in 62 C.E.); it is still stated outright.
 review:
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Brosend, Bible Odyssey “Who Wrote the Letter of James?” (dated August 24, 2015), body ¶ 2, second sentence. Outright range 55–100 C.E. with “uncertain age” and “few clues”. Backs the display, from/to and the note's second sentence. Author holds traditional authorship (¶ 4); flag 1.",
+      note: "Brosend, Bible Odyssey “Who Wrote the Letter of James?” (dated August 24, 2015), body ¶ 2, second sentence. Outright range 55–100 C.E. with “uncertain age” and “few clues”. Backs the display, from/to and the note's second sentence. Author holds traditional authorship (¶ 4); flag 1. Second pass: re-fetched (curl, 200); script-matched once; ¶ 2 by position (¶ 1 the bar joke); bio box and bibliography confirm the author (flag 2). Note now names the range in Brosend’s sentence. Pass.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Letter of James” (The Editors of Encyclopaedia Britannica; datePublished 1998-07-20), opening paragraph, second sentence. Read in Chrome. Hedged report (“many scholars hold … probably … likely”). Backs the note's Britannica sentence only (flags 4, 6).",
+      note: "Britannica “Letter of James” (The Editors of Encyclopaedia Britannica; datePublished 1998-07-20), opening paragraph, second sentence. Read in Chrome. Hedged report (“many scholars hold … probably … likely”). Backs the note's Britannica sentence only (flags 4, 6). Second pass: read in Claude in Chrome (own tab); includes() true in the tab and script hit in the saved 1930-character copy; opening paragraph, second sentence; datePublished 1998-07-20, no dateModified. “after the apostles’ time” paraphrase kept (flag 6). Pass.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Painter, Bible Odyssey “James and Paul” (2014), body ¶ 4, first sentence. Hedged (“likely”); lower bound only (after James's death and 70 C.E.). Backs the note's Painter sentence. Stops before the doubled “in in” (flag 5).",
+      note: "Painter, Bible Odyssey “James and Paul” (2014), body ¶ 4, first sentence. Hedged (“likely”); lower bound only (after James's death and 70 C.E.). Backs the note's Painter sentence. Stops before the doubled “in in” (flag 5). Second pass: re-fetched (curl, 200; date line September 25, 2014); script-matched once; ¶ 4 by position; span ends before “in in”. Pass.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Allison, In die Skriflig 49.1 (2015), art. 1897, section “Introduction”, ¶ 2 (after ¶ 1 “Who wrote it?”). Conditional date (CONTEXT.md: never a Critical Date) and a report of 2nd-century proposals. Backs the note's last sentence only.",
-    }
-  tradition/1:
-    {
-      agent: pass,
-      owner: "",
-      note: "Insight for Living, “James” book overview (© 2010 Charles R. Swindoll, Inc.), section “Where are we?”, ¶ 1, third sentence. “likely … AD 45–48”, derived from the Jerusalem Council in AD 49 (same sentence). Display keeps “Likely”. Holder from the site banner and About page.",
+      note: "Allison, In die Skriflig 49.1 (2015), art. 1897, section “Introduction”, ¶ 2 (after ¶ 1 “Who wrote it?”). Conditional date (CONTEXT.md: never a Critical Date) and a report of 2nd-century proposals. Backs the note's last sentence only. Second pass: re-fetched HTML full text (curl, 200); script-matched once; “Introduction” ¶ 2 by position; received 22 Oct. 2014, published 08 May 2015, Princeton Theological Seminary confirmed. Pass.",
     }
 triggers:
   170@00:31:19:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. “at the beginning of the 2nd century when this was probably written”, introduced by “there are scholars who are going to say” (kept). Within the note's 2nd-century report (Allison); the display (55–100) ends at the turn of the century. The show is not corrected (#99). 00:29:01–00:33:39 read.",
+      note: "states: critical. “at the beginning of the 2nd century when this was probably written”, introduced by “there are scholars who are going to say” (kept). Within the note's 2nd-century report (Allison); the display (55–100) ends at the turn of the century. The show is not corrected (#99). 00:29:01–00:33:39 read. Second pass: script-matched at 00:31:19.363, Dan McClellan; 00:28:12–00:33:39 read. states critical confirmed; verbatim. Its 2nd-century date falls outside the display’s 55–100 (lead flag 2); not corrected (#99). Pass.",
     }
   99@00:26:18:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. McClellan reading Allison's ICC commentary aloud; the stored sentence is the date verdict, before the list of proposals. Agrees with the note's “The date is debated”. 00:22:34–00:27:31 read.",
-    }
-  170@00:08:53:
-    {
-      agent: pass,
-      owner: "",
-      note: "states: tradition. The date that follows from traditional authorship (“if it was actually written by James, the brother of Jesus … the middle of the 1st century CE”). Preceding sentence frames the early date as some scholars' (flag 3). 00:06:00–00:11:00 read.",
+      note: "states: critical. McClellan reading Allison's ICC commentary aloud; the stored sentence is the date verdict, before the list of proposals. Agrees with the note's “The date is debated”. 00:22:34–00:27:31 read. Second pass: script-matched at 00:26:18.980, Dan McClellan; 00:23:58–00:28:49 read. states critical confirmed; verbatim. Pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Worded for what the sources date: the letter's composition, not James's life or death (#233). Title “Letter of James”.",
+      note: "Worded for what the sources date: the letter's composition, not James's life or death (#233). Title “Letter of James”. Second pass: confirmed; no date for James’s life or death on the entry. Pass.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "One outright range (Brosend) in the display; the sources' other positions (Britannica's turn of the century, Painter's after 70, Allison's conditional and 2nd-century report) in the note, attributed by name. “The date is debated”: Britannica says “wide disagreement as to the date”. No consensus word.",
+      note: "One outright range (Brosend) in the display; the sources' other positions (Britannica's turn of the century, Painter's after 70, Allison's conditional and 2nd-century report) in the note, attributed by name. “The date is debated”: Britannica says “wide disagreement as to the date”. No consensus word. Second pass: confirmed; Brosend now named with his range in the note. Pass.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "Trigger 170@00:08:53 states the tradition's side (flag 3).",
+      note: "Trigger 170@00:08:53 states the tradition's side (flag 3). Second pass: Tradition Date cut; 170@00:08:53 removed (names only “some scholars” for the early date; a conditional, no tradition named), so no Trigger Claim states the tradition’s side and none is needed. Pass.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "Holder equals the registry `tradition:`; the ministry's own banner wording. Never “the traditional date”.",
+      note: "Holder equals the registry `tradition:`; the ministry's own banner wording. Never “the traditional date”. Second pass: no Tradition Date and no Tradition source cited after the cut. Pass.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "Allison's conditional date (“If the brother of Jesus wrote it … before the mid-60s”) is in the note only, as a condition. Display from Brosend's unconditional range.",
+      note: "Allison's conditional date (“If the brother of Jesus wrote it … before the mid-60s”) is in the note only, as a condition. Display from Brosend's unconditional range. Second pass: confirmed. Pass.",
     }
 sources:
   brosend-2015-who-wrote-james:
@@ -97,35 +95,28 @@ sources:
       agent: pass,
       owner: "",
       edition: "Bible Odyssey article, dated August 24, 2015",
-      note: "Reference (Bible Odyssey, judged per author, #86). William Brosend, professor of Homiletics, School of Theology, University of the South; Episcopal priest; author of James and Jude (New Cambridge Bible Commentary, CUP, 2004). Holds traditional authorship (flags 1, 2).",
+      note: "Reference (Bible Odyssey, judged per author, #86). William Brosend, professor of Homiletics, School of Theology, University of the South; Episcopal priest; author of James and Jude (New Cambridge Bible Commentary, CUP, 2004). Holds traditional authorship (flags 1, 2). Second pass: page date line August 24, 2015 and bio box confirmed. Pass.",
     }
   britannica-letter-of-james:
     {
       agent: pass,
       owner: "",
       edition: "Online, The Editors of Encyclopaedia Britannica (first published July 20, 1998)",
-      note: "Reference (online encyclopedia). Refuses scripted requests; read in Claude in Chrome. Author null: byline “The Editors of Encyclopaedia Britannica”; contributors listed Melissa Petruzzello, John M. Cunningham.",
+      note: "Reference (online encyclopedia). Refuses scripted requests; read in Claude in Chrome. Author null: byline “The Editors of Encyclopaedia Britannica”; contributors listed Melissa Petruzzello, John M. Cunningham. Second pass: byline and datePublished re-read in Chrome; curl 403 confirmed. Pass.",
     }
   painter-2014-james-and-paul:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey article, 2014",
-      note: "Reference (Bible Odyssey); registry id reused. John Painter; author of James and Jude (Paideia, Baker Academic, 2012), cited in the article's bibliography.",
+      note: "Reference (Bible Odyssey); registry id reused. John Painter; author of James and Jude (Paideia, Baker Academic, 2012), cited in the article's bibliography. Second pass: date line September 25, 2014; Paideia bibliography entry confirmed. Pass.",
     }
   allison-2015-jewish-setting-james:
     {
       agent: pass,
       owner: "",
       edition: "In die Skriflig/In Luce Verbi 49.1 (2015), art. 1897, doi 10.4102/ids.v49i1.1897; received 22 Oct. 2014, published 8 May 2015",
-      note: "Scholarly (peer-reviewed, open access CC BY). Dale C. Allison, Princeton Theological Seminary. Footnote 1: the article introduces conclusions of his ICC commentary (2013).",
-    }
-  insight-swindoll-james:
-    {
-      agent: pass,
-      owner: "",
-      edition: "Insight for Living book overview, © 2010 Charles R. Swindoll, Inc.",
-      note: "Tradition (ministry website). Author from the copyright line, the “Listen to Chuck Swindoll's overview” line and the author box; page unsigned otherwise.",
+      note: "Scholarly (peer-reviewed, open access CC BY). Dale C. Allison, Princeton Theological Seminary. Footnote 1: the article introduces conclusions of his ICC commentary (2013). Second pass: issue, dates and affiliation confirmed on the article page. Pass.",
     }
 leads:
   - "Allison, A Critical and Exegetical Commentary on the Epistle of James (ICC, T&T Clark, 2013): its list of proposed dates (read aloud in E99 00:26:18) and its authorship conclusion; no open text; not read."
@@ -146,3 +137,4 @@ uncited:
   - "Martin, Open Yale RLST 152 lecture 18, ch. 3–4: James and Paul; no date or authorship verdict."
   - "Got Questions “Summary of the Book of James”, “Date of Writing:”: “written perhaps as early as AD 45, before the first council of Jerusalem in c. AD 50”. Tradition source; lower bound only; Insight gives a range."
   - "ESV.org “Introduction to James” (Crossway): “It was probably written about A.D. 40–45”. Tradition source; page names no study Bible edition or author; Insight preferred."
+  - "Insight for Living, “James” book overview (insight.org/resources/bible/the-general-epistles/james; © 2010 Charles R. Swindoll, Inc.), section “Where are we?”, ¶ 1: “This council met in AD 49, meaning James likely wrote his letter in AD 45–48.” Was tradition/1. Second pass cut the Tradition Date: no Trigger Claim states the tradition’s side (170@00:08:53 names only “some scholars” for the early date); registry entry insight-swindoll-james removed. Holder wording was “Insight for Living, the Bible-teaching ministry of Pastor Chuck Swindoll” (banner re-verified; About page not re-read)."
