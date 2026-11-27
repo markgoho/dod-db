@@ -1,8 +1,8 @@
 ---
 title: "Isaiah 40–55 (Second Isaiah)"
 entryKind: composition
-draft: true
-sourcesRead:
+draft: false
+sourcesRead: 2026-11-26
 related: { books: [isaiah], tags: [deutero-isaiah], topics: [deutero-isaiah] }
 watch:
   [Second Isaiah, Deutero-Isaiah, Isaiah 40, Isaiah 45, Servant Songs, Cyrus]
