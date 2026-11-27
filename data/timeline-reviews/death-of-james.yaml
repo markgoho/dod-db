@@ -8,98 +8,108 @@
 # agent: the first pass (2026-11-26). Two research agents (critical side, james-critical; tradition side, james-tradition) saved every fetched page into their own scratch folders and copied quotes only from the saved text; no setting agent (an event). The lead read Britannica (/biography/Saint-James-the-Lords-brother; the hyphenated “Lord-s” URL errors) and Bible Odyssey /articles/james/ in Claude in Chrome (both refuse scripted requests), and Schmidt's open-access PDF in OAPEN's pdf.js viewer (curl gets 403); in-tab counts against the whitespace-normalised text: 1 each for all seven quotes. Schmidt p. 232: the text layer reads “shortly be-” at a line end (item ends at x≈388, next line starts at the left margin) and “cause of )” (kerning space), quoted as “before” and “of)”: normalised count 1, raw count 0. Britannica JSON-LD on this load: author “Britannica Editors”, datePublished 1998-07-20, dateModified 2026-10-17; the lede is p.topic-paragraph 1; a Britannica AI Q&A block above the article also says 62 and is not cited. Trigger Claims script-matched as substrings of their final Transcript lines at timestamp and speaker: 3 hits, each once.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Display “c. 62 CE”: Britannica is flat (“died 62 CE”), Schmidt and Jackson-McCabe hedge; check “c.” and the note's hedges. (2) Schmidt p. 232 quote: confirm the dehyphenation (“be-fore” at a line end) and “of)”; the sentence's “around 69 ce” follows “the destruction of Jerusalem”: check the note reads it as Schmidt's date for James's death in Christian tradition (the sentence's subject is “it”, James's death), and that nothing dates the destruction to 69. (3) Note paraphrase of Schmidt n. 30 (“in the interval after … Festus had died and before his successor arrived”): his words are “during the intervening moment when the Roman governor Festus had died and his replacement had not yet arrived”; the quote is trimmed at “had died”. (4) Jackson-McCabe's “reportedly” may scope both the agent and the date; the note keeps it on the clause. (5) Britannica's “reputedly” scopes the manner, not the year; check. (6) `states: both` on 14:46 and 18:41 with no tradition block. (7) Jackson-McCabe is Reference per #86's per-author rule (associate professor, Cleveland State University; author page).
+# Second agent pass, 2026-11-27 (fresh agent; did not build the entry; read none of the first pass's scratch folders or files; the folder name first assigned, james-p2, already held other files, unread; this pass used james-p2-second). Re-fetched: Bible Odyssey article and author page by curl (200); Britannica (curl 403) and Schmidt's OAPEN PDF (curl 403, handle and bitstream) read in Claude in Chrome in this pass's own tab (closed after); Britannica JSON-LD on this load: author Britannica Editors, datePublished 1998-07-20, dateModified 2026-10-17; Schmidt text via pdf.js getTextContent on all 337 pages; passages saved.
+# Match counts: 7 of 7 quotes found once each at their locators (Britannica in-tab innerText 1/1; Schmidt 1/1/1 raw, p. 232 ¶ 2 raw 0 and 1 after joining “be-fore” and “of )”; Jackson-McCabe 1). Trigger Claims: 3 of 3 exact substrings of the final Transcript lines at timestamp and speaker (Dan McClellan); E99 00:12:36–00:21:31 read.
+# Second pass changed: entry note “Jackson-McCabe puts the death, reportedly at the hands of an interim Judean authority, around 62 CE.” → “Jackson-McCabe says James died, reportedly at the hands of an interim Judean authority around 62 CE.” (his “reportedly” may scope the date; the old commas fenced it off the date). No citation cut; no Trigger Claim cut; keys unchanged; registry unchanged.
+# Second-pass rulings on the first-pass flags: (1) “c. 62 CE” kept: Britannica flat, Schmidt “likely”/“around”, Jackson-McCabe “reportedly … around”; “c.” is no stronger than the weakest backing source and the note carries the hedges. (2) Pass: “be-fore” is a line-end hyphen; the subject of “puts it … around 69 ce” is James's death; nothing dates the destruction to 69. (3) Pass: paraphrase faithful. (4) Narrowed (see change). (5) Pass: “reputedly” scopes the manner. (6) Pass: both lines state 62 and 69. (7) Pass: author page confirms.
+# Flags for the lead: (1) Schmidt's “around 69 ce” for Christian tradition rests on sources (his n. 12) that give no year; the note attributes it to him (“he says”), and McGiffert 1890 (uncited) disputes that Hegesippus gives 69; acceptable as attributed, but don't upgrade it to a Tradition Date. (2) The note's “Vespasian's siege” is Hegesippus via Schmidt; `temple-destruction` names neither Vespasian nor Titus, so no conflict, but the Romans' 70 CE siege was led by Titus; leave as attributed. (3) The 18:41 Trigger Claim puts 69 “in the hullabaloo of the Roman siege of Jerusalem and the destruction of the temple”: shown verbatim and apart; the entry text dates nothing else. (4) Not re-fetched: the uncited items and leads; they back nothing on the page.
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-27
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “St. James, the Lord’s Brother”, lede (p.topic-paragraph 1), first sentence, trimmed after “Christian apostle”. Own-voice year: died 62 CE, Jerusalem. Backs display, from and the note's first clause. In-tab count 1. Flag 1.",
+      note: "Britannica “St. James, the Lord’s Brother”, lede (p.topic-paragraph 1), first sentence, trimmed after “Christian apostle”. Own-voice year: died 62 CE, Jerusalem. Backs display, from and the note's first clause. In-tab count 1. Flag 1. Second pass: re-read in Claude in Chrome (own tab, closed after); lede p.topic-paragraph 1, first sentence; in-tab innerText count 1; the only “62 CE” in the body. Own voice, flat; pass.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Britannica, article ¶ 4 (p.topic-paragraph 4), fourth sentence. Priestly authorities had James put to death, reputedly by stoning (after Josephus) or a fall from a Temple tower (after Hegesippus). Backs the note's manner clause; no year. In-tab count 1. Flag 5.",
+      note: "Britannica, article ¶ 4 (p.topic-paragraph 4), fourth sentence. Priestly authorities had James put to death, reputedly by stoning (after Josephus) or a fall from a Temple tower (after Hegesippus). Backs the note's manner clause; no year. In-tab count 1. Flag 5. Second pass: p.topic-paragraph 4, fourth sentence confirmed; in-tab count 1. “reputedly” scopes the manner only; the sentence is Britannica's own voice (“This popularity is evident …”); pass.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Schmidt 2025, ch. 5, p. 145 (PDF p. 162), n. 30, trimmed at “had died”. Own voice: “likely executed in 62 ce”, with the reason (Festus dead, successor not yet arrived, Ant. 20.200). Backs the display and the note's Schmidt sentence. In-tab count 1. Flag 3.",
+      note: "Schmidt 2025, ch. 5, p. 145 (PDF p. 162), n. 30, trimmed at “had died”. Own voice: “likely executed in 62 ce”, with the reason (Festus dead, successor not yet arrived, Ant. 20.200). Backs the display and the note's Schmidt sentence. In-tab count 1. Flag 3. Second pass: re-read in OAPEN pdf.js (own tab, getTextContent); PDF p. 162, printed 145, n. 30; TOC confirms ch. 5 title; normalised count 1, raw 1. Paraphrase in the note (“interval after … had died and before his successor arrived”) matches “intervening moment when … Festus had died and his replacement had not yet arrived”; pass.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Schmidt 2025, Appendix 2, p. 231 (PDF p. 248), the paragraph after the Ant. 20.200 translation. Own-voice summary: stoned to death “around 62 ce”. Backs “c.” and the stoning. In-tab count 1.",
+      note: "Schmidt 2025, Appendix 2, p. 231 (PDF p. 248), the paragraph after the Ant. 20.200 translation. Own-voice summary: stoned to death “around 62 ce”. Backs “c.” and the stoning. In-tab count 1. Second pass: PDF p. 248, printed 231 (p. 232 is printed on PDF 249), first sentence of the paragraph after the translation; count 1. Schmidt's summary of Ant. 20.200; “around 62 ce” is his gloss; elsewhere (PDF pp. 205, 229) he says “executed in 62 ce” flat; no rival year anywhere in the book; pass.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Schmidt 2025, Appendix 2, p. 232 (PDF p. 249), ¶ 2. Josephus' context places James's death around 62 ce, whereas Christian tradition puts it shortly before (and as the cause of) the destruction of Jerusalem around 69 ce. Report of what Christian tradition holds, in Schmidt's voice; backs the note's 69 clause, attributed. Normalised count 1 (line-end hyphen, kerning space). Flag 2.",
+      note: "Schmidt 2025, Appendix 2, p. 232 (PDF p. 249), ¶ 2. Josephus' context places James's death around 62 ce, whereas Christian tradition puts it shortly before (and as the cause of) the destruction of Jerusalem around 69 ce. Report of what Christian tradition holds, in Schmidt's voice; backs the note's 69 clause, attributed. Normalised count 1 (line-end hyphen, kerning space). Flag 2. Second pass: PDF p. 249, printed 232; text layer “shortly be-fore (and even as the cause of ) …”: raw count 0, count 1 after joining the line-end hyphen and the kerning space; quoted form accepted. Subject of “puts it … around 69 ce” is James's death (parallel to “it places it around 62 ce”); the note dates only James's death in that tradition, not the destruction; pass.",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "Schmidt 2025, Appendix 2, p. 232, n. 12, trimmed before “; see Eusebius”. Hegesippus: execution immediately before Vespasian's siege; Eusebius says Clement agrees. A sequence, no year. Backs the note's last clause. In-tab count 1.",
+      note: "Schmidt 2025, Appendix 2, p. 232, n. 12, trimmed before “; see Eusebius”. Hegesippus: execution immediately before Vespasian's siege; Eusebius says Clement agrees. A sequence, no year. Backs the note's last clause. In-tab count 1. Second pass: PDF p. 249, n. 12; count 1. Next sentence (uncited): “However, Josephus places the execution some years previous to this.” Sequence, no year; pass.",
     }
   critical/7:
     {
       agent: pass,
       owner: "",
-      note: "Jackson-McCabe, Bible Odyssey “James”, section “Was James the Just an actual brother of Jesus?”, ¶ 2, last sentence, trimmed after “the Just”. “reportedly at the hands of an interim Judean authority around 62 C.E.” Own voice, hedged. Backs “c.”. In-tab count 1. Flags 4, 7.",
+      note: "Jackson-McCabe, Bible Odyssey “James”, section “Was James the Just an actual brother of Jesus?”, ¶ 2, last sentence, trimmed after “the Just”. “reportedly at the hands of an interim Judean authority around 62 C.E.” Own voice, hedged. Backs “c.”. In-tab count 1. Flags 4, 7. Second pass: re-fetched by curl (200; JSON-LD datePublished 2020-06-24, dateModified 2024-01-16); ¶ 2 of the section is the <p> beginning “As this James rose to prominence”, its last sentence; count 1. “reportedly” may scope the date as well as the agent: note narrowed from “puts the death, reportedly at the hands of an interim Judean authority, around 62 CE” to “says James died, reportedly at the hands of an interim Judean authority around 62 CE” (source order; the hedge reaches the date). Author page: associate professor, Department of Philosophy and Comparative Religion, Cleveland State University; Reference per #86; pass.",
     }
 triggers:
   99@00:14:46:
     {
       agent: pass,
       owner: "",
-      note: "states: both. McClellan: “either in 62 CE or in 69 CE, depending on who you're listening to”; “it seems” kept. Script-matched at 00:14:46.600; E99 00:12:36–00:21:30 read. Flag 6.",
+      note: "states: both. McClellan: “either in 62 CE or in 69 CE, depending on who you're listening to”; “it seems” kept. Script-matched at 00:14:46.600; E99 00:12:36–00:21:30 read. Flag 6. Second pass: exact substring of the final Transcript line [00:14:46.600], Dan McClellan; E99 00:12:36–00:21:31 read. Both sides stated in one sentence with “it seems”; pass.",
     }
   99@00:17:55:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. McClellan, after reading Ant. 20.200 (Feldman, LCL): “So this would have happened around 62 CE.” Agrees with the display. Script-matched at 00:17:55.600.",
+      note: "states: critical. McClellan, after reading Ant. 20.200 (Feldman, LCL): “So this would have happened around 62 CE.” Agrees with the display. Script-matched at 00:17:55.600. Second pass: exact substring of [00:17:55.600], Dan McClellan; the first sentence is his reading of the Feldman LCL Ant. 20.200, the second his own gloss; pass.",
     }
   99@00:18:41:
     {
       agent: pass,
       owner: "",
-      note: "states: both. Josephus “around 62 CE”; Clement, Eusebius and Hegesippus “insist that James was killed around 69 CE in the hullabaloo of the Roman siege”. Shown verbatim (#99); the note's sourced report (Schmidt n. 12) is that Clement and Hegesippus give a sequence, not a year, and the gap is left unexplained (#86). Next turn (00:19:46): “It's up in the air … Josephus is probably … to be trusted the most.” Script-matched at 00:18:41.910. Flag 6.",
+      note: "states: both. Josephus “around 62 CE”; Clement, Eusebius and Hegesippus “insist that James was killed around 69 CE in the hullabaloo of the Roman siege”. Shown verbatim (#99); the note's sourced report (Schmidt n. 12) is that Clement and Hegesippus give a sequence, not a year, and the gap is left unexplained (#86). Next turn (00:19:46): “It's up in the air … Josephus is probably … to be trusted the most.” Script-matched at 00:18:41.910. Flag 6. Second pass: exact substring of [00:18:41.910], Dan McClellan. Also dropped by the trim: the line's own close, “So we don't have a real clear account.”, before the 00:19:46 hedge; shown verbatim apart (#99); pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Title and display date James's death; Britannica (died), Schmidt (executed, stoned) and Jackson-McCabe (death) all date that. Nothing on the Letter of James (`letter-of-james`) or on Vespasian's campaign is dated here.",
+      note: "Title and display date James's death; Britannica (died), Schmidt (executed, stoned) and Jackson-McCabe (death) all date that. Nothing on the Letter of James (`letter-of-james`) or on Vespasian's campaign is dated here. Second pass: pass; title worded for the death, as all three sources date it.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "No cited Scholarly or Reference source gives a rival year in its own voice; 69 is Schmidt's report of Christian tradition, attributed in the note. Not a split. Flag 2.",
+      note: "No cited Scholarly or Reference source gives a rival year in its own voice; 69 is Schmidt's report of Christian tradition, attributed in the note. Not a split. Flag 2. Second pass: pass; Schmidt, Britannica and Jackson-McCabe give no rival year in their own voice; Schmidt gives 62 throughout.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "Two Trigger Claims state the tradition's side (69 CE), but no Tradition source holds 69 in its own words, so no Tradition Date is shown (the rule permits, never requires one). Tradition sources giving 62 or 63 are uncited.",
+      note: "Two Trigger Claims state the tradition's side (69 CE), but no Tradition source holds 69 in its own words, so no Tradition Date is shown (the rule permits, never requires one). Tradition sources giving 62 or 63 are uncited. Second pass: pass (not re-fetched: the uncited Tradition pages back nothing on the page).",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "No tradition block. The note names “Christian tradition”, Hegesippus, Eusebius and Clement only inside Schmidt's attributed report, never as “the traditional date”.",
+      note: "No tradition block. The note names “Christian tradition”, Hegesippus, Eusebius and Clement only inside Schmidt's attributed report, never as “the traditional date”. Second pass: pass; “Christian tradition” is Schmidt's own phrase, attributed (“he says”).",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date cited. Allison 2015's “If the brother of Jesus wrote it … before the mid-60s” is conditional and dates the letter (uncited).",
+      note: "No conditional date cited. Allison 2015's “If the brother of Jesus wrote it … before the mid-60s” is conditional and dates the letter (uncited). Second pass: pass.",
     }
 sources:
   britannica-james-lords-brother:
