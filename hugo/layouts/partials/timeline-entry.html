@@ -9,6 +9,7 @@
   "moved" for an entry's Tradition Date at its own year (see
   timeline-placement.html); "" for one not placed
   gap              the entry's gap from timeline-placement.html's gaps, or nil
+  end              true for a row on the axis's inline-end side (#254)
   triggers         this entry's Trigger Claims
   episodesByNumber string Episode Number → Episode page, for quote-card.html
   shortCites       External Source id → author-date key
@@ -51,7 +52,9 @@
   {{- $scholars := partial "timeline-midsentence.html" $c.display -}}
   {{- $moved := printf "%s. %s %s. %s." $e.Title $holds (partial "timeline-midsentence.html" $t.display) $labels.moved -}}
   <li
-    class="timeline-entry timeline-entry--moved"
+    class="timeline-entry timeline-entry--moved{{ if $.end }}
+      timeline-entry--end
+    {{ end }}"
     id="{{ $id }}"
     data-entry-url="{{ (partial "clean-url.html" $e).rel }}"
     tabindex="-1"
@@ -82,6 +85,9 @@
   {{- end -}}
   {{- if $byTradition -}}
     {{- $classes = $classes | append "timeline-entry--by-tradition" -}}
+  {{- end -}}
+  {{- if .end -}}
+    {{- $classes = $classes | append "timeline-entry--end" -}}
   {{- end -}}
   <li
     class="{{ delimit $classes " " }}"

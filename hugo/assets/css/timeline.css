@@ -1,8 +1,9 @@
 /*
-  Timeline (#163 §2): a vertical axis with two lanes, scholarly on the left
-  and tradition on the right, in labelled era bands. The lanes are 5 : 2
-  (#173): only some entries have a Tradition Date, so the tradition lane is
-  narrow and the axis sits off-centre. Composes page-hero, panel,
+  Timeline (#163 §2): a vertical axis down the middle, in labelled era
+  bands, with entries on both sides (#254, reversing #162's two lanes): rows
+  alternate sides, and timeline-layout.ts packs them so a row may start
+  beside the one before it. Side means nothing; a tradition card says what it
+  is by its hatched, dashed look and its holder's name. Composes page-hero, panel,
   type-eyebrow, type-section-title, cloud-section, disclosure-summary,
   the quote card (tag-quote) and the Scholarship primitives (notice, block,
   cites, class badge, Sources used table); only the axis, its entries and the
@@ -15,11 +16,12 @@
 }
 
 /*
-  Where the axis sits across the spine, wide layout. A custom property, so
-  the minimap's fixed era pill (outside the spine) centres on the same line.
+  Where the axis sits across the spine, wide layout: the middle. A custom
+  property, so the minimap's fixed era pill (outside the spine) centres on
+  the same line.
 */
 .timeline-page {
-  --timeline-axis-share: calc(5 / 7);
+  --timeline-axis-share: 0.5;
 }
 
 .timeline-measure {
@@ -39,15 +41,6 @@
 }
 
 .timeline-spine {
-  /*
-    The tradition lane: from the axis column's far edge to the spine's end.
-    Lanes and entries both span the spine, so 100% is the same width.
-  */
-  --timeline-tradition-lane: minmax(
-    0,
-    calc(100% * (1 - var(--timeline-axis-share)) - var(--space-xl) / 2)
-  );
-
   container: timeline / inline-size;
   display: grid;
   gap: var(--space-s);
@@ -117,19 +110,7 @@
   rotate: 45deg;
 }
 
-/* ---------- Lane heads and the axis ---------- */
-
-.timeline-lanes {
-  display: grid;
-  font-size: var(--step--1);
-  font-weight: var(--font-weight-bold);
-  gap: var(--space-xl);
-  grid-template-columns: minmax(0, 1fr) var(--timeline-tradition-lane);
-}
-
-.timeline-lanes > :first-child {
-  text-align: end;
-}
+/* ---------- The axis ---------- */
 
 .timeline-axis,
 .timeline-era__entries,
@@ -141,6 +122,8 @@
 
 .timeline-axis {
   --axis-at: calc(100% * var(--timeline-axis-share));
+  /* Read by timeline-layout.ts: 1 where rows sit on both sides and may be packed. */
+  --timeline-pack: 1;
 
   padding-block-end: var(--space-l);
   position: relative;
@@ -188,24 +171,45 @@
   gap: var(--space-s);
 }
 
-/* ---------- Entry: scholarly card, node, tradition card ---------- */
+/*
+  Packed (timeline-layout.ts): each row's top as the script works it out,
+  pulled up beside the row before it, never above it. --pack-pull is that
+  pull (zero or less); --pack-tail keeps the era's end below its tallest row.
+*/
+.timeline-entry {
+  margin-block-start: var(--pack-pull, 0px);
+}
 
+.timeline-era__entries {
+  padding-block-end: var(--pack-tail, 0px);
+}
+
+/* ---------- Entry: its cards on one side, its node on the axis ---------- */
+
+/*
+  Three columns, the middle one the axis's. A row on the start side holds
+  its cards in the first column, one on the end side (--end) in the third;
+  the other side stays empty for the rows packed beside it.
+*/
 .timeline-entry {
   --node-size: var(--space-s);
   --node-at: calc(var(--space-s) + var(--step--2));
+  --side: 1;
 
   align-items: start;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) var(--space-xl) var(
-      --timeline-tradition-lane
-    );
+  grid-template-columns: minmax(0, 1fr) var(--space-xl) minmax(0, 1fr);
   scroll-margin-block-start: calc(var(--header-height) + var(--space-s));
+}
+
+.timeline-entry--end {
+  --side: 3;
 }
 
 .timeline-entry__card {
   display: grid;
   gap: var(--space-4xs);
-  grid-column: 1;
+  grid-column: var(--side);
   grid-row: 1;
   min-inline-size: 0;
   padding: var(--space-s) var(--space-s) 0;
@@ -309,7 +313,7 @@
   }
 }
 
-/* The entry's own outline would ring the whole row, both lanes; the card says it. */
+/* The entry's own outline would ring the whole row, node and all; the card says it. */
 .timeline-entry:is(:target, [data-arrived]):focus {
   outline: none;
 }
@@ -381,7 +385,7 @@
   display: block;
 }
 
-/* The node: a dot on the axis, level with the title. Connectors run to each card's edge. */
+/* The node: a dot on the axis, level with the title. A connector runs to its card's edge, on the row's side. */
 .timeline-entry__node {
   background: var(--color-action);
   block-size: var(--node-size);
@@ -398,7 +402,6 @@
 }
 
 .timeline-entry__node::before,
-.timeline-entry--paired > .timeline-entry__node::after,
 .timeline-entry--moved > .timeline-entry__node::after {
   border-block-start: var(--border-width-sm) solid var(--tan-900);
   content: "";
@@ -412,23 +415,40 @@
   inset-inline-end: 100%;
 }
 
-.timeline-entry--paired > .timeline-entry__node::after,
+.timeline-entry--end > .timeline-entry__node::before {
+  inset-inline: 100% auto;
+}
+
+/* A Tradition Date's own row: a dashed connector to its tradition card. */
 .timeline-entry--moved > .timeline-entry__node::after {
   border-block-start-style: dashed;
   border-color: var(--tan-500);
-  inset-inline-start: 100%;
+  inset-inline-end: 100%;
 }
 
-/* Its lane is the narrow one, so the scholarly side reads first. */
+.timeline-entry--moved.timeline-entry--end > .timeline-entry__node::after {
+  inset-inline: 100% auto;
+}
+
+/*
+  The tradition card, beside an entry that has both dates or that a
+  tradition's date placed: under the scholarly card, on its side, inset from
+  the axis so it reads as belonging to the card above.
+*/
 .timeline-entry__tradition {
   display: grid;
   gap: var(--space-4xs);
-  grid-column: 3;
-  grid-row: 1;
-  justify-self: start;
-  margin-block-start: calc(var(--node-at) - var(--space-xs));
+  grid-column: var(--side);
+  grid-row: 2;
+  justify-self: stretch;
+  margin-block-start: var(--space-2xs);
+  margin-inline: var(--space-s) 0;
   min-inline-size: 0;
   padding: var(--space-xs);
+}
+
+.timeline-entry--end > .timeline-entry__tradition {
+  margin-inline: 0 var(--space-s);
 }
 
 /*
@@ -441,7 +461,7 @@
   border: 0;
 }
 
-/* The diamond, on ::before: the left connector's place, as this row has no scholarly card. */
+/* The diamond, on ::before: the connector's place, as this row has no scholarly card. */
 .timeline-entry--moved > .timeline-entry__node::before {
   background: var(--tan-000);
   border: var(--border-width-sm) solid var(--tan-900);
@@ -449,6 +469,12 @@
   inset: 15%;
   rotate: 45deg;
   translate: none;
+}
+
+/* No scholarly card above it: level with its node, and its card's only one. */
+.timeline-entry--moved > .timeline-entry__tradition {
+  grid-row: 1;
+  margin: calc(var(--node-at) - var(--space-xs)) 0 0;
 }
 
 .timeline-entry__moved-title {
@@ -481,12 +507,9 @@
 */
 
 @container timeline (width < 44rem) {
-  .timeline-lanes {
-    display: none;
-  }
-
   .timeline-axis {
     --axis-at: calc(var(--space-m) / 2);
+    --timeline-pack: 0;
   }
 
   .timeline-era__label {
@@ -495,36 +518,29 @@
   }
 
   .timeline-entry {
+    --side: 2;
+
     gap: var(--space-2xs) 0;
     grid-template-columns: var(--space-m) minmax(0, 1fr);
-  }
-
-  .timeline-entry__card,
-  .timeline-entry__tradition {
-    grid-column: 2;
   }
 
   .timeline-entry__node {
     grid-column: 1;
   }
 
-  .timeline-entry__tradition {
-    grid-row: 2;
+  .timeline-entry__tradition,
+  .timeline-entry--end > .timeline-entry__tradition {
     margin-block-start: 0;
-    justify-self: stretch;
-    margin-inline-start: var(--space-s);
+    margin-inline: var(--space-s) 0;
   }
 
   .timeline-entry__node:not(.timeline-entry--moved > *)::before,
-  .timeline-entry--paired > .timeline-entry__node::after,
   .timeline-entry--moved > .timeline-entry__node::after {
     display: none;
   }
 
-  /* No scholarly card above it: level with its node. */
   .timeline-entry--moved > .timeline-entry__tradition {
-    grid-row: 1;
-    margin-inline-start: 0;
+    margin: 0;
   }
 }
 

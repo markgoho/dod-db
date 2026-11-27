@@ -98,14 +98,12 @@
             >
           </li>
         </ul>
-        <div class="timeline-lanes" aria-hidden="true">
-          <p>{{ $labels.scholarly }}</p>
-          <p>{{ $labels.tradition }}</p>
-        </div>
         <ol
           class="timeline-axis"
           role="list"
           aria-label="Timeline Entries and tradition dates in date order, by era">
+          {{/* Rows alternate sides across the whole axis, not per era (#254); timeline-layout.ts may repack them. */}}
+          {{ $row := 0 }}
           {{ range . }}
             {{ $eraClass := cond (gt (len .items) 0) "timeline-era" "timeline-era timeline-era--empty" }}
             <li
@@ -118,11 +116,13 @@
                   {{ range . }}
                     {{ partial "timeline-entry.html" (merge $ctx (dict
                       "entry" .page
+                      "end" (modBool $row 2 | not)
                       "by" .by
                       "gap" (index $placement.gaps .page.File.ContentBaseName)
                       "triggers" (where $allTriggers "entry" .page.File.ContentBaseName)
                       ))
                     }}
+                    {{ $row = add $row 1 }}
                   {{ end }}
                 </ol>
               {{ end }}

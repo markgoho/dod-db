@@ -302,7 +302,7 @@
   ---------- Era pill: the current era, fixed over the axis (#173) ----------
   Wide screens only (narrow ones have the bar) and only with the scrollspy
   and scroll-driven animations. Shown only while the axis fills the viewport
-  (contain), later than the rail, so it never sits over the lane heads or the
+  (contain), later than the rail, so it never sits over the legend or the
   hero: its own visibility, over the rail's. Fixed, never sticky (see the
   rail), in whole pixels. On the axis line: the content column is centred in
   the viewport less its scrollbar, which is a fixed box's containing block
