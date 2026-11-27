@@ -186,6 +186,8 @@
 */
 @media (width >= 114rem) and (height >= 40rem) {
   .timeline-page {
+    /* The rail is this much wider than the gutter (room for the period gutter, #255), and the axis starts this much further in. */
+    --rail-extra: 3rem;
     --timeline-bleed: max(
       0px,
       (100dvw - min(100dvw, var(--content-max-width))) / 2 + var(--space-s) -
@@ -194,7 +196,7 @@
   }
 
   .timeline-spine > .timeline-axis {
-    margin-inline-end: calc(-1 * var(--timeline-bleed));
+    margin-inline: var(--rail-extra) calc(-1 * var(--timeline-bleed));
   }
 }
 
@@ -222,8 +224,8 @@
       down,
       min(
         (var(--rail-viewport) - var(--content-max-width)) / 2 + var(--space-s) -
-          2 * var(--rail-gap),
-        var(--content-max-width-sidebar)
+          2 * var(--rail-gap) + var(--rail-extra),
+        var(--content-max-width-sidebar) + var(--rail-extra)
       ),
       1px
     );
@@ -349,7 +351,8 @@
       /* The axis bleeds right (below): its middle sits half the bleed right of the spine's. */
       --axis-offset: calc(
         (min(100%, var(--content-max-width)) - 2 * var(--space-s)) *
-          (var(--timeline-axis-share) - 0.5) + var(--timeline-bleed) / 2
+          (var(--timeline-axis-share) - 0.5) + var(--timeline-bleed) / 2 +
+          var(--rail-extra) / 2
       );
 
       animation: timeline-minimap-show linear;
@@ -421,6 +424,8 @@
     which "2000–1500" fits, so a wider popover keeps room for 8px dots.
   */
   --era-label-width: min(5 * var(--space-s), 6rem);
+  /* The period gutter (#255), beside the years: its names on one line. */
+  --period-room: 4.5rem;
 
   anchor-name: --timeline-minimap-strip;
   background: var(--tan-000);
@@ -511,6 +516,8 @@
       var(--era-label-size) * var(--line-height-heading) + var(--space-4xs),
       1px
     );
+    /* Sideways, as the years are: as wide, and room for the temple stripe. */
+    --period-room: calc(var(--era-label-width) + 3px);
   }
 
   /* Sideways, its logical sizes turn: so the label's width and height here. */
@@ -575,17 +582,18 @@
 /*
   The part of the Timeline on screen (#253): the viewport's top and bottom
   as shares of the strip (--view-start, --view-end, set by
-  timeline-minimap.ts every frame the page scrolls), across the dots' area,
-  under the dots. Never animated: it moves with the page. Tall enough to see
+  timeline-minimap.ts every frame the page scrolls), across the strip's
+  full width, under the dots. Never animated: it moves with the page. Tall enough to see
   where one entry fills the screen.
 */
 .timeline-minimap__view {
-  background: color-mix(in srgb, var(--color-accent) 25%, transparent);
+  /* A thin ink edge over a faint ink wash: reads on an amber period and on the plain strip alike. */
+  background: color-mix(in srgb, var(--tan-900) 8%, transparent);
   border: var(--border-width-sm) solid var(--tan-900);
   box-sizing: border-box;
   inset-block: round(down, var(--view-start) * 100%, 1px)
     calc(100% - round(up, var(--view-end) * 100%, 1px));
-  inset-inline: var(--era-label-width) 0;
+  inset-inline: 0;
   min-block-size: var(--space-xs);
   pointer-events: none;
   position: absolute;
@@ -693,7 +701,8 @@
   /* At most the room beside the labels shared by the places (100%: the strip's width, read only in insets), so before the strip is measured dots may crowd but never reach the labels. */
   --tick-pitch: min(
     round(up, 1.25 * var(--tick-dot) + 1px, 1px),
-    (100% - var(--era-label-width) - var(--setting-room)) / var(--places)
+    (100% - var(--era-label-width) - var(--period-room) - var(--setting-room)) /
+      var(--places)
   );
   --row-centre: calc(var(--places) * var(--tick-pitch) / 2);
   /* How far the outermost place's centre sits from the row's. */
@@ -749,7 +758,7 @@
         (
             (
                 var(--strip-inline, 100vw) - var(--era-label-width) -
-                  var(--setting-room)
+                  var(--period-room) - var(--setting-room)
               ) /
               var(--places) - 2px
           ) /
@@ -913,6 +922,117 @@
     calc(var(--tick-x) + var(--tick-dot));
 }
 
+/* ---------- Periods (#255): tinted bands, named in a gutter beside the years ---------- */
+
+/* Over the bands, under the window and the ticks. Decorative; never takes a pointer. */
+.timeline-minimap__periods {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  position: relative;
+}
+
+/* Placed by its years, rounded as the bands are. */
+.timeline-minimap__period {
+  box-sizing: border-box;
+  font-size: calc(var(--step--2) / 1.2);
+  inset-block: round(down, var(--p-start) * 100%, 1px)
+    calc(100% - round(down, var(--p-end) * 100%, 1px));
+  line-height: 1.1;
+  margin: 0;
+  position: absolute;
+}
+
+/* An age: across the strip, every other one tinted, so neighbours part without a heavy line. */
+.timeline-minimap__period--age {
+  inset-inline: 0;
+}
+
+.timeline-minimap__period--age[data-parity="odd"] {
+  background: color-mix(in srgb, var(--tan-300) 45%, transparent);
+}
+
+/* Its start: a dashed line from the period gutter across the dots, never through the years. */
+.timeline-minimap__period--age::before {
+  border-block-start: var(--border-width-sm) dashed var(--tan-500);
+  content: "";
+  inset-block-start: 0;
+  inset-inline: var(--era-label-width) 0;
+  position: absolute;
+}
+
+/*
+  Its name, in the gutter from the period's start: full ink, as the years
+  are. One longer than its period is left out (data-unfit, measured by
+  timeline-minimap.ts), never cut; the current one shows in full (see the
+  end).
+*/
+.timeline-minimap__period-label {
+  box-sizing: border-box;
+  color: var(--color-text-main);
+  inline-size: calc(var(--period-room) - 4px);
+  inset-block-start: 0;
+  inset-inline-start: var(--era-label-width);
+  max-block-size: 100%;
+  overflow: hidden;
+  padding: 1px 2px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.timeline-minimap__period[data-unfit] > .timeline-minimap__period-label {
+  visibility: hidden;
+}
+
+/* The rail: sideways, as the years are (physical sides: a vertical box's logical ones turn). */
+@media (width >= 114rem) and (height >= 40rem) {
+  .timeline-minimap__period-label {
+    height: auto;
+    inline-size: auto;
+    left: var(--era-label-width);
+    max-block-size: none;
+    max-height: 100%;
+    padding: 2px 0;
+    top: 0;
+    width: calc(var(--period-room) - 4px);
+    writing-mode: vertical-rl;
+  }
+}
+
+/* The temple track: a stripe at the gutter's far edge; the Exile hatched. */
+.timeline-minimap__period--temple {
+  background: var(--tan-500);
+  inline-size: 3px;
+  inset-inline-start: calc(var(--era-label-width) + var(--period-room) - 3px);
+}
+
+.timeline-minimap__period--temple[data-period="exile"] {
+  background: repeating-linear-gradient(
+    0deg,
+    var(--tan-700) 0 1px,
+    transparent 0 3px
+  );
+}
+
+/* The years sit over the period tints, on the strip's own ground, so a tint never runs behind them. */
+.timeline-minimap__era {
+  position: relative;
+  z-index: 1;
+}
+
+:is(
+  .timeline-minimap__era-full,
+  .timeline-minimap__era-start,
+  .timeline-minimap__era-mark
+) {
+  background: var(--tan-000);
+}
+
+.timeline-minimap__era-mark {
+  z-index: 1;
+}
+
 /* ---------- The current-state look: what --is-current: 1 shows ---------- */
 
 @supports (color: if(style(--is-current: 1): red; else: blue)) {
@@ -968,5 +1088,48 @@
         else: none
     );
     outline-offset: var(--border-width-sm);
+  }
+
+  /* The current entry's period (#255): amber across the strip; its name bold, on the strip's ground, in full over its neighbours. */
+  .timeline-minimap__period--age {
+    background: if(
+      style(--is-current: 1): color-mix(
+          in srgb,
+          var(--color-accent) 22%,
+          transparent
+        );
+        else: transparent
+    );
+  }
+
+  .timeline-minimap__period--age[data-parity="odd"] {
+    background: if(
+      style(--is-current: 1): color-mix(
+          in srgb,
+          var(--color-accent) 22%,
+          transparent
+        );
+        else: color-mix(in srgb, var(--tan-300) 45%, transparent)
+    );
+  }
+
+  .timeline-minimap__period-label {
+    background: if(style(--is-current: 1): var(--tan-000); else: transparent);
+    font-weight: if(
+      style(--is-current: 1): var(--font-weight-bold); else: normal
+    );
+    max-block-size: if(style(--is-current: 1): none; else: 100%);
+    z-index: if(style(--is-current: 1): 1; else: auto);
+  }
+
+  .timeline-minimap__period[data-unfit] > .timeline-minimap__period-label {
+    visibility: if(style(--is-current: 1): visible; else: hidden);
+  }
+
+  @media (width >= 114rem) and (height >= 40rem) {
+    .timeline-minimap__period-label {
+      max-block-size: none;
+      max-height: if(style(--is-current: 1): none; else: 100%);
+    }
   }
 }

@@ -707,6 +707,57 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(select(page, `body > script${script}`)).toHaveLength(1);
   });
 
+  test("the periods (#255): each one in hugo/data/timeline/periods.yaml is a band on the strip at its years, the ages alternating their tint, and the Timeline lists it with its dates and cites", async () => {
+    const data = Bun.YAML.parse(
+      await Bun.file(path.join(HUGO_DIR, "data/timeline/periods.yaml")).text(),
+    ) as { id: string; track: string; label: string; cites: unknown[] }[];
+    const bands = select(
+      page,
+      ".timeline-minimap__periods > .timeline-minimap__period",
+    );
+    // All of them fall on the fixture's axis (5000 BCE to past 70 CE).
+    expect(bands.map(b => b.attrs["data-period"])).toEqual(data.map(d => d.id));
+    expect(bands.map(b => classes(b))).toEqual(
+      data.map(d => [
+        "timeline-minimap__period",
+        `timeline-minimap__period--${d.track}`,
+      ]),
+    );
+    for (const b of bands) {
+      const v = vars(b);
+      expect(v["p-start"]!).toBeGreaterThanOrEqual(0);
+      expect(v["p-end"]!).toBeLessThanOrEqual(1);
+      expect(v["p-start"]!).toBeLessThan(v["p-end"]!);
+    }
+    const ages = data.filter(d => d.track === "age");
+    expect(
+      ages.map(
+        d => select(page, `[data-period="${d.id}"]`)[0]?.attrs["data-parity"],
+      ),
+    ).toEqual(ages.map((_, i) => (i % 2 === 0 ? "even" : "odd")));
+    expect(
+      ages.map(d =>
+        squash(
+          select(
+            page,
+            `[data-period="${d.id}"] .timeline-minimap__period-label`,
+          )[0]?.text,
+        ),
+      ),
+    ).toEqual(ages.map(d => d.label));
+
+    // The Timeline lists each period with its cites, and their sources are rows in Sources used.
+    expect(
+      ids(select(page, "#timeline-periods .timeline-periods__item")),
+    ).toEqual(data.map(d => `period-${d.id}`));
+    expect(
+      data.map(d => select(page, `#period-${d.id} .scholarship-cite`).length),
+    ).toEqual(data.map(d => d.cites.length));
+    expect(
+      select(page, '[id="source-magness-2012-archaeology-holy-land-intro"]'),
+    ).toHaveLength(1);
+  });
+
   test("Sources used is a closed disclosure whose summary counts its rows, and every source link lands on a row inside it", () => {
     const sources = select(page, "details.timeline-sources");
     expect(sources).toHaveLength(1);

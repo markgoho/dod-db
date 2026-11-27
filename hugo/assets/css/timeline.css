@@ -607,3 +607,26 @@
   line-height: var(--line-height-tight);
   text-wrap: balance;
 }
+
+/* ---------- Periods on the minimap (#255): each period, its dates and cites ---------- */
+
+/* Closed, as Sources used is: no gap under the summary. */
+.timeline-periods-section {
+  gap: 0;
+}
+
+.timeline-periods {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: var(--space-s) 0 0;
+}
+
+.timeline-periods__item > p {
+  margin: 0;
+}
+
+.timeline-periods__dates {
+  color: var(--color-text-muted);
+}

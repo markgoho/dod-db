@@ -43,6 +43,30 @@
   "drawnAs" (float (cond $first.compressed $compressedYears 0))
 -}}
 {{- /*
+  The historical periods (#255, hugo/data/timeline/periods.yaml), as shares
+  of the strip, clipped to the axis; a period wholly outside it is left out.
+  The age track alternates its tint (parity, counted over the periods drawn).
+  */
+-}}
+{{- $periods := slice -}}
+{{- $ageIndex := 0 -}}
+{{- range hugo.Data.timeline.periods | default slice -}}
+  {{- $from := math.Max (float .from) $axis.start -}}
+  {{- $to := math.Min (float (.to | default $axis.end)) $axis.end -}}
+  {{- if lt $from $to -}}
+    {{- $parity := "" -}}
+    {{- if eq .track "age" -}}
+      {{- $parity = cond (modBool $ageIndex 2) "even" "odd" -}}
+      {{- $ageIndex = add $ageIndex 1 -}}
+    {{- end -}}
+    {{- $periods = $periods | append (dict
+      "id" .id "track" .track "label" .label "parity" $parity
+      "start" (partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" $from))
+      "end" (partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" $to)))
+    -}}
+  {{- end -}}
+{{- end -}}
+{{- /*
   A tick is a dot at its year, in the strip's one row of $places places
   across (every kind: the scholarly dot, the dashed dot placed by a
   tradition's date, the diamond of a moved Tradition Date, #214; the shapes
@@ -363,6 +387,28 @@
           </li>
         {{- end }}
       </ol>
+      {{- /*
+        The periods (#255): the age track as tinted bands across the strip,
+        each named in the period gutter beside the years; the temple track as
+        a stripe at the gutter's edge. Decorative: the Timeline lists the
+        periods, with their dates and cites, under "Periods on the minimap".
+        timeline-minimap.ts flags the current entry's periods.
+      */}}
+      {{- with $periods }}
+        <ol class="timeline-minimap__periods" role="list" aria-hidden="true">
+          {{- range . }}
+            <li
+              class="timeline-minimap__period timeline-minimap__period--{{ .track }}"
+              data-period="{{ .id }}"
+              {{ with .parity }}data-parity="{{ . }}"{{ end }}
+              style="--p-start: {{ .start }}; --p-end: {{ .end }}">
+              {{- if eq .track "age" }}
+                <span class="timeline-minimap__period-label">{{ .label }}</span>
+              {{- end }}
+            </li>
+          {{- end }}
+        </ol>
+      {{- end }}
       {{- /* The part of the Timeline on screen (#253), placed by timeline-minimap.ts; hidden until then. Its own layer, outside the ticks', so moving it every frame restyles nothing else. */}}
       <div class="timeline-minimap__window" aria-hidden="true">
         <span class="timeline-minimap__view" hidden></span>

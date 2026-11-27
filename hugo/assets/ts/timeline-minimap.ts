@@ -22,6 +22,14 @@ function flagged(
   era: string | undefined,
 ): { current: Element[]; partner: Element[] } {
   const base = id.endsWith("-tradition") ? id.slice(0, -10) : id;
+  const tick = root.querySelector<HTMLElement>(
+    `[data-tick="${CSS.escape(id)}"]`,
+  );
+  const at = tick ? share(tick, "--tick-at") : Number.NaN;
+  // The periods (#255) its tick's year falls in, [start, end).
+  const periods = [
+    ...root.querySelectorAll<HTMLElement>("[data-period]"),
+  ].filter(p => at >= share(p, "--p-start") && at < share(p, "--p-end"));
   const pair = root.querySelector(`[data-pair="${CSS.escape(base)}"]`);
   const other = id === base ? `${base}-tradition` : base;
   const q = (sel: string) => [...root.querySelectorAll(sel)];
@@ -34,6 +42,7 @@ function flagged(
       ...(era
         ? q(`[data-now="${CSS.escape(era)}"], [data-era="${CSS.escape(era)}"]`)
         : []),
+      ...periods,
     ],
     partner: pair ? q(`[data-tick="${CSS.escape(other)}"]`) : [],
   };
@@ -123,6 +132,18 @@ function measureStrip(root: Element): void {
     const { width, height } = entry.contentRect;
     strip.style.setProperty("--strip-inline", `${width}px`);
     strip.style.setProperty("--strip-block", `${height}px`);
+    // A period's name longer than its period is left out, never cut (#255).
+    for (const period of strip.querySelectorAll<HTMLElement>(
+      ".timeline-minimap__period--age",
+    )) {
+      const label = period.querySelector(".timeline-minimap__period-label");
+      // Its whole length (it is clipped to the period); sideways on the rail, so height either way.
+      if (label)
+        period.toggleAttribute(
+          "data-unfit",
+          label.scrollHeight > period.clientHeight + 0.5,
+        );
+    }
   }).observe(ticks);
 }
 

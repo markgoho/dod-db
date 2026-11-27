@@ -22,10 +22,32 @@
 
 {{ $eras := partial "timeline-eras.html" $placed }}
 
+{{/* The minimap's periods (#255) cite External Sources too: listed with the entries' in Sources used. */}}
+{{ $periods := hugo.Data.timeline.periods | default slice }}
 {{ $sourceIds := partial "timeline-source-ids.html" $ordered }}
+{{ range $periods }}
+  {{ range .cites }}
+    {{ if not (index (index hugo.Data "external-sources") .source) }}
+      {{ errorf "Timeline: period cites unknown External Source %q" .source }}
+    {{ end }}
+    {{ $sourceIds = $sourceIds | append .source }}
+  {{ end }}
+{{ end }}
+{{ $sourceIds = $sourceIds | uniq }}
 {{ $shortCites := partial "source-short-cites.html" $sourceIds }}
 {{ $registry := index hugo.Data "external-sources" }}
 {{ $sourceRead := dict }}
+{{ range $periods }}
+  {{ range $cite := .cites }}
+    {{ with $cite.read }}
+      {{ $read := time.Format "2006-01-02" . }}
+      {{ $prev := index $sourceRead $cite.source | default "" }}
+      {{ if gt $read $prev }}
+        {{ $sourceRead = merge $sourceRead (dict $cite.source $read) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 {{ range $ordered }}
   {{ range $part := (slice .Params.critical .Params.undated .Params.setting .Params.tradition) }}
     {{ range $cite := ($part | default dict).cites }}
@@ -153,6 +175,34 @@
         {{ end }}
       </ul>
     </section>
+  {{ end }}
+
+  {{ with and $eras $periods }}
+    {{/* The minimap's periods (#255), each with its dates and cites. Closed by default, as Sources used is. */}}
+    <details
+      class="cloud-section timeline-measure timeline-periods-section"
+      id="timeline-periods">
+      <summary class="disclosure-summary timeline-sources__summary">
+        <h2 class="type-section-title cloud-section__title">
+          Periods on the minimap
+        </h2>
+        <span class="timeline-section-intro"
+          >The tinted bands behind the minimap's dots, and where their dates
+          come from.</span
+        >
+      </summary>
+      <ul class="timeline-periods" role="list">
+        {{ range $periods }}
+          <li class="timeline-periods__item" id="period-{{ .id }}">
+            <p>
+              <strong>{{ .label }}</strong>
+              <span class="timeline-periods__dates">{{ .display }}</span>
+            </p>
+            {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $shortCites) }}
+          </li>
+        {{ end }}
+      </ul>
+    </details>
   {{ end }}
 
   {{ with $sourceIds }}

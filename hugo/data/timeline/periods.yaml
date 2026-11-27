@@ -1,0 +1,113 @@
+# The historical periods drawn on the Timeline's minimap (#255), as tinted
+# bands. Each boundary is cited like a Critical Date: verbatim quote, locator,
+# read date, from hugo/data/external-sources.yaml. Two tracks: "age" (back to
+# back, alternating tints, named in the strip's period gutter) and "temple"
+# (a thin stripe at the gutter's edge). [from, to); a period with no "to" runs
+# to the axis end. Years are negative for BCE. Oldest first within a track.
+- id: bronze-age
+  track: age
+  label: Bronze Age
+  display: "ca. 3000–1200 BCE"
+  from: -3000
+  to: -1200
+  cites:
+    - source: magness-2012-archaeology-holy-land-intro
+      locator: "chapter 1, Introduction, p. 1, paragraph beginning “This book introduces readers”"
+      quote: "Today, scholars generally use the term “biblical archaeology” to refer to the archaeology of Palestine in the Bronze Age (ca. 3000–1200 B.C.E.) and Iron Age (ca. 1200–586 B.C.E.)"
+      read: 2026-11-27
+- id: iron-age
+  track: age
+  label: Iron Age
+  display: "ca. 1200–586 BCE"
+  from: -1200
+  to: -586
+  cites:
+    - source: magness-2012-archaeology-holy-land-intro
+      locator: "chapter 1, Introduction, p. 1, paragraph beginning “This book introduces readers”"
+      quote: "Today, scholars generally use the term “biblical archaeology” to refer to the archaeology of Palestine in the Bronze Age (ca. 3000–1200 B.C.E.) and Iron Age (ca. 1200–586 B.C.E.)"
+      read: 2026-11-27
+- id: babylonian
+  track: age
+  label: Babylonian rule
+  display: "587 or 586–539 BCE"
+  from: -586
+  to: -539
+  cites:
+    - source: hayes-rlst145-l14
+      locator: "ch. 3 [00:31:21]"
+      quote: "It's the neo-Babylonian empire that will succeed in felling Judah under Nebuchadrezzar of Babylon in 587 or 586."
+      read: 2026-11-22
+    - source: dandamayev-iranica-babylonia-i
+      locator: "opening paragraph"
+      quote: "Babylonia came into being early in the second millennium B.C. and lasted until it was conquered by the Persians in 539 B.C."
+      read: 2026-11-26
+- id: persian
+  track: age
+  label: Persian
+  display: "539–332 BCE"
+  from: -539
+  to: -332
+  cites:
+    - source: silverman-bo-persian-period
+      locator: "section “Why do biblical scholars care about the Persian Empire?”, paragraph beginning “The Persians controlled the Levant”"
+      quote: "The Persians controlled the Levant from Cyrus II “the Great”’s conquest of Babylon (539 BCE) to Darius III’s defeat by Alexander III “the Great” (334–330 BCE)."
+      read: 2026-11-26
+    - source: bo-timeline-second-temple-judaism
+      locator: "timeline introduction"
+      quote: "first under the Persians (538–332 BCE), then under the Hellenistic kingdoms created in the aftermath of Alexander the Great's conquest (332–63 BCE), and finally under Roman rule (63 BCE–70 CE and beyond)."
+      read: 2026-11-26
+- id: hellenistic
+  track: age
+  label: Hellenistic
+  display: "332–63 BCE"
+  from: -332
+  to: -63
+  cites:
+    - source: bo-timeline-second-temple-judaism
+      locator: "timeline introduction"
+      quote: "first under the Persians (538–332 BCE), then under the Hellenistic kingdoms created in the aftermath of Alexander the Great's conquest (332–63 BCE), and finally under Roman rule (63 BCE–70 CE and beyond)."
+      read: 2026-11-26
+    - source: magness-2012-archaeology-holy-land-intro
+      locator: "chapter 1, Introduction, p. 6, paragraph beginning “Historical periods (after ca. 500 B.C.E.)”"
+      quote: "in Palestine the early Hellenistic period begins with Alexander the Great’s conquest in 332 B.C.E."
+      read: 2026-11-26
+- id: roman
+  track: age
+  label: Roman
+  display: "From 63 BCE"
+  from: -63
+  cites:
+    - source: bo-timeline-second-temple-judaism
+      locator: "timeline introduction"
+      quote: "first under the Persians (538–332 BCE), then under the Hellenistic kingdoms created in the aftermath of Alexander the Great's conquest (332–63 BCE), and finally under Roman rule (63 BCE–70 CE and beyond)."
+      read: 2026-11-26
+    - source: henze-werline-2020-ejmi
+      locator: "Chronology, p. xi (BCE), row 63"
+      quote: "63 Pompey captures Jerusalem; Roman rule of Judea begins"
+      read: 2026-11-27
+- id: exile
+  track: temple
+  label: Exile
+  display: "587 or 586–538 BCE"
+  from: -586
+  to: -538
+  cites:
+    - source: nabre-jeremiah-intro
+      locator: "Introduction, ¶ 4"
+      quote: "Nebuchadnezzar took swift vengeance; Jerusalem was destroyed in 587 and its leading citizens sent into exile."
+      read: 2026-11-22
+    - source: coogan-brief-4e-summary-ch21
+      locator: "paragraph beginning “At the end of Nebuchadrezzer’s long reign”"
+      quote: "This period is also critical for Judaism since Cyrus’s conquest of Babylon ended the captivity of the Jews in Mesopotamia and many returned, beginning in 538."
+      read: 2026-11-26
+- id: second-temple-period
+  track: temple
+  label: Second Temple period
+  display: "516 BCE–70 CE"
+  from: -516
+  to: 70
+  cites:
+    - source: magness-2012-archaeology-holy-land-intro
+      locator: "chapter 1, Introduction, p. 6, opening lines (from “In contrast, our focus”)"
+      quote: "this book covers the “post-biblical” periods (from a Jewish perspective) or the New Testament period (from a Christian perspective), including the Second Temple period (516 B.C.E.–70 C.E.)."
+      read: 2026-11-27
