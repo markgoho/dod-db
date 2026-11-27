@@ -7,994 +7,996 @@
 # Show conflicts not attached as Trigger Claims (CONTEXT.md, 2026-11-25), logged in data/scholarship-candidates.yaml: 5@00:36:39 (Eusebius of Nicomedia exiled with Arius) vs nicaea; 42@00:40:01's later sentences (three persons in one being and consubstantiality first asserted at Nicaea) vs persons and homoousios; 42@00:45:28 (Arius a bishop) vs arius.
 # First pass: four research agents fetched every source on 2026-11-27 with curl into separate scratch folders and copied quotes from the saved text; the page's quotes were then extracted by script from those saved texts between anchors and re-matched (whitespace, HTML entities and curly quotes normalised; PDF line-break hyphens joined): 105/105, 0 misses. The second pass must re-fetch.
 # Flags for the second pass: (1) Dale Tuggy is himself a unitarian and his SEP supplement cites his own counter-narrative; used for what the New Testament does not state explicitly, the dating of trias/trinitas, “many scholars call this strain subordinationist”, Arius, and the Cappadocians, all attributed. (2) Kärkkäinen's “scholarly consensus” sentence is about the Bible as a whole and he says it applies “first and foremost” to the Old Testament; his NT judgment is his own p. 15 sentence; the short does not say “consensus”. (3) Moser's “consensus” is about high Christology, not the Trinity; reported in `worship` beside the dissent he names; the worship short calls it a disagreement. (4) New Catholic Encyclopedia entries (Catholic University of America) are classed Reference by registry precedent; most carry first-edition text (bibliographies to 1956–1993; “Trinity, Holy” to 2000); used for facts (dates, names, the creed's wording), with the state-of-the-field shorts resting on in-window authors. (5) LaCugna's and Pépin's Encyclopedia of Religion entries are 1987 text in the 2005 edition: used only for specific claims (the Cappadocians' vocabulary; Justin's sentence), never for a state of the field. (6) Haykin writes in the Journal of the Evangelical Theological Society (peer-reviewed; a society with a doctrinal basis) and Parsons and Noble in Tyndale Bulletin (registry precedent: Scholarly); Haykin backs only Gregory of Nazianzus's criticism, beside Noble; Parsons only the implicit-Trinitarianism side of the `word` debate. (7) Van Aarde 1999 is an OCR scan; quote matched in the plain text. (8) Fredriksen's offprint is marked “For use by the Author only” but posted openly by her department. (9) Kärkkäinen is read in the publisher's free sample chapter (ch. 1 only). (10) The Church History forum (2025) has several authors; each section is its own registry entry; section attributions follow the forum's headings. (11) Kim 2025 and J. Rebecca Lyman appear twice each (forum and other work); counted once each. (12) Bowker entries are one author (John Bowker, ed.) across four entries. (13) Carr and Brettler's Bible Odyssey answer does not say which of them wrote it; attributed jointly.
+# Second agent pass 2026-11-27 (#93 delegation, independent): all 44 cited sources (41 URLs: two HarperCollins and two Hopko pages; two Encyclopedia.com pages and the Church History forum each serve several entries; plus the SEP main entry for Tuggy's revision date and the IEP Wayback copy) re-fetched by curl with a browser User-Agent into the second pass's own scratch folder, not the first pass's files. All 105 quotes script-matched verbatim (whitespace and HTML entities normalised; HTML tags stripped without inserting a space; PDFs through pdftotext, which itself joined line-break hyphens (e.g. Parsons “secondcentury”, Fredriksen “divineidentification”; neither inside a quote); Hurtado's bitstream is a Word .doc, text extracted by cp1252 byte decoding), 0 misses; then re-matched scoped to the cited author's own entry on shared Encyclopedia.com pages (Bowker vs De Clercq on “Arianism”, Bowker vs Ryan on “Nicene Creed”, by the citation block after each entry and its byline), to the named sub-article or response turn in the Church History forum, and to the url each HarperCollins and Hopko citation names: 0 misses. PDF locators checked against printed page footers; HTML locators checked by script against each quote's nearest preceding heading and its paragraph's opening words. IEP (Baber) returned HTTP 500 four times, was matched on the Wayback copy of 2026-11-14, then on the live page once it returned 200. All 11 Trigger Claims re-matched at timestamp and speaker in the final transcripts as contiguous spans inside the turn (none is the full turn) and read about two minutes either side. 104 quotes after the cut below.
+# Second pass changes. Shorts: worship (Fredriksen clause scoped to “prayer in Paul's communities”); plural (HarperCollins's “grandeur”, one source, moved out of the short; now “They reject reading the Trinity into Genesis”, Martin, Kärkkäinen, Carr and Brettler); constantinople (“the creed the council approved”, not “the council's creed”, beside the creed statement's debated origin); creed (“the creed often called …”, not “a longer creed”, which no quote says). Text: triadic drops “quoting it and the blessing that closes 2 Corinthians” (uncited lines); spirit has Levison's “the contrast often drawn”; subordination has Delport's “ontological”; arius-roots drops De Clercq; nicaea drops Edwards's “about 250 who signed” (uncited) and adds “according to Philostorgius”; constantinople has Baber's “the same sort of ontological status”. Cut to uncited: arius-roots/5 (De Clercq, its counterpoint dropped); arius-roots/6 renumbered to /5. Locators: new-testament/8 (p. 4, n. 14), worship/5 (p. 6), triadic/1 (p. 23), spirit/3 (paragraph “Whatever the context”), arius/4 (opening section; no “Arius” sub-entry), after-nicaea/6 (section “Arian Triumph and Downfall.”). Locators (heading check): word/1–2 and subordination/4 (§3.1.1), after-nicaea/4 (section “‘Arianism’ after Arius”), persons/3, /4, /6 (section “Development of Trinitarian Doctrine”), six Ortiz de Urbina locators (“section”, not “paragraph”). related.books drops 2-corinthians (the page no longer names it). Registry: nce-homoousios author “J. M. Carmody” (entry byline).
+# Second pass flags: (1) The first pass's trigger notes say “full turn”; every claim is a trimmed span; 42@00:40:01 stops before the sentences logged as conflicts. Triggers file not edited. (2) 109@00:07:18 “a new mechanism” vs the NCE's “should remain in force” (the West's and Egypt's practice): the easter short does not contradict it; kept. (3) 53@00:32:00 “until subsequent centuries” is looser than 381; kept. (4) Hurtado's URL serves a .doc, not a PDF (registry access line says “Author's manuscript”, accurate). (5) IEP was intermittently down (HTTP 500); URL kept, as the live page later served the passage. (6) Spirit short “No, scholars say” stands on Bowker and van Aarde (with HarperCollins for “power or presence”); Levison (Reference) questions the power/person contrast, attributed in text only (#133, one author). (7) First-pass flags re-checked: (2) Kärkkäinen's consensus sentence is about the Bible, his NT judgment is p. 15, and no short says “consensus”; (3) Moser's consensus is about high Christology and sits beside McGrath and Dunn; (9) the Kärkkäinen PDF is chapter 1 only; (10) forum attributions checked by sub-article and response turn (Kim's introduction by the forum's byline, not a printed name); (12) Bowker's four entries are one author; (13) the Carr and Brettler answer carries no initials (the one before it is signed —MZB): attributed jointly. Flags (1), (4)–(8) and (11) not re-assessed beyond the matching and scope checks above. Second-pass flag (8), plural: the short now answers the Elohim half of its question only through “No, scholars say” and “reject reading the Trinity into Genesis”; on Elohim itself the Trinity “No” rests on HarperCollins (“without any suggestion of multiple identities”), and Martin's “into Genesis” sentence is, in context, about Augustine on Genesis 1:1–2; the lead may want to re-scope the question to Genesis 1:26 or keep the Elohim half on that basis. Publish rule recomputed: core “no explicit doctrine of the Trinity in the New Testament” backed by Kärkkäinen 2017 (Scholarly), Tuggy 2025 (Reference), Martin 2009 (Reference): 3 independent authors; Lietaert Peerbolte counted only for “worked out later”. 18 statements. Ids, slug, draft and review unchanged.
 review: null
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+  secondPass: 2026-11-27
 citations:
   new-testament/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim on printed p. 7; read with the section opening; the “scholarly consensus” he names is about the Bible as a whole (next sentence: “first and foremost” the Old Testament); not used for the short. Counted for “not explicitly” only via new-testament/3.",
     }
   new-testament/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   new-testament/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim on printed p. 15; backs “not explicitly” (stronger: “cannot be found even in the NT”). Counted for the core.",
     }
   new-testament/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim, §2.2 first paragraph; backs “not explicitly” and the inference debate. Counted for the core.",
     }
   new-testament/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim, §1 last paragraph; the only source that says “contested” in so many words.",
     }
   new-testament/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; backs “worked out after the New Testament”. Counted for the core.",
     }
   new-testament/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; with new-testament/5 backs the contested-inference clause (some say it is hinted at; may be right theologically).",
     }
   new-testament/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim in n. 14, which sits on the journal's “Page 4 of 9” (PDF p. 5), not p. 3: locator corrected to p. 4. The note is about Paul; “later, patristic concept” backs only the worked-out-later clause, not “not explicitly in the New Testament”.",
     }
   worship/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   worship/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   worship/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   worship/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   worship/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; the sentence is on printed p. 6, not p. 5 (the page break falls inside the Hurtado sentence before it): locator corrected. Moser reports Dunn; Dunn not read (lead).",
     }
   worship/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim on p. 306. Scoped to Paul's communities and hedged (“seems”): the short's “their prayers were offered to God rather than to him” narrowed to “prayer in Paul's communities was offered to God rather than to Jesus”.",
     }
   triadic/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; the sentence is on printed p. 23 (PDF p. 17), not p. 22: locator corrected. The text's clause “quoting it and the blessing that closes 2 Corinthians” rested on the uncited sentences after it and was removed.",
     }
   triadic/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   triadic/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   triadic/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   spirit/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   spirit/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim in Bowker's entry (entry 2 of the Encyclopedia.com page), section “Judaism”, whose first sentence scopes it to Tanach; backs the short.",
     }
   spirit/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim in the OCR text; the paragraph is the one beginning “Whatever the context”, and a further paragraph (“In the light of …”) follows before §1.3: locator changed from “last paragraph”.",
     }
   spirit/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; Levison says the distinction is “often overdrawn”: text's “the common contrast” changed to “the contrast often drawn”. Attributed dissent; not in the short (one author).",
     }
   spirit/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; “these distinctions” are the power/person and intermittent/permanent contrasts just listed; attributed in text only.",
     }
   spirit/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   plural/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim on the Elohim dictionary page. Grandeur is this source alone: removed from the short (#133), kept attributed in the text.",
     }
   plural/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   plural/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim on printed p. 8; the quote ends mid-sentence before the royal-pronouncement parenthesis and the other prooftexts; the cut drops no counterpoint.",
     }
   plural/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim on printed p. 9; “these and related approaches” are the patristic prooftext readings listed just before.",
     }
   plural/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   word/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: the paragraph sits in §3.1.1 “The One God in the Trinity” (under §3.1 “Up to 325 CE”): locator made §3.1.1.",
     }
   word/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: the paragraph sits in §3.1.1 “The One God in the Trinity” (under §3.1 “Up to 325 CE”): locator made §3.1.1.",
     }
   word/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   word/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   word/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim, p. 141 summary. Read with p. 142: what recent studies challenge is the Trinitarian reading of Theophilus (Rogers denies he is trinitarian), not that he first used τριάς; the short's “first known writer” stands on Whittaker and Parsons's own “often been considered the first”.",
     }
   word/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   subordination/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; Delport says “ontological subordination”: the text now says so. Locator re-checked against the page's headings and paragraph breaks: the paragraph is in the article's “Overture” section.",
     }
   subordination/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   subordination/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   subordination/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; “this strain” is the second- and third-century theology of the Father's unique divinity (Origen quoted just before). Locator re-checked against the page's headings and paragraph breaks: the paragraph sits in §3.1.1 “The One God in the Trinity” (under §3.1 “Up to 325 CE”): locator made §3.1.1.",
     }
   subordination/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim in the NCE entry (byline “[p. j. hamell/eds.]”).",
     }
   subordination/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; Pépin names the Dialogue with Trypho (“another sentence from the same Dialogue”, 56.4). 1987 text, used only for what Justin wrote.",
     }
   arius/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   arius/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; the sentence summarises the views Arius's supporters' letter campaign promoted, as the text says.",
     }
   arius/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   arius/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim in De Clercq's NCE “Arianism” (entry 0 of the shared page, byline “[v. c. de clercq]”), in the unheaded opening section; there is no “Arius” sub-entry: locator corrected.",
     }
   arius/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim in Bowker's entry (entry 4 of the same page).",
     }
   arius/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: in the section “The theological conservatism of Arius”.",
     }
   arius-roots/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   arius-roots/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   arius-roots/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: the paragraph is in the article's “Overture” section.",
     }
   arius-roots/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: the paragraph is in the article's “Overture” section.",
     }
   arius-roots/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
-    }
-  arius-roots/6:
-    {
-      agent: pass,
-      owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim on p. 74, §3. (Was arius-roots/6; renumbered after the cut of the De Clercq citation.)",
     }
   nicaea/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   nicaea/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   nicaea/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim, section “Why a creed?”. The text's “about 250 who signed” rested on Edwards's Introduction, which no citation quotes: clause removed.",
     }
   nicaea/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   nicaea/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   nicaea/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: Ortiz de Urbina's run-in heads (“Doctrinal Definition.”, “Easter Question and Canons.”, “Aftermath.”) open a section of several paragraphs, and this quote is not always in the first: “paragraph” changed to “section”.",
     }
   nicaea/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   nicaea/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; the exile is “according to Philostorgius”: the text now says so.",
     }
   homoousios/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: Ortiz de Urbina's run-in heads (“Doctrinal Definition.”, “Easter Question and Canons.”, “Aftermath.”) open a section of several paragraphs, and this quote is not always in the first: “paragraph” changed to “section”.",
     }
   homoousios/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim, section “Before Nicaea I.”; the entry's byline is “[j. m. carmody]”: registry author set.",
     }
   homoousios/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim in the forum's “Dr. Lyman and Benjamin Keogh Respond” section, in the turn marked “RL:” (Lyman, not Keogh).",
     }
   homoousios/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim; “he” is Eusebius of Caesarea (his letter is named in the previous sentence).",
     }
   homoousios/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   homoousios/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the forum's sub-article “Nicaea from the Catholic Perspective” (Fernández).",
     }
   easter/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: Ortiz de Urbina's run-in heads (“Doctrinal Definition.”, “Easter Question and Canons.”, “Aftermath.”) open a section of several paragraphs, and this quote is not always in the first: “paragraph” changed to “section”.",
     }
   easter/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: Ortiz de Urbina's run-in heads (“Doctrinal Definition.”, “Easter Question and Canons.”, “Aftermath.”) open a section of several paragraphs, and this quote is not always in the first: “paragraph” changed to “section”.",
     }
   easter/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   easter/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the forum's sub-article “The Significance of Nicaea for the Orthodox Christian Tradition” (Demacopoulos); “most scholars” is attributed in text and not used as the short.",
     }
   after-nicaea/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Kim's authorship of the introduction follows the forum's byline (Kim first and corresponding author) and the introduction's first-person organiser (“the editors of Church History invited me to imagine and organize”); the page does not print his name over the introduction itself.",
     }
   after-nicaea/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Kim's authorship of the introduction follows the forum's byline (Kim first and corresponding author) and the introduction's first-person organiser (“the editors of Church History invited me to imagine and organize”); the page does not print his name over the introduction itself.",
     }
   after-nicaea/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   after-nicaea/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: the sentence is in the section “‘Arianism’ after Arius”, not “Arius and the Council of Nicaea”: locator corrected; the paragraph is about the non-Nicenes who rejected the creed's authority, as the text says.",
     }
   after-nicaea/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: Ortiz de Urbina's run-in heads (“Doctrinal Definition.”, “Easter Question and Canons.”, “Aftermath.”) open a section of several paragraphs, and this quote is not always in the first: “paragraph” changed to “section”.",
     }
   after-nicaea/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim in De Clercq's entry, section “Arian Triumph and Downfall.”: locator made specific.",
     }
   spirit-nicaea/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   spirit-nicaea/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: Ortiz de Urbina's run-in heads (“Doctrinal Definition.”, “Easter Question and Canons.”, “Aftermath.”) open a section of several paragraphs, and this quote is not always in the first: “paragraph” changed to “section”.",
     }
   spirit-nicaea/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   spirit-nicaea/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   constantinople/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   constantinople/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   constantinople/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   constantinople/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Kim's authorship of the introduction follows the forum's byline (Kim first and corresponding author) and the introduction's first-person organiser (“the editors of Church History invited me to imagine and organize”); the page does not print his name over the introduction itself.",
     }
   constantinople/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: live URL returned HTTP 500 (database error) on the first three fetches; matched on the Wayback copy of 2026-11-14, then a later live fetch returned 200 and the quote matched on the live page. Text narrowed to Baber's “the same sort of ontological status”.",
     }
   constantinople/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim on p. 78. Short's “the council's creed” changed to “the creed the council approved” (Noble's wording), so it no longer conflicts with the creed statement's debated origin.",
     }
   constantinople/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   creed/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim in Ryan's entry (entry 0), second paragraph. The short's “longer creed” was in no quote: changed to “the creed often called the Niceno-Constantinopolitan Creed”.",
     }
   creed/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   creed/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   creed/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   creed/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Kim's authorship of the introduction follows the forum's byline (Kim first and corresponding author) and the introduction's first-person organiser (“the editors of Church History invited me to imagine and organize”); the page does not print his name over the introduction itself.",
     }
   persons/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   persons/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: live URL returned HTTP 500 at first; matched on the Wayback copy, then on the live page once it returned 200.",
     }
   persons/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: in the section headed “Development of Trinitarian Doctrine”: locator made specific.",
     }
   persons/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: in the section headed “Development of Trinitarian Doctrine”: locator made specific.",
     }
   persons/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   persons/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded. Locator re-checked against the page's headings and paragraph breaks: in the section headed “Development of Trinitarian Doctrine”: locator made specific.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   tradition/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   tradition/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   tradition/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   tradition/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
   tradition/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the cited source's own entry or section (whitespace and HTML entities normalised, tags stripped); locator checked; surrounding passage read; supports the text as worded.",
     }
 triggers:
   42@00:39:22:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side.",
     }
   42@00:40:01:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side. the claim stops after the turn's first sentence; the later sentences (consubstantiality first asserted at Nicaea) are the logged conflicts, not part of the claim.",
     }
   160@00:56:44:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side.",
     }
   182@00:19:44:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side.",
     }
   5@00:30:01:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side.",
     }
   42@00:47:44:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side.",
     }
   5@00:28:53:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side.",
     }
   5@00:34:49:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side.",
     }
   109@00:07:18:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side. “a new mechanism” sits beside the NCE's report that Nicaea kept the West's and Egypt's practice; the easter short (“set a common date”) does not contradict it, and Demacopoulos speaks of “the exact formula established at Nicaea”; kept, flagged.",
     }
   5@00:47:42:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side.",
     }
   53@00:32:00:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side. “until subsequent centuries” is looser than 381; the claim is about the Spirit being marginal at Nicaea, which spirit-nicaea backs; not a contradiction of a statement; kept, flagged.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: 18 statements. Core new-testament cites Kärkkäinen 2017 (Scholarly), Tuggy 2025 (Reference), Martin 2009 (Reference) and Lietaert Peerbolte 2015 (Scholarly): 4 independent authors, all in the window, none Host-authored.",
+      note: "First pass 2026-11-27: 18 statements. Core new-testament cites Kärkkäinen 2017 (Scholarly), Tuggy 2025 (Reference), Martin 2009 (Reference) and Lietaert Peerbolte 2015 (Scholarly): 4 independent authors, all in the window, none Host-authored. Second pass 2026-11-27: recounted clause by clause after the cuts. “Not explicitly”: Kärkkäinen 2017 (Scholarly, p. 15), Tuggy 2025 (Reference), Martin 2009 (Reference): 3 independent authors, in the window, none Host-authored. “Worked out after the New Testament”: Martin and Lietaert Peerbolte (Scholarly; his note is about Paul). “Contested”: Tuggy, with Martin's “some people will say … hinted at”. Peerbolte is not counted for “not explicitly”. 18 statements; rule holds.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: no short says “consensus”. “Consensus” appears only in Moser's quote, attributed in worship text with its dissent. “Most scholars” appears only as Carr and Brettler's and Martin's words (plural) and Demacopoulos's (easter), attributed. #133 per short: new-testament (Kärkkäinen, Tuggy, Martin, Peerbolte; contested: Tuggy, Martin, Kärkkäinen); worship (Hurtado, Kärkkäinen vs Fredriksen, Dunn as reported by Moser); triadic (fact, Peppard; differ: Kärkkäinen vs Levison's minimal reading); spirit (HarperCollins, Bowker, van Aarde; Levison attributed); plural (HarperCollins, Carr and Brettler, Kärkkäinen, Martin); word (fact: Whittaker, Richard and Hill, Tuggy; debate Tuggy vs Parsons); subordination (Delport, Edwards, Tuggy, Hamell); arius (Tuggy, Lyman, De Clercq, Bowker, Delport); arius-roots (Lyman, Delport, De Clercq, Edwards; debated: Lyman); nicaea, homoousios, easter, spirit-nicaea (facts, 2+ authors each); after-nicaea (Kim, Lyman, Ortiz de Urbina, De Clercq); constantinople (Bowker, Hauser, Kreilkamp, Kim, Baber; creed wording Haykin, Noble); creed (Kim, Ryan, Bowker, Noble; debated Ryan vs Bowker); persons (Tuggy, Baber, LaCugna); tradition (Tradition sources, exempt).",
+      note: "First pass 2026-11-27: no short says “consensus”. “Consensus” appears only in Moser's quote, attributed in worship text with its dissent. “Most scholars” appears only as Carr and Brettler's and Martin's words (plural) and Demacopoulos's (easter), attributed. #133 per short: new-testament (Kärkkäinen, Tuggy, Martin, Peerbolte; contested: Tuggy, Martin, Kärkkäinen); worship (Hurtado, Kärkkäinen vs Fredriksen, Dunn as reported by Moser); triadic (fact, Peppard; differ: Kärkkäinen vs Levison's minimal reading); spirit (HarperCollins, Bowker, van Aarde; Levison attributed); plural (HarperCollins, Carr and Brettler, Kärkkäinen, Martin); word (fact: Whittaker, Richard and Hill, Tuggy; debate Tuggy vs Parsons); subordination (Delport, Edwards, Tuggy, Hamell); arius (Tuggy, Lyman, De Clercq, Bowker, Delport); arius-roots (Lyman, Delport, De Clercq, Edwards; debated: Lyman); nicaea, homoousios, easter, spirit-nicaea (facts, 2+ authors each); after-nicaea (Kim, Lyman, Ortiz de Urbina, De Clercq); constantinople (Bowker, Hauser, Kreilkamp, Kim, Baber; creed wording Haykin, Noble); creed (Kim, Ryan, Bowker, Noble; debated Ryan vs Bowker); persons (Tuggy, Baber, LaCugna); tradition (Tradition sources, exempt). Second pass 2026-11-27: re-checked after the edits: no short says “consensus” or “most scholars”. #133 changes: plural short no longer carries HarperCollins's “grandeur” (one source); worship's Fredriksen clause scoped to Paul's communities; arius-roots now rests on Lyman, Delport and Edwards (De Clercq cut).",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Hurtado's binitarian devotion, Moser's report of McGrath and Dunn, and Fredriksen named (worship); Levison's minimal reading (triadic) and his challenge to the power/person contrast (spirit) named; Parsons's implicit Trinitarianism named (word); Lyman's “no single interpretation” named (arius-roots); Bowker's doubt about the creed's origin named (creed).",
+      note: "First pass 2026-11-27: Hurtado's binitarian devotion, Moser's report of McGrath and Dunn, and Fredriksen named (worship); Levison's minimal reading (triadic) and his challenge to the power/person contrast (spirit) named; Parsons's implicit Trinitarianism named (word); Lyman's “no single interpretation” named (arius-roots); Bowker's doubt about the creed's origin named (creed). Second pass 2026-11-27: re-checked: all named as listed; Levison's spirit dissent reworded to his own “often overdrawn” scope.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: ccc-232-267 named as the Catholic Church (registry convention); hopko-oca-orthodox-faith as the Orthodox Church in America, its publisher; bfm-2000 as the Southern Baptist Convention. None supports what scholars think.",
+      note: "First pass 2026-11-27: ccc-232-267 named as the Catholic Church (registry convention); hopko-oca-orthodox-faith as the Orthodox Church in America, its publisher; bfm-2000 as the Southern Baptist Convention. None supports what scholars think. Second pass 2026-11-27: re-checked against the fetched pages: unchanged.",
     }
 sources:
   baber-iep-trinity:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: live URL returned HTTP 500 (database error) three times, then 200; quotes matched on the live page and on the Wayback copy of 2026-11-14. URL unchanged.",
     }
   bfm-2000:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   bowker-arianism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   bowker-holy-spirit:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   bowker-nicaea:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   bowker-nicene-creed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   carr-brettler-bo-genesis:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   ccc-232-267:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   declercq-nce-arianism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   declercq-nce-eusebius-nicomedia:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   delport-2026-nicaea:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched; 60(2), a3225 confirmed in the article's own citation line.",
     }
   demacopoulos-2025-nicaea-forum:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   edwards-2020-subordinationism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   edwards-2026-nicene-creed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched; Volume 28 Issue 1, pp. 106–116 confirmed on Cambridge Core.",
     }
   fernandez-2025-nicaea-forum:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   fredriksen-2020-high-christology:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   hamell-nce-subordinationism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   harpercollins-2009-dictionary:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched both entries (holy-spirit-the, elohim); each quote matched on the entry its citation url names.",
     }
   hauser-nce-pneumatomachians:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   haykin-2019-spirit:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   hopko-oca-orthodox-faith:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched both pages; each quote matched on the page its citation url names.",
     }
   hurtado-2008-binitarian:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched; the bitstream is a Word .doc (application/msword), not a PDF; text extracted by byte decoding (cp1252); quote matched. Class and edition as in the registry.",
     }
   karkkainen-2017-trinity:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched; printed page numbers read from the page footers.",
     }
   kim-2025-nicaea-forum:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   kreilkamp-nce-constantinople:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   lacugna-eor-trinity:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   levison-saet-2024-spirit:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   lyman-2005-arius:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   lyman-2025-nicaea-forum:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   martin-rlst152-l1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   martin-rlst152-l22:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   moser-saet-2024-preexistence:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   nce-homoousios:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched; byline “[j. m. carmody]” at the end of the entry: registry author changed from null to “J. M. Carmody”.",
     }
   noble-1988-nazianzen-spirit:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   ortiz-nce-nicaea:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   parsons-2014-trinitarian-expressions:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   peerbolte-2015-spirit:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   pepin-eor-logos:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   peppard-bo-baptism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   richard-hill-nce-trinity:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   ryan-nce-nicene-creed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   tuggy-sep-trinity-history:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched; revision date checked on the main entry page (“substantive revision Thu Aug 14, 2025”).",
     }
   vanaarde-1999-spirit:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
   whittaker-nce-theophilus:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry.",
+      note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
 leads:
   - "Britannica “Trinity”, “Arianism”, “Council of Nicaea”, “Pneumatomachian” and “First Council of Constantinople”: 403 or challenge to scripted fetches; not read."
@@ -1010,7 +1012,7 @@ leads:
   - "Matthew 28:19's textual history: see #241; not researched here."
 uncited:
   - "Catherine Mowry LaCugna, Encyclopedia of Religion “Trinity”: “exegetes and theologians agree that the New Testament also does not contain an explicit doctrine of the Trinity” and the Hebrew Bible sentence: read; 1987 text, outside the window for a state-of-the-field statement; not used for the core."
-  - "Kärkkäinen 2017, p. 23 on 2 Cor 13:14 and Ephesians 1:3–14: read; the triadic text describes his position from the two cited sentences."
+  - "Kärkkäinen 2017, p. 23 on 2 Cor 13:14 and Ephesians 1:3–14: read; the triadic text describes his position from the two cited sentences. Second pass 2026-11-27: the text's clause that he quotes Matthew 28:19 and 2 Corinthians removed, as it rested on these uncited lines."
   - "C. Draina, New Catholic Encyclopedia “Trinity, Holy (in the Bible)”: read; says Matt 28:19 “clearly teaches” equal divinity, in a confessional frame; not cited (a Tradition-like reading in a Reference entry; the triadic statement rests on Peppard, Kärkkäinen, Levison)."
   - "Dirk Van der Merwe, HTS 75(1) 2019, on John as Trinitarian: read; a theological reading, not needed for the worship or new-testament debate."
   - "Henry Warner Bowden, “Trinity”, Contemporary American Religion: read; calls trinus Greek (it is Latin); not cited."
@@ -1033,3 +1035,5 @@ uncited:
   - "Augsburg Confession, Art. I (bookofconcord.org): read; a privately run site, not a church body's own; not cited."
   - "Orthodox Church in America, Hopko, on the filioque: read; the filioque is not stated on the page."
   - "Catechism of the Catholic Church §§242–247 on 381 and the filioque: read; not needed for the tradition statement."
+  - "V. C. De Clercq, New Catholic Encyclopedia “Arianism”, section “Doctrinal Antecedents.”: “much of his theology points to the Origenistic tradition, which was dominant in Alexandrian circles …”: read; cut by the second pass (2026-11-27, was arius-roots/5) because quoting it alone dropped the same passage's counterpoint, “But neither Origen nor any other pre-Nicene writer offered support for Arius's teaching that the Logos had a beginning of existence”; the statement rests on Lyman, Delport and Edwards."
+  - "Mark Edwards, Ecclesiastical Law Journal 2026, Introduction: “the Creed to which about 250 bishops attached their signatures in 325”: read; quoted by no citation, so the second pass (2026-11-27) removed the nicaea text clause that relied on it."

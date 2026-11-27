@@ -5,7 +5,7 @@ draft: true
 core: new-testament
 sourcesRead: 2026-11-27
 related:
-  books: [genesis, matthew, 2-corinthians]
+  books: [genesis, matthew]
   tags: [trinity, holy-spirit, council-of-nicaea]
   topics: [trinity, holy-spirit, council-of-nicaea]
 watch:
@@ -58,13 +58,13 @@ statements:
         quote: "Now some people will say at least the Doctrine of the Trinity is hinted at in the Bible and that the later church was correct to read the New Testament to support it. And that may well be right theologically, but read historically it's not in the Bible."
         read: 2026-11-27
       - source: peerbolte-2015-spirit
-        locator: "p. 3, n. 14"
+        locator: "p. 4, n. 14"
         quote: "The concept of the Trinity is a later, patristic concept, and although Father, Son, and Holy Spirit are of the utmost importance to Paul, the usage of this terminology obfuscates rather than clarifies what is happening in Paul."
         read: 2026-11-27
   - id: worship
     group: "The Bible"
     question: "Did the earliest Christians worship Jesus alongside God?"
-    short: "Scholars disagree. Some find a “binitarian” pattern, Jesus reverenced with God, from the earliest days; others argue that most of the earliest Christians did not worship Jesus, or that their prayers were offered to God rather than to him."
+    short: "Scholars disagree. Some find a “binitarian” pattern, Jesus reverenced with God, from the earliest days; others argue that most of the earliest Christians did not worship Jesus, or that prayer in Paul's communities was offered to God rather than to Jesus."
     text: "Larry Hurtado argues that a “binitarian” pattern of devotion, Jesus included with God as a recipient of reverence, was characteristic of Christian circles from the earliest days we know about, and Veli-Matti Kärkkäinen writes that what became the later trinitarian confession began in the New Testament as a more or less binitarian understanding of God. David Moser's St Andrews Encyclopaedia of Theology entry says the consensus is that the New Testament teaches a “high” Christology, then reports that some scholars reject the proofs offered for it (McGrath) and that James Dunn has argued most of the earliest Christians did not worship Jesus. Paula Fredriksen writes that prayer in Paul's communities seems to have been made in Jesus' name but offered to God, not to Jesus."
     cites:
       - source: hurtado-2008-binitarian
@@ -84,7 +84,7 @@ statements:
         quote: "Some scholars reject the idea that these proofs are dispositive (McGrath 2009)."
         read: 2026-11-27
       - source: moser-saet-2024-preexistence
-        locator: "§2.1 “Old Testament prefigurations”, p. 5"
+        locator: "§2.1 “Old Testament prefigurations”, p. 6"
         quote: "By contrast, Dunn (2010)has more recently argued that most of the earliest Christians did not worship Jesus."
         read: 2026-11-27
       - source: fredriksen-2020-high-christology
@@ -95,10 +95,10 @@ statements:
     group: "The Bible"
     question: "What do passages that name the Father, Son and Holy Spirit together show?"
     short: "They name the three together, as Matthew 28:19 does. Scholars differ over how much of the later doctrine such passages show."
-    text: "Michael Peppard's Bible Odyssey article says Matthew 28:19 is the only biblical passage that connects baptism with the invocation of the Father, Son and Holy Spirit. Veli-Matti Kärkkäinen, quoting it and the blessing that closes 2 Corinthians, sees a definite shift from binitarianism to trinitarianism in the New Testament, while saying that nowhere in it are the relations among Father, Son and Spirit clarified in any systematic manner. Jack Levison's St Andrews Encyclopaedia of Theology entry describes a more historical mode of reading for which the few possible glimpses of the Trinity in the New Testament, such as Matthew 28:16–20, are not substantial enough to claim a well-developed trinitarian view of the spirit there."
+    text: "Michael Peppard's Bible Odyssey article says Matthew 28:19 is the only biblical passage that connects baptism with the invocation of the Father, Son and Holy Spirit. Veli-Matti Kärkkäinen sees a definite shift from binitarianism to trinitarianism in the New Testament, while saying that nowhere in it are the relations among Father, Son and Spirit clarified in any systematic manner. Jack Levison's St Andrews Encyclopaedia of Theology entry describes a more historical mode of reading for which the few possible glimpses of the Trinity in the New Testament, such as Matthew 28:16–20, are not substantial enough to claim a well-developed trinitarian view of the spirit there."
     cites:
       - source: karkkainen-2017-trinity
-        locator: "p. 22"
+        locator: "p. 23"
         quote: "Clearly, there is a definite shift from binitarianism (Father and Son) to trinitarianism in the NT data."
         read: 2026-11-27
       - source: karkkainen-2017-trinity
@@ -117,7 +117,7 @@ statements:
     group: "The Bible"
     question: "Is the spirit of God in the Hebrew Bible a person separate from God?"
     short: "No, scholars say: it is God's own power or presence, not a separate person."
-    text: "The HarperCollins Bible Dictionary defines the Holy Spirit as the mysterious power or presence of God, inspiring or empowering individuals and communities, and says that in the New Testament it comes to represent the presence and activity of God and the continuing presence of Jesus Christ in believers and the church. John Bowker's Concise Oxford Dictionary of World Religions, on Judaism, says the names ruaḥ Elohim and ruaḥ Adonai indicate that no separate “person” in relation to God is intended. Andries van Aarde writes that the Old Testament usage cannot be seen as a reference to the Christians' third person of the Triune God. Jack Levison questions the common contrast between the spirit as a power in the Old Testament and a person in the New, calling those distinctions mistaken."
+    text: "The HarperCollins Bible Dictionary defines the Holy Spirit as the mysterious power or presence of God, inspiring or empowering individuals and communities, and says that in the New Testament it comes to represent the presence and activity of God and the continuing presence of Jesus Christ in believers and the church. John Bowker's Concise Oxford Dictionary of World Religions, on Judaism, says the names ruaḥ Elohim and ruaḥ Adonai indicate that no separate “person” in relation to God is intended. Andries van Aarde writes that the Old Testament usage cannot be seen as a reference to the Christians' third person of the Triune God. Jack Levison questions the contrast often drawn between the spirit as a power in the Old Testament and a person in the New, calling those distinctions mistaken."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/holy-spirit-the/"
@@ -129,7 +129,7 @@ statements:
         quote: "The Holy Spirit is also known as ruaḥ Elohim and ruaḥ Adonai, indicating that no separate ‘person’ in relation to God is intended, but rather that this is the way in which God enables humans to do or say particular things."
         read: 2026-11-27
       - source: vanaarde-1999-spirit
-        locator: "§1.2, last paragraph"
+        locator: "§1.2, paragraph beginning “Whatever the context”"
         quote: "The usage of this word in the Old Testament cannot be seen as a reference to the Christians' third persona of the Triune God."
         read: 2026-11-27
       - source: levison-saet-2024-spirit
@@ -148,7 +148,7 @@ statements:
   - id: plural
     group: "The Bible"
     question: "Do the plural Elohim and God's “Let us make” in Genesis 1:26 point to the Trinity?"
-    short: "No, scholars say. The plural Elohim conveys God's grandeur, not several persons, and they read the “us” of Genesis 1:26 as a plural of majesty or deliberation, or as God addressing a heavenly council."
+    short: "No, scholars say. They reject reading the Trinity into Genesis, and read the “us” of Genesis 1:26 as a plural of majesty or deliberation, or as God addressing a heavenly council."
     text: "The HarperCollins Bible Dictionary says the plural Elohim implied grandeur in Israelite religion, without any suggestion of multiple identities. David Carr and Marc Zvi Brettler's Bible Odyssey answer says Christian interpreters once saw the Trinity in the plurals of Genesis 1, but that most scholars now agree Genesis 1:26 and similar verses are either a “plural of deliberation” or reflect the idea of a council of semi-divine beings around the God of Israel. Veli-Matti Kärkkäinen says current exegesis regards Genesis 1:26 as a plural of majesty and that contemporary scholarship does not agree with reading such prooftexts as evidence for the Trinity. Dale Martin's Yale lectures say most historical critics would call it certainly wrong to read the doctrine of the Trinity into Genesis."
     cites:
       - source: harpercollins-2009-dictionary
@@ -179,11 +179,11 @@ statements:
     text: "Dale Tuggy's Stanford Encyclopedia of Philosophy entry says the Latin trinitas and Greek trias came into use only in the last two decades of the second century, and that this early usage professes a triad, not a triune God, and does not make the three equally divine. The New Catholic Encyclopedia's entry on Theophilus of Antioch calls him the first known writer to use the term of the Godhead, of God, Logos and Wisdom, and its entry on the Trinity says Tertullian came to use the Latin trinitas. Stuart Parsons's article in Tyndale Bulletin says older scholarship placed the earliest trinitarian terminology with Theophilus and that some recent studies have challenged this, and argues himself that Theophilus and other early apologists show an implicit Trinitarianism."
     cites:
       - source: tuggy-sep-trinity-history
-        locator: "§3.1, paragraph beginning “The terms we translate as”"
+        locator: "§3.1.1, paragraph beginning “The terms we translate as”"
         quote: "The terms we translate as “Trinity” (Latin: trinitas, Greek: trias) seem to have come into use only in the last two decades of the second century; but this early usage doesn’t reflect trinitarian belief."
         read: 2026-11-27
       - source: tuggy-sep-trinity-history
-        locator: "§3.1, paragraph beginning “The terms we translate as”"
+        locator: "§3.1.1, paragraph beginning “The terms we translate as”"
         quote: "They profess a triad or threesome, but not a triune or tripersonal God. Nor did they consider these to be equally divine."
         read: 2026-11-27
       - source: whittaker-nce-theophilus
@@ -206,7 +206,7 @@ statements:
     group: "Before Nicaea"
     question: "Did Christian writers before Nicaea rank the Son below the Father?"
     short: "Many did, scholars say: some form of subordination of the Son to the Father was common among second- and third-century Christian writers."
-    text: "Khegan Delport's article in In die Skriflig calls it a staple of historical scholarship that the subordination of the Son and the Spirit to the Father, in some fashion, was commonplace among many of the apologists and pre-Nicene church fathers. Mark Edwards's article in TheoLogica says neither New Testament scholarship nor the modern study of the church fathers finds much evidence that subordinationism was even an anomaly, and distinguishes Justin's tendency to an ontological subordination of the Son from Tertullian's to an axiological one. Dale Tuggy says many scholars call this strain of theology “subordinationist”, and the New Catholic Encyclopedia finds subordinationist tendencies in Hermas, Justin Martyr, Irenaeus, Tertullian, Clement of Alexandria and Origen. Jean Pépin's Encyclopedia of Religion entry quotes Justin, in his Dialogue with Trypho, speaking of “another god and lord below the Creator of the universe”."
+    text: "Khegan Delport's article in In die Skriflig calls it a staple of historical scholarship that the ontological subordination of the Son and the Spirit to the Father, in some fashion, was commonplace among many of the apologists and pre-Nicene church fathers. Mark Edwards's article in TheoLogica says neither New Testament scholarship nor the modern study of the church fathers finds much evidence that subordinationism was even an anomaly, and distinguishes Justin's tendency to an ontological subordination of the Son from Tertullian's to an axiological one. Dale Tuggy says many scholars call this strain of theology “subordinationist”, and the New Catholic Encyclopedia finds subordinationist tendencies in Hermas, Justin Martyr, Irenaeus, Tertullian, Clement of Alexandria and Origen. Jean Pépin's Encyclopedia of Religion entry quotes Justin, in his Dialogue with Trypho, speaking of “another god and lord below the Creator of the universe”."
     cites:
       - source: delport-2026-nicaea
         locator: "paragraph beginning “This somewhat tongue-in-cheek recounting”"
@@ -221,7 +221,7 @@ statements:
         quote: "While neither position lends itself to precise formulation, that of Justin tends to an ontological, and that of Tertullian to an axiological subordination of the Son to the Father."
         read: 2026-11-27
       - source: tuggy-sep-trinity-history
-        locator: "§3.1"
+        locator: "§3.1.1"
         quote: "Many scholars call this strain of Christian theology “subordinationist”, as the Son and Spirit are always in some sense derivative of, less than, and subordinate to their source, the one God, that is, the Father."
         read: 2026-11-27
       - source: hamell-nce-subordinationism
@@ -251,7 +251,7 @@ statements:
         quote: "The Son had to be of a separate nature because he was created or generated at some point as the offspring of the Father."
         read: 2026-11-27
       - source: declercq-nce-arianism
-        locator: "s.v. “Arius”"
+        locator: "s.v. “Arianism”, opening section"
         quote: 'Since Arius did not accept the opinion of origen, which postulated an eternal creation, he asserted that the Son had a beginning: "There was when He was not."'
         read: 2026-11-27
       - source: bowker-arianism
@@ -266,7 +266,7 @@ statements:
     group: "Before Nicaea"
     question: "Was Arius's teaching new?"
     short: "Scholars stress how much it drew on earlier theology, such as Origen's, while noting where Arius broke with it. The origins of his views remain debated."
-    text: "J. Rebecca Lyman writes that the origins and motivations of Arius's views remain controversial, that no single interpretation has persuaded all scholars, and that all historians emphasise his indebtedness to earlier theologians such as Origen, who ascribed a lesser and derivative nature to the Son. Khegan Delport says the opinion now is that Arius was a conservative theologian within a broadly Alexandrian tradition, hardly an outlier, though he pressed those traditions in new directions. The New Catholic Encyclopedia says much of his theology points to the Origenist tradition dominant in Alexandria. Mark Edwards says Arius broke with Origen and the apologists by denying that the Son had come forth from the Father."
+    text: "J. Rebecca Lyman writes that the origins and motivations of Arius's views remain controversial, that no single interpretation has persuaded all scholars, and that all historians emphasise his indebtedness to earlier theologians such as Origen, who ascribed a lesser and derivative nature to the Son. Khegan Delport says the opinion now is that Arius was a conservative theologian within a broadly Alexandrian tradition, hardly an outlier, though he pressed those traditions in new directions. Mark Edwards says Arius broke with Origen and the apologists by denying that the Son had come forth from the Father."
     cites:
       - source: lyman-2005-arius
         locator: "section “Arius and the Council of Nicaea”"
@@ -284,10 +284,6 @@ statements:
         locator: "paragraph beginning “This somewhat tongue-in-cheek recounting”"
         quote: "Arius was therefore hardly an outlier in his opinions on this matter – even though he pressed these traditions into novel directions (cf. Löhr 2007)."
         read: 2026-11-27
-      - source: declercq-nce-arianism
-        locator: "s.v. “Arianism”, section on Arius"
-        quote: "much of his theology points to the Origenistic tradition, which was dominant in Alexandrian circles: an insistence on the Father as the only God; an emphasis on distinction rather than unity in the Trinity; and the subordinate position of the Son and the Spirit."
-        read: 2026-11-27
       - source: edwards-2020-subordinationism
         locator: "p. 74, §3 “Nicaea and after”"
         quote: "Arius broke with Origen and the apologists by denying that the Son had come forth from the Father, thereby weakening the analogy with human sonship."
@@ -296,7 +292,7 @@ statements:
     group: "The Council of Nicaea"
     question: "What did the Council of Nicaea decide about the Son?"
     short: "Meeting in 325 at the emperor Constantine's call, it adopted a creed declaring the Son homoousios, of one substance with the Father, and condemned Arius's teaching that the Son had not always existed."
-    text: "The New Catholic Encyclopedia says the council was called by Constantine and met in the summer of 325; it puts the bishops present at about 300, calling the traditional 318 symbolic, while Mark Edwards's article in the Ecclesiastical Law Journal speaks of about 250 who signed. Edwards says the creed asserted, in clear opposition to Arius, that the Son shares the Father's ousia, essence or substance, and that its anathemas condemned at least two of Arius's tenets: that the Son was “from things that are not” and did not exist before his generation. John Bowker's dictionary says the creed contained the homoousion and had anti-Arian anathemas attached, and J. Rebecca Lyman says homoousios was adopted less as a positive definition than as a term Arius and others rejected. The New Catholic Encyclopedia says only two bishops, Secundus and Theonas, refused to sign, and were exiled with Arius; its entry on Eusebius of Nicomedia says he signed under pressure from Constantine and was exiled about three months later, after disavowing his signature."
+    text: "The New Catholic Encyclopedia says the council was called by Constantine and met in the summer of 325; it puts the bishops present at about 300, calling the traditional 318 symbolic. Mark Edwards's article in the Ecclesiastical Law Journal says the creed asserted, in clear opposition to Arius, that the Son shares the Father's ousia, essence or substance, and that its anathemas condemned at least two of Arius's tenets: that the Son was “from things that are not” and did not exist before his generation. John Bowker's dictionary says the creed contained the homoousion and had anti-Arian anathemas attached, and J. Rebecca Lyman says homoousios was adopted less as a positive definition than as a term Arius and others rejected. The New Catholic Encyclopedia says only two bishops, Secundus and Theonas, refused to sign, and were exiled with Arius; its entry on Eusebius of Nicomedia says he signed under pressure from Constantine and, according to Philostorgius, was exiled about three months later, after disavowing his signature."
     cites:
       - source: ortiz-nce-nicaea
         locator: "opening paragraph"
@@ -319,7 +315,7 @@ statements:
         quote: 'Homoousios, or "of the same nature," was adopted as a definition of the relation of the Father and Son, less as a positive definition than as a term rejected by Arius and others.'
         read: 2026-11-27
       - source: ortiz-nce-nicaea
-        locator: "paragraph “Aftermath.”"
+        locator: "section “Aftermath.”"
         quote: "Only two bishops, Secundus of Ptolemaïs and Theonas of Marmarica, refused to sign the creed and the accompanying anathema. With Arius, they were exiled to Illyricum."
         read: 2026-11-27
       - source: declercq-nce-eusebius-nicomedia
@@ -337,7 +333,7 @@ statements:
     text: "The New Catholic Encyclopedia says homoousios is not a biblical word and first appears in Gnostic literature; its entry on the term says it was common enough by the middle of the third century that Dionysius of Alexandria was accused of refusing to use it, while a synod at Antioch in 267 condemned its use. J. Rebecca Lyman writes that Arius cited the word from the Manichees, and that fears of materialism delayed its acceptance. Mark Edwards notes that Eusebius of Caesarea recounts it was the only word added to the creed by the will of the emperor, and the New Catholic Encyclopedia's entry on the creed says it was added at the urging of Hosius of Córdoba and Constantine. Samuel Fernández writes that the bishops found the creed Eusebius presented insufficient and asked for homoousios and “from the ousia of the Father” to be added."
     cites:
       - source: ortiz-nce-nicaea
-        locator: "paragraph “Doctrinal Definition.”"
+        locator: "section “Doctrinal Definition.”"
         quote: "Not a biblical word, ὁμοούσιος appears for the first time in Gnostic literature: they are ὁμοούσιοι who belong to the same category of nature."
         read: 2026-11-27
       - source: nce-homoousios
@@ -369,11 +365,11 @@ statements:
     text: "John Bowker's dictionary says the council promulgated canons and reached decisions on the Melitian schism in Egypt, the calculation of the date of Easter and the precedence of the major Christian sees. The New Catholic Encyclopedia says it chose to celebrate Easter on the Sunday after the first full moon after the vernal equinox, as the West and Egypt did, and promulgated 20 disciplinary decrees. George Demacopoulos calls the common date for Easter one of the council's most impactful outcomes, though most scholars emphasise the Arian controversy or Constantine's role."
     cites:
       - source: ortiz-nce-nicaea
-        locator: "paragraph “Easter Question and Canons.”"
+        locator: "section “Easter Question and Canons.”"
         quote: "that the practice of the West, of Egypt, and of other Churches should remain in force, namely, of celebrating Easter on the Sunday following the first full moon after the vernal equinox."
         read: 2026-11-27
       - source: ortiz-nce-nicaea
-        locator: "paragraph “Easter Question and Canons.”"
+        locator: "section “Easter Question and Canons.”"
         quote: "Nicaea promulgated 20 disciplinary decrees (cf. Conciliorum oecumenicorum decreta 5–15)."
         read: 2026-11-27
       - source: bowker-nicaea
@@ -406,15 +402,15 @@ statements:
         quote: "However, the creed was not readily adopted by the larger church, and other councils were held over the next five decades to find more acceptable language."
         read: 2026-11-27
       - source: lyman-2005-arius
-        locator: "section “Arius and the Council of Nicaea”"
+        locator: "section “‘Arianism’ after Arius”"
         quote: 'Many were content to avoid substance language or affirm a "like substance" (homoiousios ) between the Father and the Son, maintaining a traditional hierarchy of being and action.'
         read: 2026-11-27
       - source: ortiz-nce-nicaea
-        locator: "paragraph “Aftermath.”"
+        locator: "section “Aftermath.”"
         quote: "Although Nicaea's judgment on Arianism was clear and conclusive, it was a sign of contradiction and cause of serious division in the East until 381"
         read: 2026-11-27
       - source: declercq-nce-arianism
-        locator: "s.v. “Arianism”"
+        locator: "s.v. “Arianism”, section “Arian Triumph and Downfall.”"
         quote: "In 381 the Council of constantinople i for the East and that of Aquileia for the West sealed the final adoption of the faith of Nicaea by the entire Church and completed it by proclaiming the full divinity of the Holy Spirit against the so-called Macedonians, or Semi-Arians as they are known also."
         read: 2026-11-27
   - id: spirit-nicaea
@@ -428,7 +424,7 @@ statements:
         quote: 'It concludes simply with "and in the Holy Spirit" followed by the anathemas that condemn typical Arian slogans oft repeated in arius''s Thalia, e.g., "There was when He was not."'
         read: 2026-11-27
       - source: ortiz-nce-nicaea
-        locator: "paragraph “Doctrinal Definition.”"
+        locator: "section “Doctrinal Definition.”"
         quote: "The creed does no more than mention the Third Person, for the divinity of the Spirit was not at issue."
         read: 2026-11-27
       - source: edwards-2026-nicene-creed
@@ -442,8 +438,8 @@ statements:
   - id: constantinople
     group: "Constantinople and the Holy Spirit"
     question: "When was the Holy Spirit's divinity affirmed?"
-    short: "At the Council of Constantinople in 381, after a group known as the Pneumatomachians, “Spirit-fighters”, had denied it. Even then, the council's creed did not call the Spirit “God” outright."
-    text: "John Bowker's dictionary says the doctrine of the Spirit became controversial from 360, when the Pneumatomachians denied the Spirit's full divinity, and that the Cappadocian fathers, among them Basil in his On the Holy Spirit, argued against them and prevailed at Constantinople in 381. The New Catholic Encyclopedia describes the Pneumatomachians, also called Macedonians, as a fourth-century sect that denied the Spirit's divinity, and says the council's teaching on the Spirit led the Macedonian bishops to refuse to take part. Young Richard Kim says the council affirmed the Nicene Creed and added statements on the divinity of the Holy Spirit, and H. E. Baber's Internet Encyclopedia of Philosophy entry says Constantinople declared the Spirit to have the same ontological status as the Son. Michael Haykin's article in the Journal of the Evangelical Theological Society says Gregory of Nazianzus, then the council's president, criticised its creed for not saying explicitly that the Spirit is God, and T. A. Noble's article in Tyndale Bulletin says Gregory, unlike the council, was prepared to say so openly."
+    short: "At the Council of Constantinople in 381, after a group known as the Pneumatomachians, “Spirit-fighters”, had denied it. Even then, the creed the council approved did not call the Spirit “God” outright."
+    text: "John Bowker's dictionary says the doctrine of the Spirit became controversial from 360, when the Pneumatomachians denied the Spirit's full divinity, and that the Cappadocian fathers, among them Basil in his On the Holy Spirit, argued against them and prevailed at Constantinople in 381. The New Catholic Encyclopedia describes the Pneumatomachians, also called Macedonians, as a fourth-century sect that denied the Spirit's divinity, and says the council's teaching on the Spirit led the Macedonian bishops to refuse to take part. Young Richard Kim says the council affirmed the Nicene Creed and added statements on the divinity of the Holy Spirit, and H. E. Baber's Internet Encyclopedia of Philosophy entry says Constantinople declared the Spirit to have the same sort of ontological status as the Son. Michael Haykin's article in the Journal of the Evangelical Theological Society says Gregory of Nazianzus, then the council's president, criticised its creed for not saying explicitly that the Spirit is God, and T. A. Noble's article in Tyndale Bulletin says Gregory, unlike the council, was prepared to say so openly."
     cites:
       - source: bowker-holy-spirit
         locator: "s.v. “Holy Spirit”, section “Christianity”"
@@ -477,7 +473,7 @@ statements:
   - id: creed
     group: "Constantinople and the Holy Spirit"
     question: "Is the Nicene Creed recited in churches today the creed of 325?"
-    short: "No. It is a longer creed, often called the Niceno-Constantinopolitan Creed, traditionally linked with the Council of Constantinople in 381; how far it came from that council is debated."
+    short: "No. It is the creed often called the Niceno-Constantinopolitan Creed, traditionally linked with the Council of Constantinople in 381; how far it came from that council is debated."
     text: "Young Richard Kim says the Nicene Creed confessed in many churches today is the Niceno-Constantinopolitan creed. The New Catholic Encyclopedia says the earliest witness to it is in the acts of the Council of Chalcedon in 451, and that Constantinople may be said to have adopted a creed already in baptismal use as the Nicene faith in substance, not as a new creed. John Bowker's dictionary says the creed does not originate from Nicaea, and probably not from Constantinople either, as traditionally held, though it was in eucharistic use by the fifth century and all liturgical churches now use it. T. A. Noble says the Council of Constantinople approved the creed now called the Nicene Creed."
     cites:
       - source: ryan-nce-nicene-creed
@@ -516,11 +512,11 @@ statements:
         quote: "The Nicene formula declared that the Son was homoousios, “of the same substance” as the Father, which was elaborated by the Cappadocian Fathers in the dictum that the Persons of the Trinity were one ousia but three hypostases."
         read: 2026-11-27
       - source: lacugna-eor-trinity
-        locator: "section on dogmatic development"
+        locator: "section “Development of Trinitarian Doctrine”"
         quote: "The fourth-century Cappadocian theologians (Basil of Caesarea, Gregory of Nyssa, and Gregory of Nazianzus) formulated orthodox trinitarian doctrine and made it possible for the Council of Constantinople (381) to affirm the divinity of the Holy Spirit."
         read: 2026-11-27
       - source: lacugna-eor-trinity
-        locator: "section on dogmatic development"
+        locator: "section “Development of Trinitarian Doctrine”"
         quote: "The speculatively gifted Cappadocians made a clear distinction between hupostasis and ousia (roughly equivalent to particular and universal), thereby establishing orthodox trinitarian vocabulary."
         read: 2026-11-27
       - source: tuggy-sep-trinity-history
@@ -528,7 +524,7 @@ statements:
         quote: "The creed also, by later standards confusingly, anathematized the view that the Son is “of another hypostasis or ousia” than the Father (Hanson 1988, 167)."
         read: 2026-11-27
       - source: lacugna-eor-trinity
-        locator: "section on dogmatic development"
+        locator: "section “Development of Trinitarian Doctrine”"
         quote: "Like the bishops at Nicaea, Athanasius had a limited trinitarian vocabulary; hupostasis (person) and ousia (substance) could still be used interchangeably."
         read: 2026-11-27
   - id: tradition
