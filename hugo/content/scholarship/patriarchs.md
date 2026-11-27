@@ -22,7 +22,7 @@ statements:
         quote: "On the familial relationship of the patriarchs: that initially unrelated figures in Israel's history were in time linked to one another in order to cement later social ties (a point long accepted in Old Testament scholarship)."
         read: 2026-11-27
       - source: greenspahn-er-jacob
-        locator: "s.v. “Jacob”, paragraph beginning “The proper historical setting”, continued"
+        locator: "s.v. “Jacob”, paragraph beginning “Many modern scholars consider”"
         quote: "Many modern scholars consider the various patriarchal traditions to have come from different tribal groups."
         read: 2026-11-27
       - source: lemanski-2020-abraham-versus-jacob
@@ -51,7 +51,7 @@ statements:
         quote: "By the end of Genesis, these twelve sons have become the eponymous ancestors of the twelve tribes of Israel."
         read: 2026-11-27
       - source: tobolowsky-bo-twelve-tribes
-        locator: "paragraph beginning “Either away”"
+        locator: "paragraph beginning “More recently, however”"
         quote: "Either away, while scholars still generally believe that early Israel was a tribal society, many now wonder whether the biblical account of the twelve tribes represents an idealized or even invented vision of early Israelite realities, emerging only in relatively late periods."
         read: 2026-11-27
   - id: jacob-first
@@ -188,7 +188,7 @@ statements:
   - id: anachronisms
     group: "Were they historical?"
     question: "Do any details in the stories belong to later times?"
-    short: "Several, scholars say. Camels as beasts of burden, Philistines, Arameans and “Ur of the Chaldeans” point to times later than the stories' setting, and are read either as signs that the stories were written late or as later additions to older traditions."
+    short: "Several, scholars say. Camels as beasts of burden, Philistines, Arameans and “Ur of the Chaldeans” point to times later than the stories' setting. Some scholars take them as signs that the stories were written late; they were once read as later additions to older traditions."
     text: "Israel Finkelstein writes in The Quest for the Historical Israel that there were no Philistines in Canaan in the Middle Bronze Age, since Egyptian texts and archaeology show that they settled on the southern coast in the twelfth century BCE; that camels were not domesticated as beasts of burden earlier than the early first millennium; and that the Arameans did not appear on the stage of history before the early Iron Age. The Encyclopaedia Judaica's entry on Genesis says the people called Chaldeans did not reach southern Mesopotamia before the end of the second millennium, long after the patriarchal setting, that the Philistines did not settle on the coast before the end of the twelfth century, and that the patriarchs' Aramean connection is strong evidence for a first-millennium background, or at the earliest a late second-millennium one. The New American Bible's notes call the camels of Genesis 12:16 seemingly an anachronism, judge the Philistines of Genesis 21 and 26 probably anachronistic, perhaps a later ethnic term applied to an earlier people, and say the sixth-century author named Ur by its contemporary name. Amihai Mazar says the extensive use of camels and the appearance of Arameans and Philistines were once considered anachronisms introduced by later editors and compilers of old oral traditions; Christine Hayes reports that Thompson and Van Seters read the anachronisms as evidence of a very late date of composition. Coogan and Chapman refer to the possible inclusion of anachronisms from the first millennium BCE."
     cites:
       - source: finkelstein-2007-quest-patriarchs
@@ -204,11 +204,11 @@ statements:
         quote: "The Arameans also figure prominently in the Patriarchal stories. But they too did not appear on the actual ancient Near Eastern stage of history before the early Iron Age and their early states emerged even later, mainly in the ninth century b.c.e."
         read: 2026-11-27
       - source: sarna-sperling-ej-genesis
-        locator: "section “The Age of the Material”"
+        locator: "section “Composition – The Critical View”, subsection “Anachronisms”"
         quote: 'Abraham''s native city is called "Ur of the Chaldeans" (11:28, 31; 15:7) although the people known by that name did not penetrate southern Mesopotamia before the end of the second millennium b.c.e., long after the period in which the patriarchal narratives are set.'
         read: 2026-11-27
       - source: sarna-sperling-ej-genesis
-        locator: "section “The Age of the Material”"
+        locator: "section “Composition – The Critical View”, subsection “Anachronisms”"
         quote: "The mention of Philistines (Gen. 21:32, 34; 26:1, 8, 14, 15, 18; cf. 10:14) presents a similar problem since that particular ethnic group did not settle on the Canaanite coast before the end of the 12th century b.c.e."
         read: 2026-11-27
       - source: sarna-sperling-ej-genesis
@@ -242,7 +242,7 @@ statements:
   - id: wife-sister
     group: "Stories told twice"
     question: "Why does Genesis tell the wife-sister story three times?"
-    short: "Scholars read the three as versions of one story. Source critics have assigned them to different sources, Genesis 12 and 26 to J and Genesis 20 to E, and long took Genesis 12 to be the earliest; others read the later two as literary compositions drawing on it."
+    short: "Scholars read the three as versions of one story. Source critics have assigned them to different sources, Genesis 12 and 26 to J and Genesis 20 to E."
     text: "The New American Bible's notes say the story of Sarah, the ancestor in danger, is told again in chapter 20 and again in 26:1–11 with Rebekah, and that repetition of similar events is not unusual in literature that has been orally shaped; they place Genesis 12 in the J source, say chapter 20 appears to be from a different source (according to some, E), and call 26:6–11, from the Yahwist source, the third version. Cephas Tushima's article in HTS Teologiese Studies reports that source critics had understood Genesis 12 to be the earliest of the three and the others later interpretations or improvements on it, that an array of scholars have assigned the first and third to J and the second to E, and that John Van Seters sees the later two as literary compositions in their own right that draw on the first. Coogan and Chapman's summary says almost all biblical scholars recognize that the repetitions, inconsistencies and contradictions in the Pentateuch are best explained by distinct sources from different periods, though the evidence does not fit the classical Documentary Hypothesis as neatly as scholars once thought. The Encyclopaedia Judaica's entry on Genesis says E. A. Speiser's celebrated claim that the thrice-told story reflects an ancient Mesopotamian form of marriage rested on a complete misunderstanding of the Nuzi documents."
     cites:
       - source: nabre-genesis-12-notes
@@ -274,7 +274,7 @@ statements:
         quote: "Van Seters sees them as literary compositions in their own right that have drawn inspiration from A"
         read: 2026-11-27
       - source: coogan-brief-4e-summary-ch4
-        locator: "section on the Documentary Hypothesis, paragraph on its critiques"
+        locator: "section “History of Scholarship”, paragraph beginning “This chapter also points out”"
         quote: "Although the evidence does not fit as neatly into the classical formulation of the hypothesis as scholars at one time thought, almost all biblical scholars recognize that the repetitions, inconsistencies, and contradictions in the Pentateuch are best explained by the existence of distinct sources dating to different historical periods."
         read: 2026-11-27
       - source: sarna-sperling-ej-genesis
@@ -300,11 +300,11 @@ statements:
         quote: "The present story combines different traditions about which brother attempted to save Joseph."
         read: 2026-11-27
       - source: sarna-sperling-ej-genesis
-        locator: "section on duplications"
+        locator: "section “Composition – The Critical View”, subsection “Duplications”"
         quote: "Finally there seem to be two separate traditions about the identity of those who bought and sold Joseph; they are variously called Midianites (37:28a, 36) and Ishmaelites (37:27, 28b; 39:1)."
         read: 2026-11-27
       - source: romer-schmid-buhler-2021-joseph
-        locator: "Introduction, pp. 1–2"
+        locator: "Introduction, p. 2"
         quote: "Yet still today, the separation of the Joseph story into a Yahwistic and an Elohistic version has some supporters. Nevertheless, no one has succeeded in reconstructing two coherent, independent narratives. The question of the literary unity of the story is open to discussion."
         read: 2026-11-27
       - source: tebes-bo-midian
@@ -314,7 +314,7 @@ statements:
   - id: joseph-story
     group: "Stories told twice"
     question: "How does the Joseph story differ from the rest of Genesis?"
-    short: "Scholars describe it as one continuous, novella-like story with its own style and plot. When it was written is disputed, with proposals from the early first millennium BCE to the Hellenistic period."
+    short: "Scholars note its own style and plot, and some call it a novella. When it was written is disputed, with proposals from the early first millennium BCE to the Hellenistic period."
     text: "Römer, Schmid and Bühler say the Joseph story clearly has its own style and plot, and that many dates have been suggested for its first version, from the beginning of the first millennium BCE, or even earlier, to the Hellenistic period. Coogan and Chapman's summary says some scholars have posited that much of the Joseph story was an independent narrative or novella, because it is more developed in plot and less family-centered than the narratives around it. Christine Hayes calls it like a little novella, and says scholars are divided over the authenticity of its Egyptian elements: some see historical memory in its Egyptian names and customs, while others point to anachronisms and a lack of specificity as signs of late composition. Nahum Sarna's Encyclopaedia Judaica entry calls the Joseph narratives a continuous biography, novelistic in complexion, and Frederick Greenspahn's Encyclopedia of Religion entry says the author's knowledge of Egyptian culture hardly proves the story's historicity. Bernhard Lang's Bible Odyssey article says modern interpreters tend to identify its storyteller as a Diaspora Jew, and Martien Halvorson-Taylor's says it is often called a “diaspora story”, though its final form was written in the land of Israel."
     cites:
       - source: romer-schmid-buhler-2021-joseph
@@ -346,7 +346,7 @@ statements:
         quote: "The author's knowledge of Egyptian culture hardly proves the story's historicity."
         read: 2026-11-27
       - source: lang-bo-joseph
-        locator: "paragraph beginning “Impressed with rules three and four”"
+        locator: "paragraph beginning “Joseph is presented as a man”"
         quote: "Impressed with rules three and four, modern interpreters of the Joseph story tend to identify the storyteller as a Diaspora Jew"
         read: 2026-11-27
       - source: halvorson-taylor-bo-diaspora
@@ -356,8 +356,8 @@ statements:
   - id: hagar-twice
     group: "Hagar and Ishmael"
     question: "Does Genesis tell Hagar's departure twice?"
-    short: "It tells two similar stories, in Genesis 16 and 21, each with Hagar's banishment, an angel and a well. Critical scholarship has assigned them to different sources, the first mainly to J and the second to E."
-    text: "The Encyclopaedia Judaica's entry on Hagar says contemporary critical scholarship regards the first Hagar tradition as predominantly J, with Priestly insertions, and the second as entirely E; that both accounts involve Hagar's banishment, an angel with an oracle and a well; and that it has been suggested that two independent versions of her banishment once existed, though the entry itself prefers to read the two as separate crystallizations of the Hagar–Ishmael saga. It notes that, read together, the chronology makes Ishmael more than 14 years old at his banishment. The New American Bible's notes say that in the present Elohist (?) story Ishmael is obviously a little boy, not much older than Isaac. John Noble's study of Ishmael in the Priestly tradition describes the accounts of Hagar and Ishmael in Genesis 16 and 21 as often attributed to the Yahwist or the Elohist."
+    short: "It tells two similar stories, in Genesis 16 and 21, each with Hagar's banishment, an angel and a well. Critical scholarship often attributes them to the J and E sources."
+    text: "The Encyclopaedia Judaica's entry on Hagar says contemporary critical scholarship regards the first Hagar tradition as predominantly J, with Priestly insertions, and the second as entirely E; that both accounts involve Hagar's banishment, an angel with an oracle and a well; and that it has been suggested that two independent versions of her banishment once existed, though the entry notes that the difficulties of the two accounts are lessened if they are considered separate crystallizations of the Hagar–Ishmael saga. It notes that, read together, the chronology makes Ishmael more than 14 years old at his banishment. The New American Bible's notes say that in the present Elohist (?) story Ishmael is obviously a little boy, not much older than Isaac. John Noble's study of Ishmael in the Priestly tradition describes the accounts of Hagar and Ishmael in Genesis 16 and 21 as often attributed to the Yahwist or the Elohist."
     cites:
       - source: friedberg-sperling-ej-hagar
         locator: "paragraph beginning “Contemporary critical scholarship”"
@@ -381,14 +381,14 @@ statements:
         read: 2026-11-27
       - source: noble-2016-hagars-son
         url: "https://ms.fortresspress.com/downloads/9781506402000_Introduction.pdf"
-        locator: "Introduction, p. 1"
+        locator: "Introduction, p. 2"
         quote: "accounts of Hagar and Ishmael (Genesis 16 and 21) often attributed to the Yahwist (J) or Elohist (E)"
         read: 2026-11-27
   - id: ishmael
     group: "Hagar and Ishmael"
     question: "Who is Ishmael in Genesis?"
     short: "Abraham's son by Hagar, and the eponymous ancestor of the Ishmaelites, a neighbouring nomadic people from whom Arab peoples trace their descent."
-    text: "The Encyclopaedia Judaica's entry on Ishmael calls him the eponymous ancestor of the Ishmaelites. Sarah Shectman's Bible Odyssey article says he is the ancestor of the Ishmaelites, a neighbouring nomadic people from whom Arab peoples trace their descent, and Elizabeth Tracy's calls Hagar the matriarch of multiple Arab tribes. The Encyclopaedia Judaica's entry on Hagar reads each Hagar story as an independent version of the etiology of the Ishmaelite and Hagarite tribes. Coogan and Chapman's summary says the J and E material reflects the turbulent relationship between Israel and its neighbours, often attributing the origin of rival states to figures of questionable parentage and character."
+    text: "The Encyclopaedia Judaica's entry on Ishmael calls him the eponymous ancestor of the Ishmaelites. Sarah Shectman's Bible Odyssey article says he is the ancestor of the Ishmaelites, a neighbouring nomadic people from whom Arab peoples trace their descent, and Elizabeth Tracy's calls Hagar the matriarch of multiple Arab tribes. The Encyclopaedia Judaica's entry on Hagar says that, read as separate crystallizations, each Hagar story would serve as an independent version of the etiology of the Ishmaelite and Hagarite tribes. Coogan and Chapman's summary says the J and E material reflects the turbulent relationship between Israel and its neighbours, often attributing the origin of rival states to figures of questionable parentage and character."
     cites:
       - source: elitzur-sperling-ej-ishmael
         locator: "biblical section"
@@ -407,7 +407,7 @@ statements:
         quote: "Each would serve both as an independent version of the etiology of the Ishmaelite-Hagarite tribes and a literary foil for the Isaac theme interwoven through it."
         read: 2026-11-27
       - source: coogan-brief-4e-summary-ch5
-        locator: "section on the sources of Genesis 12–50"
+        locator: "section “Source Criticism”"
         quote: "JE reflects the turbulent relationship between Israel and its neighbors, as it often attributes the origin of rival states to figures of questionable parentage and character."
         read: 2026-11-27
   - id: hagar-exodus
@@ -469,13 +469,13 @@ statements:
         quote: "Shalom *Spiegel has demonstrated, however, that such views enjoyed a wide circulation and occasionally found expression in medieval writings"
         read: 2026-11-27
       - source: davis-bo-binding-of-isaac
-        locator: "opening paragraph"
+        locator: "“Did You Know?” list"
         quote: "The latter term is more accurate, since Isaac was released before the sacrifice was accomplished."
         read: 2026-11-27
   - id: tradition
     group: "Religious traditions"
     question: "What do religious traditions hold about the patriarchs?"
-    short: "The Catholic Church honours the patriarchs as saints and calls Abraham the father of all who believe. Evangelical ministries treat the patriarchs' stories as history: the Associates for Biblical Research dates Abraham's birth to 2166 BC, and both it and Got Questions reject the view that the patriarchs' camels are an anachronism."
+    short: "The Catholic Church honours the patriarchs as saints and calls Abraham the father of all who believe. Two evangelical ministries write of the patriarchs as historical figures: the Associates for Biblical Research dates Abraham's birth to 2166 BC, and articles on its site and on Got Questions argue that the patriarchs' camels are no anachronism."
     text: "The Catechism of the Catholic Church says God calls Abram from his country and makes him Abraham, “the father of a multitude of nations”, that Abraham became the “father of all who believe”, and that the patriarchs, prophets and certain other Old Testament figures are honoured as saints in all the Church's liturgical traditions. The Associates for Biblical Research, an evangelical apologetics ministry, says that according to biblical chronology Abraham was born in 2166 BC, and an article on its site argues that the camels owned by the patriarchs are not an anachronism but a reflection of historical reality. Got Questions Ministries, an evangelical ministry, says that when Abraham was born in Mesopotamia, camel domestication was already centuries old."
     cites:
       - source: ccc-59-61
@@ -499,7 +499,7 @@ statements:
         quote: "When combined with the archaeological evidence supporting the plausibility of limited camel domestication in the Bronze Age from Mesopotamia to Egypt, it stands to reason that the mention of camels being owned by the wealthy, mobile, combatant Patriarchs is not an anachronism but a reflection of historical reality."
         read: 2026-11-27
       - source: gotquestions-camels
-        locator: "opening section"
+        locator: "answer, final paragraph (beginning “In short”)"
         quote: "When Abraham was born in Mesopotamia, camel domestication was already centuries old."
         read: 2026-11-27
 ---
