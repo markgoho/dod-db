@@ -1,0 +1,135 @@
+{{- /*
+  Custom block for /scholarship/the-rapture-and-the-second-coming/: a
+  four-panel comic page in time order. Paul's scene of believers caught up to
+  meet the Lord in the air, with the debate over whether they then escort him
+  back to earth; a scribe copying the Latin Bible, whose word in that verse
+  gave "rapture"; a preacher of the early 1800s teaching history in periods
+  (Darby's dispensationalism; a generic figure, not a likeness); and how the
+  idea spread, split by a plain gutter (two media, no side assigned): a
+  family over a large study Bible around 1909, and a teenager absorbed in a
+  paperback novel.
+
+  A view of the page's reviewed statements `origin` (kicker, title, panel 3),
+  `thessalonians` (panel 1), `word` (panel 2), `dispensationalism` (the chart
+  in panel 3) and `spread` (panel 4); it makes no claim they don't. Hedges
+  ride on the plates and the kicker: "scholars debate it", "sources say",
+  "whether anyone anticipated it is debated". The Lord is drawn only as
+  light; the chart's periods are too many to count, since sources say the
+  number varies.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/the-rapture-and-the-second-coming.yaml.
+  Reword a plate only when the statement it comes from is re-reviewed.
+  */
+-}}
+{{- define "partials/inline/rapt-img.html" -}}
+  {{- $img := resources.Get (printf "scholarship-art/the-rapture-and-the-second-coming/%s.png" .id) }}
+  <div class="rapt-comic__half rapt-comic__half--{{ .side }}">
+    {{- with $img }}
+      {{- $webp := .Process "resize 1200x webp q78" }}
+      <img
+        src="{{ $webp.RelPermalink }}"
+        width="{{ $webp.Width }}"
+        height="{{ $webp.Height }}"
+        alt="{{ $.alt }}"
+        loading="eager" />
+    {{- end }}
+  </div>
+{{- end -}}
+{{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
+{{- $panels := slice
+  (dict
+  "id" "caught-up" "box" "Paul’s letter"
+  "full" (dict "id" "caught-up" "alt" "Ancient townspeople in robes rise from a field into the clouds toward a radiant light shining down from the sky.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "Caught up" "sub" "to meet the Lord in the air. Then back to earth with him? Scholars debate it." "ref" "1 Thessalonians 4:17")))
+  (dict
+  "id" "scribe" "box" "In the Latin Bible"
+  "full" (dict "id" "scribe" "alt" "A scribe in a plain robe writes on a parchment page by lamplight, an open bound book beside him.")
+  "plates" (slice
+  (dict "pos" "br" "big" "Rapiemur" "sub" "the Vulgate’s word in this verse, the origin of “rapture”" "ref" "1 Thessalonians 4:17")))
+  (dict
+  "id" "darby" "box" "Early 1800s"
+  "full" (dict "id" "preacher" "alt" "A nineteenth-century preacher in a black frock coat points at a long wall chart of coloured periods before a seated audience.")
+  "plates" (slice
+  (dict "pos" "br" "big" "John Nelson Darby" "sub" "the rapture as taught today goes back to his teaching, sources say; whether anyone anticipated it is debated")))
+  (dict
+  "id" "spread" "box" "How it spread"
+  "left" (dict "id" "parlour" "alt" "An early-1900s family in a parlour reads from a large study Bible with notes in its margins.")
+  "right" (dict "id" "paperback" "alt" "A teenager lies on his bed absorbed in a paperback novel, more paperbacks stacked on the nightstand.")
+  "plates" (slice
+  (dict "pos" "tl" "big" "1909" "sub" "the Scofield Reference Bible")
+  (dict "pos" "tr" "big" "Bestsellers" "sub" "The Late Great Planet Earth (1970) and the Left Behind novels")))
+-}}
+<section class="cloud-section rapt-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="rapt-comic__page">
+    <header class="rapt-comic__head">
+      <p class="rapt-comic__kicker">
+        The rapture · sources say · whether anyone anticipated Darby is debated
+      </p>
+      <p class="rapt-comic__title">
+        The rapture as taught today goes back to John Nelson Darby’s teaching in
+        the early 1800s
+      </p>
+    </header>
+    <ol class="rapt-comic__strip">
+      {{- range $p := $panels }}
+        <li
+          class="rapt-comic__frame rapt-comic__frame--{{ .id }}"
+          {{ if in (slice "scribe" "spread") .id }}data-card-hide{{ end }}>
+          <figure class="rapt-comic__figure">
+            <div
+              class="rapt-comic__art{{ if .left }}
+                rapt-comic__art--split
+              {{ end }}">
+              {{- with .full }}
+                {{ partial "inline/rapt-img.html" (merge . (dict "side" "full")) }}
+              {{- end }}
+              {{- with .left }}
+                {{ partial "inline/rapt-img.html" (merge . (dict "side" "left")) }}
+                {{ partial "inline/rapt-img.html" (merge $p.right (dict "side" "right")) }}
+              {{- end }}
+            </div>
+            <h3 class="rapt-comic__box">{{ .box }}</h3>
+            <figcaption>
+              {{- range .plates }}
+                <p class="comic-plate comic-plate--{{ .pos }}">
+                  <span class="comic-plate__big">{{ .big }}</span>
+                  <span class="comic-plate__sub">
+                    {{ .sub }}
+                    {{- with .ref }}
+                      <a
+                        class="rapt-comic__ref"
+                        href="{{ printf "%s%s" $bg (urlquery .) | safeURL }}"
+                        rel="noopener"
+                        >{{ replace . " " "&nbsp;" | safeHTML }}</a
+                      >
+                    {{- end }}
+                  </span>
+                </p>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="rapt-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
+  </div>
+  <p class="rapt-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#origin">whether the rapture is an old teaching</a>,
+    <a href="#thessalonians">what Paul describes</a>,
+    <a href="#word">where the word comes from</a>,
+    <a href="#dispensationalism">dispensationalism</a> and
+    <a href="#spread">how the idea spread</a>.
+  </p>
+</section>

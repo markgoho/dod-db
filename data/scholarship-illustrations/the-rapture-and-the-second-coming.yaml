@@ -1,0 +1,98 @@
+# Illustrations for /scholarship/the-rapture-and-the-second-coming/
+# (generated with Gemini; see src/scripts/generate-scholarship-illustrations.ts).
+# Each picture shows only what the listed statements support; every caption,
+# link and claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Four comic panels in time order: Paul's scene of believers caught up to meet
+# the Lord in the air (1 Thess 4:17); a scribe copying the Latin Bible, whose
+# word for "caught up" gave "rapture"; a nineteenth-century preacher teaching
+# history divided into periods, too many to count (dispensationalism, Darby, early 1800s; a
+# generic figure, never a likeness of Darby); and how it spread, split by a
+# plain gutter: a family with a large study Bible in an early-1900s parlour,
+# and a teenager reading a paperback novel in a 1990s bedroom. The Lord is
+# drawn only as light. `scribe` is the style anchor. Pages and covers carry
+# only illegible marks.
+slug: the-rapture-and-the-second-coming
+images:
+  - id: scribe
+    statements: [word]
+    aspect: "4:3"
+    alt: "A scribe in a plain robe writes on a parchment page by lamplight, an open bound book beside him."
+    prompt: >-
+      A scribe of late antiquity, a middle-aged man in a plain undyed wool
+      robe, sits at a sloping wooden writing desk by the light of a small
+      clay oil lamp, carefully writing with a reed pen on a large parchment
+      page. A large open bound book lies beside him for copying. Stone wall
+      behind, a narrow window with evening light. The writing on the pages
+      is tiny illegible scribble marks only. The lower-right quarter of the
+      picture is plain open floor and desk side with nothing in it. No other
+      figures, no text, no letters, no numbers.
+
+  - id: caught-up
+    statements: [thessalonians]
+    aspect: "4:3"
+    refs: [scribe]
+    alt: "Ancient townspeople in robes rise from a field into the clouds toward a radiant light descending from the sky."
+    prompt: >-
+      Same drawing style as the reference image. A wide outdoor scene in the
+      ancient Mediterranean world: above a field outside a small walled town
+      with flat-roofed houses, a group of about eight ordinary people in
+      simple first-century robes and mantles, men and women of different
+      ages, float upward with arms raised toward billowing white clouds. In
+      the clouds at the upper centre a radiant burst of golden amber light
+      shines down, with no figure or face visible in it, only light. Their
+      faces are joyful and calm. The lower-left quarter of the picture is
+      open grassy field with nothing in it. No text, no letters, no numbers,
+      no halos on the people.
+
+  - id: preacher
+    statements: [origin, dispensationalism]
+    aspect: "4:3"
+    refs: [scribe]
+    alt: "A nineteenth-century preacher in a black frock coat points at a large wall chart divided into bands, before a small seated audience."
+    prompt: >-
+      Same drawing style as the reference image. A plain meeting room of the
+      early nineteenth century, composed so that the clergyman stands in the
+      left half of the picture, his listeners sit in the lower-left corner,
+      and the whole lower-right quarter is empty bare wooden floor: a lean
+      clergyman in a black frock coat and
+      white neckcloth, seen in three-quarter view from behind and the side
+      so his face is barely visible, stands and points with a long pointer
+      at a large hand-painted wall chart. The chart is one long horizontal
+      band divided into many plain coloured segments in amber, rust and
+      grey; the band runs off both the left and the right edges of the
+      picture and the clergyman's body hides part of it, so the number of
+      segments cannot be counted. The chart carries no words, letters,
+      numbers or pictures. In the foreground a few listeners in early
+      nineteenth-century dress sit on wooden benches in the lower-left
+      corner, seen from behind. The lower-right quarter of the picture is
+      plain empty wooden floor with nothing and no one in it. No text, no letters, no numbers anywhere.
+
+  - id: parlour
+    statements: [spread]
+    aspect: "4:5"
+    refs: [scribe]
+    alt: "An early-1900s family in a parlour reads from a large black study Bible with notes in its margins."
+    prompt: >-
+      Same drawing style as the reference image. A parlour around 1910: a
+      father in a waistcoat, a mother in a high-collared blouse and a young
+      girl sit close around a small round table under a gas lamp, leaning
+      over a very large, thick black leather Bible lying open. Its pages show
+      columns of tiny illegible marks with narrower columns of notes in the
+      margins, all illegible scribble. The upper part of the picture is
+      plain patterned wallpaper with nothing on it. No text, no letters, no
+      numbers.
+
+  - id: paperback
+    statements: [spread]
+    aspect: "4:5"
+    refs: [scribe]
+    alt: "A teenager in a 1990s bedroom lies on the bed absorbed in a paperback novel, more paperbacks stacked on the nightstand."
+    prompt: >-
+      Same drawing style as the reference image. A teenager's bedroom in the
+      late 1990s: a teenage boy in a T-shirt and jeans lies on his bed,
+      completely absorbed in reading a thick paperback novel, wide-eyed. A
+      stack of several more thick paperbacks sits on the nightstand beside a
+      bedside lamp. Every book cover is plain dark rust or amber with no
+      words, letters, numbers or pictures. The upper part of the picture is
+      plain bedroom wall with nothing on it. No text, no letters, no numbers.

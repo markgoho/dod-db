@@ -1,0 +1,265 @@
+/*
+  Custom block for the Rapture and the Second Coming Scholarship Page: a
+  comic page. One ink frame holds the kicker, title, four panels in time
+  order and the credit, so the whole thing shares as one image. Panels 1 to 3
+  are one picture each; panel 4 is two pictures split by a plain ink gutter
+  (two ways the idea spread, no side assigned). A narration label sits flush
+  top-left, and the words are plates set on the art in a corner the picture
+  leaves clear. Composes cloud-section, type-section-title, scholarship-meta
+  and the shared comic-plate (scholarship.css).
+
+  Distinctions without colour: time order is panel order; which medium is
+  which is the half and the plate's lettering.
+*/
+.rapt-comic {
+  --rapt-ink: var(--tan-900);
+  --rapt-paper: var(--tan-000);
+  --rapt-amber: var(--color-accent);
+  --rapt-frame: var(--border-width-md);
+
+  container: rapt-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.rapt-comic__page {
+  background: var(--rapt-paper);
+  border: var(--rapt-frame) solid var(--rapt-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--rapt-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.rapt-comic__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.rapt-comic__head > p {
+  margin: 0;
+}
+
+.rapt-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.rapt-comic__title {
+  color: var(--rapt-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  max-inline-size: 26ch;
+  text-shadow: 3px 3px 0 var(--rapt-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.rapt-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rapt-comic__frame {
+  display: grid;
+  min-inline-size: 0;
+}
+
+/* A panel: one ink frame around the art; its labels sit on the art. */
+.rapt-comic__figure {
+  border: var(--rapt-frame) solid var(--rapt-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.rapt-comic__art {
+  aspect-ratio: 4 / 3;
+  display: grid;
+  overflow: hidden;
+}
+
+/* Split panels: two pictures side by side with a plain ink gutter between. */
+.rapt-comic__art--split {
+  gap: var(--rapt-frame);
+  grid-template-columns: 1fr 1fr;
+  background: var(--rapt-ink);
+}
+
+.rapt-comic__half {
+  min-block-size: 0;
+  min-inline-size: 0;
+  overflow: hidden;
+}
+
+.rapt-comic__half > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.08;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.rapt-comic__box {
+  background: var(--rapt-amber);
+  border-block-end: var(--rapt-frame) solid var(--rapt-ink);
+  border-inline-end: var(--rapt-frame) solid var(--rapt-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+/* Split panels: each plate stays inside its own half. */
+.rapt-comic__art--split ~ figcaption .comic-plate {
+  max-inline-size: 44%;
+}
+
+.comic-plate__sub > .rapt-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates, linking to BibleGateway. */
+.rapt-comic__ref {
+  background: var(--rapt-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.rapt-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.rapt-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container rapt-comic (width >= 40rem) {
+  .rapt-comic__page {
+    padding: var(--space-m);
+  }
+
+  .rapt-comic__title {
+    font-size: var(--step-3);
+  }
+
+  .rapt-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* The poster: two panels to a row on the 4:5 canvas, tighter. */
+
+.scholarship-share:target .rapt-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .rapt-comic__title {
+  font-size: var(--step-2);
+  max-inline-size: none;
+}
+
+.scholarship-share:target .rapt-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:target .rapt-comic__strip {
+  gap: var(--space-2xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scholarship-share:target .rapt-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
+}
+
+/* The card: panels 1 and 2 side by side under the kicker and title. */
+
+.scholarship-share:has(#share-card:target) .rapt-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .rapt-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:has(#share-card:target) .rapt-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scholarship-share:has(#share-card:target) .rapt-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
+}
+
+/* Phone: a panel under about 25rem wide gets taller art and wider plates, so the lettering fits inside them. */
+@container (width < 25rem) {
+  .rapt-comic__art {
+    aspect-ratio: 1 / 1;
+  }
+
+  .rapt-comic__figure .comic-plate {
+    max-inline-size: 48%;
+  }
+
+  .rapt-comic__figure .comic-plate:only-child {
+    max-inline-size: 62%;
+  }
+
+  .rapt-comic__figure .comic-plate__big {
+    font-size: clamp(0.75rem, 6cqi, 2.1rem);
+  }
+
+  .rapt-comic__figure .comic-plate__sub {
+    font-size: clamp(0.6rem, 3.4cqi, 0.95rem);
+  }
+
+  .rapt-comic__figure .rapt-comic__box {
+    font-size: var(--step--2);
+  }
+
+  .rapt-comic__figure .rapt-comic__ref {
+    font-size: clamp(0.55rem, 3cqi, 0.8rem);
+    padding: 0 var(--space-4xs);
+  }
+}
