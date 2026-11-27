@@ -9,6 +9,11 @@
   any particles before it ("Di Lazzaro", "van Deventer"). A source without an
   author falls back to its title up to the first colon.
 
+  A registry shortAuthor replaces the whole derived name, for a line the rule
+  can't read (#225): a compound surname without a particle ("Davis Bledsoe")
+  or a regnal name, which has no surname ("John Paul II"). The partial doesn't
+  guess regnal numerals: "II" can't be told from a generational "III".
+
   Two sources sharing a key get letter suffixes ("Hayes 2006a", "Hayes 2006b")
   in the order given, scoped to the page, as in an author-date reference list.
   Used by Scholarship Pages and the Timeline.
@@ -21,8 +26,10 @@
 {{- range $ids -}}
   {{- $s := index $registry . -}}
   {{- $key := "" -}}
-  {{- with $s.author -}}
-    {{- $line := replaceRE `\s*\(eds?\.\)` "" . -}}
+  {{- if $s.shortAuthor -}}
+    {{- $key = $s.shortAuthor -}}
+  {{- else if $s.author -}}
+    {{- $line := replaceRE `\s*\(eds?\.\)` "" $s.author -}}
     {{- $etAl := findRE `,?\s+(et al\.?|and others)$` $line 1 -}}
     {{- $line = replaceRE `,?\s+(et al\.?|and others)$` "" $line -}}
     {{- $line = replaceRE `,?\s+(Jr|Sr)\.?(,|\s+and\s|$)` "$2" $line -}}

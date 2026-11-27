@@ -46,7 +46,7 @@ Write the four files, `draft: true` on the page:
 
 - `hugo/content/scholarship/<slug>.md`: `title`, `dek`, `core` (a statement id), `sourcesRead`, `related` (books, tags, topics that exist), `watch` (terms `synthesis:gather` greps new Transcripts for), and `statements` grouped by `group`. A statement id becomes a public URL at publish: choose short, durable ids.
 - `hugo/data/scholarship/triggers/<slug>.yaml`: the Trigger Claims from step 1.
-- `hugo/data/external-sources.yaml`: a registry entry per new source; reuse existing ids.
+- `hugo/data/external-sources.yaml`: a registry entry per new source; reuse existing ids. Set `shortAuthor` when the short cite's name isn't the author line's last word, as for a compound surname or a regnal name.
 - `data/scholarship-reviews/<slug>.yaml`: the agent first pass, one entry per citation, Trigger Claim and source, plus `leads`, `uncited` and the header comments (sourcing test, what was dropped and why, flags for the second pass).
 
 Remove the subject's entry from `data/scholarship-candidates.yaml`, if it has one; the page now carries it. Write the shorts last, each reporting where scholarship stands, never one author's view.

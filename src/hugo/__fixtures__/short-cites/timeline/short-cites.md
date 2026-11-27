@@ -73,4 +73,16 @@ undated:
       locator: "source"
       quote: "Fixture quote."
       read: 2026-11-26
+    - source: john-paul-ii-1998-turin-address
+      locator: "source"
+      quote: "Fixture quote."
+      read: 2026-11-26
+    - source: davis-bledsoe-2015-editions
+      locator: "source"
+      quote: "Fixture quote."
+      read: 2026-11-26
+    - source: merrill-willis-bo-daniel
+      locator: "source"
+      quote: "Fixture quote."
+      read: 2026-11-26
 ---

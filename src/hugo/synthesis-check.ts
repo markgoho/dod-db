@@ -22,6 +22,8 @@ export const CiteSchema = z.object({
 
 const SourceSchema = z.object({
   author: z.string().nullable(),
+  /** Short-cite name when the author line's last word isn't it (#225). */
+  shortAuthor: z.string().optional(),
   title: z.string(),
   series: z.string().nullable(),
   publisher: z.string().nullable(),

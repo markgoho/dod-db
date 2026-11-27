@@ -1,5 +1,8 @@
 # External Sources: one registry shared by every Synthesis Page (ADR 0002, #92).
 # Keyed by source id. Citations hold only what varies per citation.
+# Optional shortAuthor: the short-cite name when it isn't the author line's
+# last word (a compound surname, a regnal name); it replaces the derived name
+# (source-short-cites.html, #225).
 meyers-2005-exodus:
   author: "Carol Meyers"
   title: "Exodus"
@@ -1318,6 +1321,7 @@ russakoff-2015-review-nicolotti:
 
 john-paul-ii-1998-turin-address:
   author: "John Paul II"
+  shortAuthor: "John Paul II"
   title: "Address of His Holiness Pope John Paul II [before the Shroud, Cathedral of Turin]"
   series: null
   publisher: "Holy See"
@@ -2060,6 +2064,7 @@ coogan-brief-4e-summary-ch25:
 
 merrill-willis-bo-daniel:
   author: "Amy C. Merrill Willis"
+  shortAuthor: "Merrill Willis"
   title: "Daniel"
   series: "Bible Odyssey"
   publisher: "Society of Biblical Literature"
@@ -2284,6 +2289,7 @@ mclay-2007-nets-bel:
 
 davis-bledsoe-2015-editions:
   author: "Amanda M. Davis Bledsoe"
+  shortAuthor: "Davis Bledsoe"
   title: "The Relationship of the Different Editions of Daniel: A History of Scholarship"
   series: "Currents in Biblical Research 13.2, pp. 175–190"
   publisher: "SAGE"

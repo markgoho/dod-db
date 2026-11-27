@@ -82,6 +82,10 @@ describe.skipIf(!hasHugo)("short cites", () => {
     ["mccarter-2008-hebrew", "McCarter 2008"],
     ["coogan-brief-4e-summary-ch4", "Coogan and Chapman 2019a"],
     ["coogan-brief-4e-summary-ch5", "Coogan and Chapman 2019b"],
+    // A registry shortAuthor replaces the derived name (#225).
+    ["john-paul-ii-1998-turin-address", "John Paul II 1998"],
+    ["davis-bledsoe-2015-editions", "Davis Bledsoe 2015"],
+    ["merrill-willis-bo-daniel", "Merrill Willis 2015"],
     // No author: the title, never split on its " and ".
     [
       "gotquestions-kings-israel-judah",
