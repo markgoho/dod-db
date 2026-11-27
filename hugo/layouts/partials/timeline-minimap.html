@@ -30,7 +30,9 @@
   0.04 here. Ticks closer than that would overlap, as Creation (4004 BCE)
   and Adam (4000 BCE) did, so each takes the lowest slot (--tick-slot) none
   of them has: a row of dots running inward from the tick track, one pitch
-  apart. No dot leaves its year, so none leaves its era.
+  apart. Each tick carries its era's edges too, so the CSS keeps its dot
+  inside its band: a dot at an era's edge, like Creation's and Adam's at
+  4000 BCE, is nudged in off the line (#175), never more than its own size.
   */
 -}}
 {{- $pitchShare := 0.04 -}}
@@ -40,7 +42,9 @@
 {{- $ticks := slice -}}
 {{- range $eras -}}
   {{- $eraId := partial "timeline-era-id.html" . -}}
-  {{- $bands = $bands | append (dict "id" $eraId "label" .label "start" (div (sub (float .from) $start) $years) "end" (div (sub (float .to) $start) $years) "empty" (not .items)) -}}
+  {{- $eraStart := div (sub (float .from) $start) $years -}}
+  {{- $eraEnd := div (sub (float .to) $start) $years -}}
+  {{- $bands = $bands | append (dict "id" $eraId "label" .label "start" $eraStart "end" $eraEnd "empty" (not .items)) -}}
   {{- range .items -}}
     {{- $p := .page.Params -}}
     {{- $date := "" -}}
@@ -78,6 +82,8 @@
       "id" (cond $isMoved (printf "%s-tradition" .page.File.ContentBaseName) .page.File.ContentBaseName)
       "moved" $isMoved
       "era" $eraId
+      "eraStart" $eraStart
+      "eraEnd" $eraEnd
       "title" .page.Title
       "date" $date
       "placed" (eq .by "tradition")
@@ -177,7 +183,7 @@
             data-tick="{{ .id }}"
             interestfor="timeline-minimap-tip-{{ .id }}"
             aria-label="{{ .title }}: {{ replace .date "–" " to " }}"
-            style="--tick-at: {{ .at }}; --tick-slot: {{ .slot }}"></a>
+            style="--tick-at: {{ .at }}; --tick-slot: {{ .slot }}; --era-start: {{ .eraStart }}; --era-end: {{ .eraEnd }}"></a>
           {{- /* The tick's title and date, shown on hover or focus. The link's aria-label already says the same (with "to" for the dash), so no ARIA points here: it would be read twice. */}}
           <span
             class="timeline-minimap__tip"
@@ -191,7 +197,7 @@
             <span
               class="timeline-minimap__setting"
               data-setting="{{ $t.id }}"
-              style="--tick-at: {{ $t.at }}; --tick-slot: {{ $t.slot }}"
+              style="--tick-at: {{ $t.at }}; --tick-slot: {{ $t.slot }}; --era-start: {{ $t.eraStart }}; --era-end: {{ $t.eraEnd }}"
               aria-hidden="true">
               <span
                 class="timeline-minimap__setting-span"

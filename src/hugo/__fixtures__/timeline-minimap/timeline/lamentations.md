@@ -24,4 +24,13 @@ critical:
       locator: "section “Lamentations”"
       quote: "Traditionally, the book is attributed to Jeremiah, but modern scholarship suggests that he is not the author"
       read: 2026-11-22
+setting:
+  display: "Judah after the fall of Jerusalem in 587 BCE"
+  from: -587
+  to: -539
+  cites:
+    - source: nabre-lamentations-intro
+      locator: "Introduction, ¶ 1"
+      quote: "In any case, they are anonymous compositions probably used by survivors of the catastrophe of 587 B.C. in a communal expression of grief and mourning."
+      read: 2026-11-22
 ---

@@ -3,8 +3,9 @@
  * site to a temporary directory, with and without drafts, and the tests read
  * the Timeline's HTML. The build reads a frozen set of entries from
  * __fixtures__/timeline-minimap (copies of published entries; Isaiah 56–66 is
- * a draft there), not hugo/content, so publishing an entry never moves a
- * tick, slot or band the tests expect (#204). Sources and Trigger Claims
+ * a draft there, and Lamentations' setting has years only there, for a setting
+ * whose dot sits deep in its row, #175), not hugo/content, so publishing an
+ * entry never moves a tick, slot or band the tests expect (#204). Sources and Trigger Claims
  * still come from hugo/data. Browser behaviour (scrollspy, fixed rail, popover) is
  * checked in Chrome, not here.
  */
@@ -178,11 +179,11 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       ["isaiah-56-66", 5],
       ["daniel", 0],
     ]);
-    // Nothing moves a dot off its year.
+    // No vertical stacking: a dot stays at its year, nudged at most inside its band (CSS).
     for (const t of ticks) expect(t.attrs.style).not.toContain("--tick-stack");
   });
 
-  test("each band is placed by its era's years on the same scale as the ticks, so every tick falls in its own band", () => {
+  test("each band is placed by its era's years on the same scale as the ticks, and each tick carries its band's edges, so the CSS keeps its dot inside it (#175)", () => {
     const bands = select(page, ".timeline-minimap__band");
     // The strip runs 5000 BCE to 0 in 1000- and 500-year eras.
     expect(bands.map(b => [vars(b)["era-start"], vars(b)["era-end"]])).toEqual([
@@ -197,12 +198,21 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     const byEra = new Map(bands.map(b => [b.attrs["data-era"], vars(b)]));
     for (const a of select(page, ".timeline-minimap__spy a")) {
       const band = byEra.get(a.attrs["data-entry-era"])!;
-      const at = vars(
+      const tick = vars(
         select(page, `[data-tick="${a.attrs.href?.slice(1)}"]`)[0],
-      )["tick-at"]!;
-      expect(at).toBeGreaterThanOrEqual(band["era-start"]!);
-      expect(at).toBeLessThan(band["era-end"]!);
+      );
+      expect(tick["tick-at"]).toBeGreaterThanOrEqual(band["era-start"]!);
+      expect(tick["tick-at"]).toBeLessThan(band["era-end"]!);
+      expect(tick["era-start"]).toBe(band["era-start"]!);
+      expect(tick["era-end"]).toBe(band["era-end"]!);
     }
+    // Creation (4004 BCE) and Adam (4000 BCE) sit either side of the 4000 BCE line.
+    const edges = (id: string) => {
+      const v = vars(select(page, `[data-tick="${id}"]`)[0]);
+      return [v["era-start"], v["era-end"]];
+    };
+    expect(edges("creation")).toEqual([0, 0.2]);
+    expect(edges("adam")).toEqual([0.2, 0.4]);
   });
 
   test("under the strip, a three-item legend names the three dots, in the Timeline's own labels", () => {
@@ -383,6 +393,7 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       ...eras.map(id => `${on("data-entry-era", id)} [data-now="${id}"]`),
       ...eras.map(id => `${on("data-entry-era", id)} [data-era="${id}"]`),
       ...entries.map(id => `${on("href", `#${id}`)} [data-tick="${id}"]`),
+      `${on("href", "#lamentations")} [data-setting="lamentations"]`,
       `${on("href", "#daniel")} [data-setting="daniel"]`,
       // The entry on the axis, a sibling of the minimap, so read from the layout.
       ...entries.map(
@@ -400,10 +411,13 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
   });
 
   test("a narrated setting with years is a span at its years, arced to its tick, shown only while its entry is current", () => {
-    // Only Daniel's setting has years; Deuteronomy's and Judges' have none.
+    // Daniel's and Lamentations' settings have years; Deuteronomy's and Judges' have none.
     const settings = select(page, ".timeline-minimap__setting");
-    expect(settings.map(s => s.attrs["data-setting"])).toEqual(["daniel"]);
-    expect(settings[0]?.attrs["aria-hidden"]).toBe("true");
+    expect(settings.map(s => s.attrs["data-setting"])).toEqual([
+      "lamentations",
+      "daniel",
+    ]);
+    for (const s of settings) expect(s.attrs["aria-hidden"]).toBe("true");
 
     // The strip runs 5000 BCE to 0; Daniel is set 600–501 BCE.
     const span = vars(
@@ -415,17 +429,29 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(span["setting-start"]).toBeCloseTo(4400 / 5000, 4);
     expect(span["setting-end"]).toBeCloseTo(4499 / 5000, 4);
 
-    // The arc joins the span's middle to Daniel's dot: at its year, and in
-    // its slot, which the setting carries too.
+    // The arc joins the span's middle to the dot: at its year, in its band
+    // and in its slot, which the setting carries too, so the span follows a
+    // dot shifted along its row (#175): Lamentations' dot is in slot 2.
     const arc = vars(
       select(page, '[data-setting="daniel"] .timeline-minimap__setting-arc')[0],
     );
-    const tick = vars(select(page, '[data-tick="daniel"]')[0]);
     expect(arc["arc-mid"]).toBeCloseTo((4400 + 4499) / 2 / 5000, 4);
-    expect(vars(settings[0])).toEqual({
-      "tick-at": tick["tick-at"]!,
-      "tick-slot": tick["tick-slot"]!,
-    });
+    for (const s of settings) {
+      const id = s.attrs["data-setting"];
+      const {
+        "tick-at": at,
+        "tick-slot": slot,
+        "era-start": start,
+        "era-end": end,
+      } = vars(select(page, `[data-tick="${id}"]`)[0]);
+      expect(vars(s)).toEqual({
+        "era-end": end!,
+        "era-start": start!,
+        "tick-at": at!,
+        "tick-slot": slot!,
+      });
+    }
+    expect(vars(settings[0])["tick-slot"]).toBe(2);
   });
 
   test("the minimap script loads once, from the footer scripts, not inside the minimap", () => {

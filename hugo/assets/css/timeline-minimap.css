@@ -492,7 +492,9 @@
   outline-offset: calc(-1 * var(--border-width-sm));
 }
 
+/* Its own stacking context, so a setting can sit under the ticks and over the bands. */
 .timeline-minimap__ticks {
+  isolation: isolate;
   pointer-events: none;
   position: relative;
 }
@@ -558,14 +560,16 @@
 }
 
 /*
-  A tick is centred on its year (--tick-top, its top edge), always: no dot
-  leaves its year, so none leaves its era. Ticks that would overlap share a
-  row: slot 0 is centred in the tick track and each slot (--tick-slot, from
-  timeline-minimap.html) sits a pitch further in (--tick-x, from the strip's
-  inline end). A row longer than the strip is wide stops at the last whole
-  slot and its dots overlap there. Whole pixels. Worked out on the tick and
-  on its setting alike, so the setting's arc meets the dot. The current one:
-  see the end.
+  A tick is centred on its year (--tick-top, its top edge), kept inside its
+  own band (--era-start, --era-end, rounded as the band is): a dot at an
+  era's edge would straddle the band's line, so it is nudged in, clear of
+  the line and of the current tick's 1.5× growth (#175). Ticks that would
+  overlap share a row: slot 0 is centred in the tick track and each slot
+  (--tick-slot, from timeline-minimap.html) sits a pitch further in
+  (--tick-x, from the strip's inline end). A row longer than the strip is
+  wide stops at the last whole slot and its dots overlap there. Whole
+  pixels. Worked out on the tick and on its setting alike, so the setting's
+  arc meets the dot. The current one: see the end.
 */
 .timeline-minimap__tick,
 .timeline-minimap__setting {
@@ -574,8 +578,13 @@
     (var(--tick-track-width) - var(--tick-dot)) / 2,
     1px
   );
-  --tick-top: calc(
-    round(down, var(--tick-at) * 100%, 1px) - var(--tick-dot) / 2
+  /* Room for the current tick's growth: (1.5 - 1) / 2 of a dot each side. */
+  --tick-grow: round(up, var(--tick-dot) / 4, 1px);
+  --tick-top: clamp(
+    round(down, var(--era-start) * 100%, 1px) + var(--border-width-sm) +
+      var(--tick-grow),
+    round(down, var(--tick-at) * 100%, 1px) - var(--tick-dot) / 2,
+    round(down, var(--era-end) * 100%, 1px) - var(--tick-dot) - var(--tick-grow)
   );
   --tick-x: calc(
     var(--tick-track-inset) +
@@ -685,9 +694,22 @@
   The current entry's narrated setting (#170): a faint hatched span at its
   years, beside the tick track, and a dotted arc from the span's middle to
   the tick's dot (--tick-top, --tick-x). Shown only while its entry is
-  current.
+  current. The span sits just inward of the track's first slots, or of its
+  own dot when that sits further in (--setting-x, from the strip's inline
+  end), so a dot shifted along its row never lands on it (#175); never past
+  the strip's inline start. Under the ticks: where the row runs on past its
+  dot, the next dots cover the span, not the reverse.
 */
 .timeline-minimap__setting {
+  --setting-width: var(--space-2xs);
+  --setting-x: min(
+    max(
+      var(--tick-track-width) + var(--space-xs) - var(--setting-width),
+      var(--tick-x) + var(--tick-dot) + var(--space-3xs)
+    ),
+    100% - var(--setting-width)
+  );
+
   /* display, not visibility: a visible child would show through the hidden rail. */
   display: none;
 }
@@ -695,6 +717,7 @@
 .timeline-minimap__setting > * {
   pointer-events: none;
   position: absolute;
+  z-index: -1;
 }
 
 .timeline-minimap__setting-span {
@@ -705,8 +728,8 @@
     var(--tan-500) 0 var(--border-width-sm),
     transparent 0 calc(2 * var(--border-width-sm))
   );
-  inline-size: var(--space-2xs);
-  inset-inline-start: calc(100% - var(--tick-track-width) - var(--space-xs));
+  inline-size: var(--setting-width);
+  inset-inline-end: var(--setting-x);
   min-block-size: var(--space-3xs);
 }
 
@@ -721,7 +744,7 @@
   border-inline-end: 0;
   border-start-start-radius: var(--space-2xs);
   inset-inline: calc(
-      100% - var(--tick-track-width) - var(--space-xs) - var(--space-3xs)
+      100% - var(--setting-x) - var(--setting-width) - var(--space-3xs)
     )
     calc(var(--tick-x) + var(--tick-dot));
 }
