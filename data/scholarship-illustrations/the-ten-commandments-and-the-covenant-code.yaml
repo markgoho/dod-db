@@ -1,0 +1,106 @@
+# Illustrations for /scholarship/the-ten-commandments-and-the-covenant-code/
+# (generated with Gemini; see src/scripts/generate-scholarship-illustrations.ts).
+# Each picture shows only what the listed statements support; every caption,
+# link and claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Four comic panels in the order of the text: the Ten Commandments' versions,
+# the Covenant Code that follows them, its shared cases with the Laws of
+# Hammurabi (split by a plain gutter), and the later collections that rework it
+# (split by a plain gutter, Deuteronomy and Leviticus side by side, no order
+# between them). `scribe` is the anchor for the recurring Israelite scribe.
+# Tablets and scrolls carry only illegible marks; no king, no lawgiver, no god.
+slug: the-ten-commandments-and-the-covenant-code
+images:
+  - id: scribe
+    statements: [covenant-code, oldest]
+    aspect: "4:3"
+    alt: "An Israelite scribe sits on the right unrolling a long scroll of laws; two blank stone tablets lean on a rock behind him on the left."
+    prompt: >-
+      An ancient Israelite scribe, a middle-aged man with a short dark beard,
+      a plain rust red robe and a light grey head cloth, sits cross-legged on
+      the right half of the picture with a very long scroll unrolled across
+      his lap and trailing onto the ground, writing on it with a reed pen;
+      the scroll is covered in tiny illegible scribble marks. Behind him on
+      the left, two plain rounded-top stone tablets lean against a large rock,
+      their faces smooth and blank. The lower-left corner of the picture is
+      open plain ground with nothing in it. The upper-left corner is open pale
+      sky. No other figures, no text, no letters.
+
+  - id: tablets
+    statements: [versions]
+    aspect: "4:3"
+    alt: "Three pairs of rounded stone tablets stand on a rocky ledge: the two pairs on the left look alike, the third pair on the right is shaped differently."
+    prompt: >-
+      On a wide flat rocky mountain ledge stand exactly THREE pairs of
+      rounded-top stone tablets, six tablets in all, the three pairs clearly
+      separated with space between them, standing in a row across the middle
+      of the picture. The first pair and the second pair are almost identical
+      grey stone, each tablet covered in rows of tiny illegible scratch marks.
+      The third pair, on the right, is clearly different: a warmer amber-tinted
+      stone, taller and narrower, with a different pattern of small marks.
+      Three pairs, no more, no fewer. The lower-left and lower-right corners
+      are open plain rock with nothing on them. Pale empty sky above. No
+      figures, no hands, no light rays, no text, no letters.
+
+  - id: stela
+    statements: [parallels, hammurabi]
+    aspect: "4:5"
+    alt: "A tall black stone stela stands in a sunlit Mesopotamian courtyard; an ox with long horns stands tethered beside it."
+    prompt: >-
+      A tall, smooth black basalt stela with a rounded top stands upright in
+      a sunlit mud-brick courtyard of ancient Mesopotamia; its face is covered
+      in dense rows of tiny illegible wedge-shaped scratch marks, no
+      recognisable signs, and no carved figures. Beside the stela, a large
+      ox with long curved horns stands tethered by a rope to a post, head
+      lowered. The lower-left corner of the picture is open courtyard floor
+      with nothing in it. No people, no king, no gods, no text, no letters.
+
+  - id: scribe-ox
+    statements: [parallels, hammurabi]
+    aspect: "4:5"
+    refs: [scribe]
+    alt: "The same Israelite scribe sits writing on his scroll while an ox with long horns looks over a low wall behind him."
+    prompt: >-
+      The SAME Israelite scribe as in the reference image (short dark beard,
+      rust red robe, light grey head cloth) sits on a low stool in the lower
+      middle of the picture, writing on a scroll of tiny illegible scribble
+      marks spread on his knees. Behind him, a large ox with long curved horns
+      looks over a low stone wall, calm. The lower-right corner of the picture
+      is open plain ground with nothing in it. No other figures, no text, no
+      letters.
+
+  - id: freed
+    statements: [slaves, deuteronomy]
+    aspect: "4:5"
+    refs: [scribe]
+    alt: "A young woman walks out through the gateway of an ancient courtyard house with a bundle of grain and a goat, free to go."
+    prompt: >-
+      Same ancient Israelite world and drawing style as the reference image.
+      A young Israelite woman with dark hair, in a plain light grey
+      ankle-length robe and a rust red head scarf, walks out through the open
+      gateway of a flat-roofed mud-brick and stone courtyard house of the
+      ancient Near East, smiling, carrying a cloth bundle of grain on one arm
+      and leading a small goat on a rope: she is setting out free with gifts.
+      An olive tree stands beside the gate. No other figures. The lower-left
+      corner of the picture is open dusty ground with nothing in it. Nothing
+      modern or European: no wooden plank doors, no picket fence, no glass
+      windows, no aprons. No chains, no weapons, no text, no letters.
+
+  - id: own-field
+    statements: [slaves]
+    aspect: "4:5"
+    refs: [scribe]
+    alt: "An Israelite farmer and his family work their own small field of grain beside a flat-roofed stone house."
+    prompt: >-
+      Same ancient Israelite world and drawing style as the reference image.
+      An Israelite farmer with a short dark beard, in a plain amber knee-length
+      tunic and a light grey head cloth, his dark-haired wife in a light grey
+      robe and rust red head scarf, and their small dark-haired son in a short
+      tunic, work together in their own small terraced field of ripe barley
+      beside a flat-roofed mud-brick and stone house of the ancient Near East,
+      with olive trees and dry hills behind: he cuts grain with a sickle, she
+      gathers it into a sheaf, the boy carries a woven basket. They look
+      content and independent. No overseer, no other workers, no chains.
+      Nothing modern or European: no pitched red-tiled roof, no apron. The
+      lower-right corner of the picture is open stubble field with nothing in
+      it. No text, no letters.
