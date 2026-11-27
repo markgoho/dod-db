@@ -283,6 +283,8 @@
   gap: 0.3cqi;
   margin: 0;
   max-inline-size: 40%;
+  /* A long word ("MANUSCRIPTS") outgrows 40% of a narrow panel: the plate widens to it rather than letting it spill. */
+  min-inline-size: min-content;
   padding: 0.9cqi 1.4cqi 1.1cqi;
   position: absolute;
 }
