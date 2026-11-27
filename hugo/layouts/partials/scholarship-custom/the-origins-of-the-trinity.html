@@ -1,0 +1,119 @@
+{{- /*
+  Custom block for /scholarship/the-origins-of-the-trinity/: a five-panel
+  comic page in time order, from the New Testament to the Council of
+  Constantinople. A first-century letter writer (no explicit doctrine), a
+  second-century writer (the word "Trinity"), the council of 325
+  (homoousios), bishops still arguing after it (not settled), and the
+  council of 381 (the Spirit's divinity affirmed), as a wide closing panel.
+
+  A view of the page's reviewed statements (the shorts of `new-testament`,
+  `triadic`, `word`, `nicaea`, `after-nicaea` and `constantinople`); it makes
+  no claim they don't. Each plate keeps its short's hedge ("scholars say",
+  "contested", "debated", "did not call the Spirit 'God' outright"). The art
+  is generated with Gemini from
+  data/scholarship-illustrations/the-origins-of-the-trinity.yaml: crowds are
+  drawn too dense to count, and no number of bishops is given. Reword a plate
+  only when the statement it comes from is re-reviewed.
+  */
+-}}
+{{- $slug := "the-origins-of-the-trinity" -}}
+{{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
+{{- $frames := slice
+  (dict
+  "id" "letters" "box" "In the New Testament" "pos" "tr"
+  "big" "Not explicit"
+  "sub" "Passages name Father, Son and Holy Spirit together; whether the doctrine can be inferred from it is contested."
+  "ref" "Matthew 28:19"
+  "alt" "A first-century writer at a low table writes a letter on papyrus by the light of a clay oil lamp.")
+  (dict
+  "id" "word" "box" "Late 2nd century" "pos" "br"
+  "big" "A word: “Trinity”"
+  "sub" "Greek trias in Theophilus of Antioch, Latin trinitas in Tertullian; how far they meant the later doctrine is debated."
+  "alt" "A second-century writer at his desk pauses with his pen raised, thinking, beside an open codex.")
+  (dict
+  "id" "nicaea" "box" "325 · Nicaea" "pos" "br"
+  "big" "Homoousios"
+  "sub" "The Son of one substance with the Father; Arius's teaching that the Son had not always existed condemned."
+  "alt" "A council of bishops fills a columned hall; one stands holding up a scroll, and an emperor sits on a raised seat at the far end.")
+  (dict
+  "id" "after" "box" "After Nicaea" "pos" "bl"
+  "big" "Not settled"
+  "sub" "The creed largely set aside for decades while other councils sought other wording."
+  "alt" "Two groups of bishops argue across a table strewn with scrolls, pointing and throwing up their hands.")
+  (dict
+  "id" "constantinople" "box" "381 · Constantinople" "pos" "bl" "wide" true
+  "big" "The Spirit’s divinity affirmed"
+  "sub" "Even then, the creed the council approved did not call the Spirit “God” outright."
+  "alt" "A later council of bishops in a domed hall listens as one bishop reads aloud from a long scroll.")
+-}}
+<section class="cloud-section trin-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="trin-comic__page">
+    <header class="trin-comic__head">
+      <p class="trin-comic__kicker">
+        From the New Testament to 381 · scholars say
+      </p>
+      <p class="trin-comic__title">
+        The doctrine of the Trinity is not explicit in the New Testament. It was
+        worked out later.
+      </p>
+    </header>
+    <ol class="trin-comic__strip">
+      {{- range $f := $frames }}
+        {{- $img := resources.Get (printf "scholarship-art/%s/%s.png" $slug $f.id) }}
+        <li
+          class="trin-comic__frame trin-comic__frame--{{ $f.id }}{{ if $f.wide }}
+            trin-comic__frame--wide
+          {{ end }}"
+          {{ if not (in (slice "letters" "constantinople") $f.id) }}
+            data-card-hide
+          {{ end }}>
+          <figure class="trin-comic__figure">
+            <div class="trin-comic__art">
+              {{- with $img }}
+                {{- $webp := .Process "resize 1200x webp q78" }}
+                <img
+                  src="{{ $webp.RelPermalink }}"
+                  width="{{ $webp.Width }}"
+                  height="{{ $webp.Height }}"
+                  alt="{{ $f.alt }}"
+                  loading="eager" />
+              {{- end }}
+            </div>
+            <h3 class="trin-comic__box">{{ $f.box }}</h3>
+            <figcaption class="comic-plate comic-plate--{{ $f.pos }}">
+              <p class="comic-plate__big">{{ $f.big }}</p>
+              <p class="comic-plate__sub">{{ $f.sub }}</p>
+              {{- with $f.ref }}
+                <p class="trin-comic__ref">
+                  <a
+                    href="{{ printf "%s%s" $bg (urlquery .) | safeURL }}"
+                    rel="noopener"
+                    >{{ replace . " " "&nbsp;" | safeHTML }}</a
+                  >
+                </p>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="trin-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
+  </div>
+  <p class="trin-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#new-testament">the New Testament</a>,
+    <a href="#triadic">Father, Son and Spirit named together</a>,
+    <a href="#word">the word “Trinity”</a>, <a href="#nicaea">Nicaea</a>,
+    <a href="#after-nicaea">after Nicaea</a> and
+    <a href="#constantinople">Constantinople</a>.
+  </p>
+</section>

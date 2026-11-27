@@ -1,0 +1,304 @@
+/*
+  Custom block for The Origins of the Trinity Scholarship Page: a comic page
+  in time order. One ink frame holds the kicker, the headline, five
+  illustrated panels (the last a wide strip) and the credit, so the whole
+  thing shares as one image. Each panel is an ink frame around its art, with
+  a narration label flush top-left and a comic plate (scholarship.css) set on
+  the art in a clear corner. Composes cloud-section, type-section-title and
+  scholarship-meta.
+
+  The art is raster (generated); everything around it is CSS.
+*/
+.trin-comic {
+  --trin-ink: var(--tan-900);
+  --trin-frame: var(--border-width-md);
+
+  container: trin-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.trin-comic__page {
+  background: var(--tan-000);
+  border: var(--border-width-lg, 5px) solid var(--trin-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--trin-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.trin-comic__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.trin-comic__kicker {
+  color: var(--rust-700);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Headline lettering: ink capitals with an amber offset. */
+.trin-comic__title {
+  color: var(--trin-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 30ch;
+  text-shadow: 3px 3px 0 var(--color-accent);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.trin-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trin-comic__frame {
+  display: grid;
+}
+
+/* A panel: one ink frame around the art; the panel is its plate's container. */
+.trin-comic__figure {
+  border: var(--trin-frame) solid var(--trin-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.trin-comic__art {
+  aspect-ratio: 4 / 3;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.trin-comic__art > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.08;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.trin-comic__box {
+  background: var(--color-accent);
+  border-block-end: var(--trin-frame) solid var(--trin-ink);
+  border-inline-end: var(--trin-frame) solid var(--trin-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+/* A top-right plate drops below the narration label's row. */
+.trin-comic__frame .comic-plate--tr {
+  inset-block-start: 2cqi;
+}
+
+/* The scripture tag: an ink chip on the plate. */
+.trin-comic__ref {
+  background: var(--trin-ink);
+  font-family: var(--font-family-main);
+  font-size: clamp(0.6rem, 2.2cqi, 0.85rem);
+  font-style: normal;
+  justify-self: end;
+  line-height: var(--line-height-tight);
+  margin: 0;
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.trin-comic__ref > a {
+  color: var(--color-text-inverse);
+  text-decoration-color: var(--color-accent);
+}
+
+.trin-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.trin-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: two panels to a row, the last spanning both. Literal length: container conditions cannot read custom properties. */
+@container trin-comic (width >= 40rem) {
+  .trin-comic__page {
+    padding: var(--space-m);
+  }
+
+  .trin-comic__title {
+    font-size: var(--step-3);
+  }
+
+  .trin-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .trin-comic__frame--wide {
+    grid-column: 1 / -1;
+  }
+
+  .trin-comic__frame--wide .trin-comic__art {
+    aspect-ratio: 8 / 3;
+  }
+
+  /* The wide panel is twice as wide a container: halve the plate's cqi type to match the other panels. */
+  .trin-comic__frame--wide .comic-plate {
+    max-inline-size: 26%;
+    padding: 0.45cqi 0.7cqi 0.55cqi;
+  }
+
+  .trin-comic__frame--wide .comic-plate__big {
+    font-size: clamp(0.95rem, 2.7cqi, 2.1rem);
+  }
+
+  .trin-comic__frame--wide .comic-plate__sub {
+    font-size: clamp(0.65rem, 1.25cqi, 0.95rem);
+  }
+
+  .trin-comic__frame--wide .comic-plate--bl {
+    inset: auto auto 1cqi 1cqi;
+  }
+}
+
+/* The poster: two by two on the 4:5 canvas, the wide panel across the bottom. */
+.scholarship-share:target .trin-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .trin-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:target .trin-comic__strip {
+  gap: var(--space-2xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scholarship-share:target .trin-comic__art {
+  aspect-ratio: 16 / 10;
+}
+
+.scholarship-share:target .trin-comic__frame--wide {
+  grid-column: 1 / -1;
+}
+
+.scholarship-share:target .trin-comic__frame--wide .trin-comic__art {
+  aspect-ratio: 7 / 2;
+}
+
+.scholarship-share:target .trin-comic__frame--wide .comic-plate {
+  max-inline-size: 26%;
+  padding: 0.45cqi 0.7cqi 0.55cqi;
+}
+
+.scholarship-share:target .trin-comic__frame--wide .comic-plate__big {
+  font-size: 2.6cqi;
+}
+
+.scholarship-share:target .trin-comic__frame--wide .comic-plate__sub {
+  font-size: 1.3cqi;
+}
+
+.scholarship-share:target .trin-comic__frame--wide .comic-plate--bl {
+  inset: auto auto 1cqi 1cqi;
+}
+
+/* The card: panels 1 and 5 side by side under the kicker and headline. */
+.scholarship-share:has(#share-card:target) .trin-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .trin-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:has(#share-card:target) .trin-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scholarship-share:has(#share-card:target) .trin-comic__frame--wide {
+  grid-column: auto;
+}
+
+.scholarship-share:has(#share-card:target) .trin-comic__art,
+.scholarship-share:has(#share-card:target)
+  .trin-comic__frame--wide
+  .trin-comic__art {
+  aspect-ratio: 16 / 10;
+}
+
+.scholarship-share:has(#share-card:target)
+  .trin-comic__frame--wide
+  .comic-plate {
+  max-inline-size: 40%;
+  padding: 0.9cqi 1.4cqi 1.1cqi;
+}
+
+.scholarship-share:has(#share-card:target)
+  .trin-comic__frame--wide
+  .comic-plate__big {
+  font-size: clamp(0.95rem, 5.4cqi, 2.1rem);
+}
+
+.scholarship-share:has(#share-card:target)
+  .trin-comic__frame--wide
+  .comic-plate__sub {
+  font-size: clamp(0.65rem, 2.5cqi, 0.95rem);
+}
+
+.scholarship-share:has(#share-card:target)
+  .trin-comic__frame--wide
+  .comic-plate--bl {
+  inset: auto auto 2cqi 2cqi;
+}
+
+/* Narrow: a plate on the art would cover most of a phone-width panel, so each plate becomes a caption band under its art. Literal length, as above. */
+@container trin-comic (width < 40rem) {
+  .trin-comic__frame .comic-plate {
+    border: 0;
+    border-block-start: var(--trin-frame) solid var(--trin-ink);
+    box-shadow: none;
+    inset: auto;
+    max-inline-size: none;
+    position: static;
+    text-align: start;
+  }
+
+  .trin-comic__ref {
+    justify-self: start;
+  }
+}

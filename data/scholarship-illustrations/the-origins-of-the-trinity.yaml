@@ -1,0 +1,71 @@
+# Illustrations for /scholarship/the-origins-of-the-trinity/ (generated with
+# Gemini; see src/scripts/generate-scholarship-illustrations.ts). Each picture
+# shows only what the listed statements support, or neutral setting; every
+# caption, date, link and claim stays in
+# hugo/layouts/partials/scholarship-custom/the-origins-of-the-trinity.html.
+slug: the-origins-of-the-trinity
+images:
+  - id: letters
+    statements: [new-testament, triadic]
+    aspect: "4:3"
+    alt: "A first-century writer at a low table writes a letter on a papyrus sheet by the light of a clay oil lamp."
+    prompt: >-
+      A first-century Mediterranean writer, a man with a short dark beard
+      in a plain tunic and cloak, shown from the waist up, seated at a low
+      wooden table, writing with a reed pen on a sheet of papyrus. A few
+      rolled papyrus letters lie on the table beside a small clay oil lamp
+      and an ink pot. Behind him, a plain plastered wall with a small
+      window. Leave the upper right quarter of the picture as plain wall.
+  - id: word
+    statements: [word]
+    aspect: "4:3"
+    refs: [letters]
+    alt: "A second-century writer in a study, surrounded by codices, pauses with his pen raised, thinking."
+    prompt: >-
+      In the same drawing style as the reference image, a different man, a
+      second-century Christian writer, older, with a grey beard, wearing a
+      plain robe, shown from the waist up at a desk, pausing with his reed
+      pen raised and looking up thoughtfully. On the desk an open codex
+      (a bound book of pages) covered in tiny illegible scribble marks, and
+      a small stack of other codices. A plain wall behind him. Leave the
+      lower right quarter of the picture as plain desk and floor.
+  - id: nicaea
+    statements: [nicaea]
+    aspect: "4:3"
+    refs: [letters]
+    alt: "A council of bishops in robes fills a columned hall; an emperor in purple sits on a raised seat at the far end."
+    prompt: >-
+      In the same drawing style as the reference image, a large council of
+      bishops in fourth-century robes and stoles, a dense crowd too many to
+      count, seated on benches that fill a hall with tall stone columns.
+      At the far end, small in the picture, a generic Roman emperor in a
+      purple cloak and a simple gold wreath sits on a raised seat. In the
+      foreground one bishop stands holding up a single unrolled scroll
+      covered in tiny illegible scribble marks. Leave the lower right
+      corner of the picture as plain stone floor.
+  - id: after
+    statements: [after-nicaea]
+    aspect: "4:3"
+    refs: [nicaea]
+    alt: "Two groups of bishops argue across a table, pointing at each other, scrolls in their hands."
+    prompt: >-
+      In the same drawing style as the reference image, two small groups of
+      bishops in fourth-century robes face each other across a long table,
+      arguing: on the left three bishops point and gesture emphatically, on
+      the right three bishops shake their heads with arms raised. Scrolls
+      with tiny illegible scribble marks lie unrolled on the table. Heated
+      but not violent: no one touches anyone. Plain wall behind them. Leave
+      the lower left corner of the picture as plain floor.
+  - id: constantinople
+    statements: [constantinople]
+    aspect: "16:9"
+    refs: [nicaea]
+    alt: "A later council of bishops in a domed hall, many of them standing, as one bishop reads aloud from a scroll."
+    prompt: >-
+      In the same drawing style as the reference image, a wide view of a
+      later council of bishops in fourth-century robes in a hall with a
+      large dome and arched windows, a dense crowd too many to count. In
+      the centre one bishop stands at a lectern reading aloud from a long
+      unrolled scroll covered in tiny illegible scribble marks; the others
+      listen, some nodding. No emperor in this picture. Leave the left
+      third of the picture's lower half as plain floor.
