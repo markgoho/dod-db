@@ -1006,7 +1006,7 @@
 }
 
 /* The temple track, in A and C: a thin stripe just right of the labels, inked by period. */
-:is([data-period-variant="A"], [data-period-variant="C"])
+:is([data-period-variant^="A"], [data-period-variant="C"])
   [data-track="temple"] {
   background: var(--tan-700);
   display: block;
@@ -1014,7 +1014,7 @@
   inset-inline-start: calc(var(--era-label-width) + 1px);
 }
 
-:is([data-period-variant="A"], [data-period-variant="C"])
+:is([data-period-variant^="A"], [data-period-variant="C"])
   [data-period="exile"] {
   background: repeating-linear-gradient(
     0deg,
@@ -1023,19 +1023,19 @@
   );
 }
 
-:is([data-period-variant="A"], [data-period-variant="C"])
+:is([data-period-variant^="A"], [data-period-variant="C"])
   [data-period="second-temple"] {
   background: var(--tan-500);
 }
 
-:is([data-period-variant="A"], [data-period-variant="C"])
+:is([data-period-variant^="A"], [data-period-variant="C"])
   [data-track="temple"]
   .timeline-minimap__period-label {
   display: none;
 }
 
 /* A: the age periods as alternating tints across the dots' area, a dashed line and a small name at each start. */
-[data-period-variant="A"] [data-track="age"] {
+[data-period-variant^="A"] [data-track="age"] {
   background: if(
     style(--is-current: 1): color-mix(
         in srgb,
@@ -1051,7 +1051,7 @@
   text-align: end;
 }
 
-[data-period-variant="A"] [data-track="age"][data-parity="odd"] {
+[data-period-variant^="A"] [data-track="age"][data-parity="odd"] {
   background: if(
     style(--is-current: 1): color-mix(
         in srgb,
@@ -1230,4 +1230,36 @@
   cursor: pointer;
   font: inherit;
   padding: 0.35rem 0.7rem;
+}
+
+/* A2: the current period in a stronger neutral tint and a bold name; the amber stays the window's alone. */
+[data-period-variant="A2"] [data-track="age"],
+[data-period-variant="A2"] [data-track="age"][data-parity="odd"] {
+  background: if(
+    style(--is-current: 1): color-mix(in srgb, var(--tan-500) 30%, transparent);
+      else: transparent
+  );
+}
+
+[data-period-variant="A2"] [data-track="age"][data-parity="odd"] {
+  background: if(
+    style(--is-current: 1): color-mix(in srgb, var(--tan-500) 30%, transparent);
+      else: color-mix(in srgb, var(--tan-300) 45%, transparent)
+  );
+}
+
+[data-period-variant="A2"] [data-track="age"] .timeline-minimap__period-label {
+  color: if(
+    style(--is-current: 1): var(--color-text-main);
+      else: var(--color-text-muted)
+  );
+  font-weight: if(
+    style(--is-current: 1): var(--font-weight-bold); else: normal
+  );
+}
+
+/* A3: the current period keeps the amber tint; the window becomes an ink outline with no fill. */
+[data-period-variant="A3"] .timeline-minimap__view {
+  background: none;
+  border-width: var(--border-width-md);
 }
