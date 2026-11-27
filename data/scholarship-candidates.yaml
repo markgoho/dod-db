@@ -98,13 +98,6 @@ subjects:
     core: "Deuteronomy dates to the seventh century BCE and draws on the Vassal Treaty of Esarhaddon."
     basis: "Inventory short-page tier: 4 Episodes, 6 claims."
 
-  - slug: covenant-code
-    subject: "The Covenant Code"
-    status: candidate
-    core: "The Covenant Code is the earliest legislation in the Hebrew Bible."
-    basis: "Inventory short-page tier: 4 Episodes, the same claim each time."
-    notes: "One claim; three statements may be hard."
-
   - slug: creation-ex-nihilo
     subject: "Creation out of nothing"
     status: candidate
@@ -472,3 +465,27 @@ statements:
         timestamp: "00:45:28.610"
         text: "And, and we get this, this bishop in Alexandria named Arius, who is looking at the New Testament, it says it's very clear that Jesus is subordinate to God and that Jesus is a creation of God."
     notes: "Conflict with arius: calls Arius a bishop; the statement's sources call him a presbyter or priest of Alexandria (Tuggy, Bowker); Episode 5 at 00:28:53 calls him a presbyter. Not attached. Logged at the #154 first pass, 2026-11-27."
+  - page: the-ten-commandments-and-the-covenant-code
+    question: "Is the Ritual Decalogue of Exodus 34 older than the Ten Commandments of Exodus 20?"
+    triggers:
+      - episode: 31
+        speaker: "Dan McClellan"
+        timestamp: "00:08:39.280"
+        text: "And that trajectory is not taken too seriously by many scholars these days. Most would probably say Exodus 20 is earlier."
+    notes: "Conflict with ritual-decalogue: “Most would probably say Exodus 20 is earlier” states a majority; the statement reports a disagreement (Brettler 2015: many scholars believe Exodus 34 the original or earliest Decalogue; Sherman 2024: many contemporary scholars now read Exodus 34 as a late compilation). The same turn opens “some scholars think that the Ritual Decalogue is earlier”. Logged at the #158 first pass, 2026-11-27."
+  - page: the-ten-commandments-and-the-covenant-code
+    question: "Did the Covenant Code borrow from the Laws of Hammurabi?"
+    triggers:
+      - episode: 93
+        speaker: "Dan McClellan"
+        timestamp: "00:16:59.940"
+        text: "They're actually borrowing from Hammurabi's law. So these are, these laws are being adapted and adopted from Hammurabi's law."
+    notes: "Conflict with hammurabi: the quote asserts direct borrowing, and the turn goes on that in Wright's analysis “every law has a parallel in Hammurabi's law”; the statement reports the question as disputed (Horowitz, SBL lesson, Milstein; Wright himself says most scholars reject literary dependence), with Wright's view attributed. Logged at the #158 first pass, 2026-11-27."
+  - page: the-ten-commandments-and-the-covenant-code
+    question: "Did the Covenant Code borrow from the Laws of Hammurabi?"
+    triggers:
+      - episode: 23
+        speaker: "Dan McClellan"
+        timestamp: "00:47:06.210"
+        text: "There's a wonderful book by a scholar, a former Latter-day Saint scholar named David Wright, called Inventing God's Law, where he demonstrates, I think, convincingly, that the Covenant Code is borrowing directly from the Laws of Hammurabi, showing that the content, even the order that the content is going in, matches the way it's presented in the Laws of Hammurabi."
+    notes: "Conflict with hammurabi: the speaker endorses Wright's direct-dependence thesis as demonstrated (hedged “I think”); the statement reports it as one side of a disagreement. Logged at the #158 first pass, 2026-11-27."

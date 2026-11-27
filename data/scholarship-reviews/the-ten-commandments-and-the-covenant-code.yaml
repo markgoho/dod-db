@@ -1,0 +1,1351 @@
+# Review record for /scholarship/the-ten-commandments-and-the-covenant-code/ (#93 shape). Not rendered.
+# agent: results of the agent first pass (#158, 2026-11-27). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass once it has run.
+# Issue #158: new subject from the topic ranking; absorbs the queued `covenant-code` candidate (core "The Covenant Code is the earliest legislation in the Hebrew Bible"), whose entry is removed. Only that one candidate entry matched the subject by grep (covenant, commandment, decalogue, Hammurabi); `child-sacrifice-and-molech` (Exodus 22:29) and `deuteronomy-and-josiah` are separate queued subjects and nothing here states their claims (the page has no statement on Exodus 22:29 or on Deuteronomy's date or Josiah).
+# Overlap: no statement on whether the first commandment denies other gods (the-emergence-of-monotheism-and-the-divine-council#first-commandment), on how the Hebrew Bible defines adultery or punishes it (marriage-polygamy-and-adultery-in-the-bible#adultery, #adultery-penalty), or on the Exodus's historicity (moses-and-the-exodus). Reused registry ids: brown-bo-ten-commandments, nabre-exodus-20-notes, nabre-exodus-21-notes, harpercollins-2009-dictionary (per-citation url: Ten Commandments), hayes-rlst145-l10, hayes-rlst145-l11, coogan-brief-4e-summary-ch7, coogan-brief-4e-summary-ch8.
+# Sourcing test (#158, 2026-11-27): gate 1, 17 Trigger Claims in Episodes 21, 23, 31, 66, 93, 167 and 187 (the Covenant Code and Decalogue tags' top Episodes, each final transcript grepped for covenant code, decalogue, Hammurabi, Exodus 34, Deuteronomy 5), each script-matched at its turn's leading timestamp and speaker, read about two minutes either side. Three further assertions stronger than their statements are logged as conflicts in data/scholarship-candidates.yaml (31@00:08:39, 93@00:16:59, 23@00:47:06), not attached. Gate 2, the core: the candidate "the earliest legislation in the Hebrew Bible" sourced at the strength "Probably, scholars say: it is widely considered the earliest collection of biblical law. But its date is debated, and some scholars place it later": Halberstam 2017 (Scholarly, Cambridge, "most likely the earliest"), Samet 2017 (Reference, Hebrew University courseware, "considered among scholars to be the oldest"), Edenburg 2019 (Scholarly, OUP abstract, "widely considered the earliest"), Paul/Sperling EJ (Reference; possibly 1st-ed. text), with Hayes l11 ("equally early" Priestly laws) and Van Seters 2003 (abstract; exilic, after D and H) as the debate. Gate 3: 4 independent authors behind the core claim (Halberstam, Samet, Edenburg, Paul and Sperling), Hayes and Van Seters not counted. Gate 4: 20 statements.
+# Shorts (#133): no short says "consensus"; "most scholars" appears in no short. Hedged state-of-field words in shorts each rest on 2+ authors: name, versions, differences, numbering, addressed, covenant-code, parallels (NABRE "more than half", attributed in the short), talion, slaves (descriptive: what the texts say, 3 authors); disagreement shorts (ten-words, composition, ritual-decalogue, oldest, date, hammurabi, courts) each show two named sides with 2+ authors on the majority side.
+# Dropped for want of a second author or a qualifying source: which of Exodus 20 and Deuteronomy 5 is older (Gnuse, Qeios 2023, open post-publication review, not shown to be peer-reviewed: uncited); Deuteronomy's coveting commandment as two commandments (the Coogan summary only; kept in the differences text as the summary's words); the name commandment as "bearing" the name in public (Imes 2018, publisher blurb only: lead); the Holiness Code revising the Covenant Code beyond the slave law (Sweeney, Wright JHS; Farber disagrees; slaves statement keeps only the slave law); law collections as royal propaganda vs. guidance vs. scribal treatises (Morrow, The Bible and Interpretation, a web magazine: uncited); the ear-piercing location in Exodus 21:6 (NABRE vs Farber/Levinson: not stated).
+# First pass: five research agents fetched every source on 2026-11-27 into separate scratch folders and copied quotes from the fetched text; every page quote was then script-matched against those saved texts (whitespace, HTML entities, curly quotes, dashes, soft and non-breaking hyphens, Hebrew vowel points and inline tags normalised; bracketed footnote markers such as [27] stripped from the source text, as earlier pages drop them from quotes): 150/150, 0 misses. The second pass must re-fetch.
+# Flags for the second pass: (1) TheTorah.com: 21 articles by named scholars, classed Reference as the registry's earlier TheTorah entries are; the live pages render by script, so the text was read from the embedded article data or Internet Archive copies. Many statements lean on this one platform (independent authors, one site). (2) Abstract-only citations: Edenburg 2019 and Van Seters 2003 (OUP abstracts; chapter and book paywalled), as the registry's abstract-only convention. Edenburg 2019 backs the core; the core holds without her (Halberstam, Samet, Paul/Sperling). (3) Encyclopaedia Judaica: Paul/Sperling "Book of the Covenant" — its "earliest collection" sentence is probably 1st-ed. (1971) text, so it is not relied on for the state of the field; the "Date" section is 2nd-ed. Greenberg "Decalogue" — biblical section is 1st-ed. text with one 2nd-ed. sentence (Staples, Sperling); used for what it reports ("traditionally", "Critics … regard"), not for the current field. (4) Wright 2009 read in an ebook distributor's (pageplace.de) preview PDF of the OUP book, not an OUP-hosted page. (5) Samet 2017: edX asset PDF of IsraelX courseware (lecture text), treated like Open Yale transcripts. (6) SBL lesson plan: no author or date on the PDF (uploaded 2024/08). (7) Van De Mieroop and Farber Bible Odyssey pages: page dates are site bulk-import timestamps; year null. (8) Numbering: Brown and the NABRE place the Anglican tradition on opposite sides; the text says so and the short leaves Anglicans out. (9) Hayes l10 contains a slip ("vain oath as opposed to a false oath" for Deut 5) not cited; her "She" in name-in-vain/4 is Israel. (10) Chabad.org's live site refuses scripted requests; read in an Internet Archive snapshot. (11) Sweeney's extent "Exodus 21:1-24:18" is idiosyncratic; cited only for his date and his law-code view.
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+citations:
+  name/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  name/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  name/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  name/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  name/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  name/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  name/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  versions/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  versions/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  versions/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  versions/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  versions/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  versions/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  versions/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  versions/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  versions/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  versions/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ten-words/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ten-words/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ten-words/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ten-words/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ten-words/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ten-words/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ten-words/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ten-words/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  differences/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  differences/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  differences/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  differences/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  differences/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  differences/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  differences/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  differences/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composition/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composition/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composition/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composition/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  composition/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ritual-decalogue/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ritual-decalogue/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ritual-decalogue/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ritual-decalogue/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  ritual-decalogue/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  numbering/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  numbering/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  numbering/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  numbering/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  numbering/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  numbering/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  name-in-vain/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  name-in-vain/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  name-in-vain/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  name-in-vain/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  name-in-vain/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  addressed/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  addressed/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  addressed/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  addressed/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  addressed/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  covenant-code/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  covenant-code/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  covenant-code/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  covenant-code/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  covenant-code/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  covenant-code/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  covenant-code/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  oldest/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  date/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  date/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  date/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  date/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  date/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  date/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  date/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  date/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  date/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  parallels/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  parallels/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  parallels/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  parallels/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  parallels/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  parallels/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  miscarriage/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  miscarriage/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  miscarriage/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  miscarriage/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  miscarriage/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  miscarriage/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  miscarriage/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  talion/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  talion/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  talion/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  talion/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  talion/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  talion/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  talion/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  courts/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  courts/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  courts/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  courts/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  courts/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  courts/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  courts/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  deuteronomy/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  deuteronomy/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  deuteronomy/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  deuteronomy/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  deuteronomy/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  deuteronomy/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  deuteronomy/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  deuteronomy/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  deuteronomy/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  slaves/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  slaves/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  slaves/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  slaves/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  slaves/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  slaves/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  slaves/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  slaves/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+  tradition/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded.",
+    }
+triggers:
+  21@00:35:38:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  23@00:48:07:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  31@00:02:50:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  31@00:04:58:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  31@00:06:51:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  31@00:22:57:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  31@00:23:14:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  66@00:34:04:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  66@00:55:37:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  93@00:04:24:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  93@00:05:52:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  93@00:08:49:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  93@00:19:21:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  93@00:20:23:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  93@00:27:05:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  167@00:05:27:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+  187@00:05:58:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (contiguous span inside the turn); read the turns about two minutes either side; hedges noted in the triggers header.",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: 20 statements, 150 citations. Core oldest cites Halberstam 2017 (Scholarly), Samet 2017 (Reference), Edenburg 2019 (Scholarly, abstract), Paul and Sperling (EJ, Reference), Hayes l11 (Reference, nuance), Van Seters 2003 (Scholarly, abstract, dissent): 6 author strings, 4 counted by hand for the claim (Hayes and Van Seters not counted), none Host-authored.",
+    }
+  consensus-wording:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: “consensus” is not used on the page. “Most scholars” appears only as a source's own words, attributed (Brettler, Yoreh, Wright on his opponents, Farber), never in a short. “Many scholars” in shorts (ten-words, ritual-decalogue, hammurabi, courts, deuteronomy) is quoted from 2+ sources in each statement.",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: every dissent is named in the text: Edenburg (composition), Greenberg/EJ (ritual-decalogue), Van Seters (oldest, date, deuteronomy), Hayes (oldest: equally early P), Wright (hammurabi), Koller (deuteronomy), Sweeney and NABRE (courts).",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: tradition statement names each Tradition source in its own words: the Catholic Church (Catechism), Lutheran (Luther's Small Catechism), Reformed (Heidelberg Catechism, CRCNA), Chabad-Lubavitch (Chabad.org).",
+    }
+sources:
+  brown-bo-ten-commandments:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2017; access: Society of Biblical Literature website, open.",
+    }
+  brettler-2015-thetorah-ten-insights:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  nabre-exodus-20-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2011; access: Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests.",
+    }
+  hayes-rlst145-l10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2006; access: University courseware, open.",
+    }
+  brettler-wyrick-2023-thetorah-decalogue:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2023; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  harpercollins-2009-dictionary:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2009; access: Entries reproduced on the Society of Biblical Literature's Bible Odyssey, open.",
+    }
+  coogan-brief-4e-summary-ch7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2019; access: Publisher companion page, open.",
+    }
+  coogan-brief-4e-summary-ch8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2019; access: Publisher companion page, open.",
+    }
+  nabre-exodus-34-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2011; access: Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests.",
+    }
+  frankel-2018-thetorah-tablets:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2018; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  edenburg-2023-thetorah-origins-decalogue:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2023; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  sherman-2024-thetorah-ritual-decalogue:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2024; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  crawford-2019-thetorah-recensions:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2019; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  solomon-2013-thetorah-two-shabbats:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2013; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  yoreh-2015-thetorah-original-decalogue:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  greenberg-ej-decalogue:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not on page; access: Entry reproduced on the Jewish Virtual Library, open.",
+    }
+  brenner-idan-2016-thetorah-female-readers:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2016; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  paul-sperling-ej-book-covenant:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not on page; access: Entry reproduced on Encyclopedia.com, open.",
+    }
+  edenburg-2019-book-of-covenant:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2019; access: Publisher abstract, open (chapter paywalled; abstract only cited).",
+    }
+  halberstam-2017-law-biblical-israel:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2017; access: Publisher chapter page, full text open.",
+    }
+  samet-2017-israelx-ane-law:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2017; access: University courseware PDF, open.",
+    }
+  hayes-rlst145-l11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2006; access: University courseware, open.",
+    }
+  van-seters-2003-law-book-diaspora:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2003; access: Publisher abstract, open (book paywalled; abstract only cited).",
+    }
+  sweeney-2016-thetorah-debt-slavery:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2016; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  wright-2019-thetorah-hammurabi:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2019; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  horowitz-2024-thetorah-eye-for-eye:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2024; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  sbl-hammurabi-lesson:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not on page; access: Society of Biblical Literature website PDF, open.",
+    }
+  wright-2009-inventing-gods-law:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2009; access: Publisher ebook preview PDF (introduction), open.",
+    }
+  milstein-2021-thetorah-levirate:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2021; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  kazen-lipka-2026-thetorah-torah-law:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2026; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  jacobs-2020-thetorah-pregnant-woman:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2020; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  nabre-exodus-21-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2011; access: Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests.",
+    }
+  goodfriend-2017-thetorah-goring-ox:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2017; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  garroway-bo-abortion-miscarriage:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2022; access: Society of Biblical Literature website, open.",
+    }
+  collins-2024-thetorah-eye-for-eye:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2024; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  van-de-mieroop-bo-code-of-hammurabi:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not on page; access: Society of Biblical Literature website, open.",
+    }
+  levinson-2021-thetorah-judicial-system:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2021; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  levinson-2026-thetorah-tradition:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2026; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  farber-2015-thetorah-hebrew-slave:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  wright-2011-jhs-review-westbrook-wells:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly; 2011; access: Open-access journal, open.",
+    }
+  koller-2015-thetorah-hebrew-slave:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; 2015; access: Website, open (the live page renders by script; text read from the page's embedded article data or an Internet Archive copy).",
+    }
+  farber-bo-slavery-hebrew-bible:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference; year not on page; access: Society of Biblical Literature website, open.",
+    }
+  ccc-2052-2074:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; year not on page; access: Vatican website, open.",
+    }
+  ccc-2514:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; year not on page; access: Vatican website, open.",
+    }
+  luther-small-catechism:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; year not on page; access: Website, open.",
+    }
+  heidelberg-catechism-crcna:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; year not on page; access: Denominational website, open.",
+    }
+  chabad-ten-commandments:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition; year not on page; access: Website; read in an Internet Archive snapshot, as the live site refuses scripted requests.",
+    }
+leads:
+  - "Erhard Blum, “The Decalogue and the Composition History of the Pentateuch”, in The Pentateuch: International Perspectives (FAT 78, 2011): five-prohibition core; read only as reported by Edenburg 2023."
+  - "Shimon Gesundheit, Three Times a Year (FAT 82, 2012), 12–43, and David Carr, The Formation of the Hebrew Bible (2011), 264: Exodus 34 as a late compilation; cited by Sherman 2024; not read."
+  - "Bruce Wells, “The Covenant Code and Near Eastern Legal Traditions: A Response to David P. Wright”, Maarav 13 (2006): the main critique of Wright's dependence thesis; read only as reported by Wright 2009 and Milstein 2021; not public."
+  - "Raymond Westbrook, “The Laws of Biblical Israel” (2008), and Westbrook and Wells, Everyday Law in Biblical Israel (2009): critiques of literary dependence and of the revision model; read only as reported by Wright 2009 and Wright 2011."
+  - "William S. Morrow, review of Wright, Bibliotheca Orientalis 70 (2013), 309–331: said by Wright 2019 to accept dependence for Exodus 21:18–32; not read."
+  - "Bernard M. Levinson, Deuteronomy and the Hermeneutics of Legal Innovation (OUP 1997): the revision thesis in full; paywalled."
+  - "Jeffrey Stackert, Rewriting the Torah (2007): the Holiness Code revising the Covenant Code and Deuteronomy; cited by Sweeney; not read."
+  - "Carmen Joy Imes, Bearing YHWH's Name at Sinai (2018): the name command as bearing the name, not speech; publisher blurb only."
+  - "Michael LeFebvre, Collections, Codes, and Torah (2006): “Scholars of biblical law widely hold that ancient Israel did not draft law-texts for legislative purposes”, seen only in a podcast-site blurb."
+  - "Wright's review of Van Seters, JAOS 124.1 (2004): “most scholars think that CC is earlier than Deuteronomy and HC”; vLex preview only, not readable in full."
+  - "Levinson's numbering chart, Jewish Study Bible 2nd ed. (2014), p. 357; W. C. Marlowe, “Ten Commandments or Prohibitions?”, JIBS 8.2 (2022) (fetch blocked)."
+uncited:
+  - "Robert Gnuse, “Deuteronomic Redaction and the Evolution of the Decalogues in Exodus 20 and Deuteronomy 5”, Qeios 5 (2023): read; “There is also a debate concerning the priority of Exodus 20 or Deuteronomy 5”. Not cited: Qeios uses open post-publication review, not shown to be peer-reviewed, and no second source states the priority debate."
+  - "William S. Morrow, “Some Characteristics of Biblical Law”, The Bible and Interpretation (2017): read; three viewpoints on law collections and practice. Not cited: a web magazine, near the #80 blogs exclusion."
+  - "New Catholic Encyclopedia, “Commandments, Ten” (Polan): read; “critical scholars generally … abandon the position” that the Decalogue came from the later prophets. Not cited: bibliography stops at 1962, text outside the 30-year window."
+  - "Walter Harrelson, “Ten Commandments”, Encyclopedia of Religion (1987): read; “oldest listing of the ‘Ten Words’ (Ex. 34:28)”. Outside the 30-year window."
+  - "NET Bible note on Exodus 20:7: read; relies on Driver (1911); evangelical publisher; not cited."
+  - "Ronald H. Isaacs, My Jewish Learning, “The Ten Commandments”: read; misstates the Catholic ninth/tenth order (matches Luther only); not cited."
+  - "Encyclopaedia Judaica, “Deuteronomy” (Weinfeld/Sperling): read; “complementing … or supplementing” the Book of the Covenant; probably 1st-ed. text; not cited (Hayes reports Weinfeld differently)."
+  - "Christine Hayes l10, “God's name in Deuteronomy 5 is not to be used in a vain oath as opposed to a false oath”: read; not cited, as both verses have the same Hebrew word (the šāwʾ/šeqer difference is in the witness command)."
+  - "Pietersen, Journal for Semitics 30/1 (2021): read; “all in agreement that the Covenant Code is the oldest”: overstated against Edenburg and Van Seters, and leans on 1960s sources; not cited."
+  - "Ada Taggar-Cohen, “Hittite Laws and Texts” (Bible Odyssey): read; Hittite laws were in use, unlike Mesopotamian collections; not cited (about Hittite law, not the Covenant Code)."
+  - "Coogan and Chapman ch. 10 summary: read; Deuteronomy's laws “parallel and modify laws found elsewhere”; generic, not naming the Covenant Code; not cited."
+  - "Rollston (TheTorah 2017), Levinson 2021 body, Morrow via Wright: read or seen; not needed beyond the cited Hammurabi sources."
