@@ -1,8 +1,8 @@
 ---
 title: "Acts of the Apostles"
 entryKind: composition
-draft: true
-sourcesRead:
+draft: false
+sourcesRead: 2026-11-26
 related:
   {
     books: [acts, luke],
@@ -17,7 +17,6 @@ watch:
     author of Acts,
     date Acts,
     dating Acts,
-    house arrest,
   ]
 critical:
   display: "70 to the early 90s CE, or the early 2nd century CE"
