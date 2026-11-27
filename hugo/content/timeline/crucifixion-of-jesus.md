@@ -1,8 +1,7 @@
 ---
 title: "The crucifixion of Jesus"
 entryKind: event
-draft: true
-sourcesRead:
+sourcesRead: 2026-11-26
 related:
   {
     books: [matthew, mark, luke, john],
