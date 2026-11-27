@@ -4,6 +4,8 @@
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #136 re-match, 2026-11-23: online quotes re-fetched by script and matched verbatim after normalising whitespace, quotes, dashes and inline markup; USCCB refused the script (403, twice); Trigger Claims matched against the final Transcript line.
 # #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading).
+# #210 anchor check, 2026-11-26 (first pass): no `critical.anchor: cyrus-babylon`. NABRE's “from the eighth century to the exile and beyond” is the nearest; no cited source names Cyrus or the Persian period. Its placement (from -800) is sourced. An `anchor` sets the entry's placement year to the anchored entry's (timeline-placement.html), so it fits only an entry with no sourced year of its own (as priestly-genesis-1 → fall-of-jerusalem); here it would replace a sourced `from` and is not added. Entry unchanged.
+# #210 anchor check, second pass, 2026-11-26: agree, no anchor. Re-read NABRE Deuteronomy intro (Chrome), Coogan ch. 10 and Hayes L11: none names Cyrus or the Persian period; NABRE’s “exile and beyond” is the nearest. An anchor would replace the sourced -800. First-pass line unchanged.
 review: 2026-11-24
 citations:
   critical/1:

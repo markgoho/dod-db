@@ -4,6 +4,8 @@
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #134 re-match, 2026-11-23: quotes re-fetched by script from Open Yale and matched verbatim after normalising whitespace, quotes and dashes; Trigger Claims matched against the final Transcript line.
 # #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading).
+# #210 anchor check, 2026-11-26 (first pass): no `critical.anchor: cyrus-babylon`. Hayes gives “the exilic or post-exilic period”; the exilic side begins before 539, so the existing `anchor: fall-of-jerusalem` covers both sides and cyrus-babylon would drop the exilic one. Kept as is. Entry unchanged.
+# #210 anchor check, second pass, 2026-11-26: agree, keep `anchor: fall-of-jerusalem`. Hayes’s “the exilic or post-exilic period” (stored quote) begins before 539; cyrus-babylon would drop the exilic side. Nothing re-fetched. First-pass line unchanged.
 review: 2026-11-24
 citations:
   critical/1:

@@ -4,6 +4,8 @@
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #134 re-match, 2026-11-23: online quotes re-fetched by script and matched verbatim after normalising whitespace, quotes and dashes; USCCB refused the script (403); Trigger Claims matched against the final Transcript line.
 # #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading).
+# #210 anchor check, 2026-11-26 (first pass): no `critical.anchor: cyrus-babylon`. NABRE dates the poems relative to “the catastrophe of 587 B.C.”, not to Cyrus; no cited source names the Persian period. It has its own year, -587 (open). An `anchor` sets the entry's placement year to the anchored entry's (timeline-placement.html), so it fits only an entry with no sourced year of its own (as priestly-genesis-1 → fall-of-jerusalem); here it would replace a sourced `from` and is not added. Entry unchanged.
+# #210 anchor check, second pass, 2026-11-26: agree, no anchor. Re-read NABRE Lamentations intro (Chrome) and Coogan ch. 20: only 587 B.C., no Cyrus or Persian period. An anchor would replace the sourced -587. First-pass line unchanged.
 review: 2026-11-24
 citations:
   critical/1:
