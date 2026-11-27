@@ -26,7 +26,7 @@ critical:
   display: "164 BCE"
   from: -164
   precision: year
-  note: "Antiochus IV Epiphanes had desecrated the Temple in 167 BCE, the year Levine dates his decree banning circumcision and religious observance. The sources date the outbreak of the revolt that followed to 167 (Henze and Werline's chronology) or 166 (Levine, “the year following” the decrees; Britannica's article on Antiochus IV); Britannica's article on the Maccabees gives the wars of independence as 168–164 BCE. Antiochus IV died in 164 BCE, about the same time as the rededication."
+  note: "Antiochus IV Epiphanes had desecrated the Temple in 167 BCE, the year Levine dates his decree banning circumcision and religious observance. Sources date the outbreak of the revolt that followed to 167 (Henze and Werline's chronology) or 166 (Levine, “the year following” the decrees; Britannica's article on Antiochus IV). Antiochus IV died in 164 BCE, about the same time as the rededication."
   cites:
     - source: henze-werline-2020-ejmi
       locator: "Chronology, p. xi (BCE), row 164"
@@ -41,11 +41,11 @@ critical:
       quote: "This occurred in the month of Kislev, 164 B.C.E., exactly three years after the persecution of the Jews had commenced."
       read: 2026-11-27
     - source: seeman-bo-hanukkah
-      locator: "opening paragraph"
+      locator: "paragraph beginning “Hanukkah, a term from”, after the summary line"
       quote: "The festival commemorates the purification and rededication of the Jerusalem temple by Judah, nicknamed “Maccabee” (likely from the Aramaic for “hammer”) and his followers in 164 BCE."
       read: 2026-11-27
     - source: britannica-hanukkah
-      locator: "Origin section, opening paragraph"
+      locator: "section “Origin and history”, subsection “The Maccabean victory”, first paragraph"
       quote: "the rededication of the Temple on Kislev 25, 164 BCE"
       read: 2026-11-27
     - source: henze-werline-2020-ejmi
@@ -67,10 +67,6 @@ critical:
     - source: britannica-antiochus-iv-epiphanes
       locator: "section “The revolt of Judas Maccabeus”, first paragraph"
       quote: "at the beginning of their rebellion in 166"
-      read: 2026-11-27
-    - source: britannica-maccabees
-      locator: "opening paragraph"
-      quote: "the hero of the Jewish wars of independence, 168–164 BCE"
       read: 2026-11-27
     - source: nabre-1-maccabees-6-notes
       locator: "note to 1 Mc 6:16"
