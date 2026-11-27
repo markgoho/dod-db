@@ -11,7 +11,7 @@ critical:
   from: -550
   to: -538
   precision: year
-  note: "Oracles of the Babylonian exile, by an anonymous prophet. Another source dates the prophecies to about 540 BCE, alluding to Cyrus's impending conquest of Babylon (539); others say the sixth century, in Babylon, and that the poet prophesied toward the end of the exile."
+  note: "Oracles of the Babylonian exile. Encyclopaedia Judaica, treating chapters 40–66 together, dates the prophet's utterances with approximate accuracy to 540 BCE, from his allusions to Cyrus's impending conquest of Babylonia (539). Coogan and Chapman's summary says Second Isaiah was composed sometime in the sixth century, in Babylon; the NABRE's introduction says chapters 40–55 are generally attributed to an anonymous poet who prophesied toward the end of the Babylonian exile."
   cites:
     - source: hill-nce-isaiah
       locator: "section “Analysis”, ¶ 1"

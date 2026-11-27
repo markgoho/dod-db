@@ -9,87 +9,96 @@
 # agent: the first pass (2026-11-26, lead agent). Pages fetched by curl (browser UA) into the lead's scratch folders (first: OUP Coogan ch. 21–22, USCCB NABRE Isaiah intro, Yale RLST 145 lectures 19–20; tradition: Got Questions pages) and one critical-side research agent's own folder (critical-agent); Britannica read in Claude in Chrome (refuses scripts) and the article text saved from the DOM (critical-chrome; uncited). NCE and EJ fetched by the research agent from encyclopedia.com (ec-isaiah-book, ej-isaiah). One script matched every quote against its saved text (NFKC, whitespace, quotes, dashes and HTML entities normalised): 5/5 hits, 0 misses, each once; all 3 Trigger Claims matched as substrings of their Transcript lines at timestamp and speaker.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Trigger E43@00:49:42 is Dan Beecher reading a Got Questions sentence; it states the tradition's side on authorship, not a year. If it does not count as stating the tradition's side, cut the trigger and the whole `tradition` block; the entry stands on its critical side. (2) Tradition scope: Got Questions dates 40–66, not 40–55; display carries the scope. (3) EJ's 540 is said of "Chapters 40–66" taken together ("for purposes of this article they will be considered in conjunction with them"), though its evidence (45:1; 47:1) is in 40–55; the note says "the prophecies". Narrow or cut if it reads as dating 40–55 alone. (4) NCE edition and year are not printed on the encyclopedia.com page (registry year null, as for jensen-nce-flood); bibliography and signature "[w. hill]" only. If it falls outside #86's window, the display falls back to Coogan's "6th century BCE" (from -600 / to -501). (5) NCE's "approximately dated" scopes all four sections; check the display's "Approximately" is no stronger or weaker. (6) Note wording: check each clause against its source ("anonymous prophet": NABRE's "anonymous poet"; "Oracles of the Babylonian exile": NCE's "oracles of the Exile").
+# Independent second agent pass 2026-11-26 (#93 delegation, #110): a fresh agent that did not build the entry, working from its own scratch folder only (p2). Re-fetched by curl (browser UA), all 200: encyclopedia.com isaiah-book (NCE) and isaiah (EJ); learninglink.oup.com coogan-brief-4e-chapter-21-summary; bible.usccb.org/bible/isaiah/0; gotquestions.org when-was-Isaiah-written.html, about.html and Deutero-Isaiah.html (uncited; to check the tradition trigger). Scripts and styles stripped, tags removed, entities decoded; one script matched each quote after NFKC and normalising whitespace, quotes and dashes, and closing the spaces Encyclopedia.com prints around dashes and inside parentheses (NCE's “(740 – 690)”): 5/5 quotes matched, each once, each at its locator. Trigger Claims matched as exact substrings of their final Transcript lines (via processed-videos.json transcriptPath): 3/3, each once, at timestamp and speaker, read about two minutes either side.
+# Second pass changed (entry note only; title, display, from/to, tradition display and holder unchanged; no citation or Trigger Claim cut). Before: “Oracles of the Babylonian exile, by an anonymous prophet. Another source dates the prophecies to about 540 BCE, alluding to Cyrus's impending conquest of Babylon (539); others say the sixth century, in Babylon, and that the poet prophesied toward the end of the exile.” After: “Oracles of the Babylonian exile. Encyclopaedia Judaica, treating chapters 40–66 together, dates the prophet's utterances with approximate accuracy to 540 BCE, from his allusions to Cyrus's impending conquest of Babylonia (539). Coogan and Chapman's summary says Second Isaiah was composed sometime in the sixth century, in Babylon; the NABRE's introduction says chapters 40–55 are generally attributed to an anonymous poet who prophesied toward the end of the Babylonian exile.” Why: “by an anonymous prophet” was no cited source's wording; EJ's date was said of 40–66 taken together and of Babylonia; “alluding” dangled onto the source; “others” folded two single-source statements together; NABRE's “generally attributed” hedge was dropped. Review notes corrected: E90 trigger is the sixth and seventh sentences of its line; E43@00:49:42 is the first sentence of its turn, not the whole turn.
+# Second-pass rulings on the first pass's flags: (1) Kept. #80 makes a Trigger Claim any substantive assertion by a Speaker about the subject; Beecher relays a named holder's position (precedent: bible-composition's E175@00:15:14, McClellan relaying what “they” say), and the Transcript ties it to the date: McClellan says at 00:48:54 that 40 to the end were “absolutely not written in the 8th or even the 7th century BCE”, Beecher answers at 00:49:27 that he found articles “skeptical of this claim”, then reads Got Questions against multiple Isaiahs. So it states the tradition's side of the dating question (#99: “a datable verdict”). Support only, not read on air: the Got Questions page frames multiple authorship as “re-dating” the prophecies. Weak points (lead flag 1): it is a question, relays a third party, and speaks of authorship, not a year. (2) Accepted: the display carries “for chapters 40–66”. (3) Kept, narrowed: the note now states EJ's 40–66 scope. (4) Accepted, not confirmed: bibliographies run to 1998 (NCE) and 2005 (EJ), so both are likely 2nd-edition text (NCE 2003, EJ 2007) and inside #86's 30-year window, the same inference as jensen-nce-flood (“likely the 2nd ed., 2003; not confirmed”); NCE's body still recommends a 1961 translation, so at best a revision of older text; years stay null (lead flag 2). (5) Accepted: “approximately dated” scopes all four sections, including ch. 40 to 55; “Approximately” is no stronger or weaker. (6) Fixed: “anonymous prophet” cut; NABRE's “generally attributed … anonymous poet” now carried as NABRE's; “Oracles of the Babylonian exile” kept for NCE's “oracles of the Exile”.
+# Flags for the lead: (1) If a tradition trigger must itself state a date or period, cut E43@00:49:42 and the whole `tradition` block; the critical side still meets the entry rule (four Reference sources: NCE, EJ, Coogan summary, NABRE; NCE alone carries 550–538). (2) The display's 550–538 rests on NCE alone; if NCE's likely-2nd-edition inference (bibliography only) is not enough for the window, the display falls back to Coogan's sixth century (from -600 / to -501), with EJ's 540 and NABRE in the note.
 review:
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "New Catholic Encyclopedia, “Isaiah, Book of” (signed [w. hill]), section “Analysis”, ¶ 1, first sentence up to section (3). Fetched by the research agent; matched once. Backs the display “Approximately 550–538 BCE” and the note's “Oracles of the Babylonian exile”. Flags 4 and 5.",
+      note: "New Catholic Encyclopedia, “Isaiah, Book of” (signed [w. hill]), section “Analysis”, ¶ 1, first sentence up to section (3). Fetched by the research agent; matched once. Backs the display “Approximately 550–538 BCE” and the note's “Oracles of the Babylonian exile”. Flags 4 and 5. Second pass 2026-11-26: re-fetched encyclopedia.com isaiah-book (200); matched once (after closing the page's spaced dashes and parens, “740 – 690” etc.) as the first paragraph under the “ANALYSIS” heading, locator confirmed; the sentence goes on to (4) ch. 56 to 66 (520–500). “approximately dated” scopes all four sections and so ch. 40 to 55: the display's “Approximately” is exactly as strong (flag 5). Signature [w. hill] confirmed. Bibliography runs to 1998 (Brueggemann; Broyles and Evans 1997), so likely 2nd-edition text (2003), not confirmed, as for jensen-nce-flood; inside the 30-year window if so (flag 4). Kept.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Encyclopaedia Judaica, “Isaiah”, Introduction (signed [Theodore Friedman]), last paragraph of “Survey of Views of the Authorship of Isaiah”. Matched once. Backs the note's “about 540 BCE, alluding to Cyrus's impending conquest of Babylon (539)”. Flag 3 (scope 40–66).",
+      note: "Encyclopaedia Judaica, “Isaiah”, Introduction (signed [Theodore Friedman]), last paragraph of “Survey of Views of the Authorship of Isaiah”. Matched once. Backs the note's “about 540 BCE, alluding to Cyrus's impending conquest of Babylon (539)”. Flag 3 (scope 40–66). Second pass 2026-11-26: re-fetched encyclopedia.com isaiah (200); matched once in the last paragraph of “survey of views of the authorship of isaiah” (it begins “Chapters 40–66 of the Book of Isaiah”), closed by [Theodore Friedman]; no other signature in the Introduction. The paragraph says 56–66 are “considered in conjunction” with 40–55 “for purposes of this article”, so the 540 is said of 40–66 taken together; its evidence (45:1ff.; 47:1) is in 40–55. Kept, narrowed: the note now says “Encyclopaedia Judaica, treating chapters 40–66 together, dates the prophet's utterances with approximate accuracy to 540 BCE”, and “Babylonia” (EJ's word) for “Babylon” (flag 3). Bibliography runs to 2005: likely 2nd-edition text (2007), not confirmed.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Coogan ch. 21 OUP summary (4th ed.), section “Second Isaiah”, ¶ 1, last sentence. Matched once. Backs the note's “the sixth century, in Babylon”. The same paragraph's evidence (Babylon not Assyria, “two statements about Cyrus of Persia”, an anonymous speaker) is not cited.",
+      note: "Coogan ch. 21 OUP summary (4th ed.), section “Second Isaiah”, ¶ 1, last sentence. Matched once. Backs the note's “the sixth century, in Babylon”. The same paragraph's evidence (Babylon not Assyria, “two statements about Cyrus of Persia”, an anonymous speaker) is not cited. Second pass 2026-11-26: re-fetched (200; page title as recorded); matched once, last sentence of section “Second Isaiah” ¶ 1. The paragraph's subject is “Isaiah 40-55”. Note now attributes it (“Coogan and Chapman's summary says Second Isaiah was composed sometime in the sixth century, in Babylon”) instead of folding it into “others say”. Kept.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "NABRE Isaiah introduction, ¶ 8, first sentence (the paragraph `isaiah-56-66` cites for 56–66). Fetched by script 2026-11-26 (200); matched once. Backs the note's “anonymous” and “the poet prophesied toward the end of the exile”; “generally attributed” is a hedge on the attribution.",
+      note: "NABRE Isaiah introduction, ¶ 8, first sentence (the paragraph `isaiah-56-66` cites for 56–66). Fetched by script 2026-11-26 (200); matched once. Backs the note's “anonymous” and “the poet prophesied toward the end of the exile”; “generally attributed” is a hedge on the attribution. Second pass 2026-11-26: re-fetched bible.usccb.org/bible/isaiah/0 (200); matched once; ¶ 8 of the introduction counting <p> elements, locator confirmed. Note narrowed: it dropped “generally attributed” and said “the poet prophesied”; now “the NABRE's introduction says chapters 40–55 are generally attributed to an anonymous poet who prophesied toward the end of the Babylonian exile”. The first sentence's “by an anonymous prophet”, no cited source's wording, is cut (flag 6). Kept.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "Got Questions “When was Isaiah written?”, answer ¶ 5, first sentence. Matched once. Backs display “Approximately 700–680 BCE, for chapters 40–66”, from -700 / to -680. Holder is the registry string already used for Got Questions (about page: “We are Christian, evangelical, theologically conservative, and nondenominational.”).",
+      note: "Got Questions “When was Isaiah written?”, answer ¶ 5, first sentence. Matched once. Backs display “Approximately 700–680 BCE, for chapters 40–66”, from -700 / to -680. Holder is the registry string already used for Got Questions (about page: “We are Christian, evangelical, theologically conservative, and nondenominational.”). Second pass 2026-11-26: re-fetched (200; “This page last updated: March 25, 2025”); matched once (the page's em dashes in “40—66”), answer ¶ 5 counting from “The book of Isaiah emphasizes”, locator confirmed. The page ties 1–39's dates to “Isaiah's ministry and the book's composition”; 40–66 is given as one block, so the display's “for chapters 40–66” carries its scope (flag 2). Holder re-checked on about.html (updated April 20, 2026): “Christian, evangelical, theologically conservative, and nondenominational”. Kept.",
     }
 triggers:
   43@00:45:20:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the [00:45:20.710] Dan McClellan line, from “That all of this combines” to “the first layers of Deutero-Isaiah being produced”; the turn goes on to Third Isaiah (stored for `isaiah-56-66`). The trimmed start drops the evidence (Cyrus named, Aramaic loanwords), not a hedge; “probably” and “Most scholars would say” are kept. Read 00:37:44–00:50:29.",
+      note: "states: critical. Substring of the [00:45:20.710] Dan McClellan line, from “That all of this combines” to “the first layers of Deutero-Isaiah being produced”; the turn goes on to Third Isaiah (stored for `isaiah-56-66`). The trimmed start drops the evidence (Cyrus named, Aramaic loanwords), not a hedge; “probably” and “Most scholars would say” are kept. Read 00:37:44–00:50:29. Second pass 2026-11-26: re-read 00:43:07–00:47:47 in the final Transcript; stored text is a substring (count 1) of the [00:45:20.710] Dan McClellan line, speaker and timestamp confirmed. Hedges “probably” (twice) and “Most scholars would say” kept. It says after the exile; the sources say during it: #99, shown verbatim, gap unexplained. Pass.",
     }
   90@00:39:52:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the [00:39:52.900] Dan McClellan line (fourth and fifth sentences); the turn goes on to Isaiah 40:22 and the circle of the earth. Hedge “probably” kept. Read 00:38:47–00:42:27.",
+      note: "states: critical. Substring of the [00:39:52.900] Dan McClellan line (fourth and fifth sentences); the turn goes on to Isaiah 40:22 and the circle of the earth. Hedge “probably” kept. Read 00:38:47–00:42:27. Second pass 2026-11-26: re-read 00:37:02–00:42:37; substring (count 1) of the [00:39:52.900] Dan McClellan line, speaker and timestamp confirmed. Correction: it is the line's sixth and seventh sentences (counting “Yes.”), not the fourth and fifth. Hedge “probably” kept. Pass.",
     }
   43@00:49:42:
     {
       agent: pass,
       owner: "",
-      note: "states: tradition. The second [00:49:42.900] Dan Beecher turn, whole, reading Got Questions' Deutero-Isaiah page (same sentence verbatim there). McClellan answers at 00:50:09 that it is a value judgment. Read 00:48:54–00:52:41. Flag 1.",
+      note: "states: tradition. The second [00:49:42.900] Dan Beecher turn, whole, reading Got Questions' Deutero-Isaiah page (same sentence verbatim there). McClellan answers at 00:50:09 that it is a value judgment. Read 00:48:54–00:52:41. Flag 1. Second pass 2026-11-26: re-read 00:48:54–00:52:41; substring (count 1) of the [00:49:42.900] Dan Beecher line, speaker and timestamp confirmed. Correction: the stored text is the turn's first sentence, not the whole turn (it goes on “Can you confirm that it's just scholars trying to, to ruin it for all the believers out there.”). Re-fetched gotquestions.org/Deutero-Isaiah.html (updated March 12, 2024): the sentence is there, matching after case-folding (“The theory …”, “inspired Word”); the same paragraph says liberal scholars explain the fulfilled prophecies “by re-dating them to after the events occurred”, so the position Beecher relays is the ministry's side of the dating question. Flag 1 ruled: kept (see header).",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Worded for chapters 40–55, which NCE, NABRE (by chapter numbers) and Coogan (“Isaiah 40–55” in the same paragraph) date. EJ's 540 is for 40–66 taken together: in the note only, as “the prophecies” (flag 3).",
+      note: "Worded for chapters 40–55, which NCE, NABRE (by chapter numbers) and Coogan (“Isaiah 40–55” in the same paragraph) date. EJ's 540 is for 40–66 taken together: in the note only, as “the prophecies” (flag 3). Second pass 2026-11-26: pass. Display and title are 40–55, as NCE (“ch. 40 to 55”), NABRE and Coogan's paragraph date it; EJ's 40–66 scope now stated in the note.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "No split: EJ's about 540 lies inside NCE's 550–538; Coogan's sixth century and NABRE's toward the end of the exile contain both. The show's 520 / 5th century is the show's, not a source's.",
+      note: "No split: EJ's about 540 lies inside NCE's 550–538; Coogan's sixth century and NABRE's toward the end of the exile contain both. The show's 520 / 5th century is the show's, not a source's. Second pass 2026-11-26: pass. EJ's about 540 is inside NCE's approximate 550–538; Coogan's sixth century and NABRE's end of the exile contain both. No split.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "Trigger 43@00:49:42 has states: tradition (flag 1).",
+      note: "Trigger 43@00:49:42 has states: tradition (flag 1). Second pass 2026-11-26: pass, on the flag 1 ruling (trigger kept).",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "Holder “Got Questions Ministries, an evangelical ministry”, the ministry's own “evangelical”; never “the traditional view”.",
+      note: "Holder “Got Questions Ministries, an evangelical ministry”, the ministry's own “evangelical”; never “the traditional view”. Second pass 2026-11-26: pass. Holder is the ministry's own self-description; the entry never says “traditional”.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date. NCE's “approximately” and EJ's “with approximate accuracy” are hedges, kept (display, note); NABRE's “generally attributed” is a hedge on the attribution.",
+      note: "No conditional date. NCE's “approximately” and EJ's “with approximate accuracy” are hedges, kept (display, note); NABRE's “generally attributed” is a hedge on the attribution. Second pass 2026-11-26: pass. No conditional date; the hedges (NCE “approximately”, EJ “with approximate accuracy”, NABRE “generally attributed”) are now each carried in the display or note.",
     }
 sources:
   coogan-brief-4e-summary-ch21:
@@ -97,34 +106,34 @@ sources:
       agent: pass,
       owner: "",
       edition: "4th ed., 2019, OUP Learning Link companion summary",
-      note: "Reference (publisher chapter summary, #86), already in the registry (cited on `cyrus-babylon`). Page title “Chapter 21 Summary - A Brief Introduction to the Old Testament 4e Student Resources”.",
+      note: "Reference (publisher chapter summary, #86), already in the registry (cited on `cyrus-babylon`). Page title “Chapter 21 Summary - A Brief Introduction to the Old Testament 4e Student Resources”. Second pass 2026-11-26: page re-fetched; 4th ed. per the page title and registry (2019, as already used on cyrus-babylon). Reference. Pass.",
     }
   hill-nce-isaiah:
     {
       agent: pass,
       owner: "",
       edition: "New Catholic Encyclopedia, edition and year not printed on the Encyclopedia.com page",
-      note: "Reference (encyclopedia; NCE entries are Reference in the registry: jensen-nce-flood, collins-nce-pastoral-epistles, wild-nce-shroud-of-turin). New registry entry. Signed “[w. hill]”. Flag 4.",
+      note: "Reference (encyclopedia; NCE entries are Reference in the registry: jensen-nce-flood, collins-nce-pastoral-epistles, wild-nce-shroud-of-turin). New registry entry. Signed “[w. hill]”. Flag 4. Second pass 2026-11-26: Reference. Likely 2nd-edition text by bibliography (to 1998), not confirmed; year left null as for jensen-nce-flood. Pass, lead flag 2.",
     }
   friedman-ej-isaiah:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica, edition and year not printed on the Encyclopedia.com page",
-      note: "Reference (encyclopedia), like porten-ej-temple. New registry entry; the Introduction is signed [Theodore Friedman], the Deutero-Isaiah section [Isaac Avishur] (uncited).",
+      note: "Reference (encyclopedia), like porten-ej-temple. New registry entry; the Introduction is signed [Theodore Friedman], the Deutero-Isaiah section [Isaac Avishur] (uncited). Second pass 2026-11-26: Reference. Likely 2nd-edition text by bibliography (to 2005), not confirmed; year null as for porten-ej-temple. Pass.",
     }
   nabre-isaiah-intro:
     {
       agent: pass,
       owner: "",
       edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
-      note: "Reference (#86; CONTEXT.md: notes by a scholarly association). Already in the registry (cited on `isaiah-56-66`).",
+      note: "Reference (#86; CONTEXT.md: notes by a scholarly association). Already in the registry (cited on `isaiah-56-66`). Second pass 2026-11-26: Reference, OT 2011 revision, inside the window (#86). Pass.",
     }
   gotquestions-when-was-isaiah-written:
     {
       agent: pass,
       owner: "",
-      note: "Tradition (#86: Got Questions). New registry entry. Supports only what the ministry holds. Page last updated March 25, 2025.",
+      note: "Tradition (#86: Got Questions). New registry entry. Supports only what the ministry holds. Page last updated March 25, 2025. Second pass 2026-11-26: Tradition; no window. Pass.",
     }
 leads:
   - "Yale Divinity School study guide on Isaiah, reportedly “around 538-539 B.C.” (search snippet; PDF 404): not read."
