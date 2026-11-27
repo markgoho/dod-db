@@ -294,8 +294,7 @@
   gap: 0;
 }
 
-.scholarship-share:has(#share-card:target)
-  :is(.satan-comic__kicker, .satan-comic__key) {
+.scholarship-share:has(#share-card:target) .satan-comic__key {
   display: none;
 }
 

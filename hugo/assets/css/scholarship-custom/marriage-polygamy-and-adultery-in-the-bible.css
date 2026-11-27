@@ -209,8 +209,7 @@
   gap: 0;
 }
 
-.scholarship-share:has(#share-card:target)
-  :is(.mpa-comic__kicker, .mpa-comic__key) {
+.scholarship-share:has(#share-card:target) .mpa-comic__key {
   display: none;
 }
 
