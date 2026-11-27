@@ -1,7 +1,6 @@
 ---
 title: "The Origins of Hell"
 dek: "What the Hebrew Bible says about Sheol, how Gehenna became a place of punishment, where early Jewish writings first separate the fates of the righteous and the wicked, and what the New Testament's words for hell mean."
-draft: true
 core: sheol
 sourcesRead: 2026-11-26
 related:
