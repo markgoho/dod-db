@@ -1,7 +1,6 @@
 ---
 title: "1 Enoch, the Watchers and the Nephilim"
 dek: "What 1 Enoch and Jubilees are, when and in what languages they were written, how scholars read the sons of God and the Nephilim of Genesis 6, and what the story of the Watchers does with them."
-draft: true
 core: composite
 sourcesRead: 2026-11-27
 related:
