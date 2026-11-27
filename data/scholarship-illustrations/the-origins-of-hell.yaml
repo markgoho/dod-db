@@ -1,0 +1,107 @@
+# Illustrations for /scholarship/the-origins-of-hell/ (generated with Gemini;
+# see src/scripts/generate-scholarship-illustrations.ts). Each picture shows
+# only what the listed statements support; every caption, link and claim
+# stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Five comic panels in time order, with two settings each drawn twice:
+# Sheol, one shadowy underworld holding all the dead alike; the Valley of
+# Hinnom, a real valley by Jerusalem; the same underworld divided into
+# separate places in 1 Enoch; Daniel 12's dead rising to life or to
+# disgrace; and the same valley, in the New Testament, the fiery place where
+# sinners are punished. `sheol` is the anchor for the underworld and its
+# shades, chained into `enoch` and `daniel`; `hinnom` is chained into
+# `gehenna`. No devils, horns, pitchforks or tormented people anywhere: no
+# statement gives hell a look beyond fire. The valley has no fire, smoke or
+# refuse before the New Testament panel: the page finds no evidence of a
+# burning dump, and its child sacrifice is not drawn.
+slug: the-origins-of-hell
+images:
+  - id: sheol
+    statements: [sheol]
+    aspect: "4:3"
+    alt: "A cut-away view of the earth: a quiet hillside with a rock-cut tomb above, and beneath the soil a dim, shadowy cavern where a dense crowd of identical grey shades of the dead, old and young, stand together, still."
+    prompt: >-
+      A cut-away view of the earth, like a cross-section diagram. The TOP
+      fifth of the picture is a quiet, ordinary hillside in ancient Judah in
+      daylight, with a small rock-cut tomb entrance and a few olive trees.
+      Below a thick band of brown soil and rock, the rest of the picture is
+      a wide, dim, shadowy underground cavern, light warm grey and near-black
+      with halftone shading. Filling the cavern is a dense crowd of the
+      shades of the dead, too many to count: pale grey, faint, ghostly human
+      figures, men and women, old and young, all drawn exactly alike, in the
+      same plain grey shrouds, standing together quietly, calm and still,
+      with blank sleepy expressions. Nobody is separated from anybody. The
+      BOTTOM LEFT quarter of the cavern is plain dark empty rock floor with
+      no figures. Negative list: no fire, no flames, no devils, no demons,
+      no horns, no pitchforks, no chains, no suffering, no light rays, no
+      angels, no text.
+
+  - id: hinnom
+    statements: [gehenna]
+    aspect: "4:3"
+    alt: "A deep, quiet valley below the stone walls of ancient Jerusalem, with a rough stone altar standing cold and empty on the valley floor."
+    prompt: >-
+      A deep, steep-sided valley just outside the high stone walls of
+      ancient Jerusalem, in plain daylight. The city walls and a few flat
+      roofs run along the TOP RIGHT of the picture, on the ridge above the
+      valley. Down on the valley floor, in the RIGHT half, stands one rough,
+      low stone altar built of unhewn stones, cold and empty: nothing on it,
+      nothing burning. Rocky slopes, a few shrubs and terraces. No people.
+      The BOTTOM LEFT quarter of the picture is plain empty valley floor and
+      the TOP LEFT is plain pale sky. Negative list: no fire, no flames, no
+      smoke, no embers, no rubbish, no garbage, no bones, no people, no
+      animals, no text.
+
+  - id: enoch
+    statements: [separate-fates]
+    aspect: "4:3"
+    refs: [sheol]
+    alt: "The same underground cavern of the dead, now divided by rock walls into separate hollows: in one, lit warm amber, calm shades wait together; the others are dark, their shades apart."
+    prompt: >-
+      The SAME cut-away view of the earth and the SAME shadowy underground
+      cavern of the dead as in the reference image, with the same pale grey
+      ghostly shades in plain grey shrouds and the same hillside on top. But
+      now the cavern is divided by thick walls of rock into separate hollow
+      chambers, side by side, each holding its own group of shades. The
+      chamber on the RIGHT is lit with a soft warm golden amber glow and its
+      shades stand calm and upright. The other chambers are darker, near
+      black with halftone, and their shades stand apart, heads bowed,
+      waiting. The BOTTOM LEFT quarter of the picture is plain dark empty
+      rock with no figures. Negative list: no fire, no flames, no devils, no
+      demons, no horns, no pitchforks, no chains, no torture, no angels, no
+      text.
+
+  - id: daniel
+    statements: [daniel-12]
+    aspect: "4:3"
+    refs: [sheol]
+    alt: "At dawn on a hillside of open graves, the dead rise in plain grey shrouds: those on the left look up into golden light; those on the right rise in shadow, heads bowed and faces hidden in shame."
+    prompt: >-
+      A hillside of simple earth graves at dawn. The dead are rising out of
+      the open ground: the SAME pale figures in plain grey shrouds as in the
+      reference image, now solid and alive, men and women, old and young,
+      climbing up out of the earth. On the LEFT side, a group rises into a
+      broad wash of warm golden amber dawn light, faces lifted, joyful and
+      calm. On the RIGHT side, another group rises in cold grey shadow, heads
+      bowed, hiding their faces in their hands in shame. The BOTTOM LEFT and
+      BOTTOM RIGHT corners of the picture are plain bare earth with nothing
+      in them. Negative list: no fire, no flames, no devils, no demons, no
+      horns, no angels, no wings, no skeletons, no corpses, no blood, no
+      text.
+
+  - id: gehenna
+    statements: [gehenna-punishment, nt-words]
+    aspect: "16:9"
+    refs: [hinnom]
+    alt: "The same valley below Jerusalem's walls, now pictured filled from side to side with fire under a dark sky."
+    prompt: >-
+      The SAME deep valley below the SAME high stone walls of ancient
+      Jerusalem as in the reference image, seen from the same side, but now
+      it is pictured as a place of fire: the whole valley floor, from side
+      to side, is filled with great tongues of flat rust red and golden
+      amber flame, under a dark, smoky near-black sky. The city walls stand
+      dark along the TOP RIGHT ridge. Keep the flames and the valley in the
+      MIDDLE band of the picture, from left to right. The BOTTOM LEFT and
+      BOTTOM RIGHT corners are plain dark rock. No people anywhere. Negative
+      list: no people, no figures, no souls, no devils, no demons, no horns,
+      no pitchforks, no skulls, no bones, no rubbish, no text.
