@@ -464,3 +464,21 @@
   timestamp: "00:45:22.180"
   states: critical
   text: "How it might be second century, it might be something that as late as the 110s CE when it was written."
+- entry: letter-of-james
+  episode: 170
+  speaker: "Dan McClellan"
+  timestamp: "00:31:19.363"
+  states: critical
+  text: "Now again, there are scholars who are going to say that's probably just the reading of Paul that was not perfectly accurate that was in circulation at the beginning of the 2nd century when this was probably written, not necessarily James saying the actual Apostle Paul was wrong."
+- entry: letter-of-james
+  episode: 99
+  speaker: "Dan McClellan"
+  timestamp: "00:26:18.980"
+  states: critical
+  text: "As for the date of James, opinion is here, as on so much else, remarkably diverse."
+- entry: letter-of-james
+  episode: 170
+  speaker: "Dan McClellan"
+  timestamp: "00:08:53.624"
+  states: tradition
+  text: "And this has to do with when we think it was written, because if it was actually written by James, the brother of Jesus, it was obviously written in the middle of the 1st century CE."

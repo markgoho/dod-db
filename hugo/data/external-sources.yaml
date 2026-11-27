@@ -4913,3 +4913,59 @@ gotquestions-annihilationism:
   url: "https://www.gotquestions.org/annihilationism.html"
   hostAuthored: false
   tradition: "Got Questions Ministries, an evangelical ministry"
+
+brosend-2015-who-wrote-james:
+  author: "William Brosend"
+  title: "Who Wrote the Letter of James?"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2015
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/who-wrote-the-letter-of-james/"
+  hostAuthored: false
+  tradition: null
+
+britannica-letter-of-james:
+  author: null
+  title: "Letter of James"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 1998
+  edition: "Online, The Editors of Encyclopaedia Britannica (first published July 20, 1998)"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/topic/Letter-of-James"
+  hostAuthored: false
+  tradition: null
+
+allison-2015-jewish-setting-james:
+  author: "Dale C. Allison"
+  title: "The Jewish Setting of the Epistle of James"
+  series: "In die Skriflig/In Luce Verbi 49, no. 1, art. 1897"
+  publisher: "AOSIS"
+  year: 2015
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (CC BY), open"
+  url: "https://indieskriflig.org.za/index.php/skriflig/article/view/1897/3169"
+  hostAuthored: false
+  tradition: null
+
+insight-swindoll-james:
+  author: "Charles R. Swindoll"
+  title: "James"
+  series: null
+  publisher: "Insight for Living"
+  year: 2010
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://insight.org/resources/bible/the-general-epistles/james"
+  hostAuthored: false
+  tradition: "Insight for Living, the Bible-teaching ministry of Pastor Chuck Swindoll"
