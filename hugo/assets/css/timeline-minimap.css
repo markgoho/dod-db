@@ -495,17 +495,22 @@
 */
 @media (width >= 108rem) {
   .timeline-minimap__strip {
+    /* A step smaller than the popover's (the scale's ratio, 1.2), so "2000–1500" fits a 500-year band. */
+    --era-label-size: calc(var(--step--2) / 1.2);
     --era-label-width: round(
       up,
-      var(--step--2) * var(--line-height-heading) + 2 * var(--space-4xs),
+      var(--era-label-size) * var(--line-height-heading) + var(--space-4xs),
       1px
     );
   }
 
   /* Sideways, its logical sizes turn: so the label's width and height here. */
   .timeline-minimap__era {
+    font-size: var(--era-label-size);
     height: 100%;
-    padding: var(--space-4xs);
+    /* Down the band, only clear of its line: a 500-year band is barely a label long. */
+    padding-block: var(--space-4xs);
+    padding-inline: var(--border-width-sm) 0;
     text-overflow: ellipsis;
     width: var(--era-label-width);
     writing-mode: vertical-rl;
