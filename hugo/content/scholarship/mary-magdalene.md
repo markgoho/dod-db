@@ -78,7 +78,7 @@ statements:
         quote: "The Gospel of Matthew provides an account of Jesus meeting the women and greeting them. They, in turn, go closer to him, grab his feet, and worship him."
         read: 2026-11-27
       - source: mullervanvelden-2024-memory
-        locator: "§2.5, “In sum”, pp. 127–128"
+        locator: "§2.5, paragraph beginning “In sum”, p. 128"
         quote: "she was one of the first eyewitnesses of Jesus after his resurrection (either alone or with other women), and she shared the news of his resurrection with the disciples shortly after her first-hand experience thereof."
         read: 2026-11-27
       - source: harpercollins-2009-dictionary
@@ -93,8 +93,8 @@ statements:
   - id: apostle
     group: "In the gospels"
     question: "Why is she called the “apostle to the apostles”?"
-    short: "Because in the resurrection accounts she is sent to tell the disciples. Where the title began is disputed: it has been traced to Hippolytus of Rome, and also read as first applied, in the third century, to Martha and Mary."
-    text: "The HarperCollins Bible Dictionary says she is commissioned to announce the news of the resurrection to the disciples. Magdalena Jóźwiak's article in Verbum Vitae says that, as an eyewitness of the risen Christ, she was the first to bear witness to it before the apostles, so becoming the Apostola Apostolorum, and that Hippolytus of Rome was the first Christian writer to give her the title, in his commentary on the Song of Songs. Mary Ann Beavis's Bible Odyssey article says instead that the title's first use, in the third century, refers to Martha and Mary, not to Mary Magdalene. Jane Webster says the title was given by later Christian texts. The Catholic Church's 2016 decree attributes it to Thomas Aquinas (see “What do churches hold about her today?”)."
+    short: "Because in the resurrection accounts she is sent to tell the disciples. The title itself comes from later Christian writers, the earliest around the third century."
+    text: "The HarperCollins Bible Dictionary says she is commissioned to announce the news of the resurrection to the disciples. Magdalena Jóźwiak's article in Verbum Vitae says that, as an eyewitness of the risen Christ, she was the first to bear witness to it before the apostles, so becoming the Apostola Apostolorum, and that Hippolytus of Rome was the first Christian writer to give her the title, in his commentary on the Song of Songs. Mary Ann Beavis's Bible Odyssey article says instead that the title's first use, in the third century, refers to Martha and Mary, not to Mary Magdalene. Jane Webster says the title was given by later Christian texts."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/mary/"
@@ -167,7 +167,7 @@ statements:
   - id: bethany
     group: "The later image"
     question: "Was Mary Magdalene the same woman as Mary of Bethany?"
-    short: "Modern scholarship has tended to treat them as two women, though some scholars have challenged that. Western tradition long identified them; Eastern tradition kept them distinct."
+    short: "Modern scholarship has tended to treat them as two women, though some scholars have challenged that. Pope Gregory the Great identified them in a sixth-century sermon."
     text: "The HarperCollins Bible Dictionary lists Mary of Bethany and Mary Magdalene as separate women among the seven women named Mary in the New Testament, “unless two or more are identical”. Kristin Swenson says Magdalene refers to a town in Galilee, which should distinguish her from Mary of Bethany, near Jerusalem. Elizabeth Schrader, who argues in the Harvard Theological Review that a text of John without Martha would strongly imply that Mary of Bethany was Mary Magdalene, writes that Mary Ann Beavis and Mark Goodacre had already challenged the relatively recent scholarly tendency to draw a clear line between them. Beavis says early Christians sometimes confused the two Marys because of their similar names, that Eastern Christians resisted the conflation and traditionally regarded them as distinct saints, and that in the West Gregory the Great identified the sinner of Luke 7 with Mary Magdalene. Swenson and Dan Clanton say Gregory's sermon equated Mary of Bethany with Mary Magdalene as well."
     cites:
       - source: harpercollins-2009-dictionary
@@ -210,7 +210,7 @@ statements:
   - id: magdala
     group: "The later image"
     question: "Does “Magdalene” mean she came from Magdala?"
-    short: "That is the common reading: reference works say she came from Magdala, a town on the Sea of Galilee. Some scholars argue the name was an epithet instead."
+    short: "That is the common reading: reference works say she came from Magdala, a town on the Sea of Galilee."
     text: "The HarperCollins Bible Dictionary calls her Mary Magdalene, or “of Magdala”, and describes Magdala as a community on the western shore of the Sea of Galilee, modern Tarichaeae. Kristin Swenson says Magdalene is a reference to her town of origin, Magdala in Galilee, and Gertrud Tönsing says she is named after her place of origin. Wally Cirafesi's article in Religions says the identification of the excavated site with Josephus's Taricheae has been debated but that the consensus among scholars remains that Taricheae is Migdal Nuniya, or Magdala; the Israel Antiquities Authority's excavation report gives the site's ancient names as Migdal Nunia, Taricheae and Magdala and reports a Roman-period synagogue, and another of its reports says Christian tradition holds it to be Mary Magdalene's birthplace. Joan Taylor, in the Palestine Exploration Quarterly, and Taylor with Elizabeth Schrader, in the Journal of Biblical Literature, grant that the name is traditionally taken to indicate where she came from, but argue that no place called Magdala appears in the earliest New Testament manuscripts or contemporary writing, that no early Christian author identifies a city called Magdala by the Sea of Galilee, and that the epithet may mean “the tower-ess” or “the magnified one”; Taylor allows that Mary may still have come from Migdal Nuniya."
     cites:
       - source: harpercollins-2009-dictionary
@@ -248,7 +248,7 @@ statements:
         quote: "yielding the remains of a Roman-period synagogue, streets, architectural remains, agricultural installations and water channels"
         read: 2026-11-27
       - source: avshalomgorni-stern-2016-migdal-report
-        locator: "paragraph 1"
+        locator: "paragraph beginning “Migdal is located”"
         quote: "Migdal (Magdala) is mentioned in Christian sources, since according to Christian tradition it is the birthplace of Mary Magdalene (Mary the Migdalite)."
         read: 2026-11-27
       - source: taylor-2014-missing-magdala
@@ -271,7 +271,7 @@ statements:
     group: "The later image"
     question: "Was Martha added to the story of Lazarus in John 11?"
     short: "That has been proposed and is disputed. In Papyrus 66, an early copy of John, Martha was absent from the opening verses of John 11 before the text was corrected; scholars disagree on whether that shows she was added to the gospel."
-    text: "Elizabeth Schrader's article in the Harvard Theological Review sets out to show that the first circulating version of John may not have included Martha, and that Papyrus 66 may give a window onto a late scribal interpolation. She says the correction of 11:3 in Papyrus 66 clearly splits one woman into two, and that 17 of the 92 Greek witnesses she surveyed for John 11:1–12:2 contain traces of Martha's absence; she suggests there is a strong possibility that Martha was added to hamper the text's subtle identification of Mary of Bethany with Mary Magdalene. Richard Fellows, in TC: A Journal of Biblical Textual Criticism, accepts that Martha was absent from 11:1–3 in Papyrus 66 before it was corrected, notes that it is no longer clear whether the name erased at 11:3 was Mary or Martha, and argues that the variants are better explained by a sexist tendency and harmonising than by interpolation: someone wanting to diminish Mary would not have placed her before Martha at 11:1 and before Lazarus at 11:5, and Schrader's proposed first text combines too many weakly attested and unattested readings. In a 2025 exchange in the same journal, Schrader Polczer holds that Martha's interpolation remains a compelling explanation, and Fellows replies that there is no text-critical case for it. Fellows notes that Papyrus 66 is dated to about 200 CE by the Nestle-Aland edition, though Brent Nongbri argues it could be as late as the fourth century."
+    text: "Elizabeth Schrader's article in the Harvard Theological Review sets out to show that the first circulating version of John may not have included Martha, and that Papyrus 66 may give a window onto a late scribal interpolation. She says the correction of 11:3 in Papyrus 66 clearly splits one woman into two, and that 17 of the 92 Greek witnesses she surveyed for John 11:1–12:2 contain traces of Martha's absence; she suggests there is a strong possibility that Martha was added to hamper the text's subtle identification of Mary of Bethany with Mary Magdalene. Richard Fellows, in TC: A Journal of Biblical Textual Criticism, repeats Schrader's point that Martha was absent from 11:1–3 in Papyrus 66 before it was corrected, notes that it is no longer clear whether the name erased at 11:3 was Mary or Martha, and argues that the variants are better explained by a sexist tendency and harmonising than by interpolation: someone wanting to denigrate Mary would not have placed her before Martha at 11:1 and before Lazarus at 11:5, and Schrader's proposed first text combines too many weakly attested and unattested readings. In a 2025 exchange in the same journal, Schrader Polczer holds that Martha's interpolation remains a compelling explanation, and Fellows replies that there is no text-critical case for it. Fellows notes that Papyrus 66 is dated to about 200 CE by the Nestle-Aland edition, though Brent Nongbri argues it could be as late as the fourth century."
     cites:
       - source: schrader-2017-martha-htr
         locator: "introduction, manuscript p. 4"
@@ -282,11 +282,11 @@ statements:
         quote: "the correction clearly splits one woman into two"
         read: 2026-11-27
       - source: schrader-2017-martha-htr
-        locator: "conclusions, manuscript p. 42"
+        locator: "section “Summative Analysis”, manuscript p. 42"
         quote: "According to these criteria, of the ninety-two Greek witnesses surveyed for John 11:1–12:2, seventeen (18%) contain traces of Martha’s absence."
         read: 2026-11-27
       - source: schrader-2017-martha-htr
-        locator: "conclusion, manuscript p. 51"
+        locator: "paragraph beginning “In conclusion”, manuscript p. 51"
         quote: "In conclusion, I suggest that Papyrus 66 may reflect the final stages of a text form of the Fourth Gospel where the figure of Martha was being secondarily added to the resurrection story of Lazarus. I believe there is a strong possibility that this change was made in order to hamper the text’s subtle identification of Mary of Bethany with Mary Magdalene"
         read: 2026-11-27
       - source: fellows-2023-bethany-variants
@@ -320,8 +320,8 @@ statements:
   - id: which-mary
     group: "Other early writings"
     question: "Is the Mary of the Gospel of Mary and related writings Mary Magdalene?"
-    short: "Usually she is taken to be, but scholars are divided: the Gospel of Mary calls her only Mary, and some argue another Mary is meant."
-    text: "N. E. Müller van Velden says the Gospel of Mary never identifies its Mary in relation to Magdala, and that of the Christian apocrypha only the Gospel of Philip and Pistis Sophia specify her identity; she says the consensus view still holds that these writings refer to Mary Magdalene, with Antti Marjanen a leading scholar of that view, and that Stephen Shoemaker has challenged it, arguing that in many cases the Mary assumed to be Mary Magdalene could be Mary the mother of Jesus. She also quotes Karen King that scholars are divided over the identity of Mary and her significance in the Gospel of Mary. King's article in the Harvard Theological Review says early Christianity's profusion and confusion of Marys should make readers cautious in identifying a Mary. Mary Ann Beavis says contemporary scholars have perpetuated the ancient confusion of the two Marys by identifying the Mary of texts such as the Gospel of Mary and the Gospel of Thomas as Mary Magdalene, when that Mary is portrayed more like Mary of Bethany."
+    short: "Usually she is taken to be, but that has been challenged: the Gospel of Mary calls her only Mary, and some scholars argue another Mary is meant."
+    text: "N. E. Müller van Velden says the Gospel of Mary never identifies its Mary in relation to Magdala, and that of the Christian apocrypha only the Gospel of Philip and Pistis Sophia specify her identity; she says the consensus view still holds that these writings refer to Mary Magdalene, with Antti Marjanen a leading scholar of that view, and that Stephen Shoemaker has challenged it, arguing that in many cases the Mary assumed to be Mary Magdalene could be Mary the mother of Jesus. Mary Ann Beavis says contemporary scholars have perpetuated the ancient confusion of the two Marys by identifying the Mary of texts such as the Gospel of Mary and the Gospel of Thomas as Mary Magdalene, when that Mary is portrayed more like Mary of Bethany."
     cites:
       - source: mullervanvelden-2024-memory
         locator: "§3.2, p. 132"
@@ -330,14 +330,6 @@ statements:
       - source: mullervanvelden-2024-memory
         locator: "§3.2, p. 132"
         quote: "However, this view has been challenged, prominently so by Shoemaker. He argues that in many cases the Mary who has been assumed to be Mary Magdalene could actually be Mary the mother of Jesus (Jones 2002:2)."
-        read: 2026-11-27
-      - source: mullervanvelden-2024-memory
-        locator: "§3.2, p. 133, block quotation of King 2002"
-        quote: "Scholars are divided over the identity of Mary and her significance in this Gospel."
-        read: 2026-11-27
-      - source: king-2014-htr-wife
-        locator: "author manuscript p. 22"
-        quote: "Early Christianity's well-known profusion and confusion of Marys should make us cautious in identifying Mary here."
         read: 2026-11-27
       - source: beavis-bo-mary-and-martha
         locator: "section “Who are Mary and Martha in Christian Tradition?”"
@@ -350,7 +342,7 @@ statements:
   - id: peter
     group: "Other early writings"
     question: "Why do some early writings set Mary against Peter?"
-    short: "Several noncanonical writings show Peter challenging her standing. Scholars read the dispute as part of early Christian debates over authority, including women's, though they caution that its link to historical conflicts is hard to establish."
+    short: "Several noncanonical writings show Peter challenging her standing. Scholars suggest the dispute may reflect tensions or debates over authority in early Christianity."
     text: "Gertrud Tönsing says several documents portray a conflict between Mary and the male disciples, most prominently Peter, in the Gospel of Thomas 114, the Gospel of Mary and Pistis Sophia, and that this could point to a tension in the early church between their followers, though it is not easy to correlate the portrayed conflict with its possible historical background; she reports Antti Marjanen's doubt that the conflict has historical roots, since its only explicit witnesses are second- and third-century documents. Karen King's article in the Harvard Theological Review says some early Christian writings challenge Mary's status through the figure of Peter: in the Gospel of Mary, Peter and Andrew challenge her role as a leading disciple and Levi defends her. Paul Dilley's Bible Odyssey article says Peter's disputes with Mary Magdalene over women's authority in the Gospel of Mary and the Gospel of Thomas suggest that debates within early Christianity could be waged through appeals to competing apostolic traditions. N. E. Müller van Velden cautions that ideological readings of these texts, whether toward female submission or gender egalitarianism, should be approached with caution."
     cites:
       - source: tonsing-2022-ending-of-mark
@@ -378,14 +370,14 @@ statements:
         quote: "Peter’s disputes with other disciples, including Mary Magdalene over women’s authority in the Gospel of Mary and the Gospel of Thomas, suggest that debates within early Christianity could be waged through appeals to competing apostolic traditions; Peter’s authority, though widely regarded, was also contested."
         read: 2026-11-27
       - source: mullervanvelden-2024-memory
-        locator: "§3.3, p. 138"
+        locator: "§5, p. 138"
         quote: "ideological interpretations – whether toward female submission or to gender egalitarianism – should all be approached with caution."
         read: 2026-11-27
   - id: wife
     group: "Other early writings"
     question: "Was Mary Magdalene Jesus's wife?"
     short: "The New Testament gospels say nothing of it. The Gospel of Philip calls her Jesus's companion, and scholars differ on whether it portrays her as his wife."
-    text: "Karen King's article in New Testament Studies says the New Testament gospels, the earliest and most historically reliable information about Jesus, are silent on whether he was married, and that historians' arguments have not led to a firm consensus. She reads the Gospel of Philip as representing the incarnate Jesus as married to Mary Magdalene, notes that neither of its terms for her necessarily implies marriage, though they often do depending on context, and says that in her opinion Philip gives no evidence useful for the historical Jesus's marital status. Simon Gathercole's article in the same journal says the language of partnership, union and kissing in Philip conveys the intimacy of the true disciple without calling Mary Jesus's spouse, and that it would overstate the text to call her his wife; he finds no clear reference to marriage in any ancient text. Gertrud Tönsing says there is no evidence that the relationship was in any way sexual, as popular literature often implies, and that Mary Magdalene was likely unmarried, since she is named after her place of origin rather than as someone's wife or mother. An editorial in New Testament Studies says the fragment King published in 2014 as the Gospel of Jesus's Wife is now widely accepted as a recent forgery; King had written that it does not provide evidence that the historical Jesus was married."
+    text: "Karen King's article in New Testament Studies says the New Testament gospels, the earliest and most historically reliable information about Jesus, are silent on whether he was married, and that historians' arguments have not led to a firm consensus. She reads the Gospel of Philip as representing the incarnate Jesus as married to Mary Magdalene, notes that neither of its terms for her necessarily implies marriage, though they often do depending on context, and says that in her opinion Philip gives no evidence useful for the historical Jesus's marital status. Simon Gathercole's article in the same journal says the language of partnership, union and kissing in Philip conveys the intimacy of the true disciple without calling Mary Jesus's spouse, and that it would overstate the text to call her his wife; he finds no clear reference to Jesus's marriage in any ancient text, Christian or non-Christian. Gertrud Tönsing says there is no evidence that the relationship was in any way sexual, as popular literature often implies, and that Mary Magdalene was likely unmarried, since she is named after her place of origin rather than as someone's wife or mother. An editorial in New Testament Studies says the fragment King published in 2014 as the Gospel of Jesus's Wife is now widely accepted as a recent forgery; King had written that it does not provide evidence that the historical Jesus was married."
     cites:
       - source: king-2013-nts-philip
         locator: "author manuscript p. 1, note 1"
@@ -434,7 +426,7 @@ statements:
   - id: tradition
     group: "Religious traditions"
     question: "What do churches hold about her today?"
-    short: "The Catholic Church raised her memorial to a feast in 2016, calling her the first witness of the resurrection and citing Thomas Aquinas's title for her, “apostle of the apostles”. The Orthodox Church in America honours her as Equal of the Apostles."
+    short: "The Catholic Church raised her memorial to a feast in 2016, calling her the first witness of the resurrection and noting that Thomas Aquinas called her “apostle of the apostles”. The Orthodox Church in America honours her as Equal of the Apostles."
     text: "A 2016 decree of the Catholic Church's Congregation for Divine Worship says the Church in East and West has always regarded Saint Mary Magdalene as the first witness of the Lord's resurrection and the first evangelist, notes that Thomas Aquinas called her an “apostle of the apostles”, and records Pope Francis's decision to give her celebration the rank of a feast. Archbishop Arthur Roche's article explaining the decree says that ecclesial tradition in the West, especially since Gregory the Great, identified Mary Magdalene with the woman who anointed Jesus in the house of Simon the Pharisee and with the sister of Lazarus and Martha, and that the reform of the Roman Calendar after the Second Vatican Council led its texts to refer to Mary of Magdala. In the life of her published by the Orthodox Church in America she is the Myrrhbearer and Equal of the Apostles, and it says that tradition informs that she led a sinful life before Jesus expelled seven devils from her. A text of St. Mary Magdalene Orthodox Church in Fenton, Michigan, published by Pravoslavie.ru, says the Western identification of Mary with the sinful woman of Luke 7, believed to begin with Gregory, was not accepted in the Eastern Church."
     cites:
       - source: vatican-2016-mm-feast-decree
@@ -446,7 +438,7 @@ statements:
         quote: "In fact this woman, known as the one who loved Christ and who was greatly loved by Christ, and was called a “witness of Divine Mercy” by Saint Gregory the Great and an “apostle of the apostles” by Saint Thomas Aquinas, can now rightly be taken by the faithful as a model of women’s role in the Church."
         read: 2026-11-27
       - source: vatican-2016-mm-feast-decree
-        locator: "decree, second paragraph"
+        locator: "decree, third paragraph"
         quote: "Therefore the Supreme Pontiff Pope Francis has established that from now on the celebration of Saint Mary Magdalene should be inscribed in the General Roman Calendar with the rank of Feast rather than Memorial as is presently the case."
         read: 2026-11-27
       - source: roche-2016-apostle-of-apostles
@@ -462,7 +454,7 @@ statements:
         quote: "Myrrhbearer and Equal of the Apostles Mary Magdalene"
         read: 2026-11-27
       - source: oca-mary-magdalene-life
-        locator: "opening paragraph"
+        locator: "paragraph beginning “A woman whose name”"
         quote: "The Gospel tells us nothing of Mary's younger years, but Tradition informs us that Mary of Magdala was young and pretty, and led a sinful life. It says in the Gospels that the Lord expelled seven devils from Mary (Luke. 8:2)."
         read: 2026-11-27
       - source: fenton-parish-who-was-mm

@@ -8,879 +8,871 @@
 # Dropped for want of a second author or any qualifying source: Luke removing her from the cross and tomb and giving her no resurrection appearance (the guest on air; no source states the appearance point); Ephrem merging her with the sinner (Hunt shows only the Bethany and haemorrhage mergers; lead); the 1969 Roman Calendar change and the 1978 Breviary change (Kent's footnote citing Haskins only; Roche gives no year); Eusebius's Magdala, Luke's "called Magdalene" as an epithet, and "no author before the sixth century" (JBL body not open; only the abstract and a news report); Gregory's sexual reading being a later misreading of his sermon (Smit 2022, abstract only, full text blocked); the Gospel of Jesus's Wife beyond one clause (Harvard Divinity School statement and Jacobs's Scalar book fit no source class).
 # First pass: three research agents fetched every source on 2026-11-27 into separate scratch folders and copied quotes from the fetched text; every page quote was then script-matched (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised; inline tags stripped from HTML) against those saved texts: 94/94, 0 misses. PDF locators checked against printed page numbers (DASH copies carry a cover sheet, so PDF page = printed page + 1). The second pass must re-fetch.
 # Flags for the second pass: (1) Abstract-only citations: Taylor 2014 and Schrader and Taylor 2021 (KCL Pure pages; full texts paywalled), as the registry's "abstract only cited" convention; they back only the attributed challenge in magdala. (2) Access: Schrader 2017 is the author's May 2016 manuscript on DukeSpace (bitstream URL; the item page has a browser check), cited by manuscript page, not HTR 360–392; Cirafesi (MDPI) and the two TC 2025 articles return 403 to curl and open in a browser; Fellows 2023 read at the Internet Archive copy because jbtc.org returned 522 (#93 dead-URL rule). The Cirafesi browser save was truncated after the quoted sentence; the quote is whole. (3) Kent 2010 is in a seminary journal of the Adventist church; Scholarly by venue (#80), used only for the attributed dissent and his concession. (4) Swenson's article is a revised excerpt from her trade book Bible Babel (2010); the "Did You Know?" box is not cited, as it may be editorial. (5) Tönsing's "named after her place of origin" and "unmarried" sentences cite Maisch 1998; Müller van Velden's "sinner" sentence cites Ehrman 2006; Müller van Velden's which-mary consensus sentence is set against King's "Scholars are divided", which she quotes, so the short says divided. (6) apostle: Jóźwiak (Hippolytus) and Beavis (Martha and Mary) disagree on the title's first use; the short says disputed. (7) The tradition statement uses an OCA saints' life and a parish text (Fenton, Michigan) on orthochristian.com, each named in its own words; neither speaks for Orthodoxy as a whole. (8) The NTS 2015 editorial is unsigned (author null). (9) TC 2025 Schrader Polczer: header says pp. 147–153, the conclusion sits on p. 154; registry says 147–154. (10) Schrader's p. 45–46 sentence is split into two citations at the page break.
+# Second agent pass 2026-11-27 (#93 delegation, independent): all 28 cited sources (29 URLs: two HarperCollins entry pages) re-fetched into the second pass's own scratch folder, not the first pass's files. 25 by curl with a browser User-Agent (PDFs through pdftotext, HTML tags stripped); Cirafesi (MDPI, curl 403) read in Claude in Chrome as page text; the two TC 2025 articles (curl 403, direct PDF load stopped at a bot check, which was not worked around) opened in Chrome from each article page's own PDF link and read on the rendered pages. jbtc.org returned 522 to curl and in Chrome, so Fellows 2023 was matched on the Internet Archive copy. Of the 94 first-pass quotes, 90 matched verbatim by script against the fetched files (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised), the two Cirafesi quotes against the browser page text, and the two TC 2025 quotes by eye on the rendered PDF (in-page PDF text extraction was not available); 0 misses. PDF locators checked against printed folios (DASH copies: PDF page = printed + 1); HTML and manuscript locators checked against the nearest heading or paragraph. All 18 Trigger Claims re-matched at timestamp and speaker in the final transcripts as contiguous spans inside the turn (none is the full turn) and read about two minutes either side. 92 citations after the cuts below.
+# Second pass changes. Cut to uncited: which-mary/3 (King 2002 read only inside Müller van Velden's block quote: a Lead for King) and which-mary/4 (King HTR 2014's caution is about the Jesus's Wife fragment's Mary, widened in the text to “a Mary”); which-mary/5–6 renumbered /3–/4; their text sentences dropped. Shorts: apostle (“Where the title began is disputed …” to “The title itself comes from later Christian writers, the earliest around the third century”: Jóźwiak's own quoted Hippolytus passage is plural, so she and Beavis may describe one text); bethany (“Western tradition long identified them; Eastern tradition kept them distinct” to “Pope Gregory the Great identified them in a sixth-century sermon”: “long” had no quote here and the East clause is Beavis alone, kept in the text); magdala (Taylor/Schrader epithet sentence, one voice, out of the short; kept in the text); which-mary (“scholars are divided” to “that has been challenged”); peter (“Scholars read … including women's, though they caution …” to “Scholars suggest the dispute may reflect tensions or debates over authority in early Christianity”: Dilley “suggest”, Tönsing “could point”; the caution and “women's” each rested on one author); tradition (“citing Thomas Aquinas's title” to “noting that Thomas Aquinas called her”). Text: apostle drops the uncited, overstated Aquinas sentence; martha “accepts that” to “repeats Schrader's point that”, “diminish” to Fellows's “denigrate”; wife “no clear reference to Jesus's marriage in any ancient text, Christian or non-Christian”. Locators: risen/4 (p. 128), tradition/3 (decree, third paragraph), tradition/7 (paragraph beginning “A woman whose name”), magdala/9 (paragraph beginning “Migdal is located”, not paragraph 1), martha/3 (section “Summative Analysis”), martha/4 (paragraph beginning “In conclusion”), peter/7 (§5, not §3.3). Triggers file and registry not edited.
+# Second pass flags: (1) bethany short's “Modern scholarship has tended to treat them as two women” rests on Schrader's report of the tendency, with HarperCollins and Swenson treating them as distinct; Kent's concession (prostitute) would also back it but is not cited in bethany. (2) Kent: JAAS calls itself peer-refereed; a seminary journal of the AIIAS (the Trinity page treated a seminary house journal as non-qualifying for a claim with no other source); here Kent backs only his attributed dissent and concession, never a short or the core; kept. (3) apostle: Jóźwiak (Hippolytus gave her the title) and Beavis (the first use refers to Martha and Mary) are both in the text, attributed; the lead may want to say they may concern the same Hippolytus text. (4) Triggers: first-pass notes say “full turn”, but all 18 are spans; 48@00:39:42's span does not name Mary Magdalene (named later in the turn); 12@00:55:52 “widely known … Peter did not like her” is in some tension with Tönsing's caution in peter's text (hedged; kept); 50@00:14:03's span drops the turn's Ephrem sentence. (5) First-pass flags (1), (2), (4)–(10) re-checked: abstract-only convention exists on trunk (one prior registry entry); access lines accurate; Schrader PDF dated 18 May 2016; TC 2025 header says 147–153 with text on p. 154. (6) bethany: the new short's Gregory sentence rests on Swenson and Clanton; Beavis, cited in the same statement, says Gregory made the sinner Mary Magdalene “rather than Mary of Bethany”; the text reports both, attributed. (7) magdala: with the epithet sentence out of the short, Trigger Claims 12@00:40:46 and 12@00:47:59 argue against the short's common reading; kept, as a Trigger Claim gates the subject, not a statement (CONTEXT.md), but the lead may want to log them as conflicts. (8) martha: Schrader herself calls Martha's presence “the consensus view” (manuscript p. 41, read, not cited), so “That has been proposed and is disputed” may undersell where the field stands; no citation added. Publish rule recomputed: 11 statements; core prostitute on Swenson, HarperCollins, Clanton, Beavis, Müller van Velden, Jóźwiak (6 independent authors; Kent not counted); none Host-authored. Ids, slug, draft and review unchanged.
 review: null
 delegation:
   by: owner
   date: 2026-11-23
   issue: "#93"
+  secondPass: 2026-11-27
 
 citations:
   gospels/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   gospels/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   gospels/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   gospels/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   gospels/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   gospels/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   gospels/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   gospels/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; ch. 4 begins at [00:47:53] and the quote sits later in that chapter; read in context; attributed as Martin's own view (“I think”).",
     }
   risen/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   risen/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   risen/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   risen/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; the “In sum” paragraph and the quote are wholly on p. 128 (pdftotext page break and printed folio), so locator changed from “pp. 127–128” to p. 128; supports the text.",
     }
   risen/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script in entry no. 4 at the Mary url; backs Matthew 28:9 as an appearance to the women with Mary Magdalene; with risen/3 two authors for Matthew.",
     }
   risen/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   apostle/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   apostle/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script on p. 874; read on: the Hippolytus passage she then quotes (via Backes) is plural (“the women, those who were made apostles to the apostles”), so she and Beavis (apostle/3) may be describing the same third-century text; the short no longer calls the origin “disputed” and now says only “later Christian writers, the earliest around the third century”; the Hippolytus-versus-Martha-and-Mary difference stays in the text, attributed.",
     }
   apostle/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; backs “third century” in the narrowed short; her Martha-and-Mary reading stays in the text, attributed.",
     }
   apostle/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; backs “later Christian writers” in the narrowed short. The text's last sentence (the 2016 decree “attributes it to Thomas Aquinas”) had no citation in this statement and overstated the decree, which says only that Aquinas called her that; dropped from apostle (tradition carries it).",
     }
   prostitute/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   prostitute/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   prostitute/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   prostitute/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   prostitute/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   prostitute/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   prostitute/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   prostitute/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   prostitute/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   prostitute/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (abstract, PDF p. 1). JAAS describes itself as “a semiannual peer-refereed academic journal” (journals.aiias.edu/jaas/about, read 2026-11-27); a seminary journal of the AIIAS; kept only for his attributed dissent, not counted for the core.",
     }
   prostitute/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script on printed p. 14; his concession of the state of the field is reported as his, attributed; not counted for the core.",
     }
   bethany/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   bethany/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   bethany/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script on manuscript p. 45 under the heading “Implications for the Absence of Martha in the Fourth Gospel”; attributed as Schrader's own argument.",
     }
   bethany/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script, last line of manuscript p. 45; with bethany/5, Schrader's report of the “relatively recent scholarly tendency” behind “Modern scholarship has tended to treat them as two women” (with HarperCollins and Swenson treating them as distinct); flag: the tendency itself is reported by Schrader alone.",
     }
   bethany/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   bethany/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; attributed in the text.",
     }
   bethany/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; “Eastern tradition kept them distinct” is Beavis alone, so it was moved out of the short and stays in the text, attributed; her Gregory sentence identifies the Luke 7 sinner with Mary Magdalene “rather than Mary of Bethany”, which the text reports as hers.",
     }
   bethany/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; with bethany/9 backs the new short sentence “Pope Gregory the Great identified them in a sixth-century sermon” (Swenson, Clanton). The old short's “Western tradition long identified them” had no quote in this statement for “long”; replaced.",
     }
   bethany/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; with bethany/8 backs the short's Gregory sentence.",
     }
   magdala/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   magdala/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   magdala/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   magdala/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   magdala/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched in Claude in Chrome (curl 403); matched against the page's innerText, endnote 2; the note also names Taylor 2014 among those proposing other sites, consistent with the text.",
     }
   magdala/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched in Claude in Chrome (curl 403); matched against the page's innerText, endnote 2; “consensus” is Cirafesi's word, attributed, scoped to the site's identification with Taricheae.",
     }
   magdala/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   magdala/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   magdala/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; the sentence is in the report's second paragraph (the first is “In November 2007 …”), so the locator changed from “paragraph 1” to the paragraph beginning “Migdal is located”.",
     }
   magdala/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched (KCL Pure abstract); matched verbatim by script; abstract-only citation (trunk registry has the same “abstract only cited” convention). The Taylor/Schrader epithet reading is one voice for #133, so the short's sentence “Some scholars argue the name was an epithet instead” was cut; the view stays in the text, attributed, worded as their “may”.",
     }
   magdala/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched (KCL Pure abstract); matched verbatim by script; “may well have come from Migdal Nuniya” kept in the text.",
     }
   magdala/12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched (KCL Pure abstract); matched verbatim by script; text only.",
     }
   magdala/13:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched (KCL Pure abstract); matched verbatim by script; text only.",
     }
   martha/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   martha/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script on manuscript p. 13, under the heading “John 11:3—How Many Women Sent the Message to Jesus?”.",
     }
   martha/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script on manuscript p. 42; the heading is “Summative Analysis: The Figure of Martha of Bethany Shows Significant Instability …”, not a conclusion; locator changed.",
     }
   martha/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script on manuscript p. 51; no “Conclusion” heading in the manuscript; locator now the paragraph beginning “In conclusion”.",
     }
   martha/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched at the Internet Archive copy (jbtc.org returned 522 to curl and in Chrome on 2026-11-27); matched verbatim by script on p. 67; this sentence reports Schrader's point, so the text's “accepts that” is now “repeats Schrader's point that”; Fellows himself says Martha was absent in 11:1–2 until the correction (p. 77).",
     }
   martha/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   martha/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   martha/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched (Internet Archive copy); matched verbatim by script on p. 81; text's “diminish” changed to his “denigrate”.",
     }
   martha/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   martha/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: read in Claude in Chrome: curl and a direct load of the PDF URL got 403 or a bot check, so the PDF was opened from the article page's own link (Silverchair copy, 8 pages, header “147–153”, last page printed 154); matched by eye on the rendered p. 154, under “Conclusion” (begins p. 153), not script-matched.",
     }
   martha/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: read in Claude in Chrome from the article page's PDF link (Silverchair copy, 5 pages); matched by eye on the rendered p. 159, under “Conclusion”, not script-matched.",
     }
   which-mary/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script on p. 132 (§3.2 “Further explorations of the Gospel of Mary”); her “consensus view … still holds” with which-mary/2's “challenged” now sets the short (“Usually … but that has been challenged”).",
     }
   which-mary/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script on p. 132; Shoemaker reported as she reports him.",
     }
   which-mary/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: (was which-mary/5) re-fetched; matched verbatim by script; backs “usually she is taken to be” beside Müller van Velden.",
     }
   which-mary/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
-    }
-  which-mary/5:
-    {
-      agent: pass,
-      owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
-    }
-  which-mary/6:
-    {
-      agent: pass,
-      owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: (was which-mary/6) re-fetched; matched verbatim by script; Beavis's own other-Mary reading; with Shoemaker (via Müller van Velden) behind “some scholars argue another Mary is meant”.",
     }
   peter/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; the “Extra-canonical documents portray her” paragraph.",
     }
   peter/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; backs “may reflect tensions … in early Christianity” (“could point to”); its caution clause is Tönsing's alone (her next paragraph argues Mark's ending “could be” tangible evidence), so the short's “though they caution that its link to historical conflicts is hard to establish” was cut; the caution stays in the text, attributed.",
     }
   peter/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; Marjanen reported as Tönsing reports him (text only).",
     }
   peter/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   peter/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   peter/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; backs “debates over authority” (“suggest”); the short's “including women's” rested on Dilley alone and was dropped.",
     }
   peter/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script on p. 138, which is in §5 “Remembering New Testament characters: No objective task” (begins p. 137), not §3.3; locator changed. The sentence cautions about ideological readings, not historical links: no longer used for the short.",
     }
   wife/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   wife/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   wife/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   wife/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   wife/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   wife/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   wife/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script on p. 8 under “Conclusion to Part 1”; “these” are passages on Jesus's intimacy, so the text now says “no clear reference to Jesus's marriage in any ancient text, Christian or non-Christian”.",
     }
   wife/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   wife/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   wife/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   wife/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; the decree says Aquinas “called” her an apostle of the apostles, so the short now says “noting that Thomas Aquinas called her” rather than “citing Thomas Aquinas's title for her”.",
     }
   tradition/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; the sentence opens the decree's third paragraph (“Therefore the Supreme Pontiff …”), not the second; locator changed.",
     }
   tradition/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
   tradition/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script; the opening paragraph is “The Holy Myrrh-Bearer … Mejhdel stands on the site.”; the quote is in the next paragraph, so the locator is now the paragraph beginning “A woman whose name”.",
     }
   tradition/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes and PDF line-break hyphens normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
 triggers:
   12@00:20:39:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept. Keeps her “might have sort of imported”.",
     }
   12@00:33:21:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
   12@00:36:14:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
   12@00:40:46:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
   12@00:41:47:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
   12@00:42:58:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept. The speaker says Gregory followed Ambrose and Hippolytus in identifying Mary of Bethany with Mary Magdalene; the bethany short says only that Gregory identified them, so no contradiction.",
     }
   12@00:44:53:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
   12@00:47:59:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
   12@00:54:51:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
   12@00:55:52:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept. Flag: “widely known … Peter did not like her” sits in some tension with peter (Tönsing's caution, in the text); hedged (“suggests”, “kind of”), not a contradiction of any short; kept.",
     }
   48@00:39:42:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept. Flag: the trimmed span does not name Mary Magdalene; she is named a few sentences later in the same turn (“Mary Magdalene and others”).",
     }
   50@00:13:10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
   50@00:14:03:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept. The span drops the turn's opening sentence (Ephrem the Syrian conflating the two), which no source on the page carries.",
     }
   94@00:29:10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept. Keeps “maybe”, “a lot of people theorize”, “perhaps”.",
     }
   123@00:34:05:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
   127@00:45:08:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
   133@00:55:50:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
   185@00:46:40:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-27: re-matched by script at timestamp and speaker in the final transcript as a contiguous span inside the turn (not the full turn, as the first-pass note says); read about two minutes either side; hedges kept.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: 11 statements. Core prostitute cites Swenson (Reference), HarperCollins (Powell, ed., Reference), Clanton (Reference), Beavis (Reference), Müller van Velden 2024 (Scholarly), Jóźwiak 2024 (Scholarly) and Kent 2010 (Scholarly, dissent): 7 author strings, 6 counted by hand for the core (Kent's concession not counted), none Host-authored, all inside the 30-year window.",
+      note: "First pass 2026-11-27: 11 statements. Core prostitute cites Swenson (Reference), HarperCollins (Powell, ed., Reference), Clanton (Reference), Beavis (Reference), Müller van Velden 2024 (Scholarly), Jóźwiak 2024 (Scholarly) and Kent 2010 (Scholarly, dissent): 7 author strings, 6 counted by hand for the core (Kent's concession not counted), none Host-authored, all inside the 30-year window. Second pass 2026-11-27: recomputed after the cuts: 11 statements; core prostitute unchanged (Swenson, HarperCollins, Clanton, Beavis, Müller van Velden, Jóźwiak: 6 independent authors, Kent not counted), none Host-authored, all inside the 30-year window; 92 citations (which-mary/3 and /4 cut).",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: “consensus” appears only as Cirafesi's own word, attributed, and scoped to the site's identification with Taricheae, and as Müller van Velden's own word, attributed, set against King's “Scholars are divided” (which-mary short says divided); King's “no firm consensus” is attributed. “As many scholars have noted” is Clanton's, attributed. No short says consensus or most scholars. #133 per short: gospels (HarperCollins, Webster, Swenson, Müller van Velden); risen (Swenson, Müller van Velden, HarperCollins, Tönsing); apostle (HarperCollins, Jóźwiak; disputed between Jóźwiak and Beavis); prostitute (six authors); bethany (HarperCollins, Swenson, Schrader's report of the tendency; Beavis for East and West, Clanton, Swenson); magdala (HarperCollins, Swenson, Tönsing; the challenge Taylor/Schrader, one voice, in the text only); martha (Schrader vs Fellows, a disagreement shown as one); which-mary (Müller van Velden, Beavis, King); peter (Tönsing, King, Dilley; caution Tönsing, Müller van Velden); wife (King, Tönsing; differ: King vs Gathercole); tradition (Tradition sources, exempt).",
+      note: "First pass 2026-11-27: “consensus” appears only as Cirafesi's own word, attributed, and scoped to the site's identification with Taricheae, and as Müller van Velden's own word, attributed, set against King's “Scholars are divided” (which-mary short says divided); King's “no firm consensus” is attributed. “As many scholars have noted” is Clanton's, attributed. No short says consensus or most scholars. #133 per short: gospels (HarperCollins, Webster, Swenson, Müller van Velden); risen (Swenson, Müller van Velden, HarperCollins, Tönsing); apostle (HarperCollins, Jóźwiak; disputed between Jóźwiak and Beavis); prostitute (six authors); bethany (HarperCollins, Swenson, Schrader's report of the tendency; Beavis for East and West, Clanton, Swenson); magdala (HarperCollins, Swenson, Tönsing; the challenge Taylor/Schrader, one voice, in the text only); martha (Schrader vs Fellows, a disagreement shown as one); which-mary (Müller van Velden, Beavis, King); peter (Tönsing, King, Dilley; caution Tönsing, Müller van Velden); wife (King, Tönsing; differ: King vs Gathercole); tradition (Tradition sources, exempt). Second pass 2026-11-27: “consensus” still appears only as Cirafesi's and Müller van Velden's own word, attributed. Shorts narrowed for #133: apostle (no “disputed”; “later Christian writers, the earliest around the third century”: Webster, Jóźwiak, Beavis); bethany (Eastern-tradition clause, Beavis alone, and “long” moved out; Gregory sentence on Swenson and Clanton); magdala (Taylor/Schrader one voice, out of the short); which-mary (“divided” rested on King 2002 read only inside Müller van Velden: now “Usually … but that has been challenged”, Müller van Velden and Beavis); peter (caution clause on Tönsing alone and “including women's” on Dilley alone cut; “Scholars suggest … may reflect”: Tönsing, Dilley); tradition (Aquinas “called her”). No short says consensus or most scholars.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Kent's identification of the three women named; Taylor's and Schrader's epithet reading named; Schrader's Martha interpolation and Fellows's reply named; Shoemaker's other-Mary view named (as reported by Müller van Velden); Beavis's Mary-of-Bethany reading of the noncanonical Mary named; Gathercole's reading of Philip against King's named; Marjanen's doubt reported as Tönsing reports it.",
+      note: "First pass 2026-11-27: Kent's identification of the three women named; Taylor's and Schrader's epithet reading named; Schrader's Martha interpolation and Fellows's reply named; Shoemaker's other-Mary view named (as reported by Müller van Velden); Beavis's Mary-of-Bethany reading of the noncanonical Mary named; Gathercole's reading of Philip against King's named; Marjanen's doubt reported as Tönsing reports it. Second pass 2026-11-27: re-checked; unchanged except King's HTR caution sentence (cut) and King 2002 via Müller van Velden (cut).",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: vatican-2016-mm-feast-decree and roche-2016-apostle-of-apostles named as the Catholic Church (the Congregation for Divine Worship); oca-mary-magdalene-life as the Orthodox Church in America (its own name); fenton-parish-who-was-mm as St. Mary Magdalene Orthodox Church in Fenton, Michigan (its own name). None supports what scholars think.",
+      note: "First pass 2026-11-27: vatican-2016-mm-feast-decree and roche-2016-apostle-of-apostles named as the Catholic Church (the Congregation for Divine Worship); oca-mary-magdalene-life as the Orthodox Church in America (its own name); fenton-parish-who-was-mm as St. Mary Magdalene Orthodox Church in Fenton, Michigan (its own name). None supports what scholars think. Second pass 2026-11-27: re-checked: decree and Roche as the Catholic Church; OCA in its own name; the Fenton text signed “St. Mary Magdalene Orthodox Church, Fenton Michigan 8/3/2013”.",
     }
 sources:
   harpercollins-2009-dictionary:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; HarperOne, 2009; access: Entries reproduced on the Society of Biblical Literature's Bible Odyssey, open.",
+      note: "First pass 2026-11-27: Reference; HarperOne, 2009; access: Entries reproduced on the Society of Biblical Literature's Bible Odyssey, open. Second pass 2026-11-27: re-fetched both entry pages (Mary, Magdala; page date 26 Oct 2022, “Powell, Mark Allan, ed.”); citations matched at the url each names. Class and recency window re-checked.",
     }
   webster-bo-mm-last-temptation:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2019; access: Society of Biblical Literature website, open.",
+      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2019; access: Society of Biblical Literature website, open. Second pass 2026-11-27: re-fetched; byline Jane S. Webster, dated 12 Sep 2019. Class and recency window re-checked.",
     }
   swenson-bo-mary-magdalene:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2015; access: Society of Biblical Literature website, open.",
+      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2015; access: Society of Biblical Literature website, open. Second pass 2026-11-27: re-fetched; byline Kristin Swenson, dated 13 Oct 2015. Class and recency window re-checked.",
     }
   mullervanvelden-2024-memory:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; Acta Theologica 44, Supplementum 37: 121–144, 2024; access: SciELO South Africa PDF, open access.",
+      note: "First pass 2026-11-27: Scholarly; Acta Theologica 44, Supplementum 37: 121–144, 2024; access: SciELO South Africa PDF, open access. Second pass 2026-11-27: re-fetched; Acta Theologica 2024 Supp 37:121–144 on p. 1. Class and recency window re-checked.",
     }
   martin-rlst152-l13:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; Open Yale Courses RLST 152, 2009; access: University courseware, open.",
+      note: "First pass 2026-11-27: Reference; Open Yale Courses RLST 152, 2009; access: University courseware, open. Second pass 2026-11-27: re-fetched. Class and recency window re-checked.",
     }
   tonsing-2022-ending-of-mark:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; Scriptura 121(1), 2022; access: SciELO South Africa, open access.",
+      note: "First pass 2026-11-27: Scholarly; Scriptura 121(1), 2022; access: SciELO South Africa, open access. Second pass 2026-11-27: re-fetched. Class and recency window re-checked.",
     }
   jozwiak-2024-gregory-magdalene:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; Verbum Vitae 42(4): 871–886, 2024; access: University repository PDF, open access (CC BY-ND).",
+      note: "First pass 2026-11-27: Scholarly; Verbum Vitae 42(4): 871–886, 2024; access: University repository PDF, open access (CC BY-ND). Second pass 2026-11-27: re-fetched; Verbum Vitae 42/4 (2024) 871–886 on p. 1. Class and recency window re-checked.",
     }
   beavis-bo-mary-and-martha:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2016; access: Society of Biblical Literature website, open.",
+      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2016; access: Society of Biblical Literature website, open. Second pass 2026-11-27: re-fetched; byline Mary Ann Beavis, dated 2 May 2016. Class and recency window re-checked.",
     }
   clanton-bo-mm-popular-culture:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2014; access: Society of Biblical Literature website, open.",
+      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2014; access: Society of Biblical Literature website, open. Second pass 2026-11-27: re-fetched; byline Dan W. Clanton Jr., dated 25 Sep 2014. Class and recency window re-checked.",
     }
   kent-2010-same-person:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; Journal of Asia Adventist Seminary 13(1): 13–28, 2010; access: Journal website PDF, open.",
+      note: "First pass 2026-11-27: Scholarly; Journal of Asia Adventist Seminary 13(1): 13–28, 2010; access: Journal website PDF, open. Second pass 2026-11-27: re-fetched; JAAS 13.1 (2010) 13–28 on p. 1; the journal's About page says “peer-refereed”; Scholarly by venue (#80), used only for attributed dissent and concession. Class and recency window re-checked.",
     }
   schrader-2017-martha-htr:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; Harvard Theological Review 110(3): 360–392, 2017; access: DukeSpace institutional repository, author's manuscript PDF, open (the bitstream URL opens directly; the item page sits behind a browser check).",
+      note: "First pass 2026-11-27: Scholarly; Harvard Theological Review 110(3): 360–392, 2017; access: DukeSpace institutional repository, author's manuscript PDF, open (the bitstream URL opens directly; the item page sits behind a browser check). Second pass 2026-11-27: re-fetched; PDF creation date 18 May 2016, matching the registry's edition line; cited by manuscript page. Class and recency window re-checked.",
     }
   cirafesi-2022-magdala-stone:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; Religions 13(12): 1218, 2022; access: Publisher website, open access; opens in a browser (automated fetches get 403).",
+      note: "First pass 2026-11-27: Scholarly; Religions 13(12): 1218, 2022; access: Publisher website, open access; opens in a browser (automated fetches get 403). Second pass 2026-11-27: curl 403; read in Chrome (full page text). Class and recency window re-checked.",
     }
   cinamon-2014-migdal-report:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; Hadashot Arkheologiyot 126, 2014; access: Israel Antiquities Authority website, open.",
+      note: "First pass 2026-11-27: Scholarly; Hadashot Arkheologiyot 126, 2014; access: Israel Antiquities Authority website, open. Second pass 2026-11-27: re-fetched; volume 126, 2014, byline Gilad Cinamon. Class and recency window re-checked.",
     }
   avshalomgorni-stern-2016-migdal-report:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; Hadashot Arkheologiyot 128, 2016; access: Israel Antiquities Authority website, open.",
+      note: "First pass 2026-11-27: Scholarly; Hadashot Arkheologiyot 128, 2016; access: Israel Antiquities Authority website, open. Second pass 2026-11-27: re-fetched; volume 128, 2016, byline Dina Avshalom-Gorni and Edna J. Stern. Class and recency window re-checked.",
     }
   taylor-2014-missing-magdala:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; Palestine Exploration Quarterly 146(3): 205–223, 2014; access: King's College London repository; abstract open, full text paywalled (abstract only cited).",
+      note: "First pass 2026-11-27: Scholarly; Palestine Exploration Quarterly 146(3): 205–223, 2014; access: King's College London repository; abstract open, full text paywalled (abstract only cited). Second pass 2026-11-27: re-fetched (KCL Pure page; abstract only). Class and recency window re-checked.",
     }
   schrader-taylor-2021-meaning-magdalene:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; Journal of Biblical Literature 140(4): 751–773, 2021; access: King's College London repository; abstract open, full text paywalled (abstract only cited).",
+      note: "First pass 2026-11-27: Scholarly; Journal of Biblical Literature 140(4): 751–773, 2021; access: King's College London repository; abstract open, full text paywalled (abstract only cited). Second pass 2026-11-27: re-fetched (KCL Pure page; abstract only). Class and recency window re-checked.",
     }
   fellows-2023-bethany-variants:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; TC: A Journal of Biblical Textual Criticism 28: 67–82, 2023; access: Journal PDF, open access; jbtc.org returned 522 on 2026-11-27, so read at the Internet Archive copy of the same URL (#93 dead-URL rule).",
+      note: "First pass 2026-11-27: Scholarly; TC: A Journal of Biblical Textual Criticism 28: 67–82, 2023; access: Journal PDF, open access; jbtc.org returned 522 on 2026-11-27, so read at the Internet Archive copy of the same URL (#93 dead-URL rule). Second pass 2026-11-27: jbtc.org returned 522 to curl and in Chrome on 2026-11-27; Internet Archive copy re-fetched and matched. Class and recency window re-checked.",
     }
   schraderpolczer-2025-response:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; TC: A Journal of Biblical Textual Criticism 30: 147–154, 2025; access: Publisher PDF, free to read; opens in a browser (automated fetches get 403).",
+      note: "First pass 2026-11-27: Scholarly; TC: A Journal of Biblical Textual Criticism 30: 147–154, 2025; access: Publisher PDF, free to read; opens in a browser (automated fetches get 403). Second pass 2026-11-27: curl and direct PDF load 403/bot check; opened in Chrome from the article page (free) and read on the rendered PDF; vol. 30 (2025) 147–154 confirmed (header says 147–153; last printed page 154). Class and recency window re-checked.",
     }
   fellows-2025-counter-response:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; TC: A Journal of Biblical Textual Criticism 30: 155–159, 2025; access: Publisher PDF, free to read; opens in a browser (automated fetches get 403).",
+      note: "First pass 2026-11-27: Scholarly; TC: A Journal of Biblical Textual Criticism 30: 155–159, 2025; access: Publisher PDF, free to read; opens in a browser (automated fetches get 403). Second pass 2026-11-27: curl 403; opened in Chrome from the article page (free) and read on the rendered PDF; 5 pages, 155–159. Class and recency window re-checked.",
     }
   king-2014-htr-wife:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; Harvard Theological Review 107(2): 131–159, 2014; access: Harvard DASH repository, author's manuscript PDF, open access.",
+      note: "First pass 2026-11-27: Scholarly; Harvard Theological Review 107(2): 131–159, 2014; access: Harvard DASH repository, author's manuscript PDF, open access. Second pass 2026-11-27: re-fetched; DASH cover sheet gives HTR 107.2: 131–159; PDF page = printed page + 1. Class and recency window re-checked.",
     }
   dilley-bo-peter:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2015; access: Society of Biblical Literature website, open.",
+      note: "First pass 2026-11-27: Reference; Bible Odyssey, 2015; access: Society of Biblical Literature website, open. Second pass 2026-11-27: re-fetched; byline Paul Dilley, dated 13 Jul 2015. Class and recency window re-checked.",
     }
   king-2013-nts-philip:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; New Testament Studies 59(4): 565–587, 2013; access: Harvard DASH repository, author's manuscript PDF, open access.",
+      note: "First pass 2026-11-27: Scholarly; New Testament Studies 59(4): 565–587, 2013; access: Harvard DASH repository, author's manuscript PDF, open access. Second pass 2026-11-27: re-fetched; DASH cover sheet gives NTS 59.4: 565–587; PDF page = printed page + 1. Class and recency window re-checked.",
     }
   gathercole-2015-gjw-context:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; New Testament Studies 61(3): 292–313, 2015; access: Apollo, University of Cambridge repository, accepted manuscript PDF, open.",
+      note: "First pass 2026-11-27: Scholarly; New Testament Studies 61(3): 292–313, 2015; access: Apollo, University of Cambridge repository, accepted manuscript PDF, open. Second pass 2026-11-27: re-fetched; accepted manuscript, page numbers as printed in the PDF. Class and recency window re-checked.",
     }
   nts-2015-editorial:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; New Testament Studies 61(3): 289–291, 2015; access: Cambridge Core reader, full text free.",
+      note: "First pass 2026-11-27: Scholarly; New Testament Studies 61(3): 289–291, 2015; access: Cambridge Core reader, full text free. Second pass 2026-11-27: re-fetched; Cambridge Core shows vol. 61, issue 3, July 2015, pp. 289–291; unsigned. Class and recency window re-checked.",
     }
   vatican-2016-mm-feast-decree:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition; Congregation for Divine Worship and the Discipline of the Sacraments, 2016; access: vatican.va PDF, open.",
+      note: "First pass 2026-11-27: Tradition; Congregation for Divine Worship and the Discipline of the Sacraments, 2016; access: vatican.va PDF, open. Second pass 2026-11-27: re-fetched. Class and recency window re-checked.",
     }
   roche-2016-apostle-of-apostles:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition; Congregation for Divine Worship and the Discipline of the Sacraments, 2016; access: vatican.va PDF, open.",
+      note: "First pass 2026-11-27: Tradition; Congregation for Divine Worship and the Discipline of the Sacraments, 2016; access: vatican.va PDF, open. Second pass 2026-11-27: re-fetched. Class and recency window re-checked.",
     }
   oca-mary-magdalene-life:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition; Lives of the Saints; access: oca.org, open.",
+      note: "First pass 2026-11-27: Tradition; Lives of the Saints; access: oca.org, open. Second pass 2026-11-27: re-fetched. Class and recency window re-checked.",
     }
   fenton-parish-who-was-mm:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition; St. Mary Magdalene Orthodox Church, Fenton, Michigan (published by Pravoslavie.ru / OrthoChristian.com), 2013; access: orthochristian.com, open.",
+      note: "First pass 2026-11-27: Tradition; St. Mary Magdalene Orthodox Church, Fenton, Michigan (published by Pravoslavie.ru / OrthoChristian.com), 2013; access: orthochristian.com, open. Second pass 2026-11-27: re-fetched; signed and dated 8/3/2013 at the foot of the text. Class and recency window re-checked.",
     }
 leads:
   - "Gregory the Great, Homily 33 in English (“She whom Luke calls the sinful woman, whom John calls Mary, we believe to be the Mary from whom seven devils were ejected according to Mark …”): read only as Ehrman 2006 is quoted by Müller van Velden p. 136; the Latin with Jóźwiak's own translation is on p. 875 of her article, not cited."
@@ -895,7 +887,10 @@ leads:
   - "John P. Meier, A Marginal Jew 2:817, 831, on a source-critical Lazarus story with only Mary: read only as cited by Schrader Polczer 2025."
   - "Schrader Polczer, Duke dissertation (2023): embargoed until 2027-09-14."
   - "Darrell Post, Bible and Spade 38.1 (2025), checked John 11 in 2,221 Greek manuscripts (as reported by Fellows 2025): the article is image-only; Associates for Biblical Research is a Tradition venue."
+  - "Karen L. King, on the Gospel of Mary (cited by Müller van Velden as King 2002:54), “Scholars are divided over the identity of Mary and her significance in this Gospel.”: read only as block-quoted by Müller van Velden p. 133 (second pass 2026-11-27)."
 uncited:
+  - "Müller van Velden p. 133, block quotation of King (“Scholars are divided over the identity of Mary and her significance in this Gospel.”): read; cut by the second pass 2026-11-27 (was which-mary/3): King's sentence was read only as quoted in another work, so it is a Lead for King, and it had been the only basis for the short's “divided”."
+  - "King, HTR 2014, author manuscript p. 22 (“Early Christianity's well-known profusion and confusion of Marys should make us cautious in identifying Mary here.”): read; cut by the second pass 2026-11-27 (was which-mary/4): the sentence is about the Mary of the Gospel of Jesus's Wife fragment, not the Gospel of Mary, and the text had widened it to “a Mary”."
   - "Swenson, Bible Odyssey, “Did You Know?” box (“likely result of textual ambiguity and later confusion with the sixth-century story of Mary of Egypt”; “Gnostic texts portray her as an early apostle”): read; not cited, as it may be Bible Odyssey's editorial text rather than Swenson's."
   - "Kent 2010 n. 1 (“The Greek fathers saw three separate people”) and n. 5 (1969 and 1978 changes): read; not cited, footnote reports resting on Haskins; the East/West point is carried by Beavis."
   - "Hunt, Hugoye 1.2 (1998), on Ephrem's conflation of the sinful woman with the Bethany anointer and the woman with the haemorrhage: read; not cited, since it does not involve Mary Magdalene."
@@ -904,7 +899,7 @@ uncited:
   - "Saint Sophia Greek Orthodox Cathedral, Washington DC, copy of the Fenton parish text: read; not cited, the same text."
   - "Dale Martin, RLST 152 lecture 6 (“probably the Gospel of Mark really did end at Chapter 16:8”): read; not cited, the authorship of Mark's ending is new-testament-later-additions' subject."
   - "Martin, RLST 152 lecture 8 (“[he's talking about Mary Magdalene probably]” on Thomas 114): read; not cited, a bracketed aside."
-  - "King, HTR 2014, on Gos. Phil. 59.6–11 in translation and on Thomas 114 (“not entirely clear who is being referred to”): read; not cited beyond the caution sentence."
+  - "King, HTR 2014, on Gos. Phil. 59.6–11 in translation and on Thomas 114 (“not entirely clear who is being referred to”): read; not cited (the caution sentence on p. 22 was cut by the second pass; see below)."
   - "King, NTS 2013, the kiss passage (Gos. Phil. 63.30–64.5) and n. 64 on Schenke's Sophia reading: read; not cited, the lacuna makes it a reading King herself hedges."
   - "Gathercole 2015 p. 6, “there are sexual undertones in the terms”: read; not cited separately, the wife text keeps his reticence sentence and his no-clear-reference sentence."
   - "NTS 61.3 editorial on the Harvard Divinity School press release (“These claims do not appear to have been retracted.”): read; not cited, the page does not discuss the retraction."
