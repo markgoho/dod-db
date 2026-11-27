@@ -414,3 +414,19 @@ statements:
         timestamp: "00:33:39.367"
         text: "But it's like around 1000 CE when Greek philosophy and just philosophy in general becomes a lot more influential within Judaism, that you finally have some Jewish philosophers who are like, yeah, no polygamy, we're just outlawing it."
     notes: "Conflict with second-temple: the quote dates the Jewish ban on polygamy to around 1000 CE; the statement reports Sassoon that the ascription of the enactment to Rabbenu Gershom has been questioned, with Tishby favouring a twelfth-century date. The turn's Josephus sentence is attached as a Trigger Claim. Logged at the #152 first pass, 2026-11-27."
+  - page: marriage-polygamy-and-adultery-in-the-bible
+    question: "Does the Hebrew Bible allow a man to have more than one wife?"
+    triggers:
+      - episode: 108
+        speaker: "Dan McClellan"
+        timestamp: "00:20:34.460"
+        text: "Yeah. It was normative. It was not the norm because you needed to be able to financially sustain multiple households. But yes, it was. It was normative in that if you could do it, you would do it. And, and there were no. Nobody had any concerns with it."
+    notes: "Conflict with polygyny: the quote states how common polygyny was (not the norm, for economic reasons) and that nobody had concerns with it; the statement says how common it was is not known (Calduch-Benages, Lemos, Sassoon) and that the texts accept it only “in the main – but not downright” (Sassoon). Raised by the #152 second pass, logged at publish, 2026-11-27."
+  - page: marriage-polygamy-and-adultery-in-the-bible
+    question: "How does the Hebrew Bible define adultery?"
+    triggers:
+      - episode: 133
+        speaker: "Dan McClellan"
+        timestamp: "00:09:06.415"
+        text: "So a man is legally not prohibited from going out and having sex with a sex worker or with a woman who is not betrothed or married to someone else, whether he's married or not."
+    notes: "Conflict with adultery: the quote says a man was not legally prohibited from sex with an unbetrothed woman; the statement's text reports Slager that married men could have sex with unpledged virgins and prostitutes “with a penalty less than death applied” (Deut 22:28–29, Exod 22:16–17). The definition itself agrees. Raised by the #152 second pass, logged at publish, 2026-11-27."

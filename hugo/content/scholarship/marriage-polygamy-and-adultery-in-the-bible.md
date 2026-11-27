@@ -1,7 +1,6 @@
 ---
 title: "Marriage, Polygamy and Adultery in the Bible"
 dek: "How marriage worked in ancient Israel, what the biblical texts say about having more than one wife, how they define adultery and divorce, and how scholars and religious traditions read them."
-draft: true
 core: polygyny
 sourcesRead: 2026-11-27
 related:
@@ -708,7 +707,7 @@ statements:
     group: "Divorce"
     question: "What does Matthew's exception, “except for porneia”, mean?"
     short: "Scholars do not agree on what porneia means there; readings include adultery and a marriage that the Law of Moses forbids. Many have held that Matthew added the exception to soften Jesus's absolute prohibition."
-    text: "William Loader writes that many, himself included, have assumed that Jesus forbade divorce under all circumstances and that Matthew softened the absolute prohibition by introducing an exception related to adultery, but argues that there are grounds to reconsider this, and to ask whether Jesus's demand ever meant to exclude adultery as a ground for divorce, as most assume; porneia, he writes, could at the time mean adultery. John Martens writes that Matthew added the exception clause to Jesus's clear teaching in Mark, seeking a way to open a pathway to remarriage, and that even today there is no widespread agreement on what porneia means there; following Joseph Fitzmyer and others, he takes it to concern marriages within the degrees of kinship outlawed by Leviticus 18. The NABRE note on Matthew 5:31–32 reads porneia as a marriage within the degrees of relationship forbidden by Leviticus 18:6–18, regarded as incest, and says Matthew's exceptive clauses are understood by some as a modification of the absolute prohibition."
+    text: "William Loader writes that many, himself included, have assumed that Jesus forbade divorce under all circumstances and that Matthew softened the absolute prohibition by introducing an exception related to adultery, but argues that there are grounds to reconsider this, and to ask whether Jesus's demand ever meant to exclude adultery as a ground for divorce, as most assume; porneia, he writes, could at the time mean adultery. John Martens writes that Matthew added the exception clause to Jesus's clear teaching in Mark, which he suspects had to do with remarriage, Matthew seeking a way to open a pathway to it, and that even today there is no widespread agreement on what porneia means there; following Joseph Fitzmyer and others, he takes it to concern marriages within the degrees of kinship outlawed by Leviticus 18. The NABRE note on Matthew 5:31–32 reads porneia as a marriage within the degrees of relationship forbidden by Leviticus 18:6–18, regarded as incest, and says Matthew's exceptive clauses are understood by some as a modification of the absolute prohibition."
     cites:
       - source: loader-2015-nts-adultery-divorce
         locator: "p. 68"
