@@ -1,0 +1,145 @@
+# Review record for the Timeline Entry `isaiah-40-55` (/timeline/#isaiah-40-55; #93 shape). Not rendered.
+# Issue #227 (from #108). Issue notes: Tradition as stated is the 8th-century prophet Isaiah; the show rejects an 8th or 7th century date without calling it traditional, so a Tradition Date needs a trigger that names the tradition's side. #99 inconsistency in the show: 'exilic' (E113), 'post-exilic' (E104), 'around 520 BCE' (E43), 'late 6th or 5th century' (E90, E182); use the sourced value. Overlaps: must sit before `isaiah-56-66` ("After 515 BCE", same `deutero-isaiah` tag and topic); relate to `cyrus-babylon` (539) and `second-temple` (515); consider `anchor` to `cyrus-babylon` if the sources date it relative to Cyrus. Covers chapters 40–55 only. Setting optional.
+# Shape chosen: one `critical` range, "Approximately 550–538 BCE", from -550 / to -538, placed by its start. New Catholic Encyclopedia (W. Hill) dates ch. 40 to 55 "oracles of the Exile (550–538)" in a sentence that says the sections are "approximately dated"; the display keeps "Approximately". Encyclopaedia Judaica (Theodore Friedman) dates the prophet's utterances "with approximate accuracy to 540 b.c.e.", alluding to Cyrus's impending conquest of Babylonia (539): inside the NCE range, so no split (#99), and given in the note. Coogan ch. 21 ("sometime in the sixth century in Babylon") and NABRE ("generally attributed to an anonymous poet who prophesied toward the end of the Babylonian exile") agree and are in the note, each as its source's.
+# Anchor check: no `critical.anchor: cyrus-babylon`. The entry has sourced years of its own (550–538); an anchor would replace them with 539 in placement (#210 note on `isaiah-56-66`: an anchor fits only an entry with no sourced date). The EJ quote names Cyrus's 539 conquest as what the prophet alludes to, and the note says so. No `seeAlso`: it takes one id, and `cyrus-babylon` and `isaiah-56-66` sit a few rows away anyway.
+# Overlaps checked: `isaiah-56-66` (after 515) sits after this entry's 550–538; Coogan ch. 22 (cited there) says Third Isaiah dates "after the exilic period, when Second Isaiah was written", consistent. `cyrus-babylon` (539) falls inside 550–538, consistent with EJ's "impending conquest" and NABRE's "toward the end of the Babylonian exile"; NCE's 538 is the year Cyrus let the Jews return (same NCE article, uncited). `second-temple` (515) not contradicted: nothing here says 40–55 is after the return.
+# #99 on the show: Trigger Claims kept: E43@00:45:20 (critical: "around 520 BCE … after the return", the first layers), E90@00:39:52 (critical: "late 6th or 5th century BCE"), E43@00:49:42 (tradition: Beecher reading Got Questions, which holds a single author). The show's 520 / "after the return" and 5th-century options differ from the sources' exilic 550–538; the gap is left unexplained (#99, #86). Not stored: E43@00:48:54 (rejects the 8th or 7th century date but names no one holding it; the issue rules it out as a tradition trigger), E104@00:50:52 ("This is post-exilic"), E113 (says only "the exilic period" for a theme, not 40–55's date), E179@00:42:16 ("40-55 added later", no date), E182 (no Isaiah 40–55 dating line found in the final Transcript; its "post-exilic Judaism" at 00:44:23 is not about Isaiah).
+# Tradition: E43@00:49:42 names the tradition's side (Got Questions: "the theory of multiple Isaiahs is one example of skepticism"); the sentence is verbatim on Got Questions' "What is the Deutero-Isaiah theory?" page (last updated March 12, 2024), which gives no date for chapters 40–55. The date comes from Got Questions' "When was Isaiah written?" (last updated March 25, 2025): "Chapters 40—66 of Isaiah were composed between approximately 700 and 680 BC." Its scope is 40–66, wider than this entry, so the display says "for chapters 40–66". Middles −544 and −690 are 146 years apart: the Tradition Date gets its own row (#214).
+# Setting skipped: the issue's "the prophet's 8th-century Jerusalem" is not what these sources say 40–55 addresses (Coogan: "in Babylon, not in eighth-century Jerusalem"; EJ: "an unknown prophet of the Babylonian Exile").
+# agent: the first pass (2026-11-26, lead agent). Pages fetched by curl (browser UA) into the lead's scratch folders (first: OUP Coogan ch. 21–22, USCCB NABRE Isaiah intro, Yale RLST 145 lectures 19–20; tradition: Got Questions pages) and one critical-side research agent's own folder (critical-agent); Britannica read in Claude in Chrome (refuses scripts) and the article text saved from the DOM (critical-chrome; uncited). NCE and EJ fetched by the research agent from encyclopedia.com (ec-isaiah-book, ej-isaiah). One script matched every quote against its saved text (NFKC, whitespace, quotes, dashes and HTML entities normalised): 5/5 hits, 0 misses, each once; all 3 Trigger Claims matched as substrings of their Transcript lines at timestamp and speaker.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Trigger E43@00:49:42 is Dan Beecher reading a Got Questions sentence; it states the tradition's side on authorship, not a year. If it does not count as stating the tradition's side, cut the trigger and the whole `tradition` block; the entry stands on its critical side. (2) Tradition scope: Got Questions dates 40–66, not 40–55; display carries the scope. (3) EJ's 540 is said of "Chapters 40–66" taken together ("for purposes of this article they will be considered in conjunction with them"), though its evidence (45:1; 47:1) is in 40–55; the note says "the prophecies". Narrow or cut if it reads as dating 40–55 alone. (4) NCE edition and year are not printed on the encyclopedia.com page (registry year null, as for jensen-nce-flood); bibliography and signature "[w. hill]" only. If it falls outside #86's window, the display falls back to Coogan's "6th century BCE" (from -600 / to -501). (5) NCE's "approximately dated" scopes all four sections; check the display's "Approximately" is no stronger or weaker. (6) Note wording: check each clause against its source ("anonymous prophet": NABRE's "anonymous poet"; "Oracles of the Babylonian exile": NCE's "oracles of the Exile").
+review:
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "New Catholic Encyclopedia, “Isaiah, Book of” (signed [w. hill]), section “Analysis”, ¶ 1, first sentence up to section (3). Fetched by the research agent; matched once. Backs the display “Approximately 550–538 BCE” and the note's “Oracles of the Babylonian exile”. Flags 4 and 5.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Encyclopaedia Judaica, “Isaiah”, Introduction (signed [Theodore Friedman]), last paragraph of “Survey of Views of the Authorship of Isaiah”. Matched once. Backs the note's “about 540 BCE, alluding to Cyrus's impending conquest of Babylon (539)”. Flag 3 (scope 40–66).",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan ch. 21 OUP summary (4th ed.), section “Second Isaiah”, ¶ 1, last sentence. Matched once. Backs the note's “the sixth century, in Babylon”. The same paragraph's evidence (Babylon not Assyria, “two statements about Cyrus of Persia”, an anonymous speaker) is not cited.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE Isaiah introduction, ¶ 8, first sentence (the paragraph `isaiah-56-66` cites for 56–66). Fetched by script 2026-11-26 (200); matched once. Backs the note's “anonymous” and “the poet prophesied toward the end of the exile”; “generally attributed” is a hedge on the attribution.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Got Questions “When was Isaiah written?”, answer ¶ 5, first sentence. Matched once. Backs display “Approximately 700–680 BCE, for chapters 40–66”, from -700 / to -680. Holder is the registry string already used for Got Questions (about page: “We are Christian, evangelical, theologically conservative, and nondenominational.”).",
+    }
+triggers:
+  43@00:45:20:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the [00:45:20.710] Dan McClellan line, from “That all of this combines” to “the first layers of Deutero-Isaiah being produced”; the turn goes on to Third Isaiah (stored for `isaiah-56-66`). The trimmed start drops the evidence (Cyrus named, Aramaic loanwords), not a hedge; “probably” and “Most scholars would say” are kept. Read 00:37:44–00:50:29.",
+    }
+  90@00:39:52:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the [00:39:52.900] Dan McClellan line (fourth and fifth sentences); the turn goes on to Isaiah 40:22 and the circle of the earth. Hedge “probably” kept. Read 00:38:47–00:42:27.",
+    }
+  43@00:49:42:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. The second [00:49:42.900] Dan Beecher turn, whole, reading Got Questions' Deutero-Isaiah page (same sentence verbatim there). McClellan answers at 00:50:09 that it is a value judgment. Read 00:48:54–00:52:41. Flag 1.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Worded for chapters 40–55, which NCE, NABRE (by chapter numbers) and Coogan (“Isaiah 40–55” in the same paragraph) date. EJ's 540 is for 40–66 taken together: in the note only, as “the prophecies” (flag 3).",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "No split: EJ's about 540 lies inside NCE's 550–538; Coogan's sixth century and NABRE's toward the end of the exile contain both. The show's 520 / 5th century is the show's, not a source's.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Trigger 43@00:49:42 has states: tradition (flag 1).",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “Got Questions Ministries, an evangelical ministry”, the ministry's own “evangelical”; never “the traditional view”.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date. NCE's “approximately” and EJ's “with approximate accuracy” are hedges, kept (display, note); NABRE's “generally attributed” is a hedge on the attribution.",
+    }
+sources:
+  coogan-brief-4e-summary-ch21:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 2019, OUP Learning Link companion summary",
+      note: "Reference (publisher chapter summary, #86), already in the registry (cited on `cyrus-babylon`). Page title “Chapter 21 Summary - A Brief Introduction to the Old Testament 4e Student Resources”.",
+    }
+  hill-nce-isaiah:
+    {
+      agent: pass,
+      owner: "",
+      edition: "New Catholic Encyclopedia, edition and year not printed on the Encyclopedia.com page",
+      note: "Reference (encyclopedia; NCE entries are Reference in the registry: jensen-nce-flood, collins-nce-pastoral-epistles, wild-nce-shroud-of-turin). New registry entry. Signed “[w. hill]”. Flag 4.",
+    }
+  friedman-ej-isaiah:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Encyclopaedia Judaica, edition and year not printed on the Encyclopedia.com page",
+      note: "Reference (encyclopedia), like porten-ej-temple. New registry entry; the Introduction is signed [Theodore Friedman], the Deutero-Isaiah section [Isaac Avishur] (uncited).",
+    }
+  nabre-isaiah-intro:
+    {
+      agent: pass,
+      owner: "",
+      edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
+      note: "Reference (#86; CONTEXT.md: notes by a scholarly association). Already in the registry (cited on `isaiah-56-66`).",
+    }
+  gotquestions-when-was-isaiah-written:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tradition (#86: Got Questions). New registry entry. Supports only what the ministry holds. Page last updated March 25, 2025.",
+    }
+leads:
+  - "Yale Divinity School study guide on Isaiah, reportedly “around 538-539 B.C.” (search snippet; PDF 404): not read."
+  - "A commentary (likely McKenzie, Anchor Bible 1968, or Westermann, OTL), reportedly “some time after 550, the year which saw the beginning of the victorious campaign of Cyrus” (search snippet): not read; outside #86's window either way."
+  - "BAS Library “Who Wrote Second Isaiah?” (403) and Oxford Bibliographies “Second Isaiah” (Cloudflare check): not read."
+  - "Tiemeyer, “The Book of Isaiah and the Neo-Babylonian Period”, Cambridge Companion to the Book of Isaiah, ch. 3: only the free summary read (support of Cyrus “should not be used without reflection as dating criteria”); the chapter itself not read."
+uncited:
+  - "Britannica “Book of Isaiah” (read in Chrome, saved from the DOM): “Deutero-Isaiah (40–55) … dates from the Babylonian Exile (6th century BC). The anonymous prophet is in exile”. Agrees; redundant with Coogan for the century, and NCE and EJ give the years."
+  - "Williamson, Bible Odyssey “How Many Isaiahs Were There?” (2015): Isa 45:1 refers to Cyrus “looking forward to his capture of Babylon in 539 B.C.E.”; the writer “looks forward to the imminent arrival of Cyrus”. Relative and agrees with EJ; adds no date."
+  - "Shaked, Encyclopaedia Iranica “Isaiah, Book of” (2006): places 40–66 against the exile of “587-582 B.C.E.” and says the author “may have been active among the Jewish population who remained in Judah”. Broad, 40–66, and a setting rather than a composition date."
+  - "Avishur, EJ “Deutero-Isaiah” section: a background “more than 150 years later than the time of Isaiah son of Amoz”; the prophet appeared “about 20 years” after Ezekiel's vision. Relative only."
+  - "NCE, same article, ¶ beginning “Though admittedly it is difficult”: the poet-prophet applied Isaiah's message “to the situation of the Exile and the return (537 b.c.)”. Its 537 differs from its own 538 for the return; neither is the composition date, so not used."
+  - "Couey, Bible Odyssey “Isaiah”: 40–66 “was written after the time of the historical prophet”. No date."
+  - "Got Questions “Summary of the Book of Isaiah”: “The book of Isaiah was written between 739 and 681 B.C.” The whole book, not 40–55; the “When was Isaiah written?” page it links to dates 40–66 separately."
+  - "Got Questions “What is the Deutero-Isaiah theory?”: the page Beecher reads (E43@00:49:42); “Most conservative Bible scholars are in agreement that Isaiah was the sole author”. Authorship only, no date."
+  - "Britannica “Book of Isaiah”: “Chapters 40–66 are much later in origin and therefore known as Deutero-Isaiah (Second Isaiah).” Wider than 40–55 and no date."
+  - "Hayes l19 ch. 4: “It's clear, first of all, that these parts of Isaiah were written after the Exile . Parts of Third Isaiah were written after the Exile, [and] all of second Isaiah”. The transcript line is garbled and the same paragraph says “The audience that's addressed is living in exile”; citing it would manufacture an exilic / post-exilic split. Ch. 5 calls it “a wholly post destruction work” (after 586, not a date)."
+  - "Coogan ch. 22 OUP summary, section “Third Isaiah”: Third Isaiah dates “to a period after the exilic period, when Second Isaiah was written”. Relative and in a section on 56–66; Coogan ch. 21 carries the date."

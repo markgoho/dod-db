@@ -4279,3 +4279,45 @@ gotquestions-demons:
   url: "https://www.gotquestions.org/demons-Bible.html"
   hostAuthored: false
   tradition: "Got Questions Ministries, an evangelical ministry"
+
+hill-nce-isaiah:
+  author: "W. Hill"
+  title: "Isaiah, Book of"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/isaiah-book"
+  hostAuthored: false
+  tradition: null
+
+friedman-ej-isaiah:
+  author: "Theodore Friedman"
+  title: "Isaiah: Introduction"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/isaiah"
+  hostAuthored: false
+  tradition: null
+
+gotquestions-when-was-isaiah-written:
+  author: null
+  title: "When was Isaiah written?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/when-was-Isaiah-written.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
