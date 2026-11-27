@@ -7,1412 +7,1452 @@
 # First pass: four research agents (polygyny, marriage, adultery, divorce) fetched every source on 2026-11-27 by curl into separate scratch folders (Internet Archive snapshots of the same URLs for OAPEN, the Durham repository and bible.usccb.org) and copied quotes only from the saved text; every page quote was then script-matched by the lead against those saved texts (whitespace and HTML entities normalised, curly quotes and dashes folded, line-end hyphens rejoined, NFKC): 166/166, 0 misses. The second pass must re-fetch.
 # Trigger screen (CONTEXT 2026-11-25): seven Host assertions that contradict a statement are not attached and are logged as conflicts in data/scholarship-candidates.yaml under this page: 108@00:09:48 (the man “was purchasing use” and the bride price was “the price of the transaction”, against bride-price); 108@00:45:30 (women “weren't allowed to [divorce] at all”, against divorce, which reports Feinstein's “we do not know for certain” and Elephantine); 133@00:13:09 (adultery “is not a fundamentally moral question. It's a question of property rights”, against why-adultery, which reports Greenberg's religious-transgression reading); 139@00:12:21 (the reading of Lev 18:18 as a ban on polygyny “isn't supported by anything”, against leviticus-18-18, which reports Tosato, Gruber and Sassoon); 44@00:23:11 (“there's nothing prescriptive going on in Genesis 2:24 at all”, against genesis-2-24, which reports a scholarly split); 139@00:14:19 (the change came “because of Greek philosophy and Greco-Roman social conventions”, against second-temple, which reports Ilan's internal developments as well as Greek and Roman influence); 139@00:33:39, second sentence (a Jewish ban “around 1000 CE”, against second-temple's report that the ascription to Rabbenu Gershom is questioned and Tishby's twelfth-century date). For the same reason 139@00:13:17 is trimmed to its polygyny sentences and leaves out its Genesis 2:24 sentences (“it's clearly not a prescription of proper marriage”), and 108@00:20:34 stops before “Nobody had any concerns with it.”
 # Flags for the second pass: (1) Most Reference citations are Bible Odyssey pages (19 authors) and Jewish Women's Archive entries: independent authors, two platforms. (2) Several Bible Odyssey pages carry a 2021-02-03 datePublished (Lemos, Coogan, Calduch-Benages, Wells, Macwilliam), which may be a site-migration date; years kept as the page gives them. (3) Ademiluka's “generally accepted amongst scholars” rests on old secondary citations; the core also rests on Calduch-Benages, Lemos and Sassoon. (4) Slager (The Bible Translator, a UBS journal) classed Scholarly by venue. (5) Edenburg is TheTorah.com, classed Reference as tov-2023-thetorah-deut-32-8; its body was read from the page's embedded JSON. (6) Sloane is an explicitly evangelical response in Tyndale Bulletin, Scholarly by venue, used only for the attributed dissent in prophets. (7) why-adultery: no in-window source says the question is “debated”; the short says “Scholars explain it in different ways”, from sources that do so. (8) The NABRE New Testament notes (Matthew 5) are 1986; attributed in exception-clause's text only; the short's incest reading also rests on Martens 2021 (following Fitzmyer). (9) Heger and Sassoon quotes are fragments where the PDF interleaves Hebrew or footnote markers. (10) bergant-reid-nce-women-bible: only Bergant's Old Testament section is quoted; the registry names Bergant and the section. (11) Lemos: the book (T. M. Lemos) and the Bible Odyssey article (Tracy M. Lemos) are one author; the core cites only the article. (12) Feinstein's Bible Odyssey article is dated 2026.
+# Second agent pass 2026-11-27 (#93 delegation, independent): every source re-fetched into the second pass's own scratch folder, not the first pass's files. By curl: 30 URLs for 31 sources (PDFs of Ademiluka, Instone-Brewer ×2, Lemos 2010, Loader, Martens, Sassoon, Scheffler, Slager, Sloane; Encyclopedia.com ×4 entries, JWA ×3, Yale ×4, TheTorah.com, vatican.va ×3, oca.org, churchofjesuschrist.org, gotquestions.org ×2, NABRE Deut 24 live). Internet Archive (live 403 to scripts): Doering 20250111073508, Heger (OAPEN) 20230603135319, NABRE Deut 25 20260308171723, Exod 21 20261022062955, Matt 5 20261029195819. Bible Odyssey (17 articles, 3 HarperCollins entries) refuses scripted requests (Cloudflare challenge), so read live in Chrome: one page opened by plain navigation, the other 19 loaded by in-page fetch() in that same browser session and parsed with DOMParser; quotes matched there by script, and the entries' structure (factoid lists, sentence order) checked the same way. 166/166 quotes matched: 149 by script on whitespace and NFKC alone; polygyny/8 and concubines/5 (outside the body paragraphs) found by script in the full page text and read in the printed snippet; 12 needed HTML-entity decoding, line-end de-hyphenation or quote/dash folding; why-adultery/3 runs across an HTML paragraph split mid-sentence; Sassoon's ahot (leviticus-18-18/7) carries a dotted ḥ in the PDF. Ademiluka and Scheffler matched in the plain, not the layout, PDF extraction. PDF pages checked against printed numbers; HTML paragraphs counted from the markup. All 14 Trigger Claims re-matched by script at timestamp and speaker (final transcript) and read two minutes either side; the first pass's contradiction screen re-run.
+# Second pass changes. Shorts: polygyny (core; “Yes, scholars say: the texts in the main accept polygyny, and Deuteronomy's laws assume it…”, no longer “Its laws” or Ademiluka's “scholars generally”); bride-price (“No, scholars now say”, not “most scholars”, as Lemos's “most, though not all” is about bridewealth as a gift class); genesis-2-24 (“and as not in itself forbidding polygamy” cut, Heger alone); second-temple (“a tendency toward monogamy”, not “practice tended toward monogamy”); why-adultery (“a religious offence”, not “against God”); exception-clause (“readings include”); paul-divorce (Instone-Brewer's remarriage debate cut, one author; “allows divorce”, Das's word). Text: polygyny's Malena sentence split into its two passages (the 700 wives are a factoid; “followed the model … contrary to values” is about his kingship as a whole). No citation cut. Registry: scheffler-2011-hts-jesus-torah-divorce series 67(3) → 67(1), art. 1006. Locators: models/3, levirate/4 (Wells paragraphs), polygyny/5 (p. 6), polygyny/8 (key-points list), bride-price/5–8, levirate/1, concubines/4 (Meyers paragraphs, off by one), why-adultery/6 (Hayes paragraph), adultery-penalty/3 (p. 68 only), adultery-penalty/6–7 (JWA heading), new-testament-adultery/7–9 (pp. 4, 5), exception-clause/2–3 (pp. 73, 74, not 78), polygyny/10 (second sentence), polygyny/8 and concubines/5 (factoid lists), adultery/6 and adultery-penalty/2 (Edenburg Case 3, paragraph 6, not 2), tradition/7 (answer, paragraph 2).
+# Second pass flags: (1) Triggers, none a direct contradiction, so the triggers file is not edited and no conflict logged (outside this pass's files): 139@00:13:17 “just outright endorse … if not just condone polygamy” is stronger than the polygyny short; 108@00:20:34 “It was not the norm” is a frequency claim; 139@00:16:36 ends before “The one exception would be 1 Timothy 3:2”, so “no outright condemnation of polygyny at all” drops its qualifier; 133@00:09:06 “legally not prohibited” sits against Slager's “penalty less than death” (Deut 22:28–29). (2) Ademiluka's “generally accepted amongst scholars” rests on secondhand citations (Barth 1961, Cocherell 2015, Hillman 1975); kept in the text, attributed. (3) divorce short drops Feinstein's “we do not know for certain” hedge; kept, as HarperCollins states the no-law point flatly. (4) Calduch-Benages's JSON-LD date is 2021-08-16, not 2021-02-03; year unchanged. (5) Bible Odyssey read live in the browser by in-page fetch after one navigation (not page-by-page navigation); the registry access lines are unchanged. (6) leviticus-18-18/7 is not verbatim by one diacritic: the PDF prints ahot with a dotted ḥ. (7) exception-clause text drops Martens's “I suspect” on the remarriage motive. (8) Yale lecture years and the CUP excerpt years not printed on the fetched pages; not re-checked. Publish rule recomputed: core carried by Calduch-Benages, Lemos, Ademiluka and Sassoon, 4 independent authors (2 Scholarly); 20 statements. Ids, slug and draft unchanged.
 review: null
 delegation:
   by: owner
   date: 2026-11-23
   issue: "#93"
+  secondPass: 2026-11-27
 citations:
   models/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   models/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   models/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator was “paragraph 1”, the quote is in the third body paragraph: now “paragraph beginning “It is difficult to paint””.",
     }
   models/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   models/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   arranged/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   arranged/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   arranged/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   arranged/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   arranged/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   arranged/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   arranged/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   arranged/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   bride-price/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; context read. Lemos's “most, though not all, scholars” is about classing mōhar as bridewealth against other gift types; the next paragraph says some scholars still treat bridewealth as a purchase price. So it cannot head a “not a purchase” short: the short no longer says “most scholars” and now reads “No, scholars now say”, carried by Lemos 2010 p. 8 (the purchase debates “died down”), Lemos's Bible Odyssey “inaccurate” and Meyers's “now known to be flawed”. Text unchanged (it quotes Lemos's scope).",
     }
   bride-price/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified (line-end hyphen rejoined); carries the short's “scholars now say” with Meyers.",
     }
   bride-price/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Quote starts mid-sentence (after “While, as we saw, Neufeld in fact combines all three of these ideas in his interpretation of mōhar,”).",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Quote starts mid-sentence (after “While, as we saw, Neufeld in fact combines all three of these ideas in his interpretation of mōhar,”). Second pass 2026-11-27: verified at its locator.",
     }
   bride-price/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   bride-price/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator was “paragraph 4”, the quote is in the subsection's third paragraph: now “paragraph beginning “Another marital payment””.",
     }
   bride-price/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator fixed as bride-price/5.",
     }
   bride-price/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator was “paragraph 5”: now “paragraph beginning “In anthropological perspective””.",
     }
   bride-price/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator fixed as bride-price/7.",
     }
   bride-price/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   bride-price/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   love/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   love/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   love/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   love/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   love/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   levirate/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator was “paragraph 6”: now “paragraph beginning “To refute the notion””.",
     }
   levirate/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   levirate/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   levirate/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator was “paragraph 2”, the quote is in the fourth body paragraph: now “paragraph beginning “Upon the father’s death””.",
     }
   levirate/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   levirate/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   levirate/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   levirate/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   levirate/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   polygyny/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; one of the core authors. Short narrowed: “Deuteronomy's laws assume it” (her “the Deuteronomic legislation”), not “Its laws”.",
     }
   polygyny/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   polygyny/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; one of the core authors.",
     }
   polygyny/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified.",
     }
   polygyny/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Ademiluka's “generally accepted amongst scholars” is his own sentence, quoted; his support (Barth 1961, Hillman 1975) is thin and cited secondhand. Flag for the second pass.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Ademiluka's “generally accepted amongst scholars” is his own sentence, quoted; his support (Barth 1961, Hillman 1975) is thin and cited secondhand. Flag for the second pass. Second pass 2026-11-27: verified (PDF two-column layout; matched in the plain extraction); locator page was p. 4, the PDF footer reads “Page 6 of 8”: now p. 6. His “generally accepted amongst scholars” rests on Barth 1961, Cocherell 2015 and Hillman 1975, all cited secondhand; it stays in the text, attributed, and no longer heads the short, which now says “scholars say: the texts in the main accept polygyny”, the strength Ademiluka, Sassoon, Calduch-Benages and Lemos share.",
     }
   polygyny/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Sassoon's “but not downright” kept in the text; he leans toward a reading of Lev 18:18 as a ban (see leviticus-18-18), so the short does not say no law forbids polygyny.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Sassoon's “but not downright” kept in the text; he leans toward a reading of Lev 18:18 as a ban (see leviticus-18-18), so the short does not say no law forbids polygyny. Second pass 2026-11-27: verified; context read (“In the main – but not downright”, then Malachi, the creation couple and Lev 18:18). His “in the main, condone” now carries the short's “in the main accept”.",
     }
   polygyny/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified.",
     }
   polygyny/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified, but not in the paragraph the locator named: it is an item of the article's factoid list (ul.boFactoidList). Locator now “factoid list at the top of the article”. Text narrowed: it joined the 700 wives (factoid) to “following the model of ancient Near Eastern kingship” (paragraph “Other less desirable aspects”, about his career as a whole); now two clauses, “and that Solomon followed the model …, which proved contrary to values that would become biblical theological foundations (Deuteronomy 17; 1 Samuel 8)”.",
     }
   polygyny/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified in the paragraph beginning “Other less desirable aspects”; that paragraph's “it” covers his kingship as a whole (forced labour, excess, foreign worship); see polygyny/8 for the text change.",
     }
   polygyny/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; it is the entry's second sentence, not the opening one (that is “The physical and spiritual union…”): locator now “s.v. “marriage”, second sentence”.",
     }
   concubines/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   concubines/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   concubines/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   concubines/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator was “paragraph 7”: now “paragraph beginning “The powerful male interest””.",
     }
   concubines/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; the pull quote is outside the article's body paragraphs, as the locator says.",
     }
   concubines/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; it is an item of the article's factoid list (ul.boFactoidList), not a pull quote: locator now “factoid list at the top of the article”.",
     }
   concubines/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   concubines/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   genesis-2-24/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; whole article read: Warner does not discuss whether Gen 2:24 forbids polygamy.",
     }
   genesis-2-24/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   genesis-2-24/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   genesis-2-24/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   genesis-2-24/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   genesis-2-24/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   genesis-2-24/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Fragment: the sentence opens “Although … Mark 10:8 cites verbatim the LXX text of Gen 2:24 with the addition “the two,”” before it; the quoted clause follows.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Fragment: the sentence opens “Although … Mark 10:8 cites verbatim the LXX text of Gen 2:24 with the addition “the two,”” before it; the quoted clause follows. Second pass 2026-11-27: verified (p. 35); lead-in read. Short narrowed: “and as not in itself forbidding polygamy” cut, as it rested on Heger alone (#133); his reading stays in the text, attributed.",
     }
   genesis-2-24/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified (p. 35); see genesis-2-24/7.",
     }
   leviticus-18-18/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Heger's sentence is interrupted by Hebrew in the PDF; quoted as two fragments (this and /2).",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Heger's sentence is interrupted by Hebrew in the PDF; quoted as two fragments (this and /2). Second pass 2026-11-27: verified at its locator.",
     }
   leviticus-18-18/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   leviticus-18-18/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Fragment after Hebrew: Gruber's reading “conflicting with the common interpretation …”.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Fragment after Hebrew: Gruber's reading “conflicting with the common interpretation …”. Second pass 2026-11-27: verified at its locator.",
     }
   leviticus-18-18/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   leviticus-18-18/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   leviticus-18-18/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Fragment: a footnote marker precedes it in the PDF (“The philological voyage was bumpy, the literary road circuitous;7 but in the end …”).",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Fragment: a footnote marker precedes it in the PDF (“The philological voyage was bumpy, the literary road circuitous;7 but in the end …”). Second pass 2026-11-27: verified at its locator.",
     }
   leviticus-18-18/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; the PDF prints the transliteration ahot with a dotted ḥ (private-use glyph), quoted without the diacritic.",
     }
   leviticus-18-18/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   leviticus-18-18/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   second-temple/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   second-temple/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   second-temple/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; whole article read. Short narrowed: “while practice tended toward monogamy” is now “though there was a tendency toward monogamy”, since Calduch-Benages sets the Babatha archive and Theodosius I against the monogamy norm, Ilan says developments “tended toward monogyny” and Doering speaks of a “tendency … to prefer monogamy”.",
     }
   second-temple/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; see second-temple/3.",
     }
   second-temple/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; one of the authors behind the short's “tendency toward monogamy”.",
     }
   second-temple/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Fragment: footnote 2 marker follows; /7 continues after it.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Fragment: footnote 2 marker follows; /7 continues after it. Second pass 2026-11-27: verified at its locator.",
     }
   second-temple/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   second-temple/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   second-temple/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   second-temple/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   second-temple/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   second-temple/12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   adultery/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   adultery/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   adultery/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   adultery/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   adultery/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   adultery/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator now names the paragraph, “All of these readings”, in section “Case 3 – Adultery with a Married Woman” (the page uses an en dash).",
     }
   why-adultery/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   why-adultery/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   why-adultery/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   why-adultery/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   why-adultery/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; paragraph read in full.",
     }
   why-adultery/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator was “paragraph beginning “If, along the road””, but the quote is in the next paragraph: now “paragraph beginning “Furthermore, Greenberg argues””. Hayes's “transcending the power of humans to pardon or forgive” there carries “could not pardon”. Short narrowed: “a religious offence against God” is now “a religious offence”, the strength Rosen-Zvi (“religious transgression”) and Hayes (“every crime is also a sin”) share.",
     }
   why-adultery/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; the Middle Assyrian laws quoted are Tablet A 14–16, on adultery.",
     }
   why-adultery/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Scope: Hayes's “a little controversial, not everyone agrees” is about Greenberg's comparison of penalties across law codes, not specifically adultery; the text says so.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Scope: Hayes's “a little controversial, not everyone agrees” is about Greenberg's comparison of penalties across law codes, not specifically adultery; the text says so. Second pass 2026-11-27: verified; scope as the first pass notes.",
     }
   why-adultery/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; it is in the article's teaser under the title, as the locator says.",
     }
   adultery-penalty/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   adultery-penalty/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; it is the sixth paragraph of Case 3, not the second: locator now “paragraph 6”.",
     }
   adultery-penalty/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Read in the author-posted copy (billloader.com) and the North-West University repository copy of the CUP PDF; text extraction drops digits, so only digit-free sentences are quoted.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Read in the author-posted copy (billloader.com) and the North-West University repository copy of the CUP PDF; text extraction drops digits, so only digit-free sentences are quoted. Second pass 2026-11-27: verified on p. 68; the abstract (p. 67) does not contain it, so the locator is now “p. 68”.",
     }
   adultery-penalty/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   adultery-penalty/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   adultery-penalty/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator now names the JWA section heading, “Scriptural References”, paragraph 1.",
     }
   adultery-penalty/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator now “section “Scriptural References”, paragraph 4”.",
     }
   prophets/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   prophets/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   prophets/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   prophets/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   prophets/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   prophets/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   prophets/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   prophets/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   prophets/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   new-testament-adultery/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   new-testament-adultery/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   new-testament-adultery/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   new-testament-adultery/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   new-testament-adultery/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   new-testament-adultery/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   new-testament-adultery/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified (two-column PDF; matched in the plain extraction); locator page was p. 3, the PDF page reads “Page 4 of 6”: now p. 4.",
     }
   new-testament-adultery/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator page was p. 4, the PDF page reads “Page 5 of 6”: now p. 5.",
     }
   new-testament-adultery/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; locator page fixed to p. 5 as new-testament-adultery/8.",
     }
   divorce/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified. Flag: the short's “no biblical law lets a wife initiate it” does not carry Feinstein's hedge that “we do not know for certain” Israelite women could not; left, as HarperCollins states it flatly and the Elephantine clause follows.",
     }
   divorce/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   divorce/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. HarperCollins is flatter than Feinstein (“no law … allowed”); the short says “no biblical law lets a wife initiate it”, which both carry.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. HarperCollins is flatter than Feinstein (“no law … allowed”); the short says “no biblical law lets a wife initiate it”, which both carry. Second pass 2026-11-27: verified at its locator.",
     }
   divorce/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; context read: “This” is the dissolution of the marriage (“The results differed depending on who initiated the divorce”).",
     }
   divorce/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   divorce/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   divorce/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   jesus-divorce/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; paragraph read: Martin names the three witnesses next (“One from Mark that Matthew copies, one from Q that both Matthew and Luke have, and one from Paul”), which the short and text carry.",
     }
   jesus-divorce/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   jesus-divorce/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Footnote sentence broken by D'Angelo's bibliographic reference; /4 continues it.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Footnote sentence broken by D'Angelo's bibliographic reference; /4 continues it. Second pass 2026-11-27: verified at its locator.",
     }
   jesus-divorce/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   jesus-divorce/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   jesus-divorce/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   jesus-divorce/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   exception-clause/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   exception-clause/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Sentence broken by a page break; /3 continues it.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Sentence broken by a page break; /3 continues it. Second pass 2026-11-27: verified on p. 73 (the PDF drops digits; pages counted from the first article page, 67); locator was p. 78: now p. 73.",
     }
   exception-clause/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified on p. 74; locator was p. 78: now p. 74.",
     }
   exception-clause/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   exception-clause/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   exception-clause/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; context read: the sentence follows “A large part of the reason for the exception clauses, I suspect, had to do with remarriage”; the text attributes the reading to Martens (“he writes”), so kept. Flag: his “I suspect” is not carried.",
     }
   exception-clause/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; context read: “the answer” is to what porneia means (adultery, other sexual misbehaviour, incestuous marriage, a Hebrew term, many grounds). Short narrowed: “it is read as adultery or as a marriage that the Law of Moses forbids” is now “readings include adultery and a marriage that the Law of Moses forbids”, as Martens lists more.",
     }
   exception-clause/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Martens's own reading, in window; the quote stops before the footnote that breaks “Leviticus 18:6–18”.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Martens's own reading, in window; the quote stops before the footnote that breaks “Leviticus 18:6–18”. Second pass 2026-11-27: verified at its locator.",
     }
   exception-clause/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   exception-clause/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   paul-divorce/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified. Short narrowed: “allows separation” is now “allows divorce”, Das's word, and “telling a divorced spouse to stay single or be reconciled” added from this quote.",
     }
   paul-divorce/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   paul-divorce/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified. Short narrowed: “Scholars still debate whether he says anything about remarriage” cut, as both debate sentences are Instone-Brewer's (one author, #133); his report stays in the text, attributed.",
     }
   paul-divorce/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; see paul-divorce/3.",
     }
   paul-divorce/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   paul-divorce/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   tradition/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   tradition/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   tradition/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   tradition/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   tradition/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   tradition/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; it is the answer's second paragraph only: locator now “answer, paragraph 2”.",
     }
   tradition/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   tradition/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   tradition/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   tradition/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
   tradition/12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
 triggers:
   139@00:13:17:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Trimmed to its last two sentences; the turn's Genesis 2:24 sentences conflict with genesis-2-24 and are logged as a conflict (44@00:23:11).",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Trimmed to its last two sentences; the turn's Genesis 2:24 sentences conflict with genesis-2-24 and are logged as a conflict (44@00:23:11). Second pass 2026-11-27: re-matched by script at timestamp and speaker (final transcript, full turn) and read two minutes either side; trim confirmed. Flag: “just outright endorse, uh, if not just condone polygamy” is stronger than the polygyny short's “in the main accept” (Sassoon's “not downright”), the ground on which 108@00:20:34 drops “Nobody had any concerns with it”; not a direct contradiction (“a bunch of passages”), so kept; for the lead.",
     }
   139@00:16:36:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Second pass 2026-11-27: re-matched by script at timestamp and speaker and read two minutes either side. Flag: the trimmed quote ends at “marry one wife at a time.”; the turn goes straight on “The one exception would be 1 Timothy 3:2”, which the speaker reads as against a polygynous leader, so “New Testament has no outright condemnation of polygyny at all” drops its qualifier. Not edited (a Trigger Claim gates the subject); for the lead.",
     }
   139@00:33:39:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Trimmed to the Josephus sentence; the turn's next sentence (a Jewish ban “around 1000 CE”) is logged as a conflict with second-temple.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Trimmed to the Josephus sentence; the turn's next sentence (a Jewish ban “around 1000 CE”) is logged as a conflict with second-temple. Second pass 2026-11-27: re-matched by script at timestamp and speaker (final transcript, full turn), verbatim; read two minutes either side; speaker and subject confirmed; no hedge dropped.",
     }
   108@00:08:46:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Second pass 2026-11-27: re-matched by script at timestamp and speaker (final transcript, full turn), verbatim; read two minutes either side; speaker and subject confirmed; no hedge dropped.",
     }
   108@00:20:34:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Stops before “Nobody had any concerns with it.”, which goes beyond what polygyny reports (Sassoon's “not downright”; Calduch-Benages's “accepted by some and rejected by others” for the Hellenistic period).",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Stops before “Nobody had any concerns with it.”, which goes beyond what polygyny reports (Sassoon's “not downright”; Calduch-Benages's “accepted by some and rejected by others” for the Hellenistic period). Second pass 2026-11-27: re-matched by script at timestamp and speaker and read two minutes either side; trim confirmed. Flag: “It was not the norm” is a frequency claim against the short's “How common it was is not known”; compatible with Sassoon's “need not have been ubiquitous”, so kept; for the lead.",
     }
   108@00:28:34:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Second pass 2026-11-27: re-matched by script at timestamp and speaker (final transcript, full turn), verbatim; read two minutes either side; speaker and subject confirmed; no hedge dropped.",
     }
   108@00:42:22:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Second pass 2026-11-27: re-matched by script at timestamp and speaker (final transcript, full turn), verbatim; read two minutes either side; speaker and subject confirmed; no hedge dropped.",
     }
   108@00:48:18:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Second pass 2026-11-27: re-matched by script at timestamp and speaker (final transcript, full turn), verbatim; read two minutes either side; speaker and subject confirmed; no hedge dropped.",
     }
   133@00:09:06:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Second pass 2026-11-27: re-matched by script at timestamp and speaker and read two minutes either side. Flag: “a man is legally not prohibited from going out and having sex with … a woman who is not betrothed or married” sits against Slager's “with a penalty less than death applied” (Deut 22:28–29); the trigger's subject is adultery, which Rooke and Slager define as the speaker does, so kept; for the lead.",
     }
   133@00:16:09:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Second pass 2026-11-27: re-matched by script at timestamp and speaker (final transcript, full turn), verbatim; read two minutes either side; speaker and subject confirmed; no hedge dropped.",
     }
   133@00:16:20:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Second pass 2026-11-27: re-matched by script at timestamp and speaker (final transcript, full turn), verbatim; read two minutes either side; speaker and subject confirmed; no hedge dropped.",
     }
   133@00:50:59:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Second pass 2026-11-27: re-matched by script at timestamp and speaker (final transcript, full turn), verbatim; read two minutes either side; speaker and subject confirmed; no hedge dropped.",
     }
   68@00:38:51:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Second pass 2026-11-27: re-matched by script at timestamp and speaker (final transcript, full turn), verbatim; read two minutes either side; speaker and subject confirmed; no hedge dropped.",
     }
   44@00:51:38:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
+      note: "First pass 2026-11-27: script-matched at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped. Second pass 2026-11-27: re-matched by script at timestamp and speaker (final transcript, full turn), verbatim; read two minutes either side; speaker and subject confirmed; no hedge dropped.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: 20 statements. Core polygyny cites Calduch-Benages (Reference, 2021), Lemos (Reference, 2021), Ademiluka 2020 (Scholarly), Sassoon 2011 (Scholarly), Malena (Reference) and HarperCollins (Reference): 6 independent authors, 4 of them carrying the short's claim, none Host-authored. Rule holds.",
+      note: "First pass 2026-11-27: 20 statements. Core polygyny cites Calduch-Benages (Reference, 2021), Lemos (Reference, 2021), Ademiluka 2020 (Scholarly), Sassoon 2011 (Scholarly), Malena (Reference) and HarperCollins (Reference): 6 independent authors, 4 of them carrying the short's claim, none Host-authored. Rule holds. Second pass 2026-11-27: recomputed after the changes: 20 statements; the core short now reads “scholars say: the texts in the main accept polygyny”, carried by Calduch-Benages (Reference), Lemos (Reference), Ademiluka 2020 (Scholarly) and Sassoon 2011 (Scholarly): 4 independent authors, 2 Scholarly, none Host-authored. Malena and HarperCollins are not counted. Rule holds.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: no statement says “consensus”. State-of-field wording is quoted from its source: “generally accepted amongst scholars” (Ademiluka; polygyny short), “most, though not all, scholars” and “now known to be flawed” (Lemos 2010, Meyers; bride-price short “Most scholars now say no”), “all agree … etiology” and “Some … Other scholars disagree” (Warner; genesis-2-24), “most translators and commentators” and “the common interpretation” (Heger; leviticus-18-18), “commonly interpreted” (Heger) and “famously debated” (Doering; second-temple), “considerable debate” (Collins NCE; adultery-penalty), “no real doubt … few if any followers” (Martens; jesus-divorce), “many, including myself, have assumed” and “no widespread agreement” (Loader, Martens; exception-clause), “still a debate” (Instone-Brewer; paul-divorce), “Scholars disagree” (Weisberg; levirate text), “most interpreters today” (Warner; levirate text). #133 per short: models (Lemos, Wells, Osiek, Mbuvi); arranged (Coogan, Lemos, HarperCollins, Meyers); bride-price (Lemos, Meyers; exchange framing Bergant in the text); love (Meyers, Lemos, Coogan, Bergant); levirate (Meyers, Bergant, NABRE, Wells, Weisberg, Ilan); polygyny (Calduch-Benages, Lemos, Ademiluka, Sassoon); concubines (HarperCollins, NABRE, Bergant, Meyers, Gafney, Scholz); genesis-2-24 (Warner, Doering, Heger); leviticus-18-18 (Heger, Sassoon); second-temple (Calduch-Benages, Ilan, Heger, Doering, Sassoon); adultery (HarperCollins, Rooke, Rosen-Zvi, Slager, Edenburg); why-adultery (Slager, Rooke, Collins, Rosen-Zvi, Hayes, Edenburg); adultery-penalty (Collins, Edenburg, Loader); prophets (Hayes, Rooke, HarperCollins, Yee, Macwilliam, Kamionkowski; dissent Sloane); new-testament-adultery (HarperCollins, Marshall, Martin, Collins, Das, Scheffler); divorce (Feinstein, HarperCollins, EJ Elephantine, NABRE, Martens, Instone-Brewer); jesus-divorce (Martin, Martens, Das); exception-clause (Loader, Martens; NABRE 1986 attributed; Loader's reconsideration attributed in the text, not the short); paul-divorce (Das, Marshall, Instone-Brewer, Martens); tradition (Tradition sources, exempt).",
+      note: "First pass 2026-11-27: no statement says “consensus”. State-of-field wording is quoted from its source: “generally accepted amongst scholars” (Ademiluka; polygyny short), “most, though not all, scholars” and “now known to be flawed” (Lemos 2010, Meyers; bride-price short “Most scholars now say no”), “all agree … etiology” and “Some … Other scholars disagree” (Warner; genesis-2-24), “most translators and commentators” and “the common interpretation” (Heger; leviticus-18-18), “commonly interpreted” (Heger) and “famously debated” (Doering; second-temple), “considerable debate” (Collins NCE; adultery-penalty), “no real doubt … few if any followers” (Martens; jesus-divorce), “many, including myself, have assumed” and “no widespread agreement” (Loader, Martens; exception-clause), “still a debate” (Instone-Brewer; paul-divorce), “Scholars disagree” (Weisberg; levirate text), “most interpreters today” (Warner; levirate text). #133 per short: models (Lemos, Wells, Osiek, Mbuvi); arranged (Coogan, Lemos, HarperCollins, Meyers); bride-price (Lemos, Meyers; exchange framing Bergant in the text); love (Meyers, Lemos, Coogan, Bergant); levirate (Meyers, Bergant, NABRE, Wells, Weisberg, Ilan); polygyny (Calduch-Benages, Lemos, Ademiluka, Sassoon); concubines (HarperCollins, NABRE, Bergant, Meyers, Gafney, Scholz); genesis-2-24 (Warner, Doering, Heger); leviticus-18-18 (Heger, Sassoon); second-temple (Calduch-Benages, Ilan, Heger, Doering, Sassoon); adultery (HarperCollins, Rooke, Rosen-Zvi, Slager, Edenburg); why-adultery (Slager, Rooke, Collins, Rosen-Zvi, Hayes, Edenburg); adultery-penalty (Collins, Edenburg, Loader); prophets (Hayes, Rooke, HarperCollins, Yee, Macwilliam, Kamionkowski; dissent Sloane); new-testament-adultery (HarperCollins, Marshall, Martin, Collins, Das, Scheffler); divorce (Feinstein, HarperCollins, EJ Elephantine, NABRE, Martens, Instone-Brewer); jesus-divorce (Martin, Martens, Das); exception-clause (Loader, Martens; NABRE 1986 attributed; Loader's reconsideration attributed in the text, not the short); paul-divorce (Das, Marshall, Instone-Brewer, Martens); tradition (Tradition sources, exempt). Second pass 2026-11-27: re-checked each state-of-field word against its source. Changed: bride-price (“most, though not all, scholars” in Lemos is about bridewealth as a gift class, not about purchase; short now “scholars now say”, from Lemos 2010 p. 8, Lemos BO and Meyers); polygyny (Ademiluka's “generally accepted” no longer heads the short); paul-divorce (Instone-Brewer's “still a debate” cut from the short, one author). Kept: leviticus-18-18's “Most translators and commentators” is Heger's sentence about how the verse has been read (the rabbis, the LXX), not a count of scholars, and Sassoon independently reports the same split (“the builders of the partition who permit polygyny” against CD); Ademiluka's “generally accepted”, by contrast, is a state-of-field claim resting on secondhand citations. Others confirmed in context: Warner “vary greatly”/“Some … Other scholars”, Heger “most translators and commentators”/“commonly interpreted”, Doering “famously debated”/“considerable number of recent studies”, Collins “considerable debate”, Martens “no real doubt … few if any followers” and “no widespread agreement” (on what porneia means), Loader “many, including myself”, Weisberg “Scholars disagree”, Warner (Tamar) “most interpreters today”, Hayes “a little controversial”.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Bergant's exchange framing of marriage named (bride-price); Weisberg's widow-protection suggestion named (levirate); Gafney and Scholz on pilegesh named (concubines); Tosato, Gruber and Sassoon on Lev 18:18 named, with Heger's reply (leviticus-18-18); the HarperCollins monogamous-ideal sentence named (polygyny); Babatha archive counter-evidence named (second-temple); Greenberg's reading named via Rosen-Zvi and Hayes, with Hayes's “not everyone agrees” (why-adultery); Sloane's rejection of the pornoprophetic critique named (prophets); D'Angelo named via Martens (jesus-divorce); Loader's reconsideration and the NABRE incest reading named (exception-clause); Instone-Brewer's own reading of 7:15 not stated, only his report of debate (paul-divorce).",
+      note: "First pass 2026-11-27: Bergant's exchange framing of marriage named (bride-price); Weisberg's widow-protection suggestion named (levirate); Gafney and Scholz on pilegesh named (concubines); Tosato, Gruber and Sassoon on Lev 18:18 named, with Heger's reply (leviticus-18-18); the HarperCollins monogamous-ideal sentence named (polygyny); Babatha archive counter-evidence named (second-temple); Greenberg's reading named via Rosen-Zvi and Hayes, with Hayes's “not everyone agrees” (why-adultery); Sloane's rejection of the pornoprophetic critique named (prophets); D'Angelo named via Martens (jesus-divorce); Loader's reconsideration and the NABRE incest reading named (exception-clause); Instone-Brewer's own reading of 7:15 not stated, only his report of debate (paul-divorce). Second pass 2026-11-27: confirmed; Heger's “does not absolutely convey a divine prohibition of polygamy” and Instone-Brewer's remarriage debate now appear only in their statements' text, attributed.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: the Catechism as the Catholic Church (registry convention, as ccc-2357); the Orthodox Church in America (its own name); The Church of Jesus Christ of Latter-day Saints (its own name, from its Gospel Topics essay); Got Questions Ministries, an evangelical ministry (registry convention). None supports what scholars think.",
+      note: "First pass 2026-11-27: the Catechism as the Catholic Church (registry convention, as ccc-2357); the Orthodox Church in America (its own name); The Church of Jesus Christ of Latter-day Saints (its own name, from its Gospel Topics essay); Got Questions Ministries, an evangelical ministry (registry convention). None supports what scholars think. Second pass 2026-11-27: confirmed against the fetched pages (vatican.va, oca.org, churchofjesuschrist.org, gotquestions.org).",
     }
   recency-window:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: every Scholarly or Reference source behind a short is 1996 or later. Encyclopaedia Judaica sections are used only where credited to the 2nd edition (Meyers, Ilan, Schalit and Matassa); 1971 sections are uncited. NCE entries are 2nd-edition texts (Bergant/Reid, Collins). NABRE Old Testament notes are the 2011 revision; the Matthew 5 note (1986) is attributed only.",
+      note: "First pass 2026-11-27: every Scholarly or Reference source behind a short is 1996 or later. Encyclopaedia Judaica sections are used only where credited to the 2nd edition (Meyers, Ilan, Schalit and Matassa); 1971 sections are uncited. NCE entries are 2nd-edition texts (Bergant/Reid, Collins). NABRE Old Testament notes are the 2011 revision; the Matthew 5 note (1986) is attributed only. Second pass 2026-11-27: confirmed; NABRE Matthew 5 note (1986) attributed only; Instone-Brewer 2001, Slager 2000 and Ademiluka 2020 inside the window.",
     }
 sources:
   ademiluka-2020-ve-polygamy-childlessness:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly, 2020; Verbum et Ecclesia 41(1), a2116.",
+      note: "First pass 2026-11-27: Scholarly, 2020; Verbum et Ecclesia 41(1), a2116. Second pass 2026-11-27: re-fetched (PDF, 8 pp.); class and year confirmed. Its state-of-field sentence rests on secondhand citations (flag).",
     }
   bergant-reid-nce-women-bible:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2003; New Catholic Encyclopedia.",
+      note: "First pass 2026-11-27: Reference, 2003; New Catholic Encyclopedia. Second pass 2026-11-27: re-fetched (Encyclopedia.com); bibliography runs to 2000, as the registry's edition says.",
     }
   calduch-benages-bo-polygamy-hellenistic:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2021; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2021; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome; byline confirmed; JSON-LD datePublished 2021-08-16 (not 2021-02-03); year 2021 unchanged.",
     }
   ccc-1610:
-    { agent: pass, owner: "", note: "First pass 2026-11-27: Tradition." }
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition. Second pass 2026-11-27: re-fetched from vatican.va; §1610 confirmed.",
+    }
   ccc-1644:
-    { agent: pass, owner: "", note: "First pass 2026-11-27: Tradition." }
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition. Second pass 2026-11-27: re-fetched from vatican.va; §§1645, 1649 confirmed.",
+    }
   ccc-2382:
-    { agent: pass, owner: "", note: "First pass 2026-11-27: Tradition." }
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition. Second pass 2026-11-27: re-fetched from vatican.va; §§2382, 2384, 2387 confirmed.",
+    }
   collins-nce-adultery-bible:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2003; New Catholic Encyclopedia.",
+      note: "First pass 2026-11-27: Reference, 2003; New Catholic Encyclopedia. Second pass 2026-11-27: re-fetched (Encyclopedia.com); bibliography cites Collins 2000, as the registry says.",
     }
   coogan-bo-sex-song-of-songs:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2021; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2021; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   das-bo-divorce-nt:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2025; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2025; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   doering-2009-mark10-cd4-5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly, 2009; Echoes from the Caves: Qumran and the New Testament (STDJ 85), ed. Florentino García Martínez, 133–163.",
+      note: "First pass 2026-11-27: Scholarly, 2009; Echoes from the Caves: Qumran and the New Testament (STDJ 85), ed. Florentino García Martínez, 133–163. Second pass 2026-11-27: live URL refuses scripted requests (403); read in Internet Archive snapshot 20250111073508 of the same URL (28 pp., author's copy pagination).",
     }
   edenburg-2014-thetorah-deuteronomy-fidelity:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2014; TheTorah.com.",
+      note: "First pass 2026-11-27: Reference, 2014; TheTorah.com. Second pass 2026-11-27: re-fetched; body read from the page's embedded JSON; publishDate 2014-08-31 confirmed.",
     }
   feinstein-bo-divorce-hebrew-bible:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2026; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2026; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   gafney-bo-hagar:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2016; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2016; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   gotquestions-divorce-remarriage:
-    { agent: pass, owner: "", note: "First pass 2026-11-27: Tradition." }
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition. Second pass 2026-11-27: re-fetched from gotquestions.org; Tradition.",
+    }
   gotquestions-polygamy:
-    { agent: pass, owner: "", note: "First pass 2026-11-27: Tradition." }
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition. Second pass 2026-11-27: re-fetched from gotquestions.org; Tradition.",
+    }
   harpercollins-2009-dictionary:
-    { agent: pass, owner: "", note: "First pass 2026-11-27: Reference, 2009." }
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Reference, 2009. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
+    }
   hayes-rlst145-l10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2006; Open Yale Courses RLST 145.",
+      note: "First pass 2026-11-27: Reference, 2006; Open Yale Courses RLST 145. Second pass 2026-11-27: re-fetched; lecture text read; the year is not printed on the fetched page, not re-checked.",
     }
   hayes-rlst145-l17:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2006; Open Yale Courses RLST 145.",
+      note: "First pass 2026-11-27: Reference, 2006; Open Yale Courses RLST 145. Second pass 2026-11-27: re-fetched; lecture text read; the year is not printed on the fetched page, not re-checked.",
     }
   heger-2014-women-bible-qumran:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly, 2014; Studies on the Texts of the Desert of Judah 110.",
+      note: "First pass 2026-11-27: Scholarly, 2014; Studies on the Texts of the Desert of Judah 110. Second pass 2026-11-27: live URL refuses scripted requests (403); read in Internet Archive snapshot 20230603135319 (redirected to the bitstream/handle form of the same file, 434 pp.); printed pages checked.",
     }
   ilan-ej-woman-second-temple:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2007; Encyclopaedia Judaica.",
+      note: "First pass 2026-11-27: Reference, 2007; Encyclopaedia Judaica. Second pass 2026-11-27: re-fetched (Encyclopedia.com); section credit “Tal Ilan (2nd ed.)” confirmed.",
     }
   instone-brewer-2001a-tynbul-graeco-roman-papyri:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly, 2001; Tyndale Bulletin 52(1): 101–116.",
+      note: "First pass 2026-11-27: Scholarly, 2001; Tyndale Bulletin 52(1): 101–116. Second pass 2026-11-27: re-fetched; the PDF's running head misprints “51.2”; 52(1) confirmed by the companion article's n. 1 (“TynB 52.1 (2001) 101-116”).",
     }
   instone-brewer-2001b-tynbul-jewish-papyri:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly, 2001; Tyndale Bulletin 52(2): 225–243.",
+      note: "First pass 2026-11-27: Scholarly, 2001; Tyndale Bulletin 52(2): 225–243. Second pass 2026-11-27: re-fetched; running head “Tyndale Bulletin 52.2 (2001)”, pp. 225–243 range consistent.",
     }
   kamionkowski-jwa-violence-against-women:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2021; Shalvi/Hyman Encyclopedia of Jewish Women.",
+      note: "First pass 2026-11-27: Reference, 2021; Shalvi/Hyman Encyclopedia of Jewish Women. Second pass 2026-11-27: re-fetched; JWA citation line dated 23 June 2021 confirmed.",
     }
   lds-gte-plural-marriage:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition; Gospel Topics Essays.",
+      note: "First pass 2026-11-27: Tradition; Gospel Topics Essays. Second pass 2026-11-27: re-fetched from churchofjesuschrist.org; Tradition, named in its own words.",
     }
   lemos-2010-marriage-gifts:
-    { agent: pass, owner: "", note: "First pass 2026-11-27: Scholarly, 2010." }
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly, 2010. Second pass 2026-11-27: re-fetched (CUP excerpt PDF, Introduction); year not printed in the excerpt text, not re-checked.",
+    }
   lemos-bo-weddings-marriage:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2021; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2021; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   loader-2015-nts-adultery-divorce:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly, 2015; New Testament Studies 61(1): 67–78.",
+      note: "First pass 2026-11-27: Scholarly, 2015; New Testament Studies 61(1): 67–78. Second pass 2026-11-27: re-fetched (author-posted CUP PDF, 13 pp., pp. 67–78); extraction drops digits, pages counted from the first article page.",
     }
   macwilliam-bo-marriage-metaphors-prophets:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2021; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2021; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   malena-bo-solomon:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2019; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2019; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   marshall-bo-marriage-nt:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2022; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2022; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   martens-jmt-2021-from-the-beginning:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly, 2021; Journal of Moral Theology 10(2): 5–33.",
+      note: "First pass 2026-11-27: Scholarly, 2021; Journal of Moral Theology 10(2): 5–33. Second pass 2026-11-27: re-fetched; “Journal of Moral Theology, Vol. 10, No. 2 (2021): 5–33” confirmed on the PDF.",
     }
   martin-rlst152-l13:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2009; Open Yale Courses RLST 152.",
+      note: "First pass 2026-11-27: Reference, 2009; Open Yale Courses RLST 152. Second pass 2026-11-27: re-fetched; lecture text read; the year is not printed on the fetched page, not re-checked.",
     }
   martin-rlst152-l7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2009; Open Yale Courses RLST 152.",
+      note: "First pass 2026-11-27: Reference, 2009; Open Yale Courses RLST 152. Second pass 2026-11-27: re-fetched; lecture text read; the year is not printed on the fetched page, not re-checked.",
     }
   mbuvi-bo-rachel:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2019; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2019; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   meyers-ej-woman-biblical-period:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2007; Encyclopaedia Judaica.",
+      note: "First pass 2026-11-27: Reference, 2007; Encyclopaedia Judaica. Second pass 2026-11-27: re-fetched (Encyclopedia.com); section credit “Carol Meyers (2nd ed.)” confirmed.",
     }
   nabre-deuteronomy-24-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2011; New American Bible, Revised Edition.",
+      note: "First pass 2026-11-27: Reference, 2011; New American Bible, Revised Edition. Second pass 2026-11-27: live page fetched (200), not the archive.",
     }
   nabre-deuteronomy-25-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2011; New American Bible, Revised Edition.",
+      note: "First pass 2026-11-27: Reference, 2011; New American Bible, Revised Edition. Second pass 2026-11-27: live 403; read in Internet Archive snapshot 20260308171723.",
     }
   nabre-exodus-21-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2011; New American Bible, Revised Edition.",
+      note: "First pass 2026-11-27: Reference, 2011; New American Bible, Revised Edition. Second pass 2026-11-27: live 403; read in Internet Archive snapshot 20261022062955.",
     }
   nabre-matthew-5-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 1986; New American Bible, Revised Edition.",
+      note: "First pass 2026-11-27: Reference, 1986; New American Bible, Revised Edition. Second pass 2026-11-27: live 403; read in Internet Archive snapshot 20261029195819.",
     }
   oca-divorce-remarriage:
-    { agent: pass, owner: "", note: "First pass 2026-11-27: Tradition." }
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Tradition. Second pass 2026-11-27: re-fetched from oca.org; Tradition, named in its own words.",
+    }
   osiek-bo-household-codes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2018; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2018; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   rooke-bo-woman-adulterer-motif:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2017; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2017; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   rosen-zvi-jwa-sotah:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2009; Shalvi/Hyman Encyclopedia of Jewish Women.",
+      note: "First pass 2026-11-27: Reference, 2009; Shalvi/Hyman Encyclopedia of Jewish Women. Second pass 2026-11-27: re-fetched; JWA citation line dated 27 February 2009 confirmed.",
     }
   sassoon-2011-status-women:
-    { agent: pass, owner: "", note: "First pass 2026-11-27: Scholarly, 2011." }
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27: Scholarly, 2011. Second pass 2026-11-27: re-fetched (CUP excerpt PDF); year not printed in the excerpt text, not re-checked.",
+    }
   schalit-matassa-ej-elephantine:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; Encyclopaedia Judaica.",
+      note: "First pass 2026-11-27: Reference; Encyclopaedia Judaica. Second pass 2026-11-27: re-fetched (Encyclopedia.com); credit “Abraham Schalit / Lidia Matassa (2nd ed.)” confirmed.",
     }
   scheffler-2011-hts-jesus-torah-divorce:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly, 2011; HTS Teologiese Studies/Theological Studies 67(3).",
+      note: "First pass 2026-11-27: Scholarly, 2011; HTS Teologiese Studies/Theological Studies 67(3). Second pass 2026-11-27: re-fetched; the PDF header and DOI (10.4102/hts.v67i1.1006) give 67(1), Art. #1006, not 67(3): registry series corrected to “HTS Teologiese Studies/Theological Studies 67(1), art. 1006”.",
     }
   scholz-bo-concubine:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2017; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2017; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   slager-2000-bible-translator-adultery:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly, 2000; The Bible Translator 51(4): 431–438.",
+      note: "First pass 2026-11-27: Scholarly, 2000; The Bible Translator 51(4): 431–438. Second pass 2026-11-27: re-fetched; “The Bible Translator (Vol. 51, No. 4, October 2000)” confirmed; p. 432 printed.",
     }
   sloane-2008-tynbul-ezekiel-porno-prophet:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly, 2008; Tyndale Bulletin 59(1).",
+      note: "First pass 2026-11-27: Scholarly, 2008; Tyndale Bulletin 59(1). Second pass 2026-11-27: re-fetched; running head “Tyndale Bulletin 59.1 (2008)” confirmed.",
     }
   warner-bo-genesis-2-24:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2017; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2017; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   warner-bo-tamar:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2020; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2020; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   weisberg-bo-levirate-marriage:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2015; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2015; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   wells-bo-inheritance-laws:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2021; Bible Odyssey.",
+      note: "First pass 2026-11-27: Reference, 2021; Bible Odyssey. Second pass 2026-11-27: re-read live in Chrome (Bible Odyssey refuses scripted requests); byline and date confirmed.",
     }
   yee-jwa-gomer:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference, 2009; Shalvi/Hyman Encyclopedia of Jewish Women.",
+      note: "First pass 2026-11-27: Reference, 2009; Shalvi/Hyman Encyclopedia of Jewish Women. Second pass 2026-11-27: re-fetched; JWA citation line dated 27 February 2009 confirmed.",
     }
 leads:
   - "Angelo Tosato, “The Law of Leviticus 18:18: A Reexamination”, CBQ 46 (1984) 199–214: read only as reported by Sassoon; paywalled."

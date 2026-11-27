@@ -58,7 +58,7 @@ statements:
         quote: "In conclusion, not all biblical texts are in agreement on every issue regarding marriage, suggesting that different Israelite communities and authors had diverse viewpoints on marriage and that Israelite viewpoints evolved over time."
         read: 2026-11-27
       - source: wells-bo-inheritance-laws
-        locator: "paragraph 1"
+        locator: "paragraph beginning “It is difficult to paint”"
         quote: "It is difficult to paint a complete picture of family law in ancient Israel; the Hebrew Bible presents a variety of texts from different times that may be used to reconstruct this law, and it is uncertain whether the rules and concepts in these texts all functioned simultaneously."
         read: 2026-11-27
       - source: osiek-bo-household-codes
@@ -111,7 +111,7 @@ statements:
   - id: bride-price
     group: "Marriage in ancient Israel"
     question: "Was the bride price a payment to buy a wife?"
-    short: "Not in the view of most scholars, who take the mohar as bridewealth, a gift from the groom's side that compensated the bride's family and joined the two families, rather than a purchase price."
+    short: "No, scholars now say. Claims of marriage by purchase are described as flawed, and the mohar as bridewealth, a gift from the groom's side that compensated the bride's family and joined the two families."
     text: "Tracy Lemos's study of marriage gifts says the mōhar is the most common form of gift in the Bible and has been taken by most, though not all, scholars to be bridewealth, and that debates over whether Israelite marriage was marriage by purchase gradually died down as anthropologists debunked the very concept of marriage by purchase; she credits Millar Burrows with a first step away from the idea, since an Israelite wife could be divorced but not sold. Her Bible Odyssey article says it is inaccurate to think of the betrothal gift as a purchase price. Carol Meyers's Encyclopaedia Judaica article says the betrothal gift, sometimes erroneously called “bride price”, has often been interpreted as evidence that a man purchased a woman, but that such assertions are now known to be flawed: the gift compensated a woman's family for the loss of a daughter's labour, and with the bride's dowry it established alliances between the two families. D. Bergant's New Catholic Encyclopedia article describes marriage as a social arrangement in which women were exchanged for a monetary or property return, the bridewealth compensating the woman's family for the loss of her reproductive capacity."
     cites:
       - source: lemos-2010-marriage-gifts
@@ -131,19 +131,19 @@ statements:
         quote: "Though some people think of the betrothal gift as a purchase price, this is inaccurate. Anthropologists call this gift “bridewealth.”"
         read: 2026-11-27
       - source: meyers-ej-woman-biblical-period
-        locator: "section “Biblical Period”, subsection on marriage and children, paragraph 4"
+        locator: "section “Biblical Period”, subsection on marriage and children, paragraph beginning “Another marital payment”"
         quote: 'This betrothal gift, sometimes erroneously called "bride price" (mohar; see Gen. 22:17; 34:12; i Sam, 18:25), has often been interpreted as evidence that a man purchased a woman.'
         read: 2026-11-27
       - source: meyers-ej-woman-biblical-period
-        locator: "section “Biblical Period”, subsection on marriage and children, paragraph 4"
+        locator: "section “Biblical Period”, subsection on marriage and children, paragraph beginning “Another marital payment”"
         quote: "However, such assertions are now known to be flawed."
         read: 2026-11-27
       - source: meyers-ej-woman-biblical-period
-        locator: "section “Biblical Period”, subsection on marriage and children, paragraph 5"
+        locator: "section “Biblical Period”, subsection on marriage and children, paragraph beginning “In anthropological perspective”"
         quote: "The betrothal gift would provide some compensation to a woman's family, who would lose the labor of a daughter upon her marriage."
         read: 2026-11-27
       - source: meyers-ej-woman-biblical-period
-        locator: "section “Biblical Period”, subsection on marriage and children, paragraph 5"
+        locator: "section “Biblical Period”, subsection on marriage and children, paragraph beginning “In anthropological perspective”"
         quote: "And the two payments together served to establish and solidify alliances between a woman's natal family and her marital one."
         read: 2026-11-27
       - source: bergant-reid-nce-women-bible
@@ -187,7 +187,7 @@ statements:
     text: "Carol Meyers's Encyclopaedia Judaica article describes levirate marriage as one in which a childless widow married her deceased husband's brother, the first son of that union being counted the dead man's heir (Deuteronomy 25:5–10; compare Tamar in Genesis 38, and Ruth). D. Bergant's New Catholic Encyclopedia article says the child assumed the dead man's name and inherited his property, and that although the practice was concerned primarily with the name and property of the deceased, it afforded the widow considerable security. The NABRE note on Deuteronomy 25:5 says one purpose of the law was to keep the property of the deceased within the same clan, and Bruce Wells's Bible Odyssey article sets it among the rules for brothers living on an undivided estate. Dvora Weisberg's Bible Odyssey article suggests that the true goal of levirate may have been viewed as the protection of widows, says biblical texts offer more evidence of its failures than its successes, and reports that scholars disagree whether Ruth 4 relates to the institution. Megan Warner's Bible Odyssey article says most interpreters today read Tamar's story in the light of the law in Deuteronomy 25:5–10. Tal Ilan's Encyclopaedia Judaica article says the practice was almost completely abandoned by the end of the second century CE."
     cites:
       - source: meyers-ej-woman-biblical-period
-        locator: "section “Biblical Period”, subsection on marriage and children, paragraph 6"
+        locator: "section “Biblical Period”, subsection on marriage and children, paragraph beginning “To refute the notion”"
         quote: "Concern for heirs is also a factor in the institution known as levirate marriage, in which a childless widow would marry her deceased husband's brother, with the first son produced by that liaison considered the dead man's heir (Deut. 25:5–10; cf. the narratives of Tamar, Gen. 38, and Ruth)."
         read: 2026-11-27
       - source: bergant-reid-nce-women-bible
@@ -199,7 +199,7 @@ statements:
         quote: "It was only in this case that the present law was to be observed, since one of its purposes was to keep the property of the deceased within the same clan."
         read: 2026-11-27
       - source: wells-bo-inheritance-laws
-        locator: "paragraph 2"
+        locator: "paragraph beginning “Upon the father’s death”"
         quote: "Special rules applied to brothers living on an undivided estate. For example, Deut 25:5-10 stipulates that if one brother married but died childless, another brother was to marry the widow and hope to impregnate her with a baby boy, who would then inherit the share that the deceased had been entitled to."
         read: 2026-11-27
       - source: weisberg-bo-levirate-marriage
@@ -225,8 +225,8 @@ statements:
   - id: polygyny
     group: "Polygamy"
     question: "Does the Hebrew Bible allow a man to have more than one wife?"
-    short: "Yes. Its laws assume polygyny and regulate it, and scholars generally read the Hebrew Bible as accepting the practice, though Deuteronomy advises kings against it. How common it was is not known."
-    text: "Nuria Calduch-Benages's Bible Odyssey article says that although it is not known how frequent polygamy was in ancient Israel, the Deuteronomic legislation assumes it, setting out whose offspring would inherit (Deuteronomy 21:15–17) and advising kings against it (Deuteronomy 17:17), and that while most first marriages in the biblical accounts are monogamous, there are many famous polygamous men, among them Abraham, Jacob, David and Solomon. Tracy Lemos's Bible Odyssey article says men could have multiple wives and concubines, so that monogamy was a one-way street, and that it is hard to know how common polygamy really was. Solomon O. Ademiluka writes that the Old Testament presents a culture in which polygamy was practised largely unchallenged, and that it is generally accepted amongst scholars that the Old Testament is not opposed to it. Isaac Sassoon writes that the texts, in the main, condone polygyny, “but not downright”, and that polygyny, though pervasive, need not have been ubiquitous. Sarah Malena's Bible Odyssey article says the author of 1 Kings 11:1–3 claims that Solomon had 700 wives and 300 concubines, following the model of ancient Near Eastern kingship, which proved contrary to values found in Deuteronomy 17. The HarperCollins Bible Dictionary says that although polygamous marriages are known in the Bible, monogamous marriage clearly became the ideal and normative expectation."
+    short: "Yes, scholars say: the texts in the main accept polygyny, and Deuteronomy's laws assume it, setting out whose offspring inherit and advising kings against it. How common it was is not known."
+    text: "Nuria Calduch-Benages's Bible Odyssey article says that although it is not known how frequent polygamy was in ancient Israel, the Deuteronomic legislation assumes it, setting out whose offspring would inherit (Deuteronomy 21:15–17) and advising kings against it (Deuteronomy 17:17), and that while most first marriages in the biblical accounts are monogamous, there are many famous polygamous men, among them Abraham, Jacob, David and Solomon. Tracy Lemos's Bible Odyssey article says men could have multiple wives and concubines, so that monogamy was a one-way street, and that it is hard to know how common polygamy really was. Solomon O. Ademiluka writes that the Old Testament presents a culture in which polygamy was practised largely unchallenged, and that it is generally accepted amongst scholars that the Old Testament is not opposed to it. Isaac Sassoon writes that the texts, in the main, condone polygyny, “but not downright”, and that polygyny, though pervasive, need not have been ubiquitous. Sarah Malena's Bible Odyssey article says the author of 1 Kings 11:1–3 claims that Solomon had 700 wives and 300 concubines, and that Solomon followed the model of ancient Near Eastern kingship, which proved contrary to values that would become biblical theological foundations (Deuteronomy 17; 1 Samuel 8). The HarperCollins Bible Dictionary says that although polygamous marriages are known in the Bible, monogamous marriage clearly became the ideal and normative expectation."
     cites:
       - source: calduch-benages-bo-polygamy-hellenistic
         locator: "paragraph beginning “Polygamy is attested in the Old Testament.”"
@@ -245,7 +245,7 @@ statements:
         quote: "It is hard to know how common polygamy, which entailed a husband being married to more than one woman, really was in ancient Israel."
         read: 2026-11-27
       - source: ademiluka-2020-ve-polygamy-childlessness
-        locator: "p. 4, section “Genesis 1:28 and procreation: An exegesis”, paragraph 1"
+        locator: "p. 6, section “Genesis 1:28 and procreation: An exegesis”, paragraph 1"
         quote: "The OT presents a culture in which polygamy was practised largely unchallenged, with instances like those of Abraham (Gn 16), Jacob (Gn 29–30), Elkanah (1 Sm 1), King David who married many wives and kept numerous concubines simultaneously (2 Sm 5:13) and Solomon who is recorded to have accumulated the largest number of women ever known (I Ki 11:1–3). To this end, it is generally accepted amongst scholars that the OT is not opposed to polygamy"
         read: 2026-11-27
       - source: sassoon-2011-status-women
@@ -257,7 +257,7 @@ statements:
         quote: "One might simply add that polygyny itself, though pervasive, need not have been ubiquitous."
         read: 2026-11-27
       - source: malena-bo-solomon
-        locator: "paragraph beginning “Other less desirable aspects”"
+        locator: "factoid list at the top of the article"
         quote: "The author of 1Kgs 11:1-3 claims that Solomon had 700 wives and 300 concubines; these women receive the bulk of the blame for Solomon’s worship of other gods."
         read: 2026-11-27
       - source: malena-bo-solomon
@@ -266,7 +266,7 @@ statements:
         read: 2026-11-27
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/marriage/"
-        locator: "s.v. “marriage”, opening sentence"
+        locator: "s.v. “marriage”, second sentence"
         quote: "Although polygamous marriages are known in the Bible (Gen 29:15-30) and some of Israel’s kings kept large harems, monogamous marriage clearly became the ideal and normative expectation (Gen 2:21-24; Mark 10:6-9)."
         read: 2026-11-27
   - id: concubines
@@ -289,11 +289,11 @@ statements:
         quote: "Thus Hagar became Abram's concubine and bore him a son (Gn 16), and Bilhah, the maidservant of Rachel, and Zilpah, the maidservant of Leah, augmented the family of Jacob in the same way (Gn 30.3–14)."
         read: 2026-11-27
       - source: meyers-ej-woman-biblical-period
-        locator: "section “Biblical Period”, subsection on marriage and children, paragraph 7"
+        locator: "section “Biblical Period”, subsection on marriage and children, paragraph beginning “The powerful male interest”"
         quote: "But in most instances, taking a second wife or a concubine would have occurred because the first wife did not produce offspring."
         read: 2026-11-27
       - source: gafney-bo-hagar
-        locator: "pull quote near the top of the article"
+        locator: "factoid list at the top of the article"
         quote: "Israelites practiced two-tiered marriage. The children of a pilegesh (often mistranslated as a “concubine”), a low-status or secondary wife, were not entitled to an inheritance (Gen 25:6)."
         read: 2026-11-27
       - source: gafney-bo-hagar
@@ -311,7 +311,7 @@ statements:
   - id: genesis-2-24
     group: "Polygamy"
     question: "Does Genesis 2:24 define marriage as one man and one woman?"
-    short: "Scholars disagree. Some read it as a definition of marriage; others as an explanation of what happens rather than a rule, and as not in itself forbidding polygamy."
+    short: "Scholars disagree. Some read it as a definition of marriage; others as an explanation of what happens rather than a rule."
     text: "Megan Warner's Bible Odyssey article says scholarly views about Genesis 2:24 vary greatly: all agree that it is an etiology, a text that explains something, and most that an editor added it later than the primary author of Genesis 2, but some scholars think it functions as a normative definition of marriage, though the word marriage appears nowhere in the text, while others argue that it does not intend to provide one, that it describes what does happen rather than what must happen; readers, she says, have long used it as a lens on divorce and polygamy. Lutz Doering writes that the form of the verse quoted in Mark 10, with the added words “and the two shall become one flesh”, represents a tradition of interpretation that apparently reflects a tendency in Second Temple Judaism to prefer monogamy to polygamy. Paul Heger writes that even with “the two” the verse does not absolutely convey a divine prohibition of polygamy, and that the Qumran writers drew their prohibition of polygamy not from this verse but from Genesis 1:27."
     cites:
       - source: warner-bo-genesis-2-24
@@ -391,7 +391,7 @@ statements:
   - id: second-temple
     group: "Polygamy"
     question: "Did Jews still practise polygamy in the Second Temple period?"
-    short: "It remained legal in the Hellenistic period, while practice tended toward monogamy, and texts among the Dead Sea Scrolls are commonly read as forbidding it."
+    short: "It remained legal in the Hellenistic period, though there was a tendency toward monogamy, and texts among the Dead Sea Scrolls are commonly read as forbidding it."
     text: "Nuria Calduch-Benages's Bible Odyssey article says polygamy remained legal in the Hellenistic period: Josephus, in the first century CE, justifies the polygamy of Herod's house as “our ancestral custom”, and the emperor Theodosius I declared polygamy illegal among Jews in 393 CE. Since rabbinic texts recommend monogamy and no case of bigamy is attested among the rabbis themselves, she says it may be assumed that monogamy was the widespread norm, though evidence from the Babatha archive suggests otherwise. Tal Ilan's Encyclopaedia Judaica article says biblical law reflected a society that upheld polygyny and bride-price marriages, and that internal developments and Greek and Roman practice tended toward monogyny. Paul Heger writes that the Damascus Document (CD IV:20–V:2) and the Temple Scroll's law of the king are commonly interpreted as prohibiting polygamy, though other readings, such as a ban on divorce, have been offered; Lutz Doering calls the precise meaning of the Damascus Document's phrase famously debated, the polygyny reading being held in a considerable number of recent studies. Isaac Sassoon writes that in Qumran law having two wives was considered fornication, an insistence on monogamy that has no counterpart in rabbinic literature, and reports that the ascription of the later rabbinic enactment prohibiting polygyny to Rabbenu Gershom has been questioned, Peretz Tishby favouring a twelfth-century date for it."
     cites:
       - source: calduch-benages-bo-polygamy-hellenistic
@@ -470,13 +470,13 @@ statements:
         quote: "Overall, married men in ancient Israel had greater sexual freedom than married women, since they could have sex with unpledged virgins (Deut 22.28-29) and prostitutes (Judges 16.1) with a penalty less than death applied."
         read: 2026-11-27
       - source: edenburg-2014-thetorah-deuteronomy-fidelity
-        locator: "section “Case 3 - Adultery with a Married Woman”"
+        locator: "section “Case 3 – Adultery with a Married Woman”, paragraph beginning “All of these readings”"
         quote: "Nevertheless, the law as formulated in Deuteronomy 22:22 singles out the married woman who has been possessed by her husband, and demands of her an uncompromising sexual exclusivity, which admits no exception or extenuating circumstances. Thus, any intercourse between a married woman and man other than her husband is taken to constitute adultery, whether the woman was a consenting partner or not."
         read: 2026-11-27
   - id: why-adultery
     group: "Adultery"
     question: "Why was adultery treated as a crime?"
-    short: "Scholars explain it in different ways: as a wrong against the husband and his line of descent, and, following Moshe Greenberg, as a religious offence against God that the husband could not pardon."
+    short: "Scholars explain it in different ways: as a wrong against the husband and his line of descent, and, following Moshe Greenberg, as a religious offence that the husband could not pardon."
     text: "Donald Slager writes that adultery is viewed as a crime against a married man, and Deborah Rooke that a husband needed to know his sons were his own, so that a wife's adultery threatened his line of descent. R. F. Collins's New Catholic Encyclopedia article says the commandment against adultery shows it was not only a concern of the aggrieved husband, as it was generally considered in the ancient Near East, but also and primarily of the community, since Israel's identity as a covenant people was at stake, though what was really at stake, he adds, was the purity of the family line and the inheritance of its possessions. Ishay Rosen-Zvi reports that Moshe Greenberg showed that while most cultures of the time saw adultery as an offence against the husband and left the punishment to him, biblical law perceives it first and foremost as a religious transgression that carries the death penalty. Christine Hayes's Yale lecture presents Greenberg's argument that in the biblical view adultery and murder are absolutely wrong and must be punished regardless of the attitude of the offended parties, in contrast with the Middle Assyrian laws, where adultery is a crime against the husband's property that he may choose to prosecute or not; she calls Greenberg's comparison of the law codes a little controversial, one that not everyone agrees with. Cynthia Edenburg writes that the scribes who composed Deuteronomy's laws drew an analogy between women's fidelity to their husbands and fathers and Israel's fidelity to YHWH."
     cites:
       - source: slager-2000-bible-translator-adultery
@@ -500,7 +500,7 @@ statements:
         quote: "Moshe Greenberg showed that while most cultures in biblical times perceived adultery as an offense against the husband and therefore left the punishment of the adulterers to him, in biblical law adultery is perceived, first and foremost, as a religious transgression that carries the death penalty"
         read: 2026-11-27
       - source: hayes-rlst145-l10
-        locator: "paragraph beginning “If, along the road”"
+        locator: "paragraph beginning “Furthermore, Greenberg argues”"
         quote: "In the view of the biblical text, adultery and murder are absolutely wrong. They must always be punished regardless of the attitude of the offended parties."
         read: 2026-11-27
       - source: hayes-rlst145-l10
@@ -526,11 +526,11 @@ statements:
         quote: 'Lv 20:10 and Dt 22:22 portray adultery as a capital crime. The death penalty was to be meted out to both the woman and the man involved in the act. Contemporary scholarship shows that there is considerable debate about this punishment. Some scholars consider that the death penalty was "on the books" but that actual practice was somewhat different. Hos 2:4 and later rabbinic texts suggest that divorce was a penalty actually incurred by an adulterous woman.'
         read: 2026-11-27
       - source: edenburg-2014-thetorah-deuteronomy-fidelity
-        locator: "section “Case 3 - Adultery with a Married Woman”, paragraph 2"
+        locator: "section “Case 3 – Adultery with a Married Woman”, paragraph 6"
         quote: "The author of Deuteronomy 22:22 also dropped the clause found in cuneiform law that allows the husband to determine the extent of the penalty according to his discretion, even though other biblical sources imply that spousal discretion was respected in practice."
         read: 2026-11-27
       - source: loader-2015-nts-adultery-divorce
-        locator: "abstract and p. 68"
+        locator: "p. 68"
         quote: "By at least the first century CE Jews no longer had the right to execute offenders, so that the sentence had to take an alternative form."
         read: 2026-11-27
       - source: loader-2015-nts-adultery-divorce
@@ -542,11 +542,11 @@ statements:
         quote: "Another significant example of the adulterous-woman motif appears in Num 5:11-31, where the law allows a man who suspects his wife of adultery to make her undergo an ordeal in front of the priest to test whether or not she has been unfaithful. No such ordeal exists for men."
         read: 2026-11-27
       - source: rosen-zvi-jwa-sotah
-        locator: "section on the ritual's history, paragraph 1"
+        locator: "section “Scriptural References”, paragraph 1"
         quote: "We have no accounts from biblical times about the performance of the ritual."
         read: 2026-11-27
       - source: rosen-zvi-jwa-sotah
-        locator: "last paragraph of the article body"
+        locator: "section “Scriptural References”, paragraph 4"
         quote: "Although the Sotah trial was probably discontinued (if it was ever indeed practiced) during the Second Temple era, its cultural presence continued due to the study of Tractate Sotah as part of the talmudic codex."
         read: 2026-11-27
   - id: prophets
@@ -624,15 +624,15 @@ statements:
         quote: "The disciples immediately question Jesus privately on the countercultural teaching, and he adds that for either partner to divorce and remarry is adulterous (Mark 10:10–12)."
         read: 2026-11-27
       - source: scheffler-2011-hts-jesus-torah-divorce
-        locator: "section on Mark 10, p. 3"
+        locator: "section on Mark 10, p. 4"
         quote: "But for the Markan Jesus this is not a rule that applies to males only. Women who divorce in order to remarry also commit adultery."
         read: 2026-11-27
       - source: scheffler-2011-hts-jesus-torah-divorce
-        locator: "section on Matthew, p. 4"
+        locator: "section on Matthew, p. 5"
         quote: "Whereas Mark interprets the prescript regarding divorce applicable for both sexes, Matthew only refers to it as being a male option (as in Dt 24:1–4)."
         read: 2026-11-27
       - source: scheffler-2011-hts-jesus-torah-divorce
-        locator: "section on Matthew, p. 4"
+        locator: "section on Matthew, p. 5"
         quote: "The male perspective is significant: although it was the man that initiated the process, the divorced woman is regarded as the one committing adultery."
         read: 2026-11-27
   - id: divorce
@@ -707,7 +707,7 @@ statements:
   - id: exception-clause
     group: "Divorce"
     question: "What does Matthew's exception, “except for porneia”, mean?"
-    short: "Scholars do not agree on what porneia means there: it is read as adultery or as a marriage that the Law of Moses forbids. Many have held that Matthew added the exception to soften Jesus's absolute prohibition."
+    short: "Scholars do not agree on what porneia means there; readings include adultery and a marriage that the Law of Moses forbids. Many have held that Matthew added the exception to soften Jesus's absolute prohibition."
     text: "William Loader writes that many, himself included, have assumed that Jesus forbade divorce under all circumstances and that Matthew softened the absolute prohibition by introducing an exception related to adultery, but argues that there are grounds to reconsider this, and to ask whether Jesus's demand ever meant to exclude adultery as a ground for divorce, as most assume; porneia, he writes, could at the time mean adultery. John Martens writes that Matthew added the exception clause to Jesus's clear teaching in Mark, seeking a way to open a pathway to remarriage, and that even today there is no widespread agreement on what porneia means there; following Joseph Fitzmyer and others, he takes it to concern marriages within the degrees of kinship outlawed by Leviticus 18. The NABRE note on Matthew 5:31–32 reads porneia as a marriage within the degrees of relationship forbidden by Leviticus 18:6–18, regarded as incest, and says Matthew's exceptive clauses are understood by some as a modification of the absolute prohibition."
     cites:
       - source: loader-2015-nts-adultery-divorce
@@ -715,11 +715,11 @@ statements:
         quote: "The focus of this paper is very specific: whether the widespread assumption that adultery mandated divorce should also be assumed in the Jesus tradition, where, as many, including myself, have assumed, Jesus appears, on the contrary, to forbid divorce under all circumstances and Matthew to have softened the absolute by introducing an exception clause related to adultery."
         read: 2026-11-27
       - source: loader-2015-nts-adultery-divorce
-        locator: "p. 78"
+        locator: "p. 73"
         quote: "There are grounds for reconsidering the assumption that Matthew softened the absolute prohibition and, more significantly, for urging a reconsideration of"
         read: 2026-11-27
       - source: loader-2015-nts-adultery-divorce
-        locator: "p. 78"
+        locator: "p. 74"
         quote: "whether that demand ever intended to exclude adultery as a ground for divorce, as most assume."
         read: 2026-11-27
       - source: loader-2015-nts-adultery-divorce
@@ -753,7 +753,7 @@ statements:
   - id: paul-divorce
     group: "Divorce"
     question: "What does Paul say about divorce?"
-    short: "He repeats Jesus's command not to divorce and allows separation when an unbelieving spouse insists on it. Scholars still debate whether he says anything about remarriage."
+    short: "He repeats Jesus's command not to divorce, telling a divorced spouse to stay single or be reconciled, and allows divorce when an unbelieving spouse insists on it."
     text: "A. Andrew Das's Bible Odyssey article says Paul relays Jesus's strict command not to divorce, says that if divorce happens one should remain single or be reconciled (1 Corinthians 7:10–11), and judges divorce permissible when an unbelieving spouse insists on it, though a believer is not to initiate it (7:12–16). Jill Marshall's Bible Odyssey article says this is one of the few teachings of Jesus that Paul seems to know. David Instone-Brewer writes that Paul's teaching in 1 Corinthians 7 is regarded as so problematic that there is still a debate about whether it contains any teaching on remarriage at all, and calls “not bound” in 7:15 the most contentious phrase in the chapter; he writes that Paul mainly addresses rights under Graeco-Roman law, in which a wife as well as a husband could end a marriage by walking out. John Martens writes that Paul does not himself argue that a believer left by an unbelieving spouse is free to remarry, though that is how the later tradition would read the “Pauline privilege”."
     cites:
       - source: das-bo-divorce-nt
@@ -811,7 +811,7 @@ statements:
         quote: "the spouses do not cease to be husband and wife before God and so are not free to contract a new union."
         read: 2026-11-27
       - source: oca-divorce-remarriage
-        locator: "answer, paragraphs 2–3"
+        locator: "answer, paragraph 2"
         quote: "While the Church stands opposed to divorce, the Church, in its concern for the salvation of its people, does permit divorced individuals to marry a second and even a third time."
         read: 2026-11-27
       - source: lds-gte-plural-marriage
