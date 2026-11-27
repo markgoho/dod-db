@@ -2,14 +2,15 @@
   The Timeline axis's era bands (#163 §2). Takes the placed entries from
   timeline-placement.html (each with a placement year). The axis starts at the
   earliest placement year rounded down to $wide and ends after the latest,
-  rounded up to $narrow. Bands before $split (2000 BCE) are $wide (1000)
-  years, after it $narrow (500).
-  Returns a slice of dict {label, from, to, items}, oldest first; items keep placement
-  order. Empty when nothing is placed.
+  rounded up to $narrow. Everything before $split (2000 BCE) is one band, few
+  entries and all of them a tradition's, so the minimap can draw it short
+  (compressed: true); from $split on, bands are $narrow (500) years.
+  Returns a slice of dict {label, from, to, compressed, items}, oldest first;
+  items keep placement order. Empty when nothing is placed.
   */
 -}}
 {{- $placed := . -}}
-{{- $wide := 1000 -}}{{- /* band width before $split */ -}}
+{{- $wide := 1000 -}}{{- /* the axis starts on a multiple of this */ -}}
 {{- $narrow := 500 -}}{{- /* band width from $split on */ -}}
 {{- $split := -2000 -}}{{- /* 2000 BCE: where bands narrow */ -}}
 {{- $eras := slice -}}
@@ -22,10 +23,8 @@
   {{- $end := int (mul (add (math.Floor (div (float (math.Max $years)) $narrow)) 1) $narrow) -}}
   {{- $bounds := slice -}}
   {{- if lt $start $split -}}
-    {{- /* The last wide band starts one band before $split; none starts at or after $end. */ -}}
-    {{- range seq $start $wide (math.Min (sub $split $wide) (sub $end 1) | int) -}}
-      {{- $bounds = $bounds | append (dict "from" . "to" (add . $wide)) -}}
-    {{- end -}}
+    {{- /* One band from the axis start to $split (or to $end, if nothing is later). */ -}}
+    {{- $bounds = $bounds | append (dict "from" $start "to" (math.Min $split $end | int) "compressed" true) -}}
   {{- end -}}
   {{- $late := math.Max $start $split | int -}}
   {{- if gt $end $late -}}
@@ -49,7 +48,7 @@
         {{- $items = $items | append . -}}
       {{- end -}}
     {{- end -}}
-    {{- $eras = $eras | append (dict "label" $label "from" $from "to" $to "items" $items) -}}
+    {{- $eras = $eras | append (dict "label" $label "from" $from "to" $to "compressed" (.compressed | default false) "items" $items) -}}
   {{- end -}}
 {{- end -}}
 {{- return $eras -}}

@@ -8,11 +8,14 @@
   holding var() is never dropped at parse time, so a plain declaration before
   an if() one would be no fallback.
 
-  Breakpoint, 108rem: the axis column starts (viewport width -
-  --content-max-width) / 2 + --space-s in from the viewport edge. A one-line
-  era label needs about 8rem of rail plus a --space-xs gap either side, so
-  the gutter holds the rail from 108rem (1728px). Media queries cannot read custom properties, hence the
-  literal.
+  Breakpoint, 114rem wide and 40rem tall: the axis column starts (viewport
+  width - --content-max-width) / 2 + --space-s in from the viewport edge, and
+  the rail fills that gutter. Its eleven places of dots stay at least 8px
+  from a 114rem viewport (8px from 113rem, measured with a classic
+  scrollbar; a rem to spare), and its strip stays tall enough for an 8px dot
+  from a 40rem viewport (about 375px of strip; see the ticks' dot rule).
+  Below either, the popover. Media queries cannot read custom properties,
+  hence the literals.
 */
 
 .timeline-minimap-layout {
@@ -99,7 +102,7 @@
 }
 
 /* WCAG 2.4.11: a jumped-to or focused target lands below the bar. */
-@media (width < 108rem) {
+@media not ((width >= 114rem) and (height >= 40rem)) {
   :root:has(.timeline-minimap) {
     scroll-padding-block-start: calc(
       var(--timeline-minimap-bar) + var(--space-xs)
@@ -109,14 +112,13 @@
 
 /*
   The minimap's three stacked rows (caption, strip, legend), as a popover or
-  as the rail. A tick is a dot (--tick-dot) and --tick-pitch is one dot's
-  place in a row, both whole pixels. timeline-minimap.html's $pitchShare
-  is the largest pitch as a share of its strip.
+  as the rail. --tick-dot-max is the largest a dot is drawn: the legend's,
+  and the strip's where it has room (see the ticks below).
 */
 .timeline-minimap__map {
   /* Even, so a dot centred on a whole pixel has whole-pixel edges. */
-  --tick-dot: round(var(--space-2xs), 2px);
-  --tick-pitch: calc(var(--tick-dot) + round(var(--space-3xs), 1px));
+  --tick-dot-max: round(var(--space-2xs), 2px);
+  --tick-dot: var(--tick-dot-max);
 
   gap: round(var(--space-3xs), 1px);
   grid-template: auto minmax(0, 1fr) auto / minmax(0, 1fr);
@@ -170,7 +172,7 @@
 
 /* ---------- Wide: a fixed rail in the inline-start gutter ---------- */
 
-@media (width >= 108rem) {
+@media (width >= 114rem) and (height >= 40rem) {
   /* Rail and spine share one cell, so the spine is laid out as without the rail. */
   .timeline-minimap-layout > * {
     grid-area: 1 / 1;
@@ -313,7 +315,7 @@
   display: none;
 }
 
-@media (width >= 108rem) {
+@media (width >= 114rem) and (height >= 40rem) {
   @supports (scroll-target-group: auto) and
     ((animation-timeline: view()) and (animation-range: 0% 100%)) {
     .timeline-minimap__era-pill {
@@ -412,7 +414,13 @@
 /* ---------- Strip: era bands by year span, a tick per entry at its year ---------- */
 
 .timeline-minimap__strip {
-  --tick-track-width: var(--space-s);
+  /*
+    The era labels' own column at the strip's inline start, so no row of dots
+    ever runs into a label: two lines ("1000–500" over "BCE") in the popover,
+    one sideways line on the rail (see the rail's rule below). At most 6rem,
+    which "2000–1500" fits, so a wider popover keeps room for 8px dots.
+  */
+  --era-label-width: min(5 * var(--space-s), 6rem);
 
   anchor-name: --timeline-minimap-strip;
   background: var(--tan-000);
@@ -450,31 +458,103 @@
   box-shadow: inset 0 var(--border-width-sm) 0 var(--tan-300);
 }
 
-/* The whole band is its era's link; the tick track sits over its end. */
+/* Year 0, where BCE turns to CE: the one ink line. */
+.timeline-minimap__band--bce-end + .timeline-minimap__band {
+  box-shadow: inset 0 var(--border-width-sm) 0 var(--tan-900);
+}
+
+/*
+  Each era's link is its label, in the label column from the band's top
+  line down; the dots' row takes the rest of the band. In the popover the
+  label is two lines, its range over its BCE/CE suffix; on the rail, its
+  start year (see below).
+*/
 .timeline-minimap__era {
   block-size: 100%;
+  box-sizing: border-box;
   color: var(--color-text-main);
   display: block;
   font-size: var(--step--2);
   font-weight: normal;
+  inline-size: var(--era-label-width);
   line-height: var(--line-height-heading);
   overflow: hidden;
-  padding: var(--space-4xs) calc(var(--tick-track-width) + var(--space-3xs))
-    var(--space-4xs) var(--space-3xs);
+  padding: var(--space-4xs) var(--space-3xs);
   text-decoration: none;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
+.timeline-minimap__suffix {
+  display: block;
+}
+
+.timeline-minimap__era-start,
+.timeline-minimap__era-mark {
+  display: none;
+}
+
 /*
-  A rail narrower than a full era label drops the BCE/CE suffix (the link's
-  name keeps it). A media query, not a container query: the spacing tokens
-  are cqi-based and would shrink inside a container this narrow. Literal:
-  media queries cannot read custom properties.
+  The rail is too narrow for a label column a word wide, so there each label
+  runs sideways down its band and is only the band's start year: 1500, 1000,
+  500, 1 CE (the link's name keeps the range; the era pill shows the current
+  one in full). "BCE" ends the last BCE band, above the year-0 line. A media
+  query, not a container query: the spacing tokens are cqi-based and would
+  shrink inside a container this narrow. Literal: media queries cannot read
+  custom properties.
 */
-@media (108rem <= width < 112rem) {
-  .timeline-minimap__suffix {
+@media (width >= 114rem) and (height >= 40rem) {
+  .timeline-minimap__strip {
+    /* A step smaller than the popover's (the scale's ratio, 1.2): a narrower column leaves the dots more room. */
+    --era-label-size: calc(var(--step--2) / 1.2);
+    --era-label-width: round(
+      up,
+      var(--era-label-size) * var(--line-height-heading) + var(--space-4xs),
+      1px
+    );
+  }
+
+  /* Sideways, its logical sizes turn: so the label's width and height here. */
+  .timeline-minimap__era {
+    font-size: var(--era-label-size);
+    height: 100%;
+    /* Down the band, only clear of its line: a 500-year band is barely a label long. */
+    padding-block: var(--space-4xs);
+    padding-inline: var(--border-width-sm) 0;
+    text-overflow: ellipsis;
+    width: var(--era-label-width);
+    writing-mode: vertical-rl;
+  }
+
+  .timeline-minimap__era-full {
     display: none;
+  }
+
+  .timeline-minimap__era-start {
+    display: inline;
+  }
+
+  .timeline-minimap__era-mark {
+    color: var(--color-text-muted);
+    display: block;
+    font-size: var(--era-label-size);
+    /* Physical: a sideways box's logical insets turn with it. */
+    bottom: 0;
+    left: 0;
+    line-height: var(--line-height-heading);
+    padding-block: var(--space-4xs);
+    /* Sideways, inline is down the band: clear of the year-0 line below. */
+    padding-inline: 0 var(--space-3xs);
+    pointer-events: none;
+    position: absolute;
+    width: var(--era-label-width);
+    writing-mode: vertical-rl;
+  }
+
+  /* "1 CE" starts as far below the year-0 line as "BCE" ends above it. */
+  .timeline-minimap__band--bce-end
+    + .timeline-minimap__band
+    .timeline-minimap__era {
+    padding-inline-start: var(--space-3xs);
   }
 }
 
@@ -490,6 +570,14 @@
 .timeline-minimap__era:focus-visible {
   outline: var(--border-width-sm) solid var(--color-action);
   outline-offset: calc(-1 * var(--border-width-sm));
+}
+
+/* The strip's box, the anchor for anchor-size() in a tick's --lane-pull. */
+.timeline-minimap__frame {
+  anchor-name: --timeline-minimap-frame;
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
 }
 
 /* Its own stacking context, so a setting can sit under the ticks and over the bands. */
@@ -533,13 +621,18 @@
   position: relative;
 }
 
-/* A Tradition Date at its own year (#214): a hollow diamond, the axis node's mark. */
+/*
+  A Tradition Date at its own year (#214): a hollow diamond, the axis node's
+  mark. A square turned 45° is √2 its side across, so 1/√2 (0.7071) keeps it
+  inside a dot's box, and the current one grown 1.5× (1.0607) inside the
+  grown dot's: the pitch and window clear it as they clear a dot.
+*/
 .timeline-minimap__dot--moved,
 .timeline-minimap__tick--moved {
   background: none;
   border-radius: 0;
   rotate: 45deg;
-  scale: 0.8;
+  scale: 0.7071;
 }
 
 .timeline-minimap__dot--placed::before,
@@ -563,40 +656,102 @@
   A tick is centred on its year (--tick-top, its top edge), kept inside its
   own band (--era-start, --era-end, rounded as the band is): a dot at an
   era's edge would straddle the band's line, so it is nudged in, clear of
-  the line and of the current tick's 1.5× growth (#175). Ticks that would
-  overlap share a row: slot 0 is centred in the tick track and each slot
-  (--tick-slot, from timeline-minimap.html) sits a pitch further in
-  (--tick-x, from the strip's inline end). A row longer than the strip is
-  wide stops at the last whole slot and its dots overlap there. Whole
-  pixels. Worked out on the tick and on its setting alike, so the setting's
-  arc meets the dot. The current one: see the end.
+  the line and of the current tick's 1.5× growth (#175).
+
+  Across, one row of places against the strip's inline end, each one
+  --tick-pitch wide (--places, from timeline-minimap.html, the only
+  capacity), every kind of tick in it. Between the row and the label column,
+  --setting-room for a narrated setting's span. A dot sits in its place
+  (--tick-lane, signed, from the row's centre line). Whole pixels. Worked out
+  on the tick, its setting and its pair's line alike, so they meet the dot.
+  The current one: see the end.
+
+  A pitch clears a dot and the current one beside it, grown 1.5×, by at
+  least a pixel. The dot is --tick-dot-max where the strip has room, and
+  smaller where it has not (the anchor-size() rule below), so the row always
+  fits beside the labels and the template's window always clears it.
 */
 .timeline-minimap__tick,
-.timeline-minimap__setting {
-  --tick-track-inset: round(
-    down,
-    (var(--tick-track-width) - var(--tick-dot)) / 2,
-    1px
+.timeline-minimap__setting,
+.timeline-minimap__pair,
+.timeline-minimap__pair-line {
+  /* A setting's span (--setting-width) and the gap past the last place's grown dot. */
+  --setting-room: calc(var(--space-3xs) + 2 * var(--border-width-sm));
+  /* At most the room beside the labels shared by the places (100%: the strip's width, read only in insets), so without anchor-size() dots may crowd but never reach the labels. */
+  --tick-pitch: min(
+    round(up, 1.25 * var(--tick-dot) + 1px, 1px),
+    (100% - var(--era-label-width) - var(--setting-room)) / var(--places)
   );
+  --row-centre: calc(var(--places) * var(--tick-pitch) / 2);
+  /* How far the outermost place's centre sits from the row's. */
+  --row-reach: calc((var(--places) - 1) / 2 * var(--tick-pitch));
   /* Room for the current tick's growth: (1.5 - 1) / 2 of a dot each side. */
   --tick-grow: round(up, var(--tick-dot) / 4, 1px);
-  --tick-top: clamp(
-    round(down, var(--era-start) * 100%, 1px) + var(--border-width-sm) +
-      var(--tick-grow),
-    round(down, var(--tick-at) * 100%, 1px) - var(--tick-dot) / 2,
-    round(down, var(--era-end) * 100%, 1px) - var(--tick-dot) - var(--tick-grow)
+  --tick-top: round(
+    down,
+    clamp(
+      round(down, var(--era-start) * 100%, 1px) + var(--border-width-sm) +
+        var(--tick-grow),
+      round(down, var(--tick-at) * 100%, 1px) - var(--tick-dot) / 2,
+      round(down, var(--era-end) * 100%, 1px) - var(--tick-dot) -
+        var(--tick-grow)
+    ),
+    1px
   );
-  --tick-x: calc(
-    var(--tick-track-inset) +
-      min(
-        var(--tick-slot) * var(--tick-pitch),
-        round(
-          down,
-          100% - var(--tick-track-inset) - var(--tick-pitch),
-          var(--tick-pitch)
-        )
+  --tick-x: round(
+    var(--row-centre) - var(--tick-dot) / 2 - var(--tick-lane) *
+      var(--tick-pitch),
+    1px
+  );
+}
+
+/*
+  The dot, sized to the strip (anchor-size() of its frame): the largest in
+  whole pixels, up to --tick-dot-max, that keeps within three bounds:
+  - width: every place's pitch fits beside the label column and the setting
+    room (a pitch is at most 1.25 dots and 2px);
+  - height: the template's --tick-window of the strip clears a dot and the
+    current one grown beside it, with 2px for rounding;
+  - the nudge off a band's edge (a line, the growth and half a dot: at most
+    3px and 0.75 dots) stays within the template's --tick-edge of the strip,
+    which it measures the window from.
+  Without anchor-size() the dot is --tick-dot-max and the pitch shrinks to
+  the room, so on a narrow strip dots may overlap each other, never labels.
+*/
+@supports (inline-size: anchor-size(inline)) {
+  .timeline-minimap__tick,
+  .timeline-minimap__setting,
+  .timeline-minimap__pair,
+  .timeline-minimap__pair-line {
+    --tick-dot: max(
+      var(--border-width-sm),
+      round(
+        down,
+        min(
+          var(--tick-dot-max),
+          (
+              (
+                  anchor-size(--timeline-minimap-frame inline) -
+                    var(--era-label-width) - var(--setting-room)
+                ) /
+                var(--places) - 2px
+            ) /
+            1.25,
+          (
+              var(--tick-window) * anchor-size(--timeline-minimap-frame block) -
+                2px
+            ) /
+            1.25,
+          (
+              var(--tick-edge) * anchor-size(--timeline-minimap-frame block) -
+                var(--border-width-sm) - 1px
+            ) /
+            0.75
+        ),
+        1px
       )
-  );
+    );
+  }
 }
 
 .timeline-minimap__tick {
@@ -606,10 +761,10 @@
   position: absolute;
 }
 
-/* The tick's hit: an invisible --tick-pitch square centred on the dot. */
+/* The tick's hit: an invisible square 1.25 dots wide (under a pitch) centred on the dot. */
 .timeline-minimap__tick::after {
   content: "";
-  inset: calc((var(--tick-dot) - var(--tick-pitch)) / 2);
+  inset: -12.5%;
   position: absolute;
 }
 
@@ -692,22 +847,19 @@
 
 /*
   The current entry's narrated setting (#170): a faint hatched span at its
-  years, beside the tick track, and a dotted arc from the span's middle to
-  the tick's dot (--tick-top, --tick-x). Shown only while its entry is
-  current. The span sits just inward of the track's first slots, or of its
-  own dot when that sits further in (--setting-x, from the strip's inline
-  end), so a dot shifted along its row never lands on it (#175); never past
-  the strip's inline start. Under the ticks: where the row runs on past its
-  dot, the next dots cover the span, not the reverse.
+  years and a dotted arc from the span's middle to the tick's dot (--tick-top,
+  --tick-x). Shown only while its entry is current. The span sits just inward
+  of the row's last place (--setting-x, from the strip's inline end), in the
+  setting room where no dot ever lands, current or not (#175), so it is
+  always clear of every dot and the labels, and the arc always runs one way.
 */
 .timeline-minimap__setting {
-  --setting-width: var(--space-2xs);
-  --setting-x: min(
-    max(
-      var(--tick-track-width) + var(--space-xs) - var(--setting-width),
-      var(--tick-x) + var(--tick-dot) + var(--space-3xs)
-    ),
-    100% - var(--setting-width)
+  --setting-width: var(--space-3xs);
+  /* Just past the row's last place inward, clear of its dot grown 1.5×. */
+  --setting-x: round(
+    var(--row-centre) + var(--row-reach) + var(--tick-dot) / 2 +
+      var(--tick-grow),
+    1px
   );
 
   /* display, not visibility: a visible child would show through the hidden rail. */
@@ -715,6 +867,38 @@
 }
 
 .timeline-minimap__setting > * {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+}
+
+/*
+  An entry's two ticks, its scholarly dot and its moved Tradition Date's
+  diamond (#214), share a place (timeline-minimap.html), so one sits straight
+  above the other, each at its own year. While either is current or hovered,
+  a thin amber line joins them (the other is ringed as its partner, see the
+  end), under every dot, so where it crosses one it passes behind. Nothing
+  moves. The wrapper is placed as the dot is and keeps the dot's top
+  (--from-top, resolved there); the line is placed as the diamond is.
+*/
+.timeline-minimap__pair {
+  --from-top: var(--tick-top);
+
+  /* display, not visibility: a visible child would show through the hidden rail. */
+  display: none;
+}
+
+.timeline-minimap__pair-line {
+  --dot-y: calc(var(--from-top) + var(--tick-dot) / 2);
+  --diamond-y: calc(var(--tick-top) + var(--tick-dot) / 2);
+
+  background: var(--color-accent);
+  inline-size: var(--border-width-sm);
+  inset-block: min(var(--dot-y), var(--diamond-y))
+    calc(100% - max(var(--dot-y), var(--diamond-y)));
+  inset-inline-end: calc(
+    var(--tick-x) + (var(--tick-dot) - var(--border-width-sm)) / 2
+  );
   pointer-events: none;
   position: absolute;
   z-index: -1;
@@ -743,9 +927,7 @@
   border-end-start-radius: var(--space-2xs);
   border-inline-end: 0;
   border-start-start-radius: var(--space-2xs);
-  inset-inline: calc(
-      100% - var(--setting-x) - var(--setting-width) - var(--space-3xs)
-    )
+  inset-inline: calc(100% - var(--setting-x) - var(--setting-width))
     calc(var(--tick-x) + var(--tick-dot));
 }
 
@@ -786,10 +968,23 @@
 
   .timeline-minimap__tick--moved {
     background: if(style(--is-current: 1): var(--color-accent); else: none);
-    scale: if(style(--is-current: 1): 1.2; else: 0.8);
+    scale: if(style(--is-current: 1): 1.0607; else: 0.7071);
   }
 
-  .timeline-minimap__setting {
+  .timeline-minimap__setting,
+  .timeline-minimap__pair {
     display: if(style(--is-current: 1): contents; else: none);
+  }
+
+  /*
+    The current or hovered tick's partner (the other tick of its entry): an
+    amber ring, not the fill, so the current one stays the one. Paint only.
+  */
+  .timeline-minimap__tick {
+    outline: if(
+      style(--is-partner: 1): var(--border-width-sm) solid var(--color-accent);
+        else: none
+    );
+    outline-offset: var(--border-width-sm);
   }
 }

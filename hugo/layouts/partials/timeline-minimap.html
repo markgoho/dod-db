@@ -3,8 +3,9 @@
   rail in the inline-start gutter on wide screens, and on narrow screens a
   sticky "You are in" bar whose Contents button opens the same minimap as a
   popover. On wide screens a pill fixed over the axis names the current era.
-  Era bands are sized by their year span and each placed entry is a
-  tick at its year, so Hugo lays it all out; nothing is measured in the page.
+  Era bands are sized by their year span (but for the short early band, see
+  $axis) and each placed entry is a tick at its year, so Hugo lays it all
+  out; nothing is measured in the page.
   Takes the eras from timeline-eras.html.
 
   "You are here" is CSS. One hidden list of entry links is the only scrollspy
@@ -21,30 +22,77 @@
 {{- $eras := . -}}
 {{- $labels := partial "timeline-labels.html" -}}
 {{- $placedLabel := $labels.placed -}}
-{{- $start := float (index $eras 0).from -}}
-{{- $years := sub (float (index $eras (sub (len $eras) 1)).to) $start -}}
 {{- /*
-  A tick is a dot at its year; --tick-pitch (dot plus gap) is one dot's
-  place: 0.035 of the shortest strip (14px of about 400px, in a 360×640
-  popover) and less on the rail (18px of 787px at 1728×1000; measured), so
-  0.04 here. Ticks closer than that would overlap, as Creation (4004 BCE)
-  and Adam (4000 BCE) did, so each takes the lowest slot (--tick-slot) none
-  of them has: a row of dots running inward from the tick track, one pitch
-  apart. Each tick carries its era's edges too, so the CSS keeps its dot
-  inside its band: a dot at an era's edge, like Creation's and Adam's at
-  4000 BCE, is nudged in off the line (#175), never more than its own size.
+  The strip's one year-to-position mapping (timeline-minimap-at below). It is
+  to scale from the end of the compressed early band (5000–2000 BCE, whose
+  few entries are all a tradition's) to the axis end. The early band is drawn
+  as if it were $compressedYears long, as tall as one of the 500-year bands
+  after it, and its entries are spread linearly within it. Without an early
+  band the whole strip is to scale.
   */
 -}}
-{{- $pitchShare := 0.04 -}}
+{{- $compressedYears := 500 -}}
+{{- $first := index $eras 0 -}}
+{{- $axis := dict
+  "start" (float $first.from)
+  "split" (float (cond $first.compressed $first.to $first.from))
+  "end" (float (index $eras (sub (len $eras) 1)).to)
+  "drawnAs" (float (cond $first.compressed $compressedYears 0))
+-}}
+{{- /*
+  A tick is a dot at its year, in the strip's one row of $places places
+  across (every kind: the scholarly dot, the dashed dot placed by a
+  tradition's date, the diamond of a moved Tradition Date, #214; the shapes
+  tell them apart). Ticks within $window of each other (a share of the
+  strip) never share a place: each takes the lowest free place among them,
+  fanning out from the row's centre (--tick-lane: 0, 1, -1, 2, -2…).
 
-{{- /* One flat model: eras with their ids, entries with their era, strip position, row slot and caption date. */ -}}
+  An entry's dot and its moved Tradition Date's diamond are a pair: they take
+  one place together, so the diamond sits straight above or below its dot,
+  each at its own year, and the line joining them (shown while the pair is
+  current or hovered) runs down that place. The place is the pair's
+  corridor: held from a window before its first end to a window after its
+  last, so the line never crosses another tick. Pairs are placed first,
+  longest first, each on the outermost place whose corridors it does not
+  overlap (two pairs share a place only where their corridors are apart);
+  every other tick then takes the lowest free place, fanning out from the
+  centre, outside any corridor at its year. A pair with no place, or with
+  ends within the window of each other (they would meet in one place), is
+  split: its ends are placed as single ticks, marked (data-pair-split on
+  both), counted on the strip and warned about in the build, and get no
+  line; the partner ring still shows.
+
+  $places is the only capacity: the CSS sizes the row from it (--places). A
+  tick with no free place is an overflow: it is drawn on the centre line,
+  marked (data-overflow), counted on the strip (data-overflow) and warned
+  about in the build, and $places needs another look.
+
+  The CSS keeps every dot inside its band (#175), nudged off an era's edge at
+  most $edge of the strip in (a dot's half, the current tick's growth and a
+  line), so the window is measured between the nudged positions. It also caps
+  the dot so that $window of the strip clears a dot and the current one beside
+  it, grown 1.5× (#175), and the nudge stays within $edge. So two ticks a
+  window apart clear each other, and two in one place never meet. The places
+  are odd in number, so the row has a centre line.
+  */
+-}}
+{{- $window := 0.032 -}}
+{{- $edge := 0.024 -}}
+{{- $places := 11 -}}
+{{- if modBool $places 2 -}}
+  {{- errorf "timeline-minimap: $places must be odd, not %d" $places -}}
+{{- end -}}
+
+{{- /* One flat model: eras with their ids, entries with their era, strip position, place and caption date. */ -}}
 {{- $bands := slice -}}
-{{- $ticks := slice -}}
+{{- $entries := slice -}}
 {{- range $eras -}}
   {{- $eraId := partial "timeline-era-id.html" . -}}
-  {{- $eraStart := div (sub (float .from) $start) $years -}}
-  {{- $eraEnd := div (sub (float .to) $start) $years -}}
-  {{- $bands = $bands | append (dict "id" $eraId "label" .label "start" $eraStart "end" $eraEnd "empty" (not .items)) -}}
+  {{- $eraStart := partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" .from) -}}
+  {{- $eraEnd := partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" .to) -}}
+  {{- /* The band's start as a bare year, for the rail's label column: 1500, 1 CE. */ -}}
+  {{- $startYear := cond (lt (int .from) 0) (printf "%d" (sub 0 (int .from))) (cond (eq (int .from) 0) "1 CE" (printf "%d" (int .from))) -}}
+  {{- $bands = $bands | append (dict "id" $eraId "label" .label "start" $eraStart "end" $eraEnd "empty" (not .items) "compressed" .compressed "startYear" $startYear "bceEnd" (eq (int .to) 0)) -}}
   {{- range .items -}}
     {{- $p := .page.Params -}}
     {{- $date := "" -}}
@@ -56,28 +104,18 @@
     {{- else -}}
       {{- $date = $p.critical.display -}}
     {{- end -}}
-    {{- $at := div (sub (float .year) $start) $years -}}
-    {{- $taken := slice -}}
-    {{- range $ticks -}}
-      {{- if lt (sub $at .at) $pitchShare -}}
-        {{- $taken = $taken | append .slot -}}
-      {{- end -}}
-    {{- end -}}
-    {{- $slot := 0 -}}
-    {{- range seq (len $taken) -}}
-      {{- if in $taken $slot -}}{{- $slot = add $slot 1 -}}{{- end -}}
-    {{- end -}}
+    {{- $at := partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" .year) -}}
     {{- /* A narrated setting with years: a span at its years and an arc from its middle to the tick's dot. */ -}}
     {{- $setting := dict -}}
     {{- with and (not $isMoved) $p.setting -}}
       {{- if isset . "from" -}}
-        {{- $settingStart := div (sub (float .from) $start) $years -}}
-        {{- $settingEnd := div (sub (float (.to | default .from)) $start) $years -}}
+        {{- $settingStart := partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" .from) -}}
+        {{- $settingEnd := partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" (.to | default .from)) -}}
         {{- $mid := div (add $settingStart $settingEnd) 2 -}}
         {{- $setting = dict "start" $settingStart "end" $settingEnd "mid" $mid -}}
       {{- end -}}
     {{- end -}}
-    {{- $ticks = $ticks | append (dict
+    {{- $entries = $entries | append (dict
       "setting" $setting
       "id" (cond $isMoved (printf "%s-tradition" .page.File.ContentBaseName) .page.File.ContentBaseName)
       "moved" $isMoved
@@ -88,9 +126,150 @@
       "date" $date
       "placed" (eq .by "tradition")
       "at" $at
-      "slot" $slot)
+      "y" (math.Min (math.Max $at (add $eraStart $edge)) (sub $eraEnd $edge)))
     -}}
   {{- end -}}
+{{- end -}}
+
+{{- /* The pairs: each moved Tradition Date's diamond and its entry's dot. */ -}}
+{{- $byId := dict -}}
+{{- range $entries -}}
+  {{- $byId = merge $byId (dict .id .) -}}
+{{- end -}}
+{{- $pairs := slice -}}
+{{- range $entries -}}
+  {{- if .moved -}}
+    {{- $id := strings.TrimSuffix "-tradition" .id -}}
+    {{- with index $byId $id -}}
+      {{- $pairs = $pairs | append (dict "id" $id "dot" .id "diamond" (printf "%s-tradition" $id)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* The places from the outside in: lanes 5, -5, 4, -4… 0 (places 9, 10, 7, 8… 0). */ -}}
+{{- $outward := slice -}}
+{{- range $k := seq (div (sub $places 1) 2) -1 1 -}}
+  {{- $outward = $outward | append (sub (mul $k 2) 1) (mul $k 2) -}}
+{{- end -}}
+{{- $outward = $outward | append 0 -}}
+
+{{- /* Corridors first: each pair, longest first, on the outermost place free of other corridors over its own. */ -}}
+{{- $slotOf := dict -}}
+{{- $held := slice -}}
+{{- $corridors := slice -}}
+{{- $splitPairs := slice -}}
+{{- $spans := slice -}}
+{{- range $pairs -}}
+  {{- $a := (index $byId .dot).y -}}
+  {{- $b := (index $byId .diamond).y -}}
+  {{- $spans = $spans | append (merge . (dict "span" (math.Abs (sub $a $b)) "from" (sub (math.Min $a $b) $window) "to" (add (math.Max $a $b) $window))) -}}
+{{- end -}}
+{{- range sort $spans "span" "desc" -}}
+  {{- $pair := . -}}
+  {{- $slot := -1 -}}
+  {{- /* Ends within the window of each other would meet in one place: no corridor. */ -}}
+  {{- range cond (lt .span $window) slice $outward -}}
+    {{- $s := . -}}
+    {{- if lt $slot 0 -}}
+      {{- $clear := true -}}
+      {{- range $corridors -}}
+        {{- if and (eq .slot $s) (lt $pair.from .to) (lt .from $pair.to) -}}
+          {{- $clear = false -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if $clear -}}{{- $slot = $s -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if ge $slot 0 -}}
+    {{- $corridors = $corridors | append (dict "from" .from "to" .to "slot" $slot) -}}
+    {{- $slotOf = merge $slotOf (dict .dot $slot .diamond $slot) -}}
+    {{- $held = $held | append (dict "y" (index $byId .dot).y "slot" $slot) (dict "y" (index $byId .diamond).y "slot" $slot) -}}
+  {{- else -}}
+    {{- $splitPairs = $splitPairs | append .dot -}}
+    {{- warnf "timeline-minimap: %s and %s have no free corridor (or are within a window of each other), so they split; see $places" .dot .diamond -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Then every other tick, in axis order: the lowest free place outside the corridors at its year. -1: no free place. */ -}}
+{{- range $entries -}}
+  {{- if not (isset $slotOf .id) -}}
+    {{- $y := .y -}}
+    {{- $free := partial "inline/timeline-minimap-free.html" (dict "held" $held "y" $y "window" $window "places" $places) -}}
+    {{- $slot := -1 -}}
+    {{- range $free -}}
+      {{- $s := . -}}
+      {{- if lt $slot 0 -}}
+        {{- $clear := true -}}
+        {{- range $corridors -}}
+          {{- if and (eq .slot $s) (lt .from $y) (lt $y .to) -}}
+            {{- $clear = false -}}
+          {{- end -}}
+        {{- end -}}
+        {{- if $clear -}}{{- $slot = $s -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $slotOf = merge $slotOf (dict .id $slot) -}}
+    {{- if ge $slot 0 -}}
+      {{- $held = $held | append (dict "y" $y "slot" $slot) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $ticks := slice -}}
+{{- $overflow := 0 -}}
+{{- range $entries -}}
+  {{- $slot := index $slotOf .id -}}
+  {{- $isOverflow := lt $slot 0 -}}
+  {{- if $isOverflow -}}
+    {{- $overflow = add $overflow 1 -}}
+    {{- warnf "timeline-minimap: %s has no free place (%d places); see $places" .id $places -}}
+  {{- end -}}
+  {{- $dotId := cond .moved (strings.TrimSuffix "-tradition" .id) .id -}}
+  {{- $ticks = $ticks | append (merge . (dict
+    "slot" $slot
+    "lane" (cond $isOverflow 0 (partial "inline/timeline-minimap-lane.html" $slot))
+    "overflow" $isOverflow
+    "split" (in $splitPairs $dotId)))
+  -}}
+{{- end -}}
+{{- $byId = dict -}}
+{{- range $ticks -}}
+  {{- $byId = merge $byId (dict .id .) -}}
+{{- end -}}
+
+{{- define "partials/inline/timeline-minimap-free.html" -}}
+  {{- /* The places free at .y: not held by a tick within .window of it, lowest first. */ -}}
+  {{- $y := .y -}}
+  {{- $window := .window -}}
+  {{- $taken := slice -}}
+  {{- range .held -}}
+    {{- if lt (math.Abs (sub $y .y)) $window -}}
+      {{- $taken = $taken | append .slot -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $free := slice -}}
+  {{- range seq 0 (sub .places 1) -}}
+    {{- if not (in $taken .) -}}{{- $free = $free | append . -}}{{- end -}}
+  {{- end -}}
+  {{- return $free -}}
+{{- end -}}
+
+{{- define "partials/inline/timeline-minimap-lane.html" -}}
+  {{- /* A place's lane, fanning out from the centre line: places 0, 1, 2, 3, 4… are lanes 0, 1, -1, 2, -2… */ -}}
+  {{- return cond (modBool . 2) (div . -2) (div (add . 1) 2) -}}
+{{- end -}}
+
+{{- define "partials/inline/timeline-minimap-at.html" -}}
+  {{- /* A year's share of the strip, 0 at the axis start to 1 at its end: to scale, but for the early band (see $axis). */ -}}
+  {{- $a := .axis -}}
+  {{- $year := float .year -}}
+  {{- $drawn := 0.0 -}}
+  {{- if lt $year $a.split -}}
+    {{- $drawn = mul (div (sub $year $a.start) (sub $a.split $a.start)) $a.drawnAs -}}
+  {{- else -}}
+    {{- $drawn = add $a.drawnAs (sub $year $a.split) -}}
+  {{- end -}}
+  {{- return div $drawn (add $a.drawnAs (sub $a.end $a.split)) -}}
 {{- end -}}
 
 
@@ -148,29 +327,52 @@
         {{- end }}
       </span>
     </p>
-    <div class="timeline-minimap__strip">
+    <div
+      class="timeline-minimap__strip"
+      data-overflow="{{ $overflow }}"
+      data-pair-split="{{ len $splitPairs }}"
+      style="--places: {{ $places }}; --tick-window: {{ $window }}; --tick-edge: {{ $edge }}">
       <ol class="timeline-minimap__eras" role="list">
         {{- range $bands }}
           <li
             class="timeline-minimap__band{{ if .empty }}
               timeline-minimap__band--empty
+            {{ end }}{{ if .compressed }}
+              timeline-minimap__band--compressed
+            {{ end }}{{ if .bceEnd }}
+              timeline-minimap__band--bce-end
             {{ end }}"
             data-era="{{ .id }}"
             style="--era-start: {{ .start }}; --era-end: {{ .end }}">
-            {{- /* "1500–1000 BCE": the BCE/CE suffix can drop on a narrow rail; the link's name keeps it. */}}
+            {{- /*
+              The popover shows the range over its BCE/CE suffix; the rail,
+              only the band's start year ("1500"), with BCE and CE marked at
+              year 0. The link's name keeps the full label.
+            */}}
             {{- $range := index (split .label " ") 0 }}
             <a
               class="timeline-minimap__era"
               href="#{{ .id }}"
               aria-label="{{ .label }}"
-              >{{ $range }}<span class="timeline-minimap__suffix">
-                {{ strings.TrimPrefix (printf "%s " $range) .label }}</span
+              ><span class="timeline-minimap__era-full"
+                >{{ $range }}<span class="timeline-minimap__suffix">
+                  {{ strings.TrimPrefix (printf "%s " $range) .label }}</span
+                ></span
+              ><span class="timeline-minimap__era-start" aria-hidden="true"
+                >{{ .startYear }}</span
               ></a
             >
+            {{- if .bceEnd }}
+              <span class="timeline-minimap__era-mark" aria-hidden="true"
+                >BCE</span
+              >
+            {{- end }}
           </li>
         {{- end }}
       </ol>
       <div class="timeline-minimap__ticks">
+        {{- /* The strip's box, for anchor-size(): the dots are sized to its width and height. */}}
+        <span class="timeline-minimap__frame" aria-hidden="true"></span>
         {{- range $ticks }}
           <a
             class="timeline-minimap__tick{{ if .placed }}
@@ -181,9 +383,11 @@
             href="#{{ .id }}"
             tabindex="-1"
             data-tick="{{ .id }}"
+            {{ if .overflow }}data-overflow{{ end }}
+            {{ if .split }}data-pair-split{{ end }}
             interestfor="timeline-minimap-tip-{{ .id }}"
             aria-label="{{ .title }}: {{ replace .date "–" " to " }}"
-            style="--tick-at: {{ .at }}; --tick-slot: {{ .slot }}; --era-start: {{ .eraStart }}; --era-end: {{ .eraEnd }}"></a>
+            style="--tick-at: {{ .at }}; --tick-slot: {{ .slot }}; --tick-lane: {{ .lane }}; --era-start: {{ .eraStart }}; --era-end: {{ .eraEnd }}"></a>
           {{- /* The tick's title and date, shown on hover or focus. The link's aria-label already says the same (with "to" for the dash), so no ARIA points here: it would be read twice. */}}
           <span
             class="timeline-minimap__tip"
@@ -197,7 +401,7 @@
             <span
               class="timeline-minimap__setting"
               data-setting="{{ $t.id }}"
-              style="--tick-at: {{ $t.at }}; --tick-slot: {{ $t.slot }}; --era-start: {{ $t.eraStart }}; --era-end: {{ $t.eraEnd }}"
+              style="--tick-at: {{ $t.at }}; --tick-slot: {{ $t.slot }}; --tick-lane: {{ $t.lane }}; --era-start: {{ $t.eraStart }}; --era-end: {{ $t.eraEnd }}"
               aria-hidden="true">
               <span
                 class="timeline-minimap__setting-span"
@@ -205,6 +409,22 @@
               <span
                 class="timeline-minimap__setting-arc"
                 style="--arc-mid: {{ .mid }}"></span>
+            </span>
+          {{- end }}
+        {{- end }}
+        {{- /* A line from an entry's dot (the wrapper's position) to its diamond (the line's own), in their shared place, shown while the pair is current or hovered. A split pair has none. */}}
+        {{- range $pairs }}
+          {{- $d := index $byId .dot }}
+          {{- $m := index $byId .diamond }}
+          {{- if not $d.split }}
+            <span
+              class="timeline-minimap__pair"
+              data-pair="{{ .id }}"
+              style="--tick-at: {{ $d.at }}; --tick-lane: {{ $d.lane }}; --era-start: {{ $d.eraStart }}; --era-end: {{ $d.eraEnd }}"
+              aria-hidden="true">
+              <span
+                class="timeline-minimap__pair-line"
+                style="--tick-at: {{ $m.at }}; --tick-lane: {{ $m.lane }}; --era-start: {{ $m.eraStart }}; --era-end: {{ $m.eraEnd }}"></span>
             </span>
           {{- end }}
         {{- end }}
@@ -249,6 +469,28 @@
       {{- $settings = $settings | append (printf `%s [data-setting="%s"]` $on .id) }}
     {{- end }}
   {{- end }}
+  {{- /*
+    A pair: while either tick is current, the other is its partner and the
+    connector shows. On hover (a pointer that can hover), the same for the
+    hovered tick or its hint: one :has() per pair on the ticks layer, so a
+    hover never restyles more than that pair.
+  */}}
+  {{- $partners := slice }}
+  {{- $connectors := slice }}
+  {{- $hoverPartners := slice }}
+  {{- $hoverConnectors := slice }}
+  {{- range $pairs }}
+    {{- $dot := .dot }}
+    {{- $diamond := .diamond }}
+    {{- $onDot := printf `.timeline-minimap:has(.timeline-minimap__spy [href="#%s"]%s)` $dot $current }}
+    {{- $onDiamond := printf `.timeline-minimap:has(.timeline-minimap__spy [href="#%s"]%s)` $diamond $current }}
+    {{- $partners = $partners | append (printf `%s [data-tick="%s"]` $onDot $diamond) (printf `%s [data-tick="%s"]` $onDiamond $dot) }}
+    {{- $connectors = $connectors | append (printf `%s [data-pair="%s"]` $onDot .id) (printf `%s [data-pair="%s"]` $onDiamond .id) }}
+    {{- $hoverDot := printf `.timeline-minimap__ticks:has(:is([data-tick="%s"], [id="timeline-minimap-tip-%s"]):hover)` $dot $dot }}
+    {{- $hoverDiamond := printf `.timeline-minimap__ticks:has(:is([data-tick="%s"], [id="timeline-minimap-tip-%s"]):hover)` $diamond $diamond }}
+    {{- $hoverPartners = $hoverPartners | append (printf `%s [data-tick="%s"]` $hoverDot $diamond) (printf `%s [data-tick="%s"]` $hoverDiamond $dot) }}
+    {{- $hoverConnectors = $hoverConnectors | append (printf `%s [data-pair="%s"]` $hoverDot .id) (printf `%s [data-pair="%s"]` $hoverDiamond .id) }}
+  {{- end }}
   {{- range $bands }}
     {{- $on := printf `.timeline-minimap:has(.timeline-minimap__spy [data-entry-era="%s"]%s)` .id $current }}
     {{- $eraLabels = $eraLabels | append (printf `%s [data-now="%s"]` $on .id) }}
@@ -256,8 +498,21 @@
   {{- end }}
   {{- /* Flags only: what each flag shows is in timeline-minimap.css. */}}
   <style>
-    {{ delimit ($labels | append $eraLabels | append $eraBands | append $marks | append $settings | append $entries) ",\n" | safeCSS }} {
+    {{ delimit ($labels | append $eraLabels | append $eraBands | append $marks | append $settings | append $connectors | append $entries) ",\n" | safeCSS }} {
       --is-current: 1;
     }
+    {{- with $partners }}
+    {{ delimit . ",\n" | safeCSS }} {
+      --is-partner: 1;
+    }
+    @media (hover: hover) {
+      {{ delimit $hoverPartners ",\n" | safeCSS }} {
+        --is-partner: 1;
+      }
+      {{ delimit $hoverConnectors ",\n" | safeCSS }} {
+        --is-current: 1;
+      }
+    }
+    {{- end }}
   </style>
 </aside>
