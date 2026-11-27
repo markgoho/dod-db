@@ -1,0 +1,654 @@
+# Review record for /scholarship/the-rapture-and-the-second-coming/ (#93 shape). Not rendered.
+# agent: results of the agent first pass (#160, 2026-11-27). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass once it has run.
+# Issue #160: merges preterism and Christian Zionism; possible trigger Ep 32 00:34:59 on Darby in the 1830s. Scope kept off pauline-authorship (2 Thessalonians' authorship and its delay of the end), daniel-date and the-historical-jesus (Jesus as apocalyptic prophet), and the Timeline's revelation entry (Revelation's date).
+# Sourcing test (#160, 2026-11-27): gate 1, ten Trigger Claims in Episodes 32, 71, 118 and 119, each read with about two minutes either side; three more assertions logged as conflicts in data/scholarship-candidates.yaml (71@00:08:18 and the “1800 years” sentence of 32@00:35:14 vs origin; 71@00:15:48 vs thessalonians). Gate 2, the core: the candidate “the rapture was invented by Darby in the 1830s” sourced only as “the rapture as taught today goes back to Darby's teaching in the early nineteenth century; whether anyone anticipated it is debated”: no Scholarly or Reference source says “invented” or names a forerunner in its own words; Emerson and Minahan say “certainly earlier formulations”; Bennett and Sweetnam and Gribben report the origins debate. Gate 3: three in-window independent authors behind the core's main clause (Tooth 2023, Durbin 2022, de Villiers 2019), plus Whalen and Stancil (NCE). Gate 4: 13 statements.
+# Dropped for want of a second author or any qualifying source: a parousia statement (meaning disputed as a technical term; no short needs it); Matthew 24:40–41 as taken in judgment (Tradition only; the NABRE reading is attributed in scripture); partial vs full preterism and preterism as fulfilment in 70 CE (Tradition only; attributed in preterism); 1967 as prophetic (Smith only); survey figures for rapture belief (none found; Pew asks other questions).
+# First pass: three research agents fetched every source on 2026-11-27 into separate scratch folders and copied quotes from the fetched text; every page quote was then script-matched (whitespace, HTML entities, curly quotes and dashes normalised; HTML tags stripped with and without a space; two PDF line-break hyphens joined, Gundry and Cosby) against those saved texts: 99/99, 0 misses. The second pass must re-fetch.
+# Flags for the second pass: (1) Five sources are Critical Dictionary of Apocalyptic and Millenarian Movements entries (four authors and a corporate CenSAMM entry), an open academic dictionary from an academic centre: classed Reference. (2) De Villiers 2019 carries the only “general agreement” sentence and has slips elsewhere (p. 172). (3) Three doctoral theses (Lee, Molina, Smith) are classed Scholarly by the McDonald precedent; Molina is the second author for the preterism short's list of schools. (4) Bennett (Evangelical Quarterly) and Sweetnam and Gribben (JETS) are in evangelical venues, classed Scholarly by the JETS and Tyndale Bulletin precedents; used for the debate and Darby's development. (5) Contemporary American Religion's year (2000) comes from library catalogues, not the page. (6) NABRE notes (1986) and NCE entries (undated, older text) never carry a short alone. (7) Trigger 32@00:33:06 states the royal-arrival reading flatly; attached as a side the statement reports, while 71@00:15:48 (“critical scholarship … finds”) is logged as a conflict. (8) Du Toit's article argues a confessional case; only its definitions are cited.
+review: null
+citations:
+  origin/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core: one of the in-window core authors (Tooth 2023, Reference)."
+  origin/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core. Text keeps Tooth's qualifier “such as is found in modern eschatological discussions”."
+  origin/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core (Durbin 2022, Reference): “developed in the early 1800s by … Darby”."
+  origin/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Core (de Villiers 2019, Scholarly): the only “general agreement” sentence; flag: the same article has factual slips on p. 172 (Scofield “revised in 1907”), not cited."
+  origin/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  origin/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  origin/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Debate side: “certainly earlier formulations”; attributed. Year 2000 (Contemporary American Religion)."
+  origin/8:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  origin/9:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Debate: Bennett reports the debate in his opening; the quote avoids the OCR-damaged ‘Left Behindtl’ sentence before it."
+  origin/10:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  dispensationalism/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  dispensationalism/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  dispensationalism/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  dispensationalism/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  dispensationalism/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  dispensationalism/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  dispensationalism/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  dispensationalism/8:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  dispensationalism/9:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  dispensationalism/10:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  spread/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  spread/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  spread/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  spread/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  spread/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  spread/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  spread/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  spread/8:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  spread/9:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  today/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  today/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  today/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  today/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  today/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  today/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  thessalonians/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  thessalonians/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  thessalonians/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  thessalonians/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  thessalonians/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  thessalonians/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Cosby 1994 is outside the 30-year window; it backs only his attributed argument, as Gundry 1996 replies to it."
+  thessalonians/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  thessalonians/8:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  thessalonians/9:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Martin backs the return-to-earth reading only; he does not invoke the reception custom."
+  word/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. NABRE note 4:17; the space before the colon is the page's."
+  word/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  word/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  paul-expected/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  paul-expected/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  paul-expected/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  paul-expected/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  paul-expected/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  paul-expected/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  scripture/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Tooth's “little support among most scholars” carries the short; Frohlich's “Many scholars” is not upgraded."
+  scripture/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  scripture/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. New Catholic Encyclopedia entry (bibliography to 1995): supports “many scholars criticize”, as worded."
+  scripture/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  scripture/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  scripture/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  scripture/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Lee 2010 doctoral thesis (Scholarly by registry precedent for theses); attributed. The PDF text layer runs “per se” together as “perse”, so the quote is split at that word."
+  scripture/8:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second half of Lee's sentence (see scripture/7)."
+  this-generation/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  this-generation/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  this-generation/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  this-generation/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  this-generation/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  this-generation/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Bahr's “Most scholars agree” covers the audience's reading of the signs as the temple's destruction, not the imminence clause, which she sources to Stein; the text keeps both as she words them."
+  this-generation/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  millennium/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  millennium/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  millennium/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  millennium/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  millennium/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  millennium/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  millennium/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  preterism/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  preterism/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  preterism/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  preterism/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  preterism/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Molina 2010 doctoral thesis (Scholarly by registry precedent; examined, not peer-reviewed; argues from a historicist standpoint): used only for the list of four schools. Flag for the second pass."
+  preterism/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  preterism/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  preterism/8:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  israel/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  israel/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  israel/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  israel/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  israel/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  israel/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  israel/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  israel/8:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Smith 2010 Baylor dissertation (Scholarly by registry precedent for theses): his dissent from the Darby-roots account, attributed."
+  tradition/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  tradition/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  tradition/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  tradition/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  tradition/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. LCMS quote split at the etext's line-wrap hyphen (“mid- tribulation”)."
+  tradition/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  tradition/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+  tradition/8:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched against fetched text; surrounding passage read."
+triggers:
+  32@00:33:06:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Takes the royal-arrival side the thessalonians statement reports; attached (the turn begins “Yeah.”, dropped)."
+  32@00:34:59:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Hedge kept: “I don't remember the exact year … I think, the 1830s”. Sweetnam and Gribben have Darby developing his eschatology throughout the early 1830s."
+  32@00:35:14:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Trimmed to the turn's later sentences; the earlier “You don't have any concept of the Rapture for the other 1800 years” is logged as a conflict with origin in data/scholarship-candidates.yaml."
+  71@00:07:39:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. The turn's first sentence (“But sometimes people say …”) dropped; definitions only."
+  71@00:12:01:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Trimmed to the clause on Darby; the same turn's slip “1st Thessalonians 7:14” (corrected to 4:17 at 00:13:11) is left out."
+  71@00:16:55:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. The speaker's own reading (“it makes more sense”); attached as taking a side the thessalonians statement reports. The turn before (00:15:48), crediting critical scholarship, is logged as a conflict."
+  71@00:20:11:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side."
+  118@00:12:38:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. “this” is the founding of Israel (Beecher, 00:11:58: the reoccupation “was fulfillment of prophecy”). The turn's first sentences (“Fulfillment of prophecy. I don't think we can go that far.”) are the speaker's own view and are dropped."
+  119@00:03:47:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side."
+  119@00:05:42:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: matched by script at timestamp and speaker (full turn, final transcript), verbatim; read about two minutes either side. Hedges kept (“makes it sound like”, “sound an awful lot like”); the turn's opening “The Olivet Discourse, right.” and closing sentence dropped."
+rules:
+  publish-rule:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: 13 statements. Core origin cites Tooth 2023 (Reference, CDAMM), Durbin 2022 (Reference, CDAMM), de Villiers 2019 (Scholarly, STJ), Whalen and Stancil (Reference, NCE, undated text), Sweetnam and Gribben 2009 (Scholarly, JETS), Emerson and Minahan 2000 (Reference), Bennett 2008 (Scholarly, EQ): Tooth, Durbin and de Villiers each back the main clause inside the window; the debate clause rests on Bennett, Sweetnam and Gribben, de Villiers and Emerson and Minahan. None Host-authored."
+  consensus-wording:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: no statement says “consensus”. “general agreement” appears only as de Villiers's words, attributed (origin). “most scholars” appears in the scripture short as Tooth's “little support among most scholars”, with Frohlich's “many scholars criticize” beside it; in this-generation only as Bahr's “Most scholars agree”, attributed, scoped as she scopes it; Lippy's “most Christian religious groups” attributed (millennium). #133 per short: origin (Tooth, Durbin, de Villiers; debate Bennett, Sweetnam and Gribben, Emerson and Minahan); dispensationalism (Bass, Durbin, Stancil, Whalen and Stancil); spread (Balmer, Stancil, Bass, Durbin, Tooth, Marsden and Svelmoe); today (Emerson and Minahan, Frohlich, Durbin, Bass, Tooth); thessalonians (Tooth; Gundry for, Plevnik and Cosby against, Martin); word (NABRE, Tooth); paul-expected (NABRE, Ehrman, Martin, Tooth); scripture (Tooth, Frohlich, NABRE, Durbin, Lee); this-generation (NABRE, Martin, Bahr; Luke: NABRE, Martin, Ehrman); millennium (CenSAMM, Lippy; Augustine: Durbin, de Villiers); preterism (Lehner, Molina); israel (Du Toit, Durbin, Stancil; dissent Smith); tradition (Tradition sources, exempt)."
+  dissent-attributed:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: earlier formulations (Emerson and Minahan) and the origins debate (Bennett; Sweetnam and Gribben; de Villiers) attributed; Plevnik's and Cosby's rejection of the reception reading and Gundry's reply attributed; Tooth's “Others argue” on Paul's expectation attributed; Smith's dissent on Christian Zionism's roots attributed; Bass's majority/some on the rapture's timing attributed."
+  tradition-named:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: gotquestions-* as Got Questions Ministries, an evangelical ministry (registry convention); dts-doctrinal-statement as Dallas Theological Seminary (its own name); lcms-ctcr-1989-end-times as the Lutheran Church–Missouri Synod and its Commission on Theology and Church Relations (its own names); ccc-668-677 as the Catholic Church (as ccc-1033); ligonier-mathison-2012-johns-prophecy as Keith Mathison, writing for Ligonier Ministries, an international Christian discipleship organization (registry line). None supports what scholars think."
+sources:
+  tooth-2023-cdamm-1-thessalonians:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: signed entry in the Critical Dictionary of Apocalyptic and Millenarian Movements (eds. James Crossley and Alastair Lockhart; CenSAMM; about page: “articles written by academic authorities”), 11 January 2023, CC BY-NC-ND. Flag: CenSAMM is an academic centre, not a press. Author's gender not stated; text uses no pronoun."
+  durbin-2022-cdamm-dispensationalism:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: CDAMM signed entry, 19 December 2022."
+  devilliers-2019-stj-millennialism:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Scholarly: Stellenbosch Theological Journal 5(1), 2019, peer-reviewed, open on SciELO. Printed pages from the running heads (PDF p. 9 = p. 171). Flag: p. 172 has slips (Scofield “revised in 1907”; Scofield “accompanied Darby”), not cited."
+  whalen-stancil-nce-darby:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference (NCE), bibliography to 1985; year null. Shares Stancil with stancil-nce-dispensational-theology; the validator counts author strings, so by hand Stancil counts once."
+  sweetnam-gribben-2009-jets-darby:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Scholarly by registry precedent for JETS (haykin-2019-spirit): both authors at Trinity College Dublin. JETS 52(3), 2009."
+  emerson-minahan-car-rapture:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: Contemporary American Religion (Wade Clark Roof, ed., Macmillan Reference USA, 2000, per library catalogue records; the page shows no year). Second entry on the Encyclopedia.com page."
+  bennett-2008-eq-pseudo-ephraem:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Scholarly by venue: Evangelical Quarterly (Paternoster), peer-reviewed, as Tyndale Bulletin is classed. Text is an OCR scan; quotes chosen from clean lines. Used for the report of a debate only."
+  bass-car-dispensationalism:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: Contemporary American Religion, 2000 (the entry says “As of 1999”)."
+  stancil-nce-dispensational-theology:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference (NCE), bibliography to 1993; year null."
+  balmer-car-premillennialism:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: Contemporary American Religion, 2000."
+  marsden-svelmoe-eor-evangelical:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: Encyclopedia of Religion 2nd ed., credit line Marsden (1987 and 2005), Svelmoe (2005)."
+  frohlich-nce-rapture:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference by registry precedent for the New Catholic Encyclopedia; entry signed M. Frohlich, bibliography to 1995; year null. Same Encyclopedia.com page as emerson-minahan-car-rapture."
+  gundry-1996-bbr-apantesis:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Scholarly: BBR 6 (1996), peer-reviewed; IBR's free PDF, now gone live, read in the Wayback snapshot 20130530190206. Quote matched after joining a line-break hyphen (“recep- tions”)."
+  cosby-1994-bbr-apantesis:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Scholarly: BBR 4 (1994); Wayback snapshot 20130530184425. Outside the 30-year window: backs only his attributed argument. Quote matched after joining a line-break hyphen (“miss- ing”)."
+  plevnik-1999-biblica-1-thess-4-17:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Scholarly: Biblica 80 (1999), Pontifical Biblical Institute; journal archive on bsw.org, one HTML page per printed page (p537, p545 read)."
+  martin-rlst152-l14:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: Open Yale Courses RLST 152, 2009, lecture 14 “Paul as Missionary”; chapter 3 heading “Paul the Apocalyptic Apostle to the Gentiles” [00:30:07]."
+  nabre-1-thessalonians-4-notes:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference (NABRE notes, scholarly association; registry precedent), 1986 revised NT; live page fetched. Flag: outside the 30-year window, so no short rests on it alone."
+  nabre-1-corinthians-15-notes:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference (NABRE), 1986; Wayback snapshot 20260109135303."
+  ehrman-brief-5e-ch12-summary:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: OUP Learning Link summary, 5th ed., 2020."
+  martin-rlst152-l24:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Already registered (Reference, 2009). Chapter 2 heading “2 Thessalonians, the Lawless One, and Politics” [00:12:22]."
+  nabre-matthew-24-notes:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference (NABRE), 1986; Wayback snapshot 20251228060054."
+  lee-2010-darby-eschatology:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Scholarly by registry precedent for doctoral theses (McDonald, Leiden): University of Wales, Lampeter, 2010. Flag: unpublished thesis, not peer-reviewed; attributed."
+  nabre-mark-13-notes:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference (NABRE), 1986; Wayback snapshot 20260202070742."
+  martin-rlst152-l6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Already registered (Reference, 2009). Chapter 4 “The Apocalyptic in Mark” [00:30:26]."
+  bahr-2024-cdamm-mark-13:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: CDAMM signed entry, 23 September 2024."
+  ehrman-brief-5e-ch7-summary:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Already registered (Reference, 2020)."
+  censamm-2021-cdamm-millenarianism:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: CDAMM entry by CenSAMM (corporate author), 15 January 2021. Used for definitions."
+  lippy-car-millennialism:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: Contemporary American Religion, 2000; third entry on the Encyclopedia.com page."
+  durbin-2023-cdamm-premillennialism:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Reference: CDAMM signed entry, page dated 3 January 2023 (the PDF's citation line says 2022). Same author as durbin-2022; counted once."
+  lehner-2014-post-tridentine-revelation:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Scholarly: Journal of Baroque Studies 1(2), 2014, University of Malta; author Marquette faculty (bepress record). Page numbers from the printed page heads."
+  molina-2010-revelation-7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Scholarly by thesis precedent: University of Pretoria PhD, 2010 (supervisor Ernest van Eck), chapter 3. Flag: argues from a historicist standpoint; used only for the list of schools."
+  ligonier-mathison-2012-johns-prophecy:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Already registered (Tradition). Re-fetched; it says “a basically preterist manner”, not “partial preterism”."
+  gotquestions-preterist:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Tradition (registry line). An opponent's description of preterism; attributed as what the ministry says."
+  dutoit-2016-skriflig-christian-zionism:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Scholarly by venue: In die Skriflig 50(1), 2016, peer-reviewed (AOSIS). Flag: the article argues against Christian Zionism on confessional grounds; only its descriptive sentences are cited. The PDF's first page is the 2017 erratum (surname Du Toit). Its next sentence garbles the rapture's order (after the tribulation); not cited."
+  smith-2010-baylor-christian-affinity-israel:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Scholarly by thesis precedent: Baylor PhD, December 2010 (later an OUP book, not read)."
+  gotquestions-rapture-tribulation:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Tradition (registry line)."
+  dts-doctrinal-statement:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Tradition: a seminary's own doctrinal statement; it says “translation of the church”, not “rapture”; the text reports it in its own terms."
+  lcms-ctcr-1989-end-times:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Tradition: LCMS Commission on Theology and Church Relations, September 1989; Project Wittenberg etext part 4."
+  ccc-668-677:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27: Tradition: Catechism §§668–677 on vatican.va (__P1V.HTM); footnote markers dropped; none of these paragraphs mentions a rapture."
+leads:
+  - "Barbara Rossing, The Rapture Exposed (2004), “Invention of the Rapture”: read only as quoted in Lee 2010 and de Villiers 2019."
+  - "Crawford Gribben, J. N. Darby and the Roots of Dispensationalism (OUP 2024) and SZRKG 110 (2016): not public (403)."
+  - "Donald Akenson, Exporting the Rapture (OUP 2018): only the Queen's University blurb read."
+  - "Amy Frykholm, Rapture Culture (OUP 2004): read only as quoted by Durbin and Lee."
+  - "F. F. Bruce, Evangelical Quarterly 47 (1975), on Margaret Macdonald, and his WBC 1–2 Thessalonians on apantēsis: read only as quoted by Sweetnam and Gribben and by Cosby."
+  - "Morgan Edwards (1788), Pseudo-Ephraem and Increase Mather as pre-Darby forerunners: named only by Tradition sources (Thomas Ice, Pre-Trib Research Center; Got Questions) and by LaHaye/Jenkins as quoted in Lee; no Scholarly or Reference source names them in its own words."
+  - "Peterson 1930, Dupont 1952 and Malherbe on 1 Thess 4:17: read only as reported by Plevnik, Cosby and Tooth."
+  - "Kenneth Newport, Apocalypse and Millennium (CUP 2000), on Alcázar: read only as quoted in Lehner 2014."
+  - "Timothy Weber, On the Road to Armageddon (2004); Abraham and Boer 2009 on Christian Zionism: read only as quoted in de Villiers (HTS 2019) and Du Toit."
+  - "Matthew 24:40–41 read as “taken in judgment”: only Tradition sources (Ice on Blue Letter Bible; NET Bible note) read; no Scholarly or Reference source found for that reading."
+  - "Partial versus full preterism, and preterism tied to 70 CE: only Tradition sources (Got Questions, Dockery in Christianity Today, Mathison) found; Lehner frames preterism as early church history."
+uncited:
+  - "Kevin Wetmore Jr., “Apocalypse in Cinema” (Bible Odyssey): read; “John Nelson Darby was the first to systematically develop a theory of the rapture” sits in a “Did You Know?” sidebar not shown to be the author's, so not cited or counted."
+  - "Philip Almond, UQ News / The Conversation (2025): read; a scholar's public explainer, neither Scholarly nor Reference by venue."
+  - "Pew Research Center, Diamant (2022): read; asks about end times and premillennial beliefs, not the rapture, so not cited for who holds it."
+  - "N. T. Wright, “Farewell to the Rapture”, Bible Review (2001): read on ntwrightpage.com; a popular magazine, not peer-reviewed."
+  - "Melton's Encyclopedia of American Religions, “Independent Fundamentalist Family”: read; Albury 1827 and Powerscourt 1831–33 dates conflict with Sweetnam and Gribben (Powerscourt 1830–38); dates left off the page."
+  - "Sales figures for The Late Great Planet Earth and Left Behind: read in Bass, Marsden and Svelmoe, Emerson and Minahan, Tooth, de Villiers; they disagree (4 to 28 million; 40 to 80 million), so no figure is stated."
+  - "Darby's North American trips: dates differ across NCE, Emerson and Minahan, Melton and de Villiers; not stated."
+  - "Boyer, “Second Coming” (Contemporary American Religion): read; its 1996 poll is unnamed; not cited."
+  - "Kuehner and Dolan, NCE “Millenarianism”: read; first-edition text (bibliography to the 1960s); Augustine is carried by Durbin and de Villiers."
+  - "Augustine, City of God XX.7–9: read; a primary text, not cited."
+  - "New Catholic Encyclopedia, “Parousia” (Ceroke, Duffy), Deissmann 1922, Moulton–Milligan 1914, HarperCollins “Parousia”, NABRE Matthew 24:3: read for the meaning of parousia; Plevnik disputes the “technical term” claim; no parousia statement written, the meaning is not needed for any short."
+  - "Tooth, CDAMM “2 Thessalonians”, NABRE 2 Thessalonians 2: read; the authorship and delay points belong to pauline-authorship's second-thessalonians statement and are not restated."
+  - "Siegman and Winkler, NCE “Revelation, Book of”: read; Feuillet's method labels do not use “preterist”, and its text is pre-1996."
+  - "Ehrman ch. 19 summary on Revelation's first-century setting, and the Timeline's revelation entry: not restated; the page does not equate a historical reading with preterism."
+  - "Martin l6 and l7, Sim (Bible Odyssey), Ehrman ch. 6 on the dates of Mark and Matthew: read; dates not stated on the page."
+  - "de Villiers, HTS 75(3) 2019, “The dangerous role of politics in modern millennial movements”: read; never names Christian Zionism, so not cited in israel."
+  - "Smith 2010 on 1967 as a prophetic turning point: read; one source, not stated."
+  - "Du Toit 2016, “Christian Zionism has never enjoyed much support in New Testament scholarship”: read; not cited, as it comes from an article arguing a confessional case against Christian Zionism."
+  - "Lippy, Balmer, Huber (Bible Odyssey “Millennium”): Huber's “Premillennialism, the dominant perspective among most evangelical Christians”: read; not cited, today rests on rapture-specific sources."
+  - "Got Questions, “Origin of the rapture theory”; Thomas Ice, “A Brief History of the Rapture”: read; Tradition sources making historical claims (forerunners), not what a tradition holds; see leads."

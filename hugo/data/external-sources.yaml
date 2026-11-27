@@ -9832,3 +9832,499 @@ lds-bd-enoch:
   url: "https://www.churchofjesuschrist.org/study/scriptures/bd/enoch?lang=eng"
   hostAuthored: false
   tradition: "The Church of Jesus Christ of Latter-day Saints"
+
+tooth-2023-cdamm-1-thessalonians:
+  author: "Sydney E. Tooth"
+  title: "1 Thessalonians"
+  series: "Critical Dictionary of Apocalyptic and Millenarian Movements"
+  publisher: "Centre for the Critical Study of Apocalyptic and Millenarian Movements (CenSAMM)"
+  year: 2023
+  edition: "Online, 11 January 2023 (James Crossley and Alastair Lockhart, eds.)"
+  class: Reference
+  kind: article
+  access: "Online academic dictionary, open access (CC BY-NC-ND)"
+  url: "https://www.cdamm.org/articles/1-thessalonians"
+  hostAuthored: false
+  tradition: null
+
+durbin-2022-cdamm-dispensationalism:
+  author: "Sean Durbin"
+  title: "Dispensationalism"
+  series: "Critical Dictionary of Apocalyptic and Millenarian Movements"
+  publisher: "Centre for the Critical Study of Apocalyptic and Millenarian Movements (CenSAMM)"
+  year: 2022
+  edition: "Online, 19 December 2022 (James Crossley and Alastair Lockhart, eds.)"
+  class: Reference
+  kind: article
+  access: "Online academic dictionary, open access (CC BY-NC-ND)"
+  url: "https://www.cdamm.org/articles/dispensationalism"
+  hostAuthored: false
+  tradition: null
+
+durbin-2023-cdamm-premillennialism:
+  author: "Sean Durbin"
+  title: "Premillennialism"
+  series: "Critical Dictionary of Apocalyptic and Millenarian Movements"
+  publisher: "Centre for the Critical Study of Apocalyptic and Millenarian Movements (CenSAMM)"
+  year: 2023
+  edition: "Online, 3 January 2023 (James Crossley and Alastair Lockhart, eds.)"
+  class: Reference
+  kind: article
+  access: "Online academic dictionary, open access (CC BY-NC-ND)"
+  url: "https://www.cdamm.org/articles/premillennialism"
+  hostAuthored: false
+  tradition: null
+
+censamm-2021-cdamm-millenarianism:
+  author: "CenSAMM"
+  title: "Millenarianism, Millennialism, Chiliasm, and Millenarism"
+  series: "Critical Dictionary of Apocalyptic and Millenarian Movements"
+  publisher: "Centre for the Critical Study of Apocalyptic and Millenarian Movements (CenSAMM)"
+  year: 2021
+  edition: "Online, 15 January 2021 (James Crossley and Alastair Lockhart, eds.)"
+  class: Reference
+  kind: article
+  access: "Online academic dictionary, open access (CC BY-NC-ND)"
+  url: "https://www.cdamm.org/articles/millenarianism"
+  hostAuthored: false
+  tradition: null
+
+bahr-2024-cdamm-mark-13:
+  author: "Lynne Moss Bahr"
+  title: "Mark 13/Little Apocalypse"
+  series: "Critical Dictionary of Apocalyptic and Millenarian Movements"
+  publisher: "Centre for the Critical Study of Apocalyptic and Millenarian Movements (CenSAMM)"
+  year: 2024
+  edition: "Online, 23 September 2024 (James Crossley and Alastair Lockhart, eds.)"
+  class: Reference
+  kind: article
+  access: "Online academic dictionary, open access (CC BY-NC-ND)"
+  url: "https://www.cdamm.org/articles/little-apocalypse"
+  hostAuthored: false
+  tradition: null
+
+devilliers-2019-stj-millennialism:
+  author: "Pieter G. R. de Villiers"
+  shortAuthor: "de Villiers"
+  title: "Millennialism, rapture and ‘Left Behind’ literature. Analysing a major cultural phenomenon in recent times"
+  series: "Stellenbosch Theological Journal 5(1): 163–190"
+  publisher: "Stellenbosch University"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal PDF on SciELO South Africa"
+  url: "https://scielo.org.za/pdf/stj/v5n1/10.pdf"
+  hostAuthored: false
+  tradition: null
+
+sweetnam-gribben-2009-jets-darby:
+  author: "Mark Sweetnam and Crawford Gribben"
+  shortAuthor: "Sweetnam and Gribben"
+  title: "J. N. Darby and the Irish Origins of Dispensationalism"
+  series: "Journal of the Evangelical Theological Society 52(3): 569–577"
+  publisher: "Evangelical Theological Society"
+  year: 2009
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Society journal PDF, open"
+  url: "https://etsjets.org/wp-content/uploads/2010/06/files_JETS-PDFs_52_52-3_JETS-52-3-569-577-Sweetnam-Gribben.pdf"
+  hostAuthored: false
+  tradition: null
+
+bennett-2008-eq-pseudo-ephraem:
+  author: "David Malcolm Bennett"
+  title: "Raptured or not raptured? That is the question"
+  series: "Evangelical Quarterly 80(2): 143–161"
+  publisher: "Paternoster"
+  year: 2008
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Journal PDF on biblicalstudies.org.uk (gospelstudies.org.uk), supplied for free educational use, open"
+  url: "https://www.gospelstudies.org.uk/biblicalstudies/pdf/eq/2008-2_143.pdf"
+  hostAuthored: false
+  tradition: null
+
+lee-2010-darby-eschatology:
+  author: "Peter David Lee"
+  title: "The Shaping of John Nelson Darby's Eschatology"
+  series: "Doctoral thesis, University of Wales, Lampeter"
+  publisher: "University of Wales, Lampeter"
+  year: 2010
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "University repository (UWTSD), open access"
+  url: "https://repository.uwtsd.ac.uk/id/eprint/2235/1/2235%20Lee%2C%20P.%20Shaping%20%282010%29.pdf"
+  hostAuthored: false
+  tradition: null
+
+emerson-minahan-car-rapture:
+  author: "Michael O. Emerson and Robyn Minahan"
+  shortAuthor: "Emerson and Minahan"
+  title: "Rapture"
+  series: "Contemporary American Religion"
+  publisher: "Macmillan Reference USA"
+  year: 2000
+  edition: "Wade Clark Roof, ed. (2000, per library catalogue records)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/rapture"
+  hostAuthored: false
+  tradition: null
+
+frohlich-nce-rapture:
+  author: "M. Frohlich"
+  title: "Rapture"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd-edition text (bibliography to 1995)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/rapture"
+  hostAuthored: false
+  tradition: null
+
+bass-car-dispensationalism:
+  author: "Diana Hochstedt Butler Bass"
+  title: "Dispensationalism"
+  series: "Contemporary American Religion"
+  publisher: "Macmillan Reference USA"
+  year: 2000
+  edition: "Wade Clark Roof, ed. (2000, per library catalogue records)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/legal-and-political-magazines/dispensationalism"
+  hostAuthored: false
+  tradition: null
+
+balmer-car-premillennialism:
+  author: "Randall Balmer"
+  title: "Premillennialism"
+  series: "Contemporary American Religion"
+  publisher: "Macmillan Reference USA"
+  year: 2000
+  edition: "Wade Clark Roof, ed. (2000, per library catalogue records)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/legal-and-political-magazines/premillennialism"
+  hostAuthored: false
+  tradition: null
+
+lippy-car-millennialism:
+  author: "Charles H. Lippy"
+  title: "Millennialism"
+  series: "Contemporary American Religion"
+  publisher: "Macmillan Reference USA"
+  year: 2000
+  edition: "Wade Clark Roof, ed. (2000, per library catalogue records)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/history/modern-europe/british-and-irish-history/millennialism"
+  hostAuthored: false
+  tradition: null
+
+whalen-stancil-nce-darby:
+  author: "W. J. Whalen and W. T. Stancil"
+  shortAuthor: "Whalen and Stancil"
+  title: "Darby, John Nelson"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd-edition text (bibliography to 1985)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/darby-john-nelson"
+  hostAuthored: false
+  tradition: null
+
+stancil-nce-dispensational-theology:
+  author: "W. T. Stancil"
+  title: "Dispensational Theology"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd-edition text (bibliography to 1993)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/dispensational-theology"
+  hostAuthored: false
+  tradition: null
+
+marsden-svelmoe-eor-evangelical:
+  author: "George M. Marsden and William L. Svelmoe"
+  shortAuthor: "Marsden and Svelmoe"
+  title: "Evangelical and Fundamental Christianity"
+  series: "Encyclopedia of Religion"
+  publisher: null
+  year: 2005
+  edition: "2nd ed. (entry credit line: Marsden 1987 and 2005, Svelmoe 2005)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/evangelical-and-fundamental-christianity"
+  hostAuthored: false
+  tradition: null
+
+gundry-1996-bbr-apantesis:
+  author: "Robert H. Gundry"
+  title: "A Brief Note on “Hellenistic Formal Receptions and Paul's Use of APANTHSIS in 1 Thessalonians 4:17”"
+  series: "Bulletin for Biblical Research 6: 39–41"
+  publisher: "Institute for Biblical Research"
+  year: 1996
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher's free PDF, read in an Internet Archive snapshot (live copy gone)"
+  url: "https://web.archive.org/web/20130530190206/http://www.ibr-bbr.org/files/bbr/BBR_1996_04_Gundry_1Thess4_17.pdf"
+  hostAuthored: false
+  tradition: null
+
+cosby-1994-bbr-apantesis:
+  author: "Michael R. Cosby"
+  title: "Hellenistic Formal Receptions and Paul's Use of APANTHSIS in 1 Thessalonians 4:17"
+  series: "Bulletin for Biblical Research 4: 15–34"
+  publisher: "Institute for Biblical Research"
+  year: 1994
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher's free PDF, read in an Internet Archive snapshot (live copy gone)"
+  url: "https://web.archive.org/web/20130530184425/http://www.ibr-bbr.org/files/bbr/BBR_1994_02_Cosby-Apantesis1Thes.pdf"
+  hostAuthored: false
+  tradition: null
+
+plevnik-1999-biblica-1-thess-4-17:
+  author: "Joseph Plevnik"
+  title: "1 Thessalonians 4,17: The Bringing in of the Lord or the Bringing in of the Faithful?"
+  series: "Biblica 80: 537–546"
+  publisher: "Pontifical Biblical Institute"
+  year: 1999
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Journal's online archive (bsw.org), open, one HTML page per printed page"
+  url: "https://www.bsw.org/biblica/vol-80-1999/1-thessalonians-4-17-the-bringing-in-of-the-lord-or-the-bringing-in-of-the-faithful/337/article-p537.html"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l14:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 14 transcript: Paul as Missionary"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-14"
+  hostAuthored: false
+  tradition: null
+
+ehrman-brief-5e-ch12-summary:
+  author: "Bart D. Ehrman"
+  title: "Student chapter 12 summary of A Brief Introduction to the New Testament"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "5th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-12-summary"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-thessalonians-4-notes:
+  author: null
+  title: "Notes to 1 Thessalonians 4"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/1thessalonians/4"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-corinthians-15-notes:
+  author: null
+  title: "Notes to 1 Corinthians 15"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1corinthians/15"
+  hostAuthored: false
+  tradition: null
+
+nabre-matthew-24-notes:
+  author: null
+  title: "Notes to Matthew 24"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/matthew/24"
+  hostAuthored: false
+  tradition: null
+
+nabre-mark-13-notes:
+  author: null
+  title: "Notes to Mark 13"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/mark/13"
+  hostAuthored: false
+  tradition: null
+
+lehner-2014-post-tridentine-revelation:
+  author: "Ulrich L. Lehner"
+  title: "Apocalypse 2014: Post-Tridentine Catholic Exegesis of Revelation: The Futurist Commentary of Alphonsus Frey (1762)"
+  series: "Journal of Baroque Studies 1(2): 25–53"
+  publisher: "University of Malta"
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University of Malta repository PDF, open"
+  url: "https://www.um.edu.mt/library/oar/bitstream/123456789/21066/1/Apocalypse%202014%20-%20Post-Tridentine%20Catholic%20Exegesis%20of%20Revelation.pdf"
+  hostAuthored: false
+  tradition: null
+
+molina-2010-revelation-7:
+  author: "Carlos G. Molina"
+  title: "An interpretation of Revelation 7:1-3: in continuum with the historicist approach of interpretation"
+  series: "Doctoral thesis, University of Pretoria"
+  publisher: "University of Pretoria"
+  year: 2010
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "University repository (UPSpace), open access; chapter 3 PDF"
+  url: "https://repository.up.ac.za/bitstreams/a87f4d69-b3f4-4b45-a3b2-37d675369e6c/download"
+  hostAuthored: false
+  tradition: null
+
+dutoit-2016-skriflig-christian-zionism:
+  author: "Philip La Grange Du Toit"
+  shortAuthor: "Du Toit"
+  title: "Does the New Testament support Christian Zionism?"
+  series: "In die Skriflig 50(1), a2164"
+  publisher: "AOSIS"
+  year: 2016
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal (CC BY), PDF with the 2017 erratum"
+  url: "https://indieskriflig.org.za/index.php/skriflig/article/view/2164"
+  hostAuthored: false
+  tradition: null
+
+smith-2010-baylor-christian-affinity-israel:
+  author: "Robert O. Smith"
+  title: "“More Desired Than Our Owne Salvation”: The Roots of American Christian Affinity for the State of Israel"
+  series: "Doctoral dissertation, Baylor University"
+  publisher: "Baylor University"
+  year: 2010
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "University repository (BEARdocs), open access"
+  url: "https://baylor-ir.tdl.org/bitstream/handle/2104/8100/Robert_Smith1_phd.pdf;sequence=3"
+  hostAuthored: false
+  tradition: null
+
+gotquestions-preterist:
+  author: null
+  title: "What is the preterist view of the end times?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/preterist.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
+
+gotquestions-rapture-tribulation:
+  author: null
+  title: "When is the Rapture going to occur in relation to the Tribulation?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/rapture-tribulation.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
+
+dts-doctrinal-statement:
+  author: null
+  title: "Doctrinal Statement"
+  series: null
+  publisher: "Dallas Theological Seminary"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Seminary website, open"
+  url: "https://www.dts.edu/about/doctrinal-statement/"
+  hostAuthored: false
+  tradition: "Dallas Theological Seminary"
+
+lcms-ctcr-1989-end-times:
+  author: "Commission on Theology and Church Relations"
+  title: "The “End Times”: A Study on Eschatology and Millennialism"
+  series: null
+  publisher: "The Lutheran Church–Missouri Synod"
+  year: 1989
+  edition: "September 1989"
+  class: Tradition
+  kind: article
+  access: "Project Wittenberg etext, open"
+  url: "https://www.projectwittenberg.org/pub/resources/text/wittenberg/mosynod/endtme-4.txt"
+  hostAuthored: false
+  tradition: "Lutheran Church–Missouri Synod"
+
+ccc-668-677:
+  author: null
+  title: "Catechism of the Catholic Church, §§668–677"
+  series: null
+  publisher: "Libreria Editrice Vaticana"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va, open"
+  url: "https://www.vatican.va/archive/ENG0015/__P1V.HTM"
+  hostAuthored: false
+  tradition: "the Catholic Church"

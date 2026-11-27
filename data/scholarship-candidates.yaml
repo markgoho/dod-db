@@ -481,6 +481,26 @@ statements:
         timestamp: "00:45:28.610"
         text: "And, and we get this, this bishop in Alexandria named Arius, who is looking at the New Testament, it says it's very clear that Jesus is subordinate to God and that Jesus is a creation of God."
     notes: "Conflict with arius: calls Arius a bishop; the statement's sources call him a presbyter or priest of Alexandria (Tuggy, Bowker); Episode 5 at 00:28:53 calls him a presbyter. Not attached. Logged at the #154 first pass, 2026-11-27."
+  - page: the-rapture-and-the-second-coming
+    question: "Is the rapture an old Christian teaching?"
+    triggers:
+      - episode: 71
+        speaker: "Dan McClellan"
+        timestamp: "00:08:18.210"
+        text: "In fact, no one talked about this thing called the Rapture until the second quarter of the 19th century. It started around like 1827-ish. And it really gets kind of the ball rolling by the 1830s."
+      - episode: 32
+        speaker: "Dan McClellan"
+        timestamp: "00:35:14.989"
+        text: "You don't have any concept of the Rapture for the other 1800 years between Jesus's death and Darby."
+    notes: "Conflict with origin: “no one talked about” and “You don't have any concept” state that nothing anticipated the rapture before Darby; the statement reports that this is debated (Emerson and Minahan: “certainly earlier formulations”; Bennett and Sweetnam and Gribben on the origins debate; de Villiers on recent research into neglected texts). Not attached. The rest of 32@00:35:14 (“And these days, most Christians around the world don't accept the Rapture …”) is attached. Logged at the #160 first pass, 2026-11-27."
+  - page: the-rapture-and-the-second-coming
+    question: "What does Paul describe in 1 Thessalonians 4:13–18?"
+    triggers:
+      - episode: 71
+        speaker: "Dan McClellan"
+        timestamp: "00:15:48.330"
+        text: "And part of this has to do with critical scholarship, which has looked at this passage and finds a better kind of contextual footing in this idea that what Paul seems to be doing here is describing not Jesus coming to collect his, his people and turn around and head back to heaven, but showing up to enter his kingdom."
+    notes: "Conflict with thessalonians: credits critical scholarship as a whole with the royal-arrival reading; the statement reports a debate (Tooth: “significant debate”, “many strongly argue”; Plevnik and Cosby against, Gundry for). The speaker's own reading of the imagery (71@00:16:55, 32@00:33:06) is attached, as taking a side the statement reports. Logged at the #160 first pass, 2026-11-27."
   - page: the-ten-commandments-and-the-covenant-code
     question: "Is the Ritual Decalogue of Exodus 34 older than the Ten Commandments of Exodus 20?"
     triggers:
