@@ -1,7 +1,7 @@
 ---
 title: "The death of James, brother of Jesus"
 entryKind: event
-draft: true
+sourcesRead: 2026-11-27
 related:
   {
     books: [james],
