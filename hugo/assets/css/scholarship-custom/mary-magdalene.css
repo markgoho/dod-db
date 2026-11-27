@@ -1,0 +1,247 @@
+/*
+  Custom block for the Mary Magdalene Scholarship Page: a comic
+  page. One ink frame holds the kicker, the title, five illustrated panels
+  (the last full width) and the credit, so the whole thing shares as one image. Each panel is an ink frame
+  around its art, with a narration label in the top-left corner and a
+  comic plate set on the art in a clear corner. Composes
+  cloud-section, type-section-title and scholarship-meta.
+
+  The art is raster (generated); everything around it is CSS.
+*/
+.mmg-comic {
+  --hsx-ink: var(--tan-900);
+  --hsx-frame: var(--border-width-md);
+
+  container: mmg-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.mmg-comic__page {
+  background: var(--tan-000);
+  border: var(--border-width-lg, 5px) solid var(--hsx-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--hsx-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+/* Kicker: the scope and the field's verdict, in the core statement's words. */
+.mmg-comic__kicker {
+  color: var(--tan-700);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  justify-self: center;
+  letter-spacing: var(--letter-spacing-heading);
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.mmg-comic__title {
+  color: var(--hsx-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  justify-self: center;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  max-inline-size: 26ch;
+  text-align: center;
+  text-shadow: 3px 3px 0 var(--color-accent);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.mmg-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mmg-comic__frame {
+  display: grid;
+}
+
+/* A panel: one ink frame around the art; its words sit on the art as a comic plate (scholarship.css), so the panel is the plates' container. */
+.mmg-comic__figure {
+  border: var(--hsx-frame) solid var(--hsx-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.mmg-comic__art {
+  aspect-ratio: 4 / 3;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.mmg-comic__art > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.14;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.mmg-comic__box {
+  background: var(--color-accent);
+  border-block-end: var(--hsx-frame) solid var(--hsx-ink);
+  border-inline-end: var(--hsx-frame) solid var(--hsx-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.mmg-comic__refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5cqi;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mmg-comic__ref {
+  background: var(--hsx-ink);
+  font-family: var(--font-family-main);
+  font-size: clamp(0.6rem, 2.2cqi, 0.85rem);
+  font-style: normal;
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.mmg-comic__ref > a {
+  color: var(--color-text-inverse);
+  text-decoration-color: var(--color-accent);
+}
+
+/* Panel 5, the payoff, is a wide strip. */
+.mmg-comic__frame--tomb .mmg-comic__art {
+  aspect-ratio: 16 / 9;
+}
+
+.mmg-comic__frame--tomb .mmg-comic__art > img {
+  object-position: 50% 20%;
+}
+
+.mmg-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  text-align: center;
+}
+
+.mmg-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container mmg-comic (width >= 40rem) {
+  .mmg-comic__page {
+    padding: var(--space-m);
+  }
+
+  .mmg-comic__title {
+    font-size: var(--step-3);
+  }
+
+  .mmg-comic__strip {
+    gap: var(--space-s);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mmg-comic__frame--tomb {
+    grid-column: 1 / -1;
+  }
+
+  .mmg-comic__frame--tomb .mmg-comic__art {
+    aspect-ratio: 8 / 3;
+  }
+
+  /* A wide panel's plates sit in a container twice as wide: halve their type. */
+  .mmg-comic__frame--tomb .comic-plate {
+    max-inline-size: 30%;
+    padding: 0.45cqi 0.7cqi 0.55cqi;
+  }
+
+  .mmg-comic__frame--tomb .comic-plate__big {
+    font-size: clamp(0.95rem, 2.7cqi, 2.1rem);
+  }
+
+  .mmg-comic__frame--tomb .comic-plate__sub {
+    font-size: clamp(0.65rem, 1.25cqi, 0.95rem);
+  }
+}
+
+/* The poster: two by two plus the strip on the 4:5 canvas; shorter art. */
+.scholarship-share:target .mmg-comic__art {
+  aspect-ratio: 3 / 2;
+}
+
+.scholarship-share:target .mmg-comic__frame--tomb {
+  grid-column: 1 / -1;
+}
+
+.scholarship-share:target .mmg-comic__frame--tomb .mmg-comic__art {
+  aspect-ratio: 4 / 1;
+}
+
+.scholarship-share:target .mmg-comic__frame--tomb .comic-plate__big {
+  font-size: 2.7cqi;
+}
+
+.scholarship-share:target .mmg-comic__frame--tomb .comic-plate__sub {
+  font-size: 1.25cqi;
+}
+
+.scholarship-share:target .mmg-comic__frame--tomb .comic-plate {
+  max-inline-size: 30%;
+}
+.scholarship-share:target .mmg-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .mmg-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: 34ch;
+}
+
+.scholarship-share:target .mmg-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* The card: panels 3 and 4 (the sermon and the later image) side by side under the title. */
+.scholarship-share:has(#share-card:target) .mmg-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .mmg-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:has(#share-card:target) .mmg-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}

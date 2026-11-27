@@ -1,0 +1,98 @@
+{{- /*
+  Custom block for /scholarship/mary-magdalene/: a five-panel comic page in
+  time order. Two different women in Luke (the unnamed sinful woman of Luke 7,
+  Mary Magdalene named in Luke 8); a sixth-century sermon in which Gregory the
+  Great identified them; the later image of a reformed prostitute; and, full
+  width, what the gospels show: a witness at the empty tomb. A view of the
+  page's reviewed statements `prostitute` (short, text, cites 1–6) and
+  `gospels` (short, cites 1–5); it makes no claim they don't. Reword a plate
+  only when the statement it comes from is re-reviewed.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/mary-magdalene.yaml (no words in it); every
+  caption, link and claim lives here. The comic furniture is CSS.
+  */
+-}}
+{{- $slug := "mary-magdalene" -}}
+{{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
+{{- $alt := dict
+  "luke7" "At a dinner, a woman with loose hair and a grey-blue shawl kneels weeping at a reclining guest's feet, an alabaster jar beside her."
+  "luke8" "Mary Magdalene, in a rust headscarf, walks with other women along a Galilean road, carrying a bundle of bread."
+  "sermon" "A pope in white vestments preaches from a stone pulpit in a dim basilica, one hand raised."
+  "image" "A gilded frame holds a devotional painting of a weeping penitent woman with long loose hair, holding an alabaster jar."
+  "tomb" "At dawn, Mary Magdalene, in her rust headscarf, stands at the open doorway of a rock-cut tomb, its stone rolled aside."
+-}}
+{{- $frames := slice
+  (dict "id" "luke7" "box" "Luke 7" "pos" "tr" "big" "A sinful woman" "sub" "who anoints Jesus’s feet, never named" "refs" (slice (dict "ref" "Luke 7:36-50" "label" "Luke 7:36–50")))
+  (dict "id" "luke8" "box" "Luke 8" "pos" "bl" "big" "Mary Magdalene" "sub" "named, one of the women who provided for Jesus" "refs" (slice (dict "ref" "Luke 8:1-3" "label" "Luke 8:1–3")))
+  (dict "id" "sermon" "box" "A sixth-century sermon" "pos" "tl" "big" "One woman" "sub" "Pope Gregory the Great identifies Mary Magdalene with the sinful woman" "refs" slice)
+  (dict "id" "image" "box" "The later image" "pos" "br" "big" "A reformed prostitute" "sub" "a later tradition: no gospel says so" "refs" slice)
+  (dict "id" "tomb" "box" "What the gospels show" "pos" "bl" "big" "A witness" "sub" "to Jesus’s death and the empty tomb" "refs" (slice (dict "ref" "Mark 15:40-41" "label" "Mark 15:40–41") (dict "ref" "John 20:1-2" "label" "John 20:1–2")))
+-}}
+<section class="cloud-section mmg-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="mmg-comic__page">
+    <p class="mmg-comic__kicker">
+      Luke 7–8 · scholars trace the image to later readers
+    </p>
+    <p class="mmg-comic__title">
+      No gospel says Mary Magdalene was a prostitute
+    </p>
+    <ol class="mmg-comic__strip">
+      {{- range $f := $frames }}
+        {{- $img := resources.Get (printf "scholarship-art/%s/%s.png" $slug $f.id) }}
+        <li
+          class="mmg-comic__frame mmg-comic__frame--{{ $f.id }}"
+          {{ if not (in (slice "sermon" "image") $f.id) }}
+            data-card-hide
+          {{ end }}>
+          <figure class="mmg-comic__figure">
+            <div class="mmg-comic__art">
+              {{- with $img }}
+                {{- $webp := .Process "resize 1200x webp q78" }}
+                <img
+                  src="{{ $webp.RelPermalink }}"
+                  width="{{ $webp.Width }}"
+                  height="{{ $webp.Height }}"
+                  alt="{{ index $alt $f.id }}"
+                  loading="eager" />
+              {{- end }}
+            </div>
+            <h3 class="mmg-comic__box">{{ $f.box }}</h3>
+            <figcaption class="comic-plate comic-plate--{{ $f.pos }}">
+              <p class="comic-plate__big">{{ $f.big }}</p>
+              <p class="comic-plate__sub">{{ $f.sub }}</p>
+              {{- with $f.refs }}
+                <ul class="mmg-comic__refs">
+                  {{- range . }}
+                    <li class="mmg-comic__ref">
+                      <a
+                        href="{{ printf "%s%s" $bg (urlquery .ref) | safeURL }}"
+                        rel="noopener"
+                        >{{ replace .label " " "&nbsp;" | safeHTML }}</a
+                      >
+                    </li>
+                  {{- end }}
+                </ul>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="mmg-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
+  </div>
+  <p class="mmg-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#prostitute">do the gospels say she was a prostitute</a> and
+    <a href="#gospels">what the gospels say about her</a>.
+  </p>
+</section>
