@@ -1,0 +1,146 @@
+# Review record for the Timeline Entry `death-of-james` (/timeline/#death-of-james; #93 shape). Not rendered.
+# Issue #233 (from #108), “Timeline Entry: The death of James, brother of Jesus”. Issue notes: kind event; tradition as stated “c. 69 CE, during the siege (Hegesippus, Clement, Eusebius)”; critical as stated “c. 62 CE (Josephus)”; lead E99 00:14:46, both sides; the tradition here is early Christian historiography, not modern apologetics; a Tradition Date needs a Tradition source holding 69 CE in its own words (check whether Eusebius quoting Hegesippus meets the Tradition source rule); the Critical Date needs a Scholarly or Reference source reading Ant. 20.200 as 62 CE; overlaps `temple-destruction` (70 CE; revolt from 66): keep wording consistent; keep separate from `letter-of-james` (composition of the letter); crowding of CE entries is #175.
+# Shape decision (step 2): `critical`, display “c. 62 CE”, `from: 62`, `precision: year`; no `tradition` block; no anchor, no seeAlso. Britannica (Reference) gives “died 62 CE” flat in its lede; Schmidt (Scholarly, OUP 2025) says “likely executed in 62 ce” and “around 62 ce”; Jackson-McCabe (Reference, Bible Odyssey) “reportedly … around 62 C.E.”. “c.” keeps the display no stronger than the two hedged sources; the note carries their hedges. Title is worded for the death; Britannica and Schmidt also give the manner (put to death, executed, stoned), shown attributed in the note.
+# #99: no Scholarly or Reference source read gives a different year in its own voice, so no split. The 69 CE side enters the note only as Schmidt's report of what Christian tradition holds (p. 232), attributed to him by name, with his n. 12 for what Hegesippus and Clement (via Eusebius) say: a sequence (“immediately before Vespasian's siege”), no year. The note adds no year to Vespasian's siege and words the 69 as the date of James's death in that tradition, never of the destruction (`temple-destruction` keeps 70 CE).
+# Tradition Date dropped (sourcing test): the Trigger Claims state the tradition's side as 69 CE, held by early Christian authors. No Tradition-class source read holds 69 in its own words: Got Questions (“about A.D. 62”), the Orthodox Church in America's Lives of the Saints (“about 63 A.D.”), Catholic Answers / Akin 2013 (“A.D. 62”) and Benedict XVI's 2006 audience (“in the year 62”) all give 62 or 63, which is not the side the Trigger Claims state (uncited). Eusebius HE 2.23 (read at New Advent by the tradition agent) gives no year, only the sequence; Clement gives no date. No existing entry uses an ancient author as a Tradition source or holder (all `holder:` lines are modern bodies), so Eusebius/Hegesippus are not made one. McGiffert's 1890 NPNF note says he can “find no reason for asserting that Hegesippus assigns the martyrdom to 69” (uncited: 1890, outside the ~30-year window; Schmidt carries the report).
+# Trigger Claims (#99, three of four found): 99@00:14:46 (both; “either in 62 CE or in 69 CE, depending on who you're listening to”), 99@00:17:55 (critical; “around 62 CE”, after reading Ant. 20.200), 99@00:18:41 (both; Josephus “around 62 CE”; Clement, Eusebius, Hegesippus “insist that James was killed around 69 CE in the hullabaloo of the Roman siege”). `states: both` is what the quotes say; there is no tradition block because no Tradition source holds 69, not because the side is unstated. Hedges dropped by trimming: 14:46 opens “But we have. It looks like Herod Agrippa …” and the date sentence carries “it seems”; after 18:41 McClellan says (00:19:46) “It's up in the air. I think most scholars would probably say of all these folks, Josephus is probably the closest to the events and is probably to be trusted the most.” Read: E99 00:12:36–00:21:30.
+# Dropped Trigger Claim leads: 99@00:20:21 (“probably somewhere around 62 CE, he's out of the picture”; repeats 17:55; three suffice). E69@00:57:06 (Kok, “James is killed too early, like around 40 CE”): the son of Zebedee, not the brother of Jesus; the inventory's “also 69” is that trap or E86@00:41:34 (“in 69 CE, Vespasian becomes Emperor”, not James). E86@00:45:34, E140@00:24:43, E170@00:10:01 and E54@00:19:36 mention James's execution or death with no year.
+# agent: the first pass (2026-11-26). Two research agents (critical side, james-critical; tradition side, james-tradition) saved every fetched page into their own scratch folders and copied quotes only from the saved text; no setting agent (an event). The lead read Britannica (/biography/Saint-James-the-Lords-brother; the hyphenated “Lord-s” URL errors) and Bible Odyssey /articles/james/ in Claude in Chrome (both refuse scripted requests), and Schmidt's open-access PDF in OAPEN's pdf.js viewer (curl gets 403); in-tab counts against the whitespace-normalised text: 1 each for all seven quotes. Schmidt p. 232: the text layer reads “shortly be-” at a line end (item ends at x≈388, next line starts at the left margin) and “cause of )” (kerning space), quoted as “before” and “of)”: normalised count 1, raw count 0. Britannica JSON-LD on this load: author “Britannica Editors”, datePublished 1998-07-20, dateModified 2026-10-17; the lede is p.topic-paragraph 1; a Britannica AI Q&A block above the article also says 62 and is not cited. Trigger Claims script-matched as substrings of their final Transcript lines at timestamp and speaker: 3 hits, each once.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Display “c. 62 CE”: Britannica is flat (“died 62 CE”), Schmidt and Jackson-McCabe hedge; check “c.” and the note's hedges. (2) Schmidt p. 232 quote: confirm the dehyphenation (“be-fore” at a line end) and “of)”; the sentence's “around 69 ce” follows “the destruction of Jerusalem”: check the note reads it as Schmidt's date for James's death in Christian tradition (the sentence's subject is “it”, James's death), and that nothing dates the destruction to 69. (3) Note paraphrase of Schmidt n. 30 (“in the interval after … Festus had died and before his successor arrived”): his words are “during the intervening moment when the Roman governor Festus had died and his replacement had not yet arrived”; the quote is trimmed at “had died”. (4) Jackson-McCabe's “reportedly” may scope both the agent and the date; the note keeps it on the clause. (5) Britannica's “reputedly” scopes the manner, not the year; check. (6) `states: both` on 14:46 and 18:41 with no tradition block. (7) Jackson-McCabe is Reference per #86's per-author rule (associate professor, Cleveland State University; author page).
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “St. James, the Lord’s Brother”, lede (p.topic-paragraph 1), first sentence, trimmed after “Christian apostle”. Own-voice year: died 62 CE, Jerusalem. Backs display, from and the note's first clause. In-tab count 1. Flag 1.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica, article ¶ 4 (p.topic-paragraph 4), fourth sentence. Priestly authorities had James put to death, reputedly by stoning (after Josephus) or a fall from a Temple tower (after Hegesippus). Backs the note's manner clause; no year. In-tab count 1. Flag 5.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Schmidt 2025, ch. 5, p. 145 (PDF p. 162), n. 30, trimmed at “had died”. Own voice: “likely executed in 62 ce”, with the reason (Festus dead, successor not yet arrived, Ant. 20.200). Backs the display and the note's Schmidt sentence. In-tab count 1. Flag 3.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Schmidt 2025, Appendix 2, p. 231 (PDF p. 248), the paragraph after the Ant. 20.200 translation. Own-voice summary: stoned to death “around 62 ce”. Backs “c.” and the stoning. In-tab count 1.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Schmidt 2025, Appendix 2, p. 232 (PDF p. 249), ¶ 2. Josephus' context places James's death around 62 ce, whereas Christian tradition puts it shortly before (and as the cause of) the destruction of Jerusalem around 69 ce. Report of what Christian tradition holds, in Schmidt's voice; backs the note's 69 clause, attributed. Normalised count 1 (line-end hyphen, kerning space). Flag 2.",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Schmidt 2025, Appendix 2, p. 232, n. 12, trimmed before “; see Eusebius”. Hegesippus: execution immediately before Vespasian's siege; Eusebius says Clement agrees. A sequence, no year. Backs the note's last clause. In-tab count 1.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jackson-McCabe, Bible Odyssey “James”, section “Was James the Just an actual brother of Jesus?”, ¶ 2, last sentence, trimmed after “the Just”. “reportedly at the hands of an interim Judean authority around 62 C.E.” Own voice, hedged. Backs “c.”. In-tab count 1. Flags 4, 7.",
+    }
+triggers:
+  99@00:14:46:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: both. McClellan: “either in 62 CE or in 69 CE, depending on who you're listening to”; “it seems” kept. Script-matched at 00:14:46.600; E99 00:12:36–00:21:30 read. Flag 6.",
+    }
+  99@00:17:55:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. McClellan, after reading Ant. 20.200 (Feldman, LCL): “So this would have happened around 62 CE.” Agrees with the display. Script-matched at 00:17:55.600.",
+    }
+  99@00:18:41:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: both. Josephus “around 62 CE”; Clement, Eusebius and Hegesippus “insist that James was killed around 69 CE in the hullabaloo of the Roman siege”. Shown verbatim (#99); the note's sourced report (Schmidt n. 12) is that Clement and Hegesippus give a sequence, not a year, and the gap is left unexplained (#86). Next turn (00:19:46): “It's up in the air … Josephus is probably … to be trusted the most.” Script-matched at 00:18:41.910. Flag 6.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Title and display date James's death; Britannica (died), Schmidt (executed, stoned) and Jackson-McCabe (death) all date that. Nothing on the Letter of James (`letter-of-james`) or on Vespasian's campaign is dated here.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "No cited Scholarly or Reference source gives a rival year in its own voice; 69 is Schmidt's report of Christian tradition, attributed in the note. Not a split. Flag 2.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Two Trigger Claims state the tradition's side (69 CE), but no Tradition source holds 69 in its own words, so no Tradition Date is shown (the rule permits, never requires one). Tradition sources giving 62 or 63 are uncited.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "No tradition block. The note names “Christian tradition”, Hegesippus, Eusebius and Clement only inside Schmidt's attributed report, never as “the traditional date”.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date cited. Allison 2015's “If the brother of Jesus wrote it … before the mid-60s” is conditional and dates the letter (uncited).",
+    }
+sources:
+  britannica-james-lords-brother:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Online, Britannica Editors (JSON-LD author on this load), first published July 20, 1998; dateModified Oct. 17, 2026",
+    }
+  schmidt-2025-josephus-and-jesus:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Oxford University Press 2025, open access CC BY-NC-ND 4.0 (copyright page); ISBN 9780192866783; DOI 10.1093/9780191957697.001.0001; read as the OAPEN PDF",
+    }
+  jackson-mccabe-bo-james:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey article, datePublished 2020-06-24, dateModified 2024-01-16 (JSON-LD); author associate professor, Cleveland State University (author page)",
+    }
+leads:
+  - "Nicholas List, “The Death of James the Just Revisited”, Journal of Early Christian Studies (2024), Project MUSE 923167: a search snippet says most scholars place the death in 62 CE and that List disputes Ant. 20.200. MUSE showed a CAPTCHA; not read. If it gives another year in its own voice, #99 re-tests the display."
+  - "J. S. McLaren, “Ananus, James and Earliest Christianity”, Journal of Theological Studies 52 (2001) 1–25: paywalled; not read."
+  - "Neotestamentica 30.2 (1996) article on Ananus (journals.co.za, 403): a snippet says Ananus held office a few months in 62; not read."
+  - "Bourgel, “Jacques le Juste, un Oblias parmi d'autres”, NTS (2013): paywalled; not read."
+  - "Sean McDowell, “Did James the brother of Jesus die as a martyr?” (seanmcdowell.org): evangelical apologist arguing AD 62; a blog, not fetched."
+  - "Origen's claim that Josephus blamed the fall of Jerusalem on James's death (via Painter, Just James, p. 205, cited on Wikipedia): not read."
+uncited:
+  - "Encyclopaedia Judaica 2nd ed., “Jesus” (David Flusser), on Encyclopedia.com: “murdered by a Sadducean high priest (62 c.e.)”. Agrees; the prose is the 1971 first-edition text, outside the ~30-year window; three sources suffice."
+  - "Andries van Aarde, “The historicity of the circle of the Twelve”, HTS 55.4 (1999), p. 820: “in 62 CE” as his gloss on Josephus; scanned OCR, ~27 years old; agrees; not needed."
+  - "Allison 2015, “The Jewish Setting of the Epistle of James” (registry id allison-2015-jewish-setting-james), Introduction ¶ 2: “before he died, which means before the mid-60s”: conditional and about the letter; no year for the death."
+  - "Francis Watson, “Eusebius and the Biographical Logic of the New Testament Canon”, NTS 70.4 (2024): quotes Eusebius HE 2.23.19 (“the siege of Jerusalem immediately after his martyrdom”); no year; Schmidt n. 12 covers the sequence."
+  - "Saxby, “James, Brother of Jesus, and the Origin of the Jerusalem Church” (PhD thesis, Sheffield 2013): “the execution of James in 62CE is reported by Josephus”; an unpublished thesis, not Scholarly by venue."
+  - "Schalit, EJ “Joshua ben Damnai”: high priest “in 62–63 c.e.” after Anan's deposition for James's execution; dates Joshua's tenure, not the death."
+  - "McGiffert, NPNF2 vol. 1 (1890), Eusebius HE 2.23 n. (ccel.org): “61 or 62 a.d.”; Eusebius' Chronicle puts it in Nero's seventh year; “I can find no reason for asserting that Hegesippus assigns the martyrdom to 69”. 1890, outside the window; Schmidt carries the report."
+  - "Got Questions, “Who was James, the brother of Jesus, in the Bible?” (Tradition): “It is believed that James was martyred about A.D. 62”. Not the side the Trigger Claims state (69)."
+  - "Orthodox Church in America, Lives of the Saints, Oct 23, “Apostle James, the Brother of the Lord” (Tradition): “Saint James’ martyrdom occurred about 63 A.D.” Not the side the Trigger Claims state; no Trigger Claim states 63."
+  - "Jimmy Akin, “What's Really Going On in the Book of James”, Catholic Answers Magazine (2013) (Tradition): Hegesippus “shortly before the siege of Vespasian”; own voice “A.D. 62”. Not the side the Trigger Claims state."
+  - "Benedict XVI, General Audience, 28 June 2006 (vatican.va) (Tradition): reports Josephus, “in the year 62”. Not the side the Trigger Claims state."
+  - "Eusebius, Ecclesiastical History 2.23 and 3.11 (New Advent): no year; sequence only (“And immediately Vespasian besieged them”). An ancient primary text; no Timeline entry uses an ancient author as a Tradition source."
+  - "Josephus, Antiquities 20.9.1 (Whiston, sacred-texts.com and penelope.uchicago.edu): no year; Festus dead, Albinus on the road; Whiston's margin dates “[A.D. 61.]”/“[A.D. 62.]” are the editor's. Ancient primary text."
+  - "Catholic Encyclopedia, “St. James the Less” (New Advent): no year for the death."
+  - "Bible Odyssey: Painter, “James and Paul” (no year; “after James’s death and the destruction of Jerusalem in 70 C.E.”, cited by letter-of-james); Mason, “Josephus” (no date for James); Reed, “The James Ossuary” (no date)."
+  - "Yale RLST 152 lectures and Ehrman Brief 5e chapter summaries: James's death not dated."

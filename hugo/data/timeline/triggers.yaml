@@ -530,3 +530,21 @@
   timestamp: "00:19:41.389"
   states: tradition
   text: "Yes. And it was not April 3, 33 CE, because a lunar eclipse does not cause darkness."
+- entry: death-of-james
+  episode: 99
+  speaker: "Dan McClellan"
+  timestamp: "00:14:46.600"
+  states: both
+  text: "And then it seems he is executed somewhere along the way, either in 62 CE or in 69 CE, depending on who you're listening to."
+- entry: death-of-james
+  episode: 99
+  speaker: "Dan McClellan"
+  timestamp: "00:17:55.600"
+  states: critical
+  text: "And when he had formed an accusation against them as breakers of the law, he delivered them to be stoned. So this would have happened around 62 CE."
+- entry: death-of-james
+  episode: 99
+  speaker: "Dan McClellan"
+  timestamp: "00:18:41.910"
+  states: both
+  text: "So we have, according to Josephus, James is unjustly executed by Hanan around 62 CE. And we can. But if we go look at other early Christian authors, Clement of Alexandria, Eusebius of Caesarea, who was good buddies with Emperor Constantine, Hegesippus or Hegesippus is another early Christian author. These folks insist that James was killed around 69 CE in the hullabaloo of the Roman siege of Jerusalem and the destruction of the temple and all that kind of stuff."

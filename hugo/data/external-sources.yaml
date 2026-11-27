@@ -5600,3 +5600,45 @@ gotquestions-year-jesus-died:
   url: "https://www.gotquestions.org/what-year-did-Jesus-die.html"
   hostAuthored: false
   tradition: "Got Questions Ministries, an evangelical ministry"
+
+britannica-james-lords-brother:
+  author: null
+  title: "St. James, the Lord’s Brother"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 1998
+  edition: "Online, Britannica Editors (first published July 20, 1998; last updated October 17, 2026)"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/biography/Saint-James-the-Lords-brother"
+  hostAuthored: false
+  tradition: null
+
+schmidt-2025-josephus-and-jesus:
+  author: "T. C. Schmidt"
+  title: "Josephus and Jesus: New Evidence for the One Called Christ"
+  series: null
+  publisher: "Oxford University Press"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Open-access book (CC BY-NC-ND 4.0) on OAPEN; the PDF opens in OAPEN's browser viewer, refuses scripted requests"
+  url: "https://library.oapen.org/handle/20.500.12657/109937"
+  hostAuthored: false
+  tradition: null
+
+jackson-mccabe-bo-james:
+  author: "Matt Jackson-McCabe"
+  title: "James"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2020
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website; opens in a browser, refuses scripted requests"
+  url: "https://www.bibleodyssey.org/articles/james/"
+  hostAuthored: false
+  tradition: null
