@@ -1,8 +1,8 @@
 ---
 title: "Judas Maccabeus rededicates the Jerusalem Temple"
 entryKind: event
-draft: true
-sourcesRead:
+draft: false
+sourcesRead: 2026-11-27
 related:
   {
     books: [],
@@ -21,7 +21,6 @@ watch:
     Antiochus IV,
     "164",
   ]
-seeAlso: daniel
 critical:
   display: "164 BCE"
   from: -164

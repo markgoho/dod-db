@@ -5769,20 +5769,6 @@ britannica-antiochus-iv-epiphanes:
   hostAuthored: false
   tradition: null
 
-britannica-maccabees:
-  author: null
-  title: "Maccabees"
-  series: "Encyclopaedia Britannica"
-  publisher: "Encyclopaedia Britannica"
-  year: 2026
-  edition: "Online"
-  class: Reference
-  kind: article
-  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
-  url: "https://www.britannica.com/topic/Maccabees"
-  hostAuthored: false
-  tradition: null
-
 sommer-bo-monotheism:
   author: "Benjamin D. Sommer"
   title: "Monotheism in the Hebrew Bible"
