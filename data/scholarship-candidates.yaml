@@ -265,3 +265,19 @@ statements:
         timestamp: "00:48:17.291"
         text: "and here's the thing, there was never a single united kingdom. Scholars are pretty sure that Judah in the south and Israel in the north were originally separate kingdoms."
     notes: "Conflict with united-monarchy: “there was never a single united kingdom. Scholars are pretty sure …” states near-unanimity; the statement reports a debate, with Faust and Sapir and Garfinkel et al. arguing for an early state. The same turn goes on “maybe … Israel might have subjugated the southern kingdom”. Logged at the #150 publish, 2026-11-25."
+  - page: satan-demons-and-angels
+    question: "Is the serpent in Genesis 3 Satan?"
+    triggers:
+      - episode: 18
+        speaker: "Dan McClellan"
+        timestamp: "00:50:40.250"
+        text: "But we don't really see an explicit identification of Satan either with the serpent in the Garden of Eden or with Lucifer until we get into the 2nd and 3rd centuries CE within early Christianity."
+    notes: "Conflict with serpent: the quote puts the first explicit identification of the serpent with Satan in the second and third centuries CE; the statement reports the NABRE's note that Wisdom 2:24 is the first biblical text to equate the serpent with the devil, and Christian tradition's reading of Revelation 12:9 and 20:2, alongside Dolansky's view that the two are not brought together until early Christian writings. Logged at the #147 first pass, 2026-11-26."
+  - page: satan-demons-and-angels
+    question: "Did Persian religion shape the idea of Satan?"
+    triggers:
+      - episode: 18
+        speaker: "Dan McClellan"
+        timestamp: "00:53:30.770"
+        text: "So we have a dualism that seems to pop up within early Judaism following the Babylonian exile. And a lot of scholars would say Zoroastrianism seems like the most likely source of that."
+    notes: "Conflict with persia: “a lot of scholars would say … most likely” states a majority view; the statement reports the question as contested (Collins “controversial”, Silverman “in no way … proved or disproved”, the Angra Mainyu derivation “typically rejected”), with Stephens, Hayes and Jonker on the side of influence. Logged at the #147 first pass, 2026-11-26."

@@ -1,0 +1,1086 @@
+# Review record for /scholarship/satan-demons-and-angels/ (#93 shape). Not rendered.
+# agent: results of the agent first pass (#147, 2026-11-26). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass once it has run.
+# Issue #147 instructions: short answers report the state of scholarship, never one scholar's view (#133); confessional study Bibles are Tradition and don't count toward the two. No candidate entry existed; slug from the issue title.
+# Sourcing test (#147, 2026-11-26): gate 1, nineteen Trigger Claims in Episodes 1, 18, 28 and 84, read with about two minutes either side and script-matched. Gate 2, the core: the candidate “the Satan figure had not developed in the Hebrew Bible” sourced as “satan means adversary or accuser, and the satan of Job and Zechariah is a member of God's court, not God's enemy”: HarperCollins, Porter, Hayes, NABRE, Dolansky and EJ back it. The development itself is a separate statement (devil), carried by Jonker, Dolansky, Hayes, Porter and Stephens. 14 statements.
+# Dropped for want of agreed sources or a second author: whether cherubim and seraphim are angels (sources disagree on the term; see uncited); the sons of God as demoted gods (disputed; overlaps the-origins-of-yahweh); Job's date (sources disagree; the Trigger Claim's “Persian period” not stated); the Sethite reading of Genesis 6 (one older author); Septuagint shedim → daimonia verse by verse (only Proctor's general statement; Reed HTR 2023 paywalled); Jude and 2 Peter dependence on Enoch kept only as Coblentz Bautch's attributed “many scholars”.
+# Conflicts: Ep 18 00:50:40 (“we don't really see an explicit identification of Satan either with the serpent … or with Lucifer until … the 2nd and 3rd centuries CE”) is not attached: it contradicts the serpent text's NABRE reading of Wisdom 2:24 as an identification, though Dolansky agrees with it; logged as a conflict for the owner's next re-review in data/scholarship-candidates.yaml.
+# First pass: four research agents fetched every source on 2026-11-26 into separate scratch folders with curl and copied quotes from the fetched text; every page quote was then script-matched (whitespace and HTML entities normalised) against those saved texts: 103/103, 0 misses. The second pass must re-fetch. bible.usccb.org and Britannica returned bot checks to most agents; the three NABRE notes cited were fetched by one agent.
+# Flags for the second pass: (1) Many Reference citations are Bible Odyssey pages (Porter, Dolansky, Anderson, Proctor, Boling and Proctor, Angel, Coblentz Bautch, Sommer, Twelftree, Feldman, Merrill Willis): independent authors, one platform. (2) Several EJ and NCE entries carry pre-1996 text; each is attributed and none is the only support for a short. (3) Lucifer: “some church fathers” rests on Bowker alone among modern sources (Bowker's page has no year); Quick (2018) carries the window. (4) Persia: Jonker's “Scholars are in agreement” is reported and called contested; check that wording. (5) Exorcism short: “most historical Jesus scholars agree” rests on Craffert's sentence; Twelftree and Proctor back the Gospel facts. (6) chronicles short says “some … others”; check it does not count scholars. (7) Trigger 28@00:09:46's turn goes on to the Host's own interpolation argument; the page reports interpolation as one reading among several. (8) Boling and Proctor and Proctor share an author; counted once for any rule.
+review: null
+citations:
+  satan/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  satan/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  satan/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  satan/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  satan/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Hayes's next sentence says “the satan” occurs in Numbers 22; EJ reads Num 22:32 as “a satan” without the article. That sentence is not quoted.",
+    }
+  satan/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  satan/7:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  satan/8:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  satan/9:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Encyclopedia.com page signs only Louis Isaac Rabinowitz at the end; the biblical section is unsigned and its bibliography is pre-1970, so not used for a state-of-the-field claim. The entry uses Hebrew verse numbers (2 Sam 19:23, 1 Kgs 5:18); the text names only verses whose English and Hebrew numbering agree.",
+    }
+  satan/10:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  chronicles/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  chronicles/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  chronicles/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  chronicles/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  chronicles/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  chronicles/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Older text (see satan/9); “seems” kept as “seems to be” in the text.",
+    }
+  chronicles/7:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  chronicles/8:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE text with a pre-1966 bibliography; attributed by name as one reading.",
+    }
+  devil/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  devil/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  devil/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  devil/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  devil/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  devil/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  devil/7:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  devil/8:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  devil/9:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  devil/10:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  devil/11:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. EJ Satan is older text; its view is reported as a difference in emphasis, attributed.",
+    }
+  devil/12:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  persia/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  persia/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  persia/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  persia/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  persia/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  persia/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Stephens states the influence flatly; attributed by name, not used for the short.",
+    }
+  persia/7:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Jonker's “Scholars are in agreement” is footnoted only to Spangenberg 2013 and conflicts with Collins (“controversial”) and Silverman (“in no way … proved or disproved”; Angra Mainyu derivation “typically rejected”). Per #80, two sources disagreeing on the state of the field make it contested: Jonker's sentence is attributed, and the text says the sources show it is contested; the short says “Scholars disagree”.",
+    }
+  serpent/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  serpent/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  serpent/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  serpent/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NABRE note's scope is “biblical” in the Catholic canon (Wisdom); the text keeps that wording as the NABRE's.",
+    }
+  serpent/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  serpent/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Dolansky's “It is thought by biblical scholars” is her own judgment; attributed and not used as the short.",
+    }
+  serpent/7:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  lucifer/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Bowker's page on Encyclopedia.com gives no year. The “some of the fathers” clause rests on Bowker alone among modern sources; it is a fact about what ancient texts did (Tertullian, Against Marcion 5.11, 5.17; Origen, De Principiis 1.5.5 read in the ANF translation, not cited). Flag for second pass.",
+    }
+  lucifer/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  lucifer/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Quick's “almost universally” reports the field; Quick's own dissent is attributed.",
+    }
+  lucifer/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  lucifer/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  angels/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  angels/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  angels/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. EJ Bamberger text appears to be 1st-ed. (1971) carried into the 2nd ed.; used for attributed detail.",
+    }
+  angels/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  angels/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE Fallon text; “for the most part” kept.",
+    }
+  angels/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  angel-of-the-lord/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  angel-of-the-lord/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  angel-of-the-lord/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  angel-of-the-lord/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  angel-of-the-lord/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Quote stops before an OCR-garbled word (“ofYahweh”); the text paraphrases the rest (“seemed too anthropomorphic”), which follows in the source.",
+    }
+  angel-of-the-lord/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  angel-of-the-lord/7:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  names/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  names/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  names/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  names/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  names/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  names/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  names/7:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  names/8:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Piras reports Persian adaptations; attributed as one explanation among three.",
+    }
+  demons/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  demons/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  demons/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE Hartman text, older bibliography; attributed. Proctor (2024) carries the window.",
+    }
+  demons/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. EJ Hillers text (bibliography to 1970); used for attributed detail.",
+    }
+  demons/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  demons/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  demons/7:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  daimon/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  daimon/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  daimon/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  daimon/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  watchers/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  watchers/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  watchers/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  watchers/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  watchers/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Angel dates parts of the Book of the Watchers to the fourth century BCE; Boling and Proctor say third or second century. Both dates are given, attributed.",
+    }
+  watchers/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  watchers/7:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  watchers/8:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  watchers/9:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  watchers/10:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  watchers/11:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. “Many scholars” is Coblentz Bautch's own wording, attributed; Papaioannou (JBL 2021) dissents but was read only as an abstract (leads).",
+    }
+  exorcism/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Craffert's “most historical Jesus scholars agree” is the source's own sentence (Scholarly, 2015, in window), quoted as the basis for the short's “most historical Jesus scholars agree”.",
+    }
+  exorcism/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Backs the short's “disagree about what his exorcisms were”.",
+    }
+  exorcism/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  exorcism/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  exorcism/5:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  exorcism/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  exorcism/7:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  tradition/1:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition source; named in the text as the Catechism and the Catholic Church.",
+    }
+  tradition/2:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  tradition/3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read.",
+    }
+  tradition/4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Tradition source; named in the text as Got Questions Ministries, an evangelical ministry.",
+    }
+triggers:
+  1@00:28:55:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “maybe” kept. Next sentences (00:29:08) are about the serpent as a symbol of healing.",
+    }
+  1@00:30:14:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Closes the turn begun at 00:28:55 on the serpent; subject Satan.",
+    }
+  18@00:12:11:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Trimmed from the turn's middle; the line also carries a merged timestamp fragment at its end ([00:13:09.900]) not quoted. Turn continues “But I would go even further…” (the angel as God), not quoted.",
+    }
+  18@00:27:23:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+  18@00:32:04:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedges “Some people will argue” and “probably” kept; the turn goes on with “what I would argue here” about the Chronicler's motive, not quoted.",
+    }
+  18@00:34:08:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Job 1:6, ha-satan.",
+    }
+  18@00:37:12:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Earlier sentences say Job “comes from the Persian period”, not quoted and not stated on the page (sources disagree on Job's date).",
+    }
+  18@00:45:03:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge “I think around Justin Martyr or somewhere around there” kept; the page names no first father, so no conflict with lucifer.",
+    }
+  18@00:51:43:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedge kept in full. The 00:53:30 turn's “a lot of scholars would say Zoroastrianism seems like the most likely source” is not attached; the page reports the question as contested.",
+    }
+  18@00:54:50:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Hedged turn (“I think”) on the New Testament systematising Satan; trimmed sentence is the turn's own summary.",
+    }
+  28@00:02:34:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+  28@00:03:40:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+  28@00:09:46:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. The turn goes on with “as I argued in my book … they insert this word for messenger” (the interpolation view); the page reports interpolation as one of several readings, attributed to the sources, and the Host is not its authority.",
+    }
+  28@00:24:30:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject angels' names.",
+    }
+  28@00:34:57:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject shedim (Deut 32:17).",
+    }
+  28@00:48:16:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Watchers and demons.",
+    }
+  84@00:06:19:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Greek daimon.",
+    }
+  84@00:12:26:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Watchers' giants and demons; Book of Enoch context in the turns around it.",
+    }
+  84@00:39:01:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Jesus' exorcisms.",
+    }
+rules:
+  publish-rule:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: 14 statements. Core satan cites HarperCollins (Powell, ed., Reference, 2009), Porter (Bible Odyssey, Reference, 2022), Hayes l20 (Reference, 2006), NABRE Job 1 notes (Reference, 2011, no author), Dolansky (Reference) and Encyclopaedia Judaica (Reference, older text): at least five independent authors, none Host-authored. Rule met.",
+    }
+  consensus-wording:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: “consensus” not used. “most historical Jesus scholars agree” (exorcism short) is Craffert's own sentence, quoted. “Scholars are in agreement” (Jonker) is attributed and called contested because Collins and Silverman disagree (#80). “almost universally” (Quick), “It is thought by biblical scholars” (Dolansky), “Many scholars” (Coblentz Bautch), “most common account” (Proctor) are attributed. Shorts saying “scholars say” rest on two or more authors stating it (#133).",
+    }
+  dissent-attributed:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Geyser-Fouché and Chukwuka vs Porter, EJ and Barnett on 1 Chr 21:1; EJ Satan's “barely personalized” vs the others on the Apocrypha; Collins, Silverman vs Stephens, Jonker, Hayes on Persian influence; Dolansky on Revelation's serpent vs NABRE; Quick's dissent on Venus; the angel-of-the-Lord readings (Fallon, White, Bamberger, Sommer); causes of angel names (Sommer, Piras, Gutmann); Angel vs Boling and Proctor on dating; all named.",
+    }
+  tradition-named:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: ccc-328 and ccc-391 named as the Catechism of the Catholic Church and the Catholic Church (registry convention, ccc-112); gotquestions-demons as Got Questions Ministries, an evangelical ministry. Neither counts toward the core.",
+    }
+sources:
+  harpercollins-2009-dictionary:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Already registered (Reference, 2009). Entries “Satan”, “devil”, “demon” on Bible Odyssey; per-citation urls.",
+    }
+  porter-bo-satan:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2022",
+    }
+  hayes-rlst145-l20:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Already registered (Reference, 2006).",
+    }
+  nabre-job-1-notes:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference (NABRE notes, USCCB, 2011, scholarly association notes per CONTEXT.md).",
+    }
+  dolansky-bo-satan-name-video:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey",
+    }
+  ej-satan:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica on Encyclopedia.com. Only signature on the page is Rabinowitz's at the end; the biblical section is unsigned, so author null. Bibliography 1922–1962: older text, never alone for a state-of-the-field claim.",
+    }
+  geyser-fouche-chukwuka-2021-1-chronicles-21:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Scholarly; HTS 77(4) 2021, open access. Chukwuka's 2020 Pretoria thesis contradicts this article on 1 Chr 21:1 as a name; the thesis is not cited.",
+    }
+  barnett-nce-satan:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference (New Catholic Encyclopedia, Catholic publisher, scholarly entries); bibliography to 1965.",
+    }
+  jonker-2017-satan-figure:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Scholarly; Old Testament Essays 30/2 (2017), peer-reviewed (submission note on p. 348).",
+    }
+  stephens-eor-demons:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005",
+    }
+  ej-mastema:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+    }
+  ej-belial:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+    }
+  collins-eor-apocalypse:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005",
+    }
+  silverman-2011-iranian-influence:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; The Bible and Interpretation (University of Arizona), Oct 2011; Silverman is a specialist in Iranian influence (Persepolis and Jerusalem, 2012). Same author as silverman-2014-zechariah-3: counted once.",
+    }
+  silverman-2014-zechariah-3:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Scholarly; Journal of Hebrew Scriptures 14 (2014), DOI 10.5508/jhs.2014.v14.a6.",
+    }
+  hayes-rlst145-l23:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Already registered (Reference, 2006).",
+    }
+  hayes-rlst145-l4:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Already registered (Reference, 2006).",
+    }
+  anderson-bo-reception-second-creation:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2020",
+    }
+  nabre-wisdom-2-notes:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference (NABRE).",
+    }
+  nabre-genesis-3-notes:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference (NABRE).",
+    }
+  dolansky-bo-ancient-serpent-video:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey",
+    }
+  bowker-lucifer:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Concise Oxford Dictionary of World Religions (OUP), on Encyclopedia.com; the page gives no year.",
+    }
+  quick-2018-helel:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Scholarly; Vetus Testamentum 68.1 (2018); author's accepted manuscript on ORA, metadata from the ORA record.",
+    }
+  sommer-bo-angels-hebrew-bible:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2017",
+    }
+  white-1999-angel-of-the-lord:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Scholarly; Tyndale Bulletin 50.2 (1999), evangelical venue, peer-reviewed; used only for the messenger meaning and the state of explanation.",
+    }
+  ej-angels-bible:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+    }
+  fallon-nce-angels:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference (NCE). Confessional passages (“an object of divine faith”) not used.",
+    }
+  fallon-nce-angel-of-the-lord:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference (NCE). The entry's later Logos/Christ reading is not used.",
+    }
+  merrill-willis-bo-daniel:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Already registered (Reference, 2015).",
+    }
+  ej-raphael:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+    }
+  ej-angels-apocrypha:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+    }
+  piras-eor-angels:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005",
+    }
+  proctor-bo-demons:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2024",
+    }
+  hartman-nce-demon-bible:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference (NCE); bibliography to the 1960s.",
+    }
+  ej-demons:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+    }
+  lesses-eor-lilith:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopedia of Religion 2005",
+    }
+  feldman-bo-scapegoat:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2020",
+    }
+  boling-proctor-bo-watchers:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2024",
+    }
+  angel-bo-nephilim:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2024",
+    }
+  ej-nephilim:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Encyclopaedia Judaica",
+    }
+  coblentz-bautch-bo-enoch:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2022",
+    }
+  craffert-2015-possession:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Scholarly; HTS 71(1) 2015, art. 2891, CC-BY.",
+    }
+  twelftree-bo-exorcism-gospels:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Reference; Bible Odyssey 2019",
+    }
+  ccc-328:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Tradition; §§328–336 on vatican.va (__P1A), named as the Catholic Church.",
+    }
+  ccc-391:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Tradition; §§391–395 on vatican.va (__P1C), named as the Catholic Church.",
+    }
+  gotquestions-demons:
+    {
+      agent: "pass",
+      owner: "",
+      note: "First pass 2026-11-26: Tradition; unsigned, page last updated 5 Dec 2025; named as Got Questions Ministries, an evangelical ministry.",
+    }
+leads:
+  - "Peggy L. Day, An Adversary in Heaven: śāṭān in the Hebrew Bible (1988): standard monograph; not public."
+  - "Ryan E. Stokes, “The Devil Made David Do It … or Did He?”, JBL 128 (2009): satan in 1 Chr 21:1 as a heavenly emissary of God, not a name; known only through Chukwuka's 2020 thesis; paywalled."
+  - "Sara Japhet, I & II Chronicles (OTL, 1993), on 1 Chr 21:1: via Chukwuka's thesis only."
+  - "Chad T. Pierce, “Satan and Related Figures”, Eerdmans Dictionary of Early Judaism (2010): read only as quoted in Jonker 2017."
+  - "C. Breytenbach and P. L. Day, “Satan”, DDD (2nd ed.): cited by Jonker and Silverman; not public."
+  - "Annette Yoshiko Reed, “When did Daimones become Demons?”, HTR 116.3 (2023): Septuagint daimonia; abstract only (paywalled). Reed, Fallen Angels and the History of Judaism and Christianity (CUP 2005): not public."
+  - "Archie T. Wright, The Origin of Evil Spirits (2005/2015); Loren Stuckenbruck on the demonic in the Scrolls: not public."
+  - "Kim Papaioannou, “The sin of the angels in 2 Peter 2:4 and Jude 6”, JBL (2021): abstract dissents from the Watchers link; full text paywalled."
+  - "J. Doedens, The Sons of God in Genesis 6:1–4 (Brill 2019): Sethite reading dated to Julius Africanus; snippet only."
+  - "Saul M. Olyan, A Thousand Thousands Served Him (1993), on angel names: cited by White 1999; not public."
+  - "S. A. Meier, “Angel of Yahweh”, DDD; G. von Rad and C. A. Newsom on the angel of the Lord: read only as quoted in NCE and White."
+  - "Michael S. Heiser, “The Mythological Provenance of Isa. XIV 12-15”, VT 51 (2001): 403 on both hosts."
+  - "NABRE notes on Zechariah 3, 1 Chronicles 21, Isaiah 14:12, Revelation 12, Deut 32:17, Isa 34:14 and Lev 16:8: bible.usccb.org served a bot check to three of four research agents."
+  - "Britannica “Satan”, “Lucifer”, “angel”, “demon”, “Ahriman”: 403 to curl."
+  - "Graham Twelftree, Jesus the Exorcist (1993); J. P. Meier, A Marginal Jew vol. 2: not public. Marcus Borg's “virtually indisputable that Jesus was a healer and exorcist”: snippet only."
+  - "Paul Hanson, Dawn of Apocalyptic (1979), and James Barr, JAAR 53 (1985), against Persian influence: read only as quoted in Jonker and Silverman."
+uncited:
+  - 'Christine Hayes, RLST 145 l20: “The phrase, "the satan," occurs four times in the Hebrew Bible, here and in Numbers 22 and in Zechariah3.”: read; not cited, conflicts with EJ''s reading of Num 22:32 as “a satan” without the article.'
+  - "Brennan Breed, “Authorship of Job” (Bible Odyssey) and Hayes l20 on Job's date (“we really don't know”; dialogues sixth or fifth century BCE): read; not cited, the page states no date for Job. H. L. Ginsberg (EJ “Job, Book of”, 1971 text) dates the satan layer to the Persian period: one older author."
+  - "Carol Newsom, “Job”, and Davis Hankins, “Legal Language in Job” (Bible Odyssey): read; the satan as heaven's prosecuting attorney. Not cited: the satan statement is carried by HarperCollins, Porter, Hayes and the NABRE."
+  - "Ebele C. Chukwuka, PhD thesis (Pretoria 2020) on 1 Chronicles 21: read; contradicts the author's 2021 HTS article on whether satan there is a proper name; not cited."
+  - "EJ “Demons, Demonology” (Hillers), Gaster (“Belial”), Barnett (NCE “Satan”), Hartman (NCE “Demon”), Duchesne-Guillemin (Encyclopaedia Iranica “Ahriman”, 1984; “Dead Sea Scrolls”, 1994) on probable Iranian influence: read; older works, not cited for the persia statement, which is carried by sources from 2005 on."
+  - "Stoyanov (and Bianchi), “Dualism”, Encyclopedia of Religion: read; Zoroastrian influence on Qumran must be balanced against native sapiential sources. Not cited: Collins and Silverman carry the same point."
+  - "Dale Martin, RLST 152 l23, and Ehrman, Brief Introduction to the NT ch. 3 summary, on apocalyptic dualism (God and Satan): read; general, not cited."
+  - "NCE “Seraphim”, “Cherubim” (Fallon), Sommer “Seraphs”, EJ “Cherub” (Paul) and “Seraph” (Fishbane), Piras and Michl on Pseudo-Dionysius: read; sources disagree whether cherubim and seraphim count as angels (NCE: “Nor were cherubim thought to be angels”; Sommer folds them in) and whether seraphs are serpents. No statement made: question dropped for want of agreed terms."
+  - "Ellen White, “Divine Council”; Sommer, “Monotheism in the Hebrew Bible”; Ballentine, “Heavenly Hosts”; Heiser, Bibliotheca Sacra 2001; NAB notes on Ps 82, Deut 32:8: read; the sons-of-God-as-demoted-gods question is disputed and overlaps the-origins-of-yahweh; no statement made."
+  - "NCE “Michael, Archangel”: “the author has undoubtedly been influenced by the angelology of Zoroastrianism”: read; one author, older text, not cited."
+  - "Proctor, “Demons and Unclean Spirits”: “Demons were thought to be the causes of various individual and social ills” and Greco-Roman context: read; not cited, background."
+  - "Caciola, “Exorcism” (Encyclopedia of Religion): read; “Exorcism is among Jesus' favorite miracles in the Synoptic tradition”. Not cited: Twelftree and Proctor carry it. Its “(Lk. 19:13)” is a source error for Acts 19:13."
+  - "Mark Allan Powell, “Jesus”, and Gideon Bohak, “Magic in the First-Century World” (Bible Odyssey): read; not cited."
+  - "Arbesmann, NCE “Daimon”: read; the negative sense starts in pagan Greek usage. Not cited: the daimon statement rests on Proctor, HarperCollins and Hartman."
+  - "HarperCollins “Azazel” (“A demonic figure to whom the sin-laden scapegoat was sent”) and “satyr”: read; not cited, unhedged where Feldman 2020 calls Azazel enigmatic."
+  - "Montague, NCE “Sons of God”, on the Sethite reading dating from the 4th century: read; one author, contradicted by Doedens (lead); not stated."
+  - "Laura Quick on the sun as Hêlēl: read; her thesis is attributed only as a dissent on Venus."
+  - "Karlo Bordjadze, Durham PhD 2015, on Origen as one of the first to apply Isa 14 to Satan: read; the thesis forbids quotation without consent, so not cited."
+  - "Tertullian, Against Marcion 5.11, 5.17, and Origen, De Principiis 1.5.5 (ANF translations, New Advent): read; primary texts, not cited."
+  - "Catholic Encyclopedia (1910), “Lucifer”: read; outside the window and Tradition; not cited."
+  - "Catechism §§330, 336, 392, 395 and Got Questions, “How, why, and when did Satan fall from heaven?”: read; not cited."
+  - "Encyclopedia.com juvenile and occult entries (U*X*L, Encyclopedia of Occultism and Parapsychology, Gale): read; excluded classes."

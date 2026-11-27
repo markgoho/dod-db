@@ -3659,3 +3659,623 @@ gotquestions-how-old-is-the-bible:
   url: "https://www.gotquestions.org/how-old-is-the-Bible.html"
   hostAuthored: false
   tradition: "Got Questions Ministries, an evangelical ministry"
+
+porter-bo-satan:
+  author: "Adam Porter"
+  title: "Satan"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2022
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/satan/"
+  hostAuthored: false
+  tradition: null
+
+dolansky-bo-satan-name-video:
+  author: "Shawna Dolansky"
+  title: "When do we start seeing Satan used as a proper name and not a title? (video transcript)"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/video-gallery/when-do-we-start-seeing-satan-used-as-a-proper-name-and-not-a-title"
+  hostAuthored: false
+  tradition: null
+
+dolansky-bo-ancient-serpent-video:
+  author: "Shawna Dolansky"
+  title: "Ancient serpent (video transcript)"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/video-gallery/ancient-serpent"
+  hostAuthored: false
+  tradition: null
+
+anderson-bo-reception-second-creation:
+  author: "Brad Anderson"
+  title: "The Reception of the Second Creation Account"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2020
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-reception-of-the-second-creation-account/"
+  hostAuthored: false
+  tradition: null
+
+proctor-bo-demons:
+  author: "Travis Proctor"
+  title: "Demons and Unclean Spirits"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2024
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/demons-and-unclean-spirits/"
+  hostAuthored: false
+  tradition: null
+
+boling-proctor-bo-watchers:
+  author: "McKenna Boling and Travis Proctor"
+  shortAuthor: "Boling and Proctor"
+  title: "The Watchers"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2024
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-watchers/"
+  hostAuthored: false
+  tradition: null
+
+angel-bo-nephilim:
+  author: "Joseph Angel"
+  title: "Nephilim"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2024
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/nephilim/"
+  hostAuthored: false
+  tradition: null
+
+coblentz-bautch-bo-enoch:
+  author: "Kelley Coblentz Bautch"
+  shortAuthor: "Coblentz Bautch"
+  title: "Enoch"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2022
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/enoch/"
+  hostAuthored: false
+  tradition: null
+
+sommer-bo-angels-hebrew-bible:
+  author: "Benjamin D. Sommer"
+  title: "Angels in the Hebrew Bible"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/angels-in-the-hebrew-bible/"
+  hostAuthored: false
+  tradition: null
+
+dewolf-parks-bo-angels-monsters:
+  author: "A. DeWolf and Sara Parks"
+  shortAuthor: "DeWolf and Parks"
+  title: "Are Biblical Angels Monsters?"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2026
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/are-biblical-angels-monsters/"
+  hostAuthored: false
+  tradition: null
+
+twelftree-bo-exorcism-gospels:
+  author: "Graham H. Twelftree"
+  title: "Exorcism in the Gospels"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2019
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/exorcism-in-the-gospels/"
+  hostAuthored: false
+  tradition: null
+
+feldman-bo-scapegoat:
+  author: "Liane Feldman"
+  title: "Scapegoat"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2020
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/scapegoat/"
+  hostAuthored: false
+  tradition: null
+
+ej-satan:
+  author: null
+  title: "Satan"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed. (text and bibliography from the 1st ed.)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/satan"
+  hostAuthored: false
+  tradition: null
+
+ej-mastema:
+  author: "David Flusser"
+  title: "Mastema"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/mastema"
+  hostAuthored: false
+  tradition: null
+
+ej-belial:
+  author: "Theodor H. Gaster"
+  title: "Belial"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/belial"
+  hostAuthored: false
+  tradition: null
+
+ej-angels-bible:
+  author: "Bernard J. Bamberger"
+  title: "Angels and Angelology (section “In the Bible”)"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/angels-and-angelology"
+  hostAuthored: false
+  tradition: null
+
+ej-angels-apocrypha:
+  author: "Joshua Gutmann"
+  title: "Angels and Angelology (section “In the Apocrypha and Pseudepigrapha”)"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/angels-and-angelology"
+  hostAuthored: false
+  tradition: null
+
+ej-raphael:
+  author: "Gershom Scholem"
+  title: "Raphael"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/raphael"
+  hostAuthored: false
+  tradition: null
+
+ej-demons:
+  author: "Delbert Roy Hillers"
+  title: "Demons, Demonology (sections on the Bible and intertestamental literature)"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed. (bibliography to 1970)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/demons-demonology"
+  hostAuthored: false
+  tradition: null
+
+ej-nephilim:
+  author: "Bernard J. Bamberger"
+  title: "Nephilim"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/nephilim"
+  hostAuthored: false
+  tradition: null
+
+barnett-nce-satan:
+  author: "W. F. Barnett"
+  title: "Satan"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd ed. (bibliography to 1965)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/satan-0"
+  hostAuthored: false
+  tradition: null
+
+fallon-nce-angel-of-the-lord:
+  author: "T. L. Fallon"
+  title: "Angel of the Lord"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/angel-lord"
+  hostAuthored: false
+  tradition: null
+
+fallon-nce-angels:
+  author: "T. L. Fallon"
+  title: "Angels (section “In the Bible”)"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/angels"
+  hostAuthored: false
+  tradition: null
+
+fallon-nce-uriel:
+  author: "T. L. Fallon"
+  title: "Uriel"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/uriel"
+  hostAuthored: false
+  tradition: null
+
+hartman-nce-demon-bible:
+  author: "L. F. Hartman"
+  title: "Demon (in the Bible)"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd ed. (bibliography to the 1960s)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/demon-bible"
+  hostAuthored: false
+  tradition: null
+
+stephens-eor-demons:
+  author: "Walter Stephens"
+  title: "Demons: An Overview"
+  series: "Encyclopedia of Religion"
+  publisher: null
+  year: 2005
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/demons-overview"
+  hostAuthored: false
+  tradition: null
+
+collins-eor-apocalypse:
+  author: "John J. Collins"
+  title: "Apocalypse: An Overview"
+  series: "Encyclopedia of Religion"
+  publisher: null
+  year: 2005
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/apocalypse-overview"
+  hostAuthored: false
+  tradition: null
+
+piras-eor-angels:
+  author: "Andrea Piras"
+  title: "Angels"
+  series: "Encyclopedia of Religion"
+  publisher: null
+  year: 2005
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/angels"
+  hostAuthored: false
+  tradition: null
+
+lesses-eor-lilith:
+  author: "Rebecca M. Lesses"
+  title: "Lilith"
+  series: "Encyclopedia of Religion"
+  publisher: null
+  year: 2005
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/lilith"
+  hostAuthored: false
+  tradition: null
+
+caciola-eor-exorcism:
+  author: "Nancy Caciola"
+  title: "Exorcism"
+  series: "Encyclopedia of Religion"
+  publisher: null
+  year: 2005
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/other-religious-beliefs-and-general-terms/religion-general/exorcism"
+  hostAuthored: false
+  tradition: null
+
+bowker-lucifer:
+  author: "John Bowker"
+  title: "Lucifer"
+  series: "The Concise Oxford Dictionary of World Religions"
+  publisher: "Oxford University Press"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/lucifer"
+  hostAuthored: false
+  tradition: null
+
+jonker-2017-satan-figure:
+  author: "Louis C. Jonker"
+  title: "“Satan Made Me Do It!” The Development of a Satan Figure as Social-Theological Diagnostic Strategy from the late Persian Imperial Era to Early Christianity"
+  series: "Old Testament Essays 30, no. 2: 348–366"
+  publisher: "Old Testament Society of South Africa"
+  year: 2017
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article, Stellenbosch University repository (PDF), open"
+  url: "https://scholar.sun.ac.za/bitstreams/82926468-9868-4236-b4eb-f10d30422d78/download"
+  hostAuthored: false
+  tradition: null
+
+geyser-fouche-chukwuka-2021-1-chronicles-21:
+  author: "Ananda B. Geyser-Fouché and Ebele C. Chukwuka"
+  shortAuthor: "Geyser-Fouché and Chukwuka"
+  title: "Tradition critical study of 1 Chronicles 21"
+  series: "HTS Teologiese Studies/Theological Studies 77, no. 4: a6420"
+  publisher: "AOSIS"
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (PDF), open"
+  url: "https://hts.org.za/index.php/hts/article/download/6420/17893"
+  hostAuthored: false
+  tradition: null
+
+silverman-2011-iranian-influence:
+  author: "Jason M. Silverman"
+  title: "Iranian influence on Judaism"
+  series: "The Bible and Interpretation"
+  publisher: "University of Arizona"
+  year: 2011
+  edition: null
+  class: Reference
+  kind: article
+  access: "University-hosted journal website, open"
+  url: "https://bibleinterp.arizona.edu/articles/sil358017"
+  hostAuthored: false
+  tradition: null
+
+silverman-2014-zechariah-3:
+  author: "Jason M. Silverman"
+  title: "Vetting the Priest in Zechariah 3: The Satan between Divine and Achaemenid Administrations"
+  series: "Journal of Hebrew Scriptures 14, article 6"
+  publisher: null
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (PDF), open"
+  url: "https://jhsonline.org/index.php/jhs/article/download/29337/21357"
+  hostAuthored: false
+  tradition: null
+
+quick-2018-helel:
+  author: "Laura Quick"
+  title: "Hêlēl ben-Šaḥar and the Chthonic Sun: A New Suggestion for the Mythological Background of Isa 14:12-15"
+  series: "Vetus Testamentum 68, no. 1: 129–148"
+  publisher: "Brill"
+  year: 2018
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Author's accepted manuscript, Oxford University Research Archive (PDF), open"
+  url: "https://ora.ox.ac.uk/objects/uuid:76163d31-ede1-4f6a-b3ff-4e63b499d448/files/m499f6a546d5b661a5486bf0284842379"
+  hostAuthored: false
+  tradition: null
+
+white-1999-angel-of-the-lord:
+  author: "Stephen L. White"
+  title: "Angel of the Lord: Messenger or Euphemism?"
+  series: "Tyndale Bulletin 50, no. 2: 299–305"
+  publisher: "Tyndale House"
+  year: 1999
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (PDF), open"
+  url: "https://tyndalebulletin.org/article/30318-angel-of-the-lord-messenger-or-euphemism.pdf"
+  hostAuthored: false
+  tradition: null
+
+craffert-2015-possession:
+  author: "Pieter F. Craffert"
+  title: "What does it mean to be possessed by a spirit or demon? Some phenomenological insights from neuro-anthropological research"
+  series: "HTS Teologiese Studies/Theological Studies 71, no. 1: art. 2891"
+  publisher: "AOSIS"
+  year: 2015
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article, open"
+  url: "https://hts.org.za/index.php/hts/article/view/2891/5974"
+  hostAuthored: false
+  tradition: null
+
+nabre-job-1-notes:
+  author: null
+  title: "Notes to Job 1"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/job/1"
+  hostAuthored: false
+  tradition: null
+
+nabre-genesis-3-notes:
+  author: null
+  title: "Notes to Genesis 3"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/genesis/3"
+  hostAuthored: false
+  tradition: null
+
+nabre-wisdom-2-notes:
+  author: null
+  title: "Notes to Wisdom 2"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/wisdom/2"
+  hostAuthored: false
+  tradition: null
+
+ccc-328:
+  author: null
+  title: "Catechism of the Catholic Church, §§328–336"
+  series: null
+  publisher: "Libreria Editrice Vaticana"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va, open"
+  url: "https://www.vatican.va/archive/ENG0015/__P1A.HTM"
+  hostAuthored: false
+  tradition: "the Catholic Church"
+
+ccc-391:
+  author: null
+  title: "Catechism of the Catholic Church, §§391–395"
+  series: null
+  publisher: "Libreria Editrice Vaticana"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va, open"
+  url: "https://www.vatican.va/archive/ENG0015/__P1C.HTM"
+  hostAuthored: false
+  tradition: "the Catholic Church"
+
+gotquestions-demons:
+  author: null
+  title: "What does the Bible say about demons?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/demons-Bible.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
