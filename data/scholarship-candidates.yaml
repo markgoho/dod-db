@@ -289,3 +289,27 @@ statements:
         timestamp: "00:24:30.320"
         text: "So New Testament angels, very different from Hebrew Bible angels. And they have names."
     notes: "Conflict with names: as trimmed, the quote sets named New Testament angels against Hebrew Bible angels; the statement reports that Daniel, among the latest books of the Hebrew Bible, first names Gabriel and Michael (Sommer, Merrill Willis, Bamberger). The speaker goes on (00:25:51, hedged) to place Michael in Daniel. Removed from the page by the #147 second pass and logged at the #147 publish, 2026-11-26."
+  - page: the-origins-of-hell
+    question: "Why do some Bibles translate Sheol as “hell”?"
+    triggers:
+      - episode: 98
+        speaker: "Dan McClellan"
+        timestamp: "00:10:40.640"
+        text: "So in the Hebrew Bible, you have no concept of hell as, as we understand it, you have Sheol, and in the King James Version, that is translated as hell every single time."
+    notes: "Conflict with translations: “translated as hell every single time” states one rendering throughout; the statement reports that the King James rendered Sheol as “hell” in some places and as “grave” or “pit” in others (ISBE, with the NCE, HarperCollins and Zaleski). The same turn's next sentence (“But Sheol is a reference to the grave and the abode of all the dead.”) is attached to the page as 98@00:10:40. Logged at the #148 first pass, 2026-11-26."
+  - page: the-origins-of-hell
+    question: "Does Paul speak of hell?"
+    triggers:
+      - episode: 89
+        speaker: "Dan McClellan"
+        timestamp: "00:41:01.240"
+        text: "Paul never uses any of the three words for hell anywhere. And so whether it's Gehenna, Tartarus or Hades, they never occur in any of Paul's writings."
+    notes: "Conflict with paul: the quote says Hades never occurs in Paul's writings; the statement reports Janse van Rensburg and Van Eck's reading that Paul refers to Hades once, at 1 Corinthians 15:54–55. Gehenna's absence agrees. Logged at the #148 first pass, 2026-11-26."
+  - page: the-origins-of-hell
+    question: "Does Paul speak of hell?"
+    triggers:
+      - episode: 15
+        speaker: "Dan McClellan"
+        timestamp: "00:30:11.840"
+        text: "Paul does not talk about it at all. We do not have any of them in Paul."
+    notes: "Conflict with paul: “it” and “them” are the three categories of divine punishment after death (annihilation, temporary torment then annihilation, eternal conscious torment); the quote says Paul reflects none of them; the statement reports Bakhos (“Paul describes the wicked as simply being destroyed”) and Janse van Rensburg and Van Eck (Paul “actually adopted … annihilation”). Logged at the #148 first pass, 2026-11-26."

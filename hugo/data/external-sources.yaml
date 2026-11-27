@@ -4348,3 +4348,568 @@ martin-rlst152-l9:
   url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-9"
   hostAuthored: false
   tradition: null
+
+dolansky-bo-sheol:
+  author: "Shawna Dolansky"
+  title: "Sheol"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2019
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/sheol/"
+  hostAuthored: false
+  tradition: null
+
+henning-bo-hell:
+  author: "Meghan Henning"
+  title: "Hell"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/hell/"
+  hostAuthored: false
+  tradition: null
+
+henning-bo-afterlife-jesus:
+  author: "Meghan Henning"
+  title: "Views on the Afterlife in the Time of Jesus"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2016
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/views-on-the-afterlife-in-the-time-of-jesus/"
+  hostAuthored: false
+  tradition: null
+
+cook-bo-resurrection:
+  author: "Stephen L. Cook"
+  title: "Resurrection"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2016
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/resurrection/"
+  hostAuthored: false
+  tradition: null
+
+bakhos-posen-afterlife-wicked:
+  author: "Carol Bakhos"
+  title: "The Afterlife of the Wicked in Early Jewish Texts (introduction)"
+  series: "The Posen Library of Jewish Culture and Civilization"
+  publisher: "Posen Foundation"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Library website; the introduction is open, some primary-text excerpts are for members"
+  url: "https://www.posenlibrary.com/node/11871"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l21:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 21 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-21"
+  hostAuthored: false
+  tradition: null
+
+shaked-iranica-eschatology:
+  author: "Shaul Shaked"
+  title: "Eschatology i. In Zoroastrianism and Zoroastrian Influence"
+  series: "Encyclopaedia Iranica"
+  publisher: null
+  year: 1998
+  edition: "Online, updated 2012"
+  class: Reference
+  kind: article
+  access: "Encyclopaedia website, open; read in an Internet Archive snapshot, as the live page refuses scripted requests"
+  url: "https://www.iranicaonline.org/articles/eschatology-i/"
+  hostAuthored: false
+  tradition: null
+
+reyburn-fry-1997-genesis:
+  author: "William D. Reyburn and Euan McG. Fry"
+  shortAuthor: "Reyburn and Fry"
+  title: "A Handbook on Genesis"
+  series: "UBS Handbook Series"
+  publisher: "United Bible Societies"
+  year: 1997
+  edition: null
+  class: Reference
+  kind: book
+  access: "Reproduced with permission on Translation Insights and Perspectives (TIPs), open"
+  url: "https://tips.translation.bible/story/translation-commentary-on-genesis-3735/"
+  hostAuthored: false
+  tradition: null
+
+ogden-sterk-2011-isaiah:
+  author: "Graham S. Ogden and Jan Sterk"
+  shortAuthor: "Ogden and Sterk"
+  title: "A Handbook on Isaiah"
+  series: "UBS Handbook Series"
+  publisher: "United Bible Societies"
+  year: 2011
+  edition: null
+  class: Reference
+  kind: book
+  access: "Reproduced with permission on Translation Insights and Perspectives (TIPs), open"
+  url: "https://tips.translation.bible/story/translation-commentary-on-isaiah-6624/"
+  hostAuthored: false
+  tradition: null
+
+nabre-psalms-6-notes:
+  author: null
+  title: "Notes to Psalm 6"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/psalms/6"
+  hostAuthored: false
+  tradition: null
+
+nabre-daniel-12-notes:
+  author: null
+  title: "Notes to Daniel 12"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/daniel/12"
+  hostAuthored: false
+  tradition: null
+
+nabre-isaiah-26-notes:
+  author: null
+  title: "Notes to Isaiah 26"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/isaiah/26"
+  hostAuthored: false
+  tradition: null
+
+nabre-isaiah-66-notes:
+  author: null
+  title: "Notes to Isaiah 66"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/isaiah/66"
+  hostAuthored: false
+  tradition: null
+
+nabre-2-kings-23-notes:
+  author: null
+  title: "Notes to 2 Kings 23"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/2kings/23"
+  hostAuthored: false
+  tradition: null
+
+nabre-matthew-5-notes:
+  author: null
+  title: "Notes to Matthew 5"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/matthew/5"
+  hostAuthored: false
+  tradition: null
+
+nabre-2-peter-2-notes:
+  author: null
+  title: "Notes to 2 Peter 2"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/2peter/2"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-peter-3-notes:
+  author: null
+  title: "Notes to 1 Peter 3"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1peter/3"
+  hostAuthored: false
+  tradition: null
+
+suriano-2016-sheol:
+  author: "Matthew J. Suriano"
+  title: "Sheol, the Tomb, and the Problem of Postmortem Existence"
+  series: "Journal of Hebrew Scriptures 16, article 11"
+  publisher: null
+  year: 2016
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal PDF"
+  url: "https://jhsonline.org/index.php/jhs/article/download/29362/21380/77611"
+  hostAuthored: false
+  tradition: null
+
+sonia-2020-caring-for-the-dead:
+  author: "Kerry M. Sonia"
+  title: "Caring for the Dead in Ancient Israel"
+  series: "Archaeology and Biblical Studies 27"
+  publisher: "SBL Press"
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher-hosted full-text PDF, open (#80 clarification)"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/9780884144618_txt.pdf"
+  hostAuthored: false
+  tradition: null
+
+isbe-1915-sheol:
+  author: "James Orr (ed.)"
+  title: "Sheol"
+  series: "International Standard Bible Encyclopedia"
+  publisher: null
+  year: 1915
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Bible Study Tools, open"
+  url: "https://www.biblestudytools.com/encyclopedias/isbe/sheol.html"
+  hostAuthored: false
+  tradition: null
+
+gorski-nce-hell-bible:
+  author: "I. H. Gorski"
+  title: "Hell (in the Bible)"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd ed. (bibliography to 1965)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/hell-bible"
+  hostAuthored: false
+  tradition: null
+
+zaleski-britannica-hell:
+  author: "Carol Zaleski"
+  title: "hell"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online, first published 1998, revised 2026"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; read in Internet Archive snapshots, as the live site refuses scripted requests"
+  url: "https://www.britannica.com/topic/hell"
+  hostAuthored: false
+  tradition: null
+
+papaioannou-2017-gehenna:
+  author: "Kim Papaioannou"
+  title: "Motifs of Death and Hell in the Teaching of Jesus. Part 2: An Examination of Gehenna"
+  series: "Melanesian Journal of Theology 33.1–2"
+  publisher: "Melanesian Association of Theological Schools"
+  year: 2017
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Journal PDF reproduced on biblicalstudies.org.uk, open"
+  url: "https://biblicalstudies.org.uk/pdf/mjt/33_1-2_007.pdf"
+  hostAuthored: false
+  tradition: null
+
+segovia-2023-treasures-in-hell:
+  author: "Jeffrey Segovia"
+  title: "“Treasures in Hell?” Exploring the Valley of Hinnom in the Biblical Concept of Gehenna and in the Scrolls of Ketef Hinnom"
+  series: "Philippiniana Sacra 58, no. 177"
+  publisher: "University of Santo Tomas"
+  year: 2023
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Journal website PDF, open"
+  url: "https://philsacra.ust.edu.ph/admin/downloadarticle?id=F38014E7FC875E56E7D13AA254D15B95"
+  hostAuthored: false
+  tradition: null
+
+montgomery-1908-holy-city-gehenna:
+  author: "James A. Montgomery"
+  title: "The Holy City and Gehenna"
+  series: "Journal of Biblical Literature 27"
+  publisher: "Society of Biblical Literature"
+  year: 1908
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "JSTOR Early Journal Content on the Internet Archive, open"
+  url: "https://archive.org/details/jstor-3260070"
+  hostAuthored: false
+  tradition: null
+
+bowker-gehenna:
+  author: "John Bowker"
+  title: "Gehenna, Gehinnom"
+  series: "The Concise Oxford Dictionary of World Religions"
+  publisher: "Oxford University Press"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/bible/new-testament/gehenna"
+  hostAuthored: false
+  tradition: null
+
+mcguckin-medd-hell:
+  author: "J. A. McGuckin"
+  title: "Hell"
+  series: "Macmillan Encyclopedia of Death and Dying"
+  publisher: null
+  year: null
+  edition: "bibliography to 1998"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/other-religious-beliefs-and-general-terms/religion-general/hell"
+  hostAuthored: false
+  tradition: null
+
+fastiggi-iess-hell:
+  author: "Robert Fastiggi"
+  title: "Hell"
+  series: "International Encyclopedia of the Social Sciences"
+  publisher: null
+  year: null
+  edition: "2nd ed. (bibliography to 2005)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/philosophy-and-religion/other-religious-beliefs-and-general-terms/religion-general/hell"
+  hostAuthored: false
+  tradition: null
+
+ej-gehinnom:
+  author: null
+  title: "Gehinnom"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed. (text from the 1st ed.; added bibliography 1992)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/gehinnom"
+  hostAuthored: false
+  tradition: null
+
+wyatt-2009-hell:
+  author: "Nicolas Wyatt"
+  title: "The Concept and Purpose of Hell: Its Nature and Development in West Semitic Thought"
+  series: "Numen 56"
+  publisher: "Brill"
+  year: 2009
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher's version in the University of Edinburgh repository, open"
+  url: "https://www.pure.ed.ac.uk/ws/files/13458028/WYATT_N_The_concept_and_purpose_of_Hell_its_nature_and_development_in_West_Semitic.pdf"
+  hostAuthored: false
+  tradition: null
+
+sim-1999-angels-punishment:
+  author: "David C. Sim"
+  title: "Angels of eschatological punishment in the Jewish and Christian apocalyptic traditions and in the Gospel of Matthew"
+  series: "HTS Teologiese Studies/Theological Studies 55.2–3"
+  publisher: null
+  year: 1999
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University of Pretoria repository, open"
+  url: "https://repository.up.ac.za/bitstreams/4ea7b00a-f088-4fff-8944-bbfb4d3f8968/download"
+  hostAuthored: false
+  tradition: null
+
+sim-2011-pacifist-jesus:
+  author: "David C. Sim"
+  title: "The pacifist Jesus and the violent Jesus in the Gospel of Matthew"
+  series: "HTS Teologiese Studies/Theological Studies 67.1"
+  publisher: null
+  year: 2011
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal on SciELO South Africa"
+  url: "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0259-94222011000100014"
+  hostAuthored: false
+  tradition: null
+
+bor-saet-death-afterlife:
+  author: "Harris Bor"
+  title: "Death and Afterlife"
+  series: "St Andrews Encyclopaedia of Theology"
+  publisher: "University of St Andrews"
+  year: 2025
+  edition: null
+  class: Reference
+  kind: article
+  access: "University website, open"
+  url: "https://www.saet.ac.uk/Judaism/DeathandAfterlife"
+  hostAuthored: false
+  tradition: null
+
+janse-van-rensburg-van-eck-2008-hell:
+  author: "Hanré Janse van Rensburg and Ernest van Eck"
+  shortAuthor: "Janse van Rensburg and Van Eck"
+  title: "Hell revisited: A socio-critical enquiry into the roots and relevance of hell for the church today"
+  series: "HTS Teologiese Studies/Theological Studies 64.3"
+  publisher: null
+  year: 2008
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal on SciELO South Africa"
+  url: "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0259-94222008000300019"
+  hostAuthored: false
+  tradition: null
+
+quinn-rohling-nce-descent:
+  author: "J. D. Quinn and J. H. Rohling"
+  shortAuthor: "Quinn and Rohling"
+  title: "Descent of Christ into Hell"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd ed. (bibliography to 1997)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/descent-christ-hell"
+  hostAuthored: false
+  tradition: null
+
+buitendag-2009-descendit:
+  author: "Johan Buitendag"
+  title: "Descendit ad [in] inferna: ‘a matter of no small moment in bringing about redemption’"
+  series: "HTS Teologiese Studies/Theological Studies 65.1"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal on SciELO South Africa"
+  url: "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0259-94222009000100054"
+  hostAuthored: false
+  tradition: null
+
+williams-lane-nce-eschatology:
+  author: "M. E. Williams and D. A. Lane"
+  shortAuthor: "Williams and Lane"
+  title: "Eschatology (in Theology)"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd ed. (bibliography to 1995)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/eschatology-theology"
+  hostAuthored: false
+  tradition: null
+
+ccc-1033:
+  author: null
+  title: "Catechism of the Catholic Church, §§1033–1037"
+  series: null
+  publisher: "Libreria Editrice Vaticana"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va, open"
+  url: "https://www.vatican.va/archive/ENG0015/__P2O.HTM"
+  hostAuthored: false
+  tradition: "the Catholic Church"
+
+gotquestions-hell-real:
+  author: null
+  title: "Is hell real? Is hell eternal?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/hell-real-eternal.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
+
+gotquestions-annihilationism:
+  author: null
+  title: "Is annihilationism biblical?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/annihilationism.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
