@@ -1263,8 +1263,9 @@
 
 /* A3: the current period keeps the amber tint; the window becomes an ink outline with no fill. */
 [data-period-variant="A3"] .timeline-minimap__view {
-  background: none;
-  border-width: var(--border-width-md);
+  /* A thin ink edge over a faint ink wash: reads on the amber period and on the plain strip alike. */
+  background: color-mix(in srgb, var(--tan-900) 8%, transparent);
+  border-width: var(--border-width-sm);
 }
 
 /*
