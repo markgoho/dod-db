@@ -1,7 +1,6 @@
 ---
 title: "The New Testament Text: Later Additions, Manuscripts and the KJV"
 dek: "Which passages in the King James Version scholars regard as later additions, how Erasmus's printed Greek text came about, and what the surviving manuscripts can and cannot tell us."
-draft: true
 core: adulteress
 sourcesRead: 2026-11-26
 related:
