@@ -5011,3 +5011,564 @@ landau-2020-luke-historian:
   url: "https://www.bibleodyssey.org/articles/was-luke-a-historian/"
   hostAuthored: false
   tradition: null
+
+holmes-bo-english-translations:
+  author: "Michael W. Holmes"
+  title: "What Are English Translations of the Christian Bible Based On?"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/what-are-english-translations-of-the-christian-bible-based-on/"
+  hostAuthored: false
+  tradition: null
+
+wasserman-bo-lords-prayer:
+  author: "Tommy Wasserman"
+  title: "Manuscripts of the Lord's Prayer"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/manuscripts-of-the-lords-prayer/"
+  hostAuthored: false
+  tradition: null
+
+wasserman-bo-alexandrian-text:
+  author: "Tommy Wasserman"
+  title: "The Alexandrian Text"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-alexandrian-text/"
+  hostAuthored: false
+  tradition: null
+
+nabre-matthew-17-notes:
+  author: null
+  title: "Notes to Matthew 17"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/matthew/17"
+  hostAuthored: false
+  tradition: null
+
+nabre-mark-9-notes:
+  author: null
+  title: "Notes to Mark 9"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/mark/9"
+  hostAuthored: false
+  tradition: null
+
+nabre-mark-16-notes:
+  author: null
+  title: "Notes to Mark 16"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/mark/16"
+  hostAuthored: false
+  tradition: null
+
+nabre-john-5-notes:
+  author: null
+  title: "Notes to John 5"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/john/5"
+  hostAuthored: false
+  tradition: null
+
+nabre-john-8-notes:
+  author: null
+  title: "Notes to John 8"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/john/8"
+  hostAuthored: false
+  tradition: null
+
+nabre-acts-8-notes:
+  author: null
+  title: "Notes to Acts 8"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/acts/8"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-corinthians-14-notes:
+  author: null
+  title: "Notes to 1 Corinthians 14"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 1986
+  edition: "1986 revised New Testament"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1corinthians/14"
+  hostAuthored: false
+  tradition: null
+
+payne-2017-distigme:
+  author: "Philip B. Payne"
+  title: "Vaticanus Distigme-obelos Symbols Marking Added Text, Including 1 Corinthians 14.34–5"
+  series: "New Testament Studies 63.4: 604–625"
+  publisher: "Cambridge University Press"
+  year: 2017
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher website, open access (CC BY 4.0)"
+  url: "https://www.cambridge.org/core/product/A5FC01A6E14A2A1CF1F514A9BF93C581"
+  hostAuthored: false
+  tradition: null
+
+fellows-2019-distigme:
+  author: "Richard G. Fellows"
+  title: "Are There Distigme-Obelos Symbols in Vaticanus?"
+  series: "New Testament Studies 65.2: 246–251"
+  publisher: "Cambridge University Press"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher read-only share link, full text with no login"
+  url: "https://www.cambridge.org/core/journals/new-testament-studies/article/are-there-distigmeobelos-symbols-in-vaticanus/F2507362D31D370A04A20583EE0E1575/share/837346b6a807c7522a44150fa4400204ff29c9d6"
+  hostAuthored: false
+  tradition: null
+
+bond-bo-ending-of-mark:
+  author: "Helen K. Bond"
+  title: "What is the Ending to Mark's Gospel? (video transcript)"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/video-gallery/what-is-the-ending-to-marks-gospel/"
+  hostAuthored: false
+  tradition: null
+
+tonsing-2022-ending-of-mark:
+  author: "J. Gertrud Tönsing"
+  title: "Who was first? Mary Magdalene, Peter and the Ending of Mark"
+  series: "Scriptura 121(1)"
+  publisher: "Stellenbosch University"
+  year: 2022
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "SciELO South Africa, open access"
+  url: "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S2305-445X2022000100007"
+  hostAuthored: false
+  tradition: null
+
+kelhoffer-2022-longer-ending:
+  author: "James A. Kelhoffer"
+  title: "“The End of the Beginning”: Mark's Longer Ending (16:9–20) and the Adaptation of the Markan Storyline"
+  series: "Comparative Oriental Manuscript Studies Bulletin 8/2: 421–437"
+  publisher: "Universität Hamburg"
+  year: 2022
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University repository, open access (CC BY-NC-ND)"
+  url: "https://www.fdr.uni-hamburg.de/record/12445"
+  hostAuthored: false
+  tradition: null
+
+andrist-2022-ending-of-mark-codices:
+  author: "Patrick Andrist"
+  title: "Physical Discontinuities in the Transitions between the Gospels: Reassessing the Ending of Mark in Codex Sinaiticus, Vaticanus and Alexandrinus"
+  series: "Comparative Oriental Manuscript Studies Bulletin 8/2: 313–344"
+  publisher: "Universität Hamburg"
+  year: 2022
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University repository, open access (CC BY-NC-ND)"
+  url: "https://www.fdr.uni-hamburg.de/record/12434"
+  hostAuthored: false
+  tradition: null
+
+clivaz-2022-mark16:
+  author: "Claire Clivaz"
+  title: "A Multilingual Turn: Introducing the ‘MARK16’ COMSt Bulletin"
+  series: "Comparative Oriental Manuscript Studies Bulletin 8/2: 303–310"
+  publisher: "Universität Hamburg"
+  year: 2022
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University repository, open access (CC BY-NC-ND)"
+  url: "https://www.fdr.uni-hamburg.de/record/12432"
+  hostAuthored: false
+  tradition: null
+
+taylor-2022-cerinthus:
+  author: "Joan E. Taylor"
+  title: "Cerinthus and the Gospel of Mark: The Priority of the Longer Ending"
+  series: "Comparative Oriental Manuscript Studies Bulletin 8/2: 675–707"
+  publisher: "Universität Hamburg"
+  year: 2022
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University repository, open access (CC BY-NC-ND)"
+  url: "https://www.fdr.uni-hamburg.de/record/12467"
+  hostAuthored: false
+  tradition: null
+
+nrsvue-2021-mark-16:
+  author: null
+  title: "Mark 16, New Revised Standard Version Updated Edition, with footnotes"
+  series: null
+  publisher: "National Council of Churches"
+  year: 2021
+  edition: "NRSVue"
+  class: Reference
+  kind: study-bible
+  access: "BibleGateway, open"
+  url: "https://www.biblegateway.com/passage/?search=Mark%2016&version=NRSVUE"
+  hostAuthored: false
+  tradition: null
+
+febc-khoo-mark-16:
+  author: "Jeffrey Khoo"
+  title: "Are the Last Twelve Verses of Mark Really Mark's?"
+  series: "Articles in Defence of VPP"
+  publisher: "Far Eastern Bible College"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "College website, open"
+  url: "https://febc.edu.sg/article/def_are_last_twelve_verses_of_mark"
+  hostAuthored: false
+  tradition: "Far Eastern Bible College, which holds to the Greek text underlying the King James Version"
+
+keith-bo-john-8:
+  author: "Chris Keith"
+  title: "The Manuscript History of John 8"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-manuscript-history-of-john-8/"
+  hostAuthored: false
+  tradition: null
+
+knust-bo-woman-caught-adultery:
+  author: "Jennifer Knust"
+  title: "The Woman Caught in Adultery"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-woman-caught-in-adultery/"
+  hostAuthored: false
+  tradition: null
+
+knust-wasserman-2019-cast-first-stone:
+  author: "Jennifer Knust and Tommy Wasserman"
+  title: "To Cast the First Stone: The Transmission of a Gospel Story"
+  series: null
+  publisher: "Princeton University Press"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher excerpt PDF (Introduction, pp. 1–11), open"
+  url: "https://pup-assets.s3.amazonaws.com/public/onix/images/9780691203126/9780691203126.pdf"
+  hostAuthored: false
+  tradition: null
+
+pinchard-2019-pericope-adulterae:
+  author: "Laurent Pinchard"
+  title: "The Pericope Adulterae and the Golden Calf: A Case for Intertextuality between Codex Bezae and the Jewish Scriptures"
+  series: "BABELAO 8: 77–96"
+  publisher: "ABELAO, UCLouvain"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal, PDF"
+  url: "https://ojs.uclouvain.be/index.php/babelao/article/download/19673/18303"
+  hostAuthored: false
+  tradition: null
+
+mcdonald-2011-raising-ghost-arius:
+  author: "Grantley Robert McDonald"
+  title: "Raising the Ghost of Arius: Erasmus, the Johannine Comma and Religious Difference in Early Modern Europe"
+  series: "Doctoral thesis, Leiden University"
+  publisher: "Leiden University"
+  year: 2011
+  edition: "Corrected publisher's version"
+  class: Scholarly
+  kind: book
+  access: "University repository, open access"
+  url: "https://hdl.handle.net/1887/16486"
+  hostAuthored: false
+  tradition: null
+
+dejonge-1980-erasmus-comma:
+  author: "Henk Jan de Jonge"
+  shortAuthor: "de Jonge"
+  title: "Erasmus and the Comma Johanneum"
+  series: "Ephemerides Theologicae Lovanienses 56.4: 381–389"
+  publisher: null
+  year: 1980
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University repository scan, open access"
+  url: "https://hdl.handle.net/1887/1023"
+  hostAuthored: false
+  tradition: null
+
+tbs-1993-1-john-5-7:
+  author: null
+  title: "Why 1 John 5:7–8 is in the Bible"
+  series: null
+  publisher: "Trinitarian Bible Society"
+  year: 1993
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Society website, read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://www.tbsbibles.org/page/1John5verse7and8"
+  hostAuthored: false
+  tradition: "Trinitarian Bible Society"
+
+tbs-2002-received-text:
+  author: "Debra E. Anderson"
+  title: "The Validity of the Received Text"
+  series: null
+  publisher: "Trinitarian Bible Society"
+  year: 2002
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Society website, read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://www.tbsbibles.org/page/ValidityoftheReceivedText"
+  hostAuthored: false
+  tradition: "Trinitarian Bible Society"
+
+karrer-2020-codex-reuchlin:
+  author: "Martin Karrer"
+  title: "Der „Codex Reuchlin“ zur Apk (min. GA 2814): seine Geschichte und Bedeutung"
+  series: "Der Codex Reuchlins zur Apokalypse, Manuscripta Biblica 5: 17–135"
+  publisher: "De Gruyter"
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Open Access LMU repository, open"
+  url: "https://epub.ub.uni-muenchen.de/91218/"
+  hostAuthored: false
+  tradition: null
+
+cul-2011-kjv-exhibition:
+  author: null
+  title: "Great and Manifold Blessings: The Making of the King James Bible (exhibition captions)"
+  series: null
+  publisher: "Cambridge University Library"
+  year: 2011
+  edition: null
+  class: Reference
+  kind: article
+  access: "University library website, open"
+  url: "https://wwwe.lib.cam.ac.uk/CUL/exhibitions/KJV/captions.html"
+  hostAuthored: false
+  tradition: null
+
+intf-initial-text:
+  author: null
+  title: "Initial text"
+  series: null
+  publisher: "Institute for New Testament Textual Research (INTF), University of Münster"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "University institute website, open"
+  url: "https://www.uni-muenster.de/INTF/Initial_text.html"
+  hostAuthored: false
+  tradition: null
+
+intf-ecm:
+  author: null
+  title: "The Editio Critica Maior (ECM)"
+  series: null
+  publisher: "Institute for New Testament Textual Research (INTF), University of Münster"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "University institute website, open"
+  url: "https://www.uni-muenster.de/INTF/ECM.html"
+  hostAuthored: false
+  tradition: null
+
+gurry-2016-variants:
+  author: "Peter J. Gurry"
+  title: "The Number of Variants in the Greek New Testament: A Proposed Estimate"
+  series: "New Testament Studies 62"
+  publisher: "Cambridge University Press"
+  year: 2016
+  edition: "Author accepted manuscript"
+  class: Scholarly
+  kind: article
+  access: "Cambridge University repository (Apollo), author accepted manuscript, open (CC BY-NC 2.0 UK)"
+  url: "https://www.repository.cam.ac.uk/handle/1810/250445"
+  hostAuthored: false
+  tradition: null
+
+wachtel-holmes-2011-intro:
+  author: "Klaus Wachtel and Michael W. Holmes"
+  title: "Introduction"
+  series: "The Textual History of the Greek New Testament: Changing Views in Contemporary Research, SBL Text-Critical Studies 8: 1–12"
+  publisher: "Society of Biblical Literature"
+  year: 2011
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher PDF of the whole volume, open"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/11/Wachtel-Holmes.pdf"
+  hostAuthored: false
+  tradition: null
+
+parker-2011-initial-text:
+  author: "D. C. Parker"
+  title: "Is “Living Text” Compatible with “Initial Text”? Editing the Gospel of John"
+  series: "The Textual History of the Greek New Testament, SBL Text-Critical Studies 8: 13–21"
+  publisher: "Society of Biblical Literature"
+  year: 2011
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher PDF of the whole volume, open"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/11/Wachtel-Holmes.pdf"
+  hostAuthored: false
+  tradition: null
+
+strutwolf-2011-original-text:
+  author: "Holger Strutwolf"
+  title: "Original Text and Textual History"
+  series: "The Textual History of the Greek New Testament, SBL Text-Critical Studies 8: 23–41"
+  publisher: "Society of Biblical Literature"
+  year: 2011
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher PDF of the whole volume, open"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/11/Wachtel-Holmes.pdf"
+  hostAuthored: false
+  tradition: null
+
+manchester-p52:
+  author: null
+  title: "Greek P 457 (St John Fragment), catalogue record"
+  series: "Manchester Digital Collections"
+  publisher: "University of Manchester Library"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "University library digital collections, open"
+  url: "https://www.digitalcollections.manchester.ac.uk/view/MS-GREEK-P-00457"
+  hostAuthored: false
+  tradition: null
+
+nongbri-2020-p52:
+  author: "Brent Nongbri"
+  title: "Palaeography, Precision and Publicity: Further Thoughts on P.Ryl.iii.457 (P52)"
+  series: "New Testament Studies 66.4: 471–499"
+  publisher: "Cambridge University Press"
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher website; abstract open, full text paywalled (abstract only cited)"
+  url: "https://www.cambridge.org/core/journals/new-testament-studies/article/palaeography-precision-and-publicity-further-thoughts-on-pryliii457-p52/1D4E56BF0E9D4DDDA313D0C2754E2F28"
+  hostAuthored: false
+  tradition: null
+
+nongbri-2019-palaeography:
+  author: "Brent Nongbri"
+  title: "Palaeographic Analysis of Codices from the Early Christian Period: A Point of Method"
+  series: "Journal for the Study of the New Testament 42.1: 84–97"
+  publisher: "Sage"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Author-posted copy, open"
+  url: "https://brentnongbri.com/wp-content/uploads/2024/12/nongbri-palaeography-and-codices-jsnt-2019.pdf"
+  hostAuthored: false
+  tradition: null
+
+codex-sinaiticus-project:
+  author: null
+  title: "Codex Sinaiticus: History, Date and Content pages"
+  series: "Codex Sinaiticus Project"
+  publisher: "British Library, Leipzig University Library, National Library of Russia and St Catherine's Monastery"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Project website; read in Internet Archive snapshots, as the live site refuses connections"
+  url: "http://web.archive.org/web/20240118064339id_/https://codexsinaiticus.org/en/codex/history.aspx"
+  hostAuthored: false
+  tradition: null

@@ -32,13 +32,6 @@
 # sourcing-tested; #85 tested only the three built subjects.
 
 subjects:
-  - slug: new-testament-later-additions
-    subject: "Later additions to the New Testament text"
-    status: candidate
-    core: "Some passages in modern Bibles are not original, among them the longer ending of Mark and the woman caught in adultery."
-    basis: "Inventory rank 5: 8 Episodes, 10 claims."
-    notes: "Also 1 Corinthians 14:34-35; the show's count of about 16 verses needs a source that counts them, never the page's own count (#80)."
-
   - slug: gospels-dating-and-order
     subject: "When the Gospels were written, and in what order"
     status: candidate
@@ -313,3 +306,27 @@ statements:
         timestamp: "00:30:11.840"
         text: "Paul does not talk about it at all. We do not have any of them in Paul."
     notes: "Conflict with paul: “it” and “them” are the three categories of divine punishment after death (annihilation, temporary torment then annihilation, eternal conscious torment); the quote says Paul reflects none of them; the statement reports Bakhos (“Paul describes the wicked as simply being destroyed”) and Janse van Rensburg and Van Eck (Paul “actually adopted … annihilation”). Logged at the #148 first pass, 2026-11-26."
+  - page: new-testament-later-additions
+    question: "Did Erasmus promise to include the comma if a single Greek manuscript containing it were found?"
+    triggers:
+      - episode: 160
+        speaker: "Dan McClellan"
+        timestamp: "00:11:06.600"
+        text: 'And he basically said, "Look, I''m not going to include this unless I have a Greek manuscript that has it, because it''s not in any of the Greek manuscripts." And lo and behold, somebody shows up with a Greek manuscript that has it.'
+    notes: "Conflict with promise: the quote has Erasmus saying he would not include the comma without a Greek manuscript; the statement reports de Jonge (ETL 1980) and McDonald (Leiden 2011) that the promise has no foundation in Erasmus's works and is a persistent legend. Logged at the #149 first pass, 2026-11-26."
+  - page: new-testament-later-additions
+    question: "What did the King James translators work from?"
+    triggers:
+      - episode: 160
+        speaker: "Dan McClellan"
+        timestamp: "00:12:17.026"
+        text: "The third edition has the Comma Johanneum, and it just so happens that the edition that the King James translators relied on for their revision was the third edition."
+    notes: "Conflict with kjv-text: the quote has the KJV translators relying on Erasmus's third edition; the statement reports Holmes (Bible Odyssey) that Beza's 1588–89 and 1598 editions were heavily used. The same turn calls the third edition the Novum Instrumentum; de Jonge (ETL 1980, p. 385) says the edition was entitled Novum Testamentum from 1519. Logged at the #149 first pass, 2026-11-26."
+  - page: new-testament-later-additions
+    question: "What is Codex Sinaiticus?"
+    triggers:
+      - episode: 17
+        speaker: "Dan McClellan"
+        timestamp: "00:39:07.650"
+        text: "There's the famous discovery of Sinaiticus, which is our earliest manuscript of the full Bible that we know of. That's probably mid to late 4th century CE."
+    notes: "Conflict with sinaiticus: “our earliest manuscript of the full Bible” is stronger than the statement, which reports the Codex Sinaiticus Project that about half of its Old Testament survives and that Codex Vaticanus is of similarly early date. Logged at the #149 first pass, 2026-11-26."
