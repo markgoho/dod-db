@@ -200,8 +200,10 @@ Preview from the worktree with its own `hugo server` on a free port, in Claude i
 - Another Scholarship Page is unchanged.
 - `bun run check`, `bun run check:scholarship`, `bun test`. `check:scholarship` does not read the partial; step 3's list is the content check.
 
-### 7. Show, then land
+### 7. Land, then report
 
-Leave the page open in the browser, give the PNG's path, and report: the relation shown, what the unit and each mark stand for, the statement ids used, any caveat dropped, any mark that reads stronger than its statement, the runners-up from step 2, and the weak spot at phone width if there is one.
+No acceptance stop: once every step 6 check passes, land. A check that fails blocks landing; fix it or report the failure.
 
-When the user accepts it, land on trunk, push, and load the live page to confirm the block is there and its `og:image` URL returns the card: CI's Hugo is older than local, and a missing partial is skipped silently.
+Land on trunk, push, confirm the deploy succeeded, and load the live page to confirm the block is there and its `og:image` URL returns the card: CI's Hugo is older than local, and a missing partial is skipped silently.
+
+Then give the PNG's path and report: the relation shown, what the unit and each mark stand for, the statement ids used, any caveat dropped, any mark that reads stronger than its statement, the runners-up from step 2, and the weak spot at phone width if there is one.

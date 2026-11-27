@@ -83,7 +83,7 @@ Commit "Publish the <title> Scholarship Page (#<issue>)", push, and confirm the 
 
 ### 6. Infographic
 
-Run `/scholarship-infographic <slug>`. It ends by waiting for the user to accept the image before it lands, so an unattended run stops there; report the page as published and the infographic as awaiting review.
+Run `/scholarship-infographic <slug>`. It lands the infographic itself once its checks pass; there is no acceptance stop. The page is done when the infographic is live.
 
 ## Report
 
