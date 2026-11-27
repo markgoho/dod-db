@@ -17,11 +17,9 @@
   margin: 0;
 }
 
-.scholarship-page:not(.timeline-page)
-  :is(p, blockquote, .scholarship-question__short):not(
-    .panel,
-    .scholarship-notice
-  ) {
+/* Answers keep a reading measure inside their full-width panels. */
+.scholarship-question__body :is(p, blockquote),
+.scholarship-question__short {
   max-inline-size: var(--content-max-width-measure);
 }
 
