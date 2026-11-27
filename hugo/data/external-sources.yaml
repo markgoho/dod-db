@@ -5782,3 +5782,619 @@ britannica-maccabees:
   url: "https://www.britannica.com/topic/Maccabees"
   hostAuthored: false
   tradition: null
+
+sommer-bo-monotheism:
+  author: "Benjamin D. Sommer"
+  title: "Monotheism in the Hebrew Bible"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2015
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/monotheism-in-the-hebrew-bible/"
+  hostAuthored: false
+  tradition: null
+
+white-bo-divine-council:
+  author: "Ellen White"
+  title: "Divine Council"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2023
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/divine-council/"
+  hostAuthored: false
+  tradition: null
+
+ballentine-bo-heavenly-hosts:
+  author: "Debra Scoggins Ballentine"
+  title: "Heavenly Hosts in the Hebrew Bible"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2025
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/heavenly-hosts-in-the-hebrew-bible/"
+  hostAuthored: false
+  tradition: null
+
+dolansky-bo-shema:
+  author: "Shawna Dolansky"
+  title: "The Shema"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2021
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-shema/"
+  hostAuthored: false
+  tradition: null
+
+brown-bo-ten-commandments:
+  author: "William P. Brown"
+  title: "The Ten Commandments"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-ten-commandments/"
+  hostAuthored: false
+  tradition: null
+
+cook-bo-household-gods:
+  author: "Stephen L. Cook"
+  title: "Household Gods"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2024
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/household-gods/"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch7:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 7 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-7-summary"
+  hostAuthored: false
+  tradition: null
+
+hendel-2005-israelite-religion:
+  author: "Ronald S. Hendel"
+  title: "Israelite Religion"
+  series: "Encyclopedia of Religion"
+  publisher: "Macmillan Reference USA"
+  year: 2005
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/israelite-religion"
+  hostAuthored: false
+  tradition: null
+
+ludwig-2005-monotheism:
+  author: "Theodore M. Ludwig"
+  title: "Monotheism"
+  series: "Encyclopedia of Religion"
+  publisher: "Macmillan Reference USA"
+  year: 2005
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/monotheism"
+  hostAuthored: false
+  tradition: null
+
+yusa-2005-henotheism:
+  author: "Michiko Yusa"
+  title: "Henotheism"
+  series: "Encyclopedia of Religion"
+  publisher: "Macmillan Reference USA"
+  year: 2005
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/henotheism"
+  hostAuthored: false
+  tradition: null
+
+jacobs-ej-shema:
+  author: "Louis Jacobs"
+  title: "Shema, Reading of"
+  series: "Encyclopaedia Judaica"
+  publisher: "Macmillan Reference USA"
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/shema-reading"
+  hostAuthored: false
+  tradition: null
+
+schalit-matassa-ej-elephantine:
+  author: "Abraham Schalit and Lidia Matassa"
+  title: "Elephantine"
+  series: "Encyclopaedia Judaica"
+  publisher: "Macmillan Reference USA"
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/elephantine"
+  hostAuthored: false
+  tradition: null
+
+machinist-2006-monotheism-biblical-israel:
+  author: "Peter Machinist"
+  title: "Once More: Monotheism in Biblical Israel"
+  series: "Journal of the Interdisciplinary Study of Monotheistic Religions 1 (Special Issue): 25–39"
+  publisher: "Doshisha University, CISMOR"
+  year: 2006
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University repository PDF, open"
+  url: "https://doshisha.repo.nii.ac.jp/record/85/files/r002000010104.pdf"
+  hostAuthored: false
+  tradition: null
+
+levine-2014-global-monotheism:
+  author: "Baruch A. Levine"
+  title: "Global Monotheism: The Contribution of the Israelite Prophets"
+  series: "Melammu: The Ancient World in an Age of Globalization, ed. Markham J. Geller (Max Planck Research Library for the History and Development of Knowledge, Proceedings 7)"
+  publisher: "Edition Open Access"
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access book chapter (PDF), open"
+  url: "https://www.mprl-series.mpg.de/media/proceedings/7/4/proc7chap2.pdf"
+  hostAuthored: false
+  tradition: null
+
+fredriksen-2022-many-gods:
+  author: "Paula Fredriksen"
+  title: "Philo, Herod, Paul, and the Many Gods of Ancient Jewish “Monotheism”"
+  series: "Harvard Theological Review 115, no. 1: 23–45"
+  publisher: "Cambridge University Press"
+  year: 2022
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Published article PDF posted by Boston University's Department of Religion, open"
+  url: "https://www.bu.edu/religion/files/2022/03/Fredriksen-HTR-202266.pdf"
+  hostAuthored: false
+  tradition: null
+
+markl-2020-birth-trauma:
+  author: "Dominik Markl"
+  title: "The Babylonian Exile as the Birth Trauma of Monotheism"
+  series: "Biblica 101, no. 1: 1–25"
+  publisher: "Peeters"
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Published article PDF in the University of Pretoria repository, open"
+  url: "https://repository.up.ac.za/items/e34cd196-1132-4c29-8d6b-7847c6051d3b"
+  hostAuthored: false
+  tradition: null
+
+macdonald-2012-deut-meaning-monotheism-summary:
+  author: "Nathan MacDonald"
+  title: "Publisher's description of Deuteronomy and the Meaning of “Monotheism”"
+  series: "Forschungen zum Alten Testament 2/1"
+  publisher: "Mohr Siebeck"
+  year: 2012
+  edition: "2nd ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher catalogue page, open"
+  url: "https://www.mohrsiebeck.com/en/book/deuteronomy-and-the-meaning-of-monotheism-9783161516801"
+  hostAuthored: false
+  tradition: null
+
+tigay-jps-deut-shema-mjl:
+  author: "Jeffrey H. Tigay"
+  title: "Deuteronomy 6:4: The Shema (excerpt from The JPS Torah Commentary: Deuteronomy)"
+  series: "My Jewish Learning"
+  publisher: "Jewish Publication Society"
+  year: 1996
+  edition: null
+  class: Reference
+  kind: article
+  access: "Excerpt reprinted on MyJewishLearning with the publisher's permission, open"
+  url: "https://www.myjewishlearning.com/article/deuteronomy-64-the-shema/"
+  hostAuthored: false
+  tradition: null
+
+kimelman-brandeis-shema:
+  author: "Reuven Kimelman"
+  title: "The Opening of the Shema Prayer Explained"
+  series: "The Jewish Experience"
+  publisher: "Brandeis University"
+  year: 2022
+  edition: null
+  class: Reference
+  kind: article
+  access: "University website; read in an Internet Archive snapshot of the same URL"
+  url: "https://www.brandeis.edu/jewish-experience/holidays-religious-traditions/2022/may/shema-explained-kimelman.html"
+  hostAuthored: false
+  tradition: null
+
+nabre-exodus-20-notes:
+  author: null
+  title: "Notes to Exodus 20"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/exodus/20"
+  hostAuthored: false
+  tradition: null
+
+nabre-deuteronomy-6-notes:
+  author: null
+  title: "Notes to Deuteronomy 6"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/deuteronomy/6"
+  hostAuthored: false
+  tradition: null
+
+nabre-isaiah-44-notes:
+  author: null
+  title: "Notes to Isaiah 44"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/isaiah/44"
+  hostAuthored: false
+  tradition: null
+
+nabre-deuteronomy-32-notes:
+  author: null
+  title: "Notes to Deuteronomy 32"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/deuteronomy/32"
+  hostAuthored: false
+  tradition: null
+
+nabre-psalms-82-notes:
+  author: null
+  title: "Notes to Psalm 82"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/psalms/82"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-kings-22-notes:
+  author: null
+  title: "Notes to 1 Kings 22"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1kings/22"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-samuel-19-notes:
+  author: null
+  title: "Notes to 1 Samuel 19"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1samuel/19"
+  hostAuthored: false
+  tradition: null
+
+nabre-genesis-31-notes:
+  author: null
+  title: "Notes to Genesis 31"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/genesis/31"
+  hostAuthored: false
+  tradition: null
+
+frankel-2010-psalm-82:
+  author: "David Frankel"
+  title: "El as the Speaking Voice in Psalm 82:6–8"
+  series: "Journal of Hebrew Scriptures 10, article 16"
+  publisher: null
+  year: 2010
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (PDF), open"
+  url: "https://jhsonline.org/index.php/jhs/article/download/11282/8616"
+  hostAuthored: false
+  tradition: null
+
+lemanski-2022-psalm-82:
+  author: "Janusz Lemański"
+  title: "Gods Doomed to Death: Psalm 82 as a Testimony of the Birth of Monotheism"
+  series: "The Biblical Annals 12, no. 1: 5–28"
+  publisher: "John Paul II Catholic University of Lublin"
+  year: 2022
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (PDF), open"
+  url: "https://czasopisma.kul.pl/index.php/ba/article/download/12643/12192"
+  hostAuthored: false
+  tradition: null
+
+owusu-ansah-okyere-nsiah-2024-psalm-82:
+  author: "Roland Owusu-Ansah, Kojo Okyere and Alice M. Nsiah"
+  title: "Plural Elohim as anyame in Psalm 82 of the Asante Twi Bible: A Colonial Imposition"
+  series: "HTS Teologiese Studies/Theological Studies 80, no. 1, a9893"
+  publisher: "AOSIS"
+  year: 2024
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (PDF), open"
+  url: "https://hts.org.za/index.php/hts/article/download/9893/27769"
+  hostAuthored: false
+  tradition: null
+
+agharanya-poniatowski-2026-nahum-council:
+  author: "Obioma Agharanya and Felix Poniatowski"
+  title: "In Search of the Divine Council: An Alternative Reading of the Book of Nahum"
+  series: "The Biblical Annals 16, no. 4: 577–594"
+  publisher: "John Paul II Catholic University of Lublin"
+  year: 2026
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (PDF), open"
+  url: "https://czasopisma.kul.pl/index.php/ba/article/download/20172/17729"
+  hostAuthored: false
+  tradition: null
+
+monge-greer-2023-psalm-82:
+  author: "Erica Mongé-Greer"
+  title: "Divine Council, Ethics, and Resistance in Psalm 82"
+  series: null
+  publisher: "Pickwick Publications"
+  year: 2023
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher's sample chapter PDF (James Clarke edition), open"
+  url: "https://www.jamesclarke.co/storage/extracts/divine-council-ch1.pdf"
+  hostAuthored: false
+  tradition: null
+
+tov-2023-thetorah-deut-32-8:
+  author: "Emanuel Tov"
+  title: "The Sons of Israel or God? – Deuteronomy 32:8"
+  series: "TheTorah.com"
+  publisher: "Project TABS"
+  year: 2023
+  edition: null
+  class: Reference
+  kind: article
+  access: "Website, open"
+  url: "https://www.thetorah.com/article/the-sons-of-israel-or-god-deuteronomy-32-8"
+  hostAuthored: false
+  tradition: null
+
+ben-dov-2018-thetorah-deuteronomy:
+  author: "Jonathan Ben-Dov"
+  title: "Are There Gods, Angels, and Demons in Deuteronomy?"
+  series: "TheTorah.com"
+  publisher: "Project TABS"
+  year: 2018
+  edition: null
+  class: Reference
+  kind: article
+  access: "Website, open"
+  url: "https://www.thetorah.com/article/are-there-gods-angels-and-demons-in-deuteronomy"
+  hostAuthored: false
+  tradition: null
+
+burns-2003-review-burnett-elohim:
+  author: "John Barclay Burns"
+  title: "Review of Joel S. Burnett, A Reassessment of Biblical Elohim"
+  series: "Journal of Hebrew Scriptures 4"
+  publisher: null
+  year: 2003
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal review, open"
+  url: "https://jhsonline.org/index.php/jhs/article/view/5932"
+  hostAuthored: false
+  tradition: null
+
+cox-ackerman-2012-micahs-teraphim:
+  author: "Benjamin D. Cox and Susan Ackerman"
+  title: "Micah's Teraphim"
+  series: "Journal of Hebrew Scriptures 12, article 11"
+  publisher: null
+  year: 2012
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (PDF), open"
+  url: "https://jhsonline.org/index.php/jhs/article/view/18393"
+  hostAuthored: false
+  tradition: null
+
+overholt-jwa-medium-endor:
+  author: "Thomas W. Overholt"
+  title: "Medium of Endor: Bible"
+  series: "Shalvi/Hyman Encyclopedia of Jewish Women"
+  publisher: "Jewish Women's Archive"
+  year: 2009
+  edition: null
+  class: Reference
+  kind: article
+  access: "Jewish Women's Archive website, open"
+  url: "https://jwa.org/encyclopedia/article/medium-of-endor-bible"
+  hostAuthored: false
+  tradition: null
+
+mondriaan-2013-anat-yahu:
+  author: "M. E. Mondriaan"
+  title: "Anat-Yahu and the Jews at Elephantine"
+  series: "Journal for Semitics 22, no. 2: 537–552"
+  publisher: null
+  year: 2013
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University of Pretoria repository PDF, open"
+  url: "https://repository.up.ac.za/bitstream/handle/2263/40058/Mondriaan_Anatyahu_2013.pdf"
+  hostAuthored: false
+  tradition: null
+
+stokl-2025-elephantine-judaism:
+  author: "Jonathan Stökl"
+  title: "Elephantine Judaism / Yahwism in the Context of Elephantine during the Achaemenid Period"
+  series: "NTT Journal for Theology and the Study of Religion 79, no. 1: 61–80"
+  publisher: "Amsterdam University Press"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access article (CC BY-NC-ND 4.0), publisher's version in the Leiden University repository, open"
+  url: "https://hdl.handle.net/1887/4210935"
+  hostAuthored: false
+  tradition: null
+
+becking-2020-identity-persian-egypt-intro:
+  author: "Bob Becking"
+  title: "Introduction to Identity in Persian Egypt: The Fate of the Yehudite Community of Elephantine"
+  series: null
+  publisher: "Eisenbrauns"
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher's sample chapter PDF, open"
+  url: "https://www.eisenbrauns.org/sample_chapter/Becking_introduction.pdf"
+  hostAuthored: false
+  tradition: null
+
+vandertoorn-2016-eshem-herem-bethel:
+  author: "Karel van der Toorn"
+  title: "Eshem-Bethel and Herem-Bethel: New Evidence from Amherst Papyrus 63"
+  series: "Zeitschrift für die alttestamentliche Wissenschaft 128, no. 4: 668–680"
+  publisher: "De Gruyter"
+  year: 2016
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Published version in the University of Amsterdam repository, open"
+  url: "https://pure.uva.nl/ws/files/22748345/Eshem_Bethel_and_Herem_Bethel.pdf"
+  hostAuthored: false
+  tradition: null
+
+vandertoorn-2024-persian-imperialism:
+  author: "Karel van der Toorn"
+  title: "Persian Imperialism and the Religious Imagination"
+  series: "Yahwism under the Achaemenid Empire, ed. Gad Barnea and Reinhard G. Kratz (BZAW 548): 459–468"
+  publisher: "De Gruyter"
+  year: 2024
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Open-access chapter on the publisher's HTML page; opens in a browser, refuses scripted requests"
+  url: "https://www.degruyterbrill.com/document/doi/10.1515/9783111018638-018/html"
+  hostAuthored: false
+  tradition: null
+
+ccc-200-202:
+  author: null
+  title: "Catechism of the Catholic Church, paragraphs 200–202"
+  series: null
+  publisher: "Libreria Editrice Vaticana"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Vatican website, open"
+  url: "https://www.vatican.va/archive/ENG0015/__P16.HTM"
+  hostAuthored: false
+  tradition: "the Catholic Church"
+
+urj-shma:
+  author: null
+  title: "Sh'ma"
+  series: "ReformJudaism.org"
+  publisher: "Union for Reform Judaism"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Website, open"
+  url: "https://www.reformjudaism.org/practice/prayers-blessings/worship-services-shma"
+  hostAuthored: false
+  tradition: "Reform Judaism"

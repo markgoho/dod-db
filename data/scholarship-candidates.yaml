@@ -330,3 +330,15 @@ statements:
         timestamp: "00:39:07.650"
         text: "There's the famous discovery of Sinaiticus, which is our earliest manuscript of the full Bible that we know of. That's probably mid to late 4th century CE."
     notes: "Conflict with sinaiticus: “our earliest manuscript of the full Bible” is stronger than the statement, which reports the Codex Sinaiticus Project that about half of its Old Testament survives and that Codex Vaticanus is of similarly early date. Logged at the #149 first pass, 2026-11-26."
+  - page: the-emergence-of-monotheism-and-the-divine-council
+    question: "When does the Bible first deny that other gods exist?"
+    triggers:
+      - episode: 59
+        speaker: "Dan McClellan"
+        timestamp: "00:49:48.500"
+        text: "And so our generation is, is coming on what I hope is the tail end of the, the era of Deutero Isaiah. They're, they're constantly trying to hold that threshold against the data and say, no, no, no, we have it by this time."
+      - episode: 59
+        speaker: "Dan McClellan"
+        timestamp: "00:50:52.840"
+        text: "Well, one, the question of where the threshold is is the wrong question to begin with. But two, it's definitely not anywhere in the Bible."
+    notes: "Conflict with explicit: both turns deny that monotheism appears anywhere in the Bible, Second Isaiah included; the statement reports, from Coogan and Chapman, the NABRE notes, Hayes, Sperling, Markl and Machinist, that Second Isaiah is the first explicit denial that other gods exist, with Fredriksen's reading of such declarations as loyalty language attributed in the text. Logged at the #151 first pass, 2026-11-27."
