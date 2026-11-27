@@ -68,7 +68,7 @@ statements:
         quote: "it's simply a fact, that practices and ideas that are not strictly or even strongly monotheistic do appear in the Bible."
         read: 2026-11-27
       - source: machinist-2006-monotheism-biblical-israel
-        locator: "p. 37"
+        locator: "p. 38"
         quote: "while the Hebrew Bible gives evidence of monotheism, especially in the utterances of the Second Isaiah (e.g., 41, 43), it also tells of polytheism"
         read: 2026-11-27
       - source: ballentine-bo-heavenly-hosts
@@ -147,7 +147,7 @@ statements:
     group: "Gods in the Hebrew Bible"
     question: "Is the Shema a statement of monotheism?"
     short: "Its original meaning is uncertain. The Hebrew can be translated several ways, and some scholars read it as a call to worship Yahweh alone rather than a claim that only one god exists; in later Jewish thought it is the supreme affirmation of God's unity."
-    text: "Shawna Dolansky's Bible Odyssey article says that although Jewish tradition translates Deuteronomy 6:4 as “YHWH our God, YHWH is One”, the Hebrew is fairly ambiguous and could equally be rendered “YHWH is our god, YHWH alone”, which would reflect a monolatrous belief; she adds that in the preexilic world in which much of Deuteronomy was composed, the idea of monotheism had not fully emerged. Jeffrey Tigay's commentary on Deuteronomy lists three possible renderings and judges “YHVH is our God, YHVH alone” the most likely, though not certain, since the chapter is concerned with Israel's relationship to God, not with his nature. Reuven Kimelman writes that the ancient Israelites likely saw the verse originally as a declaration of monolatry. The New American Bible's note gives other possible translations, and reads the passage as saying that the Lord alone is God. Dolansky writes that some Jews in the Second Temple period began to develop the idea that YHWH was the only God and reinterpreted their earlier texts in this light, as the Septuagint's “YHWH is one” shows. Louis Jacobs's Encyclopaedia Judaica entry calls the Shema the supreme affirmation in Jewish thought of the unity of God."
+    text: "Shawna Dolansky's Bible Odyssey article says that although Jewish tradition translates Deuteronomy 6:4 as “YHWH our God, YHWH is One”, the Hebrew is fairly ambiguous and could equally be rendered “YHWH is our god, YHWH alone”, which would reflect a monolatrous belief; she adds that in the preexilic world in which much of Deuteronomy was composed, the idea of monotheism had not fully emerged. Jeffrey Tigay's commentary on Deuteronomy lists three possible renderings and judges “YHVH is our God, YHVH alone” the most likely, though not certain, noting that the chapter is concerned with Israel's relationship to God, not with his nature. Reuven Kimelman writes that the ancient Israelites likely saw the verse originally as a declaration of monolatry. The New American Bible's note gives other possible translations, and reads the passage as saying that the Lord alone is God. Dolansky writes that some Jews in the Second Temple period began to develop the idea that YHWH was the only God and reinterpreted their earlier texts in this light, as the Septuagint's “YHWH is one” shows. Louis Jacobs's Encyclopaedia Judaica entry calls the Shema the supreme affirmation in Jewish thought of the unity of God."
     cites:
       - source: dolansky-bo-shema
         locator: "section “What did this statement mean in its biblical context?”"
@@ -192,7 +192,7 @@ statements:
   - id: elohim
     group: "Gods in the Hebrew Bible"
     question: "Is Elohim, the Hebrew word for God, plural?"
-    short: "In form, yes. When it means Israel's God it is usually construed with a singular verb; it can also mean “gods”, a single foreign god, or the ghost of a dead person, as with Samuel in 1 Samuel 28:13."
+    short: "In form, yes, though it is often construed with a singular verb, as when it means Israel's God; it can also mean “gods”, a single foreign god, or the ghost of a dead person, as with Samuel in 1 Samuel 28:13."
     text: "Sperling's Encyclopedia of Religion entry says the term elohim appears some 2,600 times in the Hebrew scriptures and, although plural in form, is often construed with a singular verb. John Barclay Burns, reviewing Joel Burnett's study of the word, calls it morphologically plural and routinely construed with a singular verb, and Hayes's lectures say that used with a singular verb it refers to the God of Israel. Sperling adds that even when Elohim refers to the God of Israel it can be treated as a plural, as in Genesis 20:13; that its plural uses most often refer to gods whose worship the biblical authors condemn; and that the singular sense is used even for illicit divinities such as Astarte, Milcom and Chemosh. Thomas Overholt's entry on the medium of Endor says she refers to Samuel's ghost as a “god” (1 Samuel 28:13), and Benjamin Cox and Susan Ackerman write that the word can refer to deceased spirits. Burns reports Burnett's argument that ilanu, a plural form that in earlier Canaanite usage was interchangeable with the singular ilu, carried the further connotation of an abstract plural, and Burnett's novel interpretation of elohim as denoting Yahweh and his divine entourage."
     cites:
       - source: sperling-2005-god-hebrew-scriptures
@@ -228,11 +228,11 @@ statements:
         quote: "can refer to deceased spirits: in 1 Sam 28:13; Isa 8:19; Num 25:2, as quoted in Ps 106:28; and probably Exod 21:6."
         read: 2026-11-27
       - source: burns-2003-review-burnett-elohim
-        locator: "paragraph 5"
+        locator: "paragraph 3"
         quote: "displacing the singular ilu with which it was interchangeable in pre-Amarna Canaanite"
         read: 2026-11-27
       - source: burns-2003-review-burnett-elohim
-        locator: "paragraph 5"
+        locator: "paragraph 3"
         quote: "he argues that ilanu possessed the further connotation of an abstract plural that encompassed the properties inherent in the concept"
         read: 2026-11-27
       - source: burns-2003-review-burnett-elohim
@@ -283,7 +283,7 @@ statements:
         read: 2026-11-27
       - source: markl-2020-birth-trauma
         locator: "p. 1 n. 2"
-        quote: "The question as to whether Deuteronomy 4 precedes DeuteroIsaiah is a matter of debate that will not be addressed in this article."
+        quote: "The question as to whether Deuteronomy 4 precedes Deutero-Isaiah is a matter of debate that will not be addressed in this article."
         read: 2026-11-27
       - source: machinist-2006-monotheism-biblical-israel
         locator: "p. 27"
@@ -306,17 +306,17 @@ statements:
         quote: "Sven Petry arrived at the conclusion that monotheism was introduced in Deutero-Isaiah not earlier than the fifth century BCE"
         read: 2026-11-27
       - source: fredriksen-2022-many-gods
-        locator: "p. 27 n. 11"
+        locator: "PDF p. 5, text at n. 11"
         quote: "In biblical narrative, however, these other divine forces are often simply there."
         read: 2026-11-27
       - source: fredriksen-2022-many-gods
-        locator: "p. 27 n. 11"
+        locator: "PDF p. 5 n. 11"
         quote: "biblical declarations of God’s unique supremacy (e.g., Deut 4:35, 39; Isa 43:10–11; 44:6; 45:14), like corresponding pagan statements to similar effect (such as exclamations of εἷς θεὸς), should be understood as an index of his or her people’s cultic and affective loyalty."
         read: 2026-11-27
   - id: development
     group: "When monotheism emerged"
     question: "Did Israel's religion develop from many gods to one?"
-    short: "Many accounts describe a gradual development in which the worship of Yahweh alone came before the denial of other gods, but when and why it happened is debated, and some scholars reject the idea of such stages."
+    short: "Many accounts describe a gradual development in which the worship of Yahweh alone came before the denial of other gods, but when and why it happened is debated, and some scholars question or reject the idea of such stages."
     text: "Hayes's lectures describe the evolutionary model, a progression from polytheism through monolatry to monotheism that eighteenth- and nineteenth-century scholars viewed as an advance, and its challenge in the 1930s by Yehezkel Kaufmann, who argued that monotheism does not and cannot evolve from polytheism. Hayes says most scholars conjecture that the religion of the kingdoms of Israel and Judah was maybe monolatrist, and that Israelite monotheism, which the Bible represents as beginning with Abraham, most likely began much later, probably as a minority movement that grew to prominence over centuries. Dominik Markl writes that the rise of monotheism is most commonly described as a step anticipated by monolatry, and Sperling describes increasing numbers of Israelites becoming consistent monolaters and monotheists in a process that took centuries. Hayes calls the debate over when and why some Israelites adopted a Yahweh-only position fierce. Ellen White's Bible Odyssey article reports the view of some scholars that the Israelites moved from many gods to the exclusive worship of Yahweh and then to belief in Yahweh as the only true God, and finds such an evolutionary process difficult to maintain, since the texts explicitly reference deities other than Yahweh, and some of the later texts detail a heavily populated heaven. Jonathan Ben-Dov writes that the often-made claim that Israelite religion followed a consistent path from henotheism or monolatry to a more abstract monotheism, which then prevailed absolutely in post-biblical Judaism, is wrong."
     cites:
       - source: hayes-rlst145-l2
@@ -356,14 +356,14 @@ statements:
         quote: "Such an evolutionary process is difficult to maintain, since these texts explicitly reference deities other than Yahweh. The texts also come from different dates, and some of the later texts detail a heavily populated heaven."
         read: 2026-11-27
       - source: ben-dov-2018-thetorah-deuteronomy
-        locator: "section “Deuteronomy and the Sectarian Debate”"
+        locator: "section “From Henotheism to Monotheism? Not Quite”"
         quote: "It is often claimed that Israelite religion followed a consistent path of development: from Henotheism or monolatry to more abstract monotheism, which then prevailed in post-biblical Judaism in an absolute way. This view is wrong."
         read: 2026-11-27
   - id: category
     group: "When monotheism emerged"
     question: "Is “monotheism” the right word for the Bible's religion?"
     short: "Scholars disagree. Some argue that the modern term misdescribes ancient religion; others keep it, at least for some texts, or redefine it."
-    text: "Sommer's Bible Odyssey article says biblical scholars debate whether the ancient Israelites and the Hebrew Bible were monotheistic. By the common definition, the belief that no deities exist other than the one God, he says the Hebrew Bible is not a monotheistic work, but he finds that definition not terribly useful. Following Hermann Cohen and Yehezkel Kaufmann, he defines monotheism as the belief that one supreme being exists whose will is sovereign over all other beings, and writes that Kaufmann and others showed biblical texts to be monotheistic by that definition. Paula Fredriksen notes that the word was introduced in the 1660s and argues that relying on it as a term of historical description fundamentally misdescribes the religious sensibility of antiquity and invites anachronism. Nathan MacDonald's study, as its publisher summarises it, traces the use of the word since its coinage in 1660 and argues that Old Testament scholarship often uses it with a narrowed, intellectualistic conception of religion. Markl reports that the term's use for the Hebrew Bible's history of religion has been criticised, but that good reasons have also been given for it, and holds that it makes sense as applied to some texts. Ben-Dov calls monotheism a modern concept whose application to ancient religion is not always justified."
+    text: "Sommer's Bible Odyssey article says biblical scholars debate whether the ancient Israelites and the Hebrew Bible were monotheistic. By the common definition, the belief that no deities exist other than the one God, he says the Hebrew Bible is not a monotheistic work, but he finds that definition not terribly useful. Following Hermann Cohen and Yehezkel Kaufmann, he defines monotheism as the belief that one supreme being exists whose will is sovereign over all other beings, and writes that Kaufmann and others showed biblical texts to be monotheistic by that definition. Paula Fredriksen notes that the word was introduced in the 1660s and argues that relying on it as a term of historical description fundamentally misdescribes the religious sensibility of antiquity and invites anachronism. Markl reports that the term's use for the Hebrew Bible's history of religion has been criticised, but that good reasons have also been given for it, and holds that it makes sense as applied to some texts. Ben-Dov calls monotheism a modern concept whose application to ancient religion is not always justified."
     cites:
       - source: sommer-bo-monotheism
         locator: "paragraph 1"
@@ -386,20 +386,16 @@ statements:
         quote: "Kaufmann and others showed that biblical texts are monotheistic by this definition."
         read: 2026-11-27
       - source: fredriksen-2022-many-gods
-        locator: "p. 23 (abstract)"
+        locator: "PDF p. 1 (abstract)"
         quote: "Reliance on “monotheism” as a term of historical description inhibits our appreciation of the many different social relationships, human and divine, that all ancient Jews had to navigate. Worse, “monotheism” fundamentally misdescribes the religious sensibility of antiquity."
         read: 2026-11-27
       - source: fredriksen-2022-many-gods
-        locator: "p. 25"
+        locator: "PDF p. 3"
         quote: "According to the Oxford English Dictionary, the word “monotheism,” introduced in the 1660s, means the belief that there is only one god."
         read: 2026-11-27
       - source: fredriksen-2022-many-gods
-        locator: "p. 45"
+        locator: "PDF p. 23"
         quote: "It invites anachronism, allowing austerely monotheistic theologies to be imputed to Jews and, later, to Christians, theologies that our Jewish and (retrospectively) Christian texts themselves belie."
-        read: 2026-11-27
-      - source: macdonald-2012-deut-meaning-monotheism-summary
-        locator: "publisher's description"
-        quote: "He traces the use of 'monotheism' since its coinage in 1660 and argues that its use in Old Testament scholarship frequently reflects a narrowed, intellectualistic conception of religion."
         read: 2026-11-27
       - source: markl-2020-birth-trauma
         locator: "p. 5"
@@ -612,11 +608,11 @@ statements:
         quote: "They are first mentioned in the Septuagint to Deuteronomy 32:8"
         read: 2026-11-27
       - source: vandertoorn-2024-persian-imperialism
-        locator: "paragraph before n. 4"
+        locator: "p. 461"
         quote: "Though the Elephantine Papyri show that Jewish communities long continued to venerate divine companions of Yaho, the Persian period also witnessed the gradual demotion of other gods to the rank of angels."
         read: 2026-11-27
       - source: vandertoorn-2024-persian-imperialism
-        locator: "paragraph before n. 4"
+        locator: "p. 461"
         quote: "The Sons of El who once constituted the council of the gods became the council of the holy ones"
         read: 2026-11-27
       - source: ben-dov-2018-thetorah-deuteronomy
@@ -696,7 +692,7 @@ statements:
   - id: elephantine-temple
     group: "Gods in Israelite practice"
     question: "Did the Jews of Elephantine have their own temple?"
-    short: "Yes. Aramaic papyri from Elephantine, an island in southern Egypt, show that its Judean community had a temple of its god Yahu in the fifth century BCE; it was destroyed in 410 BCE, and the community asked the governor of Judah for help to rebuild it."
+    short: "Yes. Aramaic papyri from Elephantine, an island in the Nile, show that its Judean community had a temple of its god Yahu in the fifth century BCE; it was destroyed in 410 BCE, and the community asked the governor of Judah for help to rebuild it."
     text: "The Encyclopaedia Judaica entry says the Elephantine papyri are Aramaic documents, and that the Jewish temple at Elephantine may have been built in the second half of the seventh century or early in the sixth, and in any event before the Persian conquest of Egypt. Jonathan Stökl writes that the written evidence for the Jewish inhabitants comes from the fifth and fourth centuries BCE, when the Achaemenid dynasty ruled Egypt, and M. E. Mondriaan says documents attest to a Jewish temple where sacrifices were offered to YHW. According to the Encyclopaedia Judaica entry, the temple was destroyed in 410 BCE by the priests of the adjoining temple of Khnum, and three years later the community applied to the Persian governor of Judah for permission to rebuild it; Mondriaan describes the petition of Yedaniah, the community's leader, to Bagavahya, governor of Judah. Stökl says a memorandum records the response of Delaiah, governor of Samaria, and Bagavahya that the temple should be rebuilt, and that in 1996 Cornelius von Pilgrim identified the temple's archaeological remains, including traces of an attempt at rebuilding it."
     cites:
       - source: schalit-matassa-ej-elephantine
@@ -739,7 +735,7 @@ statements:
     group: "Gods in Israelite practice"
     question: "Did the Jews of Elephantine worship other gods besides Yahu?"
     short: "Their texts name other deities beside Yahu, such as Anat-Yahu, Eshem-Bethel and Anat-Bethel, and record an oath in the name of Anat-Yahu; how scholars interpret these deities is disputed."
-    text: "The Encyclopaedia Judaica entry describes a list of contributions of which 12 karash and 8 shekels were for Yahu, and Stökl writes that the list ends with 126 sheqel collected for Yahu, 70 for Eshem-Bethel and 120 for Anat-Bethel. Mondriaan names a recorded oath in the name of Anat-Yahu as the most significant evidence, and Bob Becking writes that, besides Yahô, the minor deities Anat-Yahô, Eshem-Bethel and Ḥerem-Bethel were venerated, and that oath texts show the community accepted the deities of others as witnesses to oaths. Karel van der Toorn says it is clear from the temple record that Anat-Bethel and Eshem-Bethel belonged to the entourage of Yaho, and the Encyclopaedia Judaica entry says it seems clear that two goddesses dwelt alongside Yahu and may have been worshipped with him in the temple. How to understand this is disputed. Van der Toorn notes that the Jews of Elephantine have been called polytheists, but judges the monotheism–polytheism binary inadequate for the question; Becking calls their Yahwism certainly not monotheistic or monolatric. Mondriaan holds that the community venerated a deity Anat-Yahu, in line with arguments that many Israelites believed Yahweh had a partner or spouse. Stökl writes that the other deities may have been understood as hypostases or as independent deities, and that most scholarly analyses fall into a group that sees Elephantine Judaism as having mixed Judaism with Aramean and Egyptian religion. Van der Toorn writes that no answer to the nature of Herem and Eshem has yet commanded the consent of the scholarly community."
+    text: "The Encyclopaedia Judaica entry describes a list of contributions of which 12 karash and 8 shekels were for Yahu, and Stökl writes that the list ends with 126 sheqel collected for Yahu, 70 for Eshem-Bethel and 120 for Anat-Bethel. Mondriaan names a recorded oath in the name of Anat-Yahu as the most significant of the documents that refer to YHW, and Bob Becking writes that, besides Yahô, the minor deities Anat-Yahô, Eshem-Bethel and Ḥerem-Bethel were venerated, and that oath texts show the community accepted the deities of others as witnesses to oaths. Karel van der Toorn says it is clear from the temple record that Anat-Bethel and Eshem-Bethel belonged to the entourage of Yaho, and the Encyclopaedia Judaica entry says it seems clear that two goddesses dwelt alongside Yahu and may have been worshipped with him in the temple. How to understand this is disputed. Van der Toorn notes that the Jews of Elephantine have been called polytheists, but judges the monotheism–polytheism binary inadequate for the question; Becking calls their Yahwism certainly not monotheistic or monolatric. Mondriaan holds that the community venerated a deity Anat-Yahu, in line with arguments that many Israelites believed Yahweh had a partner or spouse. Stökl writes that the other deities may have been understood as hypostases or as independent deities, and that most scholarly analyses fall into a group that sees Elephantine Judaism as having mixed Judaism with Aramean and Egyptian religion. Van der Toorn writes that no answer to the nature of Herem and Eshem has yet commanded the consent of the scholarly community."
     cites:
       - source: schalit-matassa-ej-elephantine
         locator: "section “The Religion of the Jews in Elephantine”"
@@ -750,7 +746,7 @@ statements:
         quote: "The donation list finishes with the note that 126 sheqel were collected for Yahu, 70 for Eshem-Bethel and 120 for Anat-Bethel"
         read: 2026-11-27
       - source: mondriaan-2013-anat-yahu
-        locator: "p. 543"
+        locator: "p. 538"
         quote: "the most significant being a recorded oath in the name of Anat-Yahu"
         read: 2026-11-27
       - source: becking-2020-identity-persian-egypt-intro

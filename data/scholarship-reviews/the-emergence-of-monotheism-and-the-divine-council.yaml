@@ -6,1478 +6,1470 @@
 # Dropped: Mark S. Smith, The Early History of God (2002): read only in a user-uploaded Internet Archive scan of an in-copyright book, not a publisher or library copy; not cited. Four BZAW 548 chapters (Kratz, Kottsieper, Moore, Barnea) were read by a research agent only in a browser and not saved; with them go the Passover-letter question, what Elephantine shows about the Torah, the community's origins (six authors, no agreement) and the reported ban on animal sacrifice in the rebuilt temple (EJ and Posen against Moore); none is stated. van der Toorn 2024 (same volume) is cited from an excerpt the lead copied from the publisher's page in Chrome. Why elohim is plural (no in-window source states a field position; EJ “God, Names of” paragraph may be first-edition text) and elohim and the Trinity (only Tradition sources on the noun; LaCugna's “Exegetes and theologians today are in agreement” is 1987 text): not stated. Models of the council (Smith's household, Handy's bureaucracy, royal court): one source per model, no comparison: not stated. Jubilees 15:31–32: no secondary source read. Psalm 82's date: kept as attributed disagreement inside psalm-82, not a statement. Heiser (Bibliotheca Sacra 2001; HIPHIL 2006): Tradition venues, not needed.
 # First pass: four research agents fetched sources on 2026-11-27 into separate scratch folders (curl; Internet Archive snapshots for bible.usccb.org, Brandeis and Chabad) and copied quotes from the fetched text; the lead fetched the four Bible Odyssey articles by Sommer, White, Ballentine and Dolansky and the Davies EJ entry itself, and copied the van der Toorn 2024 excerpt from Chrome. Every page quote was then script-matched against the saved text of its source with whitespace collapsed, HTML entities decoded, ligatures expanded (NFKC), soft hyphens and zero-width spaces removed, line-break hyphens joined, and converter spaces before punctuation and inside parentheses removed (the page quotes carry the tidied spacing): 170/170, 0 misses.
 # Flags for the second pass: (1) TheTorah.com (Tov 2023, Ben-Dov 2018) has no class precedent in the registry; classed Reference like Bible Odyssey (credentialed authors, not peer-reviewed); neither is alone behind a short. (2) Mongé-Greer 2023 is a Pickwick (Wipf & Stock) monograph, classed Scholarly; read from the publisher's sample chapter PDF. (3) psalm-82: Frankel 2010's “Most scholars by now agree” and Mongé-Greer's “no clear consensus” disagree about the state of the field, so the short says “Scholars disagree” (#80) and keeps “Many”; Frankel's sentence is quoted in the text, attributed. (4) van der Toorn 2024: De Gruyter gives scripts an empty body; the excerpt was copied from the browser's text (line-break hyphens “com- munities”, “peri- od” joined for the match); the HTML has no page numbers, so the locator names the paragraph. (5) Encyclopaedia Judaica entries (Jacobs, Schalit and Matassa, Bamberger, Gutmann) have year null; their text may be first-edition (1971). Bamberger and Gutmann back angels beside NABRE Daniel 10 (2011) and van der Toorn 2024; Schalit and Matassa back facts only (dates, destruction, petition) beside Stökl 2025 and Mondriaan 2013. (6) Kimelman (Brandeis University's The Jewish Experience, 2022) classed Reference; read in an Internet Archive snapshot; the analysis is presented as his. (7) MacDonald is cited from the publisher's description of his book, as the publisher summarises it. (8) explicit quotes Sperling's consensus sentence (“Scholars are in agreement”) in the text with its own scope (by the end of the Babylonian exile); the short says “scholars say” for the Second Isaiah claim, which six authors carry. (9) Markl p. 6 reads “late exilic Judah” where his p. 5 has “late pre-exilic Judah”; the development quote stops before those words. (10) Bible Odyssey years are the page dates shown (Sommer 2015, Brown 2017, Dolansky 2021, White 2023, Cook 2024, Ballentine 2025). (11) Agharanya and Poniatowski's affiliation is the Adventist University of Africa; the venue (The Biblical Annals, KUL) is peer-reviewed, so the class follows the venue; 2026 is inside the window. (12) Tigay is the JPS Torah Commentary excerpt on MyJewishLearning, year 1996 from the commentary's edition, not from the page. (13) Hayes l2's quote keeps the transcript's “counsel” for “council”. (14) Stökl's “Most scholarly analyses can be grouped in this category” refers to his first category (mixed or syncretic Judaism, with a hypostasis variant); the text reports it so scoped.
+# Second pass (independent agent, 2026-11-27, #93 delegation): re-fetched every source into its own scratch folder with curl (Brandeis 403 → Internet Archive snapshot of the same URL; bible.usccb.org via Internet Archive snapshots of the same URLs, Isaiah 44 live; Markl, Stökl and Cox–Ackerman via their repositories' PDF links; TheTorah bodies read from the page's embedded JSON; van der Toorn 2024's HTML page has no chapter body even in Chrome, so the publisher's PDF was read in an Internet Archive snapshot). Every quote matched (letters-only and punctuation-aware): 170/170; one dehyphenation error fixed. Every printed-page locator mapped against PDF folios. Every Trigger Claim re-matched at timestamp and speaker and read about two minutes either side: 14/14 kept.
+# Second pass changes: (1) Cut category/9 (MacDonald, publisher's catalogue blurb) to uncited, its sentence removed from category's text, registry entry removed; category/10–13 renumbered 9–12. (2) Locators: other-gods/5 p. 37 → p. 38 (Machinist); elephantine-gods/3 p. 543 → p. 538 (Mondriaan; text reworded to his “most significant” of the documents referring to YHW); development/10 → section “From Henotheism to Monotheism? Not Quite” (Ben-Dov); Fredriksen's five locators → the posted PDF's own pages 1, 3, 5, 23 (it is a pre-pagination copy numbered 1–23; explicit/16 is body text at n. 11, not in the note); angels/6–7 → p. 461 (van der Toorn 2024). (3) Quote: explicit/10 “DeuteroIsaiah” → “Deutero-Isaiah”. (4) Shorts narrowed: elohim (“usually… when it means Israel's God” → “often construed with a singular verb, as when it means Israel's God”); development (“reject” → “question or reject”); elephantine-temple (“an island in southern Egypt” → “an island in the Nile”). (5) Text: shema's Tigay sentence “since” → “noting that”. (6) Registry: fredriksen-2022-many-gods access line (pre-pagination PDF, not the published article); vandertoorn-2024-persian-imperialism access line (PDF read via the Archive; url unchanged). (8) Burns locators: elohim/9–10 “paragraph 5” → “paragraph 3” (the ilu and abstract-plural sentences are in the review's third paragraph; elohim/11 stays in paragraph 5). Section and paragraph locators of every HTML source re-checked by script against the nearest preceding heading or paragraph count; EJ angels quotes confirmed above the Bamberger and Gutmann sign-offs respectively. (7) publish-rule recounted by clause: “first explicit denial in Second Isaiah” is stated outright by 2 authors (Coogan and Chapman, NABRE) and supported by 2 (Hayes, Markl), not 6; the rule still holds; 16 statements.
+# Second pass flags for the lead: (a) Ep 126 00:14:50–00:16:02 (not attached): “most scholars these days are on the side of understanding this to mean Adonai is one”, against Tigay's preferred “YHVH… alone” in shema's text; log as a conflict for the owner's re-review (data/scholarship-candidates.yaml). (b) Ep 59 00:14:06 (not attached): “there's not monotheism in the Bible”, in tension with explicit's short; the attached 00:15:13 sentence is about the framework's utility and stays. (c) explicit's short “during the Babylonian exile” rests on Coogan and Chapman and Machinist; Markl says “around, or some time after, 539” (reported in the text), Petry the fifth century; kept, but it is the thinnest clause in the core; Markl p. 1 also calls the explicit claim the “post-exilic formulation of ‘theoretical monotheism’”, placing it after the exile. (d) Fredriksen's copy is pre-pagination; HTR 23–45 is in the registry's series line only. (e) Encyclopedia of Religion entries (Sperling, Ludwig, Yusa) are signed “(1987 and 2005)”, Hendel “(2005)”: kept as 2005 per the-origins-of-yahweh precedent; the cited sentences may be 1987 text. (f) First-pass flags 1, 2, 5, 6, 12 (TheTorah, Pickwick, EJ year null, Kimelman, Tigay 1996) re-checked and left as flagged; none is alone behind a short.
 review: null
 delegation:
   by: owner
   date: 2026-11-23
   issue: "#93"
+  secondPass: 2026-11-27
 citations:
   other-gods/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   other-gods/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   other-gods/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   other-gods/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   other-gods/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim; locator corrected “p. 37” → “p. 38”: the passage opens PDF page 14, printed 38 (page 37 ends “The biblical authors”); verified.",
     }
   other-gods/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   other-gods/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   monolatry/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   monolatry/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   monolatry/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   monolatry/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   monolatry/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   monolatry/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   monolatry/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   monolatry/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   first-commandment/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   first-commandment/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   first-commandment/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   first-commandment/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   first-commandment/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   shema/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   shema/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   shema/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   shema/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   shema/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; verified. Text changed “since the chapter is concerned” → “noting that the chapter is concerned”: in Tigay the context point answers translation (3)'s rationale and is one of several arguments, not the stated reason for preferring (1).",
     }
   shema/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   shema/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   shema/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   shema/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   shema/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elohim/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; verified. Short narrowed from “When it means Israel's God it is usually construed with a singular verb” to “it is often construed with a singular verb, as when it means Israel's God”: Sperling says “often”, Burns “routinely”, neither scopes it to Israel's God; Hayes (elohim/3) ties the singular verb to the God of Israel.",
     }
   elohim/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elohim/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elohim/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elohim/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elohim/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elohim/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elohim/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elohim/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched (JHS HTML galley, /article/download/5932/4985; the registry's landing page links it); quote matched verbatim; locator corrected “paragraph 5” → “paragraph 3” (the review's third <p>, which begins “The word elohim, morphologically plural”); verified.",
     }
   elohim/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim; locator corrected “paragraph 5” → “paragraph 3”, as elohim/9; verified.",
     }
   elohim/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Consensus wording (#80): Sperling's own sentence, scoped in the text to “by the end of the Babylonian exile”.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Consensus wording (#80): Sperling's own sentence, scoped in the text to “by the end of the Babylonian exile”. Second pass 2026-11-27: re-fetched; quote matched verbatim at its section; entry signed “S. David Sperling (1987 and 2005)” (revised for the 2005 edition, bibliography to 2001); kept in window as on the-origins-of-yahweh; verified.",
     }
   explicit/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote corrected “DeuteroIsaiah” → “Deutero-Isaiah”: pdftotext -layout shows a real hyphen at a line break (“Deutero-” / “Isaiah”), wrongly joined; otherwise verbatim at p. 1 n. 2; verified.",
     }
   explicit/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/13:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/14:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/15:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   explicit/16:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim; locator changed from “p. 27 n. 11” to “PDF p. 5, text at n. 11”: the sentence is in the body, with the note call, not in n. 11, and the BU copy is numbered 1–23 (see category/6); verified.",
     }
   explicit/17:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim in n. 11; locator changed from “p. 27 n. 11” to “PDF p. 5 n. 11” (see category/6); verified.",
     }
   development/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   development/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   development/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   development/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   development/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Quote stops before Markl's “in late exilic Judah” (p. 6), likely a slip for “late pre-exilic” (his p. 5).",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Quote stops before Markl's “in late exilic Judah” (p. 6), likely a slip for “late pre-exilic” (his p. 5). Second pass 2026-11-27: re-fetched; quote matched verbatim at p. 6; the trimmed words confirmed; verified.",
     }
   development/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   development/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   development/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; verified. Short narrowed “some scholars reject” → “some scholars question or reject”: White's “difficult to maintain” (development/9) questions the stages; only Kaufmann (via Hayes) rejects them outright, and Ben-Dov's “wrong” targets the claim that monotheism then prevailed absolutely.",
     }
   development/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   development/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim; locator changed from section “Deuteronomy and the Sectarian Debate” to the following heading, “From Henotheism to Monotheism? Not Quite”, under which the passage stands; verified.",
     }
   category/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   category/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   category/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   category/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   category/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   category/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim; locator changed from “p. 23 (abstract)” to “PDF p. 1 (abstract)”: the BU copy is a pre-pagination PDF numbered 1–23 (footer “HTR 115:1 (2022) 000–00”), so HTR page numbers are not findable in it; statement, question and short re-read; verified.",
     }
   category/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim; locator changed from “p. 25” to “PDF p. 3” (see category/6); verified.",
     }
   category/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim; locator changed from “p. 45” to “PDF p. 23” (see category/6); verified.",
     }
   category/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Publisher's description of MacDonald's book; text says “as its publisher summarises it”.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   category/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   category/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   category/12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
-    }
-  category/13:
-    {
-      agent: pass,
-      owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   council/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   council/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   council/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   council/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   council/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   council/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   council/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Quote extended to the list of passages, which the text names.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Quote extended to the list of passages, which the text names. Second pass 2026-11-27: re-fetched; quote matched verbatim at its section; verified.",
     }
   council/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   council/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   council/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   council/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   council/12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Frankel's sentence runs on after a Hebrew word (elohim) the PDF garbles; quoted as two pieces (psalm-82/1–2). “Most scholars” is Frankel's, attributed in the text; the short says “Scholars disagree” because Mongé-Greer (psalm-82/5) says there is no clear consensus.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Frankel's sentence runs on after a Hebrew word (elohim) the PDF garbles; quoted as two pieces (psalm-82/1–2). “Most scholars” is Frankel's, attributed in the text; the short says “Scholars disagree” because Mongé-Greer (psalm-82/5) says there is no clear consensus. Second pass 2026-11-27: re-fetched; both pieces matched verbatim on p. 2 either side of the garbled Hebrew; Frankel's next sentence calls it “this general consensus”, which the page does not repeat; verified.",
     }
   psalm-82/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Mongé-Greer's “no clear consensus” follows her sentence on the identity of the figures in v. 1 (psalm-82/4); read as the identity of the gods.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Mongé-Greer's “no clear consensus” follows her sentence on the identity of the figures in v. 1 (psalm-82/4); read as the identity of the gods. Second pass 2026-11-27: re-fetched; matched verbatim; the sentence follows directly on the identity of the “keepers of justice named in v. 1”, so the reading stands; verified.",
     }
   psalm-82/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/13:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/14:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/15:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   psalm-82/16:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   deuteronomy-32/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Same quote as the-text-of-the-hebrew-bible's Davies citation; re-fetched 2026-11-27.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Same quote as the-text-of-the-hebrew-bible's Davies citation; re-fetched 2026-11-27. Second pass 2026-11-27: re-fetched; quote matched verbatim at its section; verified.",
     }
   deuteronomy-32/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   deuteronomy-32/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   deuteronomy-32/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   deuteronomy-32/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   deuteronomy-32/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   deuteronomy-32/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   deuteronomy-32/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   deuteronomy-32/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angels/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angels/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angels/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angels/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angels/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   angels/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Excerpt copied from the publisher's HTML page in Chrome (scripts get an empty body); line-break hyphens joined.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Excerpt copied from the publisher's HTML page in Chrome (scripts get an empty body); line-break hyphens joined. Second pass 2026-11-27: the registry's HTML page, opened in Chrome, has no chapter body, only a Download chapter link; curl of the HTML page and of …/pdf both get a 202 with no body, and the Archive's …/pdf capture redirects to the HTML page; the publisher's PDF was read in an Internet Archive snapshot (2025-10-02) of …/pdf?stream=true. Quote matched verbatim on p. 461 (in the paragraph after the n. 6 call, not before n. 4); locator changed to “p. 461”; registry url kept (the landing page that links the PDF), access line rewritten to say how it was read; verified.",
     }
   angels/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. As angels/6.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. As angels/6. Second pass 2026-11-27: as angels/6; matched verbatim on p. 461; locator changed to “p. 461”; verified.",
     }
   angels/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/13:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/14:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/15:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   teraphim/16:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-temple/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-temple/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-temple/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-temple/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; verified. Short narrowed “an island in southern Egypt” → “an island in the Nile”: no cited quote says southern Egypt; Mondriaan's abstract has “the island of Elephantine in the Nile River”.",
     }
   elephantine-temple/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-temple/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-temple/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-temple/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-temple/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim; locator corrected “p. 543” → “p. 538”: these exact words are on p. 538 (“Several of these recovered documents have references to “YHW”, the most significant being…”); p. 543 words it differently (“The most significant of all the Aramaic texts…”). Text changed “as the most significant evidence” → “as the most significant of the documents that refer to YHW” to match; verified.",
     }
   elephantine-gods/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/13:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   elephantine-gods/14:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Scope: “this category” is Stökl's first category (mixed or syncretic Judaism, with the hypostasis variant); text scoped so.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Scope: “this category” is Stökl's first category (mixed or syncretic Judaism, with the hypostasis variant); text scoped so. Second pass 2026-11-27: re-fetched; matched verbatim on p. 64; antecedent confirmed (first of the three categories listed on p. 63, the hypostasis variant spanning the page break); verified.",
     }
   elephantine-gods/15:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   tradition/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   tradition/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
   tradition/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
 triggers:
   7@00:08:23:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement.",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Second pass 2026-11-27: re-matched by script at timestamp and speaker, verbatim within the turn; read about two minutes either side, long turns in full; no dropped hedge, no conflict; verified.",
     }
   7@00:39:40:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed to the Dead Sea Scroll sentence and the conclusion; the turn goes on to say Adonai was represented as one of the children of the High God (the Elyon question, left to the-origins-of-yahweh).",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed to the Dead Sea Scroll sentence and the conclusion; the turn goes on to say Adonai was represented as one of the children of the High God (the Elyon question, left to the-origins-of-yahweh). Second pass 2026-11-27: re-matched at timestamp and speaker, contiguous within the 00:39:40 turn, which opens with the verse and the Septuagint reading; read about two minutes either side; no conflict; verified.",
     }
   7@00:43:12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement.",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Second pass 2026-11-27: re-matched by script at timestamp and speaker, verbatim within the turn; read about two minutes either side, long turns in full; no dropped hedge, no conflict; verified.",
     }
   7@00:49:38:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Reports that some scholars see Second Isaiah as the onset of monotheism and adds that council references remain; not a contradiction of explicit, which reports Fredriksen's reading in the text.",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Reports that some scholars see Second Isaiah as the onset of monotheism and adds that council references remain; not a contradiction of explicit, which reports Fredriksen's reading in the text. Second pass 2026-11-27: re-matched at timestamp and speaker; read about two minutes either side; the turn does not say Second Isaiah fails to deny other gods, only that council references remain (as Ben-Dov in angels); no conflict; verified.",
     }
   7@00:50:43:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement.",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Second pass 2026-11-27: re-matched by script at timestamp and speaker, verbatim within the turn; read about two minutes either side, long turns in full; no dropped hedge, no conflict; verified.",
     }
   7@00:58:58:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement.",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Second pass 2026-11-27: re-matched by script at timestamp and speaker, verbatim within the turn; read about two minutes either side, long turns in full; no dropped hedge, no conflict; verified.",
     }
   19@00:38:01:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed: the turn opens “One of those dichotomies that we use a lot” and goes on to Deut 4:19 and 32:8–9.",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed: the turn opens “One of those dichotomies that we use a lot” and goes on to Deut 4:19 and 32:8–9. Second pass 2026-11-27: re-matched at timestamp and speaker; read about two minutes either side; the speaker introduces the point with Pongratz-Leisten's volume (a Lead); no conflict with development; verified.",
     }
   59@00:15:13:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed from the turn's opening (“if we want to argue for the utility of that framework… they should make a case”).",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed from the turn's opening (“if we want to argue for the utility of that framework… they should make a case”). Second pass 2026-11-27: re-matched at timestamp and speaker; read about two minutes either side. Flag: the preceding turn (00:14:06) says “we need to acknowledge that there's not monotheism in the Bible”; not attached; it sits with category's “Scholars disagree” (Fredriksen's side) but is in tension with explicit's short that Second Isaiah denies other gods exist; the attached sentence is about the framework's utility and does not contradict a statement; verified.",
     }
   126@00:16:29:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement.",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Second pass 2026-11-27: re-matched by script at timestamp and speaker, verbatim within the turn; read about two minutes either side, long turns in full; no dropped hedge, no conflict; verified.",
     }
   126@00:16:59:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed; the turn goes on: “So I don't think there's a good case to make for a monotheistic reading of this” (the speaker's own hedge, not quoted).",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed; the turn goes on: “So I don't think there's a good case to make for a monotheistic reading of this” (the speaker's own hedge, not quoted). Second pass 2026-11-27: re-matched at timestamp and speaker; read about two minutes either side; no conflict in the attached text; verified. Flag (conflict to log, not attached): at 00:14:50–00:16:02 the speaker says “I think most scholars these days are on the side of understanding this to mean Adonai is one”, against Tigay's preference for “YHVH is our God, YHVH alone” in shema's text; shema's short (meaning uncertain) is not contradicted. The turn ends “I'm kind of big on that one about no monotheism in the Bible” (see the Ep 59 flag).",
     }
   182@00:07:47:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed before the speaker's account of Burnett's “concretized abstract plural”, which no read source reports in those words.",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed before the speaker's account of Burnett's “concretized abstract plural”, which no read source reports in those words. Second pass 2026-11-27: re-matched at timestamp and speaker; read about two minutes either side; no conflict; verified.",
     }
   121@00:39:58:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed from the autocorrect aside.",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Trimmed from the autocorrect aside. Second pass 2026-11-27: re-matched at timestamp and speaker; read about two minutes either side; “basically a divine image” is the speaker's characterisation and does not contradict teraphim's short; verified.",
     }
   117@00:40:30:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. “probably around 410 BCE”: the speaker's hedge kept; EJ gives 410.",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. “probably around 410 BCE”: the speaker's hedge kept; EJ gives 410. Second pass 2026-11-27: re-matched at timestamp and speaker; read about two minutes either side; no conflict; verified.",
     }
   117@00:46:18:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Turn read with the surrounding oath text; “seems to be” kept.",
+      note: "First pass 2026-11-27: matched by script at timestamp and speaker (Dan McClellan), verbatim within the turn; read about two minutes either side; no conflict with a statement. Turn read with the surrounding oath text; “seems to be” kept. Second pass 2026-11-27: re-matched at timestamp and speaker; read about two minutes either side; no conflict; verified.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: 16 statements. Core explicit cites Coogan and Chapman 2019 (Reference), NABRE Isaiah 44 note (Reference, 2011), Hayes l19 (Reference, 2006), Sperling 2005 (Reference), Markl 2020 (Scholarly), Machinist 2006 (Scholarly) for the claim, and Levine 2014 and Fredriksen 2022 for attributed dissent: 6 independent authors behind the claim, none Host-authored. Holds.",
+      note: "First pass 2026-11-27: 16 statements. Core explicit cites Coogan and Chapman 2019 (Reference), NABRE Isaiah 44 note (Reference, 2011), Hayes l19 (Reference, 2006), Sperling 2005 (Reference), Markl 2020 (Scholarly), Machinist 2006 (Scholarly) for the claim, and Levine 2014 and Fredriksen 2022 for attributed dissent: 6 independent authors behind the claim, none Host-authored. Holds. Second pass 2026-11-27: recount by clause. “First explicit denial in Second Isaiah”: Coogan and Chapman (“first passage in the Bible to explicitly state”) and NABRE (“with Second Isaiah… explicitly monotheistic”; earlier formulas did not exclude other gods) say it outright; Hayes (implicit in Isaiah, “quite explicit” in Second Isaiah) and Markl (earliest evidence in Deuteronomy 4 and Deutero-Isaiah, order debated) support it; Sperling (“most consistent monotheist”) and Machinist (Second Isaiah the late-daters' “favored option”) do not say “first”. So 2 authors state it, 2 more support it, not 6. “Sixth century BCE, during the Babylonian exile”: Coogan (“sixth century in Babylon”) and Machinist (“the Babylonian Exile of the sixth century BCE, in the writing of… Deutero-Isaiah”); Markl's “around, or some time after, 539” and Petry's fifth century are in the text. “Earlier texts… without denying”: NABRE and Sperling. 16 statements kept after one citation cut (category/9); core still backed by 2+ independent Reference sources, none Host-authored. Holds.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: no short says “consensus”. “Scholars generally recognise” (council) rests on Agharanya and Poniatowski's own “generally recognised in scholarship” (2026), with White, NABRE, Hayes and Lemański describing the scenes. “Most scholarly treatments”, “largely fallen out of favor” and “gained some acceptance” (teraphim text) are Sonia's words, attributed. Sperling's “Scholars are in agreement” and Frankel's “Most scholars by now agree” are quoted in texts, attributed and scoped. psalm-82 drops consensus words because Frankel and Mongé-Greer disagree on the state of the field (#80). “scholars say” (first-commandment, explicit) rests on 5 and 6 in-window authors respectively. development's “Many accounts” is weaker than Markl's “Most commonly” and Hayes's “Most scholars conjecture”.",
+      note: "First pass 2026-11-27: no short says “consensus”. “Scholars generally recognise” (council) rests on Agharanya and Poniatowski's own “generally recognised in scholarship” (2026), with White, NABRE, Hayes and Lemański describing the scenes. “Most scholarly treatments”, “largely fallen out of favor” and “gained some acceptance” (teraphim text) are Sonia's words, attributed. Sperling's “Scholars are in agreement” and Frankel's “Most scholars by now agree” are quoted in texts, attributed and scoped. psalm-82 drops consensus words because Frankel and Mongé-Greer disagree on the state of the field (#80). “scholars say” (first-commandment, explicit) rests on 5 and 6 in-window authors respectively. development's “Many accounts” is weaker than Markl's “Most commonly” and Hayes's “Most scholars conjecture”. Second pass 2026-11-27: re-checked each sentence against its source. Agharanya and Poniatowski's n. 15 antecedent is their list of six passages; “scholars say” in explicit rests on 2 authors who state the claim outright and 2 who support it (see publish-rule), which still meets #133. No short widens its source's scope; verified.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Levine, Petry (as reported by Markl), Fredriksen (explicit); Kaufmann (as reported by Hayes), White, Ben-Dov (development); Fredriksen, MacDonald (via publisher), Sommer's redefinition, Markl, Ben-Dov (category); Kaufmann (via Frankel), Lemański's own view (psalm-82); Sonia's dissent from the ancestor reading (teraphim); van der Toorn, Becking, Mondriaan, Stökl (elephantine-gods): each named in the text.",
+      note: "First pass 2026-11-27: Levine, Petry (as reported by Markl), Fredriksen (explicit); Kaufmann (as reported by Hayes), White, Ben-Dov (development); Fredriksen, MacDonald (via publisher), Sommer's redefinition, Markl, Ben-Dov (category); Kaufmann (via Frankel), Lemański's own view (psalm-82); Sonia's dissent from the ancestor reading (teraphim); van der Toorn, Becking, Mondriaan, Stökl (elephantine-gods): each named in the text. Second pass 2026-11-27: MacDonald removed from category with its citation (category/9 cut: publisher's catalogue blurb, not his text); the rest re-checked; verified.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: the Catholic Church (Catechism of the Catholic Church) and Reform Judaism (ReformJudaism.org, Union for Reform Judaism) named in their own words in tradition; Dolansky's “Jewish tradition” and Jacobs's “Jewish thought” are Reference sources' words.",
+      note: "First pass 2026-11-27: the Catholic Church (Catechism of the Catholic Church) and Reform Judaism (ReformJudaism.org, Union for Reform Judaism) named in their own words in tradition; Dolansky's “Jewish tradition” and Jacobs's “Jewish thought” are Reference sources' words. Second pass 2026-11-27: CCC §§200–202 and the URJ page re-fetched; both quotes verbatim; traditions named as the sources name themselves; verified.",
     }
 sources:
   sommer-bo-monotheism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: professor of Bible at the Jewish Theological Seminary. Page date July 22, 2015.",
+      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: professor of Bible at the Jewish Theological Seminary. Page date July 22, 2015. Second pass 2026-11-27: re-fetched; class and venue re-checked; Bible Odyssey (SBL) as Reference follows the registry's precedent; verified.",
     }
   sperling-2005-god-hebrew-scriptures:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2005; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2005; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   hayes-rlst145-l2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2006; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2006; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   machinist-2006-monotheism-biblical-israel:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly: published lecture in JISMOR 1 (Doshisha CISMOR), 2006; Machinist, Harvard Divinity School.",
+      note: "First pass 2026-11-27: Scholarly: published lecture in JISMOR 1 (Doshisha CISMOR), 2006; Machinist, Harvard Divinity School. Second pass 2026-11-27: re-fetched (Doshisha repository PDF; header “JISMOR 1 Special Issue”); page numbers mapped from the printed folios: other-gods/5 corrected to p. 38; pp. 26, 27 confirmed; verified.",
     }
   ballentine-bo-heavenly-hosts:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: associate professor, Department of Religion, Rutgers University. Page date October 3, 2025.",
+      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: associate professor, Department of Religion, Rutgers University. Page date October 3, 2025. Second pass 2026-11-27: re-fetched; class and venue re-checked; verified.",
     }
   ludwig-2005-monotheism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2005; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2005; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   yusa-2005-henotheism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2005; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2005; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   coogan-brief-4e-summary-ch7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2019; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2019; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   nabre-exodus-20-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   brown-bo-ten-commandments:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: William Marcellus McPheeters Professor of Old Testament, Columbia Theological Seminary. Page date June 8, 2017.",
+      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: William Marcellus McPheeters Professor of Old Testament, Columbia Theological Seminary. Page date June 8, 2017. Second pass 2026-11-27: re-fetched; class and venue re-checked; verified.",
     }
   hendel-2005-israelite-religion:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2005; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2005; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   levine-2014-global-monotheism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2014; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2014; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   dolansky-bo-shema:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: associate professor of religion and humanities, Carleton University. Page date April 28, 2021.",
+      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: associate professor of religion and humanities, Carleton University. Page date April 28, 2021. Second pass 2026-11-27: re-fetched; class and venue re-checked; verified.",
     }
   tigay-jps-deut-shema-mjl:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference: JPS Torah Commentary excerpt on MyJewishLearning; year 1996 from the commentary.",
+      note: "First pass 2026-11-27: Reference: JPS Torah Commentary excerpt on MyJewishLearning; year 1996 from the commentary. Second pass 2026-11-27: re-fetched; 1996 is at the edge of the about-30-year window; Tigay is not alone behind shema's short (Dolansky 2021, Kimelman 2022); verified.",
     }
   kimelman-brandeis-shema:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference (flag): Brandeis University feature with Kimelman's line-by-line analysis; Kimelman is professor of classical rabbinic literature, Brandeis. Internet Archive snapshot.",
+      note: "First pass 2026-11-27: Reference (flag): Brandeis University feature with Kimelman's line-by-line analysis; Kimelman is professor of classical rabbinic literature, Brandeis. Internet Archive snapshot. Second pass 2026-11-27: live URL returns 403 to curl; re-read in an Internet Archive snapshot of the same URL (2026-01-14); page frames the translation and analysis as Kimelman's; Reference kept with the flag; verified.",
     }
   nabre-deuteronomy-6-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   jacobs-ej-shema:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference: Encyclopaedia Judaica, signed Louis Jacobs; year null (text may be first-edition).",
+      note: "First pass 2026-11-27: Reference: Encyclopaedia Judaica, signed Louis Jacobs; year null (text may be first-edition). Second pass 2026-11-27: re-fetched; cited only for what Jewish thought holds, beside Kimelman 2022 and Dolansky 2021; verified.",
     }
   burns-2003-review-burnett-elohim:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2003; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2003; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   hayes-rlst145-l5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2006; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2006; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   overholt-jwa-medium-endor:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2009; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2009; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   cox-ackerman-2012-micahs-teraphim:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2012; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2012; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   coogan-brief-4e-summary-ch21:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2019; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2019; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   nabre-isaiah-44-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   hayes-rlst145-l19:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2006; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2006; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   markl-2020-birth-trauma:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2020; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2020; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   fredriksen-2022-many-gods:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly: HTR 115 (2022); typeset PDF posted by Boston University's Department of Religion.",
+      note: "First pass 2026-11-27: Scholarly: HTR 115 (2022); typeset PDF posted by Boston University's Department of Religion. Second pass 2026-11-27: re-fetched; the posted PDF is a pre-pagination version (pages 1–23, footer “HTR 115:1 (2022) 000–00”), not the paginated published article, so the registry's access line said “Published article PDF” wrongly; access line rewritten and locators changed to the PDF's own pages (category/6–8, explicit/16–17). Author-posted copy meets #80; Scholarly kept; verified. Flag: the HTR pagination 23–45 stays in the registry's series line but is not shown in the copy read.",
     }
   hayes-rlst145-l7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2006; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2006; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   white-bo-divine-council:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: PhD (Hebrew Bible, University of St. Michael's College), formerly senior editor at the Biblical Archaeology Society, has taught at five universities, author of Yahweh's Council (Mohr Siebeck 2014); no current post listed. Page date August 14, 2023.",
+      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: PhD (Hebrew Bible, University of St. Michael's College), formerly senior editor at the Biblical Archaeology Society, has taught at five universities, author of Yahweh's Council (Mohr Siebeck 2014); no current post listed. Page date August 14, 2023. Second pass 2026-11-27: re-fetched; class and venue re-checked; verified.",
     }
   ben-dov-2018-thetorah-deuteronomy:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference (flag): TheTorah.com; Ben-Dov is Professor of Bible and Second Temple Literature, Tel Aviv University, per the site.",
-    }
-  macdonald-2012-deut-meaning-monotheism-summary:
-    {
-      agent: pass,
-      owner: "",
-      note: "First pass 2026-11-27: Reference: publisher's description (Mohr Siebeck, FAT II/1, 2nd ed. 2012); author MacDonald, so the checker counts it with any other MacDonald source.",
+      note: "First pass 2026-11-27: Reference (flag): TheTorah.com; Ben-Dov is Professor of Bible and Second Temple Literature, Tel Aviv University, per the site. Second pass 2026-11-27: re-fetched; the article body is in the page's embedded JSON, not its visible HTML; dated 2018-09-20; n. 1 calls it an abbreviation of his fuller scholarly article; Reference kept with the flag; no short rests on it alone; verified.",
     }
   agharanya-poniatowski-2026-nahum-council:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly: The Biblical Annals (KUL), peer-reviewed; authors at the Adventist University of Africa.",
+      note: "First pass 2026-11-27: Scholarly: The Biblical Annals (KUL), peer-reviewed; authors at the Adventist University of Africa. Second pass 2026-11-27: re-fetched; header “The Biblical Annals 16/4 (2026)”, p. 582 confirmed; class follows venue; verified.",
     }
   nabre-genesis-1-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   nabre-1-kings-22-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   frankel-2010-psalm-82:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2010; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2010; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   monge-greer-2023-psalm-82:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly (flag): Pickwick Publications monograph (Wipf & Stock imprint); frontmatter: “First published by Pickwick Publications, 2023”.",
+      note: "First pass 2026-11-27: Scholarly (flag): Pickwick Publications monograph (Wipf & Stock imprint); frontmatter: “First published by Pickwick Publications, 2023”. Second pass 2026-11-27: re-fetched the James Clarke sample chapter PDF (page footer “© 2023 James Clarke and Co Ltd”); chapter 1 “Current Approaches to Psalm 82” confirmed; Scholarly kept with the flag; verified.",
     }
   lemanski-2022-psalm-82:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2022; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2022; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   owusu-ansah-okyere-nsiah-2024-psalm-82:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2024; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2024; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   nabre-psalms-82-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   davies-ej-dead-sea-scrolls:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year null; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year null; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   tov-2023-thetorah-deut-32-8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference (flag): TheTorah.com, not peer-reviewed; Tov is J. L. Magnes Professor of Bible (emeritus), Hebrew University, per the site.",
+      note: "First pass 2026-11-27: Reference (flag): TheTorah.com, not peer-reviewed; Tov is J. L. Magnes Professor of Bible (emeritus), Hebrew University, per the site. Second pass 2026-11-27: re-fetched (body in embedded JSON); Reference kept with the flag; deuteronomy-32's short also rests on NABRE, Davies and Ben-Dov; verified.",
     }
   nabre-deuteronomy-32-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   nabre-daniel-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   ej-angels-bible:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference: Encyclopaedia Judaica (Bamberger); year null (registry); beside NABRE 2011 and van der Toorn 2024 in angels.",
+      note: "First pass 2026-11-27: Reference: Encyclopaedia Judaica (Bamberger); year null (registry); beside NABRE 2011 and van der Toorn 2024 in angels. Second pass 2026-11-27: re-fetched; quote sits in Bamberger's part of the combined Encyclopedia.com entry, under “In the Bible”; verified.",
     }
   ej-angels-apocrypha:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference: Encyclopaedia Judaica (Gutmann); year null (registry); as ej-angels-bible.",
+      note: "First pass 2026-11-27: Reference: Encyclopaedia Judaica (Gutmann); year null (registry); as ej-angels-bible. Second pass 2026-11-27: re-fetched; quotes sit under “In the Apocrypha and Pseudepigrapha”; verified.",
     }
   vandertoorn-2024-persian-imperialism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly: open-access BZAW chapter (De Gruyter 2024); read in Chrome, excerpt saved by hand.",
+      note: "First pass 2026-11-27: Scholarly: open-access BZAW chapter (De Gruyter 2024); read in Chrome, excerpt saved by hand. Second pass 2026-11-27: the HTML page (curl 202 empty; Internet Archive snapshots of it and Chrome both show no chapter body) is only a landing page; read the publisher's own PDF in an Internet Archive snapshot (2025-10-02) of …/pdf?stream=true (CC BY-NC-ND 4.0; pp. 459–468). Registry url kept; access line rewritten to say how it was read; locators set to p. 461; Scholarly kept; verified.",
     }
   cook-bo-household-gods:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: Catherine N. McBurney Professor of Old Testament Language and Literature, Virginia Theological Seminary. Page date January 12, 2024.",
+      note: "First pass 2026-11-27: Reference: Bible Odyssey; BO bio: Catherine N. McBurney Professor of Old Testament Language and Literature, Virginia Theological Seminary. Page date January 12, 2024. Second pass 2026-11-27: re-fetched; class and venue re-checked; verified.",
     }
   nabre-1-samuel-19-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   sonia-2020-caring-for-the-dead:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2020; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2020; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   nabre-genesis-31-notes:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Reference; year 2011; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   schalit-matassa-ej-elephantine:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference: Encyclopaedia Judaica 2nd ed., signed Abraham Schalit and Lidia Matassa (2nd ed.); year null; cited for facts only.",
+      note: "First pass 2026-11-27: Reference: Encyclopaedia Judaica 2nd ed., signed Abraham Schalit and Lidia Matassa (2nd ed.); year null; cited for facts only. Second pass 2026-11-27: re-fetched; quotes confirmed under the opening section, “History of the Jewish Colony at Elephantine” and “The Religion of the Jews in Elephantine”; verified.",
     }
   stokl-2025-elephantine-judaism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2025; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2025; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   mondriaan-2013-anat-yahu:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2013; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2013; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   becking-2020-identity-persian-egypt-intro:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2020; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2020; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   vandertoorn-2016-eshem-herem-bethel:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; year 2016; class, venue and year checked against the fetched page.",
+      note: "First pass 2026-11-27: Scholarly; year 2016; class, venue and year checked against the fetched page. Second pass 2026-11-27: re-fetched; class, venue and year re-checked against the page; verified.",
     }
   ccc-200-202:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition: the Catholic Church.",
+      note: "First pass 2026-11-27: Tradition: the Catholic Church. Second pass 2026-11-27: re-fetched (vatican.va); Tradition; used only for what the Church confesses; verified.",
     }
   urj-shma:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Tradition: Reform Judaism (Union for Reform Judaism).",
+      note: "First pass 2026-11-27: Tradition: Reform Judaism (Union for Reform Judaism). Second pass 2026-11-27: re-fetched; Tradition; used only for what Reform Judaism holds; verified.",
     }
 leads:
   - "Mark S. Smith, The Origins of Biblical Monotheism (OUP 2001), on the divine council's four tiers and the household model: only via Trapp's JHS review, Frankel and Heiser; OUP pages gated."
@@ -1494,6 +1486,7 @@ leads:
   - "Krašovec, Živa Antika 45 (1995): “the majority of commentators” read Psalm 82's gods as Israelite judges; read, but one year outside the window (see uncited)."
   - "van der Toorn, “The Nature of the Biblical Teraphim”, CBQ 52 (1990); Lewis, “Teraphim”, DDD; Schmidt, Israel's Beneficent Dead (1996): via Sonia, Cook and Cox and Ackerman."
 uncited:
+  - "Second pass 2026-11-27, cut from category (was category/9): Mohr Siebeck's catalogue description of Nathan MacDonald, Deuteronomy and the Meaning of “Monotheism” (FAT II/1, 2nd ed. 2012), “He traces the use of 'monotheism' since its coinage in 1660 and argues that its use in Old Testament scholarship frequently reflects a narrowed, intellectualistic conception of religion”: read; marketing copy that reports MacDonald's argument, not his own text, and unlike the OUP chapter summaries (#86) no precedent admits a catalogue blurb; when in doubt, cut. Registry entry macdonald-2012-deut-meaning-monotheism-summary removed (cited by no page); category keeps Fredriksen, Markl, Sommer and Ben-Dov."
   - "Krašovec 1995, Živa Antika 45: read; “the majority of commentators have interpreted these psalms as referring to Israelite judges”; just outside the 30-year window, so not set against Frankel's and Mongé-Greer's in-window statements."
   - "Heiser 2006 (HIPHIL, evangelical e-journal) and Heiser, Bibliotheca Sacra 158 (2001): read; Tradition venues; the “consensus view” that the council's gods became angels is reported only to be disputed."
   - "Frankel 2010 pp. 3–7 and Ben-Dov 2018 n. 16 on whether Elyon and Yahweh are distinct in Deut 32:8–9 and Psalm 82: read; the El/Yahweh question belongs to the-origins-of-yahweh; not stated."

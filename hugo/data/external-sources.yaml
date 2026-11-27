@@ -5974,7 +5974,7 @@ fredriksen-2022-many-gods:
   edition: null
   class: Scholarly
   kind: article
-  access: "Published article PDF posted by Boston University's Department of Religion, open"
+  access: "Author's pre-pagination PDF of the article (pages numbered 1–23, footer “HTR 115:1 (2022) 000–00”) posted by Boston University's Department of Religion, open; locators give the PDF's pages"
   url: "https://www.bu.edu/religion/files/2022/03/Fredriksen-HTR-202266.pdf"
   hostAuthored: false
   tradition: null
@@ -5990,20 +5990,6 @@ markl-2020-birth-trauma:
   kind: article
   access: "Published article PDF in the University of Pretoria repository, open"
   url: "https://repository.up.ac.za/items/e34cd196-1132-4c29-8d6b-7847c6051d3b"
-  hostAuthored: false
-  tradition: null
-
-macdonald-2012-deut-meaning-monotheism-summary:
-  author: "Nathan MacDonald"
-  title: "Publisher's description of Deuteronomy and the Meaning of “Monotheism”"
-  series: "Forschungen zum Alten Testament 2/1"
-  publisher: "Mohr Siebeck"
-  year: 2012
-  edition: "2nd ed."
-  class: Reference
-  kind: publisher-summary
-  access: "Publisher catalogue page, open"
-  url: "https://www.mohrsiebeck.com/en/book/deuteronomy-and-the-meaning-of-monotheism-9783161516801"
   hostAuthored: false
   tradition: null
 
@@ -6352,7 +6338,7 @@ vandertoorn-2024-persian-imperialism:
   edition: null
   class: Scholarly
   kind: book
-  access: "Open-access chapter on the publisher's HTML page; opens in a browser, refuses scripted requests"
+  access: "Open-access chapter (CC BY-NC-ND 4.0) on the publisher's site: the page shows no chapter text, only a Download chapter link to the PDF; refuses scripted requests; the PDF was read in an Internet Archive snapshot (2025-10-02) of the publisher's PDF stream (…/pdf?stream=true)"
   url: "https://www.degruyterbrill.com/document/doi/10.1515/9783111018638-018/html"
   hostAuthored: false
   tradition: null
