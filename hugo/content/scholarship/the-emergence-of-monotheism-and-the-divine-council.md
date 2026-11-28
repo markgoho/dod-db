@@ -692,7 +692,7 @@ statements:
     group: "Gods in Israelite practice"
     question: "Did the Jews of Elephantine have their own temple?"
     short: "Yes. Aramaic papyri from Elephantine, an island in the Nile, show that its Judean community had a temple of its god Yahu in the fifth century BCE; it was destroyed in 410 BCE, and the community asked the governor of Judah for help to rebuild it."
-    text: "The Encyclopaedia Judaica entry says the Elephantine papyri are Aramaic documents, and that the Jewish temple at Elephantine may have been built in the second half of the seventh century or early in the sixth, and in any event before the Persian conquest of Egypt. Jonathan Stökl writes that the written evidence for the Jewish inhabitants comes from the fifth and fourth centuries BCE, when the Achaemenid dynasty ruled Egypt, and M. E. Mondriaan says documents attest to a Jewish temple where sacrifices were offered to YHW. According to the Encyclopaedia Judaica entry, the temple was destroyed in 410 BCE by the priests of the adjoining temple of Khnum, and three years later the community applied to the Persian governor of Judah for permission to rebuild it; Mondriaan describes the petition of Yedaniah, the community's leader, to Bagavahya, governor of Judah. Stökl says a memorandum records the response of Delaiah, governor of Samaria, and Bagavahya that the temple should be rebuilt, and that in 1996 Cornelius von Pilgrim identified the temple's archaeological remains, including traces of an attempt at rebuilding it."
+    text: "The Encyclopaedia Judaica entry says the Elephantine papyri are Aramaic documents, and that the Jewish temple at Elephantine may have been built in the second half of the seventh century or early in the sixth, and in any event before the Persian conquest of Egypt. Jonathan Stökl writes that the written evidence for the Jewish inhabitants comes from the fifth and fourth centuries BCE, when the Achaemenid dynasty ruled Egypt, and M. E. Mondriaan says documents attest to a Jewish temple where sacrifices were offered to YHW. According to the Encyclopaedia Judaica entry, the temple was destroyed in 410 BCE by the priests of the adjoining temple of Khnum, and three years later the community applied to the Persian governor of Judah for permission to rebuild it; Mondriaan describes the petition of Yedaniah, the community's leader, to Bagavahya, governor of Judah. Stökl says a memorandum records the response of Delaiah, governor of Samaria, and Bagavahya that the temple should be rebuilt, and that in 1996 Cornelius von Pilgrim identified the temple's archaeological remains, including traces of an attempt at rebuilding it. James Moore writes that, according to von Pilgrim, there is currently no archaeological evidence of temple renovation at his proposed site, and Tawny Holm that the remains of the rebuilt temple have not been uncovered."
     cites:
       - source: schalit-matassa-ej-elephantine
         locator: "opening section, paragraph 3"
@@ -730,6 +730,14 @@ statements:
         locator: "p. 66"
         quote: "In 1996 Cornelius von Pilgrim identified the archaeological remains of the temple, including traces of an attempt at rebuilding it"
         read: 2026-11-27
+      - source: moore-2024-administering-cult
+        locator: "p. 320, note 40"
+        quote: "According to von Pilgrim, there is currently no archaeological evidence of temple renovation at his proposed site for the Yahô Temple"
+        read: 2026-11-28
+      - source: holm-2024-samarians-egyptian-diaspora
+        locator: "p. 204"
+        quote: "Documents from Elephantine dated after 404 BCE may indicate the temple was indeed rebuilt by then, even if the remains of this second temple have not been uncovered."
+        read: 2026-11-28
   - id: elephantine-gods
     group: "Gods in Israelite practice"
     question: "Did the Jews of Elephantine worship other gods besides Yahu?"
@@ -800,7 +808,7 @@ statements:
     group: "Gods in Israelite practice"
     question: "Where did the Jews of Elephantine come from?"
     short: "Most scholars agree the community was in place before the Persian conquest of Egypt, but when it arrived is much debated; on where it came from, scholars name Judah, the former northern kingdom of Israel, or both."
-    text: "Tawny Holm writes that the time of the community's arrival is much debated, but that most scholars agree it was before the Persian conquest. Ingo Kottsieper notes that the community itself claimed, when asking to rebuild its temple in 407 BCE, that the temple had stood before Cambyses conquered Egypt, and he dates the community's consolidation with a temple on Elephantine to the reign of Amasis at the latest; M. E. Mondriaan writes that their date of arrival is unknown but that they were well established by 525 BCE. Bob Becking says it is historically unclear when they settled and that the options suggested range from Judeans who escaped Josiah's policy to recruitment by the Persians; he argues that they came in waves. Mondriaan holds that they probably came from the former northern kingdom of Israel. Jonathan Stökl describes Karel van der Toorn's reconstruction of the ancestors' path from Israel via Palmyra to Elephantine, and says it rests on, among other things, van der Toorn's own disputed reading of Papyrus Amherst 63; Stökl himself writes of ancestors who came from the territories of the former kingdoms of Judah and Israel. Kottsieper reads the community's old spelling of the god's name and the Hebrew epithet Sabaoth as traditions brought from Judah and/or Israel, and denies that the community's later spelling of the name, YHW, can be used as an argument for the original Samarian or Israelite background Gad Barnea proposes; Barnea writes that the founders came from Palestine, most probably in the middle of the sixth century BCE."
+    text: "Tawny Holm writes that the time of the community's arrival is much debated, but that most scholars agree it was before the Persian conquest. Ingo Kottsieper notes that the community itself claimed, when asking to rebuild its temple in 407 BCE, that the temple had stood before Cambyses conquered Egypt, which he dates to 526 BCE, and he dates the community's consolidation with a temple on Elephantine to the reign of Amasis at the latest; M. E. Mondriaan writes that their date of arrival is unknown but that they were well established by 525 BCE, the year he gives for Cambyses' conquest. Bob Becking says it is historically unclear when they settled and that the options suggested range from Judeans who escaped Josiah's policy to recruitment by the Persians; he argues that they came in waves. Mondriaan holds that they probably came from the former northern kingdom of Israel. Jonathan Stökl describes Karel van der Toorn's reconstruction of the ancestors' path from Israel via Palmyra to Elephantine, and says it rests on, among other things, van der Toorn's own disputed reading of Papyrus Amherst 63; Stökl himself writes of ancestors who came from the territories of the former kingdoms of Judah and Israel. Kottsieper reads the community's old spelling of the god's name and the Hebrew epithet Sabaoth as traditions brought from Judah and/or Israel, and denies that the community's later spelling of the name, YHW, can be used as an argument for the original Samarian or Israelite background Gad Barnea proposes; Barnea writes that the founders came from Palestine, most probably in the middle of the sixth century BCE."
     cites:
       - source: holm-2024-samarians-egyptian-diaspora
         locator: "p. 204"
@@ -808,7 +816,7 @@ statements:
         read: 2026-11-27
       - source: kottsieper-2024-yhh-sbaot
         locator: "p. 246"
-        quote: "It is common knowledge that the Jaho-community itself claimed in 407 BC as an argument for the rebuilding of their temple that had already existed before the conquest of Egypt by Cambyses"
+        quote: "It is common knowledge that the Jaho-community itself claimed in 407 BC as an argument for the rebuilding of their temple that had already existed before the conquest of Egypt by Cambyses, i.e., before 526 BC."
         read: 2026-11-27
       - source: kottsieper-2024-yhh-sbaot
         locator: "p. 262"
@@ -854,6 +862,10 @@ statements:
         locator: "p. 1"
         quote: "The founders of this community had originally arrived at the Syene area from Palestine, most probably in the middle of the sixth century BCE, still under the rule of the Egyptian twenty-sixth dynasty."
         read: 2026-11-27
+      - source: mondriaan-2013-anat-yahu
+        locator: "p. 540, note 6"
+        quote: "the Jewish temple stood on Elephantine before the Persian conquest of Egypt by Cambyses in 525 B.C.E."
+        read: 2026-11-28
   - id: elephantine-passover
     group: "Gods in Israelite practice"
     question: "Is the Elephantine “Passover letter” about Passover?"

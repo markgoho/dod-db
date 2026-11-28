@@ -439,7 +439,7 @@ statements:
     group: "Other early writings"
     question: "Was Mary Magdalene Jesus's wife?"
     short: "The New Testament gospels say nothing of it. The Gospel of Philip calls her Jesus's companion, and scholars differ on whether it portrays her as his wife."
-    text: "Karen King's article in New Testament Studies says the New Testament gospels, the earliest and most historically reliable information about Jesus, are silent on whether he was married, and that historians' arguments have not led to a firm consensus. She reads the Gospel of Philip as representing the incarnate Jesus as married to Mary Magdalene, notes that neither of its terms for her necessarily implies marriage, though they often do depending on context, and says that in her opinion Philip gives no evidence useful for the historical Jesus's marital status. Simon Gathercole's article in the same journal says the language of partnership, union and kissing in Philip conveys the intimacy of the true disciple without calling Mary Jesus's spouse, and that it would overstate the text to call her his wife; he finds no clear reference to Jesus's marriage in any ancient text, Christian or non-Christian. Gertrud Tönsing says there is no evidence that the relationship was in any way sexual, as popular literature often implies, and that Mary Magdalene was likely unmarried, since she is named after her place of origin rather than as someone's wife or mother. An editorial in New Testament Studies says the fragment King published in 2014 as the Gospel of Jesus's Wife is now widely accepted as a recent forgery; King had written that it does not provide evidence that the historical Jesus was married."
+    text: "Karen King's article in New Testament Studies says the New Testament gospels, the earliest and most historically reliable information about Jesus, are silent on whether he was married, and that historians' arguments have not led to a firm consensus. She reads the Gospel of Philip as representing the incarnate Jesus as married to Mary Magdalene, notes that neither of its terms for her necessarily implies marriage, though they often do depending on context, and says that in her opinion Philip gives no evidence useful for the historical Jesus's marital status. Simon Gathercole's article in the same journal says the language of partnership, union and kissing in Philip conveys the intimacy of the true disciple without calling Mary Jesus's spouse, and that it would overstate the text to call her his wife; he finds no clear reference to Jesus's marriage in any ancient text, Christian or non-Christian. Brittany Wilson, in the Women's Bible Commentary, writes that the Gospel of Mary and the Gospel of Philip contain material some have argued suggests a sexual relationship between Mary Magdalene and Jesus, but that it is more likely, many argue, that this ambiguous material conveys her favored status among the disciples as Jesus's spiritual, not sexual, companion; Jesus's preferential treatment of her, she says, does not prove that she was his wife. Gertrud Tönsing says there is no evidence that the relationship was in any way sexual, as popular literature often implies, and that Mary Magdalene was likely unmarried, since she is named after her place of origin rather than as someone's wife or mother. An editorial in New Testament Studies says the fragment King published in 2014 as the Gospel of Jesus's Wife is now widely accepted as a recent forgery; King had written that it does not provide evidence that the historical Jesus was married."
     cites:
       - source: king-2013-nts-philip
         locator: "author manuscript p. 1, note 1"
@@ -485,6 +485,21 @@ statements:
         locator: "author manuscript p. 1, opening paragraph"
         quote: "The fragment does not provide evidence that the historical Jesus was married, but concerns an early Christian debate over whether women who are wives and mothers can be disciples of Jesus."
         read: 2026-11-27
+      - source: wilson-2012-wbc-mary-magdalene
+        url: "https://books.google.com/books?id=9uUMZ_g2_NoC&pg=PA531"
+        locator: "“Mary Magdalene and Her Interpreters”, p. 531, right column, paragraph beginning “Two of the other most important sources”"
+        quote: "Both of these texts also contain controversial material that some have argued suggests a sexual relationship between Mary Magdalene and Jesus."
+        read: 2026-11-28
+      - source: wilson-2012-wbc-mary-magdalene
+        url: "https://books.google.com/books?id=9uUMZ_g2_NoC&pg=PA532"
+        locator: "“Mary Magdalene and Her Interpreters”, p. 532, left column"
+        quote: "However, it is more likely, many argue, that this ambiguous material conveys Mary Magdalene's favored status among the disciples as Jesus' spiritual, not sexual, companion."
+        read: 2026-11-28
+      - source: wilson-2012-wbc-mary-magdalene
+        url: "https://books.google.com/books?id=9uUMZ_g2_NoC&pg=PA532"
+        locator: "“Mary Magdalene and Her Interpreters”, p. 532, left column"
+        quote: "Jesus' preferential treatment toward her does not prove that she was his wife, but rather her prominence over Peter and the other disciples."
+        read: 2026-11-28
   - id: tradition
     group: "Religious traditions"
     question: "What do churches hold about her today?"
