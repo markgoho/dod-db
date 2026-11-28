@@ -144,7 +144,7 @@ statements:
   - id: animal-apocalypse
     group: "The book of 1 Enoch"
     question: "When was the Animal Apocalypse (1 Enoch 85–90) written?"
-    short: "In the Maccabean era, in the second century BCE, sources say, though its date, like that of every part of 1 Enoch, has drawn a range of suggestions."
+    short: "In its present form, in the Maccabean era, in the second century BCE, sources say, though its date, like that of every part of 1 Enoch, has drawn a range of suggestions."
     text: "George Nickelsburg and James VanderKam's introduction to their translation says the vision in its present form dates from the time of Judas Maccabeus, between 164 and 160 BCE, though the parallel passages in 90:6–19 may indicate an earlier date around 200 BCE. Lorenzo DiTommaso's chapter in an SBL Press volume says it derives from the same Maccabean-era setting as the visions of Daniel; his note says its date, as with every part of 1 Enoch, has drawn a range of suggestions, and reports Nickelsburg's 165–163 BCE. Martha Himmelfarb's chapter in the same volume says the Book of Dreams (chapters 83–90) can be placed in the second century BCE with considerable confidence, even if there is some disagreement about where in that century."
     cites:
       - source: nickelsburg-vanderkam-2012-introduction
@@ -166,16 +166,12 @@ statements:
   - id: epistle
     group: "The book of 1 Enoch"
     question: "When was the Epistle of Enoch written?"
-    short: "Sources place it in the second century BCE, though one says a second-century date for the Epistle as a whole is possible but by no means certain."
-    text: "Nickelsburg and VanderKam say the Epistle (chapters 91/92–105) dates from the second century BCE and was added as a conclusion to the corpus before the Book of Parables and the Book of the Luminaries were incorporated into the collection. Chad Pierce's Durham dissertation reports that Loren Stuckenbruck dates four of the five units in chapters 91–108, the Epistle among them, to the second century BCE. Martha Himmelfarb, in another SBL Press volume, says a second-century date for the Epistle as a whole is possible but by no means certain, and so treats the Apocalypse of Weeks embedded in it on its own; in a later chapter she places the Apocalypse of Weeks in the second century BCE with considerable confidence."
+    short: "Not settled: George Nickelsburg and James VanderKam date it to the second century BCE; Martha Himmelfarb calls a second-century date for the Epistle as a whole possible but by no means certain."
+    text: "Nickelsburg and VanderKam say the Epistle (chapters 91–105) dates from the second century BCE and was added as a conclusion to the corpus before the Book of Parables and the Book of the Luminaries were incorporated into the collection. Martha Himmelfarb, in an SBL Press volume on the Pseudepigrapha, says a second-century date for the Epistle as a whole is possible but by no means certain, and so treats the Apocalypse of Weeks embedded in it on its own; in a later chapter she places the Apocalypse of Weeks in the second century BCE with considerable confidence."
     cites:
       - source: nickelsburg-vanderkam-2012-introduction
         locator: "p. 12"
         quote: "The Epistle dates from the second century b.c.e. and was added as a conclusion to the corpus before both the Book of Parables and the Book of the Luminaries were incorporated into the collection."
-        read: 2026-11-27
-      - source: pierce-2009-spirits-proclamation
-        locator: "p. 67"
-        quote: "Stuckenbruck dates the first four of these units to the second century B.C.E."
         read: 2026-11-27
       - source: himmelfarb-2019-pseudepigrapha-greek
         locator: "p. 266 n. 7"
@@ -324,7 +320,7 @@ statements:
   - id: spirits-in-prison
     group: "The book of 1 Enoch"
     question: "Are the “spirits in prison” of 1 Peter 3:19–20 the Watchers?"
-    short: "Likely, in the sources read, which take them as the rebellious angels of the Watchers story; William Dalton, whose 1964 study has dominated scholarship on the passage, was instrumental in developing that reading."
+    short: "That is the reading of William Dalton, whose 1964 study has dominated scholarship on the passage, and of Spitta, Selwyn and Reicke; Kelley Coblentz Bautch calls them likely rebellious angels of Enochic lore."
     text: "Chad Pierce's Durham dissertation says a number of scholars in the early twentieth century applied the fallen-angel tradition to 1 Peter 3:19, and that William Dalton, whose thorough work has dominated scholarship since it was first published in 1964, was instrumental in developing this interpretation: like Spitta, Selwyn and Reicke, Dalton holds that the spirits in prison are the Watchers. Kelley Coblentz Bautch's chapter in an SBL Press volume describes 1 Peter 3:18–22 as Jesus preaching to the spirits in prison, likely rebellious angels of Enochic lore."
     cites:
       - source: pierce-2009-spirits-proclamation
