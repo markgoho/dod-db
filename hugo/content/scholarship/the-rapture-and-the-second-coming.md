@@ -72,6 +72,68 @@ statements:
         locator: "p. 176, section 5 “The roots of contemporary millennialism”"
         quote: "Recent research has provided more information about previously neglected, ignored or unknown texts that illuminate the origins of millenarian thinking and the rapture."
         read: 2026-11-27
+  - id: forerunners
+    group: "Where the idea came from"
+    question: "Did anyone teach a rapture before Darby?"
+    short: "That is debated, sources say: some hold that the idea was taught before him, others that it first appeared in the nineteenth century. Scholars have questioned the claim that Darby took it from the visions of Margaret Macdonald in 1830."
+    text: "David Malcolm Bennett, in the Evangelical Quarterly, reports a debate between those who believe the pretribulation rapture was taught in the early church and those who say it did not emerge until the nineteenth century, and notes the argument that Ephraem or Pseudo-Ephraem, and the medieval Fra Dolcino, taught it. Peter Lee's doctoral thesis on Darby says not all scholars agree that originality can be ascribed to Darby. Bennett finds that the sermon attributed to Pseudo-Ephraem has many Christians going through the tribulation, not raptured out of it, while the account of Dolcino's teaching, written by an opponent, shows one major parallel, a pretribulation rapture. Lee calls the case Tim LaHaye and Jerry Jenkins make for the Baptist pastor Morgan Edwards (1788) not conclusive, and says the account of the end by Manuel Lacunza, published in 1827, might well have influenced Darby, though the two differ on the rapture. Mark Sweetnam and Crawford Gribben say that, against Dave MacPherson's claim that Darby repackaged the utterances of Margaret Macdonald, more scholarly contributions have questioned any such relationship; Lee also disputes it. Pieter de Villiers reports the argument that Darby took the teaching from Macdonald, and Thomas Ice's claim for Edwards."
+    cites:
+      - source: bennett-2008-eq-pseudo-ephraem
+        locator: "p. 143, opening paragraph"
+        quote: "Some believe that this and related ideas were taught in the early church, while others say that they did not emerge until the nineteenth century."
+        read: 2026-11-27
+      - source: bennett-2008-eq-pseudo-ephraem
+        locator: "p. 143, opening paragraph"
+        quote: "As part of that debate it has been argued that Ephraem (c.306-73) or Pseudo-Ephraem (Late 4th to early 7th century)"
+        read: 2026-11-27
+      - source: bennett-2008-eq-pseudo-ephraem
+        locator: "p. 143, opening paragraph"
+        quote: "Dolcino (13th to 14th century) taught a pretribulation rapture and related concepts."
+        read: 2026-11-27
+      - source: lee-2010-darby-eschatology
+        locator: "p. 174"
+        quote: "Not all scholars are in agreement that originality can be ascribed to Darby."
+        read: 2026-11-27
+      - source: bennett-2008-eq-pseudo-ephraem
+        locator: "p. 153"
+        quote: "They have not been raptured out of it."
+        read: 2026-11-27
+      - source: bennett-2008-eq-pseudo-ephraem
+        locator: "p. 160"
+        quote: "there is one major parallel, a pretribulation rapture, plus other similarities"
+        read: 2026-11-27
+      - source: lee-2010-darby-eschatology
+        locator: "p. 174"
+        quote: "However, the views of the authors are not conclusive"
+        read: 2026-11-27
+      - source: lee-2010-darby-eschatology
+        locator: "p. 159"
+        quote: "However, the narrative of the event being published in 1827 might well have influenced Darby’s thoughts, allowing him to be adaptive to his own interpretation."
+        read: 2026-11-27
+      - source: lee-2010-darby-eschatology
+        locator: "p. 158"
+        quote: "There are clear distinctions between Lacunza and Darby regarding the rapture event"
+        read: 2026-11-27
+      - source: sweetnam-gribben-2009-jets-darby
+        locator: "p. 575"
+        quote: "Dave MacPherson has made a long career of suggesting that Darby and his followers successfully perpetrated a “Rapture Hoax,” skillfully and successfully repackaging the ecstatic utterances of Margaret Macdonald as dispensational theology."
+        read: 2026-11-27
+      - source: sweetnam-gribben-2009-jets-darby
+        locator: "p. 575"
+        quote: "Other, more scholarly contributions have questioned the existence of any such relationship."
+        read: 2026-11-27
+      - source: lee-2010-darby-eschatology
+        locator: "p. 162"
+        quote: "This point is supported by Steve Stephens, who attributes the source to Margaret MacDonald, a matter that I would dispute"
+        read: 2026-11-27
+      - source: devilliers-2019-stj-millennialism
+        locator: "p. 176, n. 29"
+        quote: "Some argue that Darby took it over from a Scottish girl, Margaret Macdonald, who, in 1830, experienced a vision in a healing service which, she claimed, revealed the teaching to her."
+        read: 2026-11-27
+      - source: devilliers-2019-stj-millennialism
+        locator: "p. 182"
+        quote: "Also, of specific relevance is a reference by Ice to Edwards, a pastor from Wales who settled in the United States in 1761 in Philadelphia and who expected a rapture on the basis of Daniel’s 70th week, happening 3 1/2 years before the Parousia."
+        read: 2026-11-27
   - id: dispensationalism
     group: "Where the idea came from"
     question: "What is dispensationalism, and where does the rapture fit in it?"
@@ -250,6 +312,40 @@ statements:
         locator: "section “Rapture Theology”"
         quote: "The Latin word rapio, which in the Latin Vulgate’s translation of 1 Thessalonians 4:17 translates the Greek harpazo (‘snatch up’), is the etymological starting point for the term ‘Rapture’."
         read: 2026-11-27
+  - id: parousia
+    group: "The New Testament passages"
+    question: "What does the word parousia mean?"
+    short: "“Presence” or “arrival”, sources say. In the Greek world the word was also used for the visit of a king or emperor to a city."
+    text: "Dale Martin's Yale lectures say parousia is a Greek term that just means “presence” or “coming”, and that it would refer to the time when a king or the emperor came to visit a city and its leading people went out to meet him and accompany him back in; he calls it a political, civic term. Sydney Tooth says parousia often simply means “presence” or “arrival”, as it does elsewhere in Paul's letters. Joseph Plevnik, in Biblica, says Hellenistic parousias depict citizens welcoming a royal visitor into their city. He reports that the scholar A. Deissmann took the word to be a technical term, that other scholars then read 1 Thessalonians 4:13–18 as a replica of imperial parousias, and that after J. Dupont's critique the arguments of Deissmann and E. Peterson could no longer be maintained."
+    cites:
+      - source: martin-rlst152-l23
+        locator: "ch. 1 [00:00:00]"
+        quote: 'That''s the parousia , which is a Greek term that just means "presence" or "coming," and we''ll refer to the time when a king or the emperor would come to visit a city, and all the people in the city, the important people would come out of the city, out of the gates, to meet the king and give him gifts and the king would give them gifts, and they would all accompany the king back into the city.'
+        read: 2026-11-27
+      - source: martin-rlst152-l23
+        locator: "ch. 1 [00:00:00]"
+        quote: "It's a purely sort of political civic kind of term."
+        read: 2026-11-27
+      - source: tooth-2023-cdamm-1-thessalonians
+        locator: "section “Parousia”"
+        quote: "Parousia often simply means ‘presence’ or ‘arrival’, as it does elsewhere in Paul’s letters"
+        read: 2026-11-27
+      - source: plevnik-1999-biblica-1-thess-4-17
+        locator: "abstract, p. 537"
+        quote: "Hellenistic parousias depict the citizens making the royal visitor welcome in their city, whereas 1 Thess 4,13-18 depicts the effect of the Lord’s coming on them."
+        read: 2026-11-27
+      - source: plevnik-1999-biblica-1-thess-4-17
+        locator: "p. 538"
+        quote: "He took this word to be a technical term."
+        read: 2026-11-27
+      - source: plevnik-1999-biblica-1-thess-4-17
+        locator: "p. 541"
+        quote: "In the wake of his article, other scholars began to interpret the coming of Christ described in 1 Thess 4,13-18 as a replica of Hellenistic imperial parousias"
+        read: 2026-11-27
+      - source: plevnik-1999-biblica-1-thess-4-17
+        locator: "p. 542"
+        quote: "After Dupont’s critique the arguments of Deissmann and Peterson could no longer be maintained."
+        read: 2026-11-27
   - id: paul-expected
     group: "The New Testament passages"
     question: "Did Paul expect to be alive when Jesus came?"
@@ -284,7 +380,7 @@ statements:
     group: "The New Testament passages"
     question: "What do scholars make of the rapture as a reading of the New Testament?"
     short: "Many criticize the doctrine, sources say. It combines 1 Thessalonians 4:17 with Matthew 24:40–41 and passages from Revelation."
-    text: "Sydney Tooth says that, despite having little support among most scholars, rapture theology remains extremely popular among many Christians, and that besides 1 Thessalonians 4:13–18 it draws on Matthew 24 and Revelation 20:1–6, Matthew 24:40–41 above all. The New Catholic Encyclopedia says many scholars criticize the doctrine on both biblical and theological grounds. The New American Bible notes call it a construction that combines 1 Thessalonians 4:17 with Matthew 24:40–41, Luke 17:34–35 and passages from Revelation in a scheme of millennial dispensationalism, and read the one “taken” in Matthew 24:40–41 as probably taken into the kingdom at the coming of the Son of Man. Sean Durbin says dispensationalists developed the doctrine to maintain their distinction between Israel and the church; Peter Lee's doctoral thesis on Darby says that for Darby the pretribulation rapture was derived not from Scripture as such but from the doctrine of the two peoples of God."
+    text: "Sydney Tooth says that, despite having little support among most scholars, rapture theology remains extremely popular among many Christians, and that besides 1 Thessalonians 4:13–18 it draws on Matthew 24 and Revelation 20:1–6, Matthew 24:40–41 above all. The New Catholic Encyclopedia says many scholars criticize the doctrine on both biblical and theological grounds. The New American Bible notes call it a construction that combines 1 Thessalonians 4:17 with Matthew 24:40–41, Luke 17:34–35 and passages from Revelation in a scheme of millennial dispensationalism, and read the one “taken” in Matthew 24:40–41 as probably taken into the kingdom at the coming of the Son of Man. M. Eugene Boring and Fred Craddock's People's New Testament Commentary says modern dispensationalism has understood those “taken” as removed from the world at the rapture, but that Matthew, like the rest of the New Testament, has no rapture: to be “taken” is to be gathered into the saved community at the end, as some were taken into the ark. Sean Durbin says dispensationalists developed the doctrine to maintain their distinction between Israel and the church; Peter Lee's doctoral thesis on Darby says that for Darby the pretribulation rapture was derived not from Scripture as such but from the doctrine of the two peoples of God."
     cites:
       - source: tooth-2023-cdamm-1-thessalonians
         locator: "section “Popular Reception”, last paragraph"
@@ -317,6 +413,14 @@ statements:
       - source: lee-2010-darby-eschatology
         locator: "p. 175"
         quote: "but from the doctrine of the two peoples of God, which requires it."
+        read: 2026-11-27
+      - source: boring-craddock-2004-peoples-nt-commentary
+        locator: "p. 92, note on Matthew 24:40–41"
+        quote: "Modern dispensationalism has understood those who are “taken” as those who are temporarily removed from the world at the “rapture” (see on 1 Thess. 4:13–5:11)."
+        read: 2026-11-27
+      - source: boring-craddock-2004-peoples-nt-commentary
+        locator: "p. 92, note on Matthew 24:40–41"
+        quote: "However, like the rest of the New Testament, Matthew has no rapture in his eschatological understanding. Those who are “taken” refers to being gathered into the saved community at the eschaton, just as some were taken into the ark."
         read: 2026-11-27
   - id: this-generation
     group: "The New Testament passages"
@@ -390,7 +494,7 @@ statements:
     group: "The thousand years, preterism and Israel"
     question: "What is preterism?"
     short: "A way of reading Revelation as already fulfilled, for the most part, in the past. It is one of the main schools of reading the book, beside futurist and historicist readings."
-    text: "Ulrich Lehner's article in the Journal of Baroque Studies says that for preterists most of Revelation was already fulfilled, while futurists argued that only a small part had been, and that most Protestant interpreters adopted a historicist view that saw Christian history foretold in the book. He calls the Jesuit Luis de Alcázar's commentary the first preterist commentary on Revelation, reading almost the entire book as early church history, and says many interpreters of all denominations followed him. Carlos Molina's doctoral thesis at the University of Pretoria names four major schools of interpreting Revelation: preterism, futurism, historicism and idealism. Keith Mathison, writing for Ligonier Ministries, an international Christian discipleship organization, holds that if many of Revelation's prophecies concerned the imminent AD 70 destruction of Jerusalem, the book should be read in a basically preterist manner."
+    text: "Ulrich Lehner's article in the Journal of Baroque Studies says that for preterists most of Revelation was already fulfilled, while futurists argued that only a small part had been, and that most Protestant interpreters adopted a historicist view that saw Christian history foretold in the book. He calls the Jesuit Luis de Alcázar's commentary the first preterist commentary on Revelation, reading almost the entire book as early church history, and says many interpreters of all denominations followed him. Carlos Molina's doctoral thesis at the University of Pretoria names four major schools of interpreting Revelation: preterism, futurism, historicism and idealism. John Noe, in the Journal of the Evangelical Theological Society, distinguishes full preterists, for whom Revelation concerned only events of the first century and was fulfilled in 70 CE in Christ's coming in the destruction of Jerusalem and the temple, from partial preterists; he says most, if not all, amillennialists, and postmillennialists too, take a partial-preterist approach, and that amillennialists generally oppose full preterism. Noe argues for a preterist-idealist reading himself. J. A. du Rand and Y. M. Song, in Acta Theologica, call the advocates of partial preterism a minority in research on Revelation, and describe two lines within it: a consistent partial preterism that reads the whole book as God's judgement on the apostate Jews in 70 CE, and a transitional one that takes the main theme of Revelation 12–19 to be God's judgement on Rome. Keith Mathison, writing for Ligonier Ministries, an international Christian discipleship organization, holds that if many of Revelation's prophecies concerned the imminent AD 70 destruction of Jerusalem, the book should be read in a basically preterist manner."
     cites:
       - source: lehner-2014-post-tridentine-revelation
         locator: "p. 26, section “Post-Reformation Interpreters”"
@@ -415,6 +519,38 @@ statements:
       - source: ligonier-mathison-2012-johns-prophecy
         locator: "paragraph beginning “If many of the prophecies”"
         quote: "If many of the prophecies in John’s book concerned the imminent AD 70 destruction of Jerusalem, we should interpret this New Testament prophetic book in a basically preterist manner as well."
+        read: 2026-11-27
+      - source: noe-2006-jets-preterist-idealist
+        locator: "p. 767, n. 1"
+        quote: "The term “preterists” means “full preterists” in contrast to “partial preterists.”"
+        read: 2026-11-27
+      - source: noe-2006-jets-preterist-idealist
+        locator: "p. 767, “The preterist view”"
+        quote: "believe that the Book of Revelation speaks to particular circumstances and events that were fulfilled within the lifetime of the book’s original first-century audience and that there is nothing in it about our future."
+        read: 2026-11-27
+      - source: noe-2006-jets-preterist-idealist
+        locator: "p. 767, “The preterist view”"
+        quote: "in ad 70 in conjunction with Christ’s divine visitation, coming, and return in the destruction of Jerusalem and the Temple."
+        read: 2026-11-27
+      - source: noe-2006-jets-preterist-idealist
+        locator: "p. 778, “Partial-preterist interpretation”"
+        quote: "Most, if not all, amillennialists subscribe to a partial-preterist understanding in varying degrees."
+        read: 2026-11-27
+      - source: noe-2006-jets-preterist-idealist
+        locator: "p. 778, “Partial-preterist interpretation”"
+        quote: "As a group, however, amillennialists generally oppose full preterism"
+        read: 2026-11-27
+      - source: noe-2006-jets-preterist-idealist
+        locator: "p. 778, “The postmillennial view”"
+        quote: "Like amillennialists, postmillennialists take a partial-preterist approach"
+        read: 2026-11-27
+      - source: durand-song-2004-acta-partial-preterism
+        locator: "p. 25, n. 3"
+        quote: "While they are a minoriy in the contemporary research of Revelation, partial preterism seems to be regarded as an appropriate interpretation in the context of the grammatico-historical method"
+        read: 2026-11-27
+      - source: durand-song-2004-acta-partial-preterism
+        locator: "p. 25, abstract"
+        quote: "There are two lines of thought in exegetical circles concerning the interpretation of partial preterism, applied to Rev. 12-13: (1) the consistent partial preterism, according to which the whole book of Revelation is God's judgement directed toward the apostate Jews in AD 70; (2) the transitional partial preterism which argues that the main theme of Rev. 12-19 is God's judgement on Rome."
         read: 2026-11-27
   - id: israel
     group: "The thousand years, preterism and Israel"
@@ -453,6 +589,36 @@ statements:
       - source: smith-2010-baylor-christian-affinity-israel
         locator: "abstract, PDF p. 2"
         quote: "This historical trajectory, rather than the premillennial dispensationalism of John Nelson Darby, best explains the foundations of American popular affinity for the State of Israel and the characteristics of contemporary American Christian Zionism."
+        read: 2026-11-27
+  - id: six-day-war
+    group: "The thousand years, preterism and Israel"
+    question: "Did the 1967 war matter to prophecy believers?"
+    short: "Yes, sources say. For many American evangelicals, Israel's expansion in 1967, including East Jerusalem, added to the prophetic significance of its founding in 1948, and many premillennialists saw fulfilled prophecy in these events and expected the rapture within a generation of them."
+    text: "Robert O. Smith's Baylor dissertation says that for many American evangelicals the prophetic significance of 1948 was augmented by Israel's expansion in 1967, including its occupation of East Jerusalem, the Old City and the Temple Mount. Sean Durbin's entry on premillennialism in the Critical Dictionary of Apocalyptic and Millenarian Movements says Israel's establishment in 1948 and its expansion in 1967 brought some historicism back into premillennialists' reading of prophecy, and that many took this as the fulfilment of prophecy and expected the rapture and Jesus's return within a generation. Tristan Sturm and Tom Albrecht's entry on Hal Lindsey in the same dictionary says the 1967 Six-Day War affirmed to Lindsey that God had set an apocalyptic timeline in motion. Frannie Comstock's Encyclopaedia Britannica article on Christian Zionism says Jerry Falwell was particularly galvanized by Israel's success in the war and its seizure of religious sites in Jerusalem's Old City, and that for some evangelicals the Jews had succeeded in the beginnings of an apocalyptic battle for God."
+    cites:
+      - source: smith-2010-baylor-christian-affinity-israel
+        locator: "p. 24"
+        quote: "For many American evangelicals, the prophetic significance of 1948 was augmented by Israel’s expansion in 1967, including its occupation of East Jerusalem, including the Old City and the Temple Mount."
+        read: 2026-11-27
+      - source: durbin-2023-cdamm-premillennialism
+        locator: "s.v. “Premillennialism”, paragraph beginning “The establishment of Israel”"
+        quote: "The establishment of Israel in 1948 and its expansion in 1967 brought some elements of historicism back into premillennialists’ interpretation of prophecy"
+        read: 2026-11-27
+      - source: durbin-2023-cdamm-premillennialism
+        locator: "s.v. “Premillennialism”, paragraph beginning “The establishment of Israel”"
+        quote: "Many conceded and celebrated that this event was the fulfilment of biblical prophecy and that the Rapture of the church and Jesus’s return would occur within a generation of these events"
+        read: 2026-11-27
+      - source: sturm-albrecht-2021-cdamm-hal-lindsey
+        locator: "s.v. “Hal Lindsey”"
+        quote: "For Lindsey, the 1967 Six-Day War and the seizure of Gaza, the West Bank, and Jerusalem, affirmed to him that God had set in motion an apocalyptic timeline."
+        read: 2026-11-27
+      - source: comstock-2025-britannica-christian-zionism
+        locator: "section “20th-century Evangelical political engagement”"
+        quote: "In terms of Zionism, Falwell was particularly galvanized by the success of Israel’s army in the Six-Day War of 1967 and the symbolism of that war’s seizure of significant religious sites in the Old City of Jerusalem."
+        read: 2026-11-27
+      - source: comstock-2025-britannica-christian-zionism
+        locator: "section “20th-century Evangelical political engagement”"
+        quote: "Israel’s success, for some Evangelicals, reflected an idea of Muscular Christianity exhibited through warfare—for them, the Jews had succeeded in the beginnings of an apocalyptic battle for God."
         read: 2026-11-27
   - id: tradition
     group: "What traditions hold"

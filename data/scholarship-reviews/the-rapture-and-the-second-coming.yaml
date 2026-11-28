@@ -10,6 +10,7 @@
 # Second pass changes. Cut to uncited (3): preterism/7 and /8 (gotquestions-preterist: a Tradition source describing a view it opposes, not what its tradition holds), tradition/1 (Got Questions on the church's controversies, not what it holds); tradition keys renumbered (old 2–8 now 1–7). Shorts: dispensationalism (pre-tribulation timing now “Most dispensationalists”, Bass's “majority”); today (“Chiefly conservative Christians”, Emerson and Minahan and Frohlich; “above all in the United States” replaced by dispensationalism's US following as a separate sentence, Durbin and Bass; Emerson and Minahan's “United States and Britain” stays in the text, as theirs alone); paul-expected (“Many scholars” to “Many take”, Tooth's “many have taken”, plus the entry's “Others argue”); scripture (“little support among most scholars, sources say” to “Many scholars criticize it, sources say”: the “most” is Tooth's alone and “on biblical and theological grounds” Frohlich's alone; both authors support “many scholars criticize”); tradition (LCMS's Commission on Theology and Church Relations named, not the Synod). Question: tradition widened to “the rapture and the end times” (the Catechism paragraphs never mention a rapture). Texts: origin (Darby's 1829 writing named, from p. 573; de Villiers's “millenarian thinking and the rapture”); spread (Marsden and Svelmoe's own words, not “say the same”); this-generation (Bahr's imminence clause set apart and credited to Stein); millennium (CenSAMM's postmillennialism “after a given period of time”); preterism (Mathison kept conditional; Got Questions sentence dropped with its cut); israel (Smith's scope: “popular affinity” and “characteristics of contemporary American Christian Zionism”); tradition (Got Questions controversies clause dropped). Locators corrected (10): origin/6 (pp. 573–74), spread/9, this-generation/1–2 (note on 13:3–37), this-generation/6 and /7, paul-expected/2 (15:51–52), millennium/1, /2 and /6 (section headings). Registry and Trigger Claims files not edited. Counts after: 13 statements, 96 citations, 10 Trigger Claims.
 # Second pass flags for the lead: (1) gotquestions-preterist is now cited by no page; its registry entry (added in this draft) is left in hugo/data/external-sources.yaml; drop it or keep it for later use. (2) The preterism short's definition (“already fulfilled, for the most part, in the past”) is quoted from Lehner alone; Molina §3.1.2 defines preterism in the sentences after the quoted list but is quoted only for the list. Treated as a descriptive definition (#133 exemption); the lead may want Molina's definition quoted on a re-review. (3) durbin-2023-cdamm-premillennialism: byline “Published: 3rd January 2023”, but the page's citation block says “3 January 2022”; registry 2023 kept. (4) Contemporary American Religion: Open Library has 2000 and one November 1999 record; 2000 kept. (5) First-pass flags (1)–(8) re-checked and stand; (3) Molina now carries only the list (see 2); (7) 32@00:33:06 and 71@00:16:55 stay attached as one side of a debate the statement reports. (6) The trigger 119@00:03:47 (partial and full preterism) now matches no statement sentence; a Trigger Claim gates the subject, not a statement, so it stays. Publish rule recomputed: core origin backed by Tooth 2023 (Reference), Durbin 2022 (Reference) and de Villiers 2019 (Scholarly), plus Whalen and Stancil (Reference); 13 statements; none Host-authored: met. Ids, slug and draft unchanged.
 # Publish 2026-11-27 (lead agent, on the second pass's flags): (1) gotquestions-preterist removed from the registry: added in this draft, now cited by no page. (2) The preterism short's definition (“already fulfilled, for the most part, in the past”) rests on Lehner's sentence; kept as a definition of a term, not a state-of-the-field answer (#133 exempts uncontested facts), and the list of schools beside it rests on Lehner and Molina; no citation added. (3) Durbin premillennialism year kept 2023 (the entry's byline date). (4) Contemporary American Religion year kept 2000. (5) Trigger 119@00:03:47 kept: a Trigger Claim gates the subject, not a statement. (6) Tradition question kept as widened (“and the end times”): narrower wording would imply the Catechism takes a rapture position, which §§675–676 do not. (7) scripture: question reworded to “What do scholars make of the rapture as a reading of the New Testament?” and the short's “Many scholars criticize it” to “Many criticize the doctrine”, so the short answers its question; strength unchanged (Tooth, Frohlich). Publish rule recomputed: core origin backed by Tooth 2023 (Reference), Durbin 2022 (Reference) and de Villiers 2019 (Scholarly): 3 independent in-window authors, none Host-authored; 13 statements, 96 citations. draft flag dropped.
+# Partial re-review (#251, 2026-11-27; #93 partial: new or changed statements, full first and second pass for their own citations; sourcesRead unchanged). Three research agents read the issue's items into separate scratch folders; the lead read Britannica and Google Books previews in a browser. Added: forerunners (Bennett, Evangelical Quarterly 2008; Lee thesis 2010; Sweetnam and Gribben, JETS 2009; de Villiers 2019 reported only: the short's “debated” rests on Bennett and Lee, its Macdonald sentence on Sweetnam and Gribben and Lee; each named forerunner's verdict is one author's and stays in the text), parousia (Martin l23 and Plevnik's abstract for the royal-visit use; Tooth for “presence”/“arrival”; “technical term” only as Plevnik's report of Deissmann and Dupont), six-day-war (Smith p. 24 and Durbin 2023 for the short, scoped to “many American evangelicals” and premillennialists; Sturm and Albrecht on Lindsey and Comstock in Britannica on Falwell, attributed). Changed texts only: scripture (Boring and Craddock, People's New Testament Commentary 2004, on Matthew 24:40–41 as gathered into the saved community; appended as scripture/9–10) and preterism (Noe, JETS 2006, full versus partial preterism and full preterism's 70 CE fulfilment; du Rand and Song, Acta Theologica 2004, partial preterism's two lines and its minority standing; appended as preterism/7–14); no existing short, id or citation number changed, and no statement behind an infographic mark (word, thessalonians, dispensationalism, origin, spread) touched. Not written, recorded under leads/uncited: Matthew 24:40–41 as a question (the judgment reading is still Tradition-only; Merkle WTJ 2010 read only in a third-party copy); how many hold the belief (YouGov 2025 and Lifeway 2016 read; neither fits an External Source class). First-pass quotes: 37/37 script-matched (one after joining a PDF line-break hyphen, du Rand and Song's abstract; Boring and Craddock against a transcription of the preview page image). Triggers unchanged; the 71@00:08:18 and 32@00:35:14 conflict notes in data/scholarship-candidates.yaml now also name forerunners. Flags for the second pass: (1) Plevnik's abstract is the thin second author for parousia's short. (2) Noe heads a preterist institute; du Rand and Song argue partial preterism; both cited only for descriptions. (3) Comstock (Britannica) is a writer, not a scholar; attributed only. (4) Boring and Craddock read from a page image. (5) Lee's p. 158/159 page split for the Lacunza sentences.
 review: 2026-11-27
 delegation:
   by: owner
@@ -401,6 +402,154 @@ citations:
     agent: pass
     owner: ""
     note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded. Was tradition/8. §676."
+  forerunners/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Carries the short's “debated”, with forerunners/3 (Lee): two authors report the field divided."
+  forerunners/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Bennett reports the argument; split from forerunners/3's sentence to avoid the OCR's “Pra Dolcino”."
+  forerunners/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. The other half of Bennett's sentence (OCR “Pra Dolcino”, quoted from “Dolcino”)."
+  forerunners/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Lee's own sentence; carries the short's “debated” with forerunners/1. His next lines quote LaHaye and Jenkins (not scholars, not cited)."
+  forerunners/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Bennett's verdict on Pseudo-Ephraem, attributed in the text only (one author). The sentence before it is split by an OCR line-break hyphen (“accord- ing”) and is not quoted."
+  forerunners/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Bennett's own summary of Dolcino, whose account he notes comes from an opponent; attributed in the text only. His Dolcino material leans on Gumerlock (Bibliotheca Sacra, no precedent): see leads."
+  forerunners/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Lee's verdict on LaHaye and Jenkins's case for Morgan Edwards; the LaHaye–Jenkins and Olson passages around it are quotations, not cited."
+  forerunners/8:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. p. 159 per the thesis page numbers (the same sentence also stands on p. 134). Attributed, one author."
+  forerunners/9:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Begins on p. 158; the sentence ends on p. 159 (“… tribulation period separates the two events for Darby”), so quoted only to “rapture event”. Carries “though the two differ on the rapture”."
+  forerunners/10:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Sweetnam and Gribben report MacPherson's claim; the text names it as his."
+  forerunners/11:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Carries the short's Macdonald sentence with forerunners/12 (Lee): two authors question or dispute the Macdonald link. Bruce's “direct dependence … unlikely”, quoted inside their article, is a lead, not cited."
+  forerunners/12:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Lee's own “a matter that I would dispute”; Stephens's quotation after it is not cited."
+  forerunners/13:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. De Villiers reports the argument (“Some argue”); the text keeps it as a report. His n. 29 Morgan Edwards material quotes a website and is not cited."
+  forerunners/14:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. De Villiers relays Ice (Tradition); the text keeps it as “Thomas Ice's claim”, reported, not de Villiers's verdict."
+  parousia/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Open Yale Courses transcript; “we'll refer” is the transcript's (for “would refer”); quoted as printed. Carries the short's royal-visit sense."
+  parousia/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read."
+  parousia/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Section “Parousia” of Tooth's entry. Carries “presence” or “arrival”."
+  parousia/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. The article's abstract, shown on the p. 537 page. Plevnik's own voice; the second author for the short's royal-visit sense. Flag: the sense is implied (“Hellenistic parousias depict … the royal visitor”), not defined; Plevnik's point is that 1 Thess 4 is not modelled on it, which the thessalonians statement covers and this statement does not restate."
+  parousia/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Plevnik reporting Deissmann; attributed as a report."
+  parousia/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Plevnik reporting the scholarship after Deissmann."
+  parousia/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Plevnik's report of Dupont's critique. “Technical term” appears on the page only as reported history, never in the short."
+  scripture/9:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): read on the Google Books preview page image (p. 92) in a browser and matched by script against a transcription saved from that image (line-break hyphen in “tem-porarily” joined); surrounding note read. Boring and Craddock's reading is attributed in the text; no short changed."
+  scripture/10:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): as scripture/9. In-window (2004) reading of Matthew 24:40–41 as taken to salvation, attributed; the judgment reading is still found only in Tradition sources, so no short or statement on the question was written."
+  preterism/7:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Noe's n. 1: his “preterists” means full preterists. Attributed."
+  preterism/8:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Opening “Most preterists 1” (footnote marker) omitted by starting the quote at “believe”."
+  preterism/9:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. The PDF prints “ad 70” in small capitals; quoted as extracted. Ties full preterism to 70 CE; attributed."
+  preterism/10:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read."
+  preterism/11:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read."
+  preterism/12:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read."
+  preterism/13:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. “minoriy” is the article's typo, quoted as printed. Carries “a minority”, attributed to du Rand and Song in the text only."
+  preterism/14:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script after joining one line-break hyphen in the PDF text (“ac- cording”); surrounding abstract and introduction read."
+  six-day-war/1:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Carries the short's “many American evangelicals” and 1967; Smith's scope (American evangelicals), kept."
+  six-day-war/2:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Durbin's own words naming 1967 (the 2022 dispensationalism entry has 1967 only as a citation year, Bell 1967). The second author for the short, with Smith. The converted text has a space before the full stop from a link boundary."
+  six-day-war/3:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. “this event” follows the 1948/1967 sentence; the short says “these events”, as the sentence's own “within a generation of these events” does."
+  six-day-war/4:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): matched by script against the fetched text (whitespace, HTML entities, curly quotes and dashes normalised; space before punctuation left by a stripped tag closed up); surrounding passage read. Scope Lindsey only; attributed in the text, not used for the short."
+  six-day-war/5:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): read in a browser on britannica.com (scripts are refused) and matched by script against the Internet Archive snapshot 20260819150645; surrounding section read. Scope Falwell; attributed."
+  six-day-war/6:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): as six-day-war/5. Scope “some Evangelicals”; attributed."
 triggers:
   32@00:33:06:
     agent: pass
@@ -612,18 +761,47 @@ sources:
     agent: pass
     owner: ""
     note: "First pass 2026-11-27: Tradition: Catechism §§668–677 on vatican.va (__P1V.HTM); footnote markers dropped; none of these paragraphs mentions a rapture. Second pass 2026-11-27: re-fetched (HTTP 200) into the second pass's own folder; author, title and venue match the fetched page. Tradition line (registry) not re-checked against an about page; the text names the source as the registry does."
+  martin-rlst152-l23:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): already registered (Reference, 2009); lecture 23 “Apocalyptic and Resistance”, ch. 1 [00:00:00]. Fetched by script."
+  boring-craddock-2004-peoples-nt-commentary:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): Reference: a one-volume New Testament commentary by two professional New Testament scholars (Boring, Brite Divinity School; Craddock, Candler School of Theology), Westminster John Knox Press, which describes it as a reference tool between a study Bible and a multivolume commentary. Google Books preview, 2010 paperback of the 2004 edition. In window."
+  noe-2006-jets-preterist-idealist:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): Scholarly by registry precedent for JETS (sweetnam-gribben-2009-jets-darby, haykin-2019-spirit). Flag: the author is president of the Prophecy Reformation Institute and argues a preterist-idealist case; only his descriptions of the views are cited, attributed. Live etsjets.org PDF (HTTP 200)."
+  durand-song-2004-acta-partial-preterism:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): Scholarly: Acta Theologica (University of the Free State), registry precedent mullervanvelden-2024-memory. The live UFS server did not respond; read in the Internet Archive snapshot 20260120053939 of the publisher PDF. Flag: the authors argue a partial-preterist reading; cited only for their description of the field."
+  sturm-albrecht-2021-cdamm-hal-lindsey:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): Reference: CDAMM signed entry (Tristan Sturm, Tom Albrecht), 11 November 2021."
+  comstock-2025-britannica-christian-zionism:
+    agent: pass
+    owner: ""
+    note: "First pass 2026-11-27 (#251): Reference by registry precedent for Encyclopaedia Britannica. Article history: new article by Frannie Comstock, January 17, 2025; cross-reference added November 6, 2025. Year set to first publication, as for other dated Britannica entries. Flag: the contributor page calls the author a writer, not a scholar; cited only for an attributed sentence, not the short."
 leads:
   - "Barbara Rossing, The Rapture Exposed (2004), “Invention of the Rapture”: read only as quoted in Lee 2010 and de Villiers 2019."
-  - "Crawford Gribben, J. N. Darby and the Roots of Dispensationalism (OUP 2024) and SZRKG 110 (2016): not public (403)."
+  - "Crawford Gribben, J. N. Darby and the Roots of Dispensationalism (OUP 2024): not public; Google Books not checked by #251 (API quota). His SZRKG 110 (2016) article is now read (see uncited)."
   - "Donald Akenson, Exporting the Rapture (OUP 2018): only the Queen's University blurb read."
   - "Amy Frykholm, Rapture Culture (OUP 2004): read only as quoted by Durbin and Lee."
   - "F. F. Bruce, Evangelical Quarterly 47 (1975), on Margaret Macdonald, and his WBC 1–2 Thessalonians on apantēsis: read only as quoted by Sweetnam and Gribben and by Cosby."
-  - "Morgan Edwards (1788), Pseudo-Ephraem and Increase Mather as pre-Darby forerunners: named only by Tradition sources (Thomas Ice, Pre-Trib Research Center; Got Questions) and by LaHaye/Jenkins as quoted in Lee; no Scholarly or Reference source names them in its own words."
+  - "Morgan Edwards (1788), Pseudo-Ephraem and Increase Mather as pre-Darby forerunners: affirmed only by Tradition sources (Thomas Ice, Pre-Trib Research Center; Got Questions; Grant Jeffrey 1995; Gumerlock in Bibliotheca Sacra, no registry precedent) and by LaHaye/Jenkins as quoted in Lee. #251: Bennett, Lee, Sweetnam and Gribben and de Villiers now weigh or report them in their own words (forerunners). Increase Mather appears only in a garbled de Villiers sentence (p. 182) relaying Tradition sources; not stated."
   - "Peterson 1930, Dupont 1952 and Malherbe on 1 Thess 4:17: read only as reported by Plevnik, Cosby and Tooth."
   - "Kenneth Newport, Apocalypse and Millennium (CUP 2000), on Alcázar: read only as quoted in Lehner 2014."
   - "Timothy Weber, On the Road to Armageddon (2004); Abraham and Boer 2009 on Christian Zionism: read only as quoted in de Villiers (HTS 2019) and Du Toit."
-  - "Matthew 24:40–41 read as “taken in judgment”: only Tradition sources (Ice on Blue Letter Bible; NET Bible note) read; no Scholarly or Reference source found for that reading."
-  - "Partial versus full preterism, and preterism tied to 70 CE: only Tradition sources (Got Questions, Dockery in Christianity Today, Mathison) found; Lehner frames preterism as early church history."
+  - "Matthew 24:40–41 read as “taken in judgment”: only Tradition sources (Ice on Blue Letter Bible; NET Bible note) read; no Scholarly or Reference source found for that reading. #251: Benjamin Merkle, Westminster Theological Journal 72 (2010) 169–79, argues the judgment reading and says most commentators read “taken” positively, but was read only in a third-party copy (drmsh.com, Michael Heiser's site; Galaxie paywalled), so a lead; the commentaries in his n. 2 (Hagner, Nolland, Green, Bock, Bruner, Wilkins) were not reached (Davies–Allison p. 383 not in preview)."
+  - "Partial versus full preterism, and preterism tied to 70 CE: #251 found Noe (JETS 2006) and du Rand and Song (Acta Theologica 2004), now in preterism's text, attributed; Francis Gumerlock, Revelation and the First Century (American Vision 2012, a Christian Reconstructionist ministry press, likely Tradition), not read."
+  - "Mollett, “‘Taken to the Lord’: Did Pseudo-Ephraem Really Teach the Rapture?”, Journal of Early Christian History 6 (2016) 59–77: Taylor & Francis 403, no author copy found (#251)."
+  - "Mark Patterson and Andrew Walker, on Irving and the Albury circle predating Darby's pre-tribulation rapture, in Stephen Hunt (ed.), Christian Millenarianism (2001): read only as quoted in Lee 2010 (#251)."
+  - "Dan Hummel, Religion and American Culture 25(1) 2015, on Douglas Young and Christian Zionism after 1967: public abstract only (Cambridge); full text paywalled (#251)."
+  - "A Muse excerpt of an NYU Press book (possibly Carenen, The Fervent Embrace, 2012) on prophecy interpreters and the 1967 war: 403, not read (#251)."
+  - "Timothy Weber, On the Road to Armageddon (Baker Academic 2004): Google Books shows no pages (#251)."
 uncited:
   - "Kevin Wetmore Jr., “Apocalypse in Cinema” (Bible Odyssey): read; “John Nelson Darby was the first to systematically develop a theory of the rapture” sits in a “Did You Know?” sidebar not shown to be the author's, so not cited or counted."
   - "Philip Almond, UQ News / The Conversation (2025): read; a scholar's public explainer, neither Scholarly nor Reference by venue."
@@ -635,15 +813,24 @@ uncited:
   - "Boyer, “Second Coming” (Contemporary American Religion): read; its 1996 poll is unnamed; not cited."
   - "Kuehner and Dolan, NCE “Millenarianism”: read; first-edition text (bibliography to the 1960s); Augustine is carried by Durbin and de Villiers."
   - "Augustine, City of God XX.7–9: read; a primary text, not cited."
-  - "New Catholic Encyclopedia, “Parousia” (Ceroke, Duffy), Deissmann 1922, Moulton–Milligan 1914, HarperCollins “Parousia”, NABRE Matthew 24:3: read for the meaning of parousia; Plevnik disputes the “technical term” claim; no parousia statement written, the meaning is not needed for any short."
+  - "New Catholic Encyclopedia, “Parousia” (Ceroke, Duffy), Deissmann 1922, Moulton–Milligan 1914, HarperCollins “Parousia”, NABRE Matthew 24:3: read for the meaning of parousia; not cited (pre-window, or no royal-visit sense: HarperCollins via Bible Odyssey gives only “coming,” “arrival,” “being present”). Corrected at #251: Plevnik does not himself dispute that parousia named a royal visit; he reports Dupont's critique of Deissmann's “technical term” and rejects reading 1 Thess 4 as modelled on such visits. The parousia statement (#251) now rests on Martin l23 and Plevnik's abstract, with Tooth."
   - "Tooth, CDAMM “2 Thessalonians”, NABRE 2 Thessalonians 2: read; the authorship and delay points belong to pauline-authorship's second-thessalonians statement and are not restated."
   - "Siegman and Winkler, NCE “Revelation, Book of”: read; Feuillet's method labels do not use “preterist”, and its text is pre-1996."
   - "Ehrman ch. 19 summary on Revelation's first-century setting, and the Timeline's revelation entry: not restated; the page does not equate a historical reading with preterism."
   - "Martin l6 and l7, Sim (Bible Odyssey), Ehrman ch. 6 on the dates of Mark and Matthew: read; dates not stated on the page."
   - "de Villiers, HTS 75(3) 2019, “The dangerous role of politics in modern millennial movements”: read; never names Christian Zionism, so not cited in israel."
-  - "Smith 2010 on 1967 as a prophetic turning point: read; one source, not stated."
+  - "Smith 2010 on 1967: p. 24 now cited (six-day-war, #251); pp. 278 and 302 read, not cited (p. 302 is scoped to Blackstone's method)."
   - "Du Toit 2016, “Christian Zionism has never enjoyed much support in New Testament scholarship”: read; not cited, as it comes from an article arguing a confessional case against Christian Zionism."
   - "Lippy, Balmer, Huber (Bible Odyssey “Millennium”): Huber's “Premillennialism, the dominant perspective among most evangelical Christians”: read; not cited, today rests on rapture-specific sources."
   - "Got Questions, “Origin of the rapture theory”; Thomas Ice, “A Brief History of the Rapture”: read; Tradition sources making historical claims (forerunners), not what a tradition holds; see leads."
   - "Got Questions Ministries, “What is the preterist view of the end times?” (gotquestions-preterist), opening and second paragraphs (preterism as fulfilled prophecy; full versus partial): read; cut at the second pass (were preterism/7–8): a Tradition source describing a view it does not hold, which is neither what its tradition holds nor what scholars think. The registry entry is no longer cited by any page."
   - "Got Questions Ministries, “When is the Rapture going to occur in relation to the Tribulation?”, opening paragraph (“one of the most controversial issues in the church today”): read; cut at the second pass (was tradition/1): a claim about the state of the church, not what the ministry holds."
+  - "Crawford Gribben, SZRKG 110 (2016) 99–109, Queen's University Belfast author copy via CORE (Internet Archive snapshot): read (#251); names no pre-Darby forerunner, so not cited."
+  - "Doherty and Knowles, CDAMM “Plymouth Brethren Christian Church” (2018, rev. 2021): read (#251); reports that most Brethren today hold Darby did not invent the secret rapture, and that his system contained little that was new (citing Boyer); not cited, as forerunners rests on sources that weigh named forerunners."
+  - "Encyclopaedia Britannica, “The Rapture” (Petruzzello, with a section by Matt Stefon): read in a browser (#251); names Ribera's futurism and the Puritans as possible influences on the idea but no rapture forerunner, and does not name Darby; not cited."
+  - "Grant R. Osborne, Luke Verse by Verse (2018), on Luke 17:34–35 (“Those taken will be resurrected to life; those left will face fiery judgment”): read on the Google Books preview page (#251); not cited: a comment on Luke, not Matthew, and the series' publisher (shown as Baker Publishing Group; the series is usually credited to Lexham Press) has no registry precedent."
+  - "Dale C. Allison Jr., Encyclopedia of Religion 2nd ed. (2005), “Biblical Literature: New Testament”: read (#251); defines the preterist view as preoccupied with John's own day and calls it untenable; not cited: no partial/full distinction or 70 CE tie, and preterism's short is left unchanged."
+  - "Catherine Loy, CDAMM “Christian Zionism” (2021): read (#251); her own 1967 sentence is about political influence since the Six-Day War, not prophecy; her prophetic material on 1967 is a block quotation of Yaakov Ariel (a lead). Not cited."
+  - "Sean Durbin, CDAMM “Dispensationalism” (2022), on Israel's “expansion (Bell 1967 …)”: read; “1967” there is a citation year; six-day-war cites his 2023 premillennialism entry instead (#251)."
+  - "YouGov, “The Rapture” poll, 1,101 U.S. adult citizens, 25–27 September 2025 (toplines PDF on YouGov's document CDN): read (#251); 27% say the Rapture definitely exists and 14% probably. Not cited: a commercial opt-in panel poll is none of the External Source classes in #80/#86, the question leaves “the Rapture” undefined, it was fielded two days after a viral rapture prediction, and the PDF's YouGov article page was not read. No statement on how many hold the belief."
+  - "Lifeway Research, “Pastors: The End of the World is Complicated” (news release, 26 April 2016): read (#251); 36% of Protestant senior pastors hold a pretribulation rapture. Not cited: pastors only; Lifeway is a Southern Baptist entity (at most Tradition, and this is a survey finding, not what a tradition holds); sponsored by Charisma House."
