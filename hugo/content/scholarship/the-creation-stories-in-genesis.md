@@ -22,7 +22,7 @@ watch:
     out of nothing,
     Bereshit,
     Priestly,
-    Yahwist,
+    Yahwist*,
     six days,
   ]
 statements:

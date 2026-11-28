@@ -18,7 +18,7 @@ watch:
     Hammurabi,
     "goring ox",
     "eye for an eye",
-    talion,
+    talion*,
   ]
 statements:
   - id: name

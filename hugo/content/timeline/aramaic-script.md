@@ -11,7 +11,7 @@ watch:
     square script,
     Ashurit,
     Assyrian script,
-    Jewish script,
+    Jewish script*,
     Paleo-Hebrew,
     Old Hebrew script,
   ]

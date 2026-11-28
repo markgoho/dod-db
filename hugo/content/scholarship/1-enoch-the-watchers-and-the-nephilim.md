@@ -9,7 +9,7 @@ related:
   topics: [book-of-enoch, nephilim, jubilees, angel]
 watch:
   [
-    Enoch,
+    Enoch*,
     Enochic,
     Watchers,
     Nephilim,

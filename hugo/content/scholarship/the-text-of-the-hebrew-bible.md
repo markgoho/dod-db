@@ -12,7 +12,7 @@ watch:
     Masoretic,
     Masoretes,
     Masorah,
-    Septuagint,
+    Septuagint*,
     Old Greek,
     Dead Sea Scrolls,
     Qumran,

@@ -23,8 +23,8 @@ related:
 watch:
   - united monarchy
   - united kingdom
-  - historical David
-  - house of David
+  - historical David*
+  - house of David*
   - Tel Dan
   - Elhanan
   - Goliath

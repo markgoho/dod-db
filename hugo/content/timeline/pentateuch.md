@@ -10,7 +10,7 @@ related:
   }
 watch:
   [
-    Pentateuch,
+    Pentateuch*,
     Torah,
     five books of Moses,
     Mosaic authorship,

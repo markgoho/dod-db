@@ -11,7 +11,7 @@ watch:
   [
     Noah,
     ark,
-    flood,
+    flood*,
     deluge,
     Gilgamesh,
     Atrahasis,

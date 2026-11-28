@@ -11,6 +11,10 @@ related:
 watch:
   [
     Textus Receptus,
+    earliest manuscript*,
+    later addition*,
+    added later,
+    added in later,
     Erasmus,
     Sinaiticus,
     Vaticanus,

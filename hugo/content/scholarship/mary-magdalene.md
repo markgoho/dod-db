@@ -11,6 +11,7 @@ watch:
   [
     Magdalene,
     Magdala,
+    Martha,
     "Mary of Bethany",
     "Gospel of Mary",
     "Gospel of Philip",

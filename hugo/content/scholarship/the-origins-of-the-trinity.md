@@ -10,13 +10,13 @@ related:
 watch:
   [
     Trinity,
-    trinitarian,
+    trinitarian*,
     Nicaea,
     Nicene,
     homoousios,
-    consubstantial,
+    consubstantial*,
     Arius,
-    Arian,
+    Arian*,
     Constantinople,
     Cappadocian,
     Pneumatomach,

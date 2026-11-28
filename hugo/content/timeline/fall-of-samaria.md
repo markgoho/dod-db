@@ -4,7 +4,7 @@ entryKind: event
 draft: false
 sourcesRead: 2026-11-22
 related: { books: [2-kings], tags: [], topics: [] }
-watch: [Samaria, northern kingdom, Assyria, Assyrian exile]
+watch: [Samaria, northern kingdom, Assyria*, Assyrian exile]
 critical:
   display: "722/721 BCE"
   from: -722

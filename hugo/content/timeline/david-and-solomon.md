@@ -7,12 +7,12 @@ related:
   { books: [1-samuel, 2-samuel, 1-kings], tags: [david], topics: [david] }
 watch:
   [
-    David,
+    David*,
     Solomon,
     united monarchy,
     united kingdom,
-    historical David,
-    house of David,
+    historical David*,
+    house of David*,
   ]
 critical:
   display: "10th century BCE"

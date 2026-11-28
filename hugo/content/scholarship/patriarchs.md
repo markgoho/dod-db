@@ -8,7 +8,7 @@ related:
   tags: [abraham, isaac, jacob, joseph, ishmael]
   topics: [jacob, joseph, hagar]
 watch:
-  [Abraham, Isaac, Jacob, Hagar, Ishmael, Joseph, patriarch, Midianite, Akedah]
+  [Abraham, Isaac, Jacob, Hagar, Ishmael*, Joseph, patriarch, Midianite, Akedah]
 statements:
   - id: traditions
     group: "Where the traditions came from"

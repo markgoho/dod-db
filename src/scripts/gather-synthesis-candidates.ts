@@ -14,6 +14,7 @@ import {
   findTargetHits,
   MIN_MENTIONS,
   parseTranscript,
+  readWindows,
   sweep,
   WINDOW_SECONDS,
   type Target,
@@ -91,10 +92,6 @@ async function main(): Promise<void> {
   const lines = parseTranscript(await Bun.file(video.transcriptPath).text());
   const episode = {
     tags: video.tags ?? [],
-    scriptures: (video.scriptures ?? []).map(s => ({
-      book: s.book,
-      mentions: s.mentions,
-    })),
   };
   const targetHits = findTargetHits(lines, episode, targets);
 
@@ -121,7 +118,7 @@ async function main(): Promise<void> {
         guests: getGuestSpeakers(video.speakers ?? []),
         minMentions: MIN_MENTIONS,
         windowSeconds: WINDOW_SECONDS,
-        targets: targetHits,
+        targets: readWindows(lines, targetHits),
         noWatch: subjects
           .filter(s => (s.watch ?? []).length === 0)
           .map(s => s.slug),

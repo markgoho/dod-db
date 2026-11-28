@@ -9,8 +9,9 @@
 #   core: the candidate core claim. Until a test, the show's thesis as the
 #     inventory states it; a test rewords it to its sources' strength.
 #   basis: where the entry came from (inventory counts, Episode, #93 cut).
-#   watch: terms `bun run synthesis:gather` looks for at a word start in each
-#     new Transcript, for any subject not dropped.
+#   watch: terms `bun run synthesis:gather` looks for in each new Transcript,
+#     for any subject not dropped: a whole word plus plural or possessive, or
+#     a prefix with a trailing `*` (`inerran*`).
 #   triggers: Trigger Claim pointers (episode, speaker, timestamp, text).
 #     Unchecked until the sourcing test reads the Transcript around them.
 #   tested: date of the last sourcing test.
@@ -68,7 +69,7 @@ subjects:
       [
         documentary hypothesis,
         JEDP,
-        Yahwist,
+        Yahwist*,
         Elohist,
         Priestly source,
         priestly author,
@@ -80,7 +81,7 @@ subjects:
         five books of Moses,
         first five books,
         Wellhausen,
-        source critic,
+        source critic*,
         supplementary model,
       ]
 
@@ -98,7 +99,7 @@ subjects:
         Jericho,
         peasant revolt,
         infiltration,
-        highland,
+        highland*,
         hill country,
         Late Bronze,
         Bronze Age collapse,
@@ -134,7 +135,7 @@ subjects:
         sacrifice children,
         sacrificing children,
         sacrificing their children,
-        Tophet,
+        Tophet*,
         through the fire,
         Jephthah,
         Carthage,
@@ -265,9 +266,9 @@ subjects:
         Huldah,
         book of the law,
         Esarhaddon,
-        vassal treat,
-        Deuteronomic,
-        centraliz,
+        vassal treat*,
+        Deuteronomic*,
+        centraliz*,
       ]
 
   - slug: creation-ex-nihilo
@@ -319,7 +320,7 @@ subjects:
       [
         David wrote,
         wrote the psalms,
-        psalm of David,
+        psalm of David*,
         psalms were written,
         Psalm 151,
         sons of Korah,
@@ -354,14 +355,14 @@ subjects:
     basis: "Inventory cluster: 2 Episodes (Ep 125, Ep 126), 3 claims."
     watch:
       [
-        cult prostitut,
+        cult prostitut*,
         cultic sex,
         cult sex,
         sacred sex,
         sacred prostitut,
         temple prostitut,
         ritual prostitut,
-        kedesh,
+        kedesh*,
         qedesh,
       ]
 
@@ -382,7 +383,7 @@ subjects:
         Ishtar,
         Eostre,
         Ostara,
-        Pascha,
+        Pascha*,
         Quartodeciman,
         Venerable Bede,
         pagan origin,
@@ -397,7 +398,7 @@ subjects:
     status: candidate
     core: "Inerrancy as a formal doctrine is a modern development, firmed up in reaction to critical scholarship, not a view Christians always held."
     basis: "#84: the dropped advisory guide becomes three held candidates."
-    watch: [inerran, infallib]
+    watch: [inerran*, infallib*]
     triggers:
       - episode: 6
         speaker: "Dan McClellan"

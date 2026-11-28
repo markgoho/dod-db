@@ -84,14 +84,14 @@ If any of that skill's stop conditions applies, stop after verification. Report 
 
 If the pipeline succeeded, run `bun run synthesis:gather <n>`. Do this even when Step 4 stopped early. Its JSON gives:
 
-- `targets`: each Scholarship Page (`page`), Timeline Entry (`entry`) and candidate subject (`subject`) with hits. A hit is a Transcript line, with `via: watch` (a `watch` term) or `via: related` (a tag or book from the target's `related` field that the Episode mentions at least `minMentions` times).
-- `sweep`: lines with consensus or date wording. `near` names the targets whose read already covers the line.
+- `targets`: each Scholarship Page (`page`), Timeline Entry (`entry`) and candidate subject (`subject`) with read `windows`. A window spans `from`–`to` (lines `firstLine`–`lastLine`) and lists the `terms` that hit, each `via: watch` (a `watch` term) or `via: related` (a tag or topic from the target's `related` field that the Episode mentions at least `minMentions` times).
+- `sweep`: lines with consensus or date wording. `near` names targets with a window close by: a hint for which subject the line is about.
 - `subjectEpisodes`: distinct Episodes behind each candidate subject's triggers, this one included when it has a hit.
 - `guests` and `noWatch` (candidate subjects the gather cannot see).
 
-For each hit, read the final Transcript `windowSeconds` either side. A candidate is a Speaker's assertion about the target's subject, quoted verbatim with any hedge from the next sentence kept. A passing mention, or a `related` hit where the subject is not discussed, is dismissed. Then read each `sweep` line whose `near` is empty the same way: a consensus or dated assertion there is a new-subject or new-entry suggestion.
+For each window, read the final Transcript from `windowSeconds` before `from` to `windowSeconds` after `to`. A candidate is a Speaker's assertion about the target's subject, quoted verbatim with any hedge from the next sentence kept. A passing mention, or a `related` term where the subject is not discussed, is dismissed. Then read every `sweep` line the same way: a consensus or dated assertion is a candidate for a `near` target when it is about that subject, else a new-subject or new-entry suggestion.
 
-Done when every hit and every `sweep` line with an empty `near` is a candidate, a suggestion or dismissed.
+Done when every window and every `sweep` line is a candidate, a suggestion or dismissed.
 
 A **page candidate** is about a subject a page already states. It goes only in the run summary; the page, its triggers file and its review file stay untouched until the accept flow below.
 
@@ -138,9 +138,9 @@ Then, for each guest, match their Selected Works against the Step 5 targets with
 - list each verified segment, the transcript line that confirms it, and any type you corrected
 - include the save script's review summary of labels and summaries, or the reason you stopped
 - for each guest, report the guest page you created, or that one already existed
-- per Scholarship Page, each candidate Trigger Claim (quote, Speaker, timestamp) with the hit term and `via`, or "no candidates"; then each conflict and suggestion and the `data/scholarship-candidates.yaml` entry it went to
+- per Scholarship Page, each candidate Trigger Claim (quote, Speaker, timestamp) with the window's term and `via`, or "no candidates"; then each conflict and suggestion and the `data/scholarship-candidates.yaml` entry it went to
 - each promotion flag, and each guest Lead and where it went
-- per Timeline Entry, each candidate Trigger Claim (quote, Speaker, timestamp, `states`) with the hit term and `via`, or "no candidates"; then each new-entry suggestion and its #108 comment
+- per Timeline Entry, each candidate Trigger Claim (quote, Speaker, timestamp, `states`) with the window's term and `via`, or "no candidates"; then each new-entry suggestion and its #108 comment
 
 ## Important constraints
 

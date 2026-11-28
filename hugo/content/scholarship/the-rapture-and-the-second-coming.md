@@ -9,19 +9,19 @@ related:
   topics: [rapture, second-coming, preterism, christian-zionism]
 watch:
   [
-    rapture,
+    rapture*,
     raptured,
     Second Coming,
     parousia,
     Darby,
-    dispensational,
+    dispensational*,
     Scofield,
     Left Behind,
-    pre-trib,
-    tribulation,
+    pre-trib*,
+    tribulation*,
     preterism,
     preterist,
-    millennial,
+    millennial*,
     Christian Zionism,
     "4:17",
   ]

@@ -18,7 +18,7 @@ watch:
     afterlife,
     underworld,
     "lake of fire",
-    annihilation,
+    annihilation*,
     "eternal conscious torment",
     "postmortem",
   ]

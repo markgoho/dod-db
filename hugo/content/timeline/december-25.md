@@ -11,7 +11,7 @@ related:
   }
 watch:
   [
-    December 25,
+    December 25*,
     December 25th,
     25th of December,
     Christmas date,

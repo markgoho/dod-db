@@ -7,7 +7,7 @@ related:
   books: [genesis, leviticus, judges, romans, 1-corinthians, 1-timothy]
   tags: [homosexuality, sodom]
   topics: [homosexuality]
-watch: [homosexual, same-sex, Sodom, arsenokoit, malakoi, "18:22", "20:13"]
+watch: [homosexual*, same-sex, Sodom, arsenokoit*, malakoi, "18:22", "20:13"]
 statements:
   - id: orientation
     group: "The texts and the modern question"

@@ -3,15 +3,19 @@
  * Pages, Timeline Entries and candidate subjects (process-next-episode Step 5).
  *
  * Two signals point at a target:
- * - `watch`: a target's watch term appears on a Transcript line.
- * - `related`: the Episode has a tag/topic or book from the target's
- *   `related` field at least MIN_MENTIONS times; the lines naming it are hits.
- * A sweep then lists consensus and date wording anywhere in the Transcript,
- * the source for new subjects and new Timeline Entries.
+ * - `watch`: a target's watch term appears on a Transcript line (see
+ *   `watchPattern`).
+ * - `related`: the Episode has a tag or topic from the target's `related`
+ *   field at least MIN_MENTIONS times; the lines naming it are hits. Books are
+ *   not matched: a book name (Genesis, John) is on nearly every Transcript.
+ * Hits merge into read windows per target. A sweep then lists consensus and
+ * date wording anywhere in the Transcript, the source for new subjects and
+ * new Timeline Entries.
  *
- * Backtest (2026-11-25, 97 accepted Trigger Claims): watch or related lands
- * within two minutes of 96. With MIN_MENTIONS 3, related adds 0-3 targets per
- * Episode beyond watch (Eps 180-188); with 1 it adds up to 5.
+ * Backtest (2026-11-28, #270, 397 accepted Trigger Claims): watch or related
+ * lands within two minutes of 388, as before. Eps 170+ average 18 targets,
+ * 87 hit lines and 30 read windows each; matching books and watch terms at a
+ * word start gave 26, 189 and 54.
  */
 
 import { taxonomyFolderSlug } from "../utils/title-to-slug.js";
@@ -39,7 +43,6 @@ export interface Target {
 
 export interface EpisodeTerms {
   tags: { tag: string; mentions: number }[];
-  scriptures: { book: string; mentions: number }[];
 }
 
 export interface TranscriptLine {
@@ -65,6 +68,21 @@ export interface TargetHits {
   hits: Hit[];
 }
 
+/** Hits on one target close enough to read as one Transcript passage. */
+export interface ReadWindow {
+  from: string;
+  to: string;
+  firstLine: number;
+  lastLine: number;
+  terms: { term: string; via: Hit["via"] }[];
+}
+
+export interface TargetWindows {
+  kind: TargetKind;
+  id: string;
+  windows: ReadWindow[];
+}
+
 export interface SweepLine {
   line: number;
   timestamp: string;
@@ -82,7 +100,7 @@ export function parseTranscript(text: string): TranscriptLine[] {
   });
 }
 
-/** Terms from `related` that the Episode mentions at least `minMentions` times. */
+/** Tags and topics from `related` that the Episode mentions at least `minMentions` times. */
 export function relatedTerms(
   target: Target,
   episode: EpisodeTerms,
@@ -92,22 +110,23 @@ export function relatedTerms(
   const tags = new Set(
     [...target.related.tags, ...target.related.topics].map(taxonomyFolderSlug),
   );
-  const books = new Set(target.related.books.map(taxonomyFolderSlug));
-  return [
-    ...episode.tags
-      .filter(t => t.mentions >= minMentions)
-      .filter(t => tags.has(taxonomyFolderSlug(t.tag)))
-      .map(t => t.tag),
-    ...episode.scriptures
-      .filter(s => s.mentions >= minMentions)
-      .filter(s => books.has(taxonomyFolderSlug(s.book)))
-      .map(s => s.book),
-  ];
+  return episode.tags
+    .filter(t => t.mentions >= minMentions)
+    .filter(t => tags.has(taxonomyFolderSlug(t.tag)))
+    .map(t => t.tag);
 }
 
-/** A term matched at a word start, so prefix terms ("harmoniz") still match but "Adam" skips "madam". */
-function wordStart(term: string): RegExp {
-  return new RegExp(String.raw`\b${RegExp.escape(term)}`, "i");
+/**
+ * A watch term matches a whole word, plus a plural or possessive ending:
+ * "Eve" skips "even", "angel" matches "angels". A trailing `*` matches any
+ * word continuation instead: "harmoniz*" matches "harmonized".
+ */
+export function watchPattern(term: string): RegExp {
+  if (term.endsWith("*")) {
+    return new RegExp(String.raw`\b${RegExp.escape(term.slice(0, -1))}`, "i");
+  }
+  const end = /\w$/.test(term) ? String.raw`(?:s|es|'s|’s)?\b` : "";
+  return new RegExp(String.raw`\b${RegExp.escape(term)}${end}`, "i");
 }
 
 /** Every target with at least one hit, hits in Transcript order. */
@@ -125,7 +144,7 @@ export function findTargetHits(
         via: "related" as const,
       })),
     ];
-    const patterns = terms.map(t => ({ ...t, pattern: wordStart(t.term) }));
+    const patterns = terms.map(t => ({ ...t, pattern: watchPattern(t.term) }));
     const hits = lines.flatMap(l => {
       const match = patterns.find(t => t.pattern.test(l.text));
       const found = match && { term: match.term, via: match.via };
@@ -141,6 +160,39 @@ export function findTargetHits(
         : [];
     });
     return hits.length > 0 ? [{ kind: target.kind, id: target.id, hits }] : [];
+  });
+}
+
+/** Merge each target's hits into windows: a hit within 2 × WINDOW_SECONDS of the last joins its window. */
+export function readWindows(
+  lines: TranscriptLine[],
+  targetHits: TargetHits[],
+): TargetWindows[] {
+  const seconds = new Map(lines.map(l => [l.line, l.totalSeconds]));
+  return targetHits.map(({ kind, id, hits }) => {
+    const windows: (ReadWindow & { end: number })[] = [];
+    for (const hit of hits) {
+      const at = seconds.get(hit.line) ?? 0;
+      const last = windows.at(-1);
+      if (last && at - last.end <= 2 * WINDOW_SECONDS) {
+        last.to = hit.timestamp;
+        last.lastLine = hit.line;
+        last.end = at;
+        if (!last.terms.some(t => t.term === hit.term && t.via === hit.via)) {
+          last.terms.push({ term: hit.term, via: hit.via });
+        }
+      } else {
+        windows.push({
+          from: hit.timestamp,
+          to: hit.timestamp,
+          firstLine: hit.line,
+          lastLine: hit.line,
+          terms: [{ term: hit.term, via: hit.via }],
+          end: at,
+        });
+      }
+    }
+    return { kind, id, windows: windows.map(({ end: _end, ...w }) => w) };
   });
 }
 

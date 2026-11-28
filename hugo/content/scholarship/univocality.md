@@ -18,7 +18,7 @@ related:
     ]
   tags: [univocality]
   topics: [univocality]
-watch: [univocal, one voice, harmoniz, Diatessaron, Tatian]
+watch: [univocal*, one voice, harmoniz*, Diatessaron, Tatian]
 statements:
   - id: one-voice
     group: "One voice?"

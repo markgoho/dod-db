@@ -21,7 +21,7 @@ related:
 watch:
   [
     monotheism,
-    monotheist,
+    monotheist*,
     monotheistic,
     monolatry,
     monolatrous,

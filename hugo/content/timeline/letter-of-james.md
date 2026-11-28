@@ -10,7 +10,7 @@ watch:
     Epistle of James,
     epistle of straw,
     date of James,
-    pseudepigraphic,
+    pseudepigraphic*,
   ]
 critical:
   display: "Between 55 and 100 CE"

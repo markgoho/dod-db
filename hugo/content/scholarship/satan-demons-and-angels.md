@@ -9,17 +9,19 @@ related:
   topics: [satan, demon, angel, book-of-enoch, nephilim, lilith]
 watch:
   [
-    Satan,
+    Satan*,
     devil,
     demon,
+    demonic,
     angel,
+    angelic,
     Lucifer,
     Beelzebul,
     Beelzebub,
     Belial,
     Mastema,
     Watchers,
-    exorcis,
+    exorcis*,
     Azazel,
   ]
 statements:

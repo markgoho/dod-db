@@ -4,7 +4,7 @@ entryKind: event
 draft: false
 sourcesRead: 2026-11-24
 related: { books: [genesis], tags: [adam], topics: [] }
-watch: [Adam, Eve, Eden, historical Adam, first human]
+watch: [Adam, Eve, Eden, serpent, historical Adam, first human]
 undated:
   verdict: not-historical
   statement: "The New American Bible's introduction to Genesis says the stories of Genesis 2–11 are “neither history nor myth”: calling them history misleads, “for it suggests that the events actually took place”. Coogan and Chapman do use the word myth: these chapters “retell myths of origins” known from other ancient Near Eastern peoples. Hayes notes that in Hebrew adam is not a proper name but “a generic term”, meaning human, or earthling."

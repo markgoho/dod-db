@@ -28,8 +28,8 @@ watch:
     Deutero-Pauline,
     disputed Pauline,
     undisputed,
-    pseudepigraph,
-    pseudonym,
+    pseudepigraph*,
+    pseudonym*,
   ]
 statements:
   - id: undisputed
