@@ -17,6 +17,7 @@ import path from "node:path";
 import { buildBibleGatewayUrl } from "./build-bible-gateway-url.js";
 import { PageSchema, readFrontmatter } from "./check-scholarship.js";
 import { findScriptureMatches } from "./find-scripture-matches.js";
+import type { ScriptureMatch } from "./wrap-scripture-references.js";
 
 export const LINKS_PATH = "hugo/data/scripture-links.json";
 
@@ -32,6 +33,47 @@ function escapeHtml(text: string): string {
 }
 
 /**
+ * A chapter:verse that continues a list right after a reference: ", 9:46",
+ * "; 20:13", " and 2:1–7". Only list separators may come between, so the
+ * book never carries across a sentence or other words. A partial verse
+ * ("24:6b") or a cross-chapter range fails the lookahead and stays plain.
+ */
+const CONTINUATION =
+  /(?:\s*[,;]\s*(?:(?:and|or)\s+)?|\s+(?:and|or|&)\s+)((\d{1,3}):(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?)(?![\w:–-])/y;
+
+/**
+ * The matches plus each continuation reference after them, which takes the
+ * book of the reference it follows ("Leviticus 18:22 and 20:13").
+ */
+function withContinuations(
+  text: string,
+  matches: ScriptureMatch[],
+): ScriptureMatch[] {
+  const all: ScriptureMatch[] = [];
+  for (const [index, match] of matches.entries()) {
+    all.push(match);
+    const limit = matches[index + 1]?.start ?? text.length;
+    let at = match.end;
+    for (;;) {
+      CONTINUATION.lastIndex = at;
+      const next = CONTINUATION.exec(text);
+      if (next === null || next.index + next[0].length > limit) break;
+      const [whole, shown = "", chapter, verse, endVerse] = next;
+      const end = next.index + whole.length;
+      all.push({
+        start: end - shown.length,
+        end,
+        originalText: shown,
+        normalizedReference: `${match.book} ${chapter}:${verse}${endVerse === undefined ? "" : `-${endVerse}`}`,
+        book: match.book,
+      });
+      at = end;
+    }
+  }
+  return all;
+}
+
+/**
  * The text as HTML with each chapter- or verse-level Scripture Reference
  * linked to BibleGateway (NRSVUE), as the `scripture` shortcode links them.
  * Bare book names ("2 Timothy") stay plain: a page on authorship names every
@@ -39,9 +81,12 @@ function escapeHtml(text: string): string {
  * nothing is linked.
  */
 export function linkScripture(text: string): string | undefined {
-  const matches = findScriptureMatches(text)
-    .filter(match => match.normalizedReference !== match.book)
-    .toSorted((a, b) => a.start - b.start);
+  const matches = withContinuations(
+    text,
+    findScriptureMatches(text)
+      .filter(match => match.normalizedReference !== match.book)
+      .toSorted((a, b) => a.start - b.start),
+  );
   if (matches.length === 0) return undefined;
 
   let html = "";
