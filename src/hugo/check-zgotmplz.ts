@@ -11,10 +11,11 @@ import { Glob } from "bun";
 import { stat } from "node:fs/promises";
 import path from "node:path";
 
-const MARKER = /#?ZgotmplZ/g;
+const MARKER = "ZgotmplZ";
+const OCCURRENCE = new RegExp(`#?${MARKER}`, "g");
 const PAGES = new Glob("**/*.{html,xml}");
 
-async function exists(dir: string): Promise<boolean> {
+async function isDirectory(dir: string): Promise<boolean> {
   try {
     return (await stat(dir)).isDirectory();
   } catch {
@@ -24,7 +25,7 @@ async function exists(dir: string): Promise<boolean> {
 
 /** One `file:line: marker` problem per occurrence, by file then line. */
 export async function checkZgotmplZ(publicDir: string): Promise<string[]> {
-  const files = (await exists(publicDir))
+  const files = (await isDirectory(publicDir))
     ? await Array.fromAsync(PAGES.scan({ cwd: publicDir }))
     : [];
   if (files.length === 0) {
@@ -33,9 +34,9 @@ export async function checkZgotmplZ(publicDir: string): Promise<string[]> {
   const errors: string[] = [];
   for (const file of files.toSorted()) {
     const text = await Bun.file(path.join(publicDir, file)).text();
-    if (!text.includes("ZgotmplZ")) continue;
+    if (!text.includes(MARKER)) continue;
     for (const [index, line] of text.split("\n").entries()) {
-      for (const match of line.matchAll(MARKER)) {
+      for (const match of line.matchAll(OCCURRENCE)) {
         errors.push(`${file}:${index + 1}: ${match[0]}`);
       }
     }
