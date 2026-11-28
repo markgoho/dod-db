@@ -26,8 +26,8 @@ statements:
   - id: sheol
     group: "The Hebrew Bible"
     question: "Is there a hell in the Hebrew Bible?"
-    short: "No, scholars say. The Hebrew Bible's Sheol is a shadowy underworld of the dead, without judgment or torment."
-    text: "Shawna Dolansky's Bible Odyssey article says the Hebrew Bible never describes a fiery place of eternal torment for sinners, and that Sheol holds all of the dead without judgment or torment. Meghan Henning's Bible Odyssey article says Sheol, the Pit and Abaddon can all name a space that holds all of the dead, righteous and unrighteous, with no torment for the dead there. Carol Bakhos's introduction in the Posen Library says the notion that the wicked will be eternally tormented in hell does not appear in the Hebrew Bible. Christine Hayes's Yale lectures say Sheol is an ancient Israelite notion of a shadowy place beneath the soil, not connected with reward or punishment after death. Shaul Shaked's entry in the Encyclopaedia Iranica, setting out the case for Zoroastrian influence, says there was no notion of heaven and hell up to the end of the Old Testament period. The UBS translators' handbook on Genesis says Sheol was regarded as a dark and gloomy place where all the dead were, and should not be translated by a word for “hell”, a place of punishment. The New American Bible's note on Psalm 6 calls Sheol the underworld where the souls of the dead dwelt, similar to the Greek Hades. Matthew Suriano's article in the Journal of Hebrew Scriptures adds that Sheol was not the sum of all burials but a metaphor for the marginalizing experience of dying, an intermediary stage every person endured in death."
+    short: "No, scholars say. The Hebrew Bible's Sheol is a shadowy underworld of the dead, without torment."
+    text: "Shawna Dolansky's Bible Odyssey article says the Hebrew Bible never describes a fiery place of eternal torment for sinners, and that Sheol holds all of the dead without judgment or torment. Meghan Henning's Bible Odyssey article says Sheol, the Pit and Abaddon can all name a space that holds all of the dead, righteous and unrighteous, with no torment for the dead there. Carol Bakhos's introduction in the Posen Library says the notion that the wicked will be eternally tormented in hell does not appear in the Hebrew Bible. Christine Hayes's Yale lectures say Sheol is an ancient Israelite notion of a shadowy place beneath the soil, not connected with reward or punishment after death. Shaul Shaked's entry in the Encyclopaedia Iranica, setting out the case for Zoroastrian influence, says there was no notion of heaven and hell up to the end of the Old Testament period. The UBS translators' handbook on Genesis says Sheol was regarded as a dark and gloomy place where all the dead were, and should not be translated by a word for “hell”, a place of punishment. The New American Bible's note on Psalm 6 calls Sheol the underworld where the souls of the dead dwelt, similar to the Greek Hades. Matthew Suriano's article in the Journal of Hebrew Scriptures adds that Sheol was not the sum of all burials but a metaphor for the marginalizing experience of dying, an intermediary stage every person endured in death. Philip Johnston's Shades of Sheol and Jon Levenson's Resurrection and the Restoration of Israel question whether Sheol awaited everyone: Johnston concludes that the term is almost exclusively reserved for those under divine judgment, whether the wicked, the afflicted righteous or all sinners, and Levenson that Sheol very often has to do with punishment, so that those who died in God's favor, their lives fulfilled, had no reason to expect it."
     cites:
       - source: dolansky-bo-sheol
         locator: "opening paragraph"
@@ -74,6 +74,21 @@ statements:
         locator: "§ Conclusion, p. 31"
         quote: "Sheol was the intermediary stage that every person endured in death."
         read: 2026-11-26
+      - source: johnston-2002-shades-of-sheol
+        url: "https://books.google.com/books?id=_roxMWABO78C&pg=PA83"
+        locator: "chapter 3, “The Unwelcome Underworld”, p. 83"
+        quote: "In conclusion, Sheol cannot be identified simply as the Hebrew term for the underworld which awaits all. It is almost exclusively reserved for those under divine judgment, whether the wicked, the afflicted righteous, or all sinners."
+        read: 2026-11-27
+      - source: levenson-2006-resurrection
+        url: "https://books.google.com/books?id=iv9l8vgL1iAC&pg=PA72"
+        locator: "chapter 4, “Are Abraham, Moses, and Job in Sheol?”, p. 72"
+        quote: "There is, however, ample room to wonder whether in Israelite thought before the idea of resurrection appears Sheol really was always assumed to be the universal destination."
+        read: 2026-11-27
+      - source: levenson-2006-resurrection
+        url: "https://books.google.com/books?id=iv9l8vgL1iAC&pg=PA73"
+        locator: "chapter 4, “Are Abraham, Moses, and Job in Sheol?”, p. 73"
+        quote: "Sheol, in sum, very often has to do with punishment, and those who die in God's good graces, their lives fulfilled through his blessings, therefore have no reason to think that they will be dispatched to Gray's “wholly unpleasant” existence in the dark, dank netherworld."
+        read: 2026-11-27
   - id: the-dead
     group: "The Hebrew Bible"
     question: "Did ancient Israelites believe the dead lived on?"
@@ -257,7 +272,7 @@ statements:
     group: "Gehenna"
     question: "When did Gehenna become a place of punishment?"
     short: "After the Hebrew Bible, in Jewish apocalyptic writing such as 1 Enoch, whose “accursed valley” is not named. Sources differ on whether the name Gehenna was used for the place of punishment before the New Testament."
-    text: "The HarperCollins Bible Dictionary says that, probably because of its associations with fiery destruction and judgment, the word Gehenna came to be used metaphorically during the intertestamental period for hell or eternal damnation, and that the New Testament uses it only in this way. Meghan Henning's Bible Odyssey article says that in apocalyptic books written between the Hebrew Bible and the New Testament, such as 1 Enoch, Gehenna began to be associated with fire, judgment and punishment, so that by the time Mark or Matthew wrote, people already thought of it as a fiery place of punishment. Nicolas Wyatt's article in Numen finds the cosmology later attached to the valley already in 1 Enoch 26–27, where the valley is the place of judgment and not yet a symbol of some transcendent location. The New American Bible's note on Matthew 5:22 says punishment of sinners by fire is found in Jewish apocalyptic literature, but that the name Gehenna is first given to the place of punishment in the New Testament. Kim Papaioannou's article in the Melanesian Journal of Theology reports the common belief that a Gehenna tradition came to full bloom in intertestamental Jewish literature, and argues against it: the valley of 1 Enoch 27 is unnamed, and the Gospels are the earliest writings after Jeremiah to mention Gehenna in an eschatological context."
+    text: "The HarperCollins Bible Dictionary says that, probably because of its associations with fiery destruction and judgment, the word Gehenna came to be used metaphorically during the intertestamental period for hell or eternal damnation, and that the New Testament uses it only in this way. Meghan Henning's Bible Odyssey article says that in apocalyptic books written between the Hebrew Bible and the New Testament, such as 1 Enoch, Gehenna began to be associated with fire, judgment and punishment, so that by the time Mark or Matthew wrote, people already thought of it as a fiery place of punishment. Nicolas Wyatt's article in Numen finds the cosmology later attached to the valley already in 1 Enoch 26–27, where the valley is the place of judgment and not yet a symbol of some transcendent location. The New American Bible's note on Matthew 5:22 says punishment of sinners by fire is found in Jewish apocalyptic literature, but that the name Gehenna is first given to the place of punishment in the New Testament. Kim Papaioannou's article in the Melanesian Journal of Theology reports the common belief that a Gehenna tradition came to full bloom in intertestamental Jewish literature, and argues against it: the valley of 1 Enoch 27 is unnamed, and the Gospels are the earliest writings after Jeremiah to mention Gehenna in an eschatological context. Richard Bauckham's study of early Jewish visions of hell says that on his tour in 1 Enoch, Enoch sees the place of punishment for the wicked after the last judgment, located literally in the valley of Hinnom, though the punishment itself is not described."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/gehenna/"
@@ -296,6 +311,11 @@ statements:
         locator: "§3, “Gehenna in the NT”, p. 14"
         quote: "As such, they are the earliest writings to mention Gehenna in an eschatological context after Jeremiah."
         read: 2026-11-26
+      - source: bauckham-1998-fate-of-the-dead
+        url: "https://books.google.com/books?id=MKMJnnpbYxAC&pg=PA53"
+        locator: "chapter 2, “Early Jewish Visions of Hell”, §2 “Enoch's Cosmic Tours”, p. 53"
+        quote: "In this second version of the tour, Enoch also sees the place of punishment for the wicked after the last judgment (located literally in the valley of Hinnom: 26:3-27:4)"
+        read: 2026-11-27
   - id: rubbish-dump
     group: "Gehenna"
     question: "Was Gehenna a burning rubbish dump?"
@@ -598,7 +618,7 @@ statements:
     group: "After the New Testament"
     question: "When did “he descended into hell” enter the Apostles' Creed?"
     short: "By about 400, sources say: Rufinus reported it in the version of the Apostles' Creed used at Aquileia."
-    text: "The New Catholic Encyclopedia's entry on the descent of Christ into hell says “hell” here corresponds to Sheol, Hades and the Latin infernus and means the abode of souls after death, not the Gehenna of fire or the punishment of Tartarus, and that the descent began to appear in the creeds in the fifth century, when Rufinus, around 400, testified that it was in the Apostles' Creed used at Aquileia. Johan Buitendag's article in HTS Teologiese Studies says that through Rufinus the clause found a place in the Apostles' Creed in the fourth century. On 1 Peter 3:19, where Christ preaches to the spirits in prison, the New American Bible's note says it is not clear who the spirits in prison are: the spirits of those who died in the flood, or hostile angelic powers. The encyclopedia says Clement of Alexandria first linked the verse with Christ's descent, and Buitendag says he seems to have been the first."
+    text: "The New Catholic Encyclopedia's entry on the descent of Christ into hell says “hell” here corresponds to Sheol, Hades and the Latin infernus and means the abode of souls after death, not the Gehenna of fire or the punishment of Tartarus, and that the descent began to appear in the creeds in the fifth century, when Rufinus, around 400, testified that it was in the Apostles' Creed used at Aquileia. Johan Buitendag's article in HTS Teologiese Studies says that through Rufinus the clause found a place in the Apostles' Creed in the fourth century. On 1 Peter 3:19, where Christ preaches to the spirits in prison, the New American Bible's note says it is not clear who the spirits in prison are: the spirits of those who died in the flood, or hostile angelic powers. The encyclopedia says Clement of Alexandria first linked the verse with Christ's descent, and Buitendag says he seems to have been the first. Buitendag also says the creed's inferna, taken from Ephesians 4:9, corresponds to the Greek Hades, which, like the Hebrew Sheol, signifies the abode of all the departed, both the righteous and the wicked; Calvin and the Heidelberg Catechism, he says, substituted for it the concept of hell as Gehenna, so that the descent is read figuratively, as an experience of Godforsakenness."
     cites:
       - source: quinn-rohling-nce-descent
         locator: "s.v. “Descent of Christ into Hell”, opening"
@@ -628,6 +648,18 @@ statements:
         locator: "note on 1 Peter 3:19"
         quote: "The spirits in prison: it is not clear just who these spirits are. They may be the spirits of the sinners who died in the flood, or angelic powers, hostile to God, who have been overcome by Christ"
         read: 2026-11-26
+      - source: buitendag-2009-descendit
+        locator: "section “Cosmology”"
+        quote: "This word is taken from Ephesians 4:9 and corresponds to the Greek word Hades, which occurs eleven times in the New Testament and is often incorrectly translated as 'hell'. Hades signifies, like the Hebrew word sheol, the unseen spirit–world, the abode of all the departed, both the righteous and the wicked."
+        read: 2026-11-27
+      - source: buitendag-2009-descendit
+        locator: "Introduction, list of dogmatic challenges"
+        quote: "Calvin and the Heidelberg Catechism (Question & Answer 44) avoided this spatial aspect of the term 'underworld' by substituting the anachronistic concept of 'hell' for it."
+        read: 2026-11-27
+      - source: buitendag-2009-descendit
+        locator: "Introduction, list of dogmatic challenges"
+        quote: "The descensus is, in other words, interpreted figuratively and is taken merely as an experience of Godforsakenness."
+        read: 2026-11-27
   - id: traditions
     group: "After the New Testament"
     question: "What do Christian traditions teach about hell today?"
