@@ -20,39 +20,16 @@
 <div class="scholarship-question__body">
   {{/* The link to share is the Question Page: a #fragment never reaches a
     link-preview crawler, so only its own URL can carry this question's card.
-    scholarship-question-links.ts wires the buttons; without JS the link
-    itself still works.
+    scholarship-question-links.ts wires the buttons; without JS a plain link
+    to the Question Page stands in.
   */}}
-  <div
-    class="scholarship-question__actions"
-    id="{{ $s.id }}-links"
-    data-pagefind-ignore>
-    {{ if not $onQuestionPage }}
-      <a class="chip scholarship-question__link" href="{{ $questionURL }}"
-        >Link to this question</a
-      >
-    {{ end }}
-    <span class="scholarship-question__copy">
-      <button
-        type="button"
-        class="chip scholarship-question__copy-button"
-        command="--copy-link"
-        commandfor="{{ $s.id }}-links"
-        data-url="{{ $questionURL }}"
-        hidden>
-        Copy link
-      </button>
-      <span class="scholarship-question__copy-tip" role="status"></span>
-    </span>
-    <button
-      type="button"
-      class="chip scholarship-question__share-button"
-      data-url="{{ $questionURL }}"
-      data-title="{{ $s.question }}"
-      hidden>
-      Share
-    </button>
-  </div>
+  {{ partial "link-buttons.html" (dict
+    "id" (printf "%s-links" $s.id)
+    "url" $questionURL
+    "title" $s.question
+    "fallback" (cond $onQuestionPage nil (dict "href" $questionURL "text" "Link to this question"))
+    )
+  }}
   <p>{{ partial "scripture-linked.html" $s.text }}</p>
   <ul class="scholarship-cites" role="list">
     {{ range $s.cites }}

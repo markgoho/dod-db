@@ -1,0 +1,52 @@
+{{- /*
+  Copy link and Share as icon chips (link-buttons.ts reveals each where it
+  works), and, without JS, a plain link to the same URL.
+  Takes dict:
+  id        the actions row's id (Copy link's commandfor)
+  url       the absolute URL to copy and share
+  title     the share sheet's title
+  class     extra classes on the row
+  fallback  the <noscript> link: dict href, text; nil for none
+  */
+-}}
+<div
+  class="{{ delimit (slice "scholarship-question__actions" | append (.class | default slice)) " " }}"
+  id="{{ .id }}"
+  data-pagefind-ignore>
+  <span class="scholarship-question__copy">
+    <button
+      type="button"
+      class="chip chip--icon scholarship-question__copy-button"
+      command="--copy-link"
+      commandfor="{{ .id }}"
+      data-url="{{ .url }}"
+      aria-label="Copy link"
+      title="Copy link"
+      hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+        <path
+          d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+      </svg>
+    </button>
+    <span class="scholarship-question__copy-tip" role="status"></span>
+  </span>
+  <button
+    type="button"
+    class="chip chip--icon scholarship-question__share-button"
+    data-url="{{ .url }}"
+    data-title="{{ .title }}"
+    aria-label="Share"
+    title="Share"
+    hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="18" cy="5" r="3" />
+      <circle cx="6" cy="12" r="3" />
+      <circle cx="18" cy="19" r="3" />
+      <path d="m8.59 13.51 6.83 3.98M15.41 6.51l-6.82 3.98" />
+    </svg>
+  </button>
+  {{ with .fallback }}
+    <noscript><a href="{{ .href }}">{{ .text }}</a></noscript>
+  {{ end }}
+</div>

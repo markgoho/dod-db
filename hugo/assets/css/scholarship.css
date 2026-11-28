@@ -677,11 +677,12 @@
   buttons start [hidden] and the script reveals them where they work; .chip's
   display would otherwise override [hidden].
 */
+/* Icon chips (link-buttons.html): hit areas side by side, not overlapping. */
 .scholarship-question__actions {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2xs);
+  gap: calc(var(--target-size) - var(--icon-chip-size));
 }
 
 .scholarship-question__actions [hidden] {
@@ -694,17 +695,24 @@
 }
 
 .scholarship-question__copy {
-  align-items: center;
   display: inline-flex;
-  gap: var(--space-2xs);
+  position: relative;
 }
 
-/* The tip is the live region: hidden with opacity so it stays announced. */
+/*
+  The tip is the live region: hidden with opacity so it stays announced. It
+  hangs below the icon, so it never shifts the row.
+*/
 .scholarship-question__copy-tip {
-  font-size: var(--step--1);
+  font-size: var(--step--2);
   font-weight: var(--font-weight-bold);
+  inset-block-start: 100%;
+  inset-inline-start: 0;
   opacity: 0;
+  pointer-events: none;
+  position: absolute;
   transition: opacity var(--duration-fast) var(--ease-standard);
+  white-space: nowrap;
 }
 
 .scholarship-question__copy-button:is([data-copied], [data-failed])

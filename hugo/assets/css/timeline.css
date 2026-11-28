@@ -519,32 +519,21 @@
 
 /*
   Copy link and Share (scholarship-question__actions): icons at the card's top
-  right, hit areas side by side, not overlapping. The kind line makes room; the Copied tip hangs below, so it never
-  shifts the icons.
+  right. The kind line and title make room.
 */
 .timeline-entry__card {
   position: relative;
 }
 
 .timeline-entry__share {
-  display: flex;
-  gap: calc(var(--target-size) - var(--icon-chip-size));
+  flex-wrap: nowrap;
   inset-block-start: var(--space-2xs);
   inset-inline-end: var(--space-2xs);
   position: absolute;
 }
 
-.timeline-entry__share .scholarship-question__copy {
-  position: relative;
-}
-
 .timeline-entry__share .scholarship-question__copy-tip {
-  font-size: var(--step--2);
-  inset-block-start: 100%;
-  inset-inline-end: 0;
-  pointer-events: none;
-  position: absolute;
-  white-space: nowrap;
+  inset-inline: auto 0;
 }
 
 .timeline-entry__card > :is(.timeline-entry__kind, .timeline-entry__title) {
