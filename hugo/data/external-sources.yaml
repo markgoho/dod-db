@@ -11527,7 +11527,7 @@ nabre-1-kings-6-notes:
   edition: "Old Testament revision"
   class: Reference
   kind: study-bible
-  access: "Church-published study Bible, open"
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
   url: "https://bible.usccb.org/bible/1kings/6"
   hostAuthored: false
   tradition: null

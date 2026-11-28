@@ -2,123 +2,131 @@
 # Issue #278, “Timeline Entry: The First Temple built”. Issue notes: gap beside `fall-of-jerusalem`, `second-temple`, `temple-destruction`; `solomon` doesn't mention the temple. Critical first; a Tradition Date only if a Trigger Claim states the tradition's side; keep consistent with `solomon` (10th century BCE) and `fall-of-jerusalem`. The issue's “expect … ʿAin Dara” notes were recall, not sources; not relied on.
 # Trigger Claims: E2 00:35:31 (Stavrakopoulou: “you can't go digging up the Temple Mount to find the remains of the First Temple, you know, the Solomon's Temple.”; the transcript has no milliseconds, stored as .000). E176 00:39:17.920 (McClellan: “Solomon builds the temple”), inside a sketch of Zion's history from 2 Samuel 5 onward. Neither gives a date; both are critical-side statements on the subject. No tradition-side claim: the dating-claims inventory (line 227) says “No traditional date is stated … for Solomon's Temple”, and a grep of every final Transcript found none. #99: no show date to contradict.
 # Not used as Trigger Claims: E87 00:37:34 (“That was Jerusalem before, like, the temple was built”; relative aside on the City of David); E43 00:13:58 (the First Temple's destruction in 587, which is `fall-of-jerusalem`'s subject); E88, E102, E103 (temples of the First Temple period at Arad and Tel Motza, not this building); E102 00:50:34 (“we ought to do a show on the First Temple”, no claim).
-# Sourcing test, 2026-11-28: met. Britannica (Reference) dates the completion in its own voice: “completed in 957 BCE”. Title and display are for completion, as on `second-temple` (“Second Temple completed”, 515 BCE). The note carries the evidence by name: Pioske (Bible Odyssey, Reference) says no trace has been unearthed and the Temple Mount can't be excavated; Mazar (Scholarly) has no doubt a temple stood before the Babylonian conquest, doubts Solomon's kingdom could afford the buildings described, and does not exclude a tenth-century founding; NABRE's note on 1 Kgs 6:1 calls the Bible's figures schematic and advises caution. 957 sits inside `solomon`'s “10th century BCE”.
+# Sourcing test, 2026-11-28 (first pass, superseded below by the owner's decision): met as `critical`. Britannica (Reference) dates the completion in its own voice: “completed in 957 BCE”. Title and display are for completion, as on `second-temple` (“Second Temple completed”, 515 BCE). The note carries the evidence by name: Pioske (Bible Odyssey, Reference) says no trace has been unearthed and the Temple Mount can't be excavated; Mazar (Scholarly) has no doubt a temple stood before the Babylonian conquest, doubts Solomon's kingdom could afford the buildings described, and does not exclude a tenth-century founding; NABRE's note on 1 Kgs 6:1 calls the Bible's figures schematic and advises caution. 957 sits inside `solomon`'s “10th century BCE”.
 # Dropped as attributed or hedged (conditional-not-critical): Pioske's “According to the Bible … (ca. 950 BCE)”; EJ Grintz and Yadin's regnal years (the Bible's 4th–11th years, and EJ 1st-edition text without a “(2nd ed.)” marker, outside #80's window); HarperCollins “Temple, The” “(tenth century BCE)” (glosses the monarchy, in a sentence spanning to 70 CE: critical-scope); Solomon reign dates (EJ “apparently”, Coogan ch. 15 “some likelihood”, Hayes's 922 death year). All under `uncited`.
 # agent: the first pass (2026-11-28). Research agent fetched each source into its own scratch folder by curl; Britannica refused curl (403) and was read in Claude in Chrome (page text saved), as on `second-temple`. Quotes script-matched against the saved text (whitespace, quotes, dashes, entities, soft and line-break hyphens normalised): 7 hits, 0 misses. Mazar pages are printed pages (PDF = printed + 11). Trigger Claims matched by script as substrings of their Transcript lines: 2 hits.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Britannica's 957 is a conventional date that ultimately rests on the biblical chronology (cf. NABRE's caution), but Britannica states it flat, unattributed; check that reading. (2) Neither Trigger Claim dates the temple: E2 is an evidence claim, E176 a narrative-sequence statement; check `states: critical` for E176, which may read as a retelling of the biblical story rather than the speaker's own claim. (3) split-shown: no source gives a competing date; Mazar's doubt is on the kingdom's means, not a different year, so the display stays single and the note names the doubt. (4) Display is flat while the note shows doubt, the same shape as `solomon` (#275's scope). (5) `pioske-bo-first-temple` and `nabre-1-kings-6-notes` are new ids; `nabre-1-kings-6-notes` read by curl from the live USCCB page (other NABRE ids note it refuses scripted requests; this one didn't).
+# Independent second agent pass 2026-11-28 (#93 delegation, #110; a fresh agent that didn't build the entry, never reading the first pass's files): every source re-fetched from its registry URL into its own folder. Pioske (bibleodyssey.org/articles/first-temple/) and Mazar (SBL ICI FinkelsteinMazar.pdf, pdftotext page by page) by curl, 200; Britannica (curl refused) and the USCCB 1 Kings 6 page (curl 403 on this pass, three tries) read in Claude in Chrome in the agent's own tab, page text saved. All seven quotes re-matched by script (whitespace, quotes, dashes, entities, soft and line-break hyphens normalised): 7 hits, 0 misses, each at its locator. Mazar offset re-derived from running heads: PDF 138 “127”, PDF 139 “128 THE QUEST FOR THE HISTORICAL ISRAEL”, PDF 140 “THE SEARCH FOR DAVID AND SOLOMON 129” (printed = PDF − 11); all three Mazar quotes sit in “Jerusalem of the Iron I–II Period”, which runs to “Yadin’s Paradigm” on p. 129. Both Trigger Claims re-matched by script (timestamp, speaker, verbatim substring of the final Transcript line), about two minutes either side read: 2 hits.
+# Second pass changed: registry `access` for `nabre-1-kings-6-notes` (“Church-published study Bible, open” → “Church-published study Bible; opens in a browser, refuses scripted requests”, as the page refused curl). Entry file not edited by this pass: the lead reshapes it to `undated` on the owner's decision (#278, 2026-11-28: a date whose only basis is the Bible isn't a Critical Date). Wording findings on the first-pass note, for the reshaped statement: (a) “it would lie under the Temple Mount”: Pioske says “located on the Temple Mount”; “under” is only in Mazar p. 127 (uncited). (b) “He doubts that Solomon's kingdom was rich enough”: Mazar's “One may doubt that Solomon’s kingdom was strong and rich enough” raises the doubt; “He questions whether …” fits. (c) “for history”: NABRE's “for historical reconstruction”; acceptable.
+# First-pass flags resolved: (1) Britannica states 957 flat and unattributed, but the page gives no basis at all for it (no source, no reasoning, no mention of the biblical chronology or of archaeology); with no excavated remains (Pioske) and NABRE's caution on the Bible's figures, nothing on the page supports it beyond what the 1 Kgs 6 chronology yields. Resolved by the owner's decision: 957 moves to `uncited` (lead). (2) E176 `states: critical` kept: McClellan asserts the sequence in his own historical register (“the name may even predate the Judahite occupation”; “the temple was built to the north, Mount Moriah”), not as the Bible's account; it is the only claim tying the building to Solomon (#99's datable link). E2 kept: Stavrakopoulou's own evidence verdict (remains under the Temple Mount can't be dug). (3) split-shown: confirmed, no competing year in any source's own voice. (4) Moot under the `undated` reshape. (5) USCCB refused curl on this pass; registry `access` corrected.
+# Flags for publish: (1) Re-check the reshaped `undated` statement and title against Pioske, Mazar and NABRE (wording findings a–c above apply to it). (2) The title “First Temple completed” described the completion Britannica dated; with no Critical Date the title should name the building, not the completion; check critical-scope. (3) `solomon` dates the reign to the 10th century BCE; an undated First Temple beside it is consistent (Mazar allows a tenth-century founding only as a possibility). (4) At publish, `sourcesRead` and `review:` must both be 2026-11-28 to match `delegation.secondPass` (#135); review keys must follow the renamed cites (critical/N → the undated block's keys), and Britannica's citation note moves with it to `uncited`.
+# Owner decision and reshape, 2026-11-28 (#278): “we really can't rely on the bible as a historical document, so anything that only uses the bible shouldn't be considered with much weight.” Britannica's 957 BCE gives no basis (second pass: no source, reasoning, or mention of archaeology on the page), no remains exist (Pioske), and the only dating route is the Bible's schematic chronology (NABRE 6:1), so it is not a Critical Date: moved to `uncited`. Entry reshaped to `undated`, verdict no-firm-date; title “The First Temple built” (the building, not a dated completion). Sourcing test met as `undated`: Pioske (Reference) and NABRE (Reference) for the statement that no remains exist and the Bible's date is schematic, Mazar (Scholarly) for the state of the question. The entry is unplaced (no Critical Date, no Tradition Date: no Trigger Claim states the tradition's side).
+# Publish resolutions, 2026-11-28: second-pass wording findings applied: (a) “would lie under” → “would have stood on the Temple Mount” (Pioske's “located on”); (b) “He doubts that … rich enough” → “He questions whether Solomon's kingdom was strong and rich enough” (Mazar's “One may doubt”); (c) “for history” → “for historical reconstruction” (NABRE's words); (d) “its date rests on the Bible” dropped for Pioske's own scope: “what is known of its history depends on the Bible's depiction and on other temples of the period”. Pioske's quote extended by the next sentence of the same paragraph (second pass verified it verbatim). Statement re-checked by the second-pass agent after the reshape (below). Review keys renamed critical/2–7 → undated/1–6. `sourcesRead` and `review:` set to 2026-11-28.
+# Second pass (reshape) 2026-11-28: re-checked against the second pass's own saved copies: 6 quotes, 6 hits at their locators. Changed: statement “and on other temples of the period” → “and, indirectly, on other temples of the period” (Pioske's “indirectly”); `uncited` Britannica reason “the only route to it is the Bible's chronology” → “with no remains (Pioske) the evident route to it is the Bible's chronology” (Britannica states no basis, so the route is inferred, not read). Title “The First Temple built” and verdict no-firm-date kept: the title dates nothing and Mazar has “no doubt” a temple stood; “No firm date in the sources” is fair under the owner's rule, as the one flat year (Britannica) states no basis and the Bible's figures are schematic (NABRE). Flag for publish: the rendered label reads “No firm date in the sources” while Britannica prints 957 and Pioske the Bible's ca. 950; the statement shows the Bible's date through NABRE but names no year. Adding “a reference work gives 957 BCE without stating a basis” would need Britannica re-cited, which this pass may not add; left to the lead.
+# Reshape flag resolved at publish, 2026-11-28: the “No firm date in the sources” label stays beside Britannica's 957 and Pioske's Bible-attributed ca. 950: under the owner's rule (#278) a year with no basis beyond the Bible's chronology is not a firm date, as `exodus` carries the same label beside sources that print biblical-chronology years. Britannica not re-cited (no citation added after the second pass).
+review: 2026-11-28
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-28
 citations:
-  critical/1:
+  undated/1:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Temple of Jerusalem”, third body paragraph. Flat, own voice: constructed in Solomon's reign, completed 957 BCE. Read in Claude in Chrome 2026-11-28; byline “The Editors of Encyclopaedia Britannica”, revised by Adam Zeidan. Flag 1.",
+      note: "Pioske, Bible Odyssey “First Temple” (March 6, 2019), opening paragraph. No trace unearthed; Temple Mount not open to excavation. Cited for the note. Second pass 2026-11-28: re-fetched by curl (200); matched verbatim in the first body <p> (“The First Temple is one of the most famous buildings …”), after the deck line “According to biblical tradition King Solomon built …”. Same paragraph, next sentence, verbatim: “For this reason, our understanding of the temple’s history, function, and appearance depends on how the sanctuary is depicted in the Bible and, indirectly, how other, contemporary temples were constructed by neighboring peoples in the Iron Age period (ca. 1175–586 BCE).” Wording: Pioske puts the building “on the Temple Mount”, not under it; the note's “it would lie under the Temple Mount” is narrower in Mazar p. 127 (uncited, “below the present Temple Mount”); recommend “it would have stood on the Temple Mount”. Verified. Second pass (reshape) 2026-11-28: extended quote re-matched verbatim in the same <p> (1 hit). Statement clause “what is known of its history depends on the Bible's depiction and on other temples of the period” narrowed to “… and, indirectly, on other temples of the period”, Pioske's “and, indirectly, how other, contemporary temples were constructed”. “would have stood on the Temple Mount” fits “located on the Temple Mount”. Verified.",
     }
-  critical/2:
+  undated/2:
     {
       agent: pass,
       owner: "",
-      note: "Pioske, Bible Odyssey “First Temple” (March 6, 2019), opening paragraph. No trace unearthed; Temple Mount not open to excavation. Cited for the note.",
+      note: "Mazar 2007, p. 128 (PDF 139). A temple certainly stood before the Babylonian conquest; no textual hint of a builder other than Solomon. Mazar's own voice. Cited for the note. Second pass 2026-11-28: re-fetched PDF (curl 200, pdftotext page by page); matched verbatim at PDF 139, running head “128 THE QUEST FOR THE HISTORICAL ISRAEL” (printed = PDF − 11), inside “Jerusalem of the Iron I–II Period” (no heading between it and p. 129's “Yadin’s Paradigm”). “such a temple” answers p. 127's question about who built “the Jerusalem Temple”. Mazar's own voice. Verified. Second pass (reshape) 2026-11-28: re-matched (1 hit); clause unchanged. Verified.",
     }
-  critical/3:
+  undated/3:
     {
       agent: pass,
       owner: "",
-      note: "Mazar 2007, p. 128 (PDF 139). A temple certainly stood before the Babylonian conquest; no textual hint of a builder other than Solomon. Mazar's own voice. Cited for the note.",
+      note: "Mazar 2007, p. 129 (PDF 140). Doubts Solomon's kingdom could afford the structures. Cited for the note; the next sentence (“It may well be that the biblical description is based on the shape of the Temple at the time of writing”) is summarised as “the buildings the Bible describes”. Second pass 2026-11-28: matched verbatim at PDF 140, running head “THE SEARCH FOR DAVID AND SOLOMON 129”. Strength: Mazar's “One may doubt” (after the question “is it feasible …?”) raises a doubt rather than asserting one; the note's “He doubts” is a shade stronger. Recommend “He questions whether Solomon's kingdom was strong and rich enough to afford the buildings the Bible describes”. Verified. Second pass (reshape) 2026-11-28: re-matched (1 hit); “He questions whether … strong and rich enough” fits “is it feasible …? One may doubt”. Verified.",
     }
-  critical/4:
+  undated/4:
     {
       agent: pass,
       owner: "",
-      note: "Mazar 2007, p. 129 (PDF 140). Doubts Solomon's kingdom could afford the structures. Cited for the note; the next sentence (“It may well be that the biblical description is based on the shape of the Temple at the time of writing”) is summarised as “the buildings the Bible describes”.",
+      note: "Mazar 2007, p. 129 (PDF 140). Does not exclude a tenth-century founding. Cited for the note (“does not rule out”). Second pass 2026-11-28: matched verbatim at PDF 140 (p. 129), same paragraph as critical/4; “temple and palace … established during the tenth century, and later renovated”. “does not rule out” fits “does not exclude the possibility”. Verified. Second pass (reshape) 2026-11-28: re-matched (1 hit); clause unchanged. Verified.",
     }
-  critical/5:
+  undated/5:
     {
       agent: pass,
       owner: "",
-      note: "Mazar 2007, p. 129 (PDF 140). Does not exclude a tenth-century founding. Cited for the note (“does not rule out”).",
+      note: "NABRE note to 1 Kgs 6:1: the Bible's date is reckoned from the traditional exodus date in conventional generations. Cited for the note. Second pass 2026-11-28: curl got 403 (three tries, two user agents), so read in Claude in Chrome (own tab), page text saved; matched verbatim as the first sentence of the note “* [6:1]”. 1 Kgs 6:1 dates the start of the work (480th year, Solomon's 4th year); 6:37–38 the completion (11th year), regnal years only. Paraphrase fits. Verified. Second pass (reshape) 2026-11-28: re-matched (1 hit); clause unchanged. Verified.",
     }
-  critical/6:
+  undated/6:
     {
       agent: pass,
       owner: "",
-      note: "NABRE note to 1 Kgs 6:1: the Bible's date is reckoned from the traditional exodus date in conventional generations. Cited for the note.",
-    }
-  critical/7:
-    {
-      agent: pass,
-      owner: "",
-      note: "NABRE note to 1 Kgs 6:1, last sentence: caution in using the figures for historical reconstruction. Cited for the note.",
+      note: "NABRE note to 1 Kgs 6:1, last sentence: caution in using the figures for historical reconstruction. Cited for the note. Second pass 2026-11-28: matched verbatim as the last sentence of the 6:1 note. The note's “for history” paraphrases “for historical reconstruction”; acceptable, the exact phrase would be safer. The 6:1–7:51 note also says “it is moreover likely that the author is describing the Temple as it stood in his own time, centuries after Solomon’s day” (read, uncited; agrees with Mazar p. 129). Verified. Second pass (reshape) 2026-11-28: re-matched (1 hit); “for historical reconstruction” now NABRE's words. Verified.",
     }
 triggers:
   2@00:35:31:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Stavrakopoulou on the limits of archaeology; the turn goes on to the city being modern and contested. 00:33:38–00:37:56 read. No date.",
+      note: "states: critical. Stavrakopoulou on the limits of archaeology; the turn goes on to the city being modern and contested. 00:33:38–00:37:56 read. No date. Second pass 2026-11-28: re-matched by script in 2023-04-17-episode-2-…-francesca-stavrakopoulou.txt: line [00:35:31], speaker Francesca Stavrakopoulou, text a verbatim substring. 00:33:38–00:37:56 read. Her own claim about the evidence (remains under the Temple Mount can't be excavated: a modern, contested city); critical side. No date; under #99 it is an evidence verdict on the subject, not a datable one. Kept; fits an `undated` reshape better than a dated one.",
     }
   176@00:39:17:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. McClellan sketching Zion from 2 Sam 5 (00:36:44) onward; the sentence is a step in that sequence. 00:35:02–00:41:38 read. No date. Flag 2.",
+      note: "states: critical. McClellan sketching Zion from 2 Sam 5 (00:36:44) onward; the sentence is a step in that sequence. 00:35:02–00:41:38 read. No date. Flag 2. Second pass 2026-11-28: re-matched by script in 2026-08-16-the-grandfather-of-the-hebrew-bible-and-what-is-zion.txt: line [00:39:17.920], speaker Dan McClellan, verbatim substring. 00:36:41–00:41:38 read. Flag 2: McClellan speaks in his own historical register (“the name may even predate the Judahite occupation”; “the temple was built to the north, Mount Moriah”) while sketching how Zion's meaning developed; the sentence is narrative sequence but asserted, not attributed to the Bible or a tradition, so `states: critical` kept. It ties the building to Solomon, the only datable link either claim gives (#99). Weak but real; kept.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Title and display are for the completion, what Britannica dates; not for the start of construction or for Solomon's reign.",
+      note: "Title and display are for the completion, what Britannica dates; not for the start of construction or for Solomon's reign. Second pass 2026-11-28: holds for the current shape. If reshaped to `undated`, the title “First Temple completed” should be rechecked against what the verdict covers (construction, not completion). Publish 2026-11-28: reshaped to `undated`; title “The First Temple built” names the building; the statement dates nothing and says no more than Pioske, Mazar and NABRE.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "One cited date (957). No competing date found in a source's own voice; Pioske's ca. 950 is the Bible's and uncited. Mazar's doubt is shown in the note by name. Flag 3.",
+      note: "One cited date (957). No competing date found in a source's own voice; Pioske's ca. 950 is the Bible's and uncited. Mazar's doubt is shown in the note by name. Flag 3. Second pass 2026-11-28: confirmed: no source gives a competing year; Pioske's ca. 950 is the Bible's. Moot for an `undated` shape. Publish 2026-11-28: moot; no date shown. Mazar's doubt and possibility both appear in the statement.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No tradition block; no Trigger Claim states the tradition's side.",
+      note: "No tradition block; no Trigger Claim states the tradition's side. Second pass 2026-11-28: confirmed: neither Trigger Claim states a tradition's side.",
     }
-  tradition-named: { agent: pass, owner: "", note: "No tradition block." }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "No tradition block. Second pass 2026-11-28: confirmed.",
+    }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "Britannica's date is flat. Attributed (Pioske, Grintz, Yadin) and hedged (EJ Solomon, Coogan ch. 15) dates left uncited; Mazar's tenth-century possibility appears only in the note, as a possibility.",
+      note: "Britannica's date is flat. Attributed (Pioske, Grintz, Yadin) and hedged (EJ Solomon, Coogan ch. 15) dates left uncited; Mazar's tenth-century possibility appears only in the note, as a possibility. Second pass 2026-11-28: Mazar's “One may doubt”/“does not exclude” are hedges and appear only in the note, as such. Britannica's 957 is unhedged but unexplained; under the owner's 2026-11-28 decision its only possible basis is the biblical chronology, so it is not kept as a Critical Date. Publish 2026-11-28: Britannica's 957 also uncited (Bible-only basis, owner's decision #278); no date is shown, and Mazar's tenth-century founding stays a possibility in the statement.",
     }
 sources:
-  britannica-temple-of-jerusalem:
-    {
-      agent: pass,
-      owner: "",
-      note: "Reference; reused id (cited on `second-temple`, `temple-destruction`). Refuses scripted requests; read in Claude in Chrome.",
-    }
   pioske-bo-first-temple:
     {
       agent: pass,
       owner: "",
-      note: "Reference (Bible Odyssey, SBL); new id. Byline Dan Pioske, March 6, 2019; author bio on the page (Georgia Southern University).",
+      note: "Reference (Bible Odyssey, SBL); new id. Byline Dan Pioske, March 6, 2019; author bio on the page (Georgia Southern University). Second pass 2026-11-28: byline “March 6, 2019 Dan Pioske”, bio “Assistant Professor of Religious Studies at Georgia Southern University” re-seen on the page. Registry matches. Inside #80's window.",
     }
   mazar-2007-quest-david-solomon:
     {
       agent: pass,
       owner: "",
-      note: "Scholarly (SBL); reused id. Essay pp. 117–139.",
+      note: "Scholarly (SBL); reused id. Essay pp. 117–139. Second pass 2026-11-28: registry URL re-fetched (200, 232-page PDF); offset printed = PDF − 11 re-derived from running heads (PDF 138 = 127, 139 = 128, 140 = 129).",
     }
   nabre-1-kings-6-notes:
     {
       agent: pass,
       owner: "",
-      note: "Reference (NABRE notes, Catholic Biblical Association translators, as other nabre-* ids); new id. Flag 5.",
+      note: "Reference (NABRE notes, Catholic Biblical Association translators, as other nabre-* ids); new id. Flag 5. Second pass 2026-11-28: Flag 5: the live page refused curl (403) on this pass, as other nabre-* ids record; read in Claude in Chrome. Registry `access` changed from “Church-published study Bible, open” to “Church-published study Bible; opens in a browser, refuses scripted requests”, as on nabre-lamentations-intro and others.",
     }
 leads:
   - "Vaughn and Killebrew, eds., Jerusalem in Bible and Archaeology: The First Temple Period (SBL Symposium 18, 2003): cited by Darby; not checked for an open copy."
   - "Britannica “Solomon”: not read."
   - "Bible Odyssey video “The First and Second Temples”: video, not read."
 uncited:
+  - "Britannica “Temple of Jerusalem”, third body paragraph: “The First Temple was constructed during the reign of David’s son, Solomon, and completed in 957 BCE.” Flat and unattributed, but the page gives no basis for the year, and with no remains (Pioske) the evident route to it is the Bible's chronology, which NABRE calls schematic; not a Critical Date under the owner's decision (#278, 2026-11-28). Was critical/1 in the first pass; verified verbatim by both passes."
   - "Pioske, Bible Odyssey “First Temple”: “According to the Bible (1Kgs 6:37-38, 2Chr 3:2), Solomon built the First Temple between the fourth and eleventh years of his reign (ca. 950 BCE)”. Attributed to the Bible."
   - "Pioske: “The First Temple would have stood alongside the royal palace in Jerusalem for nearly four hundred years.” Duration, hedged."
   - "EJ “Temple: First Temple, History” (Grintz): “The work was begun in the month of Iyyar in the fourth year of Solomon's reign and was completed in the 11th year of his reign in the month of Bul”. The Bible's regnal years (1 Kgs 6:1, 38), no absolute date; 1st-edition text, outside #80's window."
