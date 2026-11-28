@@ -27,4 +27,8 @@
   --content-max-width-sidebar: 16rem;
   --content-min-width-sidebar: 18rem;
   --panel-shadow-offset: var(--space-3xs);
+
+  /* Pointer targets (WCAG 2.5.5): an icon chip draws smaller, its hit area is this. */
+  --target-size: 2.75rem;
+  --icon-chip-size: 2rem;
 }

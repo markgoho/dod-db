@@ -519,7 +519,7 @@
 
 /*
   Copy link and Share (scholarship-question__actions): icons at the card's top
-  right. The kind line makes room; the Copied tip hangs below, so it never
+  right, hit areas side by side, not overlapping. The kind line makes room; the Copied tip hangs below, so it never
   shifts the icons.
 */
 .timeline-entry__card {
@@ -528,7 +528,7 @@
 
 .timeline-entry__share {
   display: flex;
-  gap: var(--space-4xs);
+  gap: calc(var(--target-size) - var(--icon-chip-size));
   inset-block-start: var(--space-2xs);
   inset-inline-end: var(--space-2xs);
   position: absolute;
@@ -548,7 +548,7 @@
 }
 
 .timeline-entry__card > :is(.timeline-entry__kind, .timeline-entry__title) {
-  padding-inline-end: calc(2 * var(--space-m));
+  padding-inline-end: calc(2 * var(--target-size));
 }
 
 /* Entries not placed on the timeline: plain cards at the reading measure. */

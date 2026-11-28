@@ -272,9 +272,22 @@ textarea:not([rows]) {
 
 /* A chip that is only an icon: square, named by aria-label. */
 .chip--icon {
-  aspect-ratio: 1;
+  block-size: var(--icon-chip-size);
+  inline-size: var(--icon-chip-size);
   justify-content: center;
-  padding: var(--space-4xs);
+  min-height: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* The hit area: --target-size square, centred, beyond the drawn chip. */
+.chip--icon::before {
+  content: "";
+  inset: calc(
+    (var(--icon-chip-size) - 2 * var(--border-width-sm) - var(--target-size)) /
+      2
+  );
+  position: absolute;
 }
 
 .chip--icon > svg {
