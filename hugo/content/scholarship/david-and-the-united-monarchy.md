@@ -121,7 +121,7 @@ statements:
         quote: Nevertheless, the discovery of the Tel Dan Stela (Biran and Naveh 1993, 1995) pulled the rug out from under these latter views, as the words “Beit-David” (house of David) are clearly inscribed on its smooth black surface. There is little doubt that the term “house of David” on the Tel Dan Stela refers to mid-ninth-century BCE Judah, indicating that someone named David was conceived of as the founder of the Judahite monarchy, at least by outsiders.
         read: 2026-11-25
       - source: finkelstein-2007-quest-solomon
-        locator: p. 107 (Finkelstein, “The Truth about King Solomon”), paragraph beginning “Let me begin at the end”
+        locator: p. 107 (Finkelstein), paragraph beginning “Let me begin at the end”
         quote: Against the conservative or maximalist camps, I argue that much of the David and Solomon narrative in the Bible cannot be read as a straightforward historical testimony and that their kingdom was far more modest than traditionally perceived. At the same time, against the so-called minimalists,
         read: 2026-11-25
       - source: finkelstein-2007-quest-solomon
