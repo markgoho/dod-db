@@ -32,7 +32,7 @@ statements:
     group: "Dating the book"
     question: "When was the Book of Daniel written?"
     short: "Scholars date it to the second century BCE, and its visions (chapters 7–12) to Antiochus IV's persecution, 167–164 BCE. The date has long been debated, and some still hold to the sixth century, the book's own setting."
-    text: "The NABRE introduction says the book was composed during the persecution carried on by Antiochus IV Epiphanes (167–164 BCE). Christine Hayes's Yale lectures date chapters 7–12 to between 167 and 164 BCE, and the first six chapters perhaps to the end of the third century. Amy Merrill Willis's Bible Odyssey article says the vision of Daniel 8 was written around 167 BCE and that the book's calculations for the end refer to events of 167–164 BCE; its “Did You Know?” box says the Hebrew-Aramaic edition was completed around 163 BCE. The publisher's summary of Coogan and Chapman's introduction says the book was written in the second century BCE, and that scholars place it there. Craig Evans says the dangers Jews faced in the second century BCE, especially under Antiochus IV, led to the writing of the book soon after. Mladen Popović and colleagues note that scholars date Daniel 8–11 on literary-historical grounds to the 160s BCE. The date is not unanimous. Benjamin Suchard writes that the dating has long been a controversial issue, and that the book's sixth-century setting was traditionally taken as its date of composition. The “Did You Know?” box on David Valeta's Bible Odyssey article says scholars debate the date, from as early as the sixth century BCE to as late as the second, and that both viewpoints have strong defenders."
+    text: "The NABRE introduction says the book was composed during the persecution carried on by Antiochus IV Epiphanes (167–164 BCE). Christine Hayes's Yale lectures date chapters 7–12 to between 167 and 164 BCE, and the first six chapters perhaps to the end of the third century. Amy Merrill Willis's Bible Odyssey article says the vision of Daniel 8 was written around 167 BCE and that the book's calculations for the end refer to events of 167–164 BCE; its “Did You Know?” box says the Hebrew-Aramaic edition was completed around 163 BCE. The publisher's summary of Coogan and Chapman's introduction says the book was written in the second century BCE, and that scholars place it there. Craig Evans says the dangers Jews faced in the second century BCE, especially under Antiochus IV, led to the writing of the book soon after. Mladen Popović and colleagues note that scholars date Daniel 8–11 on literary-historical grounds to the 160s BCE. The date is not unanimous. Benjamin Suchard writes that the dating has long been a controversial issue, and that the book's sixth-century setting was traditionally taken as its date of composition. The “Did You Know?” box on David Valeta's Bible Odyssey article says scholars debate the date, from as early as the sixth century BCE to as late as the second, and that both viewpoints have strong defenders. Carol Newsom's commentary says that by the late nineteenth century critical scholarship had been persuaded that at least the apocalypses arose in the Antiochene persecutions of the second century BCE, and dates the chapters after the first vision to between December 167 BCE and the end of 164 BCE."
     cites:
       - source: nabre-daniel-intro
         locator: "Introduction, ¶ 2"
@@ -82,11 +82,26 @@ statements:
         locator: "“Did You Know?” box"
         quote: "Scholars debate the dating of the composition of the book of Daniel—as early as the sixth century B.C.E. and as late as the second century B.C.E. are possibilities, and both viewpoints have strong defenders."
         read: 2026-11-25
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA7"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 7"
+        quote: "By the late nineteenth century, however, critical biblical scholarship had been persuaded by the arguments of those who saw at least the apocalypses, if not also the narratives, as originating in the context of the Antiochene persecutions of the second century B.C.E."
+        read: 2026-11-28
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA11"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 11"
+        quote: "The remainder of the chapters were composed after December 167 B.C.E., since they are aware of the desecration of the temple and the cessation of sacrifice"
+        read: 2026-11-28
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA11"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 11"
+        quote: "but before the end of 164, when Antiochus IV was killed at Tabae in Persia and Judah the Maccabee retook and reconsecrated the temple"
+        read: 2026-11-28
   - id: reasons
     group: "Dating the book"
     question: "Why do scholars date the visions to the 160s BCE?"
-    short: "The visions present the history from the fall of Babylon down to Antiochus IV as prophecy, in coded references to the writer's own time. Scholars identify their “little horn” with Antiochus."
-    text: "The publisher's summary of Coogan and Chapman's introduction says the visions present the succession of powers from the fall of Babylon to the division of Alexander's empire as future events, with detail growing more vivid toward Antiochus IV; the reader is told his reign will end, but apparently it has not yet, which is why scholars place the book in the second century BCE. Christine Hayes says the author disguises references to contemporary events and people in symbolic visions attributed to a remote past, and identifies the boastful little horn with Antiochus. Kelly Murphy's Bible Odyssey article calls it the scholarly consensus that the little horn is a coded way to discuss Antiochus IV, who desecrated the Jerusalem temple; the HarperCollins Bible Dictionary says he is usually identified with it. Amy Merrill Willis notes that the Maccabees resumed temple worship in the winter of 164 BCE and that Antiochus was dead by early 163 BCE."
+    short: "The visions present the history from the fall of Babylon down to Antiochus IV as prophecy, in coded references to the writer's own time. Scholars identify their “little horn” with Antiochus. Daniel 11 follows events closely into his reign but gets his death wrong (11:40–45), so scholars date it before he died, late in 164 BCE."
+    text: "The publisher's summary of Coogan and Chapman's introduction says the visions present the succession of powers from the fall of Babylon to the division of Alexander's empire as future events, with detail growing more vivid toward Antiochus IV; the reader is told his reign will end, but apparently it has not yet, which is why scholars place the book in the second century BCE. Christine Hayes says the author disguises references to contemporary events and people in symbolic visions attributed to a remote past, and identifies the boastful little horn with Antiochus. Kelly Murphy's Bible Odyssey article calls it the scholarly consensus that the little horn is a coded way to discuss Antiochus IV, who desecrated the Jerusalem temple; the HarperCollins Bible Dictionary says he is usually identified with it. Amy Merrill Willis notes that the Maccabees resumed temple worship in the winter of 164 BCE and that Antiochus was dead by early 163 BCE. Carol Newsom notes that Porphyry had already observed that the prophecy of Daniel 11 is a strangely accurate account of history up to Antiochus IV, at which point it diverges sharply from known events; she dates the later chapters before the end of 164 BCE, when Antiochus was killed in Persia. Altay Coşkun writes that Daniel 11:40–45 describes the king's final battle and death in details remote from what happened, so his death toward the end of 164 BCE gives a firm latest date, and that most scholars, drawing on this chapter, have dated the composition to around 166 BCE. Coşkun himself argues that this latest date binds only chapters 10–11, and that chapters 7–9 and 12 were written after the temple was rededicated in December 164 BCE."
     cites:
       - source: coogan-brief-4e-summary-ch25
         locator: "section “Daniel”, last paragraph"
@@ -113,11 +128,41 @@ statements:
         locator: "paragraph beginning “But Dan 12:12”"
         quote: "The Maccabees drove Antiochus IV and his forces out of the temple precincts and resumed temple worship in the winter of 164 B.C.E., only three years after its desecration. Moreover, by early 163 B.C.E. Antiochus IV was dead."
         read: 2026-11-25
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA6"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 6"
+        quote: "who noted that the supposed prophecy to Daniel in ch. 11 was a strangely accurate account of history up until the time of Antiochus IV, at which point it diverged sharply from what was known of historical events."
+        read: 2026-11-28
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA11"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 11"
+        quote: "but before the end of 164, when Antiochus IV was killed at Tabae in Persia and Judah the Maccabee retook and reconsecrated the temple"
+        read: 2026-11-28
+      - source: coskun-2019-daniel-chronology
+        locator: "abstract"
+        quote: "The counterfactual allusion to the death of Antiochos IV in Dan 11.40–45 implies a terminus ante quem of December 164 BC."
+        read: 2026-11-28
+      - source: coskun-2019-daniel-chronology
+        locator: "p. 447"
+        quote: "After a remarkable narrative, which retells the long line of wars from Alexander the Great to the aftermath of the Sixth Syrian War (170–168 BC), Dan 11.40–45 describes the evil king’s final battle resulting in his death. Since the last details are remote from the actual events, Antiochos’ death towards the end of 164 BC offers a solid terminus ante quem."
+        read: 2026-11-28
+      - source: coskun-2019-daniel-chronology
+        locator: "p. 438"
+        quote: "Dan 11 implies a strong terminus ante quem of late 164 BC; by drawing on this chapter, most scholars have suggested a composition around 166 BC"
+        read: 2026-11-28
+      - source: coskun-2019-daniel-chronology
+        locator: "abstract"
+        quote: "While scholars have previously extended this terminus to all Seleukid prophecies in Daniel 7–12, we should rather confine it to Dan 10–11, allowing for a later composition of the remaining Seleukid prophecies."
+        read: 2026-11-28
+      - source: coskun-2019-daniel-chronology
+        locator: "p. 448"
+        quote: "Countering this common opinion, I would like to argue instead that the Seleukid visions of Dan 7–9 and 12 were formulated after the re-establishment of the traditional cult on 25 Kislev 164 BC."
+        read: 2026-11-28
   - id: tales
     group: "Dating the book"
     question: "Are the court tales older than the visions?"
     short: "Usually, yes: they are held to date from the Persian or early Hellenistic period."
-    text: "Christine Hayes dates the first six chapters perhaps to the end of the third century BCE. Daniel Smith-Christopher's Bible Odyssey article says the stories could be dated to the late Persian or early Hellenistic periods (400–300 BCE), and that the book is a compendium of stories and visions gathered over time. Amy Merrill Willis says the tales took shape and eventually became a book. Jason Silverman puts books with stories set at the Persian court, Daniel among them, most likely in the Hellenistic period. Benjamin Suchard writes that chapter 3 is held to have taken shape most likely in the Persian or earlier Hellenistic period, but argues from its Greek words that the collection of chapters 2–6 should be dated no earlier than the second century BCE, later than is usually held."
+    text: "Christine Hayes dates the first six chapters perhaps to the end of the third century BCE. Daniel Smith-Christopher's Bible Odyssey article says the stories could be dated to the late Persian or early Hellenistic periods (400–300 BCE), and that the book is a compendium of stories and visions gathered over time. Amy Merrill Willis says the tales took shape and eventually became a book. Jason Silverman puts books with stories set at the Persian court, Daniel among them, most likely in the Hellenistic period. Benjamin Suchard writes that chapter 3 is held to have taken shape most likely in the Persian or earlier Hellenistic period, but argues from its Greek words that the collection of chapters 2–6 should be dated no earlier than the second century BCE, later than is usually held. Carol Newsom says most scholars agree that the narratives of Daniel 2–6 were first composed and circulated one by one and only later drawn into a cycle, and that, though some have defended the book's unity, most now adopt a theory of gradual composition. In his 2022 monograph Suchard calls this cumulative model, in which the stories of chapters 2–6 are the oldest part of the book, the consensus."
     cites:
       - source: hayes-rlst145-l23
         locator: "ch. 5 [00:35:21]"
@@ -151,6 +196,24 @@ statements:
         locator: "p. 135"
         quote: "The formation of this stage of the book of Daniel should then also be dated no earlier than the second century BCE, later than is often supposed."
         read: 2026-11-25
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA9"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 9"
+        quote: "Most scholars agree that the narratives in Dan 2–6 were originally composed and circulated individually, only later being drawn into a loosely linked cycle of stories"
+        read: 2026-11-28
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA7"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 7"
+        quote: "Although some scholars (e.g., Charles xxxviii–xlviii; Bentzen 9–10; Porteous 120–21; Rowley 1965, 249–60) have defended the unity of the book, most now adopt a theory of gradual composition and development."
+        read: 2026-11-28
+      - source: suchard-2022-aramaic-daniel
+        locator: "ch. 1, “History of the Scholarship”, p. 2"
+        quote: "the consensus has settled on what Koch has termed the Aufstockungshypothese (‘cumulative hypothesis’)."
+        read: 2026-11-28
+      - source: suchard-2022-aramaic-daniel
+        locator: "ch. 1, “History of the Scholarship”, p. 2"
+        quote: "sees the individual stories in Dan 2–6 as the oldest part of the book."
+        read: 2026-11-28
   - id: scrolls
     group: "Dating the book"
     question: "What do the Dead Sea Scrolls show about Daniel?"
@@ -185,7 +248,7 @@ statements:
     group: "How the book was made"
     question: "Who wrote the Book of Daniel?"
     short: "Not Daniel, scholars say: they read him as the book's hero, probably a fictional one, rather than its writer."
-    text: "The NABRE introduction says the book takes its name not from its author, who is unknown, but from its hero, allegedly among the first Jews deported to Babylon. Amy Merrill Willis says the historical difficulties of Daniel's long career under Babylonian, Median and Persian kings suggest he was probably not an actual person but a fictional hero. Craig Evans calls him very likely a fictional character, perhaps inspired by a real figure of the ancient Near East known for wisdom."
+    text: "The NABRE introduction says the book takes its name not from its author, who is unknown, but from its hero, allegedly among the first Jews deported to Babylon. Amy Merrill Willis says the historical difficulties of Daniel's long career under Babylonian, Median and Persian kings suggest he was probably not an actual person but a fictional hero. Craig Evans calls him very likely a fictional character, perhaps inspired by a real figure of the ancient Near East known for wisdom. John J. Collins says the tales are legends, not history writing, and that it is unlikely Daniel ever existed."
     cites:
       - source: nabre-daniel-intro
         locator: "Introduction, ¶ 1"
@@ -199,11 +262,21 @@ statements:
         locator: "opening paragraph"
         quote: "The central figure of the book of Daniel is very likely a fictional character, perhaps inspired by a real person from the ancient Near East known for his wisdom and good judgment"
         read: 2026-11-25
+      - source: collins-2014-intro-hebrew-bible
+        url: "https://books.google.com/books?id=fbsoBAAAQBAJ&pg=PA566"
+        locator: "p. 566, section “The Court Tales”"
+        quote: "These stories are not exercises in history writing."
+        read: 2026-11-28
+      - source: collins-2014-intro-hebrew-bible
+        url: "https://books.google.com/books?id=fbsoBAAAQBAJ&pg=PA566"
+        locator: "p. 566, section “The Court Tales”"
+        quote: "In fact, it is unlikely that Daniel ever existed."
+        read: 2026-11-28
   - id: languages
     group: "How the book was made"
     question: "What languages is Daniel written in?"
     short: "Hebrew and Aramaic: Daniel 2:4b–7:28 is in Aramaic, the rest in Hebrew. The switch does not line up with the book's division into tales and visions."
-    text: "Andrew Perrin lists Daniel 2:4b–7:28 among the biblical texts composed in Aramaic. Daniel Smith-Christopher names the two languages as the first of the book's problems, alongside its two kinds of literature. The publisher's summary of Coogan and Chapman's introduction says the Aramaic sections suggest that the text may be a composite. H. J. M. van Deventer says the two languages do not correspond with the two literary types, court tales and visions, a problem he counts among those scholars have not yet been able to solve."
+    text: "Andrew Perrin lists Daniel 2:4b–7:28 among the biblical texts composed in Aramaic. Daniel Smith-Christopher names the two languages as the first of the book's problems, alongside its two kinds of literature. The publisher's summary of Coogan and Chapman's introduction says the Aramaic sections suggest that the text may be a composite. H. J. M. van Deventer says the two languages do not correspond with the two literary types, court tales and visions, a problem he counts among those scholars have not yet been able to solve. Carol Newsom likewise notes that the two languages do not coincide with the book's two main genres, says the theories offered for this odd pattern are often more ingenious than persuasive, and calls the most persuasive and commonly held one an Aramaic collection of tales expanded in the Maccabean period by visions written largely in Hebrew."
     cites:
       - source: perrin-bo-aramaic-dss
         locator: "opening paragraph"
@@ -221,11 +294,26 @@ statements:
         locator: "English abstract"
         quote: "The book of Daniel presents a number of challenges that scholars have not yet been able to solve. This article focuses on the problem related to the bilingual character of the book of Daniel (Hebrew and Aramaic) and the fact that the two languages do not correspond with the two literary types found in the book (court tales and visions)."
         read: 2026-11-25
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA8"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 8"
+        quote: "Complicating the attempt to understand the bilingualism of the book in relation to theories about its composition is the fact that the two languages do not coincide precisely with the two main genres of the book, the court tales of chs. 1–6 and the visions of 7–12."
+        read: 2026-11-28
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA8"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 8"
+        quote: "Various theories have been developed to account for this odd pattern, many more ingenious than persuasive"
+        read: 2026-11-28
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA8"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 8"
+        quote: "The most persuasive and commonly held theory is that an original pre-Maccabean corpus of narratives composed in Aramaic was expanded in the Maccabean period by a series of apocalyptic visions largely composed in Hebrew"
+        read: 2026-11-28
   - id: history
     group: "How the book was made"
     question: "Does Daniel get the history of the Babylonian and Persian kings right?"
-    short: "Not reliably, scholars say: its early chapters contain historical difficulties."
-    text: "Christine Hayes says Belshazzar was never king but a prince regent, defeated by Cyrus, not Darius, that the Median king Darius is unknown to history, and that these inaccuracies are a sign of a much later writer looking back. Amy Merrill Willis counts Daniel's seventy-year career under Babylonian, Median and Persian kings among the book's historical difficulties, and says Nebuchadnezzar's exile in chapter 4 may have been based on Nabonidus, adding that an account outside the Bible has Nabonidus consulting a Jewish seer. Daniel Smith-Christopher and Lawrence Wills note that a story called the Prayer of Nabonidus, found among the Dead Sea Scrolls, resembles the tales of Daniel 1–6."
+    short: "Not reliably, scholars say: Belshazzar was never king, no Median king Darius is known to history, and the early chapters contain other historical difficulties."
+    text: "Christine Hayes says Belshazzar was never king but a prince regent, defeated by Cyrus, not Darius, that the Median king Darius is unknown to history, and that these inaccuracies are a sign of a much later writer looking back. Amy Merrill Willis counts Daniel's seventy-year career under Babylonian, Median and Persian kings among the book's historical difficulties, and says Nebuchadnezzar's exile in chapter 4 may have been based on Nabonidus, adding that an account outside the Bible has Nabonidus consulting a Jewish seer. Daniel Smith-Christopher and Lawrence Wills note that a story called the Prayer of Nabonidus, found among the Dead Sea Scrolls, resembles the tales of Daniel 1–6. John J. Collins says any attempt to draw historical information from the tales meets insuperable problems: the opening verse dates a siege of Jerusalem to Jehoiakim's third year (606 BCE), though Nebuchadnezzar did not besiege the city until 598/597 and Jehoiakim died before the siege; Belshazzar, son of Nabonidus, governed Babylon in his father's absence but was never king; and no “Darius the Mede” is known to history. Carol Newsom says scholars recognized a century ago that Belshazzar was the son of Nabonidus, not Nebuchadnezzar, and that chapter 4 recasts Nabonidus's ten-year absence from Babylon; she adds that the Darius story was probably first told of the Persian king Darius I."
     cites:
       - source: hayes-rlst145-l23
         locator: "ch. 5 [00:35:21]"
@@ -251,11 +339,46 @@ statements:
         locator: "paragraph beginning “The Joseph story, Esther, and Dan 1-6 may have been”"
         quote: "In addition, among the Dead Sea Scrolls at Qumran were found the Prayer of Nabonidus and Tales of the Persian Court. The former, concerning an unnamed Jewish exorcist, is similar to Dan 1-6"
         read: 2026-11-25
+      - source: collins-2014-intro-hebrew-bible
+        url: "https://books.google.com/books?id=fbsoBAAAQBAJ&pg=PA566"
+        locator: "p. 566, section “The Court Tales”"
+        quote: "Any attempt to derive historical information from these stories, however, encounters insuperable problems."
+        read: 2026-11-28
+      - source: collins-2014-intro-hebrew-bible
+        url: "https://books.google.com/books?id=fbsoBAAAQBAJ&pg=PA566"
+        locator: "p. 566, section “The Court Tales”"
+        quote: "The opening verse dates the siege of Jerusalem to the third year of King Jehoiakim (606 B.C.E.). We know from other sources, both biblical and Babylonian, that Nebuchadnezzar did not besiege Jerusalem until 598/597, and Jehoiakim died before the siege began."
+        read: 2026-11-28
+      - source: collins-2014-intro-hebrew-bible
+        url: "https://books.google.com/books?id=fbsoBAAAQBAJ&pg=PA566"
+        locator: "p. 566, section “The Court Tales”"
+        quote: "There was in fact a historical Belshazzar, who was son of the last king of Babylon, Nabonidus, and who governed Babylon in the absence of his father. He was never king, however."
+        read: 2026-11-28
+      - source: collins-2014-intro-hebrew-bible
+        url: "https://books.google.com/books?id=fbsoBAAAQBAJ&pg=PA566"
+        locator: "p. 566, section “The Court Tales”"
+        quote: "Daniel goes on to say that after the death of Belshazzar, “Darius the Mede” received the kingdom. No such figure is known to history."
+        read: 2026-11-28
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA9"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 9"
+        quote: "Already by the turn of the twentieth century, scholars recognized that Belshazzar was not the son of Nebuchadnezzar (Dan 5:11–12) but of Nabonidus"
+        read: 2026-11-28
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA9"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 9"
+        quote: "Moreover, the account of Nebuchadnezzar’s seven-year absence from Babylon in ch. 4 was recognized as a fictionalized version of Nabonidus’s actual ten-year absence from Babylon"
+        read: 2026-11-28
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA10"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 10"
+        quote: "Though referred to in the final form of the book as “Darius the Mede,” there is evidence that the story was originally told about the Persian Darius I"
+        read: 2026-11-28
   - id: canon
     group: "How the book was made"
     question: "Where does Daniel sit in the Bible?"
     short: "Among the Writings in the Hebrew Bible, and among the Prophets in the Greek and English Bibles, though scholars class it as apocalyptic rather than prophetic."
-    text: "The HarperCollins Bible Dictionary says Daniel is placed within the Writings in the Hebrew Bible but within the Prophets in the Septuagint and English Bibles. Rhonda Burnette-Bletsch says the prophetic section of the Christian Old Testament includes Daniel, which many Christians read prophetically, though scholars consider it an apocalyptic book. The NABRE introduction says that, strictly speaking, the book belongs not to the prophetic writings but to apocalyptic literature."
+    text: "The HarperCollins Bible Dictionary says Daniel is placed within the Writings in the Hebrew Bible but within the Prophets in the Septuagint and English Bibles. Rhonda Burnette-Bletsch says the prophetic section of the Christian Old Testament includes Daniel, which many Christians read prophetically, though scholars consider it an apocalyptic book. The NABRE introduction says that, strictly speaking, the book belongs not to the prophetic writings but to apocalyptic literature. John J. Collins notes that Daniel, composed about 164 BCE, did not find a place among the Prophets in the Hebrew Bible, which has often been taken to show that the collection of the Prophets was already fixed by then."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/daniel-the-book-of/"
@@ -270,6 +393,11 @@ statements:
         locator: "Introduction, ¶ 1"
         quote: "Strictly speaking, the book does not belong to the prophetic writings but rather to a distinctive type of literature known as “apocalyptic,” of which it is an early specimen."
         read: 2026-11-25
+      - source: collins-2014-intro-hebrew-bible
+        url: "https://books.google.com/books?id=fbsoBAAAQBAJ&pg=PA6"
+        locator: "p. 6"
+        quote: "The book of Daniel, which was composed about 164 B.C.E., did not find a place among the Prophets in the Hebrew Bible, and this has often been taken as an indication that the collection of the Prophets was already fixed at the time of its composition."
+        read: 2026-11-28
   - id: additions
     group: "The Greek additions"
     question: "What are the Greek additions to Daniel?"
@@ -371,7 +499,7 @@ statements:
     group: "Readings of the date"
     question: "Who proposed the second-century date?"
     short: "The third-century philosopher Porphyry, who argued that the book was written in Judea under Antiochus IV. Jerome wrote a rebuttal."
-    text: "Benjamin Suchard says the second-century date for the latest parts of the book was proposed starting with the third-century CE Neoplatonic philosopher Porphyry. The Posen Library's headnote says Porphyry, whom Jerome cites in his prologue to Daniel, argued that the book was composed by someone in Judea during the reign of Antiochus IV and discounted prophetic foresight altogether, and that Jerome rebutted him."
+    text: "Benjamin Suchard says the second-century date for the latest parts of the book was proposed starting with the third-century CE Neoplatonic philosopher Porphyry. The Posen Library's headnote says Porphyry, whom Jerome cites in his prologue to Daniel, argued that the book was composed by someone in Judea during the reign of Antiochus IV and discounted prophetic foresight altogether, and that Jerome rebutted him. Carol Newsom says Porphyry noted that the prophecy of Daniel 11 is accurate up to Antiochus IV and then diverges from known events, and so concluded that the book was composed in the second century BCE; Jerome engaged his views in his own commentary and tried to refute them."
     cites:
       - source: suchard-2022-greek-daniel-3
         locator: "p. 122"
@@ -385,6 +513,16 @@ statements:
         locator: "headnote"
         quote: "In his rebuttal, Jerome explains that Porphyry is confusing the original book of Daniel with the stories known as “additions to Daniel” concerning Susannah and Bel and the Dragon preserved in the Apocrypha, which he does not consider scriptural."
         read: 2026-11-25
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA6"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 6"
+        quote: "who noted that the supposed prophecy to Daniel in ch. 11 was a strangely accurate account of history up until the time of Antiochus IV, at which point it diverged sharply from what was known of historical events."
+        read: 2026-11-28
+      - source: newsom-2014-daniel
+        url: "https://books.google.com/books?id=Ha51BwAAQBAJ&pg=PA6"
+        locator: "Introduction, “Composition and Development of Daniel MT”, p. 6"
+        quote: "Thus Porphyry concluded that the book was composed in the second century B.C.E. Although Porphyry’s own writings are not preserved, Jerome (15) engaged Porphyry’s opinions in his own commentary and attempted to refute them"
+        read: 2026-11-28
   - id: tradition
     group: "Readings of the date"
     question: "What do religious traditions hold about the date?"

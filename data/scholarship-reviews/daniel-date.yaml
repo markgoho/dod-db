@@ -11,6 +11,7 @@
 # Second pass changes. Shorts: date (“scholars date it”, from the OUP summary and Popović, plus “The date has long been debated, and some still hold to the sixth century”, from Suchard and Valeta's box; the “court tales earlier” clause left the short, as within this statement only Hayes carries it); reasons (“in growing detail, and stop before his reign ends” cut, OUP summary alone; now “as prophecy, in coded references to the writer's own time”, OUP summary and Hayes); tales (Suchard's “One recent study argues …” moved to the text only, #133); scrolls (“the oldest is dated” → “one is dated”; neither Nel nor Popović says oldest); history (the ch. 4–Nabonidus clause cut: Merrill Willis alone, with unsourced “madness” and “last Babylonian king”; the short ends at “historical difficulties”); additions-origin (“Probably” → “Possibly”: NABRE “probably”, Posen “may”, McLay “suggest … uncertainty remains”); additions-status (“as part of Daniel” was sourced for Catholics only; now Catholic and Orthodox Christians count them as scripture, Catholic Bibles print them with Daniel). Texts: date says “Did You Know?” box, not “key points”, and Evans's “in the second century BCE, especially under Antiochus IV”; tales says Silverman dates the books, not the stories; additions-origin drops the Bullard–Hatton sentence; additions-status attributes the Glancy line to the article's “In Brief” summary. Cut to uncited: Bullard–Hatton (old additions-origin/7; class doubtful and carries “opinion today favors”); additions-origin/8 renumbered /7; registry entry removed. Quote: scrolls/5 “14 C” → “14C”. Locators: date/6, date/10 and scrolls/4 (§ 2.1), scrolls/5 (§ 6), reasons/4, tales/2, tales/6 (p. 134), scrolls/3 (§ 2), languages/2, history/4–6, canon/2, additions-origin/5, additions-status/3–4, porphyry/2–3 (“headnote”), tradition/1 and /3.
 # Second pass flags: (1) NABRE (intro and notes) is Reference by repo convention, but #155 says confessional study Bibles are Tradition and don't count toward the two; the publish rule holds without it, but the author short's “The author is unknown” rests on the NABRE introduction alone among that statement's cites (Merrill Willis and Evans back the fictional-hero clause). Lead to decide. (2) 34@00:44:03 kept: “scholarly consensus” allows a minority, which the date short reports; Ep 45's “uniformly convinced” (unanimity) stays logged as a conflict. Lead to confirm. (3) 34@00:51:05 “Some of the stories originate in the Late Babylonian period” sits beside the tales short (Persian or early Hellenistic); read as origins of material, not a contradiction. (4) Valeta's and Glancy's lines are in page boxes whose authorship is not stated; both are attributed to the box. (5) Posen editor (Carol Bakhos), Volume 2, 2025 and Yale University Press confirmed only in the page's JSON-LD metadata, not its visible text. (6) Single-source clauses kept as facts of the text: the scrolls switch clause (Nel), the languages mismatch clause (van Deventer, with Perrin's boundaries and Smith-Christopher's genre division), and “The author is unknown” (NABRE; see flag 1). Nel also reports Ulrich dating “the Scroll” to 50 BCE, in the sentence after his 4QDanc dating, without naming it. (7) Nel's issue is 3&4 per the landing page; registry series says 47.3 (not changed). (8) The published Timeline Entry `daniel` (first-pass flag 9) still states 167–164 flatly. Publish rule recomputed: core `date` backed by Hayes, Merrill Willis, the Coogan–Chapman summary, Evans (Reference) and Popović et al. (Scholarly): 5 independent authors without NABRE; Suchard and Valeta back only the debate clause. 13 statements. Holds. Ids, slug and draft unchanged.
 # Publish 2026-11-25 (lead agent, on the second pass's flags): (1) 34@00:44:03 trimmed to end before “And so the scholarly consensus is that it was in this period when this text was written.”: the date text reports, from Valeta, that both viewpoints have strong defenders, so the consensus sentence is not attached; the trimmed quote still states 167–164 BCE and Antiochus IV, and is re-matched by script. Not logged as a conflict, as the attached text does not contradict a statement. (2) NABRE kept as Reference: CONTEXT.md rules that a study Bible whose notes are written by a scholarly association, as the NABRE's are, is not a Tradition source; #155's note targets confessional study Bibles. The author short no longer rests on NABRE alone: “The author is unknown” replaced by “Not Daniel, scholars say: they read him as the book's hero, probably a fictional one, rather than its writer” (Merrill Willis, Evans). (3) Valeta and Glancy box lines kept, attributed to the boxes. (4) Nel's Hebrew/Aramaic switch at Qumran and the language/genre mismatch kept as plain textual facts (#133 exemption). (5) Timeline Entry `daniel`: issue #181 filed for the owner's re-review; not edited. Grammar of the date and tales shorts mended without changing their strength. Publish rule recomputed: core backed by Hayes, Merrill Willis, Coogan–Chapman summary, Evans (Reference) and Popović et al. (Scholarly), plus NABRE; 13 statements. draft flag dropped.
+# #182 first pass 2026-11-28 (agent, partial re-review per #93: the changed statements' new citations get the full procedure; review and sourcesRead stay 2026-11-25, the new cites carry read 2026-11-28). Leads read: Coşkun, Historia 68 (2019), the author's offprint on UWSpace (hdl 10012/18089; opened in Chrome past the repository's Anubis check, PDF then saved by curl from the repository's own server; 7/7 quotes script-matched, whitespace and line-break hyphens normalised). Correction to the old lead and to #182's wording: Coşkun does not date chs 10–11 after the December 164 purification; he confines the pre-death terminus (Dan 11:40–45) to chs 10–11 and dates chs 7–9 and 12 after the purification, finalised by the end of January 163 BCE (abstract; pp. 448, 459). His own thesis is attributed in the reasons text only; his reports of the field (p. 438 “most scholars … around 166 BC”; p. 447 “wide-spread assumption”) back the field wording, not the page's 167–164. Newsom, Daniel (OTL 2014): Google Books preview (ebook ISBN 9781611645392), Introduction pp. 6–12 displayed in full in Chrome; quotes transcribed from the page images (no text layer). Collins: the Short Introduction 2nd (2014) and 4th (2025) editions' Daniel pages are not in the previews (search hits only, “No preview available”), and the Writings split volume has no preview; the full Introduction to the Hebrew Bible, 2nd ed. (2014) shows pp. 6 and 566 in full and is cited from them; its Dan 11 pages (581) are not shown. Brill OAPEN: Suchard, Aramaic Daniel (2022) saved from the Internet Archive copy of the OAPEN PDF (2/2 script-matched); Machiela, Handbook of the Aramaic Scrolls (2022) read in the OAPEN in-browser viewer, not cited (uncited). Portier-Young VT 60 (2010): closed (OpenAlex is_oa false, no repository full text; CORE has Crossref metadata only; no DukeSpace or Internet Archive copy). Added: date/13–15, reasons/7–13, tales/9–12, author/4–5, languages/5–7, history/7–13, canon/4, porphyry/4–5; four registry entries. Shorts changed: reasons (new third sentence: Daniel 11 gets Antiochus's death wrong, so scholars date it before he died, late in 164 BCE; Coogan–Chapman summary, Newsom, Coşkun) and history (Belshazzar never king, no Median Darius known: Hayes and Collins each). Unchanged shorts: date, tales, author, languages, canon, porphyry. Infographic: the reasons plate restates the unchanged little-horn sentence and the legend the unchanged date short, so the infographic stays in step. Flags for the second pass: (1) the reasons short's new sentence rests partly on Newsom's report of Porphyry (reasons/7); check it is not stronger than Newsom, Coşkun and the Coogan–Chapman summary together. (2) history short: “Belshazzar was never king” (Hayes, Collins) and “no Median king Darius is known to history” (Hayes, Collins); Newsom's Darius I point (history/13) is not counted. (3) Collins class (Reference by textbook precedent) and the registry title and edition. (4) Newsom quotes are transcriptions from page images; re-read each against the displayed page.
 review: 2026-11-25
 delegation:
   by: owner
@@ -90,6 +91,24 @@ citations:
       owner: "",
       note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Key-points (“Did You Know?”) box on the article page, under Valeta's byline; authorship of the box not stated. Second author behind the dissent clause. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified (Chrome capture). Box authorship still not stated; backs only the debate clause with Suchard.",
     }
+  date/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 7, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Reports where scholarship stood by the late 19th c. (critical scholarship persuaded of a 2nd-c. setting for at least the apocalypses); backs the date text, not the short's present-tense wording.",
+    }
+  date/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 11, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. “The remainder of the chapters” are chs. 8–12 (the paragraph before treats ch. 7 as possibly pre-Maccabean, updated). Backs the core's 167–164 for the visions; Newsom is a new independent author behind the core.",
+    }
+  date/15:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 11, same sentence as date/14, continued; she adds in parentheses that some scholars date the events a year earlier (desecration in 168). Text says “between December 167 BCE and the end of 164 BCE”.",
+    }
   reasons/1:
     {
       agent: pass,
@@ -125,6 +144,48 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
+    }
+  reasons/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 6, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Her report of Porphyry's observation, introduced with “noted”; she does not dispute it. Backs the new short sentence's “follows events closely into his reign but gets his death wrong” beside Coşkun; attributed in the text as Porphyry's observation that Newsom reports.",
+    }
+  reasons/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 11, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Ties the latest date to Antiochus's death (end of 164). Backs “before he died, late in 164 BCE”.",
+    }
+  reasons/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Coşkun, abstract, read in the author's offprint (UWSpace, opened in Chrome past the repository's bot check; the PDF then served from dspacemainprd01.lib.uwaterloo.ca and saved by curl); quote script-matched on the pdftotext text (whitespace and line-break hyphens normalised). “Counterfactual allusion” = the death in 11:40–45 does not match what happened. Backs the short's new sentence.",
+    }
+  reasons/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Coşkun p. 447 (§ 3), read in the author's offprint (UWSpace, opened in Chrome past the repository's bot check; the PDF then served from dspacemainprd01.lib.uwaterloo.ca and saved by curl); quote script-matched on the pdftotext text (whitespace and line-break hyphens normalised). Same argument in full: accurate narrative to 170–168, then a death “remote from the actual events”.",
+    }
+  reasons/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Coşkun p. 438, read in the author's offprint (UWSpace, opened in Chrome past the repository's bot check; the PDF then served from dspacemainprd01.lib.uwaterloo.ca and saved by curl); quote script-matched on the pdftotext text (whitespace and line-break hyphens normalised). His report of the field (“most scholars … around 166 BC”); backs the short's “scholars date it before he died” as a field statement beside the Coogan–Chapman summary (reasons/1) and Newsom. His own 166 is not used for the page's 167–164.",
+    }
+  reasons/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Coşkun, abstract, read in the author's offprint (UWSpace, opened in Chrome past the repository's bot check; the PDF then served from dspacemainprd01.lib.uwaterloo.ca and saved by curl); quote script-matched on the pdftotext text (whitespace and line-break hyphens normalised). His own thesis (one author): the terminus binds Dan 10–11 only. Attributed in the text, not in the short (#133). Corrects the issue's and the old lead's wording (“dates chs 10–11 after the December 164 purification”): it is chs 7–9 and 12 he dates after the purification, by the end of January 163 (abstract on UWSpace; p. 459).",
+    }
+  reasons/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Coşkun p. 448, read in the author's offprint (UWSpace, opened in Chrome past the repository's bot check; the PDF then served from dspacemainprd01.lib.uwaterloo.ca and saved by curl); quote script-matched on the pdftotext text (whitespace and line-break hyphens normalised). His dissent from “this common opinion”, quoted so the text shows he argues against the majority he reports. Attributed.",
     }
   tales/1:
     {
@@ -173,6 +234,30 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; Suchard's later dating of Dan 2–6 is one author, so cut from the short (#133) and kept attributed in the text.",
+    }
+  tales/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 9, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. State-of-the-field (“Most scholars agree”) on the tales first circulating singly; second independent author beside Suchard's “usually held” for the short's “Usually”.",
+    }
+  tales/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 7, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. “most now adopt a theory of gradual composition”; minority defending unity named.",
+    }
+  tales/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Suchard, Aramaic Daniel (2022), ch. 1 § 1, p. 2, read in the OAPEN open-access PDF, saved from the Internet Archive copy of the OAPEN bitstream (OAPEN itself refuses scripted requests); quote script-matched on the pdftotext text (whitespace normalised; footnote numerals not quoted). Same author as suchard-2022-greek-daniel-3, so no new independent author; strengthens the text's report of the consensus.",
+    }
+  tales/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Suchard, Aramaic Daniel, p. 2, next sentence after tales/11; read in the OAPEN open-access PDF, saved from the Internet Archive copy of the OAPEN bitstream (OAPEN itself refuses scripted requests); quote script-matched on the pdftotext text (whitespace normalised; footnote numerals not quoted). The cumulative hypothesis puts the stories of Dan 2–6 first.",
     }
   scrolls/1:
     {
@@ -228,6 +313,18 @@ citations:
       owner: "",
       note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
     }
+  author/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Collins, Introduction to the Hebrew Bible (2014) p. 566, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Context: the tales are legends with miraculous elements. Text only; short unchanged.",
+    }
+  author/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Collins p. 566, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Third author (with Merrill Willis and Evans) that Daniel was probably not a real person; short unchanged (infographic statement).",
+    }
   languages/1:
     {
       agent: pass,
@@ -251,6 +348,24 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; the short's mismatch clause rests on van Deventer plus the language boundaries (Perrin) and genre division (Smith-Christopher's same paragraph), kept as a fact of the text.",
+    }
+  languages/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 8, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it; line-break hyphen (“rela-tion”) normalised. Second author beside van Deventer for the short's “does not line up with the book's division into tales and visions”.",
+    }
+  languages/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 8, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Backs “theories … often more ingenious than persuasive”; with van Deventer's “not yet been able to solve”.",
+    }
+  languages/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 8, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Her “most persuasive and commonly held theory”; reported in the text as hers.",
     }
   history/1:
     {
@@ -288,6 +403,48 @@ citations:
       owner: "",
       note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator corrected: “In addition” is mid-paragraph. In the DOM one <p> (starting “The Joseph story in Gen 37-50”) holds this and the previous paragraph; in the page text it is the visible paragraph beginning “The Joseph story, Esther, and Dan 1-6 may have been”, which the locator names. Backs the text only.",
     }
+  history/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Collins p. 566, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Frames the list of problems.",
+    }
+  history/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Collins p. 566, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it; the sentence runs from the left column into the right. The Jehoiakim date in 1:1 (the old lead's second point). One author; text only.",
+    }
+  history/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Collins p. 566, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it; line-break hyphen (“histori-cal”) normalised. Second author beside Hayes (history/1) for the short's “Belshazzar was never king”.",
+    }
+  history/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Collins p. 566, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Second author beside Hayes (history/2, “unknown to history”) for the short's “no Median king Darius is known to history”.",
+    }
+  history/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 9, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Belshazzar's father; a different point from Hayes's “never king”; text only.",
+    }
+  history/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 9, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Dan 4 recasts Nabonidus's absence in Teima; agrees with Merrill Willis (history/4).",
+    }
+  history/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 10, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Her view that the Darius story was first told of Darius I; it does not itself say Darius the Mede is unknown, so it is not counted behind that clause of the short. Text only, attributed.",
+    }
   canon/1:
     {
       agent: pass,
@@ -305,6 +462,12 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-captured in Chrome; quote re-matched by script (whitespace only), locator found, surrounding passage read.",
+    }
+  canon/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Collins p. 6, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. “has often been taken as an indication”: a reported inference about the Prophets collection, linked to Daniel's date. Text only, attributed; short unchanged.",
     }
   additions/1:
     {
@@ -432,6 +595,18 @@ citations:
       owner: "",
       note: "First pass 2026-11-25: matched by script against the fetched text; surrounding passage read. Second pass 2026-11-25: re-fetched by curl; quote re-matched by script (whitespace only), locator found, surrounding passage read; verified; locator now “headnote” (single paragraph).",
     }
+  porphyry/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 6, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it. Same passage as reasons/7.",
+    }
+  porphyry/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Newsom p. 6, read in the Google Books preview in Claude in Chrome at the cite's url (the page displays in full; Google Books refuses scripted requests); quote transcribed from the page image and re-read against it; “(15)” is her page reference to Jerome. Third author for the short's “Jerome wrote a rebuttal”.",
+    }
   tradition/1:
     {
       agent: pass,
@@ -540,7 +715,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Core `date` backed by NABRE intro, Hayes, Merrill Willis, Coogan–Chapman summary, Evans, Popović et al. (Reference/Scholarly): 7 independent authors with Suchard and Valeta. 13 statements. Second pass 2026-11-25: recounted. The first pass's “7 … with Suchard and Valeta” counted the two dissent sources; they back the debate clause, not the core. Core `date` (second century BCE; visions 167–164 BCE) backed by Hayes (Reference), Merrill Willis (Reference), Coogan–Chapman summary (Reference), Evans (Reference) and Popović et al. (Scholarly): 5 independent authors without NABRE (6 with it; not leaned on given #155). 13 statements. Holds.",
+      note: "First pass 2026-11-25: Core `date` backed by NABRE intro, Hayes, Merrill Willis, Coogan–Chapman summary, Evans, Popović et al. (Reference/Scholarly): 7 independent authors with Suchard and Valeta. 13 statements. Second pass 2026-11-25: recounted. The first pass's “7 … with Suchard and Valeta” counted the two dissent sources; they back the debate clause, not the core. Core `date` (second century BCE; visions 167–164 BCE) backed by Hayes (Reference), Merrill Willis (Reference), Coogan–Chapman summary (Reference), Evans (Reference) and Popović et al. (Scholarly): 5 independent authors without NABRE (6 with it; not leaned on given #155). 13 statements. Holds. #182 first pass 2026-11-28: Newsom (Scholarly; date/14–15) added behind the core: 6 independent authors without NABRE. 13 statements. Holds.",
     }
   consensus-wording:
     {
@@ -602,6 +777,30 @@ sources:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-25: Scholarly; 2022; University repository PDF, open. Second pass 2026-11-25: JBL 141.1 (2022) 121–136 confirmed on the PDF's cover page and headers; handle resolves to the Leiden repository download.",
+    }
+  newsom-2014-daniel:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Scholarly (Old Testament Library commentary, Westminster John Knox). Read in the Google Books preview (ebook, ISBN 9781611645392, 384 pp.), pp. 6–11 of the Introduction displayed in full in Chrome. Google lists Carol A. Newsom as author; the cited Introduction pages are hers. Named in Ep 34 (the old lead).",
+    }
+  coskun-2019-daniel-chronology:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Scholarly (Historia, peer reviewed). UWSpace item 10012/18089, “pdf offprint” deposited by the author's university; reached in Chrome past the repository's Anubis bot check (no CAPTCHA), then the PDF downloaded by curl from the repository's own server. 2019, in window.",
+    }
+  collins-2014-intro-hebrew-bible:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: the full Introduction to the Hebrew Bible, 2nd ed. (Fortress 2014, ISBN 9781451469233, Google Books fbsoBAAAQBAJ), not the Short Introduction the old lead named. Pp. 6 and 566 display in full; pp. 564–565, 567 and 581 (where the Dan 11:40–45 discussion likely sits) do not. Reference by precedent for introductory textbooks (coogan-brief-4e-*). Flag: second pass to confirm the title wording and edition from the preview's front matter.",
+    }
+  suchard-2022-aramaic-daniel:
+    {
+      agent: pass,
+      owner: "",
+      note: "#182 first pass 2026-11-28: Scholarly (Brill monograph, open access CC BY-NC). One of the two Brill OAPEN volumes in the old lead. OAPEN refuses curl (429/403); the same PDF saved from the Internet Archive (web.archive.org/web/20251206113920/https://library.oapen.org/bitstream/handle/20.500.12657/86426/9789004521308.pdf). Same author as suchard-2022-greek-daniel-3: not a new independent author.",
     }
   valeta-bo-lions-den:
     {
@@ -724,17 +923,18 @@ sources:
       note: "First pass 2026-11-25: Tradition; year not on page; Bible Gateway study resources, open. Second pass 2026-11-25: verified.",
     }
 leads:
-  - "John J. Collins, A Short Introduction to the Hebrew Bible, 3rd ed. (Fortress 2018), ch. 27 “Daniel, 1–2 Maccabees”: read only as a JSTOR download reposted on a St Mary's University course server (palimpsest.stmarytx.edu); no publisher, author or Google Books copy found. Would carry the Dan 11:40–45 unfulfilled death prophecy, the Jehoiakim date, Darius the Mede, and the canon-placement link."
   - "W. Sibley Towner, “Daniel, The Book of”, Oxford Companion to the Bible (1993): course-reserve copy on a Michigan Tech faculty page; outside the window (“prevailing scholarly opinion” on prophecy after the fact)."
-  - "Carol Newsom, Daniel (OTL, 2014), on the languages (named in Ep 34): no public text found."
   - "John J. Collins, Daniel (Hermeneia, 1993) and Collins in ABD: not public; pre-window."
-  - "Altay Coşkun, Historia 68 (2019), on the chronology of Daniel 7–12 (dates ch. 10–11 after the December 164 purification): UWSpace offprint behind a bot wall."
   - "Britannica, “biblical literature: Daniel”: 403; snippets only."
-  - "Brill open-access books on the Aramaic tales (OAPEN 9789004521308, 9789004513815): 403."
-  - "Anathea Portier-Young, VT 2010, “Languages of Identity and Obligation: Daniel as Bilingual Book”: paywalled."
   - "Peter Flint, “The Daniel Tradition at Qumran” (Brill 2001); Ulrich, DJD 16: not public."
   - "TheTorah.com, Wills and Kratz on Antiochus IV's persecution: bodies rendered by script, not extractable; class unclear."
+  - "John J. Collins, A Short Introduction to the Hebrew Bible (Fortress; 2nd ed. 2014, 3rd ed. 2018, 4th ed. 2025), the Daniel chapter: retried 2026-11-28 (#182) in Google Books (ZI1VBAAAQBAJ, EVkWEQAAQBAJ, bs9YEQAAQBAJ): the Daniel pages show only search snippets (“No preview available”); the 2018 Writings split volume (YR91tAEACAAJ) has no preview. The full Introduction to the Hebrew Bible, 2nd ed. (2014), is now cited from pp. 6 and 566 for the Jehoiakim date, Belshazzar, Darius the Mede and the canon link; its treatment of Dan 11:40–45 (p. 581) is not in the preview, so that point stays a lead for Collins (the page carries it from Coşkun, Newsom and the Coogan–Chapman summary)."
+  - "Anathea Portier-Young, “Languages of Identity and Obligation: Daniel as Bilingual Book”, VT 60 (2010): closed. Retried 2026-11-28 (#182): OpenAlex is_oa false, no repository full text; CORE holds Crossref metadata only; no DukeSpace or Internet Archive copy; Brill paywall."
 uncited:
+  - "Machiela, A Handbook of the Aramaic Scrolls from the Qumran Caves (Brill 2022, open access; OAPEN 20.500.12657/86447): read 2026-11-28 (#182) in the OAPEN in-browser viewer, profile of 4Q242 Prayer of Nabonidus (PDF pp. 273–274, printed 256–257), which sets out its similarities to Dan 4; not cited: history already carries the Prayer of Nabonidus with Smith-Christopher, Wills and now Newsom, and the Daniel-scroll pages looked at (PDF p. 350) are language tables."
+  - "Newsom, Daniel (OTL 2014), pp. 6, 10, 12: the Greek additions as embellishment by prayers and hymns, the Persian-period booklet of chs. 4–6 and the Old Greek, and Qumran manuscripts “little more than fifty years” after chs. 8–12: read 2026-11-28 (#182); not cited, the statements on the additions and the scrolls already carry these points."
+  - "Coşkun 2019, the sections beyond the cited passages (his chronology of 171–164 BCE and the day counts of Dan 8, 9 and 12): looked over in the saved text 2026-11-28 (#182), not read closely; not cited, outside the page's questions."
+  - "Suchard, Aramaic Daniel (2022), p. 5: “the scholarly consensus holds that they [Dan 8–12] were written later”: read 2026-11-28 (#182); not cited, tales/11–12 carry the same author's consensus report."
   - "Bullard and Hatton, A Handbook on the Shorter Books of the Deuterocanon (UBS 2006), Introduction to Susanna, paragraph beginning “There is really no hard evidence”: “… opinion today favors an original in either Aramaic or Hebrew since the Greek occasionally reflects Semitic idiom”: read (first and second pass); cut at the second pass 2026-11-25 (was additions-origin/7): a translators' handbook from a Bible-society publisher fits none of #80's three classes cleanly, and it carries a state-of-the-field claim (“opinion today favors”); when in doubt, cut. Its registry entry removed."
   - "Hayes l23: “It was chronologically the latest book, written between 167 and 164 BCE.”: read; not cited, date/2 carries the date."
   - "Encyclopaedia Judaica, H. L. Ginsberg, “Daniel, Book of” (encyclopedia.com; JVL): read; first-edition text, outside the window; its four-author thesis for chs 7–12 and its Porphyry account not used."

@@ -2203,6 +2203,62 @@ suchard-2022-greek-daniel-3:
   hostAuthored: false
   tradition: null
 
+newsom-2014-daniel:
+  author: "Carol A. Newsom"
+  title: "Daniel: A Commentary"
+  series: "Old Testament Library"
+  publisher: "Westminster John Knox Press"
+  year: 2014
+  edition: "Ebook (Google Books edition read)"
+  class: Scholarly
+  kind: book
+  access: "Google Books preview, open in a browser (pages shown vary; refuses scripted requests)"
+  url: "https://books.google.com/books?id=Ha51BwAAQBAJ"
+  hostAuthored: false
+  tradition: null
+
+coskun-2019-daniel-chronology:
+  author: "Altay Coşkun"
+  title: "The Chronology of the Desecration of the Temple and the Prophecies of Daniel 7–12 Reconsidered"
+  series: "Historia 68.4, pp. 436–462"
+  publisher: "Franz Steiner Verlag"
+  year: 2019
+  edition: "Author's offprint, University of Waterloo repository (UWSpace)"
+  class: Scholarly
+  kind: article
+  access: "University repository PDF, open in a browser (the repository's bot check refuses scripted requests)"
+  url: "https://hdl.handle.net/10012/18089"
+  hostAuthored: false
+  tradition: null
+
+collins-2014-intro-hebrew-bible:
+  author: "John J. Collins"
+  title: "Introduction to the Hebrew Bible"
+  series: null
+  publisher: "Fortress Press"
+  year: 2014
+  edition: "2nd ed., paperback (Google Books edition read)"
+  class: Reference
+  kind: book
+  access: "Google Books preview, open in a browser (pages shown vary; refuses scripted requests)"
+  url: "https://books.google.com/books?id=fbsoBAAAQBAJ"
+  hostAuthored: false
+  tradition: null
+
+suchard-2022-aramaic-daniel:
+  author: "Benjamin D. Suchard"
+  title: "Aramaic Daniel: A Textual Reconstruction of Chapters 1–7"
+  series: null
+  publisher: "Brill"
+  year: 2022
+  edition: "Open-access edition (CC BY-NC 4.0)"
+  class: Scholarly
+  kind: book
+  access: "OAPEN Library PDF, open in a browser (refuses scripted requests; Internet Archive copy of the same PDF)"
+  url: "https://library.oapen.org/handle/20.500.12657/86426"
+  hostAuthored: false
+  tradition: null
+
 nel-2006-dss-daniel:
   author: "Marius Nel"
   title: "Contribution of the Dead Sea Scrolls to Textual Criticism and Understanding of the Canonical Book of Daniel"
