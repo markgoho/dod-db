@@ -96,26 +96,27 @@ images:
     statements: [devil]
     aspect: "4:3"
     refs: [apart]
-    alt: "Jesus speaks to a few villagers on a hillside; a comic thought cloud beside him holds the man in the near-black robe, the opponent he is speaking about."
+    alt: "Jesus speaks to a few villagers on a hillside; a comic thought cloud above them holds the man in the near-black robe, the opponent he is speaking about."
     prompt: >-
-      A low hillside in Galilee in daylight. In the RIGHT half of the
-      picture stands Jesus: a first-century Jewish man of about thirty with
+      A low hillside in Galilee in daylight. In the CENTRE of the picture
+      stands Jesus: a first-century Jewish man of about thirty with
       shoulder-length dark brown hair and a short dark beard, olive skin,
       in a plain off-white tunic, one hand raised as he speaks with calm
       conviction to three ordinary villagers in plain tunics and headcloths
-      who sit on the slope listening. Soft golden amber light falls on the
-      scene. In the UPPER LEFT of the picture, a large comic thought cloud
-      with a scalloped outline and a trail of small bubbles leading to
-      Jesus shows, small and inside the cloud only, the SAME tall lean man
-      as in the reference image (same sharp face, close-cropped black hair,
-      short black beard, long near-black robe with rust red lining), arms
-      folded, against a dark grey background: he is what Jesus is talking
-      about, not someone standing on the hillside. Nobody on the hillside
-      itself except Jesus and the three villagers. The BOTTOM LEFT quarter
-      of the picture is plain bare hillside. Negative list: no dark figure
-      standing on the hillside, no halo, no glow around Jesus's head, no
-      wings, no horns, no tails, no fire, no weapons, no fighting, no
-      desert, no text.
+      who sit on the slope to his RIGHT, listening. Soft golden amber light
+      falls on the scene. In the UPPER RIGHT of the picture, above the
+      villagers, a large comic thought cloud with a scalloped outline and a
+      trail of small bubbles leading down to Jesus shows, small and inside
+      the cloud only, the SAME tall lean man as in the reference image
+      (same sharp face, close-cropped black hair, short black beard, long
+      near-black robe with rust red lining), arms folded, against a dark
+      grey background: he is what Jesus is talking about, not someone
+      standing on the hillside. Nobody on the hillside itself except Jesus
+      and the three villagers. The TOP LEFT quarter of the picture is plain
+      pale sky with nothing in it, and the BOTTOM LEFT quarter is plain bare
+      hillside. Negative list: no dark figure standing on the hillside, no
+      halo, no glow around Jesus's head, no wings, no horns, no tails, no
+      fire, no weapons, no fighting, no desert, no text.
 
   - id: serpent
     statements: [serpent]

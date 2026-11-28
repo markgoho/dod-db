@@ -10,7 +10,7 @@
 # and a printed two-column Greek and Latin book; the same desk with one
 # handwritten Greek manuscript handed in; translators marking up a printed
 # English Bible in 1611; and, across the bottom, a modern reader's open Bible
-# with one paragraph set in large double brackets. `basel` is the anchor for
+# with one paragraph set in large brackets. `basel` is the anchor for
 # the desk, chained into `comma`. No real, identifiable person: Erasmus is
 # never drawn, only hands and a desk. No count of manuscripts is asserted:
 # the statements give none.
@@ -118,6 +118,8 @@ images:
       nothing on it. Negative list: no crowns, no king, no portraits on the
       walls, no letters, no words, no text.
 
+  # Generated with --pro (gemini-3-pro-image-preview): the default model
+  # cropped the reader's head in the wide strip.
   - id: today
     statements: [added-verses, revised-version]
     aspect: "16:9"
@@ -132,15 +134,15 @@ images:
       wireframe mock-up: no letters, no letter shapes, no squiggles, no
       words, just smooth grey bars in two neat columns per page. On the
       RIGHT page, one block of these grey bars is set off between a pair of
-      LARGE bold black double square brackets, a [[ at the block's top left
-      and a ]] at the block's bottom right, and under it a thin rule with
+      LARGE bold black square brackets, a [ at the block's top left and a ]
+      at the block's bottom right, and under it a thin rule with
       a few shorter grey bars at the foot of the page. The reader sits on
       the RIGHT side, seen from a little distance, her whole head and
       shoulders well inside the picture. Composition for a very wide crop:
       keep the reader's head, the open Bible and the mug all inside the
       MIDDLE half of the picture's height, with a broad band of plain empty
       wall above her head and plain empty table and floor below the book;
-      nothing important near the top or bottom edges. The BOTTOM LEFT quarter of the picture is plain table
-      top with nothing on it. Negative list: no letters, no words, no
+      nothing important near the top or bottom edges. The BOTTOM LEFT
+      quarter of the picture is plain table top with nothing on it. Negative list: no letters, no words, no
       numbers, no pseudo-writing, no scribbles, no phone, no laptop, no
-      other people, no text other than the two double square brackets.
+      other people, no text other than the two square brackets.
