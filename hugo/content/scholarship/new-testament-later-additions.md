@@ -114,8 +114,8 @@ statements:
   - id: matthew-28-19
     group: "Later additions"
     question: "Is the Trinitarian baptismal formula in Matthew 28:19 a later addition?"
-    short: "No manuscript evidence shows it was. Some scholars have argued, mainly from Eusebius's quotations, that the verse once read “in my name”, but no Greek manuscript or ancient version lacks the formula, and recent commentators treat it as part of Matthew's text."
-    text: "W. D. Davies and Dale Allison's commentary notes that F. C. Conybeare and Hans Kosmala argued the original text read “make disciples of all nations in my name”, and George Howard argued the same from a fourteenth-century Hebrew Matthew, but that there is no support for this in the Greek manuscripts or versions. They note that the verse is not a typical New Testament baptismal formula and that Eusebius, who quotes it sixteen times in the shorter form, often quoted inexactly; and they argue that the Didache shows baptism in the name of the Father, Son and Holy Spirit was known early enough in Syria to have been an original part of Matthew. H. C. van Zyl, in Verbum et Ecclesia, says there is no text-critical indication that Matthew ever circulated without the triad, so it is part of the original text; he reports that the idea of a shorter original drawn from Eusebius once had support, that how to judge Eusebius's shorter text is uncertain, and that researchers fairly broadly agree the formula is not a historical saying of Jesus but comes from the baptismal practice of the early Syrian church."
+    short: "No manuscript evidence shows it was. Some scholars have argued, partly from Eusebius's quotations, that the verse once read “in my name”, but no Greek manuscript or ancient version lacks the formula."
+    text: "W. D. Davies and Dale Allison's commentary notes that Conybeare and Kosmala argued the original text read “make disciples of all nations in my name”, but that there is no support for this in the Greek manuscripts or versions. They note that the verse is not a typical New Testament baptismal formula and that Eusebius quotes it sixteen times in the shorter form; and they argue that, even if the Didache does not draw on Matthew, it shows that baptism in the name of the Father, Son and Holy Spirit was known early enough in Syria to have been an original part of Matthew. H. C. van Zyl, in Verbum et Ecclesia, says there is no text-critical indication that Matthew ever circulated without the triad, so it is part of the original text; he reports that the idea of a shorter original drawn from Eusebius once had support and that how to judge Eusebius's shorter text is uncertain. He says researchers are fairly unanimous that the formula is not a historical saying of Jesus, and concludes that it most likely came from early church tradition as practised in the Syrian church."
     cites:
       - source: davies-allison-1997-matthew-19-28
         locator: "p. 684 n. 41"
@@ -134,19 +134,19 @@ statements:
         quote: "If it does not, the Didache establishes that baptism in the name of the Father, Son, and Holy Spirit was already known early enough in Syria to have been an original part of Matthew."
         read: 2026-11-27
       - source: van-zyl-2022-matthew-28-19
-        locator: "section “Tradisiehistoriese opmerkings”, paragraph 1, p. 2"
+        locator: "section “Tradisiehistoriese opmerkings”, paragraph 2, p. 2"
         quote: "Tekskrities is daar geen aanduiding dat die teks van Matteus ooit sonder die triade Vader, Seun en Heilige Gees in 28:19 gesirkuleer het nie. Dit is dus deel van die oorspronklike teks van Matteus"
         read: 2026-11-27
       - source: van-zyl-2022-matthew-28-19
-        locator: "section “Tradisiehistoriese opmerkings”, paragraph 1, p. 2"
+        locator: "section “Tradisiehistoriese opmerkings”, paragraph 2, p. 2"
         quote: "Wat Jesus betref, is navorsers redelik eenstemmig daaroor dat die dooptriade in 28:19 nie ’n historiese logion van Jesus is nie"
         read: 2026-11-27
       - source: van-zyl-2022-matthew-28-19
-        locator: "section “Tradisiehistoriese opmerkings”, paragraph 2, p. 2"
+        locator: "section “Tradisiehistoriese opmerkings”, paragraph 3, p. 2"
         quote: "Aanvanklik het die gedagte dat Matteus ’n korter weergawe van 28:19–20 gehad het, steun geniet."
         read: 2026-11-27
       - source: van-zyl-2022-matthew-28-19
-        locator: "section “Tradisiehistoriese opmerkings”, paragraph 2, p. 2"
+        locator: "section “Tradisiehistoriese opmerkings”, paragraph 3, p. 2"
         quote: "Dit is egter onseker hoe ons moet oordeel oor die verkorte teks van Eusebius."
         read: 2026-11-27
       - source: van-zyl-2022-matthew-28-19
@@ -306,7 +306,7 @@ statements:
   - id: mark-16-8
     group: "The ending of Mark"
     question: "Did Mark mean to end his Gospel at 16:8?"
-    short: "Debated. Scholars agree the earliest text that can be recovered ends there; many have read that ending as intended, while others argue that an original ending was lost."
+    short: "Debated. Most scholars agree the earliest text that can be recovered ends there; many have read that ending as intended, while others argue that an original ending was lost."
     text: "Tönsing writes that there is at present an overwhelming consensus that the only copy of Mark we can reach ended at 16:8, but substantial disagreement over whether Mark meant it to; scholarship in recent decades has moved away from the lost-ending hypothesis, and she says the debate is not yet settled. Bond says some think Mark wrote more or meant to, or that the end of the scroll was damaged, but that most scholars think he intended to finish with the frightened women at the tomb. Martin's Yale lectures, after listing theories that Mark's original ending was lost, say twentieth-century scholars came pretty much to reject most of them and take Mark as ending at 16:8, even intentionally. The NABRE notes say the abrupt ending leads some to believe the original ending may have been lost. Elizabeth Shively, in the Catholic Biblical Quarterly, says most scholars agree 16:8 is the earliest and most reliable ending, and that until recently most held it to be the original ending, but that a growing number argue Mark's true ending is lost."
     cites:
       - source: tonsing-2022-ending-of-mark
@@ -349,7 +349,7 @@ statements:
     group: "The woman caught in adultery"
     question: "Is the story of the woman caught in adultery (John 7:53–8:11) part of John's original Gospel?"
     short: "Most scholars say no: the story is missing from the earliest manuscripts and was added to John later."
-    text: "Jennifer Knust and Tommy Wasserman, in their book on the passage's transmission, say most scholars have concluded the story was not original to the Gospel but was added by an interpolator after John was already circulating. Chris Keith's Bible Odyssey article says the earliest manuscripts of John do not contain it and that the majority of scholars believe a later scribe inserted it. Knust's own Bible Odyssey article says most biblical scholars regard it as a later addition, since it is missing from the earliest copies and only rarely cited by early Christians. Knust and Wasserman judge outright deletion of the story from John highly improbable. The NABRE notes call it a later insertion missing from all early Greek manuscripts and say the Catholic Church accepts it as canonical scripture. In a 2020 article in Svensk Exegetisk Årsbok, Knust and Wasserman say their research confirms that the story cannot be regarded as Johannine. Yan Ma's survey in the Journal of Biblical Text Research says the majority of textual critics argue against the passage's originality and only a minority, among them Zane Hodges, John Paul Heil, Maurice Robinson and John David Punch, argue for it."
+    text: "Jennifer Knust and Tommy Wasserman, in their book on the passage's transmission, say most scholars have concluded the story was not original to the Gospel but was added by an interpolator after John was already circulating. Chris Keith's Bible Odyssey article says the earliest manuscripts of John do not contain it and that the majority of scholars believe a later scribe inserted it. Knust's own Bible Odyssey article says most biblical scholars regard it as a later addition, since it is missing from the earliest copies and only rarely cited by early Christians. Knust and Wasserman judge outright deletion of the story from John highly improbable. The NABRE notes call it a later insertion missing from all early Greek manuscripts and say the Catholic Church accepts it as canonical scripture. In a 2020 article in Svensk Exegetisk Årsbok, Knust and Wasserman say their research confirms that the story cannot be regarded as Johannine. Yan Ma's survey in the Journal of Biblical Text Research says the majority of textual critics argue against the passage's originality and only a minority, among them Z. C. Hodges, J. P. Heil, Maurice Robinson and J. D. Punch, argue for it."
     cites:
       - source: knust-wasserman-2019-cast-first-stone
         locator: "Introduction, p. 8"
@@ -433,7 +433,7 @@ statements:
     group: "The woman caught in adultery"
     question: "Where did the story come from, if not from John?"
     short: "It probably circulated outside John, orally or in another source, before it was placed there; its earliest explicit citation is in the third-century Didascalia Apostolorum."
-    text: "Knust's Bible Odyssey article says the story likely circulated orally or in a noncanonical source before it was placed in some copies of John, that it was first cited in the third-century church order the Didascalia Apostolorum, whose writer did not know it from John, and that there may be allusions to it in Papias and the Proto-Gospel of James. Knust and Wasserman call the Didascalia's discussion the earliest explicit reference to the episode. Pinchard says the source Eusebius gives for a similar story known to Papias, the Gospel according to the Hebrews, confirms that the text was not originally found in John. Knust writes that Didymus the Blind cited it while noting it was found only in “certain Gospels”, and that Jerome included it in the Vulgate while admitting it was missing from some copies of John. In their 2020 article Knust and Wasserman say the passage was likely interpolated into a Greek manuscript of John in the West, perhaps Italy, probably in the early third century, while noting that the precise time and place are unknown."
+    text: "Knust's Bible Odyssey article says the story likely circulated orally or in a noncanonical source before it was placed in some copies of John, that it was first cited in the third-century church order the Didascalia Apostolorum, whose writer did not know it from John, and that there may be allusions to it in Papias and the Proto-Gospel of James. Knust and Wasserman call the Didascalia's discussion the earliest explicit reference to the episode. Pinchard says the source Eusebius gives for a similar story known to Papias, the Gospel according to the Hebrews, confirms that the text was not originally found in John. Knust writes that Didymus the Blind cited it while noting it was found only in “certain Gospels”, and that Jerome included it in the Vulgate while admitting it was missing from some copies of John. In their 2020 article Knust and Wasserman say the passage was likely interpolated into a Greek manuscript of John in the West, perhaps Italy, probably in the early third century."
     cites:
       - source: knust-bo-woman-caught-adultery
         locator: "box “Did You Know?”"
@@ -466,10 +466,6 @@ statements:
       - source: knust-wasserman-2020-sea
         locator: "Introduction, p. 24"
         quote: "As we have argued elsewhere, the passage was likely interpolated into a Greek manuscript of John in the West, perhaps Italy, and probably in the early third century."
-        read: 2026-11-27
-      - source: knust-wasserman-2020-sea
-        locator: "Conclusion, p. 54"
-        quote: "The precise time and place of the interpolation of the chapter “about the adulteress” is unknown"
         read: 2026-11-27
   - id: comma
     group: "1 John 5:7–8"
@@ -706,7 +702,7 @@ statements:
   - id: p52
     group: "Manuscripts and textual criticism"
     question: "How early is the earliest New Testament manuscript?"
-    short: "The fragment usually named, P52, a scrap of John 18, cannot be dated precisely: its first editor put it in the first half of the second century, and recent studies allow dates around 200 or later."
+    short: "The fragment usually named, P52, a scrap of John 18, cannot be dated precisely: its first editor put it in the first half of the second century, and recent studies place it later in that century or allow dates around 200 or later."
     text: "The University of Manchester Library's catalogue says its fragment of John 18 (P.Ryl. 457, known as P52) was dated by its first editor to between 100 and 150 by its handwriting, that recent research points nearer to 200, and that there is as yet no convincing evidence any earlier New Testament fragment survives; it notes that scholars have argued for dates from the late first century to the third. Brent Nongbri's article in New Testament Studies says the date usually given, about 125, rests entirely on handwriting, which cannot give so precise a date, and argues that the range extends into the third century. In the Journal for the Study of the New Testament he warns that historical arguments should never lean too heavily on manuscript dates assigned by handwriting alone. The papyrologists Pasquale Orsini and Willy Clarysse, in Ephemerides Theologicae Lovanienses, date P52 to 125–175, find no first-century New Testament papyri and only very few from the second century, P52 among them, probably all from its second half, and say some early dates proposed by New Testament scholars are not acceptable to papyrologists. Nongbri argues the same about P66 (P.Bodmer II), a codex of John whose palaeographic dates have ranged from the early second century to the first half of the third: the range should extend into the fourth century."
     cites:
       - source: manchester-p52
@@ -730,7 +726,7 @@ statements:
         quote: "Finally, these observations reinforce the conclusion that historical arguments should never depend too heavily upon the dates of manuscripts that have been assigned only by palaeography, especially when such arguments involve codices in the early Christian period."
         read: 2026-11-26
       - source: orsini-clarysse-2012-etl
-        locator: "table, row 𝔓52 (columns: TM number, first editor, Comfort–Barrett, Jaros, Nestle–Aland, Orsini–Clarysse), p. 470"
+        locator: "table, row 𝔓52 (columns: Nestle–Aland number, LDAB number, editio princeps date, Comfort–Barrett, Jaroš, Nestle–Aland date, Orsini–Clarysse), p. 470"
         quote: "𝔓52 2774 100-150 100-125 080-125 100-150 125-175"
         read: 2026-11-27
       - source: orsini-clarysse-2012-etl
@@ -752,8 +748,8 @@ statements:
   - id: sinaiticus
     group: "Manuscripts and textual criticism"
     question: "What is Codex Sinaiticus?"
-    short: "A fourth-century handwritten Bible, one of the two earliest nearly complete Christian Bibles, and it contains the whole New Testament."
-    text: "The Codex Sinaiticus Project, whose history text is agreed by the four institutions that hold parts of the manuscript, says it is generally dated to the fourth century, sometimes to the middle of that century, from its handwriting, and that only one other nearly complete manuscript of the Christian Bible, Codex Vaticanus, is of similarly early date. It contains about half of the Old Testament and Apocrypha, the whole New Testament and two early Christian texts not found in modern Bibles. The project says the monks of St Catherine's Monastery showed Tischendorf 129 leaves in 1844, of which, by his own account, he obtained 43; that he made his third and last visit in 1859; and that 347 leaves are now in the British Library, 43 in Leipzig, parts of six in St Petersburg, with further portions at St Catherine's. It says the events since 1844 are not fully known and open to widely divergent accounts. T. C. Skeat argued that Sinaiticus and Vaticanus were among the fifty Bibles Constantine ordered from Eusebius; Robert Kraft's review of Skeat's collected writings says the hypothesis, which has had other advocates, has not met with general acceptance, and Brent Nongbri, in the Journal of Theological Studies, says it has been cautiously accepted in some quarters but is far from compelling. Nongbri also argues that the codex could have been produced at any point from the early fourth century to the early fifth. On the 1844 find, Christfried Böttrich's article in the German Bible Society's WiBiLex says Tischendorf was probably wrong only in thinking the contents of the basket were for burning, for which parchment is badly suited, and that the discarded leaves were kept for reuse, mainly in bookbindings."
+    short: "A handwritten Bible generally dated to the fourth century, one of the two earliest nearly complete Christian Bibles, and it contains the whole New Testament."
+    text: "The Codex Sinaiticus Project, whose history text is agreed by the four institutions that hold parts of the manuscript, says it is generally dated to the fourth century, sometimes to the middle of that century, from its handwriting, and that only one other nearly complete manuscript of the Christian Bible, Codex Vaticanus, is of similarly early date. It contains about half of the Old Testament and Apocrypha, the whole New Testament and two early Christian texts not found in modern Bibles. The project says the monks of St Catherine's Monastery showed Tischendorf 129 leaves in 1844, of which, by his own account, he obtained 43; that he made his third and last visit in 1859; and that 347 leaves are now in the British Library, 43 in Leipzig, parts of six in St Petersburg, with further portions at St Catherine's. It says the events since 1844 are not fully known and open to widely divergent accounts. T. C. Skeat argued that Sinaiticus and Vaticanus were among the books produced in response to Constantine's order to Eusebius; Robert Kraft's review of Skeat's collected writings says the hypothesis, which has had other advocates, has not met with general acceptance, and Brent Nongbri, in the Journal of Theological Studies, says it has been cautiously accepted in some quarters but is far from compelling. Nongbri also argues that the codex could have been produced at any point from the early fourth century to the early fifth. On the 1844 find, Christfried Böttrich's article in the German Bible Society's WiBiLex says Tischendorf was probably wrong only in thinking the contents of the basket were for burning, for which parchment is badly suited, and that the discarded leaves were kept for reuse, probably mainly in bookbindings."
     cites:
       - source: codex-sinaiticus-project
         url: "http://web.archive.org/web/20240118064256id_/https://codexsinaiticus.org/en/codex/date.aspx"
@@ -798,11 +794,11 @@ statements:
         quote: "This essay surveys the evidence for the date of production of the codex and concludes that it could have been produced at any point from the early fourth century to the early fifth century."
         read: 2026-11-27
       - source: boettrich-2012-wibilex-tischendorf
-        locator: "§4, paragraph 1"
+        locator: "§4, paragraph 3 (beginning “Um den Fund von 1844”)"
         quote: "Tischendorf irrte wohl nur in der Annahme, dass der Inhalt dieses Korbes zum Verbrennen gedacht sei, wofür sich Pergament denkbar schlecht eignet."
         read: 2026-11-27
       - source: boettrich-2012-wibilex-tischendorf
-        locator: "§4, paragraph 1"
+        locator: "§4, paragraph 3 (beginning “Um den Fund von 1844”)"
         quote: "Vielmehr sind die aussortierten Pergamentblätter in diesem Abfallkorb (der übrigens auch von anderen Reisenden beschrieben worden ist) für ihre sekundäre Weiterverwendung, hauptsächlich wohl für Bucheinbände, aufbewahrt worden."
         read: 2026-11-27
   - id: initial-text

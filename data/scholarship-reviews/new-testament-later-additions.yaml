@@ -13,6 +13,10 @@
 # Publish 2026-11-26 (lead agent, on the second pass's flags): (1) de Jonge's four quotes kept: words verified against the Leiden page images by both passes; the image carries no punctuation, so commas follow the third-party transcription. (2) 17@00:46:44 kept: on either reading of “even that ending” it agrees with mark-16-8. (3) Bible Odyssey years kept as recorded (inside the window either way). (4) corinthians-14's “every surviving manuscript includes them” kept: an uncontested manuscript fact, which the 1986 NABRE notes may carry (#86); Fellows 2019 and Payne 2017 describe the verses' two locations in the tradition and neither reports a manuscript without them. (5) McDonald's uncited “clearly translated from the Latin Vulgate” noted; no citation added. Publish rule recomputed: 20 statements; core adulteress on Knust and Wasserman 2019 (Scholarly) and Keith (Reference), 2 independent authors. draft flag dropped; sourcesRead 2026-11-26.
 # Partial re-review 2026-11-27 (#241, #93 partial; the leads issue from #149). First pass (lead agent): three research agents read every #241 lead into separate scratch folders (curl, Internet Archive snapshots, author and university repositories; Chrome for SAGE, MDPI and Google Books). Quotes copied from the saved text and script-matched per source (whitespace, entities, quotes and dashes normalised; line-break hyphens joined; footnote markers dropped): 35/35. Two need a note: du Toit's “reëlmaat” is “reelmaat” in the OCR (diacritics checked on the page image); Davies–Allison p. 684 n. 41 was read on the Google Books preview page in a browser and matched against a transcription of the page image. Fellows 2024's quotes and section headings were re-checked on the live publisher page.
 # Partial changes. New statement matthew-28-19 (asked for in #149): Davies and Allison 1997 (ICC) and van Zyl 2022 (Verbum et Ecclesia), two in-window authors; the short says no Greek manuscript or version lacks the formula and that recent commentators treat it as Matthew's text; Eusebius's shorter citations and the scholars who argued for “in my name” reported in the text. corinthians-14: short now “Debated” with both sides (interpolation: Fellows 2019/2024, du Toit; original: Martin's “others”, Fellows 2024 naming Garland, Kloha and Trobisch; du Toit's “pro et contra”); Fellows 2024 also carries “every surviving manuscript includes them” in-window. mark-16-8: short narrowed (Shively 2018 reports a growing number arguing the ending is lost, against Tönsing's trend); Shively added. mark-ending: Shively's RBL review of Lunn added (reports the consensus; Lunn's defence reported through her). adulteress: Knust–Wasserman 2020 and Yan Ma 2024 (majority against originality; Robinson among the minority) added; short unchanged. adulteress-origin: Knust–Wasserman 2020 on place and date added. p52: Orsini–Clarysse 2012 and Nongbri 2014 (P66) added; short unchanged. sinaiticus: Kraft 2008 (moved from uncited) and Nongbri 2022 on Skeat's fifty-Bibles hypothesis, Nongbri's date range, and Böttrich (WiBiLex 2012) on the basket, all in the text; short unchanged. sourcesRead stays 2026-11-26 (the page-level date means the last full review); new citations carry read 2026-11-27. Infographic: its marks rest on mark-ending, mark-16-8, adulteress and others; only mark-16-8's short changed, and no caption states the trend it dropped.
+# Partial re-review second pass 2026-11-27 (#241, independent; did not read the first pass's scratch folders): fetched into its own folder. By curl: van Zyl (EPUB and PDF galleys), du Toit (PDF, p. 172 also checked on the pdftoppm page image), Shively 2017 and 2018 (Internet Archive), Ma 2024, Orsini–Clarysse (Internet Archive; p. 470 table checked on the page image), Nongbri 2014 (Internet Archive), Kraft (BMCR), Nongbri 2022 (archive.org PDF), Böttrich (WiBiLex). In a new Chrome tab: Fellows 2024 (SAGE full text), Davies–Allison p. 684 n. 41 (Google Books preview, zoomed screenshot), and Knust–Wasserman 2020 (curl gets a bot-check page, no Internet Archive copy; read in the site's PDF viewer). Quotes matched 35/35 before cuts: 19 by script against the saved text (whitespace, quotes and dashes normalised, line-break hyphens joined), 5 by script once the text layer's quirks were allowed for and checked on the page (du Toit 2: “post-Pauline” broken at the hyphen, diacritics; Orsini–Clarysse 2: 𝔓 as “Ñ”; Nongbri 2022 1: footnote marker), 11 by eye in the browser (Davies–Allison 4 on the page image, Fellows 4 in the page text, Knust–Wasserman 3 in the PDF viewer).
+# Second pass changes. Cut: adulteress-origin/9 (Knust–Wasserman 2020 p. 54) to uncited, with the text's “while noting that the precise time and place are unknown”: the sentence is about the Greek chapter “about the adulteress”, not the interpolation into John. Shorts: matthew-28-19 ends at “lacks the formula” (“recent commentators treat it as part of Matthew's text” had no quoted sentence; “mainly” made “partly”); mark-16-8 “Most scholars agree”, not “Scholars agree”; sinaiticus “generally dated to the fourth century” (the Project's words; Nongbri 2022 is now cited for an early-fourth-to-early-fifth range). Texts: matthew-28-19 drops Howard and “often quoted inexactly” (outside the quotes), states Davies–Allison's Didache condition, and limits van Zyl's “fairly unanimous” to “not a saying of Jesus”, the Syrian-church origin being his own conclusion; sinaiticus “books produced in response to Constantine's order” for “fifty Bibles”, and Böttrich's “probably mainly”. Locators: van Zyl paragraphs 2 and 3 (not 1 and 2); Böttrich §4 paragraph 3; Orsini–Clarysse table columns (LDAB, not TM). Registry: van Zyl URL to the PDF galley; Knust–Wasserman 2020 URL to the PDF viewer, access lines updated. Publish rule unchanged: core adulteress keeps its authors; every statement keeps citations.
+# Second pass flags: (1) Davies–Allison was viewed in a browser signed in to a Google account; whether p. 684 shows logged out was not checked. (2) Full first names not in the passages read: Jeffrey Kloha (Fellows 2024 has “Kloha”) and Zane Hodges, John Paul Heil, Maurice Robinson, John David Punch (Ma gives initials); left. (3) p52's short (“recent studies allow dates around 200 or later”) is unchanged; Orsini–Clarysse, a recent study, put P52 in 125–175, which the text reports. (4) Ma 2024's journal is a Bible society's; kept Scholarly (author a professional scholar, peer-reviewed journal). (5) A browser attempt on the SEÅ download URL may have saved the PDF to the browser's download folder. (6) Question cards: the Hugo server on :1313 serves the trunk checkout, so cards rendered against it show trunk text; re-rendered with --base from a server run in this worktree, which also changed corinthians-14.png (its first-pass card was stale).
+# Partial re-review resolution 2026-11-27 (lead agent, on the second pass's flags): (1) Davies–Allison p. 684 kept: Google Books previews are page-level and public; both passes saw the full page (in a browser profile signed in to Google, not otherwise checked). (2) First names: the Ma clause now gives Ma's own initials (Z. C. Hodges, J. P. Heil, J. D. Punch), keeping Maurice Robinson; Jeffrey Kloha kept (his name as given on his Leeds thesis, read). (3) p52 short narrowed: “recent studies place it later in that century or allow dates around 200 or later” (Orsini–Clarysse 125–175; Manchester nearer 200; Nongbri into the third century). (4) Ma's journal kept as Scholarly (peer-reviewed, by venue, #80). (5) Noted: the second pass opened the SEÅ PDF in the browser and declined non-essential cookies there. Cards for the changed shorts rendered from the worktree's own Hugo server. Publish rule: 21 statements; core adulteress on Knust–Wasserman 2019 (Scholarly), Keith (Reference) and Ma 2024 (Scholarly). Holds. sourcesRead and delegation.secondPass unchanged (they date the last full review).
 review: 2026-11-26
 delegation:
   by: owner
@@ -840,211 +844,205 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): New statement. Read in the Google Books preview of p. 684 (full page shown) in a browser; quote transcribed from the page image (saved screenshot) and matched against that transcription.",
+      note: "Partial re-review first pass 2026-11-27 (#241): New statement. Read in the Google Books preview of p. 684 (full page shown) in a browser; quote transcribed from the page image (saved screenshot) and matched against that transcription. Second pass 2026-11-27: read in a new Chrome tab at the Google Books preview (p. 684 shown in full; the browser was signed in to a Google account) and matched against a zoomed screenshot of n. 41. Text narrowed: Howard's clause cut (the note gives him only after “Cf.” with his source, not his reading, and says nothing of a “Hebrew Matthew”), and Conybeare's and Kosmala's first names dropped (not in the note).",
     }
   matthew-28-19/2:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /1. Carries the short's “no Greek manuscript or ancient version” clause.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /1. Carries the short's “no Greek manuscript or ancient version” clause. Second pass 2026-11-27: matched on the page image as /1. Carries the short's manuscripts-and-versions clause. Short narrowed: “and recent commentators treat it as part of Matthew's text” cut (no quoted sentence says so of commentators generally; Davies–Allison argue conditionally; van Zyl's France 2007 is a Lead), and “mainly” made “partly” (the note also lists Flusser and Howard on other grounds).",
     }
   matthew-28-19/3:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /1. Eusebius quotes the verse sixteen times in the shorter form.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /1. Eusebius quotes the verse sixteen times in the shorter form. Second pass 2026-11-27: matched on the page image as /1; “as given above” refers to the shorter text quoted at the head of the note. Text's “often quoted inexactly” cut: that is Hubbard as the note reports him, outside the quote.",
     }
   matthew-28-19/4:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /1. Davies and Allison's own argument; attributed in the text.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /1. Davies and Allison's own argument; attributed in the text. Second pass 2026-11-27: matched on the page image as /1. Text now states the argument's condition (“even if the Didache does not draw on Matthew”).",
     }
   matthew-28-19/5:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans; matched against the publisher EPUB text; page from the PDF headers. With Davies–Allison, the second in-window author for the short.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans; matched against the publisher EPUB text; page from the PDF headers. With Davies–Allison, the second in-window author for the short. Second pass 2026-11-27: re-fetched by curl (EPUB galley 6097 and PDF galley 6099); matched in both. Locator corrected from paragraph 1 to paragraph 2: the section opens with a purpose paragraph (“Die doel van hierdie afdeling”). Registry URL moved to the PDF galley, whose page numbers the locators use.",
     }
   matthew-28-19/6:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans (“researchers are fairly unanimous”); reported in the text as van Zyl reports it, not in the short.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans (“researchers are fairly unanimous”); reported in the text as van Zyl reports it, not in the short. Second pass 2026-11-27: matched in both galleys; locator corrected to paragraph 2. The agreement van Zyl reports (his “relatiewe konsensus”) covers only “not a logion of Jesus”; his next paragraph says scholars agree less on tradition versus Matthew. Text narrowed: the Syrian-church origin is now his own conclusion, attributed (/9).",
     }
   matthew-28-19/7:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans; the shorter-original idea “initially enjoyed support”.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans; the shorter-original idea “initially enjoyed support”. Second pass 2026-11-27: matched in both galleys; locator corrected from paragraph 2 to paragraph 3.",
     }
   matthew-28-19/8:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans; how to judge Eusebius's shorter text is uncertain.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans; how to judge Eusebius's shorter text is uncertain. Second pass 2026-11-27: matched in both galleys; locator corrected from paragraph 2 to paragraph 3.",
     }
   matthew-28-19/9:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans; van Zyl's summary.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans; van Zyl's summary. Second pass 2026-11-27: matched in both galleys; p. 3 confirmed from the PDF header. Now carries the text's Syrian-church clause as van Zyl's own conclusion (“heel waarskynlik”).",
     }
   corinthians-14/8:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Read in a browser at the publisher's open-access HTML (scripted requests refused); quote and section heading re-checked by the lead agent on the live page. With Martin and du Toit, supports “Debated”.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Read in a browser at the publisher's open-access HTML (scripted requests refused); quote and section heading re-checked by the lead agent on the live page. With Martin and du Toit, supports “Debated”. Second pass 2026-11-27: read in a new Chrome tab at the publisher's open-access full text; matched verbatim in “Background on 1 Cor. 14.34–35 and Its Transposition”, paragraph 1.",
     }
   corinthians-14/9:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /8. In-window source for “every surviving manuscript includes them” (resolves the 2026-11-26 second-pass flag (4)).",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /8. In-window source for “every surviving manuscript includes them” (resolves the 2026-11-26 second-pass flag (4)). Second pass 2026-11-27: matched in the browser text; paragraph 3 of the section (after the Holmes and eye-skip paragraphs).",
     }
   corinthians-14/10:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /8. Fellows's own conclusion; attributed in the text.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /8. Fellows's own conclusion; attributed in the text. Second pass 2026-11-27: matched in the browser text; second sentence of the interim conclusion.",
     }
   corinthians-14/11:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /8. Fellows reports Garland, Kloha and Trobisch holding the verses original: with Martin's “others disagree”, the “others hold that Paul wrote them” clause rests on two authors.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /8. Fellows reports Garland, Kloha and Trobisch holding the verses original: with Martin's “others disagree”, the “others hold that Paul wrote them” clause rests on two authors. Second pass 2026-11-27: matched in the browser text; last paragraph under the Prisca heading. The source names “David Garland, Kloha, and David Trobisch”; the text's “Jeffrey” for Kloha is not in the source (left; flag).",
     }
   corinthians-14/12:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): English abstract; matched against the PDF text. Du Toit's own view; attributed.",
+      note: "Partial re-review first pass 2026-11-27 (#241): English abstract; matched against the PDF text. Du Toit's own view; attributed. Second pass 2026-11-27: re-fetched by curl; matched with the post-/Pauline line break joined; p. 172 confirmed on the page image (pdftoppm).",
     }
   corinthians-14/13:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans (“articles pro and contra appear with monotonous regularity”). The PDF's OCR drops diacritics (“reelmaat”); words matched in the text, diacritics checked against the page image.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Afrikaans (“articles pro and contra appear with monotonous regularity”). The PDF's OCR drops diacritics (“reelmaat”); words matched in the text, diacritics checked against the page image. Second pass 2026-11-27: checked on the page image rendered with pdftoppm: “reëlmaat” and the sentence as quoted.",
     }
   mark-ending/11:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Accepted manuscript in the St Andrews repository (via the Internet Archive). Typo “verse” is the source's. Shively reports the consensus; supports the existing short.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Accepted manuscript in the St Andrews repository (via the Internet Archive). Typo “verse” is the source's. Shively reports the consensus; supports the existing short. Second pass 2026-11-27: re-fetched by curl from the Internet Archive snapshot; matched in paragraph 1; whole review read.",
     }
   mark-ending/12:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /11.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /11. Second pass 2026-11-27: matched in the last paragraph.",
     }
   mark-16-8/8:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): St Andrews repository copy of the published version (via the Internet Archive); OCR splits letters (“M ost”), matched with spacing removed. Supports “Scholars agree the earliest text that can be recovered ends there”.",
+      note: "Partial re-review first pass 2026-11-27 (#241): St Andrews repository copy of the published version (via the Internet Archive); OCR splits letters (“M ost”), matched with spacing removed. Supports “Scholars agree the earliest text that can be recovered ends there”. Second pass 2026-11-27: re-fetched by curl; matched with the OCR's split letters closed up; p. 273 confirmed; n. 1 calls this a consensus yielded by textual criticism. Short narrowed from “Scholars agree” to “Most scholars agree”: Shively has “Most agree”, Tönsing “overwhelming consensus”.",
     }
   mark-16-8/9:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /8. Shively reports a growing number arguing the ending is lost, against Tönsing's “moved away from the lost ending”: sources disagree on the trend, so the short drops “recent scholarship has moved toward” for “many have read that ending as intended, while others argue that an original ending was lost” (#80: disagreement on the state of the field is shown as a split).",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /8. Shively reports a growing number arguing the ending is lost, against Tönsing's “moved away from the lost ending”: sources disagree on the trend, so the short drops “recent scholarship has moved toward” for “many have read that ending as intended, while others argue that an original ending was lost” (#80: disagreement on the state of the field is shown as a split). Second pass 2026-11-27: matched on p. 274 (page header confirmed); passage read.",
     }
   adulteress/8:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Open-access PDF (SEÅ 85). Same authors as the 2019 book: not a new author for the core count.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Open-access PDF (SEÅ 85). Same authors as the 2019 book: not a new author for the core count. Second pass 2026-11-27: curl gets a bot-check page and the Internet Archive has no copy; read in a new Chrome tab in the publisher's PDF viewer (view/15085/12019) and matched on p. 23 by eye. “The overall conclusion” is the Metzger committee's, that the story is not Johannine.",
     }
   adulteress/9:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Korean Bible Society's peer-reviewed journal (publisher PDF). Supports the existing “Most scholars” short; third independent author.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Korean Bible Society's peer-reviewed journal (publisher PDF). Supports the existing “Most scholars” short; third independent author. Second pass 2026-11-27: re-fetched by curl; matched on p. 167 (PDF header). Author: PhD McMaster Divinity College, assistant professor of New Testament at Tyndale University (p. 163 note).",
     }
   adulteress/10:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /9. Robinson's view reported, attributed, with Ma's “minority”.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /9. Robinson's view reported, attributed, with Ma's “minority”. Second pass 2026-11-27: matched on p. 166; the minority names are given there as initials (Z. C. Hodges, J. P. Heil, M. Robinson, J. D. Punch), so the text's full first names are not from the source (left; flag).",
     }
   adulteress/11:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /9.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /9. Second pass 2026-11-27: matched on p. 166.",
     }
   adulteress-origin/8:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As adulteress/8. Text only; the short is unchanged.",
-    }
-  adulteress-origin/9:
-    {
-      agent: pass,
-      owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /8.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As adulteress/8. Text only; the short is unchanged. Second pass 2026-11-27: read in the browser viewer as adulteress/8; matched on p. 24 by eye.",
     }
   p52/6:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): KU Leuven Lirias author copy via the Internet Archive. Table row quoted as printed (columns named in the locator); 𝔓 is rendered “Ñ” in the PDF text layer.",
+      note: "Partial re-review first pass 2026-11-27 (#241): KU Leuven Lirias author copy via the Internet Archive. Table row quoted as printed (columns named in the locator); 𝔓 is rendered “Ñ” in the PDF text layer. Second pass 2026-11-27: re-fetched by curl from the Internet Archive; row matched in the text layer (𝔓 as “Ñ”) and confirmed on the page image (pdftoppm, p. 470). Locator corrected: the table's columns are Nestle–Aland number, LDAB (not TM), editio princeps, Comfort–Barrett, Jaroš, Nestle–Aland date, Orsini–Clarysse.",
     }
   p52/7:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /6. Footnote-free prose; the short's “recent studies allow dates around 200 or later” is unchanged (Orsini–Clarysse put P52 in 125–175, within the second century); text reports their date, attributed.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /6. Footnote-free prose; the short's “recent studies allow dates around 200 or later” is unchanged (Orsini–Clarysse put P52 in 125–175, within the second century); text reports their date, attributed. Second pass 2026-11-27: matched on p. 466 (§VIII Conclusion); 𝔓 confirmed on the p. 470 image.",
     }
   p52/8:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /6.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /6. Second pass 2026-11-27: matched on p. 466.",
     }
   p52/9:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): e-periodica PDF via the Internet Archive (the live site now shows a verification page).",
+      note: "Partial re-review first pass 2026-11-27 (#241): e-periodica PDF via the Internet Archive (the live site now shows a verification page). Second pass 2026-11-27: re-fetched by curl (gzip-encoded snapshot); matched in the abstract, journal p. 1.",
     }
   p52/10:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /9.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /9. Second pass 2026-11-27: matched on p. 19 (page header confirmed).",
     }
   sinaiticus/8:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): BMCR page fetched by curl. Previously uncited as the only author on the fifty-Bibles hypothesis; now cited with Nongbri 2022. Text only; no new short.",
+      note: "Partial re-review first pass 2026-11-27 (#241): BMCR page fetched by curl. Previously uncited as the only author on the fifty-Bibles hypothesis; now cited with Nongbri 2022. Text only; no new short. Second pass 2026-11-27: re-fetched by curl; matched; paragraph read. Text narrowed: “fifty Bibles” is in neither quote (Kraft has it only in an appendix title); now “books produced in response to Constantine's order to Eusebius”, Nongbri's words.",
     }
   sinaiticus/9:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Open-access (CC BY-NC) publisher PDF read at an Internet Archive copy; footnote marker after “quarters.” dropped.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Open-access (CC BY-NC) publisher PDF read at an Internet Archive copy; footnote marker after “quarters.” dropped. Second pass 2026-11-27: Internet Archive PDF fetched by curl; matched on p. 5 of 19, footnote marker 19 dropped. A third party's upload of OUP's advance-article PDF, which is CC BY-NC.",
     }
   sinaiticus/10:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /9. Nongbri's own dating; attributed in the text. The short (“A fourth-century handwritten Bible”) rests on the Codex Sinaiticus Project's “generally dated to the fourth century”, which Nongbri also reports as the general description.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /9. Nongbri's own dating; attributed in the text. The short (“A fourth-century handwritten Bible”) rests on the Codex Sinaiticus Project's “generally dated to the fourth century”, which Nongbri also reports as the general description. Second pass 2026-11-27: matched in the abstract. Short narrowed from “A fourth-century handwritten Bible” to “generally dated to the fourth century”: the Project's own wording, and the page now cites Nongbri's early-fourth-to-early-fifth range.",
     }
   sinaiticus/11:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): German. WiBiLex (Deutsche Bibelgesellschaft), article created October 2012. Single author on the basket; attributed in the text, not in a short.",
+      note: "Partial re-review first pass 2026-11-27 (#241): German. WiBiLex (Deutsche Bibelgesellschaft), article created October 2012. Single author on the basket; attributed in the text, not in a short. Second pass 2026-11-27: re-fetched by curl; matched. Locator corrected from §4 paragraph 1 to paragraph 3 (beginning “Um den Fund von 1844”), from the page's paragraph markup.",
     }
   sinaiticus/12:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): As /11.",
+      note: "Partial re-review first pass 2026-11-27 (#241): As /11. Second pass 2026-11-27: matched; locator corrected as /11. Text narrowed: “hauptsächlich wohl” is now “probably mainly”.",
     }
 triggers:
   11@01:01:31:
@@ -1443,79 +1441,79 @@ sources:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (ICC, T&T Clark, 1997; Google Books shows the 2000 printing). Google Books preview, p. 684 shown in full; viewed in a browser.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (ICC, T&T Clark, 1997; Google Books shows the 2000 printing). Google Books preview, p. 684 shown in full; viewed in a browser. Second pass 2026-11-27: Scholarly (ICC, T&T Clark) confirmed; 1997 not independently confirmed (Google Books shows a later printing), in the window either way. Preview p. 684 viewed in a signed-in browser, not checked logged out (flag).",
     }
   van-zyl-2022-matthew-28-19:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (Verbum et Ecclesia 43.1, AOSIS, peer-reviewed, CC BY), 2022.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (Verbum et Ecclesia 43.1, AOSIS, peer-reviewed, CC BY), 2022. Second pass 2026-11-27: class, venue and year confirmed from the PDF. URL moved from the EPUB galley (6097, no page numbers) to the PDF galley viewer (6099); access line updated.",
     }
   fellows-2024-interpolation:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (JSNT 47.2, Sage, open access CC BY-NC), 2024. Same author as fellows-2019-distigme: one author. Publisher refuses scripted requests; read in a browser.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (JSNT 47.2, Sage, open access CC BY-NC), 2024. Same author as fellows-2019-distigme: one author. Publisher refuses scripted requests; read in a browser. Second pass 2026-11-27: open-access page confirmed in a browser; JSNT 47.2: 179–217 and CC BY-NC 4.0 confirmed from Crossref.",
     }
   du-toit-2001-swyggebod:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (HTS Teologiese Studies 57, peer-reviewed, open), 2001: inside the window. Andrie du Toit, University of Pretoria.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (HTS Teologiese Studies 57, peer-reviewed, open), 2001: inside the window. Andrie du Toit, University of Pretoria. Second pass 2026-11-27: HTS 57(1&2) 2001, p. 172 start confirmed on the page image.",
     }
   shively-2018-penguins:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (CBQ 80.2, Catholic Biblical Association, peer-reviewed), 2018. Published version in the author's university repository.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (CBQ 80.2, Catholic Biblical Association, peer-reviewed), 2018. Published version in the author's university repository. Second pass 2026-11-27: CBQ 80 (2018), opening p. 273 confirmed from the PDF.",
     }
   shively-2017-rbl-lunn:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (Review of Biblical Literature, SBL), 2017 (Shively's own CBQ note dates it October 10, 2017). Accepted manuscript in the author's university repository.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (Review of Biblical Literature, SBL), 2017 (Shively's own CBQ note dates it October 10, 2017). Accepted manuscript in the author's university repository. Second pass 2026-11-27: accepted manuscript; 2017 confirmed by Shively's CBQ note (“RBL, October 10, 2017”).",
     }
   knust-wasserman-2020-sea:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (SEÅ 85, Swedish Exegetical Society, open access), 2020. Same authors as knust-wasserman-2019-cast-first-stone.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (SEÅ 85, Swedish Exegetical Society, open access), 2020. Same authors as knust-wasserman-2019-cast-first-stone. Second pass 2026-11-27: curl gets a bot-check page and the Internet Archive has no copy; read in a browser in the site's PDF viewer. URL changed from the download link (which downloads rather than displays) to the viewer page; access line updated. SEÅ 85(1) 22–55, 2020, CC BY-NC-ND confirmed on the article page.",
     }
   ma-2024-john-7-53:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (Journal of Biblical Text Research 55, Korean Bible Society, peer-reviewed), 2024. Flag: a Bible society's journal, classed by venue as peer-reviewed.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (Journal of Biblical Text Research 55, Korean Bible Society, peer-reviewed), 2024. Flag: a Bible society's journal, classed by venue as peer-reviewed. Second pass 2026-11-27: author PhD McMaster Divinity College, assistant professor at Tyndale University (p. 163 note); JBTR 55 (October 2024) 163–196 confirmed. The first pass's flag on a Bible society's journal stands; kept Scholarly.",
     }
   orsini-clarysse-2012-etl:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (ETL 88.4, Peeters, peer-reviewed), 2012; papyrologists.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (ETL 88.4, Peeters, peer-reviewed), 2012; papyrologists. Second pass 2026-11-27: ETL 88/4 (2012) 443–474 confirmed from the first page's header.",
     }
   nongbri-2014-p66:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (Museum Helveticum 71, peer-reviewed classics journal), 2014. Same author as nongbri-2019-palaeography and nongbri-2020-p52.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (Museum Helveticum 71, peer-reviewed classics journal), 2014. Same author as nongbri-2019-palaeography and nongbri-2020-p52. Second pass 2026-11-27: Museum Helveticum 71 (2014) confirmed from the e-periodica cover sheet.",
     }
   kraft-2008-bmcr-skeat:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (BMCR, open-access review journal), 2008. Robert A. Kraft, University of Pennsylvania, emeritus.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (BMCR, open-access review journal), 2008. Robert A. Kraft, University of Pennsylvania, emeritus. Second pass 2026-11-27: BMCR 2008.01.47 confirmed on the page.",
     }
   nongbri-2022-sinaiticus:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (JTS n.s. 73.2, OUP, open access CC BY-NC), 2022. Same author as the other Nongbri sources.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Scholarly (JTS n.s. 73.2, OUP, open access CC BY-NC), 2022. Same author as the other Nongbri sources. Second pass 2026-11-27: JTS advance article, CC BY-NC, confirmed from p. 1 of the PDF.",
     }
   boettrich-2012-wibilex-tischendorf:
     {
       agent: pass,
       owner: "",
-      note: "Partial re-review first pass 2026-11-27 (#241): Reference (WiBiLex, Deutsche Bibelgesellschaft scholarly Bible dictionary), article created October 2012. Christfried Böttrich, Greifswald NT professor.",
+      note: "Partial re-review first pass 2026-11-27 (#241): Reference (WiBiLex, Deutsche Bibelgesellschaft scholarly Bible dictionary), article created October 2012. Christfried Böttrich, Greifswald NT professor. Second pass 2026-11-27: author and “erstellt: Oktober 2012” confirmed on the page.",
     }
 leads:
   - "Hagner, Matthew 14–28 (WBC 1995), on Matt 28:19 as a “liturgical expansion”: seen only inside a ministry PDF; the Internet Archive copy is loan-only, and 1995 is outside the window. Closed (#241): no open copy. Luz, Hermeneia Matthew 21–28 (2005), and Keener (1999): loan-only on the Internet Archive; France, NICNT (2007): the Google Books preview omits the pages on Eusebius. Closed: no open copy."
@@ -1530,6 +1528,7 @@ leads:
   - "Yi, From Erasmus to Maius (2023/2024); Krans-Plaisier, “Erasmus and Codex Vaticanus” (2020): abstracts only."
   - "Britannica (Textus Receptus, textual criticism): 403 to curl and WebFetch."
 uncited:
+  - "Knust and Wasserman 2020, SEÅ 85, Conclusions, p. 54, “The precise time and place of the interpolation of the chapter “about the adulteress” is unknown”: read; cut from adulteress-origin by the partial re-review second pass (#241): the Conclusions are about the Greek chapter (kephalaion) “about the adulteress” and its place in the chapter lists, not the passage's first interpolation into John, which the authors date on p. 24."
   - "Nel 2020, Verbum et Ecclesia 41(1): read; contradicts himself on whether Mark 16:9–20 as a late addition is the scholarly consensus (abstract vs introduction); not cited."
   - "Blumell 2011, “The Text of the New Testament” (BYU Religious Studies Center): read; confessional press, classed differently by two agents, and repeats the promise story that de Jonge and McDonald reject; not cited."
   - "Tischendorf 1867, When Were Our Gospels Written? (Religious Tract Society): read; his own account of the basket of parchments; the page reports the Codex Sinaiticus Project's summary instead."

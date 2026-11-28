@@ -10676,8 +10676,8 @@ knust-wasserman-2020-sea:
   edition: null
   class: Scholarly
   kind: article
-  access: "Publisher website, open access (CC BY-NC-ND)"
-  url: "https://publicera.kb.se/sea/article/download/15085/12019/27553"
+  access: "Publisher website, open access (CC BY-NC-ND); read in a browser in the site's PDF viewer, as the site's bot check refuses scripted requests"
+  url: "https://publicera.kb.se/sea/article/view/15085/12019"
   hostAuthored: false
   tradition: null
 
@@ -10775,7 +10775,7 @@ van-zyl-2022-matthew-28-19:
   edition: null
   class: Scholarly
   kind: article
-  access: "Publisher website, open access (CC BY)"
-  url: "https://verbumetecclesia.org.za/index.php/ve/article/view/2673/6097"
+  access: "Publisher website, open access (CC BY); PDF galley, whose page numbers the locators use"
+  url: "https://verbumetecclesia.org.za/index.php/ve/article/view/2673/6099"
   hostAuthored: false
   tradition: null
