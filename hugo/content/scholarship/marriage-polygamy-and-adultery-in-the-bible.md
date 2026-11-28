@@ -446,7 +446,7 @@ statements:
     group: "Polygamy"
     question: "What does “husband of one wife” (1 Timothy 3:2) mean?"
     short: "Its meaning is debated. Readings include that a church leader must be married, must not be a polygamist, must not remarry after divorce or a wife's death, and must be faithful to his wife."
-    text: "Daniel Darko writes that the import of the requirement that an overseer be “a husband of one wife” (1 Timothy 3:2, 12) is a debated matter with four potential readings: that the leader must be married, that it disqualifies those in polygamous marriages, that it forbids a second marriage after divorce or widowhood, or that it concerns fidelity in marriage; he reads it as a commitment to the wife, perhaps to the exclusion of other sexual partners. Ekkehardt Mueller surveys the various interpretations expositors have given, among them that it is directed against polygamy, that the elder must not have divorced and remarried, that he must be married, and that he may marry only once, and says the multiplicity of interpretations marks it as one of the more difficult texts in the New Testament; he concludes that elders and deacons must be completely faithful to their spouse. Prince Peters argues that μία here may stand for the ordinal “first”, so that the bishop is to be the husband of his first wife, and finds that the most acceptable interpretation."
+    text: "Daniel Darko writes that the import of the requirement that an overseer be “a husband of one wife” (1 Timothy 3:2, 12) is a debated matter with four potential readings: that the leader must be married, that it disqualifies those in polygamous marriages, that it forbids a second marriage after divorce or widowhood, or that it concerns fidelity in marriage; he reads it as a commitment to the wife, perhaps to the exclusion of other sexual partners. Ekkehardt Mueller surveys the various interpretations expositors have given, among them that it is directed against polygamy, and says the multiplicity of interpretations marks it as one of the more difficult texts in the New Testament; he concludes that elders and deacons must be completely faithful to their spouse. Prince Peters argues that μία here may stand for the ordinal “first”, so that the bishop is to be the husband of his first wife, and finds that the most acceptable interpretation."
     cites:
       - source: darko-2023-religions-kinship-1-timothy
         locator: "p. 5"
@@ -454,7 +454,7 @@ statements:
         read: 2026-11-27
       - source: darko-2023-religions-kinship-1-timothy
         locator: "p. 6"
-        quote: "1 Timothy’s µιᾶς γυναικὸς ἄνδρα requirement seems to emphasize a commitment to the wife, perhaps to the exclusion of other sexual partners."
+        quote: "1 Timothy’s μιᾶς γυναικὸς ἄνδρα requirement seems to emphasize a commitment to the wife, perhaps to the exclusion of other sexual partners."
         read: 2026-11-27
       - source: mueller-2012-jaas-husband-of-one-wife
         locator: "p. 149, §2 Suggested Interpretations"
@@ -487,8 +487,8 @@ statements:
   - id: early-church
     group: "Polygamy"
     question: "Where did Christianity's rule of one wife come from?"
-    short: "Scholars trace it to the Greco-Roman world: Roman law outlawed polygamy before Christianity was established, and the church kept that norm and only gradually reinforced it."
-    text: "John Witte Jr. writes that pagan Roman emperors outlawed polygamy from 258 CE, before Christianity was established; the Bible has no clear prohibition of polygamy, and the church, for its first thousand years, said and did rather little about it, the state leading the campaign against it, until in the twelfth and thirteenth centuries the medieval church came to condemn it clearly. The West's arguments against polygamy, he writes, are pre-Christian in origin. Walter Scheidel writes that Greco-Roman monogamy was preserved and gradually reinforced by the Christian church, which laboured to suppress polygamy among Germans and Slavs, and that Pauline Christianity may well have been monogamous simply because it grew in a Greco-Roman setting; Augustine, in the early fifth century, called monogamy a “Roman custom”."
+    short: "Scholars trace it to the Greco-Roman world, where monogamy was the norm before Christianity: the church kept that norm and only gradually reinforced it."
+    text: "John Witte Jr. writes that pagan Roman emperors outlawed polygamy from 258 CE, well before the Roman establishment of Christianity; the Bible has no clear prohibition of polygamy, and the church, for its first thousand years, said and did rather little about it, the state leading the campaign against it, until in the twelfth and thirteenth centuries the medieval church came to condemn it clearly. The West's arguments against polygamy, he writes, are pre-Christian in origin. Walter Scheidel writes that Greco-Roman monogamy was preserved and gradually reinforced by the Christian church, which laboured to suppress polygamy among Germans and Slavs, and that Pauline Christianity may well have been monogamous simply because it grew in a Greco-Roman setting; Augustine, in the early fifth century, called monogamy a “Roman custom”."
     cites:
       - source: witte-2015-elj-two-in-one-flesh
         locator: "p. 1694"
@@ -521,8 +521,8 @@ statements:
   - id: rabbenu-gershom
     group: "Polygamy"
     question: "When did Jewish law ban polygamy?"
-    short: "An enactment attributed to Rabbenu Gershom of Mainz, around 1000 CE, banned Ashkenazi Jews from taking more than one wife. Sephardic and Middle Eastern communities never accepted it as binding, and its ascription to Gershom has been questioned."
-    text: "Avraham Grossman's Jewish Women's Archive article says that in about 1000 CE Rabbenu Gershom, who lived in Germany, formulated a takkanah (enactment) placing under herem (excommunication) any man who married more than one wife, later accepted as binding by conferences of the sages of Ashkenaz; monogamy was accepted in Germany even before it, but trade took many German Jewish merchants abroad for years, and some took a second wife; the takkanah remains in force today. Elisheva Baumgarten's article says the ban on bigamy is attributed to Gershom and dates to the period before the First Crusade, and that it is unclear how common polygamous marriage was in Ashkenazi society before it, though afterwards it became increasingly rare. Renée Levine Melammed writes that only Ashkenazi Jewry accepted the ban, and Margalit Shilo that in Palestine, as in most of the Sephardic Oriental communities, it was never accepted as binding. Isaac Sassoon reports that the ascription of the enactment to the historical Rabbenu Gershom has been questioned, Peretz Tishby favouring a twelfth-century date for its formal promulgation."
+    short: "An enactment attributed to Rabbenu Gershom of Mainz, around 1000 CE, banned Ashkenazi Jews from taking more than one wife. Most Sephardic and Middle Eastern communities never accepted it as binding."
+    text: "Avraham Grossman's Jewish Women's Archive article says that in about 1000 CE Rabbenu Gershom, who lived in Germany, formulated a takkanah (enactment) placing under herem (excommunication) any man who married more than one wife, later accepted as binding by conferences of the sages of Ashkenaz; monogamy was accepted in Germany even before it, but many German Jews worked in international trade, and some merchants who stayed abroad, sometimes for many years, occasionally took a second wife; the takkanah remains in force today. Elisheva Baumgarten's article says the ban on bigamy is attributed to Gershom and dates to the period before the First Crusade, and that it is unclear how common polygamous marriage was in Ashkenazi society before it, though afterwards it became increasingly rare. Renée Levine Melammed writes that only Ashkenazi Jewry accepted the ban, and Margalit Shilo that in Palestine, as in most of the Sephardic Oriental communities, it was never accepted as binding. Isaac Sassoon reports that the ascription of the enactment to the historical Rabbenu Gershom has been questioned, Peretz Tishby favouring a twelfth-century date for its formal promulgation."
     cites:
       - source: grossman-jwa-halakhic-decisions-family
         locator: "section “Polygamy”, paragraph 1"
@@ -537,15 +537,15 @@ statements:
         quote: "A few, such as Rabbenu Gershom’s takkanah requiring monogamy, remain in force to this day."
         read: 2026-11-27
       - source: baumgarten-jwa-medieval-ashkenaz
-        locator: "paragraph beginning “Two of the earliest and most important changes”"
+        locator: "section “Wives and Mothers”, paragraph beginning “Some of the rabbinic principles”"
         quote: "Two of the earliest and most important changes were implemented during the period preceding the First Crusade and are attributed to R. Gershom ben Judah Me’or ha-Golah of Mainz (950/960–1048), the leading authority in Ashkenaz of that era. The first change (takkanah) is a ban on bigamy, while the second is a ban forbidding a man to divorce his wife against her will."
         read: 2026-11-27
       - source: baumgarten-jwa-medieval-ashkenaz
-        locator: "paragraph beginning “Two of the earliest and most important changes”"
+        locator: "section “Wives and Mothers”, paragraph beginning “Some of the rabbinic principles”"
         quote: "It is unclear how common polygamous marriages were in Ashkenazi society before this ban, but after it became accepted, they were increasingly rare."
         read: 2026-11-27
       - source: melammed-jwa-medieval-spain
-        locator: "paragraph beginning “Since only Ashkenazi Jewry”"
+        locator: "section “The Issue of Polygyny”, paragraph beginning “Marital status and related problems”"
         quote: "Since only Ashkenazi Jewry accepted the ban on polygyny enacted by R. Gershom (960–1028), the Iberian Jew who could afford a second wife could ostensibly marry one."
         read: 2026-11-27
       - source: shilo-jwa-old-yishuv
@@ -821,7 +821,7 @@ statements:
   - id: mark-10-12
     group: "Divorce"
     question: "Does Mark 10:12, on a wife who divorces her husband, adapt Jesus's saying to Roman law?"
-    short: "Scholars differ. Critical scholarship has read it as Mark's change to the saying for a setting where wives could divorce, as Roman law allowed and Jewish tradition generally did not; but some Jewish women did initiate divorce, and whether Mark drew on Jewish practice or Roman law has been left open."
+    short: "Scholars differ on whether Mark changed the saying for a setting where wives could divorce. Roman law allowed a wife to divorce her husband, and some Jewish women did so as well."
     text: "David Hunter writes that Jewish tradition generally did not allow women to initiate divorce, whereas Roman law did, and that critical scholarship takes Luke's version of the divorce saying to be the most primitive, Mark's having been modified to include women divorcing their husbands; in more Hellenized settings, he writes, Paul and Mark applied the teaching to a possibility that did not exist in the Palestinian context of Jesus's day. Edward Lipiński argues that Mark 10:11–12, in which the woman may initiate the divorce, is probably the original version, changed in Matthew 5:31–32 and Luke 16:18, and that an ancient tradition giving both spouses the right to divorce existed among Israelites and Judaeans, as the fifth-century BCE marriage contracts from Elephantine show; he leaves open whether Mark's version is inspired by Jewish practice or by Roman law. A. Andrew Das's Bible Odyssey article says Greco-Roman women could freely divorce their husbands, a possibility some Jewish women enjoyed as well."
     cites:
       - source: hunter-2021-jmt-divorce-remarriage
