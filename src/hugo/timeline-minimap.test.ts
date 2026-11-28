@@ -631,6 +631,31 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(ticks).toEqual(placed);
   });
 
+  test("an entry placed by a tradition's date is one card, led by that date and its holder, then what scholars say; no separate tradition card (#257)", () => {
+    const placed = ids(
+      select(page, ".timeline-axis .timeline-entry--by-tradition"),
+    );
+    expect(placed).toEqual(["creation", "adam"]);
+    for (const id of placed)
+      expect(
+        select(page, `[id="${id}"] .timeline-entry__tradition`),
+      ).toHaveLength(0);
+    const card = (sel: string) =>
+      select(page, `[id="creation"] .timeline-entry__card ${sel}`).map(e =>
+        squash(e.text),
+      );
+    // The first label; the sources disclosure has its own.
+    expect(card(".timeline-entry__label")[0]).toEqual(
+      "Answers in Genesis, an apologetics ministry, holds",
+    );
+    expect(card(".timeline-entry__date--tradition")).toEqual([
+      "About 4004 BCE, placed by a tradition’s date",
+    ]);
+    expect(card(".timeline-entry__verdict")).toEqual([
+      "Scholarly and reference sources: No firm date in the sources",
+    ]);
+  });
+
   test("the scrollspy targets entries only, each tagged with its era", () => {
     const spy = select(page, ".timeline-minimap__spy a");
     expect(hrefs(spy)).toEqual(

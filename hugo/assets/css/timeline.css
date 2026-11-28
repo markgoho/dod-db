@@ -74,7 +74,8 @@
 
 /* Tradition surfaces: hatched, dashed outline, never a solid panel. */
 .timeline-legend__swatch--tradition,
-.timeline-entry__tradition {
+.timeline-entry__tradition,
+.timeline-entry--by-tradition > .timeline-entry__card {
   background: repeating-linear-gradient(
     135deg,
     var(--tan-200) 0 var(--space-4xs),
@@ -246,25 +247,16 @@
   background: var(--tan-100);
 }
 
-.timeline-entry:not(.timeline-entry--by-tradition, .timeline-entry--moved):is(
-    :target,
-    [data-arrived]
-  )
+.timeline-entry:not(.timeline-entry--moved):is(:target, [data-arrived])
   > .timeline-entry__card,
-.timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved):is(
-    :target,
-    [data-arrived]
-  )
+.timeline-entry--moved:is(:target, [data-arrived])
   > .timeline-entry__tradition {
   box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
     var(--color-accent);
 }
 
 /* The tradition card's dashed edge goes solid while it is the one you landed on. */
-.timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved):is(
-    :target,
-    [data-arrived]
-  )
+.timeline-entry--moved:is(:target, [data-arrived])
   > .timeline-entry__tradition {
   border: var(--border-width-md) solid var(--tan-900);
 }
@@ -276,11 +268,11 @@
   the length of each line's text. Without if() (and so without the
   scrollspy) it marks the card you landed on instead.
 */
-.timeline-entry:not(.timeline-entry--by-tradition, .timeline-entry--moved)
+.timeline-entry:not(.timeline-entry--moved)
   > .timeline-entry__card
   > :is(.timeline-entry__title, .timeline-entry__date)
   > .timeline-entry__mark,
-.timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved)
+.timeline-entry--moved
   > .timeline-entry__tradition
   > :is(.timeline-entry__moved-title, .timeline-entry__date)
   > .timeline-entry__mark {
@@ -288,11 +280,11 @@
 }
 
 @supports (color: if(style(--is-current: 1): red; else: blue)) {
-  .timeline-entry:not(.timeline-entry--by-tradition, .timeline-entry--moved)
+  .timeline-entry:not(.timeline-entry--moved)
     > .timeline-entry__card
     > :is(.timeline-entry__title, .timeline-entry__date)
     > .timeline-entry__mark,
-  .timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved)
+  .timeline-entry--moved
     > .timeline-entry__tradition
     > :is(.timeline-entry__moved-title, .timeline-entry__date)
     > .timeline-entry__mark {
@@ -305,17 +297,11 @@
 }
 
 @supports not (color: if(style(--is-current: 1): red; else: blue)) {
-  .timeline-entry:not(.timeline-entry--by-tradition, .timeline-entry--moved):is(
-      :target,
-      [data-arrived]
-    )
+  .timeline-entry:not(.timeline-entry--moved):is(:target, [data-arrived])
     > .timeline-entry__card
     > :is(.timeline-entry__title, .timeline-entry__date)
     > .timeline-entry__mark,
-  .timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved):is(
-      :target,
-      [data-arrived]
-    )
+  .timeline-entry--moved:is(:target, [data-arrived])
     > .timeline-entry__tradition
     > :is(.timeline-entry__moved-title, .timeline-entry__date)
     > .timeline-entry__mark {
@@ -329,13 +315,34 @@
   outline: none;
 }
 
-/* A tradition-placed entry: the scholarly card holds the verdict on a muted surface. */
+/*
+  A tradition-placed entry (#257): its one card is a tradition surface,
+  hatched and dashed (above), as its node and its minimap dot are; solid
+  while it is the one you landed on. The date leads; what scholars say
+  follows.
+*/
 .timeline-entry--by-tradition > .timeline-entry__card {
-  background: var(--tan-200);
+  border: var(--border-width-md) dashed var(--tan-900);
+  box-shadow: none;
 }
 
-.timeline-entry__kind,
-.timeline-entry__placed {
+.timeline-entry--by-tradition:is(:target, [data-arrived])
+  > .timeline-entry__card {
+  border-style: solid;
+}
+
+.timeline-entry__placed-by {
+  color: var(--color-text-muted);
+  font-size: var(--step-0);
+  font-weight: normal;
+}
+
+.timeline-entry__verdict {
+  font-size: var(--step--1);
+  margin: 0;
+}
+
+.timeline-entry__kind {
   color: var(--color-text-muted);
   font-size: var(--step--2);
 }
@@ -442,9 +449,10 @@
 }
 
 /*
-  The tradition card, beside an entry that has both dates or that a
-  tradition's date placed: under the scholarly card, on its side, inset from
-  the axis so it reads as belonging to the card above.
+  The tradition card, beside an entry that has both dates: under the
+  scholarly card, on its side, inset from the axis so it reads as belonging
+  to the card above. An entry a tradition's date placed has no second card:
+  its one card is the tradition's (#257).
 */
 .timeline-entry__tradition {
   display: grid;

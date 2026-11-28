@@ -1,6 +1,8 @@
 {{- /*
   One Timeline Entry as a compact marker (#163 §2): the scholarly card, a node
-  on the axis, and, when the entry has one, the tradition card. Citations and
+  on the axis, and, when the entry has one, the tradition card; an entry a
+  tradition's date placed is one card, the tradition's, with the scholarly
+  verdict inside it (#257). Citations and
   Trigger Claims fold into one disclosure; an undated entry's statement opens
   it, so the card stays the verdict (or date) plus note.
   Takes dict:
@@ -102,15 +104,30 @@
       <h3 class="timeline-entry__title">
         <span class="timeline-entry__mark">{{ $e.Title }}</span>
       </h3>
-      {{ with $c }}
-        <p class="timeline-entry__date">
-          <span class="timeline-entry__mark">{{ .display }}</span>
+      {{ if $byTradition }}
+        {{/* Placed by a tradition's date (#257): one dashed card, led by the date that places it and its holder, then what scholars say. */}}
+        <p class="timeline-entry__label">{{ $holds }}</p>
+        <p class="timeline-entry__date timeline-entry__date--tradition">
+          <span class="timeline-entry__mark">{{- $t.display -}}</span
+          ><span class="timeline-entry__placed-by"
+            >, {{ lower $placedLabel }}</span
+          >
         </p>
-        {{ with .note }}<p class="timeline-entry__note">{{ . }}</p>{{ end }}
+        <p class="timeline-entry__verdict">
+          {{ $labels.scholarlyShort }}:
+          <strong>{{ $verdict }}</strong>
+        </p>
       {{ else }}
-        <p class="timeline-entry__date timeline-entry__date--verdict">
-          <span class="timeline-entry__mark">{{- $verdict -}}</span>
-        </p>
+        {{ with $c }}
+          <p class="timeline-entry__date">
+            <span class="timeline-entry__mark">{{ .display }}</span>
+          </p>
+          {{ with .note }}<p class="timeline-entry__note">{{ . }}</p>{{ end }}
+        {{ else }}
+          <p class="timeline-entry__date timeline-entry__date--verdict">
+            <span class="timeline-entry__mark">{{- $verdict -}}</span>
+          </p>
+        {{ end }}
       {{ end }}
       {{ with $p.setting }}
         {{- /* The period the text narrates (#167 §4); it never places the entry. */ -}}
@@ -217,14 +234,9 @@
       <span class="timeline-entry__node" aria-hidden="true"></span>
     {{ end }}
 
-    {{ if and $t (not $movedAway) }}
+    {{ if and $t (not $movedAway) (not $byTradition) }}
       {{ with $t }}
         <div class="timeline-entry__tradition">
-          {{ if $byTradition }}
-            <p class="timeline-entry__placed type-eyebrow">
-              {{ $placedLabel }}
-            </p>
-          {{ end }}
           <p class="timeline-entry__label">{{ $holds }}</p>
           <p class="timeline-entry__date timeline-entry__date--tradition">
             <span class="timeline-entry__mark">{{- .display -}}</span>
