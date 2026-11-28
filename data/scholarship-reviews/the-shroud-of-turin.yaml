@@ -6,6 +6,8 @@
 # Second pass changes: earlier short narrowed (“explicitly”; “universal”, not “general”; names the theory class); xray short gives the paper's figures instead of “narrow range”; memorandum/2 extended to carry manufactus / artificialiter depictus; four quotes and two locators changed to curly apostrophes to match their sources; locators corrected (clement/3–4 paragraph 1, radiocarbon/8 p. 4, reception/12 full heading) and paragraph numbers added to Wild's Authenticity cites; text fixes (earlier “best known”, memorandum “in the middle”, reception's “Its reason”, Freer-Waters and Jull's affiliations, the retest sentence, repair's “allow” → “suggest”); De Caro title apostrophe in the registry; “Piero” → “Paolo” Di Lazzaro; Russakoff's unsourced “art historian” replaced by her affiliation. No cites added or removed; keys unchanged.
 # #171 first pass 2026-11-28 (agent, partial re-review per #93: only the new citations get the full procedure; review and sourcesRead stay 2026-11-24; no short, question or id changed, so no question card or infographic plate changes): the issue's six leads read in the source at a qualifying public copy or closed. Scripted fetches into the issue-171 scratch folder (LJMU repository PDFs, Crossref/OpenAlex metadata); Taylor & Francis, mdpi.com, Wiley, HAL, Encyclopedia.com and Britannica read in Claude in Chrome, each new quote matched by in-page script. Added 8 citations from 2 new sources and 2 reused ones: first-record/6 (Karapanagiotis §6: the 14th-century appearance “undisputed and documented”), memorandum/7–9 (Sarzeaud 2025 abstract: Oresme's treatise, dated 1355–82, calls the shroud a “patent” example of clerical fraud; older than the 1389–90 documents), reception/14 (Karapanagiotis: a second series of tests “is considered a logical and necessary step”), blood/4–5 (Borrini & Garlaschelli's own conclusions, from the authors' accepted manuscript in the LJMU repository), blood/6 (their published reply to Sánchez Hermosilla and Rucker, JFS 64(2), in the same repository). Closed: Sarzeaud's body (paywalled; HAL record has no file); the three JFS commentaries (paywalled, no open copy); Moraes and the Casabianca et al. reply (abstracts only; Moraes's affiliation is Arc-Team, a non-academic firm, and #262 §5 leaves “professional scholar” open); the staged healings (no English Scholarly or Reference report found; see uncited); Wild's edition (not on the page). Karapanagiotis adds no author to earlier: his sentence dates the appearance, it does not say nothing earlier exists.
 # #171 flags for the second pass: (1) blood/4–5 are read in the accepted manuscript, not the Wiley version (paywalled); its abstract differs in small wording (“whilst”, “post-mortem”) from the published abstract behind blood/1–2, so check the two conclusion sentences are fair to cite as the paper's. (2) blood/6 is a letter in a peer-reviewed journal, classed Scholarly by venue as nicolotti-2024-response-wilson; it opens with personal remarks about a critic, not used. (3) memorandum's Sarzeaud sentences rest on an abstract; check “Sarzeaud takes it to confirm, with other fourteenth-century sources, that the shroud is a medieval artifact” against the abstract's “confirming the thesis corroborated by other fourteenth-century sources”. (4) Sarzeaud sits in memorandum (the bishop's account) because no statement asks about other medieval critics; check it does not read as part of d'Arcis's letter. Publish rule unchanged: 11 statements; core radiocarbon untouched.
+# #171 second pass 2026-11-28 (independent): re-fetched both LJMU PDFs and the record page by curl into its own scratch folder (pdftotext), Karapanagiotis (mdpi.com) and Sarzeaud's abstract (tandfonline.com) in Claude in Chrome, Crossref for Sarzeaud; every new quote re-matched verbatim at its locator by script (whitespace and line-break hyphens only) and its passage re-read. Changed: memorandum's last Sarzeaud sentence narrowed to the abstract's wording (memorandum/9). No cites cut, keys unchanged, no short, question or id changed. Flags: (1) blood/4–5 rest on the accepted manuscript; published wording may differ slightly (attributed and url-pinned, kept). (2) blood/6 is a letter to the editor, Scholarly by venue on the nicolotti-2024-response-wilson precedent; if letters are ruled out, blood/6 and its sentence go (statement keeps its other cites). (3) memorandum's Sarzeaud sentences are off the bishop's question strictly but read as Sarzeaud's own, not d'Arcis's; kept. Closures (Sarzeaud body, JFS commentaries, Moraes, staged healings, Wild edition) reasonable. delegation.secondPass left at 2026-11-24 (partial pass).
+# #171 resolution 2026-11-28 (lead agent, on the second pass's flags): (1) blood/4–5 kept on the accepted manuscript, attributed and URL-pinned; blood/1–2 stay on the published abstract. (2) blood/6 kept as Scholarly by venue on the nicolotti-2024-response-wilson precedent; if letters are ruled out it and its “Replying to …” sentence go, and blood keeps its other cites. (3) Sarzeaud's sentences kept in memorandum, opening with his name; memorandum/9's sentence as the second pass narrowed it. Publish rule unchanged: 11 statements; core radiocarbon untouched; review and sourcesRead stay 2026-11-24 (partial re-review).
 review: 2026-11-24
 delegation:
   by: owner
@@ -47,7 +49,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "#171 first pass 2026-11-28: Karapanagiotis §6 read in full in Claude in Chrome (mdpi.com); matched verbatim by in-page script; section found by DOM walk (“6. Conclusions”). Third author for the 14th-century appearance (with Wild, Nicolotti, Britannica). Short unchanged.",
+      note: "#171 first pass 2026-11-28: Karapanagiotis §6 read in full in Claude in Chrome (mdpi.com); matched verbatim by in-page script; section found by DOM walk (“6. Conclusions”). Third author for the 14th-century appearance (with Wild, Nicolotti, Britannica). Short unchanged. Second pass 2026-11-28: re-read on mdpi.com in Chrome; matched verbatim in “6. Conclusions” (DOM walk); context is the radiocarbon-coincidence sentence, text no stronger; verified.",
     }
   earlier/1:
     {
@@ -119,19 +121,19 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "#171 first pass 2026-11-28: Sarzeaud, Journal of Medieval History 51 (5): 604–621 (2025), abstract read on tandfonline.com in Claude in Chrome (shown without login; body paywalled); matched verbatim by in-page script. Attributed to Sarzeaud in the text.",
+      note: "#171 first pass 2026-11-28: Sarzeaud, Journal of Medieval History 51 (5): 604–621 (2025), abstract read on tandfonline.com in Claude in Chrome (shown without login; body paywalled); matched verbatim by in-page script. Attributed to Sarzeaud in the text. Second pass 2026-11-28: abstract re-read on tandfonline.com in Chrome (no login); matched verbatim; Crossref confirms 51(5): 604–621; verified.",
     }
   memorandum/8:
     {
       agent: pass,
       owner: "",
-      note: "#171 first pass 2026-11-28: same abstract; matched verbatim. Text gives only what the abstract says (dated between 1355 and 1382; a “patent” example of clerical fraud); the press release's “most likely after 1370” and “oldest” are not used.",
+      note: "#171 first pass 2026-11-28: same abstract; matched verbatim. Text gives only what the abstract says (dated between 1355 and 1382; a “patent” example of clerical fraud); the press release's “most likely after 1370” and “oldest” are not used. Second pass 2026-11-28: matched verbatim; text no stronger (dates and “patent” only); verified.",
     }
   memorandum/9:
     {
       agent: pass,
       owner: "",
-      note: "#171 first pass 2026-11-28: same abstract; clause of the abstract's third sentence, matched verbatim; the sentence goes on to the article's wider aim, which does not weaken the clause.",
+      note: "#171 first pass 2026-11-28: same abstract; clause of the abstract's third sentence, matched verbatim; the sentence goes on to the article's wider aim, which does not weaken the clause. Second pass 2026-11-28: matched verbatim; text narrowed to the abstract's structure: “The article, Sarzeaud writes, confirms the thesis, corroborated by other fourteenth-century sources, that the shroud is a medieval artifact” (was “takes it to confirm, with other fourteenth-century sources”, which made the new document alone the confirmation).",
     }
   clement/1:
     {
@@ -293,7 +295,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "#171 first pass 2026-11-28: Karapanagiotis §6 (mdpi.com, Chrome); matched verbatim by in-page script. His passive “is considered” kept in the text (“is considered a logical and necessary step”), attributed to him. Short unchanged.",
+      note: "#171 first pass 2026-11-28: Karapanagiotis §6 (mdpi.com, Chrome); matched verbatim by in-page script. His passive “is considered” kept in the text (“is considered a logical and necessary step”), attributed to him. Short unchanged. Second pass 2026-11-28: re-read on mdpi.com in Chrome; matched verbatim in “6. Conclusions”; passive “is considered” and attribution kept; verified.",
     }
   repair/1:
     {
@@ -455,19 +457,19 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "#171 first pass 2026-11-28: authors' accepted manuscript in the Liverpool John Moores University repository (eprint 8813, “Accepted Version”; deposited 8 June 2018); read in full by pdftotext; matched verbatim; manuscript p. 14, section “Conclusions”. Their own view, attributed; the text keeps their condition (“assuming the stains are blood”). Short unchanged.",
+      note: "#171 first pass 2026-11-28: authors' accepted manuscript in the Liverpool John Moores University repository (eprint 8813, “Accepted Version”; deposited 8 June 2018); read in full by pdftotext; matched verbatim; manuscript p. 14, section “Conclusions”. Their own view, attributed; the text keeps their condition (“assuming the stains are blood”). Short unchanged. Second pass 2026-11-28: manuscript re-fetched from LJMU by curl (record page: “Accepted Version” of JFS 64: 137–143); matched verbatim on printed p. 14 under “Conclusions” (heading on p. 13); condition kept; fair to cite as the paper's conclusion, attributed, with the manuscript url; verified.",
     }
   blood/5:
     {
       agent: pass,
       owner: "",
-      note: "#171 first pass 2026-11-28: same manuscript and page; matched verbatim; “seem” kept in the text (“seem to point against”).",
+      note: "#171 first pass 2026-11-28: same manuscript and page; matched verbatim; “seem” kept in the text (“seem to point against”). Second pass 2026-11-28: matched verbatim, p. 14; “seem” kept; verified.",
     }
   blood/6:
     {
       agent: pass,
       owner: "",
-      note: "#171 first pass 2026-11-28: Authors' Response, JFS 64 (2): 656–657 (2019), the published version as posted in the same LJMU repository record (journal header and doi 10.1111/1556-4029.13998 on the PDF); read in full; matched verbatim (pdftotext, line-break hyphen in “grav-ity” joined); p. 656. A reply to Sánchez Hermosilla and Rucker's commentary; the authors' own claim, attributed. The commentary itself was not read (paywalled).",
+      note: "#171 first pass 2026-11-28: Authors' Response, JFS 64 (2): 656–657 (2019), the published version as posted in the same LJMU repository record (journal header and doi 10.1111/1556-4029.13998 on the PDF); read in full; matched verbatim (pdftotext, line-break hyphen in “grav-ity” joined); p. 656. A reply to Sánchez Hermosilla and Rucker's commentary; the authors' own claim, attributed. The commentary itself was not read (paywalled). Second pass 2026-11-28: PDF re-fetched from LJMU (journal header, doi 10.1111/1556-4029.13998, p. 656, letter to the editor); matched verbatim under “Use of Anticoagulant and Synthetic Blood” (line-break hyphen joined); text no stronger; verified.",
     }
   church/1:
     {
