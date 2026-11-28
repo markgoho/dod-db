@@ -4,6 +4,8 @@
 # First pass: three research agents fetched every source on 2026-11-24 and copied quotes from the fetched page or PDF text; every page quote was then script-matched against those notes (whitespace only). Locators come from the notes. The second pass must re-fetch.
 # Second agent pass 2026-11-24 (verify/143, independent): all fourteen sources re-fetched (PDFs and HTML by script; Karapanagiotis, Di Lazzaro, De Caro on mdpi.com, Britannica and both Wiley abstracts in Chrome); every quote script-matched against the fetched text (whitespace only), in-page for the browser sources. Two PDF text-layer misses (radiocarbon/8, xray/1) matched verbatim on mdpi.com. Every locator re-checked (Wild paragraphs mapped from the HTML, PDF printed pages, mdpi.com section headings by DOM walk). Every Trigger Claim re-matched by script at its timestamp and speaker and re-read with two lines either side (no dropped hedge). Author overlap checked by script against Damon et al.'s 21 authors. #133 applied clause by clause to every short.
 # Second pass changes: earlier short narrowed (“explicitly”; “universal”, not “general”; names the theory class); xray short gives the paper's figures instead of “narrow range”; memorandum/2 extended to carry manufactus / artificialiter depictus; four quotes and two locators changed to curly apostrophes to match their sources; locators corrected (clement/3–4 paragraph 1, radiocarbon/8 p. 4, reception/12 full heading) and paragraph numbers added to Wild's Authenticity cites; text fixes (earlier “best known”, memorandum “in the middle”, reception's “Its reason”, Freer-Waters and Jull's affiliations, the retest sentence, repair's “allow” → “suggest”); De Caro title apostrophe in the registry; “Piero” → “Paolo” Di Lazzaro; Russakoff's unsourced “art historian” replaced by her affiliation. No cites added or removed; keys unchanged.
+# #171 first pass 2026-11-28 (agent, partial re-review per #93: only the new citations get the full procedure; review and sourcesRead stay 2026-11-24; no short, question or id changed, so no question card or infographic plate changes): the issue's six leads read in the source at a qualifying public copy or closed. Scripted fetches into the issue-171 scratch folder (LJMU repository PDFs, Crossref/OpenAlex metadata); Taylor & Francis, mdpi.com, Wiley, HAL, Encyclopedia.com and Britannica read in Claude in Chrome, each new quote matched by in-page script. Added 8 citations from 2 new sources and 2 reused ones: first-record/6 (Karapanagiotis §6: the 14th-century appearance “undisputed and documented”), memorandum/7–9 (Sarzeaud 2025 abstract: Oresme's treatise, dated 1355–82, calls the shroud a “patent” example of clerical fraud; older than the 1389–90 documents), reception/14 (Karapanagiotis: a second series of tests “is considered a logical and necessary step”), blood/4–5 (Borrini & Garlaschelli's own conclusions, from the authors' accepted manuscript in the LJMU repository), blood/6 (their published reply to Sánchez Hermosilla and Rucker, JFS 64(2), in the same repository). Closed: Sarzeaud's body (paywalled; HAL record has no file); the three JFS commentaries (paywalled, no open copy); Moraes and the Casabianca et al. reply (abstracts only; Moraes's affiliation is Arc-Team, a non-academic firm, and #262 §5 leaves “professional scholar” open); the staged healings (no English Scholarly or Reference report found; see uncited); Wild's edition (not on the page). Karapanagiotis adds no author to earlier: his sentence dates the appearance, it does not say nothing earlier exists.
+# #171 flags for the second pass: (1) blood/4–5 are read in the accepted manuscript, not the Wiley version (paywalled); its abstract differs in small wording (“whilst”, “post-mortem”) from the published abstract behind blood/1–2, so check the two conclusion sentences are fair to cite as the paper's. (2) blood/6 is a letter in a peer-reviewed journal, classed Scholarly by venue as nicolotti-2024-response-wilson; it opens with personal remarks about a critic, not used. (3) memorandum's Sarzeaud sentences rest on an abstract; check “Sarzeaud takes it to confirm, with other fourteenth-century sources, that the shroud is a medieval artifact” against the abstract's “confirming the thesis corroborated by other fourteenth-century sources”. (4) Sarzeaud sits in memorandum (the bishop's account) because no statement asks about other medieval critics; check it does not read as part of d'Arcis's letter. Publish rule unchanged: 11 statements; core radiocarbon untouched.
 review: 2026-11-24
 delegation:
   by: owner
@@ -40,6 +42,12 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  first-record/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "#171 first pass 2026-11-28: Karapanagiotis §6 read in full in Claude in Chrome (mdpi.com); matched verbatim by in-page script; section found by DOM walk (“6. Conclusions”). Third author for the 14th-century appearance (with Wild, Nicolotti, Britannica). Short unchanged.",
     }
   earlier/1:
     {
@@ -106,6 +114,24 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Text's “around the middle of the century” changed to Nicolotti's “in the middle of the century”.",
+    }
+  memorandum/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "#171 first pass 2026-11-28: Sarzeaud, Journal of Medieval History 51 (5): 604–621 (2025), abstract read on tandfonline.com in Claude in Chrome (shown without login; body paywalled); matched verbatim by in-page script. Attributed to Sarzeaud in the text.",
+    }
+  memorandum/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "#171 first pass 2026-11-28: same abstract; matched verbatim. Text gives only what the abstract says (dated between 1355 and 1382; a “patent” example of clerical fraud); the press release's “most likely after 1370” and “oldest” are not used.",
+    }
+  memorandum/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "#171 first pass 2026-11-28: same abstract; clause of the abstract's third sentence, matched verbatim; the sentence goes on to the article's wider aim, which does not weaken the clause.",
     }
   clement/1:
     {
@@ -263,6 +289,12 @@ citations:
       owner: "",
       note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
+  reception/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "#171 first pass 2026-11-28: Karapanagiotis §6 (mdpi.com, Chrome); matched verbatim by in-page script. His passive “is considered” kept in the text (“is considered a logical and necessary step”), attributed to him. Short unchanged.",
+    }
   repair/1:
     {
       agent: pass,
@@ -405,7 +437,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Abstract only; full text paywalled. The paper drew published commentaries and replies in JFS (not read; see leads). First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified on the Wiley abstract page, which links three comments, each with an authors' response (consistent with blood/3's “met with criticism”).",
+      note: "Abstract only; full text paywalled. The paper drew published commentaries and replies in JFS (not read; see leads). #171 2026-11-28: the full paper is now read in the authors' accepted manuscript (blood/4–5); this quote stays on the published abstract, whose wording differs slightly from the manuscript's. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified on the Wiley abstract page, which links three comments, each with an authors' response (consistent with blood/3's “met with criticism”).",
     }
   blood/2:
     {
@@ -418,6 +450,24 @@ citations:
       agent: pass,
       owner: "",
       note: "Short reports what the study found (exempt fact, #133), in Karapanagiotis’s summary words. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  blood/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#171 first pass 2026-11-28: authors' accepted manuscript in the Liverpool John Moores University repository (eprint 8813, “Accepted Version”; deposited 8 June 2018); read in full by pdftotext; matched verbatim; manuscript p. 14, section “Conclusions”. Their own view, attributed; the text keeps their condition (“assuming the stains are blood”). Short unchanged.",
+    }
+  blood/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "#171 first pass 2026-11-28: same manuscript and page; matched verbatim; “seem” kept in the text (“seem to point against”).",
+    }
+  blood/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "#171 first pass 2026-11-28: Authors' Response, JFS 64 (2): 656–657 (2019), the published version as posted in the same LJMU repository record (journal header and doi 10.1111/1556-4029.13998 on the PDF); read in full; matched verbatim (pdftotext, line-break hyphen in “grav-ity” joined); p. 656. A reply to Sánchez Hermosilla and Rucker's commentary; the authors' own claim, attributed. The commentary itself was not read (paywalled).",
     }
   church/1:
     {
@@ -566,7 +616,21 @@ sources:
       agent: pass,
       owner: "",
       edition: "JFS 64(1), first published 10 July 2018",
-      note: "New entry. Abstract only (Wiley, paywalled). Second pass 2026-11-24: Wiley abstract read in Chrome; verified.",
+      note: "New entry. Abstract only (Wiley, paywalled). Second pass 2026-11-24: Wiley abstract read in Chrome; verified. #171 2026-11-28: access line now also records the authors' accepted manuscript in the LJMU repository (blood/4–5); Wiley full text still paywalled in Chrome.",
+    }
+  borrini-garlaschelli-2019-response-hermosilla-rucker:
+    {
+      agent: pass,
+      owner: "",
+      edition: "JFS 64(2), March 2019, pp. 656–657 (Crossref)",
+      note: "#171 new entry. Published letter (Authors' Response, doi 10.1111/1556-4029.13998), PDF in the LJMU repository record of the 2019 paper. Scholarly by venue (peer-reviewed journal), as nicolotti-2024-response-wilson.",
+    }
+  sarzeaud-2025-oresme-shroud:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Journal of Medieval History 51(5): 604–621, online 28 August 2025 (Crossref)",
+      note: "#171 new entry. Abstract only (tandfonline.com, shown without login; full text paywalled; OpenAlex: closed; HAL hal-05269344 is a metadata record with no file). Sarzeaud: research fellow, Académie de France à Rome and FNRS/GEMCA Louvain-la-Neuve (contributor note); peer-reviewed journal.",
     }
   wild-nce-shroud-of-turin:
     {
@@ -612,10 +676,10 @@ sources:
     }
 leads:
   - "Damon et al. 1989, p. 614: “the age of the shroud is obtained as AD 1260–1390, with at least 95% confidence.” Known only through Freer-Waters & Jull 2010 and 2026, which quote it; Damon's full text is paywalled."
-  - "Nicolas Sarzeaud, “A New Document on the Appearance of the Shroud of Turin from Nicole Oresme”, Journal of Medieval History 51 (2025): 604–621. Press release (EurekAlert!, 28 August 2025) says Oresme referred to the shroud between 1355 and 1382, most likely after 1370, the oldest written evidence known. Paywalled; not read. If confirmed, it bears on earlier and memorandum, not on first-record."
+  - "Sarzeaud 2025, body: the press release (EurekAlert!, 28 August 2025) says Oresme's reference most likely dates after 1370 and is the oldest written evidence known. Not in the abstract; the article body is paywalled (tandfonline.com) and HAL hal-05269344 has no file. #171 2026-11-28: closed; the abstract is cited (memorandum/7–9)."
   - "Andrea Nicolotti, The Shroud of Turin: The History and Legends of the World's Most Famous Relic (Baylor UP), and From the Mandylion of Edessa to the Shroud of Turin (Brill, 2014): no preview / restricted. The 2014 book reached through Russakoff's review."
   - "Bella, Garlaschelli and Samperi (Thermochimica Acta 617, 2015; 632, 2016) and Latendresse (624, 2016): the exchange on Rogers's mass spectra. ScienceDirect CAPTCHA; not read."
-  - "Commentaries on Borrini & Garlaschelli in JFS 64 (2019) by Sánchez Hermosilla et al., Bevilacqua et al. (with Fanti), and Sánchez Hermosilla and Rucker, each with an authors' response. No abstracts; not read."
+  - "Commentaries on Borrini & Garlaschelli in JFS 64 (2019): Sánchez Hermosilla, Di Minno, Memmolo and Rodella (pp. 325–326), Bevilacqua, Concheri, Concheri and Fanti (pp. 329–332), Sánchez Hermosilla and Rucker (pp. 654–655). #171 2026-11-28: closed: paywalled on Wiley, OpenAlex lists no open copy. What the authors' replies quote from them is a lead only. The replies themselves are read (LJMU repository); one is cited (blood/6)."
   - "Garlaschelli, “Life-size Reproduction of the Shroud of Turin and its Image”, J. Imaging Sci. Technol. 54 (2010); reply by Fanti and Heimburger 55 (2011). Publisher CAPTCHA; the reproduction is cited through Karapanagiotis."
   - "W. C. McCrone, “The Shroud of Turin: Blood or Artist's Pigment?”, Accounts of Chemical Research 23 (1990): 77–83. Not opened; pre-1996. Cited through Karapanagiotis."
   - "STURP 1981 summary statement (“It is not the product of an artist”): readable only on shroud.com (advocacy); quoted in Karapanagiotis §3.2 and Di Lazzaro §1."
@@ -627,6 +691,9 @@ uncited:
   - "Thurston, “The Holy Shroud (of Turin)”, Catholic Encyclopedia (1912): first heard of “about the year 1360”; the artist “had confessed to having painted it”. Not cited (1912); “confessed” is a gloss on the memorandum's “attested”."
   - "Ulysse Chevalier, Autour des origines du suaire de Lirey (1903), docs. G and K: Latin of Clement VII's bulls of 6 January 1390. Primary edition; used only to check the two redactions behind clement/2 and clement/4."
   - "Freer-Waters & Jull, npj Heritage Science 14:263 (2026): “The radiocarbon laboratories continue to support this result and see no reason to dispute the results.” Not cited: same authors as freer-waters-jull-2010-dated-piece, which carries the point."
-  - "Cicero Moraes, “Image Formation on the Holy Shroud—A Digital 3D Approach”, Archaeometry 68 (2026): 84–93, abstract: the image is “more consistent with an artistic low-relief representation than with the direct imprint of a real human body”; commentary by Casabianca, Marinelli and Piana and Moraes's response (Archaeometry 68: 861–866), abstracts. Not cited: abstracts only; could be added in a later pass."
+  - "Cicero Moraes, “Image Formation on the Holy Shroud—A Digital 3D Approach”, Archaeometry 68 (2026): 84–93, abstract: the image is “more consistent with an artistic low-relief representation than with the direct imprint of a real human body”; commentary by Casabianca, Marinelli and Piana and Moraes's response (Archaeometry 68: 861–866), abstracts. Not cited: abstracts only; could be added in a later pass. #171 2026-11-28: closed. Wiley full text redirects to the abstract in Chrome (paywalled); the open copies are an SSRN preprint (submitted version) and third-party mirrors, not the published text. Moraes's affiliation on the Wiley page is Arc-Team, Chapecó, Brazil, a non-academic firm: whether that is a professional scholar is the question #262 §5 leaves open, so not cited until it is ruled. The commentary and response (doi 10.1111/arcm.70109, 70112) are closed on OpenAlex."
   - "Benedict XVI (2 May 2010: “the Icon of Holy Saturday”) and Francis (30 March 2013: “this icon of a man scourged and crucified”), vatican.va. Not cited; John Paul II carries the Church's position."
+  - "Sarzeaud 2025, n. 35 (tandfonline.com, notes shown without login): the Latin of the d'Arcis memorandum, ed. Chevalier, including “confingebantur miracula mendaciter certis hominibus ad hoc precio conductis, qui se sanari fingebant in ostensione dicti Sudarii”. Not cited (#171): the staged healings (Ep 75 00:38:55) would rest on the page's own translation of a Latin primary text; Sarzeaud's English is in the paywalled body. Wild, Britannica, Karapanagiotis and Nicolotti 2019 do not mention the healings (searched)."
+  - "Borrini & Garlaschelli, Authors' Response, JFS 64 (1): 333–335 (2019; published version in the LJMU repository): the memorandum “states that the bishop's predecessor, Henri de Poitiers, believed the cloth had been created as part of a faith-healing scheme”. Not cited (#171): a chemist's and an anthropologist's gloss, not that hired men feigned cures; the staged healings stay off the page."
+  - "Wild, NCE, edition (#171 2026-11-28): Encyclopedia.com's citation block reads only “New Catholic Encyclopedia” with no edition or year; Gale's catalogue was not checked. Edition stays inferred (2nd ed., 2003, from the 1998 bibliography); in-window either way. Closed."
   - "Nicolotti 2019, p. 20: “It is by now an established fact that the Shroud came into the possession of the Duke of Savoy in 1453.” Later history (Savoy 1453, Chambéry fire 1532, Turin 1578) has no statement; no Trigger Claim asks about it."

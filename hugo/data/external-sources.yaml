@@ -1244,8 +1244,36 @@ borrini-garlaschelli-2019-bpa:
   edition: null
   class: Scholarly
   kind: article
-  access: "Publisher abstract, open in a browser; full text paywalled"
+  access: "Publisher abstract, open in a browser; full text paywalled; authors' accepted manuscript in the Liverpool John Moores University repository (PDF), open"
   url: "https://onlinelibrary.wiley.com/doi/10.1111/1556-4029.13867"
+  hostAuthored: false
+  tradition: null
+
+borrini-garlaschelli-2019-response-hermosilla-rucker:
+  author: "Matteo Borrini and Luigi Garlaschelli"
+  title: "Authors’ Response"
+  series: "Journal of Forensic Sciences 64 (2): 656–657"
+  publisher: "Wiley"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Published version in the Liverpool John Moores University repository (PDF), open"
+  url: "https://researchonline.ljmu.ac.uk/id/eprint/8813/31/Borrini2_et_al-2019-Journal_of_Forensic_Sciences.pdf"
+  hostAuthored: false
+  tradition: null
+
+sarzeaud-2025-oresme-shroud:
+  author: "Nicolas Sarzeaud"
+  title: "A New Document on the Appearance of the Shroud of Turin from Nicole Oresme: Fighting False Relics and False Rumours in the Fourteenth Century"
+  series: "Journal of Medieval History 51 (5): 604–621"
+  publisher: "Taylor & Francis"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher abstract, open in a browser; full text paywalled"
+  url: "https://www.tandfonline.com/doi/full/10.1080/03044181.2025.2546884"
   hostAuthored: false
   tradition: null
 

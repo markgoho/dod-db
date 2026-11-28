@@ -26,7 +26,7 @@ statements:
     group: "The fourteenth-century record"
     question: "When does the shroud first appear in the historical record?"
     short: "At Lirey, a village in northeastern France, in the 1350s."
-    text: "The New Catholic Encyclopedia entry says the shroud's whereabouts are well attested back to the mid-14th century but not earlier, and that about 1357 it was exhibited at Lirey, a village near Troyes in northeastern France. A pilgrim's medallion from that exhibition, preserved at the Musée de Cluny in Paris, shows that it was then owned by Geoffrey de Charny and his wife, Jeanne de Vergy. Andrea Nicolotti dates its appearance at Lirey to approximately 1355, in a collegiate church built with funds from the nobleman Geoffroi de Charny and completed in 1353. Britannica places the first historical account in 1354, when it was recorded in the hands of Geoffroi de Charnay, seigneur de Lirey, and says there is no record of how he came by it."
+    text: "The New Catholic Encyclopedia entry says the shroud's whereabouts are well attested back to the mid-14th century but not earlier, and that about 1357 it was exhibited at Lirey, a village near Troyes in northeastern France. A pilgrim's medallion from that exhibition, preserved at the Musée de Cluny in Paris, shows that it was then owned by Geoffrey de Charny and his wife, Jeanne de Vergy. Andrea Nicolotti dates its appearance at Lirey to approximately 1355, in a collegiate church built with funds from the nobleman Geoffroi de Charny and completed in 1353. Britannica places the first historical account in 1354, when it was recorded in the hands of Geoffroi de Charnay, seigneur de Lirey, and says there is no record of how he came by it. Karapanagiotis's 2025 review of the scientific studies calls the shroud's appearance in history in the fourteenth century undisputed and documented."
     cites:
       - source: wild-nce-shroud-of-turin
         locator: "section “History of the Shroud”, paragraph 1"
@@ -48,6 +48,10 @@ statements:
         locator: "section “How was the Shroud of Turin discovered?”"
         quote: "The first historical account of the shroud occurs in 1354, when it is recorded that it wound up in the hands of a famed knight, Geoffroi de Charnay, seigneur de Lirey. There is no record of how he came into possession of it."
         read: 2026-11-24
+      - source: karapanagiotis-2025-shroud-overview
+        locator: "section 6 “Conclusions”"
+        quote: "It is important to note that the radiocarbon dating result coincides with the undisputed and documented appearance of the Shroud in history (14th century)."
+        read: 2026-11-28
   - id: earlier
     group: "The fourteenth-century record"
     question: "Is the shroud attested before the fourteenth century?"
@@ -78,7 +82,7 @@ statements:
     group: "The fourteenth-century record"
     question: "What did the bishop of Troyes say about it?"
     short: "In 1389 Bishop Pierre d'Arcis wrote that an earlier bishop's inquiry had found the cloth painted, and that the artist who painted it had attested this."
-    text: "In 1389 Pierre d'Arcis, bishop of Troyes, wrote to Pope Clement VII asking him to stop the cloth's public display. The New Catholic Encyclopedia entry says d'Arcis agreed with his predecessor, Henry of Poitiers, who had objected when the de Charny family displayed it, claiming it was a fraudulent invention; d'Arcis called it a product of human handicraft (manufactus) and an artificial painting or depiction (artificialiter depictus). Nicolotti's translation of d'Arcis's account reports that Henri de Poitiers's inquiry discovered the fraud and how the cloth had been artificially portrayed, and that the artist who had portrayed it proved it was made by human skill, not miraculously. Britannica gives the bishop's words as “cunningly painted, the truth being attested by the artist who painted it.” Nicolotti infers that the image had been made in the middle of the century or a few years before, at the earliest, and that the maker was most likely still alive around 1355."
+    text: "In 1389 Pierre d'Arcis, bishop of Troyes, wrote to Pope Clement VII asking him to stop the cloth's public display. The New Catholic Encyclopedia entry says d'Arcis agreed with his predecessor, Henry of Poitiers, who had objected when the de Charny family displayed it, claiming it was a fraudulent invention; d'Arcis called it a product of human handicraft (manufactus) and an artificial painting or depiction (artificialiter depictus). Nicolotti's translation of d'Arcis's account reports that Henri de Poitiers's inquiry discovered the fraud and how the cloth had been artificially portrayed, and that the artist who had portrayed it proved it was made by human skill, not miraculously. Britannica gives the bishop's words as “cunningly painted, the truth being attested by the artist who painted it.” Nicolotti infers that the image had been made in the middle of the century or a few years before, at the earliest, and that the maker was most likely still alive around 1355. Nicolas Sarzeaud writes that for over a century the debate over the shroud's appearance has revolved around documents produced in Champagne in 1389–1390, and reports an older one: in a treatise on unexplained phenomena dated between 1355 and 1382, the scholar Nicole Oresme refers to the shroud as a “patent” example of clerical fraud. Sarzeaud takes it to confirm, with other fourteenth-century sources, that the shroud is a medieval artifact."
     cites:
       - source: wild-nce-shroud-of-turin
         locator: "section “Authenticity”, paragraph 1"
@@ -104,6 +108,18 @@ statements:
         locator: "p. 21"
         quote: "This investigation, therefore, reveals that the image of Christ imprinted on the cloth had been made in the middle of the century or a few years before, at the earliest (the maker was most likely still alive around 1355)"
         read: 2026-11-24
+      - source: sarzeaud-2025-oresme-shroud
+        locator: "abstract"
+        quote: "For over a century, the debate surrounding the appearance of the Shroud of Turin has revolved around documents produced in Champagne in 1389–1390, when this now-controversial relic was already caught up in a polemic between supporters and detractors of its cult."
+        read: 2026-11-28
+      - source: sarzeaud-2025-oresme-shroud
+        locator: "abstract"
+        quote: "This article is the result of the discovery of a new, older source: in a treatise on unexplained phenomena (mirabilia) dated between 1355–82, the Norman scholar Nicole Oresme (d. 1382) refers to the Shroud as a ‘patent’ example of clerical fraud, prompting him to be more broadly suspicious of the word of ecclesiastics."
+        read: 2026-11-28
+      - source: sarzeaud-2025-oresme-shroud
+        locator: "abstract"
+        quote: "After showing how this new document sheds light on the case for the Shroud’s appearance in Lirey in Champagne, and confirming the thesis corroborated by other fourteenth-century sources that the Shroud is a medieval artifact"
+        read: 2026-11-28
   - id: clement
     group: "The fourteenth-century record"
     question: "How did Pope Clement VII respond?"
@@ -172,7 +188,7 @@ statements:
     group: "The radiocarbon date"
     question: "Has the medieval date held up?"
     short: "The weight of evidence is taken to favour it, though defenders of the shroud's authenticity still contest it."
-    text: "The New Catholic Encyclopedia entry says the preponderance of evidence would seem to suggest a medieval date, though some scholars still strenuously argue for authenticity, and that the findings have been vigorously contested by the defenders of the shroud's authenticity. It adds that, while debate continues about such objections, radiocarbon dating is hardly a new technology and scientists have extensive familiarity with contaminants and how to deal with them. Currie adds that the agreement of the result with the Lirey documents seems compelling. Karapanagiotis's 2025 review concludes that the challenges published so far are insufficient to overturn the finding and that the medieval date is difficult to dismiss, and expects that, unless universally accepted evidence shows the dating was flawed, most scientists will remain skeptical of the shroud's authenticity. The challenges also appear in peer-reviewed journals. Tristan Casabianca and colleagues, analysing the raw data released in 2017, argue that the data lack homogeneity and that the procedure should be reconsidered, and Di Lazzaro and colleagues conclude that the 1988 dating does not match current accuracy requirements. Currie himself notes that the shroud results were only marginally consistent among the three laboratories. Rachel Freer-Waters of the Arizona State Museum and Timothy Jull of the University of Arizona's radiocarbon laboratory, one of the three that dated the shroud, write that none of the many reports questioning the measurement was sufficient to challenge it. Di Lazzaro and colleagues and Karapanagiotis both report support for a new test: the former write that virtually all researchers agree a repeat would be informative, and Karapanagiotis that many researchers advocate one, with samples taken away from the edge of the cloth."
+    text: "The New Catholic Encyclopedia entry says the preponderance of evidence would seem to suggest a medieval date, though some scholars still strenuously argue for authenticity, and that the findings have been vigorously contested by the defenders of the shroud's authenticity. It adds that, while debate continues about such objections, radiocarbon dating is hardly a new technology and scientists have extensive familiarity with contaminants and how to deal with them. Currie adds that the agreement of the result with the Lirey documents seems compelling. Karapanagiotis's 2025 review concludes that the challenges published so far are insufficient to overturn the finding and that the medieval date is difficult to dismiss, and expects that, unless universally accepted evidence shows the dating was flawed, most scientists will remain skeptical of the shroud's authenticity. The challenges also appear in peer-reviewed journals. Tristan Casabianca and colleagues, analysing the raw data released in 2017, argue that the data lack homogeneity and that the procedure should be reconsidered, and Di Lazzaro and colleagues conclude that the 1988 dating does not match current accuracy requirements. Currie himself notes that the shroud results were only marginally consistent among the three laboratories. Rachel Freer-Waters of the Arizona State Museum and Timothy Jull of the University of Arizona's radiocarbon laboratory, one of the three that dated the shroud, write that none of the many reports questioning the measurement was sufficient to challenge it. Di Lazzaro and colleagues and Karapanagiotis both report support for a new test: the former write that virtually all researchers agree a repeat would be informative, and Karapanagiotis that many researchers advocate one, with samples taken away from the edge of the cloth. Given the many concerns and disputes over the 1989 results, Karapanagiotis adds, a second series of tests is considered a logical and necessary step."
     cites:
       - source: wild-nce-shroud-of-turin
         locator: "section “Authenticity”, paragraph 2"
@@ -226,6 +242,10 @@ statements:
         locator: "section 6 “Conclusions”"
         quote: "Nevertheless, many researchers advocate for repeating the radiocarbon dating in the future, this time using samples not from the edge of the fabric but, if possible, from different areas close to the body image."
         read: 2026-11-24
+      - source: karapanagiotis-2025-shroud-overview
+        locator: "section 6 “Conclusions”"
+        quote: "Consequently, given the numerous concerns and disputes surrounding the 1989 results, conducting a second series of radiocarbon tests to redate the Shroud is considered a logical and necessary step."
+        read: 2026-11-28
   - id: repair
     group: "The radiocarbon date"
     question: "Was the dated sample a later repair?"
@@ -340,7 +360,7 @@ statements:
     group: "The image and the blood"
     question: "What did a bloodstain-pattern study of the shroud find?"
     short: "That the blood flows on different parts of the body are inconsistent with one another."
-    text: "Matteo Borrini and Luigi Garlaschelli tested how blood would flow from the wounds shown on the shroud. They report that the two short rivulets on the back of the left hand fit only a standing subject with arms at about 45 degrees, while the forearm stains require nearly vertical arms; that the chest wound bleeds realistically for a standing position, while the stains on the back, supposedly from the same wound on a corpse lying on its back, are totally unrealistic. Karapanagiotis summarises their finding as blood patterns from different areas of the body that are inconsistent with one another, and notes that their conclusions were met with criticism."
+    text: "Matteo Borrini and Luigi Garlaschelli tested how blood would flow from the wounds shown on the shroud. They report that the two short rivulets on the back of the left hand fit only a standing subject with arms at about 45 degrees, while the forearm stains require nearly vertical arms; that the chest wound bleeds realistically for a standing position, while the stains on the back, supposedly from the same wound on a corpse lying on its back, are totally unrealistic. Karapanagiotis summarises their finding as blood patterns from different areas of the body that are inconsistent with one another, and notes that their conclusions were met with criticism. In the paper's conclusions, Borrini and Garlaschelli write that, assuming the stains are blood from the crucifixion wounds, the flow patterns from different areas of the body are not consistent with each other, and that the inconsistencies seem to point against the shroud's authenticity, suggesting it was an artistic or “didactic” representation from the fourteenth century. Replying to one of the published commentaries, they maintain that blood's viscosity can change the speed of the flow but not its direction, which follows gravity."
     cites:
       - source: borrini-garlaschelli-2019-bpa
         locator: "abstract"
@@ -354,6 +374,20 @@ statements:
         locator: "section 2"
         quote: "On the contrary, Borrini and Garlaschelli reported experimental results indicating that the alleged flowing blood patterns from different areas of the body are inconsistent with one another [11]. Their conclusions, however, were met with criticism [12,13]."
         read: 2026-11-24
+      - source: borrini-garlaschelli-2019-bpa
+        url: "https://researchonline.ljmu.ac.uk/id/eprint/8813/3/A%20BPA%20approach%20to%20the%20Shroud%20of%20Turin.pdf"
+        locator: "section “Conclusions”, accepted manuscript p. 14"
+        quote: "Assuming that the red stains on the Turin linen are actually blood from the crucifixion wounds, the results of the experiments demonstrate that the alleged flowing patterns from different areas of the body are not consistent with each other."
+        read: 2026-11-28
+      - source: borrini-garlaschelli-2019-bpa
+        url: "https://researchonline.ljmu.ac.uk/id/eprint/8813/3/A%20BPA%20approach%20to%20the%20Shroud%20of%20Turin.pdf"
+        locator: "section “Conclusions”, accepted manuscript p. 14"
+        quote: "The inconsistencies identified by the authors seem not only to point against their own reality, but against the authenticity of the Shroud itself, suggesting that the Turin linen was an artistic or “didactic” representation from the XIV century."
+        read: 2026-11-28
+      - source: borrini-garlaschelli-2019-response-hermosilla-rucker
+        locator: "p. 656, section “Use of Anticoagulant and Synthetic Blood”"
+        quote: "the viscosity of the blood, that behaves like any other liquid (4), can influence the speed of the dripping and bleeding but not the direction of the rivulets that follows the law of gravity."
+        read: 2026-11-28
   - id: church
     group: "The Church"
     question: "Does the Catholic Church say the shroud is authentic?"
