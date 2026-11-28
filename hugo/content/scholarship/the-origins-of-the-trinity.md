@@ -361,7 +361,7 @@ statements:
     group: "The Council of Nicaea"
     question: "What else did the council decide?"
     short: "It set a common date for Easter, ruled on the Melitian schism in Egypt and on the precedence of the major sees, and issued twenty disciplinary canons."
-    text: "John Bowker's dictionary says the council promulgated canons and reached decisions on the Melitian schism in Egypt, the calculation of the date of Easter and the precedence of the major Christian sees. The New Catholic Encyclopedia says it chose to celebrate Easter on the Sunday after the first full moon after the vernal equinox, as the West and Egypt did, and promulgated 20 disciplinary decrees. George Demacopoulos calls the common date for Easter one of the council's most impactful outcomes, though most scholars emphasise the Arian controversy or Constantine's role."
+    text: "John Bowker's dictionary says the council promulgated canons and reached decisions on the Melitian schism in Egypt, the calculation of the date of Easter and the precedence of the major Christian sees. The New Catholic Encyclopedia says it chose to celebrate Easter on the Sunday after the first full moon after the vernal equinox, as the West and Egypt did, and promulgated 20 disciplinary decrees. George Demacopoulos calls the common date for Easter one of the council's most impactful outcomes, though most scholars emphasise the Arian controversy or Constantine's role. Riemer Roukema and Christoph Heikens note that Constantine's letter to the churches reports the council's unanimous decision to celebrate Easter on the same day; Britannica's entry says the council attempted but failed to establish a uniform date for Easter. Roukema and Heikens also find no reason to hold that the council decided which early Christian books were canonical: the first testimony to such a division at Nicaea is a legendary account from the late ninth century, though they note that a few scholars allow there might be some truth in the view."
     cites:
       - source: ortiz-nce-nicaea
         locator: "section “Easter Question and Canons.”"
@@ -379,6 +379,48 @@ statements:
         url: "https://www.cambridge.org/core/journals/church-history/article/reflections-on-nicaea-at-1700-a-forum-on-the-legacy-of-the-council-and-the-creed/F2F325D5C22C6ACF4DA126F62DDE784D"
         locator: "section “The Significance of Nicaea for the Orthodox Christian Tradition”"
         quote: "While most scholars tend to emphasize the Arian controversies or the role of Constantine in the historic gathering at Nicaea, one of the most impactful outcomes of the gathering was the establishment of a common date for the celebration of Easter."
+        read: 2026-11-27
+      - source: roukema-heikens-2025-nicaea-canon
+        locator: "§3.2 “The assumed influence of emperor Constantine”"
+        quote: "Constantine informs the Churches about the unanimous decision to celebrate Easter on the same day"
+        read: 2026-11-27
+      - source: britannica-first-council-of-nicaea
+        locator: "section “Other issues”"
+        quote: "The council attempted but failed to establish a uniform date for Easter"
+        read: 2026-11-27
+      - source: roukema-heikens-2025-nicaea-canon
+        locator: "§5 “Conclusions and consequences for Nicene spirituality”, first paragraph"
+        quote: "The foregoing investigations allow us to conclude that there is no reason to maintain that the Nicene Council decided which early Christian books were to be considered canonical and which ones were to be excluded from the collection (or collections) of authoritative, divinely inspired writings."
+        read: 2026-11-27
+      - source: roukema-heikens-2025-nicaea-canon
+        locator: "§5 “Conclusions and consequences for Nicene spirituality”, first paragraph"
+        quote: "The first testimony to a division between canonical and apocryphal books at Nicaea in 325 is found in a legendary account dating to the late ninth century."
+        read: 2026-11-27
+      - source: roukema-heikens-2025-nicaea-canon
+        locator: "abstract"
+        quote: "A few scholars agree that there is or might be some truth in this view."
+        read: 2026-11-27
+  - id: nicholas
+    group: "The Council of Nicaea"
+    question: "Did Saint Nicholas slap Arius at the Council of Nicaea?"
+    short: "No reliable record shows it. Little or nothing of Nicholas's life is historically attested beyond his being bishop of Myra, and even his presence at Nicaea is uncertain."
+    text: "Britannica's entry on Saint Nicholas says his existence is not attested by any historical document, so that nothing certain is known of his life except that he was probably bishop of Myra in the fourth century, and that he may have attended the Council of Nicaea, where he allegedly struck Arius in the face. A. G. Gibson's New Catholic Encyclopedia entry says no historically trustworthy evidence of the events of his life exists except the fact of his episcopate, and that it is legends that place him at the Council of Nicaea."
+    cites:
+      - source: britannica-saint-nicholas
+        locator: "opening section"
+        quote: "Nicholas’s existence is not attested by any historical document, so nothing certain is known of his life except that he was probably bishop of Myra in the 4th century."
+        read: 2026-11-27
+      - source: britannica-saint-nicholas
+        locator: "opening section"
+        quote: "He may have attended the first Council of Nicaea (325), where he allegedly struck the heretic Arius in the face."
+        read: 2026-11-27
+      - source: gibson-nce-nicholas
+        locator: "s.v. “Nicholas of Myra, St.”, first paragraph"
+        quote: "No historically trustworthy evidence of his ancestry or the events of his life exists, except for the fact of his episcopate."
+        read: 2026-11-27
+      - source: gibson-nce-nicholas
+        locator: "s.v. “Nicholas of Myra, St.”, first paragraph"
+        quote: "Legends have him born in the Lycian town of Patara, imprisoned in the Diocletian persecution, and present at the Council of Nicaea I, and fix his death date at 345 or 352."
         read: 2026-11-27
   - id: after-nicaea
     group: "The Council of Nicaea"

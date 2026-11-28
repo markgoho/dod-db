@@ -11,6 +11,7 @@
 # Second pass changes. Shorts: worship (Fredriksen clause scoped to “prayer in Paul's communities”); plural (HarperCollins's “grandeur”, one source, moved out of the short; now “They reject reading the Trinity into Genesis”, Martin, Kärkkäinen, Carr and Brettler); constantinople (“the creed the council approved”, not “the council's creed”, beside the creed statement's debated origin); creed (“the creed often called …”, not “a longer creed”, which no quote says). Text: triadic drops “quoting it and the blessing that closes 2 Corinthians” (uncited lines); spirit has Levison's “the contrast often drawn”; subordination has Delport's “ontological”; arius-roots drops De Clercq; nicaea drops Edwards's “about 250 who signed” (uncited) and adds “according to Philostorgius”; constantinople has Baber's “the same sort of ontological status”. Cut to uncited: arius-roots/5 (De Clercq, its counterpoint dropped); arius-roots/6 renumbered to /5. Locators: new-testament/8 (p. 4, n. 14), worship/5 (p. 6), triadic/1 (p. 23), spirit/3 (paragraph “Whatever the context”), arius/4 (opening section; no “Arius” sub-entry), after-nicaea/6 (section “Arian Triumph and Downfall.”). Locators (heading check): word/1–2 and subordination/4 (§3.1.1), after-nicaea/4 (section “‘Arianism’ after Arius”), persons/3, /4, /6 (section “Development of Trinitarian Doctrine”), six Ortiz de Urbina locators (“section”, not “paragraph”). related.books drops 2-corinthians (the page no longer names it). Registry: nce-homoousios author “J. M. Carmody” (entry byline).
 # Second pass flags: (1) The first pass's trigger notes say “full turn”; every claim is a trimmed span; 42@00:40:01 stops before the sentences logged as conflicts. Triggers file not edited. (2) 109@00:07:18 “a new mechanism” vs the NCE's “should remain in force” (the West's and Egypt's practice): the easter short does not contradict it; kept. (3) 53@00:32:00 “until subsequent centuries” is looser than 381; kept. (4) Hurtado's URL serves a .doc, not a PDF (registry access line says “Author's manuscript”, accurate). (5) IEP was intermittently down (HTTP 500); URL kept, as the live page later served the passage. (6) Spirit short “No, scholars say” stands on Bowker and van Aarde (with HarperCollins for “power or presence”); Levison (Reference) questions the power/person contrast, attributed in text only (#133, one author). (7) First-pass flags re-checked: (2) Kärkkäinen's consensus sentence is about the Bible, his NT judgment is p. 15, and no short says “consensus”; (3) Moser's consensus is about high Christology and sits beside McGrath and Dunn; (9) the Kärkkäinen PDF is chapter 1 only; (10) forum attributions checked by sub-article and response turn (Kim's introduction by the forum's byline, not a printed name); (12) Bowker's four entries are one author; (13) the Carr and Brettler answer carries no initials (the one before it is signed —MZB): attributed jointly. Flags (1), (4)–(8) and (11) not re-assessed beyond the matching and scope checks above. Second-pass flag (8), plural: the short now answers the Elohim half of its question only through “No, scholars say” and “reject reading the Trinity into Genesis”; on Elohim itself the Trinity “No” rests on HarperCollins (“without any suggestion of multiple identities”), and Martin's “into Genesis” sentence is, in context, about Augustine on Genesis 1:1–2; the lead may want to re-scope the question to Genesis 1:26 or keep the Elohim half on that basis. Publish rule recomputed: core “no explicit doctrine of the Trinity in the New Testament” backed by Kärkkäinen 2017 (Scholarly), Tuggy 2025 (Reference), Martin 2009 (Reference): 3 independent authors; Lietaert Peerbolte counted only for “worked out later”. 18 statements. Ids, slug, draft and review unchanged.
 # Publish 2026-11-27 (lead agent, on the second pass's flags): (1) plural re-scoped to Genesis 1:26: question now “Does God's “Let us make” in Genesis 1:26 point to the Trinity?”, short “No, scholars say. They read the “us” of Genesis 1:26 as a plural of majesty or deliberation, or as God addressing a heavenly council, not as the Trinity.” (Carr and Brettler, Kärkkäinen; Martin's Genesis sentence kept in the text as he says it). The Elohim half rested on HarperCollins alone; it stays in the text, attributed, and the question no longer asks it. Id unchanged (not yet public). 182@00:19:44 (Elohim) kept: a Trigger Claim gates the subject, not a statement. (2) 109@00:07:18 kept: “a new mechanism” does not contradict the easter short. (3) 53@00:32:00 kept: “subsequent centuries” does not contradict constantinople. (4) spirit short kept on Bowker and van Aarde with HarperCollins; Levison attributed in the text only. (5) Kim kept as the forum introduction's author (byline and first-person organiser). Trigger notes: “full turn” in the first-pass notes means the span was matched inside its full turn; each is a trimmed span. Publish rule recomputed: core new-testament on Kärkkäinen 2017, Tuggy 2025, Martin 2009 (3 independent authors for “not explicitly”), plus Lietaert Peerbolte for “worked out later”; 18 statements; 104 citations. draft flag dropped; review and sourcesRead 2026-11-27.
+# #247 first pass 2026-11-27 (agent, partial re-review per #93: the changed statements' own new citations get the full procedure; review and sourcesRead stay 2026-11-27, the new cites carry read 2026-11-27). Leads read: Roukema and Heikens, International Journal of Philosophy and Theology 86 (2025), open access on tandfonline.com (curl 403; read in Chrome, quotes matched in-page against the article text, whitespace and curly quotes normalised, 4/4); Britannica “Trinity”, “Arianism”, “First Council of Nicaea”, “Pneumatomachian”, “First Council of Constantinople”, “St. Nicholas” (read in Chrome and saved from Internet Archive snapshots of the same URLs, 2025-10 to 2026-11; quotes script-matched on the saved text); Gibson, NCE “Nicholas of Myra, St.” (curl, Encyclopedia.com); Thompson, Religions 15(4) 402 (read in Chrome and the Internet Archive snapshot of 2024-04-20). Added: easter/5–9 (text only, short unchanged): Roukema and Heikens on Constantine's letter reporting a unanimous decision on Easter, Britannica's “attempted but failed to establish a uniform date for Easter” (attributed), and Roukema and Heikens's conclusion that the council did not decide the canon, with their own hedge that a few scholars allow some truth in it. The canon is not given its own statement: one study (two co-authors, counted once) addresses Nicaea and the canon directly; Martin's Yale lecture 2 and Britannica's “Biblical canon” and “biblical literature” put the first 27-book list at 367 but do not name Nicaea, and Martin says councils called by Constantine or his successors did try to set the canon; a bounded Google Books search found only an IVP Academic book (ministry publisher) and a self-published one. New statement nicholas (Britannica, Gibson; Trigger Claims 5@00:33:45 and 42@00:46:43): its short says only what both say (no trustworthy record of his life beyond the episcopate; his presence at Nicaea uncertain); the slap is attributed to Britannica's “allegedly”. The iota story: no source read mentions it; no statement. Closed unreadable: Fernández, Theological Studies 86(3) (2025): restricted on SAGE in Chrome too, OpenAlex lists it closed, no Wayback copy. Fernández, Unio cum Christo 11(2) (2025), CC BY-NC-ND on vr-elibrary.de: abstract read; the PDF refuses scripted requests and has no text layer our browser tools can read; it would add no new author (Fernández is cited). Philo's and Justin's “second god”: Todorovska, Živa Antika 65 (2015) read (Philo's Logos as “second God”, citing Wolfson and Williamson); Thompson quotes Justin's “another God and Lord subject to the Maker of all things”; neither needed beside subordination's Justin sentence (Pépin), so no statement change. Counts after: 19 statements, 113 citations, 13 Trigger Claims. Flags for the second pass: (1) easter short “It set a common date for Easter” now sits beside Britannica's “attempted but failed to establish a uniform date”; Roukema and Heikens, Ortiz de Urbina, Bowker and Demacopoulos read as a decision taken; judge whether the short must narrow (e.g. “ruled on”). (2) nicholas short: check “even his presence at Nicaea is uncertain” is no stronger than Britannica's “may have attended” and Gibson's “Legends have him … present”. (3) Roukema and Heikens is browser-only (tandfonline.com refuses curl); Britannica pages refuse curl and have Wayback snapshots. (4) Gibson's NCE entry has no year; its bibliography runs to 1997 (2nd ed.).
 review: 2026-11-27
 delegation:
   by: owner
@@ -438,6 +439,60 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; matched verbatim inside the forum's sub-article “The Significance of Nicaea for the Orthodox Christian Tradition” (Demacopoulos); “most scholars” is attributed in text and not used as the short.",
     }
+  easter/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: Roukema and Heikens §3.2, read in Chrome on tandfonline.com (curl 403); matched in-page verbatim (whitespace normalised). Context: Constantine's letter To the Churches in Eusebius's Life of Constantine; backs the decision on Easter, beside Ortiz de Urbina and Bowker. Text only.",
+    }
+  easter/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: Britannica “First Council of Nicaea”, section “Other issues”; read in Chrome and matched on the Internet Archive snapshot web.archive.org/web/20261106054942/https://www.britannica.com/event/First-Council-of-Nicaea-325 (tag-stripped text, space before the full stop normalised). Unsigned editors' entry. Attributed in the text; it sits against the short's “set a common date” (flag 1).",
+    }
+  easter/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: Roukema and Heikens §5, first paragraph; matched in-page verbatim. The next sentence extends it to “Gnostic” works. One study, two co-authors: attributed in the text, not a short.",
+    }
+  easter/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: Roukema and Heikens §5, first paragraph; matched in-page verbatim. The legend is the Synodicon Vetus (their §3.5 and §4); the Synodicon itself and Voltaire are seen only as quoted (leads).",
+    }
+  easter/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: Roukema and Heikens abstract; matched in-page verbatim. Their own hedge (Pagels and Dungan in §3.2 and §3.5), quoted so the text does not overstate their conclusion as uncontested.",
+    }
+  nicholas/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: Britannica “St. Nicholas”, read in Chrome and matched on the Internet Archive snapshot web.archive.org/web/20261026165043/https://www.britannica.com/biography/Saint-Nicholas; opening section, first paragraph after the summary. Backs the short's “little or nothing … beyond his being bishop of Myra”.",
+    }
+  nicholas/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: Britannica “St. Nicholas”, same snapshot, sentence after nicholas/1; matched verbatim. “may have attended” backs “uncertain”; “allegedly” is the text's only basis for the slap, attributed.",
+    }
+  nicholas/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: Gibson, NCE “Nicholas of Myra, St.” on Encyclopedia.com (curl 200), entry signed [a. g. gibson]; matched verbatim, first paragraph. Second author for the short's first clause.",
+    }
+  nicholas/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: Gibson, same paragraph; matched verbatim. Presence at Nicaea is among what “Legends have him”: backs “uncertain” (Gibson is the stronger of the two).",
+    }
   after-nicaea/1:
     {
       agent: pass,
@@ -709,6 +764,18 @@ triggers:
       owner: "",
       note: "First pass 2026-11-27: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side. Second pass 2026-11-27: Re-matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside that speaker's turn (not the full turn, as the first pass's note says); read the turns about two minutes either side. “until subsequent centuries” is looser than 381; the claim is about the Spirit being marginal at Nicaea, which spirit-nicaea backs; not a contradiction of a statement; kept, flagged.",
     }
+  5@00:33:45:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: matched by script at timestamp and speaker in the final transcript: a contiguous verbatim span inside the turn (the turn's text opens with a transcription splice, “metown, folks”, before the span); read about two minutes either side. Hedged as “one account”; it gates nicholas.",
+    }
+  42@00:46:43:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: matched by script at timestamp and speaker: a contiguous verbatim span inside the turn; read about two minutes either side (Beecher's reply, then Arius's position). Hedged “supposed to have”; it gates nicholas.",
+    }
 rules:
   publish-rule:
     {
@@ -771,6 +838,18 @@ sources:
       owner: "",
       note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
+  britannica-first-council-of-nicaea:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: read in Chrome (curl refused); saved from the Internet Archive snapshot of 2026-11-06, which matches the live page's text for the cited sentence. Reference by registry precedent for Britannica (britannica-biblical-canon and others). Unsigned; revised by Melissa Petruzzello.",
+    }
+  britannica-saint-nicholas:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: read in Chrome; saved from the Internet Archive snapshot of 2026-10-26; Reference by registry precedent; unsigned editors' entry.",
+    }
   carr-brettler-bo-genesis:
     {
       agent: pass,
@@ -830,6 +909,12 @@ sources:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
+    }
+  gibson-nce-nicholas:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: fetched by curl (HTTP 200) and read; NCE by registry precedent (Reference); bibliography to 1997 (2nd ed.).",
     }
   hamell-nce-subordinationism:
     {
@@ -975,6 +1060,12 @@ sources:
       owner: "",
       note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
+  roukema-heikens-2025-nicaea-canon:
+    {
+      agent: pass,
+      owner: "",
+      note: "#247 first pass 2026-11-27: read in Chrome (tandfonline.com returns 403 to curl; the PThU repository copy is behind a bot check; no Wayback copy). International Journal of Philosophy and Theology (Taylor & Francis), peer reviewed: Scholarly. Open access. Roukema is professor emeritus of New Testament and Early Christianity, Protestant Theological University.",
+    }
   ryan-nce-nicene-creed:
     {
       agent: pass,
@@ -1000,15 +1091,15 @@ sources:
       note: "First pass 2026-11-27: fetched and read; class and edition as in the registry. Second pass 2026-11-27: re-fetched by curl (HTTP 200) and read; class and edition as in the registry.",
     }
 leads:
-  - "Britannica “Trinity”, “Arianism”, “Council of Nicaea”, “Pneumatomachian” and “First Council of Constantinople”: 403 or challenge to scripted fetches; not read."
-  - "Keith Thompson, “The Origins of the Christian Idea of Trinity”, Religions 15(4): 402 (2024): MDPI returned 403; not read."
-  - "Samuel Fernández, “The Council of Nicaea 325: Reassessing the Role of Eusebius of Caesarea”, Theological Studies 86(3) (2025): PDF blocked; would bear on homoousios and Constantine."
-  - "“The first Nicene Council and the New Testament canon”, Taylor & Francis 2025, doi:10.1080/21692327.2025.2564797: blocked; the likeliest Scholarly source for whether Nicaea set the canon."
-  - "Synodicon Vetus on the Nicaea canon miracle (Duffy and Parker, Dumbarton Oaks 1979, p. 29) and Voltaire's Philosophical Dictionary, “Councils”: seen only as quoted in Huggins and Meade; originals not opened."
+  - "Samuel Fernández, “The Council of Nicaea 325: Reassessing the Role of Eusebius of Caesarea”, Theological Studies 86(3) (2025), doi:10.1177/00405639251354957: #247 (2026-11-27) closed unreadable: restricted on SAGE in a browser as well as to scripts; OpenAlex lists it closed; no Wayback or repository copy. Would bear on homoousios and Constantine."
+  - "Samuel Fernández, “Nicaea 325: Competing Trinitarian Theologies and the Shaping of Doctrine”, Unio cum Christo 11(2) (2025), CC BY-NC-ND on vr-elibrary.de: #247 read the abstract only (on the meaning of homoousios, not Constantine); the PDF refuses scripted requests and showed no readable text layer to the browser tools. Adds no new author."
+  - "Peter M. Folan, “The Role of Scripture at and Around the Council of Nicaea”, Theological Studies 86(3) (2025): #247 found it listed open by OpenAlex but restricted on SAGE in a browser; abstract only."
+  - "Synodicon Vetus on the Nicaea canon miracle (Duffy and Parker, Dumbarton Oaks 1979, p. 29) and Voltaire's Philosophical Dictionary, “Councils”: seen only as quoted in Huggins, Meade and (#247) Roukema and Heikens §4; originals not opened. Roukema and Heikens's own reading of them is cited (easter/7–8)."
+  - "Elaine Pagels (Beyond Belief) and David L. Dungan (Constantine's Bible), the “few scholars” Roukema and Heikens say allow a link between Nicaea or Constantine and the canon: seen only as quoted in Roukema and Heikens §3.2 and §3.5 (#247)."
   - "Roy Hoover, Bible Review 1993 (“The Council of Nicea in 325 did not address the question”), Chadwick's 1982 JTS review, Ehrman 2004 on Constantine and the canon: seen only as quoted in Huggins."
   - "Hanson, The Search for the Christian Doctrine of God (1988); Ayres, Nicaea and Its Legacy (2004); Kelly, Early Christian Doctrines and Early Christian Creeds; Williams, Arius (2001); Latinovic 2017; Löhr 2006/2007: cited inside read sources; not open."
   - "Bauckham, Jesus and the God of Israel (2008); Dunn, Did the First Christians Worship Jesus? (2010); McGrath 2009; Fee, God's Empowering Presence (1994); Hasker 2013: seen only through Moser, Kärkkäinen, Peerbolte or Tuggy."
-  - "Litwa 2014 on Philo's “second god”: seen only as quoted in Lévy's SEP entry on Philo."
+  - "Litwa 2014 on Philo's “second god”: seen only as quoted in Lévy's SEP entry on Philo; JSTOR copy closed (OpenAlex), #247. Wolfson 1962 and Williamson 1989 on Philo's “second God”: seen only as quoted in Todorovska 2015."
   - "Luislampe and Bolgiani on Basil and the Spirit; Hanson 1969 on Basil's treatise: seen only as quoted in Haykin or Noble."
   - "Matthew 28:19's textual history: see #241; not researched here."
 uncited:
@@ -1038,3 +1129,14 @@ uncited:
   - "Catechism of the Catholic Church §§242–247 on 381 and the filioque: read; not needed for the tradition statement."
   - "V. C. De Clercq, New Catholic Encyclopedia “Arianism”, section “Doctrinal Antecedents.”: “much of his theology points to the Origenistic tradition, which was dominant in Alexandrian circles …”: read; cut by the second pass (2026-11-27, was arius-roots/5) because quoting it alone dropped the same passage's counterpoint, “But neither Origen nor any other pre-Nicene writer offered support for Arius's teaching that the Logos had a beginning of existence”; the statement rests on Lyman, Delport and Edwards."
   - "Mark Edwards, Ecclesiastical Law Journal 2026, Introduction: “the Creed to which about 250 bishops attached their signatures in 325”: read; quoted by no citation, so the second pass (2026-11-27) removed the nicaea text clause that relied on it."
+  - "Britannica “Trinity” (read in Chrome; Wayback snapshot 2026-10-11 saved): “Neither the word “Trinity” nor the explicit doctrine appears in the New Testament” and “The doctrine developed gradually over several centuries”: read, #247; agrees with new-testament; not needed beside Kärkkäinen, Tuggy and Martin (unsigned). Its “by the end of the 4th century … the Cappadocian Fathers” agrees with persons; not needed."
+  - "Britannica “Arianism” (read in Chrome; Wayback snapshot 2026-10-12 saved): “this was only the beginning of a long-protracted dispute”, Antioch 341 omitting the homoousion clause, Arius “the Alexandrian presbyter”: read, #247; agrees with after-nicaea and arius; not needed beside Kim, Lyman and the NCE."
+  - "Britannica “First Council of Constantinople” (read in Chrome; Wayback snapshot 2026-10-12 saved): the creed “probably not an intentional enlargement of the Creed of Nicaea but rather an independent document based on a baptismal creed already in existence”: read, #247; agrees with creed's debated origin (Ryan, Bowker); not needed."
+  - "Britannica “Pneumatomachian” (read in Chrome; Wayback snapshot 2025-10-08 saved): a one-sentence stub defining the name; read, #247; not needed beside Hauser and Bowker."
+  - "Britannica “First Council of Nicaea”, apart from easter/6: the homoousios sentence (“with reluctance on the part of some”) and Arius as one who “affirmed that Christ is not divine but a created being”: read, #247; the latter is looser than the arius statement's sources; not cited."
+  - "Keith Thompson, Religions 15(4): 402 (2024), read in Chrome on mdpi.com and in the Wayback snapshot of 2024-04-20, #247: a law-school author arguing that the doctrine began as an answer to Jewish charges of polytheism, largely from pre-1960 secondary works; his §3.4 calls Theophilus the first to use “Trinity” of the Christian God while doubting it meant Father, Son and Spirit (consistent with word's short and its debate clause); he quotes Justin's Dialogue 56 “another God and Lord subject to the Maker of all things”. One author's thesis; not cited."
+  - "M. Todorovska, “The Concepts of the logos in Philo of Alexandria”, Živa Antika 65 (2015) 37–56, ukim.mk repository PDF, #247: read; Philo's Logos called a “second God” (QG 2.62), with Wolfson and Williamson; the page makes no statement about Philo, and subordination already quotes Justin's text, so not cited."
+  - "Riemer Roukema and Christoph Heikens, §3.2 on Dungan and Constantine's fifty Bibles: read, #247; a possible indirect acceleration of the canon's settlement under Constantine, which they deny was a personal choice of books; not cited beyond easter/5–9."
+  - "Dale Martin, Yale RLST 152 lecture 2 (“From Stories to Canon”), #247: read; 367 as the earliest list matching the 27 books, “some councils did try to set the canon”, the canon developed by general consensus; does not name Nicaea, so not a second author on the canon question."
+  - "Britannica “Biblical canon” and “biblical literature: Determination of the canon in the 4th century”, #247: read; the 27-book list first in Athanasius's Festal Letter of 367, then Hippo and Carthage; neither names Nicaea; not cited."
+  - "Huggins and Meade on Nicaea and the canon: unchanged (above); Roukema and Heikens now read in the source, but one study cannot carry a state-of-the-field short (#133), so their conclusion is attributed in easter's text only."

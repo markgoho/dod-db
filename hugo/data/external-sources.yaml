@@ -8350,6 +8350,63 @@ ortiz-nce-nicaea:
   hostAuthored: false
   tradition: null
 
+roukema-heikens-2025-nicaea-canon:
+  author: "Riemer Roukema and Christoph B. Heikens"
+  shortAuthor: "Roukema and Heikens"
+  title: "The first Nicene Council and the New Testament canon: In search of the origin of an invented tradition and its consequences for the Church’s spirituality"
+  series: "International Journal of Philosophy and Theology 86(2–4): 218–237"
+  publisher: "Taylor & Francis"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access article on tandfonline.com; opens in a browser, refuses scripted requests"
+  url: "https://www.tandfonline.com/doi/full/10.1080/21692327.2025.2564797"
+  hostAuthored: false
+  tradition: null
+
+britannica-first-council-of-nicaea:
+  author: null
+  title: "First Council of Nicaea"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online, Britannica Editors, revised by Melissa Petruzzello"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/event/First-Council-of-Nicaea-325"
+  hostAuthored: false
+  tradition: null
+
+britannica-saint-nicholas:
+  author: null
+  title: "St. Nicholas"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online, Britannica Editors"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/biography/Saint-Nicholas"
+  hostAuthored: false
+  tradition: null
+
+gibson-nce-nicholas:
+  author: "A. G. Gibson"
+  title: "Nicholas of Myra, St."
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/nicholas-myra-st"
+  hostAuthored: false
+  tradition: null
+
 nce-homoousios:
   author: "J. M. Carmody"
   title: "Homoousios"
