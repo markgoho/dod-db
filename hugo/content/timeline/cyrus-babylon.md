@@ -1,7 +1,7 @@
 ---
 title: "Cyrus takes Babylon"
 entryKind: event
-sourcesRead: 2026-11-26
+sourcesRead: 2026-11-27
 related:
   {
     books: [isaiah, daniel, ezra],
@@ -23,7 +23,7 @@ critical:
   display: "539 BCE"
   from: -539
   precision: year
-  note: "Ugbaru entered Babylon with Cyrus's army on 12 October 539; Cyrus himself arrived on 29 October. The Babylonian chronicle, in Tavernier's translation, says they entered without a fight. In Herodotus, Cyrus drained the bed of the Euphrates after a battle near the city; in Xenophon, he reached Babylon without a fight and diverted the river. Tolini argues that there was at least one violent fight, at the Enlil Gate, and that Babylon did not give in without resistance. Many of the Jews in Mesopotamia returned, beginning in 538. Persian control of the Levant lasted until Alexander's defeat of Darius III (334–330 BCE)."
+  note: "Ugbaru entered Babylon with Cyrus's army on 12 October 539; Cyrus himself arrived on 29 October. The Nabonidus Chronicle, in Tavernier's translation, says they entered without a fight. Tavernier summarises the Greek accounts: in Herodotus, Cyrus drained the bed of the Euphrates after a battle near the city; in Xenophon, he reached Babylon without a fight and diverted the river. Tolini argues that there was at least one violent fight, at the Enlil Gate, and that Babylon did not give in without resistance. Many of the Jews in Mesopotamia returned, beginning in 538. Persian control of the Levant lasted until Alexander's defeat of Darius III (334–330 BCE)."
   cites:
     - source: silverman-bo-persian-period
       locator: "section “Why do biblical scholars care about the Persian Empire?”, paragraph beginning “The Persians controlled the Levant”"
@@ -42,7 +42,7 @@ critical:
       quote: "This period is also critical for Judaism since Cyrus’s conquest of Babylon ended the captivity of the Jews in Mesopotamia and many returned, beginning in 538."
       read: 2026-11-26
     - source: tavernier-2003-zonder-slag-of-stoot
-      locator: "p. 361, “Inleiding”, opening sentence"
+      locator: "p. 361, “Inleiding”, opening two sentences"
       quote: "12 oktober 539 v.Chr. is een uiterst belangrijke datum in de geschiedenis van Babylonië. Het is namelijk de dag waarop de stad Babylon vrij gemakkelijk ingenomen werd door de troepen van Cyrus II de Grote"
       read: 2026-11-27
     - source: tavernier-2003-zonder-slag-of-stoot
