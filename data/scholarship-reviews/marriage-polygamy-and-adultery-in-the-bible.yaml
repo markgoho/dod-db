@@ -11,6 +11,7 @@
 # Second pass changes. Shorts: polygyny (core; “Yes, scholars say: the texts in the main accept polygyny, and Deuteronomy's laws assume it…”, no longer “Its laws” or Ademiluka's “scholars generally”); bride-price (“No, scholars now say”, not “most scholars”, as Lemos's “most, though not all” is about bridewealth as a gift class); genesis-2-24 (“and as not in itself forbidding polygamy” cut, Heger alone); second-temple (“a tendency toward monogamy”, not “practice tended toward monogamy”); why-adultery (“a religious offence”, not “against God”); exception-clause (“readings include”); paul-divorce (Instone-Brewer's remarriage debate cut, one author; “allows divorce”, Das's word). Text: polygyny's Malena sentence split into its two passages (the 700 wives are a factoid; “followed the model … contrary to values” is about his kingship as a whole). No citation cut. Registry: scheffler-2011-hts-jesus-torah-divorce series 67(3) → 67(1), art. 1006. Locators: models/3, levirate/4 (Wells paragraphs), polygyny/5 (p. 6), polygyny/8 (key-points list), bride-price/5–8, levirate/1, concubines/4 (Meyers paragraphs, off by one), why-adultery/6 (Hayes paragraph), adultery-penalty/3 (p. 68 only), adultery-penalty/6–7 (JWA heading), new-testament-adultery/7–9 (pp. 4, 5), exception-clause/2–3 (pp. 73, 74, not 78), polygyny/10 (second sentence), polygyny/8 and concubines/5 (factoid lists), adultery/6 and adultery-penalty/2 (Edenburg Case 3, paragraph 6, not 2), tradition/7 (answer, paragraph 2).
 # Second pass flags: (1) Triggers, none a direct contradiction, so the triggers file is not edited and no conflict logged (outside this pass's files): 139@00:13:17 “just outright endorse … if not just condone polygamy” is stronger than the polygyny short; 108@00:20:34 “It was not the norm” is a frequency claim; 139@00:16:36 ends before “The one exception would be 1 Timothy 3:2”, so “no outright condemnation of polygyny at all” drops its qualifier; 133@00:09:06 “legally not prohibited” sits against Slager's “penalty less than death” (Deut 22:28–29). (2) Ademiluka's “generally accepted amongst scholars” rests on secondhand citations (Barth 1961, Cocherell 2015, Hillman 1975); kept in the text, attributed. (3) divorce short drops Feinstein's “we do not know for certain” hedge; kept, as HarperCollins states the no-law point flatly. (4) Calduch-Benages's JSON-LD date is 2021-08-16, not 2021-02-03; year unchanged. (5) Bible Odyssey read live in the browser by in-page fetch after one navigation (not page-by-page navigation); the registry access lines are unchanged. (6) leviticus-18-18/7 is not verbatim by one diacritic: the PDF prints ahot with a dotted ḥ. (7) exception-clause text drops Martens's “I suspect” on the remarriage motive. (8) Yale lecture years and the CUP excerpt years not printed on the fetched pages; not re-checked. Publish rule recomputed: core carried by Calduch-Benages, Lemos, Ademiluka and Sassoon, 4 independent authors (2 Scholarly); 20 statements. Ids, slug and draft unchanged.
 # Publish 2026-11-27 (lead agent, on the second pass's flags): (1) Triggers resolved conservatively: 139@00:13:17 trimmed to its “very clearly okay with … polygyny … not condemning that” sentence, dropping “just outright endorse, uh, if not just condone polygamy”; 139@00:16:36 extended through “The one exception would be 1 Timothy 3:2.”; 108@00:20:34 removed and logged as a conflict with polygyny (it states how common polygyny was, against “How common it was is not known”); 133@00:09:06 removed and logged as a conflict with adultery (“legally not prohibited”, against Slager's “penalty less than death” for unpledged virgins). 12 Trigger Claims remain, all re-matched by script; 9 conflicts now logged under this page in data/scholarship-candidates.yaml. (2) Ademiluka kept attributed in the text only; Heger's “most translators and commentators” kept in leviticus-18-18 (Sassoon reports the same split). (3) divorce short kept: HarperCollins states “no law … allowed the woman to initiate divorce” flatly and Feinstein's every-reference sentence carries the first clause; her hedge stays in the text. (4) leviticus-18-18/7 “ahot”: the PDF prints h with a private-use underdot glyph (U+F026), dropped in the quote; no other change. (5) exception-clause text now keeps Martens's “I suspect” (“which he suspects had to do with remarriage”). (6)–(7) years kept. (8) Bible Odyssey read by the second pass through in-page fetch in a Chrome session at the public URLs: a browser read of the public page (#93: retry in a browser), accepted. Publish rule recomputed after the second pass: 20 statements; core polygyny backed by Calduch-Benages and Lemos (Reference) and Ademiluka and Sassoon (Scholarly), 4 independent authors, none Host-authored. Holds. draft flag dropped.
+# Partial re-review (#245, 2026-11-27; #93 partial: new statements, full first and second pass for their own citations; sourcesRead unchanged). Four statements added from in-window Scholarly or Reference authors read in full at public URLs: husband-of-one-wife (Darko, Religions 2023; Mueller, JAAS 2012, now classed Scholarly by venue as the journal calls itself “peer-refereed”; Peters 2020 attributed), early-church (Witte, Emory Law Journal 2015; Scheidel, History of the Family 2009), rabbenu-gershom (Grossman, Baumgarten, Melammed and Shilo, Jewish Women's Archive 2009–2021; Sassoon 2011 reused), mark-10-12 (Hunter, JMT 2021; Lipiński, Anabasis 2015; Das reused). Four research agents fetched every source into separate scratch folders (Internet Archive copies where MDPI and Bible Odyssey refused scripts; Scheidel's wiki copy only by Internet Archive); the lead script-matched all 31 new quotes against those saved texts, 31/31. Malachi 2:16 stays out: no Trigger Claim names it (139@00:22:19 mentions “Malachi 2:15-16” only while reading Tidwell's text aloud, “He says …”), so it waits for one. Trigger screen re-run for the new statements: 139@00:24:20 (“there are no scholars who read it that way”, of the “husband of his first wife” reading) contradicts husband-of-one-wife's report of Peters and is logged as a conflict, not attached; 139@00:16:36 (“The one exception would be 1 Timothy 3:2”) does not contradict it (the short lists the anti-polygamy reading) and stays; 139@00:33:39's second sentence stays a conflict (its date now agrees with Grossman, but it gives Greek philosophy as the cause against Grossman's trade-and-absence account, and rabbenu-gershom reports the ascription questioned); its note in data/scholarship-candidates.yaml now names rabbenu-gershom. Flags for the second pass: (1) Mueller classed Scholarly on the journal's own peer-refereed statement; (2) Witte read in the galley proofs, not the printed issue; (3) Scheidel's copy is Elsevier's author copy on a third-party wiki, read via the Internet Archive; (4) Baumgarten draws on Grossman; (5) mark-10-12's “Scholars differ” rests on Hunter's report of critical scholarship against Lipiński's contrary reading; (6) Darko is read via the Internet Archive.
 review: 2026-11-27
 delegation:
   by: owner
@@ -1014,6 +1015,192 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified at its locator.",
     }
+  husband-of-one-wife/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Carries the short's “debated” and its four readings.",
+    }
+  husband-of-one-wife/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  husband-of-one-wife/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Carries the short with Darko: a range of readings.",
+    }
+  husband-of-one-wife/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. One reading in Mueller's list (his n. 2 credits Earle 1978); attributed as a reading, not his view.",
+    }
+  husband-of-one-wife/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  husband-of-one-wife/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  husband-of-one-wife/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Peters's own reading, attributed in the text only; 139@00:24:20 (“there are no scholars who read it that way”) is logged as a conflict.",
+    }
+  husband-of-one-wife/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Attributed only.",
+    }
+  husband-of-one-wife/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  early-church/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Carries the short's “outlawed polygamy before Christianity was established”.",
+    }
+  early-church/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  early-church/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  early-church/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  early-church/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Witte alone on the twelfth-century turn; attributed in the text only.",
+    }
+  early-church/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Carries the short with Scheidel.",
+    }
+  early-church/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Carries the short's “kept that norm and only gradually reinforced it”.",
+    }
+  rabbenu-gershom/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Carries the short's date and the ban.",
+    }
+  rabbenu-gershom/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  rabbenu-gershom/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  rabbenu-gershom/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Carries the short's attribution with Grossman; Baumgarten's dates for Gershom (950/960–1048) differ from Grossman's (c. 960–1028), so the page states neither.",
+    }
+  rabbenu-gershom/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  rabbenu-gershom/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Carries the short's Sephardic clause with Shilo.",
+    }
+  rabbenu-gershom/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Carries the short's Sephardic clause with Melammed.",
+    }
+  rabbenu-gershom/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Same passage as second-temple/12; carries the short's “ascription … questioned”, one author reporting Tishby, so the short says only that it has been questioned.",
+    }
+  mark-10-12/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  mark-10-12/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Hunter reports the field (“Critical scholarship … suggests”); with Lipiński's contrary reading the short says “Scholars differ” (#80: two sources disagree, so contested).",
+    }
+  mark-10-12/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  mark-10-12/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Lipiński's reading, attributed in the text; carries the short's “Scholars differ” with Hunter.",
+    }
+  mark-10-12/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Carries the short's “left open”.",
+    }
+  mark-10-12/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read.",
+    }
+  mark-10-12/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): matched by script against the fetched text (whitespace, HTML entities and the JWA glossary pop-ups removed, quotes and dashes folded, NFKC); surrounding passage read. Carries the short's “some Jewish women did initiate divorce”.",
+    }
 triggers:
   139@00:13:17:
     {
@@ -1092,19 +1279,19 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: 20 statements. Core polygyny cites Calduch-Benages (Reference, 2021), Lemos (Reference, 2021), Ademiluka 2020 (Scholarly), Sassoon 2011 (Scholarly), Malena (Reference) and HarperCollins (Reference): 6 independent authors, 4 of them carrying the short's claim, none Host-authored. Rule holds. Second pass 2026-11-27: recomputed after the changes: 20 statements; the core short now reads “scholars say: the texts in the main accept polygyny”, carried by Calduch-Benages (Reference), Lemos (Reference), Ademiluka 2020 (Scholarly) and Sassoon 2011 (Scholarly): 4 independent authors, 2 Scholarly, none Host-authored. Malena and HarperCollins are not counted. Rule holds.",
+      note: "First pass 2026-11-27: 20 statements. Core polygyny cites Calduch-Benages (Reference, 2021), Lemos (Reference, 2021), Ademiluka 2020 (Scholarly), Sassoon 2011 (Scholarly), Malena (Reference) and HarperCollins (Reference): 6 independent authors, 4 of them carrying the short's claim, none Host-authored. Rule holds. Second pass 2026-11-27: recomputed after the changes: 20 statements; the core short now reads “scholars say: the texts in the main accept polygyny”, carried by Calduch-Benages (Reference), Lemos (Reference), Ademiluka 2020 (Scholarly) and Sassoon 2011 (Scholarly): 4 independent authors, 2 Scholarly, none Host-authored. Malena and HarperCollins are not counted. Rule holds. Partial re-review #245 2026-11-27 (first pass): 24 statements; the core polygyny unchanged. Rule holds.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: no statement says “consensus”. State-of-field wording is quoted from its source: “generally accepted amongst scholars” (Ademiluka; polygyny short), “most, though not all, scholars” and “now known to be flawed” (Lemos 2010, Meyers; bride-price short “Most scholars now say no”), “all agree … etiology” and “Some … Other scholars disagree” (Warner; genesis-2-24), “most translators and commentators” and “the common interpretation” (Heger; leviticus-18-18), “commonly interpreted” (Heger) and “famously debated” (Doering; second-temple), “considerable debate” (Collins NCE; adultery-penalty), “no real doubt … few if any followers” (Martens; jesus-divorce), “many, including myself, have assumed” and “no widespread agreement” (Loader, Martens; exception-clause), “still a debate” (Instone-Brewer; paul-divorce), “Scholars disagree” (Weisberg; levirate text), “most interpreters today” (Warner; levirate text). #133 per short: models (Lemos, Wells, Osiek, Mbuvi); arranged (Coogan, Lemos, HarperCollins, Meyers); bride-price (Lemos, Meyers; exchange framing Bergant in the text); love (Meyers, Lemos, Coogan, Bergant); levirate (Meyers, Bergant, NABRE, Wells, Weisberg, Ilan); polygyny (Calduch-Benages, Lemos, Ademiluka, Sassoon); concubines (HarperCollins, NABRE, Bergant, Meyers, Gafney, Scholz); genesis-2-24 (Warner, Doering, Heger); leviticus-18-18 (Heger, Sassoon); second-temple (Calduch-Benages, Ilan, Heger, Doering, Sassoon); adultery (HarperCollins, Rooke, Rosen-Zvi, Slager, Edenburg); why-adultery (Slager, Rooke, Collins, Rosen-Zvi, Hayes, Edenburg); adultery-penalty (Collins, Edenburg, Loader); prophets (Hayes, Rooke, HarperCollins, Yee, Macwilliam, Kamionkowski; dissent Sloane); new-testament-adultery (HarperCollins, Marshall, Martin, Collins, Das, Scheffler); divorce (Feinstein, HarperCollins, EJ Elephantine, NABRE, Martens, Instone-Brewer); jesus-divorce (Martin, Martens, Das); exception-clause (Loader, Martens; NABRE 1986 attributed; Loader's reconsideration attributed in the text, not the short); paul-divorce (Das, Marshall, Instone-Brewer, Martens); tradition (Tradition sources, exempt). Second pass 2026-11-27: re-checked each state-of-field word against its source. Changed: bride-price (“most, though not all, scholars” in Lemos is about bridewealth as a gift class, not about purchase; short now “scholars now say”, from Lemos 2010 p. 8, Lemos BO and Meyers); polygyny (Ademiluka's “generally accepted” no longer heads the short); paul-divorce (Instone-Brewer's “still a debate” cut from the short, one author). Kept: leviticus-18-18's “Most translators and commentators” is Heger's sentence about how the verse has been read (the rabbis, the LXX), not a count of scholars, and Sassoon independently reports the same split (“the builders of the partition who permit polygyny” against CD); Ademiluka's “generally accepted”, by contrast, is a state-of-field claim resting on secondhand citations. Others confirmed in context: Warner “vary greatly”/“Some … Other scholars”, Heger “most translators and commentators”/“commonly interpreted”, Doering “famously debated”/“considerable number of recent studies”, Collins “considerable debate”, Martens “no real doubt … few if any followers” and “no widespread agreement” (on what porneia means), Loader “many, including myself”, Weisberg “Scholars disagree”, Warner (Tamar) “most interpreters today”, Hayes “a little controversial”.",
+      note: "First pass 2026-11-27: no statement says “consensus”. State-of-field wording is quoted from its source: “generally accepted amongst scholars” (Ademiluka; polygyny short), “most, though not all, scholars” and “now known to be flawed” (Lemos 2010, Meyers; bride-price short “Most scholars now say no”), “all agree … etiology” and “Some … Other scholars disagree” (Warner; genesis-2-24), “most translators and commentators” and “the common interpretation” (Heger; leviticus-18-18), “commonly interpreted” (Heger) and “famously debated” (Doering; second-temple), “considerable debate” (Collins NCE; adultery-penalty), “no real doubt … few if any followers” (Martens; jesus-divorce), “many, including myself, have assumed” and “no widespread agreement” (Loader, Martens; exception-clause), “still a debate” (Instone-Brewer; paul-divorce), “Scholars disagree” (Weisberg; levirate text), “most interpreters today” (Warner; levirate text). #133 per short: models (Lemos, Wells, Osiek, Mbuvi); arranged (Coogan, Lemos, HarperCollins, Meyers); bride-price (Lemos, Meyers; exchange framing Bergant in the text); love (Meyers, Lemos, Coogan, Bergant); levirate (Meyers, Bergant, NABRE, Wells, Weisberg, Ilan); polygyny (Calduch-Benages, Lemos, Ademiluka, Sassoon); concubines (HarperCollins, NABRE, Bergant, Meyers, Gafney, Scholz); genesis-2-24 (Warner, Doering, Heger); leviticus-18-18 (Heger, Sassoon); second-temple (Calduch-Benages, Ilan, Heger, Doering, Sassoon); adultery (HarperCollins, Rooke, Rosen-Zvi, Slager, Edenburg); why-adultery (Slager, Rooke, Collins, Rosen-Zvi, Hayes, Edenburg); adultery-penalty (Collins, Edenburg, Loader); prophets (Hayes, Rooke, HarperCollins, Yee, Macwilliam, Kamionkowski; dissent Sloane); new-testament-adultery (HarperCollins, Marshall, Martin, Collins, Das, Scheffler); divorce (Feinstein, HarperCollins, EJ Elephantine, NABRE, Martens, Instone-Brewer); jesus-divorce (Martin, Martens, Das); exception-clause (Loader, Martens; NABRE 1986 attributed; Loader's reconsideration attributed in the text, not the short); paul-divorce (Das, Marshall, Instone-Brewer, Martens); tradition (Tradition sources, exempt). Second pass 2026-11-27: re-checked each state-of-field word against its source. Changed: bride-price (“most, though not all, scholars” in Lemos is about bridewealth as a gift class, not about purchase; short now “scholars now say”, from Lemos 2010 p. 8, Lemos BO and Meyers); polygyny (Ademiluka's “generally accepted” no longer heads the short); paul-divorce (Instone-Brewer's “still a debate” cut from the short, one author). Kept: leviticus-18-18's “Most translators and commentators” is Heger's sentence about how the verse has been read (the rabbis, the LXX), not a count of scholars, and Sassoon independently reports the same split (“the builders of the partition who permit polygyny” against CD); Ademiluka's “generally accepted”, by contrast, is a state-of-field claim resting on secondhand citations. Others confirmed in context: Warner “vary greatly”/“Some … Other scholars”, Heger “most translators and commentators”/“commonly interpreted”, Doering “famously debated”/“considerable number of recent studies”, Collins “considerable debate”, Martens “no real doubt … few if any followers” and “no widespread agreement” (on what porneia means), Loader “many, including myself”, Weisberg “Scholars disagree”, Warner (Tamar) “most interpreters today”, Hayes “a little controversial”. #245 first pass: new state-of-field words quoted from their sources: “a debated matter with four potential readings” (Darko) and “various interpretations … multiplicity of interpretations” (Mueller; husband-of-one-wife “Its meaning is debated”); “Critical scholarship on these passages suggests” (Hunter) against Lipiński's “probably the original version” (mark-10-12 “Scholars differ”, #80 contested); “Scholars trace it” (early-church) rests on Witte and Scheidel, each in his own voice; rabbenu-gershom reports facts from Grossman, Baumgarten, Melammed, Shilo and Sassoon and uses no state-of-field word.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Bergant's exchange framing of marriage named (bride-price); Weisberg's widow-protection suggestion named (levirate); Gafney and Scholz on pilegesh named (concubines); Tosato, Gruber and Sassoon on Lev 18:18 named, with Heger's reply (leviticus-18-18); the HarperCollins monogamous-ideal sentence named (polygyny); Babatha archive counter-evidence named (second-temple); Greenberg's reading named via Rosen-Zvi and Hayes, with Hayes's “not everyone agrees” (why-adultery); Sloane's rejection of the pornoprophetic critique named (prophets); D'Angelo named via Martens (jesus-divorce); Loader's reconsideration and the NABRE incest reading named (exception-clause); Instone-Brewer's own reading of 7:15 not stated, only his report of debate (paul-divorce). Second pass 2026-11-27: confirmed; Heger's “does not absolutely convey a divine prohibition of polygamy” and Instone-Brewer's remarriage debate now appear only in their statements' text, attributed.",
+      note: "First pass 2026-11-27: Bergant's exchange framing of marriage named (bride-price); Weisberg's widow-protection suggestion named (levirate); Gafney and Scholz on pilegesh named (concubines); Tosato, Gruber and Sassoon on Lev 18:18 named, with Heger's reply (leviticus-18-18); the HarperCollins monogamous-ideal sentence named (polygyny); Babatha archive counter-evidence named (second-temple); Greenberg's reading named via Rosen-Zvi and Hayes, with Hayes's “not everyone agrees” (why-adultery); Sloane's rejection of the pornoprophetic critique named (prophets); D'Angelo named via Martens (jesus-divorce); Loader's reconsideration and the NABRE incest reading named (exception-clause); Instone-Brewer's own reading of 7:15 not stated, only his report of debate (paul-divorce). Second pass 2026-11-27: confirmed; Heger's “does not absolutely convey a divine prohibition of polygamy” and Instone-Brewer's remarriage debate now appear only in their statements' text, attributed. #245 first pass: Peters's “first wife” reading named (husband-of-one-wife); Lipiński's reading named (mark-10-12); Witte's twelfth-century turn named (early-church); Sassoon's report of Tishby named (rabbenu-gershom).",
     }
   tradition-named:
     {
@@ -1116,7 +1303,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: every Scholarly or Reference source behind a short is 1996 or later. Encyclopaedia Judaica sections are used only where credited to the 2nd edition (Meyers, Ilan, Schalit and Matassa); 1971 sections are uncited. NCE entries are 2nd-edition texts (Bergant/Reid, Collins). NABRE Old Testament notes are the 2011 revision; the Matthew 5 note (1986) is attributed only. Second pass 2026-11-27: confirmed; NABRE Matthew 5 note (1986) attributed only; Instone-Brewer 2001, Slager 2000 and Ademiluka 2020 inside the window.",
+      note: "First pass 2026-11-27: every Scholarly or Reference source behind a short is 1996 or later. Encyclopaedia Judaica sections are used only where credited to the 2nd edition (Meyers, Ilan, Schalit and Matassa); 1971 sections are uncited. NCE entries are 2nd-edition texts (Bergant/Reid, Collins). NABRE Old Testament notes are the 2011 revision; the Matthew 5 note (1986) is attributed only. Second pass 2026-11-27: confirmed; NABRE Matthew 5 note (1986) attributed only; Instone-Brewer 2001, Slager 2000 and Ademiluka 2020 inside the window. #245 first pass: Darko 2023, Mueller 2012, Peters 2020, Witte 2015, Scheidel 2009, Grossman 2009, Baumgarten 2021, Melammed 2009, Shilo 2021, Hunter 2021, Lipiński 2015: all inside the window; 1971 EJ text and LaVerdière 1994 uncited.",
     }
 sources:
   ademiluka-2020-ve-polygamy-childlessness:
@@ -1443,6 +1630,72 @@ sources:
       owner: "",
       note: "First pass 2026-11-27: Reference, 2009; Shalvi/Hyman Encyclopedia of Jewish Women. Second pass 2026-11-27: re-fetched; JWA citation line dated 27 February 2009 confirmed.",
     }
+  darko-2023-religions-kinship-1-timothy:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): Scholarly, 2023; Religions 14(2): 169 (MDPI; its About page: “peer reviewed studies of religious thought and practice”); received 4 Dec 2022, published 29 Jan 2023; Gordon College. Live PDF 403 to scripts; read in an Internet Archive copy of the MDPI PDF.",
+    }
+  mueller-2012-jaas-husband-of-one-wife:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): Scholarly by venue, 2012; the journal page calls JAAS “a semiannual peer-refereed academic journal” (#80: classed by venue, not confession; Tyndale Bulletin precedent), which settles the #152 first pass's “class uncertain”. Biblical Research Institute. OCR PDF; p. 157 checked against the page image.",
+    }
+  peters-2020-ve-1-timothy-3-2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): Scholarly, 2020; Verbum et Ecclesia 41(1), a2057 (AOSIS), “Original Research”; University of Nigeria, Nsukka.",
+    }
+  witte-2015-elj-two-in-one-flesh:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): Scholarly, 2015; Emory Law Journal 64(6): 1675–1746, a law review symposium article; Emory University School of Law. Read in the author's posted copy: the journal's galley proofs of 28 May 2015 with its pagination (SSRN cover, Emory Legal Studies Research Paper 17-424); the Emory Scholarly Commons PDF refused scripts and has no archived copy, so the final printed text was not compared.",
+    }
+  scheidel-2009-hof-greco-roman-monogamy:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): Scholarly, 2009; History of the Family 14(3): 280–291 (Elsevier, peer-reviewed); Stanford University. Read in Elsevier's “Author's personal copy” PDF posted on the Santa Fe Institute wiki, in an Internet Archive snapshot (the live wiki did not answer). The copy's cover sheet restricts posting on third-party sites; flagged for the second pass.",
+    }
+  grossman-jwa-halakhic-decisions-family:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): Reference, 2009; Shalvi/Hyman Encyclopedia of Jewish Women; JWA citation line dated 27 February 2009. Grossman (Hebrew University) is a historian of medieval Ashkenaz.",
+    }
+  baumgarten-jwa-medieval-ashkenaz:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): Reference, 2021; Shalvi/Hyman Encyclopedia of Jewish Women; JWA citation line dated 23 June 2021. Baumgarten cites Grossman, so not wholly independent of him on Ashkenaz.",
+    }
+  melammed-jwa-medieval-spain:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): Reference, 2009; Shalvi/Hyman Encyclopedia of Jewish Women; JWA citation line dated 20 March 2009.",
+    }
+  shilo-jwa-old-yishuv:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): Reference, 2021; Shalvi/Hyman Encyclopedia of Jewish Women; JWA citation line dated 23 June 2021.",
+    }
+  hunter-2021-jmt-divorce-remarriage:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): Scholarly, 2021; Journal of Moral Theology 10(2): 34–59, printed on the PDF; the same issue as Martens, an independent author.",
+    }
+  lipinski-2015-anabasis-jewish-wife-repudiates:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#245): Scholarly, 2015; Anabasis: Studia Classica et Orientalia 6: 7–13 (University of Rzeszów); the journal's About page: “an interdisciplinary, peer-reviewed journal”.",
+    }
 leads:
   - "Angelo Tosato, “The Law of Leviticus 18:18: A Reexamination”, CBQ 46 (1984) 199–214: read only as reported by Sassoon; paywalled."
   - "Mayer I. Gruber, “Women in the Religious System of Qumran” (2001): read only as reported by Heger."
@@ -1452,7 +1705,12 @@ leads:
   - "Instone-Brewer, HTR 92 (1999) and Divorce and Remarriage in the Bible (2002), on monogamy spreading gradually through rabbinic Judaism: read only as quoted by Heger."
   - "Lea and Griffin, NAC 1–2 Timothy, Titus (1992), on 1 Tim 3:2 and polygamy: read only as quoted by Mueller."
   - "Adiel Schremer, “Qumran Polemic on Marital Law” (STDJ 34, 2000): bibliography record only."
-  - "Laura Betzig (J. Family History 1995) and Philip L. Reynolds, Marriage in the Western Church (1994), on Christianity's rejection of polygamy: not read."
+  - "Laura Betzig (J. Family History 1995) and Philip L. Reynolds, Marriage in the Western Church (1994), on Christianity's rejection of polygamy: not read; outside the window in any case. early-church (#245) rests on Witte 2015 and Scheidel 2009."
+  - "A. Andrew Das, “The One-Spouse Criterion in the Pastorals (1 Tim 3.2, 12; 5.9; Titus 1.6)”, NTS 71 (2025) 380–394: abstract only (“A growing consensus interprets … as ‘spousal fidelity’”); full text not open (#245). Would carry a state-of-field sentence on 1 Tim 3:2."
+  - "Augustine, Contra Faustum 22.47 and De bono coniugali, on the patriarchs' polygamy: read only as quoted by Witte 2015 and Scheidel 2009 (#245)."
+  - "Ze'ev Falk (1966), “monogamy found its way into French/German Jewry by slow degrees”: read only as quoted by Weiss (JWA); Peretz Tishby, Tarbiz 34 (1965): read only as reported by Sassoon and by EJ “Monogamy” (#245)."
+  - "Grossman, Pious and Rebellious (Brandeis 2004); Westreich and Hundert, “The Ban on Polygamy in Polish Rabbinic Thought” (Polin); Yom Tov Assis, Zion 46 (1981): not read (#245)."
+  - "Yarbro Collins, Mark (Hermeneia 2007); Instone-Brewer, HTR 92 (1999), on Jewish women divorcing their husbands; Ilan, HTR 89 (1996) on P. Se'elim 13: not open (#245)."
   - "Raymond Westbrook, Old Babylonian Marriage Law, and Carol Meyers, JBL 133 (2014) on patriarchy: no public copy found."
   - "Anthony Phillips, Ancient Israel's Criminal Law (1970), adultery as a matter of paternity: read only as quoted by Wright 1979."
   - "Elaine Adler Goodfriend, “Adultery”, Anchor Bible Dictionary (1992): read only as quoted by Peters 2022."
@@ -1467,10 +1725,8 @@ uncited:
   - "Encyclopaedia Judaica, “Monogamy” (Herr) and “Marriage” (Apple, “the concept”): read; “practice was more monogamous than theory”, polygamy “common among the upper classes”; 1971 text, outside the window."
   - "Encyclopaedia Judaica, “Family” and “Concubine” (Rainey), the biblical section of “Levirate”, “Adultery” (Tigay), “Ordeal of Jealousy” (Weinfeld) and “Divorce, In the Bible” (Lieber): read; 1971 text, outside the window."
   - "Baumgarten, “The Qumran-Essene Restraints on Marriage” (1990, cojs.org reprint): read; Temple Scroll 57:17–19 and “Pentateuchal law which explicitly condones both polygamy and divorce”; 1990, outside the window for a state-of-field claim; the monogamy statement rests on in-window sources."
-  - "Mueller, “The Phrase ‘Husband of One Wife’ in 1 Timothy 3:2”, Journal of Asia Adventist Seminary (2012): read; surveys eight readings; class uncertain (a denominational seminary journal), so the 1 Timothy statement was dropped."
-  - "Peters, Verbum et Ecclesia 2020, on 1 Tim 3:2 supporting polygamy: read; an outlier conjecture (μία as “first”); no statement on 1 Tim 3:2."
   - "Peters, HTS 2022, on Matthew 5:27–30: read; relies on 1915 reference works; its gynē point was not needed beside Martin."
-  - "Martin, RLST 152 lecture 19: read; “married only once, so multiple marriages are really frowned on” (bishops), and Paul's preference against marriage; not stated."
+  - "Martin, RLST 152 lecture 19: read; “married only once, so multiple marriages are really frowned on” (bishops), and Paul's preference against marriage; not stated; #245: one gloss, not a report of the readings, not cited beside Darko and Mueller."
   - "Cargill, “Biblical Marriage” (Bible Odyssey video transcript): read; “an incredible diversity of what constitutes marriage, including polygamy”; a video talk, not cited."
   - "Vyhnánek, Historia et theoria iuris 2011, on mohar as “cost of acquisition”: read; peer review unconfirmed and a junior author; the only open defence of the purchase view; not cited."
   - "Meyers, TheTorah.com 2018 and Bible Odyssey, “Patriarchy and the Hebrew Bible”: read; “Virtually all biblical scholars … consider the Bible and ancient Israelite society patriarchal” and her argument for heterarchy; no statement on patriarchy."
@@ -1479,7 +1735,16 @@ uncited:
   - "Osiek and Standhartinger (Bible Odyssey) on the household codes; Hoke, Marshall and HarperCollins on 1 Corinthians 7 and marriage; NABRE 1 Corinthians 7 and Ephesians 5 notes (1986): read; no statement on household codes or Paul's view of marriage."
   - "Howard, Lipka, Koenig (Bible Odyssey), Adelman (JWA), Ademiluka HTS 2021 and Berman JHS 2013 on David and Bathsheba: read; no statement made."
   - "Lumanze, Old Testament Essays 37(2) 2024, and Feinstein on Malachi 2:16: read; statement dropped for length; Lumanze's “at least twenty Hebrew scholars” rests on a blog."
-  - "NABRE Matthew 19 and Mark 10 notes (1986), including Mark 10:12 and Roman law: read; outside the window, not cited."
+  - "NABRE Matthew 19 and Mark 10 notes (1986), including Mark 10:12 and Roman law: read; outside the window, not cited; mark-10-12 (#245) rests on Hunter 2021 and Lipiński 2015."
+  - "Naselli, Detroit Baptist Seminary Journal 24 (2019) 39, four views on “husband of one wife”, “faithful to his wife” the majority (#245): read; a seminary house journal whose peer review is stated only for a 2024 issue, and its majority/minority labels cover evangelicals; not cited."
+  - "Ademiluka, HTS 2023 (“Isupo”), p. 7, Paul limits monogamy to church leaders; Eriksen, SJLT 2026 (Danish); Mayes, CTQ 90 (2026) research note (#245): read; one reading each or confessional, not cited."
+  - "Henrich, Boyd and Richerson, Phil. Trans. R. Soc. B 367 (2012), and van Eck, HTS 76(4) 2020, on Greco-Roman roots of Western monogamy (#245): read; Henrich leans on Scheidel and Goody, van Eck is about marriage and celibacy; not cited."
+  - "Witte 2015 p. 1713 (early Roman law against keeping a wife and concubine) against Scheidel 2009 p. 283 (the evidence “is inconclusive” before Justinian) (#245): read; early-church makes no statement on concubinage."
+  - "Encyclopaedia Judaica 2nd ed., “Gershom ben Judah Me'or ha-Golah” (Eidelberg / Derovan), “attributed to him by Meir of Rothenburg … Eliezer Nathan … refers to them as communal takkanot” (#245): read; the 1971 and 2007 sentences cannot be told apart, so not cited; EJ “Monogamy” (Herr, 1971 only), the 12th-century regulation: outside the window."
+  - "Weiss, JWA “Divorce: The Halakhic Perspective”, and Magnus, JWA “Agunot”, on the takkanah attributed to Rabbenu Gershom (#245): read; redundant beside Grossman and Baumgarten."
+  - "Doering 2009 p. 13 (Mark 10:11–12 “clearly a secondary development”), Scheffler 2011 and Instone-Brewer 2001 on Mark 10:12 and wives' divorce (#245): read; none ties 10:12 to Roman law; not cited for mark-10-12."
+  - "LaVerdière, The Way 34 (1994), Mark confronting “the Greco-Roman setting where divorce was initiated either by the husband or by the wife” (#245): read; outside the window."
+  - "Bakhos, Posen Library guide “Divorce in Early Judaism”, “Roman law also allowed wives to initiate divorce” (#245): read; undated, class unclear; not cited."
   - "Guenther, Tyndale Bulletin 2002, “porneia aside” reading of Matt 19:9: read; one author's reading, not needed beside Loader and Martens."
   - "Got Questions, “husband of one wife”, and the LDS essay “Plural Marriage and Families in Early Utah”: read; no statement on 1 Tim 3:2; redundant."
   - "Calduch-Benages, “The presence of polygamy in the Bible is very controversial”: read; ambiguous scope (reception or texts), not cited."
