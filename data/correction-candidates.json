@@ -9929,7 +9929,31 @@
       "firstSeen": "2026-11-22T14:18:11.299Z",
       "lastSeen": "2026-11-22T14:18:11.299Z",
       "status": "pending"
+    },
+    "Hayes→Heyes": {
+      "original": "Hayes",
+      "corrected": "Heyes",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["176008418"],
+      "examples": [
+        "\"delightful Michael Hayes. Why don't\"",
+        "\"is Mike Hayes, associate professor\"",
+        "\"Democracy. Mike Hayes, thank you\""
+      ],
+      "correctedExamples": [
+        "\"delightful Michael Heyes. Why don't\"",
+        "\"is Mike Heyes, associate professor\"",
+        "\"Democracy. Mike Heyes, thank you\""
+      ],
+      "timestamps": ["00:00:45.360", "00:01:09.820", "01:02:54.090"],
+      "episodeIds": ["176008418", "176008418", "176008418"],
+      "confidence": 20,
+      "firstSeen": "2026-11-28T18:39:44.322Z",
+      "lastSeen": "2026-11-28T18:39:44.322Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-11-22T14:18:11.299Z"
+  "lastUpdated": "2026-11-28T18:39:44.322Z"
 }

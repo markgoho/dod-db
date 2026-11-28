@@ -34385,5 +34385,129 @@
       }
     ],
     "episodeTopic": "Magic in Luke-Acts"
+  },
+  {
+    "videoId": "176008418",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/176008418.mp3?sig=LijnExkwomkdFsBzX3un-Eq9VRKqjUi9XMX6sHOvmjk%3D",
+    "title": "Devils of Democracy with Michael Heyes",
+    "publishedAt": "2026-11-22T07:00:08.000Z",
+    "processedAt": "2026-11-28T18:37:51.055Z",
+    "transcriptPath": "data/transcripts/2026-11-22-devils-of-democracy-with-michael-heyes.txt",
+    "tags": [
+      {
+        "tag": "Southern Baptist Convention",
+        "mentions": 3
+      },
+      {
+        "tag": "Christian Nationalism",
+        "mentions": 2
+      },
+      {
+        "tag": "child sacrifice",
+        "mentions": 1
+      },
+      {
+        "tag": "Nebuchadnezzar",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 6
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 4
+      },
+      {
+        "tag": "Abortion",
+        "mentions": 10
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Moloch",
+        "mentions": 3
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 10
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 4
+      },
+      {
+        "tag": "Witch of Endor",
+        "mentions": 2
+      },
+      {
+        "tag": "Second Coming",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 6
+      },
+      {
+        "tag": "Beelzebul",
+        "mentions": 1
+      },
+      {
+        "tag": "Red Sea",
+        "mentions": 1
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 2
+      },
+      {
+        "tag": "Demon",
+        "mentions": 9
+      }
+    ],
+    "segments": [],
+    "speakers": ["Michael Heyes", "Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 190,
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 2", "Isaiah 7"],
+        "mentions": 2
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 2
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 1
+      },
+      {
+        "book": "Ephesians",
+        "references": ["Ephesians 6:12"],
+        "mentions": 1
+      }
+    ],
+    "episodeTopic": "Political Demonology"
   }
 ]

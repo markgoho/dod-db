@@ -141,6 +141,15 @@ subjects:
         Carthage,
         "22:29",
       ]
+    triggers:
+      - episode: 190
+        speaker: "Dan McClellan"
+        timestamp: "00:22:53.280"
+        text: "Who, which is the name of, of a deity that never existed. There was never any deity named Moloch that was worshiped in the ancient world."
+      - episode: 190
+        speaker: "Michael Heyes"
+        timestamp: "00:27:21.600"
+        text: "And then of course, you get Moloch, the god that never was."
 
   - slug: revelation
     subject: "Revelation: date, author and 666"
@@ -163,6 +172,11 @@ subjects:
         Revelation was written,
         gematria,
       ]
+    triggers:
+      - episode: 190
+        speaker: "Dan McClellan"
+        timestamp: "00:45:40.350"
+        text: "They are a tiny movement of, again, a tiny movement of women and enslaved people, according to an early Roman characterization. And they're up against the largest empire the world has. Has ever known. And that is represented as the beast, that is represented as Satan, that is the great. That is all of these things."
 
   - slug: catholic-epistles-authorship
     subject: "Who wrote James, Peter and Jude"
@@ -787,3 +801,17 @@ statements:
         timestamp: "00:47:06.210"
         text: "There's a wonderful book by a scholar, a former Latter-day Saint scholar named David Wright, called Inventing God's Law, where he demonstrates, I think, convincingly, that the Covenant Code is borrowing directly from the Laws of Hammurabi, showing that the content, even the order that the content is going in, matches the way it's presented in the Laws of Hammurabi."
     notes: "Conflict with hammurabi: the speaker endorses Wright's direct-dependence thesis as demonstrated (hedged “I think”); the statement reports it as one side of a disagreement. Logged at the #158 first pass, 2026-11-27."
+  - page: satan-demons-and-angels
+    question: "Do demons in the Bible use they/them pronouns?"
+    triggers:
+      - episode: 190
+        speaker: "Dan McClellan"
+        timestamp: "00:34:47.180"
+        text: "By people who imagine that they have just tapped into some kind of transcendent knowledge will say in the Bible, demons use they, them pronouns. And. Which is pure and utter garbage. It's not true at all."
+  - page: the-origins-of-hell
+    question: "Where does popular imagery of hell come from?"
+    triggers:
+      - episode: 190
+        speaker: "Dan McClellan"
+        timestamp: "00:33:50.360"
+        text: "But the same, you know, and when it comes to representation, presentations of things like hell, like Dante's Inferno and Divine Comedy and things like this were so phenomenally influential. They became the paint and palette with which people brought these things to life. And they confused the art for what is actually within the received tradition."

@@ -10282,6 +10282,26 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 189,
     episodes: [189],
   },
+  {
+    canonical: "Spiritual warfare",
+    variations: [],
+    category: "theology",
+    description:
+      "Christian belief and practice of engaging in active spiritual combat against demons, Satan, and malevolent supernatural forces through prayer, exorcism, and religious devotion.",
+    status: "proposed",
+    addedInEpisode: 190,
+    episodes: [190],
+  },
+  {
+    canonical: "Seven Mountain Mandate",
+    variations: ["Seven Mountains", "Seven Mountains mandate"],
+    category: "theology",
+    description:
+      "Dominionist evangelical doctrine holding that Christians must gain control over seven major spheres of societal influence, often justified through an interpretation of the seven-headed beast in the Book of Revelation.",
+    status: "proposed",
+    addedInEpisode: 190,
+    episodes: [190],
+  },
 ];
 
 export function getAllSearchableTerms(
