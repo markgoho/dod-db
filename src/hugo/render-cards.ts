@@ -24,12 +24,51 @@ export interface CardJob {
   out: string;
 }
 
-/** The value of `--base=`, else the local Hugo server. */
-export function baseUrl(args: readonly string[]): string {
-  return (
-    args.find(arg => arg.startsWith("--base="))?.slice("--base=".length) ??
-    "http://localhost:1313"
-  ).replace(/\/$/, "");
+/** Whether this checkout is a linked git worktree, not the main checkout. */
+export function isLinkedWorktree(cwd = import.meta.dir): boolean {
+  const { stdout, success } = Bun.spawnSync(
+    [
+      "git",
+      "rev-parse",
+      "--path-format=absolute",
+      "--git-dir",
+      "--git-common-dir",
+    ],
+    { cwd },
+  );
+  const [gitDir, commonDir] = stdout.toString().trim().split("\n");
+  return success && gitDir !== commonDir;
+}
+
+/**
+ * The value of `--base=`, else the local Hugo server on 1313. A worktree must
+ * name its own server: 1313 is the main checkout's, and photographing it
+ * gives new pages a "Page not found" image and changed ones their old text.
+ */
+export function baseUrl(
+  args: readonly string[],
+  inWorktree = isLinkedWorktree(),
+): string {
+  const base = args
+    .find(arg => arg.startsWith("--base="))
+    ?.slice("--base=".length);
+  if (base === undefined && inWorktree) {
+    throw new Error(
+      "This is a git worktree: run `hugo server -p <port>` from its hugo/ and pass --base=http://localhost:<port>.",
+    );
+  }
+  return (base ?? "http://localhost:1313").replace(/\/$/, "");
+}
+
+// Every page must exist and have its card, or the image would be a
+// "Page not found" (server down, or serving another checkout).
+async function probe(url: string): Promise<void> {
+  const response = await fetch(url);
+  if (!response.ok || !(await response.text()).includes('id="card"')) {
+    throw new Error(
+      `${url} has no #card (status ${response.status}). Is a Hugo server for this checkout up?`,
+    );
+  }
 }
 
 export async function renderCards(
@@ -38,16 +77,7 @@ export async function renderCards(
   manifest: CardManifest,
   jobs: readonly CardJob[],
 ): Promise<void> {
-  // Fail fast when the server is down or serves another checkout.
-  if (jobs[0]) {
-    const probe = jobs[0].url;
-    const response = await fetch(probe);
-    if (!response.ok || !(await response.text()).includes('id="card"')) {
-      throw new Error(
-        `${probe} has no #card (status ${response.status}). Is a Hugo server for this checkout up?`,
-      );
-    }
-  }
+  await Promise.all(jobs.map(job => probe(job.url)));
 
   // Saved after every card, so a stalled run keeps what it finished.
   async function saveManifest(): Promise<void> {

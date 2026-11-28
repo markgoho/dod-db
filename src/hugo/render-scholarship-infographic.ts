@@ -12,6 +12,7 @@
 
 import path from "node:path";
 import { screenshot } from "./chrome.js";
+import { baseUrl } from "./render-cards.js";
 
 /** The poster, for posting as an image; the card, for link previews (og:image). */
 const IMAGES = [
@@ -21,16 +22,14 @@ const IMAGES = [
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const slug = args.find(arg => !arg.startsWith("--"));
-  const base =
-    args.find(arg => arg.startsWith("--base="))?.slice("--base=".length) ??
-    "http://localhost:1313";
+  const base = baseUrl(args);
   if (!slug) {
     throw new Error(
       "Usage: bun run scholarship:infographic <slug> [--base=http://localhost:1313]",
     );
   }
 
-  const url = `${base.replace(/\/$/, "")}/scholarship/${slug}/`;
+  const url = `${base}/scholarship/${slug}/`;
   const page = await fetch(url);
   if (!page.ok) {
     throw new Error(`${url} returned ${page.status}. Is the Hugo server up?`);
