@@ -263,11 +263,10 @@ draft: false
 {{< line >}}[00:42:55.040] Dan Beecher: Okay. Verse three: "Holy, holy, holy is the Lord of hosts. The whole earth is full of his glory." And the whole temple is full of His—never mind the smoke. And then what? This—there is a note here that I neglected to check out.{{< /line >}}
 {{< line >}}[00:43:15.540] Dan McClellan: Oh, okay.{{< /line >}}
 {{< line >}}[00:43:16.580] Dan Beecher: It says—note—I'm moving on to verse four. "The pivots on the thresholds shook at the voices of those who called." Does that mean, like the pivots? Does that mean the hinges? Or—{{< /line >}}
-{{< line >}}[00:43:29.780] Dan Beecher: What is the—the word here?{{< /line >}}
-{{< line >}}[00:43:32.900] Dan McClellan: What is the—the word here?{{< /line >}}
-{{< line >}}[00:43:36.830] Dan Beecher: It says the meaning of Heb is uncertain.{{< /line >}}
-{{< line >}}[00:43:44.270] Dan McClellan: Of Heb? Amma is probably what they're—{{< /line >}}
-{{< line >}}[00:43:44.910] Dan Beecher: That's. That's.{{< /line >}}
+{{< line >}}[00:43:29.780] Dan McClellan: What is the—the word here?{{< /line >}}
+{{< line >}}[00:43:32.900] Dan Beecher: It says the meaning of Heb is uncertain.{{< /line >}}
+{{< line >}}[00:43:36.830] Dan McClellan: Of Heb? Amma is probably what they're—{{< /line >}}
+{{< line >}}[00:43:44.270] Dan Beecher: That's. That's.{{< /line >}}
 {{< line >}}[00:43:44.910] Dan McClellan: Then I don't see Heb anywhere. Oh! Oh, Hebrew. The meaning of the Hebrew.{{< /line >}}
 {{< line >}}[00:43:48.750] Dan Beecher: Oh, okay.{{< /line >}}
 {{< line >}}[00:43:51.070] Dan McClellan: Okay.{{< /line >}}
