@@ -306,7 +306,10 @@
 {{- end -}}
 
 
-<aside class="timeline-minimap" aria-label="Timeline overview">
+<aside
+  class="timeline-minimap"
+  aria-label="Timeline overview"
+  data-pagefind-ignore>
   {{- /* The scrollspy: rendered, never shown, never focused. */}}
   <div class="timeline-minimap__spy" aria-hidden="true">
     {{- range $ticks }}

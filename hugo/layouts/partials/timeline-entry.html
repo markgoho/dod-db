@@ -58,6 +58,7 @@
       timeline-entry--end
     {{ end }}"
     id="{{ $id }}"
+    data-pagefind-ignore
     data-entry-url="{{ (partial "clean-url.html" $e).rel }}"
     tabindex="-1"
     aria-label="{{ replace $moved "–" " to " }}">
@@ -161,7 +162,8 @@
       */}}
       <div
         class="scholarship-question__actions timeline-entry__share"
-        id="{{ $e.File.ContentBaseName }}-links">
+        id="{{ $e.File.ContentBaseName }}-links"
+        data-pagefind-ignore>
         <span class="scholarship-question__copy">
           <button
             type="button"
@@ -190,7 +192,7 @@
       </div>
 
       <details class="scholarship-block timeline-entry__sources">
-        <summary class="disclosure-summary">
+        <summary class="disclosure-summary" data-pagefind-ignore>
           <span class="type-eyebrow">Sources and what prompted this entry</span>
         </summary>
         <div class="scholarship-block__body timeline-entry__body">
@@ -214,7 +216,9 @@
                 >said on the show, not the entry’s evidence</mark
               >
             </p>
-            <div class="tag-quotes__grid timeline-entry__triggers">
+            <div
+              class="tag-quotes__grid timeline-entry__triggers"
+              data-pagefind-ignore>
               {{ range . }}
                 {{ partial "quote-card" (dict "quote" . "episodesByNumber" $.episodesByNumber) }}
               {{ end }}

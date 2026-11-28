@@ -79,7 +79,9 @@
     </div>
   </header>
 
-  <div class="scholarship-provenance panel panel--muted timeline-measure">
+  <div
+    class="scholarship-provenance panel panel--muted timeline-measure"
+    data-pagefind-ignore>
     {{ partial "timeline-notice.html" . }}
     {{ partial "timeline-date-line.html" $entries }}
   </div>
@@ -90,7 +92,10 @@
       {{ partial "timeline-minimap.html" . }}
       {{ $.Store.Set "timelineMinimap" true }}
       <section class="timeline-spine" aria-label="Timeline">
-        <ul class="timeline-legend timeline-measure" role="list">
+        <ul
+          class="timeline-legend timeline-measure"
+          role="list"
+          data-pagefind-ignore>
           <li class="timeline-legend__item">
             <span class="timeline-legend__swatch" aria-hidden="true"></span>
             {{ $labels.scholarly }}
@@ -120,8 +125,10 @@
             >
           </li>
         </ul>
+        {{/* Site search finds each entry in a record of its own (src/hugo/build-search-index.ts), not on this page. */}}
         <ol
           class="timeline-axis"
+          data-pagefind-ignore
           role="list"
           aria-label="Timeline Entries and tradition dates in date order, by era">
           {{/* Rows alternate sides across the whole axis, not per era (#254); timeline-layout.ts may repack them. */}}
@@ -169,7 +176,7 @@
         Events the sources give no firm date, and for which no named tradition’s
         date is shown. They sit outside the timeline.
       </p>
-      <ul class="timeline-unplaced" role="list">
+      <ul class="timeline-unplaced" role="list" data-pagefind-ignore>
         {{ range . }}
           {{ partial "timeline-entry.html" (merge $ctx (dict
             "entry" .
@@ -186,7 +193,8 @@
     {{/* The minimap's periods (#255), each with its dates and cites. Closed by default, as Sources used is. */}}
     <details
       class="cloud-section timeline-measure timeline-periods-section"
-      id="timeline-periods">
+      id="timeline-periods"
+      data-pagefind-title="Periods">
       <summary class="disclosure-summary timeline-sources__summary">
         <h2 class="type-section-title cloud-section__title">Periods</h2>
         <span class="timeline-section-intro"
@@ -210,7 +218,10 @@
 
   {{ with $sourceIds }}
     {{/* Closed by default (#173). Chrome opens it for find-in-page and for a #source-<id> link to a row inside. */}}
-    <details class="cloud-section timeline-measure timeline-sources">
+    <details
+      class="cloud-section timeline-measure timeline-sources"
+      id="timeline-sources"
+      data-pagefind-title="Sources used">
       <summary class="disclosure-summary timeline-sources__summary">
         <h2 class="type-section-title cloud-section__title">Sources used</h2>
         <span class="timeline-section-intro">{{ len . }} sources</span>

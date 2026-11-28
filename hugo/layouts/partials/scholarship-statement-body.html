@@ -23,7 +23,10 @@
     scholarship-question-links.ts wires the buttons; without JS the link
     itself still works.
   */}}
-  <div class="scholarship-question__actions" id="{{ $s.id }}-links">
+  <div
+    class="scholarship-question__actions"
+    id="{{ $s.id }}-links"
+    data-pagefind-ignore>
     {{ if not $onQuestionPage }}
       <a class="chip scholarship-question__link" href="{{ $questionURL }}"
         >Link to this question</a

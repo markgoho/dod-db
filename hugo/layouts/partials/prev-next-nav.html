@@ -5,7 +5,7 @@
 {{- $taxonomyName := .taxonomyName | default "" -}}
 {{- $transitionNamePrefix := .transitionNamePrefix | default "" -}}
 {{- if or $previousPage $allHref $nextPage -}}
-  <nav class="taxonomy-nav" aria-label="{{ .ariaLabel }}">
+  <nav class="taxonomy-nav" aria-label="{{ .ariaLabel }}" data-pagefind-ignore>
     {{- if $previousPage -}}
       {{- $previousTransitionName := cond (ne $transitionNamePrefix "") (partial "transition-name" (dict "prefix" (strings.TrimRight "-" $transitionNamePrefix) "source" $previousPage.Params.episodeNumber)) (partial "transition-name" (dict "prefix" (printf "%s-title" $taxonomyName) "source" $previousPage.Title)) -}}
       <a

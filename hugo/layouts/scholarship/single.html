@@ -41,8 +41,14 @@
   {{ end }}
   {{ $groups = $groups | uniq }}
 
-
-  <section class="term-page">
+  {{/* Site search (Pagefind) indexes the page; each question is a sub-result
+    linking to its open <details>. Question Pages stay unindexed.
+  */}}
+  <section
+    class="term-page"
+    data-pagefind-body
+    data-pagefind-meta="title:Scholarship · {{ .Title }}"
+    data-pagefind-filter="type:Scholarship">
     {{/* The shared page hero, full width as on term pages; the body reads in the column below. */}}
     {{ partial "taxonomy-hero" (dict
       "page" .
@@ -56,7 +62,9 @@
 
     <article class="scholarship-page">
       {{ $promptedBy := printf "Prompted by %d %s" (len $triggerEpisodes) (cond (eq (len $triggerEpisodes) 1) "Episode" "Episodes") }}
-      <div class="scholarship-provenance panel panel--muted">
+      <div
+        class="scholarship-provenance panel panel--muted"
+        data-pagefind-ignore>
         {{ partial "scholarship-notice.html" . }}
         <details class="scholarship-block">
           <summary class="disclosure-summary">
@@ -88,11 +96,11 @@
         <div class="scholarship-share" id="share">
           {{/* Target for the link-preview card; see scholarship.css. */}}
           <span id="share-card"></span>
-          <div class="scholarship-share__masthead">
+          <div class="scholarship-share__masthead" data-pagefind-ignore>
             <p class="scholarship-share__title">{{ .Title }}</p>
           </div>
           {{ partial $custom . }}
-          <div class="scholarship-share__credit">
+          <div class="scholarship-share__credit" data-pagefind-ignore>
             <p class="scholarship-share__site">
               {{ site.Title }}
               <span
@@ -120,7 +128,10 @@
           <h2 class="type-section-title cloud-section__title">{{ $group }}</h2>
           <div class="scholarship-questions panel">
             {{ range where $p.statements "group" $group }}
-              <details class="scholarship-question" id="{{ .id }}">
+              <details
+                class="scholarship-question"
+                id="{{ .id }}"
+                data-pagefind-title="{{ .question }}">
                 <summary class="disclosure-summary">
                   <span class="scholarship-question__question"
                     >{{ .question }}</span
@@ -135,7 +146,10 @@
       {{ end }}
 
 
-      <section class="cloud-section">
+      <section
+        class="cloud-section"
+        id="sources-used"
+        data-pagefind-title="Sources used">
         <h2 class="type-section-title cloud-section__title">Sources used</h2>
         <div class="scholarship-sources">
           <table class="scholarship-sources__table">
@@ -188,7 +202,7 @@
         {{ end }}
       {{ end }}
       {{ with $archive }}
-        <section class="cloud-section">
+        <section class="cloud-section" data-pagefind-ignore>
           <h2 class="type-section-title cloud-section__title">
             In the archive
           </h2>

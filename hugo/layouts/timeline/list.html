@@ -3,7 +3,16 @@
 {{ end }}
 
 {{ define "main" }}
-  {{ partialCached "timeline-body.html" . }}
+  {{/* Site search (Pagefind) indexes the Timeline here, once, without its
+    entries: build-search-index.ts gives each entry a record of its own at its
+    own URL. Timeline Entry Pages render the same body and stay unindexed.
+  */}}
+  <div
+    data-pagefind-body
+    data-pagefind-meta="title:{{ .Title }}"
+    data-pagefind-filter="type:Timeline">
+    {{ partialCached "timeline-body.html" . }}
+  </div>
 
   {{/* The Timeline's own card image, shown only at #card (#219): what a
     link to /timeline/#<id> previews. `bun run timeline:cards` photographs it.

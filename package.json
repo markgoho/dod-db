@@ -37,7 +37,7 @@
     "guest-page:save": "bun run src/scripts/save-guest-page.ts",
     "hugo:dev": "bun run generate:tag-index && bun run generate:book-index && bun run generate:scholarship-scripture && cd hugo && hugo server",
     "build:local": "bun run generate:tag-index && bun run generate:book-index && rm -rf hugo/public && cd hugo && hugo && bun run check:zgotmplz && bun run index",
-    "index": "bunx pagefind --site hugo/public",
+    "index": "bun run src/hugo/build-search-index.ts",
     "build:hugo": "bun run generate:tag-index && bun run generate:book-index && bun run generate:scholarship-scripture && cd hugo && hugo --minify && bun run check:zgotmplz && bun run index"
   },
   "dependencies": {
@@ -55,6 +55,8 @@
     "jiti": "^2.7.0",
     "oxlint": "^1.79.0",
     "oxlint-tsgolint": "^0.23.0",
+    "pagefind": "1.6.0",
+    "parse5": "7.3.0",
     "prettier": "^3.9.6",
     "prettier-plugin-go-template": "^0.0.15",
     "typescript": "^6.0.3"
