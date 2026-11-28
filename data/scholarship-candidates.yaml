@@ -221,6 +221,14 @@ statements:
         timestamp: "00:39:02.580"
         text: "But there were like 12 to 14 copies of Enoch found among the Dead Sea Scrolls."
     notes: "Conflict with languages: the statement's text gives the eleven manuscripts of Aramaic Enoch that Milik identified (VanderKam, DSD 2026, abstract), as Episode 62 at 00:37:56 also says. Logged at the #159 first pass, 2026-11-27."
+  - page: 1-enoch-the-watchers-and-the-nephilim
+    question: "How did 1 Enoch reach modern Europe?"
+    triggers:
+      - episode: 62
+        speaker: "Dan McClellan"
+        timestamp: "00:45:56.090"
+        text: "We get a German translation in 1801, and then the first English translation comes out in 1821, and then we get revisions in later years."
+    notes: "Conflict with rediscovery: the quote dates a German translation to 1801; the statement's text, with Stuckenbruck and Boccaccini, gives Silvestre de Sacy's Latin translation of a few passages (1800), Laurence's English translation of the whole (1821) and Hoffmann's German translation (1838). Found at the #250 re-review, 2026-11-27; logged 2026-11-28."
   - page: satan-demons-and-angels
     question: "Where do demons come from in 1 Enoch?"
     triggers:

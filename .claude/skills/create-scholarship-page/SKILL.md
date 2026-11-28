@@ -69,15 +69,15 @@ Done when the agent returns and its changes are on the page. Commit "Second agen
 
 Resolve the second pass's flags conservatively, record each resolution in the review file's header, and recompute the publish rule. A cut that breaks the rule takes the step 2 exit, under the page's slug.
 
-Then drop `draft`, and run:
+Then drop `draft`, start the worktree's own `hugo server -p <port>` from its `hugo/` (never another checkout's on 1313; the card script refuses to run from a worktree without `--base`), and run:
 
 ```bash
-bun run scholarship:question-cards <slug>
+bun run scholarship:question-cards <slug> --base=http://localhost:<port>
 bun run generate:scholarship-scripture
 bun run check:scholarship && bun run check && bun test
 ```
 
-Preview the page and two Question Pages in Claude in Chrome from the worktree's own `hugo server`: statements render, scripture references link to BibleGateway, the Trigger Claims link to their Episodes.
+Preview the page and two Question Pages in Claude in Chrome from that server: statements render, scripture references link to BibleGateway, the Trigger Claims link to their Episodes.
 
 Commit "Publish the <title> Scholarship Page (#<issue>)", push, and confirm the deploy succeeded and the live page loads. Comment on the issue as #177's closing comment does (URL, counts, core sourcing, what the second pass changed, leads left open), then close it. File an issue for any follow-on work the leads point to.
 
