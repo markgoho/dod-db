@@ -42,7 +42,9 @@
   {{- if $metaPartial }}
     {{ partial $metaPartial $page }}
   {{- else }}
-    <div class="page-hero__meta page-hero__meta--headline panel">
+    <div
+      class="page-hero__meta page-hero__meta--headline panel"
+      data-pagefind-ignore>
       <span class="stat-display__number">{{ len $page.Pages }}</span>
       <span class="stat-display__label"
         >{{ cond (eq (len $page.Pages) 1) "Episode" "Episodes" }}</span

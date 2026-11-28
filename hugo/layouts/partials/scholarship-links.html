@@ -15,7 +15,7 @@
   {{- $names := slice -}}
   {{- if .pages }}{{ $names = $names | append "Scholarship Pages" }}{{ end -}}
   {{- if .entries }}{{ $names = $names | append "Timeline Entries" }}{{ end -}}
-  <section class="scholarship-links panel panel--muted">
+  <section class="scholarship-links panel panel--muted" data-pagefind-ignore>
     <h2 class="{{ $.headingClass | default "type-eyebrow" }}">
       {{ delimit $names " and " }}{{ $.headingTail }}
     </h2>

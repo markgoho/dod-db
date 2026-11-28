@@ -29,19 +29,25 @@
     {{ end }}
   {{ end }}
 
-
-  <section class="term-page term-page--episodes-archive tag-page">
+  {{/* Site search (Pagefind) indexes the page's own text: hero, aliases and
+    intro. Episode cards, quotes and links repeat other pages and stay out.
+  */}}
+  <section
+    class="term-page term-page--episodes-archive tag-page"
+    data-pagefind-body
+    data-pagefind-meta="title:Book · {{ .Title }}"
+    data-pagefind-filter="type:Book">
     {{ partial "taxonomy-hero" (dict "page" . "taxonomy" "books" "backHref" "/books/" "backLabel" "All Books" "heroClass" "page-hero--profile" "definition" (.Params.definition | default "")) }}
 
     {{ with .Params.nrsvueUrl }}
-      <div class="tag-section-copy">
+      <div class="tag-section-copy" data-pagefind-ignore>
         <a href="{{ . }}" class="button button--secondary">Read in NRSVUE</a>
       </div>
     {{ end }}
 
     {{ with .Content }}
       <details class="tag-intro panel">
-        <summary class="tag-intro__summary type-eyebrow">
+        <summary class="tag-intro__summary type-eyebrow" data-pagefind-ignore>
           Why this book matters
         </summary>
         <div class="tag-intro__content prose">
@@ -56,7 +62,7 @@
     }}
 
     {{ if ne $featuredMarkup "" }}
-      <section class="tag-featured-overview">
+      <section class="tag-featured-overview" data-pagefind-ignore>
         <h2 class="type-section-title tag-section-title">Where to start</h2>
         <p class="tag-section-copy">
           Start here for the strongest listening on {{ $bookName }}.
@@ -68,7 +74,7 @@
     {{ end }}
 
     {{ with .Params.quotes }}
-      <section class="tag-quotes" aria-label="Quotes">
+      <section class="tag-quotes" aria-label="Quotes" data-pagefind-ignore>
         <h2 class="type-section-title tag-section-title">
           Quotes from the Data
         </h2>
@@ -81,7 +87,7 @@
     {{ end }}
 
     {{ if .Params.showAllEpisodes | default true }}
-      <section class="tag-episodes">
+      <section class="tag-episodes" data-pagefind-ignore>
         <h2 class="type-section-title tag-section-title">All episodes</h2>
         <p class="tag-section-copy">
           Every episode currently tagged with {{ $bookName }}.
