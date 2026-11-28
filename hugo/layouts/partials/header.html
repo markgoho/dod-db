@@ -23,14 +23,13 @@
     </ul>
 
     <div class="navbar__tools" aria-label="Archive utilities">
-      <pagefind-modal-trigger>
-        <button
-          class="navbar__search-trigger"
-          type="button"
-          aria-label="Search episodes, Scholarship Pages and the Timeline">
-          Search
-        </button>
-      </pagefind-modal-trigger>
+      {{/* Pagefind renders the button itself; placeholder is its visible
+        text and its accessible name. Ctrl/Cmd+K still opens the modal
+        with the key hint hidden.
+      */}}
+      <pagefind-modal-trigger
+        placeholder="Search the archive"
+        hide-shortcut></pagefind-modal-trigger>
       <a class="button-brutalist navbar__cta" href="/episodes/"
         >Browse episodes</a
       >

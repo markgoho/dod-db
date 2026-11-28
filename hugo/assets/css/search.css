@@ -118,3 +118,38 @@
 :is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-result-image {
   border-radius: 0;
 }
+
+/*
+  Navbar trigger — Pagefind renders its own button (.pf-trigger-btn) inside
+  <pagefind-modal-trigger>, so the outline-button look is set here: the
+  variables it reads, scoped to the trigger so the modal keeps its own.
+*/
+pagefind-modal-trigger {
+  --pf-background: transparent;
+  --pf-border: var(--tan-900);
+  --pf-border-focus: var(--tan-900);
+  --pf-text-muted: var(--color-text-main);
+  --pf-input-height: auto;
+}
+
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-trigger-btn {
+  border-width: var(--border-width-sm);
+  padding: var(--space-3xs) var(--space-xs);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+  transition: none;
+}
+
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#)
+  .pf-trigger-btn:is(:hover, :focus-visible) {
+  --pf-background: var(--tan-900);
+  --pf-text-muted: var(--tan-100);
+}
+
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-trigger-icon {
+  display: none;
+}

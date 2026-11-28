@@ -25,12 +25,16 @@
   {{ $previousEpisode := cond (gt $currentIndex 0) (index $episodes (sub $currentIndex 1)) nil }}
   {{ $nextEpisode := cond (lt $currentIndex (sub (len $episodes) 1)) (index $episodes (add $currentIndex 1)) nil }}
 
-
+  {{/* One data-pagefind-meta per element: browsers drop a repeated attribute.
+    Static "key:value" lists don't split on commas in Pagefind 1.6, so the
+    values come from attributes, which also keeps commas in titles intact.
+  */}}
   <article
     class="episode-page"
     data-pagefind-filter="type:Episode"
-    data-pagefind-meta="title:{{ .Title }}"
-    data-pagefind-meta="episode:Episode {{ .Params.episodeNumber }}">
+    data-pagefind-meta="title[data-search-title], episode[data-search-episode]"
+    data-search-title="{{ .Title }}"
+    data-search-episode="Episode {{ .Params.episodeNumber }}">
     <header class="page-hero page-hero--profile">
       {{ partial "prev-next-nav" (dict
         "ariaLabel" "Episode navigation"
