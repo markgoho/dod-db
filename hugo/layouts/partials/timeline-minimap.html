@@ -9,12 +9,13 @@
   Takes the eras from timeline-eras.html.
 
   "You are here": one hidden list of entry links is the only scrollspy
-  (scroll-target-group); it stays rendered while the popover is closed, so the
-  bar tracks the era with no geometry. timeline-minimap.ts reads its
-  :target-current link and sets one flag, --is-current: 1, on the bar's and
-  pill's era label, the band, the tick, the entry's narrated setting (#170),
+  (scroll-target-group); it stays rendered while the popover is closed.
+  timeline-minimap.ts reads its :target-current link and sets one flag,
+  --is-current: 1, on the band, the tick, the entry's narrated setting (#170),
   its pair's line and the entry on the axis, and --is-partner: 1 on its
-  pair's other tick; timeline-minimap.css says what the flags show. Set on
+  pair's other tick; timeline-minimap.css says what the flags show. The
+  bar's and pill's era label it flags apart, by the era whose heading has
+  gone up past them (#256). Set on
   those few elements, not by generated rules: a :has() per entry on the
   layout was matched again on every style change under it, every frame of a
   scroll, and an attribute on the layout restyled all of it whenever the

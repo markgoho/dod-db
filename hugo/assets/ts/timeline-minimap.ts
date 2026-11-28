@@ -14,7 +14,10 @@
  * opens it for a #source-<id> link to a row inside; elsewhere this does.
  */
 
-/** The elements one current entry (and its era) flags, and its pair's partner tick. */
+/**
+ * The elements one current entry (and its era's band) flags, and its pair's
+ * partner tick. Not the pill's or bar's era label: see trackEra.
+ */
 function flagged(
   root: Element,
   axis: Element | null,
@@ -39,9 +42,7 @@ function flagged(
       ...q(`[data-setting="${CSS.escape(id)}"]`),
       ...(pair ? [pair] : []),
       ...(axis ? [...axis.querySelectorAll(`[id="${CSS.escape(id)}"]`)] : []),
-      ...(era
-        ? q(`[data-now="${CSS.escape(era)}"], [data-era="${CSS.escape(era)}"]`)
-        : []),
+      ...(era ? q(`[data-era="${CSS.escape(era)}"]`) : []),
       ...periods,
     ],
     partner: pair ? q(`[data-tick="${CSS.escape(other)}"]`) : [],
@@ -105,6 +106,58 @@ function trackCurrent(root: Element): void {
   document.addEventListener("scrollend", settle);
 }
 
+/**
+ * The era the pill and the bar name (data-now): the last one whose heading
+ * has gone up past them, as a sticky heading would (#256). Not the current
+ * entry's: Chrome makes an entry current while it is still halfway down the
+ * screen, so the pill named the next era above its own heading. Read each
+ * frame the page scrolls or resizes (an era heading's box each, a handful);
+ * written only when it changes.
+ */
+function trackEra(root: Element): void {
+  const heads = [
+    ...document.querySelectorAll<HTMLElement>(
+      ".timeline-axis > .timeline-era > .timeline-era__label",
+    ),
+  ];
+  const labels = [...root.querySelectorAll<HTMLElement>("[data-now]")];
+  const markers = [
+    ...root.querySelectorAll<HTMLElement>(
+      ".timeline-minimap__era-pill > .timeline-minimap__slot, .timeline-minimap__bar",
+    ),
+  ];
+  if (heads.length === 0) return;
+  let shown: string | undefined;
+  const sync = () => {
+    // The line: the bottom of whichever of the pill and the bar shows.
+    let line = 0;
+    for (const m of markers) {
+      const box = m.getBoundingClientRect();
+      if (box.height > 0 && box.top < innerHeight / 2)
+        line = Math.max(line, box.bottom);
+    }
+    let era = heads[0]?.parentElement?.id;
+    for (const head of heads)
+      if (head.getBoundingClientRect().top < line) era = head.parentElement?.id;
+    if (era === shown) return;
+    shown = era;
+    for (const label of labels)
+      if (label.dataset.now === era)
+        label.style.setProperty("--is-current", "1");
+      else label.style.removeProperty("--is-current");
+  };
+  let frame = 0;
+  const schedule = () => {
+    frame ||= requestAnimationFrame(() => {
+      frame = 0;
+      sync();
+    });
+  };
+  addEventListener("scroll", schedule, { passive: true });
+  addEventListener("resize", schedule, { passive: true });
+  schedule();
+}
+
 const minimap = document.querySelector(".timeline-minimap");
 
 // Any browser with popovers: close the open Contents popover after a jump.
@@ -160,8 +213,10 @@ function measureStrip(root: Element): void {
 
 if (minimap) measureStrip(minimap);
 
-if (minimap && CSS.supports("scroll-target-group", "auto"))
+if (minimap && CSS.supports("scroll-target-group", "auto")) {
   trackCurrent(minimap);
+  trackEra(minimap);
+}
 
 /**
  * The strip's window (#253): the part of the Timeline on screen, following
