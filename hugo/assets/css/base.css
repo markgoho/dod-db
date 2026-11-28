@@ -270,6 +270,23 @@ textarea:not([rows]) {
   background: var(--color-accent);
 }
 
+/* A chip that is only an icon: square, named by aria-label. */
+.chip--icon {
+  aspect-ratio: 1;
+  justify-content: center;
+  padding: var(--space-4xs);
+}
+
+.chip--icon > svg {
+  block-size: var(--space-s);
+  fill: none;
+  inline-size: var(--space-s);
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
 /*
   A <summary> with a drawn plus/minus toggle at the end, for folded blocks whose
   summary is more than one line. Children stack in the first column; set

@@ -192,6 +192,18 @@
   margin-block-start: var(--pack-pull, 0px);
 }
 
+/*
+  A pulled-up row spans both sides, so its empty side lies over the card
+  packed beside it: clicks pass through the row and land only on its cards.
+*/
+.timeline-axis .timeline-entry {
+  pointer-events: none;
+}
+
+.timeline-axis .timeline-entry > * {
+  pointer-events: auto;
+}
+
 .timeline-era__entries {
   padding-block-end: var(--pack-tail, 0px);
 }
@@ -505,10 +517,38 @@
   font-size: var(--step--1);
 }
 
-/* Copy link and Share (scholarship-question__actions): small, under the card's text. */
+/*
+  Copy link and Share (scholarship-question__actions): icons at the card's top
+  right. The kind line makes room; the Copied tip hangs below, so it never
+  shifts the icons.
+*/
+.timeline-entry__card {
+  position: relative;
+}
+
 .timeline-entry__share {
+  display: flex;
+  gap: var(--space-4xs);
+  inset-block-start: var(--space-2xs);
+  inset-inline-end: var(--space-2xs);
+  position: absolute;
+}
+
+.timeline-entry__share .scholarship-question__copy {
+  position: relative;
+}
+
+.timeline-entry__share .scholarship-question__copy-tip {
   font-size: var(--step--2);
-  margin-block-start: var(--space-3xs);
+  inset-block-start: 100%;
+  inset-inline-end: 0;
+  pointer-events: none;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.timeline-entry__card > :is(.timeline-entry__kind, .timeline-entry__title) {
+  padding-inline-end: calc(2 * var(--space-m));
 }
 
 /* Entries not placed on the timeline: plain cards at the reading measure. */

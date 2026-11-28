@@ -158,7 +158,7 @@
       {{ end }}
       {{/* The link to share is the entry's own URL (#219): the Timeline, opened
         at this entry, with the entry's link preview. timeline-entry-links.ts
-        reveals the buttons where they work.
+        reveals the buttons where they work. Icons only, at the card's top right.
       */}}
       <div
         class="scholarship-question__actions timeline-entry__share"
@@ -167,22 +167,36 @@
         <span class="scholarship-question__copy">
           <button
             type="button"
-            class="chip scholarship-question__copy-button"
+            class="chip chip--icon scholarship-question__copy-button"
             command="--copy-link"
             commandfor="{{ $e.File.ContentBaseName }}-links"
             data-url="{{ (partial "clean-url.html" $e).abs }}"
+            aria-label="Copy link"
+            title="Copy link"
             hidden>
-            Copy link
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+              <path
+                d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+            </svg>
           </button>
           <span class="scholarship-question__copy-tip" role="status"></span>
         </span>
         <button
           type="button"
-          class="chip scholarship-question__share-button"
+          class="chip chip--icon scholarship-question__share-button"
           data-url="{{ (partial "clean-url.html" $e).abs }}"
           data-title="{{ printf "%s: %s" $e.Title $scholarly }}"
+          aria-label="Share"
+          title="Share"
           hidden>
-          Share
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="18" cy="5" r="3" />
+            <circle cx="6" cy="12" r="3" />
+            <circle cx="18" cy="19" r="3" />
+            <path d="m8.59 13.51 6.83 3.98M15.41 6.51l-6.82 3.98" />
+          </svg>
         </button>
         <noscript>
           <a href="{{ (partial "clean-url.html" $e).rel }}"
