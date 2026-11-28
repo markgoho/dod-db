@@ -15,6 +15,11 @@
 # Second-pass rulings on the first pass's flags: (1) Not enough: cut (see (a)). The same test passes “Babylonia i” opening (critical/3): “lasted until it was conquered by the Persians in 539 B.C.” dates the outcome, the conquest of the Babylonian kingdom whose capital Babylon was; Waerzeggers's “attack” dates the campaign, not its outcome. (2) Confirmed (“the latter year” is 539 from the previous paragraph's last sentence), but moot: the “Cyrus iii” cites are cut on the window (see (b)). (3) URL resolves to the ch. 21 summary (“Returns from Exile”); page title “A Brief Introduction to the Old Testament 4e Student Resources”; new id fine. (4) Confirmed: the PDF's first-page footer reads “https://doi.org/10.1515/09781501514661-002”, its cover sheet “doi:10.1515/9781501514661-002”; moot after the cut. (5) Confirmed from the pages' Print Detail, Published and Last Updated lines; the print year is what puts them outside the window (see (b)). (6) Narrowed (see (c)).
 # Flags for publish: (1) The display rests on three Reference sources (Silverman 2026; Coogan and Chapman ch. 21, 2019; Iranica “Babylonia i”, 1988 print), two inside the 30-year window; no Scholarly source. Entry rule met. (2) The window cut (b) is a when-in-doubt call: if the Iranica 2013 online update is ruled a revision, critical/5–7 and the note's two sentences could come back as the first pass had them; the second pass adds no citations. In-window leads for the same facts, uncited: Waerzeggers 2021 pp. 79–80 (Nabonidus Chronicle timeline in Babylonian months; Sippar's “surrender without a fight”; “the siege of Babylon”). (3) With the how-it-fell sentence gone, the entry no longer shows the chronicle vs Herodotus/Xenophon split (#99); no in-window source read states both. (4) Waerzeggers and Iranica “Cyrus iii” registry entries are now cited by no page; keep or drop at publish. (5) E187 gives the Persian period's end as 332; the note gives Silverman's 334–330 (Trigger Claim shown apart, #99). (6) E34 says “Persia”, not Cyrus; fine, the Trigger Claim gates the subject (CONTEXT.md).
 # Publish resolutions, 2026-11-26 (lead agent, on the second pass's flags): (1) Entry rule met on three Reference sources for the display; no Scholarly source left; accepted. (2) Window cut kept (cut when in doubt): Iranica's online “last updated” is not shown to revise the text. A Scholarly source inside the window for the fall's day and manner is filed as a follow-on issue. (3) The #99 split on how Babylon fell is no longer in the note, so there is nothing to show; the first-pass header lines on the note's 29 October and surrender/fighting sentences are superseded. (4) Registry entries for Waerzeggers 2021 and Iranica “Cyrus iii”, now cited by no page, dropped from external-sources.yaml (both stay described in uncited and the follow-on issue). (5) E187's 332 kept as said, shown apart from the note's 334–330 (#99). (6) E34 says “Persia”: kept, the Trigger Claim gates the subject. (7) Iranica “Cyrus iv” stays uncited (outside the window). draft dropped; sourcesRead, review and secondPass all 2026-11-26.
+# Re-review 2026-11-27 (#211, lead agent; owner route: #93 delegation, #110): the day and manner of Babylon's fall, cut on 2026-11-26 for the 30-year window, sourced inside it. Note gains three sentences, before the return: “Ugbaru entered Babylon with Cyrus's army on 12 October 539; Cyrus himself arrived on 29 October. The Babylonian chronicle, in Tavernier's translation, says they entered without a fight. In Herodotus, Cyrus drained the bed of the Euphrates after a battle near the city; in Xenophon, he reached Babylon without a fight and diverted the river. Tolini argues that there was at least one violent fight, at the Enlil Gate, and that Babylon did not give in without resistance.” Title, display, from and precision unchanged; Trigger Claims unchanged.
+# #211 sources (both Scholarly, inside the window): Tavernier 2003 (Dutch; chapter in Demarée and Veenhof (eds.), Zij schreven geschiedenis, Ex Oriente Lux 33, Peeters, pp. 361–372; year, pages, editors and publisher from the UCLouvain DIAL item record, handle 2078.5/160806, which also matches the scan's title page “Leiden, 2003” in hand) gives both Julian days and the Nabonidus Chronicle's “zonder slag of stoot”, and summarises Herodotus and Xenophon; Tolini 2005 (French; ARTA 2005.003, Achemenet) holds that there was fighting at the Enlil Gate (#99: sources differ on how the city fell → both shown, each attributed by name, #80 Disagreement). Not the 2026-11-26 first pass's Iranica wording (“bitter fighting” for Herodotus and Xenophon): Tavernier summarises them differently, so the note follows him.
+# #211 days: only Tavernier gives Julian days (12 October: Ugbaru and Cyrus's army enter; 29 October: Cyrus arrives); Waerzeggers 2021 and Tolini 2005 give the Babylonian days only (16 Tashritu, 3 Arahsamna) and are not converted by us. The interval is left out: Waerzeggers says two weeks, Tolini three. Tavernier's Opis/Sippar day (10 October for Sippar) is not used.
+# #211 text: Tavernier's PDF is a scan whose text layer is a corrupt OCR (“binnen_meihet”, merged columns); no OCR tool was available, so the quoted passages were hand-transcribed from the page images (pdftoppm -r 110) into a saved file and the quotes matched against it by script (NFKC, quotes, dashes, footnote markers, line-break hyphens normalised): 5/5, each once. Tolini read as pdftotext of the Internet Archive copy (live achemenet.com did not answer curl or Chrome): 1/1. Non-English quotes are a first for the site: each quote is verbatim in its original language, the agent's English gloss in the item's note. Owner-reversible.
+# #211 flags for the second pass: (1) Translate each Dutch/French quote yourself and check the note's English against it, especially “drained the bed of the Euphrates” (droogleggen), “diverted the river” (leidt de rivier af), “did not give in without resistance” (ne se rendit pas sans résistance). (2) critical/7's quote is Tavernier's translation of the chronicle (Tekst 3), with footnote markers f, g, h omitted; its Julian day is in note f on p. 363. Is “The Babylonian chronicle, in Tavernier's translation, says” the right attribution? (3) Tolini's claim is his own argument from Cyr 10 and the Cyrus Cylinder (ll. 38–39); worded as “Tolini argues”. (4) Tavernier's handle resolves to the DIAL item page, whose file is the scan (bitstream 474b3bc5-88fe-43a1-a56d-cb35bf1b51f3). (5) Tolini's registry URL is a Wayback snapshot (2026-09-27).
 review: 2026-11-26
 delegation:
   { by: owner, date: 2026-11-23, issue: "#110", secondPass: 2026-11-26 }
@@ -43,6 +48,42 @@ citations:
       owner: "",
       note: "Coogan and Chapman ch. 21, same paragraph, the sentence after critical/2. Backs “Many exiles returned, beginning in 538.” See flag 6. Second pass: renumbered from critical/8 after the cuts. Matched once, the paragraph's fifth sentence. Note narrowed to the source's subject: “Many of the Jews in Mesopotamia returned, beginning in 538.” Pass.",
     }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tavernier 2003, p. 361, opening of the introduction. Gloss: “12 October 539 BCE is an extremely important date in the history of Babylonia. It is the day on which the city of Babylon was taken rather easily by the troops of Cyrus II the Great”. Backs the note's 12 October 539 (with critical/6). #211.",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tavernier 2003, p. 368. “hij” is Ugbaru, named two sentences before (“Bij de verovering van Babylon speelde ene Ugbaru een zeer belangrijke rol”). Gloss: “For on 12 October he entered the city with Cyrus's army. Only on 29 October would Cyrus arrive in Babylon.” Backs the note's first sentence. #211.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tavernier 2003, p. 362, his translation of the Nabonidus Chronicle (Tekst 3, ABC 7 iii); footnote markers f, g, h omitted from the quote; note f (p. 363) gives “12 oktober 539”. Gloss: “On the 16th day Ugbaru, governor of the Gutians, and the army of Cyrus entered Babylon, without a fight.” Backs “The Babylonian chronicle, in Tavernier's translation, says they entered without a fight.” See flag 2. #211.",
+    }
+  critical/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tavernier 2003, p. 371. Gloss: “According to Herodotus, Cyrus, after fighting a battle against the Babylonians near the city, had the bed of the Euphrates drained, and so the Persians could get into Babylon and conquer it.” Backs the note's Herodotus clause. #211.",
+    }
+  critical/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tavernier 2003, p. 371, same paragraph. Gloss: “Xenophon's account is somewhat longer but comes to the same thing: Cyrus reaches Babylon without a fight, diverts the river and so can get into the city.” Backs the note's Xenophon clause. #211.",
+    }
+  critical/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tolini 2005, p. 12 (Achemenet pagination), § 4, in the paragraph beginning “D’autre part, cet épisode” (p. 11). Gloss: “So there was at least one violent fight at the Enlil Gate, and Babylon did not give in without resistance.” His argument rests on Cyr 10 (repairs to the Enlil Gate) and the Cyrus Cylinder ll. 38–39; his n. 8 calls the Cylinder's claim that Babylon was taken without battle (l. 17) propaganda. Backs “Tolini argues …”. #211.",
+    }
 triggers:
   187@00:53:37:
     {
@@ -67,13 +108,13 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "Title and display date the conquest of Babylon; all four display sources date it (critical/1–4). Cyrus's entry, the accounts of how the city fell, the return and the Persian period's end are in the note, each cited. Second pass: three display sources after the Waerzeggers cut (critical/1–3), each dating the conquest to 539. Cyrus's entry and the accounts of how the city fell are cut (window; header (b)); the note keeps the return (critical/4) and the Persian period's end (critical/1). Pass.",
+      note: "Title and display date the conquest of Babylon; all four display sources date it (critical/1–4). Cyrus's entry, the accounts of how the city fell, the return and the Persian period's end are in the note, each cited. Second pass: three display sources after the Waerzeggers cut (critical/1–3), each dating the conquest to 539. Cyrus's entry and the accounts of how the city fell are cut (window; header (b)); the note keeps the return (critical/4) and the Persian period's end (critical/1). Pass. Re-review #211: the note's new sentences on the days and manner of the fall rest on critical/5–10 (Tavernier 2003, Tolini 2005); display unchanged.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Conquest year: no split among sources read (539 throughout). How the city fell: the chronicle's surrender vs Herodotus and Xenophon's fighting, both shown, each attributed (#99). Second pass: conquest year confirmed, no source read gives another. How the city fell is no longer shown: both sides rested on Iranica “Cyrus iii” (1993), cut on the window. Pass.",
+      note: "Conquest year: no split among sources read (539 throughout). How the city fell: the chronicle's surrender vs Herodotus and Xenophon's fighting, both shown, each attributed (#99). Second pass: conquest year confirmed, no source read gives another. How the city fell is no longer shown: both sides rested on Iranica “Cyrus iii” (1993), cut on the window. Pass. Re-review #211: how the city fell is shown again, from in-window sources: the chronicle's entry “zonder slag of stoot” (Tavernier's translation, critical/7) and Herodotus's and Xenophon's river accounts (Tavernier's summary, critical/8–9) vs Tolini's argument for at least one violent fight at the Enlil Gate (critical/10), each attributed.",
     }
   tradition-both-sides:
     {
@@ -111,10 +152,23 @@ sources:
       edition: "Encyclopaedia Iranica III/3 (1988), pp. 326–334; online, last updated March 22, 2013",
       note: "Reference: a signed scholarly encyclopedia article. See flag 5. Second pass: volume, fascicle, pages and dates confirmed on the page. Print 1988, outside the 30-year window; kept for the display only, which has Silverman 2026 and Coogan 2019 inside it. Pass.",
     }
+  tavernier-2003-zonder-slag-of-stoot:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Ex Oriente Lux 33 (Peeters, 2003), pp. 361–372",
+      note: "Scholarly: chapter in a scholarly society's series from an academic publisher, by a professional Assyriologist (KU Leuven per the DIAL record). New registry entry. Inside the 30-year window. In Dutch. #211.",
+    }
+  tolini-2005-prise-de-babylone:
+    {
+      agent: pass,
+      owner: "",
+      edition: "ARTA 2005.003 (Achemenet, November 2005)",
+      note: "Scholarly: article in Achemenet's research journal ARTA; author “Chargé de cours à l’université de Paris VIII” on the article. New registry entry. Inside the 30-year window. In French. #211.",
+    }
 leads:
-  - "Britannica “Cyrus II” and “Nabonidus”, British Museum Cyrus Cylinder object page, Met Heilbrunn “Achaemenid Persian Empire”: blocked (403/429); not read."
+  - "Britannica “Nabonidus”, British Museum Cyrus Cylinder object page, Met Heilbrunn “Achaemenid Persian Empire”: blocked (403/429); not read."
   - "NABRE introductions to Daniel, Haggai and Ezra (bible.usccb.org): 403; not read."
-  - "Tolini, ARTA 2005.003 (“octobre 539 av. J.-C.”): cited by Waerzeggers; not read."
   - "Grayson 1975, Assyrian and Babylonian Chronicles, ABC 7 (Nabonidus Chronicle) iii 12–18: cited by Iranica and Waerzeggers; not read."
   - "Vanderhooft 2006 (“room for skepticism”, quoted by Waerzeggers): not read."
   - "Mainz university page “Cyrus Cylinder” (“conquest of Babylon by Cyrus in 539 BC”): unsigned, mirrors the British Museum text; not used as a source."
@@ -133,4 +187,7 @@ uncited:
   - "Waerzeggers 2021, p. 79–80: Nabonidus Chronicle timeline (14 Tashritu, two days later, 3 Arahsamna); “the siege of Babylon”. Babylonian dates only; not needed."
   - "Encyclopedia.com: Encyclopedia of World Biography “Cyrus the Great” (“in 539 Cyrus captured Babylon”; reign 550–530) and World Encyclopedia (“captured Babylon (539 bc)”). Unsigned tertiary; not needed."
   - "Coogan ch. 20 and ch. 22, NABRE Isaiah intro, EJ “History: Kingdoms”: no date for the conquest."
+  - "Britannica “Cyrus the Great” (byline Richard N. Frye, Britannica Editors), read in Chrome 2026-11-27 (#211): “In October 539 BCE, the greatest city of the ancient world fell to the Persians.” Month only; Frye's text (its last datable reference is 1971) is not shown to be inside the 30-year window. Not needed."
+  - "Tolini 2005, § 3, p. 9: Ugbaru entered Babylon from the west “le 16 Tasrîtu”; § 4, p. 10–11: Cyrus's entry “le 3 Arahsamnu”; title “octobre 539”. Babylonian days only; the note's Julian days rest on Tavernier (#211)."
+  - "Tavernier 2003, p. 368: Sippar fell “op 10 oktober … zonder slag of stoot” and Babylon two days later. Not needed (#211)."
   - "JMSS 2024 (Mehraban): student-competition paper, no conquest year in the body. Not used."

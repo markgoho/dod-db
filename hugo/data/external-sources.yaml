@@ -10314,3 +10314,31 @@ ccc-668-677:
   url: "https://www.vatican.va/archive/ENG0015/__P1V.HTM"
   hostAuthored: false
   tradition: "the Catholic Church"
+
+tavernier-2003-zonder-slag-of-stoot:
+  author: "Jan Tavernier"
+  title: "“Zonder slag of stoot”: de verovering van Babylonië door Cyrus II de Grote (539 v.Chr.)"
+  series: "In R. J. Demarée and K. R. Veenhof (eds.), Zij schreven geschiedenis: Historische documenten uit het Oude Nabije Oosten (2500–100 v.Chr.), Mededelingen en Verhandelingen van het Vooraziatisch-Egyptisch Genootschap “Ex Oriente Lux” 33, pp. 361–372"
+  publisher: "Peeters"
+  year: 2003
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Scan of the printed chapter in the UCLouvain DIAL repository, open (in Dutch)"
+  url: "https://hdl.handle.net/2078.5/160806"
+  hostAuthored: false
+  tradition: null
+
+tolini-2005-prise-de-babylone:
+  author: "Gauthier Tolini"
+  title: "Quelques éléments concernant la prise de Babylone par Cyrus (octobre 539 av. J.-C.)"
+  series: "ARTA (Achaemenid Research on Texts and Archaeology) 2005.003"
+  publisher: "Achemenet"
+  year: 2005
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Journal's PDF on achemenet.com, open (in French); the live site did not answer, read in an Internet Archive copy of the same URL"
+  url: "http://web.archive.org/web/20260927110255id_/http://www.achemenet.com/pdf/arta/2005.003-Tolini.pdf"
+  hostAuthored: false
+  tradition: null
