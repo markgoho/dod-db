@@ -7,6 +7,7 @@
 # Second pass changes: shorts reworded for #133 or scope: anthology (“over many centuries”), hebrew-bible (drops “law codes that disagree”), gospels (Matthew and Luke’s birth stories only; drops “the day he died”), paul-and-james (debate is whether James targets Paul or a distortion of him), the-end (drops “signs that must come first”), canon (what Ehrman, Martin and Hayes share), harmonizing (the harmony’s function, not Breed’s motive). Text: one-voice scopes Hayes l10 to the legal materials and adds Hayes l19’s points-of-agreement counterweight (new cite one-voice/7); gospels “Synoptic Gospels”, “Luke’s account”; paul-and-james Martin’s “may think he’s disagreeing with Paul even” and Painter’s “historical James and Paul”; canon Martin “and the New Testament itself”, “later Jewish communities”; harmonizing Hayes’s “modern notion” tied to authority from consistency, “did not rest”. Quotes extended: canon/2, paul-and-james/2, tradition/1. Locators: hebrew-bible/8 section “David”; tradition/3–4 named paragraphs. Per-citation urls added for the two HarperCollins entries. Registry: petersen-gedsh edition drops unverified “2018”; jacobs-derovan edition “2nd ed. (entry credit line)”. Flag: Ainslie (ainslie-lam-2021-manasseh) is an undergraduate; counted through co-author Lam only. Ids unchanged; draft kept.
 # Publish 2026-11-24 (lead agent, on the second pass's flags): paul-and-james short changed from “… is debated” to “the sources read part ways on whether …”, since no source calls that question a debate (Ehrman ch. 18 reads a distortion of Paul, Painter Paul's own challenge, Martin “hard to say”). one-voice/7 (added by the second pass) re-matched against the first pass's separate fetch of Hayes l19. Ainslie (undergraduate) counted through co-author Lam only; the hebrew-bible short does not depend on the source. draft flag dropped.
 # Judges 1 (2026-11-24, owner request): hebrew-bible/10 added (Hayes l12 ch. 5 [00:27:39]) so the infographic's Judges speaker names a chapter. Independent agent check: quote matched once on oyc.yale.edu under “Chapter 5. Structure of Joshua [00:27:39]”; text sentence says no more than the quote (now “lecture on Joshua and Judges”, the lecture's title); bubble “Many Canaanites survived.” supported by hebrew-bible/3 (Meyers) and /10 (Hayes).
+# Matthew 2:1 (2026-11-27, #201): gospels/8 added (HarperCollins Bible Dictionary, entry “Herod”, item 1, per-citation url bibleodyssey.org/dictionary/herod/) so the infographic's “Before Herod died” chip (Matt 2:1) has a cite naming the verse (Bond names none for the birth date). Read in Chrome (Bible Odyssey refuses scripted requests). Independent agent check (fresh opus agent given only the cite, statement sentence and URL; read 2026-11-27): quote verbatim, locator accurate, text sentence says no more than the quote; Matt 2:1 chip adequate (inside 2:1-18, the verse that dates the birth to Herod's reign; the plate's “before he died” rests on Bond, gospels/5).
 review: 2026-11-24
 delegation:
   by: owner
@@ -199,6 +200,12 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; per-citation url added (https://www.bibleodyssey.org/dictionary/john-the-gospel-according-to/), as moses-and-the-exodus does for this dictionary.",
+    }
+  gospels/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Added 2026-11-27 (#201), to give the infographic's Matt 2:1 chip a cite naming the verse. Read in Chrome on bibleodyssey.org; quote verbatim. Independent check: see header.",
     }
   paul-and-james/1:
     {

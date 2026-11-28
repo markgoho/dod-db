@@ -138,7 +138,7 @@ statements:
     group: "Where the texts differ"
     question: "Do the four Gospels tell the same story?"
     short: "Not in every detail. Matthew and Luke, for example, tell different stories of Jesus' birth."
-    text: "The chapter summaries for Ehrman's textbook say the Synoptic Gospels also disagree, as in the different timing of Jesus' death in Mark and John, and that although Matthew and Luke share the basic narrative of Jesus' birth, none of their specific stories are the same. Helen Bond's Bible Odyssey article calls the two birth stories quite different: if historical, Luke's account would contradict Matthew's indication that Jesus was born shortly before Herod I died, and attempts to read Luke's census as an earlier one have not been successful. Dale Martin's Yale lectures list the Matthew and Luke birth narratives among accounts that are very difficult to harmonize. The HarperCollins Bible Dictionary says John presents a rather different picture of Jesus' life and ministry than the other three Gospels."
+    text: "The chapter summaries for Ehrman's textbook say the Synoptic Gospels also disagree, as in the different timing of Jesus' death in Mark and John, and that although Matthew and Luke share the basic narrative of Jesus' birth, none of their specific stories are the same. Helen Bond's Bible Odyssey article calls the two birth stories quite different: if historical, Luke's account would contradict Matthew's indication that Jesus was born shortly before Herod I died, and attempts to read Luke's census as an earlier one have not been successful. The HarperCollins Bible Dictionary, citing Matthew 2:1–18 and Luke 1:5, says Jesus was born while Herod was king. Dale Martin's Yale lectures list the Matthew and Luke birth narratives among accounts that are very difficult to harmonize. The HarperCollins Bible Dictionary says John presents a rather different picture of Jesus' life and ministry than the other three Gospels."
     cites:
       - source: ehrman-brief-5e-ch5-summary
         locator: "section “The Synoptic Problem”"
@@ -169,6 +169,11 @@ statements:
         quote: "The Gospel of John presents a rather different picture of Jesus’s life and ministry than do the other three Gospels."
         url: "https://www.bibleodyssey.org/dictionary/john-the-gospel-according-to/"
         read: 2026-11-24
+      - source: harpercollins-2009-dictionary
+        locator: "entry “Herod”, item 1 (Herod I)"
+        quote: "According to (Matt 2:1-18, Luke 1:5), the birth of Jesus occurred while Herod was king."
+        url: "https://www.bibleodyssey.org/dictionary/herod/"
+        read: 2026-11-27
   - id: paul-and-james
     group: "Where the texts differ"
     question: "Do James and Paul disagree about faith and works?"
