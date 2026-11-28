@@ -9504,7 +9504,7 @@ edenburg-2019-book-of-covenant:
   edition: null
   class: Scholarly
   kind: article
-  access: "Publisher abstract, open (chapter paywalled; abstract only cited)"
+  access: "Publisher abstract, open (chapter paywalled); chapter pages read in a Google Books preview of the Handbook (per-citation url)"
   url: "https://academic.oup.com/edited-volume/34224/chapter-abstract/290207088"
   hostAuthored: false
   tradition: null
@@ -9678,6 +9678,216 @@ chabad-ten-commandments:
   url: "https://www.chabad.org/library/article_cdo/aid/2896/jewish/What-Are-the-Ten-Commandments.htm"
   hostAuthored: false
   tradition: "Chabad-Lubavitch"
+
+westbrook-2008-laws-biblical-israel:
+  author: "Raymond Westbrook"
+  title: "The Laws of Biblical Israel"
+  series: "In Frederick E. Greenspahn (ed.), The Hebrew Bible: New Insights and Scholarship, pp. 99–119"
+  publisher: "New York University Press"
+  year: 2008
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Google Books preview, open in a browser (pages shown vary; refuses scripted requests)"
+  url: "https://books.google.com/books?id=inRKaf_To5sC&pg=PA106"
+  hostAuthored: false
+  tradition: null
+
+morrow-2013-bior-legal-interactions:
+  author: "William S. Morrow"
+  title: "Legal Interactions: The Mišpāṭîm and the Laws of Hammurabi"
+  series: "Bibliotheca Orientalis 70.3–4, cols. 309–331"
+  publisher: "Peeters"
+  year: 2013
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher open-access PDF, open (download link on the issue's table of contents)"
+  url: "https://poj.peeters-leuven.be/content.php?url=issue&journal_code=BIOR&issue=3&vol=70"
+  hostAuthored: false
+  tradition: null
+
+markl-2019-bn-redactional-theologization:
+  author: "Dominik Markl"
+  title: "The Redactional Theologization of the Book of the Covenant: A Study in Criteriology"
+  series: "Biblische Notizen NF 181, pp. 47–60"
+  publisher: "Herder"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University of Pretoria repository scan, open"
+  url: "https://repository.up.ac.za/handle/2263/75142"
+  hostAuthored: false
+  tradition: null
+
+wright-2014-origin-covenant-code:
+  author: "David P. Wright"
+  title: "The Origin, Development, and Context of the Covenant Code (Exodus 20:23–23:19)"
+  series: "In Thomas B. Dozeman, Craig A. Evans and Joel N. Lohr (eds.), The Book of Exodus: Composition, Reception, and Interpretation, VTSup 164, pp. 220–244"
+  publisher: "Brill"
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Google Books preview, open in a browser (pages shown vary; refuses scripted requests)"
+  url: "https://books.google.com/books?id=TmGeBQAAQBAJ&pg=PA224"
+  hostAuthored: false
+  tradition: null
+
+stackert-2007-rewriting-torah:
+  author: "Jeffrey Stackert"
+  title: "Rewriting the Torah: Literary Revision in Deuteronomy and the Holiness Legislation"
+  series: "Forschungen zum Alten Testament 52"
+  publisher: "Mohr Siebeck"
+  year: 2007
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Google Books preview, open in a browser (pages shown vary)"
+  url: "https://books.google.com/books?id=XAsgfNCjWWwC&pg=PA6"
+  hostAuthored: false
+  tradition: null
+
+levinson-1997-deuteronomy-hermeneutics:
+  author: "Bernard M. Levinson"
+  title: "Deuteronomy and the Hermeneutics of Legal Innovation"
+  series: null
+  publisher: "Oxford University Press"
+  year: 1997
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Google Books preview, open in a browser (pages shown vary)"
+  url: "https://books.google.com/books?id=1ajmCwAAQBAJ&pg=PA46"
+  hostAuthored: false
+  tradition: null
+
+joosten-2019-covenant:
+  author: "Jan Joosten"
+  title: "Covenant"
+  series: "In Pamela Barmash (ed.), The Oxford Handbook of Biblical Law, pp. 9–18"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Google Books preview of the Handbook, open (pages shown vary)"
+  url: "https://books.google.com/books?id=emOtDwAAQBAJ&pg=PA14"
+  hostAuthored: false
+  tradition: null
+
+davies-2019-litigation:
+  author: "Eryl Wynn Davies"
+  title: "Litigation: Trial Procedure, Jurisdiction, Evidence, Testimony"
+  series: "In Pamela Barmash (ed.), The Oxford Handbook of Biblical Law"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Google Books preview of the Handbook, open (pages shown vary)"
+  url: "https://books.google.com/books?id=emOtDwAAQBAJ&pg=PA45"
+  hostAuthored: false
+  tradition: null
+
+lefebvre-2006-collections-codes-torah:
+  author: "Michael LeFebvre"
+  title: "Collections, Codes, and Torah: The Re-characterization of Israel's Written Law"
+  series: "Library of Hebrew Bible/Old Testament Studies 451"
+  publisher: "T&T Clark"
+  year: 2006
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Google Books preview, open (pages shown vary)"
+  url: "https://books.google.com/books?id=XTxje4yKSAAC&pg=PA31"
+  hostAuthored: false
+  tradition: null
+
+bhayro-2004-jjs-review-van-seters:
+  author: "Siam Bhayro"
+  title: "Review of John Van Seters, A Law Book for the Diaspora"
+  series: "Journal of Jewish Studies 55, pp. 363–365"
+  publisher: null
+  year: 2004
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Journal's open archive PDF; read in an Internet Archive copy, as the live URL returns an error"
+  url: "http://web.archive.org/web/20190428220855/https://www.jjs-online.net/archives/fulltext/2561"
+  hostAuthored: false
+  tradition: null
+
+imes-2018-bearing-yhwh-name:
+  author: "Carmen Joy Imes"
+  title: "Bearing YHWH's Name at Sinai: A Reexamination of the Name Command of the Decalogue"
+  series: "Bulletin for Biblical Research Supplements 19"
+  publisher: "Eisenbrauns"
+  year: 2018
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Google Books preview, open (pages shown vary)"
+  url: "https://books.google.com/books?id=cMXKEAAAQBAJ&pg=PA1"
+  hostAuthored: false
+  tradition: null
+
+gesundheit-2012-three-times-a-year:
+  author: "Shimon Gesundheit"
+  title: "Three Times a Year: Studies on Festival Legislation in the Pentateuch"
+  series: "Forschungen zum Alten Testament 82"
+  publisher: "Mohr Siebeck"
+  year: 2012
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher's reading sample (pp. 1–15), open"
+  url: "https://cdn.mohrsiebeck.com/12,d8a7d430004e9f9ee59f497e74f872.pdf"
+  hostAuthored: false
+  tradition: null
+
+baker-2005-themelios-ten-commandments:
+  author: "David L. Baker"
+  title: "Ten Commandments, Two Tablets: The Shape of the Decalogue"
+  series: "Themelios 30.3"
+  publisher: null
+  year: 2005
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Journal website, open; read in an Internet Archive copy, as the live page loops on redirects"
+  url: "https://web.archive.org/web/20260908122720/https://www.thegospelcoalition.org/themelios/article/ten-commandments-two-tablets-the-shape-of-the-decalogue/"
+  hostAuthored: false
+  tradition: null
+
+baker-2005-tynbul-finger-of-god:
+  author: "David L. Baker"
+  title: "The Finger of God and the Forming of a Nation: The Origin and Purpose of the Decalogue"
+  series: "Tyndale Bulletin 56.1"
+  publisher: null
+  year: 2005
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal, open"
+  url: "https://www.tyndalebulletin.org/article/29191-the-finger-of-god-and-the-forming-of-a-nation-the-origin-and-purpose-of-the-decalogue"
+  hostAuthored: false
+  tradition: null
+
+bcp-1662-catechism:
+  author: null
+  title: "The Book of Common Prayer (1662), A Catechism"
+  series: null
+  publisher: "The Church of England"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Church website; read in an Internet Archive snapshot, as the live URL now redirects"
+  url: "https://web.archive.org/web/20260822051150/https://www.churchofengland.org/prayer-and-worship/worship-texts-and-resources/book-common-prayer/catechism"
+  hostAuthored: false
+  tradition: "Church of England"
 
 stuckenbruck-boccaccini-2016-intro:
   author: "Loren T. Stuckenbruck and Gabriele Boccaccini"

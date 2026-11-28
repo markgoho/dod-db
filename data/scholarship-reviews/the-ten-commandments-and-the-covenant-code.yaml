@@ -12,6 +12,8 @@
 # Second pass changes. Cut to uncited: oldest/6 (Hayes l11 “equally early”: compares P with D, and her next sentence has P revising the Covenant Code, so it is no counterweight in oldest); oldest/7–8 renumbered /6–/7; its text sentence dropped. Shorts: ten-words (“commonly been read” had no quote for 34:28 itself; “some think the phrase was added later” Sherman alone; now “It may refer to the Decalogue of Exodus 20, but many scholars argue …”); composition (“There is no agreed date … or how old it is”, stated by no source, to “Over a long period, scholars say … but they do not agree on what it said”); ritual-decalogue (“Many have held” to “Many hold”; “many scholars now read … late compilation”, Sherman's report alone, to “others question that dating, and some now read …”: Greenberg and Sherman); date (“range from the early monarchy” contradicted EJ's “from the period of Moses”; now “from the time of Moses to after the exile”); parallels (“Among the best known” unsourced, to “They include”); talion (“It is debated” NABRE alone, now “Whether it was ever applied literally is debatable, the NABRE notes say”; “principle of proportionate penalty” Collins alone, out of the short); courts (“Some think the Covenant Code did serve as law” Sweeney alone, out of the short; the NABRE “judicial precedents” line glosses a word, not use). Text: composition Edenburg clause made its own sentence, “Edenburg argues that the Decalogue was a later addition to the narratives …”, out from under “On the age of the Decalogue” (she dates its insertion, not its traditions); courts NABRE “ordinances” gloss given its own sentence, off Sweeney's contrast side; oldest Van Seters sentence attributed to his book's abstract (third-person publisher copy) and narrowed to “laws that resemble Deuteronomy and the Holiness Code are later than both”. Quote: tradition/9 re-transcribed from the live Chabad page. Locators: name/2 (item “1. These should be called the Ten Commandments.”), name/6 (section “Statements/Words (Logoi)”), name/7 (section “Coining the Term ‘Decalogue’”), ten-words/2, /3, /5, /6 and /7, differences/4, composition/2, ritual-decalogue/4 and /5, addressed/5, parallels/2, miscarriage/3–6 and talion/2–4 (each now the nearest section heading before the quote, found by script), parallels/5 (paragraph beginning “3. An entire cluster of laws”), numbering/6 (item 3), parallels/3 (p. 8), slaves/2 (Hayes l11 ch. 3 [00:22:16]). Triggers file and registry not edited.
 # Second pass flags: (1) Brown's Bible Odyssey “Did You Know?” box (versions/2, numbering/2) sits under the byline and may be editorial; the Mary Magdalene pass declined such a box (Swenson), but trunk already cites this Brown box (the-emergence-of-monotheism-and-the-divine-council), so kept; numbering/2 is the only quote for the Jewish first word at 20:2 and Brown's Anglican placement (text only). (2) Registry access lines for nabre-exodus-21-notes, nabre-exodus-34-notes and chabad-ten-commandments still say “read in an Internet Archive snapshot”; this pass read them live in Chrome; the Chabad live text differs from the snapshot. (3) Triggers: 66@00:34:04 (“almost certainly … an oath”) is stronger than the name-in-vain short; 93@00:20:23 is unhedged against the courts short (same direction); 31@00:06:51's turn continues into an unhedged “basically an adaptation” of Hammurabi, outside the span; 23@00:48:07, 93@00:04:24 and 93@00:27:05 do not name their subject in the span. None contradicts a statement; all kept. (4) ritual-decalogue: inside the 30-year window each side of “Scholars disagree” rests on one author: Brettler 2015 (“many scholars believe”) for the old dating, Sherman 2024 (“many contemporary scholars now reject”) for the late compilation; Greenberg's questioning is 1st-ed. EJ text. Gesundheit and Carr are leads. The lead may prefer to drop “others question … some now read …” from the short and keep it in the text only. (5) First-pass flags (1)–(11) re-checked: TheTorah.com articles' bodies are in the embedded article data, not an Archive copy, for all 21; Paul/Sperling byline “(2nd ed.)”; Greenberg “© 2008 The Gale Group”; Samet's PDF is lecture text and gives the Book of the Covenant as Exodus 20:22–24:3 (not cited); Sweeney's extent stands. (6) numbering and tradition ask near-identical questions (“Do all traditions number …” / “How do religious traditions number …”); ids unchanged, flagged for the lead. Publish rule recomputed: 20 statements; core oldest on Halberstam, Samet, Edenburg 2019 and Paul/Sperling (4 independent authors; Van Seters not counted); none Host-authored. Ids, slug, draft and review unchanged.
 # Publish 2026-11-27 (lead agent, on the second pass's flags): (1) Brown's “Did You Know?” box kept for versions/2 and numbering/2: trunk already cites the same box on the-emergence-of-monotheism-and-the-divine-council, and each short also rests on another source (HarperCollins; NABRE, Hayes). (2) Registry access lines for nabre-exodus-34-notes and chabad-ten-commandments changed to “opens in a browser, refuses scripted requests”, as the second pass read them live; tradition/9 keeps the live wording the second pass re-copied. nabre-exodus-21-notes (an existing entry) left as it stands. (3) ritual-decalogue short narrowed further to “Some regard it as … others read …”, dropping “Many”, “now” and “question that dating”: within the 30-year window each side is reported by one author (Brettler 2015, Sherman 2024), so the short states only that the two views exist; their quantifiers stay attributed in the text. (4) Trigger Claims kept as the second pass left them: each gates the subject, and none contradicts a statement; 66@00:34:04's “almost certainly” and 93@00:20:23's unhedged wording are stronger than their shorts but point the same way. (5) numbering and tradition kept apart: numbering reports scholars' description; tradition reports the traditions in their own words (Tradition sources only). Publish rule recomputed: 20 statements, 149 citations; core oldest on Halberstam 2017 (Scholarly), Samet 2017 (Reference), Edenburg 2019 (Scholarly, abstract) and Paul and Sperling (EJ, Reference): 4 independent authors, none Host-authored. draft flag dropped.
+# #249 first pass 2026-11-28 (agent, partial re-review per #93: only the new citations get the full procedure; review and sourcesRead stay 2026-11-27; no short, question or id changed, so no question card or infographic plate changes): the issue's leads read in the source at a qualifying public copy or closed. Three research agents fetched into separate scratch folders by script (no browser); the lead read the browser-only pages in Claude in Chrome (Westbrook 2008 pp. 106–107, Wright 2014 p. 224, Marlowe 2022) and eye-checked every Google Books page image against the quote. Added 33 citations from 15 new sources and two reused ones (Wright 2009 p. 323 and Edenburg 2019 p. 168, each with a per-citation Google Books url): oldest/8–12 (Westbrook “most scholars still agree that it predated Deuteronomy”, Wright 2009 on the apodictic laws, Bhayro's “standard hypothesis” CC–D–HC–P, Edenburg's own later cultic frame), date/10–11 (Westbrook: “many would now place it in the monarchy”, no external evidence dates it), hammurabi/12–18 (Westbrook's critique in his own words, Morrow 2013 accepting borrowing for Exod 21:18–32 only, Wright 2014 n. 6 on Levinson and Carr, Markl's “sparked controversy”), deuteronomy/10–15 (Westbrook's “Most scholars consider”, Stackert, Joosten, Levinson 1997 p. 46, Edenburg p. 168), courts/8–10 (LeFebvre's “growing consensus”, Davies's “Many scholars”), ritual-decalogue/6–7 (Gesundheit: the older view “widely claimed”, “reigning consensus”, and his late reading), name-in-vain/6–8 (Imes: meaning uncertain, 23 proposals, the minority “bearing the name” reading), differences/9 (Baker, TynBul), numbering/7–8 (Baker's table puts Anglicans with the Orthodox and Reformed), tradition/11–12 (the Church of England's 1662 catechism). No new TheTorah.com citation: #86 vs this page's practice is filed as #259. Not added: a statement on whether Exodus 20 or Deuteronomy 5 is older (see uncited). Closed: Wells 2006, Wright's Maarav reply, Wright's JAOS review, Everyday Law, Blum 2011, Carr 2011 p. 264, the JSB numbering chart (see leads).
+# #249 flags for the second pass: (1) Themelios and Tyndale Bulletin (Baker 2005) classed Scholarly by venue, both evangelical-run peer-reviewed journals; numbering/7–8 and differences/9 rest on them alone; cut if in doubt. (2) Google Books pages are page images only: Westbrook pp. 106–107 and Wright 2014 p. 224 were read in a signed-in browser; re-open them in a browser. (3) Markl's repository copy is a scan; read the page images. (4) Edenburg's abstract (oldest/4, date/4) reports the field while her body (oldest/12, deuteronomy/14–15) dates the cultic frame after Deuteronomy's core; check the text keeps both apart. (5) LeFebvre's “consensus” is now on the page, attributed; the courts short still says “many scholars say”. (6) Wright 2009 p. 323's scope is “most of CC's apodictic laws”; check the oldest text keeps it.
 review: 2026-11-27
 delegation:
   by: owner
@@ -217,6 +219,12 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
     }
+  differences/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Baker, Tyndale Bulletin 56.1 (2005), read in full in the journal's open PDF (tyndalebulletin.org; DOI 10.53751/001c.29191); matched verbatim on the saved pdftotext output at printed p. 13. His own view, attributed in the text; the only reading of which version is older in the author's own words that this pass found in a qualifying source. Venue flag: Tyndale Bulletin is a peer-reviewed journal of Tyndale House, an evangelical research institute, and the article argues from the text's claim of divine origin; classed Scholarly by venue (#80). Short unchanged.",
+    }
   composition/1:
     {
       agent: pass,
@@ -289,6 +297,18 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; the next sentences argue that nothing peculiar to literary prophecy appears in the ethical decalogue, so EJ questions the basis of the dating, as the text says; with Sherman the second author behind the short's “others question that dating”. Locator changed to the nearest section heading before the quote (found by script).",
     }
+  ritual-decalogue/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Gesundheit, FAT 82 (Mohr Siebeck 2012), read in the publisher's reading sample (pp. 1–15, cdn.mohrsiebeck.com); matched verbatim on the saved pdftotext output at printed p. 3. The view he reports as “widely claimed in scholarship” (Exodus 34's festival calendar as Israel's earliest legal collection), and his own contrary reading, both attributed in the text. Short unchanged: the text now has two in-window authors for the older view (Brettler 2015, Gesundheit 2012) and two for the late one (Sherman 2024, Gesundheit 2012).",
+    }
+  ritual-decalogue/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same sample, printed p. 13 (the sentence after the page break that opens p. 13); matched verbatim. “this reigning consensus” is what p. 12 states: even scholars who depart from the classic source assignment hold that the earliest kernel of Israel's festival calendar lies in Exod 34:18–26 (n. 3: most adherents of the ritual-decalogue theory). Attributed in the text as his characterization.",
+    }
   numbering/1:
     {
       agent: pass,
@@ -325,6 +345,18 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script; locator made findable as item “3. We know how to get to the number ten.”; supports the statement.",
     }
+  numbering/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Baker, Themelios 30.3 (2005), read in an Internet Archive copy (web.archive.org/web/20260908122720/… the live TGC page loops on redirects); the table's column heading matched verbatim in the saved text (cell text “Philo 2 , Josephus, Eastern Orthodox, Reformed, Anglican”, the footnote marker after Philo left out); that column numbers “You shall have no other gods” 1 and “You shall not make for yourself an idol” 2. Text only; the short still leaves Anglicans out, as Brown places them with Catholics and Lutherans. Venue flag: Themelios is peer-reviewed but published by The Gospel Coalition, an evangelical ministry; classed Scholarly by venue (#80), for the second pass to judge.",
+    }
+  numbering/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same copy, the paragraph introducing the table; matched verbatim. Supports “three numbering systems”, as Brown and the NABRE.",
+    }
   name-in-vain/1:
     {
       agent: pass,
@@ -354,6 +386,24 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched; matched verbatim by script (whitespace, HTML entities, curly quotes, dashes, soft hyphens, inline tags and footnote markers normalised); locator checked; surrounding passage read; supports the statement as worded.",
+    }
+  name-in-vain/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Imes, BBRSup 19 (Eisenbrauns 2018), Google Books preview pp. 1–3 (books.google.com/books?id=cMXKEAAAQBAJ&pg=PA1); page images saved and read by eye, transcription matched. A field statement (“Many agree … uncertain”), attributed in the text; consistent with the short's “may cover more than that”.",
+    }
+  name-in-vain/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same preview, p. 1 n. 2; read on the page image. Attributed in the text.",
+    }
+  name-in-vain/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same preview, p. 3 (url pg=PA3); read on the page image (the transcription file escapes the quotation marks, so the script match misses on punctuation only). Her own reading, which she calls the minority view; attributed in the text, not in the short. Resolves the issue lead (publisher blurb only).",
     }
   addressed/1:
     {
@@ -469,6 +519,36 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome; matched by eye; the text's “laws that resemble Deuteronomy and the Holiness Code are later than both” now follows the abstract instead of dating the whole code “after” D and H.",
     }
+  oldest/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Westbrook 2008, Google Books preview of the Greenspahn volume, p. 106, read in Claude in Chrome (books.google.com/books?id=inRKaf_To5sC&pg=PA106; pp. 106–107 viewable this session, signed-in browser). Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. A field statement inside the window (“most scholars still agree that it predated Deuteronomy”); Westbrook is a critic of the dependence thesis, so his report is independent of Wright. Backs the core's “widely considered the earliest” as to Deuteronomy; the short is unchanged.",
+    }
+  oldest/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Wright 2009, Google Books preview p. 323 (per-citation url; the registry's pageplace.de preview stops at the introduction). Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. Scope kept: “most of CC's apodictic laws”, as the text says. Same author as the hammurabi and date Wright citations; not counted as a new independent author.",
+    }
+  oldest/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Bhayro, review of Van Seters, JJS 55 (2004), read in the Internet Archive copy of the journal's archive PDF (web.archive.org/web/20190428220855/https://www.jjs-online.net/archives/fulltext/2561; the live URL returns HTTP 500); matched verbatim at printed p. 363; signed “Yale University, Siam Bhayro” at the end of the review (p. 365). The “standard hypothesis” he summarizes; attributed in the text.",
+    }
+  oldest/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same copy and page; matched verbatim (fragment; the sentence continues “composed not for the Israelites in the infancy of their nationhood”). Supports “what has thus far been considered the earliest legal corpus”; not quoted on the page beyond the cite.",
+    }
+  oldest/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Edenburg 2019, Google Books preview of the Handbook, p. 168 (books.google.com/books?id=emOtDwAAQBAJ&pg=PA168). Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. Her own view, attributed in the text: the abstract (oldest/4) reports the field, the body dates the cultic frame after Deuteronomy's core centralization law. Her p. 170 snippet (“not necessarily limited to the period of the monarchy”) was not viewable as a page: lead.",
+    }
   date/1:
     {
       agent: pass,
@@ -522,6 +602,18 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; locator checked; surrounding passage read; supports the statement as worded.",
+    }
+  date/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Westbrook 2008, p. 106, as oldest/8. Backs the short's “many place its origins in the time of the monarchy” beside Edenburg's abstract.",
+    }
+  date/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same page. Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. His own view that the code cannot be dated, attributed in the text.",
     }
   hammurabi/1:
     {
@@ -588,6 +680,48 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; locator checked; surrounding passage read; supports the statement as worded.",
+    }
+  hammurabi/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Westbrook 2008, p. 107 (per-citation url), read in Claude in Chrome on the same visit as oldest/8. Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. The critic's own words, which the issue lead asked for (Wells 2006 stays closed). “Mishpatim” is the casuistic core; the text says “case laws”.",
+    }
+  hammurabi/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Morrow, Bibliotheca Orientalis 70 (2013), read in full in Peeters' open-access PDF (reached from the issue's table of contents, “download (open access)”); matched on the saved pdftotext layout output after joining the line-end hyphen (“depend-ency”); column 311 (BiOr numbers columns). Field statement, attributed in the text.",
+    }
+  hammurabi/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same PDF, abstract (col. 309); matched verbatim. Scope kept: he rejects Wright's apodictic and narrative-frame parallels; the text says so.",
+    }
+  hammurabi/15:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same PDF, col. 323 (§2.3 synthesis); matched in the layout text with “21:18-” and “32” across a line break (the raw text joins them as “21:1832”). Accepts literary borrowing for Exod 21:18–32 only; text says “for Exodus 21:18–32”. Resolves the issue lead (Morrow as reported by Wright 2019).",
+    }
+  hammurabi/16:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Wright 2014 (VTSup 164), Google Books preview p. 224, read in Claude in Chrome (books.google.com/books?id=TmGeBQAAQBAJ&pg=PA224). Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. n. 6 names Levinson (2008) and Carr (2011) as following “a source hypothesis for the casuistic laws”; the text keeps that scope. Wright reporting his own followers; same author as the other Wright citations. Resolves the issue lead (p. 224 n. 6).",
+    }
+  hammurabi/17:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Markl, Biblische Notizen 181 (2019), University of Pretoria repository scan (no text layer); page images p-1/p-2 read by eye, transcription matched; p. 49 n. 11, which cites Wells, Maarav 13, 85–118 among the debate. Field statement, attributed.",
+    }
+  hammurabi/18:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same scan, p. 49, first sentence of section 2; read on the page image.",
     }
   parallels/1:
     {
@@ -751,6 +885,24 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye; a gloss on “ordinances”, not a claim about use; the text now gives it its own sentence (“The NABRE notes gloss its ‘ordinances’ as …”), off Sweeney's contrast side.",
     }
+  courts/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: LeFebvre, LHBOTS 451 (2006), Google Books preview p. 31 (books.google.com/books?id=XTxje4yKSAAC&pg=PA31). Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. Field statement inside the window, attributed in the text with its word “consensus”. The issue lead's sentence (“Scholars of biblical law widely hold …”) is New Books Network copy, not in the book: recorded as uncited.",
+    }
+  courts/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same page. Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. Attributed in the text.",
+    }
+  courts/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Davies, “Litigation”, Oxford Handbook of Biblical Law (2019), Google Books preview p. 45 (books.google.com/books?id=emOtDwAAQBAJ&pg=PA45). Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. Field statement (“Many scholars are of the view”), attributed in the text; backs the short's “many scholars say” beside Van De Mieroop and Hayes.",
+    }
   deuteronomy/1:
     {
       agent: pass,
@@ -804,6 +956,42 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the rendered page text; locator checked; surrounding passage read; supports the statement as worded.",
+    }
+  deuteronomy/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Westbrook 2008, p. 106, as oldest/8. Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. Field statement (“Most scholars consider”), attributed in the text. The short keeps “Many scholars think so”: “most” would rest on Westbrook and Farber (TheTorah.com, class unsettled under #86).",
+    }
+  deuteronomy/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Stackert, FAT 52 (2007), Google Books preview p. 6 (books.google.com/books?id=XAsgfNCjWWwC&pg=PA6). Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. His report of Lohfink, Levinson and Otto, attributed; his n. 14 names Van Seters as dissenting, already in the text.",
+    }
+  deuteronomy/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Joosten, “Covenant”, Oxford Handbook of Biblical Law (2019), Google Books preview p. 14. Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. Fragment ending before “(for Deuteronomy, see Levinson 1998 …)”. Attributed.",
+    }
+  deuteronomy/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Levinson 1997, Google Books preview p. 46 (books.google.com/books?id=1ajmCwAAQBAJ&pg=PA46). Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. Resolves the issue lead (the revision thesis in full) for the altar law; his p. 7 consensus sentence was a snippet only and is not used.",
+    }
+  deuteronomy/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Edenburg 2019, p. 168, as oldest/12. Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. Attributed in the text.",
+    }
+  deuteronomy/15:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same page, as oldest/12. Her dating of the cultic frame, attributed; it qualifies, and does not reverse, the revision the short reports (MThZ's reviewer of the Handbook reads her as reversing the classic order for these laws; not cited).",
     }
   slaves/1:
     {
@@ -913,6 +1101,18 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-read live in Claude in Chrome (curl 403); matched by eye in the section “The Symmetry of the Ten Commandments”; supports the text.",
     }
+  tradition/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Church of England, Book of Common Prayer (1662), A Catechism, read in the Internet Archive snapshot web.archive.org/web/20260822051150/https://www.churchofengland.org/…/catechism (the live URL now redirects); matched verbatim. Tradition source in its own words; named in the text as the Church of England's Book of Common Prayer. Text only: the short's list of traditions is unchanged.",
+    }
+  tradition/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: same snapshot; matched verbatim (straight apostrophes as on the page).",
+    }
 triggers:
   21@00:35:38:
     {
@@ -1021,25 +1221,25 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: 20 statements, 150 citations. Core oldest cites Halberstam 2017 (Scholarly), Samet 2017 (Reference), Edenburg 2019 (Scholarly, abstract), Paul and Sperling (EJ, Reference), Hayes l11 (Reference, nuance), Van Seters 2003 (Scholarly, abstract, dissent): 6 author strings, 4 counted by hand for the claim (Hayes and Van Seters not counted), none Host-authored. Second pass 2026-11-27: recomputed after the cuts: 20 statements, 149 citations (oldest/6, Hayes l11 “equally early”, cut to uncited). Core oldest cites Halberstam 2017 (Scholarly), Samet 2017 (Reference), Edenburg 2019 (Scholarly, abstract), Paul and Sperling (EJ, Reference; sentence possibly 1st-ed. text) and Van Seters 2003 (Scholarly, abstract, dissent): 4 independent authors counted for the claim (Van Seters not counted), at least one Scholarly and inside the 30-year window, none Host-authored. Holds.",
+      note: "First pass 2026-11-27: 20 statements, 150 citations. Core oldest cites Halberstam 2017 (Scholarly), Samet 2017 (Reference), Edenburg 2019 (Scholarly, abstract), Paul and Sperling (EJ, Reference), Hayes l11 (Reference, nuance), Van Seters 2003 (Scholarly, abstract, dissent): 6 author strings, 4 counted by hand for the claim (Hayes and Van Seters not counted), none Host-authored. Second pass 2026-11-27: recomputed after the cuts: 20 statements, 149 citations (oldest/6, Hayes l11 “equally early”, cut to uncited). Core oldest cites Halberstam 2017 (Scholarly), Samet 2017 (Reference), Edenburg 2019 (Scholarly, abstract), Paul and Sperling (EJ, Reference; sentence possibly 1st-ed. text) and Van Seters 2003 (Scholarly, abstract, dissent): 4 independent authors counted for the claim (Van Seters not counted), at least one Scholarly and inside the 30-year window, none Host-authored. Holds. #249 first pass 2026-11-28: 20 statements, 182 citations (149 + 33). Core oldest now also cites Westbrook 2008 (Scholarly, “most scholars still agree that it predated Deuteronomy”), Wright 2009 p. 323 (Scholarly; “most scholars believe that most of CC’s apodictic laws predate Deuteronomy”), Bhayro 2004 (Scholarly, the “standard hypothesis”) and Edenburg p. 168 (her own later cultic frame, a qualification). Edenburg’s abstract reports the field, her body qualifies it. Independent authors for the claim: Halberstam, Samet, Edenburg (abstract), Paul and Sperling, Westbrook, Bhayro, Wright (7); none Host-authored. Holds.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: “consensus” is not used on the page. “Most scholars” appears only as a source's own words, attributed (Brettler, Yoreh, Wright on his opponents, Farber), never in a short. “Many scholars” in shorts (ten-words, ritual-decalogue, hammurabi, courts, deuteronomy) is quoted from 2+ sources in each statement. Second pass 2026-11-27: “consensus” still not used; “most scholars” only in sources’ own words, attributed. Shorts narrowed for #133: ten-words (“commonly been read” had no quote for 34:28; “added later” Sherman alone, text only); composition (“no agreed date … how old it is” stated by no source; now “Over a long period”: NABRE, Brettler, White Crawford); ritual-decalogue (“have held” to “hold”, Brettler present tense; “many scholars now … late compilation” Sherman alone, now “others question that dating” on Greenberg and Sherman, “some now read”); date (range corrected to EJ’s “from the period of Moses to post-exilic times”); parallels (“Among the best known” unsourced, now “They include”); talion (“debated” NABRE alone, now attributed in the short; “proportionate” Collins alone, text only); courts (“Some think the Covenant Code did serve as law” Sweeney alone, text only). Independence counted with Brettler 2015 and Brettler-Wyrick, Edenburg 2019 and 2023, Wright 2009/2011/2019, Levinson 2021 and 2026, both Farbers, Hayes l10 and l11, Coogan ch. 7 and 8, and the three NABRE chapters each as one voice.",
+      note: "First pass 2026-11-27: “consensus” is not used on the page. “Most scholars” appears only as a source's own words, attributed (Brettler, Yoreh, Wright on his opponents, Farber), never in a short. “Many scholars” in shorts (ten-words, ritual-decalogue, hammurabi, courts, deuteronomy) is quoted from 2+ sources in each statement. Second pass 2026-11-27: “consensus” still not used; “most scholars” only in sources’ own words, attributed. Shorts narrowed for #133: ten-words (“commonly been read” had no quote for 34:28; “added later” Sherman alone, text only); composition (“no agreed date … how old it is” stated by no source; now “Over a long period”: NABRE, Brettler, White Crawford); ritual-decalogue (“have held” to “hold”, Brettler present tense; “many scholars now … late compilation” Sherman alone, now “others question that dating” on Greenberg and Sherman, “some now read”); date (range corrected to EJ’s “from the period of Moses to post-exilic times”); parallels (“Among the best known” unsourced, now “They include”); talion (“debated” NABRE alone, now attributed in the short; “proportionate” Collins alone, text only); courts (“Some think the Covenant Code did serve as law” Sweeney alone, text only). Independence counted with Brettler 2015 and Brettler-Wyrick, Edenburg 2019 and 2023, Wright 2009/2011/2019, Levinson 2021 and 2026, both Farbers, Hayes l10 and l11, Coogan ch. 7 and 8, and the three NABRE chapters each as one voice. #249 first pass 2026-11-28: “consensus” now appears in text only as sources’ own words, attributed: LeFebvre (courts, “growing consensus”, “general consensus”) and Gesundheit (ritual-decalogue, “reigning consensus”, a view he rejects). No short uses it. New “most scholars” sentences are attributed in text (Westbrook in oldest and deuteronomy, Wright 2009 in oldest); shorts unchanged.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: every dissent is named in the text: Edenburg (composition), Greenberg/EJ (ritual-decalogue), Van Seters (oldest, date, deuteronomy), Hayes (oldest: equally early P), Wright (hammurabi), Koller (deuteronomy), Sweeney and NABRE (courts). Second pass 2026-11-27: re-checked; Hayes l11 “equally early” (oldest) cut, so no longer a named dissent; Van Seters now attributed through his book’s abstract (publisher copy); Sweeney (courts) remains named in the text; NABRE’s “judicial precedents” gloss is text only, not a dissent; Edenburg (composition) no longer framed as “instead” of Coogan.",
+      note: "First pass 2026-11-27: every dissent is named in the text: Edenburg (composition), Greenberg/EJ (ritual-decalogue), Van Seters (oldest, date, deuteronomy), Hayes (oldest: equally early P), Wright (hammurabi), Koller (deuteronomy), Sweeney and NABRE (courts). Second pass 2026-11-27: re-checked; Hayes l11 “equally early” (oldest) cut, so no longer a named dissent; Van Seters now attributed through his book’s abstract (publisher copy); Sweeney (courts) remains named in the text; NABRE’s “judicial precedents” gloss is text only, not a dissent; Edenburg (composition) no longer framed as “instead” of Coogan. #249 first pass 2026-11-28: Westbrook (hammurabi, against direct dependence), Morrow (hammurabi, partial acceptance), Edenburg (oldest and deuteronomy, cultic frame later than Deuteronomy’s core) and Gesundheit (ritual-decalogue, Exodus 34 as a revision) each named in the text.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: tradition statement names each Tradition source in its own words: the Catholic Church (Catechism), Lutheran (Luther's Small Catechism), Reformed (Heidelberg Catechism, CRCNA), Chabad-Lubavitch (Chabad.org). Second pass 2026-11-27: re-checked: Catechism of the Catholic Church (Vatican), Luther’s Small Catechism (bookofconcord.org) as a Lutheran confession, Heidelberg Catechism (CRCNA) as a Reformed confession, Chabad.org of the Chabad-Lubavitch movement (live page, byline Menachem Posner); none supports what scholars think.",
+      note: "First pass 2026-11-27: tradition statement names each Tradition source in its own words: the Catholic Church (Catechism), Lutheran (Luther's Small Catechism), Reformed (Heidelberg Catechism, CRCNA), Chabad-Lubavitch (Chabad.org). Second pass 2026-11-27: re-checked: Catechism of the Catholic Church (Vatican), Luther’s Small Catechism (bookofconcord.org) as a Lutheran confession, Heidelberg Catechism (CRCNA) as a Reformed confession, Chabad.org of the Chabad-Lubavitch movement (live page, byline Menachem Posner); none supports what scholars think. #249 first pass 2026-11-28: the Church of England’s Book of Common Prayer (1662) catechism added to tradition, named as such; text only.",
     }
 sources:
   brown-bo-ten-commandments:
@@ -1154,7 +1354,7 @@ sources:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Scholarly; 2019; access: Publisher abstract, open (chapter paywalled; abstract only cited). Second pass 2026-11-27: curl 403; abstract read in Claude in Chrome on the OUP chapter page; abstract only cited. Class and recency window re-checked.",
+      note: "First pass 2026-11-27: Scholarly; 2019; access: Publisher abstract, open (chapter paywalled; abstract only cited). Second pass 2026-11-27: curl 403; abstract read in Claude in Chrome on the OUP chapter page; abstract only cited. Class and recency window re-checked. #249 first pass 2026-11-28: chapter body read in a Google Books preview of the Handbook (pp. 157, 159, 167, 168, 170 listed as viewable; p. 168 read as a page image) and cited with a per-citation url (oldest/12, deuteronomy/14–15); registry access line updated.",
     }
   halberstam-2017-law-biblical-israel:
     {
@@ -1324,19 +1524,114 @@ sources:
       owner: "",
       note: "First pass 2026-11-27: Tradition; year not on page; access: Website; read in an Internet Archive snapshot, as the live site refuses scripted requests. Second pass 2026-11-27: live site returns 403 to curl; read live in Claude in Chrome; the live opening sentence differs from the first pass’s snapshot wording (tradition/9 re-transcribed); byline Menachem Posner; the registry access line still says “read in an Internet Archive snapshot” (flagged).",
     }
+  westbrook-2008-laws-biblical-israel:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (NYU Press edited volume); 2008, inside the window; access: Google Books preview, pp. 106–107 viewable in a browser.",
+    }
+  morrow-2013-bior-legal-interactions:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (Bibliotheca Orientalis, Peeters); 2013; access: publisher open-access PDF via the issue table of contents (the article page's own download link shows a subscription notice).",
+    }
+  markl-2019-bn-redactional-theologization:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (Biblische Notizen, peer-reviewed); 2019; access: University of Pretoria repository scan (Markl is an extraordinary professor there), no text layer.",
+    }
+  wright-2014-origin-covenant-code:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (Brill, VTSup 164); 2014; access: Google Books preview, p. 224 viewable in a browser. Same author as wright-2009 and wright-2019.",
+    }
+  stackert-2007-rewriting-torah:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (Mohr Siebeck, FAT 52); 2007; access: Google Books preview (pp. 1–9 viewable).",
+    }
+  levinson-1997-deuteronomy-hermeneutics:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (OUP); 1997, inside the window (cited for his own argument, not the field); access: Google Books preview (p. 46 viewable; pp. 3–8 not).",
+    }
+  joosten-2019-covenant:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (Oxford Handbook of Biblical Law); 2019; access: Google Books preview of the Handbook.",
+    }
+  davies-2019-litigation:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (Oxford Handbook of Biblical Law); 2019; access: Google Books preview of the Handbook.",
+    }
+  lefebvre-2006-collections-codes-torah:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (T&T Clark, LHBOTS 451); 2006; access: Google Books preview (labelled “No preview” on the 2006 record, but pp. 1–5, 30–34, 47–51 served as page images).",
+    }
+  bhayro-2004-jjs-review-van-seters:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (Journal of Jewish Studies book review); 2004; access: Internet Archive copy of the journal's open archive PDF (live URL HTTP 500).",
+    }
+  imes-2018-bearing-yhwh-name:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (Eisenbrauns, BBRSup 19); 2018; access: Google Books preview pp. 1–3.",
+    }
+  gesundheit-2012-three-times-a-year:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly (Mohr Siebeck, FAT 82); 2012; access: publisher reading sample pp. 1–15 (pp. 16–43, where the issue's locator points, are closed except odd preview pages).",
+    }
+  baker-2005-themelios-ten-commandments:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly by venue (Themelios, peer-reviewed; published by The Gospel Coalition, an evangelical ministry): flagged for the second pass; 2005; access: Internet Archive copy (live page loops on redirects).",
+    }
+  baker-2005-tynbul-finger-of-god:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Scholarly by venue (Tyndale Bulletin, peer-reviewed, Tyndale House): flagged with the Themelios entry; 2005; access: open-access journal PDF.",
+    }
+  bcp-1662-catechism:
+    {
+      agent: pass,
+      owner: "",
+      note: "#249 first pass 2026-11-28: Tradition (the Church of England's own text); no window for Tradition; access: Internet Archive snapshot of churchofengland.org (live URL redirects).",
+    }
 leads:
-  - "Erhard Blum, “The Decalogue and the Composition History of the Pentateuch”, in The Pentateuch: International Perspectives (FAT 78, 2011): five-prohibition core; read only as reported by Edenburg 2023."
-  - "Shimon Gesundheit, Three Times a Year (FAT 82, 2012), 12–43, and David Carr, The Formation of the Hebrew Bible (2011), 264: Exodus 34 as a late compilation; cited by Sherman 2024; not read."
-  - "Bruce Wells, “The Covenant Code and Near Eastern Legal Traditions: A Response to David P. Wright”, Maarav 13 (2006): the main critique of Wright's dependence thesis; read only as reported by Wright 2009 and Milstein 2021; not public."
-  - "Raymond Westbrook, “The Laws of Biblical Israel” (2008), and Westbrook and Wells, Everyday Law in Biblical Israel (2009): critiques of literary dependence and of the revision model; read only as reported by Wright 2009 and Wright 2011."
-  - "William S. Morrow, review of Wright, Bibliotheca Orientalis 70 (2013), 309–331: said by Wright 2019 to accept dependence for Exodus 21:18–32; not read."
-  - "Bernard M. Levinson, Deuteronomy and the Hermeneutics of Legal Innovation (OUP 1997): the revision thesis in full; paywalled."
-  - "Jeffrey Stackert, Rewriting the Torah (2007): the Holiness Code revising the Covenant Code and Deuteronomy; cited by Sweeney; not read."
-  - "Carmen Joy Imes, Bearing YHWH's Name at Sinai (2018): the name command as bearing the name, not speech; publisher blurb only."
-  - "Michael LeFebvre, Collections, Codes, and Torah (2006): “Scholars of biblical law widely hold that ancient Israel did not draft law-texts for legislative purposes”, seen only in a podcast-site blurb."
-  - "Wright's review of Van Seters, JAOS 124.1 (2004): “most scholars think that CC is earlier than Deuteronomy and HC”; vLex preview only, not readable in full."
-  - "Levinson's numbering chart, Jewish Study Bible 2nd ed. (2014), p. 357; W. C. Marlowe, “Ten Commandments or Prohibitions?”, JIBS 8.2 (2022) (fetch blocked)."
+  - "Erhard Blum, “The Decalogue and the Composition History of the Pentateuch”, in The Pentateuch: International Perspectives (FAT 78, 2011): not read (#249: no Google Books preview; the publisher sample stops at p. XVI; only pirate copies). The volume editors' introduction (pp. XV–XVI, read) summarizes it as an original seventh-century “heptology” in Exodus with a later exilic version in Deut 5, which does not match Edenburg's report of a five-prohibition core; neither is used."
+  - "Shimon Gesundheit, Three Times a Year (FAT 82, 2012), 16–43: not read beyond odd preview pages (#249); pp. 3 and 13 read and cited (ritual-decalogue/6–7). David Carr, The Formation of the Hebrew Bible (2011), 264: closed (#249: Google Books p. 264 not viewable; the only full copy is an individual's Internet Archive upload, not a publisher, lending or author copy, not used)."
+  - "Bruce Wells, “The Covenant Code and Near Eastern Legal Traditions: A Response to David P. Wright”, Maarav 13 (2006): closed (#249: University of Chicago Press, no open copy by Unpaywall, Semantic Scholar, Internet Archive or the author's pages). Westbrook 2008, a critic in his own words, read and cited in its place (hammurabi/12)."
+  - "Westbrook and Wells, Everyday Law in Biblical Israel (2009): closed (#249: Google Books pages unavailable; Internet Archive lending only). Westbrook 2008 read instead."
+  - "David P. Wright, reply to Wells, Maarav 13.2 (2006): closed (#249: academia.edu only, login; Brandeis repository has no file)."
+  - "Wright's review of Van Seters, JAOS 124.1 (2004): closed (#249: JSTOR login; no repository copy; Wayback has none); only the vLex preview shows the “most scholars think that CC is earlier than Deuteronomy and HC” sentence. Westbrook 2008, Wright 2009 p. 323 and Bhayro 2004 carry the point instead (oldest)."
+  - "Edenburg 2019, p. 170 (Google Books snippet only): “the socio-economic background of the Covenant Code is certainly not rooted in the pre-monarchic period, but it also is not necessarily limited to the period of the monarchy”. If the page opens, it may qualify date's reliance on her abstract for “the period of the monarchy”."
+  - "Levinson 1997, pp. 6–7 (Google Books snippet only; page not viewable in a browser on 2026-11-28): Deuteronomy's dependence on the Covenant Code “consistent with the broad scholarly consensus”."
+  - "Levinson's numbering chart, Jewish Study Bible 2nd ed. (2014), p. 357: closed (#249: Google Books preview does not reach it; search inside returns nothing; Internet Archive lending only)."
 uncited:
+  - "Jeffrey Stackert, Rewriting the Torah (2007), on the Holiness Code revising the Covenant Code: read at p. 218 (#249) (“every example of revision … most plausibly explained as an attempt to subvert and replace its source(s)”). Not cited: the page has no Holiness Code statement beyond slaves."
+  - "W. Creighton Marlowe, “Ten Commandments or Prohibitions? Numbering the Ten Words”, Journal of Inductive Biblical Studies 8.2 (2022) (#249): read in full (PDF refuses scripts; opened in Chrome, text extracted in the page; also an Internet Archive copy). Abstract: “No consensus has been reached, although one list has become popular.” Not cited: it never mentions the Anglican tradition (the question the lead asked), and the journal (Asbury Theological Seminary, promoting inductive Bible study) states no peer-review policy."
+  - "Michael LeFebvre, the lead's sentence “Scholars of biblical law widely hold that ancient Israel did not draft law-texts for legislative purposes” (#249): read at New Books Network; it is the podcast's blurb, not the book's text (not found in the book by search). The book's own p. 31 is cited instead (courts/8–9)."
+  - "Robert Gnuse, Qeios 2023, and the priority of Exodus 20 or Deuteronomy 5 (#249): no statement added. Read: Baker, Themelios 30.3 (2005) (Hossfeld's Deuteronomy-first thesis “has been widely refuted”; Exodus “earlier”), Baker, Tyndale Bulletin 56.1 (2005) (cited in differences only), the FAT 78 editors' summary of Blum, and Wildenboer, Verbum et Ecclesia 40 (2019), reporting Otto (“the Decalogue was transferred from Deuteronomy 5 to Exodus 20”, but the next sentence contains an evident error, so Otto's position can't be stated without guessing). Only Baker gives a view in his own words; the others are reports. A two-sided short would rest on one author's view plus reports, and Baker's “widely refuted” cuts against an even “scholars disagree”; a new statement id is a permanent URL, so none is minted."
+  - "Eckart Otto, review of Van Seters, RBL 07/2004 (#249): read in the Internet Archive copy of bookreviews.org/pdf/3929_3801.pdf; Van Seters claims a revolution “dissolving a basic consensus of more than one hundred years of scholarship, that the CC was as a preexilic law book the paradigm for D and HC”. Not cited: Bhayro (JJS) makes the same point in fewer words; kept for a future re-review."
+  - "Konrad Schmid, “Divine Legislation in the Pentateuch”, FAT 107 (2016), author's e-offprint (#249): read; the Covenant Code is “presumably the earliest body of texts in the Pentateuch that includes divine laws”, its dating “of course, contested”, and Deuteronomy reworks it “as William Morrow, Bernard Levinson, Eckart Otto and others have shown”. Not cited: the page already carries each point from 2+ authors."
+  - "Wright, “How Exodus Revises the Laws of Hammurabi” (TheTorah.com, 2019), n. 4, names Westbrook among the indirect-relation view; Westbrook read directly instead. No new TheTorah.com citations were added in #249: #86 (2026-11-23) ruled the site not an External Source class, though this page and others cite it as Reference; issue #259 filed."
   - "Robert Gnuse, “Deuteronomic Redaction and the Evolution of the Decalogues in Exodus 20 and Deuteronomy 5”, Qeios 5 (2023): read; “There is also a debate concerning the priority of Exodus 20 or Deuteronomy 5”. Not cited: Qeios uses open post-publication review, not shown to be peer-reviewed, and no second source states the priority debate."
   - "William S. Morrow, “Some Characteristics of Biblical Law”, The Bible and Interpretation (2017): read; three viewpoints on law collections and practice. Not cited: a web magazine, near the #80 blogs exclusion."
   - "New Catholic Encyclopedia, “Commandments, Ten” (Polan): read; “critical scholars generally … abandon the position” that the Decalogue came from the later prophets. Not cited: bibliography stops at 1962, text outside the 30-year window."
