@@ -62,7 +62,7 @@ statements:
     group: "In the gospels"
     question: "Do the gospels say the risen Jesus appeared to her?"
     short: "Matthew and John do, and so does the longer ending of Mark. In John and in Mark's longer ending she is the first to see him."
-    text: "Kristin Swenson says that, according to the longer ending of Mark and to John's gospel, the resurrected Jesus appears first to Mary Magdalene alone, out of all his followers. N. E. Müller van Velden says the longer ending of Mark has Jesus appear first to her, and that Matthew tells of Jesus meeting the women, who take hold of his feet and worship him; she sums up that Mary Magdalene was one of the first eyewitnesses of the risen Jesus, alone or with other women. The HarperCollins Bible Dictionary places the other Mary with her at the first appearance of the risen Christ in Matthew 28:9. Gertrud Tönsing's article in Scriptura says John gives Mary Magdalene sole place as witness of the resurrection."
+    text: "Kristin Swenson says that, according to the longer ending of Mark and to John's gospel, the resurrected Jesus appears first to Mary Magdalene alone, out of all his followers. N. E. Müller van Velden says the longer ending of Mark has Jesus appear first to her, and that Matthew tells of Jesus meeting the women, who take hold of his feet and worship him; she sums up that Mary Magdalene was one of the first eyewitnesses of the risen Jesus, alone or with other women. The HarperCollins Bible Dictionary places the other Mary with her at the first appearance of the risen Christ in Matthew 28:9. Gertrud Tönsing's article in Scriptura says John gives Mary Magdalene sole place as witness of the resurrection. Jane Schaberg and Sharon Ringe's commentary on Luke in the Women's Bible Commentary says that in Luke the risen Jesus does not appear to women: as in 1 Corinthians 15:3–8, there is no appearance to Mary Magdalene or the other women who had been at the cross, in contrast to Matthew 28:9–10, John 20:11–18 and the longer ending of Mark, where the first appearance is to her."
     cites:
       - source: swenson-bo-mary-magdalene
         locator: "section “Could she have been an apostle?”"
@@ -88,6 +88,11 @@ statements:
       - source: tonsing-2022-ending-of-mark
         locator: "paragraph containing “gives Mary Magdalene sole place”"
         quote: "The only exception is in the gospel of John, who first mentions Mary the mother of Jesus as being under the cross (John 19:25) but gives Mary Magdalene sole place as witness of the resurrection."
+        read: 2026-11-27
+      - source: schaberg-ringe-2012-wbc-luke
+        url: "https://books.google.com/books?id=9uUMZ_g2_NoC&pg=PA510"
+        locator: "“Gospel of Luke”, p. 510, paragraph beginning “Rather, in this Gospel”"
+        quote: "But in Luke the risen Jesus does not appear to women. Their witness is not essential to the Christian faith. In this Gospel, as in 1 Corinthians 15:3–8, there is no appearance to Mary Magdalene or the other women who had been at the cross; contrast Matthew 28:9–10; John 20:11–18; Markan Appendix 16:9, where the first appearance is to her."
         read: 2026-11-27
   - id: apostle
     group: "In the gospels"
@@ -116,7 +121,7 @@ statements:
     group: "The later image"
     question: "Do the gospels say Mary Magdalene was a prostitute?"
     short: "No. Scholars trace that image to later readers who identified her with the unnamed sinful woman of Luke 7, an identification Pope Gregory the Great made in a sixth-century sermon."
-    text: "Kristin Swenson's Bible Odyssey article says nowhere in the Bible is Mary Magdalene described as a prostitute and that her reputation as a reformed prostitute has no explicit biblical support; she says Pope Gregory I gave legs to this misinterpretation with a sermon that equated both Mary of Bethany and the anonymous sinful woman of Luke 7:36–50 with Mary Magdalene. The HarperCollins Bible Dictionary calls the tradition that she had once been a prostitute nonhistorical, derived from confusing her with the unnamed woman of Luke 7:36–50. Dan Clanton's Bible Odyssey article says, as many scholars have noted, that interpreters merged her character with others, and that Gregory the Great said in a sixth-century address that the sinful woman of Luke 7, Mary Magdalene and Mary of Bethany were all the same woman. Mary Ann Beavis says Gregory pronounced the sinner of Luke 7 to be Mary Magdalene. N. E. Müller van Velden says diverging gospel references were gradually conflated and formalised by Gregory, despite the lack of textual evidence, in a sermon of 591, and that the category of “sinner” was taken to mean “prostitute”, though it meant a woman who did not keep the law of Moses rigorously. Magdalena Jóźwiak notes that Gregory made the identification with the word credimus, “we believe”, and says his view became prevalent in Western Christianity. Grenville Kent, who argues in the Journal of Asia Adventist Seminary that the three women are one and the same, grants that more recent scholarship discounts the tradition as based on a conflation of gospel texts."
+    text: "Kristin Swenson's Bible Odyssey article says nowhere in the Bible is Mary Magdalene described as a prostitute and that her reputation as a reformed prostitute has no explicit biblical support; she says Pope Gregory I gave legs to this misinterpretation with a sermon that equated both Mary of Bethany and the anonymous sinful woman of Luke 7:36–50 with Mary Magdalene. The HarperCollins Bible Dictionary calls the tradition that she had once been a prostitute nonhistorical, derived from confusing her with the unnamed woman of Luke 7:36–50. Dan Clanton's Bible Odyssey article says, as many scholars have noted, that interpreters merged her character with others, and that Gregory the Great said in a sixth-century address that the sinful woman of Luke 7, Mary Magdalene and Mary of Bethany were all the same woman. Mary Ann Beavis says Gregory pronounced the sinner of Luke 7 to be Mary Magdalene. N. E. Müller van Velden says diverging gospel references were gradually conflated and formalised by Gregory, despite the lack of textual evidence, in a sermon of 591, and that the category of “sinner” was taken to mean “prostitute”, though it meant a woman who did not keep the law of Moses rigorously. Magdalena Jóźwiak notes that Gregory made the identification with the word credimus, “we believe”, and says his view became prevalent in Western Christianity. Grenville Kent, who argues in the Journal of Asia Adventist Seminary that the three women are one and the same, grants that more recent scholarship discounts the tradition as based on a conflation of gospel texts. Brittany Wilson's essay in the Women's Bible Commentary says the first influential identification of Mary Magdalene as a sinner repenting of a sexually lascivious past came only in the sixth century with Gregory the Great, who in her reading specified that her sinfulness was sexual; she adds that Eastern Orthodox Christians never subscribed to the conflation. Susan Ashbrook Harvey, in Scenting Salvation, likewise says Eastern Christianity in general did not associate Mary Magdalene with the sinful woman, and calls the tradition of her as a penitent harlot a western development that received its first real impetus from Gregory in the sixth century. Peter-Ben Smit, in NTT Journal for Theology and the Study of Religion, reads Gregory's sermon 33 differently, arguing that the views that Gregory decreed her identity and that he tied it primarily to sinful sexuality are both problematic."
     cites:
       - source: swenson-bo-mary-magdalene
         locator: "section “Was Mary Magdalene a prostitute?”"
@@ -162,6 +167,35 @@ statements:
       - source: kent-2010-same-person
         locator: "introduction, p. 14"
         quote: "More recent scholarship discounts the previous tradition as based on a conflation of Gospel texts, motivated by the mediaeval aversions to women and the body, and now regards Mary Magdalene as a wealthy woman, perhaps married, who befriended Jesus after he freed her from demons, and who supported Him financially."
+        read: 2026-11-27
+      - source: wilson-2012-wbc-mary-magdalene
+        url: "https://books.google.com/books?id=9uUMZ_g2_NoC&pg=PA532"
+        locator: "“Mary Magdalene and Her Interpreters”, p. 532, left column"
+        quote: "The first influential identification of Mary Magdalene as a sinner who repents of her sexually lascivious past does not occur until the sixth century with Pope Gregory the Great."
+        read: 2026-11-27
+      - source: wilson-2012-wbc-mary-magdalene
+        url: "https://books.google.com/books?id=9uUMZ_g2_NoC&pg=PA532"
+        locator: "“Mary Magdalene and Her Interpreters”, p. 532, left column"
+        quote: "What is more, he not only identifies Mary Magdalene as sinful, but specifies that her sinfulness was sexual in nature."
+        read: 2026-11-27
+      - source: wilson-2012-wbc-mary-magdalene
+        url: "https://books.google.com/books?id=9uUMZ_g2_NoC&pg=PA532"
+        locator: "“Mary Magdalene and Her Interpreters”, p. 532, paragraph beginning “Although Eastern Orthodox Christians”"
+        quote: "Although Eastern Orthodox Christians never subscribed to this conflation of Mary Magdalene with Mary of Bethany and the unnamed sinner, Gregory the Great's interpretation cemented Mary Magdalene's reputation as a penitent sinner for most of her interpretative history in the West."
+        read: 2026-11-27
+      - source: harvey-2006-scenting-salvation
+        url: "https://books.google.com/books?id=uaowDwAAQBAJ&pg=PA295"
+        locator: "notes to pp. 148–150, p. 295, n. 202"
+        quote: "Eastern Christianity in general did not associate Mary Magdalene with the Sinful Woman, venerating her instead as one of the myrrh-bearing women who came to Christ's tomb and found he had risen."
+        read: 2026-11-27
+      - source: harvey-2006-scenting-salvation
+        url: "https://books.google.com/books?id=uaowDwAAQBAJ&pg=PA295"
+        locator: "notes to pp. 148–150, p. 295, n. 202"
+        quote: "The tremendously influential tradition of Mary Magdalene as penitent harlot was a western development, receiving its first real impetus in the sixth century from Gregory the Great."
+        read: 2026-11-27
+      - source: smit-2022-gregory-sermon-33
+        locator: "English abstract, p. 304"
+        quote: "shows that both the view that he would have decreed something and that he associated Mary’s identity primarily with sinful sexuality are problematic."
         read: 2026-11-27
   - id: bethany
     group: "The later image"
@@ -210,7 +244,7 @@ statements:
     group: "The later image"
     question: "Does “Magdalene” mean she came from Magdala?"
     short: "That is the common reading: reference works say she came from Magdala, a town on the Sea of Galilee."
-    text: "The HarperCollins Bible Dictionary calls her Mary Magdalene, or “of Magdala”, and describes Magdala as a community on the western shore of the Sea of Galilee, modern Tarichaeae. Kristin Swenson says Magdalene is a reference to her town of origin, Magdala in Galilee, and Gertrud Tönsing says she is named after her place of origin. Wally Cirafesi's article in Religions says the identification of the excavated site with Josephus's Taricheae has been debated but that the consensus among scholars remains that Taricheae is Migdal Nuniya, or Magdala; the Israel Antiquities Authority's excavation report gives the site's ancient names as Migdal Nunia, Taricheae and Magdala and reports a Roman-period synagogue, and another of its reports says Christian tradition holds it to be Mary Magdalene's birthplace. Joan Taylor, in the Palestine Exploration Quarterly, and Taylor with Elizabeth Schrader, in the Journal of Biblical Literature, grant that the name is traditionally taken to indicate where she came from, but argue that no place called Magdala appears in the earliest New Testament manuscripts or contemporary writing, that no early Christian author identifies a city called Magdala by the Sea of Galilee, and that the epithet may mean “the tower-ess” or “the magnified one”; Taylor allows that Mary may still have come from Migdal Nuniya."
+    text: "The HarperCollins Bible Dictionary calls her Mary Magdalene, or “of Magdala”, and describes Magdala as a community on the western shore of the Sea of Galilee, modern Tarichaeae. Kristin Swenson says Magdalene is a reference to her town of origin, Magdala in Galilee, and Gertrud Tönsing says she is named after her place of origin. Wally Cirafesi's article in Religions says the identification of the excavated site with Josephus's Taricheae has been debated but that the consensus among scholars remains that Taricheae is Migdal Nuniya, or Magdala; the Israel Antiquities Authority's excavation report gives the site's ancient names as Migdal Nunia, Taricheae and Magdala and reports a Roman-period synagogue, and another of its reports says Christian tradition holds it to be Mary Magdalene's birthplace. Joan Taylor, in the Palestine Exploration Quarterly, and Taylor with Elizabeth Schrader, in the Journal of Biblical Literature, grant that the name is traditionally taken to indicate where she came from, but argue that no place called Magdala appears in the earliest New Testament manuscripts or contemporary writing, that no early Christian author identifies a city called Magdala by the Sea of Galilee, and that the epithet may mean “the tower-ess” or “the magnified one”; Taylor allows that Mary may still have come from Migdal Nuniya. Stefano De Luca and Anna Lena, in their chapter on Magdala/Taricheae in Galilee in the Late Second Temple and Mishnaic Periods, set out to show that the names Taricheae, Migdal Nunayya and Magdala refer to el-Mejdel, a village on the western shore of the Sea of Galilee near Mount Arbel; they say Nikos Kokkinos has attempted to redraw the widely accepted scholarly map of the lake region by relocating Magdala/Taricheae, and call Taylor's suggestion relating one of these names to a place in Judea implausible."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/magdala/"
@@ -266,11 +300,26 @@ statements:
         locator: "abstract"
         quote: "the term ή Μαγδαληνή may be based on an underlying Aramaic word meaning “the magnified one” or “tower-ess,” and is therefore best left untranslated."
         read: 2026-11-27
+      - source: deluca-lena-2015-magdala-taricheae
+        url: "https://books.google.com/books?id=jzTlCgAAQBAJ&pg=PA280"
+        locator: "section “Toponyms and Sources: General Remarks”, p. 280"
+        quote: "which existed until 1948 along the central part of western shore of the Sea of Galilee."
+        read: 2026-11-27
+      - source: deluca-lena-2015-magdala-taricheae
+        url: "https://books.google.com/books?id=jzTlCgAAQBAJ&pg=PA281"
+        locator: "section “Toponyms and Sources: General Remarks”, p. 281"
+        quote: "Nikos Kokkinos has attempted to redraw the widely accepted scholarly map of the region of the lake, relocating not only Magdala/Taricheae but also such places as Capernaum, Sennabris, el-Mejdel, Nunayya, and others; and Joan Taylor implausibly suggests relating one of the above-mentioned toponyms to a place in Judea."
+        read: 2026-11-27
+      - source: deluca-lena-2015-magdala-taricheae
+        url: "https://books.google.com/books?id=jzTlCgAAQBAJ&pg=PA281"
+        locator: "section “Toponyms and Sources: General Remarks”, p. 281"
+        quote: "The intention here is to show that these toponyms do indeed refer to el-Mejdel, near the cliff of Mount Arbel"
+        read: 2026-11-27
   - id: martha
     group: "The later image"
     question: "Was Martha added to the story of Lazarus in John 11?"
-    short: "That has been proposed and is disputed. In Papyrus 66, an early copy of John, Martha was absent from the opening verses of John 11 before the text was corrected; scholars disagree on whether that shows she was added to the gospel."
-    text: "Elizabeth Schrader's article in the Harvard Theological Review sets out to show that the first circulating version of John may not have included Martha, and that Papyrus 66 may give a window onto a late scribal interpolation. She says the correction of 11:3 in Papyrus 66 clearly splits one woman into two, and that 17 of the 92 Greek witnesses she surveyed for John 11:1–12:2 contain traces of Martha's absence; she suggests there is a strong possibility that Martha was added to hamper the text's subtle identification of Mary of Bethany with Mary Magdalene. Richard Fellows, in TC: A Journal of Biblical Textual Criticism, repeats Schrader's point that Martha was absent from 11:1–3 in Papyrus 66 before it was corrected, notes that it is no longer clear whether the name erased at 11:3 was Mary or Martha, and argues that the variants are better explained by a sexist tendency and harmonising than by interpolation: someone wanting to denigrate Mary would not have placed her before Martha at 11:1 and before Lazarus at 11:5, and Schrader's proposed first text combines too many weakly attested and unattested readings. In a 2025 exchange in the same journal, Schrader Polczer holds that Martha's interpolation remains a compelling explanation, and Fellows replies that there is no text-critical case for it. Fellows notes that Papyrus 66 is dated to about 200 CE by the Nestle-Aland edition, though Brent Nongbri argues it could be as late as the fourth century."
+    short: "The consensus view has been that Martha was always present in John's gospel as it circulated, and a proposal that she was added is disputed. In Papyrus 66, an early copy of John, Martha was absent from the opening verses of John 11 before the text was corrected; scholars disagree on whether that shows she was added."
+    text: "Elizabeth Schrader's article in the Harvard Theological Review sets out to show that the first circulating version of John may not have included Martha, and that Papyrus 66 may give a window onto a late scribal interpolation; she calls the view she questions, that Martha was always present in the circulating Fourth Gospel, the consensus view. She says the correction of 11:3 in Papyrus 66 clearly splits one woman into two, and that 17 of the 92 Greek witnesses she surveyed for John 11:1–12:2 contain traces of Martha's absence; she suggests there is a strong possibility that Martha was added to hamper the text's subtle identification of Mary of Bethany with Mary Magdalene. Richard Fellows, in TC: A Journal of Biblical Textual Criticism, repeats Schrader's point that Martha was absent from 11:1–3 in Papyrus 66 before it was corrected, notes that it is no longer clear whether the name erased at 11:3 was Mary or Martha, and argues that the variants are better explained by a sexist tendency and harmonising than by interpolation: someone wanting to denigrate Mary would not have placed her before Martha at 11:1 and before Lazarus at 11:5, and Schrader's proposed first text combines too many weakly attested and unattested readings. In a 2025 exchange in the same journal, Schrader Polczer holds that Martha's interpolation remains a compelling explanation, and Fellows replies that there is no text-critical case for it. Fellows notes that Papyrus 66 is dated to about 200 CE by the Nestle-Aland edition, though Brent Nongbri argues it could be as late as the fourth century."
     cites:
       - source: schrader-2017-martha-htr
         locator: "introduction, manuscript p. 4"
@@ -316,11 +365,15 @@ statements:
         locator: "conclusion, p. 159"
         quote: "There is no text-critical case for the absence of Martha from an early version of John’s Gospel."
         read: 2026-11-27
+      - source: schrader-2017-martha-htr
+        locator: "section “Summative Analysis”, manuscript p. 41"
+        quote: "there are so many Greek and Latin witnesses with possible traces of her absence that I believe it is worthwhile to question the consensus view that Martha was always present in the circulating Fourth Gospel."
+        read: 2026-11-27
   - id: which-mary
     group: "Other early writings"
     question: "Is the Mary of the Gospel of Mary and related writings Mary Magdalene?"
-    short: "Usually she is taken to be, but that has been challenged: the Gospel of Mary calls her only Mary, and some scholars argue another Mary is meant."
-    text: "N. E. Müller van Velden says the Gospel of Mary never identifies its Mary in relation to Magdala, and that of the Christian apocrypha only the Gospel of Philip and Pistis Sophia specify her identity; she says the consensus view still holds that these writings refer to Mary Magdalene, with Antti Marjanen a leading scholar of that view, and that Stephen Shoemaker has challenged it, arguing that in many cases the Mary assumed to be Mary Magdalene could be Mary the mother of Jesus. Mary Ann Beavis says contemporary scholars have perpetuated the ancient confusion of the two Marys by identifying the Mary of texts such as the Gospel of Mary and the Gospel of Thomas as Mary Magdalene, when that Mary is portrayed more like Mary of Bethany."
+    short: "That is disputed. The Gospel of Mary calls her only Mary; she has been identified as Mary Magdalene, but some scholars argue another Mary is meant."
+    text: "N. E. Müller van Velden says the Gospel of Mary never identifies its Mary in relation to Magdala, and that of the Christian apocrypha only the Gospel of Philip and Pistis Sophia specify her identity; she says the view still holds that these writings refer to Mary Magdalene, with Antti Marjanen a leading scholar of it, and that Stephen Shoemaker has challenged it, arguing that in many cases the Mary assumed to be Mary Magdalene could be Mary the mother of Jesus. Mary Ann Beavis says contemporary scholars have perpetuated the ancient confusion of the two Marys by identifying the Mary of texts such as the Gospel of Mary and the Gospel of Thomas as Mary Magdalene, when that Mary is portrayed more like Mary of Bethany. Karen King, in an essay in the collection Which Mary?, says scholars are divided over the identity of the Mary of the Gospel of Mary, and asks whether she is Mary Magdalene, Mary the virgin-mother or some other Mary. Stephen Shoemaker, in the same collection, says scholarship has settled rather comfortably on identifying the apocryphal Mary who receives the Savior's hidden mysteries with the Magdalene, but that the Mary of a similar revelation in the ancient Dormition narratives is without any possible question Mary of Nazareth."
     cites:
       - source: mullervanvelden-2024-memory
         locator: "§3.2, p. 132"
@@ -337,6 +390,16 @@ statements:
       - source: beavis-bo-mary-and-martha
         locator: "section “Who are Mary and Martha in Christian Tradition?”"
         quote: "That is, the woman called simply “Mary” is portrayed more like Mary of Bethany than Mary Magdalene."
+        read: 2026-11-27
+      - source: king-2002-why-all-the-controversy
+        url: "https://books.google.com/books?id=zPmp7dDM3oAC&pg=PA54"
+        locator: "§1 “Introduction”, p. 54"
+        quote: "Scholars are divided over the identity of Mary and her significance in this Gospel. First of all, which Mary is she: Mary Magdalene, Mary the virgin-mother, or some other Mary?"
+        read: 2026-11-27
+      - source: shoemaker-2002-mistaken-identity
+        url: "https://books.google.com/books?id=zPmp7dDM3oAC&pg=PA6"
+        locator: "p. 6, paragraph beginning “This portrait of Mary”"
+        quote: "While scholarship has settled in rather comfortably with the notion that the apocryphal Mary to whom the Savior communicates the hidden mysteries of the cosmos is to be identified with the Magdalene, the Mary represented in the ancient apocrypha that I have just summarized is without any possible question Mary of Nazareth."
         read: 2026-11-27
   - id: peter
     group: "Other early writings"

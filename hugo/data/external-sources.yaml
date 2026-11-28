@@ -8970,6 +8970,108 @@ fenton-parish-who-was-mm:
   hostAuthored: false
   tradition: "St. Mary Magdalene Orthodox Church in Fenton, Michigan"
 
+# Mary Magdalene re-review (#248)
+
+schaberg-ringe-2012-wbc-luke:
+  author: "Jane D. Schaberg and Sharon H. Ringe"
+  shortAuthor: "Schaberg and Ringe"
+  title: "Gospel of Luke"
+  series: "In Carol A. Newsom, Sharon H. Ringe and Jacqueline E. Lapsley (eds.), Women's Bible Commentary, 3rd ed., revised and updated"
+  publisher: "Westminster John Knox Press"
+  year: 2012
+  edition: "Third edition (twentieth anniversary), 2012"
+  class: Reference
+  kind: book
+  access: "Google Books preview, open in a browser (pages shown vary; refuses scripted requests)"
+  url: "https://books.google.com/books?id=9uUMZ_g2_NoC"
+  hostAuthored: false
+  tradition: null
+
+wilson-2012-wbc-mary-magdalene:
+  author: "Brittany E. Wilson"
+  title: "Mary Magdalene and Her Interpreters"
+  series: "In Carol A. Newsom, Sharon H. Ringe and Jacqueline E. Lapsley (eds.), Women's Bible Commentary, 3rd ed., revised and updated"
+  publisher: "Westminster John Knox Press"
+  year: 2012
+  edition: "Third edition (twentieth anniversary), 2012"
+  class: Reference
+  kind: book
+  access: "Google Books preview, open in a browser (pages shown vary; refuses scripted requests)"
+  url: "https://books.google.com/books?id=9uUMZ_g2_NoC"
+  hostAuthored: false
+  tradition: null
+
+harvey-2006-scenting-salvation:
+  author: "Susan Ashbrook Harvey"
+  title: "Scenting Salvation: Ancient Christianity and the Olfactory Imagination"
+  series: null
+  publisher: "University of California Press"
+  year: 2006
+  edition: "Paperback, 2015 (Google Books edition read)"
+  class: Scholarly
+  kind: book
+  access: "Google Books preview, open in a browser (pages shown vary; refuses scripted requests)"
+  url: "https://books.google.com/books?id=uaowDwAAQBAJ"
+  hostAuthored: false
+  tradition: null
+
+smit-2022-gregory-sermon-33:
+  author: "Peter-Ben Smit"
+  title: "Verlossing door verleiding: Maria Magdalena in preek 33 van Gregorius I"
+  series: "NTT Journal for Theology and the Study of Religion 76(4): 303–322"
+  publisher: "Amsterdam University Press"
+  year: 2022
+  edition: "Publisher version (Dutch, with an English abstract)"
+  class: Scholarly
+  kind: article
+  access: "Utrecht University repository, publisher version PDF, open access"
+  url: "https://dspace.library.uu.nl/server/api/core/bitstreams/6aab01c3-5af4-4284-a66c-8852447f0f3b/content"
+  hostAuthored: false
+  tradition: null
+
+deluca-lena-2015-magdala-taricheae:
+  author: "Stefano De Luca and Anna Lena"
+  shortAuthor: "De Luca and Lena"
+  title: "Magdala/Taricheae"
+  series: "In David A. Fiensy and James Riley Strange (eds.), Galilee in the Late Second Temple and Mishnaic Periods, vol. 2: The Archaeological Record from Cities, Towns, and Villages, from p. 280"
+  publisher: "Fortress Press"
+  year: 2015
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Google Books preview, open in a browser (pages shown vary; refuses scripted requests)"
+  url: "https://books.google.com/books?id=jzTlCgAAQBAJ"
+  hostAuthored: false
+  tradition: null
+
+king-2002-why-all-the-controversy:
+  author: "Karen L. King"
+  title: "Why All the Controversy? Mary in the Gospel of Mary"
+  series: "In F. Stanley Jones (ed.), Which Mary? The Marys of Early Christian Tradition (SBL Symposium Series 19), from p. 53"
+  publisher: "Society of Biblical Literature; Brill"
+  year: 2002
+  edition: "Brill edition, 2003 (Google Books edition read)"
+  class: Scholarly
+  kind: book
+  access: "Google Books preview, open in a browser (pages shown vary; refuses scripted requests)"
+  url: "https://books.google.com/books?id=zPmp7dDM3oAC"
+  hostAuthored: false
+  tradition: null
+
+shoemaker-2002-mistaken-identity:
+  author: "Stephen J. Shoemaker"
+  title: "A Case of Mistaken Identity? Naming the Gnostic Mary"
+  series: "In F. Stanley Jones (ed.), Which Mary? The Marys of Early Christian Tradition (SBL Symposium Series 19), from p. 5"
+  publisher: "Society of Biblical Literature; Brill"
+  year: 2002
+  edition: "Brill edition, 2003 (Google Books edition read)"
+  class: Scholarly
+  kind: book
+  access: "Google Books preview, open in a browser (pages shown vary; refuses scripted requests)"
+  url: "https://books.google.com/books?id=zPmp7dDM3oAC"
+  hostAuthored: false
+  tradition: null
+
 # The Ten Commandments and the Covenant Code (#158)
 
 brettler-2015-thetorah-ten-insights:
