@@ -74,7 +74,7 @@
 - id: roman
   track: age
   label: Roman
-  display: "From 63 BCE"
+  display: "from 63 BCE"
   from: -63
   cites:
     - source: bo-timeline-second-temple-judaism

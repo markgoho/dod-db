@@ -144,6 +144,17 @@ function measureStrip(root: Element): void {
           label.scrollHeight > period.clientHeight + 0.5,
         );
     }
+    // Likewise an era's label longer than its band (#256): the link stays.
+    for (const band of strip.querySelectorAll<HTMLElement>(
+      ".timeline-minimap__band",
+    )) {
+      const link = band.querySelector<HTMLElement>(".timeline-minimap__era");
+      if (link)
+        band.toggleAttribute(
+          "data-unfit",
+          link.scrollHeight > band.clientHeight + 0.5,
+        );
+    }
   }).observe(ticks);
 }
 

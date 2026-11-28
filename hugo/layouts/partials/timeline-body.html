@@ -132,7 +132,12 @@
               class="{{ $eraClass }}"
               id="{{ partial "timeline-era-id.html" . }}"
               tabindex="-1">
-              <h2 class="timeline-era__label">{{ .label }}</h2>
+              <h2 class="timeline-era__label">
+                <span class="timeline-era__name">{{ .label }}</span
+                >{{ with .dates }}
+                  <span class="timeline-era__dates"> {{ . }}</span>
+                {{ end }}
+              </h2>
               {{ with .items }}
                 <ol class="timeline-era__entries" role="list">
                   {{ range . }}
@@ -183,12 +188,10 @@
       class="cloud-section timeline-measure timeline-periods-section"
       id="timeline-periods">
       <summary class="disclosure-summary timeline-sources__summary">
-        <h2 class="type-section-title cloud-section__title">
-          Periods on the minimap
-        </h2>
+        <h2 class="type-section-title cloud-section__title">Periods</h2>
         <span class="timeline-section-intro"
-          >The tinted bands behind the minimap's dots, and where their dates
-          come from.</span
+          >The periods that divide the Timeline, and where their dates come
+          from.</span
         >
       </summary>
       <ul class="timeline-periods" role="list">

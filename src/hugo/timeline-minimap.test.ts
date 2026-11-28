@@ -88,6 +88,13 @@ function select(html: string, selector: string): El[] {
   return found;
 }
 
+/**
+ * A year's share of the fixture's strip (5000 BCE to 0): the 3000 years before
+ * 2000 BCE drawn as 500, then 2000 to scale, so 2500 drawn years.
+ */
+const fixtureAt = (year: number) =>
+  year < -2000 ? (year + 5000) / 15_000 : (500 + year + 2000) / 2500;
+
 const ids = (els: El[]) => els.map(e => e.attrs.id ?? "");
 const classes = (el: El) => (el.attrs.class ?? "").split(/\s+/);
 const squash = (t: string | undefined) => t?.replaceAll(/\s+/g, " ").trim();
@@ -279,9 +286,10 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       // Daniel's pair (540 and 167 BCE) is clear of Deuteronomy's corridor,
       // so it shares place 5.
       ["daniel-tradition", 9, 5],
-      // Isaiah 56–66 (515 BCE) is within the window of Judges (622 BCE) and
-      // the three at 587 BCE, so it takes the next place, 4.
-      ["isaiah-56-66", 4, -2],
+      // Isaiah 56–66 (515 BCE) is in the Persian era (#256), nudged in from
+      // its edge at 539 BCE, clear of Judges (622 BCE) and the three at 587
+      // BCE in the Iron Age: the centre place is free.
+      ["isaiah-56-66", 0, 0],
       ["daniel", 9, 5],
     ]);
     // No vertical stacking: a dot stays at its year, nudged at most inside its band (CSS).
@@ -341,38 +349,102 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(select(crowded, ".timeline-minimap__pair")).toHaveLength(0);
   });
 
-  test("the strip maps years piecewise: everything before 2000 BCE is one band drawn as tall as a 500-year band, its entries spread linearly in it, and the rest is to scale", () => {
-    // The fixture's axis runs 5000 BCE to 0: one early band, drawn as 500
-    // years, then four 500-year bands, so 2500 drawn years in all.
-    const bands = select(page, ".timeline-minimap__band");
+  test("the eras are the age periods in hugo/data/timeline/periods.yaml, clipped to the axis, after one era named by its years for the span before them (#256)", () => {
+    // The fixture's axis runs 5000 BCE to 0.
+    const labels = select(
+      page,
+      ".timeline-axis > .timeline-era > .timeline-era__label",
+    ).map(h => squash(h.text));
     expect(
-      bands.map(b => [
-        b.attrs["data-era"],
-        vars(b)["era-start"],
-        vars(b)["era-end"],
-        b.attrs.class?.includes("timeline-minimap__band--compressed"),
+      ids(select(page, ".timeline-axis > .timeline-era")).map((id, k) => [
+        id,
+        labels[k],
       ]),
     ).toEqual([
-      ["era-5000-bce", 0, 0.2, true],
-      ["era-2000-bce", 0.2, 0.4, false],
-      ["era-1500-bce", 0.4, 0.6, false],
-      ["era-1000-bce", 0.6, 0.8, false],
-      ["era-500-bce", 0.8, 1, false],
+      ["era-5000-bce", "5000–3000 BCE"],
+      ["era-bronze-age", "Bronze Age ca. 3000–1200 BCE"],
+      ["era-iron-age", "Iron Age ca. 1200–586 BCE"],
+      ["era-babylonian", "Babylonian rule 587 or 586–539 BCE"],
+      ["era-persian", "Persian 539–332 BCE"],
+      ["era-hellenistic", "Hellenistic 332–63 BCE"],
+      ["era-roman", "Roman from 63 BCE"],
     ]);
-    const at = (id: string) =>
+    // An entry is in the era whose years hold its placement year: the fall of
+    // Jerusalem (587 BCE) closes the Iron Age (to 586); Daniel (167 BCE) is Hellenistic.
+    const eraOf = (id: string) =>
+      select(page, `.timeline-minimap__spy a[href="#${id}"]`)[0]?.attrs[
+        "data-entry-era"
+      ];
+    expect(eraOf("fall-of-jerusalem")).toBe("era-iron-age");
+    expect(eraOf("isaiah-56-66")).toBe("era-persian");
+    expect(eraOf("daniel")).toBe("era-hellenistic");
+  });
+
+  test("the strip maps years piecewise, on its own scale, not the eras': everything before 2000 BCE is drawn as 500 years, its entries spread linearly in it, and the rest is to scale", () => {
+    const bands = select(page, ".timeline-minimap__band").map(b => ({
+      era: b.attrs["data-era"],
+      start: vars(b)["era-start"]!,
+      end: vars(b)["era-end"]!,
+      compressed: b.attrs.class?.includes("timeline-minimap__band--compressed"),
+    }));
+    const expected = [
+      {
+        era: "era-5000-bce",
+        start: fixtureAt(-5000),
+        end: fixtureAt(-3000),
+        compressed: true,
+      },
+      // The Bronze Age runs across 2000 BCE: drawn short, then to scale.
+      {
+        era: "era-bronze-age",
+        start: fixtureAt(-3000),
+        end: fixtureAt(-1200),
+        compressed: false,
+      },
+      {
+        era: "era-iron-age",
+        start: fixtureAt(-1200),
+        end: fixtureAt(-586),
+        compressed: false,
+      },
+      {
+        era: "era-babylonian",
+        start: fixtureAt(-586),
+        end: fixtureAt(-539),
+        compressed: false,
+      },
+      {
+        era: "era-persian",
+        start: fixtureAt(-539),
+        end: fixtureAt(-332),
+        compressed: false,
+      },
+      {
+        era: "era-hellenistic",
+        start: fixtureAt(-332),
+        end: fixtureAt(-63),
+        compressed: false,
+      },
+      {
+        era: "era-roman",
+        start: fixtureAt(-63),
+        end: fixtureAt(0),
+        compressed: false,
+      },
+    ];
+    expect(bands.map(b => [b.era, b.compressed])).toEqual(
+      expected.map(b => [b.era, b.compressed]),
+    );
+    for (const [k, band] of bands.entries()) {
+      expect(band.start).toBeCloseTo(expected[k]!.start, 10);
+      expect(band.end).toBeCloseTo(expected[k]!.end, 10);
+    }
+    const tickAt = (id: string) =>
       vars(select(page, `[data-tick="${id}"]`)[0])["tick-at"];
-    // Inside the early band, 3000 years in 500 drawn years: (4004 BCE - 5000 BCE) / 3000 × 0.2.
-    expect(at("creation")).toBeCloseTo((996 / 3000) * 0.2, 10);
-    expect(at("adam")).toBeCloseTo((1000 / 3000) * 0.2, 10);
-    // To scale after it: (500 + years after 2000 BCE) / 2500.
-    expect(at("jericho")).toBeCloseTo((500 + 450) / 2500, 10);
-    expect(at("daniel")).toBeCloseTo((500 + 1833) / 2500, 10);
-    // The main Timeline has the one early era too, with its full label.
-    expect(
-      select(page, ".timeline-axis > .timeline-era > .timeline-era__label").map(
-        h => h.text.trim(),
-      )[0],
-    ).toBe("5000–2000 BCE");
+    expect(tickAt("creation")).toBeCloseTo(fixtureAt(-4004), 10);
+    expect(tickAt("adam")).toBeCloseTo(fixtureAt(-4000), 10);
+    expect(tickAt("jericho")).toBeCloseTo(fixtureAt(-1550), 10);
+    expect(tickAt("daniel")).toBeCloseTo(fixtureAt(-167), 10);
   });
 
   test("each tick carries its band's edges, on the strip's one mapping, so the CSS keeps its dot inside it (#175)", () => {
@@ -388,49 +460,64 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       expect(tick["era-start"]).toBe(band["era-start"]!);
       expect(tick["era-end"]).toBe(band["era-end"]!);
     }
-    // Creation (4004 BCE) and Adam (4000 BCE) share the early band.
+    // Creation (4004 BCE) and Adam (4000 BCE) share the span before the Bronze Age.
     const edges = (id: string) => {
       const v = vars(select(page, `[data-tick="${id}"]`)[0]);
       return [v["era-start"], v["era-end"]];
     };
-    expect(edges("creation")).toEqual([0, 0.2]);
-    expect(edges("adam")).toEqual([0, 0.2]);
+    expect(edges("creation")).toEqual(edges("adam"));
+    expect(edges("creation")[0]).toBe(0);
+    expect(edges("creation")[1]).toBeCloseTo(2000 / 15_000, 10);
   });
 
-  test("on the rail each era's label is its start year, BCE marked above the year-0 line; the link's name and the popover keep the full label", () => {
-    const eras = select(page, ".timeline-minimap__era");
-    expect(eras.map(e => e.attrs["aria-label"])).toEqual([
-      "5000–2000 BCE",
-      "2000–1500 BCE",
-      "1500–1000 BCE",
-      "1000–500 BCE",
-      "500–1 BCE",
+  test("on the rail each era's label is its start year with its era; the popover shows the era's name over its dates, and the link's name keeps both (#256)", () => {
+    expect(
+      select(page, ".timeline-minimap__era").map(e => e.attrs["aria-label"]),
+    ).toEqual([
+      "5000–3000 BCE",
+      "Bronze Age, ca. 3000–1200 BCE",
+      "Iron Age, ca. 1200–586 BCE",
+      "Babylonian rule, 587 or 586–539 BCE",
+      "Persian, 539–332 BCE",
+      "Hellenistic, 332–63 BCE",
+      "Roman, from 63 BCE",
+    ]);
+    // The dates are the second line; a span with no period has its range over BCE.
+    expect(
+      select(page, ".timeline-minimap__era-full .timeline-minimap__suffix").map(
+        e => squash(e.text),
+      ),
+    ).toEqual([
+      "BCE",
+      "ca. 3000–1200 BCE",
+      "ca. 1200–586 BCE",
+      "587 or 586–539 BCE",
+      "539–332 BCE",
+      "332–63 BCE",
+      "from 63 BCE",
     ]);
     expect(
       select(page, ".timeline-minimap__era-full").map(e => squash(e.text)),
     ).toEqual([
-      "5000–2000 BCE",
-      "2000–1500 BCE",
-      "1500–1000 BCE",
-      "1000–500 BCE",
-      "500–1 BCE",
+      "5000–3000 BCE",
+      "Bronze Age ca. 3000–1200 BCE",
+      "Iron Age ca. 1200–586 BCE",
+      "Babylonian rule 587 or 586–539 BCE",
+      "Persian 539–332 BCE",
+      "Hellenistic 332–63 BCE",
+      "Roman from 63 BCE",
     ]);
     expect(
       select(page, ".timeline-minimap__era-start").map(e => squash(e.text)),
-    ).toEqual(["5000", "2000", "1500", "1000", "500"]);
-    // The last BCE band ends at year 0, so it carries the BCE mark and the ink line below it.
-    expect(
-      select(page, ".timeline-minimap__band--bce-end").map(
-        b => b.attrs["data-era"],
-      ),
-    ).toEqual(["era-500-bce"]);
-    expect(
-      select(page, ".timeline-minimap__era-mark").map(e => squash(e.text)),
-    ).toEqual(["BCE"]);
-    // An axis that runs into CE: its first CE band starts "1 CE", after the BCE mark.
-    expect(
-      select(crowded, ".timeline-minimap__era-start").map(e => squash(e.text)),
-    ).toEqual(["5000", "2000", "1500", "1000", "500", "1 CE"]);
+    ).toEqual([
+      "5000 BCE",
+      "3000 BCE",
+      "1200 BCE",
+      "586 BCE",
+      "539 BCE",
+      "332 BCE",
+      "63 BCE",
+    ]);
   });
 
   test("the minimap has no legend: the strip takes the height, and the Timeline's own legend names the dots", () => {
@@ -576,9 +663,9 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     const labels = select(page, ".timeline-minimap__era-pill [data-now]");
     const eras = select(page, ".timeline-axis > .timeline-era");
     expect(labels.map(l => l.attrs["data-now"])).toEqual(ids(eras));
-    expect(labels.map(l => l.text.trim())).toEqual(
+    expect(labels.map(l => squash(l.text))).toEqual(
       select(page, ".timeline-axis > .timeline-era > .timeline-era__label").map(
-        h => h.text.trim(),
+        h => squash(h.text),
       ),
     );
   });
@@ -661,8 +748,8 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     ]);
     for (const s of settings) expect(s.attrs["aria-hidden"]).toBe("true");
 
-    // The strip's to-scale part runs 2000 BCE to 0 after the early band's
-    // 500 drawn years; Daniel is set 600–501 BCE.
+    // The strip's to-scale part runs 2000 BCE to 0 after the 500 drawn
+    // years before it; Daniel is set 600–501 BCE.
     const span = vars(
       select(
         page,

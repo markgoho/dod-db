@@ -1,18 +1,24 @@
 {{- /*
-  The Timeline axis's era bands (#163 §2). Takes the placed entries from
-  timeline-placement.html (each with a placement year). The axis starts at the
-  earliest placement year rounded down to $wide and ends after the latest,
-  rounded up to $narrow. Everything before $split (2000 BCE) is one band, few
-  entries and all of them a tradition's, so the minimap can draw it short
-  (compressed: true); from $split on, bands are $narrow (500) years.
-  Returns a slice of dict {label, from, to, compressed, items}, oldest first;
-  items keep placement order. Empty when nothing is placed.
+  The Timeline axis's eras: the age track of hugo/data/timeline/periods.yaml
+  (#255), so the axis is divided by cited historical periods, not round years
+  (#256). Takes the placed entries from timeline-placement.html (each with a
+  placement year). The axis starts at the earliest placement year rounded
+  down to $wide and ends after the latest, rounded up to $narrow. Each age
+  period is an era, clipped to the axis; the span before the first one (and
+  after the last, if it ends) is an era named only by its years. The age
+  periods must meet end to start, oldest first: a gap or overlap fails the
+  build.
+  Returns a slice of dict {label, dates, period, from, to, compressed, items},
+  oldest first: label is the period's name or, for a span with no period, its
+  years ("5000–3000 BCE"); dates is the period's display dates ("" for a span);
+  period its id. compressed marks the span before the first period, which the
+  minimap may draw short. items keep placement order. Empty when nothing is
+  placed.
   */
 -}}
 {{- $placed := . -}}
 {{- $wide := 1000 -}}{{- /* the axis starts on a multiple of this */ -}}
-{{- $narrow := 500 -}}{{- /* band width from $split on */ -}}
-{{- $split := -2000 -}}{{- /* 2000 BCE: where bands narrow */ -}}
+{{- $narrow := 500 -}}{{- /* the axis ends on a multiple of this */ -}}
 {{- $eras := slice -}}
 {{- with $placed -}}
   {{- $years := slice -}}
@@ -21,26 +27,41 @@
   {{- end -}}
   {{- $start := int (mul (math.Floor (div (float (math.Min $years)) $wide)) $wide) -}}
   {{- $end := int (mul (add (math.Floor (div (float (math.Max $years)) $narrow)) 1) $narrow) -}}
+  {{- $ages := sort (where (hugo.Data.timeline.periods | default slice) "track" "age") "from" -}}
   {{- $bounds := slice -}}
-  {{- if lt $start $split -}}
-    {{- /* One band from the axis start to $split (or to $end, if nothing is later). */ -}}
-    {{- $bounds = $bounds | append (dict "from" $start "to" (math.Min $split $end | int) "compressed" true) -}}
-  {{- end -}}
-  {{- $late := math.Max $start $split | int -}}
-  {{- if gt $end $late -}}
-    {{- range seq $late $narrow (sub $end $narrow) -}}
-      {{- $bounds = $bounds | append (dict "from" . "to" (add . $narrow)) -}}
+  {{- $at := $start -}}
+  {{- range $i, $p := $ages -}}
+    {{- if and (gt $i 0) (ne (int (index $ages (sub $i 1)).to) (int $p.from)) -}}
+      {{- errorf "timeline-eras: age period %q does not start where %q ends" $p.id (index $ages (sub $i 1)).id -}}
     {{- end -}}
+    {{- $from := math.Max (int $p.from) $start | int -}}
+    {{- $to := math.Min (int ($p.to | default $end)) $end | int -}}
+    {{- if lt $from $to -}}
+      {{- if lt $at $from -}}
+        {{- $bounds = $bounds | append (dict "from" $at "to" $from "compressed" (eq (len $bounds) 0)) -}}
+      {{- end -}}
+      {{- $bounds = $bounds | append (dict "from" $from "to" $to "period" $p.id "label" $p.label "dates" $p.display) -}}
+      {{- $at = $to -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if lt $at $end -}}
+    {{- $bounds = $bounds | append (dict "from" $at "to" $end "compressed" (eq (len $bounds) 0)) -}}
   {{- end -}}
   {{- range $bounds -}}
     {{- $from := .from -}}
     {{- $to := .to -}}
-    {{- /* [from, to): -1500..-1000 is "1500–1000 BCE"; -500..0 is "500–1 BCE". */ -}}
-    {{- $label := "" -}}
-    {{- if lt $from 0 -}}
-      {{- $label = printf "%d–%d BCE" (sub 0 $from) (cond (eq $to 0) 1 (sub 0 $to)) -}}
-    {{- else -}}
-      {{- $label = printf "%d–%d CE" (cond (eq $from 0) 1 $from) $to -}}
+    {{- /* A span with no period is named by its years, [from, to): -5000..-3000 is "5000–3000 BCE"; -500..0 is "500–1 BCE". */ -}}
+    {{- $label := .label | default "" -}}
+    {{- if not $label -}}
+      {{- if lt $from 0 -}}
+        {{- if gt $to 0 -}}
+          {{- $label = printf "%d BCE–%d CE" (sub 0 $from) $to -}}
+        {{- else -}}
+          {{- $label = printf "%d–%d BCE" (sub 0 $from) (cond (eq $to 0) 1 (sub 0 $to)) -}}
+        {{- end -}}
+      {{- else -}}
+        {{- $label = printf "%d–%d CE" (cond (eq $from 0) 1 $from) $to -}}
+      {{- end -}}
     {{- end -}}
     {{- $items := slice -}}
     {{- range $placed -}}
@@ -48,7 +69,7 @@
         {{- $items = $items | append . -}}
       {{- end -}}
     {{- end -}}
-    {{- $eras = $eras | append (dict "label" $label "from" $from "to" $to "compressed" (.compressed | default false) "items" $items) -}}
+    {{- $eras = $eras | append (dict "label" $label "dates" (.dates | default "") "period" (.period | default "") "from" $from "to" $to "compressed" (.compressed | default false) "items" $items) -}}
   {{- end -}}
 {{- end -}}
 {{- return $eras -}}

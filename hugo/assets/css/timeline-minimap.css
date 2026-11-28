@@ -398,6 +398,13 @@
   min-inline-size: 0;
 }
 
+/* The era pill's dates, after the name and lighter (#256). */
+.timeline-minimap__now-dates {
+  color: var(--color-text-muted);
+  font-weight: normal;
+  margin-inline-start: 0.4em;
+}
+
 .timeline-minimap__now {
   -webkit-box-orient: vertical;
   display: none;
@@ -419,9 +426,10 @@
 .timeline-minimap__strip {
   /*
     The era labels' own column at the strip's inline start, so no row of dots
-    ever runs into a label: two lines ("1000–500" over "BCE") in the popover,
-    one sideways line on the rail (see the rail's rule below). At most 6rem,
-    which "2000–1500" fits, so a wider popover keeps room for 8px dots.
+    ever runs into a label: the era's name over its dates ("Persian" over
+    "539–332 BCE"), wrapping, in the popover; one sideways line on the rail
+    (see the rail's rule below). At most 6rem, so a wider popover keeps room
+    for 8px dots.
   */
   --era-label-width: min(5 * var(--space-s), 6rem);
   /* The period gutter (#255), beside the years: its names on one line. */
@@ -463,16 +471,11 @@
   box-shadow: inset 0 var(--border-width-sm) 0 var(--tan-300);
 }
 
-/* Year 0, where BCE turns to CE: the one ink line. */
-.timeline-minimap__band--bce-end + .timeline-minimap__band {
-  box-shadow: inset 0 var(--border-width-sm) 0 var(--tan-900);
-}
-
 /*
   Each era's link is its label, in the label column from the band's top
   line down; the dots' row takes the rest of the band. In the popover the
-  label is two lines, its range over its BCE/CE suffix; on the rail, its
-  start year (see below).
+  label is the era's name over its dates (#256); on the rail, its start year
+  (see below). One too long for its band is hidden (data-unfit).
 */
 .timeline-minimap__era {
   block-size: 100%;
@@ -486,23 +489,26 @@
   overflow: hidden;
   padding: var(--space-4xs) var(--space-3xs);
   text-decoration: none;
-  white-space: nowrap;
 }
 
 .timeline-minimap__suffix {
   display: block;
 }
 
-.timeline-minimap__era-start,
-.timeline-minimap__era-mark {
+.timeline-minimap__era-start {
   display: none;
+}
+
+/* An era too short for its label (timeline-minimap.ts, data-unfit) keeps its link, not its text (#256). */
+.timeline-minimap__band[data-unfit] .timeline-minimap__era > * {
+  visibility: hidden;
 }
 
 /*
   The rail is too narrow for a label column a word wide, so there each label
-  runs sideways down its band and is only the band's start year: 1500, 1000,
-  500, 1 CE (the link's name keeps the range; the era pill shows the current
-  one in full). "BCE" ends the last BCE band, above the year-0 line. A media
+  runs sideways down its band and is only the band's start year: 1200 BCE,
+  586 BCE (the link's name keeps the name and dates; the period gutter names
+  the period, and the era pill shows the current one in full). A media
   query, not a container query: the spacing tokens are cqi-based and would
   shrink inside a container this narrow. Literal: media queries cannot read
   custom properties.
@@ -524,10 +530,11 @@
   .timeline-minimap__era {
     font-size: var(--era-label-size);
     height: 100%;
-    /* Down the band, only clear of its line: a 500-year band is barely a label long. */
+    /* Down the band, only clear of its line: a short period is barely a label long. */
     padding-block: var(--space-4xs);
     padding-inline: var(--border-width-sm) 0;
     text-overflow: ellipsis;
+    white-space: nowrap;
     width: var(--era-label-width);
     writing-mode: vertical-rl;
   }
@@ -538,30 +545,6 @@
 
   .timeline-minimap__era-start {
     display: inline;
-  }
-
-  .timeline-minimap__era-mark {
-    color: var(--color-text-muted);
-    display: block;
-    font-size: var(--era-label-size);
-    /* Physical: a sideways box's logical insets turn with it. */
-    bottom: 0;
-    left: 0;
-    line-height: var(--line-height-heading);
-    padding-block: var(--space-4xs);
-    /* Sideways, inline is down the band: clear of the year-0 line below. */
-    padding-inline: 0 var(--space-3xs);
-    pointer-events: none;
-    position: absolute;
-    width: var(--era-label-width);
-    writing-mode: vertical-rl;
-  }
-
-  /* "1 CE" starts as far below the year-0 line as "BCE" ends above it. */
-  .timeline-minimap__band--bce-end
-    + .timeline-minimap__band
-    .timeline-minimap__era {
-    padding-inline-start: var(--space-3xs);
   }
 }
 
@@ -1021,16 +1004,8 @@
   z-index: 1;
 }
 
-:is(
-  .timeline-minimap__era-full,
-  .timeline-minimap__era-start,
-  .timeline-minimap__era-mark
-) {
+:is(.timeline-minimap__era-full, .timeline-minimap__era-start) {
   background: var(--tan-000);
-}
-
-.timeline-minimap__era-mark {
-  z-index: 1;
 }
 
 /* ---------- The current-state look: what --is-current: 1 shows ---------- */

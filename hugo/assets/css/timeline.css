@@ -139,7 +139,7 @@
   translate: -50% 0;
 }
 
-/* An era band: a label on the axis, then its entries. An empty era keeps a minimum height, so the gap shows. */
+/* An era (a historical period, #256): a label on the axis, then its entries. An empty era keeps a minimum height, so the gap shows. */
 .timeline-era {
   align-content: start;
   display: grid;
@@ -151,13 +151,18 @@
   min-block-size: var(--space-2xl);
 }
 
+/* The era's name, then its dates, lighter (#256): the period leads, the years follow. */
 .timeline-era__label {
-  background: var(--tan-900);
+  background: var(--tan-000);
+  border: var(--border-width-md) solid var(--tan-900);
   border-radius: var(--border-radius-md);
-  color: var(--tan-000);
+  color: var(--color-text-main);
   font-family: var(--font-family-main);
   font-size: var(--step--1);
   font-weight: var(--font-weight-bold);
+  font-style: normal;
+  text-transform: none;
+  white-space: nowrap;
   justify-self: start;
   margin: 0;
   /* Centred on the axis line: its start at the line, then back half its own width. */
@@ -165,6 +170,12 @@
   padding: var(--space-4xs) var(--space-xs);
   position: relative;
   translate: -50% 0;
+}
+
+.timeline-era__dates {
+  color: var(--color-text-muted);
+  font-weight: normal;
+  margin-inline-start: 0.4em;
 }
 
 .timeline-era__entries {
@@ -608,7 +619,7 @@
   text-wrap: balance;
 }
 
-/* ---------- Periods on the minimap (#255): each period, its dates and cites ---------- */
+/* ---------- Periods (#255, #256): each period, its dates and cites ---------- */
 
 /* Closed, as Sources used is: no gap under the summary. */
 .timeline-periods-section {

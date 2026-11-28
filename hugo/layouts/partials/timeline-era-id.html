@@ -1,14 +1,19 @@
 {{- /*
-  The id of one Timeline era band, shared by the axis and the minimap's era
-  links (#167 §1). Takes an era from timeline-eras.html; returns its start as
-  a year: "era-1500-bce", "era-1-ce".
+  The id of one Timeline era, shared by the axis and the minimap's era links
+  (#167 §1). Takes an era from timeline-eras.html; returns its period's id
+  ("era-bronze-age", #256) or, for a span with no period, its start as a
+  year: "era-5000-bce", "era-1-ce".
   */
 -}}
-{{- $from := int .from -}}
 {{- $id := "" -}}
-{{- if lt $from 0 -}}
-  {{- $id = printf "era-%d-bce" (sub 0 $from) -}}
+{{- with .period -}}
+  {{- $id = printf "era-%s" . -}}
 {{- else -}}
-  {{- $id = printf "era-%d-ce" (cond (eq $from 0) 1 $from) -}}
+  {{- $from := int .from -}}
+  {{- if lt $from 0 -}}
+    {{- $id = printf "era-%d-bce" (sub 0 $from) -}}
+  {{- else -}}
+    {{- $id = printf "era-%d-ce" (cond (eq $from 0) 1 $from) -}}
+  {{- end -}}
 {{- end -}}
 {{- return $id -}}

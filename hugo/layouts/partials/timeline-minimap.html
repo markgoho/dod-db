@@ -3,8 +3,8 @@
   rail in the inline-start gutter on wide screens, and on narrow screens a
   sticky "You are in" bar whose Contents button opens the same minimap as a
   popover. On wide screens a pill fixed over the axis names the current era.
-  Era bands are sized by their year span (but for the short early band, see
-  $axis) and each placed entry is a tick at its year, so Hugo lays it all
+  Era bands (the historical periods, #256) are sized by their year span (but
+  for the stretch before 2000 BCE, see $axis) and each placed entry is a tick at its year, so Hugo lays it all
   out; nothing is measured in the page.
   Takes the eras from timeline-eras.html.
 
@@ -27,20 +27,23 @@
 {{- $placedLabel := $labels.placed -}}
 {{- /*
   The strip's one year-to-position mapping (timeline-minimap-at below). It is
-  to scale from the end of the compressed early band (5000–2000 BCE, whose
-  few entries are all a tradition's) to the axis end. The early band is drawn
-  as if it were $compressedYears long, as tall as one of the 500-year bands
-  after it, and its entries are spread linearly within it. Without an early
-  band the whole strip is to scale.
+  to scale from $split (2000 BCE) to the axis end. Before $split the few
+  entries are all a tradition's, so that stretch is drawn as if it were
+  $compressedYears long and its entries are spread linearly within it. The
+  scale is the strip's own, not the eras': since the eras became periods
+  (#256), the Bronze Age runs across $split. An axis that starts at or after
+  $split is all to scale.
   */
 -}}
 {{- $compressedYears := 500 -}}
+{{- $split := -2000.0 -}}
 {{- $first := index $eras 0 -}}
+{{- $early := lt (float $first.from) $split -}}
 {{- $axis := dict
   "start" (float $first.from)
-  "split" (float (cond $first.compressed $first.to $first.from))
+  "split" (cond $early $split (float $first.from))
   "end" (float (index $eras (sub (len $eras) 1)).to)
-  "drawnAs" (float (cond $first.compressed $compressedYears 0))
+  "drawnAs" (float (cond $early $compressedYears 0))
 -}}
 {{- /*
   The historical periods (#255, hugo/data/timeline/periods.yaml), as shares
@@ -96,7 +99,9 @@
 
   The CSS keeps every dot inside its band (#175), nudged off an era's edge at
   most $edge of the strip in (a dot's half, the current tick's growth and a
-  line), so the window is measured between the nudged positions. It also caps
+  line), so the window is measured between the nudged positions. A band less
+  than two $edge long (Babylonian rule, #256) has no room to nudge within:
+  its ticks are measured at its middle (the CSS clamp keeps them in it). It also caps
   the dot so that $window of the strip clears a dot and the current one beside
   it, grown 1.5× (#175), and the nudge stays within $edge. So two ticks a
   window apart clear each other, and two in one place never meet. The places
@@ -117,9 +122,9 @@
   {{- $eraId := partial "timeline-era-id.html" . -}}
   {{- $eraStart := partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" .from) -}}
   {{- $eraEnd := partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" .to) -}}
-  {{- /* The band's start as a bare year, for the rail's label column: 1500, 1 CE. */ -}}
-  {{- $startYear := cond (lt (int .from) 0) (printf "%d" (sub 0 (int .from))) (cond (eq (int .from) 0) "1 CE" (printf "%d" (int .from))) -}}
-  {{- $bands = $bands | append (dict "id" $eraId "label" .label "start" $eraStart "end" $eraEnd "empty" (not .items) "compressed" .compressed "startYear" $startYear "bceEnd" (eq (int .to) 0)) -}}
+  {{- /* The band's start year, for the rail's label column: 1200 BCE, 1 CE. With its era: a period may run across year 0 (#256). */ -}}
+  {{- $startYear := cond (lt (int .from) 0) (printf "%d BCE" (sub 0 (int .from))) (printf "%d CE" (cond (eq (int .from) 0) 1 (int .from))) -}}
+  {{- $bands = $bands | append (dict "id" $eraId "label" .label "dates" .dates "start" $eraStart "end" $eraEnd "empty" (not .items) "compressed" .compressed "startYear" $startYear) -}}
   {{- range .items -}}
     {{- $p := .page.Params -}}
     {{- $date := "" -}}
@@ -153,7 +158,7 @@
       "date" $date
       "placed" (eq .by "tradition")
       "at" $at
-      "y" (math.Min (math.Max $at (add $eraStart $edge)) (sub $eraEnd $edge)))
+      "y" (cond (lt (sub $eraEnd $eraStart) (mul 2 $edge)) (div (add $eraStart $eraEnd) 2) (math.Min (math.Max $at (add $eraStart $edge)) (sub $eraEnd $edge))))
     -}}
   {{- end -}}
 {{- end -}}
@@ -333,7 +338,9 @@
     <span class="timeline-minimap__slot">
       {{- range $bands }}
         <span class="timeline-minimap__now" data-now="{{ .id }}"
-          >{{ .label }}</span
+          ><b>{{ .label }}</b>{{ with .dates }}
+            <span class="timeline-minimap__now-dates"> {{ . }}</span>
+          {{ end }}</span
         >
       {{- end }}
     </span>
@@ -356,34 +363,33 @@
               timeline-minimap__band--empty
             {{ end }}{{ if .compressed }}
               timeline-minimap__band--compressed
-            {{ end }}{{ if .bceEnd }}
-              timeline-minimap__band--bce-end
             {{ end }}"
             data-era="{{ .id }}"
             style="--era-start: {{ .start }}; --era-end: {{ .end }}">
             {{- /*
-              The popover shows the range over its BCE/CE suffix; the rail,
-              only the band's start year ("1500"), with BCE and CE marked at
-              year 0. The link's name keeps the full label.
+              The popover shows the era's name over its dates (a span with no
+              period: its range over BCE/CE); the rail, only the start year
+              ("1200 BCE"), the period gutter naming the period (#256). The
+              link's name keeps both.
             */}}
-            {{- $range := index (split .label " ") 0 }}
+            {{- $top := .label }}
+            {{- $under := .dates }}
+            {{- if not $under }}
+              {{- $top = index (split .label " ") 0 }}
+              {{- $under = strings.TrimPrefix (printf "%s " $top) .label }}
+            {{- end }}
             <a
               class="timeline-minimap__era"
               href="#{{ .id }}"
-              aria-label="{{ .label }}"
+              aria-label="{{ .label }}{{ with .dates }}, {{ . }}{{ end }}"
               ><span class="timeline-minimap__era-full"
-                >{{ $range }}<span class="timeline-minimap__suffix">
-                  {{ strings.TrimPrefix (printf "%s " $range) .label }}</span
+                >{{ $top }}<span class="timeline-minimap__suffix">
+                  {{ $under }}</span
                 ></span
               ><span class="timeline-minimap__era-start" aria-hidden="true"
                 >{{ .startYear }}</span
               ></a
             >
-            {{- if .bceEnd }}
-              <span class="timeline-minimap__era-mark" aria-hidden="true"
-                >BCE</span
-              >
-            {{- end }}
           </li>
         {{- end }}
       </ol>
@@ -391,7 +397,7 @@
         The periods (#255): the age track as tinted bands across the strip,
         each named in the period gutter beside the years; the temple track as
         a stripe at the gutter's edge. Decorative: the Timeline lists the
-        periods, with their dates and cites, under "Periods on the minimap".
+        periods, with their dates and cites, under "Periods".
         timeline-minimap.ts flags the current entry's periods.
       */}}
       {{- with $periods }}
