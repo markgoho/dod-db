@@ -1532,7 +1532,11 @@ Bun.serve({
 
       const transcriptPath =
         url.searchParams.get("granularity") === "sentence"
-          ? video.transcriptPath.replace(/\.txt$/, "-sentences.txt")
+          ? path.join(
+              path.dirname(video.transcriptPath),
+              "sentences",
+              path.basename(video.transcriptPath),
+            )
           : video.transcriptPath;
       const file = Bun.file(transcriptPath);
       const exists = await file.exists();
