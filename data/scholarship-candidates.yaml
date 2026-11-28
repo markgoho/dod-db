@@ -38,6 +38,25 @@ subjects:
     core: "Mark is the earliest Gospel, written around 70 CE."
     basis: "Inventory rank 6: 8 Episodes, 14 claims, 10 majority strength, 5 from Guest Speakers."
     notes: "Inventory: mostly dating claims, so it may feed the Timeline (#108) more than a page. Gospel authorship and Q are a thinner separate set (6 Episodes, 10 claims, no consensus-strength wording)."
+    watch:
+      [
+        synoptic,
+        earliest gospel,
+        earliest of the gospels,
+        first gospel,
+        Mark is the earliest,
+        Mark's the earliest,
+        Mark was the first,
+        Mark is the first,
+        Markan,
+        Matthean,
+        Lukan,
+        Q source,
+        Quelle,
+        two source,
+        gospels were written,
+        anonymous gospel,
+      ]
 
   - slug: pentateuch-authorship
     subject: "Who wrote the Pentateuch"
@@ -45,6 +64,25 @@ subjects:
     core: "Moses did not write the Pentateuch; it has more than one author and took shape in the mid-first millennium BCE."
     basis: "Inventory rank 7: 7 Episodes, 15 claims; 5 asserted without a marker, 5 from Guest Speakers."
     notes: "The show flags the source model itself as contested (Ep 22, Ep 187)."
+    watch:
+      [
+        documentary hypothesis,
+        JEDP,
+        Yahwist,
+        Elohist,
+        Priestly source,
+        priestly author,
+        non-Priestly,
+        Pentateuchal,
+        Mosaic authorship,
+        Moses wrote,
+        Moses didn't write,
+        five books of Moses,
+        first five books,
+        Wellhausen,
+        source critic,
+        supplementary model,
+      ]
 
   - slug: israelite-origins-and-the-conquest
     subject: "Israel's origins and the conquest of Canaan"
@@ -52,6 +90,28 @@ subjects:
     core: "Israel emerged within Canaan; archaeology does not support a conquest."
     basis: "Inventory rank 8: 5 Episodes, 9 claims, 3 consensus, 3 no evidence. Explicit consensus wording in Ep 116."
     notes: "Inventory suggests merging with Moses and the Exodus. Moses already has a Merneptah question. Decide at the test: own page, or new statements for moses-and-the-exodus (then move to `statements`)."
+    watch:
+      [
+        the conquest,
+        conquest narrative,
+        conquest of Canaan,
+        Jericho,
+        peasant revolt,
+        infiltration,
+        highland,
+        hill country,
+        Late Bronze,
+        Bronze Age collapse,
+        Merneptah,
+        Shasu,
+        Habiru,
+        Apiru,
+        Israelite identity,
+        Israelite ethnicity,
+        Kenyon,
+        Hazor,
+        four-room,
+      ]
 
   - slug: child-sacrifice-and-molech
     subject: "Child sacrifice and Molech"
@@ -59,12 +119,49 @@ subjects:
     core: "Exodus 22:29 originally commanded the sacrifice of the firstborn."
     basis: "Inventory rank 10: 6 Episodes, 10 claims."
     notes: "Second stable claim: no material evidence it was practiced. Molech as a sacrifice type drifts from 'shifting consensus' (Ep 21) to flat assertion (Ep 132, Ep 139)."
+    watch:
+      [
+        Molech,
+        Moloch,
+        Molek,
+        mlk,
+        molk,
+        child sacrifice,
+        human sacrifice,
+        sacrifice your firstborn,
+        sacrifice the firstborn,
+        sacrifice their children,
+        sacrifice children,
+        sacrificing children,
+        sacrificing their children,
+        Tophet,
+        through the fire,
+        Jephthah,
+        Carthage,
+        "22:29",
+      ]
 
   - slug: revelation
     subject: "Revelation: date, author and 666"
     status: candidate
     core: "Revelation was written in the 90s CE, not by the author of John's Gospel, and 666 refers to Nero."
     basis: "Inventory short-page tier: 4 Episodes, 9 claims, 4 consensus."
+    watch:
+      [
+        "666",
+        "616",
+        Nero,
+        Patmos,
+        Domitian,
+        number of the beast,
+        mark of the beast,
+        Apocalypse of John,
+        John the Revelator,
+        author of Revelation,
+        author of the book of Revelation,
+        Revelation was written,
+        gematria,
+      ]
 
   - slug: catholic-epistles-authorship
     subject: "Who wrote James, Peter and Jude"
@@ -72,12 +169,41 @@ subjects:
     core: "James, Jude and 1 and 2 Peter were not written by the figures they name."
     basis: "Inventory short-page tier: 4 Episodes, 9 claims."
     notes: "Partner to pauline-authorship; may share its pseudepigraphy sources."
+    watch:
+      [
+        "1 Peter",
+        "2 Peter",
+        First Peter,
+        Second Peter,
+        Petrine,
+        Peter wrote,
+        Epistle of James,
+        letter of James,
+        book of James,
+        epistle of Jude,
+        letter of Jude,
+        book of Jude,
+        Catholic Epistles,
+      ]
 
   - slug: isaiah-authorship
     subject: "Who wrote Isaiah"
     status: candidate
     core: "Isaiah 40-66 was not written in the eighth century BCE."
     basis: "Inventory short-page tier: 2 Episodes, 8 claims, 4 consensus; mostly Ep 43."
+    watch:
+      [
+        Second Isaiah,
+        Deutero-Isaiah,
+        Deutero Isaiah,
+        Third Isaiah,
+        Trito-Isaiah,
+        First Isaiah,
+        Proto-Isaiah,
+        Isaiah 40,
+        Isaiah 45,
+        book of Isaiah,
+      ]
 
   - slug: birth-of-jesus
     subject: "The birth of Jesus"
@@ -85,18 +211,64 @@ subjects:
     core: "Jesus came from Nazareth, not Bethlehem; the virgin birth is a later tradition."
     basis: "Inventory short-page tier: 3 Episodes, 8 claims; mostly Ep 141."
     notes: "Includes Isaiah 7:14."
+    watch:
+      [
+        virgin birth,
+        born of a virgin,
+        birth narrative,
+        nativity,
+        Bethlehem,
+        Nazareth,
+        Quirinius,
+        census,
+        wise men,
+        manger,
+        almah,
+        parthenos,
+        "Isaiah 7:14",
+        Immanuel,
+        Emmanuel,
+        birth of Jesus,
+        Jesus's birth,
+        Jesus was born,
+      ]
 
   - slug: asherah
     subject: "Asherah and Yahweh's consort"
     status: candidate
     core: "Yahweh and Asherah were understood as a divine pair."
     basis: "Inventory short-page tier: 5 Episodes, 6 claims, no consensus-strength wording."
+    watch:
+      [
+        Asherah,
+        Asherim,
+        Athirat,
+        Kuntillet,
+        Ajrud,
+        God's wife,
+        consort,
+        Queen of Heaven,
+        sacred pole,
+        pillar figurine,
+      ]
 
   - slug: deuteronomy-and-josiah
     subject: "Deuteronomy and Josiah's reform"
     status: candidate
     core: "Deuteronomy dates to the seventh century BCE and draws on the Vassal Treaty of Esarhaddon."
     basis: "Inventory short-page tier: 4 Episodes, 6 claims."
+    watch:
+      [
+        Josiah,
+        Josianic,
+        Hilkiah,
+        Huldah,
+        book of the law,
+        Esarhaddon,
+        vassal treat,
+        Deuteronomic,
+        centraliz,
+      ]
 
   - slug: creation-ex-nihilo
     subject: "Creation out of nothing"
@@ -104,6 +276,15 @@ subjects:
     core: "The doctrine of creation out of nothing appears only in the last decades of the second century CE."
     basis: "Inventory short-page tier: 2 Episodes, 5 claims; the most explicit wording in the corpus ('the academic consensus is')."
     notes: "Tracked by #144. Its Genesis half (Genesis 1 does not describe creation out of nothing) is the nihilo statement on /scholarship/the-creation-stories-in-genesis/ (draft). The doctrine's second-century origin, this entry's core, was not sourced in the #144 first pass: no readable Scholarly or Reference passage found for it, and Paul's Encyclopaedia Judaica entry puts the concept's first appearance earlier, in 2 Maccabees 7:28. Not sourcing-tested."
+    watch:
+      [
+        ex nihilo,
+        creatio ex,
+        out of nothing,
+        from nothing,
+        "2 Maccabees 7",
+        Second Maccabees 7,
+      ]
     found:
       - "paul-ej-creation-cosmogony, opening section (https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/creation-and-cosmogony-bible): “creatio ex nihilo, a concept that first appears in ii Maccabees 7:28”. Read 2026-11-24 (#144); first-edition text, outside the 30-year window."
     leads:
@@ -116,36 +297,100 @@ subjects:
     status: candidate
     core: "" # the cluster mixes composition claims with John 1:1 grammar; the test states one thesis or drops it as not-a-subject
     basis: "Inventory short-page tier: 3 Episodes, 7 claims, 5 from Guest Speakers."
+    watch:
+      [
+        Johannine,
+        Fourth Gospel,
+        Beloved Disciple,
+        John's gospel,
+        "John 1:1",
+        John 21,
+        Logos,
+        the Word was,
+        redactor,
+      ]
 
   - slug: psalms-authorship
     subject: "Who wrote the Psalms"
     status: candidate
     core: "Scholars do not consider David the author of the psalms."
     basis: "Inventory cluster: 3 Episodes, 4 claims, 3 asserted without a marker. Song of Songs authorship is in the same cluster."
+    watch:
+      [
+        David wrote,
+        wrote the psalms,
+        psalm of David,
+        psalms were written,
+        Psalm 151,
+        sons of Korah,
+        author of the psalm,
+        Song of Songs,
+        Song of Solomon,
+      ]
 
   - slug: religion-as-a-modern-category
     subject: "Religion as a modern category"
     status: candidate
     core: "Religion as a distinct category did not exist in the ancient world."
     basis: "Inventory cluster: 3 Episodes, 3 claims."
+    watch:
+      [
+        concept of religion,
+        category of religion,
+        idea of religion,
+        definition of religion,
+        define religion,
+        word for religion,
+        invention of religion,
+        religion as we,
+        Nongbri,
+        Before Religion,
+      ]
 
   - slug: cult-prostitution
     subject: "Cult prostitution"
     status: candidate
     core: "There is no evidence that cult or sacred sex work took place."
     basis: "Inventory cluster: 2 Episodes (Ep 125, Ep 126), 3 claims."
+    watch:
+      [
+        cult prostitut,
+        cultic sex,
+        cult sex,
+        sacred sex,
+        sacred prostitut,
+        temple prostitut,
+        ritual prostitut,
+        kedesh,
+        qedesh,
+      ]
 
   - slug: junia
     subject: "Junia"
     status: candidate
     core: "The name Junia is feminine."
     basis: "Inventory cluster: 1 Episode (Ep 16), 3 claims, 2 consensus."
+    watch: [Junia, Andronicus, woman apostle, female apostle, Romans 16]
 
   - slug: easter-origins
     subject: "The origins of Easter"
     status: candidate
     core: "No data support any relationship between Easter and Ishtar."
     basis: "Inventory cluster: 1 Episode (Ep 5), 5 claims."
+    watch:
+      [
+        Ishtar,
+        Eostre,
+        Ostara,
+        Pascha,
+        Quartodeciman,
+        Venerable Bede,
+        pagan origin,
+        "Easter ",
+        "Easter.",
+        "Easter,",
+        "Easter?",
+      ]
 
   - slug: inerrancy
     subject: "Inerrancy"
