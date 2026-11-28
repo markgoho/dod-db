@@ -11503,3 +11503,31 @@ comstock-2025-britannica-christian-zionism:
   url: "https://www.britannica.com/topic/Christian-Zionism"
   hostAuthored: false
   tradition: null
+
+pioske-bo-first-temple:
+  author: "Dan Pioske"
+  title: "First Temple"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2019
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/first-temple/"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-kings-6-notes:
+  author: null
+  title: "Notes to 1 Kings 6"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/1kings/6"
+  hostAuthored: false
+  tradition: null

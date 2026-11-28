@@ -1,0 +1,134 @@
+# Review record for the Timeline Entry `first-temple` (/timeline/#first-temple; #93 shape). Not rendered.
+# Issue #278, “Timeline Entry: The First Temple built”. Issue notes: gap beside `fall-of-jerusalem`, `second-temple`, `temple-destruction`; `solomon` doesn't mention the temple. Critical first; a Tradition Date only if a Trigger Claim states the tradition's side; keep consistent with `solomon` (10th century BCE) and `fall-of-jerusalem`. The issue's “expect … ʿAin Dara” notes were recall, not sources; not relied on.
+# Trigger Claims: E2 00:35:31 (Stavrakopoulou: “you can't go digging up the Temple Mount to find the remains of the First Temple, you know, the Solomon's Temple.”; the transcript has no milliseconds, stored as .000). E176 00:39:17.920 (McClellan: “Solomon builds the temple”), inside a sketch of Zion's history from 2 Samuel 5 onward. Neither gives a date; both are critical-side statements on the subject. No tradition-side claim: the dating-claims inventory (line 227) says “No traditional date is stated … for Solomon's Temple”, and a grep of every final Transcript found none. #99: no show date to contradict.
+# Not used as Trigger Claims: E87 00:37:34 (“That was Jerusalem before, like, the temple was built”; relative aside on the City of David); E43 00:13:58 (the First Temple's destruction in 587, which is `fall-of-jerusalem`'s subject); E88, E102, E103 (temples of the First Temple period at Arad and Tel Motza, not this building); E102 00:50:34 (“we ought to do a show on the First Temple”, no claim).
+# Sourcing test, 2026-11-28: met. Britannica (Reference) dates the completion in its own voice: “completed in 957 BCE”. Title and display are for completion, as on `second-temple` (“Second Temple completed”, 515 BCE). The note carries the evidence by name: Pioske (Bible Odyssey, Reference) says no trace has been unearthed and the Temple Mount can't be excavated; Mazar (Scholarly) has no doubt a temple stood before the Babylonian conquest, doubts Solomon's kingdom could afford the buildings described, and does not exclude a tenth-century founding; NABRE's note on 1 Kgs 6:1 calls the Bible's figures schematic and advises caution. 957 sits inside `solomon`'s “10th century BCE”.
+# Dropped as attributed or hedged (conditional-not-critical): Pioske's “According to the Bible … (ca. 950 BCE)”; EJ Grintz and Yadin's regnal years (the Bible's 4th–11th years, and EJ 1st-edition text without a “(2nd ed.)” marker, outside #80's window); HarperCollins “Temple, The” “(tenth century BCE)” (glosses the monarchy, in a sentence spanning to 70 CE: critical-scope); Solomon reign dates (EJ “apparently”, Coogan ch. 15 “some likelihood”, Hayes's 922 death year). All under `uncited`.
+# agent: the first pass (2026-11-28). Research agent fetched each source into its own scratch folder by curl; Britannica refused curl (403) and was read in Claude in Chrome (page text saved), as on `second-temple`. Quotes script-matched against the saved text (whitespace, quotes, dashes, entities, soft and line-break hyphens normalised): 7 hits, 0 misses. Mazar pages are printed pages (PDF = printed + 11). Trigger Claims matched by script as substrings of their Transcript lines: 2 hits.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Britannica's 957 is a conventional date that ultimately rests on the biblical chronology (cf. NABRE's caution), but Britannica states it flat, unattributed; check that reading. (2) Neither Trigger Claim dates the temple: E2 is an evidence claim, E176 a narrative-sequence statement; check `states: critical` for E176, which may read as a retelling of the biblical story rather than the speaker's own claim. (3) split-shown: no source gives a competing date; Mazar's doubt is on the kingdom's means, not a different year, so the display stays single and the note names the doubt. (4) Display is flat while the note shows doubt, the same shape as `solomon` (#275's scope). (5) `pioske-bo-first-temple` and `nabre-1-kings-6-notes` are new ids; `nabre-1-kings-6-notes` read by curl from the live USCCB page (other NABRE ids note it refuses scripted requests; this one didn't).
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Temple of Jerusalem”, third body paragraph. Flat, own voice: constructed in Solomon's reign, completed 957 BCE. Read in Claude in Chrome 2026-11-28; byline “The Editors of Encyclopaedia Britannica”, revised by Adam Zeidan. Flag 1.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Pioske, Bible Odyssey “First Temple” (March 6, 2019), opening paragraph. No trace unearthed; Temple Mount not open to excavation. Cited for the note.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Mazar 2007, p. 128 (PDF 139). A temple certainly stood before the Babylonian conquest; no textual hint of a builder other than Solomon. Mazar's own voice. Cited for the note.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Mazar 2007, p. 129 (PDF 140). Doubts Solomon's kingdom could afford the structures. Cited for the note; the next sentence (“It may well be that the biblical description is based on the shape of the Temple at the time of writing”) is summarised as “the buildings the Bible describes”.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Mazar 2007, p. 129 (PDF 140). Does not exclude a tenth-century founding. Cited for the note (“does not rule out”).",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE note to 1 Kgs 6:1: the Bible's date is reckoned from the traditional exodus date in conventional generations. Cited for the note.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE note to 1 Kgs 6:1, last sentence: caution in using the figures for historical reconstruction. Cited for the note.",
+    }
+triggers:
+  2@00:35:31:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Stavrakopoulou on the limits of archaeology; the turn goes on to the city being modern and contested. 00:33:38–00:37:56 read. No date.",
+    }
+  176@00:39:17:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. McClellan sketching Zion from 2 Sam 5 (00:36:44) onward; the sentence is a step in that sequence. 00:35:02–00:41:38 read. No date. Flag 2.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Title and display are for the completion, what Britannica dates; not for the start of construction or for Solomon's reign.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "One cited date (957). No competing date found in a source's own voice; Pioske's ca. 950 is the Bible's and uncited. Mazar's doubt is shown in the note by name. Flag 3.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No tradition block; no Trigger Claim states the tradition's side.",
+    }
+  tradition-named: { agent: pass, owner: "", note: "No tradition block." }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica's date is flat. Attributed (Pioske, Grintz, Yadin) and hedged (EJ Solomon, Coogan ch. 15) dates left uncited; Mazar's tenth-century possibility appears only in the note, as a possibility.",
+    }
+sources:
+  britannica-temple-of-jerusalem:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference; reused id (cited on `second-temple`, `temple-destruction`). Refuses scripted requests; read in Claude in Chrome.",
+    }
+  pioske-bo-first-temple:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (Bible Odyssey, SBL); new id. Byline Dan Pioske, March 6, 2019; author bio on the page (Georgia Southern University).",
+    }
+  mazar-2007-quest-david-solomon:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (SBL); reused id. Essay pp. 117–139.",
+    }
+  nabre-1-kings-6-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (NABRE notes, Catholic Biblical Association translators, as other nabre-* ids); new id. Flag 5.",
+    }
+leads:
+  - "Vaughn and Killebrew, eds., Jerusalem in Bible and Archaeology: The First Temple Period (SBL Symposium 18, 2003): cited by Darby; not checked for an open copy."
+  - "Britannica “Solomon”: not read."
+  - "Bible Odyssey video “The First and Second Temples”: video, not read."
+uncited:
+  - "Pioske, Bible Odyssey “First Temple”: “According to the Bible (1Kgs 6:37-38, 2Chr 3:2), Solomon built the First Temple between the fourth and eleventh years of his reign (ca. 950 BCE)”. Attributed to the Bible."
+  - "Pioske: “The First Temple would have stood alongside the royal palace in Jerusalem for nearly four hundred years.” Duration, hedged."
+  - "EJ “Temple: First Temple, History” (Grintz): “The work was begun in the month of Iyyar in the fourth year of Solomon's reign and was completed in the 11th year of his reign in the month of Bul”. The Bible's regnal years (1 Kgs 6:1, 38), no absolute date; 1st-edition text, outside #80's window."
+  - "EJ “Temple: First Temple, Structure” (Yadin): “erected on Mt. Moriah in Jerusalem between the fourth and the 11th years of Solomon's reign”. Same reasons; also the Arad and Tell Tainet parallels."
+  - "HarperCollins “Temple, The”: “beginning with the monarchy (tenth century BCE) and continuing until its final destruction by the Roman legions in 70 CE”. The century glosses the monarchy; the sentence covers both temples (critical-scope)."
+  - "HarperCollins “Temple, The”: “The First Temple, built under Solomon”; “Solomon”: “an extensive building program that included an elaborate palace complex and a temple”; “Jerusalem”: “constructing a Temple north of the City of David”. Undated; Britannica carries the reign."
+  - "EJ “Solomon”: “Solomon reigned jointly with his father apparently from 967 to 965 b.c.e. and on his own from 965 to 928 b.c.e.” Reign, hedged; also the ʿAin Dara parallel (“contemporary with it”), hedged by “apparently”."
+  - "Coogan and Chapman ch. 15 summary: “there is some likelihood that there was a historical Solomon who reigned from approximately 968 to 928 BCE”. Reign, hedged."
+  - "Hayes l14: “So, when Solomon died in 922”. Reign end only."
+  - "Mazar 2007, p. 127: “The temple and palace that Solomon supposedly built should be found, if anywhere, below the present Temple Mount, where no excavations are possible”. Hedged (“supposedly”); Pioske carries the no-excavation point."
+  - "Mazar 2007, pp. 128–129: the tripartite plan has close parallels at Tell Tayinat and ʿAin Dara, unknown after the eighth century, so the description “could not have been an invention of the seventh century or later”. Not needed beside p. 128's existence statement."
+  - "Finkelstein 2007, pp. 112–113: Jerusalem has “failed to reveal evidence for any meaningful tenth century building activity”; tenth-century Jerusalem “no more than a small, remote highlands village”. On Jerusalem, not the temple, which lies under the unexcavated Temple Mount; `solomon` carries the historicity debate."
+  - "Eskenazi, Bible Odyssey: “The Jerusalem temple said to have been built by Solomon was destroyed in 587/586 B.C.E.” Attributed; destruction is `fall-of-jerusalem`."
