@@ -18,6 +18,7 @@
     "check:quotes": "bun run src/hugo/check-quote-citations.ts",
     "check:scholarship": "bun run src/hugo/check-scholarship.ts",
     "check:timeline": "bun run src/hugo/check-timeline.ts",
+    "check:zgotmplz": "bun run src/hugo/check-zgotmplz.ts",
     "timeline:cards": "bun run src/hugo/render-timeline-cards.ts",
     "synthesis:gather": "bun run src/scripts/gather-synthesis-candidates.ts",
     "scholarship:checklist": "bun run src/hugo/scholarship-checklist.ts",
@@ -35,9 +36,9 @@
     "guest-page:gather": "bun run src/scripts/gather-guest-page.ts",
     "guest-page:save": "bun run src/scripts/save-guest-page.ts",
     "hugo:dev": "bun run generate:tag-index && bun run generate:book-index && bun run generate:scholarship-scripture && cd hugo && hugo server",
-    "build:local": "bun run generate:tag-index && bun run generate:book-index && rm -rf hugo/public && cd hugo && hugo && bun run index",
+    "build:local": "bun run generate:tag-index && bun run generate:book-index && rm -rf hugo/public && cd hugo && hugo && bun run check:zgotmplz && bun run index",
     "index": "bunx pagefind --site hugo/public",
-    "build:hugo": "bun run generate:tag-index && bun run generate:book-index && bun run generate:scholarship-scripture && cd hugo && hugo --minify && bun run index"
+    "build:hugo": "bun run generate:tag-index && bun run generate:book-index && bun run generate:scholarship-scripture && cd hugo && hugo --minify && bun run check:zgotmplz && bun run index"
   },
   "dependencies": {
     "@google/genai": "^2.18.0",
