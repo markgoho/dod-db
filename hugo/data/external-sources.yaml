@@ -10595,6 +10595,8 @@ tolini-2005-prise-de-babylone:
   kind: article
   access: "Journal's PDF on achemenet.com, open (in French); the live site did not answer, read in an Internet Archive copy of the same URL"
   url: "http://web.archive.org/web/20260927110255id_/http://www.achemenet.com/pdf/arta/2005.003-Tolini.pdf"
+  hostAuthored: false
+  tradition: null
 
 fellows-2024-interpolation:
   author: "Richard G. Fellows"
