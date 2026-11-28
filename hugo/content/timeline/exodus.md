@@ -28,6 +28,9 @@ undated:
       locator: "section “Exodus and History”"
       quote: "If we accept the Exodus as a historical event, then it is necessary to establish some sort of plausible date."
       read: 2026-11-22
+historicity:
+  point: most-not-historical
+  scholarship: "moses-and-the-exodus#history"
 tradition:
   display: "1446 BCE"
   from: -1446

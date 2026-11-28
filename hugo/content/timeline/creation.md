@@ -2,7 +2,7 @@
 title: "Creation of the world"
 entryKind: event
 draft: false
-sourcesRead: 2026-11-24
+sourcesRead: 2026-11-28
 related: { books: [genesis], tags: [], topics: [] }
 watch: [creation, Genesis 1, young earth, "6,000 years", Ussher]
 seeAlso: priestly-genesis-1
@@ -21,6 +21,8 @@ undated:
       locator: "ch. 1 [00:00:00]"
       quote: "Genesis 1, the first creation account, is attributed to P."
       read: 2026-11-24
+historicity:
+  pending: "#282"
 tradition:
   display: "About 4004 BCE"
   from: -4004

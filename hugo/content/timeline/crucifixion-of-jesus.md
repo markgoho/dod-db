@@ -58,6 +58,8 @@ critical:
       locator: "Conclusion, last sentence"
       quote: "In the end, all that the evidence allows us to claim is that Jesus died some time around the Passover, perhaps a few days before the feast, any time between 29 and 34 CE."
       read: 2026-11-26
+historicity:
+  point: historical
 tradition:
   display: "April 3, 33 CE"
   from: 33

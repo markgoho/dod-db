@@ -13,4 +13,6 @@ critical:
       locator: "p. 8"
       quote: "The city fell in 587."
       read: 2026-11-22
+historicity:
+  point: historical
 ---

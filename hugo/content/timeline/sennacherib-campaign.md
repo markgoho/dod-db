@@ -56,4 +56,6 @@ critical:
       locator: "Introduction, ¶ 5"
       quote: "The city was spared but at the cost of paying a huge indemnity to Assyria."
       read: 2026-11-26
+historicity:
+  point: historical
 ---

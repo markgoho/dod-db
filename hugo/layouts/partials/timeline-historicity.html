@@ -1,0 +1,28 @@
+{{- /*
+  An event entry's point on the historicity scale (#275): a labelled step on a
+  five-step scale, from "historical" to "not historical as narrated", shown on
+  every event. It never touches the card's border, which shows what places
+  the entry. A pending entry (no sourced point yet) shows the scale with no
+  step filled. Takes the entry; renders nothing for one with no historicity.
+  */
+-}}
+{{- with .Params.historicity -}}
+  {{- $h := . -}}
+  {{- $labels := partial "timeline-labels.html" -}}
+  {{- $name := cond (isset $h "point") (index $labels.historicity ($h.point | default "")) $labels.historicityPending -}}
+  <div
+    class="timeline-historicity"
+    data-point="{{ $h.point | default "pending" }}">
+    <p class="timeline-historicity__label">
+      <span class="type-eyebrow">{{ $labels.historicityHeading }}</span>
+      <strong>{{ $name }}</strong>
+    </p>
+    <ol class="timeline-historicity__scale" role="list" aria-hidden="true">
+      {{- range $labels.historicityOrder -}}
+        <li
+          class="timeline-historicity__step"
+          {{ if eq . $h.point }}data-current{{ end }}></li>
+      {{- end -}}
+    </ol>
+  </div>
+{{- end -}}

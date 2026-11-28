@@ -78,4 +78,6 @@ critical:
       locator: "paragraph beginning “to Judaism. The internal crisis”, last sentence, running on into the next paragraph (“a close, and prepared the way for Herod”)"
       quote: "His defeat and death in 37 b.c.e. at the hands of the Romans brought the Hasmonean rule to a close"
       read: 2026-11-27
+historicity:
+  point: historical
 ---

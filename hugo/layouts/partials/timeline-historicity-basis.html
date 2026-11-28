@@ -1,0 +1,36 @@
+{{- /*
+  What backs an event entry's historicity point (#275), inside the entry's
+  sources disclosure: the reviewed Scholarship statement's short answer and a
+  link to it, or the entry's own statement and cites. A `historical` point
+  with neither is an uncontested fact the Critical Date's cites carry, and
+  adds nothing here beyond its label.
+  Takes dict: entry, shortCites.
+  */
+-}}
+{{- $p := .entry.Params -}}
+{{- with and $p.historicity $p.historicity.point $p.historicity -}}
+  {{- $labels := partial "timeline-labels.html" -}}
+  <p class="timeline-entry__label">
+    {{ $labels.historicityHeading }}
+    {{ index $labels.historicity .point }}
+  </p>
+  {{- with .scholarship -}}
+    {{- $parts := split . "#" -}}
+    {{- $page := index $parts 0 -}}
+    {{- $id := index $parts 1 -}}
+    {{- with site.GetPage (printf "/scholarship/%s" $page) -}}
+      {{- with index (where .Params.statements "id" $id) 0 -}}
+        <p>
+          <a href="{{ printf "/scholarship/%s/%s" $page $id | relURL }}"
+            >{{ .question }}</a
+          >
+          {{ .short }}
+        </p>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with .statement }}<p>{{ . }}</p>{{ end -}}
+  {{- with .cites -}}
+    {{ partial "timeline-cites.html" (dict "cites" . "shortCites" $.shortCites) }}
+  {{- end -}}
+{{- end -}}

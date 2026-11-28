@@ -6,7 +6,6 @@ sourcesRead: 2026-11-26
 related: { books: [genesis], tags: [abraham, isaac], topics: [jacob] }
 watch: [Abraham, Isaac, patriarchs, patriarchal period, ancestral stories]
 undated:
-  verdict: no-firm-date
   statement: "The sources give it no firm date. Coogan and Chapman say a secure date for these events is “impossible to pinpoint”, and Hendel that “we do not know whether Abraham actually existed”; even if he did, many or most details of his stories are legendary. The New American Bible's introduction says scholars have traditionally dated the stories to the first half of the second millennium BCE, while a few regard them as late and fictional, and that no direct evidence outside the Bible confirms or disproves them. Coogan and Chapman say etiologies in the stories help support the contention that the patriarchs were legendary figures from different tribes, only later joined by an artificial family genealogy; the Encyclopaedia Judaica says that in general the patriarchs and their activities are reflections of life in later Israel “projected backward into ancient times”. Its history article says some scholars completely negate the historicity of the patriarchs and their period while others discern in the stories cores of historical facts overgrown with later revision and editing; that attempts to derive any useful chronology from the narratives founder on the Bible's mutually contradictory chronological and genealogical data; and that in the light of the evidence available at present “it seems that the patriarchal period is legendary”, though certain details provide verisimilitude."
   cites:
     - source: coogan-brief-4e-summary-ch5
@@ -41,6 +40,9 @@ undated:
       locator: "section “The Patriarchs of Israel”"
       quote: "In the light of the evidence available at present, it seems that the patriarchal period is legendary; the stories of the patriarchs provide theological and ideological lessons and not history, though certain details provide verisimilitude."
       read: 2026-11-26
+historicity:
+  point: debated
+  scholarship: "patriarchs#historical"
 tradition:
   display: "2166 BCE (Abraham's birth)"
   from: -2166

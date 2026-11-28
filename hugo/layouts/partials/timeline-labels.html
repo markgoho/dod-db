@@ -1,7 +1,8 @@
 {{- /*
   The only copy of the Timeline's scholarly/tradition, placement and setting wording, used by
   the legend, each entry and the minimap (#163 §2,
-  #167 §4, #174, #214). Takes nothing.
+  #167 §4, #174, #214), and the historicity scale's step names, in order (#275,
+  #133's state-of-the-field wording). Takes nothing.
   */
 -}}
 {{- return dict
@@ -12,4 +13,14 @@
   "moved" "A tradition’s date for an entry scholars date elsewhere"
   "movedShort" "a tradition’s date"
   "setIn" "Set in"
+  "historicityHeading" "Did it happen?"
+  "historicityPending" "Not yet sourced"
+  "historicityOrder" (slice "historical" "most-historical" "debated" "most-not-historical" "not-historical")
+  "historicity" (dict
+  "historical" "Historical"
+  "most-historical" "Most scholars: historical"
+  "debated" "Debated"
+  "most-not-historical" "Most scholars: not historical"
+  "not-historical" "Not historical as narrated"
+  )
 -}}

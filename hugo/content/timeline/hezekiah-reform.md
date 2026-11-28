@@ -16,7 +16,6 @@ watch:
     cult centralization,
   ]
 undated:
-  verdict: no-firm-date
   statement: "The sources give it no firm date, and whether it happened is debated. Faust calls the historicity of Hezekiah's reforms “a hotly debated topic”: many scholars take the reform as an actual historical event, while others doubt it, largely on inner-biblical grounds. If it was historical, he suggests it took place in the years before 712/711 BCE, but only if the dismantling of a standing stone at Tel ‘Eton was part of the reform, as he tends to think, and Tel ‘Eton's destruction belongs to Sargon II's campaign of those years, which he says is not certain. Pakkala thinks it very unlikely that any reform took place in the sense 2 Kings 18:4 intends; writing in 2010, from his analysis of that verse, he found no reason to assume any cult reform in Hezekiah's time. Moulis finds Hezekiah the best candidate for most of the cultic eliminations he surveys, while calling many aspects of his centralization debatable."
   cites:
     - source: faust-2026-tel-eton
@@ -78,5 +77,25 @@ undated:
     - source: pakkala-2010-cult-reforms
       locator: "p. 17, end of “Hezekiah’s Reform” (Helda manuscript pagination)"
       quote: "There is no reason to assume any cult reform during the time of this king."
+      read: 2026-11-26
+historicity:
+  point: debated
+  statement: "Faust calls the historicity of Hezekiah's reforms “a hotly debated topic”: many scholars take the reform as an actual historical event, while others doubt it. Pakkala finds no reason to assume any cult reform in Hezekiah's time; Moulis finds Hezekiah the best candidate for most of the cultic eliminations he surveys."
+  cites:
+    - source: faust-2026-tel-eton
+      locator: "p. 31 (abstract)"
+      quote: "The historicity of Hezekiah’s reforms is a hotly debated topic"
+      read: 2026-11-26
+    - source: faust-2026-tel-eton
+      locator: "p. 46"
+      quote: "While many scholars consider the reform, even if not all textual accounts, as an actual historical event (e.g., Ganor and Kreimerman 2019, with references; see also Ringgren 1966: 165; Halpern 1991), others doubt its historicity, largely on inner-biblical grounds."
+      read: 2026-11-26
+    - source: pakkala-2010-cult-reforms
+      locator: "p. 17, end of “Hezekiah’s Reform” (Helda manuscript pagination)"
+      quote: "There is no reason to assume any cult reform during the time of this king."
+      read: 2026-11-26
+    - source: moulis-2019-hezekiah-cultic-reforms
+      locator: "p. 180, end of section 7.7 “Summary”"
+      quote: "The best candidate for most of these cultic eliminations is King Hezekiah."
       read: 2026-11-26
 ---

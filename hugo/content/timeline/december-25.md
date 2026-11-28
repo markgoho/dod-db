@@ -50,4 +50,6 @@ critical:
       locator: "paragraph beginning “The earliest mention of December 25”, first sentence"
       quote: "The earliest mention of December 25 as Jesus’ birthday comes from a mid-fourth-century Roman almanac that lists the death dates of various Christian bishops and martyrs."
       read: 2026-11-27
+historicity:
+  point: historical
 ---

@@ -3,7 +3,13 @@
 # agent: the first pass from #165 (sourcing, 2026-11-24). It does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #165 match, 2026-11-24: every quote matched verbatim by script (whitespace, quotes and dashes normalised) in a fetched copy of its source and found at its locator; Trigger Claims matched against the final Transcript line at their timestamp.
-review: 2026-11-24
+# Historicity (#275) second pass 2026-11-28 (#93 delegation, #110; independent agent that didn't build the entry): every source cited on the entry re-fetched from its registry URL into its own folder (NABRE /bible/genesis/0, which returned 200 this time, 403 on 2026-11-24; Coogan ch. 4 summary; Hayes l3 transcript; AiG Bible Timeline hub). All 8 quotes (undated/1–5, historicity/1–2, tradition/1) script-matched (whitespace, quotes, dashes, entities, inline tags, space before punctuation, soft and line-break hyphens normalised): 8 hits, 0 misses, each at its locator (NABRE ¶ 5 by paragraph count; Coogan under “Implications for Our Study”; both Hayes quotes after the ch. 2 heading and the [00:12:44] marker; AiG under “Do the Genesis Geneologies Have Gaps?”). historicity/1–2 identical to undated/2–3. Statement says no more than its cites (NABRE ¶ 5 is scoped to Gn 2–11, Coogan to Gn 1–11; both cover Eden). Point `not-historical` kept: NABRE says “history” misleads because it suggests the events took place; Coogan and Chapman's “myths of origins” is the second voice. Per-cite `read:` dates left at 2026-11-24 (not gated). `delegation` added; sourcesRead and review set to 2026-11-28.
+review: 2026-11-28
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-28
 citations:
   undated/1:
     {
@@ -40,6 +46,18 @@ citations:
       agent: pass,
       owner: pass,
       note: "AiG Bible Timeline hub page, section “Do the Genesis Geneologies Have Gaps?” (AiG's spelling). The sentence is the hub's own teaser text; it is not in the linked article (Pierce and Ham 2010, re-matched with whitespace normalised, no hit), so the hub page is cited. Undated and liable to change: re-check in the second pass. `from: -4000` from “approximately 4,000 years before Christ”; display keeps “About”.",
+    }
+  historicity/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "#275 first pass 2026-11-28: NABRE Genesis intro. Same source, locator and quote as an already-verified cite on this entry (copied, not re-fetched); cited here for the historicity point. Second pass 2026-11-28 (#275): re-fetched and re-matched by script: hit in NABRE Introduction ¶ 5. Identical to undated/2. The main basis of the point: “history” would suggest the events actually took place.",
+    }
+  historicity/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "#275 first pass 2026-11-28: Coogan and Chapman ch. 4. Same source, locator and quote as an already-verified cite on this entry (copied, not re-fetched); cited here for the historicity point. Second pass 2026-11-28 (#275): re-fetched and re-matched by script: hit under “Implications for Our Study”. Identical to undated/3. The second, independent voice (Coogan and Chapman, Gn 1–11 as myths of origins).",
     }
 triggers:
   187@00:39:23:

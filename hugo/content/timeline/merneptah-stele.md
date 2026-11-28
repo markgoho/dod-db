@@ -36,4 +36,6 @@ critical:
       locator: "ch. 3 [00:10:06]"
       quote: "it suggests that a people known as Israel was indeed in the land of Canaan by the end of the thirteenth century BCE."
       read: 2026-11-25
+historicity:
+  point: historical
 ---

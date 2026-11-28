@@ -133,6 +133,7 @@
           </p>
         {{ end }}
       {{ end }}
+      {{ partial "timeline-historicity.html" $e }}
       {{ with $p.setting }}
         {{- /* The period the text narrates (#167 §4); it never places the entry. */ -}}
         <p class="timeline-entry__setting">
@@ -180,6 +181,7 @@
         <div class="scholarship-block__body timeline-entry__body">
           {{ with $p.undated }}<p>{{ .statement }}</p>{{ end }}
           {{ partial "timeline-cites.html" (dict "cites" (or $c $p.undated).cites "shortCites" .shortCites) }}
+          {{ partial "timeline-historicity-basis.html" (dict "entry" $e "shortCites" .shortCites) }}
           {{ with $p.setting }}
             <p class="timeline-entry__label">
               {{ $labels.setIn }}

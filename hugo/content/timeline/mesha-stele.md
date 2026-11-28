@@ -51,4 +51,6 @@ critical:
       locator: "¶ 31, p. 13, on the Egyptian lists of Shasu “related to yhw”"
       quote: "there is no reliable extra-biblical link between this evidence and the YHWH in the evidence of Judah and Israel."
       read: 2026-11-27
+historicity:
+  point: historical
 ---

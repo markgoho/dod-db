@@ -19,6 +19,7 @@
 # Re-review second pass changed: nothing. No citation cut or moved to uncited, no citation added, no wording narrowed, no Trigger Claim or registry field changed; undated/<n> keys unchanged. Only the per-item notes and these header lines were added.
 # Re-review second pass flags: (1) Non-blocking. The Sargon II condition carries only Faust's “This, of course, is not certain” (p. 54), not his lean (“an attribution to Sargon II is most likely”, “the best option”, “most appropriate dates”, same page), while the dismantling condition carries his lean (“as he tends to think”). Accurate and conditional as worded; the asymmetry may read as Faust doubting the Sargon attribution. Adding his lean (already cited at undated/4) would broaden the statement, which this pass does not do; the lead may keep or add it. (2) Non-blocking. Pakkala 2010's conclusions (p. 29) hedge more than p. 17 (“suggest that the cult reforms, in any form intended by the biblical authors, did not take place”; “more probable that they are literary inventions”); the statement quotes p. 17's section verdict in past tense beside the 2017 “very unlikely”, so it is not stronger than the source, but the lead may prefer p. 29's wording. (3) undated/7's first-pass note still says “Supports “he places it …””; the statement's verb changed to “suggests” in the earlier second pass; recorded in its note, no edit to the old text.
 # Re-review publish resolutions, 2026-11-26 (lead agent, on the re-review second pass's flags): (1) Sargon II clause kept as is: “he suggests it took place in the years before 712/711 BCE” already gives his preference, and “which he says is not certain” is his own p. 54 caveat on that date; adding “most likely” would widen the statement for no gain. (2) Pakkala 2010 p. 17 kept over p. 29: p. 17 is the Hezekiah-specific conclusion, p. 29 covers both reforms; the statement is no stronger than either. (3) undated/7's first-pass wording “places it” is history inside the note; the second pass recorded the current verb; no change. Delegated re-review for #220: sourcesRead, review and delegation.secondPass all 2026-11-26.
+# Historicity (#275) second pass 2026-11-28 (independent agent, #93 delegation, #110): historicity/1–4 checked by script identical (source, locator, quote) to undated/1, undated/2, undated/15 and undated/9; not re-fetched, since those were re-matched in the 2026-11-26 delegated re-review. Statement checked against its cites: each clause says no more than its quote (it drops Faust's “even if not all textual accounts” and “largely on inner-biblical grounds”, which narrows, not widens). Point `debated` kept: Faust's “a hotly debated topic” reports the field, with Pakkala (no reason to assume any reform) and Moulis (Hezekiah the best candidate) as the two sides. No edits. delegation.secondPass and sourcesRead (2026-11-26) untouched.
 review: 2026-11-26
 delegation:
   by: owner
@@ -115,6 +116,30 @@ citations:
       agent: pass,
       owner: "",
       note: "Re-review (#220). Pakkala 2010 p. 17 (PDF p. 18), last sentence of the section “Hezekiah's Reform”. Supports “writing in 2010 … he found no reason to assume any cult reform in Hezekiah's time”. Rests on his literary analysis of Kings (pp. 13–17), not archaeology; past tense per `josiah`'s ruling on this source. Re-review second pass: matched once, p. 17 = PDF p. 18 (printed 17 confirmed), last sentence of the section. Read the conclusions (pp. 29–31): “Many features … suggest that the cult reforms, in any form intended by the biblical authors, did not take place”; Hezekiah “was made a cult centralizer” (p. 30). The conclusions are slightly more hedged than p. 17, but “he found no reason to assume any cult reform” quotes p. 17 in past tense, attributed, and sits beside the 2017 “very unlikely”; not stronger than the source. Consistent with `josiah`'s past-tense wording of Pakkala 2010. Pass.",
+    }
+  historicity/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "#275 first pass 2026-11-28: Faust (state of the field). Same source, locator and quote as an already-verified cite on this entry (copied, not re-fetched); cited here for the historicity point. Second pass 2026-11-28 (#275): identical to undated/1. Faust's own report of the state of the field; carries the point.",
+    }
+  historicity/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "#275 first pass 2026-11-28: Faust (many vs others). Same source, locator and quote as an already-verified cite on this entry (copied, not re-fetched); cited here for the historicity point. Second pass 2026-11-28 (#275): identical to undated/2. Licenses “many scholars take the reform as an actual historical event, while others doubt it”.",
+    }
+  historicity/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "#275 first pass 2026-11-28: Pakkala 2010. Same source, locator and quote as an already-verified cite on this entry (copied, not re-fetched); cited here for the historicity point. Second pass 2026-11-28 (#275): identical to undated/15. Pakkala 2010, the doubting side; the statement's “finds no reason to assume any cult reform in Hezekiah's time” matches.",
+    }
+  historicity/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#275 first pass 2026-11-28: Moulis. Same source, locator and quote as an already-verified cite on this entry (copied, not re-fetched); cited here for the historicity point. Second pass 2026-11-28 (#275): identical to undated/9. Moulis, the accepting side; “best candidate for most of the cultic eliminations he surveys” matches.",
     }
 triggers:
   13@00:16:37:

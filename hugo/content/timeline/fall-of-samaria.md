@@ -19,4 +19,6 @@ critical:
       locator: "Introduction, ¶ 1"
       quote: "The Northern Kingdom collapsed, under the hammerlike blows of Assyria, in 722/721 B.C."
       read: 2026-11-22
+historicity:
+  point: historical
 ---

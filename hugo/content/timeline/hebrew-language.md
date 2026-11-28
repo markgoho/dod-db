@@ -14,7 +14,6 @@ watch:
     Proto-Canaanite,
   ]
 undated:
-  verdict: no-firm-date
   statement: "The sources give it no firm date. One judges it unlikely that Hebrew emerged as a discrete language before the end of the Late Bronze Age and the beginning of the Iron Age, and writes that studies suggest the earliest poetry in the Hebrew Bible may have been composed before the end of the second millennium BCE, calling that poetry the first identifiable phase of the language (before about 1000 BCE). Another writes that no epigraphic evidence has yet shown Hebrew detaching from Canaanite as an independent dialect in the first half of the 10th century BCE."
   cites:
     - source: mccarter-2008-hebrew
@@ -33,4 +32,6 @@ undated:
       locator: "p. 11"
       quote: "In the case under discussion, however, no certainty exists that the Hebrew language already developed as an independent dialect."
       read: 2026-11-26
+historicity:
+  point: historical
 ---

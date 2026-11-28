@@ -71,4 +71,6 @@ critical:
       locator: "note to 1 Mc 6:16"
       quote: "A Babylonian list of the Seleucid kings indicates that Antiochus died in November or early December of 164, about the same time as the rededication of the Temple."
       read: 2026-11-27
+historicity:
+  point: historical
 ---

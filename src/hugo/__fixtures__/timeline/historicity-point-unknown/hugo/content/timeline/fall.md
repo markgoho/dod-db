@@ -5,7 +5,6 @@ draft: false
 sourcesRead: 2026-11-23
 related: { books: [], tags: [], topics: [] }
 undated:
-  verdict: mythical
   statement: "The sources give it no firm date."
   cites:
     - source: tradition-page
@@ -16,4 +15,6 @@ undated:
       locator: "p. 9"
       quote: "No date can be given."
       read: 2026-11-22
+historicity:
+  point: mythical
 ---

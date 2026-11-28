@@ -54,4 +54,6 @@ critical:
       locator: "body, ¶ 7"
       quote: "However, Quirinius began his appointment in the year 6 C.E., whereas Luke 1:5 strongly implies that Jesus was born before the death of Herod the Great in 4 B.C.E. So there is a 10-year gap between when Luke says Jesus was born and Quirinius’s census."
       read: 2026-11-26
+historicity:
+  point: historical
 ---

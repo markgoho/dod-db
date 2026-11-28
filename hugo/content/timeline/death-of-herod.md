@@ -55,4 +55,6 @@ critical:
       locator: "section 5.2 “Historical Inconsistency of the Year 1 BC”, ¶ 1"
       quote: "Filmer abandoned the year 4 BC by dating Jerusalem’s conquest at the end of summer or beginning of autumn of the year 36 BC (Josephus, AJ XIV. 487–488), and, by adopting the rule of the year of accession, concluded that Herod’s reign lasted 34 years and finished in 1 BC."
       read: 2026-11-27
+historicity:
+  point: historical
 ---

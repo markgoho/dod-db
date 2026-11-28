@@ -15,4 +15,6 @@ undated:
       locator: "p. 9"
       quote: "No date can be given."
       read: 2026-11-22
+historicity:
+  point: historical
 ---

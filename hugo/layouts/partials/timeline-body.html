@@ -124,6 +124,22 @@
               own year, and links to the entry.</span
             >
           </li>
+          <li class="timeline-legend__item timeline-legend__item--historicity">
+            <span
+              class="timeline-legend__swatch timeline-legend__swatch--historicity"
+              aria-hidden="true"></span>
+            <span
+              ><strong>{{ $labels.historicityHeading }}</strong> Where an event
+              sits on the scale, from
+              {{ lower (index $labels.historicity "historical") }} (first step)
+              to
+              {{ lower (index $labels.historicity "not-historical") }}
+              (last), as the sources report the state of scholarship. On the
+              map, a ringed dot marks a debated subject; a thick ring, one not
+              treated as historical. An empty scale means no sourced answer
+              yet.</span
+            >
+          </li>
         </ul>
         {{/* Site search finds each entry in a record of its own (src/hugo/build-search-index.ts), not on this page. */}}
         <ol

@@ -30,4 +30,6 @@ critical:
       locator: "second paragraph (“The history of the Hebrew language …”), last sentence"
       quote: "In addition to the Bible, a small number of inscriptions in Hebrew of the biblical period are extant; the earliest of these is a short inscription in Phoenician characters dating from the 9th century BCE."
       read: 2026-11-26
+historicity:
+  point: historical
 ---

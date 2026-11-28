@@ -34,6 +34,9 @@ critical:
       locator: "p. 139 (Mazar)"
       quote: "The United Monarchy can be described as a state in an early stage of development, far from the rich and widely expanding state portrayed in the biblical narrative."
       read: 2026-11-25
+historicity:
+  point: debated
+  scholarship: "david-and-the-united-monarchy#historical-david"
 tradition:
   display: "1009–969 BCE"
   from: -1009

@@ -11,6 +11,7 @@
 # First-pass flags resolved: (1) Malena kept: the concessive clause hedges the evidence, not the date; “(mid-tenth century BCE)” is her own, unhedged gloss on “his own day”, the Finkelstein/Sergi subordinate-phrase case on `david-and-solomon`, not the Coogan case (where “it is likely that” governed the date). HarperCollins alone meets the sourcing test either way. (2) HarperCollins: “forty years” is the Bible's figure, the century is the dictionary's own; kept. (3) EJ `year: null` kept, as for the other EJ ids. (4) Sergi scope kept; the quote ends its paragraph (next line indented, “In this context”). (5) Tradition middle 951 BCE vs critical century's middle 950 BCE: under 30 years, stays beside the entry (#214).
 # Flags for publish: (1) No critical-side Trigger Claim gives a date: E139 and E154 are verdicts on Solomon's historicity (#99's “datable verdict on the row's subject”); unlike `david-and-solomon` (E181), there is no dated claim to fall back on if #99 is read narrowly. (2) `solomon` and `david-and-solomon` now share display “10th century BCE” and `from: -1000`, so the two cards sit at the same point on the axis; check the /timeline/ preview. (3) At publish, `sourcesRead` and `review:` must both be 2026-11-28 to match `delegation.secondPass` (#135); check:timeline skips the publish gate for a draft, so this file's keys were checked by script against the entry (critical/1–5, tradition/1, the three trigger keys, the five TIMELINE_RULES, the six cited source ids). (4) Display is flat while the note shows a historicity split (EJ, Sergi); same shape as the published David entry.
 # Publish resolutions, 2026-11-28: (1) E139 and E154 kept as datable verdicts on the row's subject (#99), as E64 is on `david-and-solomon`; the entry rule needs one Trigger Claim and one Scholarly or Reference source, both met. (2) Shared “10th century BCE”/`from: -1000` with `david-and-solomon` checked in the /timeline/ preview (below). (3) `sourcesRead` and `review:` set to 2026-11-28. (4) Flat century kept: HarperCollins and Malena date it in their own voice; the note carries the historicity split by name. Display-level historicity is #275's scope.
+# Historicity (#275) second pass 2026-11-28 (independent agent, #93 delegation, #110): historicity/1–4 checked by script identical (source, locator, quote) to critical/2–5; not re-fetched, since critical/2–5 were re-matched in this file's #110 second pass the same day. Statement edited: its first sentence gave Finkelstein Malena's claims (“lies behind the legend”, no evidence from his own day); now the historical core and the no-evidence clause are Malena's, and Finkelstein has only his “I contend that David and Solomon are historical figures”; Sergi's “the historicity of” the narrative restored. Point `debated` kept: no cite says “debated” in so many words; it rests on the EJ's report of the split (some despair of recovering him, others question his existence), with Malena and Finkelstein on one side and Sergi on the other. delegation.secondPass and sourcesRead untouched.
 review: 2026-11-28
 delegation:
   by: owner
@@ -53,6 +54,30 @@ citations:
       agent: pass,
       owner: "",
       note: "Got Questions, “Who were the kings of Israel and Judah?”, Solomon paragraph. Flat 971–931. Moved here from `david-and-solomon` (old tradition/2), re-fetched 2026-11-28 and matched. Second pass 2026-11-28: re-fetched; matched verbatim; its own paragraph in the page source (after <br><br>, following the David sentence). Verified.",
+    }
+  historicity/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "#275 first pass 2026-11-28: Malena. Same source, locator and quote as an already-verified cite on this entry (copied, not re-fetched); cited here for the historicity point. Second pass 2026-11-28 (#275): identical to critical/2. Licenses the statement's first clause, in Malena's voice: a historical core, and no evidence of Solomon from his own day.",
+    }
+  historicity/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "#275 first pass 2026-11-28: EJ. Same source, locator and quote as an already-verified cite on this entry (copied, not re-fetched); cited here for the historicity point. Second pass 2026-11-28 (#275): identical to critical/3. The state-of-the-field voice: a report of others (“Some scholars despair … others call his very existence into question”), stated as the EJ's report.",
+    }
+  historicity/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "#275 first pass 2026-11-28: Finkelstein. Same source, locator and quote as an already-verified cite on this entry (copied, not re-fetched); cited here for the historicity point. Second pass 2026-11-28 (#275): identical to critical/4. Finkelstein's own “I contend”; the statement now gives him only that (the first pass also gave him Malena's no-evidence clause).",
+    }
+  historicity/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#275 first pass 2026-11-28: Sergi. Same source, locator and quote as an already-verified cite on this entry (copied, not re-fetched); cited here for the historicity point. Second pass 2026-11-28 (#275): identical to critical/5. Sergi's doubt is on the historicity of the narrative of the united-monarchy reigns, not on Solomon's existence; the statement keeps that scope and now keeps “the historicity of”.",
     }
 triggers:
   139@00:54:50:

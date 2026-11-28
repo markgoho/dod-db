@@ -65,4 +65,6 @@ critical:
       locator: "pp. 11–12, § 4 “Protection de l’Esagil et arrivée de Cyrus”, paragraph beginning “D’autre part, cet épisode”"
       quote: "Il y eut donc au moins un combat violent à la Porte d’Enlil et Babylone ne se rendit pas sans résistance."
       read: 2026-11-27
+historicity:
+  point: historical
 ---

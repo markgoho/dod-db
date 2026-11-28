@@ -56,4 +56,6 @@ critical:
       locator: "section “Was James the Just an actual brother of Jesus?”, ¶ 2, last sentence"
       quote: "After his death, reportedly at the hands of an interim Judean authority around 62 C.E., this James was also frequently identified by the epithet “the Just”"
       read: 2026-11-26
+historicity:
+  point: historical
 ---

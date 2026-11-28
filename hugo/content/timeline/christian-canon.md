@@ -45,6 +45,8 @@ critical:
       locator: "section “Canon of the New Testament”, subsection “Formation of the canon”, second paragraph"
       quote: "In 382 a synod was held at Rome under Pope Damasus at which the influence of Jerome secured the adoption of a list of books answering to that of Athanasius. This was ratified by Pope Gelasius at the end of the 5th century. The same list was confirmed independently for the province of Africa in a series of synods at Hippo Regius in 393 and at Carthage in 397 and 419 under the leadership of Augustine."
       read: 2026-11-26
+historicity:
+  point: historical
 tradition:
   display: "Late 1st century CE, finalized by the Apostle John"
   from: 90

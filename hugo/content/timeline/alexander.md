@@ -53,4 +53,6 @@ critical:
       locator: "chapter 1, Introduction, p. 6, paragraph beginning “Historical periods (after ca. 500 B.C.E.)”"
       quote: "in Palestine the early Hellenistic period begins with Alexander the Great’s conquest in 332 B.C.E."
       read: 2026-11-26
+historicity:
+  point: historical
 ---

@@ -6,7 +6,6 @@ sourcesRead: 2026-11-28
 related: { books: [1-kings, 2-chronicles], tags: [solomon], topics: [] }
 watch: [First Temple, Solomon's Temple, Solomonic temple, Temple Mount]
 undated:
-  verdict: no-firm-date
   statement: "No trace of the building has been found: it would have stood on the Temple Mount, where excavation is not allowed, so what is known of its history depends on the Bible's depiction and, indirectly, on other temples of the period. Mazar has no doubt that a temple stood there before the Babylonian conquest, and finds no textual hint of a builder other than Solomon. He questions whether Solomon's kingdom was strong and rich enough to afford the buildings the Bible describes, but does not rule out that the temple was founded in the tenth century. The NABRE says the Bible's own date for the construction (1 Kings 6:1) is reckoned from the traditional date of the exodus in conventional generations, and recommends caution in using these figures for historical reconstruction."
   cites:
     - source: pioske-bo-first-temple
@@ -33,4 +32,6 @@ undated:
       locator: "note to 6:1"
       quote: "The schematization of history implied in these figures recommends caution in using them for historical reconstruction."
       read: 2026-11-28
+historicity:
+  pending: "#285"
 ---

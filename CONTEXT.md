@@ -164,6 +164,10 @@ _Avoid_: Real date, scholarly date
 The date a named tradition holds for a **Timeline Entry**'s subject, from a Tradition **External Source** and attributed in its own words.
 _Avoid_: Traditional date, apologetic date
 
+**Historicity**:
+Where an event **Timeline Entry**'s titled subject sits on the scale of whether it happened: historical, most scholars historical, debated, most scholars not historical, or not historical as narrated, as the sources report the state of scholarship.
+_Avoid_: Confidence, certainty, reliability
+
 **Setting**:
 The period a composition **Timeline Entry**'s text narrates: the text's own internal date, never a historical claim. It never places a **Timeline Entry**.
 _Avoid_: Narrative date, date of events
@@ -236,6 +240,10 @@ _Avoid_: Citation, snippet source
 - A **Speaker**'s assertion that contradicts a **Scholarship Page** statement is never attached to that page as a **Trigger Claim**; it is logged as a conflict for the owner's next re-review (2026-11-25).
 - A **Synthesis Page** shows the date its **External Sources** were read; its statements change only when the owner re-reviews it.
 - A **Timeline Entry**'s id is a public URL once published (its **Timeline Entry Page** and the **Timeline**'s `#<id>` link): it never changes (#219), except by the owner's decision, and then its old URLs keep working: the entry lists the old id under `formerIds` and `firebase.json` redirects its old page; a former id is never reused (#274, 2026-11-28).
+- Every published event **Timeline Entry** has a **Historicity** point, or is marked pending on an issue naming the source that would give one, shown as an empty scale; a composition entry has none, since it dates a text, not whether something happened (#275, 2026-11-28).
+- A **Historicity** point answers for the subject as narrated, so a contested historical kernel (some exodus, a local flood) doesn't lift it off the not-historical end (#275, owner, 2026-11-28).
+- A **Historicity** point is backed by a Scholarship statement that answers the entry's subject, or by the entry's own statement from two or more independent Scholarly or Reference authors (#133); `historical` alone, with neither, marks an uncontested fact the **Critical Date**'s cites already carry (#275).
+- **Historicity** is shown as its own labelled scale on the entry and a ring on the minimap tick, never by the border or fill, which show what places the entry; an undated entry not historical as narrated says so where its date goes (#275, 2026-11-28, replacing `undated.verdict`).
 - Every published **Timeline Entry** has a **Timeline Entry Page** card rendered from its current title and **Critical Date** or scholarly verdict, never its **Tradition Date**, and the **Timeline** has its own card; `check:timeline` fails a missing or stale card (`bun run timeline:cards --stale`) (#219, 2026-11-26, reversing #109's "an entry has no page" and #139's "no image").
 - A link to `/timeline/#<id>` previews the **Timeline**, never the entry: the link to share is the **Timeline Entry Page**'s, which each entry's Copy link gives and a jump inside the **Timeline** puts in the address bar. The address never changes on its own after a page loads: a `/timeline/#<id>` link stays as typed.
 - A **Timeline Entry** is always read in place among the others: nothing shows one entry on a page of its own (owner, 2026-11-26).

@@ -204,13 +204,60 @@ describe("checkTimeline", () => {
     expect(await check("critical-no-precision")).toEqual([]);
   });
 
-  test("an undated entry with verdict not-historical passes", async () => {
-    expect(await check("undated-verdict")).toEqual([]);
+  test("a not-historical point with its own statement from two authors passes (#275)", async () => {
+    expect(await check("historicity-own-statement")).toEqual([]);
   });
 
-  test("fails an undated verdict outside no-firm-date and not-historical", async () => {
-    expect(await check("undated-verdict-unknown")).toEqual([
-      `hugo/content/timeline/fall.md: undated.verdict: Invalid option: expected one of "no-firm-date"|"not-historical"`,
+  test("fails a historicity point outside the scale", async () => {
+    expect(await check("historicity-point-unknown")).toEqual([
+      `hugo/content/timeline/fall.md: historicity.point: Invalid option: expected one of "historical"|"most-historical"|"debated"|"most-not-historical"|"not-historical"`,
+    ]);
+  });
+
+  test("fails a historicity statement backed by one author (#133)", async () => {
+    expect(await check("historicity-one-author")).toEqual([
+      `timeline/fall: historicity statement cites 1 author(s); a state-of-the-field point needs two or more independent authors (#133)`,
+    ]);
+  });
+
+  test("fails a historicity cite from a Tradition source", async () => {
+    expect(await check("historicity-tradition-cite")).toEqual([
+      `timeline/fall: citation historicity/2 cites "tradition-page", a Tradition source; historicity cites Scholarly or Reference sources only`,
+      `timeline/fall: historicity statement cites 1 author(s); a state-of-the-field point needs two or more independent authors (#133)`,
+    ]);
+  });
+
+  test("fails a point other than historical with nothing to back it", async () => {
+    expect(await check("historicity-needs-basis")).toEqual([
+      `timeline/fall: historicity point debated needs a scholarship statement or its own statement and cites; only historical stands on the Critical Date's cites`,
+    ]);
+  });
+
+  test("fails a scholarship reference that names no statement", async () => {
+    expect(await check("historicity-unknown-scholarship")).toEqual([
+      `timeline/fall: historicity scholarship "pages#missing" names no statement on pages`,
+    ]);
+  });
+
+  test("fails a published event with no historicity", async () => {
+    expect(await check("historicity-missing")).toEqual([
+      `timeline/fall: a published event needs historicity (#275): its point on the scale and what backs it`,
+    ]);
+  });
+
+  test("a historicity pending on a tracking issue passes", async () => {
+    expect(await check("historicity-pending")).toEqual([]);
+  });
+
+  test("fails historicity with both a point and pending", async () => {
+    expect(await check("historicity-point-and-pending")).toEqual([
+      `timeline/fall: historicity needs exactly one of point or pending`,
+    ]);
+  });
+
+  test("fails historicity on a composition entry", async () => {
+    expect(await check("historicity-on-composition")).toEqual([
+      `timeline/book: has historicity but entryKind composition; historicity is for event entries only`,
     ]);
   });
 

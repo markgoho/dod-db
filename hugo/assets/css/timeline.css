@@ -70,6 +70,16 @@
   grid-template-columns: var(--space-s) minmax(0, 1fr);
 }
 
+/* The historicity scale in small: a track whose first step is filled. */
+.timeline-legend__swatch.timeline-legend__swatch--historicity {
+  background: linear-gradient(
+    to right,
+    var(--tan-900) 0 20%,
+    var(--tan-000) 20%
+  );
+  border-radius: 0;
+}
+
 .timeline-legend__swatch {
   background: var(--tan-000);
   block-size: var(--space-2xs);
@@ -765,4 +775,65 @@
 
 .timeline-periods__dates {
   color: var(--color-text-muted);
+}
+
+/*
+  Historicity (#275): where the entry's subject sits on the five-step scale,
+  "historical" at the start, "not historical as narrated" at the end. The
+  label carries the meaning; the steps show the position at a glance, only
+  the current one filled: a position, not an amount. Never the
+  card's border, which shows what places the entry.
+*/
+.timeline-historicity {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs) var(--space-xs);
+  margin-block-start: var(--space-2xs);
+}
+
+/* Eyebrow and point name share one baseline. */
+.timeline-historicity__label {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--step--1);
+  gap: var(--space-3xs);
+  margin: 0;
+}
+
+.timeline-historicity__label > .type-eyebrow {
+  color: var(--color-text-muted);
+  font-size: var(--step--2);
+}
+
+/*
+  One track in five segments, so it reads as a single spectrum rather than a
+  row of checkboxes: one outer border, light dividers, the current segment
+  filled.
+*/
+.timeline-historicity__scale {
+  border: var(--border-width-sm) solid var(--tan-900);
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-historicity__step {
+  block-size: var(--space-2xs);
+  inline-size: var(--space-s);
+}
+
+.timeline-historicity__step + .timeline-historicity__step {
+  border-inline-start: var(--border-width-sm) solid var(--tan-300);
+}
+
+.timeline-historicity__step[data-current] {
+  background: var(--tan-900);
+  border-color: var(--tan-900);
+}
+
+.timeline-historicity__step[data-current] + .timeline-historicity__step {
+  border-inline-start-color: var(--tan-900);
 }

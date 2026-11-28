@@ -42,4 +42,6 @@ critical:
       locator: "Introduction, second paragraph"
       quote: "In particular, Judeans used it alongside the Aramaic and then the Jewish script, albeit in limited contexts."
       read: 2026-11-26
+historicity:
+  point: historical
 ---

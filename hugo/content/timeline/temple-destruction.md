@@ -48,4 +48,6 @@ critical:
       locator: "gallery introduction"
       quote: "The second temple period spans about six hundred years, beginning in the late sixth century BCE and ending with the destruction of the Jerusalem temple by the Romans in 70 CE."
       read: 2026-11-26
+historicity:
+  point: historical
 ---

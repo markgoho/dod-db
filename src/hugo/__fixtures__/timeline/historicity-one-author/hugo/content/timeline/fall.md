@@ -5,7 +5,6 @@ draft: false
 sourcesRead: 2026-11-23
 related: { books: [], tags: [], topics: [] }
 undated:
-  verdict: not-historical
   statement: "The sources give it no firm date."
   cites:
     - source: tradition-page
@@ -15,5 +14,17 @@ undated:
     - source: scholarly-book
       locator: "p. 9"
       quote: "No date can be given."
+      read: 2026-11-22
+historicity:
+  point: not-historical
+  statement: "Both read the story as legend."
+  cites:
+    - source: scholarly-book
+      locator: "p. 10"
+      quote: "A legend."
+      read: 2026-11-22
+    - source: scholarly-book
+      locator: "ch. 2"
+      quote: "Not history."
       read: 2026-11-22
 ---

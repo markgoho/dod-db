@@ -3,7 +3,14 @@
 # agent: the first pass from #165 (sourcing, 2026-11-24). It does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #165 match, 2026-11-24: every quote matched verbatim by script (whitespace, quotes and dashes normalised) in a fetched copy of its source and found at its locator; Trigger Claims matched against the final Transcript line at their timestamp.
-review: 2026-11-24
+# Historicity (#275) second pass 2026-11-28 (#93 delegation, #110; independent agent that didn't build the entry): every source cited on the entry re-fetched from its registry URL into its own folder (Coogan ch. 3 summary; Hayes l3 and l5 transcripts; AiG Wright 2012 and Chaffey 2010). All 7 quotes (undated/1–3, historicity/1–2, tradition/1–2) script-matched (whitespace, quotes, dashes, entities, inline tags, space before punctuation, soft and line-break hyphens normalised): 7 hits, 0 misses, each at its locator (Coogan under “Genesis 1–3: Some General Observations”; Hayes l3 after ch. 2 [00:12:44]; Hayes l5 after ch. 1 [00:00:00]; Wright in the paragraph opening “As you can see from Table 1”; Chaffey in footnote 1, opening “Since the Bible only gives the ages”). historicity/1–2 identical to undated/1–2. The statement says no more than its two quotes. POINT DISPUTED, reported to the lead and not changed: neither historicity quote says creation did not happen as narrated. Coogan and Chapman's “myths” is a genre word, and Hayes's “contradictions” is about the two texts, not about historicity; that is at most one voice, short of #133's two authors, and this file's critical-scope rule records that the statement “does not say the sources call it unhistorical”. No sentence in the fetched Coogan ch. 3 or Hayes l3 copies says so either. The `delegation` block records the quote verification, not the point. Per-cite `read:` dates left at 2026-11-24 (not gated). sourcesRead and review set to 2026-11-28.
+# Historicity resolution, 2026-11-28 (lead agent): dispute accepted. No cited source says whether the creation account is historical, so `historicity` is `pending: "#282"` (no point, no statement or cites); historicity/1–2 dropped. The entry's date slot reads "No firm date in the sources" again.
+review: 2026-11-28
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-28
 citations:
   undated/1:
     {

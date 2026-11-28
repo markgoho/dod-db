@@ -55,8 +55,6 @@ const CriticalSchema = z.object({
 });
 
 const UndatedSchema = z.object({
-  /** The scholarly verdict heading (#163 §1); absent means no-firm-date. */
-  verdict: z.enum(["no-firm-date", "not-historical"]).optional(),
   statement: z.string(),
   cites: z.array(CiteSchema),
 });
@@ -67,6 +65,44 @@ const TraditionSchema = z.object({
   to: year.optional(),
   holder: z.string(),
   cites: z.array(CiteSchema),
+});
+
+/**
+ * Where an event entry's titled subject sits on the historicity scale (#275),
+ * reusing #133's state-of-the-field steps, from "historical" to "not
+ * historical as narrated". Never shown by the border, which means placement.
+ */
+export const HISTORICITY_POINTS = [
+  "historical",
+  "most-historical",
+  "debated",
+  "most-not-historical",
+  "not-historical",
+] as const;
+
+/**
+ * The point and what backs it: a reviewed Scholarship statement that answers
+ * the subject (`<page>#<statement-id>`), or the entry's own statement with
+ * cites from two or more independent Scholarly or Reference authors (#133).
+ * `historical` alone, with neither, marks an uncontested fact (a record, an
+ * inscription), carried by the Critical Date's cites (#133's exemption).
+ *
+ * `pending: "#<issue>"` in place of a point: the second pass found no
+ * sourced point and the issue tracks the source that would give one. The
+ * entry shows no scale until then.
+ */
+const HistoricitySchema = z.object({
+  point: z.enum(HISTORICITY_POINTS).optional(),
+  pending: z
+    .string()
+    .regex(/^#\d+$/, "give the tracking issue, #<n>")
+    .optional(),
+  scholarship: z
+    .string()
+    .regex(/^[a-z0-9-]+#[a-z0-9-]+$/, "give <scholarship-page>#<statement-id>")
+    .optional(),
+  statement: z.string().optional(),
+  cites: z.array(CiteSchema).optional(),
 });
 
 /**
@@ -104,6 +140,7 @@ export const EntrySchema = z.object({
   watch: z.array(z.string()).optional(),
   critical: CriticalSchema.optional(),
   undated: UndatedSchema.optional(),
+  historicity: HistoricitySchema.optional(),
   seeAlso: z.string().nullish(),
   setting: SettingSchema.optional(),
   tradition: TraditionSchema.optional(),
@@ -129,16 +166,17 @@ export const TIMELINE_RULES = [
 const TRIGGERS_PATH = "hugo/data/timeline/triggers.yaml";
 
 /**
- * Each cite with its review key: `critical/<n>`, `undated/<n>`, `setting/<n>`,
- * `tradition/<n>`.
+ * Each cite with its review key: `critical/<n>`, `undated/<n>`,
+ * `historicity/<n>`, `setting/<n>`, `tradition/<n>`.
  */
 function keyedCites(entry: Entry): { key: string; source: string }[] {
-  return (["critical", "undated", "setting", "tradition"] as const).flatMap(
-    part =>
-      (entry[part]?.cites ?? []).map((cite, index) => ({
-        key: `${part}/${index + 1}`,
-        source: cite.source,
-      })),
+  return (
+    ["critical", "undated", "historicity", "setting", "tradition"] as const
+  ).flatMap(part =>
+    (entry[part]?.cites ?? []).map((cite, index) => ({
+      key: `${part}/${index + 1}`,
+      source: cite.source,
+    })),
   );
 }
 
@@ -149,12 +187,14 @@ interface TimelineContext {
   triggers: TimelineTrigger[];
   reviews: Map<string, Review | undefined>;
   entries: Map<string, Entry | undefined>;
+  /** Scholarship page slug → its statement ids. */
+  statements: Map<string, Set<string>>;
 }
 
 function checkEntry(
   id: string,
   entry: Entry,
-  { registry, terms, entries, ...context }: TimelineContext,
+  { registry, terms, entries, statements, ...context }: TimelineContext,
 ): string[] {
   const triggers = context.triggers.filter(t => t.entry === id);
   const review = context.reviews.get(id);
@@ -238,6 +278,8 @@ function checkEntry(
     }
   }
 
+  errors.push(...checkHistoricity(at, entry, registry, statements));
+
   if (entry.setting) {
     if (entry.entryKind !== "composition") {
       errors.push(
@@ -275,6 +317,12 @@ function checkEntry(
 
   if (entry.draft) return errors;
 
+  if (entry.entryKind === "event" && !entry.historicity) {
+    errors.push(
+      `${at}: a published event needs historicity (#275): its point on the scale and what backs it`,
+    );
+  }
+
   if (triggers.length === 0) {
     errors.push(`${at}: has no Trigger Claim; a published entry needs one`);
   }
@@ -308,11 +356,96 @@ function checkEntry(
   return errors;
 }
 
+/** The historicity rules (#275); a missing one on a published event is checked with the publish rules. */
+function checkHistoricity(
+  at: string,
+  entry: Entry,
+  registry: Registry,
+  statements: Map<string, Set<string>>,
+): string[] {
+  const h = entry.historicity;
+  if (!h) return [];
+  const errors: string[] = [];
+  if (!h.point === !h.pending) {
+    errors.push(`${at}: historicity needs exactly one of point or pending`);
+  }
+  if (h.pending && (h.scholarship || h.statement || h.cites)) {
+    errors.push(
+      `${at}: historicity is pending; it has no scholarship, statement or cites until it has a point`,
+    );
+  }
+  if (entry.entryKind !== "event") {
+    errors.push(
+      `${at}: has historicity but entryKind ${entry.entryKind}; historicity is for event entries only`,
+    );
+  }
+  if (h.statement && !h.cites?.length)
+    errors.push(`${at}: historicity has a statement but no cites`);
+  if (h.cites?.length && !h.statement)
+    errors.push(`${at}: historicity has cites but no statement`);
+  if (h.point && h.point !== "historical" && !h.scholarship && !h.statement) {
+    errors.push(
+      `${at}: historicity point ${h.point} needs a scholarship statement or its own statement and cites; only historical stands on the Critical Date's cites`,
+    );
+  }
+  if (h.scholarship) {
+    const [page = "", id = ""] = h.scholarship.split("#");
+    const ids = statements.get(page);
+    if (!ids)
+      errors.push(
+        `${at}: historicity scholarship "${h.scholarship}" names no Scholarship Page`,
+      );
+    else if (!ids.has(id))
+      errors.push(
+        `${at}: historicity scholarship "${h.scholarship}" names no statement on ${page}`,
+      );
+  }
+  // Two or more independent Scholarly or Reference authors (#133); an unknown source is reported above.
+  const authors = new Set<string>();
+  for (const [index, cite] of (h.cites ?? []).entries()) {
+    const source = registry[cite.source];
+    if (!source) continue;
+    if (source.class === "Tradition") {
+      errors.push(
+        `${at}: citation historicity/${index + 1} cites "${cite.source}", a Tradition source; historicity cites Scholarly or Reference sources only`,
+      );
+      continue;
+    }
+    authors.add(source.author ?? source.publisher ?? source.title);
+  }
+  if (h.statement && h.cites?.length && authors.size < 2 && !h.scholarship) {
+    errors.push(
+      `${at}: historicity statement cites ${authors.size} author(s); a state-of-the-field point needs two or more independent authors (#133)`,
+    );
+  }
+  return errors;
+}
+
 /** The entry ids an entry points to: its `anchor` and `seeAlso`. */
 function links(entry: Entry): ["anchor" | "seeAlso", string][] {
   const result: ["anchor" | "seeAlso", string][] = [];
   if (entry.critical?.anchor) result.push(["anchor", entry.critical.anchor]);
   if (entry.seeAlso) result.push(["seeAlso", entry.seeAlso]);
+  return result;
+}
+
+/** Each Scholarship Page's statement ids, for historicity's `scholarship` (#275). */
+async function loadStatements(root: string): Promise<Map<string, Set<string>>> {
+  const dir = path.join(root, "hugo/content/scholarship");
+  const result = new Map<string, Set<string>>();
+  const files = await Array.fromAsync(
+    new Glob("*.md").scan({ cwd: dir, onlyFiles: true }),
+  ).catch(() => []);
+  for (const file of files) {
+    if (file.startsWith("_")) continue;
+    const fm = (await readFrontmatter(path.join(dir, file))) as {
+      statements?: { id?: string }[];
+    } | null;
+    result.set(
+      file.replace(/\.md$/, ""),
+      new Set((fm?.statements ?? []).flatMap(s => (s.id ? [s.id] : []))),
+    );
+  }
   return result;
 }
 
@@ -381,12 +514,14 @@ export async function checkTimeline(
     );
   }
 
+  const statements = await loadStatements(root);
   const context: TimelineContext = {
     registry,
     terms,
     triggers,
     reviews,
     entries,
+    statements,
   };
   for (const [id, entry] of entries) {
     if (entry) errors.push(...checkEntry(id, entry, context));

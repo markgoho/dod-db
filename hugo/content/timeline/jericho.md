@@ -24,6 +24,8 @@ critical:
       locator: "p. 403"
       quote: "the latter was the ancient Canaanite name of the city"
       read: 2026-11-22
+historicity:
+  point: historical
 tradition:
   display: "About 1400 BCE"
   from: -1400

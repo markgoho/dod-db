@@ -1,15 +1,14 @@
 {{- /*
   The only copy of the undated wording: the scholarly verdict an entry with no
   Critical Date shows where its date goes (entry card, JSON-LD, inbound link
-  line). Takes the entry; its undated.verdict picks the heading (#163 §1).
+  line). Takes the entry; its historicity point picks the heading (#163 §1,
+  #275): "not historical as narrated" for that point, else no firm date.
   */
 -}}
-{{- $verdict := "" -}}
-{{- with .Params.undated -}}
-  {{- $verdict = .verdict | default "" -}}
-{{- end -}}
 {{- $label := "No firm date in the sources" -}}
-{{- if eq $verdict "not-historical" -}}
-  {{- $label = "Not historical as narrated" -}}
+{{- with .Params.historicity -}}
+  {{- if eq .point "not-historical" -}}
+    {{- $label = (index (partial "timeline-labels.html").historicity "not-historical") -}}
+  {{- end -}}
 {{- end -}}
 {{- return $label -}}

@@ -24,4 +24,6 @@ critical:
       locator: "section “Implications for Our Study”"
       quote: "The invasion of the Babylonians in 586 BCE resulted in catastrophic upheaval for Israel."
       read: 2026-11-22
+historicity:
+  point: historical
 ---

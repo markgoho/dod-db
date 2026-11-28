@@ -79,4 +79,6 @@ critical:
       locator: "p. 29, “Discussion and Conclusions” (Helda manuscript pagination)"
       quote: "According to 2 Kings 22:2–7, 9, Josiah restored the temple. This seems to have been a rather neutral reporting of a restoration of the main state sanctuary and may have a historical background in the time of Josiah."
       read: 2026-11-26
+historicity:
+  pending: "#283"
 ---

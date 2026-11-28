@@ -26,7 +26,8 @@ interface CardEntry {
   title: string;
   entryKind: string;
   critical?: { display: string } | undefined;
-  undated?: { verdict?: string | undefined } | undefined;
+  undated?: object | undefined;
+  historicity?: { point?: string | undefined } | undefined;
 }
 
 /** The fields of the Timeline's page its card shows. */
@@ -43,14 +44,18 @@ function hash(parts: readonly string[]): string {
 
 /**
  * The text an entry's card shows; a card is stale when this changes. An
- * undated entry's card shows its verdict's wording (timeline-undated-label.html).
+ * undated entry's card shows its verdict's wording (timeline-undated-label.html):
+ * "not historical as narrated" for that historicity point (#275), else "no firm date".
  */
 export function entryCardKey(entry: CardEntry): string {
+  const verdict =
+    entry.historicity?.point === "not-historical"
+      ? "not-historical"
+      : "no-firm-date";
   return hash([
     entry.title,
     entry.entryKind,
-    entry.critical?.display ??
-      `undated:${entry.undated?.verdict ?? "no-firm-date"}`,
+    entry.critical?.display ?? `undated:${verdict}`,
   ]);
 }
 

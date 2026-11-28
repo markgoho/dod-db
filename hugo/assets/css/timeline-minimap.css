@@ -1113,3 +1113,25 @@
     }
   }
 }
+
+/*
+  Historicity (#275): a doubtful subject's tick gets an outer ring, drawn as a
+  box-shadow so the fill and dash (placement) and the outline (hover,
+  current) keep their meanings. A thin ring for debated; a thick one for most
+  scholars not historical and not historical as narrated. A historical tick
+  has no ring.
+*/
+.timeline-minimap__tick[data-historicity="debated"] {
+  box-shadow:
+    0 0 0 var(--border-width-sm) var(--tan-000),
+    0 0 0 calc(2 * var(--border-width-sm)) var(--tan-900);
+}
+
+.timeline-minimap__tick:is(
+  [data-historicity="most-not-historical"],
+  [data-historicity="not-historical"]
+) {
+  box-shadow:
+    0 0 0 var(--border-width-sm) var(--tan-000),
+    0 0 0 calc(3 * var(--border-width-sm)) var(--tan-900);
+}

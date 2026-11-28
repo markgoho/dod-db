@@ -158,6 +158,7 @@
       "title" .page.Title
       "date" $date
       "placed" (eq .by "tradition")
+      "historicity" (cond $isMoved "" (or ($p.historicity | default dict).point ""))
       "at" $at
       "y" (cond (lt (sub $eraEnd $eraStart) (mul 2 $edge)) (div (add $eraStart $eraEnd) 2) (math.Min (math.Max $at (add $eraStart $edge)) (sub $eraEnd $edge))))
     -}}
@@ -438,6 +439,7 @@
             href="#{{ .id }}"
             tabindex="-1"
             data-tick="{{ .id }}"
+            {{ with .historicity }}data-historicity="{{ . }}"{{ end }}
             {{ if .overflow }}data-overflow{{ end }}
             {{ if .split }}data-pair-split{{ end }}
             interestfor="timeline-minimap-tip-{{ .id }}"
@@ -448,7 +450,12 @@
             class="timeline-minimap__tip"
             id="timeline-minimap-tip-{{ .id }}"
             popover="hint"
-            ><strong>{{ .title }}</strong> {{ .date }}</span
+            ><strong>{{ .title }}</strong> {{ .date }}{{ with .historicity }}
+              {{ if ne . "historical" }}
+                ·
+                {{ index (partial "timeline-labels.html").historicity . }}
+              {{ end }}
+            {{ end }}</span
           >
         {{- end }}
         {{- range $t := $ticks }}

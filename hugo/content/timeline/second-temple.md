@@ -29,4 +29,6 @@ critical:
       locator: "Introduction, ¶ 1"
       quote: "The brief period of Haggai's ministry (August to December 520 B.C.) marks the resumption of work on the Temple, the symbol of divine presence among the people."
       read: 2026-11-26
+historicity:
+  point: historical
 ---
