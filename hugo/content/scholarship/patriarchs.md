@@ -57,7 +57,7 @@ statements:
     group: "Where the traditions came from"
     question: "Which of the three traditions is oldest?"
     short: "Jacob's, on the usual reading of Hosea 12, which scholars widely take as the first reference to the patriarchs outside the Pentateuch, from the 8th century BCE. How late the Abraham narrative is remains debated."
-    text: "Christo Lombaard's article in Scriptura says Hosea 12 has been widely accepted as the first reference to the patriarchs outside the Pentateuch, usually dated to the time of the prophet Hosea in the mid-8th century BCE; Lombaard himself argues that the passage is later than 538 BCE. Janusz Lemański says scholars tend to agree that the text of Hosea attests the authenticity of the tradition associated with Jacob, and assigns chronological priority to the Jacob tradition. Israel Finkelstein's The Forgotten Kingdom calls the core of the Jacob cycle probably the earliest material in the patriarchal stories, representing a time before the collapse of the northern kingdom. On Abraham, Lemański says researchers in recent decades have generally agreed that the Abraham narrative of Genesis 11:27–25:11 is not a legacy of oral tradition from the monarchy but the work of circles active during the captivity and after, and Lombaard writes that scholars already accept Abraham as a primarily exilic or post-exilic figure. Finkelstein, in The Quest for the Historical Israel, speaks instead of pre-exilic sources of the patriarchal narratives, a literary attempt to redefine the unity of Israel in the late Iron Age II. The New American Bible's introduction to Genesis says scholars have traditionally dated the stories to the first half of the second millennium BCE, though a few regard them as late, from the sixth or fifth century BCE, and purely fictional. Konrad Schmid argues in Biblica that the ancestor stories of Genesis and the Moses story were originally autonomous literary units, a view he says has gained increased acceptance, especially in European scholarship; Lemański says it remains unsolved when the patriarchal traditions were combined with the Exodus, though most scholars lean toward the Priestly school as the milieu that merged them."
+    text: "Christo Lombaard's article in Scriptura says Hosea 12 has been widely accepted as the first reference to the patriarchs outside the Pentateuch, usually dated to the time of the prophet Hosea in the mid-8th century BCE; Lombaard himself argues that the passage is later than 538 BCE. Janusz Lemański says scholars tend to agree that the text of Hosea attests the authenticity of the tradition associated with Jacob, and assigns chronological priority to the Jacob tradition. Israel Finkelstein's The Forgotten Kingdom calls the core of the Jacob cycle probably the earliest material in the patriarchal stories, representing a time before the collapse of the northern kingdom, and Finkelstein and Thomas Römer call the Jacob cycle the oldest ancestor narrative in Genesis and probably one of the oldest origin traditions in the Hebrew Bible. On Abraham, Lemański says researchers in recent decades have generally agreed that the Abraham narrative of Genesis 11:27–25:11 is not a legacy of oral tradition from the monarchy but the work of circles active during the captivity and after, and Lombaard writes that scholars already accept Abraham as a primarily exilic or post-exilic figure. Finkelstein, in The Quest for the Historical Israel, speaks instead of pre-exilic sources of the patriarchal narratives, a literary attempt to redefine the unity of Israel in the late Iron Age II. Finkelstein and Römer write that there is little consensus in recent research on the date of the Abraham narratives; recent publications, they note, date the whole Abraham story of Genesis 12–25 to the exile at the earliest, while they argue that the oldest Abraham narratives originated in the monarchic period. The New American Bible's introduction to Genesis says scholars have traditionally dated the stories to the first half of the second millennium BCE, though a few regard them as late, from the sixth or fifth century BCE, and purely fictional. Konrad Schmid argues in Biblica that the ancestor stories of Genesis and the Moses story were originally autonomous literary units, a view he says has gained increased acceptance, especially in European scholarship; Lemański says it remains unsolved when the patriarchal traditions were combined with the Exodus, though most scholars lean toward the Priestly school as the milieu that merged them."
     cites:
       - source: lombaard-2014-jacob-come-lately
         locator: "abstract, p. 1"
@@ -99,6 +99,26 @@ statements:
       - source: lemanski-2020-abraham-versus-jacob
         locator: "p. 81"
         quote: "has remained unsolved, even though—regarding the latter problem—most scholars tend to lean towards the theory of the priestly school as the milieu responsible for the merger of both traditions."
+        read: 2026-11-27
+      - source: finkelstein-romer-2014-jacob
+        locator: "§VIII “Summary”, p. 336"
+        quote: "The Jacob narrative is probably one of the oldest origin traditions conserved in the Hebrew Bible."
+        read: 2026-11-27
+      - source: finkelstein-romer-2014-abraham
+        locator: "section heading, p. 7"
+        quote: "The Jacob Cycle, the Oldest Ancestor Narrative in the Book of Genesis"
+        read: 2026-11-27
+      - source: finkelstein-romer-2014-abraham
+        locator: "Introduction, p. 5"
+        quote: "There is of course little consensus in recent research on this question"
+        read: 2026-11-27
+      - source: finkelstein-romer-2014-abraham
+        locator: "Introduction, p. 5"
+        quote: "Indeed, in recent publications the entire Abraham story in Genesis 12–25 is supposed to date to exilic (Babylonian) times at the earliest."
+        read: 2026-11-27
+      - source: finkelstein-romer-2014-abraham
+        locator: "p. 12"
+        quote: "These observations indicate that the oldest Abraham narratives originated in the monarchic period."
         read: 2026-11-27
   - id: historical
     group: "Were they historical?"
@@ -188,7 +208,7 @@ statements:
     group: "Were they historical?"
     question: "Do any details in the stories belong to later times?"
     short: "Several, scholars say. Camels as beasts of burden, Philistines, Arameans and “Ur of the Chaldeans” point to times later than the stories' setting. Some scholars take them as signs that the stories were written late; they were once read as later additions to older traditions."
-    text: "Israel Finkelstein writes in The Quest for the Historical Israel that there were no Philistines in Canaan in the Middle Bronze Age, since Egyptian texts and archaeology show that they settled on the southern coast in the twelfth century BCE; that camels were not domesticated as beasts of burden earlier than the early first millennium; and that the Arameans did not appear on the stage of history before the early Iron Age. The Encyclopaedia Judaica's entry on Genesis says the people called Chaldeans did not reach southern Mesopotamia before the end of the second millennium, long after the patriarchal setting, that the Philistines did not settle on the coast before the end of the twelfth century, and that the patriarchs' Aramean connection is strong evidence for a first-millennium background, or at the earliest a late second-millennium one. The New American Bible's notes call the camels of Genesis 12:16 seemingly an anachronism, judge the Philistines of Genesis 21 and 26 probably anachronistic, perhaps a later ethnic term applied to an earlier people, and say the sixth-century author named Ur by its contemporary name. Amihai Mazar says the extensive use of camels and the appearance of Arameans and Philistines were once considered anachronisms introduced by later editors and compilers of old oral traditions; Christine Hayes reports that Thompson and Van Seters read the anachronisms as evidence of a very late date of composition. Coogan and Chapman refer to the possible inclusion of anachronisms from the first millennium BCE."
+    text: "Israel Finkelstein writes in The Quest for the Historical Israel that there were no Philistines in Canaan in the Middle Bronze Age, since Egyptian texts and archaeology show that they settled on the southern coast in the twelfth century BCE; that camels were not domesticated as beasts of burden earlier than the early first millennium; and that the Arameans did not appear on the stage of history before the early Iron Age. Lidar Sapir-Hen and Erez Ben-Yosef write in Tel Aviv that most scholars today agree the dromedary was used as a pack animal sometime in the early Iron Age, not before the 12th century BCE, and date the first significant appearance of camels in the Aravah Valley to no earlier than the last third of the 10th century BCE. The Encyclopaedia Judaica's entry on Genesis says the people called Chaldeans did not reach southern Mesopotamia before the end of the second millennium, long after the patriarchal setting, that the Philistines did not settle on the coast before the end of the twelfth century, and that the patriarchs' Aramean connection is strong evidence for a first-millennium background, or at the earliest a late second-millennium one. The New American Bible's notes call the camels of Genesis 12:16 seemingly an anachronism, judge the Philistines of Genesis 21 and 26 probably anachronistic, perhaps a later ethnic term applied to an earlier people, and say the sixth-century author named Ur by its contemporary name. Amihai Mazar says the extensive use of camels and the appearance of Arameans and Philistines were once considered anachronisms introduced by later editors and compilers of old oral traditions; Christine Hayes reports that Thompson and Van Seters read the anachronisms as evidence of a very late date of composition. Coogan and Chapman refer to the possible inclusion of anachronisms from the first millennium BCE."
     cites:
       - source: finkelstein-2007-quest-patriarchs
         locator: "p. 45"
@@ -237,6 +257,14 @@ statements:
       - source: coogan-brief-4e-summary-ch5
         locator: "section “Ancestors as History?”"
         quote: "Despite the limitations and the possible inclusion of anachronisms from the first millennium BCE, these narratives may be useful"
+        read: 2026-11-27
+      - source: sapir-hen-ben-yosef-2013-camels
+        locator: "p. 277"
+        quote: "Most scholars today agree that the dromedary was exploited as a pack animal sometime in the early Iron Age (not before the 12th century BCE)"
+        read: 2026-11-27
+      - source: sapir-hen-ben-yosef-2013-camels
+        locator: "abstract, p. 277"
+        quote: "The new evidence indicates that the first significant appearance of camels in the Aravah Valley was not earlier than the last third of the 10th century BCE."
         read: 2026-11-27
   - id: wife-sister
     group: "Stories told twice"
@@ -314,7 +342,7 @@ statements:
     group: "Stories told twice"
     question: "How does the Joseph story differ from the rest of Genesis?"
     short: "Scholars note its own style and plot, and some call it a novella. When it was written is disputed, with proposals from the early first millennium BCE to the Hellenistic period."
-    text: "Römer, Schmid and Bühler say the Joseph story clearly has its own style and plot, and that many dates have been suggested for its first version, from the beginning of the first millennium BCE, or even earlier, to the Hellenistic period. Coogan and Chapman's summary says some scholars have posited that much of the Joseph story was an independent narrative or novella, because it is more developed in plot and less family-centered than the narratives around it. Christine Hayes calls it like a little novella, and says scholars are divided over the authenticity of its Egyptian elements: some see historical memory in its Egyptian names and customs, while others point to anachronisms and a lack of specificity as signs of late composition. Nahum Sarna's Encyclopaedia Judaica entry calls the Joseph narratives a continuous biography, novelistic in complexion, and Frederick Greenspahn's Encyclopedia of Religion entry says the author's knowledge of Egyptian culture hardly proves the story's historicity. Bernhard Lang's Bible Odyssey article says modern interpreters tend to identify its storyteller as a Diaspora Jew, and Martien Halvorson-Taylor's says it is often called a “diaspora story”, though its final form was written in the land of Israel."
+    text: "Römer, Schmid and Bühler say the Joseph story clearly has its own style and plot, and that many dates have been suggested for its first version, from the beginning of the first millennium BCE, or even earlier, to the Hellenistic period. Coogan and Chapman's summary says some scholars have posited that much of the Joseph story was an independent narrative or novella, because it is more developed in plot and less family-centered than the narratives around it. Christine Hayes calls it like a little novella, and says scholars are divided over the authenticity of its Egyptian elements: some see historical memory in its Egyptian names and customs, while others point to anachronisms and a lack of specificity as signs of late composition. Nili Shupak, in the abstract of a 2025 article in the Journal of the American Oriental Society, says most scholars today regard the Joseph story as an exilic novella written in Egypt during the Persian or Hellenistic periods, a view she argues against: in her reading it was written down at the beginning of the first millennium BCE by a northern Israelite writer and then edited over a long period. Nahum Sarna's Encyclopaedia Judaica entry calls the Joseph narratives a continuous biography, novelistic in complexion, and Frederick Greenspahn's Encyclopedia of Religion entry says the author's knowledge of Egyptian culture hardly proves the story's historicity. Bernhard Lang's Bible Odyssey article says modern interpreters tend to identify its storyteller as a Diaspora Jew, and Martien Halvorson-Taylor's says it is often called a “diaspora story”, though its final form was written in the land of Israel."
     cites:
       - source: romer-schmid-buhler-2021-joseph
         locator: "Introduction, p. 1"
@@ -351,6 +379,14 @@ statements:
       - source: halvorson-taylor-bo-diaspora
         locator: "opening section"
         quote: "For example, the story of Joseph (Gen 37-50) is often called a “diaspora story” because although its final form was written within the land of Israel, it describes how Joseph learns to survive outside his homeland."
+        read: 2026-11-27
+      - source: shupak-2025-joseph
+        locator: "abstract"
+        quote: "Most scholars today regard the Joseph story as an exilic novella written in Egypt during the Persian or Hellenistic periods in order to encourage the exiles and demonstrate the possibility of prospering under foreign rule."
+        read: 2026-11-27
+      - source: shupak-2025-joseph
+        locator: "abstract"
+        quote: "Written down at the beginning of the first millennium BCE by a northern Israelite writer, it then underwent a protracted editorial process"
         read: 2026-11-27
   - id: hagar-twice
     group: "Hagar and Ishmael"
@@ -474,8 +510,8 @@ statements:
   - id: tradition
     group: "Religious traditions"
     question: "What do religious traditions hold about the patriarchs?"
-    short: "The Catholic Church honours the patriarchs as saints and calls Abraham the father of all who believe. Two evangelical ministries write of the patriarchs as historical figures: the Associates for Biblical Research dates Abraham's birth to 2166 BC, and articles on its site and on Got Questions argue that the patriarchs' camels are no anachronism."
-    text: "The Catechism of the Catholic Church says God calls Abram from his country and makes him Abraham, “the father of a multitude of nations”, that Abraham became the “father of all who believe”, and that the patriarchs, prophets and certain other Old Testament figures are honoured as saints in all the Church's liturgical traditions. The Associates for Biblical Research, an evangelical apologetics ministry, says that according to biblical chronology Abraham was born in 2166 BC, and an article on its site argues that the camels owned by the patriarchs are not an anachronism but a reflection of historical reality. Got Questions Ministries, an evangelical ministry, says that when Abraham was born in Mesopotamia, camel domestication was already centuries old."
+    short: "The Catholic Church honours the patriarchs as saints and calls Abraham the father of all who believe. A Chabad-Lubavitch article calls him the first of the patriarchs and says Jewish people call him “Abraham our Father”. Two evangelical ministries write of the patriarchs as historical figures: the Associates for Biblical Research dates Abraham's birth to 2166 BC, and articles on its site and on Got Questions argue that the patriarchs' camels are no anachronism."
+    text: "The Catechism of the Catholic Church says God calls Abram from his country and makes him Abraham, “the father of a multitude of nations”, that Abraham became the “father of all who believe”, and that the patriarchs, prophets and certain other Old Testament figures are honoured as saints in all the Church's liturgical traditions. Menachem Posner's article on Chabad.org, the Chabad-Lubavitch movement's site, says Abraham, the first of the patriarchs, is referred to by Jewish people as Avraham Avinu, “Abraham our Father”, and that the Midrash and Talmud fill in many crucial details of his early life, on which the Bible is relatively silent. The Associates for Biblical Research, an evangelical apologetics ministry, says that according to biblical chronology Abraham was born in 2166 BC, and an article on its site argues that the camels owned by the patriarchs are not an anachronism but a reflection of historical reality. Got Questions Ministries, an evangelical ministry, says that when Abraham was born in Mesopotamia, camel domestication was already centuries old."
     cites:
       - source: ccc-59-61
         locator: "§59"
@@ -500,5 +536,13 @@ statements:
       - source: gotquestions-camels
         locator: "answer, final paragraph (beginning “In short”)"
         quote: "When Abraham was born in Mesopotamia, camel domestication was already centuries old."
+        read: 2026-11-27
+      - source: chabad-posner-abraham
+        locator: "opening paragraph"
+        quote: "The first of the patriarchs, he is referred to by Jewish people as Avraham Avinu, “Abraham our Father.”"
+        read: 2026-11-27
+      - source: chabad-posner-abraham
+        locator: "section “Abraham’s Early Life”"
+        quote: "But many crucial details are filled in by the Midrash and Talmud."
         read: 2026-11-27
 ---

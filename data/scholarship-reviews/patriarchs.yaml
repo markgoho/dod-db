@@ -12,6 +12,7 @@
 # Second pass changes. Five shorts: wife-sister (cut “and long took Genesis 12 to be the earliest; others read the later two as literary compositions drawing on it”, each one author via Tushima, #133); joseph-story (“Scholars note its own style and plot, and some call it a novella”, not “one continuous, novella-like story”, as “continuous” was Sarna's alone and Coogan says “some scholars”); anachronisms (“Some scholars take them as signs that the stories were written late; they were once read as later additions to older traditions”, as Mazar's sentence reports the pre-1970s view); tradition (“Two evangelical ministries write of the patriarchs as historical figures … articles on its site and on Got Questions argue that the patriarchs' camels are no anachronism”, not “Evangelical ministries treat … as history … reject”, which widened two named sources to a class). hagar-twice short (“Critical scholarship often attributes them to the J and E sources”, not “the first mainly to J and the second to E”, which only EJ Hagar gives). Text: hagar-twice (EJ Hagar's separate-crystallizations reading is conditional, “difficulties … are lessened if”, not “prefers”); ishmael (EJ Hagar's etiology sentence is conditional, “would serve”). No citation cut. Locators: traditions/2 (Greenspahn paragraph begins “Many modern scholars consider”), traditions/9 (“More recently, however”), anachronisms/4–5 (EJ Genesis “Composition – The Critical View”, subsection “Anachronisms”, not “The Age of the Material”), joseph-sale/4 (subsection “Duplications”), joseph-sale/5 and hagar-twice/6 (p. 2), ishmael/5 (“Source Criticism”), wife-sister/8 (“History of Scholarship”), joseph-story/8 (paragraph beginning “Joseph is presented as a man”), akedah/5 (“Did You Know?” list), tradition/6 (answer, final paragraph, beginning “In short”).
 # Second pass flags: (1) Triggers 157@00:03:56 (“probably literary creations”), 74@00:41:52 (“two entirely different stories”, unhedged) and 22@00:29:37 (whose turn, past the trim, says the two parallel stories have “their own beginnings, their own middles, and their own ends”) each take one side of a split a statement reports (historical's “Scholars are divided”; joseph-sale's “debated”, with Römer et al.'s “no one has succeeded in reconstructing two coherent, independent narratives”). The marriage page logged 44@00:23:11, a flat assertion against a reported split, as a conflict; for the lead to decide (conflict log outside this pass's files). 118@00:07:18 is the same shape but hedged. (2) Trigger 63@00:22:26 is trimmed so that “these are two competing myths” has no antecedent; the cut sentence before it names the patriarchal Jacob and prophetic Moses traditions. (3) jacob-first short “Jacob's” rests on the field reading of Hosea 12 (Lombaard 2014, Lemański p. 72) plus Lemański's and Finkelstein 2013's own priority claims; no source says scholars generally hold the Jacob tradition oldest, and Lombaard 2014 argues the reverse. Kept as framed (“on the usual reading of Hosea 12”). (4) jacob-first “remains debated” rests on NABRE intro ¶ 7 and Finkelstein 2007 (pre-exilic sources) against Lemański (“generally agreed”) and Lombaard (“already accepted”) on an exilic Abraham narrative. NABRE's first clause (“traditionally dated them … second millennium”) dates the stories' setting, not their composition; only its “a few regard them as late (sixth or fifth century B.C.)” bears on composition, and it covers all the ancestral stories, Abraham's included. Kept. (5) hagar-exodus “They differ on whether her story reverses the Exodus or foreshadows it”: Marzouk's “reversal” is of roles; the reversal side rests mainly on Trible as reported by Noble. (6) “No record found outside the Bible names any of them” (historical) rests on two EJ ids only, against the first pass's flag (2); exempt as an uncontested fact (#133). (7) The first pass's flags (1) Greenspahn window, (3) sarna-ej-joseph edition, (5) Schmid's self-report and (7) Tushima's past tense stand; years not printed on the fetched copies of EJ, CCC, Got Questions, Hayes and Noble were not re-checked. Publish rule recomputed: 13 statements, core traditions backed by 6 independent authors (3 Scholarly, 3 Reference), none Host-authored; holds. Ids, slug, draft, review and sourcesRead unchanged.
 # Publish resolutions, 2026-11-27 (lead agent, on the second pass's flags): (1) Conflicts: 121@00:13:48 (“it is the consensus view”), 74@00:41:52 (“two entirely different stories”, unhedged) and 22@00:29:37 (whose turn calls the two complete stories “very strong evidence”) state as settled what traditions and joseph-sale report as “many scholars hold” and “debated”; removed from the triggers file and logged as conflicts in data/scholarship-candidates.yaml (CONTEXT, 2026-11-25), as daniel-date and david-and-the-united-monarchy did for “uniformly convinced” and “the scholarly consensus”. This reverses the first pass's ruling on 74 and 22. 157@00:03:56 and 118@00:07:18 kept: each is hedged (“probably”) and states the speaker's view, not the state of the field, so neither contradicts a statement. 17 Trigger Claims remain. (2) 63@00:22:26 extended back to the turn's first sentence (“The patriarchal Jacob tradition or you've got the prophetic Moses tradition.”) so “two competing myths” has its antecedent; re-matched by script. (3) jacob-first short kept: it answers on the stated condition (“on the usual reading of Hosea 12”), which Lombaard 2014 and Lemański report as the field; Lombaard's own later date is attributed in the text. (4) “remains debated” kept on NABRE's “a few regard them as late” against Lemański and Lombaard. (5) hagar-exodus “reverses or foreshadows” kept: the reversal side is Marzouk's word and Trible's “negative inversion” as Noble reports it. (6) First-pass flag (2) corrected as the second pass notes: the historical short's “No record found outside the Bible names any of them” rests on two EJ ids, exempt as an uncontested fact. Open flags (Greenspahn window, sarna-ej-joseph edition, Schmid's self-report, Tushima's tense) are each attributed or hedged in the text; no change. All five narrowed shorts kept. Publish rule recomputed: 13 statements; core traditions on 6 independent authors (Lombaard, Greenspahn, Lemański, Coogan and Chapman, Hong, Tobolowsky), 3 Scholarly and 3 Reference, none Host-authored. draft dropped; review and sourcesRead 2026-11-27.
+# #246 first pass 2026-11-27 (agent, partial re-review per #93: the changed statements' own new citations get the full procedure; review and sourcesRead stay 2026-11-27): the five leads of #246 read in the source or closed. (1) Finkelstein and Römer, HeBAI 3 (2014) and ZAW 126 (2014): authors' copies on HAL (bot-checks scripts; the records and PDFs open live in Chrome, PDFs fetched there by in-page request, 200 application/pdf) read in full in Internet Archive copies of the same files; added jacob-first/11–15 (text only: the Jacob cycle as oldest ancestor narrative, “little consensus in recent research” on the Abraham narratives' date, the exilic dating they report, their monarchic dating). Short unchanged: “remains debated” now also rests on a two-author field statement. (2) Shupak JAOS 2025: body still paywalled; the abstract cited as abstract only (joseph-story/10–11), text only, her contrary thesis beside her “most scholars” sentence; short unchanged (“disputed”). (3) Dozeman JBL 1998 and Trible 1984: closed, no qualifying copy (JSTOR login; IA borrow-only; MUSE not open; Google bot check). (4) Sapir-Hen and Ben-Yosef, Tel Aviv 40 (2013): the broken lab-site link read in its Internet Archive copy; anachronisms/13–14 (text only: “Most scholars today agree” on the pack-camel date and their own Aravah date); the paper does not call Genesis's camels anachronistic, and the page doesn't say it does. (5) Chabad.org, Posner, “The Story of Abraham – The First Patriarch” (aid 112356), read live in Chrome and matched in-page: tradition/7–8; tradition short adds “A Chabad-Lubavitch article calls him the first of the patriarchs and says Jewish people call him “Abraham our Father”.” Every new quote script-matched on the saved text (whitespace, NFKC, quotes, dashes, non-breaking hyphens and line-end breaks normalised): 9/9, plus 2/2 Chabad in-page. Counts after: 13 statements, 11 new citations, Trigger Claims unchanged. Infographic: its marks are traditions, jacob-first and historical; no short they draw on changed. Flags for the second pass: (1) jacob-first/13: check that “this question” is the Abraham narratives' date (p. 4 end, p. 3 abstract). (2) Finkelstein appears on jacob-first in three works; check the text attributes each and the short does not lean on him as several authors. (3) anachronisms/13: the paper's scope is the pack-camel date, not Genesis; check the text claims no more. (4) joseph-story/10: abstract-only field sentence from an author who disputes it; check the text frames it so and the short stays “disputed”. (5) tradition short: check “A Chabad-Lubavitch article” names the source in its own terms and is no stronger than Posner's two sentences.
 review: 2026-11-27
 delegation:
   by: owner
@@ -132,6 +133,36 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Fragment of a longer sentence: “…whether the combination of the patriarchal traditions with that of the Exodus took place … has remained unsolved”; text renders the whole. Second pass 2026-11-27: re-fetched and verified verbatim at its locator; surrounding passage re-read.",
+    }
+  jacob-first/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: Finkelstein and Römer, ZAW 126 (2014), read in full in the Internet Archive copy web.archive.org/web/20251219205357/https://hal.science/hal-03822416/document (HAL deposit; same bot check, opens live in Chrome); matched verbatim on the saved pdftotext output at printed p. 336 (§VIII “Summary”, first paragraph). Own conclusion, attributed in the text; the short's “Jacob's” still rests on the field reading of Hosea 12 (Lombaard 2014, Lemański).",
+    }
+  jacob-first/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: Finkelstein and Römer, HeBAI 3 (2014), read in full in web.archive.org/web/20241222000734/https://hal.science/hal-03822415/file/… (the authors' e-offprint on HAL; hal.science bot-checks scripts, the record and PDF open live in Chrome); section heading on printed p. 7, matched verbatim. The section opens “If Hosea 12 dates from the 8th century”; their n. 16 lists scholars who date Hosea 12 much later. Own view, attributed in the text.",
+    }
+  jacob-first/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: same copy, printed p. 5, first sentence of the page; matched verbatim. “this question” is the date of the Abraham narratives: the previous page closes “What we can and should do is look for indications that may help us to locate and date elements or layers of the complex Abraham narrative”, and the abstract (p. 3) frames the article as finding what could reveal their date. A field statement by two authors that supports the short's “How late the Abraham narrative is remains debated”, beside NABRE's “a few regard them as late” and against Lemański's “generally agreed” and Lombaard's “already accepted”; it states no consensus, so the short keeps “remains debated”.",
+    }
+  jacob-first/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: same page (p. 5), matched verbatim (footnote 9 marker after the sentence ignored). Reports the late-dating view (their example: de Pury, n. 9); reported in the text as what recent publications hold.",
+    }
+  jacob-first/15:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: same copy, printed p. 12; matched verbatim. Follows their reading of Ezek 33:24 and Isa 51:1–2 as the oldest mentions of Abraham outside Genesis; then realia (Lot, Gerar) offered in support. Own view, attributed (“they argue”).",
     }
   historical/1:
     {
@@ -313,6 +344,18 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched and verified verbatim at its locator; surrounding passage re-read.",
     }
+  anachronisms/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: Sapir-Hen and Ben-Yosef, Tel Aviv 40 (2013), read in full in the Internet Archive copy web.archive.org/web/20191018115842/http://archaeology.tau.ac.il/ben-yosef/pub/Pub_PDFs/Sapir-Hen&Ben-Yosef13_CamelAravah_TelAviv.pdf (Ben-Yosef's lab-site PDF; the live link now redirects away; the lab page tau.ac.il/~ebenyose/CTV/archaeozoology still links it); matched verbatim at printed p. 277 (line-end break joined; the parenthetical citations after “BCE)” not quoted). A field statement (“Most scholars today agree”) on when the dromedary became a pack animal, inside the window. The paper never calls the Genesis camels anachronistic (it mentions the Patriarchal narrative only as a reason the date is discussed), so it backs the date only, not the anachronism claim; the text says only what it dates. TAU's press release (2014), which draws the Bible conclusion, is not a qualifying class and is not used.",
+    }
+  anachronisms/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: same copy, abstract on p. 277; matched verbatim. The authors' own result, attributed in the text. Short unchanged: “Camels as beasts of burden” already rests on Finkelstein, NABRE and the EJ.",
+    }
   wife-sister/1:
     {
       agent: pass,
@@ -456,6 +499,18 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched and verified verbatim at its locator; surrounding passage re-read.",
+    }
+  joseph-story/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: Shupak, JAOS 145.2 (2025), abstract only (the full text is behind a login on lockwoodonlinejournals.com; OpenAlex lists no open copy; the Haifa research portal record gives the same abstract and no file). Matched verbatim on the publisher's article page and the Haifa record. Abstract-only citation, as the registry's “abstract only cited” convention (mary-magdalene, the-shroud-of-turin). Cited in the text only, attributed with her contrary thesis beside it; the short is unchanged (“disputed”), because the field sentence comes from one author who argues against it, Römer et al. report many proposed dates, and Hayes reports scholars divided on the Egyptian elements (#80: when sources disagree about the field, the page calls it contested).",
+    }
+  joseph-story/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: same abstract; matched verbatim. Shupak's own thesis (it continues “during which Egyptian terms and motifs were added to it, the latest of which belong to the Hellenistic period”); attributed in the text. Her claim that the story began as a second-millennium oral story is not reported (the text says only that she argues against the exilic-novella view and dates its writing down).",
     }
   hagar-twice/1:
     {
@@ -630,6 +685,18 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: verified; the sentence is in the last paragraph of the answer, after the bone-evidence argument, not its opening: locator “answer, final paragraph (beginning “In short”)”, paragraph breaks read from the HTML (<br><br>). The page argues against the camel-anachronism claim throughout.",
+    }
+  tradition/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: Chabad.org aid/112356, “The Story of Abraham – The First Patriarch”, byline “By Menachem Posner”; chabad.org refuses scripted requests, so read live in Chrome and matched in-page by JavaScript on whitespace- and quote-normalised page text (true). Opening paragraph, last sentence. Tradition source naming itself in its own words (the registry's tradition “Chabad-Lubavitch”, as chabad-ten-commandments); the short says “A Chabad-Lubavitch article”, not “Judaism”. Not dated on the page.",
+    }
+  tradition/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: same page, section “Abraham’s Early Life”, matched in-page (true). The sentence before it: the Bible is relatively silent on the first few decades of Abraham's life. Text only.",
     }
 triggers:
   63@00:07:22:
@@ -1054,18 +1121,46 @@ sources:
       owner: "",
       note: "First pass 2026-11-27: Tradition; year not printed. Year not on page. Second pass 2026-11-27: re-fetched; year not printed on the fetched copy, not re-checked; class and author attribution re-read.",
     }
+  finkelstein-romer-2014-abraham:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: Scholarly; Hebrew Bible and Ancient Israel 3/1 (2014) 3–23, Mohr Siebeck; the HAL file is the authors' e-offprint (“e-offprint of the author with publisher's permission” on every page), year and pages printed on p. 3. Inside the window. Shares Finkelstein with finkelstein-2007-quest-patriarchs and finkelstein-2013-forgotten-kingdom; adds Römer, who also co-authors romer-schmid-buhler-2021-joseph.",
+    }
+  finkelstein-romer-2014-jacob:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: Scholarly; ZAW 126/3 (2014) 317–338, De Gruyter (HAL cover and running heads give journal, year and pages). Inside the window. Same author pair as finkelstein-romer-2014-abraham.",
+    }
+  sapir-hen-ben-yosef-2013-camels:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: Scholarly; Tel Aviv 40 (2013) 277–285 (printed on p. 277 with DOI 10.1179/033443513X13753505864089). Inside the window. Author-posted copy, archived (#93 dead-URL rule).",
+    }
+  shupak-2025-joseph:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: Scholarly; JAOS 145/2 (April 2025) 349–368 (Haifa research portal record). Abstract only.",
+    }
+  chabad-posner-abraham:
+    {
+      agent: pass,
+      owner: "",
+      note: "#246 first pass 2026-11-27: Tradition (Chabad-Lubavitch); no date on the page. Same author and site as chabad-ten-commandments.",
+    }
 leads:
-  - "Finkelstein and Römer, “Comments on the Historical Background of the Jacob Narrative in Genesis”, ZAW 126 (2014) 317–338, and “…of the Abraham Narrative”, HeBAI 3 (2014) 3–23: author offprints behind bot walls (serval.unil.ch, HAL); not read."
-  - "Shupak, “The Joseph Story (Genesis 37–50) from an Egyptological Perspective”, JAOS 145.2 (2025): abstract only (“Most scholars today regard the Joseph story as an exilic novella…”, a view she argues against); article paywalled."
+  - "Shupak, JAOS 145.2 (2025), body of the article: still paywalled (lockwoodonlinejournals.com galley is “restricted”, login required; Haifa research portal has the abstract and no file; OpenAlex lists no open copy; no Internet Archive capture of the galley). Closed (#246, 2026-11-27): only the abstract is cited (joseph-story/10–11)."
   - "Schipper, “The Egyptian Background of the Joseph Story”, HeBAI 8/1 (2019): summary only; paywalled."
   - "Encyclopedia of the Bible and Its Reception, “Abraham” (De Gruyter 2009): copy found was a licensed, watermarked download; not cited."
   - "de Pury, “The Jacob Story and the Beginning of the Formation of the Pentateuch” (SBLSymS 34, 2006); Schmid, Genesis and the Moses Story (2010): no open copy."
-  - "Dozeman, “The Wilderness and Salvation History in the Hagar Story”, JBL 117 (1998): no open copy; known via Onwukwe."
-  - "Trible, Texts of Terror (1984); Levenson, Death and Resurrection of the Beloved Son (1993); Spiegel, The Last Trial: known only as reported (Noble, EJ)."
+  - "Dozeman, “The Wilderness and Salvation History in the Hagar Story”, JBL 117 (1998) 23–43: known via Onwukwe. Closed (#246, 2026-11-27): JSTOR 3266390 offers only a first-page preview; “Free online reading” needs a JSTOR account (not used); OpenAlex lists no open copy; no author or archive copy found."
+  - "Trible, Texts of Terror (1984): known only as reported by Noble (hagar-exodus cites Noble's report, attributed). Closed (#246, 2026-11-27): the Internet Archive copy (textsofterrorlit0000trib) is borrow-only behind a login; the 2022 40th-anniversary edition on Project MUSE is not open access; a Google Books search in Chrome hit Google's bot check (not solved). Also outside the 30-year window, so it could back only an attributed reading, as Noble's report already does."
+  - "Levenson, Death and Resurrection of the Beloved Son (1993); Spiegel, The Last Trial: known only as reported (Noble, EJ)."
   - "Westermann, Genesis 12–36; T.D. Alexander 1992; Peleg 2006: known only via Tushima. Baden, The Composition of the Pentateuch (2012), on J/E in Gen 37: via Römer et al. n. 3."
-  - "Sapir-Hen and Ben-Yosef, “The Introduction of Domestic Camels to the Southern Levant”, Tel Aviv 40 (2013): repository link broken; TAU press release only (not a qualifying class)."
   - "Grossman, “Two Double Narratives in Genesis: Hagar's Departure (16, 21)”, Megadim 29 (1998): catalogue record only."
-  - "Chabad.org, Posner, “Who Was Abraham?”: 403 to scripts; one sentence via a fetch tool, not saved; no Jewish denominational source on the tradition statement."
   - "Kitchen, “The Patriarchal Age: Myth or History?”, BAR 21:2 (1995): teaser excerpt only; outside the window."
   - "Shenhav, “Rethinking the Aqedah after the Holocaust”, in Aqedah (De Gruyter 2025): PDF on a third-party site (Agnon House), licence unclear; not cited."
 uncited:
@@ -1088,3 +1183,8 @@ uncited:
   - "Hendel, Bible Odyssey, Haran and El as possible ancient memories: read; the historical text uses his existence sentence."
   - "Greenspahn ER Jacob, the Bronze Age setting for those who accept the patriarchs' historicity: read; not used."
   - "Mazar, p. 59, his parallels-too-close sentence: read; summarised in the historical text, cited only via historical/6."
+  - "Finkelstein and Römer, HeBAI 3 (2014), p. 17, “Most scholars also agree that it was after 720 that northern traditions made their way to the South.”, and ZAW 126 (2014), p. 332, “There is quite a consensus about the idea that the early Jacob traditions were brought to the South only after the destruction of Samaria in 722.”: read (#246); about when the traditions were joined, which traditions reports through other sources; not added."
+  - "Finkelstein and Römer, HeBAI 3 (2014), p. 3, “Since the traditional Documentary Hypothesis has collapsed, at least in European and to some extent also in Israeli scholarship”, and ZAW 126 (2014), p. 317, on the Documentary model given up “by a majority of scholars” in Continental Europe: read (#246); about the Pentateuch's sources in general, not a patriarchs statement."
+  - "Finkelstein and Römer, HeBAI 3 (2014), p. 4, on Albright and Westermann's search for a historical Abraham in second-millennium legal parallels, and on the possibility of a historical individual named Abraham whose tomb was venerated: read (#246); the historical and parallels statements already carry the split through other sources; not added."
+  - "Finkelstein and Römer, HeBAI 3 (2014), p. 12, on Genesis 20 and 26 as late compositions in recent research (Blum, Van Seters): read (#246); one sentence of report, the wife-sister statement already carries the J/E and dependence readings."
+  - "Chabad.org, Posner, “The Story of Abraham”: the Maimonides passage on Abraham recognising God at Ur: read (#246); Abraham as first monotheist belongs to the-emergence-of-monotheism-and-the-divine-council (overlap kept out, header)."

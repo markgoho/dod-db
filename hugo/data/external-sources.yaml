@@ -7911,6 +7911,79 @@ gotquestions-camels:
   hostAuthored: false
   tradition: "Got Questions Ministries, an evangelical ministry"
 
+finkelstein-romer-2014-abraham:
+  author: "Israel Finkelstein and Thomas Römer"
+  shortAuthor: "Finkelstein and Römer"
+  title: "Comments on the Historical Background of the Abraham Narrative: Between “Realia” and “Exegetica”"
+  series: "Hebrew Bible and Ancient Israel 3/1: 3–23"
+  publisher: "Mohr Siebeck"
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Authors' e-offprint (with the publisher's permission) in the HAL open archive; the record and PDF open in a browser, scripted requests get a bot check; read in the Internet Archive copy of the same file (web.archive.org/web/20241222000734/https://hal.science/hal-03822415/file/…)"
+  url: "https://hal.science/hal-03822415"
+  hostAuthored: false
+  tradition: null
+
+finkelstein-romer-2014-jacob:
+  author: "Israel Finkelstein and Thomas Römer"
+  shortAuthor: "Finkelstein and Römer"
+  title: "Comments on the Historical Background of the Jacob Narrative in Genesis"
+  series: "Zeitschrift für die alttestamentliche Wissenschaft 126/3: 317–338"
+  publisher: "De Gruyter"
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Authors' deposit in the HAL open archive; the record and PDF open in a browser, scripted requests get a bot check; read in the Internet Archive copy (web.archive.org/web/20251219205357/https://hal.science/hal-03822416/document)"
+  url: "https://hal.science/hal-03822416"
+  hostAuthored: false
+  tradition: null
+
+sapir-hen-ben-yosef-2013-camels:
+  author: "Lidar Sapir-Hen and Erez Ben-Yosef"
+  shortAuthor: "Sapir-Hen and Ben-Yosef"
+  title: "The Introduction of Domestic Camels to the Southern Levant: Evidence from the Aravah Valley"
+  series: "Tel Aviv 40/2: 277–285"
+  publisher: "Institute of Archaeology of Tel Aviv University"
+  year: 2013
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Author-posted PDF on Ben-Yosef's Tel Aviv University lab site; the live link now redirects away, so the Internet Archive copy of the same URL is used (#93 dead-URL rule)"
+  url: "https://web.archive.org/web/20191018115842/http://archaeology.tau.ac.il/ben-yosef/pub/Pub_PDFs/Sapir-Hen&Ben-Yosef13_CamelAravah_TelAviv.pdf"
+  hostAuthored: false
+  tradition: null
+
+shupak-2025-joseph:
+  author: "Nili Shupak"
+  title: "The Joseph Story (Genesis 37–50) from an Egyptological Perspective: Multilayered Story or Exilic Novella?"
+  series: "Journal of the American Oriental Society 145/2: 349–368"
+  publisher: "American Oriental Society"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher website; abstract open, full text paywalled (abstract only cited)"
+  url: "https://www.lockwoodonlinejournals.com/index.php/jaos/article/view/2948"
+  hostAuthored: false
+  tradition: null
+
+chabad-posner-abraham:
+  author: "Menachem Posner"
+  title: "The Story of Abraham – The First Patriarch"
+  series: "Chabad.org"
+  publisher: null
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Website; opens in a browser, refuses scripted requests"
+  url: "https://www.chabad.org/library/article_cdo/aid/112356/jewish/The-Story-of-Abraham.htm"
+  hostAuthored: false
+  tradition: "Chabad-Lubavitch"
+
 karkkainen-2017-trinity:
   author: "Veli-Matti Kärkkäinen"
   title: "Christian Understandings of the Trinity: The Historical Trajectory, ch. 1, “The Christian Trinity: Biblical Antecedents”"
