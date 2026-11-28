@@ -9777,6 +9777,20 @@ joosten-2019-covenant:
   hostAuthored: false
   tradition: null
 
+davies-2019-litigation:
+  author: "Eryl Wynn Davies"
+  title: "Litigation: Trial Procedure, Jurisdiction, Evidence, Testimony"
+  series: "In Pamela Barmash (ed.), The Oxford Handbook of Biblical Law"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Google Books preview of the Handbook, open (pages shown vary)"
+  url: "https://books.google.com/books?id=emOtDwAAQBAJ&pg=PA45"
+  hostAuthored: false
+  tradition: null
+
 lefebvre-2006-collections-codes-torah:
   author: "Michael LeFebvre"
   title: "Collections, Codes, and Torah: The Re-characterization of Israel's Written Law"

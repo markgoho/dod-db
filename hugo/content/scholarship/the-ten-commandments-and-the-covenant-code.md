@@ -277,7 +277,7 @@ statements:
     group: "The Ten Commandments"
     question: "What does the commandment against taking God's name “in vain” forbid?"
     short: "It has traditionally been understood to forbid false oaths. Scholars say it may cover more than that, such as other misuse of the divine name."
-    text: "The Encyclopaedia Judaica's article on the Decalogue says the commandment has traditionally been understood to mean false oaths, but that evil prayer or sorcery might be intended too; its second edition adds a proposed translation, “You shall not speak the name of yhwh to that which is false”, meaning that a false god is not to be identified with Yahweh. The NABRE note calls “in vain” a general framing that includes swearing falsely, especially in a legal proceeding, but goes beyond it. Hayes's Yale lectures read it as forbidding the use of God's name in a false oath, and Edenburg connects the commandment with using the name YHWH in a false oath. Carmen Joy Imes says many agree that the command's meaning is uncertain and that at least 23 meanings have been proposed, and argues for what she calls the minority view, that it is about bearing the name rather than speaking it."
+    text: "The Encyclopaedia Judaica's article on the Decalogue says the commandment has traditionally been understood to mean false oaths, but that evil prayer or sorcery might be intended too; its second edition adds a proposed translation, “You shall not speak the name of yhwh to that which is false”, meaning that a false god is not to be identified with Yahweh. The NABRE note calls “in vain” a general framing that includes swearing falsely, especially in a legal proceeding, but goes beyond it. Hayes's Yale lectures read it as forbidding the use of God's name in a false oath, and Edenburg connects the commandment with using the name YHWH in a false oath. Carmen Joy Imes says most scholars recognize that, while flippant use of God's name is objectionable, the command addresses something else; she says many agree that its meaning is uncertain and that at least 23 meanings have been proposed, and argues for what she calls the minority view, that it is about bearing the name rather than speaking it."
     cites:
       - source: greenberg-ej-decalogue
         locator: "section “The Division Into Ten ‘Words’”, item 3"
@@ -312,6 +312,10 @@ statements:
         locator: "ch. 1 “Introduction”, p. 3"
         quote: "It is also the first extended exploration of the minority view that reads the command nonelliptically, as “bearing the name,” rather than as an ellipsis for speaking it."
         read: 2026-11-27
+      - source: imes-2018-bearing-yhwh-name
+        locator: "ch. 1 “Introduction”, p. 1"
+        quote: "However, most scholars recognize that, while the flippant use of God's name is objectionable, the NC addresses something else."
+        read: 2026-11-28
   - id: addressed
     group: "The Ten Commandments"
     question: "Whom do the Ten Commandments address?"
@@ -376,7 +380,7 @@ statements:
     group: "The Covenant Code"
     question: "Is the Covenant Code the oldest collection of laws in the Bible?"
     short: "Probably, scholars say: it is widely considered the earliest collection of biblical law. But its date is debated, and some scholars place it later."
-    text: "Chaya Halberstam's chapter in the Cambridge Companion to Judaism and Law calls the Covenant Code most likely the earliest of the Hebrew Bible's three significant law collections, and the Deuteronomic Code one that most likely grew out of a revision of it. Nili Samet's Hebrew University course says scholars consider it the oldest law code of its kind in the Bible, and the abstract of Edenburg's Oxford Handbook chapter says it is widely considered the earliest collection of biblical law. The Encyclopaedia Judaica also calls it the earliest collection of biblical law, in a passage that may come from its first edition. Raymond Westbrook says that, although many would now place it in the monarchy, most scholars still agree that it predated Deuteronomy; Wright says most scholars believe that most of its apodictic laws predate Deuteronomy; and Siam Bhayro, reviewing Van Seters, calls the order Covenant Code, Deuteronomy, Holiness Code, Priestly source the standard hypothesis. The abstract of John Van Seters's book describes it as challenging the shared assumption that the Covenant Code is the oldest code: it argues that the Covenant Code's laws that resemble Deuteronomy and the Holiness Code are later than both, and places the code in the Babylonian exile. Edenburg's chapter itself argues that the code's cultic frame appears to be later than the core of Deuteronomy's law centralizing worship."
+    text: "Chaya Halberstam's chapter in the Cambridge Companion to Judaism and Law calls the Covenant Code most likely the earliest of the Hebrew Bible's three significant law collections, and the Deuteronomic Code one that most likely grew out of a revision of it. Nili Samet's Hebrew University course says scholars consider it the oldest law code of its kind in the Bible, and the abstract of Edenburg's Oxford Handbook chapter says it is widely considered the earliest collection of biblical law. The Encyclopaedia Judaica also calls it the earliest collection of biblical law, in a passage that may come from its first edition. Raymond Westbrook says that, although many would now place it in the monarchy, most scholars still agree that it predated Deuteronomy; Wright says most scholars believe that most of its apodictic laws predate Deuteronomy; and Siam Bhayro, reviewing Van Seters, calls the order Covenant Code, Deuteronomy, Holiness Code, Priestly source the standard hypothesis. The abstract of John Van Seters's book describes it as challenging the shared assumption that the Covenant Code is the oldest code: it argues that the Covenant Code's laws that resemble Deuteronomy and the Holiness Code are later than both, and places the code in the Babylonian exile. Edenburg's chapter itself argues that the code's cultic frame appears to be later than the core of Deuteronomy's law centralizing worship, and that, although its comparable laws usually precede their Deuteronomic, Priestly and Holiness counterparts, the common conclusion that the code as a whole is pre-Deuteronomic does not follow from the evidence, since only its framing sections can be compared with the other law collections."
     cites:
       - source: halberstam-2017-law-biblical-israel
         locator: "section “The Biblical Law Collections and Other Literary Discourses”, paragraph 1"
@@ -428,11 +432,16 @@ statements:
         locator: "p. 168"
         quote: "Thus, the cultic frame of the Covenant Code appears to be later than the core cult centralization legislation in Deuteronomy."
         read: 2026-11-27
+      - source: edenburg-2019-book-of-covenant
+        url: "https://books.google.com/books?id=emOtDwAAQBAJ&pg=PA170"
+        locator: "p. 170, section 11.7 “Implications for Future Investigation”"
+        quote: "While it is true that literary comparison usually indicates that the comparable laws in the Covenant Code preceded their deuteronom(ist)ic, priestly, and holiness counterparts, the common conclusion that the Covenant Code as a whole is pre-deuteronomic does not follow from the evidence, since only the framing sections of the Covenant Code can be compared with the other bodies of biblical law."
+        read: 2026-11-28
   - id: date
     group: "The Covenant Code"
     question: "When was the Covenant Code written?"
     short: "Scholars do not agree. Proposals range from the time of Moses to after the exile; many place its origins in the time of the monarchy."
-    text: "The Encyclopaedia Judaica says dates from the time of Moses to after the exile have been proposed, and that the monarchic period suggests itself because its laws resemble the royal law collections of the ancient Near East, a hypothesis it calls plausible but unproved. Edenburg's abstract traces its origins to the period of the monarchy. Hayes's Yale lectures say the laws in Exodus tend to be dated to the tenth or ninth century in their written form. Marvin Sweeney places it in northern Israel in the mid-eighth century BCE, and David P. Wright, who holds that it draws on the Laws of Hammurabi, between 740 and 640 BCE, before the Deuteronomic laws, which he says are generally dated to the second half of the seventh century. Van Seters places it in the Babylonian exile. Westbrook says many would now place it in the monarchy, but that no external evidence dates it and that attempts to date it by its style or the development of its laws are futile speculation."
+    text: "The Encyclopaedia Judaica says dates from the time of Moses to after the exile have been proposed, and that the monarchic period suggests itself because its laws resemble the royal law collections of the ancient Near East, a hypothesis it calls plausible but unproved. The abstract of Edenburg's chapter says it is widely considered to have origins going back to the period of the monarchy; in the chapter itself she argues that its socio-economic background is certainly not rooted in the period before the monarchy but is not necessarily limited to the monarchy, and that it gives no fixed point for locating the code's social context. Hayes's Yale lectures say the laws in Exodus tend to be dated to the tenth or ninth century in their written form. Marvin Sweeney places it in northern Israel in the mid-eighth century BCE, and David P. Wright, who holds that it draws on the Laws of Hammurabi, between 740 and 640 BCE, before the Deuteronomic laws, which he says are generally dated to the second half of the seventh century. Van Seters places it in the Babylonian exile. Westbrook says many would now place it in the monarchy, but that no external evidence dates it and that attempts to date it by its style or the development of its laws are futile speculation."
     cites:
       - source: paul-sperling-ej-book-covenant
         locator: "section “Date”"
@@ -478,6 +487,16 @@ statements:
         locator: "p. 106"
         quote: "There is no external evidence by which we could date the Covenant Code, and attempts to do so on the basis of its style or of the state of development of its laws are an exercise in futile speculation."
         read: 2026-11-27
+      - source: edenburg-2019-book-of-covenant
+        url: "https://books.google.com/books?id=emOtDwAAQBAJ&pg=PA170"
+        locator: "p. 170"
+        quote: "Hence, the socio-economic background of the Covenant Code is certainly not rooted in the pre-monarchic period, but it also is not necessarily limited to the period of the monarchy."
+        read: 2026-11-28
+      - source: edenburg-2019-book-of-covenant
+        url: "https://books.google.com/books?id=emOtDwAAQBAJ&pg=PA170"
+        locator: "p. 170"
+        quote: "All these points lead to the conclusion that the socio-economic conditions represented by the Covenant Code do not provide a fixed point for locating the social context of this law collection."
+        read: 2026-11-28
   - id: hammurabi
     group: "The Covenant Code"
     question: "Did the Covenant Code borrow from the Laws of Hammurabi?"
@@ -659,7 +678,7 @@ statements:
     group: "The Covenant Code"
     question: "Were laws like these applied in courts?"
     short: "Probably not as written statutes, many scholars say: collections like Hammurabi's are read as royal or scribal compositions rather than manuals for judges."
-    text: "Van De Mieroop says modern scholars do not regard Hammurabi's code as a manual that guided judges, and that many prefer to call it a proclamation of the king as guarantor of justice. Hayes's Yale lectures say these are collections rather than codes, that how they were used is not known, and that it is thought unlikely they were used by courts, though scribes copied them as part of a learned tradition. Bernard M. Levinson says it is unlikely Hammurabi's text ever had statutory force, and places the Covenant Collection in the curriculum of scribal schools before it had the status of public law; Zev Farber says little evidence suggests that the collections, the Covenant Collection among them, were used in the law courts. Michael LeFebvre says reassessment has brought a growing consensus that ancient Israel's law collections, too, were not legislation, and that Israel wrote laws for idyllic, not regulatory, purposes. Sweeney, by contrast, thinks the Covenant Code likely functioned as an active law code in northern Israel. The NABRE notes gloss its “ordinances” as judicial precedents for settling questions of law and custom."
+    text: "Van De Mieroop says modern scholars do not regard Hammurabi's code as a manual that guided judges, and that many prefer to call it a proclamation of the king as guarantor of justice. Hayes's Yale lectures say these are collections rather than codes, that how they were used is not known, and that it is thought unlikely they were used by courts, though scribes copied them as part of a learned tradition. Bernard M. Levinson says it is unlikely Hammurabi's text ever had statutory force, and places the Covenant Collection in the curriculum of scribal schools before it had the status of public law; Zev Farber says little evidence suggests that the collections, the Covenant Collection among them, were used in the law courts. Michael LeFebvre says reassessment has brought a growing consensus that ancient Israel's law collections, too, were not legislation, and that Israel wrote laws for idyllic, not regulatory, purposes. Sweeney, by contrast, thinks the Covenant Code likely functioned as an active law code in northern Israel. Eryl Wynn Davies, writing on the Pentateuch's laws generally, reports the view of many scholars that nothing indicates the Pentateuch's rules were ever followed in the day-to-day work of Israel's courts; he grants that not all its laws functioned as statutes and that some were probably never enforced, but argues that it seems mistaken to sever the link between the written law and its practice completely, and that the gap between the two may not have been as wide as is often supposed. The NABRE notes gloss its “ordinances” as judicial precedents for settling questions of law and custom."
     cites:
       - source: van-de-mieroop-bo-code-of-hammurabi
         locator: "body"
@@ -697,6 +716,20 @@ statements:
         locator: "ch. 2 “Written Law in Ancient Israel”, p. 31"
         quote: "The general consensus is that Israel wrote laws for idyllic, not regulatory, purposes."
         read: 2026-11-27
+      - source: davies-2019-litigation
+        locator: "p. 45"
+        quote: "Many scholars are of the view that the legal codes enshrined in the Pentateuch cannot provide helpful insights into the judicial system that functioned in Old Testament times, for there is nothing to indicate that the rules laid out in the Pentateuch were ever adhered to in the day-to-day functioning of the courts in ancient Israel."
+        read: 2026-11-28
+      - source: davies-2019-litigation
+        url: "https://books.google.com/books?id=emOtDwAAQBAJ&pg=PA46"
+        locator: "p. 46"
+        quote: "Of course, this is not to suggest that the entire legal material in the Pentateuch was intended for judicial application or that all the laws of the Pentateuch functioned as legislative statutes; indeed, some of the laws were probably never actually enforced in Israel,"
+        read: 2026-11-28
+      - source: davies-2019-litigation
+        url: "https://books.google.com/books?id=emOtDwAAQBAJ&pg=PA46"
+        locator: "p. 46"
+        quote: "Nevertheless, it seems mistaken to sever the link completely between the written law in the Old Testament and its realization in practice, and the fact remains that the chasm between the law as declared and the law as administered may not have been as wide as is frequently supposed."
+        read: 2026-11-28
   - id: deuteronomy
     group: "Later law collections"
     question: "Does Deuteronomy revise the Covenant Code?"

@@ -18,6 +18,7 @@
 # #249 second pass changes. Cut to uncited (all last indices, no renumbering): differences/9 (Baker TynBul: asserts Exodus's priority, which the page leaves unstated; confessional framing), numbering/7–8 (Baker Themelios: 2005 peer review unestablished, ministry-run journal; cut when in doubt), courts/10 (Davies: reports the no-courts view on p. 45, then argues against it on p. 46), ritual-decalogue/7 (Gesundheit p. 13: “this reigning consensus” refers to the earliest kernel of the festival calendar, not the p. 3 claim; and #80 drops “consensus” where Sherman reports the reverse). Their text sentences dropped or narrowed; registry entries baker-2005-themelios-ten-commandments, baker-2005-tynbul-finger-of-god and davies-2019-litigation removed (cited nowhere). Text: hammurabi “follow” → “follow and discuss” (Wright 2014 n. 6); ritual-decalogue Gesundheit sentence narrowed to p. 3; tradition “Book of Common Prayer (1662)” → “Book of Common Prayer” (year not on the page read). Locator: ritual-decalogue/6 “ch. 1” → “Introduction”. No short, question or id changed; no Question Page card affected. 20 statements, 177 citations.
 # #249 second pass flags for the lead: (1) bcp-1662-catechism registry title keeps “(1662)”, not printed on the snapshot or its parent page. (2) Westbrook 2008's proofs are dated 2007 (running head), so his “special pleading” critique answers Wright's earlier article, not the 2009 book the hammurabi text names just before; wording does not claim otherwise. (3) Morrow's abstract finds “a strong case for literary dependency” for Exod 21:2–22:16 as a whole; the text reports only his col. 323 conclusion on 21:18–32 (narrower, not wrong); the first-pass note's “only” undersells him. (4) Tyndale Bulletin: White 1999 stays Scholarly on satan-demons-and-angels; the journal asks contributions to fit Tyndale House's doctrinal basis, so the venue class may want a ruling. (5) New citations carry read 2026-11-27 while the #249 pass ran 2026-11-28; left as is. (6) Signed-out visibility of the Google Books pages is not established: the scripted books.google.ca page route returned the page lists for Westbrook PA106 and Wright 2014 PA224 but no image src without a session; not worked around. (7) Davies p. 46 (read, not cited) argues against severing biblical law from court practice: a possible sourced counter-voice beside Sweeney in courts, if the lead adds it. (8) Three registry entries were removed by this pass (both Baker articles, Davies), as they are now cited nowhere; restore from git if the lead prefers to keep unused entries. (9) Imes says “most scholars recognize” the name command addresses more than flippant speech (p. 1, not cited): a possible second source for the name-in-vain short if wanted.
 # #249 resolutions 2026-11-28 (lead agent, on the second pass's flags): all five cuts kept (Davies, Gesundheit p. 13, both Baker articles); their registry entries stay removed. (1) Registry title of bcp-1662-catechism changed to “The Book of Common Prayer, A Catechism” (the id stays; ids are internal). (2) Google Books reads: both passes read the pages in a signed-in browser; Google Books previews are a qualifying route under #80/#86, and the pages showed without any purchase or library login; recorded, not cut. (3) Westbrook 2007 proofs: the text does not say he answers the 2009 book; kept. (4) Morrow: the text reports his 21:18–32 conclusion, which is narrower than his abstract's “strong case”, so it understates rather than overstates; kept. (5) Tyndale Bulletin class elsewhere (White 1999): outside this page; noted in the report. (7)–(8) Davies p. 46 and Imes p. 1 “most scholars recognize”: possible future citations, recorded here for the next re-review; not added after the second pass. Publish rule recomputed: 20 statements, 177 citations; core oldest on Halberstam, Samet, Edenburg (abstract), Paul and Sperling, Westbrook, Bhayro and Wright; holds.
+# #261 first pass 2026-11-28 (lead agent, partial re-review per #93: only the new citations get the full procedure; review and sourcesRead stay 2026-11-27; no short, question or id changed, so no Question Page card or infographic plate changes): the #249 follow-on leads read in the lead's own Claude in Chrome tab as Google Books page images (signed-in profile; no purchase or library login), transcribed by eye into the lead's scratch folder. Added 7 citations from one restored source and two reused ones: name-in-vain/9 (Imes p. 1, “most scholars recognize” the command is not about flippant use; text only: it does not say the command covers more than false oaths, so it is not counted behind the short); oldest/13 (Edenburg p. 170 §11.7: the common conclusion that the code as a whole is pre-Deuteronomic “does not follow from the evidence”; her own argument, on the “some place it later” side, not counted for the core); date/12–13 (Edenburg p. 170: its socio-economic background is not pre-monarchic but “not necessarily limited to the period of the monarchy”, and gives no fixed point for its social context; the date text now attributes the monarchic origins to what her abstract says is widely considered, apart from her own argument); courts/10–12 (Davies pp. 45–46: his report of the many-scholars view restored beside his own counter-view that it “seems mistaken to sever the link completely”, with his concession that not all laws were statutes; worded as about the Pentateuch's laws generally). Short decisions: courts short unchanged: Davies concedes not all laws functioned as statutes, so “Probably not as written statutes, many scholars say” is true of his view too, and his p. 45 report adds a further author for “many scholars”; Sweeney's and Davies's dissents are not one claim, so no counter-side was added to the short. date short unchanged: “many place its origins in the time of the monarchy” rests on Westbrook (“many would now place it in the monarchy”), the Encyclopaedia Judaica and Hayes without Edenburg. name-in-vain short unchanged. Not added: Levinson 1997 pp. 6–7 (pages unavailable in the preview; still a Lead). Not decided: the Tyndale Bulletin / Themelios venue class (#261's last bullet) waits for the owner's ruling. Publish rule recomputed: 20 statements, 184 citations; core oldest on Halberstam, Samet, Edenburg (abstract), Paul and Sperling, Westbrook, Bhayro and Wright; holds.
 review: 2026-11-27
 delegation:
   by: owner
@@ -386,6 +387,12 @@ citations:
       owner: "",
       note: "#249 first pass 2026-11-28: same preview, p. 3 (url pg=PA3); read on the page image (the transcription file escapes the quotation marks, so the script match misses on punctuation only). Her own reading, which she calls the minority view; attributed in the text, not in the short. Resolves the issue lead (publisher blurb only). #249 second pass 2026-11-28 (independent agent): Google Books page image re-opened in my own Claude in Chrome tab (signed-in Chrome profile; previews are public but pages shown can vary by viewer), read by eye, p. 3; matched. Pass.",
     }
+  name-in-vain/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "#261 first pass 2026-11-28: Google Books preview page image of Imes p. 1, read by eye in the lead's own Claude in Chrome tab (signed-in profile; no purchase or library login); transcription in the lead's scratch folder. A field report (“most scholars recognize”) that the command is not about flippant use; attributed in the text only. It does not say the command covers more than false oaths, so it is not counted behind the short.",
+    }
   addressed/1:
     {
       agent: pass,
@@ -530,6 +537,12 @@ citations:
       owner: "",
       note: "#249 first pass 2026-11-28: Edenburg 2019, Google Books preview of the Handbook, p. 168 (books.google.com/books?id=emOtDwAAQBAJ&pg=PA168). Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. Her own view, attributed in the text: the abstract (oldest/4) reports the field, the body dates the cultic frame after Deuteronomy's core centralization law. Her p. 170 snippet (“not necessarily limited to the period of the monarchy”) was not viewable as a page: lead. #249 second pass 2026-11-28 (independent agent): Google Books page image re-opened in my own Claude in Chrome tab (signed-in Chrome profile; previews are public but pages shown can vary by viewer), read by eye, p. 168; matched. Her own dating of the cultic frame; the text keeps it apart from her abstract (“Edenburg's chapter itself argues”). Pass.",
     }
+  oldest/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "#261 first pass 2026-11-28: Google Books preview page image of Edenburg p. 170 (section 11.7), read by eye in the lead's own Claude in Chrome tab (signed-in profile; no purchase or library login); transcription in the lead's scratch folder. Her own argument, attributed; it sits with the short's “some scholars place it later” side and is not counted for the core.",
+    }
   date/1:
     {
       agent: pass,
@@ -595,6 +608,18 @@ citations:
       agent: pass,
       owner: "",
       note: "#249 first pass 2026-11-28: same page. Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. His own view that the code cannot be dated, attributed in the text. #249 second pass 2026-11-28 (independent agent): Google Books page image re-opened in my own Claude in Chrome tab (signed-in Chrome profile; previews are public but pages shown can vary by viewer), read by eye, p. 106; matched. His own view, attributed. Pass.",
+    }
+  date/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "#261 first pass 2026-11-28: Google Books preview page image of Edenburg p. 170, read by eye in the lead's own Claude in Chrome tab (signed-in profile; no purchase or library login); transcription in the lead's scratch folder. Both halves kept (not pre-monarchic; not necessarily limited to the monarchy). Her “one could also argue” about the Babylonian Diaspora is not reported as her dating it to the exile.",
+    }
+  date/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "#261 first pass 2026-11-28: Google Books preview page image of Edenburg p. 170, read by eye in the lead's own Claude in Chrome tab (signed-in profile; no purchase or library login); transcription in the lead's scratch folder. Same paragraph's conclusion; the passage is about the code's socio-economic setting, worded so in the text, not as a date.",
     }
   hammurabi/1:
     {
@@ -877,6 +902,24 @@ citations:
       agent: pass,
       owner: "",
       note: "#249 first pass 2026-11-28: same page. Google Books preview page image, viewable to a person; read by eye on the rendered page, no text layer. Attributed in the text. #249 second pass 2026-11-28 (independent agent): Google Books page image re-opened in my own Claude in Chrome tab (signed-in Chrome profile; previews are public but pages shown can vary by viewer), read by eye, p. 31; matched. Pass.",
+    }
+  courts/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "#261 first pass 2026-11-28: Google Books preview page image of Davies p. 45, read by eye in the lead's own Claude in Chrome tab (signed-in profile; no purchase or library login); transcription in the lead's scratch folder. Restored (cut by the #249 second pass when cited alone): now paired with his own view on p. 46, so his report is not read as his position. His subject is the Pentateuch's laws and Israelite courts generally, worded so in the text.",
+    }
+  courts/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "#261 first pass 2026-11-28: Google Books preview page image of Davies p. 46, read by eye in the lead's own Claude in Chrome tab (signed-in profile; no purchase or library login); transcription in the lead's scratch folder. His concession, kept so his counter-view is not overstated.",
+    }
+  courts/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "#261 first pass 2026-11-28: Google Books preview page image of Davies p. 46, read by eye in the lead's own Claude in Chrome tab (signed-in profile; no purchase or library login); transcription in the lead's scratch folder. His own view, a sourced counter-voice beside Sweeney in the text. The short is unchanged (see header).",
     }
   deuteronomy/1:
     {
@@ -1547,6 +1590,12 @@ sources:
       owner: "",
       note: "#249 first pass 2026-11-28: Scholarly (T&T Clark, LHBOTS 451); 2006; access: Google Books preview (labelled “No preview” on the 2006 record, but pp. 1–5, 30–34, 47–51 served as page images). #249 second pass 2026-11-28 (independent agent): p. 31 re-opened in Chrome (signed-in profile); chapter opening, no imprint on the page; publisher and year not re-checked; class unchanged.",
     }
+  davies-2019-litigation:
+    {
+      agent: pass,
+      owner: "",
+      note: "#261 first pass 2026-11-28: Scholarly (Oxford Handbook of Biblical Law, OUP); 2019; access: Google Books preview of the Handbook, pp. 45–46 read by eye. Registry entry restored from 6b1c9f9c (removed by the #249 second pass when it was cited nowhere).",
+    }
   bhayro-2004-jjs-review-van-seters:
     {
       agent: pass,
@@ -1578,13 +1627,11 @@ leads:
   - "Westbrook and Wells, Everyday Law in Biblical Israel (2009): closed (#249: Google Books pages unavailable; Internet Archive lending only). Westbrook 2008 read instead."
   - "David P. Wright, reply to Wells, Maarav 13.2 (2006): closed (#249: academia.edu only, login; Brandeis repository has no file)."
   - "Wright's review of Van Seters, JAOS 124.1 (2004): closed (#249: JSTOR login; no repository copy; Wayback has none); only the vLex preview shows the “most scholars think that CC is earlier than Deuteronomy and HC” sentence. Westbrook 2008, Wright 2009 p. 323 and Bhayro 2004 carry the point instead (oldest)."
-  - "Edenburg 2019, p. 170 (Google Books snippet only): “the socio-economic background of the Covenant Code is certainly not rooted in the pre-monarchic period, but it also is not necessarily limited to the period of the monarchy”. If the page opens, it may qualify date's reliance on her abstract for “the period of the monarchy”."
-  - "Levinson 1997, pp. 6–7 (Google Books snippet only; page not viewable in a browser on 2026-11-28): Deuteronomy's dependence on the Covenant Code “consistent with the broad scholarly consensus”."
+  - "Levinson 1997, pp. 6–7 (Google Books snippet only; page not viewable in a browser on 2026-11-28, #249; re-tried #261 2026-11-28: pp. 6 and 7 both show Google Books' “unavailable for viewing or reached your viewing limit” page; no other publisher, open or author copy found by search; Internet Archive lending needs a login): Deuteronomy's dependence on the Covenant Code “consistent with the broad scholarly consensus”. Still a Lead; not cited."
   - "Levinson's numbering chart, Jewish Study Bible 2nd ed. (2014), p. 357: closed (#249: Google Books preview does not reach it; search inside returns nothing; Internet Archive lending only)."
 uncited:
   - "David L. Baker, “The Finger of God and the Forming of a Nation”, Tyndale Bulletin 56.1 (2005), p. 13: “Deuteronomy adds several clauses to the older version in Exodus, and there are a few small differences in expression.” (was differences/9). Read; cut by the #249 second pass: the sentence asserts Exodus's priority, which this page leaves unstated for want of a second author (see the Gnuse entry), and the article's summary sets out to engage the claim that God spoke and wrote the Decalogue; Tyndale Bulletin asks contributions to be compatible with Tyndale House's doctrinal basis. Registry entry removed. (White 1999 in Tyndale Bulletin stays Scholarly on satan-demons-and-angels; venue flagged for the lead.)"
   - "David L. Baker, “Ten Commandments, Two Tablets: The Shape of the Decalogue”, Themelios 30.3 (2005), numbering table (“Josephus, Eastern Orthodox, Reformed, Anglican”) and the paragraph before it (was numbering/7–8). Read in the Internet Archive copy; cut by the #249 second pass: the only peer-review evidence is the present-day TGC blurb (“peer-reviewed international evangelical theological journal that expounds on the historic Christian faith”), and the same page says it “was formerly a print journal operated by RTSF/UCCF in the UK” before TGC took it on in 2008; whether the 2005 issue was peer-reviewed is not shown, so class cannot be settled, so cut when in doubt. The Anglican numbering is still shown in the Church of England's own catechism (tradition/11). Registry entry removed."
-  - "Eryl Wynn Davies, “Litigation”, Oxford Handbook of Biblical Law (2019), p. 45: “Many scholars are of the view that … there is nothing to indicate that the rules laid out in the Pentateuch were ever adhered to in the day-to-day functioning of the courts in ancient Israel.” (was courts/10). Read; cut by the #249 second pass: on pp. 45–46 Davies reports this view and then argues against it (“it seems mistaken to sever the link completely”; “it would seem precipitate to reject wholesale the idea of a connection between biblical law and legal practice”), so citing only his report put him on the side he disputes. His own view is not on the page (no citation added). Registry entry removed."
   - "Shimon Gesundheit, Three Times a Year (2012), p. 13: “In the following study I shall attempt to refute this reigning consensus” (was ritual-decalogue/7). Read; cut by the #249 second pass: “this reigning consensus” (p. 12) is that the earliest kernel of Israel's festival calendar lies in Exodus 34:18–26, not p. 3's “earliest legal collection” the text tied it to; and Sherman 2024 reports many now reject the early dating, so #80 drops “consensus” where sources disagree on the field."
   - "Jeffrey Stackert, Rewriting the Torah (2007), on the Holiness Code revising the Covenant Code: read at p. 218 (#249) (“every example of revision … most plausibly explained as an attempt to subvert and replace its source(s)”). Not cited: the page has no Holiness Code statement beyond slaves."
   - "W. Creighton Marlowe, “Ten Commandments or Prohibitions? Numbering the Ten Words”, Journal of Inductive Biblical Studies 8.2 (2022) (#249): read in full (PDF refuses scripts; opened in Chrome, text extracted in the page; also an Internet Archive copy). Abstract: “No consensus has been reached, although one list has become popular.” Not cited: it never mentions the Anglican tradition (the question the lead asked), and the journal (Asbury Theological Seminary, promoting inductive Bible study) states no peer-review policy."
