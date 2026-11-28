@@ -15,7 +15,7 @@
   panel to Smith's model, so both its plates stay under that hedge.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/the-origins-of-yahweh.yaml. El is drawn as
+  hugo/data/scholarship/illustrations/the-origins-of-yahweh.yaml. El is drawn as
   the Ugarit texts describe him; Yahweh and the patriarchs' God never
   appear as a figure, only as light, storm or the people who worship.
   Scripture chips are only the verses the statements name. Reword a plate
@@ -37,41 +37,41 @@
       src="{{ $webp.RelPermalink }}"
       width="{{ $webp.Width }}"
       height="{{ $webp.Height }}"
-      alt="{{ $.alt }}"
+      alt="{{ partial "scholarship-art-alt.html" (dict "slug" "the-origins-of-yahweh" "id" $.id) }}"
       loading="eager" />
   {{- end }}
 {{- end -}}
 {{- $panels := slice
   (dict
   "id" "ancestors" "box" "Whom did the ancestors worship?" "split" "parallel"
-  "left" (dict "id" "el" "alt" "El, an old king with a long white beard, sits enthroned before his tent on a mountaintop, a council of lesser gods around him.")
-  "right" (dict "id" "patriarch" "alt" "A bearded herdsman kneels at a stone altar on a hillside, looking toward a far mountain with a tent on its top.")
+  "left" (dict "id" "el")
+  "right" (dict "id" "patriarch")
   "plates" (slice
   (dict "pos" "bl" "side" "left" "big" "El" "sub" "chief Canaanite god; in Ugarit’s texts, head of a council of gods")
   (dict "pos" "br" "side" "right" "big" "El Shaddai" "sub" "as God appeared to Abraham, Isaac and Jacob" "ref" "Exodus 6:2-4" "label" "Exod 6:2–4")))
   (dict
   "id" "name" "box" "Since when is he Yahweh?" "split" "bolt"
-  "left" (dict "id" "early" "alt" "The earliest humans, a family, stand at a rough stone altar and call out with raised arms to an empty sky.")
-  "right" (dict "id" "moses" "alt" "Moses, a bearded man with a staff, stands alone in the desert as golden light pours down on him from the sky.")
+  "left" (dict "id" "early")
+  "right" (dict "id" "moses")
   "plates" (slice
   (dict "pos" "bl" "side" "left" "badge" "j" "big" "From the start" "sub" "the earliest humans worship Yahweh by name" "ref" "Genesis 4:26" "label" "Gen 4:26")
   (dict "pos" "tr" "side" "right" "badge" "p" "big" "At the Exodus" "sub" "“I did not make myself known to them by my name”" "ref" "Exodus 6:2-4" "label" "Exod 6:2–4")))
   (dict
   "id" "storm" "box" "Like which god?" "split" "parallel"
-  "left" (dict "id" "baal" "alt" "Baal, a young storm-god, raises a lightning bolt on a mountaintop over a stormy sea; the old god El sits aside behind him.")
-  "right" (dict "id" "sea" "alt" "Thunderclouds and lightning over the sea; a great wind heaps the water into a wall as a small crowd watches from the shore.")
+  "left" (dict "id" "baal")
+  "right" (dict "id" "sea")
   "plates" (slice
   (dict "pos" "bl" "side" "left" "big" "Baal" "sub" "storm-god who, in Canaanite myth, defeated El")
   (dict "pos" "br" "side" "right" "big" "A storm-god" "sub" "how the Song of the Sea describes Yahweh" "ref" "Exodus 15" "label" "Exod 15")))
   (dict
   "id" "outside" "box" "Outside the Bible"
-  "art" (dict "id" "stela" "alt" "A tall black round-topped stone slab, carved with rows of writing, stands alone on a dry hillside.")
+  "art" (dict "id" "stela")
   "plates" (slice
   (dict "pos" "tl" "big" "About 840 BCE" "sub" "Mesha of Moab’s inscription: the oldest certain mention")
   (dict "pos" "bl" "big" "Yhwȝ" "sub" "of Shasu-land, in older Egyptian texts (14th–13th c. BCE): mysterious, open to debate")))
   (dict
   "id" "smith" "box" "By Mark Smith’s model" "wide" true
-  "art" (dict "id" "smith" "alt" "Streams from red desert mountains, from El's mountain with its tent and from a storm join into one river; beside it, one Israelite points accusingly at another Israelite family making an offering.")
+  "art" (dict "id" "smith")
   "plates" (slice
   (dict "pos" "bl" "big" "One god" "sub" "from the south, taking on the traits of El and Baal")
   (dict "pos" "br" "big" "“Canaanite”" "sub" "later, a Yahweh-only party rejects parts of the mix: Israelites against Israelites")))

@@ -8,18 +8,12 @@
   only when the statement it comes from is re-reviewed.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/homosexuality-and-the-bible.yaml (no words in
+  hugo/data/scholarship/illustrations/homosexuality-and-the-bible.yaml (no words in
   it except the one on the card); every caption, link and claim lives here.
   The comic furniture (title lettering, gutters, narration boxes) is CSS.
   */
 -}}
 {{- $slug := "homosexuality-and-the-bible" -}}
-{{- $alt := dict
-  "today" "Two men, a couple, stand arm in arm and smile; one holds up an index card reading “homosexuality”."
-  "then" "An ancient scribe studies the same card, puzzled, with a question mark above him."
-  "texts" "The same scribe writes on a very long scroll; only a few short passages on it are marked."
-  "debate" "Two present-day scholars disagree over an ancient star chart: one points eagerly, the other frowns, arms crossed."
--}}
 {{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
 {{- $passages := slice
   (dict "ref" "Genesis 19:1–11" "lang" "he")
@@ -61,7 +55,7 @@
                   src="{{ $webp.RelPermalink }}"
                   width="{{ $webp.Width }}"
                   height="{{ $webp.Height }}"
-                  alt="{{ index $alt $f.id }}"
+                  alt="{{ partial "scholarship-art-alt.html" (dict "slug" $slug "id" $f.id) }}"
                   loading="eager" />
               {{- end }}
             </div>

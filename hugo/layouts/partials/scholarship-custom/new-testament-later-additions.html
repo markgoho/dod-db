@@ -17,7 +17,7 @@
   count ("about 16") is Holmes's alone and stays in the answers below.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/new-testament-later-additions.yaml. Reword a
+  hugo/data/scholarship/illustrations/new-testament-later-additions.yaml. Reword a
   plate only when the statement it comes from is re-reviewed.
   */
 -}}
@@ -32,37 +32,30 @@
 {{- $panels := slice
   (dict
   "id" "scribe" "box" "Copied by hand"
-  "alt" "An ancient scribe at a low table copies a Gospel from a scroll onto a fresh sheet, pen raised over a note in the scroll's margin."
   "plates" (slice
   (dict "pos" "bl" "big" "Verses added" "sub" "a parallel from another Gospel, or a note from the margin, copied into the text" "refs" (slice (dict "ref" "Matthew 18:11" "label" "Matt 18:11") (dict "ref" "John 5:4" "label" "John 5:4")))))
   (dict
   "id" "mark" "box" "Where does Mark end?"
-  "alt" "At dawn, three women run from an open rock-cut tomb, its round stone rolled aside, looking back in fear."
   "plates" (slice
   (dict "pos" "bl" "big" "At 16:8" "sub" "in the oldest Greek manuscripts; most scholars say the rest was added later" "refs" (slice (dict "ref" "Mark 16:8" "label" "Mark 16:8") (dict "ref" "Mark 16:9-20" "label" "Mark 16:9–20")))))
   (dict
   "id" "adulteress" "box" "The woman caught in adultery"
-  "alt" "In a temple courtyard, Jesus stoops and writes on the ground; a woman stands alone, head bowed, as the men who brought her walk away, stones dropped."
   "plates" (slice
   (dict "pos" "bl" "big" "Added to John" "sub" "missing from the earliest manuscripts, most scholars say" "refs" (slice (dict "ref" "John 7:53-8:11" "label" "John 7:53–8:11")))))
   (dict
   "id" "basel" "box" "Erasmus, 1516"
-  "alt" "A scholar's hands at a print-shop desk: a few old handwritten manuscripts lie open beside a freshly printed two-column book; a printing press stands behind."
   "plates" (slice
   (dict "pos" "br" "big" "A few late manuscripts" "sub" "those used most from the 12th century; Revelation’s last verses translated back from Latin" "refs" (slice (dict "ref" "Revelation 22:16-21" "label" "Rev 22:16–21")))))
   (dict
   "id" "comma" "box" "1 John 5:7–8, in 1522"
-  "alt" "The same desk: a second pair of hands sets down one small, newly written manuscript beside an old Latin Bible and the printed book."
   "plates" (slice
   (dict "pos" "bl" "big" "Added in 1522" "sub" "from a Greek manuscript whose words were translated from the Latin" "refs" (slice (dict "ref" "1 John 5:7-8" "label" "1 John 5:7–8")))))
   (dict
   "id" "kjv" "box" "1611"
-  "alt" "Translators in black gowns and white ruffs sit around a long table, quills in hand, marking changes in the margins of a large printed Bible."
   "plates" (slice
   (dict "pos" "bl" "big" "The King James Version" "sub" "translated a Greek text that included the added verses")))
   (dict
   "id" "today" "box" "Since 1881" "wide" true
-  "alt" "Today: a reader at a table looks at an open modern Bible in which one paragraph is set off inside large double square brackets."
   "plates" (slice
   (dict "pos" "bl" "big" "Left out or bracketed" "sub" "modern translations drop the added verses or set them in brackets or footnotes" "refs" (slice (dict "ref" "Matthew 17:21" "label" "Matt 17:21")))))
 -}}
@@ -88,7 +81,7 @@
             data-card-hide
           {{ end }}>
           <figure class="ntx-comic__figure">
-            {{- $alt := .alt }}
+            {{- $id := .id }}
             <div class="ntx-comic__art">
               {{- with resources.Get (printf "scholarship-art/new-testament-later-additions/%s.png" .id) }}
                 {{- $webp := .Process "resize 1200x webp q78" }}
@@ -96,7 +89,7 @@
                   src="{{ $webp.RelPermalink }}"
                   width="{{ $webp.Width }}"
                   height="{{ $webp.Height }}"
-                  alt="{{ $alt }}"
+                  alt="{{ partial "scholarship-art-alt.html" (dict "slug" "new-testament-later-additions" "id" $id) }}"
                   loading="eager" />
               {{- end }}
             </div>

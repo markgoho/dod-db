@@ -1,6 +1,6 @@
 /**
  * Generate the raster illustrations for one Scholarship Page infographic with
- * Gemini, from `data/scholarship-illustrations/<slug>.yaml`.
+ * Gemini, from `hugo/data/scholarship/illustrations/<slug>.yaml`.
  *
  * Every image shares one style preamble and one content-rules block. An image
  * may list `refs`: earlier images passed as reference, so a character or an
@@ -65,7 +65,7 @@ const model = process.argv.includes("--pro") ? PRO_MODEL : DEFAULT_MODEL;
 
 const manifest = ManifestSchema.parse(
   YAML.parse(
-    await Bun.file(`data/scholarship-illustrations/${slug}.yaml`).text(),
+    await Bun.file(`hugo/data/scholarship/illustrations/${slug}.yaml`).text(),
   ),
 );
 const outDir = `hugo/assets/scholarship-art/${slug}`;

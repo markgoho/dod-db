@@ -14,7 +14,7 @@ images:
   - id: together
     statements: [differ]
     aspect: "4:5"
-    alt: "A man and a woman stand side by side, newly made, bathed in light from above."
+    alt: "A man and a woman stand side by side, newly made, in a shaft of light."
     prompt: >-
       A young man and a young woman, the first humans, stand side by side
       in the centre-left of the picture, full figure, looking around them in
@@ -28,7 +28,7 @@ images:
   - id: before-1
     statements: [deep, beginning]
     aspect: "4:5"
-    alt: "Dark, heaving primordial waters under a black sky, a wind sweeping over their surface."
+    alt: "Dark, heaving primordial waters under a black sky, a wind sweeping over them."
     prompt: >-
       The dark primordial ocean before creation: heaving, rolling black and
       deep grey waves filling the lower two thirds of the picture, under a
@@ -41,7 +41,7 @@ images:
   - id: before-2
     statements: [differ]
     aspect: "4:5"
-    alt: "A bare, dry, empty plain: cracked earth with no shrub or plant anywhere."
+    alt: "A bare, dry plain of cracked earth with no shrub or plant anywhere."
     prompt: >-
       A bare, dry, empty plain of cracked pale brown earth stretching to a
       low flat horizon, under a plain pale sky. Not a single shrub, plant,
@@ -53,7 +53,7 @@ images:
     statements: [differ, two]
     aspect: "4:5"
     refs: [before-1]
-    alt: "Over the same dark waters, a great burst of light breaks out of the black sky. No figure is seen."
+    alt: "Over the same dark waters a burst of light breaks out of the black sky; no figure is seen."
     prompt: >-
       The SAME dark waters as in the reference image, now with a great
       radiant burst of golden amber light breaking out of the black sky at
@@ -83,7 +83,7 @@ images:
     statements: [differ]
     aspect: "4:5"
     refs: [together]
-    alt: "A lush world full of plants, trees, birds, fish and land animals; the man and woman stand small among them."
+    alt: "A world full of trees, plants, birds, fish and animals; the man and woman stand small among them."
     prompt: >-
       A lush, full world: leafy trees, grass and fruiting plants, birds in
       the air, fish leaping in a stream, and land animals (a cow, a deer, a
@@ -97,7 +97,7 @@ images:
     statements: [differ]
     aspect: "4:5"
     refs: [make-2, together]
-    alt: "The man stands alone on the bare ground; behind him a young tree sprouts and animals approach."
+    alt: "The man stands alone on bare ground; behind him a young tree sprouts and a few animals approach."
     prompt: >-
       The SAME man as in the second reference image (same face and dark
       hair, his plain rust red tunic), now living, standing alone on the
@@ -130,7 +130,7 @@ images:
     statements: [differ, enuma]
     aspect: "16:9"
     refs: [together, first-1]
-    alt: "The man and woman stand on a rise over a wide land full of animals, the man's arm outstretched over it."
+    alt: "The man and woman stand on a rise over a wide land full of calm animals, the man's arm outstretched over it."
     prompt: >-
       The SAME man and woman as in the first reference image (same faces,
       hair and plain tunics, rust red and light grey) stand together on a
@@ -146,7 +146,7 @@ images:
     statements: [differ]
     aspect: "16:9"
     refs: [first-2, woman-2]
-    alt: "The man works the soil of a young garden with a simple wooden hoe, tending rows of plants."
+    alt: "The man works the soil of a young garden with a simple wooden hoe."
     prompt: >-
       The SAME man as in the references (same face and dark hair, plain
       rust red tunic), in the centre-right of a wide picture, working the
@@ -161,7 +161,7 @@ images:
     statements: [differ]
     aspect: "4:5"
     refs: [make-1, first-1]
-    alt: "A tiny ordered world far below a vast, empty sky; light streams down from very high above. No figure is seen."
+    alt: "A small ordered world far below a vast sky; light streams down from very high above, with no figure seen."
     prompt: >-
       A vast empty sky fills most of the picture, deep and high, with
       golden amber light streaming down from far above the top edge. Far
@@ -175,7 +175,7 @@ images:
     statements: [differ]
     aspect: "4:5"
     refs: [woman-2, why-2]
-    alt: "In the garden at evening, the bare feet and robe hem of a large figure stroll along a path between trees."
+    alt: "In an evening garden, the bare feet and robe hem of a large figure stroll along a path."
     prompt: >-
       A garden path at evening, amber and rust sunset light, leafy trees
       and fruit on both sides, the SAME drawing style as the references.
@@ -190,7 +190,7 @@ images:
     statements: [differ, days]
     aspect: "4:5"
     refs: [first-1]
-    alt: "A formal, perfectly symmetrical scene: a mirrored landscape under a balanced sky, everything set out in neat order."
+    alt: "A formal, symmetrical landscape, everything set out in matching pairs under a balanced sky."
     prompt: >-
       A formal, perfectly symmetrical, calm composition in the SAME drawing
       style as the reference: a landscape mirrored left to right about a
@@ -205,7 +205,7 @@ images:
     statements: [differ]
     aspect: "4:5"
     refs: [why-2, woman-2]
-    alt: "A lively, earthy scene: the man, smeared with mud, laughs as a goat tugs his tunic in a tangle of garden plants."
+    alt: "The man kneels laughing in the mud of a lush garden as a goat tugs his tunic and a bird sits on his head."
     prompt: >-
       A lively, earthy, comic scene in the SAME drawing style and with the
       SAME man as the references (same face and hair, plain rust red

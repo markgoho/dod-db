@@ -16,7 +16,7 @@
   plain text, not a link.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/the-origins-of-hell.yaml. Reword a plate
+  hugo/data/scholarship/illustrations/the-origins-of-hell.yaml. Reword a plate
   only when the statement it comes from is re-reviewed.
   */
 -}}
@@ -37,28 +37,23 @@
 {{- $panels := slice
   (dict
   "id" "sheol" "box" "Where do the dead go?"
-  "alt" "A cut-away view of the earth: a quiet hillside with a rock-cut tomb above, and beneath the soil a dim, shadowy cavern where a dense crowd of identical grey shades of the dead, old and young, stand together, still."
   "plates" (slice
   (dict "pos" "bl" "big" "Sheol" "sub" "all the dead, without judgment or torment" "refs" (slice (dict "ref" "Genesis 37:35" "label" "Gen 37:35" "link" true) (dict "ref" "1 Samuel 2:6" "label" "1 Sam 2:6" "link" true)))))
   (dict
   "id" "hinnom" "box" "What is Gehenna?"
-  "alt" "A deep, quiet valley below the stone walls of ancient Jerusalem, with a rough stone altar standing cold and empty on the valley floor."
   "plates" (slice
   (dict "pos" "bl" "big" "A real valley" "sub" "the Valley of Hinnom by Jerusalem, site of child sacrifice at Topheth" "refs" (slice (dict "ref" "2 Kings 23:10" "label" "2 Kgs 23:10" "link" true)))))
   (dict
   "id" "enoch" "box" "The dead divided"
-  "alt" "The same underground cavern of the dead, now divided by rock walls into separate hollows: in one, lit warm amber, calm shades wait together; the others are dark, their shades apart, heads bowed."
   "plates" (slice
   (dict "pos" "tr" "big" "Separate places" "sub" "for the righteous and the wicked, 3rd or 2nd century BCE" "refs" (slice (dict "label" "1 Enoch 22")))))
   (dict
   "id" "daniel" "box" "Who rises?"
-  "alt" "At dawn on a hillside of open graves, the dead rise in plain shrouds: those on the left walk up into golden light; those on the right rise in shadow, faces hidden in their hands."
   "plates" (slice
   (dict "pos" "bl" "big" "Everlasting life" "sub" "about 167 BCE" "refs" (slice (dict "ref" "Daniel 12:2" "label" "Dan 12:2" "link" true)))
   (dict "pos" "tr" "big" "Disgrace")))
   (dict
   "id" "gehenna" "box" "In the New Testament" "wide" true
-  "alt" "The same valley below Jerusalem's walls, now pictured filled from side to side with fire under a dark sky."
   "plates" (slice
   (dict "pos" "bl" "big" "Gehenna" "sub" "the place where sinners are punished" "refs" (slice (dict "ref" "Matthew 5:22" "label" "Matt 5:22" "link" true) (dict "ref" "Mark 9:48" "label" "Mark 9:48" "link" true)))))
 -}}
@@ -86,7 +81,7 @@
             data-card-hide
           {{ end }}>
           <figure class="hell-comic__figure">
-            {{- $alt := .alt }}
+            {{- $id := .id }}
             <div class="hell-comic__art">
               {{- with resources.Get (printf "scholarship-art/the-origins-of-hell/%s.png" .id) }}
                 {{- $webp := .Process "resize 1200x webp q78" }}
@@ -94,7 +89,7 @@
                   src="{{ $webp.RelPermalink }}"
                   width="{{ $webp.Width }}"
                   height="{{ $webp.Height }}"
-                  alt="{{ $alt }}"
+                  alt="{{ partial "scholarship-art-alt.html" (dict "slug" "the-origins-of-hell" "id" $id) }}"
                   loading="eager" />
               {{- end }}
             </div>

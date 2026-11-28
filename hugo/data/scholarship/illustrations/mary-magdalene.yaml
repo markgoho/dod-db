@@ -13,7 +13,7 @@ images:
   - id: luke8
     statements: [gospels]
     aspect: "4:3"
-    alt: "Mary Magdalene, in a rust headscarf, walks with a small group of women along a dusty Galilean road, carrying a bundle of provisions."
+    alt: "Mary Magdalene, in a rust headscarf, walks with other women along a Galilean road, carrying a bundle of bread."
     prompt: >-
       A first-century Galilean woman in her thirties, Mary Magdalene, shown
       from the knees up, walking along a dusty country road with two or
@@ -27,7 +27,7 @@ images:
     statements: [prostitute]
     aspect: "4:3"
     refs: [luke8]
-    alt: "At a dinner, a different woman, with loose hair and a grey-blue shawl, kneels weeping at the feet of a reclining guest, an alabaster jar beside her."
+    alt: "At a dinner, a woman with loose hair and a grey-blue shawl kneels weeping at a reclining guest's feet, an alabaster jar beside her."
     prompt: >-
       A first-century dinner in a courtyard house: a bearded man in a plain
       robe reclines at a low table, seen from the side, and at his bare feet
@@ -41,7 +41,7 @@ images:
   - id: sermon
     statements: [prostitute]
     aspect: "4:3"
-    alt: "A sixth-century pope in white vestments preaches from a stone pulpit in a dim basilica, one hand raised."
+    alt: "A pope in white vestments preaches from a stone pulpit in a dim basilica, one hand raised."
     prompt: >-
       A sixth-century bishop of Rome preaching a sermon: an older clean-shaven
       man in plain white and amber liturgical vestments with a pallium,
@@ -54,7 +54,7 @@ images:
     statements: [prostitute]
     aspect: "4:3"
     refs: [luke8, luke7]
-    alt: "A late painting in a gilded frame shows a penitent woman with long loose hair and an alabaster jar, gazing upward in tears."
+    alt: "A gilded frame holds a devotional painting of a weeping penitent woman with long loose hair, holding an alabaster jar."
     prompt: >-
       A gilded ornate picture frame hanging on a museum wall, holding a
       painting in an old devotional style: a penitent woman, shown from the
@@ -69,7 +69,7 @@ images:
     statements: [gospels, risen]
     aspect: "16:9"
     refs: [luke8]
-    alt: "At dawn, the same Mary Magdalene, in her rust headscarf, stands at the mouth of an open rock-cut tomb, its round stone rolled aside."
+    alt: "At dawn, Mary Magdalene, in her rust headscarf, stands at the open doorway of a rock-cut tomb, its stone rolled aside."
     prompt: >-
       Early dawn outside a rock-cut tomb in a garden: the SAME woman as in
       the reference image (rust red headscarf, dark hair, amber tunic) stands

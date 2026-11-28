@@ -18,7 +18,7 @@ images:
   - id: stories
     statements: [polygyny]
     aspect: "4:3"
-    alt: "A bearded herdsman stands outside his tent between his two wives, one on each side, with sheep behind them."
+    alt: "A bearded herdsman stands outside his tent between his two wives, one on each side, with sheep grazing behind them."
     prompt: >-
       An ancient Near Eastern herdsman, bearded, in a striped wool robe and
       headcloth, standing outside a large goat-hair tent with a flock of
@@ -34,7 +34,7 @@ images:
     statements: [polygyny]
     aspect: "4:3"
     refs: [stories]
-    alt: "An old father seated at a low table shares out sacks of grain and silver between two young men, the sons of his two wives, who stand behind them."
+    alt: "An old father at a low table shares out sacks of grain and silver between two young men; behind each stands his mother, the father's two wives."
     prompt: >-
       Inside a simple ancient mud-brick house, an elderly bearded father
       in the SAME style of robe and headcloth as the man in the reference
@@ -51,7 +51,7 @@ images:
   - id: kings
     statements: [polygyny]
     aspect: "4:3"
-    alt: "A king on a throne in a pillared hall, surrounded by a dense crowd of richly dressed wives that fills the hall and runs out of the picture."
+    alt: "A crowned king on a throne in a pillared hall, the floor around him crowded with richly dressed wives, too many to count."
     prompt: >-
       A grand ancient royal palace hall with tall cedar pillars and
       hanging lamps. A crowned king in rich robes sits on a raised throne at
@@ -64,7 +64,7 @@ images:
   - id: scrolls
     statements: [second-temple]
     aspect: "4:3"
-    alt: "In a desert cave above the Dead Sea, a scribe writes on a scroll by lamplight beside tall clay storage jars."
+    alt: "In a cave above the Dead Sea, a scribe writes on a long scroll by lamplight beside tall clay storage jars."
     prompt: >-
       Inside a rocky desert cave above a pale sea seen through the cave
       mouth, a lone ancient Jewish scribe in a plain white linen robe sits on

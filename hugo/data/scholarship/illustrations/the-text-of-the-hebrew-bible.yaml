@@ -34,7 +34,7 @@ images:
     statements: [lxx, lxx-hebrew]
     aspect: "4:3"
     refs: [scrolls]
-    alt: "Two translators sit at a table in a sunlit Hellenistic room: one reads aloud from a parchment scroll, the other writes on a papyrus roll."
+    alt: "Two translators sit at a table in a sunlit room: one reads from a parchment scroll, the other writes on a papyrus roll."
     prompt: >-
       A bright, airy room in a Hellenistic house in ancient Egypt, with a
       plain whitewashed wall and one tall open window at the upper RIGHT
@@ -53,7 +53,7 @@ images:
     statements: [jeremiah]
     aspect: "4:5"
     refs: [scrolls]
-    alt: "A scribe holds up a very long parchment scroll that spills across the floor and out of the picture."
+    alt: "A scribe holds up a very long scroll that spills across the floor and out of the picture."
     prompt: >-
       A middle-aged Judean scribe with a dark beard, in a plain rust red
       robe and headcloth, sits on a low stool a little LEFT of centre (his
@@ -75,7 +75,7 @@ images:
     statements: [jeremiah, lxx]
     aspect: "4:5"
     refs: [alexandria, jeremiah-hebrew]
-    alt: "The young Greek translator holds up a much shorter papyrus scroll, its whole length easily in his two hands."
+    alt: "The young translator holds a much shorter scroll, its whole length easily in his hands."
     prompt: >-
       The SAME younger clean-shaven man with short curly hair and light
       Greek-style tunic as the writer on the right of the FIRST reference
@@ -96,7 +96,7 @@ images:
     statements: [masoretes, mt]
     aspect: "4:3"
     refs: [scrolls]
-    alt: "A medieval scribe bends over a large bound book by lamplight, adding tiny marks above and below its lines with a fine pen."
+    alt: "A medieval scribe bends over a large bound book by lamplight, adding tiny marks to its lines with a fine pen."
     prompt: >-
       A medieval Jewish scribe, an older man with a grey beard in a plain
       dark brown robe and a simple cloth cap, sits at a sloping wooden desk
@@ -113,7 +113,7 @@ images:
     statements: [oldest]
     aspect: "4:3"
     refs: [masoretes]
-    alt: "The same large bound book lies closed and complete on a reading stand, thick with pages."
+    alt: "A large bound book lies closed on a wooden reading stand, thick with pages."
     prompt: >-
       The SAME large codex as in the reference image (thick parchment
       pages, dark leather binding), now shown complete and closed, lying
@@ -128,7 +128,7 @@ images:
     statements: [original]
     aspect: "4:3"
     refs: [scrolls, codex]
-    alt: "A present-day scholar at a desk compares a torn scroll fragment with the open bound book, a magnifying glass in hand."
+    alt: "A present-day scholar compares a torn scroll fragment with an open bound book through a magnifying glass."
     prompt: >-
       A present-day scholar, a woman in her forties with short dark hair,
       glasses and a grey cardigan, sits at a modern desk in the RIGHT half
@@ -144,7 +144,7 @@ images:
   - id: today-mt
     statements: [translations]
     aspect: "16:9"
-    alt: "In a present-day living room, a woman reads a printed Bible in an armchair."
+    alt: "A woman reads a printed Bible in an armchair at home."
     prompt: >-
       A present-day living room. On the LEFT half of the picture a woman
       in her thirties with long hair, in a sweater and jeans, sits in an
@@ -157,7 +157,7 @@ images:
     statements: [translations, lxx]
     aspect: "16:9"
     refs: [today-mt]
-    alt: "In an Eastern Orthodox church hung with icons, a bearded priest in vestments reads from a large book on a stand."
+    alt: "In an Eastern Orthodox church hung with icons, a priest reads from a large book on a stand."
     prompt: >-
       The inside of an Eastern Orthodox church, drawn in the SAME style as
       the reference image. On the RIGHT half of the picture a bearded

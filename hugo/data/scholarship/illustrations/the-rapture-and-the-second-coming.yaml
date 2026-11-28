@@ -32,7 +32,7 @@ images:
     statements: [thessalonians]
     aspect: "4:3"
     refs: [scribe]
-    alt: "Ancient townspeople in robes rise from a field into the clouds toward a radiant light descending from the sky."
+    alt: "Ancient townspeople in robes rise from a field into the clouds toward a radiant light shining down from the sky."
     prompt: >-
       Same drawing style as the reference image. A wide outdoor scene in the
       ancient Mediterranean world: above a field outside a small walled town
@@ -49,7 +49,7 @@ images:
     statements: [origin, dispensationalism]
     aspect: "4:3"
     refs: [scribe]
-    alt: "A nineteenth-century preacher in a black frock coat points at a large wall chart divided into bands, before a small seated audience."
+    alt: "A nineteenth-century preacher in a black frock coat points at a long wall chart of coloured periods before a seated audience."
     prompt: >-
       Same drawing style as the reference image. A plain meeting room of the
       early nineteenth century, composed so that the clergyman stands in the
@@ -72,7 +72,7 @@ images:
     statements: [spread]
     aspect: "4:5"
     refs: [scribe]
-    alt: "An early-1900s family in a parlour reads from a large black study Bible with notes in its margins."
+    alt: "An early-1900s family in a parlour reads from a large study Bible with notes in its margins."
     prompt: >-
       Same drawing style as the reference image. A parlour around 1910: a
       father in a waistcoat, a mother in a high-collared blouse and a young
@@ -87,7 +87,7 @@ images:
     statements: [spread]
     aspect: "4:5"
     refs: [scribe]
-    alt: "A teenager in a 1990s bedroom lies on the bed absorbed in a paperback novel, more paperbacks stacked on the nightstand."
+    alt: "A teenager lies on his bed absorbed in a paperback novel, more paperbacks stacked on the nightstand."
     prompt: >-
       Same drawing style as the reference image. A teenager's bedroom in the
       late 1990s: a teenage boy in a T-shirt and jeans lies on his bed,

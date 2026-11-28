@@ -14,7 +14,7 @@
   plates, not in the art: a picture cannot assert what came first.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/the-creation-stories-in-genesis.yaml. God
+  hugo/data/scholarship/illustrations/the-creation-stories-in-genesis.yaml. God
   is never drawn on a Genesis 1 half (he creates by word); on Genesis 2
   halves only his hands appear (the potter). Reword a plate only when the
   statement it comes from is re-reviewed.
@@ -37,7 +37,7 @@
         src="{{ $webp.RelPermalink }}"
         width="{{ $webp.Width }}"
         height="{{ $webp.Height }}"
-        alt="{{ $.alt }}"
+        alt="{{ partial "scholarship-art-alt.html" (dict "slug" "the-creation-stories-in-genesis" "id" $.id) }}"
         {{ with $.focus }}style="object-position: {{ . | safeCSS }}"{{ end }}
         loading="eager" />
     {{- end }}
@@ -46,50 +46,50 @@
 {{- $panels := slice
   (dict
   "id" "before" "box" "Before the making"
-  "left" (dict "id" "before-1" "alt" "Dark, heaving primordial waters under a black sky, a wind sweeping over them.")
-  "right" (dict "id" "before-2" "alt" "A bare, dry plain of cracked earth with no shrub or plant anywhere.")
+  "left" (dict "id" "before-1")
+  "right" (dict "id" "before-2")
   "plates" (slice
   (dict "pos" "bl" "badge" "1" "big" "The deep" "sub" "darkness on the face of the deep" "ref" "Genesis 1:1-2" "label" "Gen 1:1–2")
   (dict "pos" "br" "badge" "2" "big" "No plant yet" "sub" "no shrub, no grain sprouted" "ref" "Genesis 2:5" "label" "Gen 2:5")))
   (dict
   "id" "make" "box" "How does God make?"
-  "left" (dict "id" "make-1" "alt" "Over the same dark waters a burst of light breaks out of the black sky; no figure is seen.")
-  "right" (dict "id" "make-2" "alt" "Two large hands shape a small human figure out of the earth, like a potter working clay.")
+  "left" (dict "id" "make-1")
+  "right" (dict "id" "make-2")
   "plates" (slice
   (dict "pos" "bl" "badge" "1" "big" "By a word" "sub" "remote, creating effortlessly" "ref" "Genesis 1:3" "label" "Gen 1:3")
   (dict "pos" "tr" "badge" "2" "big" "Like a potter" "sub" "forming the human from dust" "ref" "Genesis 2:7" "label" "Gen 2:7")))
   (dict
   "id" "first" "box" "Who comes first?"
-  "left" (dict "id" "first-1" "alt" "A world full of trees, plants, birds, fish and animals; the man and woman stand small among them.")
-  "right" (dict "id" "first-2" "alt" "The man stands alone on bare ground; behind him a young tree sprouts and a few animals approach.")
+  "left" (dict "id" "first-1")
+  "right" (dict "id" "first-2")
   "plates" (slice
   (dict "pos" "tl" "badge" "1" "big" "Humans last" "sub" "after the plants and animals" "ref" "Genesis 1:11-27" "label" "Gen 1:11–27")
   (dict "pos" "tr" "badge" "2" "big" "The man first" "sub" "plants and animals after him" "ref" "Genesis 2:7-19" "label" "Gen 2:7–19")))
   (dict
   "id" "woman" "box" "And the woman?"
-  "left" (dict "id" "together" "alt" "A man and a woman stand side by side, newly made, in a shaft of light.")
-  "right" (dict "id" "woman-2" "alt" "The man lies asleep under a tree; the woman, newly made, stands beside him.")
+  "left" (dict "id" "together")
+  "right" (dict "id" "woman-2")
   "plates" (slice
   (dict "pos" "bl" "badge" "1" "big" "Together" "sub" "“male and female”" "ref" "Genesis 1:27" "label" "Gen 1:27")
   (dict "pos" "tr" "badge" "2" "big" "From his rib" "sub" "“man and woman”: other Hebrew words" "ref" "Genesis 2:21-22" "label" "Gen 2:21–22")))
   (dict
   "id" "near" "box" "How near is God?"
-  "left" (dict "id" "near-1" "alt" "A small ordered world far below a vast sky; light streams down from very high above, with no figure seen.")
-  "right" (dict "id" "near-2" "alt" "In an evening garden, the bare feet and robe hem of a large figure stroll along a path.")
+  "left" (dict "id" "near-1")
+  "right" (dict "id" "near-2")
   "plates" (slice
   (dict "pos" "bl" "badge" "1" "big" "Remote" "sub" "creating by word and will" "ref" "Genesis 1:1-2:4" "label" "Gen 1")
   (dict "pos" "br" "badge" "2" "big" "In the garden" "sub" "walking in the cool of the evening" "ref" "Genesis 3:8" "label" "Gen 3:8")))
   (dict
   "id" "told" "box" "How is it told?"
-  "left" (dict "id" "told-1" "alt" "A formal, symmetrical landscape, everything set out in matching pairs under a balanced sky.")
-  "right" (dict "id" "told-2" "alt" "The man kneels laughing in the mud of a lush garden as a goat tugs his tunic and a bird sits on his head.")
+  "left" (dict "id" "told-1")
+  "right" (dict "id" "told-2")
   "plates" (slice
   (dict "pos" "bl" "badge" "1" "big" "Formal" "sub" "highly structured, abstract" "ref" "Genesis 1:1-2:4" "label" "Gen 1")
   (dict "pos" "br" "badge" "2" "big" "Earthy" "sub" "dramatic, full of puns" "ref" "Genesis 2:4-3:24" "label" "Gen 2–3")))
   (dict
   "id" "why" "box" "Why are humans made?" "wide" true
-  "left" (dict "id" "why-1" "alt" "The man and woman stand on a rise over a wide land full of calm animals, the man's arm outstretched over it.")
-  "right" (dict "id" "why-2" "alt" "The man works the soil of a young garden with a simple wooden hoe.")
+  "left" (dict "id" "why-1")
+  "right" (dict "id" "why-2")
   "plates" (slice
   (dict "pos" "bl" "badge" "1" "big" "To rule" "sub" "over the earth and its creatures" "ref" "Genesis 1:28" "label" "Gen 1:28")
   (dict "pos" "br" "badge" "2" "big" "To till and keep" "sub" "the garden" "ref" "Genesis 2:15" "label" "Gen 2:15")))

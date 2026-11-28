@@ -14,7 +14,7 @@ images:
   - id: daniel
     statements: [date, author]
     aspect: "16:9"
-    alt: "A young Judean courtier, Daniel, stands in a Babylonian palace hall among tall glazed-brick walls and columns."
+    alt: "A young Judean courtier, Daniel, stands in a Babylonian palace hall among glazed-brick walls with lion reliefs."
     prompt: >-
       A young Judean man in his early twenties, Daniel, stands calm and
       upright in the centre-left of a grand ancient Babylonian palace hall,
@@ -29,7 +29,7 @@ images:
   - id: scribe
     statements: [date, reasons]
     aspect: "16:9"
-    alt: "An older Judean scribe writes on a scroll by lamplight in a small stone room in Jerusalem; through the window, soldiers' spears and crested helmets pass in the street."
+    alt: "An older Judean scribe writes on a scroll by lamplight; through the window, soldiers' spears and crested helmets pass in the street."
     prompt: >-
       An older Judean scribe, grey-bearded, in a plain light warm grey robe
       and dark head covering, sits hunched at a low wooden table in a small
@@ -59,7 +59,7 @@ images:
     statements: [reasons]
     aspect: "4:3"
     refs: [scribe]
-    alt: "The same scribe writes by lamplight while, in the lamp smoke above him, a fearsome beast with many horns and one small horn rises."
+    alt: "The same scribe writes while, in the lamp smoke above him, a fearsome beast rises with ten tall horns and one small horn."
     prompt: >-
       The SAME grey-bearded scribe as in the reference image (light warm
       grey robe, dark head covering) sits at the same low table writing on
@@ -75,7 +75,7 @@ images:
   - id: copies
     statements: [scrolls]
     aspect: "4:3"
-    alt: "Inside a desert cave, many tall clay jars with lids stand crowded in the half-dark; a few rolled scroll fragments lie on the floor."
+    alt: "Inside a desert cave, a crowd of tall clay jars stands in the half-dark; a few scroll fragments lie on the floor."
     prompt: >-
       The inside of a rough limestone desert cave, light streaming in from a
       jagged opening at the upper right onto a dense crowd of many tall,
@@ -89,7 +89,7 @@ images:
     statements: [additions]
     aspect: "4:3"
     refs: [daniel]
-    alt: "Daniel, the same young courtier, faces a great coiled dragon in a temple, holding out round cakes; a large idol statue stands behind."
+    alt: "Daniel, the same young courtier, holds out cakes to a great coiled dragon in a temple, a large idol statue behind."
     prompt: >-
       The SAME young man as in the reference image (same rust red robe,
       amber sash, cloth head wrap, short dark beard) stands on the left of

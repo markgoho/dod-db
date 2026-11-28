@@ -15,7 +15,7 @@
   plain text, not links.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/1-enoch-the-watchers-and-the-nephilim.yaml.
+  hugo/data/scholarship/illustrations/1-enoch-the-watchers-and-the-nephilim.yaml.
   Scrolls and books carry only illegible marks; God is never shown. Reword a
   plate only when the statement it comes from is re-reviewed.
   */
@@ -29,7 +29,7 @@
         src="{{ $webp.RelPermalink }}"
         width="{{ $webp.Width }}"
         height="{{ $webp.Height }}"
-        alt="{{ $.alt }}"
+        alt="{{ partial "scholarship-art-alt.html" (dict "slug" "1-enoch-the-watchers-and-the-nephilim" "id" $.id) }}"
         loading="eager" />
     {{- end }}
   </div>
@@ -44,24 +44,24 @@
 {{- $panels := slice
   (dict
   "id" "oldest" "box" "The oldest parts"
-  "left" (dict "id" "watchers" "alt" "At night a band of radiant winged angels descends from the stars toward a dark mountain peak above a small ancient town.")
-  "right" (dict "id" "luminaries" "alt" "An aged white-bearded man stands on a hilltop at dawn beside a winged angel, who points up at the rising sun and a crescent moon.")
+  "left" (dict "id" "watchers")
+  "right" (dict "id" "luminaries")
   "plates" (slice
   (dict "pos" "bl" "big" "The Watchers" "sub" "commonly dated: 3rd century BCE" "tag" "1 Enoch 1–36")
   (dict "pos" "br" "big" "Astronomical Book" "sub" "commonly dated: 3rd century BCE" "tag" "1 Enoch 72–82")))
   (dict
   "id" "parables" "box" "Another hand, later"
-  "full" (dict "id" "parables" "alt" "A Judean scribe of a later age, in a stone room lit by an oil lamp, writes on a long scroll; an older rolled scroll lies beside him.")
+  "full" (dict "id" "parables")
   "plates" (slice
   (dict "pos" "bl" "big" "The Book of Parables" "sub" "around the turn of the era or in the 1st century CE, in the prevailing view" "tag" "1 Enoch 37–71")))
   (dict
   "id" "qumran" "box" "Among the Dead Sea Scrolls"
-  "full" (dict "id" "qumran" "alt" "Inside a desert cave, a tall lidded clay jar stands beside small torn fragments of old scrolls on the rock floor.")
+  "full" (dict "id" "qumran")
   "plates" (slice
   (dict "pos" "bl" "big" "Aramaic fragments" "sub" "the language its oldest parts were written in; no Parables among them")))
   (dict
   "id" "geez" "box" "The whole book today"
-  "full" (dict "id" "geez" "alt" "In a round church, an Ethiopian Orthodox priest in white robes and a white turban reads from a large open parchment book.")
+  "full" (dict "id" "geez")
   "plates" (slice
   (dict "pos" "tr" "big" "Only in Ge’ez" "sub" "classical Ethiopic; in the Old Testament of the Ethiopian Orthodox Church")))
 -}}

@@ -22,7 +22,7 @@ images:
     statements: [orientation]
     aspect: "4:3"
     refs: [today]
-    alt: "An ancient scribe in a headcloth studies the same card, puzzled, with a question mark above him."
+    alt: "An ancient scribe studies the same card, puzzled, with a question mark above him."
     prompt: >-
       An ancient Near Eastern scribe, bearded, wearing a simple headcloth and a
       plain robe, shown from the waist up, holding the SAME index card as in
@@ -46,7 +46,7 @@ images:
   - id: debate
     statements: [orientation]
     aspect: "4:3"
-    alt: "Two present-day scholars disagree over an ancient star chart."
+    alt: "Two present-day scholars disagree over an ancient star chart: one points eagerly, the other frowns, arms crossed."
     prompt: >-
       Two present-day academics in a study, both wearing glasses, generic
       figures (not portraits of any real person): on the left a woman with

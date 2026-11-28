@@ -17,7 +17,7 @@ images:
   - id: library
     statements: [anthology]
     aspect: "4:3"
-    alt: "Many writers in different dress and different settings, each bent over their own scroll, spread across a long scene."
+    alt: "Many writers in different dress and different settings, each bent over their own scroll, too many to count."
     prompt: >-
       A long continuous scene showing many different ancient writers, each
       working alone on their own scroll or codex, spread from left to right
@@ -33,7 +33,7 @@ images:
   - id: goliath-david
     statements: [hebrew-bible]
     aspect: "4:5"
-    alt: "Seen from low behind a shepherd boy with a sling, a towering armoured giant looms over the scene."
+    alt: "A shepherd boy with a sling faces a towering armoured giant."
     prompt: >-
       Low angle, seen from just behind and to the side of a young shepherd
       boy in a plain off-white tunic, a leather sling hanging from his right
@@ -49,7 +49,7 @@ images:
     statements: [hebrew-bible]
     aspect: "4:5"
     refs: [goliath-david]
-    alt: "The same giant, now faced by a bearded grown soldier with a round shield and a sword."
+    alt: "A grown soldier with a shield and sword faces the same giant."
     prompt: >-
       The SAME enormous armoured giant as in the reference image, with the
       same helmet, scale armour, upright spear and dark beard, towering in
@@ -64,7 +64,7 @@ images:
   - id: whole-land
     statements: [hebrew-bible]
     aspect: "4:5"
-    alt: "Israelite soldiers stand on a hilltop over a wide land of quiet, emptied towns, holding it all."
+    alt: "Israelite soldiers on a hilltop look out over a wide land of quiet, empty towns."
     prompt: >-
       A small group of ancient Israelite soldiers in simple tunics, with
       spears held upright, stand on a hilltop in the upper part of the
@@ -78,7 +78,7 @@ images:
     statements: [hebrew-bible]
     aspect: "4:5"
     refs: [whole-land]
-    alt: "A walled town with its gates shut and its own people busy inside; soldiers camp outside, looking at it."
+    alt: "A walled town still full of its own people; soldiers camp outside, looking at it."
     prompt: >-
       The SAME landscape and the same Israelite soldiers as in the reference
       image, but now a walled town in the upper part of the picture is still
@@ -104,7 +104,7 @@ images:
   - id: census
     statements: [gospels]
     aspect: "4:5"
-    alt: "A Roman official at a table records names on a scroll while a line of families waits, among them a man and a pregnant woman."
+    alt: "A Roman official records names on a scroll while families wait in line, a man and a pregnant woman at the front."
     prompt: >-
       A Roman official in a white toga sits at a wooden table in the upper
       part of the picture, writing names in a large scroll for a census. A
@@ -117,7 +117,7 @@ images:
   - id: tatian
     statements: [harmonizing]
     aspect: "4:3"
-    alt: "A second-century writer at a desk copies from four scrolls into one new book; four amber ribbons run from the scrolls into it."
+    alt: "A second-century writer copies from four rolled scrolls into one book; four ribbons run from the scrolls into it."
     prompt: >-
       A bearded Syrian Christian writer of the second century, in a plain
       off-white robe, sits at a wooden desk on the right of the picture,
@@ -136,7 +136,7 @@ images:
     statements: [methods]
     aspect: "4:3"
     refs: [tatian]
-    alt: "A modern scholar at a long desk reads one of four books laid out separately in a row."
+    alt: "A modern scholar reads one of four books laid out apart on a long desk."
     prompt: >-
       A modern scholar, a middle-aged woman with glasses and a rust red
       cardigan, sits at a long plain modern desk on the right of the

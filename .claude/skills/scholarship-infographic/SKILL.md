@@ -154,8 +154,9 @@ Both are fixed canvases, so the block needs its own overrides for each, scoped a
 
 Generated with Gemini (`gemini-nano-banana-2.1`, Nano Banana 2.1, by default; `--pro` for `gemini-3-pro-image-preview`), adapted from the mbu repo's image generator.
 
-1. Write `data/scholarship-illustrations/<slug>.yaml`: one entry per image with `id`, the `statements` it illustrates, `aspect`, `alt`, `prompt`, and optional `refs` (ids of images passed as references).
+1. Write `hugo/data/scholarship/illustrations/<slug>.yaml`: one entry per image with `id`, the `statements` it illustrates, `aspect`, `alt`, `prompt`, and optional `refs` (ids of images passed as references).
 2. Run `bun --env-file=<main checkout>/.env run scholarship:illustrations <slug> [--id=<id>] [--pro]` (`GEMINI_API_KEY` lives in the main checkout's `.env`, not the worktree). Images go to `hugo/assets/scholarship-art/<slug>/<id>.png`; the partial serves them through Hugo as WebP (`.Process "resize 1200x webp q78"`).
+   - **Alt text lives only in the manifest.** The partial reads it with `alt="{{ partial "scholarship-art-alt.html" (dict "slug" $slug "id" .id) }}"` and never writes an alt string itself. After inspecting an image (step 4), rewrite its `alt` to describe what was actually drawn. The build fails on an id missing from the manifest.
 3. **Chain references for continuity.** Generate the anchor image first, then pass it as a `ref` to the next, so a character or object (the scribe, the card) stays the same across panels. Regenerating an image means regenerating the ones that use it as a reference.
 4. **Inspect every image** with Read before using it. Regenerate when any of these show up:
    - text beyond the words the prompt asked for

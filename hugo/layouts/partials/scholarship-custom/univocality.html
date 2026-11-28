@@ -15,7 +15,7 @@
   disagree, and the side a text sits on means nothing.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/univocality.yaml. Reword a plate only when
+  hugo/data/scholarship/illustrations/univocality.yaml. Reword a plate only when
   the statement it comes from is re-reviewed.
   */
 -}}
@@ -36,7 +36,7 @@
         src="{{ $webp.RelPermalink }}"
         width="{{ $webp.Width }}"
         height="{{ $webp.Height }}"
-        alt="{{ $.alt }}"
+        alt="{{ partial "scholarship-art-alt.html" (dict "slug" "univocality" "id" $.id) }}"
         {{ with $.focus }}style="object-position: {{ . | safeCSS }}"{{ end }}
         loading="eager" />
     {{- end }}
@@ -45,38 +45,38 @@
 {{- $panels := slice
   (dict
   "id" "library" "box" "One book?" "split" "none"
-  "left" (dict "id" "library" "alt" "Many writers in different dress and different settings, each bent over their own scroll, too many to count.")
+  "left" (dict "id" "library")
   "plates" (slice
   (dict "pos" "bl" "big" "A library" "sub" "many authors, over a thousand years")))
   (dict
   "id" "goliath" "box" "Who killed Goliath?" "split" "vs"
-  "left" (dict "id" "goliath-david" "alt" "A shepherd boy with a sling faces a towering armoured giant.")
-  "right" (dict "id" "goliath-elhanan" "alt" "A grown soldier with a shield and sword faces the same giant.")
+  "left" (dict "id" "goliath-david")
+  "right" (dict "id" "goliath-elhanan")
   "plates" (slice
   (dict "pos" "bl" "big" "David" "ref" "1 Samuel 17:50" "label" "1 Sam 17:50")
   (dict "pos" "br" "big" "Elhanan" "ref" "2 Samuel 21:19" "label" "2 Sam 21:19")))
   (dict
   "id" "conquest" "box" "Was the whole land taken?" "split" "vs"
-  "left" (dict "id" "whole-land" "alt" "Israelite soldiers on a hilltop look out over a wide land of quiet, empty towns.")
-  "right" (dict "id" "canaanites" "alt" "A walled town still full of its own people; soldiers camp outside, looking at it.")
+  "left" (dict "id" "whole-land")
+  "right" (dict "id" "canaanites")
   "plates" (slice
   (dict "pos" "bl" "big" "The whole land" "ref" "Joshua 10:40" "label" "Josh 10:40")
   (dict "pos" "br" "big" "Canaanites remain" "sub" "in many places" "ref" "Judges 1" "label" "Judg 1")))
   (dict
   "id" "birth" "box" "When was Jesus born?" "split" "vs"
-  "left" (dict "id" "herod" "alt" "An old king sits on a throne in a palace hall.")
-  "right" (dict "id" "census" "alt" "A Roman official records names on a scroll while families wait in line, a man and a pregnant woman at the front.")
+  "left" (dict "id" "herod")
+  "right" (dict "id" "census")
   "plates" (slice
   (dict "pos" "bl" "big" "Before Herod died" "ref" "Matthew 2:1" "label" "Matt 2:1")
   (dict "pos" "rbl" "big" "At Luke’s census" "sub" "if historical, at odds with Matthew" "ref" "Luke 2:2" "label" "Luke 2:2")))
   (dict
   "id" "tatian" "box" "Reconcile them?" "split" "none"
-  "left" (dict "id" "tatian" "alt" "A second-century writer copies from four rolled scrolls into one book; four ribbons run from the scrolls into it.")
+  "left" (dict "id" "tatian")
   "plates" (slice
   (dict "pos" "bl" "big" "Four into one" "sub" "Tatian, second century, resolving their conflicts")))
   (dict
   "id" "critic" "box" "Historical critics today" "split" "none"
-  "left" (dict "id" "critic" "alt" "A modern scholar reads one of four books laid out apart on a long desk.")
+  "left" (dict "id" "critic")
   "plates" (slice
   (dict "pos" "bl" "big" "Each on its own" "sub" "not harmonized")))
 -}}

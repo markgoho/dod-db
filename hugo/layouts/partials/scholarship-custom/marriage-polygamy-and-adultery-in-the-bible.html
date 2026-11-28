@@ -15,7 +15,7 @@
   read") as a question.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/marriage-polygamy-and-adultery-in-the-bible.yaml.
+  hugo/data/scholarship/illustrations/marriage-polygamy-and-adultery-in-the-bible.yaml.
   Reword a plate only when the statement it comes from is re-reviewed.
   */
 -}}
@@ -30,23 +30,19 @@
 {{- $panels := slice
   (dict
   "id" "stories" "box" "In the stories"
-  "alt" "A bearded herdsman stands outside his tent between his two wives, one on each side, with sheep grazing behind them."
   "plates" (slice
   (dict "pos" "tl" "big" "More than one wife" "sub" "Abraham, Jacob, David, Solomon and others" "refs" (slice (dict "ref" "Genesis 29:15-30" "label" "Gen 29:15–30")))))
   (dict
   "id" "law" "box" "In the law"
-  "alt" "An old father at a low table shares out sacks of grain and silver between two young men; behind each stands his mother, the father's two wives."
   "plates" (slice
   (dict "pos" "tr" "big" "Assumed" "sub" "the law sets out whose offspring inherit when a man has two wives" "refs" (slice (dict "ref" "Deuteronomy 21:15-17" "label" "Deut 21:15–17")))))
   (dict
   "id" "kings" "box" "For kings"
-  "alt" "A crowned king on a throne in a pillared hall, the floor around him crowded with richly dressed wives, too many to count."
   "plates" (slice
   (dict "pos" "tl" "big" "Advised against" "sub" "a king is not to take many wives" "refs" (slice (dict "ref" "Deuteronomy 17:17" "label" "Deut 17:17")))
   (dict "pos" "br" "big" "700 wives" "sub" "and 300 concubines, 1 Kings claims for Solomon" "refs" (slice (dict "ref" "1 Kings 11:1-3" "label" "1 Kgs 11:1–3")))))
   (dict
   "id" "scrolls" "box" "Later"
-  "alt" "In a cave above the Dead Sea, a scribe writes on a long scroll by lamplight beside tall clay storage jars."
   "plates" (slice
   (dict "pos" "tl" "big" "Still legal" "sub" "in the Hellenistic period, with a tendency toward monogamy")
   (dict "pos" "br" "big" "A ban?" "sub" "texts among the Dead Sea Scrolls are commonly read as forbidding it")))
@@ -72,7 +68,7 @@
           class="mpa-comic__frame mpa-comic__frame--{{ .id }}"
           {{ if in (slice "law" "scrolls") .id }}data-card-hide{{ end }}>
           <figure class="mpa-comic__figure">
-            {{- $alt := .alt }}
+            {{- $id := .id }}
             <div class="mpa-comic__art">
               {{- with resources.Get (printf "scholarship-art/marriage-polygamy-and-adultery-in-the-bible/%s.png" .id) }}
                 {{- $webp := .Process "resize 1200x webp q78" }}
@@ -80,7 +76,7 @@
                   src="{{ $webp.RelPermalink }}"
                   width="{{ $webp.Width }}"
                   height="{{ $webp.Height }}"
-                  alt="{{ $alt }}"
+                  alt="{{ partial "scholarship-art-alt.html" (dict "slug" "marriage-polygamy-and-adultery-in-the-bible" "id" $id) }}"
                   loading="eager" />
               {{- end }}
             </div>

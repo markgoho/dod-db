@@ -9,19 +9,12 @@
   only when the statement it comes from is re-reviewed.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/mary-magdalene.yaml (no words in it); every
+  hugo/data/scholarship/illustrations/mary-magdalene.yaml (no words in it); every
   caption, link and claim lives here. The comic furniture is CSS.
   */
 -}}
 {{- $slug := "mary-magdalene" -}}
 {{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
-{{- $alt := dict
-  "luke7" "At a dinner, a woman with loose hair and a grey-blue shawl kneels weeping at a reclining guest's feet, an alabaster jar beside her."
-  "luke8" "Mary Magdalene, in a rust headscarf, walks with other women along a Galilean road, carrying a bundle of bread."
-  "sermon" "A pope in white vestments preaches from a stone pulpit in a dim basilica, one hand raised."
-  "image" "A gilded frame holds a devotional painting of a weeping penitent woman with long loose hair, holding an alabaster jar."
-  "tomb" "At dawn, Mary Magdalene, in her rust headscarf, stands at the open doorway of a rock-cut tomb, its stone rolled aside."
--}}
 {{- $frames := slice
   (dict "id" "luke7" "box" "Luke 7" "pos" "tr" "big" "A sinful woman" "sub" "who anoints Jesus’s feet, never named" "refs" (slice (dict "ref" "Luke 7:36-50" "label" "Luke 7:36–50")))
   (dict "id" "luke8" "box" "Luke 8" "pos" "bl" "big" "Mary Magdalene" "sub" "named, one of the women who provided for Jesus" "refs" (slice (dict "ref" "Luke 8:1-3" "label" "Luke 8:1–3")))
@@ -59,7 +52,7 @@
                   src="{{ $webp.RelPermalink }}"
                   width="{{ $webp.Width }}"
                   height="{{ $webp.Height }}"
-                  alt="{{ index $alt $f.id }}"
+                  alt="{{ partial "scholarship-art-alt.html" (dict "slug" $slug "id" $f.id) }}"
                   loading="eager" />
               {{- end }}
             </div>

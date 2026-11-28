@@ -15,7 +15,7 @@ images:
   - id: king
     statements: [david-ruler, origin]
     aspect: "4:3"
-    alt: "A crowned king in a rust robe stands on a palace balcony looking out over a vast land of many walled cities stretching to the horizon."
+    alt: "A crowned king on a palace balcony looks out over a vast land of many walled cities."
     prompt: >-
       A bearded king in his forties with dark curly hair, a simple gold crown
       and a deep rust red robe with an amber sash stands on the right side of
@@ -29,7 +29,7 @@ images:
   - id: north
     statements: [israel-and-judah]
     aspect: "4:5"
-    alt: "A large walled city with many towers on a broad hill, horses and chariots at its gate."
+    alt: "A large walled city with towers and a palace on a broad hill, chariots at its gate."
     prompt: >-
       A large, strong ancient Near Eastern Iron Age walled city on a broad
       hilltop, seen from below: thick pale stone walls with square
@@ -42,7 +42,7 @@ images:
   - id: south
     statements: [israel-and-judah]
     aspect: "4:5"
-    alt: "A small village of a few houses with a low wall on a rocky hilltop, a shepherd and some sheep below."
+    alt: "A small village of a few houses with a low wall on a rocky hilltop, a shepherd and sheep below."
     prompt: >-
       A small, modest hilltop village on dry rocky hills: a handful of simple
       flat-roofed stone houses inside a low, uneven wall, much smaller than a
@@ -54,7 +54,7 @@ images:
   - id: stela
     statements: [tel-dan, house-of-david]
     aspect: "4:3"
-    alt: "Broken fragments of a dark basalt stone slab with rows of carved marks, lying in an excavation trench beside a brush and trowel."
+    alt: "Broken fragments of a dark stone slab with rows of carved marks, being brushed clean in an excavation trench."
     prompt: >-
       Close view of an archaeological excavation trench in pale earth: three
       broken fragments of a polished dark grey-black basalt stone slab lie
@@ -70,7 +70,7 @@ images:
     statements: [goliath]
     aspect: "4:5"
     refs: [king]
-    alt: "A young shepherd with a sling faces a towering armoured giant with a huge spear."
+    alt: "A young shepherd with a sling faces a towering armoured giant."
     prompt: >-
       The SAME man as the king in the reference image, but much younger, a
       teenage shepherd: same dark curly hair, no crown, no beard, a short
@@ -86,7 +86,7 @@ images:
     statements: [goliath]
     aspect: "4:5"
     refs: [david-goliath]
-    alt: "A grown soldier with a shield and a sword faces the same armoured giant."
+    alt: "A grown soldier with a shield and sword faces the same giant."
     prompt: >-
       The SAME towering giant warrior as in the reference image, identical
       bronze scale armour, crested bronze helmet and enormous beam-like
@@ -101,7 +101,7 @@ images:
     statements: [united-monarchy, origin]
     aspect: "16:9"
     refs: [king]
-    alt: "A scribe writes on a scroll at a desk; above the scroll a grand palace and a crowned king appear as a pale dotted vision."
+    alt: "A scribe writes a scroll; above it a grand palace and a crowned king float as a pale dotted vision."
     prompt: >-
       A scribe in a plain light grey robe sits at a simple wooden desk on the
       right side of the picture, writing on a long unrolled scroll covered in
@@ -116,7 +116,7 @@ images:
     statements: [united-monarchy]
     aspect: "16:9"
     refs: [king]
-    alt: "The bearded king, in a plain rust cloak, stands before a small hilltop stronghold with a few armed men."
+    alt: "The king, in a plain cloak, stands with a few armed men before a small hilltop stronghold."
     prompt: >-
       The SAME bearded man as the king in the reference image, now in a
       plain rust red cloak with only a thin gold circlet, stands on the left

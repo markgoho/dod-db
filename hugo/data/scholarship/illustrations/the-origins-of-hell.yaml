@@ -56,7 +56,7 @@ images:
     statements: [separate-fates]
     aspect: "4:3"
     refs: [sheol]
-    alt: "The same underground cavern of the dead, now divided by rock walls into separate hollows: in one, lit warm amber, calm shades wait together; the others are dark, their shades apart."
+    alt: "The same underground cavern of the dead, now divided by rock walls into separate hollows: in one, lit warm amber, calm shades wait together; the others are dark, their shades apart, heads bowed."
     prompt: >-
       The SAME cut-away view of the earth and the SAME shadowy underground
       cavern of the dead as in the reference image, with the same pale grey
@@ -75,7 +75,7 @@ images:
     statements: [daniel-12]
     aspect: "4:3"
     refs: [sheol]
-    alt: "At dawn on a hillside of open graves, the dead rise in plain grey shrouds: those on the left look up into golden light; those on the right rise in shadow, heads bowed and faces hidden in shame."
+    alt: "At dawn on a hillside of open graves, the dead rise in plain shrouds: those on the left walk up into golden light; those on the right rise in shadow, faces hidden in their hands."
     prompt: >-
       A hillside of simple earth graves at dawn. The dead are rising out of
       the open ground: the SAME pale figures in plain grey shrouds as in the

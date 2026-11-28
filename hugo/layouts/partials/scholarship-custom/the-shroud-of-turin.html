@@ -20,7 +20,7 @@
   eye). Reword a plate only when its statement is re-reviewed.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/the-shroud-of-turin.yaml; every word,
+  hugo/data/scholarship/illustrations/the-shroud-of-turin.yaml; every word,
   date and count lives here.
   */
 -}}
@@ -31,47 +31,41 @@
       src="{{ $webp.RelPermalink }}"
       width="{{ $webp.Width }}"
       height="{{ $webp.Height }}"
-      alt="{{ $.alt }}"
+      alt="{{ partial "scholarship-art-alt.html" (dict "slug" "the-shroud-of-turin" "id" $.id) }}"
       loading="eager" />
   {{- end }}
 {{- end -}}
 {{- $panels := slice
   (dict
   "id" "lirey" "box" "First in the record"
-  "alt" "In a small Gothic church, two clergymen hold up a long linen cloth bearing a faint image of a man; pilgrims look on, one holding a small medallion."
   "plates" (slice
   (dict "pos" "tl" "big" "1350s" "sub" "shown at Lirey; no document refers to it explicitly before the fourteenth century")))
   (dict
   "id" "bishop" "box" "The bishop, 1389"
-  "alt" "A medieval bishop in a mitre writes a letter with a quill by candlelight, frowning."
   "plates" (slice
   (dict "pos" "tr" "big" "“Painted”" "sub" "he wrote that an earlier inquiry had found it so, and its artist had attested it")))
   (dict
   "id" "pope" "box" "The pope, 1390"
-  "alt" "A medieval pope on a throne hands a parchment, its lead seal hanging from a cord, to a kneeling clergyman."
   "plates" (slice
   (dict "pos" "tl" "big" "A representation" "sub" "to be shown as one, not as the true burial cloth")))
   (dict
   "id" "labs" "box" "1988: the test"
-  "alt" "Three scientists in lab coats, each at a separate laboratory bench, each examining one tiny piece of linen."
   "plates" (slice
   (dict "pos" "tl" "big" "3 labs" "sub" "Arizona, Oxford and Zurich")
   (dict "pos" "tr" "big" "1260–1390" "sub" "with 95 percent confidence")))
   (dict
   "id" "held" "box" "Has it held up?" "split" true
-  "left" (dict "id" "favour" "alt" "A scientist in a lab coat calmly holds up a printed chart of results.")
-  "right" (dict "id" "contest" "alt" "A different researcher frowns at a printed chart through a magnifying glass, unconvinced.")
+  "left" (dict "id" "favour")
+  "right" (dict "id" "contest")
   "plates" (slice
   (dict "pos" "bl" "big" "Medieval" "sub" "the weight of evidence is taken to favour it")
   (dict "pos" "br" "big" "Contested" "sub" "defenders of its authenticity still challenge it")))
   (dict
   "id" "image" "box" "How was the image made?"
-  "alt" "Present-day researchers lean over the long linen cloth laid on a table, studying its faint image, puzzled."
   "plates" (slice
   (dict "pos" "br" "big" "No agreement" "sub" "no agreed explanation of how it formed")))
   (dict
   "id" "church" "box" "The Church today" "wide" true
-  "alt" "In a large present-day cathedral, the long linen cloth hangs in a frame behind glass while a crowd of people stands quietly before it."
   "plates" (slice
   (dict "pos" "tr" "big" "No ruling" "sub" "no official pronouncement on its authenticity")))
 -}}
@@ -120,7 +114,7 @@
               </div>
             {{- else }}
               <div class="shroud-comic__art">
-                {{ partial "inline/shroud-img.html" (dict "id" .id "alt" .alt) }}
+                {{ partial "inline/shroud-img.html" (dict "id" .id) }}
               </div>
             {{- end }}
             <h3 class="shroud-comic__box">{{ .box }}</h3>

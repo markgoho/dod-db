@@ -11,7 +11,7 @@
   no claim they don't. Each plate keeps its short's hedge ("scholars say",
   "contested", "debated", "did not call the Spirit 'God' outright"). The art
   is generated with Gemini from
-  data/scholarship-illustrations/the-origins-of-the-trinity.yaml: crowds are
+  hugo/data/scholarship/illustrations/the-origins-of-the-trinity.yaml: crowds are
   drawn too dense to count, and no number of bishops is given. Reword a plate
   only when the statement it comes from is re-reviewed.
   */
@@ -23,28 +23,23 @@
   "id" "letters" "box" "In the New Testament" "pos" "tr"
   "big" "Not explicit"
   "sub" "Passages name Father, Son and Holy Spirit together; whether the doctrine can be inferred from it is contested."
-  "ref" "Matthew 28:19"
-  "alt" "A first-century writer at a low table writes a letter on papyrus by the light of a clay oil lamp.")
+  "ref" "Matthew 28:19")
   (dict
   "id" "word" "box" "Late 2nd century" "pos" "br"
   "big" "A word: “Trinity”"
-  "sub" "Greek trias in Theophilus of Antioch, Latin trinitas in Tertullian; how far they meant the later doctrine is debated."
-  "alt" "A second-century writer at his desk pauses with his pen raised, thinking, beside an open codex.")
+  "sub" "Greek trias in Theophilus of Antioch, Latin trinitas in Tertullian; how far they meant the later doctrine is debated.")
   (dict
   "id" "nicaea" "box" "325 · Nicaea" "pos" "br"
   "big" "Homoousios"
-  "sub" "The Son of one substance with the Father; Arius's teaching that the Son had not always existed condemned."
-  "alt" "A council of bishops fills a columned hall; one stands holding up a scroll, and an emperor sits on a raised seat at the far end.")
+  "sub" "The Son of one substance with the Father; Arius's teaching that the Son had not always existed condemned.")
   (dict
   "id" "after" "box" "After Nicaea" "pos" "bl"
   "big" "Not settled"
-  "sub" "The creed largely set aside for decades while other councils sought other wording."
-  "alt" "Two groups of bishops argue across a table strewn with scrolls, pointing and throwing up their hands.")
+  "sub" "The creed largely set aside for decades while other councils sought other wording.")
   (dict
   "id" "constantinople" "box" "381 · Constantinople" "pos" "bl" "wide" true
   "big" "The Spirit’s divinity affirmed"
-  "sub" "Even then, the creed the council approved did not call the Spirit “God” outright."
-  "alt" "A later council of bishops in a domed hall listens as one bishop reads aloud from a long scroll.")
+  "sub" "Even then, the creed the council approved did not call the Spirit “God” outright.")
 -}}
 <section class="cloud-section trin-comic">
   <h2
@@ -81,7 +76,7 @@
                   src="{{ $webp.RelPermalink }}"
                   width="{{ $webp.Width }}"
                   height="{{ $webp.Height }}"
-                  alt="{{ $f.alt }}"
+                  alt="{{ partial "scholarship-art-alt.html" (dict "slug" $slug "id" $f.id) }}"
                   loading="eager" />
               {{- end }}
             </div>

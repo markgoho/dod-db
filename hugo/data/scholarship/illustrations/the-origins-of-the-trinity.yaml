@@ -8,7 +8,7 @@ images:
   - id: letters
     statements: [new-testament, triadic]
     aspect: "4:3"
-    alt: "A first-century writer at a low table writes a letter on a papyrus sheet by the light of a clay oil lamp."
+    alt: "A first-century writer at a low table writes a letter on papyrus by the light of a clay oil lamp."
     prompt: >-
       A first-century Mediterranean writer, a man with a short dark beard
       in a plain tunic and cloak, shown from the waist up, seated at a low
@@ -20,7 +20,7 @@ images:
     statements: [word]
     aspect: "4:3"
     refs: [letters]
-    alt: "A second-century writer in a study, surrounded by codices, pauses with his pen raised, thinking."
+    alt: "A second-century writer at his desk pauses with his pen raised, thinking, beside an open codex."
     prompt: >-
       In the same drawing style as the reference image, a different man, a
       second-century Christian writer, older, with a grey beard, wearing a
@@ -33,7 +33,7 @@ images:
     statements: [nicaea]
     aspect: "4:3"
     refs: [letters]
-    alt: "A council of bishops in robes fills a columned hall; an emperor in purple sits on a raised seat at the far end."
+    alt: "A council of bishops fills a columned hall; one stands holding up a scroll, and an emperor sits on a raised seat at the far end."
     prompt: >-
       In the same drawing style as the reference image, a large council of
       bishops in fourth-century robes and stoles, a dense crowd too many to
@@ -47,7 +47,7 @@ images:
     statements: [after-nicaea]
     aspect: "4:3"
     refs: [nicaea]
-    alt: "Two groups of bishops argue across a table, pointing at each other, scrolls in their hands."
+    alt: "Two groups of bishops argue across a table strewn with scrolls, pointing and throwing up their hands."
     prompt: >-
       In the same drawing style as the reference image, two small groups of
       bishops in fourth-century robes face each other across a long table,
@@ -60,7 +60,7 @@ images:
     statements: [constantinople]
     aspect: "16:9"
     refs: [nicaea]
-    alt: "A later council of bishops in a domed hall, many of them standing, as one bishop reads aloud from a scroll."
+    alt: "A later council of bishops in a domed hall listens as one bishop reads aloud from a long scroll."
     prompt: >-
       In the same drawing style as the reference image, a wide view of a
       later council of bishops in fourth-century robes in a hall with a

@@ -17,7 +17,7 @@ images:
   - id: jordan
     statements: [details]
     aspect: "4:3"
-    alt: "John, a rugged man in a rough camel-hair garment, pours water from his cupped hands over the head of Jesus, who stands waist-deep in a river."
+    alt: "John, a rugged man with wild hair, pours water from his cupped hands over the bowed head of Jesus, who stands waist-deep in a river."
     prompt: >-
       A river in a dry, rocky land. In the LEFT and MIDDLE of the picture,
       two first-century Jewish men stand waist-deep in the calm water. On
@@ -52,7 +52,7 @@ images:
   - id: josephus
     statements: [outside]
     aspect: "4:3"
-    alt: "A first-century Jewish historian, bearded, in a striped robe, writes at a table on a long scroll."
+    alt: "A Jewish historian, bearded, in a striped robe, writes on a long scroll by lamplight."
     prompt: >-
       A first-century Jewish historian, a generic man in his fifties with a
       neat dark beard flecked with grey, in a striped rust red and off-white
@@ -67,7 +67,7 @@ images:
   - id: tacitus
     statements: [outside]
     aspect: "4:3"
-    alt: "A Roman historian in a white toga, clean-shaven, writes in a notebook of wax tablets at a marble table between columns."
+    alt: "A Roman historian in a white toga, clean-shaven, writes on a scroll at a marble table between columns."
     prompt: >-
       A Roman historian of the early second century, a generic man:
       clean-shaven, short grey hair combed forward, in a white toga with a
@@ -98,7 +98,7 @@ images:
     statements: [deniers]
     aspect: "1:1"
     refs: [field]
-    alt: "In the side aisle of the same hall, a very small knot of scholars, dressed like the rest, stand with arms crossed and shake their heads; the frame cuts them off."
+    alt: "In an aisle of the same hall, a very small knot of scholars, dressed like the rest, stand with arms crossed; the frame cuts them off."
     prompt: >-
       The side aisle of the SAME modern lecture hall as in the reference
       image, against a plain pale wall. A VERY SMALL knot of present-day

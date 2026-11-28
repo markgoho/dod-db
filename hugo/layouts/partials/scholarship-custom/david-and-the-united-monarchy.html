@@ -15,7 +15,7 @@
   the short's "most scholars".
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/david-and-the-united-monarchy.yaml. Reword
+  hugo/data/scholarship/illustrations/david-and-the-united-monarchy.yaml. Reword
   a plate only when the statement it comes from is re-reviewed.
   */
 -}}
@@ -36,7 +36,7 @@
         src="{{ $webp.RelPermalink }}"
         width="{{ $webp.Width }}"
         height="{{ $webp.Height }}"
-        alt="{{ $.alt }}"
+        alt="{{ partial "scholarship-art-alt.html" (dict "slug" "david-and-the-united-monarchy" "id" $.id) }}"
         {{ with $.focus }}style="object-position: {{ . | safeCSS }}"{{ end }}
         loading="eager" />
     {{- end }}
@@ -45,32 +45,32 @@
 {{- $panels := slice
   (dict
   "id" "bible" "box" "What does the Bible describe?" "split" "none"
-  "left" (dict "id" "king" "alt" "A crowned king on a palace balcony looks out over a vast land of many walled cities.")
+  "left" (dict "id" "king")
   "plates" (slice
   (dict "pos" "bl" "big" "A vast kingdom" "sub" "David’s conquests" "ref" "2 Samuel 8" "label" "2 Sam 8")))
   (dict
   "id" "stronger" "box" "Which kingdom was stronger?" "split" "gutter"
-  "left" (dict "id" "north" "alt" "A large walled city with towers and a palace on a broad hill, chariots at its gate.")
-  "right" (dict "id" "south" "alt" "A small village of a few houses with a low wall on a rocky hilltop, a shepherd and sheep below.")
+  "left" (dict "id" "north")
+  "right" (dict "id" "south")
   "plates" (slice
   (dict "pos" "bl" "big" "Israel" "sub" "the stronger power")
   (dict "pos" "br" "big" "Judah" "sub" "in its shadow")))
   (dict
   "id" "stela" "box" "What does the Tel Dan stela say?" "split" "none"
-  "left" (dict "id" "stela" "alt" "Broken fragments of a dark stone slab with rows of carved marks, being brushed clean in an excavation trench.")
+  "left" (dict "id" "stela")
   "plates" (slice
   (dict "pos" "tl" "big" "“House of David”" "sub" "how most scholars read it")))
   (dict
   "id" "goliath" "box" "Who killed Goliath?" "split" "bolt"
-  "left" (dict "id" "david-goliath" "alt" "A young shepherd with a sling faces a towering armoured giant.")
-  "right" (dict "id" "elhanan-goliath" "alt" "A grown soldier with a shield and sword faces the same giant.")
+  "left" (dict "id" "david-goliath")
+  "right" (dict "id" "elhanan-goliath")
   "plates" (slice
   (dict "pos" "tl" "big" "David" "ref" "1 Samuel 17" "label" "1 Sam 17")
   (dict "pos" "tr" "big" "Elhanan" "ref" "2 Samuel 21:19" "label" "2 Sam 21:19")))
   (dict
   "id" "debate" "box" "Did that kingdom exist?" "split" "vs" "wide" true
-  "left" (dict "id" "doubt" "alt" "A scribe writes a scroll; above it a grand palace and a crowned king float as a pale dotted vision.")
-  "right" (dict "id" "modest" "alt" "The king, in a plain cloak, stands with a few armed men before a small hilltop stronghold.")
+  "left" (dict "id" "doubt")
+  "right" (dict "id" "modest")
   "plates" (slice
   (dict "pos" "bl" "big" "Many doubt it" "sub" "a later literary construct")
   (dict "pos" "br" "big" "Far more modest" "sub" "say those who defend an early state")))

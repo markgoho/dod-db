@@ -17,7 +17,7 @@
   scroll runs out of the picture, so no ratio can be read off the art.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/the-text-of-the-hebrew-bible.yaml; its
+  hugo/data/scholarship/illustrations/the-text-of-the-hebrew-bible.yaml; its
   writing is illegible scribble, so consonants and vowels are on the plates.
   Reword a plate only when the statement it comes from is re-reviewed.
   */
@@ -39,7 +39,7 @@
       src="{{ $webp.RelPermalink }}"
       width="{{ $webp.Width }}"
       height="{{ $webp.Height }}"
-      alt="{{ $.alt }}"
+      alt="{{ partial "scholarship-art-alt.html" (dict "slug" "the-text-of-the-hebrew-bible" "id" $.id) }}"
       loading="eager" />
   {{- end }}
 {{- end -}}
@@ -47,41 +47,41 @@
 {{- $panels := slice
   (dict
   "id" "scrolls" "box" "Second Temple period"
-  "art" (dict "id" "scrolls" "alt" "Inside a dry desert cave, many rolled and half-open scrolls lie on the rocky floor; most look alike, a few are clearly longer or shorter.")
+  "art" (dict "id" "scrolls")
   "plates" (slice
   (dict "pos" "tr" "big" "Several versions" "sub" "of many books, among the Dead Sea Scrolls, though much corresponds closely to the later Masoretic Text")))
   (dict
   "id" "alexandria" "box" "In Alexandria"
-  "art" (dict "id" "alexandria" "alt" "Two translators sit at a table in a sunlit room: one reads from a parchment scroll, the other writes on a papyrus roll.")
+  "art" (dict "id" "alexandria")
   "plates" (slice
   (dict "pos" "tl" "big" "Into Greek" "sub" "the Septuagint, beginning in the 3rd century BCE")
   (dict "pos" "tr" "big" "Other Hebrew" "sub" "many differences go back to the Hebrew it was made from, scholars think")))
   (dict
   "id" "jeremiah" "box" "Jeremiah"
-  "left" (dict "id" "jeremiah-hebrew" "alt" "A scribe holds up a very long scroll that spills across the floor and out of the picture.")
-  "right" (dict "id" "jeremiah-greek" "alt" "The young translator holds a much shorter scroll, its whole length easily in his hands.")
+  "left" (dict "id" "jeremiah-hebrew")
+  "right" (dict "id" "jeremiah-greek")
   "plates" (slice
   (dict "pos" "tl" "big" "Hebrew: longer" "sub" "the Masoretic Text" "refs" $jer)
   (dict "pos" "tr" "big" "Greek: much shorter" "sub" "and some Hebrew fragments among the scrolls differ too" "refs" $jer)))
   (dict
   "id" "masoretes" "box" "The Masoretes"
-  "art" (dict "id" "masoretes" "alt" "A medieval scribe bends over a large bound book by lamplight, adding tiny marks to its lines with a fine pen.")
+  "art" (dict "id" "masoretes")
   "plates" (slice
   (dict "pos" "tr" "big" "Vowels added" "sub" "around the 6th and 7th centuries CE, to fix how a text of consonants only was read aloud")))
   (dict
   "id" "codex" "box" "The oldest complete copy"
-  "art" (dict "id" "codex" "alt" "A large bound book lies closed on a wooden reading stand, thick with pages.")
+  "art" (dict "id" "codex")
   "plates" (slice
   (dict "pos" "br" "big" "1009 CE" "sub" "the Leningrad Codex, the oldest complete manuscript of the Masoretic Text")))
   (dict
   "id" "scholar" "box" "Closer to the original?"
-  "art" (dict "id" "scholar" "alt" "A present-day scholar compares a torn scroll fragment with an open bound book through a magnifying glass.")
+  "art" (dict "id" "scholar")
   "plates" (slice
   (dict "pos" "tl" "big" "Not always the Masoretic" "sub" "in some places a scroll or the Septuagint may preserve an earlier reading" "refs" (slice (dict "ref" "Deuteronomy 32:8" "label" "Deut 32:8")))))
   (dict
   "id" "today" "box" "Which text today?" "wide" true
-  "left" (dict "id" "today-mt" "alt" "A woman reads a printed Bible in an armchair at home.")
-  "right" (dict "id" "today-lxx" "alt" "In an Eastern Orthodox church hung with icons, a priest reads from a large book on a stand.")
+  "left" (dict "id" "today-mt")
+  "right" (dict "id" "today-lxx")
   "plates" (slice
   (dict "pos" "a" "big" "Masoretic Text" "sub" "mainly: the source for many Catholic and Protestant translations")
   (dict "pos" "b" "big" "Septuagint" "sub" "still used by Eastern Orthodox churches")))

@@ -19,7 +19,7 @@ images:
   - id: scribe
     statements: [why-added]
     aspect: "4:3"
-    alt: "An ancient scribe at a low table copies a Gospel from one scroll onto a fresh sheet, glancing at a short note written in the margin of the scroll he is copying."
+    alt: "An ancient scribe at a low table copies a Gospel from a scroll onto a fresh sheet, pen raised over a note in the scroll's margin."
     prompt: >-
       An ancient scribe in a plain tunic sits cross-legged at a low wooden
       table in a simple whitewashed room, copying by hand. In front of him
@@ -37,7 +37,7 @@ images:
   - id: mark
     statements: [mark-manuscripts, mark-ending, mark-16-8]
     aspect: "4:3"
-    alt: "At dawn, three women run from an open rock-cut tomb, its round stone rolled aside, looking back over their shoulders in fear."
+    alt: "At dawn, three women run from an open rock-cut tomb, its round stone rolled aside, looking back in fear."
     prompt: >-
       Dawn outside a rock-cut tomb in a hillside in ancient Judea. The round
       stone that closed the tomb has been rolled aside and the dark doorway
@@ -53,7 +53,7 @@ images:
   - id: adulteress
     statements: [adulteress, adulteress-manuscripts, adulteress-origin]
     aspect: "4:3"
-    alt: "In a temple courtyard, Jesus stoops and writes with his finger on the ground; a woman stands alone, head bowed, as the men who brought her walk away, stones dropped."
+    alt: "In a temple courtyard, Jesus stoops and writes on the ground; a woman stands alone, head bowed, as the men who brought her walk away, stones dropped."
     prompt: >-
       A sunlit stone courtyard of an ancient temple with tall columns. In
       the MIDDLE, a man in a plain robe (a generic first-century Jewish
@@ -69,7 +69,7 @@ images:
   - id: basel
     statements: [erasmus]
     aspect: "4:3"
-    alt: "A Renaissance scholar's desk in a print shop: a few old handwritten manuscripts lie open beside a freshly printed book whose pages have two columns."
+    alt: "A scholar's hands at a print-shop desk: a few old handwritten manuscripts lie open beside a freshly printed two-column book; a printing press stands behind."
     prompt: >-
       A sturdy wooden desk in a Renaissance print shop in about 1516, seen
       from slightly above. Only a scholar's hands in dark sleeves are
@@ -88,7 +88,7 @@ images:
     statements: [comma, comma-erasmus]
     aspect: "4:3"
     refs: [basel]
-    alt: "The same desk: a second pair of hands sets down one small, newly written Greek manuscript beside the printed two-column book and an open Latin book."
+    alt: "The same desk: a second pair of hands sets down one small, newly written manuscript beside an old Latin Bible and the printed book."
     prompt: >-
       The SAME wooden desk in the SAME Renaissance print shop as in the
       reference image, with the SAME freshly printed two-column book open on
@@ -105,7 +105,7 @@ images:
   - id: kjv
     statements: [kjv-text, revised-version]
     aspect: "4:3"
-    alt: "Translators in early seventeenth-century dress sit around a long table, pens in hand, marking changes in the margins of a large printed English Bible."
+    alt: "Translators in black gowns and white ruffs sit around a long table, quills in hand, marking changes in the margins of a large printed Bible."
     prompt: >-
       Early seventeenth-century England, about 1611. Four translators in
       plain black scholars' gowns and white ruffs, generic faces, sit around
@@ -121,7 +121,7 @@ images:
   - id: today
     statements: [added-verses, revised-version]
     aspect: "16:9"
-    alt: "Today: a reader at a kitchen table looks at an open modern Bible in which one paragraph is set off inside large double square brackets."
+    alt: "Today: a reader at a table looks at an open modern Bible in which one paragraph is set off inside large double square brackets."
     prompt: >-
       Present day. A wide view of a reader, a woman in a sweater, sitting at
       a plain kitchen table with a mug of tea, looking with curiosity at a

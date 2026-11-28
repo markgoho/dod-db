@@ -30,7 +30,7 @@ images:
     statements: [pastorals, pseudepigraphy, pastorals-reasons, pastorals-date]
     aspect: "4:3"
     refs: [paul]
-    alt: "A different, younger writer copies a letter onto the same kind of scroll; through a doorway beside him a congregation stands before an appointed church leader."
+    alt: "A different, younger writer writes a letter on the same kind of scroll; through a doorway beside him a congregation stands before a church leader."
     prompt: >-
       Wide view. The whole scene sits in the LOWER HALF of the picture;
       the UPPER HALF is plain empty plaster wall across the full width, with
@@ -68,7 +68,7 @@ images:
     statements: [disputed, ephesians-colossians, second-thessalonians]
     aspect: "4:5"
     refs: [paul]
-    alt: "A present-day scholar, an older man in a cardigan, holds up a scroll and nods, satisfied."
+    alt: "A present-day scholar, an older man in a cardigan, holds up a scroll and smiles, satisfied."
     prompt: >-
       A present-day academic, a generic older man with a grey beard and
       round glasses, in an amber cardigan over a shirt, shown from the chest
@@ -84,7 +84,7 @@ images:
     statements: [disputed, ephesians-colossians, second-thessalonians]
     aspect: "4:5"
     refs: [paul, accept]
-    alt: "Another present-day scholar, a younger woman, peers at the same scroll through a magnifying glass, frowning and unconvinced."
+    alt: "Another present-day scholar, a younger woman, peers at the same kind of scroll through a magnifying glass, frowning, unconvinced."
     prompt: >-
       A DIFFERENT present-day academic from the second reference image: a
       generic younger woman with dark hair in a short bob and rectangular

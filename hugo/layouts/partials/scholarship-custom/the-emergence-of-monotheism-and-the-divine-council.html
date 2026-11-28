@@ -19,7 +19,7 @@
   none.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/the-emergence-of-monotheism-and-the-divine-council.yaml.
+  hugo/data/scholarship/illustrations/the-emergence-of-monotheism-and-the-divine-council.yaml.
   Reword a plate only when the statement it comes from is re-reviewed.
   */
 -}}
@@ -34,37 +34,30 @@
 {{- $panels := slice
   (dict
   "id" "nations" "box" "The nations’ gods"
-  "alt" "Seen from above, a landscape divided into many lands, each with its own tall robed divine being glowing with light and standing guard over it."
   "plates" (slice
   (dict "pos" "bl" "big" "A divine being for each nation" "sub" "in the reading of a Dead Sea Scroll and the Septuagint" "refs" (slice (dict "ref" "Deuteronomy 32:8-9" "label" "Deut 32:8–9")))))
   (dict
   "id" "council" "box" "The divine council"
-  "alt" "A heavenly throne blazing with light, no figure on it, with robed divine beings gathered around it; a man in a dark cloak stands among them at the right."
   "plates" (slice
   (dict "pos" "bl" "big" "A council of gods" "sub" "biblical scenes of Yahweh’s council, scholars generally recognise" "refs" (slice (dict "ref" "1 Kings 22:19-23" "label" "1 Kgs 22:19–23") (dict "ref" "Job 1:6" "label" "Job 1:6") (dict "ref" "Isaiah 6:1-8" "label" "Isa 6")))))
   (dict
   "id" "altar" "box" "No other gods before me"
-  "alt" "Villagers bring a lamb and bread to a single stone altar with no statue; far off on the hills, other peoples' shrines each hold a statue of a god."
   "plates" (slice
   (dict "pos" "bl" "big" "Worship Yahweh alone" "sub" "without denying that other gods exist, scholars say" "refs" (slice (dict "ref" "Exodus 20:3" "label" "Exod 20:3")))))
   (dict
   "id" "teraphim" "box" "In the household"
-  "alt" "Inside a tent, a young woman sits calmly on a camel saddle; three small clay figurines peek from the saddlebag beneath her while an older man searches the baskets."
   "plates" (slice
   (dict "pos" "bl" "big" "Teraphim" "sub" "figurines linked with divination; household gods or dead ancestors is debated" "refs" (slice (dict "ref" "Genesis 31:34" "label" "Gen 31:34")))))
   (dict
   "id" "exile" "box" "Second Isaiah"
-  "alt" "By a river below a stepped Babylonian tower, a prophet stands on a rock with one finger raised, speaking to seated exiles."
   "plates" (slice
   (dict "pos" "bl" "big" "No other god" "sub" "first stated outright in Second Isaiah, scholars say" "refs" (slice (dict "ref" "Isaiah 44:6" "label" "Isa 44:6")))))
   (dict
   "id" "elephantine" "box" "Elephantine"
-  "alt" "A small rocky island in the Nile with palm trees and a modest walled temple; in front, a scribe writes on papyrus."
   "plates" (slice
   (dict "pos" "bl" "big" "Yahu and other deities" "sub" "named in the community’s 5th-century BCE papyri; how to read them is disputed")))
   (dict
   "id" "angels" "box" "Later texts" "wide" true
-  "alt" "The same lands as the first panel, now with a winged angelic prince standing over each one."
   "plates" (slice
   (dict "pos" "bl" "big" "Recast as angels" "sub" "where older texts speak of the nations’ gods, Daniel speaks of angelic princes" "refs" (slice (dict "ref" "Daniel 10:13" "label" "Dan 10:13")))))
 -}}
@@ -90,7 +83,7 @@
             data-card-hide
           {{ end }}>
           <figure class="emd-comic__figure">
-            {{- $alt := .alt }}
+            {{- $id := .id }}
             <div class="emd-comic__art">
               {{- with resources.Get (printf "scholarship-art/the-emergence-of-monotheism-and-the-divine-council/%s.png" .id) }}
                 {{- $webp := .Process "resize 1200x webp q78" }}
@@ -98,7 +91,7 @@
                   src="{{ $webp.RelPermalink }}"
                   width="{{ $webp.Width }}"
                   height="{{ $webp.Height }}"
-                  alt="{{ $alt }}"
+                  alt="{{ partial "scholarship-art-alt.html" (dict "slug" "the-emergence-of-monotheism-and-the-divine-council" "id" $id) }}"
                   loading="eager" />
               {{- end }}
             </div>

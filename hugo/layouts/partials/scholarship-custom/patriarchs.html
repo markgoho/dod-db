@@ -10,17 +10,11 @@
   because the page does not.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/patriarchs.yaml (no words in it); every
+  hugo/data/scholarship/illustrations/patriarchs.yaml (no words in it); every
   caption, link and claim lives here. The comic furniture is CSS.
   */
 -}}
 {{- $slug := "patriarchs" -}}
-{{- $alt := dict
-  "camps" "Three separate tent camps on three hills, far apart, each with its own small group gathered around a fire listening to an elder."
-  "hosea" "An ancient prophet writes on a scroll by lamplight; a thought cloud above him shows two men wrestling at a river at dawn."
-  "bound" "A scribe ties three scrolls, each with its own amber, rust or indigo cord, together into one bundle."
-  "dig" "Two present-day scholars at a bare excavation trench disagree: one points hopefully into it, the other frowns with arms crossed."
--}}
 {{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
 {{- /* Each panel's words sit on its art as a plate, in the corner the picture leaves clear. */ -}}
 {{- $frames := slice
@@ -57,7 +51,7 @@
                   src="{{ $webp.RelPermalink }}"
                   width="{{ $webp.Width }}"
                   height="{{ $webp.Height }}"
-                  alt="{{ index $alt $f.id }}"
+                  alt="{{ partial "scholarship-art-alt.html" (dict "slug" $slug "id" $f.id) }}"
                   loading="eager" />
               {{- end }}
             </div>

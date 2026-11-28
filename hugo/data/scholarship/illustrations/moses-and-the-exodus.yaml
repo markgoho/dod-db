@@ -38,7 +38,7 @@ images:
   - id: dig
     statements: [evidence]
     aspect: "4:5"
-    alt: "A present-day archaeologist kneels in an empty trench in the Sinai desert, shaking a sieve that holds only sand."
+    alt: "The same archaeologist kneels by an empty trench in the desert; her sieve holds only sand."
     prompt: >-
       A present-day woman archaeologist, about forty, short dark curly
       hair, wearing a wide-brimmed sun hat, a light grey work shirt with
@@ -56,7 +56,7 @@ images:
   - id: basket-moses
     statements: [sargon]
     aspect: "4:5"
-    alt: "In the story: a baby lies in a small woven basket lined with dark tar, floating among the reeds at a river's edge, Egyptian palms behind."
+    alt: "In the story: a baby lies in a small basket sealed with tar, floating among the reeds of an Egyptian river."
     prompt: >-
       A calm river bank in ancient Egypt. Among tall green and amber reeds
       at the water's edge floats a small oval woven basket, its seams
@@ -69,7 +69,7 @@ images:
     statements: [sargon]
     aspect: "4:5"
     refs: [basket-moses]
-    alt: "Sargon of Akkad's birth story: the same kind of tarred basket with a baby floats on a broad Mesopotamian river."
+    alt: "The same kind of tarred basket with a baby drifts on a broad Mesopotamian river, a stepped temple tower on the far bank."
     prompt: >-
       The SAME small oval woven basket sealed with shiny black tar as in
       the reference image, with a sleeping baby in a plain off-white cloth.
@@ -84,7 +84,7 @@ images:
     statements: [moses]
     aspect: "4:5"
     refs: [dig]
-    alt: "The same archaeologist, by lamplight, searches walls of carved Egyptian inscriptions and stacks of papyrus, finding nothing."
+    alt: "A present-day archaeologist searches a wall of carved Egyptian inscriptions by lantern light, frowning."
     prompt: >-
       The SAME woman archaeologist as in the reference image (same face,
       short dark curly hair, light grey work shirt, khaki trousers; sun hat
@@ -101,7 +101,7 @@ images:
     statements: [numbers]
     aspect: "4:5"
     refs: [court]
-    alt: "In the story: Moses, staff raised, leads a vast crowd out of Egypt, so dense it runs off the picture and cannot be counted."
+    alt: "In the story: Moses, staff raised, leads a crowd out of Egypt so dense it runs off the picture."
     prompt: >-
       The SAME MOSES as in the reference image (same face, dark beard
       streaked with grey, rust red robe, light grey headcloth, tall wooden
@@ -120,7 +120,7 @@ images:
     statements: [sea]
     aspect: "4:5"
     refs: [court, crowd]
-    alt: "In the story: Moses holds up his staff as the people cross a sea on dry ground between two towering walls of water."
+    alt: "In the story: Moses holds up his staff as the people cross between two towering walls of water."
     prompt: >-
       The SAME MOSES as in the first reference image (same face, dark
       beard streaked with grey, rust red robe, light grey headcloth, tall
@@ -136,7 +136,7 @@ images:
     statements: [sea]
     aspect: "4:5"
     refs: [dig]
-    alt: "The same archaeologist stands at the edge of a reedy marsh, holding an open map and looking around, unsure which water this is."
+    alt: "The same archaeologist stands at the edge of a reedy marsh with an open map, unsure which water this is."
     prompt: >-
       The SAME woman archaeologist as in the reference image (same face,
       short dark curly hair, wide-brimmed sun hat, light grey work shirt,
@@ -152,7 +152,7 @@ images:
     statements: [merneptah]
     aspect: "4:3"
     refs: [dig]
-    alt: "The same archaeologist studies a tall round-topped stone slab carved with rows of small illegible signs, in a quiet museum gallery."
+    alt: "The same archaeologist studies a tall round-topped stone slab carved with rows of Egyptian signs, pointing at one line."
     prompt: >-
       The SAME woman archaeologist as in the reference image (same face,
       short dark curly hair, light grey work shirt, khaki trousers, no
@@ -173,7 +173,7 @@ images:
     statements: [kernel]
     aspect: "4:3"
     refs: [dig]
-    alt: "The same archaeologist and a second scholar disagree across a table of open books: one leans in, hand open, the other shakes her head, arms crossed."
+    alt: "The archaeologist leans in, hand open, arguing; across the table a second scholar shakes his head, arms crossed."
     prompt: >-
       The SAME woman archaeologist as in the reference image (same face,
       short dark curly hair, light grey work shirt, no hat) sits on the

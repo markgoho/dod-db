@@ -23,7 +23,7 @@ images:
   - id: nations
     statements: [deuteronomy-32, other-gods]
     aspect: "4:3"
-    alt: "Seen from above, a landscape divided into many separate lands, each with its own tall robed divine figure standing guard over it, glowing faintly."
+    alt: "Seen from above, a landscape divided into many lands, each with its own tall robed divine being glowing with light and standing guard over it."
     prompt: >-
       A wide ancient landscape seen from high above, like a colourful map
       come to life: rolling hills in amber and grey, rivers and a coastline,
@@ -43,7 +43,7 @@ images:
     statements: [council, other-gods]
     aspect: "4:3"
     refs: [nations]
-    alt: "A heavenly throne room: a throne blazing with light, no figure on it, surrounded by rows of robed divine beings; a small human prophet stands at the edge, watching."
+    alt: "A heavenly throne blazing with light, no figure on it, with robed divine beings gathered around it; a man in a dark cloak stands among them at the right."
     prompt: >-
       A vast heavenly throne room above the clouds. In the upper middle stands
       a high throne that is pure blazing light, with NO figure visible on it,
@@ -59,7 +59,7 @@ images:
   - id: altar
     statements: [first-commandment, monolatry]
     aspect: "4:3"
-    alt: "Ancient Israelite villagers bring an offering to a single stone altar; far off on the hills behind them stand other peoples' shrines, each with its own statue of a god."
+    alt: "Villagers bring a lamb and bread to a single stone altar with no statue; far off on the hills, other peoples' shrines each hold a statue of a god."
     prompt: >-
       An ancient hill-country village scene. In the right foreground a small
       group of villagers in simple tunics and headscarves gather around ONE
@@ -74,7 +74,7 @@ images:
   - id: teraphim
     statements: [teraphim]
     aspect: "4:3"
-    alt: "Inside a tent, a young woman sits calmly on a camel saddle; the heads of a few small human-shaped figurines peek out from the saddlebag beneath her while an older man searches the tent."
+    alt: "Inside a tent, a young woman sits calmly on a camel saddle; three small clay figurines peek from the saddlebag beneath her while an older man searches the baskets."
     prompt: >-
       Inside a large goat-hair tent lit by daylight. On the RIGHT side a young
       woman in a long dress and headscarf sits calmly on a camel saddle on the
@@ -89,7 +89,7 @@ images:
   - id: exile
     statements: [explicit]
     aspect: "4:3"
-    alt: "By a wide river under a stepped Mesopotamian tower, a prophet stands with one hand raised, speaking to a group of seated exiles who listen intently."
+    alt: "By a river below a stepped Babylonian tower, a prophet stands on a rock with one finger raised, speaking to seated exiles."
     prompt: >-
       A riverbank in ancient Babylon. In the background on the far right, a
       tall stepped temple tower (a ziggurat) and city walls under an evening
@@ -105,7 +105,7 @@ images:
   - id: elephantine
     statements: [elephantine-temple, elephantine-gods]
     aspect: "4:3"
-    alt: "A small island in a wide river with palm trees and granite boulders; on it a modest walled temple courtyard, and in the foreground a scribe sits writing a letter on papyrus."
+    alt: "A small rocky island in the Nile with palm trees and a modest walled temple; in front, a scribe writes on papyrus."
     prompt: >-
       A small rocky island in the wide Nile river, with smooth rounded granite
       boulders, a few date palms and a calm blue river around it, a sailing
@@ -121,7 +121,7 @@ images:
     statements: [angels, deuteronomy-32]
     aspect: "16:9"
     refs: [nations]
-    alt: "The same landscape of separate lands as the first panel, but now a winged angelic prince in armour-like robes hovers over each land."
+    alt: "The same lands as the first panel, now with a winged angelic prince standing over each one."
     prompt: >-
       The same landscape of many separate lands divided by faint boundary
       lines as in the reference image, seen from above, now in a wide view.

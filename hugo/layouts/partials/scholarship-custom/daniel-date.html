@@ -13,7 +13,7 @@
   shows a crowd of jars no count can be read off.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/daniel-date.yaml. Reword a plate only when
+  hugo/data/scholarship/illustrations/daniel-date.yaml. Reword a plate only when
   the statement it comes from is re-reviewed.
   */
 -}}
@@ -32,36 +32,36 @@
       src="{{ $webp.RelPermalink }}"
       width="{{ $webp.Width }}"
       height="{{ $webp.Height }}"
-      alt="{{ $.alt }}"
+      alt="{{ partial "scholarship-art-alt.html" (dict "slug" "daniel-date" "id" $.id) }}"
       loading="eager" />
   {{- end }}
 {{- end -}}
 {{- $panels := slice
   (dict
   "id" "when" "box" "Set when? Written when?" "wide" true
-  "left" (dict "id" "daniel" "alt" "A young Judean courtier, Daniel, stands in a Babylonian palace hall among glazed-brick walls with lion reliefs.")
-  "right" (dict "id" "scribe" "alt" "An older Judean scribe writes on a scroll by lamplight; through the window, soldiers' spears and crested helmets pass in the street.")
+  "left" (dict "id" "daniel")
+  "right" (dict "id" "scribe")
   "plates" (slice
   (dict "pos" "bl" "big" "Set: 6th c. BCE" "sub" "the Babylonian exile, the book's own setting")
   (dict "pos" "br" "big" "Written: 2nd c. BCE" "sub" "the visions under Antiochus IV, 167–164 BCE" "ref" "Daniel 7-12" "label" "Dan 7–12")))
   (dict
   "id" "tales" "box" "Which parts are older?"
-  "art" (dict "id" "tales" "alt" "Daniel, the same young courtier, stands calmly in a stone pit among resting lions.")
+  "art" (dict "id" "tales")
   "plates" (slice
   (dict "pos" "bl" "big" "The court tales" "sub" "usually held older: Persian or early Hellenistic" "ref" "Daniel 1-6" "label" "Dan 1–6")))
   (dict
   "id" "horn" "box" "Who is the little horn?"
-  "art" (dict "id" "horn" "alt" "The same scribe writes while, in the lamp smoke above him, a fearsome beast rises with ten tall horns and one small horn.")
+  "art" (dict "id" "horn")
   "plates" (slice
   (dict "pos" "bl" "big" "Antiochus IV" "sub" "scholars identify the visions' “little horn” with him")))
   (dict
   "id" "copies" "box" "What did Qumran keep?"
-  "art" (dict "id" "copies" "alt" "Inside a desert cave, a crowd of tall clay jars stands in the half-dark; a few scroll fragments lie on the floor.")
+  "art" (dict "id" "copies")
   "plates" (slice
   (dict "pos" "bl" "big" "8 copies" "sub" "of Daniel; one dated close to the book's completion")))
   (dict
   "id" "additions" "box" "What did the Greek add?"
-  "art" (dict "id" "additions" "alt" "Daniel, the same young courtier, holds out cakes to a great coiled dragon in a temple, a large idol statue behind.")
+  "art" (dict "id" "additions")
   "plates" (slice
   (dict "pos" "bl" "big" "3 additions" "sub" "the Prayer of Azariah and Song of the Three, Susanna, Bel and the Dragon")))
 -}}

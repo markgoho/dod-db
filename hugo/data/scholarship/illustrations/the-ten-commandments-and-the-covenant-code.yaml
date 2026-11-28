@@ -14,7 +14,7 @@ images:
   - id: scribe
     statements: [covenant-code, oldest]
     aspect: "4:3"
-    alt: "An Israelite scribe sits on the right unrolling a long scroll of laws; two blank stone tablets lean on a rock behind him on the left."
+    alt: "An Israelite scribe unrolls a long scroll of laws; two stone tablets lean on a rock behind him."
     prompt: >-
       An ancient Israelite scribe, a middle-aged man with a short dark beard,
       a plain rust red robe and a light grey head cloth, sits cross-legged on
@@ -29,7 +29,7 @@ images:
   - id: tablets
     statements: [versions]
     aspect: "4:3"
-    alt: "Three pairs of rounded stone tablets stand on a rocky ledge: the two pairs on the left look alike, the third pair on the right is shaped differently."
+    alt: "Three pairs of stone tablets stand on a rocky ledge: two pairs look alike, the third pair is different."
     prompt: >-
       On a wide flat rocky mountain ledge stand exactly THREE pairs of
       rounded-top stone tablets, six tablets in all, the three pairs clearly
@@ -45,7 +45,7 @@ images:
   - id: stela
     statements: [parallels, hammurabi]
     aspect: "4:5"
-    alt: "A tall black stone stela stands in a sunlit Mesopotamian courtyard; an ox with long horns stands tethered beside it."
+    alt: "A tall black stone stela in a Mesopotamian courtyard, an ox tethered beside it."
     prompt: >-
       A tall, smooth black basalt stela with a rounded top stands upright in
       a sunlit mud-brick courtyard of ancient Mesopotamia; its face is covered
@@ -59,7 +59,7 @@ images:
     statements: [parallels, hammurabi]
     aspect: "4:5"
     refs: [scribe]
-    alt: "The same Israelite scribe sits writing on his scroll while an ox with long horns looks over a low wall behind him."
+    alt: "The same Israelite scribe writes on his scroll while an ox looks over the wall behind him."
     prompt: >-
       The SAME Israelite scribe as in the reference image (short dark beard,
       rust red robe, light grey head cloth) sits on a low stool in the lower
@@ -73,7 +73,7 @@ images:
     statements: [slaves, deuteronomy]
     aspect: "4:5"
     refs: [scribe]
-    alt: "A young woman walks out through the gateway of an ancient courtyard house with a bundle of grain and a goat, free to go."
+    alt: "A young woman walks out through an open gateway with a bundle of grain and a goat, free to go."
     prompt: >-
       Same ancient Israelite world and drawing style as the reference image.
       A young Israelite woman with dark hair, in a plain light grey
@@ -90,7 +90,7 @@ images:
     statements: [slaves]
     aspect: "4:5"
     refs: [scribe]
-    alt: "An Israelite farmer and his family work their own small field of grain beside a flat-roofed stone house."
+    alt: "A farmer and his family work their own field of grain."
     prompt: >-
       Same ancient Israelite world and drawing style as the reference image.
       An Israelite farmer with a short dark beard, in a plain amber knee-length

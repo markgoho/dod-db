@@ -14,7 +14,7 @@
   would assign them by position.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/noahs-ark-and-the-flood.yaml. The P half
+  hugo/data/scholarship/illustrations/noahs-ark-and-the-flood.yaml. The P half
   of panel 1 shows exactly one pair (checked by eye); the J half shows a
   line of sheep running out of the picture, so it asserts no total. The
   numbers and verses are HTML plates set on the art. Reword a plate only
@@ -38,7 +38,7 @@
         src="{{ $webp.RelPermalink }}"
         width="{{ $webp.Width }}"
         height="{{ $webp.Height }}"
-        alt="{{ $.alt }}"
+        alt="{{ partial "scholarship-art-alt.html" (dict "slug" "noahs-ark-and-the-flood" "id" $.id) }}"
         loading="eager" />
     {{- end }}
   </div>
@@ -46,29 +46,29 @@
 {{- $panels := slice
   (dict
   "id" "board" "box" "Who boards the ark?"
-  "left" (dict "id" "board-left" "alt" "Noah in the ark's door beckons; exactly two sheep walk up the gangway.")
-  "right" (dict "id" "board-right" "alt" "The same scene: a dense crowd of sheep streams up the gangway and on out of the picture.")
+  "left" (dict "id" "board-left")
+  "right" (dict "id" "board-right")
   "plates" (slice
   (dict "pos" "tl" "badge" "p" "big" "1 pair" "sub" "of every kind" "ref" "Genesis 6:19" "label" "Gen 6:19")
   (dict "pos" "tr" "badge" "j" "big" "7 pairs" "sub" "of every clean kind, 1 pair of unclean" "ref" "Genesis 7:2" "label" "Gen 7:2")))
   (dict
   "id" "flood" "box" "How long does it last?"
-  "left" (dict "id" "flood-left" "alt" "The ark afloat on the flood; Noah watches from a window.")
-  "right" (dict "id" "flood-right" "alt" "The ark still afloat; Noah leans wearily on the window sill.")
+  "left" (dict "id" "flood-left")
+  "right" (dict "id" "flood-right")
   "plates" (slice
   (dict "pos" "bl" "big" "40 days" "ref" "Genesis 7:17" "label" "Gen 7:17")
   (dict "pos" "br" "big" "150 days" "ref" "Genesis 7:24" "label" "Gen 7:24")))
   (dict
   "id" "birds" "box" "Which bird goes out?"
-  "left" (dict "id" "raven" "alt" "From an ark window, Noah lets a black raven fly out over the water.")
-  "right" (dict "id" "dove" "alt" "From the same window, Noah lets a white dove fly out over the water.")
+  "left" (dict "id" "raven")
+  "right" (dict "id" "dove")
   "plates" (slice
   (dict "pos" "bl" "big" "A raven" "ref" "Genesis 8:7" "label" "Gen 8:7")
   (dict "pos" "br" "big" "A dove" "sub" "sent three times" "ref" "Genesis 8:8-12" "label" "Gen 8:8–12")))
   (dict
   "id" "after" "box" "After the flood"
-  "left" (dict "id" "after-left" "alt" "Noah walks down from the ark, resting on the mountains; there is no altar.")
-  "right" (dict "id" "after-right" "alt" "Noah raises his hands beside a stone altar with fire and smoke; the ark rests on the mountains behind.")
+  "left" (dict "id" "after-left")
+  "right" (dict "id" "after-right")
   "plates" (slice
   (dict "pos" "tl" "badge" "p" "big" "No sacrifice" "sub" "by one view: sacrifice is for priests")
   (dict "pos" "tr" "badge" "j" "big" "Sacrifice" "sub" "by one view, what the clean pairs are for" "ref" "Genesis 8:20" "label" "Gen 8:20")))

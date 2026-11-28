@@ -16,7 +16,7 @@ images:
   - id: luminaries
     statements: [oldest, calendar]
     aspect: "4:5"
-    alt: "An aged white-bearded man stands on a hilltop at dawn beside a radiant winged angel, who points up at the rising sun and a pale crescent moon."
+    alt: "An aged white-bearded man stands on a hilltop at dawn beside a winged angel, who points up at the rising sun and a crescent moon."
     prompt: >-
       An aged man with a long white beard, in a plain undyed wool robe and a
       rust red mantle, stands on a rocky hilltop at dawn beside a tall
@@ -47,7 +47,7 @@ images:
     statements: [parables, composite]
     aspect: "4:3"
     refs: [luminaries]
-    alt: "A Judean scribe of a later age, in a stone room lit by an oil lamp, writes on a long scroll; a rolled older scroll lies beside him."
+    alt: "A Judean scribe of a later age, in a stone room lit by an oil lamp, writes on a long scroll; an older rolled scroll lies beside him."
     prompt: >-
       Same drawing style as the reference image. A Judean scribe of the early
       Roman period, a heavy-set middle-aged man, bald on top with a grey
@@ -63,7 +63,7 @@ images:
     statements: [languages, parables]
     aspect: "4:3"
     refs: [luminaries]
-    alt: "Inside a desert cave, a tall lidded clay jar stands beside small torn fragments of old scrolls lying on the rock floor."
+    alt: "Inside a desert cave, a tall lidded clay jar stands beside small torn fragments of old scrolls on the rock floor."
     prompt: >-
       Same drawing style as the reference image. The interior of a dry
       limestone cave in a desert cliff, light falling in from the cave mouth
@@ -79,7 +79,7 @@ images:
     statements: [languages, canon]
     aspect: "4:3"
     refs: [luminaries]
-    alt: "In a round church, an Ethiopian Orthodox priest in white robes and a white turban reads from a large open parchment book written in two colours of ink."
+    alt: "In a round church, an Ethiopian Orthodox priest in white robes and a white turban reads from a large open parchment book."
     prompt: >-
       Same drawing style as the reference image. Inside a round Ethiopian
       church with plain whitewashed walls and a carved wooden doorway, an

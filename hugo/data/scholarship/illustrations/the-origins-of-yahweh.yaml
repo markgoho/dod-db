@@ -34,7 +34,7 @@ images:
     statements: [el, resemblance]
     aspect: "4:5"
     refs: [el]
-    alt: "A bearded herdsman of ancient times kneels at a stone altar on a hillside, looking toward a far mountain with a tent on its top."
+    alt: "A bearded herdsman kneels at a stone altar on a hillside, looking toward a far mountain with a tent on its top."
     prompt: >-
       A bearded ancient herdsman, a patriarch, in a simple rust red and
       light grey striped robe and head cloth, kneels in prayer beside a
@@ -49,7 +49,7 @@ images:
   - id: early
     statements: [el]
     aspect: "4:5"
-    alt: "At the dawn of time, a small family of the earliest humans stands at a simple altar, calling out with raised arms under an open sky."
+    alt: "The earliest humans, a family, stand at a rough stone altar and call out with raised arms to an empty sky."
     prompt: >-
       The dawn of humankind: a small family of the earliest humans (a man,
       a woman and a child, simply dressed in plain light grey and rust red
@@ -66,7 +66,7 @@ images:
     statements: [el]
     aspect: "4:5"
     refs: [patriarch]
-    alt: "Moses, a bearded man with a staff, stands alone in a desert as golden light pours down on him from the sky."
+    alt: "Moses, a bearded man with a staff, stands alone in the desert as golden light pours down on him from the sky."
     prompt: >-
       Moses: a bearded middle-aged man with a shepherd's staff, in a plain
       light grey robe and rust red head cloth, the SAME drawing style as
@@ -83,7 +83,7 @@ images:
     statements: [storm]
     aspect: "4:5"
     refs: [el]
-    alt: "Baal, a young storm-god, stands on a mountaintop raising a bolt of lightning over a churning sea; the old god El sits aside, smaller, behind him."
+    alt: "Baal, a young storm-god, raises a lightning bolt on a mountaintop over a stormy sea; the old god El sits aside behind him."
     prompt: >-
       A young, strong storm-god, Baal, in a short rust red kilt and a plain
       tall pointed helmet, stands on a rocky mountaintop on the left of the
@@ -99,7 +99,7 @@ images:
     statements: [storm]
     aspect: "4:5"
     refs: [baal]
-    alt: "A storm over the sea: thunderclouds and lightning above, a great wind heaping the waters into a wall, a small crowd watching from the shore."
+    alt: "Thunderclouds and lightning over the sea; a great wind heaps the water into a wall as a small crowd watches from the shore."
     prompt: >-
       The SAME churning sea and the SAME dark storm clouds as in the
       reference image, now with no god on any mountain: thunderclouds roll
@@ -113,7 +113,7 @@ images:
   - id: stela
     statements: [attestation]
     aspect: "4:3"
-    alt: "A tall black round-topped stone slab, carved with rows of writing, stands alone on a dry hillside under an open sky."
+    alt: "A tall black round-topped stone slab, carved with rows of writing, stands alone on a dry hillside."
     prompt: >-
       A tall, dark basalt stone slab with a rounded top, carved with many
       close rows of tiny illegible scribble marks, stands upright alone on
@@ -127,7 +127,7 @@ images:
     statements: [convergence, south]
     aspect: "16:9"
     refs: [el, sea, patriarch]
-    alt: "Three streams, from red desert mountains, from El's mountain with its tent and from a storm over the sea, flow together into one river; at its end on a hill, one Israelite points accusingly at others making an offering."
+    alt: "Streams from red desert mountains, from El's mountain with its tent and from a storm join into one river; beside it, one Israelite points accusingly at another Israelite family making an offering."
     prompt: >-
       A wide landscape read from left to right, with everything in the
       middle horizontal band of the picture. On the left, three streams

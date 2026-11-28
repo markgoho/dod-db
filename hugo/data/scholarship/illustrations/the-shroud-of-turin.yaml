@@ -18,7 +18,7 @@ images:
   - id: lirey
     statements: [first-record]
     aspect: "4:3"
-    alt: "In a small Gothic church, two canons hold up a long linen cloth bearing a faint image of a man; pilgrims look on, one holding a small medallion."
+    alt: "In a small Gothic church, two clergymen hold up a long linen cloth bearing a faint image of a man; pilgrims look on, one holding a small medallion."
     prompt: >-
       Interior of a small fourteenth-century Gothic stone church. In the
       MIDDLE of the picture, two clergymen in plain white surplices over
@@ -86,7 +86,7 @@ images:
     statements: [reception]
     aspect: "4:5"
     refs: [labs]
-    alt: "A scientist in a lab coat calmly holds up a printed chart of results, confident."
+    alt: "A scientist in a lab coat calmly holds up a printed chart of results."
     prompt: >-
       The SAME bearded scientist as in the middle of the reference image,
       in the same white lab coat, shown from the waist up in the CENTRE of
@@ -135,7 +135,7 @@ images:
     statements: [church]
     aspect: "16:9"
     refs: [lirey]
-    alt: "In a large present-day cathedral, the long linen cloth hangs in a frame behind glass while a crowd of pilgrims stands quietly before it."
+    alt: "In a large present-day cathedral, the long linen cloth hangs in a frame behind glass while a crowd of people stands quietly before it."
     prompt: >-
       Very wide view, all of the action in the MIDDLE horizontal band of the
       picture; the top fifth is plain stone vaulting and the bottom fifth is

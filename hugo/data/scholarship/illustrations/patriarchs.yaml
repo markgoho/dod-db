@@ -22,7 +22,7 @@ images:
   - id: hosea
     statements: [jacob-first]
     aspect: "4:3"
-    alt: "An ancient prophet writes on a scroll by lamplight; a thought cloud above him shows a man wrestling a figure at a river at dawn."
+    alt: "An ancient prophet writes on a scroll by lamplight; a thought cloud above him shows two men wrestling at a river at dawn."
     prompt: >-
       An ancient Israelite prophet, an older bearded man in a plain robe and
       headcloth, seated on a low stool, writing with a reed pen on a scroll
@@ -34,7 +34,7 @@ images:
     statements: [traditions]
     aspect: "4:3"
     refs: [camps]
-    alt: "A scribe binds three scrolls, tied with amber, rust and indigo cords, into one bundle with a single long cord."
+    alt: "A scribe ties three scrolls, each with its own amber, rust or indigo cord, together into one bundle."
     prompt: >-
       An ancient scribe, a bearded man in a simple robe and headcloth, seated
       at a low wooden table, tying three separate rolled scrolls together
@@ -47,7 +47,7 @@ images:
   - id: dig
     statements: [historical]
     aspect: "4:3"
-    alt: "Two present-day scholars at an excavation trench disagree: one points hopefully into the trench, the other frowns with arms crossed."
+    alt: "Two present-day scholars at a bare excavation trench disagree: one points hopefully into it, the other frowns with arms crossed."
     prompt: >-
       Two present-day scholars standing at the edge of an archaeological
       excavation trench in dry hill country, generic figures (not portraits

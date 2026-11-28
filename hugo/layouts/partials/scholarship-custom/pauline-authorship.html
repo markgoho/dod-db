@@ -15,7 +15,7 @@
   1:1 names none). Reword a plate only when its statement is re-reviewed.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/pauline-authorship.yaml; every word,
+  hugo/data/scholarship/illustrations/pauline-authorship.yaml; every word,
   count and link lives here.
   */
 -}}
@@ -40,27 +40,24 @@
       src="{{ $webp.RelPermalink }}"
       width="{{ $webp.Width }}"
       height="{{ $webp.Height }}"
-      alt="{{ $.alt }}"
+      alt="{{ partial "scholarship-art-alt.html" (dict "slug" "pauline-authorship" "id" $.id) }}"
       loading="eager" />
   {{- end }}
 {{- end -}}
 {{- $panels := slice
   (dict
   "id" "paul" "box" "Paul writes"
-  "alt" "Paul, a balding man with a dark beard, writes a letter on a scroll by lamplight."
   "plates" (slice
   (dict "pos" "tr" "big" "7 letters" "sub" "most scholars accept as Paul’s own"
   "refs" (slice "Romans 1:1" "1 Corinthians 1:1" "2 Corinthians 1:1" "Galatians 1:1" "Philippians 1:1" "1 Thessalonians 1:1" "Philemon 1:1"))))
   (dict
   "id" "later" "box" "After Paul"
-  "alt" "A different, younger writer writes a letter on the same kind of scroll; through a doorway beside him a congregation stands before a church leader."
   "plates" (slice
   (dict "pos" "tr" "big" "Not Paul’s" "sub" "most scholars agree; a small number disagree, at least for parts of 2 Timothy"
   "refs" (slice "1 Timothy 1:1" "2 Timothy 1:1" "Titus 1:1"))
   (dict "pos" "br" "big" "A later church" "sub" "a style unlike Paul’s, and a church structure from after his lifetime")))
   (dict
   "id" "hebrews" "box" "And Hebrews?"
-  "alt" "A later copyist slides one more scroll onto a crowded heap of scrolls that runs out of the picture."
   "plates" (slice
   (dict "pos" "tl" "big" "No name" "sub" "It does not claim to be by Paul. Tradition attributed it to him."
   "refs" (slice "Hebrews 1:1"))))
@@ -88,7 +85,7 @@
           {{ if ge $i 2 }}data-card-hide{{ end }}>
           <figure class="paul-comic__figure">
             <div class="paul-comic__art">
-              {{ partial "inline/paul-img.html" (dict "id" $p.id "alt" $p.alt) }}
+              {{ partial "inline/paul-img.html" (dict "id" $p.id) }}
             </div>
             <h3 class="paul-comic__box">{{ $p.box }}</h3>
             <figcaption>
@@ -110,10 +107,10 @@
           {{/* A lightning bolt: the page puts some scholars on one side and others on the other. */}}
           <div class="paul-comic__art paul-comic__art--split">
             <div class="paul-comic__half paul-comic__half--left">
-              {{ partial "inline/paul-img.html" (dict "id" "accept" "alt" "A present-day scholar, an older man in a cardigan, holds up a scroll and smiles, satisfied.") }}
+              {{ partial "inline/paul-img.html" (dict "id" "accept") }}
             </div>
             <div class="paul-comic__half paul-comic__half--right">
-              {{ partial "inline/paul-img.html" (dict "id" "doubt" "alt" "Another present-day scholar, a younger woman, peers at the same kind of scroll through a magnifying glass, frowning, unconvinced.") }}
+              {{ partial "inline/paul-img.html" (dict "id" "doubt") }}
             </div>
             <svg
               class="paul-comic__bolt"

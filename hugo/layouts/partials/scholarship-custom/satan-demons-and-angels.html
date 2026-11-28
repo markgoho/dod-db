@@ -16,7 +16,7 @@
   the court's grey to near-black is the change `devil` reports.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/satan-demons-and-angels.yaml. God is only
+  hugo/data/scholarship/illustrations/satan-demons-and-angels.yaml. God is only
   light; nobody has wings, horns or a tail. Reword a plate only when the
   statement it comes from is re-reviewed.
   */
@@ -38,7 +38,7 @@
         src="{{ $webp.RelPermalink }}"
         width="{{ $webp.Width }}"
         height="{{ $webp.Height }}"
-        alt="{{ $.alt }}"
+        alt="{{ partial "scholarship-art-alt.html" (dict "slug" "satan-demons-and-angels" "id" $.id) }}"
         {{ with $.focus }}style="object-position: {{ . | safeCSS }}"{{ end }}
         loading="eager" />
     {{- end }}
@@ -47,35 +47,35 @@
 {{- $panels := slice
   (dict
   "id" "court" "box" "Who is the satan?" "split" "none"
-  "left" (dict "id" "court" "alt" "A heavenly court: a row of identical robed attendants stands before a blaze of light; one of them steps forward, pointing down toward the earth as if making a case.")
+  "left" (dict "id" "court")
   "plates" (slice
   (dict "pos" "bl" "big" "The accuser" "sub" "a member of God’s court" "refs" (slice (dict "ref" "Job 1:6" "label" "Job 1:6") (dict "ref" "Zechariah 3:1" "label" "Zech 3:1")))
   (dict "pos" "br" "big" "Not God’s enemy" "sub" "nor the devil")))
   (dict
   "id" "census" "box" "Who incites David?" "split" "vs"
-  "left" (dict "id" "census-lord" "alt" "King David on his throne orders a census from an official with a tally scroll; a shaft of light falls on the king.")
-  "right" (dict "id" "census-satan" "alt" "The same king gives the same order, but now the robed man from the court leans in to speak in his ear.")
+  "left" (dict "id" "census-lord")
+  "right" (dict "id" "census-satan")
   "plates" (slice
   (dict "pos" "bl" "big" "The LORD" "refs" (slice (dict "ref" "2 Samuel 24:1" "label" "2 Sam 24:1")))
   (dict "pos" "rbl" "big" "satan" "sub" "a name, or “an adversary”? Scholars disagree" "refs" (slice (dict "ref" "1 Chronicles 21:1" "label" "1 Chr 21:1")))))
   (dict
   "id" "apart" "box" "Later Jewish writings" "split" "none"
-  "left" (dict "id" "apart" "alt" "The same man, now in a near-black robe, stands alone on a dark height, arms folded, a crowd of shadowy spirits behind him.")
+  "left" (dict "id" "apart")
   "plates" (slice
   (dict "pos" "bl" "big" "Opposed to God" "sub" "an evil being, in the last centuries BCE")))
   (dict
   "id" "gospels" "box" "In the New Testament" "split" "none"
-  "left" (dict "id" "gospels" "alt" "Jesus speaks to a few villagers on a hillside; apart, under a dark cloud, the man in the near-black robe watches him, arms folded.")
+  "left" (dict "id" "gospels")
   "plates" (slice
   (dict "pos" "bl" "wide" true "big" "Independent" "sub" "an evil figure opposed to God" "refs" (slice (dict "ref" "Mark 3:23" "label" "Mark 3:23")))))
   (dict
   "id" "serpent" "box" "Satan in Eden?" "split" "none"
-  "left" (dict "id" "serpent" "alt" "In a garden, a snake coiled on a branch of a fruit tree talks to a woman who stands listening.")
+  "left" (dict "id" "serpent")
   "plates" (slice
   (dict "pos" "bl" "big" "A serpent" "sub" "not Satan in Genesis itself; later readers identified it with the devil" "refs" (slice (dict "ref" "Genesis 3:1" "label" "Gen 3:1")))))
   (dict
   "id" "babylon" "box" "Satan in Isaiah?" "split" "none"
-  "left" (dict "id" "babylon" "alt" "Dawn over the walls and ziggurat of an ancient Babylonian city; one bright morning star shines in the sky.")
+  "left" (dict "id" "babylon")
   "plates" (slice
   (dict "pos" "bl" "wide" true "big" "The morning star" "sub" "not in Isaiah: a taunt against a king of Babylon; “Lucifer” in the Latin" "refs" (slice (dict "ref" "Isaiah 14:12" "label" "Isa 14:12")))))
 -}}

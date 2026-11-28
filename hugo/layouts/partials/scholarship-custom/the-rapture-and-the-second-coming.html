@@ -18,7 +18,7 @@
   number varies.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/the-rapture-and-the-second-coming.yaml.
+  hugo/data/scholarship/illustrations/the-rapture-and-the-second-coming.yaml.
   Reword a plate only when the statement it comes from is re-reviewed.
   */
 -}}
@@ -31,7 +31,7 @@
         src="{{ $webp.RelPermalink }}"
         width="{{ $webp.Width }}"
         height="{{ $webp.Height }}"
-        alt="{{ $.alt }}"
+        alt="{{ partial "scholarship-art-alt.html" (dict "slug" "the-rapture-and-the-second-coming" "id" $.id) }}"
         loading="eager" />
     {{- end }}
   </div>
@@ -40,23 +40,23 @@
 {{- $panels := slice
   (dict
   "id" "caught-up" "box" "Paul’s letter"
-  "full" (dict "id" "caught-up" "alt" "Ancient townspeople in robes rise from a field into the clouds toward a radiant light shining down from the sky.")
+  "full" (dict "id" "caught-up")
   "plates" (slice
   (dict "pos" "bl" "big" "Caught up" "sub" "to meet the Lord in the air. Then back to earth with him? Scholars debate it." "ref" "1 Thessalonians 4:17")))
   (dict
   "id" "scribe" "box" "In the Latin Bible"
-  "full" (dict "id" "scribe" "alt" "A scribe in a plain robe writes on a parchment page by lamplight, an open bound book beside him.")
+  "full" (dict "id" "scribe")
   "plates" (slice
   (dict "pos" "br" "big" "Rapiemur" "sub" "the Vulgate’s word in this verse, the origin of “rapture”" "ref" "1 Thessalonians 4:17")))
   (dict
   "id" "darby" "box" "Early 1800s"
-  "full" (dict "id" "preacher" "alt" "A nineteenth-century preacher in a black frock coat points at a long wall chart of coloured periods before a seated audience.")
+  "full" (dict "id" "preacher")
   "plates" (slice
   (dict "pos" "br" "big" "John Nelson Darby" "sub" "the rapture as taught today goes back to his teaching, sources say; whether anyone anticipated it is debated")))
   (dict
   "id" "spread" "box" "How it spread"
-  "left" (dict "id" "parlour" "alt" "An early-1900s family in a parlour reads from a large study Bible with notes in its margins.")
-  "right" (dict "id" "paperback" "alt" "A teenager lies on his bed absorbed in a paperback novel, more paperbacks stacked on the nightstand.")
+  "left" (dict "id" "parlour")
+  "right" (dict "id" "paperback")
   "plates" (slice
   (dict "pos" "tl" "big" "1909" "sub" "the Scofield Reference Bible")
   (dict "pos" "tr" "big" "Bestsellers" "sub" "The Late Great Planet Earth (1970) and the Left Behind novels")))

@@ -32,7 +32,7 @@ images:
     statements: [sources]
     aspect: "4:5"
     refs: [ark]
-    alt: "Noah in the ark's open door beckons a single pair of sheep up the gangway."
+    alt: "Noah in the ark's door beckons; exactly two sheep walk up the gangway."
     prompt: >-
       The SAME old man and the SAME ark as in the reference image (same
       face, white beard, rust red robe and headcloth; same dark plank hull
@@ -49,7 +49,7 @@ images:
     statements: [sources]
     aspect: "4:5"
     refs: [ark, board-left]
-    alt: "The same scene mirrored: Noah beckons as a dense crowd of sheep streams up the gangway into the ark, too many to count."
+    alt: "The same scene: a dense crowd of sheep streams up the gangway and on out of the picture."
     prompt: >-
       The SAME old man, SAME ark and SAME door as in the second reference
       image, the scene mirrored left to right: the open door is in the
@@ -65,7 +65,7 @@ images:
     statements: [sources]
     aspect: "4:5"
     refs: [ark]
-    alt: "The ark floats on flood water under a grey sky; Noah looks out of a window."
+    alt: "The ark afloat on the flood; Noah watches from a window."
     prompt: >-
       The SAME ark as in the reference image, now afloat on wide flood
       water that reaches the horizon, waves lapping its dark hull, under a
@@ -77,7 +77,7 @@ images:
     statements: [sources]
     aspect: "4:5"
     refs: [ark, flood-left]
-    alt: "The same ark still afloat on the flood, seen from the other side; Noah leans wearily on a window sill."
+    alt: "The ark still afloat; Noah leans wearily on the window sill."
     prompt: >-
       The SAME ark and SAME old man as in the second reference image, the
       scene mirrored left to right: the ark FLOATS on deep flood water that
@@ -91,7 +91,7 @@ images:
     statements: [sources]
     aspect: "4:5"
     refs: [ark]
-    alt: "From an ark window, Noah lets a single black raven fly out over the water."
+    alt: "From an ark window, Noah lets a black raven fly out over the water."
     prompt: >-
       The SAME old man as in the reference image (same face, white beard,
       rust red robe and headcloth) leans out of one small square window in
@@ -104,7 +104,7 @@ images:
     statements: [sources]
     aspect: "4:5"
     refs: [ark, raven]
-    alt: "From the same window, Noah lets a single white dove fly out over the water."
+    alt: "From the same window, Noah lets a white dove fly out over the water."
     prompt: >-
       The SAME old man and SAME window as in the second reference image,
       the scene mirrored left to right: he leans out of the window, both
@@ -117,7 +117,7 @@ images:
     statements: [sources, ararat]
     aspect: "4:5"
     refs: [ark]
-    alt: "After the flood, Noah walks down from the ark, which rests on a mountain range; there is no altar."
+    alt: "Noah walks down from the ark, resting on the mountains; there is no altar."
     prompt: >-
       The SAME old man as in the reference image (same face, white beard,
       rust red robe and headcloth) walks calmly down a rocky slope with
@@ -130,7 +130,7 @@ images:
     statements: [sources, ararat]
     aspect: "4:5"
     refs: [ark, after-left]
-    alt: "After the flood, Noah raises his hands beside a stone altar with fire and smoke; the ark rests on the mountains behind him."
+    alt: "Noah raises his hands beside a stone altar with fire and smoke; the ark rests on the mountains behind."
     prompt: >-
       The SAME old man and SAME mountain range with the SAME ark as in the
       second reference image, the scene mirrored left to right. The old

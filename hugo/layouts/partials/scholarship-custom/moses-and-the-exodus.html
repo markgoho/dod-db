@@ -14,7 +14,7 @@
   because `sargon` says the two birth stories are parallel, not opposed.
 
   The art is generated with Gemini from
-  data/scholarship-illustrations/moses-and-the-exodus.yaml. The crowd in
+  hugo/data/scholarship/illustrations/moses-and-the-exodus.yaml. The crowd in
   panel 3 is too dense to count; its number is on the plate. Nothing found
   is drawn as a find. Only Exodus 12:37 gets a scripture tag: it is the one
   verse a drawn statement names. Reword a plate only when the statement it
@@ -37,48 +37,48 @@
       src="{{ $webp.RelPermalink }}"
       width="{{ $webp.Width }}"
       height="{{ $webp.Height }}"
-      alt="{{ $.alt }}"
+      alt="{{ partial "scholarship-art-alt.html" (dict "slug" "moses-and-the-exodus" "id" $.id) }}"
       loading="eager" />
   {{- end }}
 {{- end -}}
 {{- $panels := slice
   (dict
   "id" "birth" "box" "A baby in a basket" "split" "parallel"
-  "left" (dict "id" "basket-moses" "alt" "In the story: a baby lies in a small basket sealed with tar, floating among the reeds of an Egyptian river.")
-  "right" (dict "id" "basket-sargon" "alt" "The same kind of tarred basket with a baby drifts on a broad Mesopotamian river, a stepped temple tower on the far bank.")
+  "left" (dict "id" "basket-moses")
+  "right" (dict "id" "basket-sargon")
   "plates" (slice
   (dict "pos" "tl" "badge" "b" "big" "Moses" "sub" "set in the river in a basket")
   (dict "pos" "tr" "badge" "s" "big" "Sargon of Akkad" "sub" "c. 2300 BCE: also in a basket lined with tar, put in the river")))
   (dict
   "id" "court" "box" "In Egypt’s records?" "split" "bolt"
-  "left" (dict "id" "court" "alt" "In the story: Moses, with a staff, and Aaron stand before a pharaoh on his throne.")
-  "right" (dict "id" "records" "alt" "A present-day archaeologist searches a wall of carved Egyptian inscriptions by lantern light, frowning.")
+  "left" (dict "id" "court")
+  "right" (dict "id" "records")
   "plates" (slice
   (dict "pos" "bl" "badge" "b" "big" "Moses and Aaron" "sub" "before Pharaoh")
   (dict "pos" "tr" "badge" "s" "big" "No mention" "sub" "no text found in Egypt names Moses or Aaron")))
   (dict
   "id" "crowd" "box" "How many leave?" "split" "bolt"
-  "left" (dict "id" "crowd" "alt" "In the story: Moses, staff raised, leads a crowd out of Egypt so dense it runs off the picture.")
-  "right" (dict "id" "dig" "alt" "The same archaeologist kneels by an empty trench in the desert; her sieve holds only sand.")
+  "left" (dict "id" "crowd")
+  "right" (dict "id" "dig")
   "plates" (slice
   (dict "pos" "tl" "badge" "b" "big" "600,000 men" "sub" "leaving Egypt" "ref" "Exodus 12:37" "label" "Exod 12:37")
   (dict "pos" "tr" "badge" "s" "big" "No trace" "sub" "of a large-scale migration through Sinai")
   (dict "pos" "br" "badge" "s" "big" "Inflated" "sub" "or schematic: the count, in the sources read")))
   (dict
   "id" "sea" "box" "Which sea?" "split" "bolt"
-  "left" (dict "id" "sea-story" "alt" "In the story: Moses holds up his staff as the people cross between two towering walls of water.")
-  "right" (dict "id" "reeds" "alt" "The same archaeologist stands at the edge of a reedy marsh with an open map, unsure which water this is.")
+  "left" (dict "id" "sea-story")
+  "right" (dict "id" "reeds")
   "plates" (slice
   (dict "pos" "tl" "badge" "b" "big" "The Red Sea" "sub" "as English Bibles often call it")
   (dict "pos" "tr" "badge" "s" "big" "Sea of Reeds" "sub" "yam suph, literally; which sea is meant is uncertain")))
   (dict
   "id" "stela" "box" "Earliest mention outside the Bible"
-  "art" (dict "id" "stela" "alt" "The same archaeologist studies a tall round-topped stone slab carved with rows of Egyptian signs, pointing at one line.")
+  "art" (dict "id" "stela")
   "plates" (slice
   (dict "pos" "br" "big" "Israel" "sub" "named as a people on Pharaoh Merneptah’s stela, late 13th c. BCE. Silent on whether they came by an exodus.")))
   (dict
   "id" "debate" "box" "Did some exodus happen?"
-  "art" (dict "id" "debate" "alt" "The archaeologist leans in, hand open, arguing; across the table a second scholar shakes his head, arms crossed.")
+  "art" (dict "id" "debate")
   "plates" (slice
   (dict "pos" "br" "big" "Contested" "sub" "the sources read differ on whether any history lies behind it")))
 -}}

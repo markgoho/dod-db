@@ -1,0 +1,26 @@
+{{- /*
+  The alt text for one piece of a Scholarship Page infographic's generated
+  art, read from its manifest, hugo/data/scholarship/illustrations/<slug>.yaml
+  (the same file src/scripts/generate-scholarship-illustrations.ts draws
+  from). The manifest is the only place an image's alt is written.
+
+  Takes a dict: "slug" (the page) and "id" (the image). Fails the build when
+  either is missing from the manifests or the image has no alt, so a typo
+  never ships an empty alt.
+  */
+-}}
+{{- $manifest := index site.Data.scholarship.illustrations .slug -}}
+{{- if not $manifest -}}
+  {{- errorf "scholarship-art-alt: no manifest hugo/data/scholarship/illustrations/%s.yaml" .slug -}}
+{{- end -}}
+{{- $image := false -}}
+{{- with where $manifest.images "id" .id -}}
+  {{- $image = index . 0 -}}
+{{- end -}}
+{{- if not $image -}}
+  {{- errorf "scholarship-art-alt: no image %q in the %s manifest" .id .slug -}}
+{{- end -}}
+{{- if not $image.alt -}}
+  {{- errorf "scholarship-art-alt: image %q in the %s manifest has no alt" .id .slug -}}
+{{- end -}}
+{{- return $image.alt -}}

@@ -19,7 +19,7 @@ images:
   - id: court
     statements: [satan]
     aspect: "4:3"
-    alt: "A heavenly court: a row of identical robed attendants stands before a great blaze of light; one of them steps forward, pointing down toward the earth as if making a case."
+    alt: "A heavenly court: a row of identical robed attendants stands before a blaze of light; one of them steps forward, pointing down toward the earth as if making a case."
     prompt: >-
       A heavenly court above the clouds. On the RIGHT side of the picture a
       great blaze of golden amber light shines from an empty raised seat:
@@ -38,7 +38,7 @@ images:
   - id: census-lord
     statements: [chronicles]
     aspect: "4:5"
-    alt: "King David on his throne gives an order to a court official holding a tally scroll; a shaft of golden light falls on the king from above."
+    alt: "King David on his throne orders a census from an official with a tally scroll; a shaft of light falls on the king."
     prompt: >-
       A palace hall in ancient Israel. King David, a bearded man in his
       forties with dark curly hair, a simple gold circlet and a rust red
@@ -54,7 +54,7 @@ images:
     statements: [chronicles]
     aspect: "4:5"
     refs: [census-lord, court]
-    alt: "The same king gives the same order, but now a tall robed man stands at his shoulder, leaning in to speak in his ear."
+    alt: "The same king gives the same order, but now the robed man from the court leans in to speak in his ear."
     prompt: >-
       The SAME palace hall, the SAME King David (same face, beard, gold
       circlet and rust red robe) on the SAME plain wooden throne, pointing
@@ -72,7 +72,7 @@ images:
     statements: [devil]
     aspect: "4:3"
     refs: [court]
-    alt: "The same tall man, now in a near-black robe, stands alone on a dark rocky height with his back to a distant light, a crowd of shadowy spirits gathered behind him."
+    alt: "The same man, now in a near-black robe, stands alone on a dark height, arms folded, a crowd of shadowy spirits behind him."
     prompt: >-
       The SAME tall lean man as in the reference image (same sharp face,
       close-cropped black hair and short black beard), but now in a long
@@ -90,7 +90,7 @@ images:
     statements: [devil]
     aspect: "4:3"
     refs: [apart]
-    alt: "Jesus, in a plain off-white tunic, stands on a hillside speaking to a few listeners; across from him, apart in shadow, the same tall man in the near-black robe watches him."
+    alt: "Jesus speaks to a few villagers on a hillside; apart, under a dark cloud, the man in the near-black robe watches him, arms folded."
     prompt: >-
       A low hillside in Galilee in daylight. In the RIGHT half of the
       picture stands Jesus: a first-century Jewish man of about thirty with
@@ -110,7 +110,7 @@ images:
   - id: serpent
     statements: [serpent]
     aspect: "4:3"
-    alt: "In a lush garden, a snake coiled on a branch of a fruit tree talks to a woman who stands listening."
+    alt: "In a garden, a snake coiled on a branch of a fruit tree talks to a woman who stands listening."
     prompt: >-
       A lush ancient garden. In the RIGHT half of the picture, a fruit tree
       heavy with round fruit; coiled along one of its low branches is an
@@ -126,7 +126,7 @@ images:
   - id: babylon
     statements: [lucifer]
     aspect: "4:3"
-    alt: "Dawn over the walls and ziggurat of an ancient Babylonian city; one bright morning star shines low in the pale sky."
+    alt: "Dawn over the walls and ziggurat of an ancient Babylonian city; one bright morning star shines in the sky."
     prompt: >-
       Dawn over an ancient Babylonian city: in the RIGHT half of the
       picture, the city's high walls, gates and a stepped ziggurat in
