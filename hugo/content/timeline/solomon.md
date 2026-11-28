@@ -1,8 +1,8 @@
 ---
 title: "Reign of Solomon"
 entryKind: event
-draft: true
-sourcesRead:
+draft: false
+sourcesRead: 2026-11-28
 related: { books: [1-kings, 2-chronicles], tags: [solomon], topics: [] }
 watch: [Solomon*, historical Solomon*]
 critical:

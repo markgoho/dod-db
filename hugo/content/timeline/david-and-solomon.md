@@ -2,7 +2,7 @@
 title: "Reign of David"
 entryKind: event
 draft: false
-sourcesRead: 2026-11-25
+sourcesRead: 2026-11-28
 related:
   { books: [1-samuel, 2-samuel, 1-kings], tags: [david], topics: [david] }
 watch:
