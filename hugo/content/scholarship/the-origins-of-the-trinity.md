@@ -360,8 +360,8 @@ statements:
   - id: easter
     group: "The Council of Nicaea"
     question: "What else did the council decide?"
-    short: "It set a common date for Easter, ruled on the Melitian schism in Egypt and on the precedence of the major sees, and issued twenty disciplinary canons."
-    text: "John Bowker's dictionary says the council promulgated canons and reached decisions on the Melitian schism in Egypt, the calculation of the date of Easter and the precedence of the major Christian sees. The New Catholic Encyclopedia says it chose to celebrate Easter on the Sunday after the first full moon after the vernal equinox, as the West and Egypt did, and promulgated 20 disciplinary decrees. George Demacopoulos calls the common date for Easter one of the council's most impactful outcomes, though most scholars emphasise the Arian controversy or Constantine's role. Riemer Roukema and Christoph Heikens note that Constantine's letter to the churches reports the council's unanimous decision to celebrate Easter on the same day; Britannica's entry says the council attempted but failed to establish a uniform date for Easter. Roukema and Heikens also find no reason to hold that the council decided which early Christian books were canonical: the first testimony to such a division at Nicaea is a legendary account from the late ninth century, though they note that a few scholars allow there might be some truth in the view."
+    short: "It decreed a common date for Easter, ruled on the Melitian schism in Egypt and on the precedence of the major sees, and issued twenty disciplinary canons."
+    text: "John Bowker's dictionary says the council promulgated canons and reached decisions on the Melitian schism in Egypt, the calculation of the date of Easter and the precedence of the major Christian sees. The New Catholic Encyclopedia says it chose to celebrate Easter on the Sunday after the first full moon after the vernal equinox, as the West and Egypt did, and promulgated 20 disciplinary decrees. George Demacopoulos calls the common date for Easter one of the council's most impactful outcomes, though most scholars emphasise the Arian controversy or Constantine's role. Riemer Roukema and Christoph Heikens note that Constantine's letter to the churches reports the council's unanimous decision to celebrate Easter on the same day; Britannica's entry says the council attempted but failed to establish a uniform date for Easter. Roukema and Heikens also find no reason to hold that the council decided which early Christian books were canonical: the first testimony to such a division at Nicaea is a legendary account from the late ninth century, though they note that a few scholars agree there is or might be some truth in the view."
     cites:
       - source: ortiz-nce-nicaea
         locator: "section “Easter Question and Canons.”"
@@ -403,15 +403,15 @@ statements:
   - id: nicholas
     group: "The Council of Nicaea"
     question: "Did Saint Nicholas slap Arius at the Council of Nicaea?"
-    short: "No reliable record shows it. Little or nothing of Nicholas's life is historically attested beyond his being bishop of Myra, and even his presence at Nicaea is uncertain."
+    short: "No reliable record shows it. Nothing certain is known of his life beyond his probably having been bishop of Myra, and even his presence at Nicaea is uncertain."
     text: "Britannica's entry on Saint Nicholas says his existence is not attested by any historical document, so that nothing certain is known of his life except that he was probably bishop of Myra in the fourth century, and that he may have attended the Council of Nicaea, where he allegedly struck Arius in the face. A. G. Gibson's New Catholic Encyclopedia entry says no historically trustworthy evidence of the events of his life exists except the fact of his episcopate, and that it is legends that place him at the Council of Nicaea."
     cites:
       - source: britannica-saint-nicholas
-        locator: "opening section"
+        locator: "section “According to tradition”"
         quote: "Nicholas’s existence is not attested by any historical document, so nothing certain is known of his life except that he was probably bishop of Myra in the 4th century."
         read: 2026-11-27
       - source: britannica-saint-nicholas
-        locator: "opening section"
+        locator: "section “According to tradition”"
         quote: "He may have attended the first Council of Nicaea (325), where he allegedly struck the heretic Arius in the face."
         read: 2026-11-27
       - source: gibson-nce-nicholas

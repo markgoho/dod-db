@@ -8370,8 +8370,8 @@ britannica-first-council-of-nicaea:
   title: "First Council of Nicaea"
   series: "Encyclopaedia Britannica"
   publisher: "Encyclopaedia Britannica"
-  year: 2026
-  edition: "Online, Britannica Editors, revised by Melissa Petruzzello"
+  year: 1998
+  edition: "Online, Britannica Editors, revised by Melissa Petruzzello (first published July 20, 1998)"
   class: Reference
   kind: article
   access: "Online encyclopedia; opens in a browser, refuses scripted requests"
@@ -8384,8 +8384,8 @@ britannica-saint-nicholas:
   title: "St. Nicholas"
   series: "Encyclopaedia Britannica"
   publisher: "Encyclopaedia Britannica"
-  year: 2026
-  edition: "Online, Britannica Editors"
+  year: 1998
+  edition: "Online, Britannica Editors (first published July 20, 1998; last updated October 23, 2026)"
   class: Reference
   kind: article
   access: "Online encyclopedia; opens in a browser, refuses scripted requests"
@@ -8399,7 +8399,7 @@ gibson-nce-nicholas:
   series: "New Catholic Encyclopedia"
   publisher: null
   year: null
-  edition: null
+  edition: "2nd-edition text (bibliography to 1997)"
   class: Reference
   kind: article
   access: "Entry reproduced on Encyclopedia.com, open"
