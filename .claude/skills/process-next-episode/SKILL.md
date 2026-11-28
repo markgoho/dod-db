@@ -19,7 +19,7 @@ to:
 - a confirmed processing run through the RSS audio pipeline
 - verified segments with topic labels and summaries
 - a guest page for any new guest
-- Scholarship Page quotes added under their question (soft cap 10 per question), Timeline candidates reported for the owner to accept; subject or statement suggestions and conflicts logged in `data/scholarship-candidates.yaml`, and new-entry suggestions in issue #108
+- Scholarship Page quotes added under their question and Timeline quotes under their entry (soft cap 10 each); subject or statement suggestions and conflicts logged in `data/scholarship-candidates.yaml`, and new-entry suggestions in issue #108
 
 ## Workflow
 
@@ -110,11 +110,11 @@ Then run `bun run check:scholarship`. The file's header comment defines every fi
 
 A `subjectEpisodes` entry at 3 or more Episodes is a **promotion flag**: report it. The file order stays as it is; the owner picks.
 
-A **Timeline candidate** is about a Timeline Entry's subject or date. Note the side it `states`: `critical`, `tradition` or `both`. It goes only in the run summary; `hugo/data/timeline/triggers.yaml` and the entry's review file stay untouched until the accept flow. A quote that disagrees with an entry's date is still only a candidate: a new Episode never changes a date.
+A **Timeline candidate** is about a Timeline Entry's subject or date. Note the side it `states`: `critical`, `tradition` or `both`. It follows the same soft cap, per entry: count that `entry:` in `hugo/data/timeline/triggers.yaml`; under 10, add it through the accept flow; at 10, replace a weaker quote or discard it. A quote that disagrees with an entry's date is added like any other: a new Episode never changes a date.
 
 A dated claim about a subject no Timeline Entry covers is a **new-entry suggestion**. Report it as such and comment it on issue #108 (`gh issue comment 108`) as a Trigger Claim pointer plus the date the Speaker gives.
 
-**Accept flow.** A page candidate runs it in this run, under the cap rules above; a Timeline candidate only after the owner accepts it, in a later turn:
+**Accept flow.** Run it in this run for every page or Timeline candidate the cap rules above keep:
 
 1. Append it to `hugo/data/scholarship/triggers/<slug>.yaml`, a plain top-level list: `episode`, `speaker`, `timestamp` (`"HH:MM:SS.mmm"` from the Transcript line), `text`, and `statement` (the question's id; omit for page-level). A Timeline candidate goes to `hugo/data/timeline/triggers.yaml` instead, with `entry:` (the entry id) and `states:` added.
 2. Record it under `triggers` in `data/scholarship-reviews/<slug>.yaml` (Timeline: `data/timeline-reviews/<entry>.yaml`), keyed `<episode>@HH:MM:SS`, as `{ agent: pass|flag, owner: "", note: "" }`.
@@ -135,10 +135,7 @@ Then, for each guest, match their Selected Works against the Step 5 targets with
 
 ### 7. Report the result
 
-The owner reads only decisions. Open with "Done, nothing for you" when there are none; otherwise list just the decisions:
-
-- each Timeline candidate to accept or decline: quote, Speaker, timestamp, entry, `states`
-- a failure: the real error output, not a summary
+The owner reads only decisions. Open with "Done, nothing for you" when there are none; otherwise list just the decisions, or a failure with its real error output.
 
 Everything else (segments, guest page, quotes added, replaced or discarded, suggestions and #108 comments) lives in the commit message and files; end with "committed and pushed (sha), deploy ok".
 
