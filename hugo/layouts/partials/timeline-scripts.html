@@ -11,12 +11,6 @@
   {{ end }}
   <script src="{{ $js.RelPermalink }}" type="module"></script>
 {{ end }}
-{{/* Rows on both sides of the axis, packed (#254). */}}
-{{ $layout := resources.Get "ts/timeline-layout.ts" | js.Build (dict "targetPath" "timeline-layout.js") }}
-{{ if hugo.IsProduction }}
-  {{ $layout = $layout | resources.Minify | resources.Fingerprint }}
-{{ end }}
-<script src="{{ $layout.RelPermalink }}" type="module"></script>
 {{/* Copy-link and share buttons on each entry, and the entry's URL in the address bar. */}}
 {{ $links := resources.Get "ts/timeline-entry-links.ts" | js.Build (dict "targetPath" "timeline-entry-links.js") }}
 {{ if hugo.IsProduction }}

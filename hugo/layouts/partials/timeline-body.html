@@ -131,7 +131,7 @@
           data-pagefind-ignore
           role="list"
           aria-label="Timeline Entries and tradition dates in date order, by era">
-          {{/* Rows alternate sides across the whole axis, not per era (#254); timeline-layout.ts may repack them. */}}
+          {{/* Rows alternate sides across the whole axis, not per era (#254); where grid-lanes packs them, the browser picks each row's side (timeline.css). */}}
           {{ $row := 0 }}
           {{ range . }}
             {{ $eraClass := cond (gt (len .items) 0) "timeline-era" "timeline-era timeline-era--empty" }}

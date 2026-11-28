@@ -1,8 +1,9 @@
 /*
   Timeline (#163 §2): a vertical axis down the middle, in labelled era
   bands, with entries on both sides (#254, reversing #162's two lanes): rows
-  alternate sides, and timeline-layout.ts packs them so a row may start
-  beside the one before it. Side means nothing; a tradition card says what it
+  alternate sides, and where the browser has grid-lanes each era's rows pack
+  into two lanes, a row starting beside the one before it (below). Side means
+  nothing; a tradition card says what it
   is by its hatched, dashed look and its holder's name. Composes page-hero, panel,
   type-eyebrow, type-section-title, cloud-section, disclosure-summary,
   the quote card (tag-quote) and the Scholarship primitives (notice, block,
@@ -40,8 +41,13 @@
   font-size: var(--step--1);
 }
 
+/*
+  No size container here: inside one, Chrome restyles the whole subtree on
+  every relayout, so a card opening cost ~40 ms a frame. The breakpoints
+  below are media queries instead: under 114rem the spine is the viewport
+  less two --space-s gutters, so 47rem of viewport is about 44rem of spine.
+*/
 .timeline-spine {
-  container: timeline / inline-size;
   display: grid;
   gap: var(--space-s);
 }
@@ -123,8 +129,6 @@
 
 .timeline-axis {
   --axis-at: calc(100% * var(--timeline-axis-share));
-  /* Read by timeline-layout.ts: 1 where rows sit on both sides and may be packed. */
-  --timeline-pack: 1;
 
   padding-block-end: var(--space-l);
   position: relative;
@@ -181,31 +185,6 @@
 
 .timeline-era__entries {
   gap: var(--space-s);
-}
-
-/*
-  Packed (timeline-layout.ts): each row's top as the script works it out,
-  pulled up beside the row before it, never above it. --pack-pull is that
-  pull (zero or less); --pack-tail keeps the era's end below its tallest row.
-*/
-.timeline-entry {
-  margin-block-start: var(--pack-pull, 0px);
-}
-
-/*
-  A pulled-up row spans both sides, so its empty side lies over the card
-  packed beside it: clicks pass through the row and land only on its cards.
-*/
-.timeline-axis .timeline-entry {
-  pointer-events: none;
-}
-
-.timeline-axis .timeline-entry > * {
-  pointer-events: auto;
-}
-
-.timeline-era__entries {
-  padding-block-end: var(--pack-tail, 0px);
 }
 
 /* ---------- Entry: its cards on one side, its node on the axis ---------- */
@@ -549,15 +528,11 @@
   grid-template-columns: minmax(0, 1fr);
 }
 
-/*
-  ---------- Narrow: the axis moves to the left edge, cards stack ----------
-  Literal length: container conditions cannot read custom properties.
-*/
+/* ---------- Narrow: the axis moves to the left edge, cards stack ---------- */
 
-@container timeline (width < 44rem) {
+@media (width < 47rem) {
   .timeline-axis {
     --axis-at: calc(var(--space-m) / 2);
-    --timeline-pack: 0;
   }
 
   .timeline-era__label {
@@ -589,6 +564,104 @@
 
   .timeline-entry--moved > .timeline-entry__tradition {
     margin: 0;
+  }
+}
+
+/*
+  ---------- Packed: two lanes, laid out by the browser (#254) ----------
+  Each era's rows go into two lanes, each row into the lane that ends higher
+  (grid-lanes), so long cards on one side let the other side fill in. A row
+  is one lane wide, its cards stacked; its node and connector are drawn on
+  the axis by anchor positioning:
+  - the node sits level with its card's title, and at least a step below the
+    era's node before it (the previous --node in tree order), so the nodes
+    keep date order and stay apart;
+  - the connector runs from the axis to whichever edge of the card faces it,
+    so it needs no side class: the lane is the browser's choice.
+  Without grid-lanes or anchor-scope, rows alternate sides as the template
+  writes them (--end), and the narrow layout never packs.
+*/
+@supports (display: grid-lanes) and (anchor-scope: --card) {
+  @media (width >= 47rem) {
+    .timeline-era__entries {
+      column-gap: var(--space-xl);
+      display: grid-lanes;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      /* The nodes' and connectors' containing block: insets measure from the axis's box. */
+      position: relative;
+    }
+
+    .timeline-era__entries > .timeline-entry {
+      --node-step: calc(var(--node-size) * 2.5);
+      /* From the top of the card it marks to the node's top. */
+      --node-from-card: var(--node-at);
+
+      anchor-scope: --card;
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .timeline-era__entries > .timeline-entry > .timeline-entry__card,
+    .timeline-era__entries
+      > .timeline-entry--moved
+      > .timeline-entry__tradition {
+      anchor-name: --card;
+      grid-column: 1;
+    }
+
+    .timeline-era__entries > .timeline-entry > .timeline-entry__tradition {
+      grid-column: 1;
+      margin-inline: var(--space-s);
+    }
+
+    .timeline-era__entries
+      > .timeline-entry--moved
+      > .timeline-entry__tradition {
+      margin: 0;
+    }
+
+    .timeline-era__entries > .timeline-entry--moved {
+      --node-from-card: var(--space-xs);
+    }
+
+    /* No grid area: an absolute box in a grid takes its area as its containing block. */
+    .timeline-era__entries > .timeline-entry > .timeline-entry__node {
+      anchor-name: --node;
+      grid-area: auto;
+      inset-block-start: max(
+        calc(anchor(--card top) + var(--node-from-card)),
+        calc(anchor(--node top, calc(-1 * var(--node-step))) + var(--node-step))
+      );
+      inset-inline-start: var(--axis-at);
+      margin: 0;
+      position: absolute;
+      translate: -50% 0;
+    }
+
+    /* The connector is the row's; the moved row's diamond stays on its node. */
+    .timeline-era__entries
+      > .timeline-entry:not(.timeline-entry--moved)
+      > .timeline-entry__node::before,
+    .timeline-era__entries
+      > .timeline-entry--moved
+      > .timeline-entry__node::after {
+      display: none;
+    }
+
+    .timeline-era__entries > .timeline-entry::after {
+      border-block-start: var(--border-width-sm) solid var(--tan-900);
+      content: "";
+      inset-block-start: anchor(--node center);
+      /* The card's edge nearer the axis, on either side. */
+      inset-inline-end: min(anchor(--card left), calc(100% - var(--axis-at)));
+      inset-inline-start: min(anchor(--card right), var(--axis-at));
+      position: absolute;
+      translate: 0 -50%;
+    }
+
+    .timeline-era__entries > .timeline-entry--moved::after {
+      border-block-start-style: dashed;
+      border-color: var(--tan-500);
+    }
   }
 }
 
