@@ -535,6 +535,14 @@
   background: var(--tan-200);
 }
 
+/* Citations and "where read" notes can hold a bare archive URL. `anywhere`, not
+   `break-word`: only it lowers min-content, which sizes table columns and grid
+   tracks, so the URL wraps instead of widening the page. Not on every cell:
+   the Class badge would then break mid-word. */
+.scholarship-source td:is([data-label="Source"], [data-label="Where read"]) {
+  overflow-wrap: anywhere;
+}
+
 .scholarship-source td[data-label="Date read"] {
   color: var(--color-text-muted);
   white-space: nowrap;
