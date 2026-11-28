@@ -5,11 +5,12 @@
   from). The manifest is the only place an image's alt is written.
 
   Takes a dict: "slug" (the page) and "id" (the image). Fails the build when
-  either is missing from the manifests or the image has no alt, so a typo
-  never ships an empty alt.
+  the manifest or the image entry is missing or the alt is empty. Callers
+  sit inside `with resources.Get`, so an id with no PNG drops the picture
+  without reaching here.
   */
 -}}
-{{- $manifest := index site.Data.scholarship.illustrations .slug -}}
+{{- $manifest := index hugo.Data.scholarship.illustrations .slug -}}
 {{- if not $manifest -}}
   {{- errorf "scholarship-art-alt: no manifest hugo/data/scholarship/illustrations/%s.yaml" .slug -}}
 {{- end -}}
