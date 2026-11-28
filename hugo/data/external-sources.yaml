@@ -10595,5 +10595,187 @@ tolini-2005-prise-de-babylone:
   kind: article
   access: "Journal's PDF on achemenet.com, open (in French); the live site did not answer, read in an Internet Archive copy of the same URL"
   url: "http://web.archive.org/web/20260927110255id_/http://www.achemenet.com/pdf/arta/2005.003-Tolini.pdf"
+
+fellows-2024-interpolation:
+  author: "Richard G. Fellows"
+  title: "The Interpolation of 1 Cor. 14.34–35 and the Reversal of the Name Order of Prisca and Aquila at 1 Cor. 16.19"
+  series: "Journal for the Study of the New Testament 47.2: 179–217"
+  publisher: "Sage"
+  year: 2024
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher website, open access (CC BY-NC 4.0); read in a browser, as the site refuses scripted requests"
+  url: "https://journals.sagepub.com/doi/full/10.1177/0142064X231226165"
+  hostAuthored: false
+  tradition: null
+
+du-toit-2001-swyggebod:
+  author: "Andrie du Toit"
+  shortAuthor: "du Toit"
+  title: "Die swyggebod van 1 Korintiërs 14:34-35 weer eens onder die loep"
+  series: "HTS Teologiese Studies 57.1&2"
+  publisher: "AOSIS"
+  year: 2001
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher website, open access"
+  url: "https://hts.org.za/index.php/hts/article/download/1852/3145"
+  hostAuthored: false
+  tradition: null
+
+shively-2018-penguins:
+  author: "Elizabeth E. Shively"
+  title: "Recognizing Penguins: Audience Expectation, Cognitive Genre Theory, and the Ending of Mark's Gospel"
+  series: "Catholic Biblical Quarterly 80.2: 273–292"
+  publisher: "Catholic Biblical Association of America"
+  year: 2018
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University of St Andrews repository copy of the published version, via the Internet Archive (live repository returned 503)"
+  url: "http://web.archive.org/web/20250430120211id_/https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/18650/Shively_2017_CBQ_Penguins_FinalPublishedVersion.pdf"
+  hostAuthored: false
+  tradition: null
+
+shively-2017-rbl-lunn:
+  author: "Elizabeth E. Shively"
+  title: "Review of Nicholas P. Lunn, The Original Ending of Mark: A New Case for the Authenticity of Mark 16:9–20"
+  series: "Review of Biblical Literature"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University of St Andrews repository copy of the accepted manuscript, via the Internet Archive"
+  url: "http://web.archive.org/web/20240630224250id_/https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/17164/RBL_Lunn_Review_accepted.pdf;jsessionid=2B9CAAB2BC522C066604CF0964E13EEF?sequence=1"
+  hostAuthored: false
+  tradition: null
+
+ma-2024-john-7-53:
+  author: "Yan Ma"
+  title: "A Text-Critical Analysis of John 7:53–8:11 with a Focus on Its Stylistic Discontinuity"
+  series: "Journal of Biblical Text Research 55: 163–196"
+  publisher: "Korean Bible Society"
+  year: 2024
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher website PDF, open"
+  url: "https://www.bskorea.or.kr/data/pdf/55-07%20Yan%20Ma_A%20Text-Critical%20Analysis%20of%20John%207.53%E2%80%938.11%20with%20a%20Focus%20on%20Its%20Stylistic%20Discontinuity.pdf"
+  hostAuthored: false
+  tradition: null
+
+knust-wasserman-2020-sea:
+  author: "Jennifer Knust and Tommy Wasserman"
+  title: "The Pericope of the Adulteress (John 7:53–8:11): A New Chapter in Its Textual Transmission"
+  series: "Svensk Exegetisk Årsbok 85: 22–55"
+  publisher: "Svenska Exegetiska Sällskapet"
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher website, open access (CC BY-NC-ND)"
+  url: "https://publicera.kb.se/sea/article/download/15085/12019/27553"
+  hostAuthored: false
+  tradition: null
+
+orsini-clarysse-2012-etl:
+  author: "Pasquale Orsini and Willy Clarysse"
+  title: "Early New Testament Manuscripts and Their Dates: A Critique of Theological Palaeography"
+  series: "Ephemerides Theologicae Lovanienses 88.4: 443–474"
+  publisher: "Peeters"
+  year: 2012
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "KU Leuven repository (Lirias) copy, via the Internet Archive (the live Lirias URL returns 404)"
+  url: "http://web.archive.org/web/20160304043054id_/https://lirias.kuleuven.be/bitstream/123456789/391472/1/Ephemerides.pdf"
+  hostAuthored: false
+  tradition: null
+
+nongbri-2014-p66:
+  author: "Brent Nongbri"
+  title: "The Limits of Palaeographic Dating of Literary Papyri: Some Observations on the Date and Provenance of P.Bodmer II (P66)"
+  series: "Museum Helveticum 71: 1–35"
+  publisher: "Schwabe"
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "e-periodica (ETH Library), open, via the Internet Archive (the live site now shows a verification page)"
+  url: "http://web.archive.org/web/20250802142053id_/https://www.e-periodica.ch/cntmng?pid=mhl-001:2014:71::139"
+  hostAuthored: false
+  tradition: null
+
+nongbri-2022-sinaiticus:
+  author: "Brent Nongbri"
+  title: "The Date of Codex Sinaiticus"
+  series: "Journal of Theological Studies n.s. 73.2"
+  publisher: "Oxford University Press"
+  year: 2022
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open access (CC BY-NC); the publisher's advance-article PDF read at an Internet Archive copy (the publisher's site refuses scripted requests)"
+  url: "https://archive.org/details/the-date-of-the-codex-sinaiticus-2022"
+  hostAuthored: false
+  tradition: null
+
+kraft-2008-bmcr-skeat:
+  author: "Robert A. Kraft"
+  title: "Review of J. K. Elliott (ed.), The Collected Biblical Writings of T. C. Skeat"
+  series: "Bryn Mawr Classical Review 2008.01.47"
+  publisher: null
+  year: 2008
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access review journal, open"
+  url: "https://bmcr.brynmawr.edu/2008/2008.01.47/"
+  hostAuthored: false
+  tradition: null
+
+boettrich-2012-wibilex-tischendorf:
+  author: "Christfried Böttrich"
+  title: "Tischendorf, Constantin von"
+  series: "WiBiLex: Das wissenschaftliche Bibellexikon im Internet"
+  publisher: "Deutsche Bibelgesellschaft"
+  year: 2012
+  edition: null
+  class: Reference
+  kind: article
+  access: "Publisher website, open"
+  url: "https://www.die-bibel.de/ressourcen/wibilex/neues-testament/tischendorf-constantin-von"
+  hostAuthored: false
+  tradition: null
+
+davies-allison-1997-matthew-19-28:
+  author: "W. D. Davies and Dale C. Allison"
+  title: "A Critical and Exegetical Commentary on the Gospel According to Saint Matthew, Volume 3: Matthew 19–28"
+  series: "International Critical Commentary"
+  publisher: "T&T Clark"
+  year: 1997
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Google Books preview (p. 684 shown in full)"
+  url: "https://www.google.com/books/edition/_/ZXIV2WOTVvMC?hl=en&gbpv=1&pg=PA684"
+  hostAuthored: false
+  tradition: null
+
+van-zyl-2022-matthew-28-19:
+  author: "H. C. van Zyl"
+  shortAuthor: "Van Zyl"
+  title: "Die trinitariese formule van Matteus 28:19: Fremdkörper of gepaste afsluiting vir die Matteusevangelie?"
+  series: "Verbum et Ecclesia 43.1, a2673"
+  publisher: "AOSIS"
+  year: 2022
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher website, open access (CC BY)"
+  url: "https://verbumetecclesia.org.za/index.php/ve/article/view/2673/6097"
   hostAuthored: false
   tradition: null
