@@ -4519,8 +4519,8 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 127,
   },
   {
-    canonical: "Hugo Mendez",
-    variations: ["Mendez"],
+    canonical: "Hugo Méndez",
+    variations: ["Hugo Mendez", "Mendez", "Méndez"],
     category: "person",
     status: "rejected",
     addedInEpisode: 128,
