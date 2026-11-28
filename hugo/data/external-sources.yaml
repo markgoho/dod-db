@@ -4083,6 +4083,20 @@ silverman-2011-iranian-influence:
   hostAuthored: false
   tradition: null
 
+evans-2004-1-chronicles-21:
+  author: "Paul Evans"
+  title: "Divine Intermediaries in 1 Chronicles 21: An Overlooked Aspect of the Chronicler’s Theology"
+  series: "Biblica 85 (2004), 545–558"
+  publisher: "Pontifical Biblical Institute"
+  year: 2004
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Full text open on bsw.org, one HTML page per printed page (article-p<page>.html); the server double-encodes punctuation and the Hebrew, so curly quotes, dashes and Hebrew words arrive garbled in scripted copies"
+  url: "https://www.bsw.org/biblica/vol-85-2004/divine-intermediaries-in-1-chronicles-21-an-overlooked-aspect-of-the-chronicler-s-theology/190/article-p545.html"
+  hostAuthored: false
+  tradition: null
+
 quick-2018-helel:
   author: "Laura Quick"
   title: "Hêlēl ben-Šaḥar and the Chthonic Sun: A New Suggestion for the Mythological Background of Isa 14:12-15"
@@ -4164,6 +4178,62 @@ nabre-wisdom-2-notes:
   kind: study-bible
   access: "Church-published study Bible, open"
   url: "https://bible.usccb.org/bible/wisdom/2"
+  hostAuthored: false
+  tradition: null
+
+nabre-zechariah-3-notes:
+  author: null
+  title: "Notes to Zechariah 3"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/zechariah/3"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-chronicles-21-notes:
+  author: null
+  title: "Notes to 1 Chronicles 21"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1chronicles/21"
+  hostAuthored: false
+  tradition: null
+
+nabre-isaiah-14-notes:
+  author: null
+  title: "Notes to Isaiah 14"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/isaiah/14"
+  hostAuthored: false
+  tradition: null
+
+nabre-isaiah-34-notes:
+  author: null
+  title: "Notes to Isaiah 34"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; read in an Internet Archive snapshot, as the live site refuses scripted requests"
+  url: "https://bible.usccb.org/bible/isaiah/34"
   hostAuthored: false
   tradition: null
 

@@ -9,6 +9,7 @@
 # Flags for the second pass: (1) Many Reference citations are Bible Odyssey pages (Porter, Dolansky, Anderson, Proctor, Boling and Proctor, Angel, Coblentz Bautch, Sommer, Twelftree, Feldman, Merrill Willis): independent authors, one platform. (2) Several EJ and NCE entries carry pre-1996 text; each is attributed and none is the only support for a short. (3) Lucifer: “some church fathers” rests on Bowker alone among modern sources (Bowker's page has no year); Quick (2018) carries the window. (4) Persia: Jonker's “Scholars are in agreement” is reported and called contested; check that wording. (5) Exorcism short: “most historical Jesus scholars agree” rests on Craffert's sentence; Twelftree and Proctor back the Gospel facts. (6) chronicles short says “some … others”; check it does not count scholars. (7) Trigger 28@00:09:46's turn goes on to the Host's own interpolation argument; the page reports interpolation as one reading among several. (8) Boling and Proctor and Proctor share an author; counted once for any rule.
 # Second pass (independent agent, 2026-11-26, #93 delegation): re-fetched every source with curl into its own scratch folder (NABRE Job 1, Wisdom 2 and Genesis 3 via Internet Archive snapshots of the same URLs: bible.usccb.org bot-checks curl); 103/103 quotes found verbatim after normalising whitespace, quotes and dashes, Lesses only at a corrected URL; every Trigger Claim re-read at timestamp and speaker with about two minutes either side. Changed: shorts of chronicles (“first use” → “Satan used as a proper name”), persia (“Persian dualism”; the “others” half narrowed to the dating point Collins and Silverman share), demons (rewritten to Proctor and Hartman: “Rarely … relatively little … insignificant role in its older books”; Lilith not disputed per Lesses; Azazel and shedim left to the text), exorcism (Craffert-only “most … agree” and “disagree about what” moved out; short scoped to the Gospels, Twelftree and Proctor). Texts: chronicles (“primarily”; “of 2 Samuel 24” not in EJ), persia (Jonker's “scholars are in agreement” and the page's “contested” clause dropped per #80; Silverman 2014 sentence cut), serpent (Dolansky's “not the Eden serpent” not in her words), names (EJ's “only” attaches to personalities; Piras clause cut; Gutmann reported, not as an explanation of names), watchers (EJ's “none of these ideas” scope). Cut to uncited: persia/4 (Silverman 2014 n. 3: the article argues for Persian influence; persia/5–7 renumbered 4–6) and names/8 (Piras: not about names). Triggers removed: 28@00:24:30 (sets named angels against the Hebrew Bible, contra names; conflict to log) and 84@00:12:26 (drops the next-line hedge “According to one narrative”). Locators corrected: chronicles/1–2, devil/6–7, persia/5 (was 6), lucifer/3–5, angels/3–4, angel-of-the-lord/4–6, names/4, names/6–7, watchers/8. Registry: lesses-eor-lilith url corrected. Counts after: 14 statements, 101 citations, 17 Trigger Claims. Flags for the lead: (a) log 28@00:24:30 as a conflict in data/scholarship-candidates.yaml; (b) the three NABRE notes were read only in Internet Archive snapshots (live pages bot-checked, not dead); (c) lesses-eor-lilith url changed in the shared registry; (d) silverman-2014-zechariah-3 and piras-eor-angels are now uncited by any page, like dewolf-parks-bo-angels-monsters, fallon-nce-uriel and caciola-eor-exorcism added in cd9a57e; (e) lucifer's “some church fathers” still rests on Bowker alone (kept as an uncontested fact about ancient readers); (f) Bible Odyssey carries most Reference citations (first-pass flag 1), unchanged.
 # Publish 2026-11-26 (lead agent, on the second pass's flags): (1) Trigger 28@00:24:30, removed by the second pass, logged as a conflict with names in data/scholarship-candidates.yaml. (2) NABRE Job 1, Wisdom 2 and Genesis 3 read in Internet Archive snapshots by the second pass and live by the first: kept, URLs unchanged (pages bot-check curl, not dead). (3) lesses-eor-lilith URL correction kept. (4) Registry entries cited by no page removed: dewolf-parks-bo-angels-monsters, fallon-nce-uriel, caciola-eor-exorcism (never cited), silverman-2014-zechariah-3 and piras-eor-angels (moved to uncited by the second pass; their passages stay recorded there). (5) Lucifer: the short's clause on church fathers rested on Bowker alone among modern sources; cut from the short, kept in the text attributed to Bowker. (6) Bible Odyssey concentration accepted: independent authors. Publish rule recomputed: 14 statements; core satan cites HarperCollins (Powell, ed.), Porter, Hayes, the NABRE, Dolansky and the Encyclopaedia Judaica, none Host-authored: met.
+# #238 first pass 2026-11-27 (agent, partial re-review per #93: the changed statements' own new citations get the full procedure; review and sourcesRead stay 2026-11-26, the new cites carry read 2026-11-27): the NABRE notes the first pass could not open were read in Internet Archive snapshots of the same URLs and every quote script-matched (whitespace, quotes and dashes normalised) on the saved pages. Added: satan/11 (Zec 3:1 note; text only), chronicles/9 (1 Chr 21:1 note, “A satan”) and chronicles/10–14 (Paul Evans, Biblica 2004, open on bsw.org; text only, attributed), lucifer/6–8 (Isa 14 notes), demons/8 (Isa 34:14 note; text only). Short changed: lucifer regains the church-fathers clause, now on Bowker and the NABRE, worded as Bowker's weaker “some”. Other shorts unchanged. Closed as uncited: Rev 12:9–10 notes (1986 NT revision, outside the window), Deut 32 (no note on v. 17), Lev 16:8, 17:7 and Isa 13:21 notes (unhedged on Azazel, as HarperCollins), cherubim and seraphim (no source states the field; re-read and new passages recorded). Closed leads: Stokes, Reed, Papaioannou (no open copy; tries recorded in leads). Counts after: 14 statements, 112 citations, 17 Trigger Claims. Flags for the second pass: (1) Evans's page text is double-encoded; quotes avoid the garbled characters, so chronicles/11–12 begin or end mid-sentence. (2) lucifer short: check “some church fathers” is no stronger than either source. (3) chronicles text reports NABRE's “no longer attributed directly to God” beside Evans's contrary summary; check both are attributed and the short's “Scholars disagree” still holds.
 review: 2026-11-26
 delegation:
   by: owner
@@ -76,6 +77,12 @@ citations:
       owner: "",
       note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
+  satan/11:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: NABRE note on Zec 3:1 read in the Internet Archive snapshot web.archive.org/web/20260314142954/https://bible.usccb.org/bible/zechariah/3 (live page bot-checks scripts); quote matched verbatim (whitespace, quotes and dashes normalised) on the saved page; surrounding notes read. Same source series as satan/7 (no new author). Supports the text clause on Zechariah 3:1 only; question and short unchanged.",
+    }
   chronicles/1:
     {
       agent: "pass",
@@ -123,6 +130,42 @@ citations:
       agent: "pass",
       owner: "",
       note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. NCE text with a pre-1966 bibliography; attributed by name as one reading. Second pass 2026-11-26: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
+    }
+  chronicles/9:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: NABRE note on 1 Chr 21:1 read in the Internet Archive snapshot web.archive.org/web/20260421112731/https://bible.usccb.org/bible/1chronicles/21; quote matched verbatim on the saved page; the verse there reads “A satan * rose up against Israel”. Backs the common-noun half of the short beside Geyser-Fouché and Chukwuka; its “evil was no longer attributed directly to God” is reported in the text, against Evans (chronicles/14) and Geyser-Fouché and Chukwuka.",
+    }
+  chronicles/10:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: Evans, Biblica 85 (2004), p. 545, read on bsw.org (page served with double-encoded punctuation and Hebrew; quote chosen from clean text) and matched verbatim. Opening section; the next sentences report that the majority of commentators in the past took the word as a proper name (not quoted: the Hebrew is garbled in the source).",
+    }
+  chronicles/11:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: Evans p. 553, section 2 “Satan in Place of Yahweh”; matched verbatim. The subject of the sentence (the word without the article) is garbled Hebrew in the source; the clause quoted is clean. Evans reads the anarthrous satan as a proper name, contrasted with the titled “the satan” of Zechariah 3 and Job 1–2.",
+    }
+  chronicles/12:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: Evans p. 555, section 2 close; matched verbatim (the sentence begins “In a similar manner, Ch replaces the original narrative’s”, garbled apostrophe in the source, so quoted from “account”). Evans: the Chronicler replaces God’s direct incitement with a heavenly intermediary.",
+    }
+  chronicles/13:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: Evans p. 554; matched verbatim. Context: if the Chronicler equated his satan with Job’s, he would not have considered him God’s archenemy but God’s servant.",
+    }
+  chronicles/14:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: Evans summary, p. 558 (same text heads every page as the abstract); matched verbatim. The summary also says the paper “challenges current scholarly opinion” on the Chronicler’s belief in divine intermediaries, so Evans is attributed in the text, not used for the short.",
     }
   devil/1:
     {
@@ -304,6 +347,24 @@ citations:
       owner: "",
       note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; quote matched verbatim as the last sentence before the heading “Who or What is hêlēl ben-šaḥar?”, p. 12: locator corrected. Verified.",
     }
+  lucifer/6:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: NABRE note on Isa 14:4–21 read in the Internet Archive snapshot web.archive.org/web/20260425191210/https://bible.usccb.org/bible/isaiah/14; matched verbatim. Backs the short’s “framed as a taunt against a king of Babylon” beside Quick (lucifer/2).",
+    }
+  lucifer/7:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: NABRE note on Isa 14:12, same snapshot; matched verbatim. The second modern source (NABRE OT 2011) for the church-fathers clause beside Bowker, so the clause returns to the short, worded as Bowker’s “some of the fathers” (“some church fathers”), the weaker of the two.",
+    }
+  lucifer/8:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: NABRE note on Isa 14:13–15, same snapshot; matched verbatim. Reported in the text only.",
+    }
   angels/1:
     {
       agent: "pass",
@@ -465,6 +526,12 @@ citations:
       agent: "pass",
       owner: "",
       note: "First pass 2026-11-26: matched against fetched text; surrounding passage read. Second pass 2026-11-26: re-fetched; verified. Azazel rests on Feldman alone, so it leaves the short and stays in the text, attributed.",
+    }
+  demons/8:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: NABRE note on Isa 34:14 read in the Internet Archive snapshot web.archive.org/web/20260425191302/https://bible.usccb.org/bible/isaiah/34; matched verbatim. Second source beside Lesses for the lilith of Isa 34:14 as a demon; text only, short unchanged.",
     }
   daimon/1:
     {
@@ -730,19 +797,19 @@ rules:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: 14 statements. Core satan cites HarperCollins (Powell, ed., Reference, 2009), Porter (Bible Odyssey, Reference, 2022), Hayes l20 (Reference, 2006), NABRE Job 1 notes (Reference, 2011, no author), Dolansky (Reference) and Encyclopaedia Judaica (Reference, older text): at least five independent authors, none Host-authored. Rule met. Second pass 2026-11-26: 14 statements, 101 citations, 17 Trigger Claims after the pass. Core (satan) unchanged and passes: HarperCollins, Porter, Hayes, NABRE Job 1 notes, Dolansky and EJ, at least five independent authors, two or more Reference within the window, none Host-authored. Rule met.",
+      note: "First pass 2026-11-26: 14 statements. Core satan cites HarperCollins (Powell, ed., Reference, 2009), Porter (Bible Odyssey, Reference, 2022), Hayes l20 (Reference, 2006), NABRE Job 1 notes (Reference, 2011, no author), Dolansky (Reference) and Encyclopaedia Judaica (Reference, older text): at least five independent authors, none Host-authored. Rule met. Second pass 2026-11-26: 14 statements, 101 citations, 17 Trigger Claims after the pass. Core (satan) unchanged and passes: HarperCollins, Porter, Hayes, NABRE Job 1 notes, Dolansky and EJ, at least five independent authors, two or more Reference within the window, none Host-authored. Rule met. #238 first pass 2026-11-27: core satan gains the NABRE Zec 3:1 note (same NABRE author as satan/7); 14 statements; rule still met.",
     }
   consensus-wording:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: “consensus” not used. “most historical Jesus scholars agree” (exorcism short) is Craffert's own sentence, quoted. “Scholars are in agreement” (Jonker) is attributed and called contested because Collins and Silverman disagree (#80). “almost universally” (Quick), “It is thought by biblical scholars” (Dolansky), “Many scholars” (Coblentz Bautch), “most common account” (Proctor) are attributed. Shorts saying “scholars say” rest on two or more authors stating it (#133). Second pass 2026-11-26: exorcism short no longer carries Craffert's “most historical Jesus scholars agree” (one author, #133); the sentence stays in the text, attributed. persia text no longer relays Jonker's “scholars are in agreement” nor adds the page's own “contested” clause (#80: call it contested, drop the word); the short's “Scholars disagree” rests on Collins's “remains controversial” and Silverman against Jonker. demons short no longer says “Few” (Hillers: “numerous small traces”). Remaining “almost universally” (Quick), “It is thought by biblical scholars” (Dolansky), “Many scholars” (Coblentz Bautch), “most common account” (Proctor), “Some scholars … Others” (EJ Bamberger; Geyser-Fouché and Chukwuka) are attributed in the text. Pass.",
+      note: "First pass 2026-11-26: “consensus” not used. “most historical Jesus scholars agree” (exorcism short) is Craffert's own sentence, quoted. “Scholars are in agreement” (Jonker) is attributed and called contested because Collins and Silverman disagree (#80). “almost universally” (Quick), “It is thought by biblical scholars” (Dolansky), “Many scholars” (Coblentz Bautch), “most common account” (Proctor) are attributed. Shorts saying “scholars say” rest on two or more authors stating it (#133). Second pass 2026-11-26: exorcism short no longer carries Craffert's “most historical Jesus scholars agree” (one author, #133); the sentence stays in the text, attributed. persia text no longer relays Jonker's “scholars are in agreement” nor adds the page's own “contested” clause (#80: call it contested, drop the word); the short's “Scholars disagree” rests on Collins's “remains controversial” and Silverman against Jonker. demons short no longer says “Few” (Hillers: “numerous small traces”). Remaining “almost universally” (Quick), “It is thought by biblical scholars” (Dolansky), “Many scholars” (Coblentz Bautch), “most common account” (Proctor), “Some scholars … Others” (EJ Bamberger; Geyser-Fouché and Chukwuka) are attributed in the text. Pass. #238 first pass 2026-11-27: no new “consensus” or “most scholars” wording on the page. Evans p. 545’s “majority of commentators” and p. 546’s “against the consensus” are not used (uncited). lucifer short’s “some church fathers” is a fact about ancient readers, now on Bowker and the NABRE.",
     }
   dissent-attributed:
     {
       agent: "pass",
       owner: "",
-      note: "First pass 2026-11-26: Geyser-Fouché and Chukwuka vs Porter, EJ and Barnett on 1 Chr 21:1; EJ Satan's “barely personalized” vs the others on the Apocrypha; Collins, Silverman vs Stephens, Jonker, Hayes on Persian influence; Dolansky on Revelation's serpent vs NABRE; Quick's dissent on Venus; the angel-of-the-Lord readings (Fallon, White, Bamberger, Sommer); causes of angel names (Sommer, Piras, Gutmann); Angel vs Boling and Proctor on dating; all named. Second pass 2026-11-26: re-checked; persia's Silverman 2014 sentence cut (persia/4 moved to uncited) and names' Piras explanation cut (names/8 moved to uncited); remaining splits all named. Pass.",
+      note: "First pass 2026-11-26: Geyser-Fouché and Chukwuka vs Porter, EJ and Barnett on 1 Chr 21:1; EJ Satan's “barely personalized” vs the others on the Apocrypha; Collins, Silverman vs Stephens, Jonker, Hayes on Persian influence; Dolansky on Revelation's serpent vs NABRE; Quick's dissent on Venus; the angel-of-the-Lord readings (Fallon, White, Bamberger, Sommer); causes of angel names (Sommer, Piras, Gutmann); Angel vs Boling and Proctor on dating; all named. Second pass 2026-11-26: re-checked; persia's Silverman 2014 sentence cut (persia/4 moved to uncited) and names' Piras explanation cut (names/8 moved to uncited); remaining splits all named. Pass. #238 first pass 2026-11-27: chronicles adds NABRE (common noun, evil no longer attributed directly to God) and Evans (proper name, heavenly intermediary, no need to remove evil from God), each named in the text.",
     }
   tradition-named:
     {
@@ -889,6 +956,36 @@ sources:
       owner: "",
       note: "First pass 2026-11-26: Scholarly; Vetus Testamentum 68.1 (2018); author's accepted manuscript on ORA, metadata from the ORA record. Second pass 2026-11-26: re-fetched; class, year and author re-checked against the fetched page; pass.",
     }
+  nabre-zechariah-3-notes:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: Reference (NABRE, OT revision 2011, inside the window). Live page bot-checks scripts; read in the Internet Archive snapshot web.archive.org/web/20260314142954/. Registry url is the live page, as for the other NABRE notes.",
+    }
+  nabre-1-chronicles-21-notes:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: Reference (NABRE, OT revision 2011). Read in the Internet Archive snapshot web.archive.org/web/20260421112731/.",
+    }
+  nabre-isaiah-14-notes:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: Reference (NABRE, OT revision 2011). Read in the Internet Archive snapshot web.archive.org/web/20260425191210/.",
+    }
+  nabre-isaiah-34-notes:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: Reference (NABRE, OT revision 2011). Read in the Internet Archive snapshot web.archive.org/web/20260425191302/.",
+    }
+  evans-2004-1-chronicles-21:
+    {
+      agent: "pass",
+      owner: "",
+      note: "#238 first pass 2026-11-27: Scholarly; Paul Evans, Biblica 85 (2004) 545–558, peer-reviewed journal, inside the window; full text open on bsw.org, one page per printed page, all 14 pages fetched. Not Host-authored. Found while searching for the Stokes lead; it is not the Stokes reading (Evans takes satan as a proper name).",
+    }
   sommer-bo-angels-hebrew-bible:
     {
       agent: "pass",
@@ -1029,18 +1126,18 @@ sources:
     }
 leads:
   - "Peggy L. Day, An Adversary in Heaven: śāṭān in the Hebrew Bible (1988): standard monograph; not public."
-  - "Ryan E. Stokes, “The Devil Made David Do It … or Did He?”, JBL 128 (2009): satan in 1 Chr 21:1 as a heavenly emissary of God, not a name; known only through Chukwuka's 2020 thesis; paywalled."
+  - "Ryan E. Stokes, “The Devil Made David Do It … or Did He?”, JBL 128 (2009): satan in 1 Chr 21:1 as a heavenly emissary of God, not a name; known only through Chukwuka's 2020 thesis. Closed (#238, 2026-11-27): DOI 10.2307/25610168 (Crossref); JSTOR only, OpenAlex reports it closed with no repository copy; the Internet Archive holds only the JSTOR landing page; no author or repository copy found by search. JSTOR's free reading needs an account, so not tried. Evans, Biblica 2004 (cited at chronicles/10–14) is open but reads satan as a proper name, so it does not stand in for Stokes."
   - "Sara Japhet, I & II Chronicles (OTL, 1993), on 1 Chr 21:1: via Chukwuka's thesis only."
   - "Chad T. Pierce, “Satan and Related Figures”, Eerdmans Dictionary of Early Judaism (2010): read only as quoted in Jonker 2017."
   - "C. Breytenbach and P. L. Day, “Satan”, DDD (2nd ed.): cited by Jonker and Silverman; not public."
-  - "Annette Yoshiko Reed, “When did Daimones become Demons?”, HTR 116.3 (2023): Septuagint daimonia; abstract only (paywalled). Reed, Fallen Angels and the History of Judaism and Christianity (CUP 2005): not public."
+  - "Annette Yoshiko Reed, “When did Daimones become Demons?”, HTR 116.3 (2023): Septuagint daimonia; abstract only. Closed (#238, 2026-11-27): DOI 10.1017/S0017816023000196; the Cambridge page offers “Get access” only and its PDF link returns the access page; OpenAlex reports it closed with no repository copy; no author copy found by search. Reed, Fallen Angels and the History of Judaism and Christianity (CUP 2005): not public."
   - "Archie T. Wright, The Origin of Evil Spirits (2005/2015); Loren Stuckenbruck on the demonic in the Scrolls: not public."
-  - "Kim Papaioannou, “The sin of the angels in 2 Peter 2:4 and Jude 6”, JBL (2021): abstract dissents from the Watchers link; full text paywalled."
+  - "Kim Papaioannou, “The sin of the angels in 2 Peter 2:4 and Jude 6”, JBL 140.2 (2021) 391–408: abstract dissents from the Watchers link. Closed (#238, 2026-11-27): DOI 10.1353/jbl.2021.0019; Project MUSE (Internet Archive snapshot too) shows the abstract with purchase options only; the author's Andrews University repository record says “This document is currently not available here”; OpenAlex reports it closed. An abstract is not the passage, so it is not cited."
   - "J. Doedens, The Sons of God in Genesis 6:1–4 (Brill 2019): Sethite reading dated to Julius Africanus; snippet only."
   - "Saul M. Olyan, A Thousand Thousands Served Him (1993), on angel names: cited by White 1999; not public."
   - "S. A. Meier, “Angel of Yahweh”, DDD; G. von Rad and C. A. Newsom on the angel of the Lord: read only as quoted in NCE and White."
+  - "C. Breytenbach and P. L. Day, DDD “Satan” (1995): “The majority of scholars … understand śāṭān to be the proper name Satan” in 1 Chr 21:1; read only as quoted in Evans 2004, p. 545 n. 3 (#238)."
   - "Michael S. Heiser, “The Mythological Provenance of Isa. XIV 12-15”, VT 51 (2001): 403 on both hosts."
-  - "NABRE notes on Zechariah 3, 1 Chronicles 21, Isaiah 14:12, Revelation 12, Deut 32:17, Isa 34:14 and Lev 16:8: bible.usccb.org served a bot check to three of four research agents."
   - "Britannica “Satan”, “Lucifer”, “angel”, “demon”, “Ahriman”: 403 to curl."
   - "Graham Twelftree, Jesus the Exorcist (1993); J. P. Meier, A Marginal Jew vol. 2: not public. Marcus Borg's “virtually indisputable that Jesus was a healer and exorcist”: snippet only."
   - "Paul Hanson, Dawn of Apocalyptic (1979), and James Barr, JAAR 53 (1985), against Persian influence: read only as quoted in Jonker and Silverman."
@@ -1069,5 +1166,10 @@ uncited:
   - "Encyclopedia.com juvenile and occult entries (U*X*L, Encyclopedia of Occultism and Parapsychology, Gale): read; excluded classes."
   - "Jason M. Silverman, JHS 14 (2014), p. 2 n. 3: “This is the form of influence typically rejected as well”: read; second pass 2026-11-26 moved from persia/4. The article itself argues for Persian influence on the formation of Satan from Achaemenid administration (p. 2); citing only the note set Silverman on the sceptical side."
   - "Andrea Piras, “Angels”, Encyclopedia of Religion (2005): “The history of post-exile Judaism contains interesting cultural adaptations from Persian angelology.”: read; second pass 2026-11-26 moved from names/8. The sentence is about angelology generally, not about angels getting names."
+  - "#238 (2026-11-27): NABRE notes on Revelation 12:9 (“The ancient serpent: who seduced Eve”) and 12:10, read in the Internet Archive snapshot web.archive.org/web/20261015000056/https://bible.usccb.org/bible/revelation/12: not cited. They are the 1986 New Testament revision, outside the 30-year window for what scholars hold (#86); the Genesis 3:15 note (serpent/5) already gives the Christian identification, citing Rev 12:9."
+  - "#238 (2026-11-27): NABRE Deuteronomy 32, read in the Internet Archive snapshot web.archive.org/web/20260425191246/https://bible.usccb.org/bible/deuteronomy/32: there is no note on 32:17 (the shedim verse); the 32:8 note on the “sons of God” is not about demons. Nothing to cite; the lead is closed."
+  - "#238 (2026-11-27): NABRE notes on Leviticus 16:8 (“Azazel: a name for a demon (meaning something like “angry/fierce god”)”), Leviticus 17:7 (“Like the demon Azazel”) and Isaiah 13:21 (satyrs “in the popular mind, demons of goatlike form”), read in Internet Archive snapshots (Lev 16: web.archive.org/web/20260220185313/; Lev 17: 20260508110227; Isa 13: 20260412163055): not cited, unhedged where Feldman (demons/7) calls Azazel enigmatic, the same reason as HarperCollins “Azazel”."
+  - "#238 (2026-11-27), cherubim and seraphim, re-read: NCE “Cherubim” (Fallon: “Nor were cherubim thought to be angels, i.e., God's messengers”; later identified with God's heavenly courtiers as postexilic angelology developed) and “Seraphim” (“Unwarrantedly, some have associated seraphim with the saraph (burning) serpents”); Sommer, Bible Odyssey “Angels in the Hebrew Bible” (seraphs as “flying heavenly snakes” and kerubs among the beings biblical authors speak of besides mal'akh) and “Seraphs” (the image of the seraph as a snake probably from Egyptian art); EJ “Seraph” (Fishbane): Isaiah 6's seraphim “must be distinguished” from the seraph-snakes, “composite semidivine beings”, so Fishbane does not hold the serpent reading, as #238's summary had it. Newly read: HarperCollins (Bible Odyssey) “cherub” (“an unnatural, composite being … always connected with the deity”) and “seraphim” (“attendants or guardians before the divine throne analogous to the cherubim”); NABRE notes on Isa 6:2 (seraphim “used adjectivally of the cherubim, who are not serpent-like”), Isa 6:1, Exod 25:18–20, Ezek 1:5 (cherubim “known from Assyrian religion as minor guardian deities”), Num 21:6 and Isa 14:29 (winged cobra), via Internet Archive snapshots. No source read states where the field stands on either question, and one bounded search found none, so no statement is made and the #238 item is closed: the sources set the terms differently (angel as messenger vs heavenly being), and on seraphs as serpents Sommer alone of the authors read says yes."
+  - "#238 (2026-11-27): Evans, Biblica 85 (2004), pp. 545–547: in the past “the majority of commentators” took satan in 1 Chr 21:1 as a proper name, and Japhet “argued against the consensus”; read, not cited: the sentences carry the Hebrew word in the source's garbled encoding, and the majority claim rests on Breytenbach and Day (DDD), a lead."
   - "Trigger Claim removed 2026-11-26 (second pass): Ep 28, Dan McClellan, 00:24:30.320: “So New Testament angels, very different from Hebrew Bible angels. And they have names.” As trimmed it sets named angels against the Hebrew Bible, against the names statement (Gabriel and Michael named in Daniel); per the 2026-11-25 rule it is not attached. Logging it as a conflict in data/scholarship-candidates.yaml is left to the lead agent."
   - "Trigger Claim removed 2026-11-26 (second pass): Ep 84, Dan McClellan, 00:12:26.090: “… the spirits of the deceased Nephilim are the evil spirits that then become the demons.” The trimmed text drops the hedge spoken next at 00:12:42 (“According to one narrative, there are a bunch of different narratives”); 28@00:48:16 (“one kind of origin story”) keeps the subject with its hedge."

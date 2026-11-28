@@ -27,7 +27,7 @@ statements:
     group: "Satan in the Hebrew Bible"
     question: "Is Satan God's enemy in the Hebrew Bible?"
     short: "No, scholars say. The Hebrew word satan means adversary or accuser, and “the satan” of Job and Zechariah is a member of God's court, not God's enemy or the devil."
-    text: "The HarperCollins Bible Dictionary says satan is a Hebrew word whose literal meaning is “adversary”, and that the figure of Satan appears only three times in the Old Testament, in Job 1–2, Zechariah 3:1–2 and 1 Chronicles 21:1. In the first two, it says, he is a member of God's court whose duty is to accuse human beings before God, and is not presented as an enemy of God or as the leader of the demonic forces of evil. Adam Porter's Bible Odyssey article says that in Job 1–2 the noun has the definite article, “the satan”, and should be translated as a title, “the accuser”, and that the accuser is not responsible for evil in the Hebrew Bible, which generally attributes both good and evil to God. Christine Hayes's Yale lectures call the satan of Job a member of the divine council who acts as a kind of prosecuting attorney, and say he is certainly not the devil: there is no such notion in the Hebrew Bible. The New American Bible's note on Job 1:6 calls the satan a member of the heavenly court, “the accuser”, whom later biblical traditions develop as the devil. Shawna Dolansky's Bible Odyssey talk says “the satan” is a job title, not a proper name. The Encyclopaedia Judaica says the noun is applied to human adversaries, as in 1 Samuel 29:4 and 1 Kings 11:14, and that the angel sent to obstruct Balaam in Numbers 22 was chosen for the occasion, as a satan."
+    text: "The HarperCollins Bible Dictionary says satan is a Hebrew word whose literal meaning is “adversary”, and that the figure of Satan appears only three times in the Old Testament, in Job 1–2, Zechariah 3:1–2 and 1 Chronicles 21:1. In the first two, it says, he is a member of God's court whose duty is to accuse human beings before God, and is not presented as an enemy of God or as the leader of the demonic forces of evil. Adam Porter's Bible Odyssey article says that in Job 1–2 the noun has the definite article, “the satan”, and should be translated as a title, “the accuser”, and that the accuser is not responsible for evil in the Hebrew Bible, which generally attributes both good and evil to God. Christine Hayes's Yale lectures call the satan of Job a member of the divine council who acts as a kind of prosecuting attorney, and say he is certainly not the devil: there is no such notion in the Hebrew Bible. The New American Bible's note on Job 1:6 calls the satan a member of the heavenly court, “the accuser”, whom later biblical traditions develop as the devil, and its note on Zechariah 3:1 calls the adversary there the prosecuting attorney, a figure in the Lord's heavenly courtroom, whom later tradition understands to be Satan. Shawna Dolansky's Bible Odyssey talk says “the satan” is a job title, not a proper name. The Encyclopaedia Judaica says the noun is applied to human adversaries, as in 1 Samuel 29:4 and 1 Kings 11:14, and that the angel sent to obstruct Balaam in Numbers 22 was chosen for the occasion, as a satan."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/satan/"
@@ -71,11 +71,15 @@ statements:
         locator: "opening paragraph"
         quote: "The angel who was sent to obstruct Balaam (Num. 22:32) was evidently chosen ad hoc, as a satan"
         read: 2026-11-26
+      - source: nabre-zechariah-3-notes
+        locator: "note on 3:1"
+        quote: "Adversary: Hebrew satan, here, the prosecuting attorney, a figure in the Lord’s heavenly courtroom. Cf. Jb 1:6–2:7. Later tradition understands this figure to be Satan."
+        read: 2026-11-27
   - id: chronicles
     group: "Satan in the Hebrew Bible"
     question: "Is “Satan” a name in 1 Chronicles 21:1?"
     short: "Scholars disagree. The verse has satan incite David's census where 2 Samuel 24:1 has the Lord; some read it as Satan used as a proper name, others as a common noun for an adversary."
-    text: "Ananda Geyser-Fouché and Ebele Chukwuka's article in HTS Teologiese Studies calls 1 Chronicles 21 a much-debated text, primarily because of the presence of Satan or satan. It reports that some scholars see the figure as an attempt to remove evil from Yahweh, and that English translations follow a long tradition of reading Satan as a proper noun; the authors conclude that Satan there still serves as a common noun for an adversary, and that Chronicles holds evil as well as good to come from God. Adam Porter's Bible Odyssey article says 1 Chronicles 21:1 is the only place the Hebrew Bible uses the noun as a name. The Encyclopaedia Judaica says the article is dropped there and Satan seems to be a real proper name, substituted for “the Lord” because of doctrinal considerations. W. F. Barnett's entry in the New Catholic Encyclopedia reads the verse as showing that the Chronicler knew a personal principle of evil that warred against God."
+    text: "Ananda Geyser-Fouché and Ebele Chukwuka's article in HTS Teologiese Studies calls 1 Chronicles 21 a much-debated text, primarily because of the presence of Satan or satan. It reports that some scholars see the figure as an attempt to remove evil from Yahweh, and that English translations follow a long tradition of reading Satan as a proper noun; the authors conclude that Satan there still serves as a common noun for an adversary, and that Chronicles holds evil as well as good to come from God. Adam Porter's Bible Odyssey article says 1 Chronicles 21:1 is the only place the Hebrew Bible uses the noun as a name. The Encyclopaedia Judaica says the article is dropped there and Satan seems to be a real proper name, substituted for “the Lord” because of doctrinal considerations. W. F. Barnett's entry in the New Catholic Encyclopedia reads the verse as showing that the Chronicler knew a personal principle of evil that warred against God. The New American Bible's note renders the verse “A satan” and says the Chronicler's change reflects the changed outlook of postexilic Israel, when evil was no longer attributed directly to God. Paul Evans's article in Biblica says the verse has led to varying interpretations; he reads satan there as a proper name, for a heavenly intermediary who takes the place of God's direct incitement of David, not the later, almost dualistic Satan, and calls the chapter an important stage in the development of the doctrine of Satan. He finds no evidence that the Chronicler felt the need to remove all evil from originating in God."
     cites:
       - source: geyser-fouche-chukwuka-2021-1-chronicles-21
         locator: "Introduction, p. 1"
@@ -109,6 +113,35 @@ statements:
         locator: "section “In the Old Testament”"
         quote: "Satan's evil function in 1 Chr 21.1, then, shows that the Chronicler was aware of a personal principle of evil that warred against God and enticed man to rebel against Him."
         read: 2026-11-26
+      - source: nabre-1-chronicles-21-notes
+        locator: "note on 21:1"
+        quote: "A satan: in the parallel passage (2 Sm 24:1) David is led astray because of the Lord’s anger. The Chronicler’s modification reflects the changed theological outlook of postexilic Israel, when evil was no longer attributed directly to God."
+        read: 2026-11-27
+      - source: evans-2004-1-chronicles-21
+        url: "https://www.bsw.org/biblica/vol-85-2004/divine-intermediaries-in-1-chronicles-21-an-overlooked-aspect-of-the-chronicler-s-theology/190/article-p545.html"
+        locator: "p. 545, opening section"
+        quote: "What to make of these intriguing changes has led to varying interpretations."
+        read: 2026-11-27
+      - source: evans-2004-1-chronicles-21
+        url: "https://www.bsw.org/biblica/vol-85-2004/divine-intermediaries-in-1-chronicles-21-an-overlooked-aspect-of-the-chronicler-s-theology/190/article-p553.html"
+        locator: "section 2, “Satan in Place of Yahweh”, p. 553"
+        quote: "which suggests that the word is a proper name in this text."
+        read: 2026-11-27
+      - source: evans-2004-1-chronicles-21
+        url: "https://www.bsw.org/biblica/vol-85-2004/divine-intermediaries-in-1-chronicles-21-an-overlooked-aspect-of-the-chronicler-s-theology/190/article-p554.html"
+        locator: "section 2, p. 554"
+        quote: "We need not read in to 1 Chr 21,1 a conception of Satan comparable to later (almost dualistic) conceptions"
+        read: 2026-11-27
+      - source: evans-2004-1-chronicles-21
+        url: "https://www.bsw.org/biblica/vol-85-2004/divine-intermediaries-in-1-chronicles-21-an-overlooked-aspect-of-the-chronicler-s-theology/190/article-p555.html"
+        locator: "section 2, p. 555"
+        quote: "account of God directly inciting David with a heavenly intermediary"
+        read: 2026-11-27
+      - source: evans-2004-1-chronicles-21
+        url: "https://www.bsw.org/biblica/vol-85-2004/divine-intermediaries-in-1-chronicles-21-an-overlooked-aspect-of-the-chronicler-s-theology/190/article-p558.html"
+        locator: "summary, p. 558"
+        quote: "Persian Dualism may have been influential but there is no evidence that the Chronicler felt the need to remove all aspects of evil from originating in God. Although not representing a complete doctrine of Satan, as developed in later Jewish writings, 1 Chronicles 21 is an important stage its development."
+        read: 2026-11-27
   - id: devil
     group: "How Satan became the devil"
     question: "When did Satan become an evil being opposed to God?"
@@ -231,8 +264,8 @@ statements:
   - id: lucifer
     group: "How Satan became the devil"
     question: "Is Lucifer in Isaiah 14 Satan?"
-    short: "Not in Isaiah, where the poem is framed as a taunt against a king of Babylon. “Lucifer” is the Latin Vulgate's word for the morning star."
-    text: "John Bowker's Concise Oxford Dictionary of World Religions says Lucifer, Latin for “light-bringer”, is an epithet for the king of Babylon in the Vulgate and King James Version of Isaiah 14:12, and that some of the church fathers, reading it with Luke 10:18, took it as a name for the devil, so that Isaiah 14:12–16 became one basis for the idea that the devil is a rebellious angel cast into hell. Laura Quick's article in Vetus Testamentum says the poem is linked to a Babylonian ruler only in a secondary way, by its framing verses, and that hêlēl ben-šaḥar is almost universally understood as the morning star, the planet Venus, the reading behind the Vulgate's Lucifer. Quick herself argues that Venus is not the necessary or even the most obvious reading."
+    short: "Not in Isaiah, where the poem is framed as a taunt against a king of Babylon. “Lucifer” is the Latin Vulgate's word for the morning star, a name some church fathers applied to Satan."
+    text: "John Bowker's Concise Oxford Dictionary of World Religions says Lucifer, Latin for “light-bringer”, is an epithet for the king of Babylon in the Vulgate and King James Version of Isaiah 14:12, and that some of the church fathers, reading it with Luke 10:18, took it as a name for the devil, so that Isaiah 14:12–16 became one basis for the idea that the devil is a rebellious angel cast into hell. Laura Quick's article in Vetus Testamentum says the poem is linked to a Babylonian ruler only in a secondary way, by its framing verses, and that hêlēl ben-šaḥar is almost universally understood as the morning star, the planet Venus, the reading behind the Vulgate's Lucifer. Quick herself argues that Venus is not the necessary or even the most obvious reading. The New American Bible's notes say the taunt-song is directed against the king of Babylon by its prose introduction and conclusion, though Babylon is mentioned nowhere in the song itself; that the Vulgate translates “Morning Star” as “Lucifer”, a name applied by the church Fathers to Satan; and that the poem's attempt to usurp God's place and its fall to the pit occasioned the interpretation that saw in it the rebellion and fall of Satan."
     cites:
       - source: bowker-lucifer
         locator: "s.v. “Lucifer”"
@@ -254,6 +287,18 @@ statements:
         locator: "last sentence before the heading “Who or What is hêlēl ben-šaḥar?”, p. 12"
         quote: "Yet despite the prevalence of this interpretation of hêlēl ben-šaḥar in modern translations, the meaning ‘Venus’ is by no means the necessary or even the most obvious reading of the phrase."
         read: 2026-11-26
+      - source: nabre-isaiah-14-notes
+        locator: "note on 14:4–21"
+        quote: "This taunt-song, a satirical funeral lament, is a beautiful example of classical Hebrew poetry. According to the prose introduction and the prosaic conclusion (vv. 22–23), it is directed against the king of Babylon, though Babylon is mentioned nowhere in the song itself."
+        read: 2026-11-27
+      - source: nabre-isaiah-14-notes
+        locator: "note on 14:12"
+        quote: "Morning Star: term addressed to the king of Babylon. The Vulgate translates as “Lucifer,” a name applied by the church Fathers to Satan."
+        read: 2026-11-27
+      - source: nabre-isaiah-14-notes
+        locator: "note on 14:13–15"
+        quote: "The attempt to usurp the place of God (v. 14), coupled with the dramatic reversal (“above the stars of God” to “the depths of the pit”) occasioned the interpretation that saw here the rebellion and fall of Satan."
+        read: 2026-11-27
   - id: angels
     group: "Angels"
     question: "What does “angel” mean in the Bible?"
@@ -356,7 +401,7 @@ statements:
     group: "Demons"
     question: "Are there demons in the Hebrew Bible?"
     short: "Rarely, scholars say. The Hebrew Bible has relatively little to say about demons, and demonology plays an insignificant role in its older books."
-    text: "Travis Proctor's Bible Odyssey article says the Hebrew Bible has relatively little to say about demons proper, that the Greek term has no direct equivalent in Hebrew, and that the Septuagint uses “demon” mainly for foreign gods; demon-like creatures may be implied in Isaiah 34:14–15, and foreign gods may carry demonic overtones in Deuteronomy 32:17. L. F. Hartman's entry in the New Catholic Encyclopedia says demonology played an insignificant role in the older books of the Old Testament, though belief in demons was widespread in the ancient Near East. Delbert Hillers's entry in the Encyclopaedia Judaica says the Bible's foreign gods are called shedim, a word related to Akkadian šêdu, and warns against overestimating the small traces of belief in demons in the Bible or underestimating the difficulty of interpreting them, since it is often impossible to tell whether a named demon belonged to living belief or to literary language. Rebecca Lesses's entry in the Encyclopedia of Religion says Isaiah 34:14 is the only clear reference to Lilith in the Hebrew Scriptures, and that Lilith as a demon is developed in later Jewish literature. Liane Feldman's Bible Odyssey article says Azazel, to whom the scapegoat is sent in Leviticus 16, remains somewhat enigmatic, and has been identified as a place, a foreign deity or a wilderness demon."
+    text: "Travis Proctor's Bible Odyssey article says the Hebrew Bible has relatively little to say about demons proper, that the Greek term has no direct equivalent in Hebrew, and that the Septuagint uses “demon” mainly for foreign gods; demon-like creatures may be implied in Isaiah 34:14–15, and foreign gods may carry demonic overtones in Deuteronomy 32:17. L. F. Hartman's entry in the New Catholic Encyclopedia says demonology played an insignificant role in the older books of the Old Testament, though belief in demons was widespread in the ancient Near East. Delbert Hillers's entry in the Encyclopaedia Judaica says the Bible's foreign gods are called shedim, a word related to Akkadian šêdu, and warns against overestimating the small traces of belief in demons in the Bible or underestimating the difficulty of interpreting them, since it is often impossible to tell whether a named demon belonged to living belief or to literary language. Rebecca Lesses's entry in the Encyclopedia of Religion says Isaiah 34:14 is the only clear reference to Lilith in the Hebrew Scriptures, and that Lilith as a demon is developed in later Jewish literature; the New American Bible's note there calls the lilith a female demon thought to roam about the desert. Liane Feldman's Bible Odyssey article says Azazel, to whom the scapegoat is sent in Leviticus 16, remains somewhat enigmatic, and has been identified as a place, a foreign deity or a wilderness demon."
     cites:
       - source: proctor-bo-demons
         locator: "section “What does the Bible say about demons?”"
@@ -386,6 +431,10 @@ statements:
         locator: "section “Where does the idea of a scapegoat come from?”"
         quote: "The figure of Azazel remains somewhat enigmatic and suggestions for its identification have included an uninhabitable physical location, a foreign deity, or a wilderness-dwelling demon."
         read: 2026-11-26
+      - source: nabre-isaiah-34-notes
+        locator: "note on 34:14"
+        quote: "The lilith: a female demon thought to roam about the desert."
+        read: 2026-11-27
   - id: daimon
     group: "Demons"
     question: "Did “demon” always mean an evil spirit?"
