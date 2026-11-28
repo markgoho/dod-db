@@ -5,6 +5,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import { checkQuoteCitations } from "./check-quote-citations.js";
 
+const repoRoot = path.resolve(import.meta.dir, "../..");
 const fixture = path.join(import.meta.dir, "__fixtures__", "quote-citations");
 const scratch = await mkdtemp(path.join(tmpdir(), "check-quote-citations-"));
 let cases = 0;
@@ -38,6 +39,10 @@ async function check(...quotes: Quote[]): Promise<string[]> {
 const at = "hugo/content/topics/test/_index.md";
 
 describe("checkQuoteCitations", () => {
+  test("the repo's quotes and Trigger Claims pass", async () => {
+    expect(await checkQuoteCitations(repoRoot)).toEqual([]);
+  });
+
   test("a quote that matches its Transcript line passes", async () => {
     expect(
       await check({
