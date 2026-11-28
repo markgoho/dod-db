@@ -15,15 +15,15 @@ quotes:
     speaker: Dan McClellan
     episode: 7
     timestamp: "00:34:53.900"
-  - text: "There was this idea that you had a council of the gods ruled over by the high deity."
+  - text: "There was this idea, and there are two different theories about what it's based on. ... But basically you had a council of the gods ruled over by the high deity."
     speaker: Dan McClellan
     episode: 7
     timestamp: "00:43:12.010"
-  - text: "Psalm 82 talks about Adonai standing within the Adat El, the council or assembly of El, or the divine council."
+  - text: "We have very similar statements in the Hebrew Bible, Psalm 82 ... it talks about Adonai standing within the Adat El is the Hebrew, the council or the assembly of El, or the divine council."
     speaker: Dan McClellan
     episode: 7
     timestamp: "00:44:13.110"
-  - text: "The divine council didn't go away. Once we get into the Greco-Roman period, the divine council is still there. But they change from gods into angels."
+  - text: "The divine council didn't go away. Once we get into the Greco-Roman period, the divine council is still there. There are still deities over all the nations of the earth. But they get renegotiated and they change from gods into angels."
     speaker: Dan McClellan
     episode: 7
     timestamp: "00:58:58.820"

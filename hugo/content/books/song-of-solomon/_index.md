@@ -22,7 +22,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 154
     timestamp: "00:05:52.614"
-  - text: "The dominant way of interpreting the song [was] as representing the relationship of God to Israel."
+  - text: "It was probably understanding the text metaphorically. As representing the relationship of God to Israel. ... that became the dominant way of interpreting the song."
     speaker: "Dan McClellan"
     episode: 154
     timestamp: "00:09:20.083"

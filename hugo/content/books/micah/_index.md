@@ -20,7 +20,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 141
     timestamp: "00:23:48.661"
-  - text: "The Good Shepherd is an idea that goes all the way back to Hammurabi, right? And is in a few different places in the Hebrew Bible... Micah 5:2, 'will shepherd the people.'"
+  - text: 'Pastoring, for instance, is something that we find in the Hebrew Bible, Micah 5:2, "We''ll shepherd the people." But the Good Shepherd, is an idea that goes all the way back to Hammurabi, right? And is in a few different places in the Hebrew Bible.'
     speaker: "Dan McClellan"
     episode: 144
     timestamp: "00:41:52.952"

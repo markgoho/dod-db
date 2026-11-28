@@ -22,7 +22,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 137
     timestamp: "00:06:28.421"
-  - text: "The author of Jubilees is one of the first apologists going through and rewriting the text and smoothing out the problems."
+  - text: "One of the first apologists going through and rewriting the text and smoothing out the problems."
     speaker: "Dan McClellan"
     episode: 137
     timestamp: "00:15:07.031"

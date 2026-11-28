@@ -12,15 +12,15 @@ featuredItems:
     number: 139
     label: "Polygamy!"
 quotes:
-  - text: "The Christian order of the canon puts Malachi last because that's the most convenient segue into the New Testament. But the traditional Jewish order ends with Second Chronicles, where King Cyrus sends everybody back and there's hope for restoration."
+  - text: "The Christian order of the canon, like, puts Malachi last because that's the most convenient segue into the New Testament ... the traditional Jewish order, which ends with Second Chronicles, which is a passage about how King Cyrus sends everybody back and there's hope for restoration."
     speaker: "Dan McClellan"
     episode: 99
     timestamp: "00:52:21.690"
-  - text: "The Jewish canonical order intentionally closes on this partial fulfillment and an expectation of return and restoration in the future."
+  - text: "The Jewish arrangement of Hebrew Bible text ends with this, I think intentionally, in order to close the book on a partial fulfillment and an expectation of return and restoration in the future."
     speaker: "Dan McClellan"
     episode: 133
     timestamp: "01:02:11.633"
-  - text: "If Jehoiada got two wives for Joash, and Joash did what was right in the sight of the Lord all the days of Jehoiada, pretty clearly the author is suggesting that arrangement is sanctioned by God."
+  - text: "Pretty clearly the author is suggesting that if Jehoiada got two wives for Joash, and Joash did everything that was right in the sight of the Lord all the days of the priest Jehoiada— ... that is sanctioned, endorsed by God."
     speaker: "Dan McClellan"
     episode: 139
     timestamp: "00:09:12.394"

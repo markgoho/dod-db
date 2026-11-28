@@ -22,7 +22,7 @@ quotes:
     speaker: "Leslie Baynes"
     episode: 164
     timestamp: "01:00:23.160"
-  - text: "Lewis is a classic doctrinal type of Christian. He thinks Christianity simply is a set of doctrines which includes Trinity, incarnation, and atonement. And he talks repeatedly in his book about how he's not trying to make this up. This is just the way it is. This is just what Christianity has always been."
+  - text: "Lewis is a classic doctrinal type of Christian. He thinks Christianity simply is a set of doctrines which includes ... Trinity, incarnation and atonement. ... he talks repeatedly in his book about how, you know, he's not trying to make this up. This is just the way it is. This is just what Christianity has always been."
     speaker: "David Congdon"
     episode: 79
     timestamp: "00:22:27.400"

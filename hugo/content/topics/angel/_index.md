@@ -28,7 +28,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 28
     timestamp: "00:24:30.320"
-  - text: "The angel of the presence— and this is the Malak Adonai, the messenger of Adonai— retells the entire book of Genesis."
+  - text: "And so the angel of the presence— and this is the Malak Adonai, the messenger of Adonai that is introduced in Exodus 23 ... And this angel's like, hey Moses, anyway, here's the deal, and retells the entire book of Genesis."
     speaker: "Dan McClellan"
     episode: 137
     timestamp: "00:07:36.464"

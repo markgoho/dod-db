@@ -15,7 +15,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 122
     timestamp: "00:03:44.150"
-  - text: "And when it comes to atonement, this is a complex constellation of ideas. So what you really want is a way to take this and say, 'Think of it like this.' And so that is your atonement theory."
+  - text: 'When it comes to atonement, this is a complex constellation of ideas. And so what you really want is a way to take this and say, "Think of it like this." ... And so that is your atonement theory.'
     speaker: "Dan McClellan"
     episode: 122
     timestamp: "00:11:40.010"

@@ -15,7 +15,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 55
     timestamp: "00:04:13.120"
-  - text: "According to Second Chronicles, he was killed before Jehu by Jehu's men, and then Jehu's men buried him. In Second Kings, it is Ahaziah's men who bury Ahaziah with his ancestors. That is an explicit contradiction."
+  - text: "According to Second Chronicles, he was killed before Jehu by Jehu's men, and then Jehu's men buried him. ... In Second Kings, it is Ahaziah's men who bury Ahaziah with his ancestors. ... That is an explicit contradiction. Jehu's men are not Ahaziah's men."
     speaker: "Dan McClellan"
     episode: 55
     timestamp: "00:12:05.280"

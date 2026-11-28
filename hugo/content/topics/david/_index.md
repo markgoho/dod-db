@@ -27,7 +27,7 @@ quotes:
     speaker: "Aaron Higashi"
     episode: 67
     timestamp: "00:48:57.240"
-  - text: "The historical David was probably a warlord who was operating in the south."
+  - text: "He seems to have kind of made a name for himself as a warlord and was probably in charge of the groups that were taking care of fending off ... the encroachment of the Philistines in the southern territory."
     speaker: "Dan McClellan"
     episode: 64
     timestamp: "00:44:26.630"

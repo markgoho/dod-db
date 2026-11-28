@@ -17,10 +17,10 @@ quotes:
     speaker: "Dan McClellan"
     episode: 71
     timestamp: "00:55:31.520"
-  - text: "The Son of Man is probably this figure who is mediatory between God and humanity."
+  - text: "In the Hebrew Bible, son of man is a phrase that just means a human. ... But in some ancient Greek translations, ... the preposition changes from heos to hos. And so instead of came to the Ancient One, it says he came as the Ancient One. And so it kind of conflates whoever this mediatory figure is with God."
     speaker: "Dan McClellan"
     episode: 71
-    timestamp: "00:42:28.800"
+    timestamp: "00:41:21.280"
   - text: "The further back into time the authors look, the less sure they are of the history."
     speaker: "Dan McClellan"
     episode: 71

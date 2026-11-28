@@ -9,7 +9,7 @@ featuredItems:
     number: 107
     label: "Immigrant Apocalypse"
 quotes:
-  - text: "The idea here is that this second coming, Jesus's kingdom arriving on earth, will happen within the first generation of followers of Jesus."
+  - text: "This seems to be a pretty clear prophecy on the part of the author of Matthew that this second coming, Jesus's kingdom arriving on earth, will happen within ... that first generation of followers of Jesus."
     speaker: "Dan McClellan"
     episode: 32
     timestamp: "00:15:26.120"

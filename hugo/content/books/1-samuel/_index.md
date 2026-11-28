@@ -26,7 +26,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 156
     timestamp: "00:20:46.256"
-  - text: "The Amalekites are back, and the same thing happens in the book of Joshua. There are commands for genocide that are near references to those people who were supposed to have been genocided still being around."
+  - text: "But then the Amalekites are back and the same thing happens in the book of Joshua. ... So there are a couple different places where we have commands for genocide that are not necessarily right next to, but are near references to those people who were supposed to have been genocided still being around."
     speaker: "Dan McClellan"
     episode: 156
     timestamp: "00:22:49.075"

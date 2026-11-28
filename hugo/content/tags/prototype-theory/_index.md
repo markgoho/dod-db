@@ -7,11 +7,11 @@ featuredItems:
     segmentAnchor: what-does-that-mean-1
     label: "What Does That Mean? — Prototype theory"
 quotes:
-  - text: "The traditional approach to definition tries to reduce a category down to the shortest list of necessary and sufficient conditions or features."
+  - text: "This is a traditional approach to definition, where you take all the members of a category and you try to reduce them down to their essence, down to the shortest list of necessary and sufficient conditions or features."
     speaker: Dan McClellan
     episode: 9
     timestamp: "00:39:09.830"
-  - text: "Conceptual categories almost never form around necessary and sufficient conditions or features."
+  - text: "Conceptual categories almost never—there are some exceptions, but almost never—form around necessary and sufficient conditions or features."
     speaker: Dan McClellan
     episode: 9
     timestamp: "00:42:02.890"

@@ -14,7 +14,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 14
     timestamp: "00:52:23.030"
-  - text: "We don't get any vilification of the Asherah poles until the 7th century BCE, with Josiah's campaign of cult centralization. Prior to Josiah, it seems like they were worshiping Asherah as the consort, the partner of Adonai, of the God of Israel."
+  - text: "We don't get any vilification of the Asherah poles until the 7th century BCE, when with Josiah, and Josiah's campaign of cult centralization ... And so prior to Josiah, it seems like they were worshiping Asherah as the consort, the partner of Adonai, of the God of Israel."
     speaker: "Dan McClellan"
     episode: 31
     timestamp: "00:41:39.110"

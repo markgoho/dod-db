@@ -19,7 +19,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 173
     timestamp: "00:25:56.460"
-  - text: "At the very end of the story, the Great Commission also to go out to the Gentiles, who are the first people to come and worship Jesus. Matthew is very consciously trying to connect the beginning and the end in ways that can only be done by being a creative and good writer."
+  - text: "You have at the very end of the story, the Great Commission also to go out to the Gentiles, who are the first people to come and worship Jesus. ... So it seems like Matthew is very consciously trying to connect the beginning and the end in ways that can only be done by being a creative and good writer."
     speaker: "Aaron Adair"
     episode: 37
     timestamp: "00:59:46.340"

@@ -22,7 +22,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 92
     timestamp: "00:44:49.360"
-  - text: "The Story of Susanna, Song of the Three Children. These are all expansions on Daniel. These are texts that were considered authoritative within early Judaism and are adopted into the Christian concept of Scripture. But then the Jewish canon omits them when it becomes solidified."
+  - text: "The Story of Susanna, Song of the Three Children. These are all expansions on Daniel. ... These are texts that were considered authoritative within early Judaism and are adopted into the Christian concept of Scripture. But then the Jewish canon omits them when it becomes solidified."
     speaker: "Dan McClellan"
     episode: 20
     timestamp: "00:34:28.329"

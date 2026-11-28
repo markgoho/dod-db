@@ -17,7 +17,7 @@ quotes:
     speaker: "James McGrath"
     episode: 61
     timestamp: "00:04:22.660"
-  - text: "John becomes nicknamed the Baptist. And that could mean, you know, or the Dipper, the Dunker, the immerser, whatever we might want to call him. I think that the latter makes better sense of the evidence, because we get not just John the Baptist and reference to, you know, daily baptizers and the Baptist movement, things like that, but also reference to John's baptism."
+  - text: "John becomes nicknamed the Baptist. And that could mean, you know, or the Dipper, the Dunker, the immerser, whatever we might want to call him. ... he is this person who really was the innovator, right, and the spearhead and the driving force of this new movement. And I'm inclined to think that the latter makes better sense of the evidence, because we get not just John the Baptist and reference to, you know, daily baptizers and the Baptist movement, things like that, but also reference to John's baptism."
     speaker: "James McGrath"
     episode: 61
     timestamp: "00:11:15.740"

@@ -17,7 +17,7 @@ quotes:
     speaker: "Dan Beecher"
     episode: 72
     timestamp: "00:06:13.440"
-  - text: "They are very clearly quite explicitly putting this deep in the past."
+  - text: "They're very clearly quite explicitly putting this deep in the past."
     speaker: "Dan McClellan"
     episode: 72
     timestamp: "00:06:23.810"

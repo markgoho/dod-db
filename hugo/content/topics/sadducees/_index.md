@@ -23,7 +23,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 123
     timestamp: "00:44:09.634"
-  - text: "Because the Sadducees' authority is based entirely on the temple, and not on household religion, when the temple gets destroyed, they've got nothing. They've got no framework that they can provide for how to go on. And so for all intents and purposes, the Sadducees disappear within a decade or two after 70 CE."
+  - text: "The Sadducees' authority is based entirely on the temple, and not on like household religion. ... And then the temple gets destroyed. And they've got nothing, right? ... they've got no framework that they can provide for how to go on. And so for all intents and purposes, the Sadducees disappear, just stop within a decade or two after 70 CE."
     speaker: "Dan McClellan"
     episode: 123
     timestamp: "00:45:20.207"

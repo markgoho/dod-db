@@ -10,7 +10,7 @@ featuredItems:
     number: 27
     label: "Where Angels Fear to Swim"
 quotes:
-  - text: "It does not say that the Nephilim were the offspring of the union of the sons of God and the daughters of humans. It gets interpreted that way by an awful lot of folks, but it's not clear to me that this text is stating that."
+  - text: "It does not necessarily say that. It gets interpreted that way by an awful lot of folks, but I'm not— it's not clear to me that this text is stating that the Nephilim were the offspring of the sons of God and the daughters of humans."
     speaker: "Dan McClellan"
     episode: 124
     timestamp: "00:36:50.698"

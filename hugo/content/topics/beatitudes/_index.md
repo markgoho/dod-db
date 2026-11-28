@@ -14,7 +14,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 25
     timestamp: "00:10:38.210"
-  - text: "What the Beatitudes are doing is kind of overturning the conventions of the time regarding success in life. It's not the powerful, it's not the wealthy, it's not the haughty, it's not the people who rule things here who will rule in the kingdom of heaven, but the kingdom of heaven overturns those expectations."
+  - text: "What the Beatitudes are doing is kind of overturning the conventions of the time regarding success in life. ... It's not the powerful, it's not the wealthy, it's not the haughty, it's not the people who rule things here who will rule in the kingdom of heaven, but the kingdom of heaven overturns those expectations."
     speaker: "Dan McClellan"
     episode: 25
     timestamp: "00:14:54.870"

@@ -21,7 +21,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 158
     timestamp: "00:43:03.611"
-  - text: "This is a quotation of the prophetic book of Amos... and this is the Septuagint's pretty flagrant mistranslation of a part of Amos that in the Hebrew says something entirely different."
+  - text: "The author of the book of Acts is relying on the Septuagint. ... And this is the Septuagint's pretty flagrant mistranslation of a part of Amos that in the Hebrew says something entirely different that has no relevance at all to the context where it's being deployed in the book of Acts."
     speaker: "Dan McClellan"
     episode: 150
     timestamp: "00:10:12.403"

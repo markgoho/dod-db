@@ -18,7 +18,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 134
     timestamp: "00:06:36.229"
-  - text: "The notion that the crucifixion is the best attested event in the ancient world, bar none, it is closely related to another claim that the manuscript evidence for the New Testament makes it the best attested document from the ancient world."
+  - text: "The claim is repeated that Jesus is the best attested of all time, and this makes— ... this makes people who study history for a living just guffaw with reckless abandon."
     speaker: "Dan McClellan"
     episode: 140
     timestamp: "00:04:35.599"

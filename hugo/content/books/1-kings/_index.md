@@ -31,7 +31,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 123
     timestamp: "00:16:43.266"
-  - text: "You don't have historical prose in alphabetic writing until after Ahab was dead. The second half of the 9th century, that's when it first pops up in the record. And what that means is, and by historical prose, I mean that genre of historical narrative. Like, you had poetry, you had letters, you didn't have historical narrative. So Kings, Samuel, the overwhelming majority of all of that, apart from a few scattered pieces of poetry, were written after Ahab was dead and gone."
+  - text: "You don't have historical prose in alphabetic writing until after Ahab was dead. ... The second half of the 9th century, that's when it first pops up in the record. And what that means is, and by historical prose, I mean that genre of historical narrative. Like, you had poetry, you had letters, you didn't have historical narrative. ... So Kings, Samuel, the overwhelming majority of all of that, apart from a few scattered pieces of poetry, were written after Ahab was dead and gone."
     speaker: "Dan McClellan"
     episode: 123
     timestamp: "00:25:04.119"

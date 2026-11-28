@@ -14,7 +14,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 99
     timestamp: "00:36:13.840"
-  - text: "The Ben Asher family is largely responsible for the Masoretic Text as we know it today, and the critical editions of the Hebrew Bible are all based on a single manuscript known as the Leningrad Codex."
+  - text: "The Ben Asher family is largely responsible for the Masoretic Text as we know it today. ... the critical editions of the Hebrew Bible like the Biblia Hebraica Stuttgartensia ... they're all based on a single manuscript known as the Leningrad Codex."
     speaker: "Dan McClellan"
     episode: 99
     timestamp: "00:43:19.110"

@@ -12,7 +12,7 @@ featuredItems:
     number: 139
     label: "Polygamy!"
 quotes:
-  - text: "1 and 2 Samuel, which anciently were one book, probably would have circulated as independent stories first."
+  - text: 'It''s not like they wrote 1 and 2 Samuel from beginning to end and then were like, "Whew, that was a lot of work. Now we have the whole thing. Now it all gets published at once." It was probably those two books, which anciently were one book, probably would have circulated as independent stories first.'
     speaker: "Dan McClellan"
     episode: 125
     timestamp: "00:39:14.569"

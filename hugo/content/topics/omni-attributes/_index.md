@@ -33,7 +33,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 80
     timestamp: "00:07:28.950"
-  - text: "This represents God as not omniscient, not omnipresent, and there are other places where God is not omnipotent."
+  - text: "That is an entity that is restricted to a specific point in time and space. And also they have feet and weight and make noise walking around in the garden. And so this represents God as not omniscient, not omnipresent. ... But anyway, there are other places where God is not omnipotent."
     speaker: "Dan McClellan"
     episode: 80
     timestamp: "00:13:49.160"

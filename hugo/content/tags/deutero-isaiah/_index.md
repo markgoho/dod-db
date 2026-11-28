@@ -19,7 +19,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 43
     timestamp: "00:31:37.320"
-  - text: "The biggest division is between Isaiah 1 to 39 and Isaiah 40 through the rest of Isaiah, because Isaiah's name is mentioned over a dozen times in chapters 1 to 39, and his name is never mentioned again in 40 through 66."
+  - text: "The biggest division is between Isaiah 1 to 39 and Isaiah 40 through the rest of Isaiah. Because here's something interesting. Isaiah's name is mentioned over a dozen times in chapters 1 to 39. ... and his name is never mentioned again in 40 through 66."
     speaker: "Dan McClellan"
     episode: 43
     timestamp: "00:37:44.090"

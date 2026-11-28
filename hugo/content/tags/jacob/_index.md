@@ -18,7 +18,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 63
     timestamp: "00:18:33.460"
-  - text: "Repeatedly in the Bible, you have different representations of what God looks like. But when you have narratives where God interacts directly with humans, it's always pretty straightforward. God is human sized, human shaped, male-presenting, a very anthropomorphic depiction to the degree that the eponymous hero of the nation of Israel, Israel himself, Jacob, is able to subdue him in a wrestling match."
+  - text: "Repeatedly in the Bible, you have different representations of what God looks like. ... But when you have narratives where God interacts directly with humans, which happen, it's always pretty straightforward. God is human sized, human shaped, male-presenting, a very anthropomorphic depiction to the degree that the eponymous hero of the nation of Israel, Israel himself, Jacob, is able to subdue him in a wrestling match."
     speaker: "Dan McClellan"
     episode: 63
     timestamp: "00:30:03.830"

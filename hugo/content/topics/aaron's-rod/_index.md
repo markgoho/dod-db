@@ -22,7 +22,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 88
     timestamp: "00:35:00.570"
-  - text: "The budding rod is a wonderful mishmash of images... the idea of a wooden rod that sprouts evokes Isaiah 11 and the shoot that shall come from the stump of Jesse. So this is all royal imagery, and it's so beautifully intertextual."
+  - text: "The budding rod is itself— ... it's a wonderful mishmash of images. ... the idea of a wooden rod that sprouts, you know, evokes Isaiah 11 and ... the shoot that shall come from the stump of Jesse. Right. So this is all royal imagery and it's so beautifully intertextual."
     speaker: "Angela Roskop Erisman"
     episode: 105
     timestamp: "00:40:38.110"

@@ -7,7 +7,7 @@ featuredItems:
     segmentAnchor: taking-issue-1
     label: "Taking Issue — Hyksos"
 quotes:
-  - text: "This is a Greek transliteration of an Egyptian phrase that is actually—Heka-Khasut. And this means foreign rulers or foreign lords or something like that."
+  - text: "This is a Greek transliteration of an Egyptian phrase that is actually— ... Heka-Khasut. And this means foreign rulers or foreign lords or something like that."
     speaker: "Dan McClellan"
     episode: 138
     timestamp: "00:35:29.328"

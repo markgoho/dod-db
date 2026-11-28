@@ -27,7 +27,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 86
     timestamp: "00:49:07.770"
-  - text: "Josephus wasn't born until well after Jesus was dead. So no, he wouldn't have had friends that would have been at the trial."
+  - text: "Josephus wasn't born until well after Jesus was dead. ... the notion that he had friends that would have been at the trial is pretty silly."
     speaker: "Dan McClellan"
     episode: 140
     timestamp: "00:26:40.097"

@@ -14,11 +14,11 @@ quotes:
     speaker: Miriam Anzovin
     episode: 24
     timestamp: "00:11:28.290"
-  - text: "There are all types of ways to study Talmud. This idea of being all on the same page, meeting there every day for seven and a half years, is a fascinating collective experience."
+  - text: "This idea of being all on the same page ... together we are meeting on this page every day for seven and a half years, and it's sort of like this fascinating collective experience. So not to take anything away from people who study Talmud in other ways. People spend years on just one tractate. You know, there's all types of ways to study Talmud."
     speaker: Miriam Anzovin
     episode: 24
     timestamp: "00:17:13.830"
-  - text: "They both seem to me to be different negotiations with the Torah. They're both chasing down the implications of these unanswered questions, and it is still a bit of a battle of traditions."
+  - text: "They both seem to me to be different negotiations with the Torah. They're both chasing down the implications of these unanswered questions. ... It is still a bit of a battle of traditions, neither of which has an exclusive claim to Torah legitimacy."
     speaker: Dan McClellan
     episode: 85
     timestamp: "01:01:34.090"

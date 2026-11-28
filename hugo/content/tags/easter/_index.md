@@ -15,7 +15,7 @@ quotes:
     speaker: Dan McClellan
     episode: 5
     timestamp: "00:06:55.280"
-  - text: "The name Easter, which these days really only exists in English and in German, was most likely taken from the month in which it was celebrated."
+  - text: "The name Easter, which these days really only exists in English and in German. ... And so in English and German, we have this name, Easter, that most likely was taken from the month in which it was celebrated."
     speaker: Dan McClellan
     episode: 5
     timestamp: "00:13:19.800"

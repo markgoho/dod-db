@@ -12,11 +12,11 @@ featuredItems:
     number: 110
     label: "God's Swear Jar"
 quotes:
-  - text: "What the apologists who are aware of the current academic consensus but don't like it will, will go on to argue is that in the New Testament we have repeated references to God being the creator of all things. ... we go to Colossians 1:16, we got the invisible features of God's creation which are the powers, thrones, dominions, rulers and so forth. And, and these are always understood as divine forces. They're, they're just not seen, they're invisible."
+  - text: "Others have pointed out, we go to Colossians 1:16, we got the invisible features of God's creation which are the powers, thrones, dominions, rulers and so forth. And these are always understood as divine forces. They're just not seen, they're invisible."
     speaker: "Dan McClellan"
     episode: 70
-    timestamp: "00:13:21.450"
-  - text: "This is one of the reasons, because Paul uses—probably our one example of something that gets close to profanity ... Who is supposed to be the author of Ephesians and Colossians? ... Paul. Supposed to be Paul. But a lot of scholars don't think Ephesians and Colossians were written by Paul."
+    timestamp: "00:12:35.820"
+  - text: "Who is supposed to be the author of Ephesians and Colossians? ... Paul. Supposed to be Paul. But a lot of scholars don't think Ephesians and Colossians were written by Paul. ... this is one of the reasons, because Paul uses—probably our one example of something that gets close to profanity, where he calls something skubalon."
     speaker: "Dan McClellan"
     episode: 110
     timestamp: "00:50:44.290"
@@ -24,10 +24,6 @@ quotes:
     speaker: "Dan Beecher"
     episode: 110
     timestamp: "00:50:29.630"
-  - text: "Creation ex nihilo ... academic consensus right now is that we don't get it until the last couple of decades of the second century CE. ... There's just no case to make that we find creation ex nihilo in the Hebrew Bible, in Second Maccabees 7:28, or in the New Testament. ... we go to Colossians 1:16 ... and these are always understood as divine forces."
-    speaker: "Dan McClellan"
-    episode: 70
-    timestamp: "00:05:21.400"
 showAllEpisodes: true
 ---
 

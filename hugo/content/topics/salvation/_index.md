@@ -18,11 +18,11 @@ quotes:
     speaker: "Dan McClellan"
     episode: 120
     timestamp: "00:09:37.490"
-  - text: "By the time you get to the New Testament, you will name him Jesus. Why? He will save people from their sins."
+  - text: "The first time it occurs in the New Testament is Matthew 1:21, where the idea is you will name him Jesus. Why? He will save people from their sins."
     speaker: "Dan McClellan"
     episode: 120
     timestamp: "00:10:29.070"
-  - text: "The savior in our history, the primary one was our God and he did it. Yahweh is the one, not David, who saved us. He's our primary savior."
+  - text: "The savior in our history, the primary one was our God and he did it. ... Yahweh, this personality is the one, not David, who saved us. He's our primary savior."
     speaker: "Jacob Wright"
     episode: 36
     timestamp: "00:24:21.400"
