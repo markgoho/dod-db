@@ -14,98 +14,100 @@
 # Publish resolutions, 2026-11-25: (1) `to: -901` dropped: no source gives it (the end of the century is not a source year); `from` moved from -1010 to -1000, the start of the displayed century: in the /timeline/ preview, -1010 filed the “10th century BCE” card under the 1500–1000 BCE era; display stays “10th century BCE”, the wording all three dating sources share, with the note carrying the ca. 1010 start. (2) Finkelstein and Sergi kept: flat, in the authors' own words. (3) Mazar kept for the note's Mazar clause only. (4) E64 00:57:17 kept as a datable verdict on the row's subject (#99); E181 alone meets the entry rule either way. (5) E133 kept as the tradition-side Trigger Claim. (6) finkelstein-2007-quest-solomon registry title: shared with the published Scholarship Page, so not changed here; filed as a follow-on issue. Coogan cut stands.
 # Registry title fix (#200, 2026-11-27; owner delegated, #93/#110; no owner check): `finkelstein-2007-quest-solomon` was titled “The Rise of Jerusalem and Judah; The Truth about King Solomon (essays in Part 4)”. In FinkelsteinMazar.pdf all of this id's citations come from one essay, pp. 107–116 (Mazar's essay starts p. 117). Its head (PDF p. 118) reads “King Solomon’s Golden Age: History or Myth?” and the contents list (PDF p. 7) reads “King Solomon’s Golden Age?: History or Myth?”. “The Truth about King Solomon” is only the odd-page running head, and “The Rise of Jerusalem and Judah: The Missing Link” is a bibliography item (Levant 33, 2001; printed p. 204), not an essay in the volume. The registry title is now the essay-head form. The Scholarship Page's p. 107 locator dropped the running head as an essay name; this entry's locator (“p. 113”) is unchanged. Entry text, quotes and display are unchanged; closes publish flag (6). Independent second agent pass, 2026-11-27: a fresh agent given only the registry entry, the five locators and quotes under this id across this Timeline Entry and the david-and-the-united-monarchy Scholarship Page, and the PDF URL. It re-fetched the PDF by curl, ran pdftotext per page, and matched quotes by script (whitespace, quote and dash styles, line-break hyphens normalised): 5/5 hits, each on its printed page (printed = PDF − 11) inside pp. 107–116, and the parentheticals were accurate (“Let me begin at the end” opens the p. 107 paragraph; the “Back to History” section heading is at the foot of p. 114 and the section runs on to p. 115). Author on the byline; © 2007 on the copyright page. It recommended the essay-head form over the contents form, and that form was adopted.
 # Split (#274, 2026-11-28; owner chose to keep this id, #219: a published id never changes): this entry is now David only, titled “Reign of David”; Solomon has his own entry, `solomon`. Moved out to `solomon`: old critical/2 (HarperCollins “Solomon”) and old tradition/2 (Got Questions Solomon paragraph). Old critical/3–6 renumbered critical/2–5. Note drops the Solomon dictionary clause; display “10th century BCE”, `from: -1000` and `precision: century` unchanged (HarperCollins ca. 1010–970, Finkelstein p. 113 and Sergi p. 298 all place David in the tenth century). Tradition now David's reign alone: “1009–969 BCE” (Got Questions David paragraph), so its middle sits about 40 years before the Critical Date's and the Tradition Date moves to its own row (#214). `watch` drops “Solomon”. Trigger Claims unchanged; E133 00:35:57 (“traditionally to Saul and David and Solomon”) also attached to `solomon`. Flags for the second pass: (1) Finkelstein p. 113 (“the city of the time of David and Solomon”) and Schmidt p. 101 (“the historicity of David and Solomon”) name both kings; kept here and cited on `solomon` too. (2) Note's Schmidt/Mazar clauses speak of David and Solomon and the United Monarchy; kept as the David entry's kingdom context.
+# Independent second agent pass 2026-11-28 (#274 split; #93 delegation, #110): a fresh agent re-checked the #274 changes (title, note, remaining cites, tradition, display), never reading the first pass's files. Every remaining source re-fetched (Bible Odyssey /dictionary/david/; Got Questions kings page and About page; FinkelsteinMazar.pdf and Sergi PDF via pdftotext per page). All six quotes re-matched by script: 6 hits, 0 misses, each at its locator (HarperCollins “David” first body sentence; Finkelstein PDF p. 124 = printed 113; Sergi PDF p. 320 = printed 298, quote wholly on p. 298, sentence runs on to p. 299; Schmidt PDF p. 112, folio “-101-”; Mazar PDF p. 150 = printed 139; Got Questions David sentence, its own paragraph before the Solomon one). Offsets re-derived from running heads (Quest printed = PDF − 11; Sergi printed = PDF − 22). All three Trigger Claims re-matched by script at timestamp and speaker: 3 hits. Title “Reign of David” holds: HarperCollins (ca. 1010–970), Finkelstein p. 113 (“the city of the time of David and Solomon”, tenth-century) and Sergi p. 298 (“David’s kingdom in the tenth century BCE”) each place David in the tenth century. Note holds: its first sentence is HarperCollins only; the Schmidt and Mazar clauses keep their sources' wording and scope (they speak of David and Solomon and the United Monarchy, which is David's kingdom context; kept, split-pass flag 2). Tradition “1009–969 BCE”, `from: -1009`, `to: -969` match Got Questions' “reigned from 1009 BC to 969 BC”; its middle (989 BCE) is 39 years from the century's (950 BCE), so its own row (#214) is right. Display, `from`, `precision` unchanged. Nothing changed in the entry; no citation cut.
+# Flags for publish (this pass): (1) check:timeline now errors that `sourcesRead` (2026-11-25) doesn't match `delegation.secondPass` 2026-11-28 (#135). Fix at publish: set the entry's `sourcesRead` and this file's `review:` to 2026-11-28 (sources were re-read today) — or keep secondPass at 2026-11-25 if the split is not taken as a re-read; not changed here (entry dates left to the publisher). (2) Stale-card error expected (title changed): regenerate with `bun run timeline:cards`. (3) `solomon` now shares display “10th century BCE” and `from: -1000`; both cards sit at the same axis point.
 review: 2026-11-25
 delegation:
   by: owner
   date: 2026-11-23
   issue: "#110"
-  secondPass: 2026-11-25
+  secondPass: 2026-11-28
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "HarperCollins Bible Dictionary entry “David” on Bible Odyssey (bibleodyssey.org/dictionary/david/; registry URL is the dictionary index). Opening sentence. Dates David's reign flat. Second pass: re-fetched bibleodyssey.org/dictionary/david/; matched verbatim as the entry’s first sentence, after the pronunciation “Day´vid”. Verified.",
+      note: "HarperCollins Bible Dictionary entry “David” on Bible Odyssey (bibleodyssey.org/dictionary/david/; registry URL is the dictionary index). Opening sentence. Dates David's reign flat. Second pass: re-fetched bibleodyssey.org/dictionary/david/; matched verbatim as the entry’s first sentence, after the pronunciation “Day´vid”. Verified. Second pass 2026-11-28 (#274): re-fetched and re-matched; the note’s first sentence now rests on this cite alone. Verified.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Finkelstein, printed p. 113 (PDF p. 124, running head “The Truth about King Solomon 113”). Low-chronology author placing David and Solomon in the tenth century. Second pass: matched verbatim on PDF p. 124 under running head “The Truth about King Solomon 113” (essay “King Solomon’s Golden Age: History or Myth?”, opening p. 107). The appositive is flat and Finkelstein’s own. Verified; now critical/3. #274 split: now critical/2.",
+      note: "Finkelstein, printed p. 113 (PDF p. 124, running head “The Truth about King Solomon 113”). Low-chronology author placing David and Solomon in the tenth century. Second pass: matched verbatim on PDF p. 124 under running head “The Truth about King Solomon 113” (essay “King Solomon’s Golden Age: History or Myth?”, opening p. 107). The appositive is flat and Finkelstein’s own. Verified; now critical/3. #274 split: now critical/2. Second pass 2026-11-28 (#274): re-matched on PDF p. 124 (head “The Truth about King Solomon 113”); dates David with Solomon, supports the David-only title. Verified.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Sergi 2023 printed p. 298 (sentence runs onto p. 299). Clause of a longer sentence; dates David's kingdom to the tenth century. Second pass: matched verbatim on printed p. 298 (PDF p. 320, verso head “The Two Houses of Israel”), §6.2.5; the sentence continues onto p. 299 (head “6. Reconstructing Cultural Memory”). Verified; now critical/4. #274 split: now critical/3.",
+      note: "Sergi 2023 printed p. 298 (sentence runs onto p. 299). Clause of a longer sentence; dates David's kingdom to the tenth century. Second pass: matched verbatim on printed p. 298 (PDF p. 320, verso head “The Two Houses of Israel”), §6.2.5; the sentence continues onto p. 299 (head “6. Reconstructing Cultural Memory”). Verified; now critical/4. #274 split: now critical/3. Second pass 2026-11-28 (#274): re-matched; quoted words all on PDF p. 320 (head “298 / The Two Houses of Israel”). Verified.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Schmidt's Part 4 summary, printed p. 101. Supports the note: Finkelstein accepts David and Solomon as historical, rejects a tenth-century United Monarchy. Second pass: matched verbatim on PDF p. 112, folio “-101-”, under “A Summary Assessment for Part 4 / Brian B. Schmidt”. It is Schmidt’s report of Finkelstein, so the note now attributes it to Schmidt (as the Scholarship Page does, “Schmidt, summarizing Finkelstein”). Verified; now critical/5. #274 split: now critical/4.",
+      note: "Schmidt's Part 4 summary, printed p. 101. Supports the note: Finkelstein accepts David and Solomon as historical, rejects a tenth-century United Monarchy. Second pass: matched verbatim on PDF p. 112, folio “-101-”, under “A Summary Assessment for Part 4 / Brian B. Schmidt”. It is Schmidt’s report of Finkelstein, so the note now attributes it to Schmidt (as the Scholarship Page does, “Schmidt, summarizing Finkelstein”). Verified; now critical/5. #274 split: now critical/4. Second pass 2026-11-28 (#274): re-matched on PDF p. 112 (folio “-101-”); the note’s Schmidt clause keeps his scope (David and Solomon). Verified.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Mazar, printed p. 139. Supports the note's other side: a United Monarchy as an early-stage state, far from the biblical portrait. Also cited on the Scholarship Page. Second pass: matched verbatim on PDF p. 150, head “The Search for David and Solomon 139”. The sentence carries no date; the note now uses its wording instead of a paraphrase. Verified; now critical/6. #274 split: now critical/5.",
+      note: "Mazar, printed p. 139. Supports the note's other side: a United Monarchy as an early-stage state, far from the biblical portrait. Also cited on the Scholarship Page. Second pass: matched verbatim on PDF p. 150, head “The Search for David and Solomon 139”. The sentence carries no date; the note now uses its wording instead of a paraphrase. Verified; now critical/6. #274 split: now critical/5. Second pass 2026-11-28 (#274): re-matched on PDF p. 150 (head “139”); undated, cited for the note’s Mazar clause only. Verified.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "Got Questions, “Who were the kings of Israel and Judah?”, David paragraph. Flat 1009–969. Second pass: re-fetched; matched verbatim in the paragraph that opens “David, although anointed as king when just a boy” (its own paragraph in the page source). Verified.",
+      note: "Got Questions, “Who were the kings of Israel and Judah?”, David paragraph. Flat 1009–969. Second pass: re-fetched; matched verbatim in the paragraph that opens “David, although anointed as king when just a boy” (its own paragraph in the page source). Verified. Second pass 2026-11-28 (#274): re-fetched and re-matched; now the only tradition cite; display 1009–969 and `from`/`to` match it. Verified.",
     }
 triggers:
   181@00:54:20:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Second sentence of the 00:54:20 turn, after “And so that's why a lot of people will say, like Judges five is. Might be the earliest written thing in the entire Hebrew Bible.” Hedge: “It” is Judges 5, which “might go back to” David's time; the dating of David is incidental. Kept for “a historical David around a thousand BCE”. Second pass: line [00:54:20.450] Dan McClellan matched by script; 00:52:34–00:56:56 read (Song of Deborah, Judges 4/5). Verified.",
+      note: "states: critical. Second sentence of the 00:54:20 turn, after “And so that's why a lot of people will say, like Judges five is. Might be the earliest written thing in the entire Hebrew Bible.” Hedge: “It” is Judges 5, which “might go back to” David's time; the dating of David is incidental. Kept for “a historical David around a thousand BCE”. Second pass: line [00:54:20.450] Dan McClellan matched by script; 00:52:34–00:56:56 read (Song of Deborah, Judges 4/5). Verified. Second pass 2026-11-28 (#274): line re-matched by script (timestamp, speaker, text). Verified.",
     }
   64@00:57:17:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. First sentence of the 00:57:17 turn. A verdict on David's historicity, no date; the turn goes on to the warlord stories, and at 00:57:41 “I don't know that we can know anything really about this individual … some features of David are probably historical.” Second pass: line [00:57:17.790] Dan McClellan matched by script; 00:55:15–00:59:01 read. No date; kept as a verdict on the row’s subject (header flag 4). Verified.",
+      note: "states: critical. First sentence of the 00:57:17 turn. A verdict on David's historicity, no date; the turn goes on to the warlord stories, and at 00:57:41 “I don't know that we can know anything really about this individual … some features of David are probably historical.” Second pass: line [00:57:17.790] Dan McClellan matched by script; 00:55:15–00:59:01 read. No date; kept as a verdict on the row’s subject (header flag 4). Verified. Second pass 2026-11-28 (#274): line re-matched by script. Verified.",
     }
   133@00:35:57:
     {
       agent: pass,
       owner: "",
-      note: "states: tradition. First two sentences of the 00:35:57 turn, setting the stage for Hosea in the 8th century. “traditionally” marks the tradition's side; counting back by centuries reaches the 10th. Second pass: line [00:35:57.071] Dan McClellan matched by script; 00:34:00–00:38:48 read (stage-setting for Hosea, 8th century). Verified.",
+      note: "states: tradition. First two sentences of the 00:35:57 turn, setting the stage for Hosea in the 8th century. “traditionally” marks the tradition's side; counting back by centuries reaches the 10th. Second pass: line [00:35:57.071] Dan McClellan matched by script; 00:34:00–00:38:48 read (stage-setting for Hosea, 8th century). Verified. Second pass 2026-11-28 (#274): re-matched; 00:34:00–00:37:15 read; also attached to `solomon`. Verified.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Title and display are for the reigns of David and Solomon, what the sources date; narrower than the issue's “united monarchy”, which no source dates as a historical entity. Second pass: title and display re-checked against HarperCollins, Finkelstein and Sergi (Coogan cut); the reigns, not the kingdom. Holds. #274 split: now David's reign only, titled “Reign of David”; HarperCollins “David”, Finkelstein p. 113 and Sergi p. 298 each place David in the tenth century.",
+      note: "Title and display are for the reigns of David and Solomon, what the sources date; narrower than the issue's “united monarchy”, which no source dates as a historical entity. Second pass: title and display re-checked against HarperCollins, Finkelstein and Sergi (Coogan cut); the reigns, not the kingdom. Holds. #274 split: now David's reign only, titled “Reign of David”; HarperCollins “David”, Finkelstein p. 113 and Sergi p. 298 each place David in the tenth century. Second pass 2026-11-28: holds.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Sources agree on the tenth century; HarperCollins's ca. 1010 start is shown in the note, not dropped. Second pass: the note now shows the kingdom split by name (Schmidt on Finkelstein; Mazar) without saying how many scholars hold either. Holds.",
+      note: "Sources agree on the tenth century; HarperCollins's ca. 1010 start is shown in the note, not dropped. Second pass: the note now shows the kingdom split by name (Schmidt on Finkelstein; Mazar) without saying how many scholars hold either. Holds. Second pass 2026-11-28 (#274): holds for David; the note’s dictionary clause is David’s only.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "Trigger 133@00:35:57 has states: tradition. Second pass: E133 re-matched; “traditionally” states the tradition side. Holds. #274 split: tradition now cites the David paragraph only (1009–969).",
+      note: "Trigger 133@00:35:57 has states: tradition. Second pass: E133 re-matched; “traditionally” states the tradition side. Holds. #274 split: tradition now cites the David paragraph only (1009–969). Second pass 2026-11-28: holds.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "Holder “Got Questions Ministries, an evangelical ministry” equals the registry `tradition:` for the new source. Second pass: registry `tradition:` re-read; About page re-fetched and “Christian, evangelical, theologically conservative, and nondenominational” matched. Holds.",
+      note: "Holder “Got Questions Ministries, an evangelical ministry” equals the registry `tradition:` for the new source. Second pass: registry `tradition:` re-read; About page re-fetched and “Christian, evangelical, theologically conservative, and nondenominational” matched. Holds. Second pass 2026-11-28: About page re-fetched and re-matched. Holds.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "Biblical-account dates (McKenzie, Garfinkel) and “supposed”/“alleged time” (Mazar Part 4) left uncited; every cited date is flat. Second pass: Coogan’s hedged date (“it is likely that … at the beginning of the tenth century”) cut on this rule; the remaining critical dates are flat. Holds.",
+      note: "Biblical-account dates (McKenzie, Garfinkel) and “supposed”/“alleged time” (Mazar Part 4) left uncited; every cited date is flat. Second pass: Coogan’s hedged date (“it is likely that … at the beginning of the tenth century”) cut on this rule; the remaining critical dates are flat. Holds. Second pass 2026-11-28 (#274): the remaining dates (HarperCollins, Finkelstein, Sergi) re-read as flat. Holds.",
     }
 sources:
   harpercollins-2009-dictionary:

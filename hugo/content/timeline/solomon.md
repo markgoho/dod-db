@@ -20,7 +20,7 @@ critical:
       quote: "Despite the challenging fact that we do not have any evidence of Solomon from his own day (mid-tenth century BCE), there is good reason to believe that the legendary Solomon grew from a historical core."
       read: 2026-11-28
     - source: ej-solomon
-      locator: "biblical section, paragraph beginning “Already at the outset of his reign”"
+      locator: "biblical section, under “The Kingdom of Solomon”, paragraph beginning “Already at the outset of his reign”"
       quote: "Indeed, in the time that has transpired since the appearance of the first edition of the Encyclopaedia Judaica, both archaeological evidence and critical study of the biblical texts have undermined the confidence of scholars about the greatness of Solomon. Some scholars despair of recovering the historical Solomon, while others call his very existence into question."
       read: 2026-11-28
     - source: finkelstein-2007-quest-solomon
