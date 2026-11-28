@@ -922,6 +922,12 @@ triggers:
       owner: "",
       note: "First pass 2026-11-26: matched by script at timestamp and speaker, verbatim; read the turns about two minutes either side; hedges kept. Subject Gehenna and Topheth; the turn's earlier “that's a mistranslation” is not quoted. Second pass 2026-11-26: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side; subject and hedges confirmed; pass.",
     }
+  190@00:09:13:
+    {
+      agent: "pass",
+      owner: "",
+      note: "Ep 190 process-next-episode 2026-11-28: matched at timestamp and speaker in the final Transcript, verbatim; read about two minutes either side. Subject the-dead: Samuel's ghost raised at Endor. No hedge dropped; Heyes replies that heaven and hell as closed systems need Samuel explained away as a demon.",
+    }
 rules:
   publish-rule:
     {
