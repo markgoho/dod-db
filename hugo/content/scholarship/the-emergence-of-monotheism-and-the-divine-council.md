@@ -796,6 +796,226 @@ statements:
         locator: "p. 669"
         quote: "Yet greater caution has not produced such insights into the nature of Herem and Eshem as might command the consent of the scholarly community."
         read: 2026-11-27
+  - id: elephantine-origins
+    group: "Gods in Israelite practice"
+    question: "Where did the Jews of Elephantine come from?"
+    short: "It is unclear. Most scholars agree the community was there before the Persian conquest of Egypt, but when and from where it came is debated: proposals include Judah, the former northern kingdom of Israel, and arrival in several waves."
+    text: "Tawny Holm writes that the time of the community's arrival is much debated, but that most scholars agree it was before the Persian conquest. Ingo Kottsieper notes that the community itself claimed, when asking to rebuild its temple in 407 BCE, that the temple had stood before Cambyses conquered Egypt, and he dates the community and its temple to the reign of Amasis at the latest; M. E. Mondriaan writes that their date of arrival is unknown but that they were well established by 525 BCE. Bob Becking says it is historically unclear when they settled and that the options suggested range from Judeans who escaped Josiah's policy to recruitment by the Persians; he argues that they came in waves. Mondriaan holds that they probably came from the former northern kingdom of Israel. Jonathan Stökl describes Karel van der Toorn's reconstruction of the ancestors' path from Israel via Palmyra to Elephantine, and says it rests on van der Toorn's own disputed reading of Papyrus Amherst 63; Stökl himself writes of ancestors who came from the territories of the former kingdoms of Judah and Israel. Kottsieper reads the community's old spelling of the god's name and the Hebrew epithet Sabaoth as traditions brought from Judah and/or Israel, and rejects Gad Barnea's argument for an original Samarian or Israelite background; Barnea writes that the founders came from Palestine, most probably in the middle of the sixth century BCE. James Moore argues that the Judeans at Elephantine and Syene were not mercenaries but an imperial colony of Persian loyalists."
+    cites:
+      - source: holm-2024-samarians-egyptian-diaspora
+        locator: "p. 204"
+        quote: "The time of the arrival of this community and its sister Aramean community on nearby mainland Syene is much debated, but most scholars do agree that this dates to a time before Persian conquest."
+        read: 2026-11-27
+      - source: kottsieper-2024-yhh-sbaot
+        locator: "p. 246"
+        quote: "It is common knowledge that the Jaho-community itself claimed in 407 BC as an argument for the rebuilding of their temple that had already existed before the conquest of Egypt by Cambyses"
+        read: 2026-11-27
+      - source: kottsieper-2024-yhh-sbaot
+        locator: "p. 262"
+        quote: "the consolidation of the Jaho community with a temple on Elephantine must be dated to the time of Amasis at the latest, but may well have even older antecedents."
+        read: 2026-11-27
+      - source: mondriaan-2013-anat-yahu
+        locator: "p. 540"
+        quote: "Although their date of arrival at Elephantine is unknown, they were well established by 525 B.C.E."
+        read: 2026-11-27
+      - source: becking-2020-identity-persian-egypt-intro
+        locator: "p. x"
+        quote: "Historically, it is unclear when they settled, and many possible options have been suggested, ranging from Judeans who escaped the fundamentalist policy of Josiah to recruitment by the Persians."
+        read: 2026-11-27
+      - source: becking-2020-identity-persian-egypt-intro
+        locator: "p. x"
+        quote: "I argue that the Yehudites came in waves."
+        read: 2026-11-27
+      - source: mondriaan-2013-anat-yahu
+        locator: "p. 540"
+        quote: "These Jews probably originated from the former kingdom of northern Israel, which came, together with Judah, under Egyptian rule after the death of Josiah."
+        read: 2026-11-27
+      - source: stokl-2025-elephantine-judaism
+        locator: "p. 71"
+        quote: "Karel van der Toorn combined his own reading and translation of Papyrus Amherst 63 with his reading of the evidence from Elephantine to produce a highly creative reconstruction of the path that the ancestors of the Elephantine Jews took from Israel via the cultural and religious melting pot of Palmyra until they reached Elephantine."
+        read: 2026-11-27
+      - source: stokl-2025-elephantine-judaism
+        locator: "p. 71"
+        quote: "The difficulty with Van der Toorn’s theory is that it relies on his own—disputed—reading of Amherst 63"
+        read: 2026-11-27
+      - source: stokl-2025-elephantine-judaism
+        locator: "p. 73"
+        quote: "we do not know what religious ideas Elephantine Jews would have inherited from their ancestors who came from the territories of the former kingdoms of Judah and Israel."
+        read: 2026-11-27
+      - source: kottsieper-2024-yhh-sbaot
+        locator: "p. 262"
+        quote: "show that this community conservatively adhered to its traditions brought from Judah and/or Israel into the Persian period."
+        read: 2026-11-27
+      - source: kottsieper-2024-yhh-sbaot
+        locator: "p. 255, n. 33"
+        quote: "cannot be used as an argument for an original Samarian/Israelite background of the Jaho community as proposed by Barnea"
+        read: 2026-11-27
+      - source: barnea-2024-p-berlin-13464
+        locator: "p. 1"
+        quote: "The founders of this community had originally arrived at the Syene area from Palestine, most probably in the middle of the sixth century BCE, still under the rule of the Egyptian twenty-sixth dynasty."
+        read: 2026-11-27
+      - source: moore-2024-administering-cult
+        locator: "p. 305"
+        quote: "That work argues that the Judeans at Elephantine and Syene were not mercenaries, but rather an imperial colony of Persian loyalists."
+        read: 2026-11-27
+  - id: elephantine-passover
+    group: "Gods in Israelite practice"
+    question: "Is the Elephantine “Passover letter” about Passover?"
+    short: "It is uncertain. The fragmentary letter of 419 BCE gives rules for days 15 to 21 of Nisan, but the word “Passover” does not survive in it; it has long been read as instructions for the Festival of Unleavened Bread or Passover, which of the two is disputed, and some recent studies doubt that it concerns either."
+    text: "James Moore describes the so-called Passover Letter as instructions from Hananiah to the priest Yedaniah about a particular week of the month of Nisan, among documents of the fifth year of Darius II (419 BCE). Jonathan Stökl notes that the word “Passover” is not in the surviving text: it was already reconstructed in Eduard Sachau's first edition, and one could equally restore Maṣṣot (Unleavened Bread). Gad Barnea writes that for all scholars before him the question was not whether the letter concerns Passover or Unleavened Bread but which, and Ingo Kottsieper, who reads it as conveying the Persian administration's instructions for a festival in Nisan, says it is disputed whether that is Maṣṣot or Passover. Two recent studies read it otherwise. Moore argues that, rather than festival timing as most have previously argued, it concerns the temple's means to provide for festivals in view of the year's coming taxation and audits. Barnea holds that it more probably describes a Zoroastrian-style yasna observance than Passover or Maṣṣot, a reading Kottsieper finds less convincing. Stökl concludes that the text is too fragmentary and leaves too much room for speculation. The Aramaic word for Passover, psḥ, is attested at Elephantine on ostraca, as Stökl notes."
+    cites:
+      - source: moore-2024-administering-cult
+        locator: "p. 308"
+        quote: "The so-called Passover Letter has been at the center of the discussion of Judean festivals since its publication because it deals with instructions from someone named Ḥananyah to the priest Yedanyah at Elephantine regarding activity within a particular week of the month of Nisan."
+        read: 2026-11-27
+      - source: moore-2024-administering-cult
+        locator: "p. 307"
+        quote: "it will focus on a collection of texts dating to the fifth year of Darius II (419 BCE)"
+        read: 2026-11-27
+      - source: stokl-2025-elephantine-judaism
+        locator: "p. 68"
+        quote: "The third text is TAD A4.1 in which the word “Passover” is not mentioned in the extant part of the papyrus"
+        read: 2026-11-27
+      - source: stokl-2025-elephantine-judaism
+        locator: "p. 68"
+        quote: "one could equally well reconstruct the word Maṣṣot here."
+        read: 2026-11-27
+      - source: barnea-2024-p-berlin-13464
+        locator: "p. 10"
+        quote: "In any event, for all scholars thus far, the question is not if the ritual(s) prescribed in P. Berlin 13464 is the psḥ and/or maṣṣot feasts – but whether both are intended or just the maṣṣot feast"
+        read: 2026-11-27
+      - source: kottsieper-2024-yhh-sbaot
+        locator: "p. 259"
+        quote: "In this connection, Hananiah also gives instructions for the date and some rules of a festival in Nisan, whereby it is disputed whether it concerns the Massot or Passover festival."
+        read: 2026-11-27
+      - source: moore-2024-administering-cult
+        locator: "pp. 312–313"
+        quote: "His instructions to Yedanyah at Elephantine seem less likely to refer to a matter of timing regarding festivals in the week of Nisan, as most have previously argued, but rather to the temple’s ability to finance and provide the resources for such festivals in view of the year’s upcoming taxation and auditing."
+        read: 2026-11-27
+      - source: barnea-2024-p-berlin-13464
+        locator: "p. 29"
+        quote: "While we cannot be absolutely certain that P. Berlin 13464 represents a yasna (or a yasna-inspired) observance, it is undoubtedly more probable that it does do so, than the pshʾ / massot."
+        read: 2026-11-27
+      - source: kottsieper-2024-yhh-sbaot
+        locator: "p. 259, n. 44"
+        quote: "For a different – in my opinion less convincing – reading and interpretation see Barnea."
+        read: 2026-11-27
+      - source: stokl-2025-elephantine-judaism
+        locator: "p. 68"
+        quote: "But whatever historical reality lies behind this text, it is too fragmentary and leaves too much space for historical speculation."
+        read: 2026-11-27
+      - source: stokl-2025-elephantine-judaism
+        locator: "p. 68"
+        quote: "The Aramaic equivalent of Passover, psḥ, likely vocalised like the Hebrew term Pessach is attested on two ostraca: D7.6 and D7.24."
+        read: 2026-11-27
+  - id: elephantine-torah
+    group: "Gods in Israelite practice"
+    question: "Did the Jews of Elephantine know the Torah?"
+    short: "Their documents show little or no sign of it: they never mention the Torah or figures such as Moses, and though Passover and the Sabbath are named, scholars find little to show these resembled the biblical festivals. Why the biblical traditions are absent is debated."
+    text: "Reinhard Kratz writes that the Achaemenid-period archives of Elephantine and Al-Yahudu do not reveal any knowledge of or references to the literature that became the Hebrew Bible, and that the Torah of Moses is not mentioned, not even in the so-called Passover letter. Tawny Holm says the preserved texts nowhere mention the Torah or its major characters, such as Joseph or Moses, and that there is limited-to-no evidence that the community knew the Torah or any part of what would become the Hebrew Bible. The Sabbath and Passover are named: Holm writes that they might have been observed but that there is little to indicate they resembled their biblical equivalents, James Moore that whether the Passover resembled the biblical Passover cannot be known, and Jonathan Stökl that the terms occur but what the days signified is unclear. Scholars explain the absence differently. Kratz reports that scholars point to Elephantine's place on the periphery, among other arguments, and rejects them; he concludes that the Torah-centred Yahwism of the Hebrew Bible was not yet widespread. Stökl describes scholars, as early as Wellhausen, who see at Elephantine a Judaism not yet touched by the Torah, and argues himself for a non-Torah-centred Yahwism that is neither older nor purer but simply different from that of the Hebrew Bible."
+    cites:
+      - source: kratz-2024-biblical-yahwism
+        locator: "p. 271"
+        quote: "The sources from the Achaemenid period, i.e. the epigraphic finds in Samaria and Yehud as well as the two archives of Elephantine and Al-Yahudu, on the other hand, do not reveal any knowledge of or references to the literature which eventually became the Hebrew Bible."
+        read: 2026-11-27
+      - source: kratz-2024-biblical-yahwism
+        locator: "p. 272"
+        quote: "the Torah of Moses is not mentioned, not even in the so-called Passover letter from Elephantine."
+        read: 2026-11-27
+      - source: holm-2024-samarians-egyptian-diaspora
+        locator: "p. 206"
+        quote: "Preserved Elephantine texts nowhere mention the Torah or its major characters – even those such as Joseph or Moses who spent time in Egypt"
+        read: 2026-11-27
+      - source: holm-2024-samarians-egyptian-diaspora
+        locator: "p. 219"
+        quote: "While there is limited-to-no evidence that the Elephantine community of Yahwists, despite their devotion to Yahō and their cultic connections with Judah and Samaria, knew the Torah or any part of what would become the Hebrew Bible"
+        read: 2026-11-27
+      - source: holm-2024-samarians-egyptian-diaspora
+        locator: "p. 206"
+        quote: "but there is little to indicate that any of these, not even Sabbath and Passover, resembled what is known of their equivalents from the Hebrew Bible."
+        read: 2026-11-27
+      - source: moore-2024-administering-cult
+        locator: "p. 329"
+        quote: "Whether the Passover resembles the biblical Passover, cannot be known."
+        read: 2026-11-27
+      - source: stokl-2025-elephantine-judaism
+        locator: "p. 75"
+        quote: "The terms Pesach and Shabbat occur in the documentation"
+        read: 2026-11-27
+      - source: stokl-2025-elephantine-judaism
+        locator: "p. 75"
+        quote: "What these days signify to individuals, whether, indeed, all members of the Elephantine Jewish community even ascribed the same significance to them is unclear."
+        read: 2026-11-27
+      - source: kratz-2024-biblical-yahwism
+        locator: "p. 273"
+        quote: "Thus, scholars emphasize the fact that the most important epigraphic sources do not come from the land but from the diaspora, i.e. from peripheral areas (such as Elephantine and Al-Yahudu)."
+        read: 2026-11-27
+      - source: kratz-2024-biblical-yahwism
+        locator: "p. 274"
+        quote: "However, none of these arguments stand up to closer scrutiny."
+        read: 2026-11-27
+      - source: kratz-2024-biblical-yahwism
+        locator: "p. 276"
+        quote: "biblical, Torah-centered Yahwism was not widespread in this period and had little to no historical or sociological impact yet."
+        read: 2026-11-27
+      - source: stokl-2025-elephantine-judaism
+        locator: "p. 64"
+        quote: "here scholars as early as Wellhausen argue that Elephantine Judaism represents a Judaism that is as yet “unsullied” by the Torah as we know it."
+        read: 2026-11-27
+      - source: stokl-2025-elephantine-judaism
+        locator: "p. 64"
+        quote: "this essay argues for a non-biblical Elephantine Judaism—a non-Torah-centred Yahwism that is neither older nor purer but simply different from that represented by the texts in the Hebrew Bible."
+        read: 2026-11-27
+  - id: elephantine-sacrifice
+    group: "Gods in Israelite practice"
+    question: "Did the Jews of Elephantine give up animal sacrifice to have their temple rebuilt?"
+    short: "The documents have usually been read that way, but the reading is disputed. The memorandum approving the rebuilding mentions only grain and incense offerings, and a fragmentary offer from the community's leaders has been read as agreeing to omit burnt offerings."
+    text: "Before the destruction of 410 BCE, James Moore writes, the community's petition to Bagavahya shows that grain offerings, burnt animal offerings and sacrifices were at least occasionally performed in the temple. Ingo Kottsieper writes that the struggle for permission to rebuild led to the decision to renounce bloody sacrifices, a concession to outsiders; whether these were religious leaders from Judah, the priests of Khnum or the Persians is, he says, debated. Moore reports that the memorandum of Bagavahya and Delaiah (TAD A4.9) is often cited as evidence that the rebuilt temple would abstain from blood sacrifice; in his translation it permits the temple's rebuilding and grain and incense offerings on its altar. Moore also says a roster of backers (TAD A4.10) has been taken to mean that the Judeans agreed to omit burnt offerings if the temple were rebuilt, and that all have followed its first editor's restoration. He disputes both readings: the memorandum's silence on blood sacrifice cannot be construed as a Persian prohibition, and other restorations of the roster's damaged lines are possible that give the opposite meaning. Moore adds that the memorandum is no indication that the approved rebuilding was ever undertaken; Tawny Holm writes that documents dated after 404 BCE may indicate that the temple was rebuilt, though its remains have not been found."
+    cites:
+      - source: moore-2024-administering-cult
+        locator: "p. 307"
+        quote: "shows that meal-offerings (Aram. MNḤH), burnt animal offerings (Aram. ˁLWH), and sacrifices (Aram. DBḤ) were, at least, occasionally performed in the temple."
+        read: 2026-11-27
+      - source: kottsieper-2024-yhh-sbaot
+        locator: "p. 245"
+        quote: "Thus, the struggle for permission to rebuild the temple after its destruction led to the cultic decision to renounce bloody sacrifices."
+        read: 2026-11-27
+      - source: kottsieper-2024-yhh-sbaot
+        locator: "p. 245"
+        quote: "But the extant sources make it clear that this decision had been a concession to outsiders who took offense at these sacrifices or were against the Jaho-temple because for other reasons."
+        read: 2026-11-27
+      - source: kottsieper-2024-yhh-sbaot
+        locator: "p. 245"
+        quote: "Whether these outsiders had been religious leaders from Judea, the Egyptian priests of Chnum or the Persians is a matter of debate."
+        read: 2026-11-27
+      - source: moore-2024-administering-cult
+        locator: "p. 319"
+        quote: "One of the two texts often cited as evidence that the rebuilt temple of Yahô would abstain from blood sacrifice is TAD A4.9."
+        read: 2026-11-27
+      - source: moore-2024-administering-cult
+        locator: "p. 320"
+        quote: "(It shall be to you in Egypt) to (re)build it in its place, as it was formerly. And the grain-offerings and incense-offerings they may present on that altar, just as formerly had been done."
+        read: 2026-11-27
+      - source: moore-2024-administering-cult
+        locator: "p. 321"
+        quote: "and the document has been taken to mean that if the temple is rebuilt, the Judeans agree to omit burnt offerings from the temple’s services."
+        read: 2026-11-27
+      - source: moore-2024-administering-cult
+        locator: "p. 320"
+        quote: "Furthermore, the papyrus lacks reference to blood sacrifices, but this cannot be construed as meaning the Persians prohibited the renovated temple from performing sacrifices."
+        read: 2026-11-27
+      - source: moore-2024-administering-cult
+        locator: "p. 324"
+        quote: "While all have followed Sachau’s restoration and interpreted A4.10 as such, other restorations are possible which produce the opposite meaning."
+        read: 2026-11-27
+      - source: moore-2024-administering-cult
+        locator: "p. 320"
+        quote: "the document itself is not “official” nor is it an indication that the approved project was ever undertaken."
+        read: 2026-11-27
+      - source: holm-2024-samarians-egyptian-diaspora
+        locator: "p. 204"
+        quote: "Documents from Elephantine dated after 404 BCE may indicate the temple was indeed rebuilt by then, even if the remains of this second temple have not been uncovered."
+        read: 2026-11-27
   - id: tradition
     group: "Religious traditions"
     question: "What do Jewish and Christian traditions hold about God's oneness?"

@@ -10,6 +10,8 @@
 # Second pass changes: (1) Cut category/9 (MacDonald, publisher's catalogue blurb) to uncited, its sentence removed from category's text, registry entry removed; category/10–13 renumbered 9–12. (2) Locators: other-gods/5 p. 37 → p. 38 (Machinist); elephantine-gods/3 p. 543 → p. 538 (Mondriaan; text reworded to his “most significant” of the documents referring to YHW); development/10 → section “From Henotheism to Monotheism? Not Quite” (Ben-Dov); Fredriksen's five locators → the posted PDF's own pages 1, 3, 5, 23 (it is a pre-pagination copy numbered 1–23; explicit/16 is body text at n. 11, not in the note); angels/6–7 → p. 461 (van der Toorn 2024). (3) Quote: explicit/10 “DeuteroIsaiah” → “Deutero-Isaiah”. (4) Shorts narrowed: elohim (“usually… when it means Israel's God” → “often construed with a singular verb, as when it means Israel's God”); development (“reject” → “question or reject”); elephantine-temple (“an island in southern Egypt” → “an island in the Nile”). (5) Text: shema's Tigay sentence “since” → “noting that”. (6) Registry: fredriksen-2022-many-gods access line (pre-pagination PDF, not the published article); vandertoorn-2024-persian-imperialism access line (PDF read via the Archive; url unchanged). (8) Burns locators: elohim/9–10 “paragraph 5” → “paragraph 3” (the ilu and abstract-plural sentences are in the review's third paragraph; elohim/11 stays in paragraph 5). Section and paragraph locators of every HTML source re-checked by script against the nearest preceding heading or paragraph count; EJ angels quotes confirmed above the Bamberger and Gutmann sign-offs respectively. (7) publish-rule recounted by clause: “first explicit denial in Second Isaiah” is stated outright by 2 authors (Coogan and Chapman, NABRE) and supported by 2 (Hayes, Markl), not 6; the rule still holds; 16 statements.
 # Second pass flags for the lead: (a) Ep 126 00:14:50–00:16:02 (not attached): “most scholars these days are on the side of understanding this to mean Adonai is one”, against Tigay's preferred “YHVH… alone” in shema's text; log as a conflict for the owner's re-review (data/scholarship-candidates.yaml). (b) Ep 59 00:14:06 (not attached): “there's not monotheism in the Bible”, in tension with explicit's short; the attached 00:15:13 sentence is about the framework's utility and stays. (c) explicit's short “during the Babylonian exile” rests on Coogan and Chapman and Machinist; Markl says “around, or some time after, 539” (reported in the text), Petry the fifth century; kept, but it is the thinnest clause in the core; Markl p. 1 also calls the explicit claim the “post-exilic formulation of ‘theoretical monotheism’”, placing it after the exile. (d) Fredriksen's copy is pre-pagination; HTR 23–45 is in the registry's series line only. (e) Encyclopedia of Religion entries (Sperling, Ludwig, Yusa) are signed “(1987 and 2005)”, Hendel “(2005)”: kept as 2005 per the-origins-of-yahweh precedent; the cited sentences may be 1987 text. (f) First-pass flags 1, 2, 5, 6, 12 (TheTorah, Pickwick, EJ year null, Kimelman, Tigay 1996) re-checked and left as flagged; none is alone behind a short.
 # Publish 2026-11-27 (lead agent, on the second pass's flags): (a) and (b) the two turns the second pass found (126@00:16:02, “most scholars would say … Adonai is one”; 59@00:14:06, “there's not monotheism in the Bible”) logged as conflicts in data/scholarship-candidates.yaml under shema and explicit, not attached. (c) explicit's short narrowed to “In Second Isaiah (Isaiah 40–55), scholars say”: the date clause “written in the sixth century BCE during the Babylonian exile” rested on Coogan and Chapman and Machinist only, with Markl's “around, or some time after, 539” and Petry's fifth century in the text, so the date stays in the text, attributed, and leaves the short. (d) Encyclopedia of Religion entries signed “1987 and 2005” kept at 2005, as on the-origins-of-yahweh; none is alone behind a short. (e) MacDonald's cut kept; the other first-pass flags stand as recorded. Publish rule recomputed: 16 statements; core explicit stated outright by Coogan and Chapman 2019 and the NABRE Isaiah 44 note (Reference), supported by Hayes 2006 and Markl 2020, with Sperling and Machinist on the late date: 2 or more independent in-window authors, none Host-authored. Holds. draft flag dropped; sourcesRead 2026-11-27.
+# Partial re-review for #243 (2026-11-27; owner delegated, #93; no owner check). The #151 publish left four Elephantine questions unstated because the BZAW 548 chapters were read only in a browser and not saved (see Dropped above). First pass (lead agent): the publisher's whole-volume PDF of Barnea and Kratz (eds.), Yahwism under the Achaemenid Empire (BZAW 548, 2024, open access) was fetched from the Internet Archive snapshot 20250519175720 of degruyterbrill.com/document/doi/10.1515/9783111018638/pdf and saved with pdftotext; Stökl 2025, Mondriaan 2013, Becking 2020 and the EJ entry re-fetched from their registry URLs. Read in full: Barnea (pp. 1–34), Holm (197–224), Kottsieper (245–266), Kratz (267–278), Moore (305–336), Stökl 2025, Becking's introduction; the volume grepped for Passover, Torah/Pentateuch, A4.9/A4.10, sacrifice. Four statements added in group “Gods in Israelite practice”: elephantine-origins, elephantine-passover, elephantine-torah, elephantine-sacrifice (49 citations, five new registry ids, all Scholarly, in window). Every quote script-matched against the saved text at its locator (whitespace, quotes, dashes, ligatures and line-break hyphens normalised): 48 hits, 1 letters-only, 1 across a page break checked by hand (see notes). Existing statements, review date and sourcesRead unchanged (partial re-review, #93); the infographic draws only on elephantine-temple and elephantine-gods, so it is unaffected. Posen Library headnotes stay uncited (no credentials shown).
+# #243 flags for the second pass: (1) Each short reports the field from 2+ authors: origins (Holm's “much debated… most scholars do agree… before Persian conquest”, Becking's “unclear… many possible options”); passover (Barnea's “for all scholars thus far” and Moore's “as most have previously argued”, each with its own scope, Kottsieper's “disputed”, Stökl's “too fragmentary”); torah (Kratz and Holm; Stökl and Moore on psḥ/šbh); sacrifice (Kottsieper holds the usual reading, Moore reports it as followed by all and dissents) — sacrifice is the thinnest: only Kottsieper holds the reading himself. (2) The sacrifice question avoids presupposing the rebuilding happened (Moore p. 320; Holm p. 204 “may indicate”). Moore p. 320 n. 40 (no archaeological evidence of renovation at von Pilgrim's site) sits against Stökl p. 66's “traces of an attempt at rebuilding” cited on elephantine-temple; not changed here (existing statement), flagged for the owner's next full re-review. (3) Kottsieper and Barnea date Cambyses' conquest to 526 BCE, Mondriaan and the existing page to 525; elephantine-origins gives Mondriaan's 525 attributed and no year for Kottsieper. (4) Barnea's and Moore's alternative readings of A4.1 and Moore's of A4.9/A4.10 are single-author views, so they are in the texts, attributed, not in the shorts. (5) The Kottsieper registry title is a transliteration of the chapter's Hebrew.
 review: 2026-11-27
 delegation:
   by: owner
@@ -1007,6 +1009,300 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read. Second pass 2026-11-27: re-fetched; quote matched verbatim at its locator; surrounding passage, statement, question and short answer re-read against it; verified.",
     }
+  elephantine-origins/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-origins/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it. Matched letters-only: “twenty-sixth” is split across a line in the PDF text.",
+    }
+  elephantine-origins/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-passover/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-passover/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-passover/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-passover/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-passover/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-passover/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-passover/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it. The quote spans the page break (pp. 312–313), interrupted in the PDF text by footnotes 23–25 and the running head; matched across it by hand.",
+    }
+  elephantine-passover/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-passover/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-passover/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-passover/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-torah/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-sacrifice/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-sacrifice/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-sacrifice/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-sacrifice/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-sacrifice/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-sacrifice/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it. Moore’s own translation of TAD A4.9 (n. 41: “The translation is my own”), set as indented lines in the PDF.",
+    }
+  elephantine-sacrifice/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-sacrifice/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-sacrifice/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-sacrifice/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
+  elephantine-sacrifice/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243 partial re-review): script-matched against the saved text of the source at its locator; surrounding passage, statement, question and short answer read against it.",
+    }
   tradition/1:
     {
       agent: pass,
@@ -1400,6 +1696,36 @@ sources:
       owner: "",
       note: "First pass 2026-11-27: Reference: Encyclopaedia Judaica (Gutmann); year null (registry); as ej-angels-bible. Second pass 2026-11-27: re-fetched; quotes sit under “In the Apocrypha and Pseudepigrapha”; verified.",
     }
+  barnea-2024-p-berlin-13464:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243): Scholarly: open-access chapter (CC BY-NC-ND 4.0), De Gruyter 2024, in window. Barnea, BZAW 548 pp. 1–34 (DOI …-001, chapter first page). Read in the publisher's whole-volume PDF (604 pp., created 2024-10-03) via the Internet Archive snapshot 20250519175720 of …/9783111018638/pdf; printed page = PDF page − 14. Registry url is the chapter's publisher page, as for vandertoorn-2024-persian-imperialism.",
+    }
+  holm-2024-samarians-egyptian-diaspora:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243): Scholarly: open-access chapter (CC BY-NC-ND 4.0), De Gruyter 2024, in window. Holm, Pennsylvania State University, BZAW 548 pp. 197–224 (DOI …-005). Read in the publisher's whole-volume PDF (604 pp., created 2024-10-03) via the Internet Archive snapshot 20250519175720 of …/9783111018638/pdf; printed page = PDF page − 14. Registry url is the chapter's publisher page, as for vandertoorn-2024-persian-imperialism.",
+    }
+  kottsieper-2024-yhh-sbaot:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243): Scholarly: open-access chapter (CC BY-NC-ND 4.0), De Gruyter 2024, in window. Kottsieper, BZAW 548 pp. 245–266 (DOI …-007); title transliterated from the chapter’s Hebrew יהה צבאת and יהו מרא שמיא. Read in the publisher's whole-volume PDF (604 pp., created 2024-10-03) via the Internet Archive snapshot 20250519175720 of …/9783111018638/pdf; printed page = PDF page − 14. Registry url is the chapter's publisher page, as for vandertoorn-2024-persian-imperialism.",
+    }
+  kratz-2024-biblical-yahwism:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243): Scholarly: open-access chapter (CC BY-NC-ND 4.0), De Gruyter 2024, in window. Kratz, University of Göttingen, BZAW 548 pp. 267–278 (DOI …-008). Read in the publisher's whole-volume PDF (604 pp., created 2024-10-03) via the Internet Archive snapshot 20250519175720 of …/9783111018638/pdf; printed page = PDF page − 14. Registry url is the chapter's publisher page, as for vandertoorn-2024-persian-imperialism.",
+    }
+  moore-2024-administering-cult:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-27 (#243): Scholarly: open-access chapter (CC BY-NC-ND 4.0), De Gruyter 2024, in window. Moore, Ohio State University, BZAW 548 pp. 305–336 (DOI …-010). Read in the publisher's whole-volume PDF (604 pp., created 2024-10-03) via the Internet Archive snapshot 20250519175720 of …/9783111018638/pdf; printed page = PDF page − 14. Registry url is the chapter's publisher page, as for vandertoorn-2024-persian-imperialism.",
+    }
   vandertoorn-2024-persian-imperialism:
     {
       agent: pass,
@@ -1480,13 +1806,17 @@ leads:
   - "Saul Olyan, “Is Isaiah 40–55 Really Monotheistic?” JANER 12 (2012): cited by Fredriksen; not opened."
   - "Pongratz-Leisten (ed.), Reconsidering the Concept of Revolutionary Monotheism (2011): cited by Markl; not open."
   - "Nathan MacDonald, Deuteronomy and the Meaning of “Monotheism” (2003/2012), full text: paywalled."
-  - "Karel van der Toorn, Becoming Diaspora Jews (Yale 2019), on the community's northern origins: known through Stökl and Moore."
-  - "BZAW 548 chapters by Kratz, Kottsieper, Moore and Barnea on Elephantine and the Torah, the Passover letter and the rebuilt temple's sacrifices: read by a research agent in a browser, not saved; to be re-read for any future Elephantine statement."
+  - "Karel van der Toorn, Becoming Diaspora Jews (Yale 2019), on the community's northern origins: known through Stökl and Moore; elephantine-origins reports it only as Stökl does (#243)."
+  - "Gad Barnea, “The Migration of the Elephantine Yahwists” (argues a Samarian/Israelite background; reported by Kottsieper p. 255 n. 33), Kahn, “The Date of the Arrival of the Judeans at Elephantine”, Grabbe, “Elephantine and the Torah” (2013; “Scholars generally agree…”, quoted by Barnea p. 24), Granerød, Dimensions of Yahwism (BZAW 488, 2016), Porten, Archives from Elephantine (1968), Sachau 1911 and the TAD translations of A4.1 and A4.10 (as given by Barnea and Moore): quoted or cited inside the BZAW 548 chapters, not read in the source (#243)."
   - "van Ruiten, “Angels and Demons in the Book of Jubilees” (2007), on Jubilees 15:31–32: open PDF behind Cloudflare."
   - "Trotter, JBL 131 (2012) on Psalm 82 and Deut 32: paywalled. McClellan, JBL 137 (2018) on Psalm 82 (Host-authored): not downloaded."
   - "Krašovec, Živa Antika 45 (1995): “the majority of commentators” read Psalm 82's gods as Israelite judges; read, but one year outside the window (see uncited)."
   - "van der Toorn, “The Nature of the Biblical Teraphim”, CBQ 52 (1990); Lewis, “Teraphim”, DDD; Schmidt, Israel's Beneficent Dead (1996): via Sonia, Cook and Cox and Ackerman."
 uncited:
+  - "#243: Encyclopaedia Judaica “Elephantine” (Schalit and Matassa), on the Passover document as Darius II's edict observed “in keeping with the commandments of the Torah”, on animal sacrifice “no longer permitted” after the rebuilding, and on origins in the days of Manasseh: read; year null, text likely first-edition, and these are interpretations, not the facts the page cites it for; the in-window chapters report these older readings (Barnea p. 10, Moore pp. 319–324). Its “no remains of the Pentateuch have been discovered at Elephantine” is consistent with elephantine-torah but not needed."
+  - "#243: Mondriaan 2013 p. 541 n. 12, the Passover Papyrus “sets out instructions by Darius II … regarding the celebration of the Feast of Unleavened Bread”: read; relays Rosenberg 2004, not Mondriaan's own reading; not cited."
+  - "#243: Moore p. 313 and p. 328, the letter's dates “align with the biblical Feast of Weeks” and Passover “followed the next day by the Feast of Weeks”: read; apparently a slip for Unleavened Bread; not cited."
+  - "#243: Holm p. 206, “possibly the Festival of Unleavened Bread (TAD A4.1)… might have been observed”; Kratz p. 273, the biblical narrative as “the firm consensus in scholarship” (scope: scholars following the biblical narrative of the Persian period, not Elephantine); Stökl p. 65 n. 10 (absence of evidence of literary texts is not evidence of absence): read; not needed, or scope too different to cite."
   - "Second pass 2026-11-27, cut from category (was category/9): Mohr Siebeck's catalogue description of Nathan MacDonald, Deuteronomy and the Meaning of “Monotheism” (FAT II/1, 2nd ed. 2012), “He traces the use of 'monotheism' since its coinage in 1660 and argues that its use in Old Testament scholarship frequently reflects a narrowed, intellectualistic conception of religion”: read; marketing copy that reports MacDonald's argument, not his own text, and unlike the OUP chapter summaries (#86) no precedent admits a catalogue blurb; when in doubt, cut. Registry entry macdonald-2012-deut-meaning-monotheism-summary removed (cited by no page); category keeps Fredriksen, Markl, Sommer and Ben-Dov."
   - "Krašovec 1995, Živa Antika 45: read; “the majority of commentators have interpreted these psalms as referring to Israelite judges”; just outside the 30-year window, so not set against Frankel's and Mongé-Greer's in-window statements."
   - "Heiser 2006 (HIPHIL, evangelical e-journal) and Heiser, Bibliotheca Sacra 158 (2001): read; Tradition venues; the “consensus view” that the council's gods became angels is reported only to be disputed."
