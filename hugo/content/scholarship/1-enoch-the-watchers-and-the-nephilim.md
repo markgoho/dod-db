@@ -4,7 +4,7 @@ dek: "What 1 Enoch and Jubilees are, when and in what languages they were writte
 core: composite
 sourcesRead: 2026-11-27
 related:
-  books: [genesis, numbers, jude]
+  books: [genesis, numbers, jude, 1-peter]
   tags: [book-of-enoch]
   topics: [book-of-enoch, nephilim, jubilees, angel]
 watch:
@@ -141,6 +141,50 @@ statements:
         locator: "section on the Pseudepigrapha"
         quote: 'and four of the five sections that make up 1 Enoch: The Parables or Similitudes are absent, but there is in addition an Enochic "Book of Giants" (eight Aramaic manuscripts from Cave 4).'
         read: 2026-11-27
+  - id: animal-apocalypse
+    group: "The book of 1 Enoch"
+    question: "When was the Animal Apocalypse (1 Enoch 85–90) written?"
+    short: "In the Maccabean era, in the second century BCE, sources say, though its date, like that of every part of 1 Enoch, has drawn a range of suggestions."
+    text: "George Nickelsburg and James VanderKam's introduction to their translation says the vision in its present form dates from the time of Judas Maccabeus, between 164 and 160 BCE, though the parallel passages in 90:6–19 may indicate an earlier date around 200 BCE. Lorenzo DiTommaso's chapter in an SBL Press volume says it derives from the same Maccabean-era setting as the visions of Daniel; his note says its date, as with every part of 1 Enoch, has drawn a range of suggestions, and reports Nickelsburg's 165–163 BCE. Martha Himmelfarb's chapter in the same volume says the Book of Dreams (chapters 83–90) can be placed in the second century BCE with considerable confidence, even if there is some disagreement about where in that century."
+    cites:
+      - source: nickelsburg-vanderkam-2012-introduction
+        locator: "p. 9"
+        quote: "In its present form, the vision dates from the time of Judas Maccabeus (between 164 and 160 b.c.e.), although the parallel passages in 90:6-19 may indicate an earlier date around 200 b.c.e."
+        read: 2026-11-27
+      - source: ditommaso-2023-revealed
+        locator: "p. 100"
+        quote: "The Animal Apocalypse (1 En. 85–90) derives from the same Maccabean-era setting of the revelatory visions of Daniel."
+        read: 2026-11-27
+      - source: ditommaso-2023-revealed
+        locator: "p. 100 n. 44"
+        quote: "As with all the component parts of 1 Enoch, the date of the Animal Apocalypse has elicited a range of suggestions. According to Nickelsburg, the text’s internal data correlates well to a date of 165–163 BCE"
+        read: 2026-11-27
+      - source: himmelfarb-2023-heavenly-ascent
+        locator: "p. 438"
+        quote: "The Book of Dreams (1 En. 83–90), the Apocalypse of Weeks (1 En. 91, 93), the Book of Giants, and Jubilees can all be placed in the second century BCE with considerable confidence even if there is some disagreement about precisely where in that century each of them belongs."
+        read: 2026-11-27
+  - id: epistle
+    group: "The book of 1 Enoch"
+    question: "When was the Epistle of Enoch written?"
+    short: "Sources place it in the second century BCE, though one says a second-century date for the Epistle as a whole is possible but by no means certain."
+    text: "Nickelsburg and VanderKam say the Epistle (chapters 91/92–105) dates from the second century BCE and was added as a conclusion to the corpus before the Book of Parables and the Book of the Luminaries were incorporated into the collection. Chad Pierce's Durham dissertation reports that Loren Stuckenbruck dates four of the five units in chapters 91–108, the Epistle among them, to the second century BCE. Martha Himmelfarb, in another SBL Press volume, says a second-century date for the Epistle as a whole is possible but by no means certain, and so treats the Apocalypse of Weeks embedded in it on its own; in a later chapter she places the Apocalypse of Weeks in the second century BCE with considerable confidence."
+    cites:
+      - source: nickelsburg-vanderkam-2012-introduction
+        locator: "p. 12"
+        quote: "The Epistle dates from the second century b.c.e. and was added as a conclusion to the corpus before both the Book of Parables and the Book of the Luminaries were incorporated into the collection."
+        read: 2026-11-27
+      - source: pierce-2009-spirits-proclamation
+        locator: "p. 67"
+        quote: "Stuckenbruck dates the first four of these units to the second century B.C.E."
+        read: 2026-11-27
+      - source: himmelfarb-2019-pseudepigrapha-greek
+        locator: "p. 266 n. 7"
+        quote: "I refer to the Apocalypse of Weeks rather than to the Epistle of Enoch, the larger work in which it is embedded, because a second century date for the Epistle of Enoch as a whole is possible but by no means certain."
+        read: 2026-11-27
+      - source: himmelfarb-2023-heavenly-ascent
+        locator: "p. 438"
+        quote: "The Book of Dreams (1 En. 83–90), the Apocalypse of Weeks (1 En. 91, 93), the Book of Giants, and Jubilees can all be placed in the second century BCE with considerable confidence even if there is some disagreement about precisely where in that century each of them belongs."
+        read: 2026-11-27
   - id: languages
     group: "The book of 1 Enoch"
     question: "In what language was 1 Enoch written, and how has it survived?"
@@ -217,6 +261,36 @@ statements:
         locator: "closing section"
         quote: "Classical rabbinic literature contains almost no traces of Watchers traditions, and later Christian writers increasingly preferred alternative explanations for the origins of evil."
         read: 2026-11-27
+  - id: rediscovery
+    group: "The book of 1 Enoch"
+    question: "How did 1 Enoch reach modern Europe?"
+    short: "In 1773 James Bruce brought three Ethiopic manuscripts of it to Europe, sources say; Richard Laurence's English translation of the whole followed in 1821."
+    text: "Annette Yoshiko Reed says rumours that Enochic literature was still preserved in Ethiopia led, after several failures and false starts, to the Western rediscovery of the Book of the Watchers and other early Enochic writings in 1773, when three manuscripts were brought to Europe by James Bruce. Archie Wright says modern research on 1 Enoch began in 1773 with Bruce's discovery of the whole book, when he brought three Ethiopic manuscripts back to Europe. Stuckenbruck and Boccaccini say the book was reintroduced to the broader Western world in the century before R. H. Charles wrote, beginning with translations of a few passages into Latin by A. I. Silvestre de Sacy (1800), of the whole into English by Richard Laurence (1821), and into German by Andreas Gottlieb Hoffmann (1838). Christopher Rowland's chapter in an SBL Press volume also gives Laurence's English translation of the Ethiopic Apocalypse of Enoch, published at Oxford in 1821."
+    cites:
+      - source: reed-2005-fallen-angels
+        locator: "Introduction, p. 3"
+        quote: "finally led, after several failures and false starts, to the Western rediscovery of the Book of the Watchers and other early Enochic pseudepigrapha in 1773, when three manuscripts containing"
+        read: 2026-11-27
+      - source: reed-2005-fallen-angels
+        locator: "Introduction, p. 3"
+        quote: "were brought to Europe by James Bruce."
+        read: 2026-11-27
+      - source: wright-2015-origin-evil-spirits
+        locator: "p. 12"
+        quote: "Modern research on 1 Enoch had its beginning in 1773 with the discovery of the whole of 1 Enoch by James Bruce who brought three Ethiopic manuscripts back to Europe."
+        read: 2026-11-27
+      - source: stuckenbruck-boccaccini-2016-intro
+        locator: "p. 2"
+        quote: "a tradition that had only been reintroduced to the broader Western world during the previous century, beginning with translations of a few passages by A. I. Silvestre de Sacy into Latin (1800), by Richard Laurence of the whole into English (1821), and by Andreas Gottlieb Hoffmann into German (1838)."
+        read: 2026-11-27
+      - source: rowland-2023-open-heaven
+        locator: "p. 67"
+        quote: "since a decade before his study, Richard Laurence’s English translation of the Ethiopic Apocalypse of Enoch had been published."
+        read: 2026-11-27
+      - source: rowland-2023-open-heaven
+        locator: "p. 67 n. 18"
+        quote: "Richard Laurence, The Book of Enoch (Oxford: Parker, 1821)."
+        read: 2026-11-27
   - id: jude
     group: "The book of 1 Enoch"
     question: "Does the New Testament quote 1 Enoch?"
@@ -246,6 +320,28 @@ statements:
       - source: mbuvi-bo-jude-apocryphal
         locator: "section “How did Jude use 1 Enoch?”, paragraph beginning “Another possible explanation”"
         quote: "In such a case, the texts would have been quoted not in recognition of their authority but as a tool against opponents."
+        read: 2026-11-27
+  - id: spirits-in-prison
+    group: "The book of 1 Enoch"
+    question: "Are the “spirits in prison” of 1 Peter 3:19–20 the Watchers?"
+    short: "Likely, in the sources read, which take them as the rebellious angels of the Watchers story; William Dalton, whose 1964 study has dominated scholarship on the passage, was instrumental in developing that reading."
+    text: "Chad Pierce's Durham dissertation says a number of scholars in the early twentieth century applied the fallen-angel tradition to 1 Peter 3:19, and that William Dalton, whose thorough work has dominated scholarship since it was first published in 1964, was instrumental in developing this interpretation: like Spitta, Selwyn and Reicke, Dalton holds that the spirits in prison are the Watchers. Kelley Coblentz Bautch's chapter in an SBL Press volume describes 1 Peter 3:18–22 as Jesus preaching to the spirits in prison, likely rebellious angels of Enochic lore."
+    cites:
+      - source: pierce-2009-spirits-proclamation
+        locator: "p. 18"
+        quote: "While a number of individuals in the early twentieth century applied the fallen angel tradition to 1 Pet 3:19"
+        read: 2026-11-27
+      - source: pierce-2009-spirits-proclamation
+        locator: "p. 18"
+        quote: "Dalton, whose thorough work has dominated scholarship since it was first published in 1964, was instrumental in the development of this interpretation."
+        read: 2026-11-27
+      - source: pierce-2009-spirits-proclamation
+        locator: "p. 18"
+        quote: "Like Spitta, Selwyn, and Reicke, Dalton claims that the spirits in prison refer to the watchers."
+        read: 2026-11-27
+      - source: coblentz-bautch-2016-heavenly-beings
+        locator: "p. 123 n. 65"
+        quote: "1 Pet 3:18–22 (Jesus preaches to the spirits in prison [likely rebellious angels of Enochic lore])"
         read: 2026-11-27
   - id: son-of-man
     group: "The book of 1 Enoch"

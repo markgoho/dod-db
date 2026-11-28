@@ -12,6 +12,7 @@
 # Second pass changes. Cut to uncited (4): oldest/3 (DiTommaso n. 26: hangs on “among the earliest”, not on the third/fourth-century date), canon/9 (Martin: the quoted sentence does not name Enoch), genesis-6/5 and /6 (Coblentz Bautch: about traditions of the figure Enoch, wrong section, and she co-edits the Harkins introduction); oldest keys renumbered (old 4–10 now 3–9). Shorts: composite (“largely attributed”: Stuckenbruck–Boccaccini p. 10 say “mostly” in Enoch's name, chs. 6–11 anonymous, some parts Noah's); nephilim (“commonly explained” to “glossed … though other sources say its meaning is uncertain”: no source says “commonly”); fragment (flood clause dropped: Jang alone dissents, against what the article calls the “prevailing scholarly view”); genesis-6 (“no consensus” to “debated”, and the common-tradition view moved to the text: Harkins et al. alone); origin-of-evil (“has no consensus” to “debated”; “a polemic against the Jerusalem priesthood” to Pierce's “metaphor for impure priests”); jubilees-date (no “widely followed”, Monger alone and scoped; first-century redaction text only; now “probably around the middle of that century; some scholars argue for a later date within it”); son-of-man (scoped to Matthew, as both sources are; “not settled”, not “disagree”); canon (“scholarly”, not “modern”, rediscovery); tradition (Jubilees dropped: the list's “Jublee” entry is unquoted). Texts: oldest (Reed's “suggested”; VanderKam clause dropped with its cut); parables (Grabbe's date kept conditional on 67:5–13 and Herod); canon (Asale's own words; Martin sentence dropped); son-of-man (Stuckenbruck–Boccaccini's “certain” conditional on an early Parables; Botner's “some form of”); fragment (Adelman's “each” is 1 Enoch and Jubilees; Jang in the article's words, no pronoun); genesis-6 (Coblentz Bautch sentence dropped); origin-of-evil (Suter: “the fall of the angels”); tradition (Jubilees clause dropped). Locators corrected (43): oldest/6 (Nickelsburg–VanderKam p. 6, not 7), Collins ×3 (section “The Jewish Apocalypses”), Coblentz Bautch ×3 (full heading), Angel ×4, Boling–Proctor ×3, Ben-Dov ×3 (“What was the calendar like?”), Mbuvi ×2 (“How did Jude use 1 Enoch?”), Martin and Hayes (chapter headings), Usue ×2 (p. 820, not 819), Sommer TheTorah ×2, Adelman ×3, Doedens pp. 189–90 split into 189 and 190, Orlov p. 245, Brand, Pierce ×2 (p. 30), Segal ×5 (no headings: “opening paragraphs”, “paragraph after the calendar charts”), Hanneken pp. 3–4 split into 3 and 4, Wright 2019 p. 148, Got Questions. Registry and Trigger Claims files not edited. Counts after: 19 statements, 173 citations, 30 Trigger Claims.
 # Second pass flags for the lead: (1) NABRE notes (nabre-genesis-6-notes, nabre-numbers-13-notes) are Reference by registry convention (every NABRE entry), but #159 says confessional study Bibles are Tradition; if NABRE were Tradition, the nephilim short's “fallen ones” gloss would rest on Angel alone (one author) and would need narrowing or cutting; sons-of-god (Reyburn–Fry, Adelman, Segal, Sommer) and fragment (Doedens, Sommer, Adelman) keep two or more without it. Decide the class rule. (2) Hanneken's PDF names “Early Jewish Literature: An Introduction and Reader” (Eerdmans, 2014); the book appeared as Early Jewish Literature: An Anthology (Eerdmans, 2018) per a web search; registry left as is. (3) Trigger 137@00:04:32 says “during the Hasmonean kingdom”; Hanneken p. 2 places composition before the dynasty was established. The first pass's exclusion test was “a statement's sources contradict them”; Hanneken p. 2 is such a source on this clause, though no statement says it. Second pass did not edit the triggers file; the lead decides whether to trim the clause (“it was probably originally written in Hebrew” stands alone) or drop the claim. (4) Triggers 62@00:37:56 and 157@00:37:30 do not name their subject (context makes it 1 Enoch and the Book of the Watchers). (5) The tradition short rests on ethiopianorthodox.org, not shown to be the Patriarchate's site; the canon statement carries the same fact from DiTommaso–Goff, Wright and Asale. (6b) Usue's registry pages 809–24 disagree with the PDF's running heads (810 on the title page through 824, 16 pages); the locators use the PDF's p. 820; if 809–24 is right, the heads are off by one. (6) Stuckenbruck is an author of both stuckenbruck-boccaccini-2016-intro and stuckenbruck-2014-oppressors; neither pairing backs one short alone. (7) First-pass flags (1)–(3), (5), (7)–(11) re-checked and stand; flag (4) updated by (2) above; flag (6) by (5) above. Publish rule recomputed: core backed by Coblentz Bautch (Reference), Stuckenbruck–Boccaccini and Ahearne-Kroll (Scholarly): 3 independent authors; Tigchelaar and Stewart Lester back parts only. 19 statements. Ids, slug and draft unchanged.
 # Publish 2026-11-27 (lead agent, on the second pass's flags): (1) NABRE class: kept Reference. CONTEXT.md settles it: a study Bible is Tradition when its publisher is a ministry with a statement of faith, “unless its notes are written by a scholarly association, as the NABRE's are”; #159's “confessional study Bibles” rule is that same line. The nephilim short keeps Angel and the NABRE for “fallen ones”. (2) Hanneken venue: kept Reference (an introduction prepared for an introductory reader), registry unchanged; it backs no short alone (jubilees-date also rests on van Ruiten and Monger; jubilees-text on Segal and Monger; jubilees-watchers on van Ruiten; calendar on Nickelsburg–VanderKam, Ben-Dov and Segal). (3) Trigger 137@00:04:32 trimmed to “and it was probably originally written in Hebrew”, dropping “This is during the Hasmonean kingdom”, which Hanneken p. 2 contradicts; re-matched by script at timestamp and speaker. (4) 62@00:37:56 and 157@00:37:30 kept: a Trigger Claim gates the subject, and their turns (Qumran copies of First Enoch; Beecher's “When was this written?” on 1 Enoch 6–11) name it. (5) Tradition short kept on eotc-canon, named in the text as the website presenting what the church holds; the same canon fact stands on Scholarly sources in canon. (6) Usue locator p. 820 kept, following the PDF the URL serves. (7) Davies year left null (registry convention for EJ entries); Collins EoR 2005 revision kept; VanderKam 2026 abstract-only kept for the eleven-manuscript count, which is a fact also given in Trigger 62@00:37:56's turn. Publish rule recomputed: 19 statements; core composite backed by Coblentz Bautch (Reference, 2022), Stuckenbruck–Boccaccini (Scholarly, 2016) and Ahearne-Kroll (Scholarly, 2019), none Host-authored: met. draft flag dropped.
+# #250 first pass 2026-11-27 (agent, partial re-review per #93: the four new statements' own citations get the full procedure; review and sourcesRead stay 2026-11-27). Every cited PDF re-fetched by curl into the #250 scratch folder and split per page with pdftotext; all 19 new quotes script-matched on the page their locator names (whitespace, NFKC, soft hyphens and line-end hyphens normalised): 19/19. Added four statements, none behind an infographic plate (the plates draw on composite, oldest, parables, languages, canon, calendar and strands, all unchanged): animal-apocalypse (Nickelsburg–VanderKam 2012 p. 9; DiTommaso p. 100 and n. 44; Himmelfarb 2023 p. 438 on the Book of Dreams: three authors for the Maccabean era / second century; the years are Nickelsburg's, attributed, since DiTommaso, Wright 2015 and Pierce only report him); epistle (Nickelsburg–VanderKam p. 12; Pierce p. 67 reporting Stuckenbruck; Himmelfarb 2019 p. 266 n. 7, “possible but by no means certain”: the short gives the date and her hedge); rediscovery (Bruce 1773: Reed 2005 p. 3, Wright 2015 p. 12; Laurence 1821: Stuckenbruck–Boccaccini p. 2, Rowland p. 67 and n. 18); spirits-in-prison (Pierce p. 18 on Dalton's reading and its place in scholarship; Coblentz Bautch 2016 p. 123 n. 65, “likely rebellious angels of Enochic lore”; no source read says “majority” of the reading, so the short says “Likely”). New registry entries: coblentz-bautch-2016-heavenly-beings, himmelfarb-2019-pseudepigrapha-greek, rowland-2023-open-heaven, himmelfarb-2023-heavenly-ascent (SBL ICI PDFs already in the registry for other chapters). 1-peter added to related books. Hanneken venue settled (sources/hanneken-2014-jubilees). Not added: Jubilees 4:30 (Ron, Jewish Bible Quarterly, read but not a shown Scholarly venue; see uncited and leads). Trigger Claims file not edited: a Trigger Claim gates the page, not a statement, and the issue's named Episodes (62@00:44:55, 27@00:40:56, 137@00:13:52) are left for a refresh; 27@00:40:56 does not say which Petrine epistle, and 62's turns give a 1801 German translation where Stuckenbruck–Boccaccini give Hoffmann's 1838. Publish rule unchanged (core composite untouched): 23 statements.
 review: 2026-11-27
 delegation:
   by: owner
@@ -169,6 +170,54 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded.",
     }
+  animal-apocalypse/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Nickelsburg–VanderKam 2012 introduction (Fortress excerpt PDF) re-fetched by curl (HTTP 200, application/pdf) into the #250 scratch folder; matched verbatim on the PDF page whose running foot reads “Introduction 9” (line-end hyphen in “Mac-cabeus” joined). Their own date for the vision in its present form, with their earlier-date hedge carried in the text. Nickelsburg is the author behind the dates DiTommaso (n. 44), Wright 2015 p. 25 and Pierce n. 201 report, so those reports are not counted as further authors for the years; the short says only the era.",
+    }
+  animal-apocalypse/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): DiTommaso, EJL 57 (SBL ICI PDF) re-fetched by curl (HTTP 200, application/pdf) into the #250 scratch folder; pdftotext per page; matched verbatim on printed p. 100 (running head), section 2.2.2 “The Animal Apocalypse”, footnote marker 44 after the sentence not quoted. His own characterisation of the setting, the era the short gives. Was uncited (p. 100 and n. 44, one author); now cited with a second and third author.",
+    }
+  animal-apocalypse/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): same PDF and page, n. 44, matched verbatim (quote stops before the page reference “(1 Enoch 1, 355)”). Backs the short's “range of suggestions” and the text's report of Nickelsburg's 165–163 BCE, attributed.",
+    }
+  animal-apocalypse/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Himmelfarb, “Heavenly Ascent Revisited”, EJL 57 (same PDF), matched verbatim on printed p. 438 (running head “438 Martha Himmelfarb”), section 2 “The Early Reception of the Book of the Watchers”; footnote marker 34 not quoted (n. 34 cites Nickelsburg for the Book of Dreams with a possible late-third-century date). Her statement covers the Book of Dreams (chs. 83–90) as a whole, and the text says so; it is not narrowed to chs. 85–90.",
+    }
+  epistle/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Nickelsburg–VanderKam 2012 introduction, matched verbatim on PDF page 12 (pages carry the printed numbers: page 9 has the foot “Introduction 9”), closing paragraph of “The Epistle of Enoch with an Introduction (Chaps. 91–105)”.",
+    }
+  epistle/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Pierce 2009 (Durham E-Theses PDF) re-fetched by curl (HTTP 200, application/pdf) into the #250 scratch folder; pdftotext per page; matched verbatim on printed p. 67 (page-foot number), §3.2.2.1; Pierce reports Stuckenbruck's dating of the five units (Apocalypse of Weeks, Exhortation, Epistle, Birth of Noah, Eschatological Admonition), the Epistle among the first four; attributed in the text as a report. Stuckenbruck also co-authors stuckenbruck-boccaccini-2016-intro, which is not cited here.",
+    }
+  epistle/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Himmelfarb, “The Pseudepigrapha in Greek”, EJL 50 (SBL ICI PDF) re-fetched by curl (HTTP 200, application/pdf) into the #250 scratch folder; pdftotext per page; matched verbatim on printed p. 266 (running head “266 Martha Himmelfarb”), n. 7 (line-end breaks joined). Her hedge carries the short's second clause, attributed (“one says”).",
+    }
+  epistle/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): same quote as animal-apocalypse/4 (Himmelfarb EJL 57 p. 438): backs the text's clause that she places the Apocalypse of Weeks in the second century BCE with considerable confidence. Same author as epistle/3, so the short's two-or-more authors are Nickelsburg–VanderKam, Pierce (reporting Stuckenbruck) and Himmelfarb.",
+    }
   languages/1:
     {
       agent: pass,
@@ -265,6 +314,42 @@ citations:
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: re-fetched into the second pass's own folder; script-matched verbatim; locator finds it; surrounding passage read; supports the statement as worded.",
     }
+  rediscovery/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Reed 2005 (Cambridge excerpt PDF) re-fetched by curl (HTTP 200, application/pdf) into the #250 scratch folder; pdftotext per page; matched verbatim on the page with running head “INTRODUCTION 3”; the quote stops before the transliteration “Mas. .hafa Henok Nabiy”, whose diacritics the PDF text breaks; split into two citations at that point.",
+    }
+  rediscovery/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): same page; matched verbatim; footnote marker 9 after “Bruce.” not quoted.",
+    }
+  rediscovery/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Wright 2015 ch. 2 (Fortress excerpt PDF) re-fetched by curl (HTTP 200, application/pdf) into the #250 scratch folder; pdftotext per page; matched verbatim on printed p. 12 (running head “12 Chapter 2”), §2.2 “History of the Texts”, first sentence. A second author for Bruce and 1773, independent of Reed; with Hessayon 2023 (read, uncited) three authors.",
+    }
+  rediscovery/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Stuckenbruck–Boccaccini 2016, EJL 44 (SBL ICI PDF) re-fetched by curl (HTTP 200, application/pdf) into the #250 scratch folder; pdftotext per page; matched verbatim on printed p. 2 (running head “2 STUCKENBRUCK AND BOCCACCINI”; line-end hyphens joined); footnote marker 4 not quoted. “the previous century” is the one before Charles's 1912 claim, so the text says “in the century before R. H. Charles wrote”.",
+    }
+  rediscovery/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Rowland, EJL 57 (SBL ICI PDF) re-fetched by curl (HTTP 200, application/pdf) into the #250 scratch folder; pdftotext per page; matched verbatim on printed p. 67 (running head), line-end hyphen in “Lau-rence” joined. “his study” is Lücke's survey, first published 1832 (same paragraph). The year 1821 is in n. 18 (rediscovery/6).",
+    }
+  rediscovery/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): same page, n. 18; matched verbatim. With rediscovery/5, a second author for Laurence's English translation and its year.",
+    }
   jude/1:
     {
       agent: pass,
@@ -300,6 +385,30 @@ citations:
       agent: pass,
       owner: "",
       note: "First pass 2026-11-27: matched against fetched text; surrounding passage read; supports the statement as worded. Second pass 2026-11-27: verified; locator now names the section.",
+    }
+  spirits-in-prison/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Pierce 2009, matched verbatim on printed p. 18 (page-foot number; the second pass's earlier note on Pierce's quotes at p. 30 concerns other citations); footnote marker 63 after “3:19” not quoted.",
+    }
+  spirits-in-prison/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): same page; matched verbatim (footnote marker 64 not quoted). “dominated scholarship” is said of Dalton's work, not of the reading, and the short says only that; no source read says “majority” or “most” of the Watchers reading, so the short does not. Pierce's own thesis modifies this view (p. 22, “This thesis attempts to modify view III”) but holds the spirits are fallen angels and/or giants, so he is not a dissent.",
+    }
+  spirits-in-prison/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): same page; matched verbatim. Dalton's identification, attributed.",
+    }
+  spirits-in-prison/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Coblentz Bautch, “Heavenly Beings in the Enoch Traditions and Synoptic Gospels”, EJL 44 (SBL ICI PDF) re-fetched by curl (HTTP 200, application/pdf) into the #250 scratch folder; pdftotext per page; matched verbatim on printed p. 123 (running head “HEAVENLY BEINGS IN ENOCH AND THE SYNOPTIC GOSPELS 123”), n. 65. Her own identification, hedged (“likely”), which sets the short's “Likely”. An author independent of Pierce. Overlap: the-origins-of-hell#descent cites the NABRE note that it is not clear who the spirits are (flood dead or hostile angelic powers); that note is the NAB's 1986 New Testament, outside the window for a field statement (#86), so not cited here; the question here is the Enochic reading, not the descent.",
     }
   son-of-man/1:
     {
@@ -1243,7 +1352,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: 19 statements. Core composite cites Coblentz Bautch (Bible Odyssey, Reference, 2022), Stuckenbruck and Boccaccini (SBL Press, Scholarly, 2016), Ahearne-Kroll (SBL Press, Scholarly, 2019), Tigchelaar (SBL Press, Scholarly, 2019) and Stewart Lester (Bible Odyssey, Reference, 2023): 5 independent authors, all inside the window, none Host-authored. Coblentz Bautch is also an editor of harkins-bautch-endres-2014-introduction, not cited in the core. Second pass 2026-11-27: recomputed after cuts: 19 statements, 173 citations. Counting only sources that back the core claim as a whole (composite, at least five parts, by different writers over centuries): Coblentz Bautch (Reference, 2022), Stuckenbruck and Boccaccini (Scholarly, 2016) and Ahearne-Kroll (Scholarly, 2019): 3 independent authors, one or more Scholarly or Reference, none Host-authored. Tigchelaar (booklets copied separately) and Stewart Lester (attribution) back parts only and are not counted. Rule holds.",
+      note: "First pass 2026-11-27: 19 statements. Core composite cites Coblentz Bautch (Bible Odyssey, Reference, 2022), Stuckenbruck and Boccaccini (SBL Press, Scholarly, 2016), Ahearne-Kroll (SBL Press, Scholarly, 2019), Tigchelaar (SBL Press, Scholarly, 2019) and Stewart Lester (Bible Odyssey, Reference, 2023): 5 independent authors, all inside the window, none Host-authored. Coblentz Bautch is also an editor of harkins-bautch-endres-2014-introduction, not cited in the core. Second pass 2026-11-27: recomputed after cuts: 19 statements, 173 citations. Counting only sources that back the core claim as a whole (composite, at least five parts, by different writers over centuries): Coblentz Bautch (Reference, 2022), Stuckenbruck and Boccaccini (Scholarly, 2016) and Ahearne-Kroll (Scholarly, 2019): 3 independent authors, one or more Scholarly or Reference, none Host-authored. Tigchelaar (booklets copied separately) and Stewart Lester (attribution) back parts only and are not counted. Rule holds. #250 first pass 2026-11-27: four statements added (23); core composite unchanged; rule holds.",
     }
   consensus-wording:
     {
@@ -1522,11 +1631,35 @@ sources:
       owner: "",
       note: "First pass 2026-11-27: Reference; TheTorah.com 2014. Second pass 2026-11-27: re-fetched by curl (HTTP 200) at the registry URL into the second pass's own folder; class and venue stand.",
     }
+  coblentz-bautch-2016-heavenly-beings:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Scholarly; SBL Press, EJL 44 (2016), pp. 105–28 from the volume's table of contents; SBL ICI PDF (open, #80 clarification). Inside the window. Same author as coblentz-bautch-bo-enoch and an editor of harkins-bautch-endres-2014-introduction; neither is cited in spirits-in-prison.",
+    }
+  himmelfarb-2019-pseudepigrapha-greek:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Scholarly; SBL Press, EJL 50 (2019), pp. 263–86 from the table of contents; SBL ICI PDF. Inside the window. Same author as himmelfarb-2023-heavenly-ascent (counted once).",
+    }
+  rowland-2023-open-heaven:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Scholarly; SBL Press, EJL 57 (2023), pp. 61–84 from the table of contents; SBL ICI PDF. Inside the window.",
+    }
+  himmelfarb-2023-heavenly-ascent:
+    {
+      agent: pass,
+      owner: "",
+      note: "#250 first pass 2026-11-27 (agent, partial re-review per #93): Scholarly; SBL Press, EJL 57 (2023), pp. 429–70 from the table of contents; SBL ICI PDF. Inside the window.",
+    }
   hanneken-2014-jubilees:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-27: Reference; author-posted PDF (St. Mary's University course site) of an introduction and reader on Jubilees, self-cited as for an Eerdmans introduction and reader of early Jewish literature (2014; venue unverified). Flag (4). Second pass 2026-11-27: re-fetched (HTTP 200). The PDF's header reads “In Early Jewish Literature: An Introduction and Reader, edited by Archie T. Wright, Ron Herms and Brad Embry. Grand Rapids: Eerdmans, 2014”; a web search finds the published book as Early Jewish Literature: An Anthology (Eerdmans, 2018). So an author's pre-publication copy of an anthology introduction: Reference stands; registry not edited (title and year unconfirmed in the publisher's catalogue). Flag.",
+      note: "First pass 2026-11-27: Reference; author-posted PDF (St. Mary's University course site) of an introduction and reader on Jubilees, self-cited as for an Eerdmans introduction and reader of early Jewish literature (2014; venue unverified). Flag (4). Second pass 2026-11-27: re-fetched (HTTP 200). The PDF's header reads “In Early Jewish Literature: An Introduction and Reader, edited by Archie T. Wright, Ron Herms and Brad Embry. Grand Rapids: Eerdmans, 2014”; a web search finds the published book as Early Jewish Literature: An Anthology (Eerdmans, 2018). So an author's pre-publication copy of an anthology introduction: Reference stands; registry not edited (title and year unconfirmed in the publisher's catalogue). Flag. #250 2026-11-27: venue settled. The Orion Center bibliography (Hebrew University; record orion-bibliography.huji.ac.il/node/72500, fetched and saved) lists Hanneken, “The Book of Jubilees”, in Wright, Embry and Herms (eds.), Early Jewish Literature: An Anthology, vol. 1, pp. 517–53 (Eerdmans, Grand Rapids, 2018); Pepperdine Digital Commons lists the volume (Eerdmans 2018, ISBN 9780802890139). The PDF names the same editors and publisher under the working title. Registry series and access lines now say so; id, year (the PDF read), class Reference and url unchanged. The PDF has not been compared with the printed chapter, so its locators stay PDF pages.",
     }
   vanruiten-2007-angels-demons:
     {
@@ -1593,15 +1726,14 @@ leads:
   - "Papaioannou, JBL (2021), on 2 Peter 2:4 and Jude 6: abstract only (logged by satan-demons-and-angels)."
   - "Drawnel, Qumran Cave 4: The Aramaic Books of Enoch (OUP 2019), for an updated manuscript count: closed."
   - "Britannica, “Book of Enoch”: 403 to scripted requests; nothing saved."
+  - "#250 searches for a second source on Jubilees 4:30 (2026-11-27): the SBL ICI PDFs of EJL 44, 50 and 57, van Ruiten 2007 and Monger 2018 have no discussion of the verse; VanderKam's Jubilees Hermeneia translation and commentary have no Fortress excerpt (ms.fortresspress.com download names 404) and the AlHaTorah copy shows no licence; Segal, The Book of Jubilees (Brill 2007), pp. 310–11 (cited by intertextual.bible), closed; intertextual.bible and similar sites are not an External Source class."
 uncited:
   - "Nickelsburg, “Dead Sea Scrolls Spotlight: The Book of Enoch”, Biblical Archaeology Review 33:5 (2007): read; a popular magazine, not a Scholarly or Reference venue. Its “11 Aramaic manuscripts”, “perhaps one fifth” coverage and Aramaic → Greek → Ethiopic chain not cited."
-  - "Hessayon, “James Bruce and His Copies of Ethiopic Enoch” (Brill 2023, Goldsmiths repository): read; the rediscovery statement was dropped for want of a second author on Bruce."
+  - "Hessayon, “James Bruce and His Copies of Ethiopic Enoch” (Brill 2023, Goldsmiths repository): read by the #159 first pass; the rediscovery statement was dropped for want of a second author on Bruce. #250: rediscovery now rests on Reed 2005 and Wright 2015 for Bruce and Stuckenbruck–Boccaccini and Rowland for Laurence; Hessayon not re-read this pass, so not added."
   - "Lied and Stuckenbruck 2019, n. 24 (only the Ge'ez preserves chs. 37–71): read; the footnote is split by a page break in the PDF text; the Parables' absence is carried by White Crawford and Davies."
   - "DiTommaso 2023, p. 92 (“among the earliest known apocalyptic texts”): read; the sentence is broken by a footnote block; DiTommaso n. 27 carries his point."
-  - "DiTommaso 2023, p. 100 and n. 44: the Animal Apocalypse in a Maccabean setting, 165–163 BCE per Nickelsburg: read; one author."
   - "Stuckenbruck and Boccaccini 2016, p. 3 (“Hardly anyone would doubt … Jude 6 and 14–15 … citing 1 En. 1:9 directly”): read; the sentence also cites “1 Pet 2:18–22”, apparently an error, so not quoted."
   - "Coblentz Bautch 2016 (EJL 44, p. 105): Augustine and Jerome's consternation about Enochic literature: read; same author as coblentz-bautch-bo-enoch."
-  - "Pierce 2009 on 1 Peter 3:19–20 as the Watchers (Dalton's reading “dominated scholarship since … 1964”): read; no statement on 1 Peter."
   - "Sim 1999 (HTS) on Matthew knowing the Book of the Watchers: read; one author's argument. Sim and Wright on the Watchers bound until judgment: read; background, covered by satan-demons-and-angels and the-origins-of-hell."
   - "Reed 2005 p. 6 n. 27 (the instruction motif only in Jubilees and the Similitudes before the second century CE): read; not needed."
   - "Hanneken 2014 on Jubilees 4:30 (a thousand years as one day) and on angelic mediation of the Torah: read; one author each."
@@ -1626,3 +1758,5 @@ uncited:
   - "Nickelsburg and VanderKam 2012, p. 5 (“The Parables can be dated sometime around the turn of the era”): read by the second pass; not added (no citations added on a second pass)."
   - "Orlov 2022, p. 245 (chs. 6–11 “according to current scholarly consensus, represent the earliest strata … usually dated to the third century BCE”): read by the second pass; not added."
   - "Stuckenbruck and Boccaccini 2016, p. 10 (1 Enoch “is a collection of pieces that … are mostly written under the name of the prediluvian patriarch, while one section is formally anonymous (chs. 6–11) and a few others are attributed to Noah”): read by the second pass; not added; the composite short narrowed to “largely attributed” on its strength."
+  - "Ron, “The Book of Jubilees and the Midrash on the Early Chapters of Genesis”, Jewish Bible Quarterly 41:3 (2013), pp. 143–55 (jbqnew.jewishbible.org PDF, open): read by the #250 first pass; pp. 148–49 say Jubilees 4:30 explains Gen 2:17 by a day as a thousand years, rooted in Ps 90:4. Not cited: the journal's site states no peer review and the author is its editor (an educator with a Ph.D. from Spertus), so it is not shown to be a Scholarly venue (#80); no registry precedent for JBQ. The Jubilees 4:30 statement still rests on Hanneken alone and is not added."
+  - "Himmelfarb 2023, EJL 57 p. 438 n. 34 and Wright 2015 p. 25 (both report Nickelsburg's Book of Dreams / Animal Apocalypse dates); Pierce 2009 p. 66 n. 201 (Nickelsburg dates the Book of Dreams after 169–163 BCE): read by the #250 first pass; reports of Nickelsburg, who is cited directly."
