@@ -4,9 +4,10 @@
 # stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
 #
 # Five comic panels in time order, with two settings each drawn twice:
-# Sheol, one shadowy underworld of the dead; the Valley of
-# Hinnom, a real valley by Jerusalem; the same underworld divided into
-# separate places in 1 Enoch; Daniel 12's dead rising to life or to
+# Sheol, one shadowy underworld of the dead; the Valley of Hinnom, a real
+# valley by Jerusalem; the same underworld divided into two places in 1
+# Enoch (two, for the righteous and the wicked: the three hollows of 1 Enoch
+# 22 are one cited author's reading); Daniel 12's dead rising to life or to
 # disgrace; and the same valley, in the New Testament, the fiery place where
 # sinners are punished. `sheol` is the anchor for the underworld and its
 # shades, chained into `enoch` and `daniel`; `hinnom` is chained into
@@ -56,18 +57,20 @@ images:
     statements: [separate-fates]
     aspect: "4:3"
     refs: [sheol]
-    alt: "The same underground cavern of the dead, now divided by rock walls into separate hollows: in one, lit warm amber, calm shades wait together; the others are dark, their shades apart, heads bowed."
+    alt: "The same underground cavern of the dead, now divided by one rock wall into two chambers: in the right one, lit warm amber, calm shades stand together; in the dark left one, shades stand apart, heads bowed."
     prompt: >-
       The SAME cut-away view of the earth and the SAME shadowy underground
       cavern of the dead as in the reference image, with the same pale grey
       ghostly shades in plain grey shrouds and the same hillside on top. But
-      now the cavern is divided by thick walls of rock into separate hollow
-      chambers, side by side, each holding its own group of shades. The
+      now the cavern is divided by ONE single thick wall of rock running
+      from the cavern's roof to its floor into exactly TWO chambers side by
+      side, no more: one chamber on the left and one on the right. The
       chamber on the RIGHT is lit with a soft warm golden amber glow and its
-      shades stand calm and upright. The other chambers are darker, near
-      black with halftone, and their shades stand apart, heads bowed,
-      waiting. The BOTTOM LEFT quarter of the picture is plain dark empty
-      rock with no figures. Negative list: no fire, no flames, no devils, no
+      shades stand calm and upright. The chamber on the LEFT is darker, near
+      black with halftone, and its shades stand apart, heads bowed, waiting.
+      Exactly two chambers, one dividing wall. The BOTTOM LEFT quarter of the
+      picture is plain dark empty rock with no figures. Negative list: no
+      third chamber, no extra hollows, no fire, no flames, no devils, no
       demons, no horns, no pitchforks, no chains, no torture, no angels, no
       text.
 

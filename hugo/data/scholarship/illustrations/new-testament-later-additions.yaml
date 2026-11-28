@@ -121,17 +121,26 @@ images:
   - id: today
     statements: [added-verses, revised-version]
     aspect: "16:9"
-    alt: "Today: a reader at a table looks at an open modern Bible in which one paragraph is set off inside large double square brackets."
+    alt: "Today: a smiling reader at a table, mug in hand, looks at an open modern Bible whose lines of type are plain grey bars; on the right page one paragraph is set off inside large square brackets."
     prompt: >-
       Present day. A wide view of a reader, a woman in a sweater, sitting at
-      a plain kitchen table with a mug of tea, looking with curiosity at a
-      large open modern printed Bible lying in the MIDDLE of the picture,
-      drawn big and clear. Each page has two columns of tiny illegible grey
-      type marks; on the RIGHT page, one paragraph is set off inside a pair
-      of LARGE bold black double square brackets, [[ at its start and ]] at
-      its end, and under it a thin rule with a few lines of smaller
-      footnote marks at the foot of the page. The reader sits on the RIGHT
-      side. The BOTTOM LEFT quarter of the picture is plain table top with
-      nothing on it. Negative list: no letters, no words, no numbers, no
-      phone, no laptop, no other people, no text other than the two double
-      square brackets.
+      a plain kitchen table with a mug of tea, looking with curiosity at an
+      open modern printed Bible lying on the table in the MIDDLE of the
+      picture, seen from the side at eye level so the scene reads as a
+      low, wide strip. Every line of type on both pages is drawn as a
+      plain solid light grey horizontal bar of even thickness, like a
+      wireframe mock-up: no letters, no letter shapes, no squiggles, no
+      words, just smooth grey bars in two neat columns per page. On the
+      RIGHT page, one block of these grey bars is set off between a pair of
+      LARGE bold black double square brackets, a [[ at the block's top left
+      and a ]] at the block's bottom right, and under it a thin rule with
+      a few shorter grey bars at the foot of the page. The reader sits on
+      the RIGHT side, seen from a little distance, her whole head and
+      shoulders well inside the picture. Composition for a very wide crop:
+      keep the reader's head, the open Bible and the mug all inside the
+      MIDDLE half of the picture's height, with a broad band of plain empty
+      wall above her head and plain empty table and floor below the book;
+      nothing important near the top or bottom edges. The BOTTOM LEFT quarter of the picture is plain table
+      top with nothing on it. Negative list: no letters, no words, no
+      numbers, no pseudo-writing, no scribbles, no phone, no laptop, no
+      other people, no text other than the two double square brackets.

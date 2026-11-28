@@ -195,7 +195,9 @@ Done when:
 Preview from the worktree with its own `hugo server` on a free port, in Claude in Chrome.
 
 - The poster and card views (`#share`, `#share-card`) match the PNGs.
-- The page's `og:image` points at the card; another Scholarship Page without an infographic has no `og:image`.
+- **The card carries the core's hedge.** When the core statement's short is hedged ("scholars say", "many scholars hold", "debated"), the `#share-card` view shows that hedge, usually by keeping the kicker on the card. A card that shows the headline alone states a debated reading as fact.
+- The page's `og:image` points at the card, and the `/scholarship/` index has no `og:image`: the card belongs to its own page only.
+- **No plate text spills its box.** At desktop and at 375px, measure in the browser: every descendant of each `.comic-plate` lies inside the plate's bounding rect, and each plate lies inside its panel's `figure`. Fix a spill before landing; a long display word is the usual cause.
 - Desktop and about 375px: no horizontal scroll, no clipped or split words, every unit the same measured width, lines and glyphs land where they should.
 - Semantics: lists, headings and any table report their roles (`computedRole`); each unit's name is text, not only a drawing.
 - Another Scholarship Page is unchanged.

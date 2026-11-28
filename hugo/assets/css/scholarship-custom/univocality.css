@@ -287,10 +287,7 @@
   gap: 0;
 }
 
-.scholarship-share:has(#share-card:target) .univ-comic__kicker {
-  display: none;
-}
-
+/* The kicker stays on the card: it carries the "as scholars describe it" hedge the shared card needs. */
 .scholarship-share:has(#share-card:target) .univ-comic__title {
   font-size: var(--step-2);
 }

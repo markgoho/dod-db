@@ -47,14 +47,18 @@ images:
   - id: dig
     statements: [historical]
     aspect: "4:3"
-    alt: "Two present-day scholars at a bare excavation trench disagree: one points hopefully into it, the other frowns with arms crossed."
+    alt: "Two present-day scholars at a library table disagree over the same open book: one points hopefully at a page, the other frowns with arms crossed."
     prompt: >-
-      Two present-day scholars standing at the edge of an archaeological
-      excavation trench in dry hill country, generic figures (not portraits
-      of any real person), both in sun hats. On the left, a woman leans
-      forward and points hopefully down into the trench, with a small comic
-      bubble containing only an exclamation mark. On the right, a man stands
+      Two present-day scholars sitting across a plain wooden library table
+      from each other, generic figures (not portraits of any real person),
+      in ordinary sweaters. Between them lies one large open old book whose
+      pages carry only tiny illegible grey marks, and a few closed books are
+      stacked at the table's far end. On the left, a woman leans forward and
+      points hopefully at a page of the open book, with a small comic bubble
+      containing only an exclamation mark. On the right, a man sits back
       with his arms crossed and a skeptical frown, with a small comic bubble
-      containing only a question mark. The trench holds only bare earth and
-      stones. Open sky across the top and open ground in the bottom right
-      corner.
+      containing only a question mark. Plain wall and a bookshelf behind
+      them. Open plain wall across the top and plain empty floor and table
+      edge in the bottom right corner. Negative list: no excavation, no
+      trench, no digging tools, no artefacts, no pottery, no bones, no
+      maps, no readable letters, no words, no text other than the ! and ?.

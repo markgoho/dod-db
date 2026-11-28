@@ -3,17 +3,21 @@
 # shows only what the listed statements support; every caption, link and
 # claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
 #
-# Six comic panels in time order, following one figure: "the satan", a member
-# of God's court in Job; the census of David, split by a straight gutter with
-# a ≠ (2 Samuel 24:1 has the LORD incite it, 1 Chronicles 21:1 has satan);
-# the figure standing apart, in the Jewish writings of the last centuries
-# BCE; the same figure set against Jesus in the Gospels; then two older texts
-# later read as Satan: the serpent of Genesis 3 and the morning star of
-# Isaiah 14. `court` is the anchor for the figure and is chained into every
-# panel he appears in. God is never drawn as a figure, only as light. No
-# figure has wings, halo, horns, tail or pitchfork: the page says angels
-# appear in human form, and no statement gives Satan a look. His robe turns
-# from the court's grey to near-black once he stands opposed to God.
+# Six comic panels in time order, following one figure: "the satan", a
+# member of God's court in Job; the census of David, split by a straight
+# gutter with a ≠ (2 Samuel 24:1 has the LORD incite it, 1 Chronicles 21:1
+# has satan); the figure standing apart, in the Jewish writings of the last
+# centuries BCE; the same figure as the adversary Jesus speaks about in the
+# Gospels (in a thought cloud: Mark 3:23 is Jesus speaking about Satan, not
+# meeting him); then two older texts later read as Satan: the serpent of
+# Genesis 3 and the morning star of Isaiah 14. `court` is the anchor for the
+# figure and is chained into every panel he appears in, except the 1
+# Chronicles half: there the adversary is hooded and faceless, because
+# scholars disagree whether that satan is the named figure or any adversary.
+# God is never drawn as a figure, only as light. No figure has wings, halo,
+# horns, tail or pitchfork: the page says angels appear in human form, and
+# no statement gives Satan a look. His robe turns from the court's grey to
+# near-black once he stands opposed to God.
 slug: satan-demons-and-angels
 images:
   - id: court
@@ -53,57 +57,63 @@ images:
   - id: census-satan
     statements: [chronicles]
     aspect: "4:5"
-    refs: [census-lord, court]
-    alt: "The same king gives the same order, but now the robed man from the court leans in to speak in his ear."
+    refs: [census-lord]
+    alt: "The same king gives the same order, but now an unknown hooded figure, face hidden, leans in to speak in his ear."
     prompt: >-
       The SAME palace hall, the SAME King David (same face, beard, gold
       circlet and rust red robe) on the SAME plain wooden throne, pointing
       forward and giving the same order to the same bowing official with a
-      blank tally scroll, as in the first reference image. But there is no
-      shaft of light. Instead, standing just behind the king's shoulder and
-      leaning in to speak quietly in his ear, is the tall lean man from the
-      second reference image (same sharp face, close-cropped black hair,
-      short black beard, long plain light-grey robe). The BOTTOM third of
-      the picture is plain stone floor with nothing on it. Negative list:
-      no wings, no halos, no horns, no tails, no shadows with faces, no
-      text.
+      blank tally scroll, as in the reference image. But there is no shaft
+      of light. Instead, standing just behind the king's shoulder and
+      leaning in to speak quietly in his ear, is an unknown figure in a
+      plain hooded cloak of light warm grey, the deep hood pulled forward so
+      the face is entirely hidden in shadow: no face, no beard, no hair
+      visible, nothing to say who it is. The BOTTOM third of the picture is
+      plain stone floor with nothing on it. Negative list: no visible face
+      on the hooded figure, no wings, no halos, no horns, no tails, no
+      glowing eyes, no shadows with faces, no text.
 
   - id: apart
     statements: [devil]
     aspect: "4:3"
     refs: [court]
-    alt: "The same man, now in a near-black robe, stands alone on a dark height, arms folded, a crowd of shadowy spirits behind him."
+    alt: "The same man, now in a near-black robe, stands alone on a dark height, arms folded, turned away from a distant light."
     prompt: >-
       The SAME tall lean man as in the reference image (same sharp face,
       close-cropped black hair and short black beard), but now in a long
-      near-black robe with a deep rust red lining. He stands alone on a
-      dark rocky height in the RIGHT half of the picture, arms folded,
+      near-black robe with a deep rust red lining. He stands entirely alone
+      on a dark rocky height in the RIGHT half of the picture, arms folded,
       turned AWAY from a small distant blaze of golden amber light far off
       in the upper left of the sky, looking out of the picture with a cold,
-      defiant expression. Behind him, a loose crowd of faceless grey shadowy
-      spirit shapes, too many to count, drifts after him. The BOTTOM LEFT
-      quarter of the picture is plain dark empty ground. Negative list: no
-      wings, no halos, no horns, no tails, no pitchfork, no fire, no
-      weapons, no monsters, no text.
+      defiant expression. Behind him is only empty dark sky and bare rock:
+      nobody else anywhere. The BOTTOM LEFT quarter of the picture is plain
+      dark empty ground. Negative list: no other figures, no crowd, no
+      spirits, no ghosts, no shadows with shapes, no wings, no halos, no
+      horns, no tails, no pitchfork, no fire, no weapons, no monsters, no
+      text.
 
   - id: gospels
     statements: [devil]
     aspect: "4:3"
     refs: [apart]
-    alt: "Jesus speaks to a few villagers on a hillside; apart, under a dark cloud, the man in the near-black robe watches him, arms folded."
+    alt: "Jesus speaks to a few villagers on a hillside; a comic thought cloud beside him holds the man in the near-black robe, the opponent he is speaking about."
     prompt: >-
       A low hillside in Galilee in daylight. In the RIGHT half of the
       picture stands Jesus: a first-century Jewish man of about thirty with
       shoulder-length dark brown hair and a short dark beard, olive skin,
       in a plain off-white tunic, one hand raised as he speaks with calm
       conviction to three ordinary villagers in plain tunics and headcloths
-      who sit on the slope listening. Soft golden amber light falls on his
-      side of the picture. In the LEFT half, standing apart under a dark
-      cloud, is the SAME tall lean man as in the reference image (same
-      sharp face, close-cropped black hair, short black beard, long
-      near-black robe with rust red lining), arms folded, watching Jesus as
-      his opponent. The BOTTOM LEFT quarter of the picture is plain bare
-      hillside. Negative list: no halo, no glow around Jesus's head, no
+      who sit on the slope listening. Soft golden amber light falls on the
+      scene. In the UPPER LEFT of the picture, a large comic thought cloud
+      with a scalloped outline and a trail of small bubbles leading to
+      Jesus shows, small and inside the cloud only, the SAME tall lean man
+      as in the reference image (same sharp face, close-cropped black hair,
+      short black beard, long near-black robe with rust red lining), arms
+      folded, against a dark grey background: he is what Jesus is talking
+      about, not someone standing on the hillside. Nobody on the hillside
+      itself except Jesus and the three villagers. The BOTTOM LEFT quarter
+      of the picture is plain bare hillside. Negative list: no dark figure
+      standing on the hillside, no halo, no glow around Jesus's head, no
       wings, no horns, no tails, no fire, no weapons, no fighting, no
       desert, no text.
 
