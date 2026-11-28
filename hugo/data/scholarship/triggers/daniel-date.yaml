@@ -4,51 +4,64 @@
   speaker: "Dan McClellan"
   timestamp: "00:24:33.250"
   text: "The Book of Daniel is brought together from some traditions that were collated and finalized in the middle of the second century BCE. In fact, we can probably date it to within maybe two or three years of when it was. It was probably written around 167ish BCE. And the reason we know this is because the story is the earlier in time it gets, the closer it gets to its ostensible composition in the beginning of the Babylonian exile. The less historically accurate it is. Right. The closer it gets to 167 BCE the more historically accurate and the more detailed it gets. And then once we get past 167 BCE it all falls apart. None of it is accurate."
+  statement: reasons
 - episode: 34
   speaker: "Dan McClellan"
   timestamp: "00:05:04.180"
   text: "See, Daniel is written in Hebrew from Daniel 1:1 to the first half of Daniel 2: 4. And then the second half of Daniel 2: 4 is written in Aramaic. And it is Aramaic from there all the way through to Daniel 7, verse 28, or the very end of chapter 7. And then beginning in chapter 8, we revert back to Hebrew all the way to the end of chapter 12."
+  statement: languages
 - episode: 34
   speaker: "Dan McClellan"
   timestamp: "00:22:09.030"
   text: "There was a pagan writer who was like, yeah, I read your book Daniel there. And based on, you know, a lot of stuff is accurate, a lot of stuff is inaccurate. You get the most detail right around this period in what we now refer to as the Maccabean period in biblical studies. And then it suddenly gets totally inaccurate when it talks about God swooping in and saving everybody. So it seems like it was right there in the middle of the second century that it was written."
+  statement: porphyry
 - episode: 34
   speaker: "Dan McClellan"
   timestamp: "00:32:31.280"
   text: "And then we get somebody who goes by Darius or Darius, if you're nasty. The Mede. There was no such character or figure in history."
+  statement: history
 - episode: 34
   speaker: "Dan McClellan"
   timestamp: "00:44:03.410"
   text: "So when we look at all of these prophecies and what they seem to be aiming at, what we get at is that this text is coming together around between 167 and 164 BCE, which is a period of oppression of the Jewish communities on the part of a Seleucid ruler named Antiochus IV Epiphanes. And this is the, this great, this horn that is talked about. This is the big baddie, the bad guy that's causing all this trouble."
+  statement: reasons
 - episode: 34
   speaker: "Dan McClellan"
   timestamp: "00:47:19.010"
   text: "We've got this Belshazzar as the son of Nebuchadnezzar, which is not accurate. He was the son of Nabonidus."
+  statement: history
 - episode: 34
   speaker: "Dan McClellan"
   timestamp: "00:51:05.380"
   text: "And so the text probably originates. Some of the stories originate in the Late Babylonian period, but the text primarily comes together in the Persian and Hellenistic period and is finalized between around 167 and 164 BCE."
+  statement: date
 - episode: 34
   speaker: "Dan McClellan"
   timestamp: "00:54:49.340"
   text: "And one more thing that I didn't mention, but our earliest textual witness to the Book of Daniel is from the Dead Sea Scrolls and paleographically has been dated to around 115-ish BCE—in other words, only about 50 years removed from the actual composition of the text."
+  statement: scrolls
 - episode: 45
   speaker: "Kipp Davis"
   timestamp: "00:42:17.810"
   text: "But you need to, when you do some work, when you look into what's actually there from the Book of Daniel and the Dead Sea Scrolls, this paints a fascinating picture because, yes, we have eight copies of individual Daniel manuscripts in the collection."
+  statement: scrolls
 - episode: 70
   speaker: "Dan McClellan"
   timestamp: "00:51:11.770"
   text: "So their version of Daniel is Hebrew and Aramaic, it's not Greek, and so it doesn't include these additions."
+  statement: additions-status
 - episode: 119
   speaker: "Dan McClellan"
   timestamp: "00:08:35.900"
   text: "Yeah. And, you know, we have the same issue with Daniel because we have, as you get from the 6th century BCE, which is when Daniel was supposed to have been written, as you get closer to the 160s BCE, the history gets one, more accurate, two, more detailed up until you have Antiochus IV Epiphanes laying siege and, you know, threatening to do all this stuff, abomination that makes desolation, or however you want to translate that."
+  statement: reasons
 - episode: 147
   speaker: "Dan McClellan"
   timestamp: "00:28:31.853"
   text: "And the apocalyptic visions are probably what's coming from around the time of the, you know, the middle of the 2nd century BCE, around Antiochus IV Epiphanes. But the court tales probably are coming from a little earlier. Some people say, yeah, it could be as early as the late 6th century BCE, maybe Persian period, some of these little stories that have close parallels to what's going on here."
+  statement: tales
 - episode: 158
   speaker: "Dan McClellan"
   timestamp: "00:23:11.340"
   text: "And this is—the Maccabean Revolt is also likely the context for the main apocalyptic eschatological layers of the Book of Daniel. Daniel, which is also primarily about the Seleucid Empire, Antiochus IV Epiphanes."
+  statement: reasons

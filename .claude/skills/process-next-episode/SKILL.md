@@ -19,7 +19,7 @@ to:
 - a confirmed processing run through the RSS audio pipeline
 - verified segments with topic labels and summaries
 - a guest page for any new guest
-- candidate Trigger Claims for Scholarship Pages and Timeline Entries, reported for the owner to accept; subject or statement suggestions and conflicts logged in `data/scholarship-candidates.yaml`, and new-entry suggestions in issue #108
+- Scholarship Page quotes added under their question (soft cap 10 per question), Timeline candidates reported for the owner to accept; subject or statement suggestions and conflicts logged in `data/scholarship-candidates.yaml`, and new-entry suggestions in issue #108
 
 ## Workflow
 
@@ -93,7 +93,10 @@ For each window, read the final Transcript from `windowSeconds` before `from` to
 
 Done when every window and every `sweep` line is a candidate, a suggestion or dismissed.
 
-A **page candidate** is about a subject a page already states. It goes only in the run summary; the page, its triggers file and its review file stay untouched until the accept flow below.
+A **page candidate** is about a subject a page already states. Name the statement (question) it most directly bears on, or none when it frames the page as a whole. Each question keeps a **soft cap** of 10 quotes: count the items with that `statement:` in `hugo/data/scholarship/triggers/<slug>.yaml` (page-level quotes, with no `statement:`, share one cap of 10).
+
+- **Under the cap**: add it now through the accept flow below.
+- **At the cap**: compare it with that question's quotes. If it is more valuable than the weakest (a clearer or more direct assertion, a hedge kept, a guest scholar where the question has only host quotes), replace the weakest: remove that item and its review key, then add the candidate through the accept flow. Otherwise discard it.
 
 A page candidate that contradicts one of the page's statements is a **conflict**. It never attaches to the page. Log it under `statements` in `data/scholarship-candidates.yaml` as `{ page, question, triggers, notes }`, with the statement's question and `notes: "Conflict with <id>: <how the quote differs>"`, so the owner's next re-review weighs it.
 
@@ -107,13 +110,13 @@ Then run `bun run check:scholarship`. The file's header comment defines every fi
 
 A `subjectEpisodes` entry at 3 or more Episodes is a **promotion flag**: report it. The file order stays as it is; the owner picks.
 
-A **Timeline candidate** is about a Timeline Entry's subject or date. Note the side it `states`: `critical`, `tradition` or `both`. Like a page candidate, it goes only in the run summary; `hugo/data/timeline/triggers.yaml` and the entry's review file stay untouched until the accept flow. A quote that disagrees with an entry's date is still only a candidate: a new Episode never changes a date.
+A **Timeline candidate** is about a Timeline Entry's subject or date. Note the side it `states`: `critical`, `tradition` or `both`. It goes only in the run summary; `hugo/data/timeline/triggers.yaml` and the entry's review file stay untouched until the accept flow. A quote that disagrees with an entry's date is still only a candidate: a new Episode never changes a date.
 
 A dated claim about a subject no Timeline Entry covers is a **new-entry suggestion**. Report it as such and comment it on issue #108 (`gh issue comment 108`) as a Trigger Claim pointer plus the date the Speaker gives.
 
-**Accept flow.** Only after the owner accepts a page or Timeline candidate, in a later turn:
+**Accept flow.** A page candidate runs it in this run, under the cap rules above; a Timeline candidate only after the owner accepts it, in a later turn:
 
-1. Append it to `hugo/data/scholarship/triggers/<slug>.yaml`, a plain top-level list: `episode`, `speaker`, `timestamp` (`"HH:MM:SS.mmm"` from the Transcript line), `text`. A Timeline candidate goes to `hugo/data/timeline/triggers.yaml` instead, with `entry:` (the entry id) and `states:` added.
+1. Append it to `hugo/data/scholarship/triggers/<slug>.yaml`, a plain top-level list: `episode`, `speaker`, `timestamp` (`"HH:MM:SS.mmm"` from the Transcript line), `text`, and `statement` (the question's id; omit for page-level). A Timeline candidate goes to `hugo/data/timeline/triggers.yaml` instead, with `entry:` (the entry id) and `states:` added.
 2. Record it under `triggers` in `data/scholarship-reviews/<slug>.yaml` (Timeline: `data/timeline-reviews/<entry>.yaml`), keyed `<episode>@HH:MM:SS`, as `{ agent: pass|flag, owner: "", note: "" }`.
 3. Run the Trigger-Claim-only check (#93): confirm Speaker, text, subject, any dropped hedge and (Timeline) `states` against the Transcript; set `agent` and explain any `flag` in `note`. The owner sets `owner`. No statement, date, `read` date or `sourcesRead` changes.
 4. Run `bun run check:scholarship` (Timeline: `bun run check:timeline`).
@@ -132,15 +135,12 @@ Then, for each guest, match their Selected Works against the Step 5 targets with
 
 ### 7. Report the result
 
-- report whether processing succeeded or failed
-- include the processed episode title and transcript path when available
-- if it fails, show the real error output rather than summarizing it away
-- list each verified segment, the transcript line that confirms it, and any type you corrected
-- include the save script's review summary of labels and summaries, or the reason you stopped
-- for each guest, report the guest page you created, or that one already existed
-- per Scholarship Page, each candidate Trigger Claim (quote, Speaker, timestamp) with the window's term and `via`, or "no candidates"; then each conflict and suggestion and the `data/scholarship-candidates.yaml` entry it went to
-- each promotion flag, and each guest Lead and where it went
-- per Timeline Entry, each candidate Trigger Claim (quote, Speaker, timestamp, `states`) with the window's term and `via`, or "no candidates"; then each new-entry suggestion and its #108 comment
+The owner reads only decisions. Open with "Done, nothing for you" when there are none; otherwise list just the decisions:
+
+- each Timeline candidate to accept or decline: quote, Speaker, timestamp, entry, `states`
+- a failure: the real error output, not a summary
+
+Everything else (segments, guest page, quotes added, replaced or discarded, suggestions and #108 comments) lives in the commit message and files; end with "committed and pushed (sha), deploy ok".
 
 ## Important constraints
 

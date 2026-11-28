@@ -4,38 +4,47 @@
   speaker: "Dan McClellan"
   timestamp: "00:07:22.230"
   text: "A lot of scholars are pretty sure that these were three independently separated or circulating traditions that got woven together."
+  statement: traditions
 - episode: 63
   speaker: "Dan McClellan"
   timestamp: "00:07:32.030"
   text: "In other words, there were Abrahamites, there were Isaacites, and there were Jacobites. And at some point they were like, we got to make this one line. Let's tell them as consecutive children of the other."
+  statement: traditions
 - episode: 1
   speaker: "Dan McClellan"
   timestamp: "00:50:50.680"
   text: "Well, originally the stories from Genesis probably circulated as separate stories. You probably had traditions regarding Jacob, traditions regarding Esau, regarding Joseph, traditions regarding Abraham."
+  statement: traditions
 - episode: 64
   speaker: "Dan McClellan"
   timestamp: "00:31:16.630"
   text: "And. And then, you know, centuries later, we get the story about how, oh, Abraham gave birth to Isaac, who gave birth to Jacob, and Jacob gave birth to all of the tribes that are now confederated. And so we're all part of the same family. And so it. That is probably all a later fictional literary creation from these tribes that originally probably were not genetically related, but just happened to occupy the same northern hill country."
+  statement: traditions
 - episode: 169
   speaker: "Dan McClellan"
   timestamp: "00:03:01.573"
   text: "so the name is changed to Israel and then Jacob has a bunch of kids, 12 sons, and those 12 sons are the eponymous ancestors of the 12 tribes of Israel. So basically, everything fits into a nice little genealogical line."
+  statement: traditions
 - episode: 63
   speaker: "Dan McClellan"
   timestamp: "00:08:44.530"
   text: "There are a lot of folks who think that the earliest fragments of the, of Israel's charter myth are found in the Jacob cycle. And then Abraham is. A lot of the stories in Abraham are later literary layers."
+  statement: jacob-first
 - episode: 118
   speaker: "Dan McClellan"
   timestamp: "00:07:18.260"
   text: "And, and this is probably a, an exilic, post-exilic layer. This is, this is probably written by people who were coming back to, or who had recently come back from exile."
+  statement: jacob-first
 - episode: 63
   speaker: "Dan McClellan"
   timestamp: "00:22:26.500"
   text: "The patriarchal Jacob tradition or you've got the prophetic Moses tradition. So some people think that these are two competing myths about Israel's origins."
+  statement: jacob-first
 - episode: 157
   speaker: "Dan McClellan"
   timestamp: "00:03:56.448"
   text: "she's probably a literary creation, uh, not an actual historical person, just like Abram and Sarai are probably literary creations."
+  statement: historical
 - episode: 118
   speaker: "Dan McClellan"
   timestamp: "00:09:00.059"
@@ -44,27 +53,34 @@
   speaker: "Dan McClellan"
   timestamp: "00:29:35.110"
   text: "And by the way, this is supposed to be, what, like 1900 BCE, something like that. Depending on where you date Abraham, the Philistines don't exist yet. The Philistines don't arrive until after the invasion of the Sea Peoples, where we have these folks from different parts of the Central Mediterranean who are basically migrating to the coastline here."
+  statement: anachronisms
 - episode: 121
   speaker: "Dan McClellan"
   timestamp: "00:38:16.800"
   text: "And it gets repeated three different times, twice with the same characters and then once with. With their children. And so I. I think it's clear that this is something that was in circulation with. With different tellings of very similar stories. And rather than an editor be like, you can't tell the same story three times. They just were like, we're keeping it all."
+  statement: wife-sister
 - episode: 3
   speaker: "Dan McClellan"
   timestamp: "00:33:57.200"
   text: "Hagar gives birth to Ishmael. Ishmael is going to be the eponymous ancestor of the Ishmaelites."
+  statement: ishmael
 - episode: 157
   speaker: "Dan McClellan"
   timestamp: "00:12:36.835"
   text: "And these are supposed to be the— this is supposed to be an etiology for the Arab peoples."
+  statement: ishmael
 - episode: 157
   speaker: "Dan McClellan"
   timestamp: "00:30:27.468"
   text: "And so some scholars would suggest that this was composed maybe after Exodus and in light of Exodus. So putting the two things parallel, an Egyptian who is enslaved to the Hebrews over and against the story where the Hebrews are enslaved to the Egyptians."
+  statement: hagar-exodus
 - episode: 63
   speaker: "Dan McClellan"
   timestamp: "00:06:42.380"
   text: "There are ancient and medieval Jewish traditions that Isaac was sacrificed."
+  statement: akedah
 - episode: 111
   speaker: "Dan McClellan"
   timestamp: "00:25:55.430"
   text: "But there's, there are ancient interpretive traditions within Judaism—ancient, medieval—that he actually went through with the sacrifice, that he sacrificed Isaac."
+  statement: akedah

@@ -45,4 +45,28 @@
       </li>
     {{ end }}
   </ul>
+  {{/* The show's quotes on this question (Trigger Claims tagged with its id, #273). */}}
+  {{ $quotes := where (index hugo.Data.scholarship.triggers $parent.File.ContentBaseName | default slice) "statement" $s.id }}
+  {{ with $quotes }}
+    {{ $episodesByNumber := partialCached "episodes-by-number.html" "episodes" }}
+    {{ $episodes := slice }}
+    {{ range . }}{{ $episodes = $episodes | append .episode }}{{ end }}
+    <details
+      class="scholarship-block scholarship-block--question"
+      data-pagefind-ignore>
+      <summary class="disclosure-summary">
+        <span class="type-eyebrow">On the show</span>
+        <span class="scholarship-block__episodes" aria-hidden="true">
+          {{ range $episodes | uniq | sort }}
+            <span class="scholarship-block__episode">{{ . }}</span>
+          {{ end }}
+        </span>
+      </summary>
+      <div class="scholarship-block__body tag-quotes__grid">
+        {{ range . }}
+          {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
+        {{ end }}
+      </div>
+    </details>
+  {{ end }}
 </div>

@@ -4,6 +4,7 @@
   speaker: "Dan Beecher"
   timestamp: "00:39:22.440"
   text: "We don't have, we don't have the word Trinity. We don't have any word or even any concept presented that is like what is now believed and understood, believed as and understood to be the Trinity."
+  statement: new-testament
 - episode: 42
   speaker: "Dan McClellan"
   timestamp: "00:40:01.760"
@@ -12,43 +13,54 @@
   speaker: "Dan Beecher"
   timestamp: "00:56:44.072"
   text: "as we discuss the Trinity and whatever, and we've talked about the Trinity idea before, it was a later innovation. It was not like— it developed over a long time after all of this was written after all of the books of the New Testament were written."
+  statement: new-testament
 - episode: 182
   speaker: "Dan McClellan"
   timestamp: "00:19:44.950"
   text: "And a lot of people want to read the Trinity into Elohim. They're like, it's plurality and unity all in one. It's. Yeah. And it has nothing to do with the Trinity."
+  statement: plural
 - episode: 5
   speaker: "Dan McClellan"
   timestamp: "00:30:01.510"
   text: "I think the, the word Trinity develops by the end of the 2nd century CE, but it's not quite the idea as people understand it today."
+  statement: word
 - episode: 42
   speaker: "Dan McClellan"
   timestamp: "00:47:44.440"
   text: "He was the one saying that one, Jesus was subordinate to God the Father, and two, there was a time when Jesus did not exist."
+  statement: arius
 - episode: 5
   speaker: "Dan McClellan"
   timestamp: "00:28:53.310"
   text: "Now the main thing that they were there to try to resolve, not the only thing they discussed, but the main thing that they were there to try to resolve was something known as the Arian controversy."
+  statement: nicaea
 - episode: 5
   speaker: "Dan McClellan"
   timestamp: "00:34:49.659"
   text: "But the sticking point was what word are we going to use to refer to Jesus's relationship to God? And what they came up with was this idea of consubstantiality."
+  statement: nicaea
 - episode: 109
   speaker: "Dan McClellan"
   timestamp: "00:07:18.200"
   text: "At the Council of Nicaea, they established a new mechanism for calculating the date of Easter."
+  statement: easter
 - episode: 5
   speaker: "Dan McClellan"
   timestamp: "00:47:42.590"
   text: "And of course, it didn't stop the infighting. You still had, you had a later Arian emperor come rise to the throne."
+  statement: after-nicaea
 - episode: 53
   speaker: "Dan McClellan"
   timestamp: "00:32:00.380"
   text: 'when you look at Nicaea and the Nicene Creed and the Christological arguments, the Spirit is not the center of discussion. The Spirit is kind of like, "We gotta have the Spirit there." It''s kind of a third wheel to the Trinity until subsequent centuries where it''s like, "It''s here, we might as well deal with it." And they kind of flesh out a more full conceptualization of the Spirit as this third person of the Trinity.'
+  statement: spirit-nicaea
 - episode: 5
   speaker: "Dan McClellan"
   timestamp: "00:33:45.460"
   text: "There's one account that says things got so heated that this guy Nicholas slapped Arius in the face. And this is the famous St. Nicholas."
+  statement: nicholas
 - episode: 42
   speaker: "Dan McClellan"
   timestamp: "00:46:43.090"
   text: "This is where St. Nicholas is supposed to have slapped Arius."
+  statement: nicholas

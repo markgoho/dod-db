@@ -4,67 +4,84 @@
   speaker: "Dan McClellan"
   timestamp: "01:01:31.550"
   text: "And there are, I think, 16 verses in the New Testament that most modern translations of the Bible will omit because we are confident they were not part of the original New Testament, but were later additions to the text."
+  statement: added-verses
 - episode: 11
   speaker: "Dan McClellan"
   timestamp: "01:03:10.640"
   text: "For instance, the story of the woman taken in adultery that is at the very end of John 7 and the beginning of John 8. In our earliest manuscripts, that's nowhere in the New Testament. It doesn't show up in our manuscripts until, like, the fifth century."
+  statement: adulteress-manuscripts
 - episode: 11
   speaker: "Dan McClellan"
   timestamp: "00:59:35.640"
   text: "And you have the first revision of the King James Version to create a New Testament that more closely follows after these new discoveries in 1881 with the Revised Version. And one of the things that the Revised Version does, and later revisions that made a lot of people unhappy, was it took some verses out of the New Testament."
+  statement: revised-version
 - episode: 17
   speaker: "Dan McClellan"
   timestamp: "00:05:42.720"
   text: "And the last few verses of the Book of Revelation are not extant. He does not have them. And so what he does is he takes the Latin Vulgate and translates it back into Greek and then writes that Greek into the Greek column."
+  statement: erasmus
 - episode: 17
   speaker: "Dan McClellan"
   timestamp: "00:37:02.260"
   text: "But that verse was not part of the original New Testament. That verse was something that someone later down the road added in."
+  statement: added-verses
 - episode: 17
   speaker: "Dan McClellan"
   timestamp: "00:45:43.150"
   text: "But that is not in the earliest manuscripts. That is something that was added in later."
+  statement: added-verses
 - episode: 17
   speaker: "Dan McClellan"
   timestamp: "00:46:44.310"
   text: "That ending is not in our earliest manuscripts. We have this much, much shorter ending that kind of abruptly ties off the story right after the disciples run. And even that ending may have been added later on."
+  statement: mark-ending
 - episode: 17
   speaker: "Dan McClellan"
   timestamp: "00:48:44.480"
   text: "So this is at the very end of, of John 7, and mostly in John 8. But in some manuscripts, we find this in Luke. In other manuscripts, it's in other places in John, and in our earliest manuscripts, it's not there at all. And scholars are in pretty widespread agreement that this is a. A later addition to the text."
+  statement: adulteress-manuscripts
 - episode: 48
   speaker: "Helen Bond"
   timestamp: "00:52:22.890"
   text: "Yeah, no, I think that's a later interpolation. I mean, okay, if. If it's not, then, then Paul really doesn't make any sense. In 1 Corinthians, you know, in, in chapter 11, he said, because of 11. Yeah, yeah, it's because of 11. Because in 11, he says it's fine for women to, to prophesy in the church. Just do it with your head covered. I mean, that's, that's fair enough. But then suddenly, in 14, I don't permit women to say anything in the churches. I mean, what's going on here? Here? It's much more likely, I think, that somebody just wrote that in the margin and that it got incorporated."
+  statement: corinthians-14
 - episode: 160
   speaker: "Dan McClellan"
   timestamp: "00:10:00.246"
   text: "Um, the only problem is it's not in any early Greek manuscripts. It's something that pops up in Latin manuscripts."
+  statement: comma
 - episode: 160
   speaker: "Dan McClellan"
   timestamp: "00:05:26.499"
   text: "It is a conservative revision of the Bishops' Bible, specifically the 1602 edition of the Bishops' Bible."
+  statement: kjv-text
 - episode: 174
   speaker: "Dan Beecher"
   timestamp: "00:08:05.540"
   text: "I think there's a lot of people that would be surprised to learn that there's—we don't have access to any original text for any of the books of the Bible, including the New Testament."
+  statement: originals
 - episode: 174
   speaker: "Dan McClellan"
   timestamp: "00:08:16.840"
   text: "35 or 36 words that really eager, enthusiastic textual critics would say might date to around 120, 125 CE, which would be maybe 20, 30 years after the Gospel of John was written."
+  statement: p52
 - episode: 174
   speaker: "Dan McClellan"
   timestamp: "00:08:52.950"
   text: "Other, there are others who would be like, maybe it's around 150, but it could be as late as like 200."
+  statement: p52
 - episode: 174
   speaker: "Dan McClellan"
   timestamp: "00:06:52.990"
   text: "But textual criticism, we used to think of it as trying to recover the original text, the Urtext. We don't really talk about it that much anymore because there might not be an Urtext for an awful lot of the texts we're talking about. Like, it gets really complicated if a given book of the Bible, like was compiled from a bunch of different texts and then those texts came together from different traditions and some of them were written and some of them were oral, and then later traditions alter. Like you can't go back to an original text a lot of the time. And so now really what textual criticism, at least textual criticism of the Bible is mainly concerned with, is trying to reconstruct the earliest recoverable form of a given text."
+  statement: initial-text
 - episode: 174
   speaker: "Dan McClellan"
   timestamp: "00:25:35.610"
   text: "Because through the process of examining all the manuscripts, comparing them and making judgment calls about which readings are better, we arrived at the conclusion that there are over a dozen full verses in the New Testament that are secondary additions to the text that were not written by the authors of these texts."
+  statement: added-verses
 - episode: 174
   speaker: "Dan McClellan"
   timestamp: "00:26:43.210"
   text: "Verses 9 through 20 of Mark 16, which are not in our earliest manuscripts."
+  statement: mark-ending

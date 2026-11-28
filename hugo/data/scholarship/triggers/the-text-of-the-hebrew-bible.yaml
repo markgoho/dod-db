@@ -4,31 +4,39 @@
   speaker: "Dan McClellan"
   timestamp: "00:13:45.170"
   text: "The discovery of the Dead Sea Scrolls. Over a thousand different manuscripts, many of them biblical manuscripts. And many of them line up with either the Masoretic Text or the tradition we find in the Septuagint or an unknown tradition."
+  statement: forms
 - episode: 11
   speaker: "Dan McClellan"
   timestamp: "01:06:35.870"
   text: "Now, the Hebrew Bible is a little bit different. We have that Masoretic Text, we have the Leningrad Codex, which most translations are based on."
+  statement: translations
 - episode: 45
   speaker: "Kipp Davis"
   timestamp: "00:32:15.160"
   text: "And the amazing thing about this is that, yes, within the Dead Sea Scrolls there are six copies of the Book of Jeremiah, and two of those follow the text and the arrangement of the Septuagint in Hebrew."
+  statement: jeremiah
 - episode: 45
   speaker: "Dan McClellan"
   timestamp: "00:34:04.050"
   text: "In fact, I think some of the most significant differences are in some of the witnesses to Samuel and the Dead Sea Scrolls, which suggest quite a bit of textual fluidity, but tolerated textual fluidity."
+  statement: forms
 - episode: 155
   speaker: "Dan McClellan"
   timestamp: "00:29:46.366"
   text: 'And the Dead Sea Scrolls in their own way have demonstrated that there are many places where, yeah, the Septuagint is very clearly based on a variant Hebrew source text and not just the translator going, "la da da."'
+  statement: lxx-hebrew
 - episode: 159
   speaker: "Dan McClellan"
   timestamp: "00:32:45.606"
   text: "And the Masoretic tradition, the Masoretic group, is usually dated to between around 500 CE and around 1000 CE."
+  statement: masoretes
 - episode: 159
   speaker: "Dan McClellan"
   timestamp: "00:47:49.088"
   text: "It's like, the Great Isaiah Scroll is not even the best transmitted book of Isaiah among the Dead Sea Scrolls."
+  statement: isaiah
 - episode: 159
   speaker: "Dan McClellan"
   timestamp: "00:48:55.624"
   text: "But these apologists never talk about, like, Jeremiah, because we have multiple different manuscripts of Jeremiah as well. They're very fragmentary, they're very small, but some of them show that the Septuagint reading of Jeremiah, which is 1/6 shorter than the book of Jeremiah in the Masoretic Text is preserved in some of these Hebrew manuscripts, which suggests to a lot of scholars that the Septuagint version of Jeremiah was earlier than what we now have in the Masoretic Text, that the Masoretic Text reading is later, secondary."
+  statement: jeremiah

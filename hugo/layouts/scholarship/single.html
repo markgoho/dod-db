@@ -77,9 +77,17 @@
               {{ end }}
             </span>
           </summary>
+          {{/* Quotes tagged with a question sit under it (#273); the rest stay here. */}}
           <div class="scholarship-block__body tag-quotes__grid">
             {{ range $triggers }}
-              {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
+              {{ if not .statement }}
+                {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
+              {{ end }}
+            {{ end }}
+            {{ if where ($triggers | default slice) "statement" "!=" nil }}
+              <p class="scholarship-meta">
+                Quotes on a single question are shown under that question.
+              </p>
             {{ end }}
           </div>
         </details>

@@ -833,3 +833,8 @@
   font-style: normal;
   font-weight: var(--font-weight-bold);
 }
+
+/* A question's own show quotes (#273): set off from its cited passages. */
+.scholarship-block--question {
+  margin-block-start: var(--space-s);
+}

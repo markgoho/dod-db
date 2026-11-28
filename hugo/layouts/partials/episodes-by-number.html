@@ -1,0 +1,6 @@
+{{- /* Every Episode page keyed by its number as a string; call with partialCached. */ -}}
+{{- $byNumber := dict -}}
+{{- range where site.RegularPages "Section" "episodes" -}}
+  {{- $byNumber = merge $byNumber (dict (string .Params.episodeNumber) .) -}}
+{{- end -}}
+{{- return $byNumber -}}
