@@ -125,7 +125,7 @@
   {{- $eraEnd := partial "inline/timeline-minimap-at.html" (dict "axis" $axis "year" .to) -}}
   {{- /* The band's start year, for the rail's label column: 1200 BCE, 1 CE. With its era: a period may run across year 0 (#256). */ -}}
   {{- $startYear := cond (lt (int .from) 0) (printf "%d BCE" (sub 0 (int .from))) (printf "%d CE" (cond (eq (int .from) 0) 1 (int .from))) -}}
-  {{- $bands = $bands | append (dict "id" $eraId "label" .label "dates" .dates "start" $eraStart "end" $eraEnd "empty" (not .items) "compressed" .compressed "startYear" $startYear) -}}
+  {{- $bands = $bands | append (dict "id" $eraId "label" .label "dates" .dates "start" $eraStart "end" $eraEnd "empty" (not .items) "compressed" .compressed "startYear" $startYear "opens" .opens) -}}
   {{- range .items -}}
     {{- $p := .page.Params -}}
     {{- $date := "" -}}
@@ -344,6 +344,10 @@
         <span class="timeline-minimap__now" data-now="{{ .id }}"
           ><b>{{ .label }}</b>{{ with .dates }}
             <span class="timeline-minimap__now-dates"> {{ . }}</span>
+          {{ end }}{{ range .opens }}
+            <span class="timeline-minimap__now-dates timeline-era__opens"
+              >{{ .label }}</span
+            >
           {{ end }}</span
         >
       {{- end }}

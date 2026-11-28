@@ -405,6 +405,11 @@
   margin-inline-start: 0.4em;
 }
 
+/* A temple period the era opens (#276): its "·" (timeline.css) carries the space. */
+.timeline-minimap__now-dates.timeline-era__opens {
+  margin-inline-start: 0;
+}
+
 .timeline-minimap__now {
   -webkit-box-orient: vertical;
   display: none;

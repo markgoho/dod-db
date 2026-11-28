@@ -144,6 +144,12 @@
                 >{{ with .dates }}
                   <span class="timeline-era__dates"> {{ . }}</span>
                 {{ end }}
+                {{- /* A temple period that starts with the era, named so "exilic" has a place on the axis (#276); its dates and cites are under Periods. */ -}}
+                {{ range .opens }}
+                  <a class="timeline-era__opens" href="#period-{{ .id }}"
+                    >{{ .label }}</a
+                  >
+                {{ end }}
               </h2>
               {{ with .items }}
                 <ol class="timeline-era__entries" role="list">

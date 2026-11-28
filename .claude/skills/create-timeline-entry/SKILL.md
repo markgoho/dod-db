@@ -27,7 +27,7 @@ Done when every Trigger Claim has Episode, Speaker, `HH:MM:SS.mmm` timestamp, ve
 
 Find External Sources readable in full at a public URL; reuse ids from `hugo/data/external-sources.yaml` first. Dispatch research agents per side (critical, tradition, setting), each saving every fetched page into its own scratch folder and copying quotes only from that saved text. Then decide the entry's shape from what the sources say:
 
-- **`critical`**: a Scholarly or Reference source dates the subject outright. Word `display` and the title for what it dates, even when narrower than the Trigger Claim; a source's dual form ("722/721") is shown as given; a split ("587 or 586") is shown with each side cited.
+- **`critical`**: a Scholarly or Reference source dates the subject outright. Word `display` and the title for what it dates, even when narrower than the Trigger Claim; a source's dual form ("722/721") is shown as given; a split ("587 or 586") is shown with each side cited. `display` always names a year or century (`check:timeline` fails a bare period name, #276): a period's years come from a cited quote, or, for an anchored entry, from its anchor's date ("Exilic or post-exilic period, from 587 or 586 BCE").
 - **`undated`**: the sources date it only on a condition, or not at all. The statement keeps the condition inside it and is no stronger than its sources.
 - **`tradition`**: only when a Trigger Claim states the tradition's side and a Tradition-class source gives a date; `holder` uses that source's own words for itself.
 - **`setting`**: composition entries only, cited to Scholarly or Reference sources.

@@ -194,6 +194,12 @@ describe("checkTimeline", () => {
     expect(await check("published-undated")).toEqual([]);
   });
 
+  test("fails a Critical Date whose display names no year or century (#276)", async () => {
+    expect(await check("critical-no-year")).toEqual([
+      `timeline/book: critical display "Exilic period" names no year or century; add the cited years`,
+    ]);
+  });
+
   test("a Critical Date with no precision passes", async () => {
     expect(await check("critical-no-precision")).toEqual([]);
   });

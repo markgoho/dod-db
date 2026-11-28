@@ -20,7 +20,10 @@
   label: Iron Age
   display: "ca. 1200–586 BCE"
   from: -1200
-  to: -586
+  # Ends at 587, not the quote's "ca. 586": the fall of Jerusalem is dated 587
+  # or 586 (fall-of-jerusalem.md from: -587), and an entry placed from the
+  # fall belongs to the period it opens (#276).
+  to: -587
   cites:
     - source: magness-2012-archaeology-holy-land-intro
       locator: "chapter 1, Introduction, p. 1, paragraph beginning “This book introduces readers”"
@@ -30,7 +33,7 @@
   track: age
   label: Babylonian rule
   display: "587 or 586–539 BCE"
-  from: -586
+  from: -587
   to: -539
   cites:
     - source: hayes-rlst145-l14
@@ -89,7 +92,7 @@
   track: temple
   label: Exile
   display: "587 or 586–538 BCE"
-  from: -586
+  from: -587
   to: -538
   cites:
     - source: nabre-jeremiah-intro

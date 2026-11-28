@@ -128,10 +128,14 @@ function packing(html: string) {
       lane: v["tick-lane"]!,
       overflow: "data-overflow" in t.attrs,
       split: "data-pair-split" in t.attrs,
-      y: Math.min(
-        Math.max(v["tick-at"]!, v["era-start"]! + edge!),
-        v["era-end"]! - edge!,
-      ),
+      // As the template: a band narrower than two edges puts its ticks at its middle.
+      y:
+        v["era-end"]! - v["era-start"]! < 2 * edge!
+          ? (v["era-start"]! + v["era-end"]!) / 2
+          : Math.min(
+              Math.max(v["tick-at"]!, v["era-start"]! + edge!),
+              v["era-end"]! - edge!,
+            ),
     };
   });
   const shared: string[] = [];
@@ -280,15 +284,17 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       ["david-and-solomon", 0, 0],
       ["deuteronomy", 9, 5],
       ["judges-dtr", 0, 0],
-      ["fall-of-jerusalem", 1, 1],
-      ["lamentations", 2, -1],
-      ["priestly-genesis-1", 3, 2],
+      // The three from 587 BCE open Babylonian rule (#276), a band narrower
+      // than two edges, so they sit at its middle, clear of Judges.
+      ["fall-of-jerusalem", 0, 0],
+      ["lamentations", 1, 1],
+      ["priestly-genesis-1", 2, -1],
       // Daniel's pair (540 and 167 BCE) is clear of Deuteronomy's corridor,
       // so it shares place 5.
       ["daniel-tradition", 9, 5],
       // Isaiah 56–66 (515 BCE) is in the Persian era (#256), nudged in from
       // its edge at 539 BCE, clear of Judges (622 BCE) and the three at 587
-      // BCE in the Iron Age: the centre place is free.
+      // BCE in Babylonian rule: the centre place is free.
       ["isaiah-56-66", 0, 0],
       ["daniel", 9, 5],
     ]);
@@ -364,18 +370,19 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       ["era-5000-bce", "5000–3000 BCE"],
       ["era-bronze-age", "Bronze Age ca. 3000–1200 BCE"],
       ["era-iron-age", "Iron Age ca. 1200–586 BCE"],
-      ["era-babylonian", "Babylonian rule 587 or 586–539 BCE"],
+      // The Exile starts with Babylonian rule, so its heading names it (#276).
+      ["era-babylonian", "Babylonian rule 587 or 586–539 BCE Exile"],
       ["era-persian", "Persian 539–332 BCE"],
       ["era-hellenistic", "Hellenistic 332–63 BCE"],
       ["era-roman", "Roman from 63 BCE"],
     ]);
     // An entry is in the era whose years hold its placement year: the fall of
-    // Jerusalem (587 BCE) closes the Iron Age (to 586); Daniel (167 BCE) is Hellenistic.
+    // Jerusalem (587 BCE) opens Babylonian rule (from 587, #276); Daniel (167 BCE) is Hellenistic.
     const eraOf = (id: string) =>
       select(page, `.timeline-minimap__spy a[href="#${id}"]`)[0]?.attrs[
         "data-entry-era"
       ];
-    expect(eraOf("fall-of-jerusalem")).toBe("era-iron-age");
+    expect(eraOf("fall-of-jerusalem")).toBe("era-babylonian");
     expect(eraOf("isaiah-56-66")).toBe("era-persian");
     expect(eraOf("daniel")).toBe("era-hellenistic");
   });
@@ -404,12 +411,12 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       {
         era: "era-iron-age",
         start: fixtureAt(-1200),
-        end: fixtureAt(-586),
+        end: fixtureAt(-587),
         compressed: false,
       },
       {
         era: "era-babylonian",
-        start: fixtureAt(-586),
+        start: fixtureAt(-587),
         end: fixtureAt(-539),
         compressed: false,
       },
@@ -513,7 +520,7 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       "5000 BCE",
       "3000 BCE",
       "1200 BCE",
-      "586 BCE",
+      "587 BCE",
       "539 BCE",
       "332 BCE",
       "63 BCE",
@@ -786,7 +793,7 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
 
     // The arc joins the span's middle to the dot: at its year, in its band
     // and in its slot, which the setting carries too, so the span follows a
-    // dot shifted along its row (#175): Lamentations' dot is in slot 2.
+    // dot shifted along its row (#175): Lamentations' dot is in slot 1.
     const arc = vars(
       select(page, '[data-setting="daniel"] .timeline-minimap__setting-arc')[0],
     );
@@ -808,8 +815,8 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
         "tick-slot": slot!,
       });
     }
-    expect(vars(settings[0])["tick-slot"]).toBe(2);
-    expect(vars(settings[0])["tick-lane"]).toBe(-1);
+    expect(vars(settings[0])["tick-slot"]).toBe(1);
+    expect(vars(settings[0])["tick-lane"]).toBe(1);
   });
 
   test("the minimap script loads once, from the footer scripts, not inside the minimap", () => {

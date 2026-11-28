@@ -8,12 +8,14 @@
   after the last, if it ends) is an era named only by its years. The age
   periods must meet end to start, oldest first: a gap or overlap fails the
   build.
-  Returns a slice of dict {label, dates, period, from, to, compressed, items},
+  Returns a slice of dict {label, dates, period, from, to, compressed, items,
+  opens},
   oldest first: label is the period's name or, for a span with no period, its
   years ("5000–3000 BCE"); dates is the period's display dates ("" for a span);
   period its id. compressed marks the span before the first period, which the
   minimap may draw short. items keep placement order. Empty when nothing is
-  placed.
+  placed. opens lists the temple-track periods that start where a period era
+  starts ("Exile" with Babylonian rule), so the axis names them (#276).
   */
 -}}
 {{- $placed := . -}}
@@ -28,6 +30,7 @@
   {{- $start := int (mul (math.Floor (div (float (math.Min $years)) $wide)) $wide) -}}
   {{- $end := int (mul (add (math.Floor (div (float (math.Max $years)) $narrow)) 1) $narrow) -}}
   {{- $ages := sort (where (hugo.Data.timeline.periods | default slice) "track" "age") "from" -}}
+  {{- $temples := where (hugo.Data.timeline.periods | default slice) "track" "temple" -}}
   {{- $bounds := slice -}}
   {{- $at := $start -}}
   {{- range $i, $p := $ages -}}
@@ -69,7 +72,11 @@
         {{- $items = $items | append . -}}
       {{- end -}}
     {{- end -}}
-    {{- $eras = $eras | append (dict "label" $label "dates" (.dates | default "") "period" (.period | default "") "from" $from "to" $to "compressed" (.compressed | default false) "items" $items) -}}
+    {{- $opens := slice -}}
+    {{- if .period -}}
+      {{- $opens = where $temples "from" $from -}}
+    {{- end -}}
+    {{- $eras = $eras | append (dict "label" $label "dates" (.dates | default "") "period" (.period | default "") "from" $from "to" $to "compressed" (.compressed | default false) "items" $items "opens" $opens) -}}
   {{- end -}}
 {{- end -}}
 {{- return $eras -}}

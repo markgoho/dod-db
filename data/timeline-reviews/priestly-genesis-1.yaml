@@ -6,6 +6,7 @@
 # #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading).
 # #210 anchor check, 2026-11-26 (first pass): no `critical.anchor: cyrus-babylon`. Hayes gives “the exilic or post-exilic period”; the exilic side begins before 539, so the existing `anchor: fall-of-jerusalem` covers both sides and cyrus-babylon would drop the exilic one. Kept as is. Entry unchanged.
 # #210 anchor check, second pass, 2026-11-26: agree, keep `anchor: fall-of-jerusalem`. Hayes’s “the exilic or post-exilic period” (stored quote) begins before 539; cyrus-babylon would drop the exilic side. Nothing re-fetched. First-pass line unchanged.
+# #276 display pass, second agent pass, 2026-11-28: agree, display “Exilic or post-exilic period, from 587 or 586 BCE” kept. The period is critical/2’s own (Hayes l9 “the exilic or post-exilic period”); the years are the anchor’s (`fall-of-jerusalem` display “587 or 586 BCE”, cited to Hayes l14 “in 587 or 586”, NABRE Jeremiah “destroyed in 587 and its leading citizens sent into exile”, Coogan “586 BCE”), the split shown as given with each side cited there. “from” matches `open: true` and the note’s “Placed from the fall of Jerusalem onward”; it states no end and no exact P date. Critical/3’s context (Wellhausen, “post 586 [or later]”) is consistent. Nothing re-fetched.
 review: 2026-11-24
 citations:
   critical/1:

@@ -5,7 +5,7 @@ draft: false
 sourcesRead: 2026-11-23
 related: { books: [], tags: [], topics: [] }
 critical:
-  display: "Exilic period"
+  display: "Exilic period, from 587 BCE"
   anchor: fall
   precision: period
   open: true

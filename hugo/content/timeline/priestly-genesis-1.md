@@ -7,7 +7,7 @@ related:
   { books: [genesis], tags: [priestly-source], topics: [priestly-source] }
 watch: [Priestly source, Genesis 1, first creation account, Wellhausen]
 critical:
-  display: "Exilic or post-exilic period"
+  display: "Exilic or post-exilic period, from 587 or 586 BCE"
   anchor: fall-of-jerusalem
   precision: period
   open: true

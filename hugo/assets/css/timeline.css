@@ -183,6 +183,18 @@
   margin-inline-start: 0.4em;
 }
 
+/* A temple period that starts with the era (#276): after a dot, as quiet as the dates. */
+.timeline-era__opens {
+  color: var(--color-text-muted);
+  font-weight: normal;
+}
+
+.timeline-era__opens::before {
+  content: "·";
+  display: inline-block;
+  margin-inline: 0.4em;
+}
+
 .timeline-era__entries {
   gap: var(--space-s);
 }
@@ -535,9 +547,12 @@
     --axis-at: calc(var(--space-m) / 2);
   }
 
+  /* May wrap: with a temple period named (#276) it can outrun a phone's width. */
   .timeline-era__label {
     margin-inline-start: 0;
+    max-inline-size: 100%;
     translate: none;
+    white-space: normal;
   }
 
   .timeline-entry {

@@ -201,6 +201,13 @@ function checkEntry(
     errors.push(`${at}: has neither critical nor undated; give one`);
   }
 
+  // A reader places a card by its year or century, not a period name alone (#276).
+  if (entry.critical && !/\d/.test(entry.critical.display)) {
+    errors.push(
+      `${at}: critical display "${entry.critical.display}" names no year or century; add the cited years`,
+    );
+  }
+
   for (const [field, target] of links(entry)) {
     if (!entries.has(target)) {
       errors.push(`${at}: ${field} "${target}" names no entry`);

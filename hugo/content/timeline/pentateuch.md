@@ -18,11 +18,11 @@ watch:
     Wellhausen,
   ]
 critical:
-  display: "Neo-Assyrian to Persian period"
+  display: "Neo-Assyrian to Persian period, ca. 912–323 BCE"
   from: -912
   to: -323
   precision: period
-  note: "The dates are for the whole process of composition and editing, with the final collection at its end. Schmid gives a span from the 9th or 8th century to the 4th century BCE for the composition of the Torah, and says the Pentateuch seems to be, in essence, pre-Hellenistic. Schorch writes that many scholars agree its text was completed, more or less in the version known today, in the Persian period, a conclusion originally drawn mainly from literary and religious history that received further support from text-historical study of the Dead Sea Scrolls. Ska says many scholars agree that the Pentateuch as such was composed late, in the Persian period; he adds that some of its elements come from the pre-exilic period. Hayes puts its final form, probably, in the exilic to post-exilic periods. The Encyclopaedia Judaica entry has the addition of Genesis through Numbers accomplished by the mid-5th century BCE."
+  note: "The dates are for the whole process of composition and editing, with the final collection at its end. Nihan and Rhyder date that process from the Neo-Assyrian period (ca. 912–612 BCE) to the Persian period (ca. 538–323 BCE). Schmid gives a span from the 9th or 8th century to the 4th century BCE for the composition of the Torah, and says the Pentateuch seems to be, in essence, pre-Hellenistic. Schorch writes that many scholars agree its text was completed, more or less in the version known today, in the Persian period, a conclusion originally drawn mainly from literary and religious history that received further support from text-historical study of the Dead Sea Scrolls. Ska says many scholars agree that the Pentateuch as such was composed late, in the Persian period; he adds that some of its elements come from the pre-exilic period. Hayes puts its final form, probably, in the exilic to post-exilic periods. The Encyclopaedia Judaica entry has the addition of Genesis through Numbers accomplished by the mid-5th century BCE."
   cites:
     - source: nihan-rhyder-bo-torah
       locator: "opening paragraph"

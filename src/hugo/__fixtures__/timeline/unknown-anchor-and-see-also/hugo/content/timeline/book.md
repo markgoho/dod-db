@@ -5,7 +5,7 @@ draft: true
 sourcesRead:
 related: { books: [], tags: [], topics: [] }
 critical:
-  display: "Exilic period"
+  display: "Exilic period, from 587 BCE"
   anchor: no-such-anchor
   precision: period
   cites:
