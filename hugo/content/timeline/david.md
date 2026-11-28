@@ -1,6 +1,7 @@
 ---
 title: "Reign of David"
 entryKind: event
+formerIds: [david-and-solomon]
 draft: false
 sourcesRead: 2026-11-28
 related:

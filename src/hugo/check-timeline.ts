@@ -86,6 +86,12 @@ export const IndexSchema = z.object({ title: z.string(), dek: z.string() });
 export const EntrySchema = z.object({
   title: z.string(),
   entryKind: z.enum(["event", "composition"]),
+  /**
+   * Ids the entry was published under before a rename (#274, an owner
+   * exception to #219): /timeline/#<former> still lands on the entry, and
+   * firebase.json redirects /timeline/<former>. Never reused.
+   */
+  formerIds: z.array(z.string()).optional(),
   draft: z.boolean().default(false),
   /** Read only to refuse `render: never`, which entries carried before #219. */
   build: z.object({ render: z.string().optional() }).optional(),
@@ -156,6 +162,19 @@ function checkEntry(
   const at = `timeline/${id}`;
 
   errors.push(...unknownRelated(at, entry.related, terms));
+
+  // A former id stays reserved: no entry, and no other entry's former id.
+  for (const former of entry.formerIds ?? []) {
+    if (entries.has(former))
+      errors.push(
+        `${at}: former id "${former}" is an entry's id; a former id is never reused`,
+      );
+    for (const [other, e] of entries)
+      if (other !== id && e?.formerIds?.includes(former))
+        errors.push(
+          `${at}: former id "${former}" is also a former id of ${other}`,
+        );
+  }
 
   // A Tradition Date at its own year takes the id `<entry>-tradition` (#214).
   if (id.endsWith("-tradition"))

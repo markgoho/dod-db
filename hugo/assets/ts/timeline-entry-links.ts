@@ -7,6 +7,9 @@
  *   entry and mark it ([data-arrived], styled as :target is). The address is
  *   left exactly as the reader gave it; a /timeline/#<id> link stays as
  *   typed too.
+ * - A renamed entry (#274): a /timeline/#<former id> link, or its
+ *   #<former id>-tradition, goes to the entry (or its Tradition Date) and
+ *   marks it, as an arrival does; the address stays as typed.
  * - A jump inside the Timeline: a #<id> link has no link preview of its own,
  *   because a crawler never receives the fragment. So when a jump lands on an
  *   entry, the address bar takes the entry's URL in the same step, without the
@@ -59,20 +62,53 @@ function syncTitleToPath(): void {
 }
 
 function onJump(): void {
+  const renamed = renamedTarget(globalThis.location.hash);
+  if (renamed) {
+    goTo(renamed, true);
+    return;
+  }
   for (const entry of document.querySelectorAll("[data-arrived]"))
     entry.removeAttribute("data-arrived");
   syncAddressBar();
 }
 
+/** The element a former id's fragment names now: the entry, or its Tradition Date's row. */
+function renamedTarget(hash: string): HTMLElement | null {
+  const id = decodeURIComponent(hash.slice(1));
+  if (!id || document.getElementById(id)) return null;
+  const tradition = id.endsWith("-tradition");
+  const former = tradition ? id.slice(0, -"-tradition".length) : id;
+  const entry = [
+    ...document.querySelectorAll<HTMLElement>("[data-former-ids]"),
+  ].find(item => item.dataset["formerIds"]?.split(" ").includes(former));
+  if (!entry) return null;
+  return (
+    (tradition ? document.getElementById(`${entry.id}-tradition`) : null) ??
+    entry
+  );
+}
+
 function arrive(): void {
+  const { hash } = globalThis.location;
   const id = document.querySelector<HTMLElement>("[data-timeline-arrive]")
     ?.dataset["timelineArrive"];
-  const entry = id ? document.getElementById(id) : null;
-  if (!entry || globalThis.location.hash) return;
+  const entry = hash
+    ? renamedTarget(hash)
+    : id
+      ? document.getElementById(id)
+      : null;
+  if (!entry) return;
+  goTo(entry);
+}
+
+function goTo(entry: HTMLElement, jump = false): void {
+  for (const item of document.querySelectorAll("[data-arrived]"))
+    item.removeAttribute("data-arrived");
   entry.dataset["arrived"] = "";
   // A reload or back/forward keeps the place the browser restores.
   const [navigation] = performance.getEntriesByType("navigation");
   if (
+    !jump &&
     navigation instanceof PerformanceNavigationTiming &&
     ["reload", "back_forward"].includes(navigation.type)
   )

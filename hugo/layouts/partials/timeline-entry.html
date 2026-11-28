@@ -96,6 +96,9 @@
     class="{{ delimit $classes " " }}"
     id="{{ $e.File.ContentBaseName }}"
     data-entry-url="{{ (partial "clean-url.html" $e).rel }}"
+    {{ with $e.Params.formerIds }}
+      data-former-ids="{{ delimit . " " }}"
+    {{ end }}
     tabindex="-1"
     aria-label="{{ replace $label "–" " to " }}">
     <div class="timeline-entry__card panel">
