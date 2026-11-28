@@ -1,32 +1,21 @@
 ---
-title: "Reigns of David and Solomon"
+title: "Reign of David"
 entryKind: event
 draft: false
 sourcesRead: 2026-11-25
 related:
   { books: [1-samuel, 2-samuel, 1-kings], tags: [david], topics: [david] }
 watch:
-  [
-    David*,
-    Solomon,
-    united monarchy,
-    united kingdom,
-    historical David*,
-    house of David*,
-  ]
+  [David*, united monarchy, united kingdom, historical David*, house of David*]
 critical:
   display: "10th century BCE"
   from: -1000
   precision: century
-  note: "One dictionary dates David's reign to about 1010–970 BCE and Solomon's to the second third of the tenth century. Schmidt summarises Finkelstein as upholding the historicity of David and Solomon while rejecting a tenth-century United Monarchy; Mazar describes the United Monarchy as a state in an early stage of development, far from the rich and widely expanding state portrayed in the biblical narrative."
+  note: "One dictionary dates David's reign to about 1010–970 BCE. Schmidt summarises Finkelstein as upholding the historicity of David and Solomon while rejecting a tenth-century United Monarchy; Mazar describes the United Monarchy as a state in an early stage of development, far from the rich and widely expanding state portrayed in the biblical narrative."
   cites:
     - source: harpercollins-2009-dictionary
       locator: "entry “David”, opening sentence (Bible Odyssey, bibleodyssey.org/dictionary/david/)"
       quote: "The most powerful king of Israel, ruling from ca. 1010 to 970 BCE."
-      read: 2026-11-25
-    - source: harpercollins-2009-dictionary
-      locator: "entry “Solomon”, opening sentence (Bible Odyssey, bibleodyssey.org/dictionary/solomon/)"
-      quote: "David’s son by Bathsheba, and his successor, who reigned for forty years in the second third of the tenth century BCE."
       read: 2026-11-25
     - source: finkelstein-2007-quest-solomon
       locator: "p. 113"
@@ -45,17 +34,13 @@ critical:
       quote: "The United Monarchy can be described as a state in an early stage of development, far from the rich and widely expanding state portrayed in the biblical narrative."
       read: 2026-11-25
 tradition:
-  display: "1009–931 BCE"
+  display: "1009–969 BCE"
   from: -1009
-  to: -931
+  to: -969
   holder: "Got Questions Ministries, an evangelical ministry"
   cites:
     - source: gotquestions-kings-israel-judah
       locator: "paragraph beginning “David, although anointed as king when just a boy”"
       quote: "He was 30 years old when he became king and reigned from 1009 BC to 969 BC."
-      read: 2026-11-25
-    - source: gotquestions-kings-israel-judah
-      locator: "paragraph beginning “Solomon became king in 971 BC”"
-      quote: "Solomon became king in 971 BC, possibly two years before his father David died, and reigned until 931 BC."
       read: 2026-11-25
 ---

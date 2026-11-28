@@ -2679,6 +2679,20 @@ ej-history-kingdoms:
   url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/history-kingdoms-judah-and-israel"
   hostAuthored: false
   tradition: null
+ej-solomon:
+  author: "Samuel Abramsky and S. David Sperling"
+  shortAuthor: "Abramsky and Sperling"
+  title: "Solomon"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/solomon"
+  hostAuthored: false
+  tradition: null
 
 ej-goliath:
   author: "Bustanay Oded and S. David Sperling"
