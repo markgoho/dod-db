@@ -2204,7 +2204,7 @@ suchard-2022-greek-daniel-3:
   tradition: null
 
 newsom-2014-daniel:
-  author: "Carol A. Newsom"
+  author: "Carol A. Newsom, with Brennan W. Breed"
   title: "Daniel: A Commentary"
   series: "Old Testament Library"
   publisher: "Westminster John Knox Press"
@@ -2248,7 +2248,7 @@ collins-2014-intro-hebrew-bible:
 suchard-2022-aramaic-daniel:
   author: "Benjamin D. Suchard"
   title: "Aramaic Daniel: A Textual Reconstruction of Chapters 1–7"
-  series: null
+  series: "Studia Semitica Neerlandica 73"
   publisher: "Brill"
   year: 2022
   edition: "Open-access edition (CC BY-NC 4.0)"
