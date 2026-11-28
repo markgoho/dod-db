@@ -193,8 +193,7 @@
     {{/* The minimap's periods (#255), each with its dates and cites. Closed by default, as Sources used is. */}}
     <details
       class="cloud-section timeline-measure timeline-periods-section"
-      id="timeline-periods"
-      data-pagefind-title="Periods">
+      id="timeline-periods">
       <summary class="disclosure-summary timeline-sources__summary">
         <h2 class="type-section-title cloud-section__title">Periods</h2>
         <span class="timeline-section-intro"
@@ -218,10 +217,7 @@
 
   {{ with $sourceIds }}
     {{/* Closed by default (#173). Chrome opens it for find-in-page and for a #source-<id> link to a row inside. */}}
-    <details
-      class="cloud-section timeline-measure timeline-sources"
-      id="timeline-sources"
-      data-pagefind-title="Sources used">
+    <details class="cloud-section timeline-measure timeline-sources">
       <summary class="disclosure-summary timeline-sources__summary">
         <h2 class="type-section-title cloud-section__title">Sources used</h2>
         <span class="timeline-section-intro">{{ len . }} sources</span>
