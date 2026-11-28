@@ -51,6 +51,8 @@ export const TriggerSchema = z.object({
   speaker: z.string(),
   timestamp: z.string().regex(/^\d{2}:\d{2}:\d{2}(\.\d+)?$/),
   text: z.string(),
+  /** Scholarship Pages: the statement id the quote bears on; absent = page-level. */
+  statement: z.string().optional(),
 });
 
 export const TriggersSchema = z.array(TriggerSchema);

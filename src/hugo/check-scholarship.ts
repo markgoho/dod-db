@@ -143,9 +143,15 @@ function checkPage(
     }
   }
 
+  const statementIds = new Set(page.statements.map(s => s.id));
   for (const trigger of triggers ?? []) {
     const error = unknownEpisode(at, trigger, episodes);
     if (error) errors.push(error);
+    if (trigger.statement && !statementIds.has(trigger.statement)) {
+      errors.push(
+        `${at}: trigger ${triggerKey(trigger)} names unknown statement "${trigger.statement}"`,
+      );
+    }
   }
 
   const core = page.statements.find(s => s.id === page.core);
