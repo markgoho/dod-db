@@ -144,7 +144,7 @@ statements:
     group: "The Ten Commandments"
     question: "How do the versions in Exodus 20 and Deuteronomy 5 differ?"
     short: "Mostly in small details. The largest difference is the reason given for the Sabbath: God's rest after creation in Exodus, the memory of slavery in Egypt in Deuteronomy."
-    text: "Brown says Deuteronomy's Sabbath commandment makes no mention of God's work of creation and instead grounds the Sabbath in Israel's slavery in Egypt (Deuteronomy 5:15). Sidnie White Crawford and Norman Solomon both call the Sabbath commandment the most pronounced or most extensive difference between the two versions, and Hayes's Yale lectures single out the Sabbath's rationale among some minor variations. The Coogan and Chapman chapter summary says the two versions are quite similar, and names the Sabbath's motivation and the treatment of coveting a neighbour's wife and property among the differences. Brettler says scholars suggest the Exodus version went through Priestly editing, so that it echoes the Priestly creation story, and the Deuteronomy version through Deuteronomic editing, so that it gives the exodus as the reason; the NABRE note on Exodus 20:11 likewise calls its formulation Priestly. David L. Baker says Deuteronomy adds several clauses to the older version in Exodus, with a few small differences in expression."
+    text: "Brown says Deuteronomy's Sabbath commandment makes no mention of God's work of creation and instead grounds the Sabbath in Israel's slavery in Egypt (Deuteronomy 5:15). Sidnie White Crawford and Norman Solomon both call the Sabbath commandment the most pronounced or most extensive difference between the two versions, and Hayes's Yale lectures single out the Sabbath's rationale among some minor variations. The Coogan and Chapman chapter summary says the two versions are quite similar, and names the Sabbath's motivation and the treatment of coveting a neighbour's wife and property among the differences. Brettler says scholars suggest the Exodus version went through Priestly editing, so that it echoes the Priestly creation story, and the Deuteronomy version through Deuteronomic editing, so that it gives the exodus as the reason; the NABRE note on Exodus 20:11 likewise calls its formulation Priestly."
     cites:
       - source: brown-bo-ten-commandments
         locator: "section “Are the Ten Commandments the foundation of western civil law?”"
@@ -177,10 +177,6 @@ statements:
       - source: nabre-exodus-20-notes
         locator: "note on 20:11"
         quote: "Here, in a formulation which reflects Priestly theology, the veneration of the sabbath is grounded in God’s own hallowing of the sabbath in creation."
-        read: 2026-11-27
-      - source: baker-2005-tynbul-finger-of-god
-        locator: "section 1, p. 13"
-        quote: "Deuteronomy adds several clauses to the older version in Exodus, and there are a few small differences in expression."
         read: 2026-11-27
   - id: composition
     group: "The Ten Commandments"
@@ -220,7 +216,7 @@ statements:
     group: "The Ten Commandments"
     question: "Is the Ritual Decalogue of Exodus 34 older than the Ten Commandments of Exodus 20?"
     short: "Scholars disagree. Some regard it as the original or earliest Decalogue; others read Exodus 34 as a late compilation that draws on earlier laws."
-    text: "Brettler says many scholars believe the laws of Exodus 34:10–26, often named the Cultic Decalogue, were the original or earliest Decalogue. Sherman says many contemporary scholars now reject Julius Wellhausen's claim that Exodus 34 contains an ancient Ritual Decalogue, and argue that the whole chapter is a late compilation that draws on earlier laws; she says its festival and ritual laws are very close to those of the Covenant Code and end with exactly the same laws, while adding expansions that connect them to other legal collections. The Encyclopaedia Judaica's article on the Decalogue, in text carried over from its first edition, reports that critics regarded the Exodus 34 list as the more ancient, and questions the basis of that dating. Shimon Gesundheit says it has been widely claimed in scholarship that the festival calendar of Exodus 34 is Israel's earliest legal collection, a view he calls the reigning consensus and sets out to refute: he reads it as a revised version of the festival calendar in Exodus 23."
+    text: "Brettler says many scholars believe the laws of Exodus 34:10–26, often named the Cultic Decalogue, were the original or earliest Decalogue. Sherman says many contemporary scholars now reject Julius Wellhausen's claim that Exodus 34 contains an ancient Ritual Decalogue, and argue that the whole chapter is a late compilation that draws on earlier laws; she says its festival and ritual laws are very close to those of the Covenant Code and end with exactly the same laws, while adding expansions that connect them to other legal collections. The Encyclopaedia Judaica's article on the Decalogue, in text carried over from its first edition, reports that critics regarded the Exodus 34 list as the more ancient, and questions the basis of that dating. Shimon Gesundheit says it has been widely claimed in scholarship that the festival calendar of Exodus 34 is Israel's earliest legal collection, and argues instead that it is a revised version of the festival calendar in Exodus 23."
     cites:
       - source: brettler-2015-thetorah-ten-insights
         locator: "item “2. This is the original Decalogue.”"
@@ -243,18 +239,14 @@ statements:
         quote: 'Critics have called the stipulations of Exodus 34 the "cultic decalogue," as distinguished from the traditional – or the "ethical" – decalogue, and regard it as the more ancient. This relative dating rests in large measure on the supposition that the "ethical decalogue" reflects the teachings of the literary prophets.'
         read: 2026-11-27
       - source: gesundheit-2012-three-times-a-year
-        locator: "ch. 1, “The Subject of this Study”, p. 3"
+        locator: "Introduction, “The Subject of this Study”, p. 3"
         quote: "I presented my argument that the festival calendar in Exodus 34 does not present a “ritual decalogue” or represent – as widely claimed in scholarship – Israel’s earliest legal collection, but rather a hermeneutically – “midrashically” – revised version of the festival calendar in Exodus 23."
-        read: 2026-11-27
-      - source: gesundheit-2012-three-times-a-year
-        locator: "ch. 1, “The Problem”, p. 13"
-        quote: "In the following study I shall attempt to refute this reigning consensus"
         read: 2026-11-27
   - id: numbering
     group: "The Ten Commandments"
     question: "Do all traditions number the commandments the same way?"
     short: "No. The Bible does not number them, and Jewish tradition, the Catholic and Lutheran traditions, and the Orthodox and Reformed traditions divide them in different ways."
-    text: "The HarperCollins Bible Dictionary says the commandments are not numbered in the Bible and different systems are used. Brown's Bible Odyssey article names three numbering traditions; in the Jewish one the first “word” is God's self-presentation in Exodus 20:2, while the Christian traditions begin the series at 20:3. The NABRE notes say Catholics and Lutherans traditionally count verses 1–6 as one commandment and verse 17 as two, while the Greek Orthodox and Reformed churches count verses 1–6 as two and verse 17 as one; the two sources place the Anglican tradition differently. David L. Baker's table of numbering systems puts it with the Eastern Orthodox and Reformed, as the NABRE does. Hayes's Yale lectures say the ten are an ideal number found among about thirteen separate statements, numbered differently by Jews and Christians and among Christian denominations, and Brettler says even Jewish tradition offers no single definitive way of making ten."
+    text: "The HarperCollins Bible Dictionary says the commandments are not numbered in the Bible and different systems are used. Brown's Bible Odyssey article names three numbering traditions; in the Jewish one the first “word” is God's self-presentation in Exodus 20:2, while the Christian traditions begin the series at 20:3. The NABRE notes say Catholics and Lutherans traditionally count verses 1–6 as one commandment and verse 17 as two, while the Greek Orthodox and Reformed churches count verses 1–6 as two and verse 17 as one; the two sources place the Anglican tradition differently. Hayes's Yale lectures say the ten are an ideal number found among about thirteen separate statements, numbered differently by Jews and Christians and among Christian denominations, and Brettler says even Jewish tradition offers no single definitive way of making ten."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/ten-commandments/"
@@ -280,14 +272,6 @@ statements:
       - source: brettler-2015-thetorah-ten-insights
         locator: "item “3. We know how to get to the number ten.”"
         quote: "This is done by combining various sayings together, and/or by seeing “I am YHWH your God” as introductory, and not counting among the ten. Even Jewish tradition does not offer a single definitive way of doing this."
-        read: 2026-11-27
-      - source: baker-2005-themelios-ten-commandments
-        locator: "table under “Three different numbering systems”, column heading"
-        quote: "Josephus, Eastern Orthodox, Reformed, Anglican"
-        read: 2026-11-27
-      - source: baker-2005-themelios-ten-commandments
-        locator: "paragraph before the table"
-        quote: "Although all traditions agree on the number ten, they differ slightly on the division of the material. Three different numbering systems have been used, which result from different divisions at the beginning and end of the list"
         read: 2026-11-27
   - id: name-in-vain
     group: "The Ten Commandments"
@@ -498,7 +482,7 @@ statements:
     group: "The Covenant Code"
     question: "Did the Covenant Code borrow from the Laws of Hammurabi?"
     short: "Scholars disagree. Many explain the close similarities by a legal tradition the two shared or that reached Israel's scribes; others, following David P. Wright, argue that its authors used Hammurabi's laws directly as a source."
-    text: "Wayne Horowitz says many scholars argue that the relationship between biblical law and Hammurabi's laws is indirect, arising from shared or transmitted legal traditions, while others argue that the biblical authors used Hammurabi's laws as a literary source. A Society of Biblical Literature lesson on the subject likewise says scholars disagree, and lays out the range of views. David P. Wright, in Inventing God's Law (Oxford University Press, 2009), argues that the Covenant Code depends directly and throughout on the Laws of Hammurabi, its casuistic laws following nearly the same topical order; he acknowledges that most scholars reject literary dependence and that reaction to his thesis has been split. Sara Milstein notes that not all agree with Wright. Thomas Kazen and Hilary Lipka call his argument compelling, and Sandra Jacobs says Wright has demonstrated that the Covenant Code's sequence of laws is modelled on Hammurabi's. Raymond Westbrook, a critic of the literary model, says Wright can derive almost all the Covenant Code's case laws from Hammurabi's only by special pleading. William S. Morrow, noting that proposals of direct literary dependence on Hammurabi's laws have been rare, rejects Wright's parallels in the apodictic laws and the narrative frame but finds literary borrowing the best explanation for Exodus 21:18–32. Wright (2014) names Bernard M. Levinson and David M. Carr among those who follow a source hypothesis for the casuistic laws, and Dominik Markl says the thesis of direct dependence has sparked controversy. The NABRE notes say Israel clearly participated in a legal culture common to its neighbours."
+    text: "Wayne Horowitz says many scholars argue that the relationship between biblical law and Hammurabi's laws is indirect, arising from shared or transmitted legal traditions, while others argue that the biblical authors used Hammurabi's laws as a literary source. A Society of Biblical Literature lesson on the subject likewise says scholars disagree, and lays out the range of views. David P. Wright, in Inventing God's Law (Oxford University Press, 2009), argues that the Covenant Code depends directly and throughout on the Laws of Hammurabi, its casuistic laws following nearly the same topical order; he acknowledges that most scholars reject literary dependence and that reaction to his thesis has been split. Sara Milstein notes that not all agree with Wright. Thomas Kazen and Hilary Lipka call his argument compelling, and Sandra Jacobs says Wright has demonstrated that the Covenant Code's sequence of laws is modelled on Hammurabi's. Raymond Westbrook, a critic of the literary model, says Wright can derive almost all the Covenant Code's case laws from Hammurabi's only by special pleading. William S. Morrow, noting that proposals of direct literary dependence on Hammurabi's laws have been rare, rejects Wright's parallels in the apodictic laws and the narrative frame but finds literary borrowing the best explanation for Exodus 21:18–32. Wright (2014) names Bernard M. Levinson and David M. Carr among those who follow and discuss a source hypothesis for the casuistic laws, and Dominik Markl says the thesis of direct dependence has sparked controversy. The NABRE notes say Israel clearly participated in a legal culture common to its neighbours."
     cites:
       - source: horowitz-2024-thetorah-eye-for-eye
         locator: "footnote 9"
@@ -675,7 +659,7 @@ statements:
     group: "The Covenant Code"
     question: "Were laws like these applied in courts?"
     short: "Probably not as written statutes, many scholars say: collections like Hammurabi's are read as royal or scribal compositions rather than manuals for judges."
-    text: "Van De Mieroop says modern scholars do not regard Hammurabi's code as a manual that guided judges, and that many prefer to call it a proclamation of the king as guarantor of justice. Hayes's Yale lectures say these are collections rather than codes, that how they were used is not known, and that it is thought unlikely they were used by courts, though scribes copied them as part of a learned tradition. Bernard M. Levinson says it is unlikely Hammurabi's text ever had statutory force, and places the Covenant Collection in the curriculum of scribal schools before it had the status of public law; Zev Farber says little evidence suggests that the collections, the Covenant Collection among them, were used in the law courts. Michael LeFebvre says reassessment has brought a growing consensus that ancient Israel's law collections, too, were not legislation, and that Israel wrote laws for idyllic, not regulatory, purposes; Eryl Wynn Davies says many scholars hold that nothing indicates the Pentateuch's rules were ever adhered to in Israel's courts. Sweeney, by contrast, thinks the Covenant Code likely functioned as an active law code in northern Israel. The NABRE notes gloss its “ordinances” as judicial precedents for settling questions of law and custom."
+    text: "Van De Mieroop says modern scholars do not regard Hammurabi's code as a manual that guided judges, and that many prefer to call it a proclamation of the king as guarantor of justice. Hayes's Yale lectures say these are collections rather than codes, that how they were used is not known, and that it is thought unlikely they were used by courts, though scribes copied them as part of a learned tradition. Bernard M. Levinson says it is unlikely Hammurabi's text ever had statutory force, and places the Covenant Collection in the curriculum of scribal schools before it had the status of public law; Zev Farber says little evidence suggests that the collections, the Covenant Collection among them, were used in the law courts. Michael LeFebvre says reassessment has brought a growing consensus that ancient Israel's law collections, too, were not legislation, and that Israel wrote laws for idyllic, not regulatory, purposes. Sweeney, by contrast, thinks the Covenant Code likely functioned as an active law code in northern Israel. The NABRE notes gloss its “ordinances” as judicial precedents for settling questions of law and custom."
     cites:
       - source: van-de-mieroop-bo-code-of-hammurabi
         locator: "body"
@@ -712,10 +696,6 @@ statements:
       - source: lefebvre-2006-collections-codes-torah
         locator: "ch. 2 “Written Law in Ancient Israel”, p. 31"
         quote: "The general consensus is that Israel wrote laws for idyllic, not regulatory, purposes."
-        read: 2026-11-27
-      - source: davies-2019-litigation
-        locator: "p. 45"
-        quote: "Many scholars are of the view that the legal codes enshrined in the Pentateuch cannot provide helpful insights into the judicial system that functioned in Old Testament times, for there is nothing to indicate that the rules laid out in the Pentateuch were ever adhered to in the day-to-day functioning of the courts in ancient Israel."
         read: 2026-11-27
   - id: deuteronomy
     group: "Later law collections"
@@ -827,7 +807,7 @@ statements:
     group: "Reading the texts today"
     question: "How do religious traditions number the Ten Commandments?"
     short: "In different ways. The Catholic Church follows St. Augustine's division, which it shares with the Lutheran confessions; the Heidelberg Catechism of the Reformed tradition makes the ban on idols a separate commandment; Chabad counts “I am the Lord your God” as the first."
-    text: "The Catechism of the Catholic Church says that the division and numbering of the commandments have varied, that it follows the division established by St. Augustine, which is also that of the Lutheran confessions, and that the Greek Fathers worked out a slightly different division found in the Orthodox Churches and Reformed communities; it treats the ninth commandment as forbidding carnal concupiscence and the tenth as forbidding coveting another's goods. Luther's Small Catechism, a Lutheran confession, lists “Thou shalt have no other gods” as the first commandment and divides the coveting of a neighbour's house and of his wife into the ninth and tenth. The Heidelberg Catechism, a Reformed confession, numbers “You shall not make for yourself an idol” as the second commandment and divides the commandments into two tables of four and six. Chabad.org, of the Chabad-Lubavitch movement, numbers “I am the L-rd your G-d” as the first of the Ten Statements given at Sinai. The catechism of the Church of England's Book of Common Prayer (1662) numbers “Thou shalt have none other gods but me” as the first commandment and the graven image as the second, and puts the coveting of a neighbour's house and wife together in the tenth."
+    text: "The Catechism of the Catholic Church says that the division and numbering of the commandments have varied, that it follows the division established by St. Augustine, which is also that of the Lutheran confessions, and that the Greek Fathers worked out a slightly different division found in the Orthodox Churches and Reformed communities; it treats the ninth commandment as forbidding carnal concupiscence and the tenth as forbidding coveting another's goods. Luther's Small Catechism, a Lutheran confession, lists “Thou shalt have no other gods” as the first commandment and divides the coveting of a neighbour's house and of his wife into the ninth and tenth. The Heidelberg Catechism, a Reformed confession, numbers “You shall not make for yourself an idol” as the second commandment and divides the commandments into two tables of four and six. Chabad.org, of the Chabad-Lubavitch movement, numbers “I am the L-rd your G-d” as the first of the Ten Statements given at Sinai. The catechism in the Church of England's Book of Common Prayer numbers “Thou shalt have none other gods but me” as the first commandment and the graven image as the second, and puts the coveting of a neighbour's house and wife together in the tenth."
     cites:
       - source: ccc-2052-2074
         locator: "§2066"

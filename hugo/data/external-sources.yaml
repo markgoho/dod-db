@@ -9777,20 +9777,6 @@ joosten-2019-covenant:
   hostAuthored: false
   tradition: null
 
-davies-2019-litigation:
-  author: "Eryl Wynn Davies"
-  title: "Litigation: Trial Procedure, Jurisdiction, Evidence, Testimony"
-  series: "In Pamela Barmash (ed.), The Oxford Handbook of Biblical Law"
-  publisher: "Oxford University Press"
-  year: 2019
-  edition: null
-  class: Scholarly
-  kind: article
-  access: "Google Books preview of the Handbook, open (pages shown vary)"
-  url: "https://books.google.com/books?id=emOtDwAAQBAJ&pg=PA45"
-  hostAuthored: false
-  tradition: null
-
 lefebvre-2006-collections-codes-torah:
   author: "Michael LeFebvre"
   title: "Collections, Codes, and Torah: The Re-characterization of Israel's Written Law"
@@ -9847,37 +9833,9 @@ gesundheit-2012-three-times-a-year:
   hostAuthored: false
   tradition: null
 
-baker-2005-themelios-ten-commandments:
-  author: "David L. Baker"
-  title: "Ten Commandments, Two Tablets: The Shape of the Decalogue"
-  series: "Themelios 30.3"
-  publisher: null
-  year: 2005
-  edition: null
-  class: Scholarly
-  kind: article
-  access: "Journal website, open; read in an Internet Archive copy, as the live page loops on redirects"
-  url: "https://web.archive.org/web/20260908122720/https://www.thegospelcoalition.org/themelios/article/ten-commandments-two-tablets-the-shape-of-the-decalogue/"
-  hostAuthored: false
-  tradition: null
-
-baker-2005-tynbul-finger-of-god:
-  author: "David L. Baker"
-  title: "The Finger of God and the Forming of a Nation: The Origin and Purpose of the Decalogue"
-  series: "Tyndale Bulletin 56.1"
-  publisher: null
-  year: 2005
-  edition: null
-  class: Scholarly
-  kind: article
-  access: "Open-access journal, open"
-  url: "https://www.tyndalebulletin.org/article/29191-the-finger-of-god-and-the-forming-of-a-nation-the-origin-and-purpose-of-the-decalogue"
-  hostAuthored: false
-  tradition: null
-
 bcp-1662-catechism:
   author: null
-  title: "The Book of Common Prayer (1662), A Catechism"
+  title: "The Book of Common Prayer, A Catechism"
   series: null
   publisher: "The Church of England"
   year: null
